@@ -1,0 +1,41 @@
+{
+  "name": "ki-produktutvikling",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env.local scripts/dev.mjs",
+    "rag:start": "node --env-file-if-exists=.env.local scripts/rag-server.mjs",
+    "test:rag": "node --test tests/*.test.ts",
+    "build": "next build",
+    "build:pages": "node scripts/build-pages.mjs",
+    "start": "next start --hostname 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "pnpm format:check && pnpm typecheck && pnpm build"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@digitalarkivet/mui-theme": "5.1.0",
+    "@emotion/cache": "^11.14.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^9.5.0",
+    "@mui/material": "^9.5.0",
+    "@mui/material-nextjs": "^9.5.0",
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "prettier": "3.9.10",
+    "typescript": "5.9.3"
+  },
+  "packageManager": "pnpm@11.25.0"
+}

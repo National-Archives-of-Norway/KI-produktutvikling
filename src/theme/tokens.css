@@ -1,0 +1,10 @@
+/* Alias til Digitalarkivets temavariabler fra MUI ThemeProvider. */
+:root {
+  color-scheme: dark;
+  --background: var(--mui-palette-background-default);
+  --surface: var(--mui-palette-background-paper);
+  --text: var(--mui-palette-text-primary);
+  --muted: var(--mui-palette-text-secondary);
+  --accent: var(--mui-palette-secondary-main);
+  --border: var(--mui-palette-borders-divider);
+}

@@ -1,0 +1,69 @@
+import { resources } from "../../content/resources.ts";
+
+import type { RagSource } from "./contracts.ts";
+// Eksplisitt liste med offentlige kilder. Ingen filsystem- eller GitHub-tilgang.
+export const corpus: RagSource[] = resources.map((r) => ({
+  id: r.slug,
+  title: r.title,
+  href: `/ressurser/${r.slug}/`,
+  text: [r.description, r.usage, ...r.steps, r.example].join("\n"),
+}));
+
+const stopWords = new Set([
+  "hva",
+  "hvordan",
+  "hvor",
+  "hvilke",
+  "hvilken",
+  "kan",
+  "jeg",
+  "med",
+  "som",
+  "det",
+  "den",
+  "til",
+  "for",
+  "skal",
+  "vil",
+  "har",
+  "og",
+  "en",
+  "et",
+  "er",
+  "på",
+  "av",
+  "om",
+  "ki",
+  "dere",
+  "man",
+]);
+function terms(text: string) {
+  return [
+    ...new Set(text.toLocaleLowerCase("nb").match(/[\p{L}\p{N}]{3,}/gu) ?? []),
+  ].filter((t) => !stopWords.has(t));
+}
+
+export function retrieve(question: string): RagSource[] {
+  const query = terms(question);
+  if (!query.length) return [];
+  return corpus
+    .map((source) => {
+      const title = terms(source.title);
+      const body = terms(source.text);
+      const score = query.reduce(
+        (total, q) =>
+          total +
+          (title.some((t) => t.startsWith(q) || q.startsWith(t))
+            ? 3
+            : body.some((t) => t.startsWith(q) || q.startsWith(t))
+              ? 1
+              : 0),
+        0,
+      );
+      return { source, score };
+    })
+    .filter((r) => r.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 3)
+    .map((r) => r.source);
+}
