@@ -26,10 +26,11 @@ export const portalTheme = createTheme({
     ...themeDark.components,
     MuiCssBaseline: {
       styleOverrides: {
-        "a:focus-visible, button:focus-visible, input:focus-visible": {
-          outline: `3px solid ${themeDark.palette.secondary.main}`,
-          outlineOffset: "4px",
-        },
+        "a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, summary:focus-visible":
+          {
+            outline: `3px solid ${themeDark.palette.secondary.main}`,
+            outlineOffset: "4px",
+          },
       },
     },
   },

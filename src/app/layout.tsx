@@ -18,7 +18,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="nb">
+    <html lang="nb" data-scroll-behavior="smooth">
       <body>
         <PortalThemeProvider>
           <a className="skip-link" href="#innhold">
@@ -31,7 +31,9 @@ export default function RootLayout({
             </Link>
             <Navigation />
           </header>
-          <main id="innhold">{children}</main>
+          <main id="innhold" tabIndex={-1}>
+            {children}
+          </main>
           <footer>
             <span>KI-Produktutvikling</span>
             <span>Lokal prototype · eksempelinnhold</span>

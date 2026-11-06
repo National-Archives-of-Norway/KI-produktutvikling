@@ -2,6 +2,8 @@
 
 Lokal Next.js-prototype for kunnskap, veiledninger og verktøy for KI i produktutvikling.
 
+Se [versjonsloggen](VERSJONSLOGG.md) for endringer, kontroller og utførende agent.
+
 ## Start lokalt
 
 Forutsetninger: Node.js 22 eller nyere og pnpm. Installer avhengighetene én gang:

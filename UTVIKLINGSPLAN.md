@@ -1,7 +1,8 @@
 # Utviklingsplan for KI-Produktutvikling
 
-Sist oppdatert: 30. oktober 2026  
-Status: Lokalmiljø er satt opp. Teknisk grunnmur og første prototype er under arbeid.
+Sist oppdatert: 6. november 2026
+
+Status: Fungerende lokal prototype. Teknisk grunnmur og design er i hovedsak implementert lokalt. MVP 1 gjenstår å publisere og brukerteste.
 
 Dette er prosjektets levende utviklingsplan. Oppdater oppgaver, beslutninger og ferdigkriterier etter hvert som arbeidet går fremover. Avkryssing betyr at arbeidet er utført og verifisert.
 
@@ -22,16 +23,16 @@ Utvikle en kunnskapsportal inspirert av [KI-produktutvikling i Nav](https://ki-u
 
 ## Faseoversikt
 
-| Fase | Leveranse                                        | Status       |
-| ---- | ------------------------------------------------ | ------------ |
-| 1    | Avklaringer og prosjektgrunnlag                  | Ikke startet |
-| 2    | Teknisk grunnmur og sikker arbeidsflyt           | Under arbeid |
-| 3    | Designretning og komponenter                     | Ikke startet |
-| 4    | MVP 1: Offentlig demonstrasjon på GitHub Pages   | Ikke startet |
-| 5    | Servermiljø og utrulling                         | Ikke startet |
-| 6    | MVP 2: Innlogging og internt område              | Ikke startet |
-| 7    | MVP 3: Distribusjon av skills og andre ressurser | Ikke startet |
-| 8    | MVP 4: Forvaltning og produksjonslansering       | Ikke startet |
+| Fase | Leveranse                                        | Status                                |
+| ---- | ------------------------------------------------ | ------------------------------------- |
+| 1    | Avklaringer og prosjektgrunnlag                  | Delvis avklart                        |
+| 2    | Teknisk grunnmur og sikker arbeidsflyt           | Under arbeid                          |
+| 3    | Designretning og komponenter                     | Implementert, videre kvalitetssikring |
+| 4    | MVP 1: Offentlig demonstrasjon på GitHub Pages   | Lokal demo klar, ikke publisert       |
+| 5    | Servermiljø og utrulling                         | Ikke startet                          |
+| 6    | MVP 2: Innlogging og internt område              | Ikke startet                          |
+| 7    | MVP 3: Distribusjon av skills og andre ressurser | Ikke startet                          |
+| 8    | MVP 4: Forvaltning og produksjonslansering       | Ikke startet                          |
 
 Første arbeidsbolk er fase 1–4. Valg av driftsplattform avklares underveis, før innlogging og internt innhold implementeres.
 
@@ -43,7 +44,8 @@ Første arbeidsbolk er fase 1–4. Valg av driftsplattform avklares underveis, f
 - [ ] Definere første innholdsområder: nyheter, veiledninger, skills, agenter, instrukser og prompter.
 - [ ] Avklare hva som skal være offentlig og internt.
 - [ ] Bekrefte GitHub-organisasjon og hvilke medlemmer eller team som skal få intern tilgang.
-- [ ] Skaffe lesetilgang til designbiblioteket og undersøke komponenter, avhengigheter og bruksvilkår.
+- [x] Integrere designbiblioteket gjennom publisert npm-pakke uten privat GitHub-tilgang.
+- [ ] Avklare bruksvilkår for eventuelle ekstra profilressurser, særlig Suisse-skriftfiler.
 - [ ] Registrere beslutninger om arkitektur, innhold og tilgang.
 - [ ] Avklare eiere for portal, innhold og drift.
 
@@ -55,10 +57,12 @@ Første arbeidsbolk er fase 1–4. Valg av driftsplattform avklares underveis, f
 
 **Mål:** Gjøre prosjektet enkelt å utvikle og trygt å publisere.
 
-- [ ] Opprette et eget repository for portalen.
+- [x] Etablere lokal Git-versjonering og første commit (`ed873b7`).
+- [ ] Opprette et eget GitHub-repository for portalen.
 - [x] Sette opp Next.js, TypeScript og lokal utvikling.
 - [x] Etablere separate bygg for statisk Pages-demonstrasjon og senere serverdrift, med felles komponenter.
-- [ ] Sette opp formatering, kodekontroll, typekontroll og byggkontroll.
+- [x] Sette opp lokal formatering, typekontroll, tester og begge byggvarianter.
+- [ ] Etablere linting og automatiske kontroller i GitHub Actions.
 - [ ] Kreve pull requests, godkjenning og beståtte kontroller før endringer går til `main`.
 - [ ] Gi GitHub Actions eksplisitte, minimale rettigheter.
 - [x] Unngå GitHub-repotilgang for designbiblioteket ved å bruke publisert npm-pakke.
@@ -74,14 +78,15 @@ Første arbeidsbolk er fase 1–4. Valg av driftsplattform avklares underveis, f
 **Mål:** Skape et futuristisk uttrykk med tydelig tilknytning til virksomhetens designprofil.
 
 - [ ] Kartlegge hvilke deler av `da-mui-theme` som kan brukes direkte.
-- [ ] Lage et eget tema i portalen for farger, typografi, avstander, kanter og effekter.
+- [x] Lage et eget tema i portalen for farger, typografi, avstander, kanter og effekter.
 - [ ] Utforme to retninger: diskret futuristisk og mer markant futuristisk.
 - [ ] Prøve retningene på forside, navigasjon og ressurskort.
-- [ ] Velge designretning.
-- [ ] Utvikle toppmeny og bunntekst.
-- [ ] Utvikle knapper, lenker og søkefelt.
-- [ ] Utvikle kort, kategorier og tilgangsmerking.
-- [ ] Utvikle artikkeloppsett og kodeeksempler.
+- [x] Velge designretning.
+- [x] Utvikle toppmeny og bunntekst.
+- [x] Utvikle knapper, lenker og søkefelt.
+- [x] Utvikle ressurskort og typefiltrering.
+- [ ] Lage tilgangsmerking når tilgangsmodellen er avklart.
+- [x] Utvikle artikkeloppsett og kodeeksempler.
 - [ ] Tilpasse mobil, tastaturnavigasjon, kontrast og redusert bevegelse.
 
 Tilpasningene holdes i portalens eget komponentlag. Endringer i det felles designbiblioteket vurderes separat.
@@ -94,16 +99,19 @@ Tilpasningene holdes i portalens eget komponentlag. Endringer i det felles desig
 
 **Mål:** Gjøre konseptet tilgjengelig for vurdering med reelt, offentlig innhold eller tydelig merkede eksempeldata.
 
-- [ ] Bygge forside med introduksjon, siste nytt og fremhevede ressurser.
-- [ ] Bygge artikkelsider og enkel navigasjon mellom innholdsområdene.
-- [ ] Lage verktøykatalog med kategorier og filtrering.
-- [ ] Lage detaljsider for skills, agenter, instrukser og prompter.
+- [x] Bygge forside med introduksjon, katalog og snarveier.
+- [ ] Avklare behov for siste nytt og særskilt fremhevede ressurser.
+- [x] Bygge artikkelsider og enkel navigasjon mellom innholdsområdene.
+- [x] Lage verktøykatalog med kategorier og filtrering.
+- [x] Lage detaljsider for tre eksempelressurser: skill, instruks og prompt.
+- [ ] Legge til faktiske ressurser og eventuelle agenter.
 - [ ] Definere metadata: tittel, beskrivelse, type, eier, kategori og gjennomgangsdato.
 - [ ] Publisere representative artikler og ressurser.
 - [ ] Avklare offentlig bruk av skrifter, bilder og øvrige ressurser fra designbiblioteket.
 - [ ] Sette opp automatisk utrulling til GitHub Pages.
 - [ ] Sikre at Pages-byggingen bare bruker godkjente offentlige innholdskilder.
-- [ ] Kontrollere tilgjengelighet, lenker og mobilvisning.
+- [x] Gjennomføre første manuelle kontroll av interne lenker, mobilvisning og grunnleggende tilgjengelighet; se KVALITETSKONTROLL.md.
+- [ ] Gjennomføre utvidet tilgjengelighetskontroll med skjermleser, zoom og flere nettlesere.
 - [ ] Samle tilbakemeldinger fra en liten brukergruppe.
 
 **Leveranse:** En klikkbar, offentlig demonstrasjon av KI-Produktutvikling.
@@ -185,14 +193,14 @@ Tilpasningene holdes i portalens eget komponentlag. Endringer i det felles desig
 
 ## Beslutningspunkter
 
-| Tidspunkt     | Beslutning                                                          | Status |
-| ------------- | ------------------------------------------------------------------- | ------ |
-| Etter fase 1  | Omfang, tilgangsmodell og innholdsstruktur                          | Åpen   |
-| Etter fase 3  | Designretning                                                       | Åpen   |
-| Etter fase 4  | Endringer etter brukertest og prioritering av intern funksjonalitet | Åpen   |
-| Før fase 6    | Driftsplattform og nødvendige GitHub-rettigheter                    | Åpen   |
-| Etter fase 7  | Om et eget installasjonsverktøy er nødvendig                        | Åpen   |
-| Før lansering | Om løsning, innhold og driftsansvar er klare                        | Åpen   |
+| Tidspunkt     | Beslutning                                                          | Status                           |
+| ------------- | ------------------------------------------------------------------- | -------------------------------- |
+| Etter fase 1  | Omfang, tilgangsmodell og innholdsstruktur                          | Åpen                             |
+| Etter fase 3  | Designretning                                                       | Futuristisk MUI-tilpasning valgt |
+| Etter fase 4  | Endringer etter brukertest og prioritering av intern funksjonalitet | Åpen                             |
+| Før fase 6    | Driftsplattform og nødvendige GitHub-rettigheter                    | Åpen                             |
+| Etter fase 7  | Om et eget installasjonsverktøy er nødvendig                        | Åpen                             |
+| Før lansering | Om løsning, innhold og driftsansvar er klare                        | Åpen                             |
 
 ## Løpende oppfølging
 
@@ -206,7 +214,7 @@ Tilpasningene holdes i portalens eget komponentlag. Endringer i det felles desig
 - Vanlig produksjonsbygg og statisk Pages-bygg er verifisert.
 - Forside, søk, kategorifiltrering og veiledningsside er prøvd i nettleseren.
 - Digitalarkivets MUI-tema 5.1.0 er integrert med MUI 9.5.0 og et eget futuristisk tilpasningslag. Innholdet er fortsatt eksempler.
-- Palett, typografi og komponentstiler hentes fra designbiblioteket. Suisse-skriftfiler og endelig logo/profiltilpasning gjenstår. Reserveskrift brukes foreløpig.
+- Palett, typografi og komponentstiler hentes fra designbiblioteket. Portalens egen arklogo er senere implementert. Godkjente Suisse-skriftfiler gjenstår; reserveskrift brukes foreløpig.
 - GitHub-tilgang, innlogging, CI og faktisk publisering er ikke konfigurert.
 - Formatering og typekontroll finnes lokalt; øvrig kodekontroll og CI gjenstår.
 
@@ -249,7 +257,7 @@ Ved oppdatering av planen:
 - [x] Verifisere henting, validering og avvisning av fremmed opprinnelse.
 - [ ] Bekrefte godkjent modell og konfigurere modellnavn.
 - [ ] Verifisere genererte svar, feilsvar og kildebruk mot faktisk modell.
-- [ ] Visuell kontroll av «Spør KI» i nettleseren (verktøyets URL-policy avviste åpning).
+- [x] Visuell kontroll av «Spør KI» i nettleseren ved 320 piksler, inkludert lukking med Escape og retur av fokus (6. november).
 - [ ] Utvide kunnskapsgrunnlaget og evaluere søkekvalitet; vurdere embeddings ved behov.
 - [ ] Etablere produksjonsdrift, autentisering og ratebegrensning før ekstern lansering.
 - [ ] Utforme separat tilgangskontroll for interne kilder før slike kilder legges til.
@@ -259,7 +267,7 @@ Ved oppdatering av planen:
 - [x] Knapp som åpner chatdialog på forsiden.
 - [x] Samtalehistorikk i minnet, kildeutdrag og tømming av chat.
 - [x] Gjenbruk av RAG-API og statisk kildesøk.
-- [ ] Visuell nettleserkontroll: verktøyets URL-policy blokkerer foreløpig siden.
+- [x] Første visuelle nettleserkontroll utført 6. november; se KVALITETSKONTROLL.md.
 
 ### Visuell tilpasning av chatbot – 30. oktober 2026
 
@@ -280,3 +288,12 @@ Ved oppdatering av planen:
 - [x] Dokumentert modulgrenser i ARCHITECTURE.md.
 
 Oppdelingen skal bevare eksisterende utseende, kilder og tilgangsbegrensninger. Visuell nettlesersammenligning er foreløpig ikke verifisert på grunn av tidligere blokkering i nettleserverktøyet.
+
+## Statusgjennomgang – 6. november 2026
+
+- Faseoversikt og oppgaver er avstemt mot eksisterende kode og lokal Git-historikk. Tidligere «ikke startet»-status for design og demo var utdatert.
+- Lokal Git har første commit. GitHub-remote, CI, publisering og innlogging er fortsatt ikke konfigurert.
+- Første nettleserkontroll er nå mulig og gjennomført. Tidligere merknader om blokkering beskriver situasjonen 30. oktober, ikke dagens status.
+- Hovedinnholdet er gjort fokuserbart for «Hopp til innhold». Fokusmarkering omfatter også tekstområder og kildeutdrag. Menylenkene har minst 44 pikslers høyde, og bunnteksten har plass under chatknappen.
+- Se [kontrollrapporten](KVALITETSKONTROLL.md) for omfang, funn og gjenstående kontroller. Dette er første kvalitetssjekk, ikke en full WCAG-revisjon.
+- Prioritert videre: utvidet tilgjengelighetskontroll, godkjent offentlig innhold, eget GitHub-repo og CI, deretter Pages-demo og brukertest.

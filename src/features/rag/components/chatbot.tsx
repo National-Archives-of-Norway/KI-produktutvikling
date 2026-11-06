@@ -63,6 +63,7 @@ export function Chatbot() {
         }}
       >
         <DialogTitle
+          id="chatbot-header"
           component="div"
           className="chat-header"
           sx={{
