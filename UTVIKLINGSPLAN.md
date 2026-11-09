@@ -109,6 +109,7 @@ Fase 5 og 6 må samordnes før MVP 1 deles. Fase 7 kan utvikles parallelt, men f
 
 - [x] Integrere `@digitalarkivet/mui-theme` og eget tema uten privat GitHub-tilgang.
 - [x] Implementere valgt arklogo/favicon, futuristisk forside, navigasjon, bunntekst, katalog, artikkeloppsett og chat.
+- [x] Legge til rolige bevegelser i illustrasjonens punkter og ytre ring, med klikk på selve illustrasjonen for pause/start, tastaturbetjening og statisk visning ved redusert bevegelse.
 - [x] Tilpasse grunnleggende responsivitet, fokus, kontrast og redusert bevegelse, og utføre avgrensede kontroller med dokumenterte rettinger.
 - [x] Opprette WCAG-matrise, testhistorikk og lokalt erklæringsgrunnlag med bekreftet kontaktadresse.
 - [ ] Gjennomføre resterende manuelle kontroller, inkludert dagens nye sider, innhold og chatvisning.

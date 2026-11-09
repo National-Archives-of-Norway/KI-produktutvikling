@@ -2,7 +2,7 @@ import { PortalButton } from "@/components/portal-button";
 import { catalogContent } from "@/content/catalog";
 import { Catalog } from "@/components/catalog";
 import Link from "next/link";
-import { LogoMark } from "@/components/logo-mark";
+import { HeroIllustration } from "@/components/hero-illustration";
 import { Chatbot } from "@/features/rag/components/chatbot";
 import { homeContent, getRecommendedResource } from "@/content/home";
 
@@ -32,15 +32,7 @@ export default function Home() {
             Utforsk ressursene <span aria-hidden="true">↓</span>
           </PortalButton>
         </div>
-        <div className="hero-art" aria-hidden="true">
-          <div className="hero-art-ring hero-art-ring-inner" />
-          <div className="hero-art-ring hero-art-ring-cross" />
-          <div className="hero-art-ring hero-art-ring-diagonal" />
-          <div className="hero-art-halo" />
-          <i className="hero-art-node hero-art-node-one" />
-          <i className="hero-art-node hero-art-node-two" />
-          <LogoMark />
-        </div>
+        <HeroIllustration />
       </section>
       <section id="ressurser" className="resources">
         <div className="eyebrow">

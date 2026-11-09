@@ -4,6 +4,23 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 «Agent» betyr kodeassistenten som utførte arbeidet. Git-forfatteren registreres separat av Git og kan være personen som oppretter commiten. Eksakt modellvariant er ikke registrert for tidligere arbeid og oppgis derfor ikke. Ingen underagenter ble brukt til kvalitetskontrollen eller opprettelsen av denne loggen.
 
+## Ikke utgitt – styr animasjonen ved klikk på illustrasjonen – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Fjernet den synlige pause-/startknappen og gjort selve illustrasjonen til en knapp som veksler mellom pause og start. Skjermlesernavnet beskriver neste handling, og Enter/mellomrom støttes gjennom en vanlig HTML-knapp. Redusert bevegelse respekteres fortsatt.
+- Fjernet kontrollens ekstra avstand og oppdatert funksjonsregister og utviklingsplan.
+- Kontroll: Lokal nettleser bekreftet pause og start ved gjentatte klikk, med animation-play-state paused/running. Mellomrom pauset og Enter startet igjen. Klikkflaten ligger over de dekorative tekstflatene. Produksjonsbygg med TypeScript, Prettier og `git diff --check` bestod.
+
+## Ikke utgitt – rolig animasjon i forsideillustrasjonen – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Lagt til rolige bevegelser frem og tilbake for de to lyspunktene langs ytterkanten, og svært langsom rotasjon av den stiplede ringen. Logo og hovedringer beholder sin plassering.
+- Flyttet illustrasjonen til en egen komponent med pause-/startknapp. Ved redusert bevegelse slås animasjonen av og kontrollen skjules. Animasjonen bruker CSS-transformasjoner; ingen eksterne ressurser eller avhengigheter.
+- Oppdatert funksjonsregister og utviklingsplan.
+- Kontroll: Alle 45 tester og produksjonsbygg med TypeScript bestod. Lokal nettleser viste aktive transformasjoner; pauseknappen satte både punkter og ring til paused og kunne starte dem igjen. Regelen for redusert bevegelse er kontrollert i CSS, ikke med endret systeminnstilling. Ingen full tilgjengelighetsrevisjon er utført.
+
 ## Ikke utgitt – MCP-oversikt under Oversikt – 9. november 2026
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.
