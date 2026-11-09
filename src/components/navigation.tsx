@@ -6,16 +6,6 @@ export function Navigation() {
   const pathname = usePathname();
   const links = [
     {
-      href: "/spor/",
-      label: "Spør KI",
-      active: pathname.replace(/\/$/, "") === "/spor",
-    },
-    {
-      href: "/#ressurser",
-      label: "Verktøykatalog",
-      active: pathname === "/" || pathname.startsWith("/ressurser"),
-    },
-    {
       href: "/kom-i-gang/",
       label: "Kom i gang",
       active: pathname.replace(/\/$/, "") === "/kom-i-gang",
@@ -24,6 +14,16 @@ export function Navigation() {
       href: "/retningslinjer/",
       label: "Retningslinjer",
       active: pathname.replace(/\/$/, "") === "/retningslinjer",
+    },
+    {
+      href: "/#ressurser",
+      label: "Verktøykatalog",
+      active: pathname === "/" || pathname.startsWith("/ressurser"),
+    },
+    {
+      href: "/spor/",
+      label: "Spør KI",
+      active: pathname.replace(/\/$/, "") === "/spor",
     },
     {
       href: "/om/",

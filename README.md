@@ -76,23 +76,64 @@ Portalen viser tre eksempelressurser og en beskrivelse av tilgjengelighetsskille
 
 Se [utviklingsplanen](UTVIKLINGSPLAN.md) for videre arbeid.
 
+## Funksjonalitetsoversikt
+
+Forsidens tre snarveier og valg av anbefalt prøveoppgave ligger i `src/content/home.ts`. Anbefalingen peker på en ressurs med slug; tittel, beskrivelse og lenke avledes av `resources.ts`, slik at forside, katalog, detaljside og Spør KI bruker samme tekst. For å anbefale en annen oppgave endres bare slug-en. En manglende ressurs gir feil ved oppstart/bygging.
+
+`/funksjonalitet/` viser portalens funksjoner og modenhetsstatus, med lenke fra bunnteksten. Oversikten, nettstedskartet og Spør KI bruker samme register i `src/content/features.ts`. Ressursantall og beskrivelser av felles innholdssider hentes fra gjeldende innholdsdata. Det finnes ingen separat kopi som må oppdateres.
+
+Ved en ny eller endret funksjon oppdateres registeret én gang, inkludert status og eventuelt rutemønster. Dette er også pålagt i `AGENTS.md`. Next.js-konfigurasjonen kontrollerer registeret ved lokal oppstart og bygging, også Pages-bygg: en ny uregistrert side, en slettet registrert side eller en lenke til en ukjent side gir feil. Testene dekker disse tilfellene. Kontrollen kan ikke tolke meningen med vilkårlige kodeendringer; funksjonsbeskrivelser og modenhetsstatus krever fortsatt en vurdering.
+
+Siden oppdateres når innholdsdata/registeret endres og nettstedet bygges. Den viser støttede funksjoner og hva som krever oppsett, ikke en sanntidskontroll av modelltilkoblingen. Serverkonfigurasjon, API-nøkler og private dokumenter leses ikke av oversikten.
+
 ## RAG: Spør kunnskapsbasen
 
 Åpne chatboten med «Spør KI»-knappen nederst til høyre på forsiden, eller bruk `/spor/` for en egen side. Chatvinduet har tastaturfokus, lukking med Escape, samtalehistorikk og utfellbare kilder. Historikken beholdes mens vinduet lukkes og åpnes på forsiden, men lagres ikke etter sideoppdatering. Hvert spørsmål behandles separat av API-et; tidligere meldinger sendes ikke til modellen. `pnpm dev` / `sh scripts/dev.sh` starter både Next.js (127.0.0.1:3000) og RAG-tjenesten (127.0.0.1:3001). Nettleseren bruker `/api/rag` på portalens adresse, og Next.js videresender lokalt til tjenesten.
 
-Første versjon har en eksplisitt offentlig kunnskapsbase fra `src/content/resources.ts`, med tre eksempelressurser og en godkjent beskrivelse av tilgjengelighetsskillen. Hentingen bruker enkel nøkkelordrangering og prefiksmatching, ikke embeddings eller en vektordatabase. Titteltreff vektes høyere. Opptil tre relevante kilder sendes til modellen. Kilder uten treff fører ikke til modellkall.
+Nettsidene og kunnskapsbasen bruker felles innhold fra `src/content/`. Teksten for Kom i gang, Om (inkludert KI-prat) og Retningslinjer ligger i `src/content/pages/`. Sidekomponentene viser dette gjennom `ContentArticle`, og `knowledge.ts` lager RAG-kilder fra de samme avsnittene. Introduksjon, steg og forbehold velges med avsnitts-ID-er; det finnes ingen manuelt kopierte utdrag i `retrieval.ts`. Ressursbeskrivelsene kommer fortsatt direkte fra `resources.ts`.
 
-Uten konfigurert modell vises bare kildeutdrag. Det fremstilles ikke som et generert svar. For faktisk RAG-generering må en lokal Ollama-tjeneste med en allerede installert modell være tilgjengelig. Kopier `.env.example` til `.env.local` og sett `OLLAMA_MODEL` til det nøyaktige navnet på den installerte modellen. Start lokalmiljøet på nytt. Modellen installeres eller lastes ikke ned av portalen.
+Rediger teksten i innholdsfilen, ikke i sidekomponenten eller RAG-koden. Bevar avsnitts-ID-er, eller oppdater referansene i `knowledge.ts` hvis strukturen endres. En slettet referanse gir feil ved bygging og i testene. Nye innholdssider registreres eksplisitt i `knowledge.ts` og får en rute; private dokumenter eller vedleggsinnhold leses ikke automatisk. Kun innhold som kan inngå i den offentlige klienten skal registreres her.
+
+I lokalmiljøet oppdaterer Next.js sidene, og Node sin watch-modus starter RAG-tjenesten på nytt når importerte innholdsfiler endres. Oppdater nettleseren for å lese den nye teksten. Allerede viste chatsvar er historikk og skrives ikke om; send spørsmålet på nytt for å få nytt innhold. I produksjon må nettsiden bygges og RAG-tjenesten startes på nytt fra **samme Git-revisjon** ved utrulling. Felles innholdskilde erstatter ikke faglig gjennomgang av teksten.
+
+Hentingen bruker nøkkelordrangering og prefiksmatching, ikke embeddings eller en vektordatabase. Titteltreff vektes høyere. Opptil tre relevante kilder sendes til modellen. Kilder uten treff fører ikke til modellkall.
+
+Kontroller endringer med `pnpm test:rag` og `pnpm build`. `pnpm test:content-sync` tester også automatisk omlasting mot et virkelig RAG-API i en isolert midlertidig prosjektkopi. Den endrer ikke portalens innhold, bruker ingen modell og stopper testserveren etterpå.
+
+Uten konfigurert modell vises en strukturert veiledning fra den best rangerte siden: introduksjon, konkrete steg, status/forbehold og en direkte kildelenke. Dette er kildebasert veiledning, ikke et modellgenerert svar på spørsmålet. Andre treff vises som korte, utfellbare kildebeskrivelser. Ved manglende treff vises avgrensningen og forslag til nye spørsmål. Spørsmålsknappene fyller inn feltet uten å sende automatisk.
+
+Generering velges med `MODEL_PROVIDER`: `none` (standard), `ollama` eller `openai-compatible`. Uten modell brukes fortsatt veiledning fra kildene. Modelltjenesten brukes bare av RAG-serveren; nettleseren sender spørsmål til portalens `/api/rag`.
+
+For et eksternt modell-API kopierer du `.env.example` til `.env.local` for lokal utvikling og fyller inn følgende **på serveren**:
+
+```dotenv
+MODEL_PROVIDER=openai-compatible
+MODEL_API_URL=https://modell.example.no/v1/chat/completions
+MODEL_NAME=modellnavn-fra-leverandoren
+MODEL_API_KEY=sett-inn-nokkel-pa-serveren
+RAG_PORT=3001
+```
+
+Adressen er et eksempel. Bruk leverandørens **fulle Chat Completions-endepunkt**, inkludert eventuell gateway-sti. Koden legger ikke til `/v1` eller `/chat/completions`. Adapteren bruker JSON med `model`, `messages` og `stream: false`, Bearer-autentisering og tekst fra `choices[0].message.content`. Den støtter dermed dette konkrete [Chat Completions-formatet](https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/create), ikke alle leverandørers API-er. Andre formater, Azure-endepunkter med `api-version`/`api-key`, Responses API og virksomhetsidentitet krever egne tilpasninger.
+
+URL-en må bruke HTTPS og kan ikke inneholde brukernavn, passord, query eller fragment. Ufullstendig konfigurasjon av valgt ekstern modell stopper RAG-serveren med en melding som bare oppgir variabelnavn. Videresendinger følges ikke, og modellkall avbrytes etter 60 sekunder. Rå leverandørfeil, URL-er og konfigurasjon returneres ikke til nettleseren. Ved feil beholdes veiledning og kilder.
+
+I produksjon legges nøkkelen i driftstjenestens secret-lager og injiseres som `MODEL_API_KEY` ved **kjøring av RAG-serveren**. Bruk aldri `NEXT_PUBLIC_`-prefiks eller `next.config.ts` sin `env`-seksjon til nøkkelen. Den skal ikke ligge i React-komponenter, innholdsfiler eller Git. `.env.local` er ignorert av Git; `.env.example` inneholder bare tomme verdier. Ingen reell URL eller nøkkel er konfigurert av dette oppsettet. Se også [API-veiledningen om serverlagrede nøkler](https://developers.openai.com/api/reference/overview).
+
+Start RAG-tjenesten på nytt etter endring av modellvariabler: stopp og start `pnpm dev` i utvikling, eller restart serverprosessen som kjører `pnpm rag:start` i produksjon. Nøkkelen trengs ikke ved bygging av nettstedet. Spørsmål og hentede utdrag sendes til valgt leverandør når ekstern generering er aktivert; velg tjeneste etter virksomhetens avklaringer.
+
+Lokal Ollama er fortsatt støttet. Velg `MODEL_PROVIDER=ollama` og oppgi navnet på en allerede installert modell:
 
 ```text
+MODEL_PROVIDER=ollama
 OLLAMA_MODEL=navnet-på-din-installerte-modell
 OLLAMA_URL=http://127.0.0.1:11434
 RAG_PORT=3001
 ```
 
-Adapteren bruker Ollamas `/api/chat`. Kun lokale loopback-adresser tillates; videresendinger følges ikke. Ingen skytilkobling eller GitHub-tilgang er konfigurert. Kildeutdrag og spørsmålet sendes til den lokale modellen. Spørsmål lagres ikke av appen, men modellserverens egen logging må vurderes separat.
+Ollama-adapteren bruker `/api/chat` og tillater kun lokale loopback-adresser. Portalen installerer eller laster ikke ned modellen. Eldre oppsett med bare `OLLAMA_MODEL` virker fortsatt når `MODEL_PROVIDER` ikke er satt. Spørsmål lagres ikke av appen; valgt modellservers logging og lagring må vurderes separat. Ingen GitHub-tilgang er konfigurert.
 
-Svar vises som ren tekst. Kildelisten viser hentet grunnlag, ikke bevis for at alle genererte påstander er riktige. Ingen automatiske verktøykall eller kjøring av kildeinstruksjoner er aktivert.
+Modellsvar presenteres med avsnitt, lister, utheving og klikkbare nummererte kildehenvisninger. Modelltekst blir aldri tolket som HTML eller vilkårlige lenker. Kildelisten viser hentet grunnlag, ikke bevis for at alle genererte påstander er riktige. Ingen automatiske verktøykall eller kjøring av kildeinstruksjoner er aktivert.
 
 I Pages-bygg er modellkall deaktivert. Offentlig kildesøk kjører da i nettleseren. Ikke legg private data i denne listen: den inngår i den statiske klienten.
 

@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { retrieve, corpus } from "../src/features/rag/retrieval.ts";
-import { validateQuestion } from "../src/features/rag/contracts.ts";
+import { validateQuestion, isSources } from "../src/features/rag/contracts.ts";
 import { resources } from "../src/content/resources.ts";
 
 test("relevant kodekilde rangeres først", () => {
@@ -13,11 +13,44 @@ test("irrelevante spørsmål gir ikke tilfeldige kilder", () => {
 });
 test("offentlig liste inneholder bare kjente interne lenker", () => {
   assert.deepEqual(
-    corpus.map((source) => source.id),
+    corpus
+      .filter((source) => source.href.startsWith("/ressurser/"))
+      .map((source) => source.id),
     resources.map((resource) => resource.slug),
   );
-  for (const source of corpus)
-    assert.match(source.href, /^\/ressurser\/[a-z-]+\/$/);
+  assert.ok(isSources(corpus));
+});
+test("vanlige spørsmål finner riktig veiledning med konkrete steg og status", () => {
+  for (const [question, id] of [
+    ["Hvordan tester jeg tilgjengeligheten?", "tilgjengelighetserklaering"],
+    ["Hva er KI-prat?", "ki-prat"],
+    ["Hvordan kommer jeg i gang med KI?", "kom-i-gang"],
+    ["Hvilke retningslinjer gjelder for KI?", "retningslinjer"],
+    ["Hvilke verktøy er godkjent?", "retningslinjer"],
+  ]) {
+    const source = retrieve(question)[0];
+    assert.equal(source?.id, id, question);
+    assert.ok(source.guide?.summary);
+    assert.ok(source.guide?.steps.length);
+  }
+  assert.match(retrieve("tilgjengelighet")[0].guide!.note!, /Beta/);
+  assert.match(retrieve("retningslinjer")[0].guide!.summary, /arbeidsutkast/);
+});
+test("API-kilder avviser eksterne lenker og ugyldig veiledning", () => {
+  assert.equal(
+    isSources([{ ...corpus[0], href: "https://example.com" }]),
+    false,
+  );
+  assert.equal(
+    isSources([{ ...corpus[0], guide: { summary: "Tekst", steps: [7] } }]),
+    false,
+  );
+  assert.equal(
+    isSources([
+      { ...corpus[0], guide: { summary: "Tekst", steps: [], note: {} } },
+    ]),
+    false,
+  );
 });
 test("tilgjengelighetsskillen kan finnes i kildesøket", () => {
   assert.equal(

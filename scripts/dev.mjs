@@ -1,7 +1,10 @@
 import { spawn } from "node:child_process";
-import { startRagServer } from "./rag-server.mjs";
-
-const rag = startRagServer();
+// Node follows imported content files and restarts RAG when they change.
+const rag = spawn(
+  process.execPath,
+  ["--watch", "--env-file-if-exists=.env.local", "scripts/rag-server.mjs"],
+  { stdio: "inherit", env: process.env },
+);
 const next = spawn(
   process.execPath,
   [
@@ -13,18 +16,25 @@ const next = spawn(
   ],
   { stdio: "inherit", env: process.env },
 );
-rag.on("error", (error) => {
-  console.error("Kunne ikke starte RAG-tjenesten:", error.message);
-  next.kill();
-  process.exitCode = 1;
-});
+let stopping = false;
 function shutdown() {
+  if (stopping) return;
+  stopping = true;
   next.kill("SIGTERM");
-  rag.close();
+  rag.kill("SIGTERM");
+}
+for (const child of [rag, next]) {
+  child.on("error", (error) => {
+    console.error("Kunne ikke starte lokalmiljøet:", error.message);
+    process.exitCode = 1;
+    shutdown();
+  });
+  child.on("exit", (code) => {
+    if (!stopping) {
+      process.exitCode = code ?? 1;
+      shutdown();
+    }
+  });
 }
 process.on("SIGINT", shutdown);
 process.on("SIGTERM", shutdown);
-next.on("exit", (code) => {
-  rag.close();
-  process.exitCode = code ?? 0;
-});

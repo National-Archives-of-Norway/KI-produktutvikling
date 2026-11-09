@@ -29,16 +29,24 @@
 }
 .reading {
   display: flex;
-  gap: 30px;
+  gap: 24px;
   align-items: center;
   justify-content: space-between;
-  padding: 35px;
+  padding: 28px;
   border: 1px solid var(--border);
   border-radius: 12px;
   margin-bottom: 60px;
 }
 .reading p {
   max-width: 620px;
+  margin: 0;
+  color: var(--muted);
+}
+.reading h2 {
+  margin: 10px 0 12px;
+}
+.reading > div {
+  min-width: 0;
 }
 @media (max-width: 950px) {
   .hero p,

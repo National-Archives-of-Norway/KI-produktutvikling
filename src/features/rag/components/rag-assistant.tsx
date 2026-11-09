@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useId, useRef } from "react";
+import { useId } from "react";
 import { useChat } from "../use-chat";
 import { ChatComposer } from "./chat-composer";
 import { ChatTranscript } from "./chat-transcript";
@@ -8,10 +8,6 @@ import { ChatWelcome } from "./chat-welcome";
 export function RagAssistant({ compact = false }: { compact?: boolean }) {
   const inputId = useId();
   const chat = useChat();
-  const latest = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    if (chat.turns.length) latest.current?.scrollIntoView({ block: "nearest" });
-  }, [chat.turns]);
   return (
     <div className={compact ? "rag-chat rag-chat-compact" : "rag-chat"}>
       <ChatWelcome
@@ -21,14 +17,19 @@ export function RagAssistant({ compact = false }: { compact?: boolean }) {
           document.getElementById(inputId)?.focus();
         }}
       />
-      <ChatTranscript turns={chat.turns} />
-      <div ref={latest} />
+      <ChatTranscript
+        turns={chat.turns}
+        onSelect={(question) => {
+          chat.setQuestion(question);
+          document.getElementById(inputId)?.focus();
+        }}
+      />
       <p className="rag-status" role="status">
         {chat.busy
           ? "Arbeider med spørsmålet ditt."
           : chat.demo
-            ? "Demo: kildesøk. Genererte svar krever servermiljø."
-            : "Genererte svar krever en konfigurert lokal modell."}
+            ? "Veiledning fra portalens innhold. Ingen spørsmål sendes til en modell."
+            : "Bruk kildene til å kontrollere veiledningen. Hvert spørsmål behandles separat."}
       </p>
       <ChatComposer
         inputId={inputId}

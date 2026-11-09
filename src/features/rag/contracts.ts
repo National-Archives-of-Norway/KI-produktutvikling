@@ -3,6 +3,11 @@ export type RagSource = {
   title: string;
   href: string;
   text: string;
+  guide?: {
+    summary: string;
+    steps: string[];
+    note?: string;
+  };
 };
 export type RagResult =
   | {
@@ -34,7 +39,22 @@ export function isSources(value: unknown): value is RagSource[] {
         typeof source.title === "string" &&
         typeof source.text === "string" &&
         typeof source.href === "string" &&
-        /^\/ressurser\/[a-z-]+\/$/.test(source.href),
+        (/^\/ressurser\/[a-z-]+\/$/.test(source.href) ||
+          [
+            "/om/",
+            "/om/#ki-prat",
+            "/retningslinjer/",
+            "/kom-i-gang/",
+            "/funksjonalitet/",
+          ].includes(source.href)) &&
+        (source.guide === undefined ||
+          (typeof source.guide?.summary === "string" &&
+            Array.isArray(source.guide.steps) &&
+            source.guide.steps.every(
+              (step: unknown) => typeof step === "string",
+            ) &&
+            (source.guide.note === undefined ||
+              typeof source.guide.note === "string"))),
     )
   );
 }

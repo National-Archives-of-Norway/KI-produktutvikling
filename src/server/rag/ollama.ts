@@ -1,5 +1,5 @@
 import type { ModelAdapter } from "./model.ts";
-import { SYSTEM_PROMPT } from "./prompt.ts";
+import { createModelMessages } from "./messages.ts";
 
 export function createOllamaAdapter(
   config: { model: string; endpoint: URL },
@@ -16,20 +16,7 @@ export function createOllamaAdapter(
           model: config.model,
           stream: false,
           options: { temperature: 0.1, num_predict: 700 },
-          messages: [
-            { role: "system", content: SYSTEM_PROMPT },
-            {
-              role: "user",
-              content: JSON.stringify({
-                question,
-                sources: sources.map((s, i) => ({
-                  number: i + 1,
-                  title: s.title,
-                  excerpt: s.text,
-                })),
-              }),
-            },
-          ],
+          messages: createModelMessages(question, sources),
         }),
       });
       if (!response.ok) throw new Error("model_error");

@@ -1,19 +1,36 @@
+import { buildPageSources } from "../../content/knowledge.ts";
+import { getFeatureSource } from "../../content/features.ts";
 import { resources } from "../../content/resources.ts";
 
 import type { RagSource } from "./contracts.ts";
 // Eksplisitt liste med offentlige kilder. Ingen filsystem- eller GitHub-tilgang.
-export const corpus: RagSource[] = resources.map((r) => ({
-  id: r.slug,
-  title: r.title,
-  href: `/ressurser/${r.slug}/`,
-  text: [
-    r.description,
-    r.usage,
-    ...r.steps,
-    r.example,
-    ...(r.keywords ?? []),
-  ].join("\n"),
-}));
+export const corpus: RagSource[] = [
+  ...resources.map((r) => ({
+    id: r.slug,
+    title: r.title,
+    href: `/ressurser/${r.slug}/`,
+    text: [
+      r.description,
+      r.usage,
+      ...r.steps,
+      r.example,
+      ...(r.keywords ?? []),
+      ...(r.type === "Skill"
+        ? ["Beta: Skillen er ennå ikke gjennomgått av et menneske."]
+        : []),
+    ].join("\n"),
+    guide: {
+      summary: r.usage,
+      steps: r.steps,
+      note:
+        r.type === "Skill"
+          ? "Beta: Skillen er ennå ikke gjennomgått av et menneske."
+          : "Dette er eksempelinnhold til utprøving.",
+    },
+  })),
+  ...buildPageSources(),
+  getFeatureSource(),
+];
 
 const stopWords = new Set([
   "hva",
@@ -42,6 +59,17 @@ const stopWords = new Set([
   "ki",
   "dere",
   "man",
+  "gjør",
+  "gjøre",
+  "bruker",
+  "bruke",
+  "hjelp",
+  "ønsker",
+  "trenger",
+  "dette",
+  "denne",
+  "mitt",
+  "meg",
 ]);
 function terms(text: string) {
   return [

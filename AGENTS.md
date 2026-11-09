@@ -16,3 +16,9 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - Bevar eksisterende historikk. Oppgi versjon, commit, tag og publiseringsstatus bare når de er kjent. Ikke oppfinn en referanse til commiten som ennå ikke er laget.
 - Hvis oppgaven også endrer filer i `Skills`-repoet, oppdater versjonsloggen der i tillegg. Portalens logg erstatter ikke Skills-loggen.
 - Før levering: kontroller at loggen dekker de vesentlige endringene i diffen. Dette er en arbeidsinstruksjon, ikke en automatisk Git-kontroll, og gir ikke i seg selv tillatelse til commit eller publisering.
+
+## Hold funksjonalitetsoversikten oppdatert
+
+- Ved nye, endrede eller fjernede funksjoner: oppdater definisjon og modenhetsstatus i `src/content/features.ts` i samme arbeidsøkt. Ikke vedlikehold kopier av oversikten i nettsidetekst eller RAG-kilder.
+- Nye sider må registreres med riktig rutemønster. Next.js-konfigurasjonen kontrollerer ved oppstart/bygg at sider og register samsvarer. Kontrollen kan finne manglende sider og brutte rutereferanser, men kan ikke avgjøre hva en kodeendring betyr for beskrivelse, godkjenning eller modenhet.
+- Funksjonalitetsoversikten, nettstedskartet og Spør KI avledes av registeret. Ressursantall og sidebeskrivelser kommer fra innholdsfilene. Ikke les servernøkler eller bruk faktisk hemmelig konfigurasjon i den offentlige oversikten.

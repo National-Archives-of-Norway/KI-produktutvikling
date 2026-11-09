@@ -43,6 +43,8 @@ export default function RootLayout({
               >
                 <Link href="/tilgjengelighet/">Tilgjengelighetserklæring</Link>
                 <Link href="/nettstedskart/">Nettstedskart</Link>
+                <Link href="/versjonslogg/">Versjonslogg</Link>
+                <Link href="/funksjonalitet/">Funksjonalitetsoversikt</Link>
               </nav>
             </div>
             <span>Lokal prototype · under utprøving</span>

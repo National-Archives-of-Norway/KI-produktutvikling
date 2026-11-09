@@ -98,7 +98,7 @@ export const resources: Resource[] = [
     action: "Se prompten",
     title: "Utforsk et brukerbehov",
     description:
-      "Still bedre spørsmål og synliggjør antakelser tidlig i produktarbeidet.",
+      "Beskriv en situasjon du vil forstå bedre. Få forslag til åpne intervjuspørsmål, og vurder hvilke dere vil prøve med brukere.",
     usage:
       "Bruk eksemplet til å forberede utforsking. KI-forslag erstatter ikke undersøkelser med faktiske brukere.",
     steps: [

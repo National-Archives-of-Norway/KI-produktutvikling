@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getSiteLinks } from "@/content/features";
 import { resources } from "@/content/resources";
 
 export const metadata = { title: "Nettstedskart" };
@@ -11,27 +12,11 @@ export default function SiteMapPage() {
       <p>Finn alle sidene i KI-Produktutvikling.</p>
       <h2>Sider</h2>
       <ul>
-        <li>
-          <Link href="/">Forsiden</Link>
-        </li>
-        <li>
-          <Link href="/#ressurser">Verktøykatalog</Link>
-        </li>
-        <li>
-          <Link href="/kom-i-gang/">Kom i gang</Link>
-        </li>
-        <li>
-          <Link href="/retningslinjer/">Retningslinjer</Link>
-        </li>
-        <li>
-          <Link href="/om/">Om portalen</Link>
-        </li>
-        <li>
-          <Link href="/spor/">Spør kunnskapsbasen</Link>
-        </li>
-        <li>
-          <Link href="/tilgjengelighet/">Tilgjengelighetserklæring</Link>
-        </li>
+        {getSiteLinks().map((link) => (
+          <li key={link.href}>
+            <Link href={link.href}>{link.label}</Link>
+          </li>
+        ))}
       </ul>
       <h2>Ressurser</h2>
       <ul>

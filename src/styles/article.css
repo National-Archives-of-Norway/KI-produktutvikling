@@ -38,6 +38,18 @@ aside {
 .article [id] {
   scroll-margin-top: 24px;
 }
+.feature-summary {
+  margin-block: 30px;
+}
+.feature-summary h3 {
+  margin-block: 4px 8px;
+  font-size: 21px;
+}
+.feature-summary .feature-status {
+  color: var(--accent);
+  font-size: 13px;
+  margin-bottom: 0;
+}
 .example-text {
   white-space: pre-wrap;
   overflow-wrap: anywhere;

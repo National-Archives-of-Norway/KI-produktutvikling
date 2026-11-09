@@ -10,6 +10,67 @@
 .rag-answer {
   white-space: pre-wrap;
 }
+.chat-answer p {
+  white-space: pre-wrap;
+}
+.chat-answer li,
+.chat-steps li {
+  margin-block: 10px;
+  line-height: 1.65;
+  font-size: 15px;
+}
+.chat-answer ol,
+.chat-answer ul,
+.chat-steps {
+  padding-left: 24px;
+}
+.chat-answer-title {
+  font-weight: 600;
+  font-size: 18px !important;
+}
+.chat-note {
+  color: var(--muted);
+  font-size: 13px !important;
+}
+.chat-primary-source {
+  display: inline-block;
+  padding-block: 10px;
+}
+.chat-answer-note {
+  display: block;
+  margin-top: 8px;
+}
+.chat-sources-label {
+  font-weight: 600;
+  margin-top: 24px;
+}
+.chat-next-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+.chat-next-topics p {
+  width: 100%;
+  color: var(--muted);
+  font-size: 13px;
+  margin-bottom: 0;
+}
+.chat-next-topics button {
+  font: inherit;
+  font-size: 13px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--accent) 7%, transparent);
+  color: var(--accent);
+  cursor: pointer;
+  text-align: left;
+}
+.chat-next-topics button:hover {
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+}
 .rag-source {
   padding: 20px;
   border: 1px solid var(--border);

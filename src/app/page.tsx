@@ -3,8 +3,10 @@ import { Catalog } from "@/components/catalog";
 import Link from "next/link";
 import { LogoMark } from "@/components/logo-mark";
 import { Chatbot } from "@/features/rag/components/chatbot";
+import { homeContent, getRecommendedResource } from "@/content/home";
 
 export default function Home() {
+  const recommended = getRecommendedResource();
   return (
     <>
       <Chatbot />
@@ -48,35 +50,24 @@ export default function Home() {
         <Catalog />
       </section>
       <nav className="quick-links" aria-label="Lær, prøv og del">
-        <Link href="/kom-i-gang/">
-          <span className="number">01 / LÆR</span>
-          <strong>
-            Finn en god start <span aria-hidden="true">→</span>
-          </strong>
-        </Link>
-        <Link href="/ressurser/kodegjennomgang/">
-          <span className="number">02 / PRØV</span>
-          <strong>
-            Prøv en eksempelressurs <span aria-hidden="true">→</span>
-          </strong>
-        </Link>
-        <Link href="/om/#bidra">
-          <span className="number">03 / DEL</span>
-          <strong>
-            Del det dere lærer <span aria-hidden="true">→</span>
-          </strong>
-        </Link>
+        {homeContent.quickLinks.map((link) => (
+          <Link key={link.label} href={link.href}>
+            <span className="number">{link.label}</span>
+            <strong>
+              {link.title} <span aria-hidden="true">→</span>
+            </strong>
+          </Link>
+        ))}
       </nav>
-      <section className="reading">
+      <section className="reading" aria-labelledby="recommended-task-title">
         <div>
-          <div className="eyebrow">FØRSTE STEG</div>
-          <h2>Start med en avgrenset oppgave.</h2>
-          <p>
-            Velg noe dere kjenner godt. Beskriv ønsket resultat, undersøk
-            forslagene og del det dere lærer.
-          </p>
+          <div className="eyebrow">{homeContent.recommendation.label}</div>
+          <h2 id="recommended-task-title">{recommended.title}</h2>
+          <p>{recommended.description}</p>
         </div>
-        <PortalButton href="/kom-i-gang/">Les veiledningen ↗</PortalButton>
+        <PortalButton href={`/ressurser/${recommended.slug}/`}>
+          {homeContent.recommendation.action} <span aria-hidden="true">→</span>
+        </PortalButton>
       </section>
     </>
   );

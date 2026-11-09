@@ -81,7 +81,13 @@ test("konfigurasjon avviser ekstern modelladresse og credentials", () => {
     "http://user:pass@localhost:11434",
     "http://192.168.1.1:11434",
   ])
-    assert.throws(() => loadRagConfig({ OLLAMA_URL }));
+    assert.throws(() =>
+      loadRagConfig({
+        MODEL_PROVIDER: "ollama",
+        OLLAMA_MODEL: "test",
+        OLLAMA_URL,
+      }),
+    );
   assert.throws(() => loadRagConfig({ RAG_PORT: "NaN" }));
 });
 test("HTTP-grensen håndterer kontrakt, ugyldig JSON, størrelse og origin", async () => {

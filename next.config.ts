@@ -1,4 +1,11 @@
 import type { NextConfig } from "next";
+import {
+  findPageRoutes,
+  validateFeatures,
+} from "./src/server/features/validate.ts";
+import { join } from "node:path";
+
+validateFeatures(findPageRoutes(join(process.cwd(), "src/app")));
 
 const pages = process.env.BUILD_TARGET === "pages";
 const nextConfig: NextConfig = {

@@ -50,7 +50,7 @@ export function createRagService(
           status: 502,
           body: {
             error:
-              "Modellen kunne ikke svare. Kontroller at Ollama kjører og at valgt modell er installert.",
+              "Modelltjenesten kunne ikke svare akkurat nå. Du kan fortsatt lese veiledningen og kildene nedenfor.",
             sources,
           },
         };

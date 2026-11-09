@@ -4,6 +4,81 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 «Agent» betyr kodeassistenten som utførte arbeidet. Git-forfatteren registreres separat av Git og kan være personen som oppretter commiten. Eksakt modellvariant er ikke registrert for tidligere arbeid og oppgis derfor ikke. Ingen underagenter ble brukt til kvalitetskontrollen eller opprettelsen av denne loggen.
 
+## Ikke utgitt – menyrekkefølge og lenke til retningslinjer – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI).
+
+- Endret hovedmenyen til Kom i gang → Retningslinjer → Verktøykatalog → Spør KI → Om, slik at oppstart og rammer kommer før verktøy og assistent.
+- Lagt til en tydelig «Før du begynner»-henvisning tidlig i Kom i gang, med lenke til retningslinjene og presisering av utkaststatus. Teksten ligger i felles innholdskilde og inngår også i RAG-grunnlaget.
+- Kontroll: TypeScript, Prettier og `git diff --check` bestod. Rekkefølgen, aktivt menypunkt og henvisningen er kontrollert i lokal nettleser. Lokalmiljøet ble startet for forhåndsvisningen.
+
+## Ikke utgitt – invitasjon til KI-prat – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI).
+
+- Lagt til en invitasjon i den felles Om-teksten for dem som jobber med produktutvikling eller utvikling av løsninger i Nasjonalarkivet, med oppfordring om å kontakte AI enablement-teamet for å delta.
+- Samme avsnitt brukes i Spør KIs veiledning om KI-prat. Ingen ubekreftet e-postadresse eller Teams-lenke er lagt til.
+- Kontroll: Alle åtte tester av felles innhold og funksjonsregister, Prettier og `git diff --check` bestod.
+
+## Ikke utgitt – tydeligere innganger og anbefalt prøveoppgave – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI).
+
+- Endret Lær/Prøv/Del til «Kom i gang med KI», «Finn en ressurs til oppgaven» og «Del erfaringer i KI-prat», med lenker til oppstartsveiledningen, katalogen og KI-prat.
+- Erstattet det gjentakende Første steg-feltet med «Prøv i praksis» og ressursen «Utforsk et brukerbehov». Tittel, beskrivelse og lenke hentes fra ressurskilden; valget av anbefaling og snarveiene ligger i `src/content/home.ts`.
+- Gjort ressursens felles beskrivelse mer konkret om intervjuspørsmål og brukerinnsikt. Samme tekst brukes på forside, i katalogen, på detaljsiden og i Spør KI.
+- Redusert luft og høyde i anbefalingsfeltet, bevart portalens uttrykk og oppdatert funksjonsregisteret og README. En anbefaling til en manglende ressurs gir feil ved oppstart/bygging.
+- Kontroll: Alle 36 tester og produksjonsbygg med TypeScript bestod. De tre inngangene, anbefalingens tekst og lenke og det mer kompakte feltet er kontrollert i lokal nettleser. Ingen ny full tilgjengelighetsrevisjon er utført.
+
+## Ikke utgitt – automatisk funksjonalitetsoversikt – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI).
+
+- Opprettet `/funksjonalitet/` med lenke fra bunnteksten og nettstedskartet, og tydelig skille mellom tilgjengelig funksjonalitet, Beta/utkast, modelloppsett og uimplementert tilgangsstyring.
+- Samlet funksjonsdefinisjoner i `src/content/features.ts`. Oversikten, nettstedskartet og Spør KI bruker samme register; ressursantall, KI-prat og beskrivelser av innholdssidene avledes av gjeldende innholdsdata.
+- Lagt til kontroll i Next.js-konfigurasjonen ved oppstart og bygging som avviser uregistrerte eller slettede sider, duplisering og ukjente rutelenker. Dokumentert at meningsendringer og modenhetsstatus må vurderes når funksjoner endres; dette kan ikke utledes automatisk av all kode.
+- Oppdatert README og AGENTS.md med vedlikeholdsregler og regresjonstester. Oversikten viser ikke hemmelig konfigurasjon eller sanntidsstatus for modelltjenesten.
+- Kontroll: Alle 36 tester, TypeScript og produksjonsbygg bestod. Siden, statusene og bunntekstlenken er kontrollert i lokal nettleser. Dette er ikke en ny full tilgjengelighetsrevisjon.
+
+## Ikke utgitt – versjonslogg i bunnteksten – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI).
+
+- Lagt til «Versjonslogg» i den felles bunnteksten og nettstedskartet, med en lesbar side på `/versjonslogg/`.
+- Siden bygges direkte fra denne filen, slik at endringer ikke trenger å vedlikeholdes i en separat kopi. Neste bygg/utrulling tar med den oppdaterte loggen.
+- Kontroll: Produksjonsbygg med TypeScript bestod. Bunntekstlenken ble funnet på alle 13 sider med felles layout; Next.js sin separate globale feilside inngår ikke. Versjonsloggsiden har riktig hovedoverskrift. `git diff --check` bestod.
+
+## Ikke utgitt – klargjort eksternt modell-API – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI), med `openai-docs` for kontroll av API-format og nøkkelhåndtering.
+
+- Lagt til valg mellom veiledning uten modell, lokal Ollama og et eksternt OpenAI-kompatibelt Chat Completions-API. Serveren konfigureres med `MODEL_PROVIDER`, `MODEL_API_URL`, `MODEL_NAME` og `MODEL_API_KEY`.
+- Ekstern adapter bruker full konfigurert HTTPS-adresse og Bearer-header. Nøkkelen leses bare i serveroppsettet og inngår ikke i modellens meldinger, API-svar eller oppstartslogger. Ufullstendig oppsett og utrygge URL-formater avvises uten å vise innlagte verdier.
+- Modellkall har timeout, følger ikke videresendinger og skjuler rå leverandør-/transportfeil. Veiledning og kilder bevares ved feil. Ollama og ekstern adapter bruker samme kildebaserte meldingsgrunnlag.
+- Oppdatert `.env.example`, README og isolert synkroniseringstest. Beskrevet server-secrets, omstart, støttet API-format og begrensninger. Ingen ekstern URL, virkelig nøkkel eller leverandør er aktivert.
+- Kontroll: Alle 31 tester, TypeScript, produksjonsbygg og Prettier bestod. En falsk testnøkkel satt ved bygging og variabelnavnet `MODEL_API_KEY` ble ikke funnet i 84 klient-/statiske sidefiler. HTTP-tester verifiserte at nøkkel, API-adresse og rå leverandørfeil ikke returneres til nettleseren. Isolert test av automatisk innholdsomlasting bestod. Eksterne modellkall er bare testet med simulert transport, ikke en virkelig leverandør.
+
+## Ikke utgitt – felles innholdskilde for sider og Spør KI – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI).
+
+- Flyttet innholdet for Kom i gang, Om (inkludert KI-prat) og Retningslinjer til `src/content/pages/`. Sidekomponentene viser innholdet gjennom en felles renderer som bevarer overskrifter, avsnitt, lister, forbehold og lenker til vedlegg.
+- `knowledge.ts` avleder RAG-kilder og veiledning fra samme innhold, med referanser til avsnitts-ID-er i stedet for kopiert tekst. Manglende referanser gir feil ved bygging/testing. Om-sidens øvrige innhold inngår nå også i grunnlaget. Ressurskatalogen bruker fortsatt `resources.ts`.
+- Lokalmiljøet kjører RAG med automatisk omlasting når importerte innholdsfiler endres. I produksjon skal nettsiden bygges og RAG-tjenesten startes fra samme revisjon; gamle chatmeldinger beholdes som historikk.
+- Dokumentert hvor teksten vedlikeholdes og hvordan endringer kontrolleres. Lagt til regresjonstester for endret innhold, forbehold og ugyldige referanser, samt `test:content-sync` for automatisk API-omlasting i en isolert prosjektkopi.
+- Kontroll: 26 tester og produksjonsbygg bestod. Alle 47 titler, ingresser og innholdsblokker ble funnet i de ferdigbygde sidene. Isolert integrasjonstest bekreftet at en endring i innholdsfilen automatisk oppdaterer RAG-tekst og veiledning. Ingen modellgenerering eller ny full tilgjengelighetsrevisjon er utført.
+
+## Ikke utgitt – mer nyttige svar i Spør KI – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI).
+
+- Erstatter visningen av lange kildeutdrag med en lesbar introduksjon, konkrete steg, forbehold og en direkte lenke til den mest relevante veiledningen. Uten språkmodell merkes dette tydelig som hentet veiledning, ikke et individuelt generert svar.
+- Utvidet det eksplisitte kunnskapsgrunnlaget med Kom i gang, KI-prat og retningslinjeutkastet. Beta-status sendes også til en eventuell modell. Ingen private repoer eller dokumenter leses.
+- Modellsvar kan vise avsnitt, lister, utheving og klikkbare kildehenvisninger uten å tolke HTML eller vilkårlige lenker. Forbedret instruksen for korte, kildebaserte svar med forbehold.
+- Lagt til spørsmålsknapper, bedre veiledning ved manglende treff og rulling til starten av siste svar fremfor bunnen. Spørsmål behandles fortsatt separat.
+- Oppdatert README og tester for relevante treff, Beta-/utkaststatus og validering av kildeformat og lenker. Lokal språkmodell er fortsatt ikke konfigurert; reell generering mot Ollama er ikke testet.
+- Kontroll: Alle 23 tester, TypeScript, produksjonsbygg og formateringskontroll bestod. Kontrollert svar om KI-prat og verktøygodkjenning i lokal nettleser; sistnevnte beholder uavklart godkjenningsstatus. Dette er ikke en full tilgjengelighetsrevisjon. Lokalmiljøet er startet på nytt med oppdaterte kilder.
+
 ## Ikke utgitt – retningslinjeside – 9. november 2026
 
 **Utførende agent:** Codex (OpenAI).

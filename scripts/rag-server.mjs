@@ -1,21 +1,17 @@
 import { pathToFileURL } from "node:url";
 import { loadRagConfig } from "../src/server/rag/config.ts";
-import { createOllamaAdapter } from "../src/server/rag/ollama.ts";
+import { createConfiguredModel } from "../src/server/rag/provider.ts";
 import { createRagService } from "../src/server/rag/service.ts";
 import { createRagHttpServer } from "../src/server/rag/http.ts";
 
 export function startRagServer() {
   const config = loadRagConfig();
   const service = createRagService({
-    model: config.model
-      ? createOllamaAdapter({ model: config.model, endpoint: config.endpoint })
-      : undefined,
+    model: createConfiguredModel(config),
   });
   const server = createRagHttpServer(service);
   server.listen(config.port, "127.0.0.1", () =>
-    console.log(
-      `RAG: http://127.0.0.1:${config.port} (${config.model ? "lokal modell konfigurert" : "kildesøk uten modell"})`,
-    ),
+    console.log(`RAG: http://127.0.0.1:${config.port} (${config.provider})`),
   );
   return server;
 }
