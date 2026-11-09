@@ -117,6 +117,16 @@ export function getFeatures(): Feature[] {
       sitemapLabel: "Versjonslogg",
     },
     {
+      id: "utviklingsplan",
+      title: "Utviklingsplan",
+      description:
+        "Se leverte funksjoner, faseoversikt og krav som gjenstår før produksjonssetting. Siden bygges direkte fra prosjektets utviklingsplan.",
+      status: "available",
+      href: "/utviklingsplan/",
+      routes: ["/utviklingsplan/"],
+      sitemapLabel: "Utviklingsplan",
+    },
+    {
       id: "funksjonalitet",
       title: "Funksjonalitetsoversikt",
       description:

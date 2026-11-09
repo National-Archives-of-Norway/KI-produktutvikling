@@ -50,6 +50,34 @@ aside {
   font-size: 13px;
   margin-bottom: 0;
 }
+.document-table {
+  overflow-x: auto;
+  max-width: 100%;
+  margin-block: 24px;
+}
+.document-table:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 5px;
+}
+.document-table table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 640px;
+  font-size: 14px;
+}
+.document-table th,
+.document-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.document-table th {
+  color: var(--text);
+}
+.document-table td {
+  color: var(--muted);
+}
 .example-text {
   white-space: pre-wrap;
   overflow-wrap: anywhere;

@@ -4,6 +4,32 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 «Agent» betyr kodeassistenten som utførte arbeidet. Git-forfatteren registreres separat av Git og kan være personen som oppretter commiten. Eksakt modellvariant er ikke registrert for tidligere arbeid og oppgis derfor ikke. Ingen underagenter ble brukt til kvalitetskontrollen eller opprettelsen av denne loggen.
 
+## Ikke utgitt – fjernet prototypetekst i bunnteksten – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI).
+
+- Fjernet «Lokal prototype · under utprøving» fra den felles bunnteksten etter ønske. Dette endrer ikke funksjonsstatus eller produksjonskrav i utviklingsplanen.
+- Kontroll: Prettier og `git diff --check` bestod.
+
+## Ikke utgitt – utviklingsplan i bunnteksten – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI).
+
+- Lagt til Utviklingsplan i bunnteksten, nettstedskartet og funksjonsregisteret, med en lesbar side på `/utviklingsplan/`.
+- Siden bygges direkte fra `UTVIKLINGSPLAN.md`. Planen og versjonsloggen bruker en felles dokumentvisning med overskrifter, lister, lenker, oppgavestatus og tabeller som kan rulles på smale skjermer. Ingen separat plankopi vedlikeholdes.
+- Oppdatert README og planen med hvor nettsiden finnes og når endringer blir synlige.
+- Kontroll: Alle 36 tester og produksjonsbygg med TypeScript bestod. Bunntekstlenke, hovedoverskrifter for begge dokumentene og fem tabeller med samsvarende kolonnetall er kontrollert i bygget HTML. Ingen ny full tilgjengelighetsrevisjon er utført.
+
+## Ikke utgitt – avstemt utviklingsplan og produksjonskrav – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI).
+
+- Oppdatert utviklingsplanens leveranser og åtte faser mot kode, dokumentasjon og commit `e93e5f9`, inkludert felles innhold, Spør KI, eksternt modell-API, Skills-bibliotek, oversikter og forside/navigasjon.
+- Endret første delte leveranse fra offentlig Pages-demo til lukket pilot. Tydeliggjort krav P1–P10 for tilgang, drift, produksjonsruting/Origin, CI, modellverifisering, API-vern, innhold, tilgjengelighet og forvaltning.
+- Skilt mellom implementert kode, simulerte tester, reelt verifisert drift og produksjonsgodkjenning. Tidligere datostemplet historikk er bevart som historikk.
+- Lagt til vedlikeholdsregel i AGENTS.md og README om oppdatering av plan, berørte faser og produksjonskrav i samme arbeidsøkt som vesentlige endringer. Ingen periodisk jobb eller automatisk produksjonsgodkjenning er innført.
+- Kontroll: 13 lokale dokumentlenker, produksjonskrav P1–P10, bevart historikk og uendrede Next.js-instruksjoner er kontrollert. Prettier og `git diff --check` bestod. Dette er en dokumentasjonsoppdatering; ingen nye funksjonstester eller utrullinger er gjennomført.
+
 ## Ikke utgitt – menyrekkefølge og lenke til retningslinjer – 9. november 2026
 
 **Utførende agent:** Codex (OpenAI).

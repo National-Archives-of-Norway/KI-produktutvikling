@@ -1,208 +1,214 @@
 # Utviklingsplan for KI-Produktutvikling
 
-Sist oppdatert: 6. november 2026
+Sist oppdatert: **9. november 2026**. Utførende agent ved denne gjennomgangen: **Codex (OpenAI)**.
 
-Status: Fungerende lokal prototype. Teknisk grunnmur og design er i hovedsak implementert lokalt. MVP 1 gjenstår å publisere og brukerteste.
+**Status: Fungerende lokal prototype; ikke klar for produksjon eller deling av internt innhold.** Lokal funksjonalitet og modelladaptere er implementert. Drift, innlogging, faglig godkjenning og samlet lanseringskontroll gjenstår. Første delte miljø skal være en **lukket pilot**. Offentlig publisering vurderes senere, etter en egen beslutning.
 
-Dette er prosjektets levende utviklingsplan. Oppdater oppgaver, beslutninger og ferdigkriterier etter hvert som arbeidet går fremover. Avkryssing betyr at arbeidet er utført og verifisert.
+Gjennomgangen bygger på kode, dokumentasjon og lokal Git-historikk til og med `e93e5f9`. Siste samlede dokumenterte kjøring har **36 beståtte tester og produksjonsbygg**, samt avgrensede nettleserkontroller. Dette er ikke dokumentasjon på produksjonsdrift, godkjent innhold, full tilgjengelighet eller vellykkede kall mot en faktisk modellleverandør. Se versjonsloggen for kontrollomfanget i hver arbeidsøkt; publisering av en planside er ikke produksjonsgodkjenning.
+
+## Slik brukes og vedlikeholdes planen
+
+Denne filen er den gjeldende utviklingsplanen. Faseoversikten og produksjonskravene nedenfor viser dagens status. Avsnittet med historikk bevarer tidligere vurderinger; eldre testantall, oppgaver og prioriteringer der beskriver den aktuelle datoen, ikke dagens løsning.
+
+- Les relevante faser før vesentlig arbeid. Oppdater fremdrift, gjenstående arbeid, avhengigheter og dato i samme arbeidsøkt som endringen, før ferdigmelding eller commit.
+- Kryss av bare arbeid som er utført og verifisert. Skill mellom «implementert lokalt», «testet med simulert tjeneste», «verifisert i delt miljø» og «godkjent for produksjon».
+- Oppdater både planen og [versjonsloggen](VERSJONSLOGG.md) ved endringer i omfang, leveranser, prioriteringer eller produksjonskrav. Funksjonsbeskrivelser vedlikeholdes i `src/content/features.ts`.
+- Oppgi faktisk kontrollgrunnlag, kjente begrensninger og commit/issue når de finnes. Navngitt eier eller frist skal ikke oppfinnes; bruk «ikke avklart» og oppgi hvilken rolle som må avklares.
+- Før en utrulling gjennomgås alle aktuelle krav i tabellen nedenfor, også når bygg og tester består. Et grønt bygg betyr ikke at alle lanseringskrav er oppfylt.
+
+Reglene er også lagt i `AGENTS.md`, og gjelder fremtidig agentarbeid i prosjektet. Planen er ikke en automatisk tolkning av kode eller en periodisk jobb: meningen med endringer og godkjenninger må fortsatt vurderes av personen eller agenten som utfører arbeidet. CI og en fast gjennomgang i forbindelse med pull requests er ennå ikke etablert.
 
 ## Mål og rammer
 
-Utvikle en kunnskapsportal inspirert av [KI-produktutvikling i Nav](https://ki-utvikling.nav.no/), med både offentlig og internt innhold og virksomhetens egen designprofil.
+- **Målgruppe:** De som jobber med produktutvikling eller utvikling av løsninger i Nasjonalarkivet. Portalen skal gjøre det enklere å lære, prøve og dele nyttige arbeidsmåter med KI.
+- **Omfang nå:** Oppstartsveiledning, retningslinjeutkast, ressurskatalog, Spør KI, informasjon om teamet og KI-prat, tilgjengelighetsgrunnlag, versjonslogg og funksjonalitetsoversikt. Nyheter og egne agenter er mulige senere tillegg, ikke et krav til første pilot.
+- **Teknologi:** Next.js, TypeScript, MUI og `@digitalarkivet/mui-theme`, med portalens eget futuristiske komponent-/designlag. Publisert npm-pakke brukes uten tilgang til designbibliotekets private GitHub-repo.
+- **Utvikling og versjonering:** Lokal utvikling og Git er etablert. Portalrepoet har ingen GitHub-remote. Eget organisasjonsrepo, CI og utrulling må avklares og opprettes separat.
+- **Drift:** Driftsplattform, domene og ansvar er ikke valgt. Dagens løsning starter Next.js og RAG på lokal loopback. Pages finnes som statisk byggvariant, ikke som besluttet miljø for lukket pilot eller modellgenerering.
+- **Tilgang:** Brukerne skal i første delte miljø avgrenses til godkjente GitHub-brukere hos virksomheten. Organisasjon/team, nødvendige abonnementsegenskaper og konkret tilgangsløsning er ikke endelig avklart. Innlogging og autorisering er ikke implementert.
+- **GitHub-rettigheter:** Portalen skal ikke ha skrivetilgang til andre koderepoer. En eventuell medlemskontroll skal få et avgrenset formål og minimale nødvendige rettigheter.
+- **Innhold:** Felles innholdsdata brukes av sider, katalog, anbefalinger og RAG. Dette sikrer teknisk samsvar, men innebærer ikke faglig godkjenning. Internt materiale skal ikke legges i klientdata, `public/`, offentlige bygg eller dagens RAG-korpus.
+- **Modell:** Lokal Ollama og eksternt OpenAI-kompatibelt Chat Completions-API er støttet i kode. Leverandør, modell og virkelig API-tilkobling er ikke konfigurert/verifisert. API-nøkkelen skal bare være en serverhemmelighet.
 
-- Navn: **KI-Produktutvikling**.
-- Teknologisk utgangspunkt: Next.js og TypeScript.
-- Utvikling på lokal maskin, med GitHub til samarbeid, versjonering og automatisert publisering.
-- Designbibliotek: [nasjonalarkivet/da-mui-theme](https://github.com/nasjonalarkivet/da-mui-theme), tilgjengelig som npm-pakken `@digitalarkivet/mui-theme`. Integrasjonen bruker publisert pakke uten GitHub-repotilgang.
-- Futuristisk design utvikles i portalens eget tema og komponentlag.
-- Første delte miljø skal være lukket for godkjente GitHub-brukere. Hosting avventer avklaring av abonnement og drift. Pages er foreløpig en statisk byggvariant; offentlig publisering utsettes til portalen er produksjonsklar.
-- Innlogging og beskyttet innhold testes og driftes i et miljø med serverstøtte.
-- Portalen skal ha avgrensede GitHub-rettigheter og ingen skrivetilgang til andre koderepoer.
-- GitHub-organisasjonen antas foreløpig å være `nasjonalarkivet`; dette må bekreftes.
-- Driftsplattform og domene er ikke valgt.
+## Levert siden forrige planoppdatering
+
+| Område                           | Implementert og dokumentert                                                                                                                           | Begrensning som fortsatt gjelder                                                                                               |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Forside og navigasjon            | Lær/Prøv/Del, anbefalt oppgave «Utforsk et brukerbehov» fra ressursdata, menyen Kom i gang → Retningslinjer → Verktøykatalog → Spør KI → Om           | Begrenset intern brukertesting gjenstår                                                                                        |
+| Innhold og KI-prat               | Felles innholdsfiler for Kom i gang, Om og Retningslinjer, tydelig retningslinjelenke, KI-prat med deltakelsesinvitasjon og mandatforslag som vedlegg | Retningslinjer og mandat er utkast; eiere og godkjenning gjenstår                                                              |
+| Ressurser og Skills              | Fire katalogressurser, separat lokalt Skills-repo, tilgjengelighetsskill 0.3.0 med test-/rapportflyt, versjon og generell installasjonsveiledning     | Skills er Beta og ikke menneskelig gjennomgått; ingen distribusjon fra portalen eller GitHub er etablert                       |
+| Spør KI                          | Kildebasert veiledning, konkrete steg, kilder, nye spørsmål, forbedret presentasjon av modellsvar og serveradapter for eksternt API                   | Ingen faktisk modellgenerering er verifisert; hvert spørsmål behandles separat                                                 |
+| Kontinuerlig innholdsoppdatering | Sider og RAG deler innhold; lokal RAG lastes om ved innholdsendringer; isolert synkroniseringstest finnes                                             | I produksjon må Next.js og RAG utrulles fra samme revisjon; gamle chatsvar er historikk                                        |
+| Oversikter                       | Nettstedskart, versjonsloggside og funksjonalitetsoversikt med bunntekstlenker; byggkontroll for manglende/ukjente sider                              | Funksjonenes mening og modenhet må vedlikeholdes i registeret                                                                  |
+| Tilgjengelighet                  | Avgrensede kontroller, rettinger, WCAG-matrise, lokalt erklæringsutkast og daterte testresultater under `docs/tilgjengelighet/`                       | Flere manuelle kontroller og formell godkjenning/registrering gjenstår; nyere sider og chatendringer må inngå i neste kontroll |
+| Teknisk kvalitet                 | Moduldeling, lokale tester, TypeScript, formatering, produksjonsbygg og test av at en falsk modellnøkkel ikke følger med klientfiler                  | CI, driftssikkerhet og kontroll i det faktiske utrullingsmiljøet gjenstår                                                      |
+
+Referanser: Portalcommitene `797cd7b`, `9f27564` og `e93e5f9`, samt [versjonsloggen](VERSJONSLOGG.md). Skills-repoets siste lokale commit er `cf8f6d5`; repoene har separate logger og historikk.
+
+## Hva gjenstår før produksjonssetting?
+
+Ingen av kravene nedenfor er ferdig godkjent. Alle eiere er foreløpig **ikke avklart**; rolleangivelsene viser hvem som må utpekes. «Lukket pilot» betyr også et delt miljø og krever beskyttelse før tilgang gis.
+
+| ID  | Prioritet / tidspunkt        | Gjenstående leveranse og ferdigkriterium                                                                                                                                                                                                                                                   | Rolle som må avklares                                |
+| --- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------- |
+| P1  | Før delt pilot               | Beslutte driftsplattform, domene, tilgangsløsning, målgruppe og ansvar. Første miljø skal være lukket; offentlig utrulling skal ikke skje som standard.                                                                                                                                    | Prosjekteier og plattform/drift                      |
+| P2  | Før delt pilot               | Implementere og verifisere innlogging og autorisering. Avvis brukere uten tilgang også på direkte sideadresser, vedlegg og `/api/rag`. Test utlogging, utløpt/fjernet medlemskap og feil i identitetskontrollen.                                                                           | Teknisk ansvarlig og identitetsforvaltning           |
+| P3  | Før delt pilot               | Etablere drift for Next.js og RAG med HTTPS, intern ruting og prosessovervåking. Erstatte lokale forutsetninger: RAGs Origin-kontroll tillater bare localhost i dag, og Next.js peker på loopback. Test fra faktisk nettadresse med korrekte tillatte origins og interne tjenesteadresser. | Plattform/drift                                      |
+| P4  | Før delt pilot               | Etablere eget organisasjonsrepo, PR-/review-regler og CI som kjører relevante tester, format, typer og bygg. `pnpm check` kjører ikke testpakken i dag; testkommandoene må tas med uttrykkelig. Gi utrullingen minimale rettigheter og bruk server-secrets.                                | Teknisk ansvarlig og repoansvarlig                   |
+| P5  | Før pilot med genererte svar | Velge godkjent leverandør/modell, avklare databehandling og konfigurere URL/modell/nøkkel. Test faktiske svar, kildestøtte, manglende treff, timeout og leverandørfeil. Hvis dette utsettes, må piloten uttrykkelig lanseres som kildebasert veiledning uten modellgenerering.             | Produkteier, modellansvarlig og personvern/sikkerhet |
+| P6  | Før delt pilot               | Innføre tilgangs- og misbruksvern for API-et, rate-/kostnadsgrenser og avklart kapasitet. Dagens enkeltkallslås er ikke ratebegrensning. Bekreft at nøkkel og rå leverandørfeil ikke eksponeres i det utrullede miljøet.                                                                   | Teknisk ansvarlig og drift                           |
+| P7  | Før pilotinnhold tas i bruk  | Godkjenne første innhold, vedlegg og profilressurser, og utpeke innholdsansvarlige. Behold utkast-/Beta-merking til faktisk gjennomgang er gjort. Suisse-filer skal bare brukes hvis rettighetene er avklart; reserveskrift kan beholdes.                                                  | Fag-/innholdseier og profilansvarlig                 |
+| P8  | Før produksjonsgodkjenning   | Fullføre skjermleser, faktisk tekstforstørring/zoom, kontrast-/fokustilstander og relevante nettlesere på dagens sider og chat. Oppdatere testgrunnlag/erklæring, avklare godkjenner og endelig URL og ferdigstille formell erklæring etter virksomhetens prosess.                         | Tilgjengelighetsansvarlig og godkjenner              |
+| P9  | Før produksjonsgodkjenning   | Verifisere overvåking, feilhåndtering, logg-/lagringsrutiner, hendelsesansvar og tilbakeføring i faktisk miljø. Gjennomføre sikkerhets-/avhengighetskontroll og kontrollere personverninformasjon mot reell databehandling.                                                                | Drift, sikkerhet og personvern                       |
+| P10 | Før bredere lansering        | Gjennomføre lukket brukertest, rette prioriterte funn og godkjenne leveransen. Offentlig publisering krever en separat vurdering av innhold, tilgangsskille, drift og lanseringskrav.                                                                                                      | Prosjekteier med fag- og driftsansvarlige            |
+
+Tilgjengelighetsgrunnlag og konkrete uavklarte punkter finnes i [WCAG-kontrollen](docs/tilgjengelighet/WCAG-KONTROLL.md) og [erklæringsutkastet](docs/tilgjengelighet/TILGJENGELIGHETSERKLAERING.md). Disse dokumentene skal oppdateres fra nye resultater; denne planoppdateringen er ikke en ny tilgjengelighetsrevisjon.
 
 ## Faseoversikt
 
-| Fase | Leveranse                                        | Status                                |
-| ---- | ------------------------------------------------ | ------------------------------------- |
-| 1    | Avklaringer og prosjektgrunnlag                  | Delvis avklart                        |
-| 2    | Teknisk grunnmur og sikker arbeidsflyt           | Under arbeid                          |
-| 3    | Designretning og komponenter                     | Implementert, videre kvalitetssikring |
-| 4    | MVP 1: Offentlig demonstrasjon på GitHub Pages   | Lokal demo klar, ikke publisert       |
-| 5    | Servermiljø og utrulling                         | Ikke startet                          |
-| 6    | MVP 2: Innlogging og internt område              | Ikke startet                          |
-| 7    | MVP 3: Distribusjon av skills og andre ressurser | Ikke startet                          |
-| 8    | MVP 4: Forvaltning og produksjonslansering       | Ikke startet                          |
+| Fase | Leveranse                                            | Status 9. november 2026                                                             |
+| ---- | ---------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| 1    | Omfang, ansvar og tilgangsvalg                       | Målgruppe og første funksjoner avklart; eierskap, drift og tilgangsmodell åpne      |
+| 2    | Teknisk grunnmur og arbeidsflyt                      | Lokal implementering klar; GitHub-repo, CI og review-regler gjenstår                |
+| 3    | Design og tilgjengelighet                            | Design og avgrensede kontroller utført; samlet tilgjengelighetsgodkjenning gjenstår |
+| 4    | MVP 1: lokal portal og forberedelse til lukket pilot | Lokal leveranse klar; ikke delt eller brukertestet som pilot                        |
+| 5    | Servermiljø, modellkobling og utrulling              | Adaptere klargjort; driftsmiljø og faktisk modelltilkobling ikke etablert           |
+| 6    | MVP 2: innlogging og beskyttet tilgang               | Ikke implementert; nødvendig før første delte pilot                                 |
+| 7    | MVP 3: versjonerte skills og distribusjon            | Lokalt bibliotek og katalogintegrasjon på plass; review og distribusjon gjenstår    |
+| 8    | MVP 4: forvaltning og produksjonsgodkjenning         | Ikke godkjent; produksjonskrav P1–P10 følges opp                                    |
 
-Første arbeidsbolk er fase 1–4. Valg av driftsplattform avklares underveis, før innlogging og internt innhold implementeres.
+Fase 5 og 6 må samordnes før MVP 1 deles. Fase 7 kan utvikles parallelt, men full automatisk skill-installasjon er ikke et krav til første pilot med lesbart innhold. Pages beholdes foreløpig som bygg-/demovariant; det er ikke en beslutning om offentlig hosting.
 
 ## Fase 1 – Avklaringer og prosjektgrunnlag
 
-**Mål:** Etablere rammer, eierskap og avgrensninger før implementering.
+- [x] Definere målgruppe og portalens praktiske formål.
+- [x] Velge første innholdsområder og eget futuristisk design basert på publisert MUI-tema.
+- [x] Beslutte at første delte miljø skal være lukket, og at offentlig publisering utsettes.
+- [ ] Utpeke prosjekteier, teknisk ansvarlig, innholdsansvarlige og driftsansvarlig.
+- [ ] Bekrefte GitHub-organisasjon/team, tilgangsmodell og egnet abonnement/oppsett uten å anta at et privat repo beskytter nettstedet.
+- [ ] Velge driftsplattform og domene, og avklare hvilke data og verktøy første pilot kan bruke.
+- [ ] Avklare faglig godkjenning og rettigheter for innhold, vedlegg og eventuelle ekstra profilressurser.
 
-- [ ] Bekrefte målgrupper og hvilke oppgaver portalen skal hjelpe dem med.
-- [ ] Definere første innholdsområder: nyheter, veiledninger, skills, agenter, instrukser og prompter.
-- [ ] Avklare hva som skal være offentlig og internt.
-- [ ] Bekrefte GitHub-organisasjon og hvilke medlemmer eller team som skal få intern tilgang.
-- [x] Integrere designbiblioteket gjennom publisert npm-pakke uten privat GitHub-tilgang.
-- [ ] Avklare bruksvilkår for eventuelle ekstra profilressurser, særlig Suisse-skriftfiler.
-- [ ] Registrere beslutninger om arkitektur, innhold og tilgang.
-- [ ] Avklare eiere for portal, innhold og drift.
-
-**Leveranse:** Prosjektbeskrivelse, oppdatert arkitekturskisse og prioritert oppgaveliste.
-
-**Ferdig når:** Første versjon har tydelig omfang, og nødvendige tilganger er avklart.
+**Ferdig når:** P1 er besluttet og eiere er navngitt. Avklaringer registreres her med faktisk beslutningsgrunnlag.
 
 ## Fase 2 – Teknisk grunnmur og sikker arbeidsflyt
 
-**Mål:** Gjøre prosjektet enkelt å utvikle og trygt å publisere.
+- [x] Etablere lokal Git, Next.js, TypeScript, modulgrenser og dokumentert oppstart.
+- [x] Ha lokal formatering, tester, typekontroll og byggvarianter for server og statisk eksport.
+- [x] Implementere felles innholdskilde for sider, anbefalinger og RAG, med kontroll av innholdsreferanser.
+- [x] Implementere automatisk lokal omlasting av RAG og isolert test av innholdssynkronisering.
+- [x] Etablere funksjonsregister med automatisk avledet oversikt og nettstedskart, og kontroll av sideregistrering ved oppstart/bygg.
+- [x] Etablere versjonslogg og agentinstruksjoner for vedlikehold av logg og funksjonsregister; denne økten utvider regelen til utviklingsplanen.
+- [ ] Opprette/tilknytte organisasjonsrepo og avtale branch-/PR-/review-regler.
+- [ ] Etablere CI med tester, formatering, typekontroll, relevante bygg og kontroll av offentlige artefakter. Vurdere linting som tillegg.
+- [ ] Etablere rutiner for avhengigheter, serverhemmeligheter, nøkkelrotasjon og minste privilegium for CI/utrulling.
 
-- [x] Etablere lokal Git-versjonering og første commit (`ed873b7`).
-- [ ] Opprette et eget GitHub-repository for portalen.
-- [x] Sette opp Next.js, TypeScript og lokal utvikling.
-- [x] Etablere separate bygg for statisk Pages-demonstrasjon og senere serverdrift, med felles komponenter.
-- [x] Sette opp lokal formatering, typekontroll, tester og begge byggvarianter.
-- [ ] Etablere linting og automatiske kontroller i GitHub Actions.
-- [ ] Kreve pull requests, godkjenning og beståtte kontroller før endringer går til `main`.
-- [ ] Gi GitHub Actions eksplisitte, minimale rettigheter.
-- [x] Unngå GitHub-repotilgang for designbiblioteket ved å bruke publisert npm-pakke.
-- [ ] Etablere rutiner for avhengighetsoppdateringer og håndtering av hemmeligheter.
-- [x] Beskrive hvordan nye utviklere starter prosjektet lokalt.
+**Ferdig når:** P4 er verifisert gjennom en faktisk pull request og kontrollert utrulling. Lokale kontroller alene lukker ikke fasen.
 
-**Leveranse:** Kjørbart prosjekt med automatiske kontroller.
+## Fase 3 – Design, komponenter og tilgjengelighet
 
-**Ferdig når:** En utvikler kan følge oppsettveiledningen, starte portalen og få en endring kontrollert gjennom en pull request.
+- [x] Integrere `@digitalarkivet/mui-theme` og eget tema uten privat GitHub-tilgang.
+- [x] Implementere valgt arklogo/favicon, futuristisk forside, navigasjon, bunntekst, katalog, artikkeloppsett og chat.
+- [x] Tilpasse grunnleggende responsivitet, fokus, kontrast og redusert bevegelse, og utføre avgrensede kontroller med dokumenterte rettinger.
+- [x] Opprette WCAG-matrise, testhistorikk og lokalt erklæringsgrunnlag med bekreftet kontaktadresse.
+- [ ] Gjennomføre resterende manuelle kontroller, inkludert dagens nye sider, innhold og chatvisning.
+- [ ] Prøve innlogging og tilgangsfeil med tastatur, hjelpemidler og mobil når funksjonene finnes.
+- [ ] Ferdigstille tilgjengelighetsvurdering og erklæring med navngitt godkjenner og faktisk nettadresse.
 
-## Fase 3 – Designretning og komponenter
+**Ferdig når:** P8 er dokumentert for den aktuelle leveransen. Tidligere delkontroller er ikke full samsvarsgodkjenning.
 
-**Mål:** Skape et futuristisk uttrykk med tydelig tilknytning til virksomhetens designprofil.
+## Fase 4 – MVP 1: lokal portal og lukket pilot
 
-- [ ] Kartlegge hvilke deler av `da-mui-theme` som kan brukes direkte.
-- [x] Lage et eget tema i portalen for farger, typografi, avstander, kanter og effekter.
-- [ ] Utforme to retninger: diskret futuristisk og mer markant futuristisk.
-- [ ] Prøve retningene på forside, navigasjon og ressurskort.
-- [x] Velge designretning.
-- [x] Utvikle toppmeny og bunntekst.
-- [x] Utvikle knapper, lenker og søkefelt.
-- [x] Utvikle ressurskort og typefiltrering.
-- [ ] Lage tilgangsmerking når tilgangsmodellen er avklart.
-- [x] Utvikle artikkeloppsett og kodeeksempler.
-- [ ] Tilpasse mobil, tastaturnavigasjon, kontrast og redusert bevegelse.
+- [x] Implementere forside med katalog, Lær/Prøv/Del og anbefalt ressurs fra felles innhold.
+- [x] Implementere oppstartsveiledning med retningslinjelenke, retningslinjeutkast og Om med KI-prat og mandatvedlegg.
+- [x] Implementere søk/filter, ressursdetaljer, Beta-/eksempelmerking og generell bruksveiledning.
+- [x] Implementere Spør KI med kildebasert veiledning og forberedt modellgenerering.
+- [x] Implementere nettstedskart, tilgjengelighetsside, versjonslogg og funksjonalitetsoversikt.
+- [ ] Faglig gjennomgå og godkjenne representativt pilotinnhold, inkludert skill-beskrivelse og PDF.
+- [ ] Dele via lukket testmiljø først når tilgang, drift og aktuelle krav P1–P9 er håndtert for pilotens omfang.
+- [ ] Gjennomføre oppgavebasert brukertest og prioritere forbedringer.
 
-Tilpasningene holdes i portalens eget komponentlag. Endringer i det felles designbiblioteket vurderes separat.
+**Ferdig når:** En avgrenset, autorisert brukergruppe kan finne en veiledning og en ressurs, få forståelig hjelp og melde problemer. Lokal funksjonalitet er klar, men pilotleveransen er ikke fullført.
 
-**Leveranse:** Valgt designretning og et første sett gjenbrukbare komponenter.
+**Avgrensning:** Ingen offentlig publisering nå. Statisk Pages-eksport skal fortsatt bare inneholde offentlig beskrivende data; den er ikke i seg selv et beskyttet miljø eller en modellserver.
 
-**Ferdig når:** Forside, katalog og artikkelside har et sammenhengende uttrykk som fungerer på mobil og større skjermer.
+## Fase 5 – Servermiljø, modellkobling og utrulling
 
-## Fase 4 – MVP 1: Offentlig demonstrasjon på GitHub Pages
+- [x] Implementere separat RAG-HTTP-tjeneste og serverkonfigurasjon med valgene `none`, `ollama` og `openai-compatible`.
+- [x] Implementere ekstern adapter med HTTPS, serverlagret Bearer-nøkkel, timeout, avvist videresending og nøytrale feilmeldinger.
+- [x] Teste adaptere og HTTP-kontrakt med simulert transport, inkludert feil, manglende innstillinger og at hemmeligheter ikke returneres.
+- [ ] Etablere drift av Next.js og RAG og intern ruting som passer den valgte plattformen.
+- [ ] Gjøre produksjonsorigins og intern RAG-adresse konfigurerbare; verifisere endepunktet fra faktisk HTTPS-adresse.
+- [ ] Velge modell/leverandør og avklare databehandling, før virkelige server-secrets legges inn.
+- [ ] Teste reell generering med representative spørsmål, kildestøtte og utilstrekkelig grunnlag, samt feil, treghet og kostnads-/kapasitetsgrenser.
+- [ ] Etablere ratebegrensning, logger uten hemmeligheter, helsesjekker, alarmer og en dokumentert tilbakeføringsprøve.
+- [ ] Bygge og utrulle nettside og RAG fra samme revisjon med kontroll av innhold og hemmeligheter i artefaktene.
 
-**Mål:** Gjøre konseptet tilgjengelig for vurdering med reelt, offentlig innhold eller tydelig merkede eksempeldata.
+**Ferdig når:** P3, P5 (eller eksplisitt avgrensning til veiledning uten modell), P6 og relevante deler av P9 er testet i det delte miljøet. Pages alene leverer ikke disse serverfunksjonene.
 
-- [x] Bygge forside med introduksjon, katalog og snarveier.
-- [ ] Avklare behov for siste nytt og særskilt fremhevede ressurser.
-- [x] Bygge artikkelsider og enkel navigasjon mellom innholdsområdene.
-- [x] Lage verktøykatalog med kategorier og filtrering.
-- [x] Lage detaljsider for tre eksempelressurser: skill, instruks og prompt.
-- [ ] Legge til faktiske ressurser og eventuelle agenter.
-- [ ] Definere metadata: tittel, beskrivelse, type, eier, kategori og gjennomgangsdato.
-- [ ] Publisere representative artikler og ressurser.
-- [ ] Avklare offentlig bruk av skrifter, bilder og øvrige ressurser fra designbiblioteket.
-- [ ] Sette opp automatisk utrulling til GitHub Pages.
-- [ ] Sikre at Pages-byggingen bare bruker godkjente offentlige innholdskilder.
-- [x] Gjennomføre første manuelle kontroll av interne lenker, mobilvisning og grunnleggende tilgjengelighet; se KVALITETSKONTROLL.md.
-- [ ] Gjennomføre utvidet tilgjengelighetskontroll med skjermleser, zoom og flere nettlesere.
-- [ ] Samle tilbakemeldinger fra en liten brukergruppe.
+## Fase 6 – MVP 2: innlogging og beskyttet tilgang
 
-**Leveranse:** En klikkbar, offentlig demonstrasjon av KI-Produktutvikling.
+- [ ] Velge identitets-/tilgangsløsning og avgrenset GitHub-medlemskontroll uten skriverettigheter til andre repoer.
+- [ ] Implementere innlogging, sikre sesjoner og utlogging, og kontrollere tilgang på serveren.
+- [ ] Beskytte hele pilotmiljøet etter avtalt målgruppe, inkludert `/api/rag` og vedlegg; beskytte det senere interne området før internt innhold legges til.
+- [ ] Definere ny medlemskontroll, fjernet tilgang, utløp og oppførsel når identitetstjenesten feiler.
+- [ ] Teste direkte lenker, ressursnedlasting, manglende/fjernet medlemskap, utløpte sesjoner og uautorisert API-bruk.
+- [ ] Før private kilder innføres: etablere tilgangsfiltrert henting, søk og mellomlagring, og kontrollere at private data ikke følger med offentlig bygg.
 
-**Ferdig når:** Brukere kan finne en artikkel og en relevant ressurs, og redaktører kan publisere gjennom den avtalte arbeidsflyten.
+**Ferdig når:** P2 er verifisert og uautoriserte brukere ikke kan hente beskyttet innhold eller bruke beskyttede API-er. Dette er en forutsetning for første deling, ikke en oppgave som utsettes til etter piloten.
 
-**Avgrensning:** Versjonen demonstrerer design og offentlig innhold. Den har ikke reell beskyttelse av interne sider. Internt innhold, hemmeligheter og private søkeindekser skal ikke følge med i byggingen.
+## Fase 7 – MVP 3: skills og distribusjon
 
-## Fase 5 – Servermiljø og utrulling
+- [x] Opprette separat lokalt Skills-repo med struktur for flere skills og egen versjonslogg.
+- [x] Utvide tilgjengelighetsskillen til testing, rettingsforslag og erklæringsutforming, med daterte resultater i målprosjektet.
+- [x] Validere pakke/metadata og teste lagringsverktøyene; tidligere dokumenterte 15 regresjonstester bestod i isolerte prosjekter.
+- [x] Gjøre skillen gjenfinnbar i katalog og Spør KI med versjon, plassering og generell bruksveiledning.
+- [ ] Få skillen gjennomgått av et menneske, og avklare eier/godkjenner før Beta-status eventuelt endres.
+- [ ] Avklare om/når Skills-repoet skal få GitHub-remote og hvilke ressurser som kan distribueres.
+- [ ] Etablere versjonerte utgaver og faktisk nedlasting/installasjon, med autorisasjon for private ressurser.
+- [ ] Prøve bestemt versjon, oppdatering og tilbakeføring med et pilotteam, uten å overskrive lokale endringer utilsiktet.
 
-**Mål:** Etablere miljøet som kan støtte innlogging og beskyttet innhold.
+**Ferdig når:** Et godkjent bibliotek kan installeres og oppdateres etter en testet prosess. Dagens katalogbeskrivelse betyr ikke at portalen allerede distribuerer skill-pakken.
 
-- [ ] Velge driftsplattform ut fra virksomhetens eksisterende løsninger og krav.
-- [ ] Etablere et testmiljø med serverstøtte for Next.js.
-- [ ] Konfigurere domene, HTTPS og sikre miljøinnstillinger.
-- [ ] Sette opp utrulling fra GitHub med avgrensede rettigheter.
-- [ ] Etablere logging, feilrapportering og enkel tilgjengelighetsovervåking.
-- [ ] Dokumentere og prøve tilbakeføring til en tidligere versjon.
-- [ ] Avgjøre om Pages-demonstrasjonen beholdes som designdemo eller avvikles.
+## Fase 8 – MVP 4: forvaltning og produksjonsgodkjenning
 
-**Leveranse:** Et fungerende testmiljø og en dokumentert utrullingsflyt.
+- [ ] Utpeke ansvarlige for drift, innhold, tilgjengelighet, modeller og tilgang.
+- [ ] Etablere bidragsmaler, faglig review, dato/ansvar for innholdsgjennomgang og vedlikehold av Beta-/utkaststatus.
+- [ ] Ferdigstille personvern-/databehandlingsinformasjon ut fra valgt drift, modell og eventuell logging.
+- [ ] Gjennomføre samlet sikkerhets-, tilgjengelighets- og produksjonskontroll og dokumentere avvik/tiltak.
+- [ ] Prøve produksjonsutrulling, overvåking, hendelseshåndtering og tilbakeføring.
+- [ ] Lukke prioriterte pilotfunn og dokumentere beslutning om lansering.
+- [ ] Før offentlig åpning: godkjenne offentlig innhold og kontrollere skillet mot eventuelt internt område på nytt.
 
-**Ferdig når:** En godkjent endring kan publiseres, verifiseres og tilbakeføres.
+**Ferdig når:** De aktuelle kravene P1–P10 er dokumentert håndtert, og prosjekteier og navngitte fag-/driftsansvarlige godkjenner leveransen. Utsatt skill-installasjon eller modellgenerering skal være et eksplisitt omfangsvalg, ikke skjult manglende funksjonalitet.
 
-## Fase 6 – MVP 2: Innlogging og internt område
+## Neste arbeidsbolk
 
-**Mål:** Gi godkjente GitHub-brukere tilgang til internt innhold.
+1. **Avklar P1:** Velg ansvarlige, driftsmiljø og metode for lukket tilgang. Dette styrer videre implementering.
+2. **Gjennomfør P2–P4 og P6:** Implementer tilgang, produksjonsruting, CI og API-vern i det valgte miljøet.
+3. **Velg om modellgenerering skal være med i piloten:** Gjennomfør P5 eller avtal at piloten bare gir kildebasert veiledning.
+4. **Arbeid parallelt med P7–P8:** Gjennomgå innhold/skill og fullfør tilgjengelighetskontrollen; ikke vent til lanseringsdagen.
+5. **Verifiser P9–P10:** Prøv drift/tilbakeføring og gjennomfør lukket brukertest før produksjonsgodkjenning.
 
-- [ ] Opprette en dedikert GitHub-integrasjon med nødvendige leserrettigheter og uten skrivetilgang til kode.
-- [ ] Implementere innlogging, sesjonshåndtering og utlogging.
-- [ ] Kontrollere organisasjonsmedlemskap på serveren.
-- [ ] Definere hvor ofte medlemskap kontrolleres på nytt, slik at fjernet tilgang får virkning.
-- [ ] Koble til en separat, privat innholdskilde.
-- [ ] Beskytte artikler, ressursdetaljer, vedlegg og nedlastinger.
-- [ ] Sørge for at mellomlagring og søk respekterer tilgangsreglene.
-- [ ] Lage forståelige sider for manglende tilgang og innloggingsfeil.
-- [ ] Teste direkte lenker, utløpte sesjoner, manglende medlemskap og feil i GitHub-kontrollen.
-- [ ] Kontrollere at interne data ikke finnes i offentlige bygg eller filer.
+## Beslutninger og avklaringer
 
-**Leveranse:** Én portal med offentlig og internt område i samme design.
+| Tema                   | Gjeldende retning                                                     | Gjenstående beslutning                                                     |
+| ---------------------- | --------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| Publiseringsrekkefølge | Lokal utvikling → lukket pilot → eventuell offentlig portal           | Hvem kan få pilottilgang og hvordan den beskyttes                          |
+| GitHub                 | Lokale repoer for portal og Skills; ingen remote i portalrepoet       | Organisasjonsrepo, abonnement/oppsett, PR-regler og utrullingsrettigheter  |
+| Innhold                | Praktisk nytte, felles kilder og tydelig Beta-/utkaststatus           | Navngitte eiere og faglig godkjenning                                      |
+| Modeller               | Lokal eller ekstern adapter; nøkkel kun på server                     | Godkjent leverandør/modell, databehandling og om generering inngår i pilot |
+| Drift                  | Next.js og RAG må driftes og utrulles samlet fra samme revisjon       | Plattform, domene, intern ruting, overvåking og driftsansvar               |
+| Pages                  | Statisk demo-/byggvariant beholdes lokalt                             | Om den får en senere rolle; offentlig demo er ikke prioritert nå           |
+| Forvaltning            | Plan, versjonslogg og funksjonsregister oppdateres i samme arbeidsøkt | Roller, PR-prosess og faste gjennomganger når samarbeid etableres          |
 
-**Ferdig når:** Autoriserte brukere får tilgang, og øvrige brukere ikke kan hente internt innhold gjennom sider, søk eller direkte filadresser.
+## Endring 9. november 2026
 
-## Fase 7 – MVP 3: Distribusjon av skills og andre ressurser
+Planen er også tilgjengelig som `/utviklingsplan/` i portalen, med lenke fra bunnteksten, nettstedskartet og funksjonalitetsoversikten. Nettsiden bygges direkte fra denne filen; oppdateringer følger neste bygg/utrulling.
 
-**Mål:** Gjøre ressursene brukbare i utviklernes egne prosjekter.
+Planen er avstemt med kode, dokumentasjon og commit `e93e5f9`. Fase 4 er endret fra offentlig Pages-demo til lokal portal og lukket pilot, i samsvar med ønsket om å avvente offentlig publisering. Gjennomført arbeid med innhold, RAG, skills og oversikter er registrert, og produksjonskrav P1–P10 er prioritert. De tidligere datostemplede avsnittene nedenfor bevares som historikk.
 
-- [ ] Standardisere mappestruktur og metadata for installerbare ressurser.
-- [ ] Validere `SKILL.md`, støttemateriale og refererte filer.
-- [ ] Publisere versjonerte utgaver med endringsbeskrivelse.
-- [ ] Vise versjon, eier og installasjonsveiledning i katalogen.
-- [ ] Lage en enkel installasjonsmåte for offentlig innhold.
-- [ ] Etablere autorisert installasjon av privat innhold gjennom GitHub.
-- [ ] Støtte valg av bestemt versjon og kontrollert oppdatering.
-- [ ] Håndtere lokale endringer uten utilsiktet overskriving.
-- [ ] Prøve installasjon, oppdatering og tilbakeføring med ett pilotteam.
-
-**Leveranse:** Et lite, fungerende bibliotek av installerbare skills og andre ressurser.
-
-**Ferdig når:** Pilotteamet kan installere en valgt versjon og oppdatere den uten å miste egne tilpasninger.
-
-## Fase 8 – MVP 4: Forvaltning og produksjonslansering
-
-**Mål:** Gjøre portalen klar for varig bruk og bidrag fra flere team.
-
-- [ ] Lage bidragsveiledning og maler for nytt innhold.
-- [ ] Fordele ansvar for faglig godkjenning og vedlikehold.
-- [ ] Innføre oversikt over innhold som trenger gjennomgang.
-- [ ] Forbedre søk og filtrering basert på pilotbruk.
-- [ ] Gjennomføre samlet kontroll av tilgjengelighet og tilgangsstyring.
-- [ ] Avklare driftsansvar, varsling og håndtering av feil.
-- [ ] Kontrollere personverninformasjon mot faktisk databehandling.
-- [ ] Prøve produksjonsutrulling og tilbakeføring.
-- [ ] Lansere for en begrenset målgruppe før bredere bruk.
-
-**Leveranse:** Produksjonsklar portal med navngitte eiere og dokumenterte rutiner.
-
-**Ferdig når:** Både teknisk drift og løpende innholdsvedlikehold har ansvarlige personer og fungerende arbeidsflyter.
-
-## Beslutningspunkter
-
-| Tidspunkt     | Beslutning                                                          | Status                           |
-| ------------- | ------------------------------------------------------------------- | -------------------------------- |
-| Etter fase 1  | Omfang, tilgangsmodell og innholdsstruktur                          | Åpen                             |
-| Etter fase 3  | Designretning                                                       | Futuristisk MUI-tilpasning valgt |
-| Etter fase 4  | Endringer etter brukertest og prioritering av intern funksjonalitet | Åpen                             |
-| Før fase 6    | Driftsplattform og nødvendige GitHub-rettigheter                    | Åpen                             |
-| Etter fase 7  | Om et eget installasjonsverktøy er nødvendig                        | Åpen                             |
-| Før lansering | Om løsning, innhold og driftsansvar er klare                        | Åpen                             |
-
-## Løpende oppfølging
+## Historikk fra tidligere arbeidsøkter
 
 ### Lokal status – 30. oktober 2026
 
@@ -226,7 +232,7 @@ Ved oppdatering av planen:
 4. Legg til ansvarlige og lenker til GitHub-issues eller pull requests når disse finnes.
 5. Juster fremtidige faser ut fra erfaringene, og bevar begrunnelsen for større endringer.
 
-### Neste oppgaver
+### Neste oppgaver slik de var formulert 30. oktober
 
 - [ ] Bekrefte GitHub-organisasjon og ønsket tilgangsmodell.
 - [ ] Avklare godkjente Suisse-skriftfiler og logo for full profiltilpasning.
@@ -235,18 +241,17 @@ Ved oppdatering av planen:
 
 ### Endringslogg
 
-| Dato       | Endring                                                     | Begrunnelse                                                                                                                      |
-| ---------- | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| 2026-10-30 | Opprettet planen med åtte faser og fire MVPer.              | Samlet avtalt retning, Pages-demonstrasjon, futuristisk design og avgrenset GitHub-tilgang i et dokument for løpende oppfølging. |
-| 2026-10-30 | Etablert lokalmiljø og første prototype.                    | Verifisere lokal kjøring og begge byggvarianter før integrasjon med designbibliotek og GitHub.                                   |
-| 2026-10-30 | Integrert publisert Digitalarkivet-tema og MUI-komponenter. | Erstatte midlertidige designverdier med virksomhetens bibliotek uten tilgang til andre GitHub-repoer.                            |
-
-| 2026-10-30 | Forbedret visuell struktur og navigasjon. | Kortere introduksjon, katalog høyere opp, samlet søk/filter, aktiv meny, klikkbare snarveier og egne eksempelsider. Logo og Suisse-filer mangler fortsatt. |
-| 2026-10-30 | Gjeninnført romslig, futuristisk forside og tilpasset MUI-uttrykket. | Stor overskrift og KI-illustrasjon, mørke blågrønne flater, diskret rutenett og lys-/gradienteffekter. Katalog, navigasjon og detaljsider beholdes. |
-| 2026-10-30 | Implementert valgt arklogo og favicon. | Ren SVG i toppmenyen med samme aksentfarge som overskriften, SVG-favicon, ICO i 16/32/48 piksler og Apple-ikon i 180 piksler. |
-| 2026-10-30 | Arklogo erstatter KI-tekst i forsideillustrasjonen. | To dempede ringer, to datapunkter og statisk grønt lys. Kompakt illustrasjon vises også på mobil. |
-| 2026-10-30 | Hentet tilbake opprinnelige kryssende ringer. | Mindre arklogo i sentrum, med opprinnelig futuristisk ringuttrykk etter visuell tilbakemelding. |
-| 2026-10-30 | Lagt til første lokale RAG-tjeneste og «Spør KI». | Offentlig kildehenting, lokal Ollama-adapter og kildesøk i Pages. Modellvalg, live generering og produksjonstilgang gjenstår. |
+| Dato       | Endring                                                              | Begrunnelse                                                                                                                                                |
+| ---------- | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026-10-30 | Opprettet planen med åtte faser og fire MVPer.                       | Samlet avtalt retning, Pages-demonstrasjon, futuristisk design og avgrenset GitHub-tilgang i et dokument for løpende oppfølging.                           |
+| 2026-10-30 | Etablert lokalmiljø og første prototype.                             | Verifisere lokal kjøring og begge byggvarianter før integrasjon med designbibliotek og GitHub.                                                             |
+| 2026-10-30 | Integrert publisert Digitalarkivet-tema og MUI-komponenter.          | Erstatte midlertidige designverdier med virksomhetens bibliotek uten tilgang til andre GitHub-repoer.                                                      |
+| 2026-10-30 | Forbedret visuell struktur og navigasjon.                            | Kortere introduksjon, katalog høyere opp, samlet søk/filter, aktiv meny, klikkbare snarveier og egne eksempelsider. Logo og Suisse-filer mangler fortsatt. |
+| 2026-10-30 | Gjeninnført romslig, futuristisk forside og tilpasset MUI-uttrykket. | Stor overskrift og KI-illustrasjon, mørke blågrønne flater, diskret rutenett og lys-/gradienteffekter. Katalog, navigasjon og detaljsider beholdes.        |
+| 2026-10-30 | Implementert valgt arklogo og favicon.                               | Ren SVG i toppmenyen med samme aksentfarge som overskriften, SVG-favicon, ICO i 16/32/48 piksler og Apple-ikon i 180 piksler.                              |
+| 2026-10-30 | Arklogo erstatter KI-tekst i forsideillustrasjonen.                  | To dempede ringer, to datapunkter og statisk grønt lys. Kompakt illustrasjon vises også på mobil.                                                          |
+| 2026-10-30 | Hentet tilbake opprinnelige kryssende ringer.                        | Mindre arklogo i sentrum, med opprinnelig futuristisk ringuttrykk etter visuell tilbakemelding.                                                            |
+| 2026-10-30 | Lagt til første lokale RAG-tjeneste og «Spør KI».                    | Offentlig kildehenting, lokal Ollama-adapter og kildesøk i Pages. Modellvalg, live generering og produksjonstilgang gjenstår.                              |
 
 ## Tillegg – RAG-tjeneste
 

@@ -74,7 +74,11 @@ Portalen viser tre eksempelressurser og en beskrivelse av tilgjengelighetsskille
 - Intern tilgang skal implementeres og testes på serveren i en senere fase.
 - Et statisk Pages-bygg er ikke et miljø for beskyttet innhold.
 
-Se [utviklingsplanen](UTVIKLINGSPLAN.md) for videre arbeid.
+Se [utviklingsplanen](UTVIKLINGSPLAN.md) for gjeldende fremdrift, leverte funksjoner og produksjonskrav P1–P10. Neste delte miljø skal være en lukket pilot. Planen skiller mellom lokal implementering, reell modell-/miljøtest og produksjonsgodkjenning.
+
+Planen kan også leses på `/utviklingsplan/`, med lenke fra bunnteksten og nettstedskartet. Nettsiden bygges direkte fra Markdown-filen; oppdateringer følger neste bygg/utrulling uten en separat innholdskopi.
+
+Ved vesentlige endringer oppdateres relevante faser og produksjonskrav i planen i samme arbeidsøkt som kode, versjonslogg og funksjonsregister. Dato og kontrollgrunnlag oppdateres når status endres; tidligere datostemplet historikk beholdes. Dette er en fast arbeidsregel i `AGENTS.md`, ikke automatisk godkjenning eller en periodisk jobb.
 
 ## Funksjonalitetsoversikt
 
