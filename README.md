@@ -218,3 +218,15 @@ Ressurskatalogens navn, overskrift «Finn en ressurs» og introduksjon vedlikeho
 Godkjente KI-assistenter ligger på `/oversikt/godkjente-ki-assistenter/`, med inngang fra Oversikt og retningslinjene. Felles innhold i `src/content/pages/godkjente-ki-assistenter.ts` brukes av siden, Oversikt, funksjonsregisteret og Spør KI. Copilot, Claude AI og Codex er registrert som godkjent etter brukerens opplysning 9. november 2026; godkjenningen er ikke utvidet til bestemte modeller, kontoer, datakategorier eller integrasjoner. Slike rammer må legges inn når de er bekreftet.
 
 MCP-oversikten finnes på `/oversikt/godkjente-mcper/`, med inngang fra Oversikt og retningslinjene. Innhold i `src/content/pages/godkjente-mcper.ts` brukes også av Spør KI og funksjonsregisteret. Per 9. november 2026: Atlassian MCP har ROS-analyse pågående, og Slack MCP er planlagt vurdert. Ingen av dem er oppført som godkjent. Oppdater den felles kilden ved bekreftet statusendring; ingen integrasjon eller tilgang aktiveres av oversikten.
+
+### Ny tilgjengelighetskontroll 9. november 2026
+
+Siste resultater ligger i `docs/tilgjengelighet/2026-11-09/201443-73cb0a3e52e0/`. `latest.json` peker til kjøringen. Mappen inneholder originalmanifest, rå HTML-/kontrastresultater, 60 responsive DOM-kontroller, 40 tekstavstandskontroller, manuelle tester og skjermbilder. Hovedrapportene og `/tilgjengelighet/` er oppdatert etter vurdering, ikke automatisk av skriptet. Ett språkavvik (3.1.2) ble påvist på prissiden i denne brede kontrollen og er lukket i den målrettede retesten nedenfor; samlet samsvar er ikke ferdig vurdert. Tidligere rapporter er bevart.
+
+Gjenta grunnkontrollen etter nytt Pages-bygg med `python3 /sti/til/tilgjengelighetserklaering/scripts/run_checks.py --project-root /sti/til/portalen --html-export out --agent 'Codex (OpenAI)' --project-version <testet-commit>`. Dette starter ingen nettleser og gir ingen samlet WCAG-godkjenning. Nettleser-/hjelpemiddelkontroller må dokumenteres separat. Midlertidig CSS brukt ved tekstavstandstesten er fjernet fra kildekoden.
+
+### Retest av prisvilkår – 9. november 2026
+
+A11Y-01 er rettet og retestet i `docs/tilgjengelighet/2026-11-09/203914-cf2e80bc00f7/`. Tidligere funn og den brede kontrollen er bevart i `201443-73cb0a3e52e0/`. `latest.json` peker til retesten. De øvrige 13 uavklarte vurderingene består.
+
+Copilot- og Codex-parserne genererer nå norske vilkårsnoter fra kjente kildefelt. Ingen engelsk kildesetning kopieres direkte inn i disse notene. Ukjent pris-, kreditt- eller tilleggsvilkårsformat gir kildefeil og beholder tidligere kontrollert norsk tekst. Dette er ikke en generell språkdetektor; nye kildeformater krever gjennomgang. `pnpm test:pricing` har åtte tester, inkludert tre språkregresjonstester av faktisk oppdateringsfunksjon og JSON-rundtur. Den eksisterende daglige arbeidsflyten kjører samme testfil; GitHub-jobben er fremdeles ikke aktivert. Faktisk lokal `pnpm pricing:sync` lyktes for alle seks kilder under retesten.

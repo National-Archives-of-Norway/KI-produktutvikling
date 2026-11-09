@@ -1,0 +1,9 @@
+{
+  "os": "macOS",
+  "os_version": "27.2",
+  "browser": "Codex in-app browser (IAB)",
+  "browser_version": "Not exposed by tool",
+  "base_commit": "c622090",
+  "build_modes": ["Next.js production", "Pages export without base path"],
+  "browser_mode": "Local dev server at 127.0.0.1:3000; no real model calls"
+}

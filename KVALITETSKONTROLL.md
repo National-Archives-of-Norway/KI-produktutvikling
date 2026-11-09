@@ -1,3 +1,18 @@
+# Oppfølging: språkavvik rettet – 9. november 2026
+
+A11Y-01 er lukket for prisvilkårene etter faktisk prisoppdatering og nettleserretest av alle seks seksjoner. Vilkårsteksten genereres på norsk. Tre nye regresjonstester beskytter gjentatt oppdatering og ukjent vilkårsformat. Alle 48 prosjekttester bestod. Se [retestrapporten](docs/tilgjengelighet/2026-11-09/203914-cf2e80bc00f7/testrapport.md). Samlet samsvar er fortsatt uavklart med 13 U-punkter. Tidligere rapport nedenfor beskriver funnet før retting, ikke en fortsatt åpen feil.
+
+# Ny tilgjengelighetskontroll – 9. november 2026
+
+Ny kontroll med tilgjengelighetsskill 0.3.0 bygger på commit `c622090`. Den omfatter 20 HTML-sider, inkludert nye oversikter, priser, personvern og forsideanimasjon. Samlet samsvar er fortsatt uavklart; ett språkavvik på prissiden er bekreftet (3.1.2).
+
+- 23 eksportfiler uten kandidater i HTML-grunnkontrollen; 60 normalvisningskontroller uten sidebredde-overflyt, dupliserte ID-er eller umerkede synlige felt.
+- 40 tekstavstandskontroller uten sidebredde-overflyt. Midlertidig teststil er fjernet. Dette er ikke full visuell klippe-/zoomkontroll.
+- Animasjonen kan pauses/startes med tastatur og forlates med Tab. Katalog, pristabell, utfellbare vilkår, chatvalidering og dialog er prøvd avgrenset.
+- Faktisk skjermleser, zoom, PDF, alle kontrast-/fokustilstander, redusert-bevegelse-innstilling og endelig drift gjenstår. Ingen produktretting er utført som del av kontrollen.
+
+Se [testrapporten](docs/tilgjengelighet/2026-11-09/201443-73cb0a3e52e0/testrapport.md), [gjeldende matrise](docs/tilgjengelighet/WCAG-KONTROLL.md) og [oppdatert erklæringsgrunnlag](docs/tilgjengelighet/TILGJENGELIGHETSERKLAERING.md). Eldre tekst nedenfor er historisk, ikke dagens side-/ressursantall eller en ny samsvarsvurdering.
+
 # Kvalitetskontroll – 6. november 2026
 
 Kontrollert lokalt i den integrerte nettleseren. Første kontroll er supplert med vurderingsmatrise for alle 48 krav, flere tastaturtester, tekstavstander og automatiserte grunnkontroller. Samlet samsvar er fortsatt uavklart. Se [WCAG-KONTROLL.md](docs/tilgjengelighet/WCAG-KONTROLL.md) og [grunnlag for erklæringen](docs/tilgjengelighet/TILGJENGELIGHETSERKLAERING.md). Ingen publisering er utført.

@@ -1,0 +1,21 @@
+{
+  "criteria": 48,
+  "status_counts": {
+    "K": 24,
+    "I": 10,
+    "U": 13,
+    "B": 1
+  },
+  "responsive_checks": 60,
+  "text_spacing_checks": 40,
+  "temporary_css_removed": true,
+  "manual_tests": 13,
+  "screenshots": [
+    "animation-keyboard-pause.png",
+    "overview-spacing-320.png",
+    "pricing-language.png",
+    "updated-declaration.png"
+  ],
+  "relative_document_links_checked": 24,
+  "missing_document_links": []
+}

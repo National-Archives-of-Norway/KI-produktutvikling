@@ -4,6 +4,34 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 «Agent» betyr kodeassistenten som utførte arbeidet. Git-forfatteren registreres separat av Git og kan være personen som oppretter commiten. Eksakt modellvariant er ikke registrert for tidligere arbeid og oppgis derfor ikke. Ingen underagenter ble brukt til kvalitetskontrollen eller opprettelsen av denne loggen.
 
+## Ikke utgitt – rettet språkavvik i prisoppdateringen – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI), med `tilgjengelighetserklaering` 0.3.0 for retest og erklæringsoppdatering. Ingen underagenter.
+
+- Rettet A11Y-01 ved å generere norske vilkår fra kjente Copilot-/Codex-felt i innhentingsparseren. Minstekrav til brukere, kredittall, fra-pris og betalingsintervall bevares. Ukjent vilkårsformat avvises, og oppdateringsflyten beholder tidligere norsk tekst i stedet for å kopiere nye engelske setninger inn på siden.
+- Kjørt virkelig prisoppdatering mot alle seks kilder: 26 rader, uendrede numeriske priser og oppdaterte kontrolltidspunkter. Retestet alle seks utvidede vilkårsseksjoner i nettleser. Tre nye regresjonstester kontrollerer gjentatt oppdatering/JSON-lagring, endrede kildetall og ukjent format. De kjøres også av den eksisterende prisarbeidsflyten.
+- Lagret ny målrettet retest i `docs/tilgjengelighet/2026-11-09/203914-cf2e80bc00f7/`, med tidligere funn bevart i den brede kjøringen. Oppdatert matrise og erklæring viser avviket som rettet og retestet; øvrige 13 U er videreført. Arbeidsfordeling: 25 K, 10 I, 13 U og 0 B, ikke en samsvarsprosent.
+- Oppdatert lokal erklæringsside, funksjonsregister, README, kvalitetskontroll og utviklingsplan. Samlet samsvar er fortsatt uavklart. Ingen faktisk skjermleseropplesing, GitHub-kjøring, registrering, publisering eller commit er utført.
+- Kontroll: Alle 48 prosjekttester (inkludert åtte prisparsertester), produksjonsbygg med TypeScript, Pages-bygg, skillens HTML-grunnkontroll, Prettier og `git diff --check` bestod. Bygget prisside og erklæring, 48 unike kriterier og 30 relative dokumentlenker er kontrollert. Prisarbeidsflytens testkommando er kjørt lokalt med åtte beståtte tester; ingen GitHub-kjøring er påstått.
+
+## Ikke utgitt – oppdaterte prisdata – 9.11.2026
+
+**Utførende:** Prisoppdateringsskriptet (pricing:sync).
+
+- Oppdatert lagrede prisrader fra offisielle kilder; kilde og tidspunkt følger hver gruppe. Mislykkede kilder beholder forrige kontrollerte rader.
+- Automatisk parsing er utført, ikke faglig godkjenning eller kontroll av en virksomhetsavtale. Se kildestatus på prissiden.
+
+## Ikke utgitt – ny tilgjengelighetskontroll og erklæringsoppdatering – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI), med `tilgjengelighetserklaering` 0.3.0. Ingen underagenter.
+
+- Gjennomført ny avgrenset kontroll mot commit `c622090`, inkludert alle 20 HTML-sider og animasjonen. Lagret råresultater, originalmanifest, skjermbilder og etterfølgende manuelle observasjoner i `docs/tilgjengelighet/2026-11-09/201443-73cb0a3e52e0/`. Tidligere resultater er bevart.
+- 23 HTML-eksportfiler uten kandidater i skillens grunnkontroll; 60 responsive DOM-kontroller og 40 tekstavstandskontroller uten sidebredde-overflyt. Utvalgte tastaturforløp, pristabeller, animasjon, dialog/validering og tre kontrastpar er undersøkt. En etikettkandidat ble avvist som et skjult MUI-målefelt etter inspeksjon. Midlertidig test-CSS er fjernet.
+- Dokumentert ett bekreftet brudd, A11Y-01 / 3.1.2: engelske prisvilkår mangler språkmerking. Ingen produktfeil er rettet; rettingsforslag og retestinstruksjon er lagret. Tidligere «ikke relevant» for 2.2.2 er erstattet av faktisk pause-/starttest.
+- Oppdatert hovedrapport, 48-punkts matrise, erklæringsgrunnlag, lokal erklæringsside, funksjonsregister, README, kvalitetskontroll og utviklingsplan. Ny arbeidsfordeling er 24 K, 10 I, 13 U og 1 B; dette er ikke en samsvarsprosent. Juridiske virksomhetsopplysninger/godkjenner er fortsatt uavklart. Bekreftet kontakt beholdes.
+- Samlet samsvar er ikke ferdig vurdert. Faktisk skjermleser, zoom, PDF, flere nettlesere, alle kontrast-/fokustilstander og redusert-bevegelse-innstilling gjenstår. Ingen axe/Lighthouse, faktisk modellgenerering, registrering, publisering eller commit er utført i testoppdraget.
+- Kontroll av dokumentoppdateringen: Alle 45 prosjekt-/parser-/RAG-tester, produksjonsbygg med TypeScript, Pages-bygg, Prettier og `git diff --check` bestod. 48 unike kriterier, statusfordeling, lagrede resultater og fjernet test-CSS er kontrollert. Oppdatert erklæring er lest tilbake i nettleseren. Bygg-/enhetstester er separat utviklingsverifisering, ikke en tilgjengelighetsgodkjenning.
+
 ## Ikke utgitt – styr animasjonen ved klikk på illustrasjonen – 9. november 2026
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

@@ -1,0 +1,13 @@
+{
+  "review_date": "2026-11-09",
+  "base_commit": "c622090",
+  "overall_conformance": "not_assessed",
+  "confirmed_findings": ["A11Y-01"],
+  "status_counts": {
+    "K": 24,
+    "I": 10,
+    "U": 13,
+    "B": 1
+  },
+  "note": "Manifestet beskriver bare den opprinnelige automatiske kjøringen. Etterfølgende manuelle observasjoner ligger i råfiler/manual-tests og rapporten. Midlertidig test-CSS er fjernet."
+}

@@ -1,0 +1,433 @@
+{
+  "overall_conformance": "not_assessed",
+  "skill_version": "0.3.0",
+  "scope": "20 HTML-sider, statisk eksport og avgrensede dynamiske forløp; PDF uavklart",
+  "base_commit": "c622090",
+  "test_date": "2026-11-09",
+  "status_definitions": {
+    "K": "Undersøkt uten funn i angitt omfang; ikke automatisk Ja",
+    "I": "Ingen utløsende innholdstype i tidligere HTML-utvalg, ikke full ny dokumentkontroll",
+    "U": "Uavklart eller delvis undersøkt",
+    "B": "Bekreftet brudd"
+  },
+  "counts": {
+    "U": 13,
+    "I": 10,
+    "K": 24,
+    "B": 1
+  },
+  "criteria": [
+    {
+      "id": "1.1.1",
+      "title": "Tekstalternativer",
+      "status": "U",
+      "observation": "Dekorativ SVG har skjult innhold og illustrasjonsknappen har kodet navn. PDF-vedleggets alternativer er ikke kontrollert.",
+      "evidence": "raw/browser-responsive.json; manual-tests.json; src/components/hero-illustration.tsx",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "1.2.1",
+      "title": "Lyd eller video alene",
+      "status": "I",
+      "observation": "Historisk vurdering, ikke full retest: Ingen lyd- eller videoklipp i dagens innhold.",
+      "evidence": "Tidligere kontroll 6. november; beholdt som historisk delgrunnlag. Ny samlet konklusjon krever vurdering av hele omfanget.",
+      "test_date": "2026-11-06"
+    },
+    {
+      "id": "1.2.2",
+      "title": "Teksting av opptak",
+      "status": "I",
+      "observation": "Historisk vurdering, ikke full retest: Ingen video med lyd.",
+      "evidence": "Tidligere kontroll 6. november; beholdt som historisk delgrunnlag. Ny samlet konklusjon krever vurdering av hele omfanget.",
+      "test_date": "2026-11-06"
+    },
+    {
+      "id": "1.2.5",
+      "title": "Synstolking",
+      "status": "I",
+      "observation": "Historisk vurdering, ikke full retest: Ingen forhåndsinnspilt video.",
+      "evidence": "Tidligere kontroll 6. november; beholdt som historisk delgrunnlag. Ny samlet konklusjon krever vurdering av hele omfanget.",
+      "test_date": "2026-11-06"
+    },
+    {
+      "id": "1.3.1",
+      "title": "Semantikk",
+      "status": "U",
+      "observation": "Landemerker, etiketter og prisoverskrifter/caption/scope er kontrollert i DOM. Skjermleser og PDF-struktur gjenstår.",
+      "evidence": "raw/browser-responsive.json; raw/field-candidate-review.json",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "1.3.2",
+      "title": "Leserekkefølge",
+      "status": "U",
+      "observation": "Nye sider deler artikkelmal; utvalgte visninger er undersøkt. Full leserekkefølge med hjelpemidler og PDF gjenstår.",
+      "evidence": "raw/browser-responsive.json; screenshots/overview-spacing-320.png",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "1.3.3",
+      "title": "Forståelige instruksjoner",
+      "status": "K",
+      "observation": "Historisk vurdering, ikke full retest: Handlinger beskrives med tekst, ikke bare plassering, form eller lyd.",
+      "evidence": "Tidligere kontroll 6. november; beholdt som historisk delgrunnlag. Ny samlet konklusjon krever vurdering av hele omfanget.",
+      "test_date": "2026-11-06"
+    },
+    {
+      "id": "1.3.4",
+      "title": "Orientering",
+      "status": "K",
+      "observation": "20 sider ved 320×740, 1280×900 og liggende 844×390 uten påvist sidebredde-overflyt. Ikke en fysisk enhetstest.",
+      "evidence": "raw/browser-responsive.json",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "1.3.5",
+      "title": "Personrelaterte skjemafelt",
+      "status": "I",
+      "observation": "Historisk vurdering, ikke full retest: Ingen felt for personens navn, adresse eller andre definerte personopplysninger.",
+      "evidence": "Tidligere kontroll 6. november; beholdt som historisk delgrunnlag. Ny samlet konklusjon krever vurdering av hele omfanget.",
+      "test_date": "2026-11-06"
+    },
+    {
+      "id": "1.4.1",
+      "title": "Farge som signal",
+      "status": "K",
+      "observation": "Historisk vurdering, ikke full retest: Valgt filter har tekst, form og aria-pressed. Navigasjon har også understreking og vekt.",
+      "evidence": "Tidligere kontroll 6. november; beholdt som historisk delgrunnlag. Ny samlet konklusjon krever vurdering av hele omfanget.",
+      "test_date": "2026-11-06"
+    },
+    {
+      "id": "1.4.2",
+      "title": "Automatisk lyd",
+      "status": "I",
+      "observation": "Historisk vurdering, ikke full retest: Ingen automatisk lyd.",
+      "evidence": "Tidligere kontroll 6. november; beholdt som historisk delgrunnlag. Ny samlet konklusjon krever vurdering av hele omfanget.",
+      "test_date": "2026-11-06"
+    },
+    {
+      "id": "1.4.3",
+      "title": "Tekstkontrast",
+      "status": "U",
+      "observation": "Hvit og grå tekst på hovedbakgrunn måler 18,51:1 og 12,86:1. Alle flater, gradienter og tilstander er ikke målt.",
+      "evidence": "raw/contrast-body.json; raw/contrast-muted.json",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "1.4.4",
+      "title": "Tekstforstørring",
+      "status": "U",
+      "observation": "Faktisk 200 % tekstforstørring/zoom er ikke utført i denne kjøringen.",
+      "evidence": "testrapport.md – begrensninger",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "1.4.5",
+      "title": "Tekst som bilde",
+      "status": "U",
+      "observation": "Nettsideteksten er HTML. Tekst og bilder i PDF-vedlegget er ikke fullstendig vurdert.",
+      "evidence": "raw/browser-responsive.json; testrapport.md – begrensninger",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "1.4.10",
+      "title": "Omflyting",
+      "status": "U",
+      "observation": "60 normalvisningskontroller uten sidebredde-overflyt; pristabell kan rulles separat med tastatur ved 320 px. Faktisk 400 % zoom gjenstår.",
+      "evidence": "raw/browser-responsive.json; manual-tests.json#pricing-table-scroll",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "1.4.11",
+      "title": "Kontrollkontrast",
+      "status": "U",
+      "observation": "Fokusfargen mot hovedbakgrunn måler 13,76:1. Alle kontrollflater/tilstander er ikke kontrollert. Eldre dokumentasjon av forbedret chatfeltkant beholdes.",
+      "evidence": "raw/contrast-focus.json; tidligere kontroll 6. november",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "1.4.12",
+      "title": "Tekstavstander",
+      "status": "U",
+      "observation": "Økt tekstavstand prøvd på 20 sider ved to bredder, uten sidebredde-overflyt. Kun utvalgte visuelle utsnitt er undersøkt; full kontroll av klipping i alle dynamiske tilstander gjenstår.",
+      "evidence": "raw/text-spacing.json; screenshots/overview-spacing-320.png",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "1.4.13",
+      "title": "Ekstrainnhold ved peker eller fokus",
+      "status": "I",
+      "observation": "Historisk vurdering, ikke full retest: Ingen egne verktøytips eller menyer som åpnes bare ved hover eller fokus.",
+      "evidence": "Tidligere kontroll 6. november; beholdt som historisk delgrunnlag. Ny samlet konklusjon krever vurdering av hele omfanget.",
+      "test_date": "2026-11-06"
+    },
+    {
+      "id": "2.1.1",
+      "title": "Tastaturhandlinger",
+      "status": "K",
+      "observation": "Avgrenset tastaturtest av illustrasjon, hoppelenke, katalog, pristabell, vilkårsutvidelse, tom chat og dialog. Ikke alle kombinasjoner eller hjelpemidler.",
+      "evidence": "manual-tests.json",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "2.1.2",
+      "title": "Utgang fra dialog",
+      "status": "K",
+      "observation": "Tab forlater illustrasjonen til søkefeltet. Escape i chat returnerer til åpneknappen; full hjelpemiddeltest gjenstår.",
+      "evidence": "manual-tests.json",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "2.1.4",
+      "title": "Enkelttegnsnarveier",
+      "status": "I",
+      "observation": "Historisk vurdering, ikke full retest: Ingen egne hurtigtaster med bare ett tegn.",
+      "evidence": "Tidligere kontroll 6. november; beholdt som historisk delgrunnlag. Ny samlet konklusjon krever vurdering av hele omfanget.",
+      "test_date": "2026-11-06"
+    },
+    {
+      "id": "2.2.1",
+      "title": "Brukerfrister",
+      "status": "I",
+      "observation": "Historisk vurdering, ikke full retest: Ingen tidsfrist for å fylle ut eller lese innhold. Modelltimeout gjelder et systemkall.",
+      "evidence": "Tidligere kontroll 6. november; beholdt som historisk delgrunnlag. Ny samlet konklusjon krever vurdering av hele omfanget.",
+      "test_date": "2026-11-06"
+    },
+    {
+      "id": "2.2.2",
+      "title": "Automatisk oppdatering",
+      "status": "K",
+      "observation": "Tidligere I er endret: animasjonen starter automatisk. Mellomrom pauser alle tre bevegelige elementer, Enter starter dem; vanlig knapp og klikk støttes. Redusert-bevegelse-regelen er kodekontrollert, ikke systemtestet.",
+      "evidence": "manual-tests.json#motion-pause; manual-tests.json#motion-resume; screenshots/animation-keyboard-pause.png",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "2.3.1",
+      "title": "Blinking",
+      "status": "K",
+      "observation": "Langsomme transformasjoner uten opacity-blink er inspisert i CSS og nettleser. Ingen automatisert glimt-/luminansanalyse.",
+      "evidence": "src/styles/home.css; manual-tests.json",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "2.4.1",
+      "title": "Snarvei til innhold",
+      "status": "K",
+      "observation": "Enter på Hopp til innhold setter aktivt element til MAIN#innhold.",
+      "evidence": "manual-tests.json#skip",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "2.4.2",
+      "title": "Sidetitler",
+      "status": "K",
+      "observation": "20 sider har sidetitler og én hovedoverskrift i nye DOM-kontroller. Feilsider inngår i HTML-grunnkontrollen.",
+      "evidence": "raw/browser-responsive.json; raw/html-01.json",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "2.4.3",
+      "title": "Fokusflyt",
+      "status": "U",
+      "observation": "Tab fra Utforsk ressursene går til illustrasjonen og videre til søk. Dialogens retur er kontrollert. Full fokusrekkefølge i alle nye dokumenter, zoom og hjelpemidler gjenstår.",
+      "evidence": "manual-tests.json",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "2.4.4",
+      "title": "Lenkeforståelse",
+      "status": "K",
+      "observation": "Historisk vurdering, ikke full retest: Beskrivende navigasjon og ressursnavn. E-post- og klagelenke har forståelig navn.",
+      "evidence": "Tidligere kontroll 6. november; beholdt som historisk delgrunnlag. Ny samlet konklusjon krever vurdering av hele omfanget.",
+      "test_date": "2026-11-06"
+    },
+    {
+      "id": "2.4.5",
+      "title": "Alternativ navigasjon",
+      "status": "K",
+      "observation": "Nettstedskart og felles hovedmeny inneholder nye sider gjennom funksjonsregisteret; interne lenkemål kontrollert i eksport.",
+      "evidence": "raw/html-01.json; raw/browser-responsive.json",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "2.4.6",
+      "title": "Beskrivende overskrifter",
+      "status": "K",
+      "observation": "Overskrifter og navngitte felt kontrollert i 20 sider. Pristabellene har caption og scope for rad/kolonne.",
+      "evidence": "raw/browser-responsive.json",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "2.4.7",
+      "title": "Fokusmarkering",
+      "status": "U",
+      "observation": "Illustrasjon og pristabell har synlig 3px fokusmarkering i test. Full kontroll ved zoom, høy kontrast og alle relevante flater gjenstår.",
+      "evidence": "manual-tests.json; screenshots/animation-keyboard-pause.png",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "2.5.1",
+      "title": "Enkel pekerbruk",
+      "status": "K",
+      "observation": "Historisk vurdering, ikke full retest: Ingen handlinger krever flerfingerbevegelse, tegning eller sveipesti.",
+      "evidence": "Tidligere kontroll 6. november; beholdt som historisk delgrunnlag. Ny samlet konklusjon krever vurdering av hele omfanget.",
+      "test_date": "2026-11-06"
+    },
+    {
+      "id": "2.5.2",
+      "title": "Avbryte pekerhandling",
+      "status": "K",
+      "observation": "Historisk vurdering, ikke full retest: Handlinger er bundet til klikk, ikke til pointerdown eller mousedown.",
+      "evidence": "Tidligere kontroll 6. november; beholdt som historisk delgrunnlag. Ny samlet konklusjon krever vurdering av hele omfanget.",
+      "test_date": "2026-11-06"
+    },
+    {
+      "id": "2.5.3",
+      "title": "Synlig og kodet navn",
+      "status": "K",
+      "observation": "Historisk vurdering, ikke full retest: Navngitte felt og knapper; ressurslenkenes kodede navn inneholder synlig tekst.",
+      "evidence": "Tidligere kontroll 6. november; beholdt som historisk delgrunnlag. Ny samlet konklusjon krever vurdering av hele omfanget.",
+      "test_date": "2026-11-06"
+    },
+    {
+      "id": "2.5.4",
+      "title": "Enhetsbevegelse",
+      "status": "I",
+      "observation": "Historisk vurdering, ikke full retest: Ingen funksjoner som utløses ved risting eller annen enhetsbevegelse.",
+      "evidence": "Tidligere kontroll 6. november; beholdt som historisk delgrunnlag. Ny samlet konklusjon krever vurdering av hele omfanget.",
+      "test_date": "2026-11-06"
+    },
+    {
+      "id": "3.1.1",
+      "title": "Sidespråk",
+      "status": "K",
+      "observation": "20 sider har dokumentets hovedspråk nb.",
+      "evidence": "raw/browser-responsive.json",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "3.1.2",
+      "title": "Språkskifter",
+      "status": "B",
+      "observation": "A11Y-01: Engelske vilkårssetninger i utvidet Codex-prisseksjon arver nb uten språkmerking. Dette er hele setninger, ikke bare modellnavn eller faguttrykk.",
+      "evidence": "raw/pricing-language.json; screenshots/pricing-language.png",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "3.2.1",
+      "title": "Fokus uten navigasjon",
+      "status": "K",
+      "observation": "Historisk vurdering, ikke full retest: Fokus alene utløser ingen innsending eller navigasjon.",
+      "evidence": "Tidligere kontroll 6. november; beholdt som historisk delgrunnlag. Ny samlet konklusjon krever vurdering av hele omfanget.",
+      "test_date": "2026-11-06"
+    },
+    {
+      "id": "3.2.2",
+      "title": "Inndata uten overraskelser",
+      "status": "K",
+      "observation": "Historisk vurdering, ikke full retest: Søk og filtre endrer bare listen; spørsmålsforslag fyller feltet uten å sende.",
+      "evidence": "Tidligere kontroll 6. november; beholdt som historisk delgrunnlag. Ny samlet konklusjon krever vurdering av hele omfanget.",
+      "test_date": "2026-11-06"
+    },
+    {
+      "id": "3.2.3",
+      "title": "Stabil navigasjon",
+      "status": "K",
+      "observation": "Samme felles hovedmeny/layout brukes på alle 20 sider; Oversikt fungerer som forelder på undersidene.",
+      "evidence": "raw/browser-responsive.json; src/components/navigation.tsx",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "3.2.4",
+      "title": "Lik funksjon og navn",
+      "status": "K",
+      "observation": "Historisk vurdering, ikke full retest: Felles komponenter og konsistente navn for navigasjon og chat.",
+      "evidence": "Tidligere kontroll 6. november; beholdt som historisk delgrunnlag. Ny samlet konklusjon krever vurdering av hele omfanget.",
+      "test_date": "2026-11-06"
+    },
+    {
+      "id": "3.3.1",
+      "title": "Feilmelding",
+      "status": "K",
+      "observation": "Tom chatinnsending viser norsk feilmelding med role=alert, aria-invalid=true og aria-describedby til feltet.",
+      "evidence": "manual-tests.json#chat-validation",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "3.3.2",
+      "title": "Skjemaveiledning",
+      "status": "K",
+      "observation": "Synlige søke- og spørsmålsfelt har etikett; skjult MUI-målefelt er ikke en manglende synlig etikett.",
+      "evidence": "raw/field-candidate-review.json; raw/browser-responsive.json",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "3.3.3",
+      "title": "Hjelp ved feil",
+      "status": "K",
+      "observation": "Chatfeil oppgir 3–1000 tegn; søk uten treff tilbyr nullstilling, som gjenoppretter fem ressurser.",
+      "evidence": "manual-tests.json",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "3.3.4",
+      "title": "Konsekvensfulle innsendinger",
+      "status": "I",
+      "observation": "Historisk vurdering, ikke full retest: Ingen juridiske, økonomiske eller vedvarende brukerdataendringer i prototypen.",
+      "evidence": "Tidligere kontroll 6. november; beholdt som historisk delgrunnlag. Ny samlet konklusjon krever vurdering av hele omfanget.",
+      "test_date": "2026-11-06"
+    },
+    {
+      "id": "4.1.1",
+      "title": "Kode og ID-er",
+      "status": "K",
+      "observation": "23 eksporterte HTML-filer uten kandidater i skillens grunnkontroll; 60 DOM-kontroller uten dupliserte ID-er. Ingen full HTML-validator.",
+      "evidence": "raw/html-01.json; raw/browser-responsive.json",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "4.1.2",
+      "title": "Tilgjengelige kontrollnavn",
+      "status": "U",
+      "observation": "Knappens handlingsnavn endres ved pause/start, og synlig chatfelt har etikett. Faktisk skjermleser/hjelpemiddeltest gjenstår.",
+      "evidence": "manual-tests.json; raw/field-candidate-review.json",
+      "test_date": "2026-11-09"
+    },
+    {
+      "id": "4.1.3",
+      "title": "Statusmeldinger",
+      "status": "U",
+      "observation": "Resultattall og valideringsmelding er observert i DOM. Faktisk opplesing av søkeresultat, chatstatus og svar må testes.",
+      "evidence": "manual-tests.json",
+      "test_date": "2026-11-09"
+    }
+  ],
+  "findings": [
+    {
+      "id": "A11Y-01",
+      "criterion": "3.1.2",
+      "status": "confirmed",
+      "route": "/priser/#codex-subscription",
+      "priority": "P2 – før produksjonsgodkjenning",
+      "reproduce": [
+        "Åpne /priser/.",
+        "Gå til ChatGPT-abonnement med Codex.",
+        "Åpne Vilkår og avgrensninger.",
+        "Les Pro-/Business-vilkår og undersøk nærmeste lang-attributt."
+      ],
+      "actual": "Engelske setninger om Pro-sammenligning og års-/månedsbetaling arver nb; ingen lang-spenn finnes.",
+      "impact": "Skjermlesere kan uttale engelske vilkår med norsk uttale og gjøre informasjonen vanskeligere å forstå.",
+      "cause": "Engelsk kildetekst og norsk forklaring settes sammen i samme note-streng uten språkinformasjon.",
+      "suggested_fix": "Skill kildeutdrag og norsk forklaring i prisdatastrukturen, merk engelske tekstspenn med lang=en, eller gi en kvalitetssikret norsk oversettelse. Bevar strukturen ved automatisk synkronisering. Ikke sett hele blandede avsnittet til engelsk.",
+      "retest": "Åpne alle seks vilkårsseksjoner etter ny innhenting; kontroller språk på engelske setninger og prøv uttale med skjermleser.",
+      "alternative": "Kontakt khadah@nasjonalarkivet.no for hjelp til å forstå vilkårene; tabellen og norsk forklaring er fortsatt lesbare.",
+      "owner": "Ikke utpekt; foreslått rolle: innholds-/utviklingsansvarlig.",
+      "deadline": null,
+      "evidence": [
+        "raw/pricing-language.json",
+        "screenshots/pricing-language.png"
+      ],
+      "fixed": false
+    }
+  ]
+}

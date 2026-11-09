@@ -1,0 +1,12 @@
+{
+  "review_date": "2026-11-09",
+  "overall_conformance": "not_assessed",
+  "previous_run": "docs/tilgjengelighet/2026-11-09/201443-73cb0a3e52e0",
+  "fixed_findings": ["A11Y-01"],
+  "open_confirmed_findings": 0,
+  "unresolved_criteria": 13,
+  "project_tests_passed": 48,
+  "pricing_tests_passed": 8,
+  "live_refresh_sources_ok": 6,
+  "note": "Målrettet språkretest etter faktisk lokal prisoppdatering; ikke full ny WCAG- eller skjermlesertest."
+}

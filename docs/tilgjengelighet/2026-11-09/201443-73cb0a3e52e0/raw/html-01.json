@@ -1,0 +1,7 @@
+{
+  "status": "no_findings_in_scope",
+  "full_wcag_audit": false,
+  "coverage": "static-html-baseline",
+  "files_checked": 23,
+  "findings": []
+}

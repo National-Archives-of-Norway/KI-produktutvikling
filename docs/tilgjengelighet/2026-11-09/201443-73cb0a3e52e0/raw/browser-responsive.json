@@ -1,0 +1,1317 @@
+{
+  "observedAt": "2026-11-09T19:15:54.905Z",
+  "method": "Read-only DOM and computed style inspection, not axe or screen reader",
+  "results": [
+    {
+      "route": "/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": null,
+      "main": 1,
+      "scrollWidth": 1280,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 1280
+    },
+    {
+      "route": "/kom-i-gang/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 1280,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Kom i gang | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 1280
+    },
+    {
+      "route": "/retningslinjer/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 1280,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Retningslinjer | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 1280
+    },
+    {
+      "route": "/om/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 1280,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Om portalen | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 1280
+    },
+    {
+      "route": "/oversikt/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 1280,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Oversikt | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 1280
+    },
+    {
+      "route": "/oversikt/godkjente-ki-assistenter/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 1280,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Godkjente KI-assistenter | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 1280
+    },
+    {
+      "route": "/oversikt/godkjente-mcper/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 1280,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Godkjente MCP-er | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 1280
+    },
+    {
+      "route": "/personvern/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 1280,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Personvernerklæring | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 1280
+    },
+    {
+      "route": "/priser/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 1280,
+      "tables": [
+        {
+          "caption": "USD per bruker eller sete per måned",
+          "columnHeaders": 3,
+          "rowHeaders": 5
+        },
+        {
+          "caption": "USD per bruker eller sete per måned",
+          "columnHeaders": 3,
+          "rowHeaders": 5
+        },
+        {
+          "caption": "USD per bruker eller sete per måned",
+          "columnHeaders": 3,
+          "rowHeaders": 3
+        },
+        {
+          "caption": "USD per én million tokens",
+          "columnHeaders": 5,
+          "rowHeaders": 5
+        },
+        {
+          "caption": "USD per én million tokens",
+          "columnHeaders": 5,
+          "rowHeaders": 3
+        },
+        {
+          "caption": "USD per én million tokens",
+          "columnHeaders": 5,
+          "rowHeaders": 5
+        }
+      ],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Priser for KI-verktøy | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 1280
+    },
+    {
+      "route": "/funksjonalitet/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 1280,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Funksjonalitetsoversikt | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 1280
+    },
+    {
+      "route": "/nettstedskart/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": null,
+      "main": 1,
+      "scrollWidth": 1280,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Nettstedskart | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 1280
+    },
+    {
+      "route": "/tilgjengelighet/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 1280,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Tilgjengelighetserklæring | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 1280
+    },
+    {
+      "route": "/utviklingsplan/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": null,
+      "main": 1,
+      "scrollWidth": 1280,
+      "tables": [
+        {
+          "caption": null,
+          "columnHeaders": 3,
+          "rowHeaders": 0
+        },
+        {
+          "caption": null,
+          "columnHeaders": 4,
+          "rowHeaders": 0
+        },
+        {
+          "caption": null,
+          "columnHeaders": 3,
+          "rowHeaders": 0
+        },
+        {
+          "caption": null,
+          "columnHeaders": 3,
+          "rowHeaders": 0
+        },
+        {
+          "caption": null,
+          "columnHeaders": 3,
+          "rowHeaders": 0
+        }
+      ],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Utviklingsplan | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 1280
+    },
+    {
+      "route": "/versjonslogg/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": null,
+      "main": 1,
+      "scrollWidth": 1280,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Versjonslogg | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 1280
+    },
+    {
+      "route": "/spor/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 1280,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Spør kunnskapsbasen | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 1280
+    },
+    {
+      "route": "/ressurser/brukerbehov/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 1280,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Utforsk et brukerbehov | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 1280
+    },
+    {
+      "route": "/ressurser/kodegjennomgang/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 1280,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Gjennomgå en kodeendring | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 1280
+    },
+    {
+      "route": "/ressurser/personvernerklaering/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 1280,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Kartlegg personvern og utform erklæring | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 1280
+    },
+    {
+      "route": "/ressurser/tilgjengelighetserklaering/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 1280,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Test tilgjengelighet og utform erklæring | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 1280
+    },
+    {
+      "route": "/ressurser/tydelig-kontekst/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 1280,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Gi KI tydelig kontekst | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 1280
+    },
+    {
+      "route": "/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": null,
+      "main": 1,
+      "scrollWidth": 320,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 320
+    },
+    {
+      "route": "/kom-i-gang/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 320,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Kom i gang | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 320
+    },
+    {
+      "route": "/retningslinjer/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 320,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Retningslinjer | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 320
+    },
+    {
+      "route": "/om/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 320,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Om portalen | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 320
+    },
+    {
+      "route": "/oversikt/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 320,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Oversikt | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 320
+    },
+    {
+      "route": "/oversikt/godkjente-ki-assistenter/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 320,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Godkjente KI-assistenter | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 320
+    },
+    {
+      "route": "/oversikt/godkjente-mcper/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 320,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Godkjente MCP-er | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 320
+    },
+    {
+      "route": "/personvern/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 320,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Personvernerklæring | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 320
+    },
+    {
+      "route": "/priser/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 320,
+      "tables": [
+        {
+          "caption": "USD per bruker eller sete per måned",
+          "columnHeaders": 3,
+          "rowHeaders": 5
+        },
+        {
+          "caption": "USD per bruker eller sete per måned",
+          "columnHeaders": 3,
+          "rowHeaders": 5
+        },
+        {
+          "caption": "USD per bruker eller sete per måned",
+          "columnHeaders": 3,
+          "rowHeaders": 3
+        },
+        {
+          "caption": "USD per én million tokens",
+          "columnHeaders": 5,
+          "rowHeaders": 5
+        },
+        {
+          "caption": "USD per én million tokens",
+          "columnHeaders": 5,
+          "rowHeaders": 3
+        },
+        {
+          "caption": "USD per én million tokens",
+          "columnHeaders": 5,
+          "rowHeaders": 5
+        }
+      ],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Priser for KI-verktøy | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 320
+    },
+    {
+      "route": "/funksjonalitet/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 320,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Funksjonalitetsoversikt | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 320
+    },
+    {
+      "route": "/nettstedskart/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": null,
+      "main": 1,
+      "scrollWidth": 320,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Nettstedskart | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 320
+    },
+    {
+      "route": "/tilgjengelighet/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 320,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Tilgjengelighetserklæring | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 320
+    },
+    {
+      "route": "/utviklingsplan/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": null,
+      "main": 1,
+      "scrollWidth": 320,
+      "tables": [
+        {
+          "caption": null,
+          "columnHeaders": 3,
+          "rowHeaders": 0
+        },
+        {
+          "caption": null,
+          "columnHeaders": 4,
+          "rowHeaders": 0
+        },
+        {
+          "caption": null,
+          "columnHeaders": 3,
+          "rowHeaders": 0
+        },
+        {
+          "caption": null,
+          "columnHeaders": 3,
+          "rowHeaders": 0
+        },
+        {
+          "caption": null,
+          "columnHeaders": 3,
+          "rowHeaders": 0
+        }
+      ],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Utviklingsplan | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 320
+    },
+    {
+      "route": "/versjonslogg/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": null,
+      "main": 1,
+      "scrollWidth": 320,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Versjonslogg | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 320
+    },
+    {
+      "route": "/spor/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 320,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Spør kunnskapsbasen | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 320
+    },
+    {
+      "route": "/ressurser/brukerbehov/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 320,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Utforsk et brukerbehov | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 320
+    },
+    {
+      "route": "/ressurser/kodegjennomgang/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 320,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Gjennomgå en kodeendring | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 320
+    },
+    {
+      "route": "/ressurser/personvernerklaering/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 320,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Kartlegg personvern og utform erklæring | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 320
+    },
+    {
+      "route": "/ressurser/tilgjengelighetserklaering/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 320,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Test tilgjengelighet og utform erklæring | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 320
+    },
+    {
+      "route": "/ressurser/tydelig-kontekst/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 320,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Gi KI tydelig kontekst | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 320
+    },
+    {
+      "route": "/",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": null,
+      "main": 1,
+      "scrollWidth": 844,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 844
+    },
+    {
+      "route": "/kom-i-gang/",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 844,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Kom i gang | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 844
+    },
+    {
+      "route": "/retningslinjer/",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 844,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Retningslinjer | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 844
+    },
+    {
+      "route": "/om/",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 844,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Om portalen | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 844
+    },
+    {
+      "route": "/oversikt/",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 844,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Oversikt | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 844
+    },
+    {
+      "route": "/oversikt/godkjente-ki-assistenter/",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 844,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Godkjente KI-assistenter | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 844
+    },
+    {
+      "route": "/oversikt/godkjente-mcper/",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 844,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Godkjente MCP-er | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 844
+    },
+    {
+      "route": "/personvern/",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 844,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Personvernerklæring | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 844
+    },
+    {
+      "route": "/priser/",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 844,
+      "tables": [
+        {
+          "caption": "USD per bruker eller sete per måned",
+          "columnHeaders": 3,
+          "rowHeaders": 5
+        },
+        {
+          "caption": "USD per bruker eller sete per måned",
+          "columnHeaders": 3,
+          "rowHeaders": 5
+        },
+        {
+          "caption": "USD per bruker eller sete per måned",
+          "columnHeaders": 3,
+          "rowHeaders": 3
+        },
+        {
+          "caption": "USD per én million tokens",
+          "columnHeaders": 5,
+          "rowHeaders": 5
+        },
+        {
+          "caption": "USD per én million tokens",
+          "columnHeaders": 5,
+          "rowHeaders": 3
+        },
+        {
+          "caption": "USD per én million tokens",
+          "columnHeaders": 5,
+          "rowHeaders": 5
+        }
+      ],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Priser for KI-verktøy | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 844
+    },
+    {
+      "route": "/funksjonalitet/",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 844,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Funksjonalitetsoversikt | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 844
+    },
+    {
+      "route": "/nettstedskart/",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": null,
+      "main": 1,
+      "scrollWidth": 844,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Nettstedskart | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 844
+    },
+    {
+      "route": "/tilgjengelighet/",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 844,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Tilgjengelighetserklæring | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 844
+    },
+    {
+      "route": "/utviklingsplan/",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": null,
+      "main": 1,
+      "scrollWidth": 844,
+      "tables": [
+        {
+          "caption": null,
+          "columnHeaders": 3,
+          "rowHeaders": 0
+        },
+        {
+          "caption": null,
+          "columnHeaders": 4,
+          "rowHeaders": 0
+        },
+        {
+          "caption": null,
+          "columnHeaders": 3,
+          "rowHeaders": 0
+        },
+        {
+          "caption": null,
+          "columnHeaders": 3,
+          "rowHeaders": 0
+        },
+        {
+          "caption": null,
+          "columnHeaders": 3,
+          "rowHeaders": 0
+        }
+      ],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Utviklingsplan | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 844
+    },
+    {
+      "route": "/versjonslogg/",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": null,
+      "main": 1,
+      "scrollWidth": 844,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Versjonslogg | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 844
+    },
+    {
+      "route": "/spor/",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 844,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Spør kunnskapsbasen | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 844
+    },
+    {
+      "route": "/ressurser/brukerbehov/",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 844,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Utforsk et brukerbehov | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 844
+    },
+    {
+      "route": "/ressurser/kodegjennomgang/",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 844,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Gjennomgå en kodeendring | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 844
+    },
+    {
+      "route": "/ressurser/personvernerklaering/",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 844,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Kartlegg personvern og utform erklæring | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 844
+    },
+    {
+      "route": "/ressurser/tilgjengelighetserklaering/",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 844,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Test tilgjengelighet og utform erklæring | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 844
+    },
+    {
+      "route": "/ressurser/tydelig-kontekst/",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "bodyBackground": "rgb(9, 21, 27)",
+      "duplicateIds": [],
+      "h1": 1,
+      "lang": "nb",
+      "leadColor": "rgb(215, 215, 215)",
+      "main": 1,
+      "scrollWidth": 844,
+      "tables": [],
+      "textColor": "rgb(255, 255, 255)",
+      "title": "Gi KI tydelig kontekst | KI-Produktutvikling",
+      "unlabelledVisibleFields": [],
+      "width": 844
+    }
+  ]
+}

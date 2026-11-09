@@ -16,39 +16,39 @@
           "monthly": 10,
           "annualMonthly": null,
           "unit": "bruker/måned",
-          "note": "$10 USD per month (free for some users). Base: 1,000 AI Credits. Kontroller fullstendige vilkår hos GitHub."
+          "note": "Månedsbetaling per bruker. Gratis for enkelte brukere som oppfyller leverandørens vilkår. Inkludert: 1 000 AI-kreditter per bruker per måned. Kontroller fullstendige vilkår hos GitHub."
         },
         {
           "name": "Copilot Pro+",
           "monthly": 39,
           "annualMonthly": null,
           "unit": "bruker/måned",
-          "note": "$39 USD per month.. Base: 3,900 AI Credits. Kontroller fullstendige vilkår hos GitHub."
+          "note": "Månedsbetaling per bruker. Inkludert: 3 900 AI-kreditter per bruker per måned. Kontroller fullstendige vilkår hos GitHub."
         },
         {
           "name": "Copilot Max",
           "monthly": 100,
           "annualMonthly": null,
           "unit": "bruker/måned",
-          "note": "$100 USD per month. Base: 10,000 AI Credits. Kontroller fullstendige vilkår hos GitHub."
+          "note": "Månedsbetaling per bruker. Inkludert: 10 000 AI-kreditter per bruker per måned. Kontroller fullstendige vilkår hos GitHub."
         },
         {
           "name": "Copilot Business",
           "monthly": 19,
           "annualMonthly": null,
           "unit": "bruker/måned",
-          "note": "$19 USD per granted seat per month. Total per user per month: 1,900 AI Credits. Kontroller fullstendige vilkår hos GitHub."
+          "note": "Månedsbetaling per bruker. Inkludert: 1 900 AI-kreditter per bruker per måned. Kontroller fullstendige vilkår hos GitHub."
         },
         {
           "name": "Copilot Enterprise",
           "monthly": 39,
           "annualMonthly": null,
           "unit": "bruker/måned",
-          "note": "$39 USD per granted seat per month. Total per user per month: 3,900 AI Credits. Kontroller fullstendige vilkår hos GitHub."
+          "note": "Månedsbetaling per bruker. Inkludert: 3 900 AI-kreditter per bruker per måned. Kontroller fullstendige vilkår hos GitHub."
         }
       ],
-      "checkedAt": "2026-11-09T17:55:01.456Z",
-      "attemptedAt": "2026-11-09T17:55:01.456Z",
+      "checkedAt": "2026-11-09T19:39:01.169Z",
+      "attemptedAt": "2026-11-09T19:39:01.169Z",
       "status": "ok",
       "error": null
     },
@@ -97,8 +97,8 @@
           "note": "Årsbetaling gjelder for årsprisen. Se kilden for minstekrav til antall seter og inkludert bruk."
         }
       ],
-      "checkedAt": "2026-11-09T17:55:01.456Z",
-      "attemptedAt": "2026-11-09T17:55:01.456Z",
+      "checkedAt": "2026-11-09T19:39:01.169Z",
+      "attemptedAt": "2026-11-09T19:39:01.169Z",
       "status": "ok",
       "error": null
     },
@@ -116,25 +116,25 @@
           "monthly": 20,
           "annualMonthly": null,
           "unit": "bruker/måned",
-          "note": " Inkludert bruk og kreditter følger abonnementet; API-priser kan ikke brukes til å beregne abonnementskvoten."
+          "note": "Inkludert bruk og kreditter følger abonnementet; API-priser kan ikke brukes til å beregne abonnementskvoten."
         },
         {
           "name": "ChatGPT Pro / Codex",
           "monthly": 100,
           "annualMonthly": null,
           "unit": "bruker/måned",
-          "note": "Fra-pris. Compare Pro plans and usage limits. Inkludert bruk og kreditter følger abonnementet; API-priser kan ikke brukes til å beregne abonnementskvoten."
+          "note": "Fra-pris. Se leverandørens planer og bruksgrenser. Inkludert bruk og kreditter følger abonnementet; API-priser kan ikke brukes til å beregne abonnementskvoten."
         },
         {
           "name": "ChatGPT Business / Codex",
           "monthly": 25,
           "annualMonthly": 20,
           "unit": "bruker/måned",
-          "note": "*2+ users, billed annually. $25 per user per month when billed monthly. Inkludert bruk og kreditter følger abonnementet; API-priser kan ikke brukes til å beregne abonnementskvoten."
+          "note": "Minst 2 brukere. Årsprisen gjelder ved årsbetaling. Inkludert bruk og kreditter følger abonnementet; API-priser kan ikke brukes til å beregne abonnementskvoten."
         }
       ],
-      "checkedAt": "2026-11-09T17:55:01.456Z",
-      "attemptedAt": "2026-11-09T17:55:01.456Z",
+      "checkedAt": "2026-11-09T19:39:01.169Z",
+      "attemptedAt": "2026-11-09T19:39:01.169Z",
       "status": "ok",
       "error": null
     },
@@ -198,8 +198,8 @@
           "note": "GitHub Copilot-sats, ikke et direkte modell-API. Se kilden for kredittberegning og tilgang."
         }
       ],
-      "checkedAt": "2026-11-09T17:55:01.456Z",
-      "attemptedAt": "2026-11-09T17:55:01.456Z",
+      "checkedAt": "2026-11-09T19:39:01.169Z",
+      "attemptedAt": "2026-11-09T19:39:01.169Z",
       "status": "ok",
       "error": null
     },
@@ -243,8 +243,8 @@
           "note": "Direkte Claude API. Cache-skriving gjelder henholdsvis 5 minutter og 1 time. Region-, verktøy- og andre tillegg kan gjelde; se kilden."
         }
       ],
-      "checkedAt": "2026-11-09T17:55:01.456Z",
-      "attemptedAt": "2026-11-09T17:55:01.456Z",
+      "checkedAt": "2026-11-09T19:39:01.169Z",
+      "attemptedAt": "2026-11-09T19:39:01.169Z",
       "status": "ok",
       "error": null
     },
@@ -308,8 +308,8 @@
           "note": "OpenAI API · Standard hastighet. Ikke en abonnementspris."
         }
       ],
-      "checkedAt": "2026-11-09T17:55:01.456Z",
-      "attemptedAt": "2026-11-09T17:55:01.456Z",
+      "checkedAt": "2026-11-09T19:39:01.169Z",
+      "attemptedAt": "2026-11-09T19:39:01.169Z",
       "status": "ok",
       "error": null
     }

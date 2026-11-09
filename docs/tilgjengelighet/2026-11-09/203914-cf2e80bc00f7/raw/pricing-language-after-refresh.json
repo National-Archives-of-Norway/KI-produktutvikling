@@ -1,0 +1,74 @@
+{
+  "observedAt": "2026-11-09T19:39:58.722Z",
+  "language": "nb",
+  "sections": [
+    {
+      "checkedAt": "2026-11-09T19:39:01.169Z",
+      "id": "copilot-subscription",
+      "notes": [
+        "Copilot Pro: Månedsbetaling per bruker. Gratis for enkelte brukere som oppfyller leverandørens vilkår. Inkludert: 1 000 AI-kreditter per bruker per måned. Kontroller fullstendige vilkår hos GitHub.",
+        "Copilot Pro+: Månedsbetaling per bruker. Inkludert: 3 900 AI-kreditter per bruker per måned. Kontroller fullstendige vilkår hos GitHub.",
+        "Copilot Max: Månedsbetaling per bruker. Inkludert: 10 000 AI-kreditter per bruker per måned. Kontroller fullstendige vilkår hos GitHub.",
+        "Copilot Business: Månedsbetaling per bruker. Inkludert: 1 900 AI-kreditter per bruker per måned. Kontroller fullstendige vilkår hos GitHub.",
+        "Copilot Enterprise: Månedsbetaling per bruker. Inkludert: 3 900 AI-kreditter per bruker per måned. Kontroller fullstendige vilkår hos GitHub."
+      ],
+      "open": true
+    },
+    {
+      "checkedAt": "2026-11-09T19:39:01.169Z",
+      "id": "claude-subscription",
+      "notes": [
+        "Claude Pro: Årspris er leverandørens oppgitte månedsbeløp ved årsbetaling; avrunding kan forekomme. Bruksgrenser gjelder. Se kilden for årsbeløp og funksjoner.",
+        "Claude Max: Bruksgrenser gjelder. Se leverandørens vilkår for inkludert bruk og eventuelle API-kreditter.",
+        "Claude Ultra: Bruksgrenser gjelder. Se leverandørens vilkår for inkludert bruk og eventuelle API-kreditter.",
+        "Claude Team – Standard: Årsbetaling gjelder for årsprisen. Se kilden for minstekrav til antall seter og inkludert bruk.",
+        "Claude Team – Premium: Årsbetaling gjelder for årsprisen. Se kilden for minstekrav til antall seter og inkludert bruk."
+      ],
+      "open": true
+    },
+    {
+      "checkedAt": "2026-11-09T19:39:01.169Z",
+      "id": "codex-subscription",
+      "notes": [
+        "ChatGPT Plus / Codex: Inkludert bruk og kreditter følger abonnementet; API-priser kan ikke brukes til å beregne abonnementskvoten.",
+        "ChatGPT Pro / Codex: Fra-pris. Se leverandørens planer og bruksgrenser. Inkludert bruk og kreditter følger abonnementet; API-priser kan ikke brukes til å beregne abonnementskvoten.",
+        "ChatGPT Business / Codex: Minst 2 brukere. Årsprisen gjelder ved årsbetaling. Inkludert bruk og kreditter følger abonnementet; API-priser kan ikke brukes til å beregne abonnementskvoten."
+      ],
+      "open": true
+    },
+    {
+      "checkedAt": "2026-11-09T19:39:01.169Z",
+      "id": "copilot-tokens",
+      "notes": [
+        "GPT-5.3-Codex · Default: GitHub Copilot-sats, ikke et direkte modell-API. Se kilden for kredittberegning og tilgang.",
+        "GPT-6.1 Sol · Default: GitHub Copilot-sats, ikke et direkte modell-API. Se kilden for kredittberegning og tilgang.",
+        "GPT-6.1 Sol · Long context: GitHub Copilot-sats, ikke et direkte modell-API. Se kilden for kredittberegning og tilgang.",
+        "Claude Opus 5.5 · Default: GitHub Copilot-sats, ikke et direkte modell-API. Se kilden for kredittberegning og tilgang.",
+        "Claude Sonnet 5.5 · Default: GitHub Copilot-sats, ikke et direkte modell-API. Se kilden for kredittberegning og tilgang."
+      ],
+      "open": true
+    },
+    {
+      "checkedAt": "2026-11-09T19:39:01.169Z",
+      "id": "claude-api",
+      "notes": [
+        "Claude Opus 5.5: Direkte Claude API. Cache-skriving gjelder henholdsvis 5 minutter og 1 time. Region-, verktøy- og andre tillegg kan gjelde; se kilden.",
+        "Claude Sonnet 5.5: Direkte Claude API. Cache-skriving gjelder henholdsvis 5 minutter og 1 time. Region-, verktøy- og andre tillegg kan gjelde; se kilden.",
+        "Claude Haiku 4.5: Direkte Claude API. Cache-skriving gjelder henholdsvis 5 minutter og 1 time. Region-, verktøy- og andre tillegg kan gjelde; se kilden."
+      ],
+      "open": true
+    },
+    {
+      "checkedAt": "2026-11-09T19:39:01.169Z",
+      "id": "codex-api",
+      "notes": [
+        "gpt-6.1-sol · Short: OpenAI API · Standard hastighet. Cache-skriving gjelder henholdsvis 30 minutter og 12 timer. Andre hastigheter, regioner og verktøy kan ha andre satser.",
+        "gpt-6.1-sol · Long: OpenAI API · Standard hastighet. Cache-skriving gjelder henholdsvis 30 minutter og 12 timer. Andre hastigheter, regioner og verktøy kan ha andre satser.",
+        "gpt-6-luna · Short: OpenAI API · Standard hastighet. Cache-skriving gjelder henholdsvis 30 minutter og 12 timer. Andre hastigheter, regioner og verktøy kan ha andre satser.",
+        "gpt-6-luna · Long: OpenAI API · Standard hastighet. Cache-skriving gjelder henholdsvis 30 minutter og 12 timer. Andre hastigheter, regioner og verktøy kan ha andre satser.",
+        "gpt-5.3-codex: OpenAI API · Standard hastighet. Ikke en abonnementspris."
+      ],
+      "open": true
+    }
+  ]
+}

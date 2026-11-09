@@ -4,7 +4,7 @@ Sist oppdatert: **9. november 2026**. Utførende agent ved denne gjennomgangen: 
 
 **Status: Fungerende lokal prototype; ikke klar for produksjon eller deling av internt innhold.** Lokal funksjonalitet og modelladaptere er implementert. Drift, innlogging, faglig godkjenning og samlet lanseringskontroll gjenstår. Første delte miljø skal være en **lukket pilot**. Offentlig publisering vurderes senere, etter en egen beslutning.
 
-Gjennomgangen bygger på kode, dokumentasjon og lokal Git-historikk til og med `56d6886`, supplert med arbeidet med personvernskillen og portalens erklæringsutkast, prisside og Oversikt. Siste samlede dokumenterte kjøring har **45 beståtte tester og produksjonsbygg**, samt avgrensede nettleserkontroller. Dette er ikke dokumentasjon på produksjonsdrift, godkjent innhold, full tilgjengelighet eller vellykkede kall mot en faktisk modellleverandør. Se versjonsloggen for kontrollomfanget i hver arbeidsøkt; publisering av en planside er ikke produksjonsgodkjenning.
+Gjennomgangen bygger på kode, dokumentasjon og lokal Git-historikk til og med `56d6886`, supplert med arbeidet med personvernskillen og portalens erklæringsutkast, prisside og Oversikt. Siste samlede dokumenterte kjøring har **48 beståtte tester og produksjonsbygg**, samt avgrensede nettleserkontroller. Dette er ikke dokumentasjon på produksjonsdrift, godkjent innhold, full tilgjengelighet eller vellykkede kall mot en faktisk modellleverandør. Se versjonsloggen for kontrollomfanget i hver arbeidsøkt; publisering av en planside er ikke produksjonsgodkjenning.
 
 ## Slik brukes og vedlikeholdes planen
 
@@ -198,6 +198,13 @@ Fase 5 og 6 må samordnes før MVP 1 deles. Fase 7 kan utvikles parallelt, men f
 - [x] Lage lokale parser-/feilhåndteringstester, foreldelsesvarsel og daglig GitHub-arbeidsflyt som foreslår prisdata og versjonslogg i PR. Alle 45 tester og lokalt produksjonsbygg bestod.
 - [ ] P4: Legge repoet på GitHub, tillate nødvendige Actions-/PR-rettigheter og prøve planlagt/manuell jobb. Bare samme repo får skriverettigheter; ingen andre repoer eller modellnøkler brukes.
 - [ ] Koble sammenslått prisgrunnlag til faktisk utrulling av både nettside og RAG, og teste feilkilder/varsling i det delte miljøet. Automatisk produksjonsoppdatering er ikke aktiv. Avklare hvem som gjennomgår åpne pris-PR-er og vedlikeholder utvalget; aktiveringsstatus på siden skal oppdateres først etter verifisering.
+
+## Tilgjengelighetsretest – 9. november 2026
+
+- [x] Kontrollere 20 nåværende HTML-sider, nye oversikter/priser/personvern og animasjonen med skill 0.3.0. Lagre resultatene i `docs/tilgjengelighet/2026-11-09/201443-73cb0a3e52e0/` og oppdatere erklæring og 48-punkts arbeidsmatrise. 23 eksportfiler, 60 responsive DOM-kontroller og 40 tekstavstandskontroller er dokumentert.
+- [x] Rette og reteste A11Y-01 (3.1.2) i en egen oppfølging: prisvilkår genereres på norsk, faktisk prisoppdatering og alle seks vilkårsseksjoner er kontrollert. Tre nye regresjonstester dekker gjentatt oppdatering, endrede vilkår og ukjent format. Se `docs/tilgjengelighet/2026-11-09/203914-cf2e80bc00f7/`. P8 er fortsatt åpent grunnet øvrige uavklarte kontroller.
+- [ ] Fullføre 13 uavklarte vurderinger, inkludert skjermleser, faktisk zoom, PDF, full kontrast/fokus, redusert bevegelse med faktisk innstilling og utestede dynamiske tilstander. K/I-resultater er delgrunnlag, ikke automatisk formell etterlevelse.
+- [ ] Bekrefte juridiske virksomhetsopplysninger, endelig URL, oppfølgingsansvar og godkjenner før registrering. P8 er fortsatt åpent; ingen samsvarskategori er ferdig vurdert.
 
 ## Fase 8 – MVP 4: forvaltning og produksjonsgodkjenning
 

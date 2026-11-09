@@ -1,91 +1,64 @@
-# Tilgjengelighetserklæring for KI Produktutvikling
+# Tilgjengelighetserklæring for KI-Produktutvikling
 
-**Status: Utkast med uavklarte vurderinger; ikke klart til registrering i uustatus.no.** Dette er ikke en publisert, formell erklæring. Den lokale informasjonssiden finnes på `/tilgjengelighet/` og er lenket fra alle siders bunntekst.
+**Utkast – samlet samsvar er ikke ferdig vurdert. Tidligere språkavvik A11Y-01 er rettet og retestet. Ingen åpne bekreftede brudd står igjen i arbeidsgrunnlaget, men 13 vurderinger er fortsatt uavklart. Ikke klart til registrering i uustatus.no.** Lokal informasjon på `/tilgjengelighet/` erstatter ikke virksomhetens formelle erklæring.
 
-Sist tekstlig oppdatert og kildekontrollert: 7. november 2026. Tilgjengelighetstestene er fra 6. november 2026. Oppdateringen bruker skillen `tilgjengelighetserklaering` og dens arbeidsmal; den er ikke en ny tilgjengelighetsrevisjon.
+Siste test, kildegjennomgang og tekstoppdatering: **9. november 2026**. Grunnlag: commit `c622090`, med lokale parser-/datarettinger og dokumentasjonsoppdatering. Utført av Codex (OpenAI), med tilgjengelighetserklaering 0.3.0. Første utkast/test: 6. november 2026; tekstlig oppdatering 7. november bevares som historikk.
 
-## Opplysninger om nettstedet
+## Nettsted og ansvar
 
-| Felt                               | Opplysning                                                                                                     |
-| ---------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| Nettsted                           | KI-Produktutvikling                                                                                            |
-| Virksomhet                         | Nasjonalarkivet; juridisk navn og organisasjonsnummer bekreftes av virksomheten ved registrering               |
-| Nettadresse                        | Ikke valgt; lokal testing på `http://127.0.0.1:3000/`                                                          |
-| Kontakt for tilgjengelighet        | khadah@nasjonalarkivet.no, oppgitt av prosjekteier i chatten                                                   |
-| Godkjenner                         | Ikke avklart; kontaktadressen er ikke en dokumentert godkjenning eller fullmakt                                |
-| Undersøkelsesdato og første utkast | 6. november 2026                                                                                               |
-| Testgrunnlag                       | Lokal kodegjennomgang, tastatur, DOM og tilgjengelighetstre, responsive visninger og avgrensede kontrasttester |
-| Utførende agent                    | Codex (OpenAI); ingen ekstern sertifisering                                                                    |
-| Publisert formell erklæring        | Ikke opprettet; URL legges til etter registrering                                                              |
+| Felt                         | Opplysning                                                                            |
+| ---------------------------- | ------------------------------------------------------------------------------------- |
+| Nettsted                     | KI-Produktutvikling                                                                   |
+| Virksomhet                   | Nasjonalarkivet; juridisk navn og organisasjonsnummer må bekreftes ved registrering   |
+| Nettadresse                  | Endelig adresse ikke valgt; testet lokalt på http://127.0.0.1:3000/                   |
+| Kontakt                      | khadah@nasjonalarkivet.no, tidligere bekreftet for tilgjengelighet i dette prosjektet |
+| Godkjenner/oppfølgingsansvar | Ikke avklart; e-postbekreftelsen er ikke godkjenning eller fullmakt                   |
+| Formell erklæring            | Ikke opprettet/publisert; ingen registrering utført av agenten                        |
 
-## Omfang
+## Omfang og undersøkelse
 
-Grunnlaget gjelder den lokale nettstedsprototypens ni sider: forside, Kom i gang, Om, Spør kunnskapsbasen, tre eksempelressurser, nettstedskart og tilgjengelighetssiden. Den er en nettløsning, ikke en native app. Det er ikke grunnlag for å inkludere fremtidig innlogging, privat innhold eller generering med faktisk modell i testresultatene. Utvid omfanget og test ved innføring av disse funksjonene.
+20 nåværende HTML-sider er undersøkt, inkludert Oversikt, Godkjente KI-assistenter, Godkjente MCP-er, priser, personvern, funksjonalitetsoversikt, utviklingsplan, versjonslogg, de fem ressursdetaljene og eksisterende sider/chat. PDF-vedlegget er lenket fra portalen, men dets tagging, alternativer og leserekkefølge er ikke ferdig undersøkt. Innlogging, privat innhold og svar fra en faktisk modellleverandør er ikke testet.
 
-## Regelgrunnlag
+Bred kontroll før retting: [testrapport](2026-11-09/201443-73cb0a3e52e0/testrapport.md), [manifest](2026-11-09/201443-73cb0a3e52e0/manifest.json), [arbeidsmatrise](2026-11-09/201443-73cb0a3e52e0/wcag-grunnlag.json), [manuelle resultater](2026-11-09/201443-73cb0a3e52e0/manual-tests.json). Referanse: **201443-73cb0a3e52e0**. Skillens HTML-delkontroll omfattet 23 eksportfiler. Nettleser: 60 DOM-kontroller ved tre størrelser og 40 tekstavstandskontroller ved to bredder. Utvalgte tastaturhandlinger, kontrollnavn, rullbare tabeller, dialog, feil og kontrastpar er undersøkt. Midlertidig test-CSS er fjernet.
 
-Forskriftens §§ 4b og 4e beskriver kravene for offentlige nettløsninger, erklæring og tilbakemeldingsfunksjon. Erklæringen skal bruke Digdirs sentrale løsning. Den må blant annet redegjøre for utilgjengelig innhold og alternativer, kontaktfunksjon og klageadgang, og oppdateres minst årlig. [Forskriften § 4e](https://lovdata.no/forskrift/2013-06-21-732/§4e)
+Ny målrettet retest: [retestrapport](2026-11-09/203914-cf2e80bc00f7/testrapport.md), [grunnlag](2026-11-09/203914-cf2e80bc00f7/wcag-grunnlag.json). A11Y-01 ble lukket etter faktisk prisoppdatering og nettleserretest. Øvrige vurderinger er videreført, ikke retestet.
 
-Dette arbeidet tar utgangspunkt i de 48 WCAG-kravene Uu-tilsynet oppgir for offentlig sektor. At en portal først er lukket, er ikke alene grunn til å unnlate vurdering: reglene omfatter også nye intranett og ekstranett innenfor forskriftens virkeområde. Nasjonalarkivet må bekrefte avgrensningen for sin løsning. [Uu-tilsynets kravoversikt](https://www.uutilsynet.no/wcag-standarden/wcag-standarden/86), [veiledning om erklæringen](https://www.uutilsynet.no/tilgjengelighetserklaering/om-tilgjengelegheitserklaering/1128)
+## Kravgrunnlag og samsvar
 
-## Samsvar og utilgjengelig innhold
+Arbeidslisten tar utgangspunkt i [Uu-tilsynets 48 krav for offentlig sektor](https://www.uutilsynet.no/wcag-standarden/wcag-standarden/86), kontrollert 9. november 2026. Virksomheten må bekrefte virkeområde og formell erklæring etter [veiledningen](https://www.uutilsynet.no/tilgjengelighetserklaering/korleis-lage-og-oppdatere-tilgjengelegheitserklaering/1131). Ingen ny selvstendig lovtolkning eller myndighetsgodkjenning er gjort.
 
-Samlet samsvarsstatus er ikke ferdig vurdert. Ikke velg «i samsvar» eller «delvis i samsvar» i den formelle erklæringen før virksomheten har grunnlag for det. [WCAG-KONTROLL.md](WCAG-KONTROLL.md) angir vurdering og testbegrensninger for alle 48 punkter.
+Samlet samsvar er ikke ferdig vurdert. [WCAG-kontrollen](WCAG-KONTROLL.md) har 25 K, 10 I, 13 U og 0 B. K er undersøkt uten funn i oppgitt delomfang, I er historisk fravær av utløsende HTML-innhold, U er uavklart/delvis, B er bekreftet brudd. Tallene er ikke en samsvarsprosent eller automatisk Ja/Nei-grunnlag for registrering. Noen historiske vurderinger beholdes med dato 6. november, ikke ny testdato.
 
-Den påviste svake kanten rundt chatfeltet er rettet: beregnet kontrast på hovedbakgrunnen økte fra ca. 1,96:1 til 5,57:1. Fokus og feilkommunikasjon er også forbedret. Andre manuelle kontroller gjenstår, særlig skjermleser, faktisk zoom og full vurdering av kontraster og fokus. Manglende testing er ikke et dokumentert brudd eller et rettslig unntak.
+## Rettet avvik: A11Y-01, språk i prisvilkår
 
-### Uavklarte vurderinger og utfyllingsgrunnlag
+Opprinnelig brudd på [3.1.2](https://www.uutilsynet.no/wcag-standarden/312-sprak-pa-deler-av-innhold-niva-aa/111): engelske vilkårssetninger på `/priser/#codex-subscription` arvet norsk språk uten merking. Dette kunne gi feil uttale i skjermleser. [Opprinnelig bevis](2026-11-09/201443-73cb0a3e52e0/raw/pricing-language.json) er bevart.
 
-Arbeidsmatrisen har 29 K, 11 I og 8 U. Dette er interne arbeidskoder, ikke 29 bekreftet oppfylte krav eller en samsvarsprosent. K betyr bare undersøkt uten funn i det beskrevne omfanget; I må bekreftes som faktisk fravær av utløsende innhold. Ingen av kodene oversettes automatisk til formelle svar. [Uu-tilsynets spørsmål per kriterium](https://www.uutilsynet.no/tilgjengelighetserklaering/sporsmal-i-tilgjengelegheitserklaeringa/1005)
+**Rettet og retestet 9. november 2026.** Copilot- og Codex-notene genereres nå på norsk fra kjente kildefelt. Alle seks prisseksjoner er undersøkt i nettleser etter faktisk prisoppdatering; tidligere engelske setninger er borte. Tre nye regresjonstester bekrefter at gjentatt oppdatering/JSON-lagring bevarer norsk tekst, kildetall oppdaterer forklaringen og ukjent vilkårsformat gir feil uten å erstatte tidligere norske data. Det er ingen generell automatisk språkdetektor.
 
-| Uavklart krav | Hva må dokumenteres før konklusjon?                                       |
-| ------------- | ------------------------------------------------------------------------- |
-| 1.3.1         | At semantikk og relasjoner også fungerer med skjermleser.                 |
-| 1.4.3         | Resterende tekstkontraster og relevante tilstander, inkludert gradienter. |
-| 1.4.4         | Faktisk 200 % tekstforstørring uten funksjons- eller innholdstap.         |
-| 1.4.11        | Ikke-tekstlig kontrast for alle relevante kontrolltilstander.             |
-| 2.4.3         | Full fokusrekkefølge ved zoom og bruk av hjelpemidler.                    |
-| 2.4.7         | Synlig fokus i alle relevante kombinasjoner og tilstander.                |
-| 4.1.2         | Navn, rolle og verdi ved faktisk hjelpemiddelbruk.                        |
-| 4.1.3         | At skjermleser formidler søkeresultater, feil og chatstatus riktig.       |
+[Retestbevis](2026-11-09/203914-cf2e80bc00f7/raw/pricing-language-after-refresh.json), [faktisk innhenting](2026-11-09/203914-cf2e80bc00f7/raw/live-refresh.json) og [skjermbilde](2026-11-09/203914-cf2e80bc00f7/screenshots/pricing-language-fixed.png). Ingen faktisk skjermleseropplesing er testet, og lukking av dette avviket betyr ikke fullstendig samsvar. Kontaktadressen er fortsatt tilgjengelig for hjelp til prisvilkår.
 
-Ingen av disse åtte punktene får et oppdiktet Ja/Nei-svar i utfyllingsgrunnlaget. Et påvist brudd skal likevel registreres som brudd selv om andre kriterier er uavklart.
+## Animasjon og andre testresultater
 
-### Dokumentasjon av bekreftede brudd
+Forsideillustrasjonen starter automatisk. Klikk eller Tab til illustrasjonen og bruk mellomrom/Enter for pause/start. Tastaturtesten dokumenterte paused/running på begge punkter og halo, synlig fokus og Tab videre til søkefeltet. Dette erstatter den gamle vurderingen av statisk illustrasjon under 2.2.2. Redusert-bevegelse-regelen er kodekontrollert, men ikke testet med faktisk system-/nettleserinnstilling.
 
-For hvert faktisk brudd som bekreftes før registrering, fylles følgende ut:
+60 normalvisningskontroller og 40 økte tekstavstandskontroller viste ingen sidebredde-overflyt. Pristabellen kunne rulles med høyrepil ved 320 px. Tom chat viste norsk alert/aria-invalid, og Escape returnerte fokus til chatåpneren. Grunnfargenes kontrast ble beregnet til 18,51:1, 12,86:1 og 13,76:1. Dette gjelder ikke alle flater, tilstander eller gradienter. Tidligere dokumentasjon av rettet chatfeltkant beholdes; den er ikke fremstilt som en full ny kontrastretest.
 
-- Berørt krav og nøyaktig side/funksjon.
-- Hva som ikke fungerer, og hva det betyr for brukeren.
-- Årsak, tiltak, ansvarlig og realistisk frist for retting.
-- Tilgjengelig alternativ, dersom det finnes, eller hvordan brukeren kan be om hjelp.
-- Eventuelt særskilt unntaksgrunnlag, bare dersom virksomheten har vurdert og dokumentert det. Ingen slike unntak er gjort i denne kontrollen.
+## Hva må avklares og testes videre?
 
-## Tilgjengelige veier til innhold og hjelp
+Faktisk skjermleserbruk av navigasjon, tabeller, feil, søkeresultater og chat; faktisk 200 % tekstforstørring og 400 % nettleserzoom; mobil med skjermtastatur; PDF-vedlegg; alle relevante fokus-/kontrasttilstander; redusert bevegelse i faktisk innstilling; flere nettlesere og utestede dynamiske tilstander. axe/Lighthouse er ikke kjørt. DOM/AX, smal viewport og byggetester erstatter ikke disse kontrollene. Uavklart testing er ikke i seg selv et dokumentert brudd eller rettslig unntak.
 
-Ressursenes detaljsider kan nås fra nettstedskartet og katalogen uten chat. Disse er alternative veier til innholdet, ikke dokumenterte erstatninger for ethvert mulig tilgjengelighetsproblem. Ved problemer kan brukeren be om et annet format via kontaktkanalen. Det finnes ikke en bekreftet tjeneste eller en avtalt leveringsfrist for alternative formater ennå.
+## Hjelp, tilbakemelding og klage
 
-## Tilbakemelding og alternativt format
-
-Brukerne kan melde feil, be om tilgjengelig innhold og foreslå forbedringer via [khadah@nasjonalarkivet.no](mailto:khadah@nasjonalarkivet.no). Den lokale siden ber om lenke til siden, hva brukeren forsøkte og hva som feilet, uten sensitive opplysninger.
-
-Før lansering må virksomheten avklare hvem som følger opp e-postene, fraværsdekning og hvordan alternative formater leveres. Uu-tilsynets veiledning sier at brukeren skal få svar så snart som mulig, vanligvis innen tre uker. [Veiledning om tilbakemeldinger](https://www.uutilsynet.no/tilgjengelighetserklaering/hva-betyr-det-brukeren/1129)
-
-## Klage
-
-Den lokale siden lenker til [Diskrimineringsnemndas klageinformasjon](https://www.diskrimineringsnemnda.no/klage). Brukeren får informasjon om klage ved utilgjengelig innhold, manglende svar eller et utilfredsstillende svar.
+Ressursene kan leses fra katalog og nettstedskart uten chatten. Brukeren kan be om hjelp eller alternativt format på **khadah@nasjonalarkivet.no**. Virksomheten må avklare ansvar for oppfølging, fravær og levering før lansering. Ikke lov ubekreftede rettingsfrister. [Uu-tilsynets brukerveiledning](https://www.uutilsynet.no/tilgjengelighetserklaering/hva-betyr-det-brukeren/1129) omtaler tilbakemelding og vanlig svar innen tre uker. Klageinformasjon: [Diskrimineringsnemnda](https://www.diskrimineringsnemnda.no/klage). Sistnevnte URL svarte med JavaScript-applikasjon ved kildekontrollen; innholdet ble ikke fullstendig lest i web-verktøyet.
 
 ## Ferdigstilling og vedlikehold
 
-1. Fullfør U-punktene i kontrollrapporten, og dokumenter eventuelle faktiske brudd og alternativer.
-2. Bekreft navn, organisasjonsnummer, endelig adresse, kontaktansvar og godkjenner.
-3. En autorisert representant registrerer vurderingen i uustatus.no og publiserer erklæringen. Kodeassistenten har ikke logget inn eller sendt inn noe.
-4. Lenke til den faktiske erklæringen legges på `/tilgjengelighet/`; utkaststatus fjernes først når opplysningene er bekreftet.
-5. Kontroller lenke og kontaktfunksjon på den utrullede løsningen, også i lukket testmiljø.
-6. Legg inn ansvar for årlig gjennomgang, senest 12 måneder etter faktisk publisering/oppdatering, og ved større endringer. Dette dokumentet oppretter ingen automatisk påminnelse.
+Følg opp eventuelle nye avvik og kildeendringer, fullfør uavklarte kontroller, og bekreft juridiske virksomhetsopplysninger, endelig URL og godkjenner. En autorisert representant må håndtere den formelle erklæringen i uustatus.no. Ingen innlogging, innsending eller publisering er utført. Oppdater ved relevante endringer og følg myndighetens vedlikeholdsveiledning; ingen påminnelse er opprettet. Ingen unntak basert på uforholdsmessig byrde er vurdert.
 
-Registreringsprosessen og krav til testing er beskrevet i [Uu-tilsynets veiledning](https://www.uutilsynet.no/tilgjengelighetserklaering/korleis-lage-og-oppdatere-tilgjengelegheitserklaering/1131).
+## Historikk
 
-## Endring 7. november 2026
+Tidligere grunnlag er bevart i [historisk erklæringsutkast](2026-11-09/201443-73cb0a3e52e0/raw/previous-TILGJENGELIGHETSERKLAERING.md) og eldre kjøringer. De gamle tallene 29 K / 11 I / 8 U gjelder ikke dagens utvidede kontroll. Ingen tidligere bekreftet feil er fjernet uten evidens; nye mangler og større usikkerhet er synliggjort.
 
-Codex (OpenAI) brukte skillen `tilgjengelighetserklaering` til å avstemme nettstedsteksten og dette grunnlaget med arbeidsmalen og Uu-tilsynets veiledning. Omfang, testdato, kildekontrolldato og utkastdato er skilt. Ingen nye testresultater eller unntak er lagt til. Ingen innlogging, registrering eller offentlig publisering er utført.
+## Retesthistorikk 9. november 2026
+
+Den brede kontrollen fant ett språkavvik. Den etterfølgende målrettede rettingen og retesten lukket A11Y-01. De 13 U-punktene er bevart. Tidligere erklæring før retting er arkivert i [retestmappen](2026-11-09/203914-cf2e80bc00f7/raw/previous-TILGJENGELIGHETSERKLAERING.md).

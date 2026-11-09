@@ -1,0 +1,766 @@
+{
+  "method": "Temporary source CSS override: line-height 1.5, paragraph spacing 2em, letter-spacing .12em and word-spacing .16em; not browser zoom. Page-width check only, with selected visual inspection.",
+  "observedAt": "2026-11-09T19:18:37.150Z",
+  "results": [
+    {
+      "route": "/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "heading": {
+        "fontSize": "42px",
+        "letterSpacing": "5.04px",
+        "lineHeight": "63px",
+        "wordSpacing": "6.72px"
+      },
+      "paragraph": {
+        "fontSize": "17px",
+        "marginBottom": "34px"
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "route": "/kom-i-gang/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "heading": {
+        "fontSize": "36px",
+        "letterSpacing": "4.32px",
+        "lineHeight": "54px",
+        "wordSpacing": "5.76px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "route": "/retningslinjer/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "heading": {
+        "fontSize": "36px",
+        "letterSpacing": "4.32px",
+        "lineHeight": "54px",
+        "wordSpacing": "5.76px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "route": "/om/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "heading": {
+        "fontSize": "36px",
+        "letterSpacing": "4.32px",
+        "lineHeight": "54px",
+        "wordSpacing": "5.76px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "route": "/oversikt/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "heading": {
+        "fontSize": "36px",
+        "letterSpacing": "4.32px",
+        "lineHeight": "54px",
+        "wordSpacing": "5.76px"
+      },
+      "paragraph": {
+        "fontSize": "11px",
+        "marginBottom": "22px"
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "route": "/oversikt/godkjente-ki-assistenter/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "heading": {
+        "fontSize": "36px",
+        "letterSpacing": "4.32px",
+        "lineHeight": "54px",
+        "wordSpacing": "5.76px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "route": "/oversikt/godkjente-mcper/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "heading": {
+        "fontSize": "36px",
+        "letterSpacing": "4.32px",
+        "lineHeight": "54px",
+        "wordSpacing": "5.76px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "route": "/personvern/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "heading": {
+        "fontSize": "36px",
+        "letterSpacing": "4.32px",
+        "lineHeight": "54px",
+        "wordSpacing": "5.76px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "route": "/priser/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "heading": {
+        "fontSize": "36px",
+        "letterSpacing": "4.32px",
+        "lineHeight": "54px",
+        "wordSpacing": "5.76px"
+      },
+      "paragraph": {
+        "fontSize": "11px",
+        "marginBottom": "22px"
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "route": "/funksjonalitet/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "heading": {
+        "fontSize": "36px",
+        "letterSpacing": "4.32px",
+        "lineHeight": "54px",
+        "wordSpacing": "5.76px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "route": "/nettstedskart/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "heading": {
+        "fontSize": "36px",
+        "letterSpacing": "4.32px",
+        "lineHeight": "54px",
+        "wordSpacing": "5.76px"
+      },
+      "paragraph": {
+        "fontSize": "16px",
+        "marginBottom": "32px"
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "route": "/tilgjengelighet/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "heading": {
+        "fontSize": "36px",
+        "letterSpacing": "4.32px",
+        "lineHeight": "54px",
+        "wordSpacing": "5.76px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "route": "/utviklingsplan/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "heading": {
+        "fontSize": "36px",
+        "letterSpacing": "4.32px",
+        "lineHeight": "54px",
+        "wordSpacing": "5.76px"
+      },
+      "paragraph": {
+        "fontSize": "16px",
+        "marginBottom": "32px"
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "route": "/versjonslogg/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "heading": {
+        "fontSize": "36px",
+        "letterSpacing": "4.32px",
+        "lineHeight": "54px",
+        "wordSpacing": "5.76px"
+      },
+      "paragraph": {
+        "fontSize": "16px",
+        "marginBottom": "32px"
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "route": "/spor/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "heading": {
+        "fontSize": "36px",
+        "letterSpacing": "4.32px",
+        "lineHeight": "54px",
+        "wordSpacing": "5.76px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "route": "/ressurser/brukerbehov/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "heading": {
+        "fontSize": "36px",
+        "letterSpacing": "4.32px",
+        "lineHeight": "54px",
+        "wordSpacing": "5.76px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "route": "/ressurser/kodegjennomgang/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "heading": {
+        "fontSize": "36px",
+        "letterSpacing": "4.32px",
+        "lineHeight": "54px",
+        "wordSpacing": "5.76px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "route": "/ressurser/personvernerklaering/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "heading": {
+        "fontSize": "36px",
+        "letterSpacing": "4.32px",
+        "lineHeight": "54px",
+        "wordSpacing": "5.76px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "route": "/ressurser/tilgjengelighetserklaering/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "heading": {
+        "fontSize": "36px",
+        "letterSpacing": "4.32px",
+        "lineHeight": "54px",
+        "wordSpacing": "5.76px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "route": "/ressurser/tydelig-kontekst/",
+      "viewport": {
+        "width": 320,
+        "height": 740
+      },
+      "heading": {
+        "fontSize": "36px",
+        "letterSpacing": "4.32px",
+        "lineHeight": "54px",
+        "wordSpacing": "5.76px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "route": "/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "heading": {
+        "fontSize": "79.36px",
+        "letterSpacing": "9.5232px",
+        "lineHeight": "119.04px",
+        "wordSpacing": "12.6976px"
+      },
+      "paragraph": {
+        "fontSize": "18px",
+        "marginBottom": "36px"
+      },
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "route": "/kom-i-gang/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "heading": {
+        "fontSize": "48px",
+        "letterSpacing": "5.76px",
+        "lineHeight": "72px",
+        "wordSpacing": "7.68px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "route": "/retningslinjer/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "heading": {
+        "fontSize": "48px",
+        "letterSpacing": "5.76px",
+        "lineHeight": "72px",
+        "wordSpacing": "7.68px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "route": "/om/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "heading": {
+        "fontSize": "48px",
+        "letterSpacing": "5.76px",
+        "lineHeight": "72px",
+        "wordSpacing": "7.68px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "route": "/oversikt/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "heading": {
+        "fontSize": "48px",
+        "letterSpacing": "5.76px",
+        "lineHeight": "72px",
+        "wordSpacing": "7.68px"
+      },
+      "paragraph": {
+        "fontSize": "14px",
+        "marginBottom": "28px"
+      },
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "route": "/oversikt/godkjente-ki-assistenter/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "heading": {
+        "fontSize": "48px",
+        "letterSpacing": "5.76px",
+        "lineHeight": "72px",
+        "wordSpacing": "7.68px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "route": "/oversikt/godkjente-mcper/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "heading": {
+        "fontSize": "48px",
+        "letterSpacing": "5.76px",
+        "lineHeight": "72px",
+        "wordSpacing": "7.68px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "route": "/personvern/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "heading": {
+        "fontSize": "48px",
+        "letterSpacing": "5.76px",
+        "lineHeight": "72px",
+        "wordSpacing": "7.68px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "route": "/priser/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "heading": {
+        "fontSize": "48px",
+        "letterSpacing": "5.76px",
+        "lineHeight": "72px",
+        "wordSpacing": "7.68px"
+      },
+      "paragraph": {
+        "fontSize": "14px",
+        "marginBottom": "28px"
+      },
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "route": "/funksjonalitet/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "heading": {
+        "fontSize": "48px",
+        "letterSpacing": "5.76px",
+        "lineHeight": "72px",
+        "wordSpacing": "7.68px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "route": "/nettstedskart/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "heading": {
+        "fontSize": "48px",
+        "letterSpacing": "5.76px",
+        "lineHeight": "72px",
+        "wordSpacing": "7.68px"
+      },
+      "paragraph": {
+        "fontSize": "16px",
+        "marginBottom": "32px"
+      },
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "route": "/tilgjengelighet/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "heading": {
+        "fontSize": "48px",
+        "letterSpacing": "5.76px",
+        "lineHeight": "72px",
+        "wordSpacing": "7.68px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "route": "/utviklingsplan/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "heading": {
+        "fontSize": "48px",
+        "letterSpacing": "5.76px",
+        "lineHeight": "72px",
+        "wordSpacing": "7.68px"
+      },
+      "paragraph": {
+        "fontSize": "16px",
+        "marginBottom": "32px"
+      },
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "route": "/versjonslogg/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "heading": {
+        "fontSize": "48px",
+        "letterSpacing": "5.76px",
+        "lineHeight": "72px",
+        "wordSpacing": "7.68px"
+      },
+      "paragraph": {
+        "fontSize": "16px",
+        "marginBottom": "32px"
+      },
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "route": "/spor/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "heading": {
+        "fontSize": "48px",
+        "letterSpacing": "5.76px",
+        "lineHeight": "72px",
+        "wordSpacing": "7.68px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "route": "/ressurser/brukerbehov/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "heading": {
+        "fontSize": "48px",
+        "letterSpacing": "5.76px",
+        "lineHeight": "72px",
+        "wordSpacing": "7.68px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "route": "/ressurser/kodegjennomgang/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "heading": {
+        "fontSize": "48px",
+        "letterSpacing": "5.76px",
+        "lineHeight": "72px",
+        "wordSpacing": "7.68px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "route": "/ressurser/personvernerklaering/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "heading": {
+        "fontSize": "48px",
+        "letterSpacing": "5.76px",
+        "lineHeight": "72px",
+        "wordSpacing": "7.68px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "route": "/ressurser/tilgjengelighetserklaering/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "heading": {
+        "fontSize": "48px",
+        "letterSpacing": "5.76px",
+        "lineHeight": "72px",
+        "wordSpacing": "7.68px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    {
+      "route": "/ressurser/tydelig-kontekst/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "heading": {
+        "fontSize": "48px",
+        "letterSpacing": "5.76px",
+        "lineHeight": "72px",
+        "wordSpacing": "7.68px"
+      },
+      "paragraph": {
+        "fontSize": "21px",
+        "marginBottom": "42px"
+      },
+      "scrollWidth": 1280,
+      "width": 1280
+    }
+  ]
+}

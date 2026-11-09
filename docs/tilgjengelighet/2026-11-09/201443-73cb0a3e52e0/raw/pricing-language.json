@@ -1,0 +1,21 @@
+{
+  "route": "/priser/#codex-subscription",
+  "observedAt": "2026-11-09T19:17:33.061Z",
+  "elements": [
+    {
+      "language": "nb",
+      "languageSpans": [],
+      "text": "ChatGPT Plus / Codex:  Inkludert bruk og kreditter følger abonnementet; API-priser kan ikke brukes til å beregne abonnementskvoten."
+    },
+    {
+      "language": "nb",
+      "languageSpans": [],
+      "text": "ChatGPT Pro / Codex: Fra-pris. Compare Pro plans and usage limits. Inkludert bruk og kreditter følger abonnementet; API-priser kan ikke brukes til å beregne abonnementskvoten."
+    },
+    {
+      "language": "nb",
+      "languageSpans": [],
+      "text": "ChatGPT Business / Codex: *2+ users, billed annually. $25 per user per month when billed monthly. Inkludert bruk og kreditter følger abonnementet; API-priser kan ikke brukes til å beregne abonnementskvoten."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "A11Y-01",
+    "criterion": "3.1.2",
+    "status": "confirmed",
+    "route": "/priser/#codex-subscription",
+    "priority": "P2 – før produksjonsgodkjenning",
+    "reproduce": [
+      "Åpne /priser/.",
+      "Gå til ChatGPT-abonnement med Codex.",
+      "Åpne Vilkår og avgrensninger.",
+      "Les Pro-/Business-vilkår og undersøk nærmeste lang-attributt."
+    ],
+    "actual": "Engelske setninger om Pro-sammenligning og års-/månedsbetaling arver nb; ingen lang-spenn finnes.",
+    "impact": "Skjermlesere kan uttale engelske vilkår med norsk uttale og gjøre informasjonen vanskeligere å forstå.",
+    "cause": "Engelsk kildetekst og norsk forklaring settes sammen i samme note-streng uten språkinformasjon.",
+    "suggested_fix": "Skill kildeutdrag og norsk forklaring i prisdatastrukturen, merk engelske tekstspenn med lang=en, eller gi en kvalitetssikret norsk oversettelse. Bevar strukturen ved automatisk synkronisering. Ikke sett hele blandede avsnittet til engelsk.",
+    "retest": "Åpne alle seks vilkårsseksjoner etter ny innhenting; kontroller språk på engelske setninger og prøv uttale med skjermleser.",
+    "alternative": "Kontakt khadah@nasjonalarkivet.no for hjelp til å forstå vilkårene; tabellen og norsk forklaring er fortsatt lesbare.",
+    "owner": "Ikke utpekt; foreslått rolle: innholds-/utviklingsansvarlig.",
+    "deadline": null,
+    "evidence": [
+      "raw/pricing-language.json",
+      "screenshots/pricing-language.png"
+    ],
+    "fixed": false
+  }
+]

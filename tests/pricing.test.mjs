@@ -101,3 +101,88 @@ test("førstegangssvikt gir tomt grunnlag, aldri gratispriser eller falsk kontro
     ),
   );
 });
+
+test("automatisk prisoppdatering og JSON-lagring bevarer norske vilkår", async () => {
+  const first = await refresh(null, fetcher, "2026-11-09T20:00:00Z");
+  const next = JSON.parse(
+    JSON.stringify(
+      await refresh(
+        JSON.parse(JSON.stringify(first)),
+        fetcher,
+        "2026-11-09T21:00:00Z",
+      ),
+    ),
+  );
+  assert.ok(next.groups.every((g) => g.status === "ok"));
+  for (const group of next.groups) {
+    for (const row of group.rows) {
+      assert.doesNotMatch(
+        row.note,
+        /billed annually|when billed monthly|Compare Pro plans|USD per month|free for some users|Total per user per month|Base:/i,
+      );
+    }
+  }
+  const business = next.groups
+    .find((g) => g.id === "codex-subscription")
+    .rows.find((r) => r.name.includes("Business"));
+  assert.match(
+    business.note,
+    /Minst 2 brukere\. Årsprisen gjelder ved årsbetaling\./,
+  );
+  const copilot = next.groups
+    .find((g) => g.id === "copilot-subscription")
+    .rows.find((r) => r.name === "Copilot Pro");
+  assert.match(copilot.note, /Gratis for enkelte brukere/);
+  assert.match(
+    copilot.note,
+    /Inkludert: 1\s000 AI-kreditter per bruker per måned/,
+  );
+});
+
+test("endret brukerkrav og månedspris oppdaterer norsk tekst fra kildefeltene", async () => {
+  const next = await refresh(null, async (url) => ({
+    ok: true,
+    text: async () =>
+      url === sources.find((s) => s.id === "codex-subscription").fetchUrl
+        ? fixtures.codexPlans.replace(
+            "*2+ users, billed annually. $25",
+            "*5+ users, billed annually. $27",
+          )
+        : await (await fetcher(url)).text(),
+  }));
+  const group = next.groups.find((g) => g.id === "codex-subscription");
+  assert.equal(group.status, "ok");
+  const business = group.rows.find((r) => r.name.includes("Business"));
+  assert.equal(business.monthly, 27);
+  assert.match(business.note, /Minst 5 brukere/);
+  assert.doesNotMatch(business.note, /Minst 2|billed/);
+});
+
+test("ukjente engelske tilleggsvilkår gir feil og bevarer tidligere norsk tekst", async () => {
+  const old = await refresh(null, fetcher, "2026-11-09T20:00:00Z");
+  const badFetcher = async (url) => ({
+    ok: true,
+    text: async () =>
+      (await (await fetcher(url)).text())
+        .replace(
+          "Compare Pro plans and usage limits.",
+          "Only available for selected customers.",
+        )
+        .replace(
+          "$10 USD per month (free for some users)",
+          "$10 USD per month (additional restrictions apply)",
+        ),
+  });
+  const next = await refresh(old, badFetcher, "2026-11-09T21:00:00Z");
+  for (const id of ["copilot-subscription", "codex-subscription"]) {
+    const group = next.groups.find((g) => g.id === id),
+      previous = old.groups.find((g) => g.id === id);
+    assert.equal(group.status, "error");
+    assert.deepEqual(group.rows, previous.rows);
+    assert.equal(group.checkedAt, previous.checkedAt);
+    assert.doesNotMatch(
+      JSON.stringify(group.rows),
+      /selected customers|additional restrictions/,
+    );
+  }
+});

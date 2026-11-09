@@ -1,0 +1,38 @@
+[
+  {
+    "arguments": [
+      "python3",
+      "/Users/khadah/.codex/skills/tilgjengelighetserklaering/scripts/contrast.py",
+      "#ffffff",
+      "#09151b",
+      "--minimum",
+      "4.5"
+    ],
+    "exit_code": 0,
+    "result": "contrast-body.json"
+  },
+  {
+    "arguments": [
+      "python3",
+      "/Users/khadah/.codex/skills/tilgjengelighetserklaering/scripts/contrast.py",
+      "#d7d7d7",
+      "#09151b",
+      "--minimum",
+      "4.5"
+    ],
+    "exit_code": 0,
+    "result": "contrast-muted.json"
+  },
+  {
+    "arguments": [
+      "python3",
+      "/Users/khadah/.codex/skills/tilgjengelighetserklaering/scripts/contrast.py",
+      "#9df1ad",
+      "#09151b",
+      "--minimum",
+      "3"
+    ],
+    "exit_code": 0,
+    "result": "contrast-focus.json"
+  }
+]

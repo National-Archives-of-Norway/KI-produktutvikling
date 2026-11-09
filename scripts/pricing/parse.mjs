@@ -58,7 +58,7 @@ export function copilotPlans(text) {
     tables(text).find(
       (t) => t.headers.includes("Pricing") && t.headers.includes("Plan"),
     ),
-    ["Plan", "Pricing"],
+    ["Plan", "Pricing", "GitHub AI Credits"],
   );
   const names = [
     "Copilot Pro",
@@ -72,19 +72,29 @@ export function copilotPlans(text) {
       const row = rows.find((r) => r.Plan === name);
       if (!row) throw new Error("En valgt Copilot-plan mangler");
       const m = clean(row.Pricing).match(
-        /^\$([\d.]+) USD per (?:granted seat per )?month/,
+        /^\$([\d.]+) USD per (?:granted seat per )?month\.?(?: \(free for some users\))?\.?$/,
       );
       if (!m) throw new Error("Abonnementsvilkår er endret");
+      const credits = clean(row["GitHub AI Credits"]).match(
+        /^(?:Base:|Total per user per month:)\s*([\d,]+)$/,
+      );
+      if (!credits) throw new Error("Copilot sine kredittvilkår er endret");
+      const includedCredits = Number(credits[1].replaceAll(",", ""));
+      if (!Number.isSafeInteger(includedCredits))
+        throw new Error("Ugyldig kredittall");
       return {
         name,
         monthly: money("$" + m[1]),
         annualMonthly: null,
         unit: "bruker/måned",
         note:
-          clean(row.Pricing) +
-          ". " +
-          clean(row["GitHub AI Credits"] ?? "") +
-          " AI Credits. Kontroller fullstendige vilkår hos GitHub.",
+          "Månedsbetaling per bruker. " +
+          (clean(row.Pricing).includes("(free for some users)")
+            ? "Gratis for enkelte brukere som oppfyller leverandørens vilkår. "
+            : "") +
+          "Inkludert: " +
+          new Intl.NumberFormat("nb-NO").format(includedCredits) +
+          " AI-kreditter per bruker per måned. Kontroller fullstendige vilkår hos GitHub.",
       };
     }),
   );
@@ -160,13 +170,23 @@ export function codexPlans(text) {
     let monthly = money(price[1]),
       annualMonthly = null;
     const footnote = attrs.match(/footnoteLabel="([^"]+)"/)?.[1] ?? "";
+    let billingNote = "";
     if (name === "Business") {
-      const match = footnote.match(
-        /billed annually\. \$(\d+(?:\.\d+)?) per user per month when billed monthly/,
+      const match = clean(footnote).match(
+        /^\*?(\d+)\+ users, billed annually\. \$(\d+(?:\.\d+)?) per user per month when billed monthly\.$/,
       );
       if (!match) throw new Error("Business sine faktureringsvilkår er endret");
       annualMonthly = monthly;
-      monthly = money("$" + match[1]);
+      monthly = money("$" + match[2]);
+      billingNote = `Minst ${match[1]} brukere. Årsprisen gjelder ved årsbetaling. `;
+    } else if (
+      name === "Pro" &&
+      clean(footnote) === "Compare Pro plans and usage limits."
+    ) {
+      billingNote = "Se leverandørens planer og bruksgrenser. ";
+    } else if (footnote) {
+      // Never pass unfamiliar English conditions through as Norwegian prose.
+      throw new Error("Codex sine tilleggsvilkår må gjennomgås");
     }
     return {
       name: `ChatGPT ${name} / Codex`,
@@ -175,8 +195,8 @@ export function codexPlans(text) {
       unit: "bruker/måned",
       note:
         (attrs.includes('priceEyebrow="From"') ? "Fra-pris. " : "") +
-        clean(footnote) +
-        " Inkludert bruk og kreditter følger abonnementet; API-priser kan ikke brukes til å beregne abonnementskvoten.",
+        billingNote +
+        "Inkludert bruk og kreditter følger abonnementet; API-priser kan ikke brukes til å beregne abonnementskvoten.",
     };
   });
 }

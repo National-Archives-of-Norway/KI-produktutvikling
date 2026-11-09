@@ -1,0 +1,20 @@
+{
+  "route": "/spor/",
+  "result": "False positive: hidden MUI measurement textarea, aria-hidden=true and tabindex=-1. Visible field has a label.",
+  "elements": [
+    {
+      "ariaHidden": null,
+      "id": "_R_29bn5rfllb_",
+      "labels": ["Skriv et spørsmål"],
+      "tabIndex": 0,
+      "visibility": "visible"
+    },
+    {
+      "ariaHidden": "true",
+      "id": "",
+      "labels": [],
+      "tabIndex": -1,
+      "visibility": "hidden"
+    }
+  ]
+}

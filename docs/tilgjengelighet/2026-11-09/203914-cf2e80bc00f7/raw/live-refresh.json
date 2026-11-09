@@ -1,0 +1,50 @@
+{
+  "method": "scripts/pricing/sync.mjs kjørt mot de seks offisielle kildene, exit 0",
+  "groups": [
+    {
+      "id": "copilot-subscription",
+      "source": "https://docs.github.com/en/copilot/get-started/plans",
+      "status": "ok",
+      "checkedAt": "2026-11-09T19:39:01.169Z",
+      "rows": 5
+    },
+    {
+      "id": "claude-subscription",
+      "source": "https://claude.com/pricing",
+      "status": "ok",
+      "checkedAt": "2026-11-09T19:39:01.169Z",
+      "rows": 5
+    },
+    {
+      "id": "codex-subscription",
+      "source": "https://learn.chatgpt.com/docs/pricing",
+      "status": "ok",
+      "checkedAt": "2026-11-09T19:39:01.169Z",
+      "rows": 3
+    },
+    {
+      "id": "copilot-tokens",
+      "source": "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing",
+      "status": "ok",
+      "checkedAt": "2026-11-09T19:39:01.169Z",
+      "rows": 5
+    },
+    {
+      "id": "claude-api",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "status": "ok",
+      "checkedAt": "2026-11-09T19:39:01.169Z",
+      "rows": 3
+    },
+    {
+      "id": "codex-api",
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "status": "ok",
+      "checkedAt": "2026-11-09T19:39:01.169Z",
+      "rows": 5
+    }
+  ],
+  "numeric_prices_unchanged": true,
+  "note_rows": 26,
+  "note": "Norske forklaringer genereres fra kjente kildefelt; ingen modelloversettelse er brukt."
+}

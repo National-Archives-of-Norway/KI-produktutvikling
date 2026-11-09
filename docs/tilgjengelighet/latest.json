@@ -1,0 +1,11 @@
+{
+  "run_directory": "docs/tilgjengelighet/2026-11-09/203914-cf2e80bc00f7",
+  "automatic_status": "automatic_checks_completed",
+  "overall_conformance": "not_assessed",
+  "manifest": "docs/tilgjengelighet/2026-11-09/203914-cf2e80bc00f7/manifest.json",
+  "review_status": "targeted_retest_completed",
+  "confirmed_findings": 0,
+  "fixed_findings": ["A11Y-01"],
+  "review_report": "docs/tilgjengelighet/2026-11-09/203914-cf2e80bc00f7/testrapport.md",
+  "previous_run": "docs/tilgjengelighet/2026-11-09/201443-73cb0a3e52e0"
+}

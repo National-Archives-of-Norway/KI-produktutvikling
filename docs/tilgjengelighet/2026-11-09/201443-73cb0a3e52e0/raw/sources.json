@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Fremgangsmåte",
+    "url": "https://www.uutilsynet.no/tilgjengelighetserklaering/korleis-lage-og-oppdatere-tilgjengelegheitserklaering/1131",
+    "checked_on": "2026-11-09"
+  },
+  {
+    "title": "48 WCAG-krav for offentlig sektor",
+    "url": "https://www.uutilsynet.no/wcag-standarden/wcag-standarden/86",
+    "checked_on": "2026-11-09"
+  },
+  {
+    "title": "Sjekklister",
+    "url": "https://www.uutilsynet.no/tilgjengelighetserklaering/wcag-sjekklister-utfylling-av-tilgjengelighetserklaering/1333",
+    "checked_on": "2026-11-09"
+  },
+  {
+    "title": "Pause/stopp",
+    "url": "https://www.uutilsynet.no/wcag-standarden/222-pause-stopp-skjul-niva/101",
+    "checked_on": "2026-11-09"
+  },
+  {
+    "title": "Språk på deler",
+    "url": "https://www.uutilsynet.no/wcag-standarden/312-sprak-pa-deler-av-innhold-niva-aa/111",
+    "checked_on": "2026-11-09"
+  },
+  {
+    "title": "Tilbakemelding og klage",
+    "url": "https://www.uutilsynet.no/tilgjengelighetserklaering/hva-betyr-det-brukeren/1129",
+    "checked_on": "2026-11-09"
+  },
+  {
+    "title": "Diskrimineringsnemnda",
+    "url": "https://www.diskrimineringsnemnda.no/klage",
+    "checked_on": "2026-11-09",
+    "limitation": "URL svarte med JavaScript-applikasjon; innhold ikke fullt lest."
+  }
+]

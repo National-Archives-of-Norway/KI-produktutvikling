@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "skill": "tilgjengelighetserklaering",
+  "skill_version": "0.3.0",
+  "run_id": "201443-73cb0a3e52e0",
+  "started_at": "2026-11-09T20:14:43.704287+01:00",
+  "finished_at": "2026-11-09T20:14:43.781372+01:00",
+  "timezone": "Europe/Oslo",
+  "agent": "Codex (OpenAI)",
+  "project": "/Users/khadah/Documents/ChatGPT/KI-utvikling",
+  "project_version": "c622090",
+  "run_directory": "docs/tilgjengelighet/2026-11-09/201443-73cb0a3e52e0",
+  "automatic_status": "automatic_checks_completed",
+  "full_wcag_audit": false,
+  "overall_conformance": "not_assessed",
+  "checks": [
+    {
+      "tool": "audit_export",
+      "arguments": [
+        "--root",
+        "/Users/khadah/Documents/ChatGPT/KI-utvikling/out",
+        "--base-path",
+        ""
+      ],
+      "exit_code": 0,
+      "status": "no_findings_in_scope",
+      "result": "raw/html-01.json",
+      "stdout": "raw/html-01.stdout.txt",
+      "stderr": "raw/html-01.stderr.txt"
+    }
+  ]
+}

@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-
 export const metadata: Metadata = {
   title: "Tilgjengelighetserklæring",
   description:
     "Tilgjengelighet i KI-Produktutvikling og hvordan du melder fra om problemer.",
 };
-
 export default function AccessibilityPage() {
   return (
     <article className="article">
@@ -20,105 +18,155 @@ export default function AccessibilityPage() {
       </p>
       <aside>
         Dette er et lokalt utkast for portalen som utvikles i Nasjonalarkivet.
-        Den formelle erklæringen er ikke opprettet i uustatus.no. Endelig
-        nettadresse, ansvarlig godkjenner og samlet samsvarsvurdering må
-        avklares før erklæringen ferdigstilles.
+        Samlet samsvar er ikke ferdig vurdert. Det tidligere språkavviket på
+        prissiden er rettet og retestet. Den formelle erklæringen er ikke
+        opprettet i uustatus.no.
       </aside>
       <h2>Nettsted og ansvarlig virksomhet</h2>
       <p>
         Utkastet gjelder KI-Produktutvikling, som utvikles i Nasjonalarkivet.
-        Det omfatter den lokale prototypens ni sider: forsiden, Kom i gang, Om,
-        Spør kunnskapsbasen, tre eksempelressurser, nettstedskartet og denne
-        tilgjengelighetssiden. Endelig nettadresse og virksomhetens juridiske
-        registreringsopplysninger er ikke bekreftet.
+        Endelig nettadresse, virksomhetens juridiske registreringsopplysninger
+        og ansvarlig godkjenner er ikke bekreftet.
       </p>
       <p>
-        Testgrunnlaget omfatter ikke innlogging, internt innhold eller faktisk
-        modellgenerering. Disse funksjonene må vurderes før de tas i bruk.
+        Kontrollgrunnlaget omfatter 20 nettsider i den lokale prototypen:
+        forsiden, fem ressursdetaljsider, Kom i gang, retningslinjer, Om, Spør
+        KI, Oversikt, Godkjente KI-assistenter, Godkjente MCP-er, priser,
+        personvern, nettstedskart, funksjonalitetsoversikt, utviklingsplan,
+        versjonslogg og denne siden. Det lenkede PDF-vedleggets tilgjengelighet
+        er ikke ferdig undersøkt.
+      </p>
+      <p>
+        Innlogging, internt innhold og svar fra en faktisk modellleverandør
+        inngår ikke i testresultatene. De må vurderes før de tas i bruk.
       </p>
       <h2>Status for universell utforming</h2>
       <p>
-        Vurderingen er ikke ferdig. Vi kan derfor foreløpig ikke erklære at
-        nettstedet er fullt eller delvis i samsvar med kravene. Vi vurderer
-        løsningen mot de 48 WCAG-kravene som Uu-tilsynet oppgir for offentlig
-        sektor, innenfor forskriftens rammeverk EN 301 549 V3.2.1.
+        Samlet samsvar er ikke ferdig vurdert. Vi kan derfor foreløpig ikke
+        erklære at nettstedet er fullt eller delvis i samsvar. Arbeidsgrunnlaget
+        omfatter de{" "}
+        <a href="https://www.uutilsynet.no/wcag-standarden/wcag-standarden/86">
+          48 WCAG-kravene Uu-tilsynet oppgir for offentlig sektor
+        </a>
+        . Delkontroller uten funn er ikke det samme som dokumentert etterlevelse
+        av alle krav.
+      </p>
+      <h2>Rettet språkavvik i prisvilkår</h2>
+      <p>
+        Det tidligere avviket på{" "}
+        <Link href="/priser/#codex-subscription">prissiden</Link> er rettet og
+        retestet 9. november 2026. Vilkårsnotene vises nå på norsk. Alle seks
+        vilkårsseksjoner er kontrollert etter en ny prisoppdatering. Dette
+        lukker det dokumenterte avviket knyttet til{" "}
+        <a href="https://www.uutilsynet.no/wcag-standarden/312-sprak-pa-deler-av-innhold-niva-aa/111">
+          krav 3.1.2, språk på deler av innhold
+        </a>
+        , i det kontrollerte innholdet.
+      </p>
+      <p>
+        Nye tester kontrollerer at norsk tekst bevares ved gjentatt oppdatering,
+        og at ukjente vilkårsformater ikke erstatter tidligere kontrollert
+        tekst. Samlet samsvar er fortsatt uavklart; dette er ikke en full ny
+        kontroll av nettstedet eller faktisk opplesing med skjermleser.
+      </p>
+      <h2>Styring av animasjonen</h2>
+      <p>
+        Illustrasjonen på forsiden beveger seg automatisk. Klikk på
+        illustrasjonen for å pause eller starte igjen. Med tastatur kan du bruke
+        Tab for å velge illustrasjonen og mellomrom eller Enter for å pause og
+        starte. Dette er kontrollert i lokal nettleser. Koden støtter redusert
+        bevegelse, men samspillet med den faktiske systeminnstillingen må
+        fortsatt testes.
       </p>
       <h2>Test og vurdering</h2>
       <p>
-        Vi har kontrollert den lokale prototypens sider, katalogsøk, filtre og
-        chat med kildeutdrag. Testingen omfatter tastatur, sidetitler,
-        skjemaetiketter, fokus, mobilvisning og utvalgte kontrastkombinasjoner.
-        Sist undersøkt:
-        <time dateTime="2026-11-06"> 6. november 2026</time>.
+        Sist undersøkt: <time dateTime="2026-11-09">9. november 2026</time>, av
+        Codex (OpenAI) med tilgjengelighetsskillen. Testene gjelder lokal
+        utvikling, ikke en verifisert produksjonstjeneste. Kjøringsreferanse:
+        201443-73cb0a3e52e0 (bred kontroll), supplert med målrettet retest
+        203914-cf2e80bc00f7.
       </p>
-      <p>
-        Testgrunnlaget er intern kodegjennomgang, tastaturtesting og kontroll av
-        sidene i den integrerte nettleseren, med Codex som kodeassistent.
-        Tilgjengelighetstreet og automatiske grunnkontroller er undersøkt; dette
-        erstatter ikke testing med skjermleser eller en full manuell vurdering.
-      </p>
-      <h2>Innhold og funksjoner som fortsatt vurderes</h2>
-      <p>
-        Arbeidslisten har åtte uavklarte kriterier. De gjelder blant annet
-        skjermleserstøtte, kontrast, forstørring og tastaturfokus. Resultater
-        fra avgrensede kontroller er ikke registrert som bekreftet etterlevelse
-        i uustatus.no.
-      </p>
-      <p>
-        Den svake kanten rundt chatfeltet er rettet og kontrollert med en
-        beregnet kontrasttest. Øvrige tilstander og brukerforløp må vurderes
-        videre før vi kan gi en samlet oversikt over eventuelle brudd og
-        konsekvenser. Ingen unntak begrunnet med uforholdsmessig byrde er gjort.
-      </p>
-      <h2>Hva gjenstår?</h2>
       <ul>
-        <li>Skjermlesertest av navigasjon, søkeresultater og chatmeldinger.</li>
         <li>
-          Verifisert nettleserzoom og kontroll på faktisk mobil med
-          skjermtastatur.
+          HTML-grunnkontroll av 23 eksportfiler, inkludert genererte feilsider,
+          uten kandidater i de avgrensede kontrollene.
         </li>
         <li>
-          Kontroll i flere nettlesere og full vurdering av alle relevante krav.
+          20 sider kontrollert ved 320, 844 og 1280 piksler, inkludert liggende
+          visning, uten sidebredde-overflyt.
         </li>
         <li>
-          Kontroll av innlogging og andre funksjoner når de blir implementert.
+          Økt tekstavstand prøvd på 20 sider ved to bredder. Ingen
+          sidebredde-overflyt ble funnet, men ikke alle dynamiske tilstander er
+          visuelt vurdert.
+        </li>
+        <li>
+          Tastaturkontroll av animasjon, hoppelenke, katalogsøk og filtre,
+          pristabell og utfellbare vilkår, chatvalidering og dialog.
+        </li>
+        <li>
+          Utvalgte solide fargepar er kontrastberegnet. Alle gradienter, flater
+          og kontrolltilstander er ikke undersøkt.
         </li>
       </ul>
       <p>
-        Manglende test betyr at status er uavklart. Det er ikke i seg selv et
-        dokumentert brudd. Faktiske avvik, konsekvenser, alternativer og tiltak
-        skal beskrives i den formelle erklæringen når vurderingen er fullført.
+        DOM og tilgjengelighetstre er undersøkt som støttebevis. Dette er ikke
+        testing med skjermleser eller en full automatisk WCAG-skanning. Ingen
+        automatisk samsvarsprosent er beregnet.
+      </p>
+      <h2>Hva gjenstår?</h2>
+      <ul>
+        <li>
+          Faktisk skjermlesertest av navigasjon, tabeller, søkeresultater, feil
+          og chatmeldinger.
+        </li>
+        <li>
+          Faktisk 200 % tekstforstørring og 400 % nettleserzoom, samt mobil med
+          skjermtastatur.
+        </li>
+        <li>
+          Kontroll av PDF-vedlegg, alle relevante kontrast-/fokustilstander,
+          redusert bevegelse og flere nettlesere.
+        </li>
+        <li>
+          Videre vurdering av utestede dynamiske tilstander og av faktisk
+          utrullingsmiljø.
+        </li>
+      </ul>
+      <p>
+        Manglende testing betyr uavklart status, ikke automatisk et brudd eller
+        et unntak. Eldre resultater er bevart med sine opprinnelige datoer.
+        Ingen unntak basert på uforholdsmessig byrde er vurdert.
       </p>
       <h2>Alternativer og hjelp</h2>
       <p>
-        Eksempelressursene kan leses direkte fra{" "}
+        Ressursene kan leses fra{" "}
         <Link href="/nettstedskart/">nettstedskartet</Link> eller{" "}
-        <Link href="/#ressurser">ressurskatalogen</Link> uten å bruke chatten.
-        Hvis du ikke får brukt innholdet, kan du be om hjelp eller et annet
-        format via kontaktadressen nedenfor.
+        <Link href="/#ressurser">ressurskatalogen</Link> uten chatten. Be om
+        hjelp eller et annet tilgjengelig format hvis du ikke får brukt
+        innholdet.
       </p>
       <h2 id="kontakt">Meld fra om tilgjengelighetsproblemer</h2>
       <p>
-        Opplever du feil, trenger du et tilgjengelig alternativ til innhold,
-        eller har du forslag til forbedringer? Send e-post til{" "}
+        Send e-post til{" "}
         <a href="mailto:khadah@nasjonalarkivet.no">khadah@nasjonalarkivet.no</a>
-        . Oppgi gjerne hvilken side det gjelder, hva du forsøkte å gjøre og hva
-        som ikke fungerte. Unngå å sende sensitive opplysninger.
+        . Oppgi hvilken side det gjelder, hva du forsøkte å gjøre og hva som
+        ikke fungerte. Unngå sensitive opplysninger.
       </p>
       <p>
-        Du kan også be om innholdet i et annet tilgjengelig format. Uu-tilsynet
-        opplyser at tilbakemeldinger skal besvares så snart som mulig, vanligvis
-        innen tre uker.
-      </p>
-      <p>
-        Kontaktadressen er bekreftet for dette prosjektet. Før lansering må
-        virksomheten avklare ansvar for oppfølging, fraværsdekning og levering
-        av alternative formater.
+        Du kan også be om innhold i et annet tilgjengelig format.{" "}
+        <a href="https://www.uutilsynet.no/tilgjengelighetserklaering/hva-betyr-det-brukeren/1129">
+          Uu-tilsynets veiledning
+        </a>{" "}
+        sier at tilbakemeldinger skal besvares så snart som mulig, vanligvis
+        innen tre uker. Kontaktadressen er bekreftet for prosjektet;
+        virksomheten må avklare ansvar for oppfølging, fraværsdekning og
+        alternative formater før lansering.
       </p>
       <h2>Klage</h2>
       <p>
-        Hvis du ikke får svar, er misfornøyd med svaret eller opplever manglende
-        universell utforming, kan du klage til Diskrimineringsnemnda. Les{" "}
+        Hvis du ikke kan bruke innholdet, ikke får svar eller er misfornøyd med
+        svaret, kan du klage. Les{" "}
         <a href="https://www.diskrimineringsnemnda.no/klage">
           hvordan du klager til Diskrimineringsnemnda
         </a>
@@ -126,40 +174,17 @@ export default function AccessibilityPage() {
       </p>
       <h2>Grunnlag og oppdatering</h2>
       <p>
-        Utkastet ble opprettet{" "}
-        <time dateTime="2026-11-06">6. november 2026</time> og sist oppdatert{" "}
-        <time dateTime="2026-11-07">7. november 2026</time>. Testresultatene er
-        fra 6. november; tekstoppdateringen er ikke en ny
-        tilgjengelighetsrevisjon.
+        Første utkast og kontroll er fra{" "}
+        <time dateTime="2026-11-06">6. november 2026</time>. Ny kontroll,
+        kildegjennomgang og tekstoppdatering er fra{" "}
+        <time dateTime="2026-11-09">9. november 2026</time>. Den formelle
+        erklæringen er ikke publisert. Følg{" "}
+        <a href="https://www.uutilsynet.no/tilgjengelighetserklaering/korleis-lage-og-oppdatere-tilgjengelegheitserklaering/1131">
+          Uu-tilsynets fremgangsmåte
+        </a>{" "}
+        ved ferdigstilling og oppdatering. Virksomheten må utpeke godkjenner og
+        vedlikeholdsansvarlig før registrering.
       </p>
-      <p>
-        Veiledningen og kravoversikten hos Uu-tilsynet ble kontrollert{" "}
-        <time dateTime="2026-11-07">7. november 2026</time>. Den formelle
-        erklæringen er ikke publisert. Ansvar for minst årlig oppdatering og
-        gjennomgang ved større endringer må tildeles før lansering.
-      </p>
-      <ul>
-        <li>
-          <a href="https://www.uutilsynet.no/tilgjengelighetserklaering/sporsmal-i-tilgjengelegheitserklaeringa/1005">
-            Uu-tilsynets spørsmål og begrunnelser per krav
-          </a>
-        </li>
-        <li>
-          <a href="https://lovdata.no/forskrift/2013-06-21-732/§4e">
-            Forskriftens krav til erklæring og tilbakemeldingsfunksjon
-          </a>
-        </li>
-        <li>
-          <a href="https://www.uutilsynet.no/wcag-standarden/wcag-standarden/86">
-            Uu-tilsynets oversikt over WCAG-krav
-          </a>
-        </li>
-        <li>
-          <a href="https://www.uutilsynet.no/tilgjengelighetserklaering/korleis-lage-og-oppdatere-tilgjengelegheitserklaering/1131">
-            Veiledning til den formelle erklæringen i uustatus.no
-          </a>
-        </li>
-      </ul>
     </article>
   );
 }

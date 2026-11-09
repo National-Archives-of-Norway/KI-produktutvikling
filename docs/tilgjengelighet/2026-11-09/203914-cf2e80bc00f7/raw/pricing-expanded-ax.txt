@@ -1,0 +1,106 @@
+Browser tab: 18, Title: "Priser for KI-verktøy | KI-Produktutvikling", URL: "http://127.0.0.1:3000/priser".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 89-90, 153-154, 199-200, 288-289, 354-355, 446-447
++				469 container
++					470 button (expanded) Vilkår og avgrensninger, Secondary Actions: Collapse
++						471 text Vilkår og avgrensninger
++					472 content list
++						473 container
++							474 AXListMarker • 
++							475 text Copilot Pro : Månedsbetaling per bruker. Gratis for enkelte brukere som oppfyller leverandørens vilkår. Inkludert: 1 000 AI-kreditter per bruker per måned. Kontroller fullstendige vilkår hos GitHub.
++						476 container
++							477 AXListMarker • 
++							478 text Copilot Pro+ : Månedsbetaling per bruker. Inkludert: 3 900 AI-kreditter per bruker per måned. Kontroller fullstendige vilkår hos GitHub.
++						479 container
++							480 AXListMarker • 
++							481 text Copilot Max : Månedsbetaling per bruker. Inkludert: 10 000 AI-kreditter per bruker per måned. Kontroller fullstendige vilkår hos GitHub.
++						482 container
++							483 AXListMarker • 
++							484 text Copilot Business : Månedsbetaling per bruker. Inkludert: 1 900 AI-kreditter per bruker per måned. Kontroller fullstendige vilkår hos GitHub.
++						485 container
++							486 AXListMarker • 
++							487 text Copilot Enterprise : Månedsbetaling per bruker. Inkludert: 3 900 AI-kreditter per bruker per måned. Kontroller fullstendige vilkår hos GitHub.
++				488 container
++					489 button (expanded) Vilkår og avgrensninger, Secondary Actions: Collapse
++						490 text Vilkår og avgrensninger
++					491 content list
++						492 container
++							493 AXListMarker • 
++							494 text Claude Pro : Årspris er leverandørens oppgitte månedsbeløp ved årsbetaling; avrunding kan forekomme. Bruksgrenser gjelder. Se kilden for årsbeløp og funksjoner.
++						495 container
++							496 AXListMarker • 
++							497 text Claude Max : Bruksgrenser gjelder. Se leverandørens vilkår for inkludert bruk og eventuelle API-kreditter.
++						498 container
++							499 AXListMarker • 
++							500 text Claude Ultra : Bruksgrenser gjelder. Se leverandørens vilkår for inkludert bruk og eventuelle API-kreditter.
++						501 container
++							502 AXListMarker • 
++							503 text Claude Team – Standard : Årsbetaling gjelder for årsprisen. Se kilden for minstekrav til antall seter og inkludert bruk.
++						504 container
++							505 AXListMarker • 
++							506 text Claude Team – Premium : Årsbetaling gjelder for årsprisen. Se kilden for minstekrav til antall seter og inkludert bruk.
++				507 container
++					508 button (expanded) Vilkår og avgrensninger, Secondary Actions: Collapse
++						509 text Vilkår og avgrensninger
++					510 content list
++						511 container
++							512 AXListMarker • 
++							513 text ChatGPT Plus / Codex : Inkludert bruk og kreditter følger abonnementet; API-priser kan ikke brukes til å beregne abonnementskvoten.
++						514 container
++							515 AXListMarker • 
++							516 text ChatGPT Pro / Codex : Fra-pris. Se leverandørens planer og bruksgrenser. Inkludert bruk og kreditter følger abonnementet; API-priser kan ikke brukes til å beregne abonnementskvoten.
++						517 container
++							518 AXListMarker • 
++							519 text ChatGPT Business / Codex : Minst 2 brukere. Årsprisen gjelder ved årsbetaling. Inkludert bruk og kreditter følger abonnementet; API-priser kan ikke brukes til å beregne abonnementskvoten.
++				520 container
++					521 button (expanded) Vilkår og avgrensninger, Secondary Actions: Collapse
++						522 text Vilkår og avgrensninger
++					523 content list
++						524 container
++							525 AXListMarker • 
++							526 text GPT-5.3-Codex · Default : GitHub Copilot-sats, ikke et direkte modell-API. Se kilden for kredittberegning og tilgang.
++						527 container
++							528 AXListMarker • 
++							529 text GPT-6.1 Sol · Default : GitHub Copilot-sats, ikke et direkte modell-API. Se kilden for kredittberegning og tilgang.
++						530 container
++							531 AXListMarker • 
++							532 text GPT-6.1 Sol · Long context : GitHub Copilot-sats, ikke et direkte modell-API. Se kilden for kredittberegning og tilgang.
++						533 container
++							534 AXListMarker • 
++							535 text Claude Opus 5.5 · Default : GitHub Copilot-sats, ikke et direkte modell-API. Se kilden for kredittberegning og tilgang.
++						536 container
++							537 AXListMarker • 
++							538 text Claude Sonnet 5.5 · Default : GitHub Copilot-sats, ikke et direkte modell-API. Se kilden for kredittberegning og tilgang.
++				539 container
++					540 button (expanded) Vilkår og avgrensninger, Secondary Actions: Collapse
++						541 text Vilkår og avgrensninger
++					542 content list
++						543 container
++							544 AXListMarker • 
++							545 text Claude Opus 5.5 : Direkte Claude API. Cache-skriving gjelder henholdsvis 5 minutter og 1 time. Region-, verktøy- og andre tillegg kan gjelde; se kilden.
++						546 container
++							547 AXListMarker • 
++							548 text Claude Sonnet 5.5 : Direkte Claude API. Cache-skriving gjelder henholdsvis 5 minutter og 1 time. Region-, verktøy- og andre tillegg kan gjelde; se kilden.
++						549 container
++							550 AXListMarker • 
++							551 text Claude Haiku 4.5 : Direkte Claude API. Cache-skriving gjelder henholdsvis 5 minutter og 1 time. Region-, verktøy- og andre tillegg kan gjelde; se kilden.
++				552 container
++					553 button (expanded) Vilkår og avgrensninger, Secondary Actions: Collapse
++						554 text Vilkår og avgrensninger
++					555 content list
++						556 container
++							557 AXListMarker • 
++							558 text gpt-6.1-sol · Short : OpenAI API · Standard hastighet. Cache-skriving gjelder henholdsvis 30 minutter og 12 timer. Andre hastigheter, regioner og verktøy kan ha andre satser.
++						559 container
++							560 AXListMarker • 
++							561 text gpt-6.1-sol · Long : OpenAI API · Standard hastighet. Cache-skriving gjelder henholdsvis 30 minutter og 12 timer. Andre hastigheter, regioner og verktøy kan ha andre satser.
++						562 container
++							563 AXListMarker • 
++							564 text gpt-6-luna · Short : OpenAI API · Standard hastighet. Cache-skriving gjelder henholdsvis 30 minutter og 12 timer. Andre hastigheter, regioner og verktøy kan ha andre satser.
++						565 container
++							566 AXListMarker • 
++							567 text gpt-6-luna · Long : OpenAI API · Standard hastighet. Cache-skriving gjelder henholdsvis 30 minutter og 12 timer. Andre hastigheter, regioner og verktøy kan ha andre satser.
++						568 container
++							569 AXListMarker • 
++							570 text gpt-5.3-codex : OpenAI API · Standard hastighet. Ikke en abonnementspris.
+The focused UI element is 553 button (expanded) Vilkår og avgrensninger, Secondary Actions: Collapse

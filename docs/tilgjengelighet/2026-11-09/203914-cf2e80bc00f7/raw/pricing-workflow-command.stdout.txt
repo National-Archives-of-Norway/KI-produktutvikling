@@ -1,0 +1,16 @@
+✔ alle seks offisielle prisstrukturer gir rader med riktige enheter (7.696209ms)
+✔ API-utvalg skiller kontekst, cache-varighet og standard fra andre hastigheter (0.473291ms)
+✔ endrede kolonner, manglende modeller og tvetydige planpriser avvises (0.167208ms)
+✔ kildesvikt bevarer pris og vellykket dato, men registrerer mislykket forsøk (0.797917ms)
+✔ førstegangssvikt gir tomt grunnlag, aldri gratispriser eller falsk kontrolldato (0.094708ms)
+✔ automatisk prisoppdatering og JSON-lagring bevarer norske vilkår (0.689792ms)
+✔ endret brukerkrav og månedspris oppdaterer norsk tekst fra kildefeltene (1.092084ms)
+✔ ukjente engelske tilleggsvilkår gir feil og bevarer tidligere norsk tekst (0.566416ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 48.862458

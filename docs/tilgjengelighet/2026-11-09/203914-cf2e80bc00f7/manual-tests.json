@@ -1,0 +1,18 @@
+{
+  "status": "targeted_retest_completed",
+  "tests": [
+    {
+      "id": "A11Y-01-retest",
+      "date": "2026-11-09",
+      "route": "/priser/",
+      "method": "Åpne alle seks Vilkår og avgrensninger med Enter i Codex in-app browser; les DOM/AX og tekst etter faktisk prisoppdatering.",
+      "result": "Alle 26 vilkårsnoter er på norsk, med unntak av egennavn og etablerte fagtermer. Tidligere engelske setninger i Codex- og Copilot-notene finnes ikke lenger. Dokumentets lang=nb passer teksten.",
+      "evidence": [
+        "raw/pricing-language-after-refresh.json",
+        "raw/pricing-expanded-ax.txt",
+        "screenshots/pricing-language-fixed.png"
+      ],
+      "limitation": "Ingen faktisk skjermleseropplesing eller ny full nettstedsrevisjon."
+    }
+  ]
+}

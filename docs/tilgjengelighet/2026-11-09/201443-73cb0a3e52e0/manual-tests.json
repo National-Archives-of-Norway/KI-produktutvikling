@@ -1,0 +1,161 @@
+{
+  "status": "partial",
+  "tests": [
+    {
+      "id": "skip",
+      "route": "/",
+      "steps": "Activate skip link with Enter",
+      "result": {
+        "activeId": "innhold",
+        "tag": "MAIN"
+      },
+      "observedAt": "2026-11-09T19:16:50.207Z"
+    },
+    {
+      "id": "motion-focus",
+      "route": "/",
+      "steps": "Tab from Utforsk ressursene to illustration",
+      "result": {
+        "name": "Pause animasjonen i forsideillustrasjonen",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "BUTTON"
+      },
+      "observedAt": "2026-11-09T19:16:50.243Z"
+    },
+    {
+      "id": "motion-pause",
+      "route": "/",
+      "steps": "Space on focused illustration",
+      "result": {
+        "name": "Start animasjonen i forsideillustrasjonen",
+        "paused": "true",
+        "states": ["paused", "paused", "paused"]
+      },
+      "observedAt": "2026-11-09T19:17:01.627Z"
+    },
+    {
+      "id": "motion-resume",
+      "route": "/",
+      "steps": "Enter on illustration resumes motion",
+      "result": {
+        "paused": "false",
+        "states": ["running", "running", "running"]
+      },
+      "observedAt": "2026-11-09T19:17:01.687Z"
+    },
+    {
+      "id": "motion-exit",
+      "route": "/",
+      "steps": "Tab out of illustration",
+      "result": {
+        "id": "resource-search",
+        "tag": "INPUT"
+      },
+      "observedAt": "2026-11-09T19:17:01.723Z"
+    },
+    {
+      "id": "catalog-empty",
+      "route": "/",
+      "steps": "Type synthetic query zztilgjengelighetstestzz",
+      "result": {
+        "emptyHeading": "Ingen ressurser funnet",
+        "status": "Bruk kildene til å kontrollere veiledningen. Hvert spørsmål behandles separat."
+      },
+      "observedAt": "2026-11-09T19:17:15.357Z"
+    },
+    {
+      "id": "catalog-reset",
+      "route": "/",
+      "steps": "Enter on reset",
+      "result": {
+        "status": "Bruk kildene til å kontrollere veiledningen. Hvert spørsmål behandles separat.",
+        "value": ""
+      },
+      "observedAt": "2026-11-09T19:17:15.406Z"
+    },
+    {
+      "id": "catalog-filter",
+      "route": "/",
+      "steps": "Space on Skill filter",
+      "result": {
+        "filter": "true",
+        "status": "Bruk kildene til å kontrollere veiledningen. Hvert spørsmål behandles separat."
+      },
+      "observedAt": "2026-11-09T19:17:15.449Z"
+    },
+    {
+      "id": "pricing-table-scroll",
+      "route": "/priser/",
+      "steps": "320px viewport; ArrowRight in named scroll region",
+      "result": {
+        "active": "GitHub Copilot-abonnement, rullbar pristabell",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "region": {
+          "scrollLeft": 19,
+          "scrollWidth": 640,
+          "width": 280
+        }
+      },
+      "observedAt": "2026-11-09T19:17:32.981Z"
+    },
+    {
+      "id": "pricing-details",
+      "route": "/priser/",
+      "steps": "Enter on Codex terms summary",
+      "result": {
+        "open": true
+      },
+      "observedAt": "2026-11-09T19:17:33.063Z"
+    },
+    {
+      "id": "chat-validation",
+      "route": "/spor/",
+      "steps": "Enter on Send spørsmål with empty field; no model call",
+      "result": {
+        "alerts": ["Skriv et spørsmål på 3–1000 tegn."],
+        "field": [
+          {
+            "describedBy": "_R_29bn5rfllb_-helper-text",
+            "invalid": "true"
+          }
+        ]
+      },
+      "observedAt": "2026-11-09T19:18:09.556Z"
+    },
+    {
+      "id": "chat-dialog",
+      "route": "/",
+      "steps": "320px viewport: Enter opens chat, Escape closes and returns focus",
+      "result": {
+        "open": {
+          "activeTag": "DIV",
+          "dialog": "chatbot-title",
+          "dialogWidth": 304,
+          "viewport": 320
+        },
+        "closed": {
+          "activeText": "Spør KI",
+          "dialogs": 1
+        }
+      },
+      "observedAt": "2026-11-09T19:18:10.073Z"
+    },
+    {
+      "id": "dialog-transition-completed",
+      "route": "/",
+      "steps": "Escape then wait for dialog to become hidden; inspect focus and restored spacing",
+      "result": {
+        "activeText": "Spør KI",
+        "dialog": [
+          {
+            "display": "flex",
+            "hiddenAncestor": true,
+            "visibility": "hidden"
+          }
+        ],
+        "spacingRestored": "-1.5px"
+      },
+      "observedAt": "2026-11-09T19:25:07.290Z"
+    }
+  ]
+}
