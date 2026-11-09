@@ -1,0 +1,10 @@
+{
+  "observed_at": "2026-11-09T16:30:02.497312+01:00",
+  "method": "Synlig JSON i nettleseren fra lokal /health",
+  "url": "http://127.0.0.1:3001/health",
+  "response": {
+    "status": "ok",
+    "generationEnabled": false
+  },
+  "limitation": "Viser tjenestens genereringsflagg på kontrolltidspunktet, ikke leverandørlagring eller produksjonskonfigurasjon."
+}

@@ -1,0 +1,58 @@
+export const sources = [
+  {
+    id: "copilot-subscription",
+    product: "Copilot",
+    kind: "subscription",
+    label: "GitHub Copilot-abonnement",
+    url: "https://docs.github.com/en/copilot/get-started/plans",
+    fetchUrl:
+      "https://docs.github.com/api/article/body?pathname=/en/copilot/get-started/plans",
+    parser: "copilotPlans",
+  },
+  {
+    id: "claude-subscription",
+    product: "Claude",
+    kind: "subscription",
+    label: "Claude-abonnement",
+    url: "https://claude.com/pricing",
+    fetchUrl: "https://claude.com/pricing",
+    parser: "claudePlans",
+  },
+  {
+    id: "codex-subscription",
+    product: "Codex",
+    kind: "subscription",
+    label: "ChatGPT-abonnement med Codex",
+    url: "https://learn.chatgpt.com/docs/pricing",
+    fetchUrl: "https://learn.chatgpt.com/docs/pricing.md",
+    parser: "codexPlans",
+  },
+  {
+    id: "copilot-tokens",
+    product: "Copilot",
+    kind: "tokens",
+    label: "Tokenpriser i GitHub Copilot",
+    url: "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing",
+    fetchUrl:
+      "https://docs.github.com/api/article/body?pathname=/en/copilot/reference/copilot-billing/models-and-pricing",
+    parser: "copilotTokens",
+  },
+  {
+    id: "claude-api",
+    product: "Claude",
+    kind: "api",
+    label: "Direkte Claude API",
+    url: "https://platform.claude.com/docs/en/about-claude/pricing",
+    fetchUrl: "https://platform.claude.com/docs/en/about-claude/pricing.md",
+    parser: "claudeTokens",
+  },
+  {
+    id: "codex-api",
+    product: "Codex",
+    kind: "api",
+    label: "OpenAI API for Codex",
+    url: "https://developers.openai.com/api/docs/pricing",
+    fetchUrl: "https://developers.openai.com/api/docs/pricing.md",
+    parser: "codexTokens",
+  },
+];

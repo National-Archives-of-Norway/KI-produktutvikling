@@ -2,6 +2,7 @@ import type { ContentPage } from "../page-content.ts";
 
 export const guidelines = {
   id: "retningslinjer",
+  status: "draft",
   href: "/retningslinjer/",
   navTitle: "Retningslinjer",
   title: "Trygge rammer for å jobbe med KI",
@@ -21,7 +22,7 @@ export const guidelines = {
     {
       id: "verktoy-og-tilgang-1",
       type: "paragraph",
-      text: "Avklar hvilket verktøy og hvilken konto som er godkjent for oppgaven. At et verktøy finnes i portalen, betyr ikke at det er godkjent for intern informasjon. Siden gir foreløpig ingen oversikt over godkjente produkter, modeller eller lisenser.",
+      text: "Avklar hvilket verktøy og hvilken konto som er godkjent for oppgaven. At et verktøy finnes i portalen, betyr ikke at det er godkjent for intern informasjon. Se [Godkjente KI-assistenter](/oversikt/godkjente-ki-assistenter/) for assistentene som er godkjent. Tillatte datatyper, modeller, kontoer og lisenser er ikke spesifisert i oversikten.",
     },
     {
       id: "analogt-og-digitalt-arkivmateriale",
@@ -51,7 +52,7 @@ export const guidelines = {
     {
       id: "agenter-skills-og-integrasjoner-1",
       type: "paragraph",
-      text: "Undersøk hvilke filer, tjenester og handlinger en agent får tilgang til. Gi bare tilgangen oppgaven krever, og gjennomgå endringer før sammenslåing eller publisering. Skills merket «Beta» i portalen er ennå ikke gjennomgått av et menneske.",
+      text: "Se [Godkjente MCP-er](/oversikt/godkjente-mcper/) for status på integrasjoner og pågående vurderinger. Undersøk hvilke filer, tjenester og handlinger en agent får tilgang til. Gi bare tilgangen oppgaven krever, og gjennomgå endringer før sammenslåing eller publisering. Skills merket «Beta» i portalen er ennå ikke gjennomgått av et menneske.",
     },
     {
       id: "avklaringer-for-ferdigstilling",

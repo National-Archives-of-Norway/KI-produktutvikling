@@ -27,7 +27,7 @@ export default async function ResourcePage({
   if (!resource) notFound();
   return (
     <article className="article">
-      <Link href="/#ressurser">← Til verktøykatalogen</Link>
+      <Link href="/#ressurser">← Til ressurskatalogen</Link>
       <div className="eyebrow">
         {resource.type.toLocaleUpperCase("nb")} ·{" "}
         {resource.type === "Skill" ? "BETA" : "EKSEMPEL"}
@@ -46,13 +46,7 @@ export default async function ResourcePage({
             <code>{resource.skill.path}</code>. Distribusjon via GitHub eller
             nedlasting fra portalen er foreløpig ikke satt opp.
           </p>
-          <p>
-            Skillen har testveiledning, lokale kontrollskript for HTML og
-            kontrast, en rapportmal og en erklæringsmal. Den dokumenterer funn
-            og foreslår rettinger før erklæringen utformes. Hva som faktisk kan
-            testes, avhenger av tilgjengelige verktøy; resultatet er ikke en
-            automatisk godkjenning av nettstedet.
-          </p>
+          <p>{resource.skill.capabilities}</p>
         </section>
       )}
       <h2>Når passer dette?</h2>
@@ -69,7 +63,7 @@ export default async function ResourcePage({
       </pre>
       <aside>
         {resource.skill
-          ? "Skillen kan teste med tilgjengelige verktøy og foreslå rettinger. Skjermleser og andre manuelle kontroller må utføres når de er relevante. Kode endres bare når det er del av oppdraget, og den formelle erklæringen må godkjennes av virksomheten."
+          ? resource.skill.limitations
           : "Dette er eksempelinnhold til utprøving, ikke en ferdig installasjonspakke eller vedtatt føring."}{" "}
         Bruk bare verktøy og data virksomheten har godkjent.
       </aside>

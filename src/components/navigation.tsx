@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { catalogContent } from "@/content/catalog";
 import { usePathname } from "next/navigation";
 
 export function Navigation() {
@@ -17,8 +18,15 @@ export function Navigation() {
     },
     {
       href: "/#ressurser",
-      label: "Verktøykatalog",
+      label: catalogContent.title,
       active: pathname === "/" || pathname.startsWith("/ressurser"),
+    },
+    {
+      href: "/oversikt/",
+      label: "Oversikt",
+      active:
+        ["/oversikt", "/priser"].includes(pathname.replace(/\/$/, "")) ||
+        pathname.startsWith("/oversikt/"),
     },
     {
       href: "/spor/",
@@ -39,7 +47,10 @@ export function Navigation() {
           href={link.href}
           aria-current={
             link.active
-              ? pathname.startsWith("/ressurser")
+              ? pathname.startsWith("/ressurser") ||
+                pathname.replace(/\/$/, "") === "/priser" ||
+                (pathname.replace(/\/$/, "") !== "/oversikt" &&
+                  pathname.startsWith("/oversikt/"))
                 ? "location"
                 : "page"
               : undefined

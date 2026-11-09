@@ -1,0 +1,10 @@
+{
+  "method": "HTMLParser på prerenderet produksjons-HTML",
+  "checks": {
+    "footer_privacy_link": true,
+    "privacy_title": true,
+    "draft_notice": true,
+    "confirmed_mailto": true
+  },
+  "limitations": "Ingen visuell nettleserkontroll eller full tilgjengelighetsrevisjon av den nye siden."
+}

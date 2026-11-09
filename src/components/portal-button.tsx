@@ -14,7 +14,7 @@ export function PortalButton({
 }) {
   return (
     <Button
-      component={Link}
+      component={href.startsWith("#") ? "a" : Link}
       href={href}
       variant={variant}
       size="large"

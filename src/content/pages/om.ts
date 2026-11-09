@@ -96,7 +96,7 @@ export const about = {
     {
       id: "finn-en-god-start-1",
       type: "paragraph",
-      text: "Les [veiledningen for å komme i gang](/kom-i-gang/) eller utforsk [verktøykatalogen](/#ressurser). Den lokale prototypen inneholder foreløpig eksempelressurser.",
+      text: "Les [veiledningen for å komme i gang](/kom-i-gang/) eller utforsk [ressurskatalogen](/#ressurser). Den lokale prototypen inneholder foreløpig eksempelressurser.",
     },
   ],
 } satisfies ContentPage;

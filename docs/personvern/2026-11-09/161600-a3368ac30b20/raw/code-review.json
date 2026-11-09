@@ -1,0 +1,60 @@
+{
+  "observed_at": "2026-11-09T16:30:02.497737+01:00",
+  "base_commit": "56d6886",
+  "working_tree": "Lokale endringer inkludert personvernskillens katalogmetadata",
+  "checks": [
+    {
+      "id": "catalog",
+      "files": ["src/components/catalog.tsx", "src/content/resource-search.ts"],
+      "observation": "Katalogspørsmål holdes i React-tilstand og brukes i lokal filtrering. Ingen søke-API-forespørsel i disse funksjonene.",
+      "status": "observert",
+      "method": "Avgrenset kildekodegjennomgang"
+    },
+    {
+      "id": "chat-client",
+      "files": [
+        "src/features/rag/client.ts",
+        "src/features/rag/use-chat.ts",
+        "src/features/rag/chat-state.ts"
+      ],
+      "observation": "Spørsmål sendes til /api/rag i servermodus; historikk holdes i minnet. Pages-demo henter kilder i nettleseren. Ingen funksjon for varig chatlagring funnet i denne koden.",
+      "status": "observert",
+      "method": "Avgrenset kildekodegjennomgang"
+    },
+    {
+      "id": "rag-server",
+      "files": [
+        "src/server/rag/http.ts",
+        "src/server/rag/service.ts",
+        "src/server/rag/config.ts",
+        "src/server/rag/messages.ts",
+        "src/server/rag/external.ts",
+        "src/server/rag/ollama.ts"
+      ],
+      "observation": "Modelladapter er valgfri. Når aktiv sendes spørsmål og nummererte kildeutdrag til konfigurert modell. Ingen database-/filskriving av spørsmål funnet i disse funksjonene. Konfigurasjonsnavn ble lest, ingen hemmelige miljøverdier ble innhentet.",
+      "status": "observert",
+      "method": "Avgrenset kildekodegjennomgang"
+    },
+    {
+      "id": "theme",
+      "files": ["src/theme/provider.tsx", "src/theme/portal-theme.ts"],
+      "observation": "MUI og lokalt tema er brukt. Dette alene gir ikke grunnlag for konklusjon om rammeverkets browser storage.",
+      "status": "observert",
+      "method": "Avgrenset kildekodegjennomgang"
+    },
+    {
+      "id": "storage-search",
+      "files": ["src", "scripts", "next.config.ts", "package.json"],
+      "observation": "Tekstsøk etter direkte bruk av localStorage, sessionStorage, document.cookie, cookies(), analytics, sendBeacon, iframe og indexedDB ga ingen treff i app-/skriptkoden. Avhengigheter og drift er ikke uttømmende kontrollert; ingen fraværsgaranti.",
+      "status": "observert",
+      "method": "Avgrenset kildekodegjennomgang"
+    }
+  ],
+  "excluded": [
+    ".env-filer og API-nøkler",
+    "Rå persondata",
+    "Drifts-/leverandørlogger og avtaler",
+    "Full gjennomgang av avhengigheters lagring",
+    "Produksjonsmiljø"
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "status": "uavklart",
+  "controller": {
+    "name": null,
+    "contact": "khadah@nasjonalarkivet.no",
+    "contact_scope": "Kun bekreftet kontakt for personvernspørsmål; ikke DPO eller formell virksomhetskontakt",
+    "data_protection_officer": null
+  },
+  "service": {
+    "name": "KI-Produktutvikling",
+    "url": "http://127.0.0.1:3000/",
+    "environment": "Lokal utvikling, ikke produksjon",
+    "version": "56d6886 med lokale endringer"
+  },
+  "activities": [
+    {
+      "id": "besok",
+      "purpose": "Vise sider og teknisk drift",
+      "data": "HTTP-forespørsler; faktiske IP-/driftslogger uavklart",
+      "evidence": "raw/browser-home.json",
+      "status": "observert i avgrenset kode/miljø",
+      "legal_basis": null,
+      "recipients": "Lokale funksjoner er kartlagt; endelige leverandører og roller uavklart",
+      "retention": "Dev-konsoll observerer forespørsler; varighet uavklart",
+      "third_country_transfers": "Uavklart for valgt drift og eventuell modell"
+    },
+    {
+      "id": "katalog",
+      "purpose": "Finne ressurser",
+      "data": "Lokal søketekst og filtervalg",
+      "evidence": "raw/code-review.json#catalog",
+      "status": "observert i avgrenset kode/miljø",
+      "legal_basis": null,
+      "recipients": "Lokale funksjoner er kartlagt; endelige leverandører og roller uavklart",
+      "retention": "React-minne; ikke separat søke-API i undersøkt kode",
+      "third_country_transfers": "Uavklart for valgt drift og eventuell modell"
+    },
+    {
+      "id": "chat",
+      "purpose": "Finne og forklare portalinnhold",
+      "data": "Brukerens spørsmål; synlig meldingshistorikk",
+      "evidence": "raw/code-review.json#chat-client",
+      "status": "observert i avgrenset kode/miljø",
+      "legal_basis": null,
+      "recipients": "Lokale funksjoner er kartlagt; endelige leverandører og roller uavklart",
+      "retention": "Historikk i sidens minne; server-/proxylogger uavklart",
+      "third_country_transfers": "Uavklart for valgt drift og eventuell modell"
+    },
+    {
+      "id": "modell-planlagt",
+      "purpose": "Generere svar fra kilder hvis aktivert",
+      "data": "Spørsmål og utvalgte kildeutdrag; ikke hele chathistorikken",
+      "evidence": "raw/runtime-health.json",
+      "status": "planlagt",
+      "legal_basis": null,
+      "recipients": "Lokale funksjoner er kartlagt; endelige leverandører og roller uavklart",
+      "retention": "Deaktivert lokalt; avtale/lagring/trening/overføring uavklart",
+      "third_country_transfers": "Uavklart for valgt drift og eventuell modell"
+    },
+    {
+      "id": "epost",
+      "purpose": "Besvare personvernspørsmål",
+      "data": "Avsenderadresse og opplysninger brukeren sender",
+      "evidence": "Brukerbekreftelse 2026-11-09",
+      "status": "bekreftet kontakt, behandling uavklart",
+      "legal_basis": null,
+      "recipients": "Lokale funksjoner er kartlagt; endelige leverandører og roller uavklart",
+      "retention": "E-post-/arkivrutiner uavklart",
+      "third_country_transfers": "Uavklart for valgt drift og eventuell modell"
+    }
+  ],
+  "browser_storage": [
+    {
+      "status": "ikke fullført",
+      "evidence": "raw/browser-home.json",
+      "conclusion": "Ingen konklusjon om fravær, nødvendighet eller samtykke"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Digdir – strukturinspirasjon",
+      "url": "https://www.digdir.no/digdir/personvernerklaering/706",
+      "checked": "2026-11-09"
+    },
+    {
+      "title": "Datatilsynet – informasjon",
+      "url": "https://www.datatilsynet.no/rettigheter-og-plikter/virksomhetenes-plikter/informasjon-og-apenhet/hva-skal-virksomheten-gi-informasjon-om/",
+      "checked": "2026-11-09"
+    },
+    {
+      "title": "Datatilsynet – behandlingsgrunnlag",
+      "url": "https://www.datatilsynet.no/rettigheter-og-plikter/virksomhetenes-plikter/om-behandlingsgrunnlag/innledning/",
+      "checked": "2026-11-09"
+    },
+    {
+      "title": "Datatilsynet – rett til informasjon",
+      "url": "https://www.datatilsynet.no/rettigheter-og-plikter/den-registrertes-rettigheter/rett-til-informasjon/",
+      "checked": "2026-11-09"
+    },
+    {
+      "title": "Datatilsynet – klage",
+      "url": "https://www.datatilsynet.no/om-datatilsynet/kontakt-oss/klage-til-datatilsynet/",
+      "checked": "2026-11-09"
+    },
+    {
+      "title": "Nkom – informasjonskapsler",
+      "url": "https://nkom.no/internett/informasjonskapsler-cookies",
+      "checked": "2026-11-09"
+    }
+  ],
+  "observations": [
+    "generationEnabled=false på lokal health",
+    "Ingen hemmelige miljøverdier eller rå persondata innhentet"
+  ],
+  "unresolved": [
+    {
+      "priority": "P0 før delt pilot",
+      "question": "Formell behandlingsansvarlig, personvernombud og godkjenner",
+      "confirmation_role": "Virksomhetens ansvarlige ledelse/personvern",
+      "verification": "Bekreft navn, kontakt og eierskap"
+    },
+    {
+      "priority": "P0 før delt pilot",
+      "question": "Rettsgrunnlag for hver aktivitet",
+      "confirmation_role": "Behandlingsansvarlig med personvernfaglig støtte",
+      "verification": "Dokumenter vurdering per aktivitet"
+    },
+    {
+      "priority": "P0 før delt pilot",
+      "question": "Hosting, leverandører, tilgang, avtaler og overføringer",
+      "confirmation_role": "Drift og behandlingsansvarlig",
+      "verification": "Kartlegg faktisk pilotmiljø og avtaler"
+    },
+    {
+      "priority": "P0 før delt pilot",
+      "question": "Loggdata, lagringstid, sletting og e-post/arkivering",
+      "confirmation_role": "Drift og informasjonsforvaltning",
+      "verification": "Bekreft faktisk konfigurasjon og rutiner"
+    },
+    {
+      "priority": "P0 før delt pilot",
+      "question": "Nettleserlagring og eventuelt samtykke",
+      "confirmation_role": "Utvikling og personvern",
+      "verification": "Undersøk cookies inkl. HttpOnly, local/session storage og nettverkskall i rent pilotmiljø"
+    },
+    {
+      "priority": "P0 før delt pilot",
+      "question": "Modellavtale og faktisk dataflyt før aktivering",
+      "confirmation_role": "Modellansvarlig og personvern",
+      "verification": "Avklar formål, trening, mottakere, lagring og overføringer; test godkjent oppsett"
+    }
+  ],
+  "checks_performed": [
+    "Avgrenset kildekodegjennomgang: katalog, chat, RAG, modelladaptere og tema",
+    "Tekstsøk etter lagring/sporing i appkode, ikke full avhengighetskontroll",
+    "DOM-observasjon av lokale ressursreferanser; nettleserlagring kunne ikke undersøkes",
+    "Lokal /health observerte generationEnabled=false",
+    "Kontaktadresse bekreftet av bruker",
+    "Primærkilder fra Datatilsynet, Nkom og Digdir kontrollert 2026-11-09"
+  ]
+}

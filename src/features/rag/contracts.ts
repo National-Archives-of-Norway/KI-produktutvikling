@@ -44,8 +44,13 @@ export function isSources(value: unknown): value is RagSource[] {
             "/om/",
             "/om/#ki-prat",
             "/retningslinjer/",
+            "/personvern/",
             "/kom-i-gang/",
             "/funksjonalitet/",
+            "/priser/",
+            "/oversikt/",
+            "/oversikt/godkjente-ki-assistenter/",
+            "/oversikt/godkjente-mcper/",
           ].includes(source.href)) &&
         (source.guide === undefined ||
           (typeof source.guide?.summary === "string" &&

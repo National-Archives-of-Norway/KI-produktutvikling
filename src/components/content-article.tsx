@@ -14,7 +14,7 @@ function InlineContent({ text }: { text: string }) {
         </Link>
       );
     }
-    if (href.startsWith("https://"))
+    if (href.startsWith("https://") || href.startsWith("mailto:"))
       return (
         <a key={index} href={href}>
           {label}

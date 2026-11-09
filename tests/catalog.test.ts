@@ -22,6 +22,25 @@ test("tilgjengelighetsskillen finnes med navn, tema og relevante fagord", () => 
 test("søk og typefilter virker sammen uten å vise feil ressurstype", () => {
   assert.deepEqual(findResources("WCAG", "Prompt"), []);
   assert.deepEqual(findResources("et helt ukjent tema"), []);
-  assert.equal(findResources("", "Skill").length, 2);
+  assert.ok(
+    findResources("", "Skill").every((resource) => resource.type === "Skill"),
+  );
   assert.equal(findResources("kodeendring")[0]?.slug, "kodegjennomgang");
+});
+test("personvernskillen finnes med navn, tema og relevante fagord", () => {
+  for (const query of [
+    "personvern",
+    "personvernerklaering",
+    "GDPR",
+    "cookies",
+    "Datatilsynet",
+    "behandlingsgrunnlag",
+  ]) {
+    assert.ok(
+      findResources(query, "Skill").some(
+        (resource) => resource.skill?.name === "personvernerklaering",
+      ),
+      query,
+    );
+  }
 });

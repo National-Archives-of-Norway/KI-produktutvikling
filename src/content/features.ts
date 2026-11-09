@@ -1,4 +1,7 @@
+import { catalogContent } from "./catalog.ts";
 import { contentPages, buildPageSources } from "./knowledge.ts";
+import { overview } from "./overview.ts";
+import { pricingOverview } from "./pricing/index.ts";
 import { resources } from "./resources.ts";
 import { getRecommendedResource } from "./home.ts";
 import type { RagSource } from "../features/rag/contracts.ts";
@@ -46,12 +49,12 @@ export function getFeatures(): Feature[] {
     },
     {
       id: "katalog",
-      title: "Verktøykatalog",
-      description: `Søk og filtrer blant ${resources.length} ressurser, inkludert ${resources.filter((resource) => resource.type === "Skill").length} skills. Hver ressurs har en egen side med brukssteg og eksempel. Skills er merket Beta og er ennå ikke gjennomgått av et menneske.`,
+      title: catalogContent.title,
+      description: `${catalogContent.description} Søk og filtrer blant ${resources.length} ressurser, inkludert ${resources.filter((resource) => resource.type === "Skill").length} skills. Hver ressurs har en egen side med brukssteg og eksempel. Skills er merket Beta og er ennå ikke gjennomgått av et menneske.`,
       status: "beta",
       href: "/#ressurser",
       routes: ["/ressurser/[slug]/"],
-      sitemapLabel: "Verktøykatalog",
+      sitemapLabel: catalogContent.title,
     },
     {
       id: "spor",
@@ -74,7 +77,7 @@ export function getFeatures(): Feature[] {
       id: page.id,
       title: page.navTitle,
       description: page.lead,
-      status: page.id === "retningslinjer" ? "draft" : "available",
+      status: page.status ?? "available",
       href: page.href,
       routes: [page.href],
       sitemapLabel: page.navTitle,
@@ -86,6 +89,32 @@ export function getFeatures(): Feature[] {
         "Modellkoblingen støtter lokal Ollama og eksternt OpenAI-kompatibelt Chat Completions-API. Generering krever valgt modell og serverkonfigurasjon. API-nøkkelen håndteres på serveren. Uten modell brukes veiledning fra innholdet.",
       status: "setup",
       href: "/spor/",
+    },
+    {
+      id: "oversikt",
+      title: overview.title,
+      description: overview.lead,
+      status: "beta",
+      href: "/oversikt/",
+      routes: ["/oversikt/"],
+      sitemapLabel: overview.title,
+    },
+    ...overview.planned.map((item): Feature => ({
+      id: item.id,
+      title: item.title,
+      description: item.description,
+      status: "planned",
+    })),
+    {
+      id: "priser",
+      title: pricingOverview.title,
+      description:
+        pricingOverview.lead +
+        " Kilder og kontrolltidspunkt vises per tabell. Daglig GitHub-jobb er klargjort, men krever GitHub-repo, Actions og utrulling.",
+      status: "beta",
+      href: "/priser/",
+      routes: ["/priser/"],
+      sitemapLabel: "Priser",
     },
     {
       id: "tilgjengelighet",

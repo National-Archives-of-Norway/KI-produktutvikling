@@ -115,3 +115,40 @@ test("Spør KI og oversikten bruker samme funksjoner og forbehold", () => {
     "setup",
   );
 });
+
+test("personvernets utkaststatus og bekreftede kontakt følger felles kilde til RAG", () => {
+  const feature = getFeatures().find((item) => item.id === "personvern")!;
+  assert.equal(feature.status, "draft");
+  assert.equal(feature.href, "/personvern/");
+  const source = retrieve("personvern i portalen spørsmål lagring chat").find(
+    (item) => item.id === "personvern",
+  );
+  assert.ok(source);
+  assert.match(source.guide!.summary, /Utkast/);
+  assert.match(source.guide!.note!, /khadah@nasjonalarkivet.no/);
+  assert.match(source.text, /Dette sletter ikke eventuelle server-/);
+});
+
+test("prissiden og Spør KI bruker samme kontrollerte prisgrunnlag", async () => {
+  const { pricing, getPricingSource, usd } =
+    await import("../src/content/pricing/index.ts");
+  const source = getPricingSource();
+  assert.ok(isSources([source]));
+  assert.equal(
+    getFeatures().find((item) => item.id === "priser")?.href,
+    "/priser/",
+  );
+  for (const group of pricing.groups) {
+    assert.ok(source.text.includes(group.url));
+    assert.ok(source.text.includes(group.checkedAt!));
+    for (const row of group.rows)
+      assert.ok(
+        source.text.includes(usd("monthly" in row ? row.monthly : row.input)),
+      );
+  }
+  assert.ok(
+    retrieve("abonnement Copilot Claude Codex priser").some(
+      (s) => s.id === "priser",
+    ),
+  );
+});

@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "currency": "USD",
+  "groups": [
+    {
+      "id": "copilot-subscription",
+      "product": "Copilot",
+      "kind": "subscription",
+      "label": "GitHub Copilot-abonnement",
+      "url": "https://docs.github.com/en/copilot/get-started/plans",
+      "fetchUrl": "https://docs.github.com/api/article/body?pathname=/en/copilot/get-started/plans",
+      "parser": "copilotPlans",
+      "rows": [
+        {
+          "name": "Copilot Pro",
+          "monthly": 10,
+          "annualMonthly": null,
+          "unit": "bruker/måned",
+          "note": "$10 USD per month (free for some users). Base: 1,000 AI Credits. Kontroller fullstendige vilkår hos GitHub."
+        },
+        {
+          "name": "Copilot Pro+",
+          "monthly": 39,
+          "annualMonthly": null,
+          "unit": "bruker/måned",
+          "note": "$39 USD per month.. Base: 3,900 AI Credits. Kontroller fullstendige vilkår hos GitHub."
+        },
+        {
+          "name": "Copilot Max",
+          "monthly": 100,
+          "annualMonthly": null,
+          "unit": "bruker/måned",
+          "note": "$100 USD per month. Base: 10,000 AI Credits. Kontroller fullstendige vilkår hos GitHub."
+        },
+        {
+          "name": "Copilot Business",
+          "monthly": 19,
+          "annualMonthly": null,
+          "unit": "bruker/måned",
+          "note": "$19 USD per granted seat per month. Total per user per month: 1,900 AI Credits. Kontroller fullstendige vilkår hos GitHub."
+        },
+        {
+          "name": "Copilot Enterprise",
+          "monthly": 39,
+          "annualMonthly": null,
+          "unit": "bruker/måned",
+          "note": "$39 USD per granted seat per month. Total per user per month: 3,900 AI Credits. Kontroller fullstendige vilkår hos GitHub."
+        }
+      ],
+      "checkedAt": "2026-11-09T17:55:01.456Z",
+      "attemptedAt": "2026-11-09T17:55:01.456Z",
+      "status": "ok",
+      "error": null
+    },
+    {
+      "id": "claude-subscription",
+      "product": "Claude",
+      "kind": "subscription",
+      "label": "Claude-abonnement",
+      "url": "https://claude.com/pricing",
+      "fetchUrl": "https://claude.com/pricing",
+      "parser": "claudePlans",
+      "rows": [
+        {
+          "name": "Claude Pro",
+          "monthly": 20,
+          "annualMonthly": 17,
+          "unit": "bruker/måned",
+          "note": "Årspris er leverandørens oppgitte månedsbeløp ved årsbetaling; avrunding kan forekomme. Bruksgrenser gjelder. Se kilden for årsbeløp og funksjoner."
+        },
+        {
+          "name": "Claude Max",
+          "monthly": 100,
+          "annualMonthly": null,
+          "unit": "bruker/måned",
+          "note": "Bruksgrenser gjelder. Se leverandørens vilkår for inkludert bruk og eventuelle API-kreditter."
+        },
+        {
+          "name": "Claude Ultra",
+          "monthly": 200,
+          "annualMonthly": null,
+          "unit": "bruker/måned",
+          "note": "Bruksgrenser gjelder. Se leverandørens vilkår for inkludert bruk og eventuelle API-kreditter."
+        },
+        {
+          "name": "Claude Team – Standard",
+          "monthly": 25,
+          "annualMonthly": 20,
+          "unit": "sete/måned",
+          "note": "Årsbetaling gjelder for årsprisen. Se kilden for minstekrav til antall seter og inkludert bruk."
+        },
+        {
+          "name": "Claude Team – Premium",
+          "monthly": 125,
+          "annualMonthly": 100,
+          "unit": "sete/måned",
+          "note": "Årsbetaling gjelder for årsprisen. Se kilden for minstekrav til antall seter og inkludert bruk."
+        }
+      ],
+      "checkedAt": "2026-11-09T17:55:01.456Z",
+      "attemptedAt": "2026-11-09T17:55:01.456Z",
+      "status": "ok",
+      "error": null
+    },
+    {
+      "id": "codex-subscription",
+      "product": "Codex",
+      "kind": "subscription",
+      "label": "ChatGPT-abonnement med Codex",
+      "url": "https://learn.chatgpt.com/docs/pricing",
+      "fetchUrl": "https://learn.chatgpt.com/docs/pricing.md",
+      "parser": "codexPlans",
+      "rows": [
+        {
+          "name": "ChatGPT Plus / Codex",
+          "monthly": 20,
+          "annualMonthly": null,
+          "unit": "bruker/måned",
+          "note": " Inkludert bruk og kreditter følger abonnementet; API-priser kan ikke brukes til å beregne abonnementskvoten."
+        },
+        {
+          "name": "ChatGPT Pro / Codex",
+          "monthly": 100,
+          "annualMonthly": null,
+          "unit": "bruker/måned",
+          "note": "Fra-pris. Compare Pro plans and usage limits. Inkludert bruk og kreditter følger abonnementet; API-priser kan ikke brukes til å beregne abonnementskvoten."
+        },
+        {
+          "name": "ChatGPT Business / Codex",
+          "monthly": 25,
+          "annualMonthly": 20,
+          "unit": "bruker/måned",
+          "note": "*2+ users, billed annually. $25 per user per month when billed monthly. Inkludert bruk og kreditter følger abonnementet; API-priser kan ikke brukes til å beregne abonnementskvoten."
+        }
+      ],
+      "checkedAt": "2026-11-09T17:55:01.456Z",
+      "attemptedAt": "2026-11-09T17:55:01.456Z",
+      "status": "ok",
+      "error": null
+    },
+    {
+      "id": "copilot-tokens",
+      "product": "Copilot",
+      "kind": "tokens",
+      "label": "Tokenpriser i GitHub Copilot",
+      "url": "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing",
+      "fetchUrl": "https://docs.github.com/api/article/body?pathname=/en/copilot/reference/copilot-billing/models-and-pricing",
+      "parser": "copilotTokens",
+      "rows": [
+        {
+          "name": "GPT-5.3-Codex · Default",
+          "context": "Standard",
+          "input": 1.75,
+          "output": 14,
+          "cached": 0.175,
+          "write": null,
+          "writeLong": null,
+          "note": "GitHub Copilot-sats, ikke et direkte modell-API. Se kilden for kredittberegning og tilgang."
+        },
+        {
+          "name": "GPT-6.1 Sol · Default",
+          "context": "≤ 272K",
+          "input": 2,
+          "output": 10,
+          "cached": 0.1,
+          "write": 2.5,
+          "writeLong": null,
+          "note": "GitHub Copilot-sats, ikke et direkte modell-API. Se kilden for kredittberegning og tilgang."
+        },
+        {
+          "name": "GPT-6.1 Sol · Long context",
+          "context": "> 272K",
+          "input": 4,
+          "output": 15,
+          "cached": 0.2,
+          "write": 5,
+          "writeLong": null,
+          "note": "GitHub Copilot-sats, ikke et direkte modell-API. Se kilden for kredittberegning og tilgang."
+        },
+        {
+          "name": "Claude Opus 5.5 · Default",
+          "context": "Standard",
+          "input": 4,
+          "output": 20,
+          "cached": 0.2,
+          "write": 5,
+          "writeLong": null,
+          "note": "GitHub Copilot-sats, ikke et direkte modell-API. Se kilden for kredittberegning og tilgang."
+        },
+        {
+          "name": "Claude Sonnet 5.5 · Default",
+          "context": "Standard",
+          "input": 2,
+          "output": 10,
+          "cached": 0.1,
+          "write": 2.5,
+          "writeLong": null,
+          "note": "GitHub Copilot-sats, ikke et direkte modell-API. Se kilden for kredittberegning og tilgang."
+        }
+      ],
+      "checkedAt": "2026-11-09T17:55:01.456Z",
+      "attemptedAt": "2026-11-09T17:55:01.456Z",
+      "status": "ok",
+      "error": null
+    },
+    {
+      "id": "claude-api",
+      "product": "Claude",
+      "kind": "api",
+      "label": "Direkte Claude API",
+      "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "fetchUrl": "https://platform.claude.com/docs/en/about-claude/pricing.md",
+      "parser": "claudeTokens",
+      "rows": [
+        {
+          "name": "Claude Opus 5.5",
+          "context": "Standard",
+          "input": 4,
+          "output": 20,
+          "cached": 0.2,
+          "write": 5,
+          "writeLong": 8,
+          "note": "Direkte Claude API. Cache-skriving gjelder henholdsvis 5 minutter og 1 time. Region-, verktøy- og andre tillegg kan gjelde; se kilden."
+        },
+        {
+          "name": "Claude Sonnet 5.5",
+          "context": "Standard",
+          "input": 2,
+          "output": 10,
+          "cached": 0.1,
+          "write": 2.5,
+          "writeLong": 4,
+          "note": "Direkte Claude API. Cache-skriving gjelder henholdsvis 5 minutter og 1 time. Region-, verktøy- og andre tillegg kan gjelde; se kilden."
+        },
+        {
+          "name": "Claude Haiku 4.5",
+          "context": "Standard",
+          "input": 1,
+          "output": 5,
+          "cached": 0.1,
+          "write": 1.25,
+          "writeLong": 2,
+          "note": "Direkte Claude API. Cache-skriving gjelder henholdsvis 5 minutter og 1 time. Region-, verktøy- og andre tillegg kan gjelde; se kilden."
+        }
+      ],
+      "checkedAt": "2026-11-09T17:55:01.456Z",
+      "attemptedAt": "2026-11-09T17:55:01.456Z",
+      "status": "ok",
+      "error": null
+    },
+    {
+      "id": "codex-api",
+      "product": "Codex",
+      "kind": "api",
+      "label": "OpenAI API for Codex",
+      "url": "https://developers.openai.com/api/docs/pricing",
+      "fetchUrl": "https://developers.openai.com/api/docs/pricing.md",
+      "parser": "codexTokens",
+      "rows": [
+        {
+          "name": "gpt-6.1-sol · Short",
+          "context": "Kort kontekst (se terskel i kilden)",
+          "input": 2,
+          "output": 10,
+          "cached": 0.1,
+          "write": 2.5,
+          "writeLong": 5,
+          "note": "OpenAI API · Standard hastighet. Cache-skriving gjelder henholdsvis 30 minutter og 12 timer. Andre hastigheter, regioner og verktøy kan ha andre satser."
+        },
+        {
+          "name": "gpt-6.1-sol · Long",
+          "context": "Lang kontekst (se terskel i kilden)",
+          "input": 4,
+          "output": 15,
+          "cached": 0.2,
+          "write": 5,
+          "writeLong": 10,
+          "note": "OpenAI API · Standard hastighet. Cache-skriving gjelder henholdsvis 30 minutter og 12 timer. Andre hastigheter, regioner og verktøy kan ha andre satser."
+        },
+        {
+          "name": "gpt-6-luna · Short",
+          "context": "Kort kontekst (se terskel i kilden)",
+          "input": 0.1,
+          "output": 0.5,
+          "cached": 0.01,
+          "write": 0.125,
+          "writeLong": 0.25,
+          "note": "OpenAI API · Standard hastighet. Cache-skriving gjelder henholdsvis 30 minutter og 12 timer. Andre hastigheter, regioner og verktøy kan ha andre satser."
+        },
+        {
+          "name": "gpt-6-luna · Long",
+          "context": "Lang kontekst (se terskel i kilden)",
+          "input": 0.2,
+          "output": 0.75,
+          "cached": 0.02,
+          "write": 0.25,
+          "writeLong": 0.5,
+          "note": "OpenAI API · Standard hastighet. Cache-skriving gjelder henholdsvis 30 minutter og 12 timer. Andre hastigheter, regioner og verktøy kan ha andre satser."
+        },
+        {
+          "name": "gpt-5.3-codex",
+          "context": "Standard",
+          "input": 1.75,
+          "output": 14,
+          "cached": 0.175,
+          "write": null,
+          "writeLong": null,
+          "note": "OpenAI API · Standard hastighet. Ikke en abonnementspris."
+        }
+      ],
+      "checkedAt": "2026-11-09T17:55:01.456Z",
+      "attemptedAt": "2026-11-09T17:55:01.456Z",
+      "status": "ok",
+      "error": null
+    }
+  ]
+}

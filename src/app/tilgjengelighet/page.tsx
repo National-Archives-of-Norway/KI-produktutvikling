@@ -93,7 +93,7 @@ export default function AccessibilityPage() {
       <p>
         Eksempelressursene kan leses direkte fra{" "}
         <Link href="/nettstedskart/">nettstedskartet</Link> eller{" "}
-        <Link href="/#ressurser">verktøykatalogen</Link> uten å bruke chatten.
+        <Link href="/#ressurser">ressurskatalogen</Link> uten å bruke chatten.
         Hvis du ikke får brukt innholdet, kan du be om hjelp eller et annet
         format via kontaktadressen nedenfor.
       </p>

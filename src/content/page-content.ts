@@ -4,6 +4,7 @@ export type ContentBlock =
 
 export type ContentPage = {
   id: string;
+  status?: "draft";
   href: string;
   navTitle: string;
   title: string;

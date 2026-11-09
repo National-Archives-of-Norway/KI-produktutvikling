@@ -4,7 +4,7 @@ Sist oppdatert: **9. november 2026**. Utførende agent ved denne gjennomgangen: 
 
 **Status: Fungerende lokal prototype; ikke klar for produksjon eller deling av internt innhold.** Lokal funksjonalitet og modelladaptere er implementert. Drift, innlogging, faglig godkjenning og samlet lanseringskontroll gjenstår. Første delte miljø skal være en **lukket pilot**. Offentlig publisering vurderes senere, etter en egen beslutning.
 
-Gjennomgangen bygger på kode, dokumentasjon og lokal Git-historikk til og med `e93e5f9`. Siste samlede dokumenterte kjøring har **36 beståtte tester og produksjonsbygg**, samt avgrensede nettleserkontroller. Dette er ikke dokumentasjon på produksjonsdrift, godkjent innhold, full tilgjengelighet eller vellykkede kall mot en faktisk modellleverandør. Se versjonsloggen for kontrollomfanget i hver arbeidsøkt; publisering av en planside er ikke produksjonsgodkjenning.
+Gjennomgangen bygger på kode, dokumentasjon og lokal Git-historikk til og med `56d6886`, supplert med arbeidet med personvernskillen og portalens erklæringsutkast, prisside og Oversikt. Siste samlede dokumenterte kjøring har **45 beståtte tester og produksjonsbygg**, samt avgrensede nettleserkontroller. Dette er ikke dokumentasjon på produksjonsdrift, godkjent innhold, full tilgjengelighet eller vellykkede kall mot en faktisk modellleverandør. Se versjonsloggen for kontrollomfanget i hver arbeidsøkt; publisering av en planside er ikke produksjonsgodkjenning.
 
 ## Slik brukes og vedlikeholdes planen
 
@@ -16,7 +16,7 @@ Denne filen er den gjeldende utviklingsplanen. Faseoversikten og produksjonskrav
 - Oppgi faktisk kontrollgrunnlag, kjente begrensninger og commit/issue når de finnes. Navngitt eier eller frist skal ikke oppfinnes; bruk «ikke avklart» og oppgi hvilken rolle som må avklares.
 - Før en utrulling gjennomgås alle aktuelle krav i tabellen nedenfor, også når bygg og tester består. Et grønt bygg betyr ikke at alle lanseringskrav er oppfylt.
 
-Reglene er også lagt i `AGENTS.md`, og gjelder fremtidig agentarbeid i prosjektet. Planen er ikke en automatisk tolkning av kode eller en periodisk jobb: meningen med endringer og godkjenninger må fortsatt vurderes av personen eller agenten som utfører arbeidet. CI og en fast gjennomgang i forbindelse med pull requests er ennå ikke etablert.
+Reglene er også lagt i `AGENTS.md`, og gjelder fremtidig agentarbeid i prosjektet. Planen er ikke en automatisk tolkning av kode eller en periodisk jobb: meningen med endringer og godkjenninger må fortsatt vurderes av personen eller agenten som utfører arbeidet. Generell CI og en fast gjennomgang i forbindelse med pull requests er ennå ikke etablert. En egen daglig prisjobb er klargjort lokalt, men ikke aktivert på GitHub.
 
 ## Mål og rammer
 
@@ -32,16 +32,16 @@ Reglene er også lagt i `AGENTS.md`, og gjelder fremtidig agentarbeid i prosjekt
 
 ## Levert siden forrige planoppdatering
 
-| Område                           | Implementert og dokumentert                                                                                                                           | Begrensning som fortsatt gjelder                                                                                               |
-| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| Forside og navigasjon            | Lær/Prøv/Del, anbefalt oppgave «Utforsk et brukerbehov» fra ressursdata, menyen Kom i gang → Retningslinjer → Verktøykatalog → Spør KI → Om           | Begrenset intern brukertesting gjenstår                                                                                        |
-| Innhold og KI-prat               | Felles innholdsfiler for Kom i gang, Om og Retningslinjer, tydelig retningslinjelenke, KI-prat med deltakelsesinvitasjon og mandatforslag som vedlegg | Retningslinjer og mandat er utkast; eiere og godkjenning gjenstår                                                              |
-| Ressurser og Skills              | Fire katalogressurser, separat lokalt Skills-repo, tilgjengelighetsskill 0.3.0 med test-/rapportflyt, versjon og generell installasjonsveiledning     | Skills er Beta og ikke menneskelig gjennomgått; ingen distribusjon fra portalen eller GitHub er etablert                       |
-| Spør KI                          | Kildebasert veiledning, konkrete steg, kilder, nye spørsmål, forbedret presentasjon av modellsvar og serveradapter for eksternt API                   | Ingen faktisk modellgenerering er verifisert; hvert spørsmål behandles separat                                                 |
-| Kontinuerlig innholdsoppdatering | Sider og RAG deler innhold; lokal RAG lastes om ved innholdsendringer; isolert synkroniseringstest finnes                                             | I produksjon må Next.js og RAG utrulles fra samme revisjon; gamle chatsvar er historikk                                        |
-| Oversikter                       | Nettstedskart, versjonsloggside og funksjonalitetsoversikt med bunntekstlenker; byggkontroll for manglende/ukjente sider                              | Funksjonenes mening og modenhet må vedlikeholdes i registeret                                                                  |
-| Tilgjengelighet                  | Avgrensede kontroller, rettinger, WCAG-matrise, lokalt erklæringsutkast og daterte testresultater under `docs/tilgjengelighet/`                       | Flere manuelle kontroller og formell godkjenning/registrering gjenstår; nyere sider og chatendringer må inngå i neste kontroll |
-| Teknisk kvalitet                 | Moduldeling, lokale tester, TypeScript, formatering, produksjonsbygg og test av at en falsk modellnøkkel ikke følger med klientfiler                  | CI, driftssikkerhet og kontroll i det faktiske utrullingsmiljøet gjenstår                                                      |
+| Område                           | Implementert og dokumentert                                                                                                                                              | Begrensning som fortsatt gjelder                                                                                               |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| Forside og navigasjon            | Lær/Prøv/Del, anbefalt oppgave «Utforsk et brukerbehov» fra ressursdata, menyen Kom i gang → Retningslinjer → Ressurskatalog → Oversikt → Spør KI → Om                   | Begrenset intern brukertesting gjenstår                                                                                        |
+| Innhold og KI-prat               | Felles innholdsfiler for Kom i gang, Om og Retningslinjer, tydelig retningslinjelenke, KI-prat med deltakelsesinvitasjon og mandatforslag som vedlegg                    | Retningslinjer og mandat er utkast; eiere og godkjenning gjenstår                                                              |
+| Ressurser og Skills              | Fem katalogressurser, separat lokalt Skills-repo, tilgjengelighetsskill 0.3.0 og personvernskill 0.1.0 med kartleggings-/rapportflyt og generell installasjonsveiledning | Skills er Beta og ikke menneskelig gjennomgått; ingen distribusjon fra portalen eller GitHub er etablert                       |
+| Spør KI                          | Kildebasert veiledning, konkrete steg, kilder, nye spørsmål, forbedret presentasjon av modellsvar og serveradapter for eksternt API                                      | Ingen faktisk modellgenerering er verifisert; hvert spørsmål behandles separat                                                 |
+| Kontinuerlig innholdsoppdatering | Sider og RAG deler innhold; lokal RAG lastes om ved innholdsendringer; isolert synkroniseringstest finnes                                                                | I produksjon må Next.js og RAG utrulles fra samme revisjon; gamle chatsvar er historikk                                        |
+| Oversikter                       | Nettstedskart, versjonsloggside og funksjonalitetsoversikt med bunntekstlenker; byggkontroll for manglende/ukjente sider                                                 | Funksjonenes mening og modenhet må vedlikeholdes i registeret                                                                  |
+| Tilgjengelighet                  | Avgrensede kontroller, rettinger, WCAG-matrise, lokalt erklæringsutkast og daterte testresultater under `docs/tilgjengelighet/`                                          | Flere manuelle kontroller og formell godkjenning/registrering gjenstår; nyere sider og chatendringer må inngå i neste kontroll |
+| Teknisk kvalitet                 | Moduldeling, lokale tester, TypeScript, formatering, produksjonsbygg og test av at en falsk modellnøkkel ikke følger med klientfiler                                     | CI, driftssikkerhet og kontroll i det faktiske utrullingsmiljøet gjenstår                                                      |
 
 Referanser: Portalcommitene `797cd7b`, `9f27564` og `e93e5f9`, samt [versjonsloggen](VERSJONSLOGG.md). Skills-repoets siste lokale commit er `cf8f6d5`; repoene har separate logger og historikk.
 
@@ -161,6 +161,7 @@ Fase 5 og 6 må samordnes før MVP 1 deles. Fase 7 kan utvikles parallelt, men f
 
 - [x] Opprette separat lokalt Skills-repo med struktur for flere skills og egen versjonslogg.
 - [x] Utvide tilgjengelighetsskillen til testing, rettingsforslag og erklæringsutforming, med daterte resultater i målprosjektet.
+- [x] Opprette personvernskill 0.1.0 med kartlegging, arbeidsmaler, faglige referanser og datert resultatlagring, installere lik lokal kopi og registrere Beta-beskrivelsen i katalogen og Spør KI. Seks tester av lagringsverktøyet bestod i isolerte prosjekter; dette er ingen juridisk godkjenning.
 - [x] Validere pakke/metadata og teste lagringsverktøyene; tidligere dokumenterte 15 regresjonstester bestod i isolerte prosjekter.
 - [x] Gjøre skillen gjenfinnbar i katalog og Spør KI med versjon, plassering og generell bruksveiledning.
 - [ ] Få skillen gjennomgått av et menneske, og avklare eier/godkjenner før Beta-status eventuelt endres.
@@ -170,11 +171,39 @@ Fase 5 og 6 må samordnes før MVP 1 deles. Fase 7 kan utvikles parallelt, men f
 
 **Ferdig når:** Et godkjent bibliotek kan installeres og oppdateres etter en testet prosess. Dagens katalogbeskrivelse betyr ikke at portalen allerede distribuerer skill-pakken.
 
+## Ressurskatalog – navngiving oppdatert 9. november 2026
+
+- [x] Rette «Utforsk ressursene» til et vanlig ankerhopp på samme side, inkludert gjentatte klikk når ankeret allerede står i adressen.
+
+- [x] Endre meny- og katalognavn til Ressurskatalog, bruke «Finn en ressurs» som overskrift og presisere innholdet som skills, instruksjoner og prompter. Felles tekst brukes på forsiden, i menyen og i funksjonsregisteret/Spør KI. Henvisninger på detaljsider, Om og erklæringssider er avstemt. Nettadressen `/#ressurser` beholdes.
+
+## Oversikt – levert lokalt 9. november 2026
+
+- [x] Opprette Godkjente MCP-er under Oversikt med Atlassian MCP (ROS-analyse pågår) og Slack MCP (planlagt). Ingen av dem oppgis som godkjent. Status deles med Spør KI og retningslinjene peker til oversikten.
+- [ ] Oppdatere MCP-status etter bekreftede vurderinger og beslutninger, med godkjent bruksomfang når dette foreligger. ROS-arbeidet er ikke gjennomført av portalen.
+
+- [x] Legge til Godkjente KI-assistenter under Oversikt, med Copilot, Claude AI og Codex som godkjent etter brukerens opplysning 9. november 2026. Siden og Spør KI deler innhold; retningslinjene viser til listen.
+- [ ] Supplere assistentoversikten med bekreftede konto-/lisensrammer, modeller, integrasjoner og tillatte datakategorier. Assistentgodkjenningen er ikke en avklaring av disse forholdene eller portalens produksjonskrav.
+
+- [x] Opprette `/oversikt/` som inngang med priser og abonnement som første del. Hovedmeny og bunntekst er oppdatert; `/priser/` beholder adressen og har brødsmulesti til Oversikt.
+- [x] Dele beskrivelsene mellom siden, funksjonsregisteret og Spør KI. Modelloversikt og forbruk er merket planlagt, uten falske data eller døde lenker. Alle 45 tester og produksjonsbygg bestod.
+- [ ] Utvide med modelloversikt når egenskaper, kilder og innholdsansvar er avklart.
+- [ ] Utvide med faktisk forbruk først etter avklart datatilgang, personvern, autorisering og kilde. Ingen innhenting av bruksdata er implementert.
+
+## Prisoversikt – levert lokalt 9. november 2026
+
+- [x] Opprette `/priser/` med abonnement for Copilot/Claude/Codex, separate direkte API-tabeller og Copilot-tokenpriser, offisielle kilder og kontrolltidspunkt. Registrert som Beta, med lenke i bunnteksten.
+- [x] Hente og formatkontrollere alle seks kilder; samme snapshot brukes av siden og Spør KI. HTTP-/parsefeil bevarer forrige vellykkede data og gir synlig feilstatus ved neste bygg. Prisutvalget er eksplisitt og omfatter ikke alle planer/modeller.
+- [x] Lage lokale parser-/feilhåndteringstester, foreldelsesvarsel og daglig GitHub-arbeidsflyt som foreslår prisdata og versjonslogg i PR. Alle 45 tester og lokalt produksjonsbygg bestod.
+- [ ] P4: Legge repoet på GitHub, tillate nødvendige Actions-/PR-rettigheter og prøve planlagt/manuell jobb. Bare samme repo får skriverettigheter; ingen andre repoer eller modellnøkler brukes.
+- [ ] Koble sammenslått prisgrunnlag til faktisk utrulling av både nettside og RAG, og teste feilkilder/varsling i det delte miljøet. Automatisk produksjonsoppdatering er ikke aktiv. Avklare hvem som gjennomgår åpne pris-PR-er og vedlikeholder utvalget; aktiveringsstatus på siden skal oppdateres først etter verifisering.
+
 ## Fase 8 – MVP 4: forvaltning og produksjonsgodkjenning
 
 - [ ] Utpeke ansvarlige for drift, innhold, tilgjengelighet, modeller og tilgang.
 - [ ] Etablere bidragsmaler, faglig review, dato/ansvar for innholdsgjennomgang og vedlikehold av Beta-/utkaststatus.
-- [ ] Ferdigstille personvern-/databehandlingsinformasjon ut fra valgt drift, modell og eventuell logging.
+- [x] Lage lokalt personvernerklæringsutkast på `/personvern/`, lenke i bunnteksten og datert kartlegging i `docs/personvern/2026-11-09/161600-a3368ac30b20/`. Nettsiden og Spør KI bruker felles kilde; kontaktadresse er bekreftet.
+- [ ] Ferdigstille personvern-/databehandlingsinformasjon ut fra valgt drift, modell og eventuell logging. P9 er fortsatt åpent: bekreft behandlingsansvarlig, ombud, rettsgrunnlag per aktivitet, leverandøravtaler, overføringer og lagring; gjennomfør nettleser-/nettverkskontroll i faktisk pilotmiljø.
 - [ ] Gjennomføre samlet sikkerhets-, tilgjengelighets- og produksjonskontroll og dokumentere avvik/tiltak.
 - [ ] Prøve produksjonsutrulling, overvåking, hendelseshåndtering og tilbakeføring.
 - [ ] Lukke prioriterte pilotfunn og dokumentere beslutning om lansering.

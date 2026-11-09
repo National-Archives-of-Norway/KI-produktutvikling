@@ -1,0 +1,8 @@
+{
+  "cookieInspection": {
+    "status": "not_exposed_by_tool"
+  },
+  "scriptAndAssetOrigins": ["http://127.0.0.1:3000"],
+  "storageInspection": "Not completed: the browser tool did not expose the storage API; no absence conclusion.",
+  "url": "http://127.0.0.1:3000/"
+}

@@ -4,6 +4,92 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 «Agent» betyr kodeassistenten som utførte arbeidet. Git-forfatteren registreres separat av Git og kan være personen som oppretter commiten. Eksakt modellvariant er ikke registrert for tidligere arbeid og oppgis derfor ikke. Ingen underagenter ble brukt til kvalitetskontrollen eller opprettelsen av denne loggen.
 
+## Ikke utgitt – MCP-oversikt under Oversikt – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Opprettet `/oversikt/godkjente-mcper/` med Atlassian MCP som «ROS-analyse pågår» og Slack MCP som «Planlagt», basert på brukerens opplysning. Ingen av dem er merket godkjent, og ingen tilkobling eller tilgang er aktivert.
+- Lagt til inngang fra Oversikt og retningslinjene. Nettsiden, Spør KI og funksjonsregisteret bruker felles innhold; nettstedskartet tar med ruten. README og utviklingsplan er oppdatert.
+- Kontroll: Alle 45 tester og produksjonsbygg med TypeScript bestod. Bygget HTML er kontrollert for begge statuser og lenken fra Oversikt. Prettier og `git diff --check` bestod. Ingen ROS-analyse, full tilgjengelighetsrevisjon eller utrulling er utført.
+
+## Ikke utgitt – fjernet Priser fra bunnteksten – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI).
+
+- Fjernet den direkte Priser-lenken fra bunnteksten. Prissiden finnes fortsatt via Oversikt og nettstedskartet. README er avstemt med den nye navigasjonen.
+- Kontroll: Lenkeendringen er lest tilbake. Prettier og `git diff --check` bestod. Ingen funksjonalitet eller produksjonsstatus er endret.
+
+## Ikke utgitt – Godkjente KI-assistenter under Oversikt – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Opprettet `/oversikt/godkjente-ki-assistenter/` med Copilot, Claude AI og Codex som godkjente assistenter i Nasjonalarkivet etter brukerens opplysning. Ingen bestemt konto, lisens, modell, integrasjon eller datakategori er gitt godkjenning på dette grunnlaget.
+- Lagt inngang under Oversikt etter priser og abonnement, og oppdatert aktiv overordnet navigasjon, retningslinjer, nettstedskart, Spør KI, README og utviklingsplan. Beskrivelser og godkjenningsstatus vedlikeholdes i felles innholdskilde.
+- Kontroll: Alle 45 tester og produksjonsbygg med TypeScript bestod. Bygget HTML er kontrollert for de tre godkjente assistentene, inngang fra Oversikt og aktivt overordnet menypunkt. Prettier og `git diff --check` bestod. Ingen ny full tilgjengelighetsrevisjon eller utrulling.
+
+## Ikke utgitt – pålitelig ankerlenke til ressurskatalogen – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Endret PortalButton til å bruke nettleserens vanlige anker for lenker til en seksjon på samme side. «Utforsk ressursene» hopper dermed til ressurskatalogen også når `#ressurser` allerede står i adressen. Lenker til andre sider bruker fortsatt Next.js Link.
+- Kontroll: Gjentatt klikk med `#ressurser` allerede i adressen er kontrollert i lokal nettleser: siden startet på toppen, og katalogen endte 48 px fra toppen av visningen. Produksjonsbygg med TypeScript, Prettier og `git diff --check` bestod. Ingen full tilgjengelighetsrevisjon er utført.
+
+## Ikke utgitt – Ressurskatalog og tydeligere introduksjon – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Endret Verktøykatalog til Ressurskatalog i meny, katalogmerking, funksjonsregister og henvisninger fra øvrige sider. Nettstedskart og Spør KI følger registeret og felles innhold.
+- Satt seksjonsoverskriften til «Finn en ressurs», med beskrivelsen «Skills, instruksjoner og prompter som hjelper deg å bruke KI i produktutviklingen.» Navn og introduksjon ligger i felles `src/content/catalog.ts`. Forsidens handlingslenke heter nå «Utforsk ressursene».
+- Beholdt nettadresse og søk/filtrering. Oppdatert README og utviklingsplan; historiske rapporter og tidligere loggoppføringer er bevart.
+- Kontroll: Alle 45 tester og produksjonsbygg med TypeScript bestod. Navn, overskrift og beskrivelse er kontrollert i bygget HTML; tekstsøk finner ingen rester av Verktøykatalog i gjeldende `src`-innhold. Prettier og `git diff --check` bestod.
+
+## Ikke utgitt – Oversikt som inngang til priser – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Opprettet `/oversikt/` med priser og abonnement som første del, og modelloversikt og forbruk som tydelig planlagte utvidelser. Prisene beholdes på `/priser/`; ingen priskopier eller simulerte bruksdata er innført.
+- Lagt Oversikt mellom Verktøykatalog og Spør KI i hovedmenyen og i bunnteksten. På prissiden markeres Oversikt som overordnet menypunkt, med brødsmulesti tilbake.
+- Siden, Spør KI og funksjonsregisteret henter beskrivelser og planlagt status fra felles innhold. README og utviklingsplan er oppdatert.
+- Kontroll: Alle 45 tester og produksjonsbygg med TypeScript bestod. Byggkontrollen validerer den nye ruten mot funksjonsregisteret. Ingen ny full tilgjengelighetskontroll eller utrulling er gjennomført.
+
+## Ikke utgitt – prisside og automatisk prisinnhenting – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI), med OpenAI Docs for offisielle Codex-kilder. Ingen underagenter.
+
+- Opprettet `/priser/` i portalens design, med abonnement og tydelig separate direkte API-priser og Copilot-tokenpriser. Viser utvalgte planer/modeller, kontekst, cache-satser, vilkår, kilde og siste vellykkede kontroll. Fra-pris og årsbetaling er særskilt markert. Siden er lenket i bunnteksten og registrert som Beta.
+- Hentet seks offisielle kilder 9. november 2026 og lagret felles prisgrunnlag for nettsiden og Spør KI. HTTP-/parsefeil bevarer gamle rader og vellykket dato, med ny feilstatus og forsøksdato. Gamle kontroller varsles etter sju dager i nettleseren.
+- Klargjort daglig GitHub Actions-jobb med parserregresjonstester og PR for prisfil og eventuell automatisk versjonslogg. Bare dette repoets kortlivede token brukes; ingen modellnøkler eller tilgang til andre repoer. Eksisterende åpen pris-PR overskrives ikke. Oppdateringsskriptet loggfører endrede prisrader.
+- Oppdatert README, utviklingsplan, funksjonsregister og felles RAG-kilde. Testkommandoen inkluderer nå prisparserne.
+- Kontroll: Alle 45 tester og produksjonsbygg med TypeScript bestod. Reell kildeinnhenting lyktes for alle seks grupper. Lokal nettleser viser seks tabeller, kilde/dato, bunntekstlenke og fungerende seksjonssnarvei; ingen sidebredde-overflyt observert ved 523 px. Ingen full tilgjengelighetsrevisjon er utført.
+- Begrensning: Repoet har ingen remote; arbeidsflyten er ikke kjørt på GitHub og ingen automatisk utrulling er aktivert. Oppdateringer krever gjennomgang/sammenslåing og nytt bygg/utrulling. Dette er listepriser, ikke virksomhetsavtaler eller verktøygodkjenninger. Nye modeller legges ikke til automatisk.
+
+## Ikke utgitt – oppdaterte prisdata – 9.11.2026
+
+**Utførende:** Prisoppdateringsskriptet (pricing:sync).
+
+- Oppdatert lagrede prisrader fra offisielle kilder; kilde og tidspunkt følger hver gruppe. Mislykkede kilder beholder forrige kontrollerte rader.
+- Automatisk parsing er utført, ikke faglig godkjenning eller kontroll av en virksomhetsavtale. Se kildestatus på prissiden.
+
+## Ikke utgitt – personvernerklæring for portalen – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI), med `personvernerklaering` 0.1.0. Ingen underagenter.
+
+- Kartlagt katalog, chat, valgfri modellkobling og lokale nettleserobservasjoner. Lagret manifest, behandlingsoversikt, sanitert evidens, rapport og datert erklæringsutkast i `docs/personvern/2026-11-09/161600-a3368ac30b20/`. Ingen hemmelige miljøverdier eller rå chatspørsmål er innhentet.
+- Opprettet `/personvern/` med lenke i bunnteksten og bekreftet personvernkontakt khadah@nasjonalarkivet.no. Nettsiden og Spør KI bruker samme innholdskilde. Funksjonsregister og nettstedskart viser siden, med eksplisitt utkaststatus.
+- Gitt felles innholdssider et statusfelt og støtte for e-postlenker i artikkelvisningen. Retningslinjenes eksisterende utkaststatus er bevart. Oppdatert README og utviklingsplan; P9 er fortsatt åpent.
+- Lokal helseside viste deaktivert modellgenerering. Nettleserlagring kunne ikke undersøkes fullstendig; dette er ikke bevis for fravær av cookies eller logger. Behandlingsansvarlig, personvernombud, rettsgrunnlag, leverandøravtaler, overføringer og lagring må bekreftes. Primærveiledning fra Datatilsynet og Nkom er brukt, med Digdir som strukturinspirasjon. Ingen juridisk godkjenning eller publisering.
+- Kontroll: Alle 39 portaltester og produksjonsbygg med TypeScript bestod. Bygget HTML har riktig tittel, utkastmerking, e-postlenke og lenke fra forsiden. Prettier og `git diff --check` bestod. Ingen ny full tilgjengelighetsrevisjon, visuell nettleserkontroll av erklæringssiden eller produksjonskontroll er utført.
+
+## Ikke utgitt – personvernskill i bibliotek og katalog – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI), med `skill-creator`. Ingen underagenter.
+
+- Opprettet personvernerklaering 0.1.0 i Skills-biblioteket og installert en lik kopi i assistentens skill-katalog. Samme hovedoppsett som tilgjengelighetsskillen: instrukser, agentmetadata, maler, faglige referanser og datert lagring i målprosjektet.
+- Lagt til Beta-ressursen «Kartlegg personvern og utform erklæring», søkbar i katalogen og Spør KI. Detaljsidene henter nå skillenes egne beskrivelser og begrensninger fra ressursdata, slik at personvern ikke får tilgjengelighetsspesifikk tekst.
+- Oppdatert README og utviklingsplanen. Kildegrunnlaget omfatter Digdirs eksempel, Datatilsynets veiledning og Nkom. Skillen bevarer uavklarte opplysninger og gir ingen automatisk juridisk godkjenning.
+- Hjelpeskriptet oppretter bare en arbeidsmappe og foreløpige filer, ikke en ferdig kartlegging eller publisert erklæring. Ingen personvernerklæring for portalen er utformet som del av dette oppdraget.
+- Kontroll: Skill-validering bestod for kilde og installasjon; alle ti pakkefiler er identiske, og lokale referanser finnes. Alle 21 bibliotekstester (inkludert seks nye), 38 portaltester og produksjonsbygg med TypeScript bestod. Bygget detaljside har riktig versjon/Beta-status og egne begrensninger, uten feil omtale av WCAG/uustatus.
+
 ## Ikke utgitt – fjernet prototypetekst i bunnteksten – 9. november 2026
 
 **Utførende agent:** Codex (OpenAI).

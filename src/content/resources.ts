@@ -13,6 +13,8 @@ export type Resource = {
     version: string;
     repository: string;
     path: string;
+    capabilities: string;
+    limitations: string;
   };
 };
 
@@ -56,6 +58,56 @@ export const resources: Resource[] = [
       version: "0.3.0",
       repository: "Skills",
       path: "skills/tilgjengelighetserklaering",
+      capabilities:
+        "Skillen har testveiledning, lokale kontrollskript for HTML og kontrast, en rapportmal og en erklæringsmal. Den dokumenterer funn og foreslår rettinger før erklæringen utformes. Hva som faktisk kan testes, avhenger av tilgjengelige verktøy; resultatet er ikke en automatisk godkjenning av nettstedet.",
+      limitations:
+        "Skillen kan teste med tilgjengelige verktøy og foreslå rettinger. Skjermleser og andre manuelle kontroller må utføres når de er relevante. Kode endres bare når det er del av oppdraget, og den formelle erklæringen må godkjennes av virksomheten.",
+    },
+  },
+  {
+    slug: "personvernerklaering",
+    type: "Skill",
+    action: "Se skill",
+    title: "Kartlegg personvern og utform erklæring",
+    description:
+      "Kartlegg faktisk databehandling, lagre vurderingsgrunnlaget i prosjektet og opprett eller oppdater personvernerklæringen med tydelige uavklarte forhold.",
+    usage:
+      "Bruk skillen ved en ny personvernerklæring eller når innlogging, logging, informasjonskapsler, leverandører eller KI-tjenester endrer databehandlingen. Teksten skal bygge på bekreftede opplysninger om den aktuelle tjenesten og miljøet.",
+    steps: [
+      "Hent hele mappen personvernerklaering fra Skills-biblioteket, inkludert SKILL.md, arbeidsmaler, referanser og skript.",
+      "Legg mappen i skill-katalogen til kodeassistenten du bruker, og kontroller at skillen er tilgjengelig.",
+      "Oppgi prosjektmappe, nettadresse/miljø, eksisterende erklæring og bekreftede opplysninger om ansvar og databehandling. Oppgi ingen API-nøkler eller rå personopplysninger.",
+      "Be assistenten kartlegge relevante dataflyter og markere hva som er observert, bekreftet eller uavklart. Behandlingsgrunnlag, leverandørpraksis og lagring skal ikke oppfinnes.",
+      "Lagre gjennomgangen i en unik datert mappe under docs/personvern/ i målprosjektet. Bevar historikken og oppdater prosjektets rapporter, erklæring, README og versjonslogg fra det vurderte grunnlaget.",
+      "Gå gjennom vesentlige mangler med virksomhetens ansvarlige før teksten brukes som ferdig informasjon. Tekstoppdatering innebærer ikke automatisk publisering eller retting av nettstedets kode.",
+    ],
+    example:
+      "Bruk $personvernerklaering til å kartlegge databehandlingen for [nettadresse/miljø] i [prosjektmappe]. Lagre grunnlaget i en datert mappe og opprett eller oppdater personvernerklæringen, rapportene, README og versjonsloggen. Merk ubekreftede fakta som uavklart og skill faktisk behandling fra planlagte funksjoner. Ikke endre funksjonskode eller publiser i denne gjennomgangen.",
+    keywords: [
+      "personvern",
+      "personvernerklæring",
+      "personvernerklaering",
+      "GDPR",
+      "databehandling",
+      "behandlingsgrunnlag",
+      "informasjonskapsler",
+      "cookies",
+      "logging",
+      "Datatilsynet",
+      "Digdir",
+      "lagring",
+      "databehandler",
+      "KI-tjenester",
+    ],
+    skill: {
+      name: "personvernerklaering",
+      version: "0.1.0",
+      repository: "Skills",
+      path: "skills/personvernerklaering",
+      capabilities:
+        "Skillen har en kartleggingsveiledning, egne rapport- og erklæringsmaler, faglige referanser og et skript som oppretter en datert arbeidsmappe. Oppsettet er inspirert av Digdirs eksempel, med Datatilsynets veiledning som faglig grunnlag. Kartlegging og vurdering utføres av assistenten med tilgjengelige verktøy; skriptet utfører ingen skanning eller juridisk kontroll.",
+      limitations:
+        "Uavklarte opplysninger skal stå synlig i utkastet. Skillen kan foreslå tiltak, men gir ingen automatisk juridisk godkjenning og erstatter ikke virksomhetens vurderinger. Publisering og kodeendringer må inngå i oppdraget.",
     },
   },
   {

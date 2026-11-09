@@ -1,4 +1,5 @@
 import { PortalButton } from "@/components/portal-button";
+import { catalogContent } from "@/content/catalog";
 import { Catalog } from "@/components/catalog";
 import Link from "next/link";
 import { LogoMark } from "@/components/logo-mark";
@@ -28,7 +29,7 @@ export default function Home() {
             Kom i gang <span aria-hidden="true">↗</span>
           </PortalButton>
           <PortalButton href="#ressurser">
-            Utforsk verktøyene <span aria-hidden="true">↓</span>
+            Utforsk ressursene <span aria-hidden="true">↓</span>
           </PortalButton>
         </div>
         <div className="hero-art" aria-hidden="true">
@@ -42,11 +43,11 @@ export default function Home() {
         </div>
       </section>
       <section id="ressurser" className="resources">
-        <div className="eyebrow">VERKTØYKATALOG</div>
-        <h2>Fra inspirasjon til handling</h2>
-        <p className="section-description">
-          Finn skills, instrukser og prompter. Eksempelressurser er merket.
-        </p>
+        <div className="eyebrow">
+          {catalogContent.title.toLocaleUpperCase("nb")}
+        </div>
+        <h2>{catalogContent.heading}</h2>
+        <p className="section-description">{catalogContent.description}</p>
         <Catalog />
       </section>
       <nav className="quick-links" aria-label="Lær, prøv og del">

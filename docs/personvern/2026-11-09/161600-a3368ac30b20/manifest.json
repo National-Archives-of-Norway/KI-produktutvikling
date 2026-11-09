@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "skill": "personvernerklaering",
+  "skill_version": "0.1.0",
+  "run_id": "161600-a3368ac30b20",
+  "created_at": "2026-11-09T16:16:00.348194+01:00",
+  "timezone": "Europe/Oslo",
+  "agent": "Codex (OpenAI)",
+  "project_version": "56d6886 med lokale endringer",
+  "status": "uavklart",
+  "checks_performed": [
+    "Avgrenset kildekodegjennomgang: katalog, chat, RAG, modelladaptere og tema",
+    "Tekstsøk etter lagring/sporing i appkode, ikke full avhengighetskontroll",
+    "DOM-observasjon av lokale ressursreferanser; nettleserlagring kunne ikke undersøkes",
+    "Lokal /health observerte generationEnabled=false",
+    "Kontaktadresse bekreftet av bruker",
+    "Primærkilder fra Datatilsynet, Nkom og Digdir kontrollert 2026-11-09",
+    "39 portaltester bestod",
+    "Produksjonsbygg inkludert TypeScript bestod",
+    "Bygget HTML: tittel, utkaststatus, mailto og bunntekstlenke kontrollert"
+  ],
+  "note": "Avgrenset teknisk kartlegging og erklæringsutkast. Vesentlige opplysninger uavklart; ingen juridisk godkjenning."
+}

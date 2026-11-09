@@ -1,10 +1,20 @@
+import { mcpOverview } from "./pages/godkjente-mcper.ts";
+import { approvedAssistants } from "./pages/godkjente-ki-assistenter.ts";
+import { privacy } from "./pages/personvern.ts";
 import { about } from "./pages/om.ts";
 import { gettingStarted } from "./pages/kom-i-gang.ts";
 import { guidelines } from "./pages/retningslinjer.ts";
 import { blockText, plainContent, type ContentPage } from "./page-content.ts";
 import type { RagSource } from "../features/rag/contracts.ts";
 
-export const contentPages: ContentPage[] = [gettingStarted, about, guidelines];
+export const contentPages: ContentPage[] = [
+  mcpOverview,
+  approvedAssistants,
+  gettingStarted,
+  about,
+  guidelines,
+  privacy,
+];
 
 type SourceSelection = {
   pageId: string;
@@ -16,6 +26,24 @@ type SourceSelection = {
 
 // References only: prose lives in the page files, never in the RAG index.
 const selections: SourceSelection[] = [
+  {
+    pageId: "godkjente-mcper",
+    summary: "lead",
+    steps: ["atlassian-status", "slack-status"],
+    note: "rammer",
+  },
+  {
+    pageId: "godkjente-ki-assistenter",
+    summary: "lead",
+    steps: ["assistentliste", "rammer-1"],
+    note: "rammer-2",
+  },
+  {
+    pageId: "personvern",
+    summary: "status",
+    steps: ["katalog", "spor-ki", "lagring"],
+    note: "kontakt",
+  },
   {
     pageId: "kom-i-gang",
     summary: "lead",

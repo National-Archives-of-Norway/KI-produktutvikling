@@ -63,7 +63,7 @@ Portalen bruker `@digitalarkivet/mui-theme` 5.1.0 og MUI 9.5.0. `src/theme/porta
 
 Portalens egne former, dekorasjoner og responsive layout ligger i eget komponent- og CSS-lag. Lyse grønne aksenter hentes fra temaets sekundærfarge. Suisse-skriftfilene følger ikke med pakken og er ikke lastet inn; temaets reserveskrift brukes inntil godkjente skriftfiler er tilgjengelige. Portalens valgte arkillustrasjon er gjenskapt som ren SVG og vises ved siden av navnet i toppmenyen. Den følger aksentfargen #9DF1AD. Nedlastbar logo ligger i `public/brand/logo.svg`; favicon som SVG/ICO og Apple-ikon ligger i `src/app/`. Dette er portalens eget symbol, ikke Nasjonalarkivets offisielle virksomhetslogo. Pakken installeres fra npm uten tilgang til organisasjonens GitHub-repoer.
 
-Portalen viser tre eksempelressurser og en beskrivelse av tilgjengelighetsskillen i det separate lokale `Skills`-repoet. Eksempelressurser er merket; skillen har egen detaljside med brukseksempel, versjon og plassering. Selve skill-pakken importeres ikke i portalen eller publiseres gjennom statisk bygg. Automatisk synkronisering og installasjon er ikke implementert.
+Portalen viser tre eksempelressurser og beskrivelser av tilgjengelighetsskillen og personvernskillen i det separate lokale `Skills`-repoet. Eksempelressurser er merket; skillene har egne detaljsider med brukseksempel, versjon og plassering. Selve skill-pakkene importeres ikke i portalen eller publiseres gjennom statisk bygg. Automatisk synkronisering og installasjon er ikke implementert.
 
 ## Tilgang og sikkerhet
 
@@ -175,3 +175,46 @@ Tilgjengelighetsskillen ligger i `skills/tilgjengelighetserklaering/`. Den eksis
 Katalogmetadata ligger i `src/content/resources.ts`. Søk i `resource-search.ts` bruker tittel, beskrivelse og nøkkelord; skillen finnes med blant annet «tilgjengelighet», «tilgjengelighetserklaering», «WCAG» og «uustatus». Portalens katalog og RAG bruker bare beskrivende metadata, ikke filer fra Skills-repoet.
 
 Tilgjengelighetsskill 0.3.0 lagrer nye testgjennomganger i målprosjektets `docs/tilgjengelighet/ÅÅÅÅ-MM-DD/<kjørings-id>/`, med råresultater, metadata og foreløpige rapporter. Etter vurdering skal kodeassistenten oppdatere eksisterende rapporter og lokal erklæring med lenke til kjøringen. Skriptet alene overskriver ikke slike hoveddokumenter. Eldre kontrollmapper fra 6.–7. november er beholdt som historisk evidens, og er ikke nye kjøringer av lagringsverktøyet.
+
+Personvernskill 0.1.0 ligger i `skills/personvernerklaering/` og er også installert under `~/.codex/skills/personvernerklaering/`. Den kartlegger faktisk databehandling og utformer eller oppdaterer personvernerklæringen fra vurdert grunnlag, med unike arbeidsmapper under `docs/personvern/ÅÅÅÅ-MM-DD/<kjørings-id>/` i målprosjektet. Hjelperen `scripts/start_review.py` oppretter bare arbeidsmappen; assistenten utfører kartleggingen og oppdaterer rapporter og eksisterende erklæring. Uavklarte fakta beholdes synlige, og ingen juridisk godkjenning eller publisering skjer automatisk.
+
+Personvernskillen er søkbar med blant annet «personvern», «personvernerklaering», «GDPR», «cookies» og «Datatilsynet». Som andre skills er den merket Beta. Selve skillen er gjenbrukbar; portalens eget erklæringsutkast er beskrevet nedenfor.
+
+## Personvernerklæring for portalen
+
+[Personvernerklæringen](/personvern/) er tilgjengelig fra bunnteksten. Rediger teksten i `src/content/pages/personvern.ts`; samme kilde brukes av nettsiden og Spør KI. Utkaststatus inngår i funksjonsregisteret. Oppdater erklæringen og kartleggingen ved endringer i drift, innlogging, logging, analyse eller modellbruk.
+
+[Kartleggingsrapporten](docs/personvern/PERSONVERN-KARTLEGGING.md) viser avklaringer. Daterte resultater ligger i `docs/personvern/2026-11-09/161600-a3368ac30b20/`, med manifest, behandlingsoversikt, sanitert evidens og et arkivutdrag av erklæringen. `docs/personvern/latest.json` peker til siste kjøring. Arkivutdraget er ikke en ekstra redigerbar hovedkilde.
+
+Kontakt for personvernspørsmål er bekreftet som khadah@nasjonalarkivet.no. Utkastet gjelder lokal utvikling; virksomheten må fortsatt bekrefte ansvar, personvernombud, rettsgrunnlag, leverandører og lagringsrutiner. Nettleserlagring og produksjonsdrift er ikke fullstendig kontrollert.
+
+## Priser for Copilot, Claude og Codex
+
+Prissiden finnes på `/priser/`, med inngang fra Oversikt, nettstedskartet og funksjonsoversikten. Den skiller abonnement fra direkte API-priser og tokenpriser inne i Copilot. Dette er et utvalg, ikke en full modellkatalog eller oversikt over virksomhetens avtaler. Alle beløp er USD; avgifter, valutaomregning og avtalte rabatter beregnes ikke.
+
+- `src/content/pricing/snapshot.json` er felles prisgrunnlag for siden og Spør KI. Hver kildegruppe har kilde-URL, `checkedAt` (siste vellykkede henting og parsing), `attemptedAt` og status.
+- `scripts/pricing/sources.mjs` angir de seks offisielle kildene. `parse.mjs` inneholder avgrensede parserregler og utvalget av planer/modeller; nye modeller må vurderes og legges til eksplisitt. Endrede felt eller manglende valgte modeller gir feil, ikke gratispriser.
+- Kjør `pnpm pricing:sync` lokalt for å hente nye priser. Krever utgående HTTPS og Node 22 eller nyere. Ingen modellnøkkel eller GitHub-tilgang brukes av innhentingen. Kontroller diffen og kildestatus før commit. Lokal visning følger innholdsendringer; delt miljø krever nytt bygg og samordnet utrulling av Next.js og RAG.
+- Ved HTTP-/parsefeil beholdes tidligere prisrader og vellykket kontrolltidspunkt, siste forsøk registreres, og kommandoen avslutter med feil. Siden viser feilen først når dette snapshotet inngår i miljøets bygg. Ingen vellykket kontroll registreres bare fordi kilden svarte med en side.
+- Endrede prisrader gir en automatisk oppføring i `VERSJONSLOGG.md`. Rene tidspunkt/statusendringer trenger ingen ny vesentlig endringsoppføring. Kildeformat, funksjon eller omfang som endres manuelt skal også føres i loggen og avstemmes med utviklingsplanen.
+- `pnpm test:pricing` tester parsere og feilhåndtering uten nettverk. `pnpm test:rag` inkluderer også disse testene. Fixture-utdragene er testgrunnlag fra 9. november 2026, ikke en alternativ priskilde.
+
+### Aktivere den daglige oppdateringen senere
+
+`.github/workflows/pricing-sync.yml` er klargjort for hver dag kl. 06:00 UTC og manuell kjøring. Jobben kjører parserregresjonstester, henter kilder og åpner en PR med kun prisfilen og eventuell automatisk versjonslogg. Ved feil foreslås også feilstaten, og jobben markeres mislykket. En allerede åpen pris-PR overskrives ikke; gjennomgå og slå den sammen eller lukk den før neste oppdatering. Kontrolltidspunktene på siden er derfor viktigere enn at en jobb er planlagt daglig.
+
+**Ikke aktivert:** Det lokale repoet har ingen GitHub-remote. Før automatikk kan starte må repoet legges på GitHub, Actions og opprettelse av PR med `GITHUB_TOKEN` tillates, og arbeidsflyten ligge på standardgrenen. Tokenet er kortlivet med `contents:write` og `pull-requests:write` i bare dette repoet; ingen PAT, modellnøkkel eller tilgang til andre repoer trengs. Jobben publiserer ikke nettsiden og slår ikke sammen PR-er automatisk.
+
+Før hver pris-PR slås sammen: kjør hele testsettet og produksjonsbygg. PR-er opprettet med `GITHUB_TOKEN` utløser normalt ikke andre PR-arbeidsflyter. Koble deretter sammenslåtte endringer til valgt utrulling; deploy ved bot-push er ikke konfigurert. Oppdater prissidens aktiveringsstatus og funksjonsregisteret når denne kjeden er reelt testet. Siden viser en advarsel i nettleseren når siste vellykkede kontroll er eldre enn sju dager; dette trenger ikke et nytt serverbygg, men krever JavaScript.
+
+## Oversikt og sidehierarki
+
+`/oversikt/` er inngangen til priser og abonnement, tilgjengelig fra hovedmenyen og bunnteksten. Pristabellene ligger fortsatt på `/priser/`, med brødsmulesti tilbake til Oversikt. Oversikt er aktiv som overordnet menypunkt også på prissiden.
+
+Tekst og planlagte områder vedlikeholdes i `src/content/overview.ts`. Siden, funksjonsregisteret og Spør KI bruker samme definisjoner. Modelloversikt og forbruk er kun planlagt, uten lenker eller simulerte bruksdata. Legg til faktiske datakilder og oppdater status når disse områdene implementeres. Prisene vedlikeholdes fortsatt bare i den felles prisfilen.
+
+Ressurskatalogens navn, overskrift «Finn en ressurs» og introduksjon vedlikeholdes i `src/content/catalog.ts`. Forsiden, hovedmenyen og funksjonsregisteret bruker den felles teksten, som også inngår i Spør KI. Katalogen finnes fortsatt på `/#ressurser`.
+
+Godkjente KI-assistenter ligger på `/oversikt/godkjente-ki-assistenter/`, med inngang fra Oversikt og retningslinjene. Felles innhold i `src/content/pages/godkjente-ki-assistenter.ts` brukes av siden, Oversikt, funksjonsregisteret og Spør KI. Copilot, Claude AI og Codex er registrert som godkjent etter brukerens opplysning 9. november 2026; godkjenningen er ikke utvidet til bestemte modeller, kontoer, datakategorier eller integrasjoner. Slike rammer må legges inn når de er bekreftet.
+
+MCP-oversikten finnes på `/oversikt/godkjente-mcper/`, med inngang fra Oversikt og retningslinjene. Innhold i `src/content/pages/godkjente-mcper.ts` brukes også av Spør KI og funksjonsregisteret. Per 9. november 2026: Atlassian MCP har ROS-analyse pågående, og Slack MCP er planlagt vurdert. Ingen av dem er oppført som godkjent. Oppdater den felles kilden ved bekreftet statusendring; ingen integrasjon eller tilgang aktiveres av oversikten.

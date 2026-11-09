@@ -1,5 +1,7 @@
 import { buildPageSources } from "../../content/knowledge.ts";
 import { getFeatureSource } from "../../content/features.ts";
+import { getOverviewSource } from "../../content/overview.ts";
+import { getPricingSource } from "../../content/pricing/index.ts";
 import { resources } from "../../content/resources.ts";
 
 import type { RagSource } from "./contracts.ts";
@@ -14,6 +16,7 @@ export const corpus: RagSource[] = [
       r.usage,
       ...r.steps,
       r.example,
+      ...(r.skill ? [r.skill.capabilities, r.skill.limitations] : []),
       ...(r.keywords ?? []),
       ...(r.type === "Skill"
         ? ["Beta: Skillen er ennå ikke gjennomgått av et menneske."]
@@ -30,6 +33,8 @@ export const corpus: RagSource[] = [
   })),
   ...buildPageSources(),
   getFeatureSource(),
+  getPricingSource(),
+  getOverviewSource(),
 ];
 
 const stopWords = new Set([

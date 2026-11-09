@@ -63,3 +63,10 @@ test("ugyldige forespørsler avvises", () => {
     assert.equal(validateQuestion(value), null);
   assert.equal(validateQuestion("  brukerbehov  "), "brukerbehov");
 });
+test("personvernspørsmål finner riktig skill med egne begrensninger", () => {
+  const source = retrieve("personvernerklæring GDPR")[0];
+  assert.equal(source.id, "personvernerklaering");
+  assert.match(source.text, /ingen automatisk juridisk godkjenning/);
+  assert.match(source.guide!.note!, /Beta/);
+  assert.ok(!source.text.includes("uustatus.no"));
+});
