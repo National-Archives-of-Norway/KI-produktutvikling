@@ -1,0 +1,665 @@
+[
+  {
+    "page": 1,
+    "text_colors": [
+      {
+        "color": "(1.0,)",
+        "size": 7.2,
+        "text": "Mandatforslag"
+      },
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 37.51,
+        "text": "Mål og rammer for"
+      },
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 37.49,
+        "text": "AI enablement-team"
+      },
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 15.87,
+        "text": "Teamet skal bidra til at utviklingsteamene i Nasjonalarkivet bruker KI på en god måte."
+      },
+      {
+        "color": "(0.365, 0.416, 0.4)",
+        "size": 7.22,
+        "text": "AI enablement-team | mål og rammer01"
+      }
+    ],
+    "rects": [
+      {
+        "color": 1.0,
+        "x0": 0.0,
+        "top": -0.004929999999944812,
+        "x1": 959.76,
+        "bottom": 540.13507
+      },
+      {
+        "color": [
+          0.945,
+          0.969,
+          0.949
+        ],
+        "x0": 0.35999,
+        "top": 0.3551800000000185,
+        "x1": 960.11999,
+        "bottom": 540.49518
+      },
+      {
+        "color": [
+          0.847,
+          0.816,
+          0.749
+        ],
+        "x0": 54.36,
+        "top": 496.56385,
+        "x1": 906.12,
+        "bottom": 497.284
+      }
+    ]
+  },
+  {
+    "page": 2,
+    "text_colors": [
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 27.41,
+        "text": "Formalia"
+      },
+      {
+        "color": "(0.365, 0.416, 0.4)",
+        "size": 7.22,
+        "text": "AI enablement-team | mål og rammer06"
+      },
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 12.24,
+        "text": "Eierskap: Deltakere: Avgrensning: "
+      },
+      {
+        "color": "(0.365, 0.416, 0.4)",
+        "size": 10.8,
+        "text": "Leder for systemutvikling, leder IT-tjenester og sjefsarkitekt.Tjenester og tekniske miljøer etableres av ansvarlige team. Teamet kan gi innspill og bidra til læring."
+      },
+      {
+        "color": "(0.365, 0.416, 0.4)",
+        "size": 10.83,
+        "text": "Kent, Erik D, Are og Khalil. Ved behov involveres andre.Inntil 1 dag per uke per deltaker i oppstarten."
+      },
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 12.26,
+        "text": "Kapasitet: "
+      }
+    ],
+    "rects": [
+      {
+        "color": 1.0,
+        "x0": 0.0,
+        "top": -0.004929999999944812,
+        "x1": 959.76,
+        "bottom": 540.13507
+      },
+      {
+        "color": [
+          0.945,
+          0.969,
+          0.949
+        ],
+        "x0": 0.35999,
+        "top": 0.3551800000000185,
+        "x1": 960.11999,
+        "bottom": 540.49518
+      },
+      {
+        "color": [
+          0.847,
+          0.816,
+          0.749
+        ],
+        "x0": 54.36,
+        "top": 496.56385,
+        "x1": 906.12,
+        "bottom": 497.284
+      }
+    ]
+  },
+  {
+    "page": 3,
+    "text_colors": [
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 27.41,
+        "text": "Veier mot målet"
+      },
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 15.87,
+        "text": "Vi vil bidrainnen tre fokusområder:"
+      },
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 13.7,
+        "text": "Kompetanse og erfaringsdeling"
+      },
+      {
+        "color": "(0.365, 0.416, 0.4)",
+        "size": 9.38,
+        "text": "Heve KI-kompetansen gjennom testing, læringogdeling."
+      },
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 13.68,
+        "text": "Oppsett og guardrailsRetningslinjer og policy"
+      },
+      {
+        "color": "(0.365, 0.416, 0.4)",
+        "size": 9.36,
+        "text": "Teknisk lett for utviklerne å ta i bruk KI på en trygg måteArbeidet med retningslinjer og anbefalinger for KI i utvikling"
+      },
+      {
+        "color": "(0.365, 0.416, 0.4)",
+        "size": 7.22,
+        "text": "AI enablement-team | mål og rammer02"
+      }
+    ],
+    "rects": [
+      {
+        "color": 1.0,
+        "x0": 0.0,
+        "top": -0.004929999999944812,
+        "x1": 959.76,
+        "bottom": 540.13507
+      },
+      {
+        "color": [
+          0.945,
+          0.969,
+          0.949
+        ],
+        "x0": 6.12,
+        "top": 1.0752999999999702,
+        "x1": 965.88,
+        "bottom": 541.2153
+      },
+      {
+        "color": [
+          0.847,
+          0.816,
+          0.749
+        ],
+        "x0": 54.36,
+        "top": 216.40985,
+        "x1": 796.6800000000001,
+        "bottom": 217.13
+      },
+      {
+        "color": [
+          0.847,
+          0.816,
+          0.749
+        ],
+        "x0": 54.36,
+        "top": 496.56385,
+        "x1": 906.12,
+        "bottom": 497.284
+      }
+    ]
+  },
+  {
+    "page": 4,
+    "text_colors": [
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 27.41,
+        "text": "Sånn skal vi jobbe"
+      },
+      {
+        "color": "(0.176, 0.416, 0.373)",
+        "size": 18.75,
+        "text": "0102030405"
+      },
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 11.55,
+        "text": "Undersøke praksisSkape arenaer for deling"
+      },
+      {
+        "color": "(0.365, 0.416, 0.4)",
+        "size": 10.08,
+        "text": "Vi skal se på hvordan teamene bruker KI i dag –hva funker bra, dårlig, hindringer, osv.Gjennom deling vil vi få løftet fram god praksis og bekymringer, feiret feiltrinn, "
+      },
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 11.52,
+        "text": "Utforske muligheter"
+      },
+      {
+        "color": "(0.365, 0.416, 0.4)",
+        "size": 10.1,
+        "text": "Vi skal orientere oss i hvilke muligheter som finnes"
+      },
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 11.54,
+        "text": "Gi anbefalinger og råd"
+      },
+      {
+        "color": "(0.365, 0.416, 0.4)",
+        "size": 10.11,
+        "text": "Vi vil bidra i arbeidet med å lage retningslinjer, "
+      },
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 12.27,
+        "text": "Tilrettelegge, ikke utføre"
+      },
+      {
+        "color": "(0.365, 0.416, 0.4)",
+        "size": 7.22,
+        "text": "AI enablement-team | målogrammer03"
+      }
+    ],
+    "rects": [
+      {
+        "color": 1.0,
+        "x0": 0.0,
+        "top": -0.004929999999944812,
+        "x1": 959.76,
+        "bottom": 540.13507
+      },
+      {
+        "color": [
+          0.945,
+          0.969,
+          0.949
+        ],
+        "x0": 0.35999,
+        "top": -0.3650400000000218,
+        "x1": 960.11999,
+        "bottom": 539.77496
+      },
+      {
+        "color": [
+          0.847,
+          0.816,
+          0.749
+        ],
+        "x0": 112.68,
+        "top": 183.28985,
+        "x1": 847.8,
+        "bottom": 184.01
+      },
+      {
+        "color": [
+          0.847,
+          0.816,
+          0.749
+        ],
+        "x0": 112.68,
+        "top": 240.17985,
+        "x1": 847.8,
+        "bottom": 240.89999999999998
+      },
+      {
+        "color": [
+          0.847,
+          0.816,
+          0.749
+        ],
+        "x0": 112.68,
+        "top": 297.06985,
+        "x1": 847.8,
+        "bottom": 297.78999999999996
+      },
+      {
+        "color": [
+          0.847,
+          0.816,
+          0.749
+        ],
+        "x0": 112.68,
+        "top": 354.68985,
+        "x1": 847.8,
+        "bottom": 355.40999999999997
+      },
+      {
+        "color": [
+          0.847,
+          0.816,
+          0.749
+        ],
+        "x0": 112.68,
+        "top": 411.57984999999996,
+        "x1": 847.8,
+        "bottom": 412.3
+      },
+      {
+        "color": [
+          0.847,
+          0.816,
+          0.749
+        ],
+        "x0": 54.36,
+        "top": 496.56385,
+        "x1": 906.12,
+        "bottom": 497.284
+      }
+    ]
+  },
+  {
+    "page": 5,
+    "text_colors": [
+      {
+        "color": "(1.0,)",
+        "size": 27.41,
+        "text": "Dette skal vi ikke gjøre"
+      },
+      {
+        "color": "(0.851, 0.973, 0.839)",
+        "size": 18.75,
+        "text": "X1X2X3X4"
+      },
+      {
+        "color": "(1.0,)",
+        "size": 11.55,
+        "text": "Avgjøre enkeltsaker"
+      },
+      {
+        "color": "(0.847,)",
+        "size": 10.08,
+        "text": "\"Kan denne tjenesten brukes på denne måten?\"Vi skal ikke håndterelisensforespørsler, verktøyfeil og -installasjon"
+      },
+      {
+        "color": "(1.0,)",
+        "size": 11.52,
+        "text": "Bestemme policyPåtvinge KI"
+      },
+      {
+        "color": "(0.847,)",
+        "size": 10.1,
+        "text": "Vi skal ikke bestemme reglenefor hvordan KI skal brukes i Nasjonalarkivet"
+      },
+      {
+        "color": "(1.0,)",
+        "size": 12.26,
+        "text": "Være førstelinje-support"
+      },
+      {
+        "color": "(1.0,)",
+        "size": 11.54,
+        "text": "Være NAV for KI i NA"
+      },
+      {
+        "color": "(0.847,)",
+        "size": 10.11,
+        "text": "Vi kan trekkes inn i ulike prosesser, men skal ikke sitte som flaskehals i midten   Vi skal kun bidra til å etablere god praksis og verdiøkning gjennom bruk av KI"
+      },
+      {
+        "color": "(0.847,)",
+        "size": 7.22,
+        "text": "AI enablement-team | målogrammer"
+      },
+      {
+        "color": "(0.365, 0.416, 0.4)",
+        "size": 7.22,
+        "text": "03"
+      },
+      {
+        "color": "(0.851, 0.973, 0.839)",
+        "size": 18.77,
+        "text": "X5"
+      }
+    ],
+    "rects": [
+      {
+        "color": 1.0,
+        "x0": 0.0,
+        "top": -0.004929999999944812,
+        "x1": 959.76,
+        "bottom": 540.13507
+      },
+      {
+        "color": [
+          0.176,
+          0.416,
+          0.373
+        ],
+        "x0": 0.35999,
+        "top": -0.3650400000000218,
+        "x1": 960.11999,
+        "bottom": 539.77496
+      },
+      {
+        "color": [
+          0.847,
+          0.816,
+          0.749
+        ],
+        "x0": 112.68,
+        "top": 183.28985,
+        "x1": 847.8,
+        "bottom": 184.01
+      },
+      {
+        "color": [
+          0.847,
+          0.816,
+          0.749
+        ],
+        "x0": 112.68,
+        "top": 240.17985,
+        "x1": 847.8,
+        "bottom": 240.89999999999998
+      },
+      {
+        "color": [
+          0.847,
+          0.816,
+          0.749
+        ],
+        "x0": 112.68,
+        "top": 297.06985,
+        "x1": 847.8,
+        "bottom": 297.78999999999996
+      },
+      {
+        "color": [
+          0.847,
+          0.816,
+          0.749
+        ],
+        "x0": 112.68,
+        "top": 354.68985,
+        "x1": 847.8,
+        "bottom": 355.40999999999997
+      },
+      {
+        "color": [
+          0.847,
+          0.816,
+          0.749
+        ],
+        "x0": 54.36,
+        "top": 496.56385,
+        "x1": 906.12,
+        "bottom": 497.284
+      },
+      {
+        "color": [
+          0.847,
+          0.816,
+          0.749
+        ],
+        "x0": 113.4,
+        "top": 415.89975000000004,
+        "x1": 848.52,
+        "bottom": 416.62
+      }
+    ]
+  },
+  {
+    "page": 6,
+    "text_colors": [
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 27.41,
+        "text": "Grensesnitt og samarbeid"
+      },
+      {
+        "color": "(0.365, 0.416, 0.4)",
+        "size": 10.83,
+        "text": "Teametskal være koblet på de relevante fagmiljøene, men ikke som mellomleder eller saksbehandler"
+      },
+      {
+        "color": "(1.0,)",
+        "size": 18.02,
+        "text": "AI enablement-"
+      },
+      {
+        "color": "(1.0,)",
+        "size": 18.03,
+        "text": "team"
+      },
+      {
+        "color": "(0.847, 0.906, 0.886)",
+        "size": 9.38,
+        "text": "Kobler erfaringer, behov og rammer"
+      },
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 10.1,
+        "text": "UtviklingsteamArkitekturmiljø"
+      },
+      {
+        "color": "(0.365, 0.416, 0.4)",
+        "size": 7.2,
+        "text": "praktisk bruk og behovverktøy og infrastrukturdeling og læringFørstelinje og ansvarlig "
+      },
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 10.08,
+        "text": "IT-tjenester og plattformJuridiskmiljøKI-forvaltningsteam"
+      },
+      {
+        "color": "(0.365, 0.416, 0.4)",
+        "size": 7.22,
+        "text": "prinsipper og kvalitetlovverkogavklaringeromverdensblikkAI enablement-team | mål og rammer04for policy. Eksister ikke."
+      },
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 10.11,
+        "text": "Community of PracticeEksterne fora"
+      }
+    ],
+    "rects": [
+      {
+        "color": 1.0,
+        "x0": 0.0,
+        "top": -0.004929999999944812,
+        "x1": 959.76,
+        "bottom": 540.13507
+      },
+      {
+        "color": [
+          0.945,
+          0.969,
+          0.949
+        ],
+        "x0": 0.35999,
+        "top": 0.3551800000000185,
+        "x1": 960.11999,
+        "bottom": 540.49518
+      },
+      {
+        "color": [
+          0.847,
+          0.816,
+          0.749
+        ],
+        "x0": 54.36,
+        "top": 496.56385,
+        "x1": 906.12,
+        "bottom": 497.284
+      }
+    ]
+  },
+  {
+    "page": 7,
+    "text_colors": [
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 27.41,
+        "text": "Forslag til bidrag per fokusområde"
+      },
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 16.58,
+        "text": "Oppsett og guardrailsKompetanse og erfaringsdeling Retningslinjer og policy"
+      },
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 10.1,
+        "text": "Ambassadører/champions i Ferdiglagde oppsett for ulike "
+      },
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 10.08,
+        "text": "teameneCommunityofPractice, demoer og erfaringsdelingBygge læringslogg og felles eksemplersikre miljøermiljøer"
+      },
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 9.36,
+        "text": "Støtte til team som prøver KI på nye måter i egen arbeidsflytFange læring fra tester i teameneVurdere hva som bør løftes til anbefalt praksisRetningslinjer for hvordan br"
+      },
+      {
+        "color": "(0.365, 0.416, 0.4)",
+        "size": 7.22,
+        "text": "AI enablement-team | mål og rammer05"
+      },
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 9.38,
+        "text": "risikovurderingerfelles AGENTS.md og skills"
+      },
+      {
+        "color": "(0.0627, 0.165, 0.18)",
+        "size": 10.11,
+        "text": "Innspill til verktøy, modeller og "
+      }
+    ],
+    "rects": [
+      {
+        "color": 1.0,
+        "x0": 0.0,
+        "top": -0.004929999999944812,
+        "x1": 959.76,
+        "bottom": 540.13507
+      },
+      {
+        "color": [
+          0.945,
+          0.969,
+          0.949
+        ],
+        "x0": 0.35999,
+        "top": 0.3551800000000185,
+        "x1": 960.11999,
+        "bottom": 540.49518
+      },
+      {
+        "color": [
+          0.847,
+          0.816,
+          0.749
+        ],
+        "x0": 54.36,
+        "top": 496.56385,
+        "x1": 906.12,
+        "bottom": 497.284
+      }
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "reviewed_at": "2026-11-09T20:57:59.985776+01:00",
+  "agent": "Codex (OpenAI)",
+  "base_commit": "67108ac",
+  "environment": "macOS, ChatGPT in-app browser (IAB), lokal Next.js-utvikling",
+  "new_tests": [
+    {
+      "id": "pdf",
+      "method": "Poppler-rendering av syv sider, pypdf-struktur/metadata/tekst, pdfplumber-fargeuttrekk",
+      "result": "To bekreftede funn; full PDF/hjelpemiddeltest gjenstår"
+    },
+    {
+      "id": "contrast",
+      "method": "Seks lagrede sRGB-beregninger, faktisk nettleserfargekontroll for filter/chat",
+      "result": "Alle valgte terskler bestått; ikke full kontrastgodkjenning"
+    },
+    {
+      "id": "focus",
+      "method": "40 Tab-steg fordelt på fire sider, åtte Tab-steg i chat, feltfokus ved 320 px",
+      "result": "Ingen nye bekreftede tastaturfunn i dette delomfanget"
+    },
+    {
+      "id": "zoom",
+      "method": "super+plus, deretter super+0 i IAB",
+      "result": "Ingen endring i 1280x720/devicePixelRatio 2; testen kan ikke bekrefte zoom"
+    },
+    {
+      "id": "reduced-motion",
+      "method": "Dokumenterte browser capabilities undersøkt",
+      "result": "Bare viewport/visibility, ingen medieemulering. Ingen OS-innstilling endret; faktisk redusert bevegelse er fortsatt utestet"
+    }
+  ],
+  "limits": [
+    "Ingen faktisk skjermleseropplesing",
+    "Ingen verifisert zoom eller redusert-bevegelse-innstilling",
+    "Ingen full automatisk WCAG-skanning",
+    "Ingen produktrettinger eller endring av PDF-en",
+    "Øvrige resultater arvet med opprinnelig dato/evidens"
+  ]
+}

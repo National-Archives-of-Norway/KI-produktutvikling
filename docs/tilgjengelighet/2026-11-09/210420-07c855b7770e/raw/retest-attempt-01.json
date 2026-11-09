@@ -1,0 +1,7 @@
+{
+  "result": "technical_failure",
+  "phase": "XMP title parse after first repair",
+  "error": "PdfReadError: XML in XmpInformation was invalid: unbound prefix: line 4, column 0",
+  "cause": "pypdf 6.10.0 dc_title setter added dc:title into a differently namespace-scoped rdf:Description",
+  "resolution": "Repair regenerated from archived original; existing namespace-scoped dc:title updated with minidom, then full retest repeated."
+}

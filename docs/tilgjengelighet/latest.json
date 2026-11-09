@@ -1,11 +1,18 @@
 {
-  "run_directory": "docs/tilgjengelighet/2026-11-09/203914-cf2e80bc00f7",
+  "run_directory": "docs/tilgjengelighet/2026-11-09/210420-07c855b7770e",
   "automatic_status": "automatic_checks_completed",
   "overall_conformance": "not_assessed",
-  "manifest": "docs/tilgjengelighet/2026-11-09/203914-cf2e80bc00f7/manifest.json",
-  "review_status": "targeted_retest_completed",
+  "manifest": "docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/manifest.json",
+  "review_status": "targeted_pdf_retest_completed",
   "confirmed_findings": 0,
-  "fixed_findings": ["A11Y-01"],
-  "review_report": "docs/tilgjengelighet/2026-11-09/203914-cf2e80bc00f7/testrapport.md",
-  "previous_run": "docs/tilgjengelighet/2026-11-09/201443-73cb0a3e52e0"
+  "open_findings": [],
+  "fixed_findings": ["A11Y-01", "A11Y-02", "A11Y-03"],
+  "counts": {
+    "K": 26,
+    "I": 10,
+    "U": 12,
+    "B": 0
+  },
+  "review_report": "docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/testrapport.md",
+  "previous_run": "docs/tilgjengelighet/2026-11-09/205326-389241d1fd6e"
 }

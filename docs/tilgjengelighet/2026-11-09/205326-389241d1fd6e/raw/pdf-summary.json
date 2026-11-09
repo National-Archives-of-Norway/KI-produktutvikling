@@ -1,0 +1,31 @@
+{
+  "tag_counts": {
+    "/Slide": 7,
+    "/Figure": 73,
+    "/Textbox": 93,
+    "/P": 102,
+    "/Span": 120
+  },
+  "role_map": {
+    "/Footnote": "/Note",
+    "/Endnote": "/Note",
+    "/Textbox": "/Sect",
+    "/Header": "/Sect",
+    "/Footer": "/Sect",
+    "/InlineShape": "/Sect",
+    "/Annotation": "/Sect",
+    "/Artifact": "/Sect",
+    "/Workbook": "/Document",
+    "/Worksheet": "/Part",
+    "/Macrosheet": "/Part",
+    "/Chartsheet": "/Part",
+    "/Dialogsheet": "/Part",
+    "/Slide": "/Sect",
+    "/Chart": "/Sect",
+    "/Diagram": "/Figure",
+    "/Title": "/H1",
+    "/CommentAnchor": "/Span",
+    "/Notes": "/Sect"
+  },
+  "language": "en"
+}

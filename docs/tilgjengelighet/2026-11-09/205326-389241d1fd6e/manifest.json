@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "skill": "tilgjengelighetserklaering",
+  "skill_version": "0.3.0",
+  "run_id": "205326-389241d1fd6e",
+  "started_at": "2026-11-09T20:53:26.001522+01:00",
+  "finished_at": "2026-11-09T20:53:26.031166+01:00",
+  "timezone": "Europe/Oslo",
+  "agent": "Codex (OpenAI)",
+  "project": "/Users/khadah/Documents/ChatGPT/KI-utvikling",
+  "project_version": "67108ac",
+  "run_directory": "docs/tilgjengelighet/2026-11-09/205326-389241d1fd6e",
+  "automatic_status": "automatic_checks_completed",
+  "full_wcag_audit": false,
+  "overall_conformance": "not_assessed",
+  "checks": [
+    {
+      "tool": "contrast",
+      "arguments": [
+        "#ffffff",
+        "#09151b",
+        "--alpha",
+        "1",
+        "--minimum",
+        "4.5"
+      ],
+      "exit_code": 0,
+      "status": "meets_selected_threshold",
+      "result": "raw/contrast-01.json",
+      "stdout": "raw/contrast-01.stdout.txt",
+      "stderr": "raw/contrast-01.stderr.txt"
+    }
+  ]
+}

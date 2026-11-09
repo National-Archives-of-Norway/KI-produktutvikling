@@ -1,0 +1,209 @@
+{
+  "tested_at": "2026-11-09T21:06:46.624864+01:00",
+  "file": "/Users/khadah/Documents/ChatGPT/KI-utvikling/public/vedlegg/mandatforslag-ai-enablement-team.pdf",
+  "before_sha256": "24ddec34327cec504ce25bd7613f5a1897967fc72eddd33fa0416e6a8aa23273",
+  "after_sha256": "d19ae321ec459f0086e8815e7d35cdec7b346cf2b59d1a770374a190a009d33f",
+  "title": "Mandatforslag – AI enablement-team i Nasjonalarkivet",
+  "xmp_title": {
+    "x-default": "Mandatforslag – AI enablement-team i Nasjonalarkivet"
+  },
+  "display_document_title": true,
+  "tag_counts": {
+    "/Slide": 7,
+    "/Figure": 73,
+    "/Textbox": 92,
+    "/P": 74,
+    "/Span": 122,
+    "/H1": 1,
+    "/H2": 6,
+    "/H3": 20
+  },
+  "headings": [
+    {
+      "page": 1,
+      "role": "/H1",
+      "text": "Mål og rammer for AI enablement-team"
+    },
+    {
+      "page": 2,
+      "role": "/H2",
+      "text": "Formalia"
+    },
+    {
+      "page": 2,
+      "role": "/H3",
+      "text": "Eierskap:"
+    },
+    {
+      "page": 2,
+      "role": "/H3",
+      "text": "Deltakere:"
+    },
+    {
+      "page": 2,
+      "role": "/H3",
+      "text": "Kapasitet:"
+    },
+    {
+      "page": 2,
+      "role": "/H3",
+      "text": "Avgrensning:"
+    },
+    {
+      "page": 3,
+      "role": "/H2",
+      "text": "Veier mot målet"
+    },
+    {
+      "page": 3,
+      "role": "/H3",
+      "text": "Kompetanse og erfaringsdeling"
+    },
+    {
+      "page": 3,
+      "role": "/H3",
+      "text": "Oppsett og guardrails"
+    },
+    {
+      "page": 3,
+      "role": "/H3",
+      "text": "Retningslinjer og policy"
+    },
+    {
+      "page": 4,
+      "role": "/H2",
+      "text": "Sånn skal vi jobbe"
+    },
+    {
+      "page": 4,
+      "role": "/H3",
+      "text": "Undersøke praksis"
+    },
+    {
+      "page": 4,
+      "role": "/H3",
+      "text": "Utforske muligheter"
+    },
+    {
+      "page": 4,
+      "role": "/H3",
+      "text": "Skape arenaer for deling"
+    },
+    {
+      "page": 4,
+      "role": "/H3",
+      "text": "Gi anbefalinger og råd"
+    },
+    {
+      "page": 4,
+      "role": "/H3",
+      "text": "Tilrettelegge, ikke utføre"
+    },
+    {
+      "page": 5,
+      "role": "/H2",
+      "text": "Dette skal vi ikke gjøre"
+    },
+    {
+      "page": 5,
+      "role": "/H3",
+      "text": "Avgjøre enkeltsaker"
+    },
+    {
+      "page": 5,
+      "role": "/H3",
+      "text": "Bestemme policy"
+    },
+    {
+      "page": 5,
+      "role": "/H3",
+      "text": "Være førstelinje-support"
+    },
+    {
+      "page": 5,
+      "role": "/H3",
+      "text": "Være NAV for KI i NA"
+    },
+    {
+      "page": 5,
+      "role": "/H3",
+      "text": "Påtvinge KI"
+    },
+    {
+      "page": 6,
+      "role": "/H2",
+      "text": "Grensesnitt og samarbeid"
+    },
+    {
+      "page": 7,
+      "role": "/H2",
+      "text": "Forslag til bidrag per fokusområde"
+    },
+    {
+      "page": 7,
+      "role": "/H3",
+      "text": "Oppsett og guardrails"
+    },
+    {
+      "page": 7,
+      "role": "/H3",
+      "text": "Kompetanse og erfaringsdeling"
+    },
+    {
+      "page": 7,
+      "role": "/H3",
+      "text": "Retningslinjer og policy"
+    }
+  ],
+  "parent_tree_mcid_mappings_verified": 229,
+  "pages": [
+    {
+      "page": 1,
+      "content_stream_identical": true,
+      "extracted_text_identical": true,
+      "rendered_pixels_identical": true
+    },
+    {
+      "page": 2,
+      "content_stream_identical": true,
+      "extracted_text_identical": true,
+      "rendered_pixels_identical": true
+    },
+    {
+      "page": 3,
+      "content_stream_identical": true,
+      "extracted_text_identical": true,
+      "rendered_pixels_identical": true
+    },
+    {
+      "page": 4,
+      "content_stream_identical": true,
+      "extracted_text_identical": true,
+      "rendered_pixels_identical": true
+    },
+    {
+      "page": 5,
+      "content_stream_identical": true,
+      "extracted_text_identical": true,
+      "rendered_pixels_identical": true
+    },
+    {
+      "page": 6,
+      "content_stream_identical": true,
+      "extracted_text_identical": true,
+      "rendered_pixels_identical": true
+    },
+    {
+      "page": 7,
+      "content_stream_identical": true,
+      "extracted_text_identical": true,
+      "rendered_pixels_identical": true
+    }
+  ],
+  "result": "All selected structural, metadata and preservation assertions passed",
+  "limits": [
+    "No actual screen-reader navigation",
+    "No full PDF/UA validation",
+    "Other PDF semantics and alternatives not fully tested"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "status": "meets_selected_threshold",
+  "full_wcag_audit": false,
+  "coverage": "solid-srgb-contrast",
+  "ratio": 18.506965525735616,
+  "minimum": 4.5,
+  "foreground_alpha": 1.0
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "id": "selected-filter",
+    "args": [
+      "python3",
+      "/Users/khadah/.codex/skills/tilgjengelighetserklaering/scripts/contrast.py",
+      "#1d1d1d",
+      "#9df1ad",
+      "--alpha",
+      "1",
+      "--minimum",
+      "4.5"
+    ],
+    "exit_code": 0,
+    "result": {
+      "status": "meets_selected_threshold",
+      "full_wcag_audit": false,
+      "coverage": "solid-srgb-contrast",
+      "ratio": 12.538164303847376,
+      "minimum": 4.5,
+      "foreground_alpha": 1.0
+    }
+  },
+  {
+    "id": "filter-border",
+    "args": [
+      "python3",
+      "/Users/khadah/.codex/skills/tilgjengelighetserklaering/scripts/contrast.py",
+      "#9df1ad",
+      "#09151b",
+      "--alpha",
+      "0.5",
+      "--minimum",
+      "3"
+    ],
+    "exit_code": 0,
+    "result": {
+      "status": "meets_selected_threshold",
+      "full_wcag_audit": false,
+      "coverage": "solid-srgb-contrast",
+      "ratio": 4.228700467199336,
+      "minimum": 3.0,
+      "foreground_alpha": 0.5
+    }
+  },
+  {
+    "id": "chat-error-gradient-light",
+    "args": [
+      "python3",
+      "/Users/khadah/.codex/skills/tilgjengelighetserklaering/scripts/contrast.py",
+      "#ffdcd7",
+      "#102129",
+      "--alpha",
+      "1",
+      "--minimum",
+      "4.5"
+    ],
+    "exit_code": 0,
+    "result": {
+      "status": "meets_selected_threshold",
+      "full_wcag_audit": false,
+      "coverage": "solid-srgb-contrast",
+      "ratio": 12.952676543504902,
+      "minimum": 4.5,
+      "foreground_alpha": 1.0
+    }
+  },
+  {
+    "id": "chat-error-gradient-dark",
+    "args": [
+      "python3",
+      "/Users/khadah/.codex/skills/tilgjengelighetserklaering/scripts/contrast.py",
+      "#ffdcd7",
+      "#09151b",
+      "--alpha",
+      "1",
+      "--minimum",
+      "4.5"
+    ],
+    "exit_code": 0,
+    "result": {
+      "status": "meets_selected_threshold",
+      "full_wcag_audit": false,
+      "coverage": "solid-srgb-contrast",
+      "ratio": 14.515223827437415,
+      "minimum": 4.5,
+      "foreground_alpha": 1.0
+    }
+  },
+  {
+    "id": "pdf-main-text",
+    "args": [
+      "python3",
+      "/Users/khadah/.codex/skills/tilgjengelighetserklaering/scripts/contrast.py",
+      "#102a2e",
+      "#f1f7f2",
+      "--alpha",
+      "1",
+      "--minimum",
+      "4.5"
+    ],
+    "exit_code": 0,
+    "result": {
+      "status": "meets_selected_threshold",
+      "full_wcag_audit": false,
+      "coverage": "solid-srgb-contrast",
+      "ratio": 13.87739811395664,
+      "minimum": 4.5,
+      "foreground_alpha": 1.0
+    }
+  },
+  {
+    "id": "pdf-footer",
+    "args": [
+      "python3",
+      "/Users/khadah/.codex/skills/tilgjengelighetserklaering/scripts/contrast.py",
+      "#5d6a66",
+      "#f1f7f2",
+      "--alpha",
+      "1",
+      "--minimum",
+      "4.5"
+    ],
+    "exit_code": 0,
+    "result": {
+      "status": "meets_selected_threshold",
+      "full_wcag_audit": false,
+      "coverage": "solid-srgb-contrast",
+      "ratio": 5.196855609179071,
+      "minimum": 4.5,
+      "foreground_alpha": 1.0
+    }
+  }
+]

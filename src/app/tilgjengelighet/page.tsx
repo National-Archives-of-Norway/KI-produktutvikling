@@ -19,8 +19,9 @@ export default function AccessibilityPage() {
       <aside>
         Dette er et lokalt utkast for portalen som utvikles i Nasjonalarkivet.
         Samlet samsvar er ikke ferdig vurdert. Det tidligere språkavviket på
-        prissiden er rettet og retestet. Den formelle erklæringen er ikke
-        opprettet i uustatus.no.
+        prissiden er rettet og retestet. De to PDF-avvikene er rettet og
+        struktur-/metadataretestet. Den formelle erklæringen er ikke opprettet i
+        uustatus.no.
       </aside>
       <h2>Nettsted og ansvarlig virksomhet</h2>
       <p>
@@ -33,8 +34,9 @@ export default function AccessibilityPage() {
         forsiden, fem ressursdetaljsider, Kom i gang, retningslinjer, Om, Spør
         KI, Oversikt, Godkjente KI-assistenter, Godkjente MCP-er, priser,
         personvern, nettstedskart, funksjonalitetsoversikt, utviklingsplan,
-        versjonslogg og denne siden. Det lenkede PDF-vedleggets tilgjengelighet
-        er ikke ferdig undersøkt.
+        versjonslogg og denne siden. Det lenkede PDF-vedleggets syv sider er
+        også undersøkt med hensyn til struktur, metadata og tekst. Full
+        hjelpemiddeltest av dokumentet gjenstår.
       </p>
       <p>
         Innlogging, internt innhold og svar fra en faktisk modellleverandør
@@ -50,6 +52,36 @@ export default function AccessibilityPage() {
         </a>
         . Delkontroller uten funn er ikke det samme som dokumentert etterlevelse
         av alle krav.
+      </p>
+      <h2>Rettede PDF-avvik</h2>
+      <p>
+        <Link
+          href="/vedlegg/mandatforslag-ai-enablement-team.pdf"
+          prefetch={false}
+        >
+          Mandatforslaget for AI enablement-team
+        </Link>{" "}
+        er rettet og retestet 9. november 2026:
+      </p>
+      <ul>
+        <li>
+          De kartlagte overskriftene på side 1–7 har nå 27 kodede
+          overskriftsroller (H1/H2/H3). Tilknytningen til eksisterende tekst er
+          strukturkontrollert. Det konkrete avviket knyttet til krav 1.3.1 er
+          rettet; faktisk skjermlesernavigasjon gjenstår.
+        </li>
+        <li>
+          Dokumenttittelen er nå «Mandatforslag – AI enablement-team i
+          Nasjonalarkivet» i begge metadatafeltene (krav 2.4.2). Innstillingen
+          for å vise dokumenttittel er beholdt.
+        </li>
+      </ul>
+      <p>
+        Alle syv sider er rendret og sammenlignet med originalen uten visuelle
+        endringer. Struktur- og metadataretesten er bestått. Full PDF-vurdering
+        med skjermleser, leserekkefølge, lister og diagramalternativer gjenstår.
+        Be om hjelp eller annet tilgjengelig format via{" "}
+        <a href="#kontakt">kontaktkanalen nedenfor</a>.
       </p>
       <h2>Rettet språkavvik i prisvilkår</h2>
       <p>
@@ -84,7 +116,8 @@ export default function AccessibilityPage() {
         Codex (OpenAI) med tilgjengelighetsskillen. Testene gjelder lokal
         utvikling, ikke en verifisert produksjonstjeneste. Kjøringsreferanse:
         201443-73cb0a3e52e0 (bred kontroll), supplert med målrettet retest
-        203914-cf2e80bc00f7.
+        203914-cf2e80bc00f7, lokal oppfølging 205326-389241d1fd6e og PDF-retest
+        210420-07c855b7770e.
       </p>
       <ul>
         <li>
@@ -105,8 +138,14 @@ export default function AccessibilityPage() {
           pristabell og utfellbare vilkår, chatvalidering og dialog.
         </li>
         <li>
-          Utvalgte solide fargepar er kontrastberegnet. Alle gradienter, flater
+          Utvalgte fargepar er kontrastberegnet, senest filtre, chatfeil og to
+          PDF-fargepar. De valgte tersklene ble oppfylt. Alle gradienter, flater
           og kontrolltilstander er ikke undersøkt.
+        </li>
+        <li>
+          PDF-ens syv sider er rendret og struktur, metadata og tekst undersøkt.
+          Tastaturflyt på fire sider og fokusløkken i chat er supplert med nye
+          tester.
         </li>
       </ul>
       <p>
@@ -125,8 +164,9 @@ export default function AccessibilityPage() {
           skjermtastatur.
         </li>
         <li>
-          Kontroll av PDF-vedlegg, alle relevante kontrast-/fokustilstander,
-          redusert bevegelse og flere nettlesere.
+          Faktisk skjermlesernavigasjon i den rettede PDF-en, kontroll av
+          gjenstående PDF-alternativer og leserekkefølge, alle relevante
+          kontrast-/fokustilstander, redusert bevegelse og flere nettlesere.
         </li>
         <li>
           Videre vurdering av utestede dynamiske tilstander og av faktisk
@@ -134,9 +174,13 @@ export default function AccessibilityPage() {
         </li>
       </ul>
       <p>
-        Manglende testing betyr uavklart status, ikke automatisk et brudd eller
-        et unntak. Eldre resultater er bevart med sine opprinnelige datoer.
-        Ingen unntak basert på uforholdsmessig byrde er vurdert.
+        Ingen åpne bekreftede brudd står igjen i arbeidsgrunnlaget. 12
+        vurderinger er fortsatt uavklart. Krav 1.3.1 inngår blant disse fordi
+        øvrig PDF-semantikk ikke er ferdig vurdert, selv om det konkrete
+        overskriftsavviket er rettet. Manglende testing betyr uavklart status,
+        ikke automatisk et brudd eller et unntak. Eldre resultater er bevart med
+        sine opprinnelige datoer. Ingen unntak basert på uforholdsmessig byrde
+        er vurdert.
       </p>
       <h2>Alternativer og hjelp</h2>
       <p>

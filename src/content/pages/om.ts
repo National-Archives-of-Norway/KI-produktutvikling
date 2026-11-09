@@ -51,7 +51,7 @@ export const about = {
     {
       id: "ai-enablement-teamet-5",
       type: "paragraph",
-      text: "[Vedlegg: Mandatforslag for AI enablement-teamet (PDF, 95 kB)](/vedlegg/mandatforslag-ai-enablement-team.pdf)",
+      text: "[Vedlegg: Mandatforslag for AI enablement-teamet (PDF, 127 kB)](/vedlegg/mandatforslag-ai-enablement-team.pdf)",
     },
     {
       id: "ki-prat",

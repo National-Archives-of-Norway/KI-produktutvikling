@@ -120,7 +120,7 @@ export function getFeatures(): Feature[] {
       id: "tilgjengelighet",
       title: "Tilgjengelighetserklæring",
       description:
-        "Se testomfang, kjente begrensninger og kontaktkanal for tilgjengelighetsproblemer. Siste kontroll 9. november 2026 omfatter nye sider og animasjonen. Tidligere språkavvik på prissiden er rettet og retestet; samlet samsvar er uavklart og erklæringen er et lokalt utkast.",
+        "Se testomfang, kjente begrensninger og kontaktkanal for tilgjengelighetsproblemer. Lokal oppfølging 9. november 2026 omfatter PDF, kontrast og tastatur. PDF-overskrifter og dokumenttittel er rettet og struktur-/metadataretestet; tidligere språkavvik på prissiden er også rettet. Faktisk skjermlesertest og øvrig PDF-vurdering gjenstår. Samlet samsvar er uavklart og erklæringen er et lokalt utkast.",
       status: "draft",
       href: "/tilgjengelighet/",
       routes: ["/tilgjengelighet/"],

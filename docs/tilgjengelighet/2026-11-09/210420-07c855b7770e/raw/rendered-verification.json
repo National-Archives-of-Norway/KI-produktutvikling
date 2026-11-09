@@ -1,0 +1,16 @@
+{
+  "pages_build_exit_code": 0,
+  "project_tests": {
+    "passed": 48,
+    "failed": 0
+  },
+  "required_strings": [
+    "210420-07c855b7770e",
+    "Rettede PDF-avvik",
+    "12 vurderinger",
+    "27 kodede"
+  ],
+  "all_found": true,
+  "exported_pdf_matches_source": true,
+  "pdf_sha256": "d19ae321ec459f0086e8815e7d35cdec7b346cf2b59d1a770374a190a009d33f"
+}

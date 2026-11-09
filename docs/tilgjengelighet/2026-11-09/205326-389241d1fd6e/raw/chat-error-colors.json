@@ -1,0 +1,50 @@
+[
+  {
+    "ancestors": [
+      {
+        "bg": "rgb(9, 21, 27)",
+        "class": "MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary Mui-error MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-multiline mui-ww5phd-MuiInputBase-root-MuiOutlinedInput-root",
+        "image": "none"
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "class": "MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root mui-1x6bl8c-MuiFormControl-root-MuiTextField-root",
+        "image": "none"
+      },
+      {
+        "bg": "rgb(9, 21, 27)",
+        "class": "MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation24 MuiDialog-paper MuiDialog-paperWidthFalse mui-11jm4xt-MuiPaper-root-MuiDialog-paper",
+        "image": "none"
+      }
+    ],
+    "bg": "rgb(9, 21, 27)",
+    "border": "rgb(255, 255, 255)",
+    "fg": "rgb(255, 255, 255)",
+    "tag": "TEXTAREA",
+    "text": ""
+  },
+  {
+    "ancestors": [
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "class": "MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root mui-1x6bl8c-MuiFormControl-root-MuiTextField-root",
+        "image": "none"
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "class": "chat-composer",
+        "image": "linear-gradient(140deg, rgb(16, 33, 41), rgb(9, 21, 27))"
+      },
+      {
+        "bg": "rgb(9, 21, 27)",
+        "class": "MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation24 MuiDialog-paper MuiDialog-paperWidthFalse mui-11jm4xt-MuiPaper-root-MuiDialog-paper",
+        "image": "none"
+      }
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(255, 220, 215)",
+    "fg": "rgb(255, 220, 215)",
+    "tag": "P",
+    "text": "Skriv et spørsmål på 3–1000 tegn."
+  }
+]

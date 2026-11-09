@@ -1,0 +1,169 @@
+{
+  "title": "Mandatforslag – AI enablement-team i Nasjonalarkivet",
+  "headings": [
+    {
+      "page": 1,
+      "text": "Mål og rammer forAI enablement-team",
+      "before": "/Textbox",
+      "after": "/H1"
+    },
+    {
+      "page": 2,
+      "text": "Formalia",
+      "before": "/P",
+      "after": "/H2"
+    },
+    {
+      "page": 2,
+      "text": "Eierskap:",
+      "before": "/P",
+      "after": "/H3"
+    },
+    {
+      "page": 2,
+      "text": "Deltakere:",
+      "before": "/P",
+      "after": "/H3"
+    },
+    {
+      "page": 2,
+      "text": "Kapasitet:",
+      "before": "/P",
+      "after": "/H3"
+    },
+    {
+      "page": 2,
+      "text": "Avgrensning:",
+      "before": "/P",
+      "after": "/H3"
+    },
+    {
+      "page": 3,
+      "text": "Veier mot målet",
+      "before": "/P",
+      "after": "/H2"
+    },
+    {
+      "page": 3,
+      "text": "Kompetanse og erfaringsdeling",
+      "before": "/P",
+      "after": "/H3"
+    },
+    {
+      "page": 3,
+      "text": "Oppsett og guardrails",
+      "before": "/P",
+      "after": "/H3"
+    },
+    {
+      "page": 3,
+      "text": "Retningslinjer og policy",
+      "before": "/P",
+      "after": "/H3"
+    },
+    {
+      "page": 4,
+      "text": "Sånn skal vi jobbe",
+      "before": "/P",
+      "after": "/H2"
+    },
+    {
+      "page": 4,
+      "text": "Undersøke praksis",
+      "before": "/P",
+      "after": "/H3"
+    },
+    {
+      "page": 4,
+      "text": "Utforske muligheter",
+      "before": "/P",
+      "after": "/H3"
+    },
+    {
+      "page": 4,
+      "text": "Skape arenaer for deling",
+      "before": "/P",
+      "after": "/H3"
+    },
+    {
+      "page": 4,
+      "text": "Gi anbefalinger og råd",
+      "before": "/P",
+      "after": "/H3"
+    },
+    {
+      "page": 4,
+      "text": "Tilrettelegge, ikke utføre",
+      "before": "/P",
+      "after": "/H3"
+    },
+    {
+      "page": 5,
+      "text": "Dette skal vi ikke gjøre",
+      "before": "/P",
+      "after": "/H2"
+    },
+    {
+      "page": 5,
+      "text": "Avgjøre enkeltsaker",
+      "before": "/P",
+      "after": "/H3"
+    },
+    {
+      "page": 5,
+      "text": "Bestemme policy",
+      "before": "/P",
+      "after": "/H3"
+    },
+    {
+      "page": 5,
+      "text": "Være førstelinje-support",
+      "before": "/P",
+      "after": "/H3"
+    },
+    {
+      "page": 5,
+      "text": "Være NAV for KI i NA",
+      "before": "/P",
+      "after": "/H3"
+    },
+    {
+      "page": 5,
+      "text": "Påtvinge KI",
+      "before": "/P",
+      "after": "/H3"
+    },
+    {
+      "page": 6,
+      "text": "Grensesnitt og samarbeid",
+      "before": "/P",
+      "after": "/H2"
+    },
+    {
+      "page": 7,
+      "text": "Forslag til bidrag per fokusområde",
+      "before": "/P",
+      "after": "/H2"
+    },
+    {
+      "page": 7,
+      "text": "Kompetanse og erfaringsdeling",
+      "before": "/P",
+      "after": "/H3"
+    },
+    {
+      "page": 7,
+      "text": "Oppsett og guardrails",
+      "before": "/P",
+      "after": "/H3"
+    },
+    {
+      "page": 7,
+      "text": "Retningslinjer og policy",
+      "before": "/P",
+      "after": "/H3"
+    }
+  ],
+  "page_stream_changes": false,
+  "method": "Retag existing semantic nodes; preserve content MCIDs and page streams"
+}

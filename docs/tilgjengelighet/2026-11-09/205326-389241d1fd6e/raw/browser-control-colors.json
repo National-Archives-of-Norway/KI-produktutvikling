@@ -1,0 +1,184 @@
+[
+  {
+    "ancestors": [
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "class": "",
+        "image": "none",
+        "tag": "MAIN"
+      },
+      {
+        "bg": "rgb(9, 21, 27)",
+        "class": "",
+        "image": "none",
+        "tag": "BODY"
+      },
+      {
+        "bg": "rgb(9, 21, 27)",
+        "class": "",
+        "image": "none",
+        "tag": "BODY"
+      }
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(157, 241, 173)",
+    "fg": "rgb(157, 241, 173)",
+    "name": "Spør KI"
+  },
+  {
+    "ancestors": [
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "class": "hero",
+        "image": "none",
+        "tag": "SECTION"
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "class": "",
+        "image": "none",
+        "tag": "MAIN"
+      },
+      {
+        "bg": "rgb(9, 21, 27)",
+        "class": "",
+        "image": "none",
+        "tag": "BODY"
+      }
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "color(srgb 0.615686 0.945098 0.678431 / 0.7)",
+    "fg": "rgb(255, 255, 255)",
+    "name": "Pause animasjonen i forsideillustrasjonen"
+  },
+  {
+    "ancestors": [
+      {
+        "bg": "rgb(9, 21, 27)",
+        "class": "MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall mui-151omle-MuiInputBase-root-MuiOutlinedInput-root",
+        "image": "none",
+        "tag": "DIV"
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "class": "MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root mui-1o6jz54-MuiFormControl-root-MuiTextField-root",
+        "image": "none",
+        "tag": "DIV"
+      },
+      {
+        "bg": "rgb(9, 21, 27)",
+        "class": "",
+        "image": "none",
+        "tag": "BODY"
+      }
+    ],
+    "bg": "rgb(9, 21, 27)",
+    "border": "rgb(255, 255, 255)",
+    "fg": "rgb(255, 255, 255)",
+    "name": ""
+  },
+  {
+    "ancestors": [
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "class": "filters",
+        "image": "none",
+        "tag": "DIV"
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "class": "filter-control",
+        "image": "none",
+        "tag": "DIV"
+      },
+      {
+        "bg": "rgb(9, 21, 27)",
+        "class": "",
+        "image": "none",
+        "tag": "BODY"
+      }
+    ],
+    "bg": "rgb(157, 241, 173)",
+    "border": "rgb(29, 29, 29)",
+    "fg": "rgb(29, 29, 29)",
+    "name": "Alle"
+  },
+  {
+    "ancestors": [
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "class": "filters",
+        "image": "none",
+        "tag": "DIV"
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "class": "filter-control",
+        "image": "none",
+        "tag": "DIV"
+      },
+      {
+        "bg": "rgb(9, 21, 27)",
+        "class": "",
+        "image": "none",
+        "tag": "BODY"
+      }
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(157, 241, 173, 0.5)",
+    "fg": "rgb(157, 241, 173)",
+    "name": "Skill"
+  },
+  {
+    "ancestors": [
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "class": "filters",
+        "image": "none",
+        "tag": "DIV"
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "class": "filter-control",
+        "image": "none",
+        "tag": "DIV"
+      },
+      {
+        "bg": "rgb(9, 21, 27)",
+        "class": "",
+        "image": "none",
+        "tag": "BODY"
+      }
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(157, 241, 173, 0.5)",
+    "fg": "rgb(157, 241, 173)",
+    "name": "Instruks"
+  },
+  {
+    "ancestors": [
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "class": "filters",
+        "image": "none",
+        "tag": "DIV"
+      },
+      {
+        "bg": "rgba(0, 0, 0, 0)",
+        "class": "filter-control",
+        "image": "none",
+        "tag": "DIV"
+      },
+      {
+        "bg": "rgb(9, 21, 27)",
+        "class": "",
+        "image": "none",
+        "tag": "BODY"
+      }
+    ],
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(157, 241, 173, 0.5)",
+    "fg": "rgb(157, 241, 173)",
+    "name": "Prompt"
+  }
+]

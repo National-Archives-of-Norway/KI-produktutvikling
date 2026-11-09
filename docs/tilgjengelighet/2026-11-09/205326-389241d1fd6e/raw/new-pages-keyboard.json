@@ -1,0 +1,302 @@
+[
+  {
+    "path": "/oversikt/godkjente-mcper/",
+    "sequence": [
+      {
+        "name": "← Til forsiden",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "retningslinjene",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "Godkjente KI-assistenter",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "Oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "Oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "Personvernerklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "Tilgjengelighetserklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "Nettstedskart",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "Versjonslogg",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "Utviklingsplan",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "path": "/oversikt/godkjente-ki-assistenter/",
+    "sequence": [
+      {
+        "name": "← Til forsiden",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "retningslinjene",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "priser og abonnement",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "Oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "Oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "Personvernerklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "Tilgjengelighetserklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "Nettstedskart",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "Versjonslogg",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "Utviklingsplan",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "path": "/priser/",
+    "sequence": [
+      {
+        "name": "Oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "01 / Abonnement",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "02 / API og tokenpriser",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "03 / Kilder og oppdatering",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "Offisiell prisliste ↗",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "GitHub Copilot-abonnement, rullbar pristabell",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "DIV",
+        "visible": true
+      },
+      {
+        "name": "Vilkår og avgrensninger",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "SUMMARY",
+        "visible": true
+      },
+      {
+        "name": "Offisiell prisliste ↗",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "Claude-abonnement, rullbar pristabell",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "DIV",
+        "visible": true
+      },
+      {
+        "name": "Vilkår og avgrensninger",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "SUMMARY",
+        "visible": true
+      }
+    ]
+  },
+  {
+    "path": "/personvern/",
+    "sequence": [
+      {
+        "name": "← Til forsiden",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "khadah@nasjonalarkivet.no",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "Nkoms veiledning om informasjonskapsler",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "Datatilsynets veiledning om behandlingsgrunnlag",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "retten til informasjon",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "klage til Datatilsynet",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "Oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "Personvernerklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "Tilgjengelighetserklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      },
+      {
+        "name": "Nettstedskart",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tabIndex": 0,
+        "tag": "A",
+        "visible": true
+      }
+    ]
+  }
+]

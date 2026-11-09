@@ -1,0 +1,82 @@
+[
+  {
+    "bounds": {
+      "bottom": 84.296875,
+      "top": 40.296875
+    },
+    "dialog": true,
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "tag": "BUTTON",
+    "text": "Lukk chat"
+  },
+  {
+    "bounds": {
+      "bottom": 333.28125,
+      "top": 289.28125
+    },
+    "dialog": true,
+    "outline": "rgb(157, 241, 173) solid 2px",
+    "tag": "BUTTON",
+    "text": "Hvordan gjennomgår jeg en kodeendring?"
+  },
+  {
+    "bounds": {
+      "bottom": 385.28125,
+      "top": 341.28125
+    },
+    "dialog": true,
+    "outline": "rgb(157, 241, 173) solid 2px",
+    "tag": "BUTTON",
+    "text": "Hvordan gir jeg KI god kontekst?"
+  },
+  {
+    "bounds": {
+      "bottom": 437.28125,
+      "top": 393.28125
+    },
+    "dialog": true,
+    "outline": "rgb(157, 241, 173) solid 2px",
+    "tag": "BUTTON",
+    "text": "Hvordan utforsker jeg brukerbehov?"
+  },
+  {
+    "bounds": {
+      "bottom": 593.78125,
+      "top": 515.78125
+    },
+    "dialog": true,
+    "outline": "rgb(255, 255, 255) none 0px",
+    "tag": "TEXTAREA",
+    "text": ""
+  },
+  {
+    "bounds": {
+      "bottom": 696.078125,
+      "top": 640.078125
+    },
+    "dialog": true,
+    "outline": "rgb(157, 241, 173) solid 2px",
+    "tag": "BUTTON",
+    "text": "Send spørsmål"
+  },
+  {
+    "bounds": {
+      "bottom": 84.296875,
+      "top": 40.296875
+    },
+    "dialog": true,
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "tag": "BUTTON",
+    "text": "Lukk chat"
+  },
+  {
+    "bounds": {
+      "bottom": 331.28125,
+      "top": 287.28125
+    },
+    "dialog": true,
+    "outline": "rgb(157, 241, 173) solid 2px",
+    "tag": "BUTTON",
+    "text": "Hvordan gjennomgår jeg en kodeendring?"
+  }
+]

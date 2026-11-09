@@ -1,3 +1,15 @@
+# PDF-avvik rettet og struktur-/metadataretestet – 9. november 2026
+
+A11Y-02 og A11Y-03 er rettet. PDF-en har én H1, seks H2 og 20 H3, og riktig norsk dokumenttittel i Info og XMP. 229 MCID-koblinger er kontrollert gjennom ParentTree; alle syv sider har identisk tekst, innholdsstrøm og rendering før/etter. Ingen faktisk skjermlesertest eller full PDF/UA-validering er utført. 1.3.1 er derfor fortsatt U for øvrig PDF-semantikk. Arbeidsfordeling: **26 K, 10 I, 12 U, 0 B**, ikke en samsvarsprosent. [Ny retest og evidens](docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/testrapport.md).
+
+Nedenfor er historiske resultater før denne rettingen; de åpne PDF-funnene der er ikke dagens feilstatus.
+
+# Lokal oppfølging: PDF, kontrast og tastatur – 9. november 2026
+
+Ny oppfølging mot commit `67108ac`: alle syv PDF-sider rendret og tekst/struktur/metadata undersøkt. A11Y-02 (1.3.1, manglende overskriftsroller) og A11Y-03 (2.4.2, generisk PDF-tittel) er åpne; A11Y-01 er fortsatt lukket. Seks supplerende kontrastpar oppfylte valgte terskler. 40 Tab-steg på fire sider og åtte i chatdialogen er dokumentert; feltfokus ble undersøkt ved 320 px. Dette er ingen full ny web-/hjelpemiddelkontroll.
+
+Gjeldende arbeidsfordeling er **25 K, 10 I, 11 U, 2 B**, ikke en samsvarsprosent. PDF-en er ikke rettet. Faktisk skjermleser, zoom og redusert bevegelse er fortsatt uavklart; zoomsnarveiforsøket endret ikke visningen. Se [rapport og reteststeg](docs/tilgjengelighet/2026-11-09/205326-389241d1fd6e/testrapport.md). Nedenstående rapporter er historiske og kan ha eldre tall.
+
 # Oppfølging: språkavvik rettet – 9. november 2026
 
 A11Y-01 er lukket for prisvilkårene etter faktisk prisoppdatering og nettleserretest av alle seks seksjoner. Vilkårsteksten genereres på norsk. Tre nye regresjonstester beskytter gjentatt oppdatering og ukjent vilkårsformat. Alle 48 prosjekttester bestod. Se [retestrapporten](docs/tilgjengelighet/2026-11-09/203914-cf2e80bc00f7/testrapport.md). Samlet samsvar er fortsatt uavklart med 13 U-punkter. Tidligere rapport nedenfor beskriver funnet før retting, ikke en fortsatt åpen feil.

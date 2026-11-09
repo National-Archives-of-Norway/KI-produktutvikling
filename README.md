@@ -221,12 +221,22 @@ MCP-oversikten finnes på `/oversikt/godkjente-mcper/`, med inngang fra Oversikt
 
 ### Ny tilgjengelighetskontroll 9. november 2026
 
-Siste resultater ligger i `docs/tilgjengelighet/2026-11-09/201443-73cb0a3e52e0/`. `latest.json` peker til kjøringen. Mappen inneholder originalmanifest, rå HTML-/kontrastresultater, 60 responsive DOM-kontroller, 40 tekstavstandskontroller, manuelle tester og skjermbilder. Hovedrapportene og `/tilgjengelighet/` er oppdatert etter vurdering, ikke automatisk av skriptet. Ett språkavvik (3.1.2) ble påvist på prissiden i denne brede kontrollen og er lukket i den målrettede retesten nedenfor; samlet samsvar er ikke ferdig vurdert. Tidligere rapporter er bevart.
+Den brede kontrollen ligger i `docs/tilgjengelighet/2026-11-09/201443-73cb0a3e52e0/`. `latest.json` peker til siste oppfølging nedenfor. Mappen inneholder originalmanifest, rå HTML-/kontrastresultater, 60 responsive DOM-kontroller, 40 tekstavstandskontroller, manuelle tester og skjermbilder. Hovedrapportene og `/tilgjengelighet/` er oppdatert etter vurdering, ikke automatisk av skriptet. Ett språkavvik (3.1.2) ble påvist på prissiden i denne brede kontrollen og er lukket i den målrettede retesten nedenfor; samlet samsvar er ikke ferdig vurdert. Tidligere rapporter er bevart.
 
 Gjenta grunnkontrollen etter nytt Pages-bygg med `python3 /sti/til/tilgjengelighetserklaering/scripts/run_checks.py --project-root /sti/til/portalen --html-export out --agent 'Codex (OpenAI)' --project-version <testet-commit>`. Dette starter ingen nettleser og gir ingen samlet WCAG-godkjenning. Nettleser-/hjelpemiddelkontroller må dokumenteres separat. Midlertidig CSS brukt ved tekstavstandstesten er fjernet fra kildekoden.
 
 ### Retest av prisvilkår – 9. november 2026
 
-A11Y-01 er rettet og retestet i `docs/tilgjengelighet/2026-11-09/203914-cf2e80bc00f7/`. Tidligere funn og den brede kontrollen er bevart i `201443-73cb0a3e52e0/`. `latest.json` peker til retesten. De øvrige 13 uavklarte vurderingene består.
+A11Y-01 er rettet og retestet i `docs/tilgjengelighet/2026-11-09/203914-cf2e80bc00f7/`. Tidligere funn og den brede kontrollen er bevart i `201443-73cb0a3e52e0/`. Dette var en målrettet retest; siste status finnes i oppfølgingen nedenfor.
 
 Copilot- og Codex-parserne genererer nå norske vilkårsnoter fra kjente kildefelt. Ingen engelsk kildesetning kopieres direkte inn i disse notene. Ukjent pris-, kreditt- eller tilleggsvilkårsformat gir kildefeil og beholder tidligere kontrollert norsk tekst. Dette er ikke en generell språkdetektor; nye kildeformater krever gjennomgang. `pnpm test:pricing` har åtte tester, inkludert tre språkregresjonstester av faktisk oppdateringsfunksjon og JSON-rundtur. Den eksisterende daglige arbeidsflyten kjører samme testfil; GitHub-jobben er fremdeles ikke aktivert. Faktisk lokal `pnpm pricing:sync` lyktes for alle seks kilder under retesten.
+
+### Videre lokal tilgjengelighetskontroll – 9. november 2026
+
+Historisk oppfølging før PDF-retting: [205326-389241d1fd6e](docs/tilgjengelighet/2026-11-09/205326-389241d1fd6e/testrapport.md). Statusen i dette avsnittet gjaldt før rettingen nedenfor. PDF-ens syv sider, struktur/metadata/tekst, seks kontrastpar, fire tastaturforløp og chatfokus er undersøkt. Råfiler, testprotokoll og skjermbilder ligger i kjøringsmappen. To PDF-funn er åpne: manglende semantiske overskrifter og generisk dokumenttittel. 25 K / 10 I / 11 U / 2 B er arbeidsstatuser, ikke samsvarsprosent. PDF-en er ikke rettet. Faktisk skjermleser, zoom, redusert bevegelse og øvrig testdekning gjenstår; konkrete testinstruksjoner står i rapporten. Tidligere HTML-/tekstavstands-/pristester er bevart, ikke fremstilt som nye.
+
+### PDF-avvik rettet og retestet – 9. november 2026
+
+Siste kjøring er [210420-07c855b7770e](docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/testrapport.md); `docs/tilgjengelighet/latest.json` peker hit. PDF-en har nå 27 kartlagte overskriftsroller og en beskrivende norsk tittel i både Info og XMP. Retest bekrefter 229 MCID-koblinger, PDF 1.7 og identisk tekst/sideinnhold/rendering på alle syv sider. Original, reparasjonsskript og uavhengig kontrollskript er bevart i kjøringens `raw/`. Scripts krever pypdf/pdfplumber/PIL fra det bundlede Python-miljøet; de er ikke nye npm-avhengigheter.
+
+A11Y-02 og A11Y-03 er rettet i avgrenset struktur-/metadataomfang. 26 K / 10 I / 12 U / 0 B er arbeidsstatuser, ikke samsvarsprosent. 1.3.1 er fortsatt U for øvrig PDF-semantikk og faktisk hjelpemiddeltest, mens de tidligere 11 U-punktene består. Den redigerbare presentasjonskilden er ikke i prosjektet: ved fremtidig eksport må også kildefilens overskriftsstiler og tittel rettes. PDF-en er reparert direkte, og tekst/visuell utforming er beholdt. Samlet samsvar er ikke ferdig vurdert.

@@ -1,0 +1,37 @@
+{
+  "reviewed_at": "2026-11-09T21:08:14.359914+01:00",
+  "agent": "Codex (OpenAI)",
+  "skill_version": "0.3.0",
+  "base_commit": "67108ac med lokal tilgjengelighetsoppfølging og PDF-retting",
+  "scope": "Målrettet retting og struktur-/metadata-/visuell retest av A11Y-02 og A11Y-03 i PDF-vedlegget. Øvrige vurderinger videreført, ingen ny full webrevisjon.",
+  "tests": [
+    {
+      "id": "pdf-heading-retag",
+      "location": "public/vedlegg/mandatforslag-ai-enablement-team.pdf, side 1–7",
+      "method": "pypdf og pdfplumber: koble struktur til faktisk MCID-tekst og kontroller ParentTree",
+      "steps": "Kjør raw/retest-pdf.py med bundlet Python etter rendering som beskrevet i rapporten. Sammenlign synlige overskrifter med rålisten.",
+      "result": "27 overskrifter: H1=1, H2=6, H3=20; syv hovedoverskrifter på riktige sider; 229 MCID-koblinger kontrollert",
+      "evidence": "raw/pdf-retest.json; screenshots/pdf-retested-all-pages.png"
+    },
+    {
+      "id": "pdf-title",
+      "location": "Dokumentmetadata",
+      "method": "Kryssjekk Info, XMP og DisplayDocTitle med pypdf",
+      "result": "Samme beskrivende norske tittel i Info og XMP; DisplayDocTitle=true",
+      "evidence": "raw/pdf-retest.json"
+    },
+    {
+      "id": "pdf-preservation",
+      "location": "Side 1–7",
+      "method": "Poppler 1100 px rendering før/etter, PIL ImageChops, tekst-/innholdsstrømsammenligning",
+      "result": "Alle syv sider pikselidentiske; tekst og innholdsstrømmer identiske; PDF 1.7 bevart",
+      "evidence": "raw/pdf-retest.json"
+    }
+  ],
+  "limitations": [
+    "Ingen faktisk skjermlesernavigasjon eller full PDF/UA-validering",
+    "PDF-lister, diagramalternativer og leserekkefølge er fortsatt ikke fullt vurdert",
+    "Øvrige webresultater er arvet med opprinnelig evidens",
+    "Første XMP-skriveforsøk feilet retest og er korrigert; se raw/retest-attempt-01.json"
+  ]
+}

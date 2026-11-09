@@ -1,0 +1,27 @@
+{
+  "active": "TEXTAREA",
+  "dialog": [
+    {
+      "clientHeight": 700,
+      "scrollHeight": 700,
+      "width": 304
+    }
+  ],
+  "field": "rgb(255, 255, 255) none 0px",
+  "fieldParent": {
+    "border": "0px none rgb(255, 255, 255)",
+    "shadow": "color(srgb 0.615686 0.945098 0.678431 / 0.07) 0px 0px 18px 0px"
+  },
+  "focusRect": {
+    "bottom": 630.6640625,
+    "height": 70,
+    "left": 58,
+    "right": 262,
+    "top": 560.6640625,
+    "width": 204,
+    "x": 58,
+    "y": 560.6640625
+  },
+  "scrollWidth": 320,
+  "width": 320
+}

@@ -4,6 +4,26 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 «Agent» betyr kodeassistenten som utførte arbeidet. Git-forfatteren registreres separat av Git og kan være personen som oppretter commiten. Eksakt modellvariant er ikke registrert for tidligere arbeid og oppgis derfor ikke. Ingen underagenter ble brukt til kvalitetskontrollen eller opprettelsen av denne loggen.
 
+## Ikke utgitt – rettet PDF-overskrifter og dokumenttittel – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI), med `tilgjengelighetserklaering` 0.3.0 og PDF-skillen. Ingen underagenter.
+
+- Rettet A11Y-02 ved å gi de kartlagte PDF-overskriftene reelle roller: én H1, seks H2 og 20 H3. Eksisterende tekst-/MCID-koblinger er beholdt. Rettet A11Y-03 med beskrivende norsk tittel i både Info og XMP og beholdt visning av dokumenttittel. PDF 1.7, sideinnhold, tekst og visuell utforming er bevart; filstørrelsen i felles Om-innhold er oppdatert til 127 kB.
+- Ny datert retest: `docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/`. Uavhengig kontroll bekrefter 27 overskriftsroller, 229 MCID-koblinger, riktig tittel begge steder og pikselidentisk rendering/tekst/innholdsstrøm på alle syv sider. Original PDF, reparasjonsskript, retestskript og råresultater er arkivert. Et første ugyldig XMP-skriveforsøk ble fanget, dokumentert og korrigert før endelig retest.
+- Oppdatert kravmatrise, testresultater, erklæringsutkast og portalens erklæringsside, funksjonsregister, README, kvalitetskontroll og utviklingsplan. Begge konkrete PDF-avvik er rettet og struktur-/metadataretestet. Ny arbeidsfordeling: 26 K / 10 I / 12 U / 0 B, ikke samsvarsprosent. 1.3.1 er B→U fordi øvrig PDF-semantikk og faktisk skjermleserbruk fortsatt er uavklart; 2.4.2 er B→K. Tidligere 11 U-punkter er bevart.
+- Begrensning: Ingen faktisk skjermlesernavigasjon, full PDF/UA-validering, produksjonsgodkjenning, registrering, publisering eller commit. Redigerbar presentasjonskilde finnes ikke i prosjektet; ved ny eksport må også kildens overskriftsstiler/tittel rettes.
+- Kontroll av side-/dokumentoppdateringen: 48 prosjekttester, Pages-produksjonsbygg med TypeScript og HTML-grunnkontroll av 23 eksportfiler bestod uten kandidater i delomfanget. Den eksporterte PDF-en er byteidentisk med den reparerte kildefilen. 48 unike kriterier, statusfordeling og 82 relative dokumentlenker er kontrollert. Oppdatert erklæring er lest tilbake i nettleser og skjermbilde lagret. Prettier og `git diff --check` er kontrollert for endrede dokument-/kildefiler; rå bygglogger er bevart med opprinnelige terminalkontrolltegn. Bygg-/enhetstester er utviklingsverifisering, ikke tilgjengelighetsgodkjenning.
+
+## Ikke utgitt – videre lokal tilgjengelighetskontroll – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI), med `tilgjengelighetserklaering` 0.3.0 og PDF-skillen. Ingen underagenter.
+
+- Lagret ny oppfølging mot commit `67108ac` i `docs/tilgjengelighet/2026-11-09/205326-389241d1fd6e/`. Undersøkt syv PDF-sider med rendering, struktur-/metadata-/tekstuttrekk, seks supplerende kontrastpar, 40 Tab-steg på fire sider og åtte i chat, samt chatfeltfokus ved 320 px. Alle valgte kontrastterskler er oppfylt; ingen nye bekreftede webfunn i dette delomfanget.
+- Bekreftet to PDF-avvik: A11Y-02 / 1.3.1 (synlige overskrifter uten semantiske overskriftsroller) og A11Y-03 / 2.4.2 (generisk dokumenttittel). Rettingsforslag, konsekvenser og reteststeg er dokumentert; PDF-en er ikke endret. Tidligere språkavvik A11Y-01 forblir lukket.
+- Oppdatert testprotokoll, full 48-punkts matrise, erklæringsutkast, lokal erklæringsside, funksjonsregister, README, kvalitetskontroll og utviklingsplan. Tidligere evidens og manifest er bevart. Ny arbeidsfordeling er 25 K / 10 I / 11 U / 2 B, ikke en samsvarsprosent. 1.4.5 er undersøkt også i PDF-en; 1.3.1 og 2.4.2 inkluderer nå PDF-funn.
+- Begrensning: Zoomsnarveien endret ikke målt visning. Ingen faktisk skjermleser, verifisert 200/400 % zoom, systeminnstilling for redusert bevegelse eller full automatisk WCAG-skanning. OS-innstillinger er ikke endret; viewport er nullstilt. Samlet samsvar er fortsatt uavklart. Ingen publisering, registrering eller commit.
+- Kontroll av dokument- og sideendringene: 48 prosjekttester bestod; Pages-produksjonsbygg med TypeScript bestod. Ny HTML-grunnkontroll av 23 eksportfiler ga ingen kandidater. Prettier og `git diff --check` bestod for de endrede dokument-/kildefilene; 48 unike kriterier, statusfordeling og 73 relative dokumentlenker er kontrollert. Erklæringen er lest tilbake i nettleser og skjermbilde lagret. Bygg-/enhetstester er utviklingsverifisering, ikke tilgjengelighetsgodkjenning. Rå bygglogg er bevart med opprinnelige terminalkontrolltegn.
+
 ## Ikke utgitt – rettet språkavvik i prisoppdateringen – 9. november 2026
 
 **Utførende agent:** Codex (OpenAI), med `tilgjengelighetserklaering` 0.3.0 for retest og erklæringsoppdatering. Ingen underagenter.
