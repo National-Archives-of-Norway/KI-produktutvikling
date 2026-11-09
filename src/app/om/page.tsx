@@ -51,6 +51,31 @@ export default function About() {
         Omtalen av AI enablement-teamet bygger på et mandatforslag. Den
         beskriver foreslått ansvar og arbeidsmåte, ikke et bekreftet vedtak.
       </aside>
+      <p>
+        <Link
+          href="/vedlegg/mandatforslag-ai-enablement-team.pdf"
+          prefetch={false}
+        >
+          Vedlegg: Mandatforslag for AI enablement-teamet (PDF, 95 kB)
+        </Link>
+      </p>
+      <h2 id="ki-prat">KI-prat</h2>
+      <p>
+        KI-prat er et forum for alle som jobber med produktutvikling i
+        Nasjonalarkivet, der vi deler erfaringer, tanker og refleksjoner om bruk
+        av KI i utviklingsarbeidet. Ta med noe du har prøvd, et spørsmål eller
+        et tema du vil utforske sammen med andre.
+      </p>
+      <p>
+        Vi møtes på Teams annenhver torsdag i opptil én time. Møtene har
+        hovedsakelig åpen mikrofon, og vi avslutter tidligere hvis ingen har mer
+        de vil ta opp.
+      </p>
+      <p>
+        I Teams-kanalen «KI-prat» kan du fortsette diskusjonen etter møtet og
+        foreslå temaer til neste gang. Kanalen er et sted for erfaringsdeling
+        også mellom møtene.
+      </p>
       <h2 id="bidra">Del det dere lærer</h2>
       <p>
         En nyttig erfaring beskriver oppgaven, hva dere prøvde, hvordan dere

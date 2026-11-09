@@ -4,6 +4,40 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 «Agent» betyr kodeassistenten som utførte arbeidet. Git-forfatteren registreres separat av Git og kan være personen som oppretter commiten. Eksakt modellvariant er ikke registrert for tidligere arbeid og oppgis derfor ikke. Ingen underagenter ble brukt til kvalitetskontrollen eller opprettelsen av denne loggen.
 
+## Ikke utgitt – retningslinjeside – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI).
+
+- Opprettet `/retningslinjer/` med veiledning om verktøy, arkivmateriale, kvalitet og agenttilgang, inspirert av NAVs side og tilpasset portalens målgruppe og design.
+- Merket innholdet som arbeidsutkast, med avklaringspunkter for eierskap, godkjenninger og oppfølging. NAVs interne tillatelser er ikke overført til Nasjonalarkivet.
+- Lagt til siden i hovedmenyen og nettstedskartet. Siden inngår ennå ikke i den dokumenterte tilgjengelighetsgjennomgangen eller RAG-kildene.
+- Kontroll: TypeScript og `git diff --check` bestod, og de berørte kodefilene er formatert med Prettier. Ingen visuell nettleserkontroll er utført.
+
+## Ikke utgitt – mandatforslag som vedlegg – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI).
+
+- Lagt til den opprinnelige `ai-enablement-team.pdf` som vedlegg under omtalen av AI enablement-teamet på Om-siden, tydelig merket som mandatforslag med filtype og størrelse.
+- PDF-en er kopiert uendret til `public/vedlegg/mandatforslag-ai-enablement-team.pdf` og følger nettstedet ved bygging. Ingen publisering eller ny tilgjengelighetsvurdering av PDF-en er utført.
+- Kontroll: Filkopien er sammenlignet med originalen uten forskjeller. Prettier og `git diff --check` bestod.
+
+## Ikke utgitt – KI-prat på Om-siden – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI).
+
+- Lagt til omtale av KI-prat under «Om», basert på invitasjonsteksten: erfaringsdeling om KI, Teams-møter annenhver torsdag i opptil én time og videre diskusjon i Teams-kanalen.
+- Tilpasset invitasjonen til varig informasjon på portalen; omtalen av det første møtet er utelatt.
+- Presisert at KI-prat er for alle som jobber med produktutvikling i Nasjonalarkivet.
+- Kontroll: Prettier og `git diff --check` bestod. Ingen funksjonalitet er endret.
+
+## Ikke utgitt – Beta-merking av skills – 9. november 2026
+
+**Utførende agent:** Codex (OpenAI).
+
+- Lagt til en synlig «Beta»-etikett på skill-kortene i ressurskatalogen, med forklaring om at de ennå ikke er gjennomgått av et menneske.
+- Viser samme status og forklaring på skillenes detaljsider for å gjøre modenheten tydelig også ved direkte lenking.
+- Kontroll: TypeScript, Prettier for de berørte filene og `git diff --check` bestod. Ingen visuell nettleserkontroll er utført i denne endringen.
+
 ## Ikke utgitt – samlet tilgjengelighetsdokumentasjon – 9. november 2026
 
 **Utførende agent:** Codex (OpenAI).

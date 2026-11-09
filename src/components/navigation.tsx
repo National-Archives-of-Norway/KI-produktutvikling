@@ -21,6 +21,11 @@ export function Navigation() {
       active: pathname.replace(/\/$/, "") === "/kom-i-gang",
     },
     {
+      href: "/retningslinjer/",
+      label: "Retningslinjer",
+      active: pathname.replace(/\/$/, "") === "/retningslinjer",
+    },
+    {
       href: "/om/",
       label: "Om",
       active: pathname.replace(/\/$/, "") === "/om",

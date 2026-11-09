@@ -21,6 +21,9 @@ export default function SiteMapPage() {
           <Link href="/kom-i-gang/">Kom i gang</Link>
         </li>
         <li>
+          <Link href="/retningslinjer/">Retningslinjer</Link>
+        </li>
+        <li>
           <Link href="/om/">Om portalen</Link>
         </li>
         <li>

@@ -100,18 +100,33 @@ export function Catalog() {
               backgroundImage: "none",
             }}
           >
-            <Chip
-              label={r.type}
-              size="small"
-              variant="outlined"
-              color="secondary"
-            />
+            <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+              <Chip
+                label={r.type}
+                size="small"
+                variant="outlined"
+                color="secondary"
+              />
+              {r.type === "Skill" && (
+                <Chip
+                  label="Beta"
+                  size="small"
+                  sx={{
+                    bgcolor: "secondary.main",
+                    color: "text.primaryInvert",
+                    fontWeight: 600,
+                  }}
+                />
+              )}
+            </div>
             <Typography
               component="span"
               variant="caption"
               sx={{ mt: 1, color: "text.secondary" }}
             >
-              {r.skill ? "Under utprøving" : "Eksempel"}
+              {r.type === "Skill"
+                ? "Ennå ikke gjennomgått av et menneske"
+                : "Eksempel"}
             </Typography>
             <Typography
               component="h3"

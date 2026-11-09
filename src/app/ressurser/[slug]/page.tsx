@@ -30,10 +30,13 @@ export default async function ResourcePage({
       <Link href="/#ressurser">← Til verktøykatalogen</Link>
       <div className="eyebrow">
         {resource.type.toLocaleUpperCase("nb")} ·{" "}
-        {resource.skill ? "UNDER UTPRØVING" : "EKSEMPEL"}
+        {resource.type === "Skill" ? "BETA" : "EKSEMPEL"}
       </div>
       <h1>{resource.title}</h1>
       <p className="lead">{resource.description}</p>
+      {resource.type === "Skill" && (
+        <p>Beta: Denne skillen er ennå ikke gjennomgått av et menneske.</p>
+      )}
       {resource.skill && (
         <section aria-labelledby="skill-source-title">
           <h2 id="skill-source-title">Om skillen</h2>
