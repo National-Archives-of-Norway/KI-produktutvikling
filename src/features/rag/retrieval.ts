@@ -6,7 +6,13 @@ export const corpus: RagSource[] = resources.map((r) => ({
   id: r.slug,
   title: r.title,
   href: `/ressurser/${r.slug}/`,
-  text: [r.description, r.usage, ...r.steps, r.example].join("\n"),
+  text: [
+    r.description,
+    r.usage,
+    ...r.steps,
+    r.example,
+    ...(r.keywords ?? []),
+  ].join("\n"),
 }));
 
 const stopWords = new Set([
@@ -53,11 +59,15 @@ export function retrieve(question: string): RagSource[] {
       const score = query.reduce(
         (total, q) =>
           total +
-          (title.some((t) => t.startsWith(q) || q.startsWith(t))
-            ? 3
-            : body.some((t) => t.startsWith(q) || q.startsWith(t))
-              ? 1
-              : 0),
+          (title.includes(q)
+            ? 5
+            : title.some((t) => t.startsWith(q) || q.startsWith(t))
+              ? 3
+              : body.includes(q)
+                ? 2
+                : body.some((t) => t.startsWith(q) || q.startsWith(t))
+                  ? 1
+                  : 0),
         0,
       );
       return { source, score };

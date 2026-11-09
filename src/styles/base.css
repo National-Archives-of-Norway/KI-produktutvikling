@@ -3,12 +3,14 @@
 }
 html {
   scroll-behavior: smooth;
+  scroll-padding-block: 24px 100px;
 }
 body {
   margin: 0;
   background: var(--background);
   color: var(--text);
   line-height: 1.6;
+  overflow-wrap: anywhere;
 }
 a {
   color: inherit;
@@ -53,6 +55,13 @@ h2 {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
   }
 }
 @media (max-width: 650px) {

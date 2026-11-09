@@ -15,7 +15,7 @@ Utvikle en kunnskapsportal inspirert av [KI-produktutvikling i Nav](https://ki-u
 - Utvikling på lokal maskin, med GitHub til samarbeid, versjonering og automatisert publisering.
 - Designbibliotek: [nasjonalarkivet/da-mui-theme](https://github.com/nasjonalarkivet/da-mui-theme), tilgjengelig som npm-pakken `@digitalarkivet/mui-theme`. Integrasjonen bruker publisert pakke uten GitHub-repotilgang.
 - Futuristisk design utvikles i portalens eget tema og komponentlag.
-- Tidlig demonstrasjon publiseres som statisk nettsted på GitHub Pages.
+- Første delte miljø skal være lukket for godkjente GitHub-brukere. Hosting avventer avklaring av abonnement og drift. Pages er foreløpig en statisk byggvariant; offentlig publisering utsettes til portalen er produksjonsklar.
 - Innlogging og beskyttet innhold testes og driftes i et miljø med serverstøtte.
 - Portalen skal ha avgrensede GitHub-rettigheter og ingen skrivetilgang til andre koderepoer.
 - GitHub-organisasjonen antas foreløpig å være `nasjonalarkivet`; dette må bekreftes.
@@ -297,3 +297,25 @@ Oppdelingen skal bevare eksisterende utseende, kilder og tilgangsbegrensninger. 
 - Hovedinnholdet er gjort fokuserbart for «Hopp til innhold». Fokusmarkering omfatter også tekstområder og kildeutdrag. Menylenkene har minst 44 pikslers høyde, og bunnteksten har plass under chatknappen.
 - Se [kontrollrapporten](KVALITETSKONTROLL.md) for omfang, funn og gjenstående kontroller. Dette er første kvalitetssjekk, ikke en full WCAG-revisjon.
 - Prioritert videre: utvidet tilgjengelighetskontroll, godkjent offentlig innhold, eget GitHub-repo og CI, deretter Pages-demo og brukertest.
+
+## Tilgjengelighet og erklæring – 6. november 2026
+
+- [x] Vurdere alle 48 krav i en egen kontrollmatrise, med eksplisitte avgrensninger og uavklarte punkter.
+- [x] Utføre utvidet lokal tastatur-, DOM-, mobil-, landskaps- og tekstavstandskontroll og rette funn.
+- [x] Legge til kontrasttester, HTML-grunnkontroll, nettstedskart og lokal tilgjengelighetsside.
+- [x] Lage erklæringsgrunnlag med bekreftet kontaktadresse, klageadgang og vedlikeholdsrutine.
+- [ ] Fullføre skjermleser, verifisert zoom, resterende kontrast-/fokustilstander og flere nettlesere.
+- [ ] Avklare ansvarlig godkjenner, juridiske registreringsopplysninger og endelig nettadresse.
+- [ ] Registrere og publisere den formelle erklæringen i uustatus.no og lenke den fra portalen før lansering.
+
+Detaljer: [WCAG-kontroll](docs/tilgjengelighet/WCAG-KONTROLL.md), [erklæringsgrunnlag](docs/tilgjengelighet/TILGJENGELIGHETSERKLAERING.md). Fase 3 er ikke ferdig godkjent før de gjenstående manuelle kontrollene er gjennomført.
+
+## Første skill i lokalt bibliotek – 7. november 2026
+
+- [x] Opprettet separat lokalt `Skills`-repo med første commit `85af197` og struktur for flere skills. Ingen GitHub-remote er konfigurert, i tråd med brukerens avklaring.
+- [x] Kopiert tilgjengelighetsskillen med arbeidsmal, referanser og agentmetadata til `skills/tilgjengelighetserklaering/`.
+- [x] Gjort skillen søkbar i portalens katalog med egen detaljside og tydelig skille mellom lokal skill og eksempelressurser.
+- [x] Lagt til tester for søk, nøkkelord, typefilter og kildehenting; 21 tester passerer.
+- [ ] Avklare eventuell senere GitHub-publisering, tilgang og distribusjon. Ingen automatisk synkronisering eller installasjon er innført.
+
+Tilgjengelighetskontrollen fra 6. november omfattet ni sider. Den nye skill-detaljsiden utvider portalen til ti sider og må inngå i neste samlede tilgjengelighetsvurdering.

@@ -35,8 +35,17 @@ export default function RootLayout({
             {children}
           </main>
           <footer>
-            <span>KI-Produktutvikling</span>
-            <span>Lokal prototype · eksempelinnhold</span>
+            <div>
+              <span>KI-Produktutvikling</span>
+              <nav
+                className="footer-links"
+                aria-label="Informasjon om nettstedet"
+              >
+                <Link href="/tilgjengelighet/">Tilgjengelighetserklæring</Link>
+                <Link href="/nettstedskart/">Nettstedskart</Link>
+              </nav>
+            </div>
+            <span>Lokal prototype · under utprøving</span>
           </footer>
         </PortalThemeProvider>
       </body>

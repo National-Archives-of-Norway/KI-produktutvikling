@@ -8,18 +8,12 @@ import Chip from "@mui/material/Chip";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 
-import { resources } from "@/content/resources";
+import { findResources } from "@/content/resource-search";
 
 export function Catalog() {
   const [type, setType] = useState("Alle");
   const [query, setQuery] = useState("");
-  const visible = resources.filter(
-    (r) =>
-      (type === "Alle" || r.type === type) &&
-      `${r.title} ${r.description}`
-        .toLocaleLowerCase("nb")
-        .includes(query.toLocaleLowerCase("nb")),
-  );
+  const visible = findResources(query, type);
   return (
     <>
       <div className="catalog-controls">
@@ -87,8 +81,7 @@ export function Catalog() {
         </div>
       </div>
       <p className="result-count" aria-live="polite">
-        {visible.length}{" "}
-        {visible.length === 1 ? "eksempelressurs" : "eksempelressurser"}
+        {visible.length} {visible.length === 1 ? "ressurs" : "ressurser"}
       </p>
       <div className="cards">
         {visible.map((r) => (
@@ -113,6 +106,13 @@ export function Catalog() {
               variant="outlined"
               color="secondary"
             />
+            <Typography
+              component="span"
+              variant="caption"
+              sx={{ mt: 1, color: "text.secondary" }}
+            >
+              {r.skill ? "Under utprøving" : "Eksempel"}
+            </Typography>
             <Typography
               component="h3"
               variant="h6"

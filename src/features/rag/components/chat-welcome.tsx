@@ -14,11 +14,11 @@ export function ChatWelcome({
         <span className="chat-eyebrow">UTFORSK KUNNSKAPEN</span>
         <strong>Hei! Hva vil du utforske?</strong>
         <p>
-          Jeg finner innhold om kodegjennomgang, gode instrukser og brukerbehov.
+          Jeg finner innhold om tilgjengelighetserklæringer, kodegjennomgang,
+          gode instrukser og brukerbehov.
         </p>
         <small>
-          Foreløpig brukes tre offentlige eksempelressurser. Hvert spørsmål
-          søkes separat.
+          Søk i portalens ressursbeskrivelser. Hvert spørsmål søkes separat.
         </small>
       </div>
       {showSuggestions && (

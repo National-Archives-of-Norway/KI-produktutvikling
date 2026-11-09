@@ -1,0 +1,407 @@
+[
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/",
+    "scrollWidth": 320,
+    "textSpacing": {
+      "letters": "-1.5px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 320
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/kom-i-gang",
+    "scrollWidth": 320,
+    "textSpacing": {
+      "letters": "-1.7px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 320
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/om",
+    "scrollWidth": 320,
+    "textSpacing": {
+      "letters": "-1.7px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 320
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/spor",
+    "scrollWidth": 320,
+    "textSpacing": {
+      "letters": "-1.7px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 320
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/ressurser/kodegjennomgang",
+    "scrollWidth": 320,
+    "textSpacing": {
+      "letters": "-1.7px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 320
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/ressurser/tydelig-kontekst",
+    "scrollWidth": 320,
+    "textSpacing": {
+      "letters": "-1.7px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 320
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/ressurser/brukerbehov",
+    "scrollWidth": 320,
+    "textSpacing": {
+      "letters": "-1.7px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 320
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/tilgjengelighet",
+    "scrollWidth": 320,
+    "textSpacing": {
+      "letters": "-1.7px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 320
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/nettstedskart",
+    "scrollWidth": 320,
+    "textSpacing": {
+      "letters": "-1.7px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 320
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/",
+    "scrollWidth": 844,
+    "textSpacing": {
+      "letters": "-2.5px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 844
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/kom-i-gang",
+    "scrollWidth": 844,
+    "textSpacing": {
+      "letters": "-1.7px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 844
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/om",
+    "scrollWidth": 844,
+    "textSpacing": {
+      "letters": "-1.7px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 844
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/spor",
+    "scrollWidth": 844,
+    "textSpacing": {
+      "letters": "-1.7px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 844
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/ressurser/kodegjennomgang",
+    "scrollWidth": 844,
+    "textSpacing": {
+      "letters": "-1.7px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 844
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/ressurser/tydelig-kontekst",
+    "scrollWidth": 844,
+    "textSpacing": {
+      "letters": "-1.7px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 844
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/ressurser/brukerbehov",
+    "scrollWidth": 844,
+    "textSpacing": {
+      "letters": "-1.7px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 844
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/tilgjengelighet",
+    "scrollWidth": 844,
+    "textSpacing": {
+      "letters": "-1.7px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 844
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/nettstedskart",
+    "scrollWidth": 844,
+    "textSpacing": {
+      "letters": "-1.7px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 844
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/",
+    "scrollWidth": 1280,
+    "textSpacing": {
+      "letters": "-2.5px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 1280
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/kom-i-gang",
+    "scrollWidth": 1280,
+    "textSpacing": {
+      "letters": "-1.7px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 1280
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/om",
+    "scrollWidth": 1280,
+    "textSpacing": {
+      "letters": "-1.7px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 1280
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/spor",
+    "scrollWidth": 1280,
+    "textSpacing": {
+      "letters": "-1.7px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 1280
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/ressurser/kodegjennomgang",
+    "scrollWidth": 1280,
+    "textSpacing": {
+      "letters": "-1.7px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 1280
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/ressurser/tydelig-kontekst",
+    "scrollWidth": 1280,
+    "textSpacing": {
+      "letters": "-1.7px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 1280
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/ressurser/brukerbehov",
+    "scrollWidth": 1280,
+    "textSpacing": {
+      "letters": "-1.7px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 1280
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/tilgjengelighet",
+    "scrollWidth": 1280,
+    "textSpacing": {
+      "letters": "-1.7px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 1280
+  },
+  {
+    "brokenLabels": [],
+    "duplicateIds": [],
+    "h1": 1,
+    "lang": "nb",
+    "outOfBounds": [],
+    "path": "/nettstedskart",
+    "scrollWidth": 1280,
+    "textSpacing": {
+      "letters": "-1.7px",
+      "words": "0px"
+    },
+    "unnamed": [],
+    "w": 1280
+  }
+]

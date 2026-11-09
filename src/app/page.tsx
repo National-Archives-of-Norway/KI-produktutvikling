@@ -43,7 +43,7 @@ export default function Home() {
         <div className="eyebrow">VERKTØYKATALOG</div>
         <h2>Fra inspirasjon til handling</h2>
         <p className="section-description">
-          Utforsk eksempelressursene i den første prototypen.
+          Finn skills, instrukser og prompter. Eksempelressurser er merket.
         </p>
         <Catalog />
       </section>

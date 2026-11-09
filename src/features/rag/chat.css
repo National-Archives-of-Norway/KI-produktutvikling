@@ -233,11 +233,6 @@
   box-shadow: 0 -8px 24px
     color-mix(in srgb, var(--background) 50.196078%, transparent);
 }
-.rag-chat-compact .chat-composer {
-  position: sticky;
-  bottom: -20px;
-  z-index: 1;
-}
 .chat-actions {
   justify-content: space-between;
 }
@@ -251,7 +246,7 @@
 .chat-send.MuiButton-root:hover {
   box-shadow: 0 0 20px color-mix(in srgb, var(--accent) 13.333333%, transparent);
 }
-.chat-send.MuiButton-root.Mui-disabled {
+.chat-send.MuiButton-root[aria-disabled="true"] {
   background: color-mix(in srgb, var(--accent) 8%, transparent);
   color: var(--muted);
 }

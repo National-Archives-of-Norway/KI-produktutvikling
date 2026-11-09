@@ -1,5 +1,63 @@
-// Kun offentlig eksempelinnhold. Ingen interne opplysninger eller instruksjoner.
-export const resources = [
+export type Resource = {
+  slug: string;
+  type: "Skill" | "Instruks" | "Prompt";
+  action: string;
+  title: string;
+  description: string;
+  usage: string;
+  steps: string[];
+  example: string;
+  keywords?: string[];
+  skill?: {
+    name: string;
+    version: string;
+    repository: string;
+    path: string;
+  };
+};
+
+// Kun offentlig beskrivende innhold. Private skill-filer importeres ikke i portalen.
+export const resources: Resource[] = [
+  {
+    slug: "tilgjengelighetserklaering",
+    type: "Skill",
+    action: "Se skill",
+    title: "Test tilgjengelighet og utform erklæring",
+    description:
+      "Test tilgjengeligheten, lagre resultatene i prosjektet og få oppdaterte rapporter, rettingsforslag og tilgjengelighetserklæring basert på funnene.",
+    usage:
+      "Bruk skillen når du vil undersøke tilgjengeligheten i et nettsted eller en app, få konkrete forslag til rettinger og utforme eller oppdatere tilgjengelighetserklæringen. Testene tilpasses verktøyene og tilgangen som faktisk finnes.",
+    steps: [
+      "Hent hele mappen tilgjengelighetserklaering fra Skills-biblioteket, inkludert SKILL.md, arbeidsmal og referanser.",
+      "Legg skill-mappen i skill-katalogen til kodeassistenten du bruker. Følg assistentens installasjonsveiledning, og kontroller at skillen er tilgjengelig før du starter.",
+      "Oppgi nettadresse eller testmiljø, viktige brukeroppgaver, eventuelle tidligere testresultater og bekreftet kontaktkanal. Be assistenten teste tilgjengeligheten med eksemplet nedenfor.",
+      "Gå gjennom testrapporten med funn, konsekvenser og prioriterte rettingsforslag. Tester som ikke kunne gjennomføres, skal stå som uavklart. Be særskilt om kodeendringer hvis du ønsker at forslagene skal implementeres.",
+      "Lagre hver gjennomgang i en egen datert mappe under docs/tilgjengelighet/ i prosjektet som testes. Behold råresultater, testmetadata og eventuell manuell evidens, og oppdater prosjektets rapporter og lokale erklæring med henvisning til gjennomgangen.",
+      "Test rettinger på nytt før et funn lukkes. Utform erklæringen fra siste verifiserte resultater, og fullfør gjenstående manuelle kontroller. Virksomheten må godkjenne og registrere den formelle erklæringen i uustatus.no.",
+    ],
+    example:
+      "Bruk $tilgjengelighetserklaering til å teste tilgjengeligheten for [nettadresse] i prosjektet [prosjektmappe]. Lagre resultatene i en datert mappe, dokumenter funn og rettingsforslag, og oppdater prosjektets rapporter, README, versjonslogg og lokale tilgjengelighetserklæring. Behold manglende tester som uavklart. Ikke endre nettstedets funksjonskode i denne gjennomgangen.",
+    keywords: [
+      "tilgjengelighet",
+      "tilgjengelighetserklaering",
+      "universell utforming",
+      "WCAG",
+      "UU",
+      "Uu-tilsynet",
+      "uustatus",
+      "tilgjengelighetserklæring",
+      "tilgjengelighetstest",
+      "kontrast",
+      "tastatur",
+      "rettingsforslag",
+    ],
+    skill: {
+      name: "tilgjengelighetserklaering",
+      version: "0.3.0",
+      repository: "Skills",
+      path: "skills/tilgjengelighetserklaering",
+    },
+  },
   {
     slug: "kodegjennomgang",
     type: "Skill",

@@ -7,6 +7,7 @@ export const portalColors = {
   launcherEnd: "#0b1c21",
   launcherHover: "#204235",
 } as const;
+export const fieldBorderOpacity = 0.6;
 export const accentTint = (opacity: number) =>
   `color-mix(in srgb, var(--accent) ${opacity * 100}%, transparent)`;
 export const portalEffects = {
