@@ -1,0 +1,78 @@
+[1mRunning axe-core 4.14.0 in chrome-headless[22m
+[1m[22m
+[1mTesting [4m[34mhttp://127.0.0.1:57337/[39m[24m[22m ... please wait, this may take a minute.
+Waiting for 300 milliseconds after page loads...
+[1m[22m
+[1mTesting [4m[34mhttp://127.0.0.1:57337/ressurser/tilgjengelighetserklaering/[39m[24m[22m ... please wait, this may take a minute.
+Waiting for 300 milliseconds after page loads...
+[1m[22m
+[1mTesting [4m[34mhttp://127.0.0.1:57337/ressurser/informasjonskapsler-og-samtykke/[39m[24m[22m ... please wait, this may take a minute.
+Waiting for 300 milliseconds after page loads...
+[1m[22m
+[1mTesting [4m[34mhttp://127.0.0.1:57337/ressurser/personvernerklaering/[39m[24m[22m ... please wait, this may take a minute.
+Waiting for 300 milliseconds after page loads...
+[1m[22m
+[1mTesting [4m[34mhttp://127.0.0.1:57337/ressurser/kodegjennomgang/[39m[24m[22m ... please wait, this may take a minute.
+Waiting for 300 milliseconds after page loads...
+[1m[22m
+[1mTesting [4m[34mhttp://127.0.0.1:57337/ressurser/tydelig-kontekst/[39m[24m[22m ... please wait, this may take a minute.
+Waiting for 300 milliseconds after page loads...
+[1m[22m
+[1mTesting [4m[34mhttp://127.0.0.1:57337/ressurser/brukerbehov/[39m[24m[22m ... please wait, this may take a minute.
+Waiting for 300 milliseconds after page loads...
+[1m[22m
+[1mTesting [4m[34mhttp://127.0.0.1:57337/spor/[39m[24m[22m ... please wait, this may take a minute.
+Waiting for 300 milliseconds after page loads...
+[1m[22m
+[1mTesting [4m[34mhttp://127.0.0.1:57337/oversikt/godkjente-mcper/[39m[24m[22m ... please wait, this may take a minute.
+Waiting for 300 milliseconds after page loads...
+[1m[22m
+[1mTesting [4m[34mhttp://127.0.0.1:57337/oversikt/godkjente-ki-assistenter/[39m[24m[22m ... please wait, this may take a minute.
+Waiting for 300 milliseconds after page loads...
+[1m[22m
+[1mTesting [4m[34mhttp://127.0.0.1:57337/kom-i-gang/[39m[24m[22m ... please wait, this may take a minute.
+Waiting for 300 milliseconds after page loads...
+[1m[22m
+[1mTesting [4m[34mhttp://127.0.0.1:57337/om/[39m[24m[22m ... please wait, this may take a minute.
+Waiting for 300 milliseconds after page loads...
+[1m[22m
+[1mTesting [4m[34mhttp://127.0.0.1:57337/retningslinjer/[39m[24m[22m ... please wait, this may take a minute.
+Waiting for 300 milliseconds after page loads...
+[1m[22m
+[1mTesting [4m[34mhttp://127.0.0.1:57337/personvern/[39m[24m[22m ... please wait, this may take a minute.
+Waiting for 300 milliseconds after page loads...
+[1m[22m
+[1mTesting [4m[34mhttp://127.0.0.1:57337/informasjonskapsler/[39m[24m[22m ... please wait, this may take a minute.
+Waiting for 300 milliseconds after page loads...
+[1m[22m
+[1mTesting [4m[34mhttp://127.0.0.1:57337/oversikt/[39m[24m[22m ... please wait, this may take a minute.
+Waiting for 300 milliseconds after page loads...
+[1m[22m
+[1mTesting [4m[34mhttp://127.0.0.1:57337/priser/[39m[24m[22m ... please wait, this may take a minute.
+Waiting for 300 milliseconds after page loads...
+[1m[22m
+[1mTesting [4m[34mhttp://127.0.0.1:57337/tilgjengelighet/[39m[24m[22m ... please wait, this may take a minute.
+Waiting for 300 milliseconds after page loads...
+[1m[22m
+[1mTesting [4m[34mhttp://127.0.0.1:57337/nettstedskart/[39m[24m[22m ... please wait, this may take a minute.
+Waiting for 300 milliseconds after page loads...
+[1m[22m
+[1mTesting [4m[34mhttp://127.0.0.1:57337/versjonslogg/[39m[24m[22m ... please wait, this may take a minute.
+Waiting for 300 milliseconds after page loads...
+[1m[22m
+[1mTesting [4m[34mhttp://127.0.0.1:57337/utviklingsplan/[39m[24m[22m ... please wait, this may take a minute.
+Waiting for 300 milliseconds after page loads...
+[1m[22m
+[1mTesting [4m[34mhttp://127.0.0.1:57337/funksjonalitet/[39m[24m[22m ... please wait, this may take a minute.
+Waiting for 300 milliseconds after page loads...
+[1m[22m
+[1mTesting [4m[34mhttp://127.0.0.1:57337/404/[39m[24m[22m ... please wait, this may take a minute.
+Waiting for 300 milliseconds after page loads...
+[1mTesting complete of 23 pages[22m
+[1m[22m
+Saved file at /Users/khadah/Documents/ChatGPT/KI-utvikling/docs/tilgjengelighet/2026-11-10/150658-native-bf6961aa/raw/axe.json 
+
+[3mPlease note that only 20% to 50% of all accessibility issues can automatically be detected. [23m
+[3mManual testing is always required. For more information see:[23m
+[3m[4m[34mhttps://dequeuniversity.com/class/testing[39m[24m[23m
+[3m[23m

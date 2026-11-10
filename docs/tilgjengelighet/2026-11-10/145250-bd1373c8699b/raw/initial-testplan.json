@@ -1,0 +1,786 @@
+{
+  "skill_version": "0.5.1",
+  "overall_conformance": "not_assessed",
+  "catalog_sha256": "607d9420bebb89c70e727950e29a861ea4f5b0e1057b812b953eec45990bc6a1",
+  "note": "Planlagte tester er ikke gjennomførte tester. Fyll faktiske resultater og evidens.",
+  "tests": [
+    {
+      "criterion_id": "1.1.1",
+      "title": "Ikke-tekstlig innhold",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#111",
+      "source": "https://www.uutilsynet.no/wcag-standarden/111-ikke-tekstlig-innhold-niva/87",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Vurder om tekstalternativer formidler formål og innhold; prøv meningsbærende grafikk med skjermleser."
+    },
+    {
+      "criterion_id": "1.2.1",
+      "title": "Bare lyd og video (forhåndsinnspilt)",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#121",
+      "source": "https://www.uutilsynet.no/wcag-standarden/121-bare-lyd-og-bare-video-forhandsinnspilt-niva/88",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Bekreft medieutvalget; sammenlign lyd/video uten lyd med et fullstendig alternativ."
+    },
+    {
+      "criterion_id": "1.2.2",
+      "title": "Teksting (forhåndsinnspilt)",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#122",
+      "source": "https://www.uutilsynet.no/wcag-standarden/122-teksting-forhandsinnspilt-niva/89",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Se og lytt til video; kontroller tekstingens innhold, timing og betjening."
+    },
+    {
+      "criterion_id": "1.2.5",
+      "title": "Synstolking (forhåndsinnspilt)",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#125",
+      "source": "https://www.uutilsynet.no/wcag-standarden/125-synstolking-forhandsinnspilt-niva-aa/842",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Vurder om viktige visuelle hendelser trenger og har synstolking."
+    },
+    {
+      "criterion_id": "1.3.1",
+      "title": "Informasjon og relasjoner",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#131",
+      "source": "https://www.uutilsynet.no/wcag-standarden/131-informasjon-og-relasjoner-niva/90",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Vurder faktisk struktur, lister, tabellkoblinger og grupper, også i PDF og skjermleser."
+    },
+    {
+      "criterion_id": "1.3.2",
+      "title": "Meningsfylt rekkefølge",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#132",
+      "source": "https://www.uutilsynet.no/wcag-standarden/132-meningsfylt-rekkefolge-niva/91",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Sammenlign visuell rekkefølge med faktisk opplesing og dokumentets leserekkefølge."
+    },
+    {
+      "criterion_id": "1.3.3",
+      "title": "Sensoriske egenskaper",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#133",
+      "source": "https://www.uutilsynet.no/wcag-standarden/133-sensoriske-egenskaper-niva/92",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Les instruksjoner; bekreft at de kan forstås uten bare farge, form, lyd eller plassering."
+    },
+    {
+      "criterion_id": "1.3.4",
+      "title": "Visningsretning",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#134",
+      "source": "https://www.uutilsynet.no/wcag-standarden/134-visningsretning-niva-aa/141",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Prøv faktisk enhetsrotasjon; kontroller at ingen oppgaver låses til én orientering uten nødvendig grunn."
+    },
+    {
+      "criterion_id": "1.3.5",
+      "title": "Identifiser formål med inndata",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#135",
+      "source": "https://www.uutilsynet.no/wcag-standarden/135-identifiser-formal-med-inndata-niva-aa/142",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Identifiser personopplysningsfelt og vurder korrekt inputformål/autofullføring mot feltets betydning."
+    },
+    {
+      "criterion_id": "1.4.1",
+      "title": "Bruk av farge",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#141",
+      "source": "https://www.uutilsynet.no/wcag-standarden/141-bruk-av-farge-niva/93",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Vurder om farge alene bærer mening i lenker, diagrammer, feil og tilstander."
+    },
+    {
+      "criterion_id": "1.4.2",
+      "title": "Styring av lyd",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#142",
+      "source": "https://www.uutilsynet.no/wcag-standarden/142-styring-av-lyd-niva/94",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Kontroller automatisk lyd over tre sekunder og tilgjengelig uavhengig stopp/volumkontroll."
+    },
+    {
+      "criterion_id": "1.4.3",
+      "title": "Kontrast (minimum)",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#143",
+      "source": "https://www.uutilsynet.no/wcag-standarden/143-kontrast-minimum-niva-aa/95",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "candidates",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Bekreft kontrastkandidater visuelt; mål PDF, bilder, gradienter, overlegg og alle utestede tilstander."
+    },
+    {
+      "criterion_id": "1.4.4",
+      "title": "Endring av tekststørrelse",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#144",
+      "source": "https://www.uutilsynet.no/wcag-standarden/144-endring-av-tekststorrelse-niva-aa/96",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Bruk faktisk 200 % tekstforstørring; kontroller innhold og funksjon i komplette oppgaver."
+    },
+    {
+      "criterion_id": "1.4.5",
+      "title": "Bilder av tekst",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#145",
+      "source": "https://www.uutilsynet.no/wcag-standarden/145-bilder-av-tekst-niva-aa/97",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Undersøk tekst i bilder og om ekte tekst kan brukes; begrunn nødvendige unntak."
+    },
+    {
+      "criterion_id": "1.4.10",
+      "title": "Dynamisk tilpasning (Reflow)",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#1410",
+      "source": "https://www.uutilsynet.no/wcag-standarden/1410-dynamisk-tilpasning-reflow-niva-aa/144",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Prøv faktisk 400 % zoom; vurder klipping, oppgaver og nødvendige todimensjonale unntak."
+    },
+    {
+      "criterion_id": "1.4.11",
+      "title": "Kontrast for ikke-tekstlig innhold",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#1411",
+      "source": "https://www.uutilsynet.no/wcag-standarden/1411-kontrast-ikke-tekstlig-innhold-niva-aa/145",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Mål kontrast for nødvendige kontrollgrenser, fokus, valgte tilstander og meningsbærende grafikk."
+    },
+    {
+      "criterion_id": "1.4.12",
+      "title": "Tekstavstand",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#1412",
+      "source": "https://www.uutilsynet.no/wcag-standarden/1412-tekstavstand-niva-aa/146",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Bruk tillatt tekstavstandsoverstyring; vurder visuelt tap, klipping og overlapping i alle tilstander."
+    },
+    {
+      "criterion_id": "1.4.13",
+      "title": "Pekerfølsomt innhold eller innhold ved tastaturfokus",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#1413",
+      "source": "https://www.uutilsynet.no/wcag-standarden/1413-pekerfolsomt-innhold-eller-innhold-ved-tastaturfokus-niva-aa/147",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Åpne innhold ved hover/fokus; prøv lukking, peker over innhold og varighet."
+    },
+    {
+      "criterion_id": "2.1.1",
+      "title": "Tastatur",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#211",
+      "source": "https://www.uutilsynet.no/wcag-standarden/211-tastatur-niva/98",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Fullfør alle kritiske oppgaver med tastatur; Tab-spor dekker ikke alle handlinger."
+    },
+    {
+      "criterion_id": "2.1.2",
+      "title": "Ingen tastaturfelle",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#212",
+      "source": "https://www.uutilsynet.no/wcag-standarden/212-ingen-tastaturfelle-niva/99",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Prøv inn/ut av hver interaktiv komponent, begge retninger og eventuelle instruksjoner."
+    },
+    {
+      "criterion_id": "2.1.4",
+      "title": "Hurtigtaster som består av ett tegn",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#214",
+      "source": "https://www.uutilsynet.no/wcag-standarden/214-hurtigtaster-som-bestar-av-ett-tegn-niva/782",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Finn ett-tegns snarveier og kontroller mulighet for av, omdefinering eller bare aktivt fokus."
+    },
+    {
+      "criterion_id": "2.2.1",
+      "title": "Justerbar hastighet",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#221",
+      "source": "https://www.uutilsynet.no/wcag-standarden/221-justerbar-hastighet-niva/100",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Undersøk tidsgrenser, sesjoner og forlengelse; vurder eventuelle nødvendige unntak."
+    },
+    {
+      "criterion_id": "2.2.2",
+      "title": "Pause, stopp, skjul",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#222",
+      "source": "https://www.uutilsynet.no/wcag-standarden/222-pause-stopp-skjul-niva/101",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Prøv pause/stopp/skjul for bevegelse og automatiske oppdateringer; kontroller varighet og gjenopptakelse."
+    },
+    {
+      "criterion_id": "2.3.1",
+      "title": "Terskelverdi på maksimalt tre glimt",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#231",
+      "source": "https://www.uutilsynet.no/wcag-standarden/231-terskelverdi-pa-maksimalt-tre-glimt-niva/102",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Undersøk alt blinkende innhold; bruk egnet glimtanalysator ved mulig terskelrisiko, unngå risikofylt avspilling."
+    },
+    {
+      "criterion_id": "2.4.1",
+      "title": "Hoppe over blokker",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#241",
+      "source": "https://www.uutilsynet.no/wcag-standarden/241-hoppe-over-blokker-niva/103",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Bruk hoppelenke/landemerker med tastatur og skjermleser; bekreft at gjentatt innhold faktisk kan hoppes over."
+    },
+    {
+      "criterion_id": "2.4.2",
+      "title": "Sidetitler",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#242",
+      "source": "https://www.uutilsynet.no/wcag-standarden/242-sidetitler-niva/104",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Vurder om hver sidetittel og PDF-tittel beskriver siden, formålet og forskjellen fra andre sider."
+    },
+    {
+      "criterion_id": "2.4.3",
+      "title": "Fokusrekkefølge",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#243",
+      "source": "https://www.uutilsynet.no/wcag-standarden/243-fokusrekkefolge-niva/105",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Vurder fokusrekkefølge og fokusretur i hele oppgaver, dialoger, feil og dynamiske oppdateringer."
+    },
+    {
+      "criterion_id": "2.4.4",
+      "title": "Formål med lenke (i kontekst)",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#244",
+      "source": "https://www.uutilsynet.no/wcag-standarden/244-formal-med-lenke-i-kontekst-niva/106",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Vurder hver lenkes formål i tillatt kontekst, inkludert ikonlenker og lenker i PDF."
+    },
+    {
+      "criterion_id": "2.4.5",
+      "title": "Flere måter",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#245",
+      "source": "https://www.uutilsynet.no/wcag-standarden/245-flere-mater-niva-aa/107",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Bekreft at sider kan finnes på minst to egnede måter, med relevante prosessunntak."
+    },
+    {
+      "criterion_id": "2.4.6",
+      "title": "Overskrifter og ledetekster",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#246",
+      "source": "https://www.uutilsynet.no/wcag-standarden/246-overskrifter-og-ledetekster-niva-aa/108",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Les overskrifter og etiketter; vurder om de beskriver emne og formål forståelig."
+    },
+    {
+      "criterion_id": "2.4.7",
+      "title": "Synlig fokus",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#247",
+      "source": "https://www.uutilsynet.no/wcag-standarden/247-synlig-fokus-niva-aa/109",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Se faktisk fokusindikator i alle kontrolltilstander og bakgrunner; CSS-egenskaper er bare støttebevis."
+    },
+    {
+      "criterion_id": "2.5.1",
+      "title": "Pekerbevegelse",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#251",
+      "source": "https://www.uutilsynet.no/wcag-standarden/251-pekerbevegelser-niva/148",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Prøv alternativer til flerpunkt- og banebaserte gester; begrunn nødvendige unntak."
+    },
+    {
+      "criterion_id": "2.5.2",
+      "title": "Pekeravbrytelse",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#252",
+      "source": "https://www.uutilsynet.no/wcag-standarden/252-pekeravbrytelse-niva/149",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Prøv trykk, flytt ut og slipp, avbryt/angre; bekreft at handlinger ikke utløses utilsiktet."
+    },
+    {
+      "criterion_id": "2.5.3",
+      "title": "Ledetekst i navn",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#253",
+      "source": "https://www.uutilsynet.no/wcag-standarden/253-ledetekst-i-navn-niva/150",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Bekreft faktisk tilgjengelig navn mot all synlig tekst, også sammensatte kontroller og talestyring."
+    },
+    {
+      "criterion_id": "2.5.4",
+      "title": "Bevegelsesaktivering",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#254",
+      "source": "https://www.uutilsynet.no/wcag-standarden/254-bevegelsesaktivering-niva/151",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Prøv bevegelsesaktiverte funksjoner og alternativ kontroll/deaktivering, eller dokumenter fravær."
+    },
+    {
+      "criterion_id": "3.1.1",
+      "title": "Språk på siden",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#311",
+      "source": "https://www.uutilsynet.no/wcag-standarden/311-sprak-pa-siden-niva/110",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Bekreft faktisk hovedspråk og opplesingsspråk, også når PDF har språk på underliggende elementer."
+    },
+    {
+      "criterion_id": "3.1.2",
+      "title": "Språk på deler av innhold",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#312",
+      "source": "https://www.uutilsynet.no/wcag-standarden/312-sprak-pa-deler-av-innhold-niva-aa/111",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Les innholdet for språkbytter og vurder koding/unntak, også dynamiske svar og PDF."
+    },
+    {
+      "criterion_id": "3.2.1",
+      "title": "Fokus",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#321",
+      "source": "https://www.uutilsynet.no/wcag-standarden/321-fokus-niva/112",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Fokuser alle kontroller og bekreft at ingen uventet kontekstendring oppstår."
+    },
+    {
+      "criterion_id": "3.2.2",
+      "title": "Inndata",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#322",
+      "source": "https://www.uutilsynet.no/wcag-standarden/322-inndata-niva/114",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Endre felt/valg og vurder kontekstendringer og eventuell forhåndsinformasjon."
+    },
+    {
+      "criterion_id": "3.2.3",
+      "title": "Konsekvent navigering",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#323",
+      "source": "https://www.uutilsynet.no/wcag-standarden/323-konsekvent-navigering-niva-aa/113",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Sammenlign gjentatt navigasjon på tvers av alle relevante sider og tilstander."
+    },
+    {
+      "criterion_id": "3.2.4",
+      "title": "Konsekvent identifikasjon",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#324",
+      "source": "https://www.uutilsynet.no/wcag-standarden/324-konsekvent-identifikasjon-niva-aa/115",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Sammenlign navn, ikoner og funksjon for gjentatte komponenter, også dynamisk innhold."
+    },
+    {
+      "criterion_id": "3.3.1",
+      "title": "Identifikasjon av feil",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#331",
+      "source": "https://www.uutilsynet.no/wcag-standarden/331-identifikasjon-av-feil-niva/116",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Utløs relevante feil; vurder om felt og feilårsak identifiseres i tekst og leses med skjermleser."
+    },
+    {
+      "criterion_id": "3.3.2",
+      "title": "Ledetekster eller instruksjoner",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#332",
+      "source": "https://www.uutilsynet.no/wcag-standarden/332-ledetekster-eller-instruksjoner-niva/117",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Vurder forståelige etiketter, obligatoriske felt, formathjelp og instruksjoner før innsending."
+    },
+    {
+      "criterion_id": "3.3.3",
+      "title": "Forslag ved feil",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#333",
+      "source": "https://www.uutilsynet.no/wcag-standarden/333-forslag-ved-feil-niva-aa/118",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Utløs feil; vurder konkrete rettingsforslag og relevante sikkerhetsunntak."
+    },
+    {
+      "criterion_id": "3.3.4",
+      "title": "Forhindring av feil (juridiske feil, økonomiske feil, datafeil)",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#334",
+      "source": "https://www.uutilsynet.no/wcag-standarden/334-forhindring-av-feil-juridiske-feil-okonomiske-feil-datafeil-niva-aa/119",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Kartlegg rettslige/økonomiske og dataendrende handlinger; prøv reversering, kontroll eller bekreftelse."
+    },
+    {
+      "criterion_id": "4.1.1",
+      "title": "Parsing (oppdeling)",
+      "procedure": "testprosedyrer/wcag-4-robust.md#411",
+      "source": "https://www.uutilsynet.no/wcag-standarden/411-parsing-oppdeling-niva/120",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Bruk full HTML-validator når tilgjengelig; vurder gjenstående syntaksfeil mot relevant kravgrunnlag."
+    },
+    {
+      "criterion_id": "4.1.2",
+      "title": "Navn, rolle, verdi",
+      "procedure": "testprosedyrer/wcag-4-robust.md#412",
+      "source": "https://www.uutilsynet.no/wcag-standarden/412-navn-rolle-verdi-niva/121",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Prøv faktisk navn, rolle, verdi og tilstandsoppdateringer med skjermleser i alle komponenter."
+    },
+    {
+      "criterion_id": "4.1.3",
+      "title": "Statusbeskjeder",
+      "procedure": "testprosedyrer/wcag-4-robust.md#413",
+      "source": "https://www.uutilsynet.no/wcag-standarden/413-statusbeskjeder-niva-aa/152",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Utløs lasting, feil og resultat; lytt med faktisk skjermleser uten å flytte fokus."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-10",
+  "agent": "Codex (OpenAI)",
+  "version": "0ac6bab",
+  "scope": "Existing local portal, normal/hover/selected/focus, catalog no results/reset, popup and page chat, source expansion, validation, controlled loading/error, six open price terms; all seven PDF pages. No external model, auth or production.",
+  "text_web": {
+    "states": 23,
+    "measurements": 694,
+    "minimum_applicable_ratio": 5.209083747649038,
+    "under_4_5": [
+      {
+        "state": "chat-controlled-loading",
+        "text": "Tøm chat",
+        "disabled": true,
+        "minimum_bound_ratio": 1.5803582825257252
+      }
+    ],
+    "review": "Only low measurement is inactive Tøm chat during loading; disabled action blocked by native disabled. Busy/status text passes. No exemption used for status/error text.",
+    "evidence": [
+      "raw/interactive-states.json",
+      "raw/interactive-contrast.json"
+    ]
+  },
+  "pdf_text": {
+    "pages": 7,
+    "visible_nonspace_characters": 2694,
+    "minimum_ratio": 4.932071648856605,
+    "sha256": "ba267d899460e54a911c548c5ddecfd9a83159ec3b6d7b6e30d9d4f34d0c648a",
+    "rendered_source_fill_confirmed": 2694,
+    "result": "No text contrast finding; all conservatively checked at 4.5:1, including footer/diagram text. Intended source fills, not antialiased edges, used for foreground.",
+    "evidence": [
+      "raw/audit_pdf.py",
+      "raw/pdf-text-contrast.json"
+    ]
+  },
+  "nontext": {
+    "measurements": 27,
+    "minimum_ratio": 3.421388767447638,
+    "result": "No below-3 finding for sampled field borders on inner/outer backgrounds, needed close icon, other sampled icons and focus outline. Not complete semantic classification of all graphic parts.",
+    "evidence": [
+      "raw/nontext-states.json",
+      "raw/nontext-contrast.json"
+    ]
+  },
+  "pdf_graphics_review": "Seven fresh renderings reviewed: page-3 icons repeat named headings; page-7 coloured bullets accompany explicit text. Koala, page rules and card strips are decorative. Page-6 ellipse borders are weak compared with pale surroundings but labels/paragraph spacing and central dark node remain visible; full classification of necessary spatial graphic relationships remains U under 1.4.11/1.1.1, rather than an invented blanket exemption. No confirmed graphic-contrast breach declared from this preliminary classification.",
+  "limits": [
+    "1.4.3 K applies to stated existing local representative sample and carried normal-state evidence; no formal global conformance.",
+    "1.4.11 remains U for full classification of necessary graphics/states.",
+    "No actual held pointer-down/active capture; ripple source/DOM shows disabled and no custom :active colour found.",
+    "Controlled loading/error fixture tests rendered existing UI, not actual network outage/model generation.",
+    "No screen reader, actual 200/400% zoom, physical device, OS preferences, authentication or production validation."
+  ],
+  "screenshots": [
+    "screenshots/dialog-validation.png",
+    "screenshots/error.png",
+    "screenshots/home-states.png",
+    "screenshots/loading.png",
+    "screenshots/page-1.png",
+    "screenshots/page-2.png",
+    "screenshots/page-3.png",
+    "screenshots/page-4.png",
+    "screenshots/page-5.png",
+    "screenshots/page-6.png",
+    "screenshots/page-7.png"
+  ]
+}

@@ -412,3 +412,9 @@ Tilgjengelighetskontrollen fra 6. november omfattet ni sider. Den nye skill-deta
 
 - [x] Undersøke alle 86 axe-incomplete-forekomster i produksjonseksporten ved 1280/320 px og 22 kontroller med faktisk tastaturfokus. [Rapport og vurderinger](docs/tilgjengelighet/2026-11-10/135417-d3e318e119fd/testrapport.md). Ingen bekreftet feil i prøvde tilstander; ingen designretting nødvendig. Axe-originalene er bevart.
 - [ ] Fullføre øvrige faktiske hover-/dynamiske tilstander/overlegg og PDF-kontrast under 1.4.3. De 15 U-kravene og P8 er fortsatt uavklart. Dette endrer ikke krav til lukket pilot eller produksjonsgodkjenning.
+
+### Interaktive kontrasttilstander og PDF – 10. november 2026
+
+- [x] Undersøkt faktiske hover-/valg-/valideringstilstander, kontrollert lasting/tjenestefeil og alle PDF-siders tekstkontrast. [Rapport](docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/testrapport.md). Ingen bekreftet nytt kontrastbrudd; ingen design-/PDF-retting nødvendig. Testadapter tilbakeført byte for byte.
+- [x] Oppdatert 1.4.3 U → K i prøvd lokalt HTML/PDF-utvalg og avstemt erklæringens liste til 14 U-krav. Arbeidsstatus 23 K / 11 I / 14 U / 0 B, ikke samlet samsvar.
+- [ ] Fullfør 1.4.11-vurdering av nødvendig grafisk informasjon/markeringer. De 27 målte kontroll-/ikon-/fokusdelene passerer, men full klassifisering gjenstår. Øvrig skjermleser-/zoom-/enhets-/pilotarbeid og P8 er fortsatt åpent.

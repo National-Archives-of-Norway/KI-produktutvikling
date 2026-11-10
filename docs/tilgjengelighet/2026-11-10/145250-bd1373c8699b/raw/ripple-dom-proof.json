@@ -1,0 +1,53 @@
+{
+  "authorRippleOverrides": [
+    {
+      "rippleRoot": false,
+      "text": "Spør KI"
+    },
+    {
+      "rippleRoot": false,
+      "text": "Kom i gang ↗"
+    },
+    {
+      "rippleRoot": false,
+      "text": "Utforsk ressursene ↓"
+    },
+    {
+      "rippleRoot": false,
+      "text": "Alle"
+    },
+    {
+      "rippleRoot": false,
+      "text": "Skill"
+    },
+    {
+      "rippleRoot": false,
+      "text": "Instruks"
+    },
+    {
+      "rippleRoot": false,
+      "text": "Prompt"
+    },
+    {
+      "rippleRoot": false,
+      "text": "Se oppgaven →"
+    },
+    {
+      "rippleRoot": false,
+      "text": "Hvordan gjennomgår jeg en kodeendring?"
+    },
+    {
+      "rippleRoot": false,
+      "text": "Hvordan gir jeg KI god kontekst?"
+    },
+    {
+      "rippleRoot": false,
+      "text": "Hvordan utforsker jeg brukerbehov?"
+    },
+    {
+      "rippleRoot": false,
+      "text": "Send spørsmål"
+    }
+  ],
+  "rippleRoots": 0
+}

@@ -1,0 +1,11 @@
+{
+  "native_manifest": "docs/tilgjengelighet/2026-11-10/150658-native-bf6961aa/native-manifest.json",
+  "axe_routes": 23,
+  "violations": 0,
+  "incomplete_groups": 3,
+  "incomplete_nodes": 86,
+  "nu_html_files": 25,
+  "nu_errors": 0,
+  "nu_info": 207,
+  "review": "Original engine incomplete preserved; manual contrast evaluation is separate. New post-build native regression, not the older original import in auto-01."
+}

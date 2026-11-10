@@ -1,5 +1,13 @@
 # Kravvis gjennomgang med skill 0.4.0 – 9. november 2026
 
+## Interaktiv kontrast og alle PDF-sider – 10. november 2026
+
+Siste vurderte resultat: [rapport](docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/testrapport.md) og [48-kravsrestliste](docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/manuell-oppfolging.md). 23 faktiske UI-tilstander / 694 tekstmålinger, inklusive hover/valg, validering og kontrollert lasting/tjenestefeil, gir minst 5,209084:1 for aktuelle tekster. Den eneste svakere målingen gjelder inaktiv Tøm chat under lasting. Alle 2694 synlige tegn på syv PDF-sider er målt mot riktig bakgrunn og kontrollert i render: minst 4,932072:1. Ingen ny bekreftet kontrastfeil og ingen design-/PDF-retting nødvendig. Testresponsen er identisk tilbakeført; PDF-hash er uendret.
+
+**1.4.3 U → K i prøvd lokalt HTML/PDF-utvalg. 23 K / 11 I / 14 U / 0 B**, ikke formelt samsvar. 27 feltkant-/ikon-/fokusmålinger gir minst 3,421389:1, men full klassifisering av nødvendig grafisk informasjon under 1.4.11 står U. 35 bredere manuelle oppfølginger, 11 uten utløsende innholdstype og to fullførte lokale manuelle utvalg videreføres. Faktisk skjermleser/zoom/enhet/pilot er ikke nytestet. Erklæringen lister alle 14 gjenstående U-krav; tidligere avsnitt er datert historikk.
+
+Avsluttende [native-regresjon](docs/tilgjengelighet/2026-11-10/150658-native-bf6961aa/native-manifest.json) etter bygg: 23 ruter / 0 axe-violations / samme 3 incomplete-grupper og 86 noder, 0 Nu-feil / 207 info-noter. Motorstatus er bevart; den vurderte kontrastkonklusjonen er dokumentert separat.
+
 ## Vurdert kontrastoppfølging – 10. november 2026
 
 Siste vurderte oppfølging: [rapport med alle 86 forekomster](docs/tilgjengelighet/2026-11-10/135417-d3e318e119fd/testrapport.md) og [48-kravsrestliste](docs/tilgjengelighet/2026-11-10/135417-d3e318e119fd/manuell-oppfolging.md). Alle 86 opprinnelige axe-targets er entydig undersøkt i produksjonseksporten ved 1280/320 px. Konservativ sRGB-/alpha-grense er minst 7,715057:1; 22 faktisk fokuserte kontroller minst 8,655854:1. Ingen bekreftet kontrastfeil i prøvde tilstander, ingen designretting nødvendig. Effekter og gradienter er beholdt. Modellen er ikke eksakt pixelmåling eller full hover-/PDF-godkjenning.

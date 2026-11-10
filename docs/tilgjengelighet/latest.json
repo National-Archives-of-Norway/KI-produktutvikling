@@ -1,12 +1,12 @@
 {
-  "run_directory": "docs/tilgjengelighet/2026-11-10/135417-d3e318e119fd",
+  "run_directory": "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b",
   "automatic_status": "needs_review",
   "overall_conformance": "not_assessed",
-  "manifest": "docs/tilgjengelighet/2026-11-10/135417-d3e318e119fd/manifest.json",
-  "review_status": "all_86_normal_contrast_candidates_and_22_focused_controls_reviewed",
-  "reviewed_at": "2026-11-10T12:57:43.473497+00:00",
-  "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
-  "native_run": "docs/tilgjengelighet/2026-11-10/135353-native-2147a40e",
+  "manifest": "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/manifest.json",
+  "review_status": "interactive_states_and_all_pdf_text_contrast_reviewed",
+  "reviewed_at": "2026-11-10T13:56:21.345885+00:00",
+  "previous_run": "docs/tilgjengelighet/2026-11-10/135417-d3e318e119fd",
+  "native_run": "docs/tilgjengelighet/2026-11-10/150658-native-bf6961aa",
   "confirmed_findings": 0,
   "open_findings": [],
   "fixed_findings": [
@@ -18,18 +18,21 @@
     "A11Y-06"
   ],
   "counts": {
-    "K": 22,
+    "K": 23,
     "I": 11,
-    "U": 15,
+    "U": 14,
     "B": 0
   },
-  "manual_remaining": 36,
-  "completed_local_manual_sample": 1,
+  "manual_remaining": 35,
+  "completed_local_manual_sample": 2,
   "contrast_review": {
-    "normal_nodes": 86,
-    "repeated_at_320": 86,
-    "focused_controls": 22,
-    "confirmed_violations": 0,
-    "axe_incomplete_preserved": true
-  }
+    "criterion_1_4_3": "K in stated local sample",
+    "ui_states": 23,
+    "text_measurements": 694,
+    "pdf_visible_characters": 2694,
+    "pdf_pages": 7,
+    "new_confirmed_violations": 0,
+    "nontext_full_assessment": "U"
+  },
+  "native_postverification": "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/raw/native-postverification.json"
 }

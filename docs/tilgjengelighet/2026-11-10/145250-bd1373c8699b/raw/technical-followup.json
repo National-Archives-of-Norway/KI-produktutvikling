@@ -1,0 +1,10 @@
+{
+  "pdf_first_background_attempt": "Wrongly selected underlying white full-page rectangle instead of later opaque page fill. Initial result and code preserved, rejected by rendered RGB check. Corrected topmost full-page fill gives 2694/2694 observed fills and no low contrast. No PDF defect inferred from initial candidate.",
+  "browser_locator_errors": [
+    "Search was initially requested as textbox but actual type=search exposes searchbox; fresh snapshot then correct role used.",
+    "One pointer click on Tøm chat failed after layout moved; keyboard Enter completed clear."
+  ],
+  "controlled_states": "Actual React loading/error UI observed with 20-second deterministic fixture; no model/API call for synthetic fixture. Original adapter restored byte for byte before skill regression/build.",
+  "ripple_hypothesis": "Source investigation shows ripple disabled, so hypothetical alpha .3 result not applicable. No fabricated held-mouse test.",
+  "native_hover": "Actual :hover observed after click/right-click on existing controls; no native Chrome access, pointer emulation injection or CSS :hover forcing."
+}

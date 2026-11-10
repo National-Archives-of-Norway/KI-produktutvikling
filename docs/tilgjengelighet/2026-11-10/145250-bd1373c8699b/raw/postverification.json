@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-10T14:08:51.614034+00:00",
+  "node_tests_passed": 53,
+  "python_tests_passed": 3,
+  "pages_build": "passed incl TypeScript/route registry",
+  "html_basic_files": 25,
+  "local_links_checked": 195,
+  "broken_links": [],
+  "criterion_counts": {
+    "U": 14,
+    "I": 11,
+    "K": 23
+  },
+  "public_14_unresolved_ids_match": true,
+  "client_fixture_restored_to_HEAD": true,
+  "pdf_and_product_styles_unchanged": true,
+  "declaration_readback": "1280/320, no overflow, correct 14 U IDs and updated method text",
+  "native": {
+    "native_manifest": "docs/tilgjengelighet/2026-11-10/150658-native-bf6961aa/native-manifest.json",
+    "axe_routes": 23,
+    "violations": 0,
+    "incomplete_groups": 3,
+    "incomplete_nodes": 86,
+    "nu_html_files": 25,
+    "nu_errors": 0,
+    "nu_info": 207,
+    "review": "Original engine incomplete preserved; manual contrast evaluation is separate. New post-build native regression, not the older original import in auto-01."
+  },
+  "overall_conformance": "not_assessed"
+}

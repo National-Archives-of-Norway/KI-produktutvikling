@@ -1,0 +1,7 @@
+{
+  "restored_sha256": "b6c4946c271b9733ffdfa200bc2c239da2d9830beb996f7d0e7aeb397d7bb86b",
+  "identical_to_HEAD": true,
+  "synthetic_question": "Lokal kontrastpr\u00f8ve for lasting og feil",
+  "fixture": "20-second delay and deterministic error in existing request adapter; no API call or secrets",
+  "limitations": "UI fixture for styles, not actual service failure or model test"
+}

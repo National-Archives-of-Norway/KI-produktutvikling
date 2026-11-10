@@ -1,0 +1,46 @@
+[
+  {
+    "ids": [
+      "1.1.1",
+      "1.3.1",
+      "1.3.2",
+      "1.3.4",
+      "1.4.4",
+      "1.4.10",
+      "1.4.11",
+      "2.2.2",
+      "2.4.3",
+      "2.4.7",
+      "3.1.1",
+      "3.1.2",
+      "4.1.2",
+      "4.1.3"
+    ],
+    "scrollWidth": 1280,
+    "unresolved": "Følgende 14 krav er delvis undersøkt, men ikke ferdig vurdert. Uavklart status betyr at det trengs flere undersøkelser før vi kan konkludere. Samlet samsvar er derfor fortsatt uavklart.",
+    "updatedMethod": true,
+    "width": 1280
+  },
+  {
+    "ids": [
+      "1.1.1",
+      "1.3.1",
+      "1.3.2",
+      "1.3.4",
+      "1.4.4",
+      "1.4.10",
+      "1.4.11",
+      "2.2.2",
+      "2.4.3",
+      "2.4.7",
+      "3.1.1",
+      "3.1.2",
+      "4.1.2",
+      "4.1.3"
+    ],
+    "scrollWidth": 320,
+    "unresolved": "Følgende 14 krav er delvis undersøkt, men ikke ferdig vurdert. Uavklart status betyr at det trengs flere undersøkelser før vi kan konkludere. Samlet samsvar er derfor fortsatt uavklart.",
+    "updatedMethod": true,
+    "width": 320
+  }
+]

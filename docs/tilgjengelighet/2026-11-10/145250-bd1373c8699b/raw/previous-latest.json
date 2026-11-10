@@ -1,0 +1,35 @@
+{
+  "run_directory": "docs/tilgjengelighet/2026-11-10/135417-d3e318e119fd",
+  "automatic_status": "needs_review",
+  "overall_conformance": "not_assessed",
+  "manifest": "docs/tilgjengelighet/2026-11-10/135417-d3e318e119fd/manifest.json",
+  "review_status": "all_86_normal_contrast_candidates_and_22_focused_controls_reviewed",
+  "reviewed_at": "2026-11-10T12:57:43.473497+00:00",
+  "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+  "native_run": "docs/tilgjengelighet/2026-11-10/135353-native-2147a40e",
+  "confirmed_findings": 0,
+  "open_findings": [],
+  "fixed_findings": [
+    "A11Y-01",
+    "A11Y-02",
+    "A11Y-03",
+    "A11Y-04",
+    "A11Y-05",
+    "A11Y-06"
+  ],
+  "counts": {
+    "K": 22,
+    "I": 11,
+    "U": 15,
+    "B": 0
+  },
+  "manual_remaining": 36,
+  "completed_local_manual_sample": 1,
+  "contrast_review": {
+    "normal_nodes": 86,
+    "repeated_at_320": 86,
+    "focused_controls": 22,
+    "confirmed_violations": 0,
+    "axe_incomplete_preserved": true
+  }
+}

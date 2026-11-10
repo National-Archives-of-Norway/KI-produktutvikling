@@ -4,6 +4,17 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 «Agent» betyr kodeassistenten som utførte arbeidet. Git-forfatteren registreres separat av Git og kan være personen som oppretter commiten. Eksakt modellvariant er ikke registrert for tidligere arbeid og oppgis derfor ikke. Ingen underagenter ble brukt til kvalitetskontrollen eller opprettelsen av denne loggen.
 
+## Ikke utgitt – interaktive kontrasttilstander og PDF – 10. november 2026
+
+**Utførende agent:** Codex (OpenAI), med `tilgjengelighetserklaering` 0.5.1 og PDF-skillen. Ingen underagenter.
+
+- Undersøkt 23 faktiske UI-tilstander / 694 tekstmålinger, med verifisert :hover, filtervalg, placeholder-alpha, tomt søk/nullstilling, dialog-/sidechat, åpne kilder, validering og seks åpne prisvilkår. Aktuelle tekster har minst 5,209084:1. Eneste svakere måling gjelder native disabled Tøm chat under lasting; aktiv status-/feiltekst er ikke unntatt. Kontrollert 20-sekunders last-/feilrespons i eksisterende adapter er fjernet byte for byte; dette er ikke en test av faktisk nettverksbrudd eller ekstern modell.
+- Rendret og visuelt undersøkt alle syv PDF-sider ved 120 dpi. Alle 2694 synlige ikke-blanke tegn målt mot riktig opaque fill og bakgrunn bekreftet i render; minst 4,932072:1. PDF-en er uendret. Første feilaktige valg av underliggende hvit bakgrunn ble avvist ved pixelkontroll og er bevart med forklaring; ingen dokumentfeil ble påstått fra denne beregningen.
+- 27 representative feltkant-/ikon-/fokusmålinger gir minst 3,421389:1. MUI-ripplehypotese er avvist som ikke gjeldende: installert tema har disableRipple og DOM ingen ripple-røtter. Ingen hypotetisk effekt er registrert som brudd. Ingen nye bekreftede avvik eller design-/PDF-retting nødvendig.
+- Lagret ny vurdert matrise/testplan/restliste, råstiler/beregnere, PDF-tegn-/renderbevis og rapport i `docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/`. Oppdatert latest, WCAG-/kvalitetskontroll, README, utviklingsplan og offentlig erklæring/side. 1.4.3 U → K i lokalt utvalg: **23 K / 11 I / 14 U / 0 B**. Full 1.4.11-klassifisering, faktisk hjelpemiddel/zoom/enhet/pilot og samlet samsvar er fortsatt uavklart. Ingen endring i Skills-repoet, commit eller publisering.
+
+- Sluttverifisering: 53 Node-tester, tre Python-tester, Pages-produksjonsbygg med TypeScript/ruteregister og HTML-grunnkontroll for 25 filer bestod. Ny avsluttende native-kjøring `150658-native-bf6961aa`: 23 ruter / 0 axe-violations / 3 incomplete-grupper / samme 86 noder, og 0 Nu-feil / 207 info-noter. Original motorstatus er bevart. Erklæringen er lest tilbake ved 1280/320 uten overflyt, med 14 U-ID-er avstemt mot matrisen. Adapter/PDF/fargestiler er uendret mot HEAD; lokale lenker, formatering og Git-diff er kontrollert.
+
 ## Ikke utgitt – vurdering av 86 kontrastforekomster – 10. november 2026
 
 **Utførende agent:** Codex (OpenAI), med `tilgjengelighetserklaering` 0.5.1. Ingen underagenter.

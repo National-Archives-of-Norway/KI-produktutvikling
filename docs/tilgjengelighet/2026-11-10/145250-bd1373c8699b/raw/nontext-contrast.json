@@ -1,0 +1,387 @@
+{
+  "method": "Source border/icon/outline colours over actual computed background layers. Focus outline compared outside button due outline-offset; field border compared with both internal and outer background. No PDF semantic assessment.",
+  "results": [
+    {
+      "state": "search-field-focus",
+      "kind": "field-border",
+      "control": "field-border",
+      "colour": "rgb(142, 141, 141)",
+      "minimum_ratio": 4.43696718140038,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 5.591504798653005
+        },
+        {
+          "side": "outer field surround",
+          "ratio": 4.43696718140038
+        }
+      ]
+    },
+    {
+      "state": "search-field-focus",
+      "kind": "button-icon",
+      "control": "Spør KI",
+      "colour": "rgb(157, 241, 173)",
+      "minimum_ratio": 10.06885757042478,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 10.06885757042478
+        }
+      ]
+    },
+    {
+      "state": "dialog-field-focus-and-icons",
+      "kind": "field-border",
+      "control": "field-border",
+      "colour": "rgb(142, 141, 141)",
+      "minimum_ratio": 4.43696718140038,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 5.591504798653005
+        },
+        {
+          "side": "outer field surround",
+          "ratio": 4.43696718140038
+        }
+      ]
+    },
+    {
+      "state": "dialog-field-focus-and-icons",
+      "kind": "field-border",
+      "control": "field-border",
+      "colour": "rgb(157, 241, 173)",
+      "minimum_ratio": 12.283142870826321,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 13.764920900757055
+        },
+        {
+          "side": "outer field surround",
+          "ratio": 12.283142870826321
+        }
+      ]
+    },
+    {
+      "state": "dialog-field-focus-and-icons",
+      "kind": "button-icon",
+      "control": "Spør KI",
+      "colour": "rgb(157, 241, 173)",
+      "minimum_ratio": 10.06885757042478,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 10.06885757042478
+        }
+      ]
+    },
+    {
+      "state": "dialog-field-focus-and-icons",
+      "kind": "button-icon",
+      "control": "Lukk chat",
+      "colour": "rgb(157, 241, 173)",
+      "minimum_ratio": 9.719580742503695,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 9.719580742503695
+        }
+      ]
+    },
+    {
+      "state": "dialog-field-focus-and-icons",
+      "kind": "button-icon",
+      "control": "Hvordan gjennomgår jeg en kodeendring?",
+      "colour": "rgb(157, 241, 173)",
+      "minimum_ratio": 11.795133908771682,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 11.795133908771682
+        }
+      ]
+    },
+    {
+      "state": "dialog-field-focus-and-icons",
+      "kind": "button-icon",
+      "control": "Hvordan gir jeg KI god kontekst?",
+      "colour": "rgb(157, 241, 173)",
+      "minimum_ratio": 11.795133908771682,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 11.795133908771682
+        }
+      ]
+    },
+    {
+      "state": "dialog-field-focus-and-icons",
+      "kind": "button-icon",
+      "control": "Hvordan utforsker jeg brukerbehov?",
+      "colour": "rgb(157, 241, 173)",
+      "minimum_ratio": 11.795133908771682,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 11.795133908771682
+        }
+      ]
+    },
+    {
+      "state": "dialog-field-focus-and-icons",
+      "kind": "button-icon",
+      "control": "Send spørsmål",
+      "colour": "rgb(29, 29, 29)",
+      "minimum_ratio": 12.538164303847376,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 12.538164303847376
+        }
+      ]
+    },
+    {
+      "state": "validation-field-and-send-focus",
+      "kind": "field-border",
+      "control": "field-border",
+      "colour": "rgb(142, 141, 141)",
+      "minimum_ratio": 4.43696718140038,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 5.591504798653005
+        },
+        {
+          "side": "outer field surround",
+          "ratio": 4.43696718140038
+        }
+      ]
+    },
+    {
+      "state": "validation-field-and-send-focus",
+      "kind": "field-border",
+      "control": "field-border",
+      "colour": "color(srgb 0.615686 0.945098 0.678431 / 0.6)",
+      "minimum_ratio": 4.969612266737042,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 5.569121883417893
+        },
+        {
+          "side": "outer field surround",
+          "ratio": 4.969612266737042
+        }
+      ]
+    },
+    {
+      "state": "validation-field-and-send-focus",
+      "kind": "button-icon",
+      "control": "Spør KI",
+      "colour": "rgb(157, 241, 173)",
+      "minimum_ratio": 10.06885757042478,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 10.06885757042478
+        }
+      ]
+    },
+    {
+      "state": "validation-field-and-send-focus",
+      "kind": "button-icon",
+      "control": "Lukk chat",
+      "colour": "rgb(157, 241, 173)",
+      "minimum_ratio": 9.719580742503695,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 9.719580742503695
+        }
+      ]
+    },
+    {
+      "state": "validation-field-and-send-focus",
+      "kind": "button-icon",
+      "control": "Hvordan gjennomgår jeg en kodeendring?",
+      "colour": "rgb(157, 241, 173)",
+      "minimum_ratio": 11.795133908771682,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 11.795133908771682
+        }
+      ]
+    },
+    {
+      "state": "validation-field-and-send-focus",
+      "kind": "button-icon",
+      "control": "Hvordan gir jeg KI god kontekst?",
+      "colour": "rgb(157, 241, 173)",
+      "minimum_ratio": 11.795133908771682,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 11.795133908771682
+        }
+      ]
+    },
+    {
+      "state": "validation-field-and-send-focus",
+      "kind": "button-icon",
+      "control": "Hvordan utforsker jeg brukerbehov?",
+      "colour": "rgb(157, 241, 173)",
+      "minimum_ratio": 11.795133908771682,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 11.795133908771682
+        }
+      ]
+    },
+    {
+      "state": "validation-field-and-send-focus",
+      "kind": "button-icon",
+      "control": "Send spørsmål",
+      "colour": "rgb(29, 29, 29)",
+      "minimum_ratio": 12.538164303847376,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 12.538164303847376
+        }
+      ]
+    },
+    {
+      "state": "validation-field-and-send-focus",
+      "kind": "focus-outline",
+      "control": "Send spørsmål",
+      "colour": "rgb(157, 241, 173)",
+      "minimum_ratio": 12.283142870826321,
+      "scenarios": [
+        {
+          "side": "outside with outline offset",
+          "ratio": 12.283142870826321
+        }
+      ]
+    },
+    {
+      "state": "close-button-hover",
+      "kind": "field-border",
+      "control": "field-border",
+      "colour": "rgb(142, 141, 141)",
+      "minimum_ratio": 4.43696718140038,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 5.591504798653005
+        },
+        {
+          "side": "outer field surround",
+          "ratio": 4.43696718140038
+        }
+      ]
+    },
+    {
+      "state": "close-button-hover",
+      "kind": "field-border",
+      "control": "field-border",
+      "colour": "color(srgb 0.615686 0.945098 0.678431 / 0.6)",
+      "minimum_ratio": 4.969612266737042,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 5.569121883417893
+        },
+        {
+          "side": "outer field surround",
+          "ratio": 4.969612266737042
+        }
+      ]
+    },
+    {
+      "state": "close-button-hover",
+      "kind": "button-icon",
+      "control": "Spør KI",
+      "colour": "rgb(157, 241, 173)",
+      "minimum_ratio": 10.06885757042478,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 10.06885757042478
+        }
+      ]
+    },
+    {
+      "state": "close-button-hover",
+      "kind": "button-icon",
+      "control": "Lukk chat",
+      "colour": "rgb(40, 121, 56)",
+      "minimum_ratio": 3.421388767447638,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 3.421388767447638
+        }
+      ]
+    },
+    {
+      "state": "close-button-hover",
+      "kind": "button-icon",
+      "control": "Hvordan gjennomgår jeg en kodeendring?",
+      "colour": "rgb(157, 241, 173)",
+      "minimum_ratio": 11.795133908771682,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 11.795133908771682
+        }
+      ]
+    },
+    {
+      "state": "close-button-hover",
+      "kind": "button-icon",
+      "control": "Hvordan gir jeg KI god kontekst?",
+      "colour": "rgb(157, 241, 173)",
+      "minimum_ratio": 11.795133908771682,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 11.795133908771682
+        }
+      ]
+    },
+    {
+      "state": "close-button-hover",
+      "kind": "button-icon",
+      "control": "Hvordan utforsker jeg brukerbehov?",
+      "colour": "rgb(157, 241, 173)",
+      "minimum_ratio": 11.795133908771682,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 11.795133908771682
+        }
+      ]
+    },
+    {
+      "state": "close-button-hover",
+      "kind": "button-icon",
+      "control": "Send spørsmål",
+      "colour": "rgb(29, 29, 29)",
+      "minimum_ratio": 12.538164303847376,
+      "scenarios": [
+        {
+          "side": "adjacent",
+          "ratio": 12.538164303847376
+        }
+      ]
+    }
+  ],
+  "measurements": 27,
+  "minimum_ratio": 3.421388767447638,
+  "below_3": []
+}

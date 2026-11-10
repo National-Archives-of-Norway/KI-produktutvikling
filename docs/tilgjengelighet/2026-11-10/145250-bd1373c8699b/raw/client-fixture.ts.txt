@@ -1,0 +1,61 @@
+import {
+  isResult,
+  isSources,
+  type RagRequest,
+  type RagResult,
+} from "./contracts.ts";
+import { retrieve } from "./retrieval.ts";
+
+export type AnswerOutcome = { result?: RagResult; error?: string };
+export async function requestAnswer(
+  question: string,
+  options: { demo: boolean; fetcher?: typeof fetch },
+): Promise<AnswerOutcome> {
+  // Temporary local contrast fixture; removed after observation.
+  if (question === "Lokal kontrastprøve for lasting og feil") {
+    await new Promise((resolve) => setTimeout(resolve, 20000));
+    return { error: "Kunnskapstjenesten er utilgjengelig akkurat nå. Prøv igjen om litt." };
+  }
+  if (options.demo)
+    return {
+      result: {
+        mode: "sources",
+        sources: retrieve(question),
+        answer: null,
+        reason: "static_demo",
+      },
+    };
+  try {
+    const body: RagRequest = { question };
+    const response = await (options.fetcher ?? fetch)("/api/rag", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+      signal: AbortSignal.timeout(70000),
+    });
+    const data = await response.json();
+    if (!response.ok)
+      return {
+        error:
+          typeof data?.error === "string"
+            ? data.error
+            : "Tjenesten kunne ikke svare.",
+        ...(isSources(data?.sources)
+          ? {
+              result: {
+                mode: "sources",
+                sources: data.sources,
+                answer: null,
+              } as RagResult,
+            }
+          : {}),
+      };
+    if (!isResult(data)) throw new Error("invalid_response");
+    return { result: data };
+  } catch {
+    return {
+      error:
+        "Kunnskapstjenesten er utilgjengelig akkurat nå. Prøv igjen om litt.",
+    };
+  }
+}

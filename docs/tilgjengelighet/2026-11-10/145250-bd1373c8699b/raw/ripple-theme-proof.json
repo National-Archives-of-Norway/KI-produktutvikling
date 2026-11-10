@@ -1,0 +1,11 @@
+{
+  "MuiButton": {
+    "disableElevation": true,
+    "disableRipple": true,
+    "variant": "outlined",
+    "color": "secondary"
+  },
+  "MuiIconButton": {
+    "disableRipple": true
+  }
+}

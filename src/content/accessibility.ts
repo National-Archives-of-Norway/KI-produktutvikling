@@ -29,12 +29,6 @@ export const unresolvedAccessibilityRequirements = [
           "Det er ikke bekreftet at innhold og funksjoner fungerer i både stående og liggende retning på fysisk mobil eller nettbrett.",
       },
       {
-        id: "1.4.3",
-        title: "Kontrast (minimum)",
-        description:
-          "Tekst over gradienter er undersøkt i normaltilstand og på utvalgte kontroller med tastaturfokus. Øvrige interaktive tilstander og overlappende effekter, samt deler av PDF-vedlegget, er ikke ferdig vurdert.",
-      },
-      {
         id: "1.4.4",
         title: "Endring av tekststørrelse",
         description:
@@ -50,7 +44,7 @@ export const unresolvedAccessibilityRequirements = [
         id: "1.4.11",
         title: "Kontrast for ikke-tekstlig innhold",
         description:
-          "Kontrasten for nødvendige kontrollmarkeringer og meningsbærende grafikk, inkludert i PDF-vedlegget, er ikke ferdig vurdert.",
+          "Feltkanter, utvalgte ikoner og fokusmarkeringer er undersøkt. Det er ikke ferdig vurdert hvilke grafiske detaljer og relasjoner, særlig i PDF-diagrammet, som er nødvendige for forståelsen og må ha tilstrekkelig kontrast.",
       },
     ],
   },

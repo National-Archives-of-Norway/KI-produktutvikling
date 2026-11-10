@@ -1,0 +1,352 @@
+{
+  "method": "Conservative currentColor ripple covering entire text background at every alpha from 0 to .3, source maximum in installed MUI TouchRipple. Text foreground unchanged. Analytical guard, not observation of held mouse-down.",
+  "source": "node_modules/@mui/material/ButtonBase/TouchRipple.mjs",
+  "rows": 60,
+  "minimum_bound": 4.130604089656676,
+  "below_4_5": [
+    {
+      "state": "home-card-hover",
+      "text": "Spør KI",
+      "ratio_bound_with_0_to_0_3_ripple": 4.427654682649771
+    },
+    {
+      "state": "home-card-hover",
+      "text": "Utforsk ressursene",
+      "ratio_bound_with_0_to_0_3_ripple": 4.2511806252527755
+    },
+    {
+      "state": "home-card-hover",
+      "text": "Se oppgaven",
+      "ratio_bound_with_0_to_0_3_ripple": 4.205597543878807
+    },
+    {
+      "state": "catalog-no-results",
+      "text": "Skill",
+      "ratio_bound_with_0_to_0_3_ripple": 4.371470989912644
+    },
+    {
+      "state": "hero-contained-after-back",
+      "text": "Utforsk ressursene",
+      "ratio_bound_with_0_to_0_3_ripple": 4.2511806252527755
+    },
+    {
+      "state": "hero-contained-right-click-hover",
+      "text": "Utforsk ressursene",
+      "ratio_bound_with_0_to_0_3_ripple": 4.2511806252527755
+    },
+    {
+      "state": "hero-outlined-hover",
+      "text": "Utforsk ressursene",
+      "ratio_bound_with_0_to_0_3_ripple": 4.2511806252527755
+    },
+    {
+      "state": "chat-launcher-hover",
+      "text": "Spør KI",
+      "ratio_bound_with_0_to_0_3_ripple": 4.130604089656676
+    }
+  ],
+  "results": [
+    {
+      "state": "home-card-hover",
+      "text": "Spør KI",
+      "ratio_bound_with_0_to_0_3_ripple": 4.427654682649771
+    },
+    {
+      "state": "home-card-hover",
+      "text": "Kom i gang",
+      "ratio_bound_with_0_to_0_3_ripple": 6.704196799032928
+    },
+    {
+      "state": "home-card-hover",
+      "text": "Utforsk ressursene",
+      "ratio_bound_with_0_to_0_3_ripple": 4.2511806252527755
+    },
+    {
+      "state": "home-card-hover",
+      "text": "Alle",
+      "ratio_bound_with_0_to_0_3_ripple": 6.704196799032928
+    },
+    {
+      "state": "home-card-hover",
+      "text": "Skill",
+      "ratio_bound_with_0_to_0_3_ripple": 4.7231553861978
+    },
+    {
+      "state": "home-card-hover",
+      "text": "Instruks",
+      "ratio_bound_with_0_to_0_3_ripple": 4.7231553861978
+    },
+    {
+      "state": "home-card-hover",
+      "text": "Prompt",
+      "ratio_bound_with_0_to_0_3_ripple": 4.7231553861978
+    },
+    {
+      "state": "home-card-hover",
+      "text": "Se oppgaven",
+      "ratio_bound_with_0_to_0_3_ripple": 4.205597543878807
+    },
+    {
+      "state": "filter-skill-selected-hover",
+      "text": "Alle",
+      "ratio_bound_with_0_to_0_3_ripple": 4.6679779446583956
+    },
+    {
+      "state": "filter-skill-selected-hover",
+      "text": "Skill",
+      "ratio_bound_with_0_to_0_3_ripple": 6.669858128343129
+    },
+    {
+      "state": "filter-skill-selected-hover",
+      "text": "Instruks",
+      "ratio_bound_with_0_to_0_3_ripple": 4.7231553861978
+    },
+    {
+      "state": "filter-skill-selected-hover",
+      "text": "Prompt",
+      "ratio_bound_with_0_to_0_3_ripple": 4.7231553861978
+    },
+    {
+      "state": "filter-skill-unselected-hover",
+      "text": "Alle",
+      "ratio_bound_with_0_to_0_3_ripple": 4.6679779446583956
+    },
+    {
+      "state": "filter-skill-unselected-hover",
+      "text": "Skill",
+      "ratio_bound_with_0_to_0_3_ripple": 6.624848898921967
+    },
+    {
+      "state": "filter-skill-unselected-hover",
+      "text": "Instruks",
+      "ratio_bound_with_0_to_0_3_ripple": 4.7231553861978
+    },
+    {
+      "state": "filter-skill-unselected-hover",
+      "text": "Prompt",
+      "ratio_bound_with_0_to_0_3_ripple": 4.7231553861978
+    },
+    {
+      "state": "catalog-no-results",
+      "text": "Alle",
+      "ratio_bound_with_0_to_0_3_ripple": 6.704196799032928
+    },
+    {
+      "state": "catalog-no-results",
+      "text": "Skill",
+      "ratio_bound_with_0_to_0_3_ripple": 4.371470989912644
+    },
+    {
+      "state": "catalog-no-results",
+      "text": "Instruks",
+      "ratio_bound_with_0_to_0_3_ripple": 4.7231553861978
+    },
+    {
+      "state": "catalog-no-results",
+      "text": "Prompt",
+      "ratio_bound_with_0_to_0_3_ripple": 4.7231553861978
+    },
+    {
+      "state": "catalog-no-results",
+      "text": "Nullstill søk og filtre",
+      "ratio_bound_with_0_to_0_3_ripple": 5.92590669316664
+    },
+    {
+      "state": "catalog-reset-hover",
+      "text": "Alle",
+      "ratio_bound_with_0_to_0_3_ripple": 6.704196799032928
+    },
+    {
+      "state": "catalog-reset-hover",
+      "text": "Skill",
+      "ratio_bound_with_0_to_0_3_ripple": 4.7231553861978
+    },
+    {
+      "state": "catalog-reset-hover",
+      "text": "Instruks",
+      "ratio_bound_with_0_to_0_3_ripple": 4.7231553861978
+    },
+    {
+      "state": "catalog-reset-hover",
+      "text": "Prompt",
+      "ratio_bound_with_0_to_0_3_ripple": 4.7231553861978
+    },
+    {
+      "state": "hero-contained-after-back",
+      "text": "Kom i gang",
+      "ratio_bound_with_0_to_0_3_ripple": 6.704196799032928
+    },
+    {
+      "state": "hero-contained-after-back",
+      "text": "Utforsk ressursene",
+      "ratio_bound_with_0_to_0_3_ripple": 4.2511806252527755
+    },
+    {
+      "state": "chat-dialog-empty",
+      "text": "Hvordan gjennomgår jeg en kodeendring?",
+      "ratio_bound_with_0_to_0_3_ripple": 5.843232731137446
+    },
+    {
+      "state": "chat-dialog-empty",
+      "text": "Hvordan gir jeg KI god kontekst?",
+      "ratio_bound_with_0_to_0_3_ripple": 5.843232731137446
+    },
+    {
+      "state": "chat-dialog-empty",
+      "text": "Hvordan utforsker jeg brukerbehov?",
+      "ratio_bound_with_0_to_0_3_ripple": 5.843232731137446
+    },
+    {
+      "state": "chat-dialog-empty",
+      "text": "Send spørsmål",
+      "ratio_bound_with_0_to_0_3_ripple": 6.704196799032928
+    },
+    {
+      "state": "chat-dialog-empty-submit",
+      "text": "Hvordan gjennomgår jeg en kodeendring?",
+      "ratio_bound_with_0_to_0_3_ripple": 5.843232731137446
+    },
+    {
+      "state": "chat-dialog-empty-submit",
+      "text": "Hvordan gir jeg KI god kontekst?",
+      "ratio_bound_with_0_to_0_3_ripple": 5.843232731137446
+    },
+    {
+      "state": "chat-dialog-empty-submit",
+      "text": "Hvordan utforsker jeg brukerbehov?",
+      "ratio_bound_with_0_to_0_3_ripple": 5.843232731137446
+    },
+    {
+      "state": "chat-dialog-empty-submit",
+      "text": "Send spørsmål",
+      "ratio_bound_with_0_to_0_3_ripple": 6.704196799032928
+    },
+    {
+      "state": "chat-dialog-immediate-after-submit",
+      "text": "Send spørsmål",
+      "ratio_bound_with_0_to_0_3_ripple": 6.704196799032928
+    },
+    {
+      "state": "chat-dialog-immediate-after-submit",
+      "text": "Tøm chat",
+      "ratio_bound_with_0_to_0_3_ripple": 5.23697162838654
+    },
+    {
+      "state": "chat-source-open-hover",
+      "text": "Send spørsmål",
+      "ratio_bound_with_0_to_0_3_ripple": 6.704196799032928
+    },
+    {
+      "state": "chat-source-open-hover",
+      "text": "Tøm chat",
+      "ratio_bound_with_0_to_0_3_ripple": 5.23697162838654
+    },
+    {
+      "state": "chat-next-topic-hover",
+      "text": "Send spørsmål",
+      "ratio_bound_with_0_to_0_3_ripple": 6.704196799032928
+    },
+    {
+      "state": "chat-next-topic-hover",
+      "text": "Tøm chat",
+      "ratio_bound_with_0_to_0_3_ripple": 5.23697162838654
+    },
+    {
+      "state": "chat-validation-error",
+      "text": "Hvordan gjennomgår jeg en kodeendring?",
+      "ratio_bound_with_0_to_0_3_ripple": 5.843232731137446
+    },
+    {
+      "state": "chat-validation-error",
+      "text": "Hvordan gir jeg KI god kontekst?",
+      "ratio_bound_with_0_to_0_3_ripple": 5.843232731137446
+    },
+    {
+      "state": "chat-validation-error",
+      "text": "Hvordan utforsker jeg brukerbehov?",
+      "ratio_bound_with_0_to_0_3_ripple": 5.843232731137446
+    },
+    {
+      "state": "chat-validation-error",
+      "text": "Send spørsmål",
+      "ratio_bound_with_0_to_0_3_ripple": 6.704196799032928
+    },
+    {
+      "state": "hero-contained-right-click-hover",
+      "text": "Kom i gang",
+      "ratio_bound_with_0_to_0_3_ripple": 6.704196799032928
+    },
+    {
+      "state": "hero-contained-right-click-hover",
+      "text": "Utforsk ressursene",
+      "ratio_bound_with_0_to_0_3_ripple": 4.2511806252527755
+    },
+    {
+      "state": "hero-outlined-hover",
+      "text": "Kom i gang",
+      "ratio_bound_with_0_to_0_3_ripple": 6.704196799032928
+    },
+    {
+      "state": "hero-outlined-hover",
+      "text": "Utforsk ressursene",
+      "ratio_bound_with_0_to_0_3_ripple": 4.2511806252527755
+    },
+    {
+      "state": "chat-suggestion-hover",
+      "text": "Hvordan gjennomgår jeg en kodeendring?",
+      "ratio_bound_with_0_to_0_3_ripple": 6.277006916091082
+    },
+    {
+      "state": "chat-suggestion-hover",
+      "text": "Hvordan gir jeg KI god kontekst?",
+      "ratio_bound_with_0_to_0_3_ripple": 5.764644192361849
+    },
+    {
+      "state": "chat-suggestion-hover",
+      "text": "Hvordan utforsker jeg brukerbehov?",
+      "ratio_bound_with_0_to_0_3_ripple": 6.277006916091082
+    },
+    {
+      "state": "chat-suggestion-hover",
+      "text": "Send spørsmål",
+      "ratio_bound_with_0_to_0_3_ripple": 6.704196799032928
+    },
+    {
+      "state": "chat-controlled-error",
+      "text": "Send spørsmål",
+      "ratio_bound_with_0_to_0_3_ripple": 6.704196799032928
+    },
+    {
+      "state": "chat-controlled-error",
+      "text": "Tøm chat",
+      "ratio_bound_with_0_to_0_3_ripple": 5.23697162838654
+    },
+    {
+      "state": "chat-panel-validation",
+      "text": "Hvordan gjennomgår jeg en kodeendring?",
+      "ratio_bound_with_0_to_0_3_ripple": 6.277006916091082
+    },
+    {
+      "state": "chat-panel-validation",
+      "text": "Hvordan gir jeg KI god kontekst?",
+      "ratio_bound_with_0_to_0_3_ripple": 6.277006916091082
+    },
+    {
+      "state": "chat-panel-validation",
+      "text": "Hvordan utforsker jeg brukerbehov?",
+      "ratio_bound_with_0_to_0_3_ripple": 6.277006916091082
+    },
+    {
+      "state": "chat-panel-validation",
+      "text": "Send spørsmål",
+      "ratio_bound_with_0_to_0_3_ripple": 6.704196799032928
+    },
+    {
+      "state": "chat-launcher-hover",
+      "text": "Spør KI",
+      "ratio_bound_with_0_to_0_3_ripple": 4.130604089656676
+    }
+  ],
+  "applicability": "not_applicable_to_current_portal",
+  "review": "Hypothetical default MUI ripple at alpha .3 produces low bound for some buttons, but Digitalarkivet MuiButton/MuiIconButton disableRipple is true and DOM confirms no ripple roots. Not an observed UI defect or a requested product change. Reassess if ripple is enabled."
+}

@@ -1,0 +1,2297 @@
+{
+  "skill_version": "0.5.1",
+  "overall_conformance": "not_assessed",
+  "scope": "Ny lokal kontrastoppfølging: 23 faktisk observerte UI-tilstander / 694 tekstmålinger, 27 ikke-tekstlige målinger og 2694 synlige PDF-tegn på syv sider. Tidligere 86 normale gradientforekomster og øvrige krav videreføres med eksplisitt tidligere evidens.",
+  "reviewed_at": "2026-11-10T13:56:21.345885+00:00",
+  "base_commit": "0ac6bab",
+  "manifest": "manifest.json",
+  "native_manifest": "../150658-native-bf6961aa/native-manifest.json",
+  "previous_run": "docs/tilgjengelighet/2026-11-10/135417-d3e318e119fd",
+  "counts": {
+    "K": 23,
+    "I": 11,
+    "U": 14,
+    "B": 0
+  },
+  "status_definitions": {
+    "K": "Undersøkt uten funn i angitt delomfang; ikke automatisk Ja",
+    "I": "Ingen utløsende innholdstype funnet i angitt lokalt omfang",
+    "U": "Uavklart/delvis eller blokkert test",
+    "B": "Bekreftet brudd"
+  },
+  "criteria": [
+    {
+      "id": "1.1.1",
+      "title": "Ikke-tekstlig innhold",
+      "status": "U",
+      "test_date": "2026-11-10",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/pdf-structure-followup.json",
+        "../094541-e2907a5c27e2/raw/pdf-visual-review.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "PDF-struktur er kontrollert på nytt: 61 Figure-noder etter at tolv tidligere punktmarkører er omkodet til Lbl. Alle syv tidligere renderinger er visuelt vurdert på nytt ved identisk PDF-hash. Koalamerker, skillelinjer og symboler er hovedsakelig dekor eller gjentar tekst. Diagrammets etiketter er tekst, men full likeverdighet i faktisk opplesing er ikke bekreftet. Tom Alt er ikke alene et påvist brudd.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#111",
+      "remaining": "Prøv meningsbærende grafikk og side 6 i faktisk PDF-leser/skjermleser; bekreft at relasjoner/formål formidles og dekor ikke forstyrrer.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "HTML-bilder og SVG-er er kartlagt på 20 sider. PDF-en har 73 Figure-elementer med blant annet tom Alt og generiske koalabeskrivelser. Skjermleser og endelig klassifisering av dekor/diagram er ikke gjennomført. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "1.2.1",
+      "title": "Bare lyd og video (forhåndsinnspilt)",
+      "status": "I",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Ingen lyd-/videoklipp funnet i 20 levende HTML-sider eller src-kartleggingen. PDF-en har tekst/grafikk og ingen registrerte annotasjoner/medier. Fravær gjelder dette lokale utvalget, ikke fremtidig innhold. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#121",
+      "remaining": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Ingen lyd-/videoklipp funnet i 20 levende HTML-sider eller src-kartleggingen. PDF-en har tekst/grafikk og ingen registrerte annotasjoner/medier. Fravær gjelder dette lokale utvalget, ikke fremtidig innhold. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "1.2.2",
+      "title": "Teksting (forhåndsinnspilt)",
+      "status": "I",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Ingen lyd-/videoklipp funnet i 20 levende HTML-sider eller src-kartleggingen. PDF-en har tekst/grafikk og ingen registrerte annotasjoner/medier. Fravær gjelder dette lokale utvalget, ikke fremtidig innhold. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#122",
+      "remaining": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Ingen lyd-/videoklipp funnet i 20 levende HTML-sider eller src-kartleggingen. PDF-en har tekst/grafikk og ingen registrerte annotasjoner/medier. Fravær gjelder dette lokale utvalget, ikke fremtidig innhold. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "1.2.5",
+      "title": "Synstolking (forhåndsinnspilt)",
+      "status": "I",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Ingen lyd-/videoklipp funnet i 20 levende HTML-sider eller src-kartleggingen. PDF-en har tekst/grafikk og ingen registrerte annotasjoner/medier. Fravær gjelder dette lokale utvalget, ikke fremtidig innhold. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#125",
+      "remaining": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Ingen lyd-/videoklipp funnet i 20 levende HTML-sider eller src-kartleggingen. PDF-en har tekst/grafikk og ingen registrerte annotasjoner/medier. Fravær gjelder dette lokale utvalget, ikke fremtidig innhold. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "1.3.1",
+      "title": "Informasjon og relasjoner",
+      "status": "U",
+      "test_date": "2026-11-10",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "A11Y-04 rettet: Tre logiske L-lister på PDF-side 7 med 12 LI/Lbl/LBody. Riktig gruppe-/kolonnerekkefølge, opprinnelige tekstnoder og alle 229 ParentTree/MCID-eierkoblinger er kontrollert. Øvrig PDF-semantikk og faktisk hjelpemiddelbruk er fortsatt uavklart.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#131",
+      "remaining": "Prøv PDF-listenavigasjon med faktisk skjermleser og vurder øvrige dokumentstrukturer/figurer.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-10",
+        "observation": "A11Y-04 rettet: Tre logiske L-lister på PDF-side 7 med 12 LI/Lbl/LBody. Riktig gruppe-/kolonnerekkefølge, opprinnelige tekstnoder og alle 229 ParentTree/MCID-eierkoblinger er kontrollert. Øvrig PDF-semantikk og faktisk hjelpemiddelbruk er fortsatt uavklart.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 47,
+      "new_native_test_date": "2026-11-10",
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "1.3.2",
+      "title": "Meningsfylt rekkefølge",
+      "status": "U",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "20 siders overskrifter og synlige tekster er kartlagt. PDF-side 7 har flere kolonner, og tekst-/taggrekkefølgen er undersøkt som støtte. Ingen faktisk skjermleserlesing av hele dokumentet.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#132",
+      "remaining": "Prøv lineær lesing, særlig PDF-side 6–7, med faktisk hjelpemiddel.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "20 siders overskrifter og synlige tekster er kartlagt. PDF-side 7 har flere kolonner, og tekst-/taggrekkefølgen er undersøkt som støtte. Ingen faktisk skjermleserlesing av hele dokumentet.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "not_tested",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "not_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "1.3.3",
+      "title": "Sensoriske egenskaper",
+      "status": "K",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Instruksjoner i nettsideutvalget og PDF-teksten er gjennomgått. Ingen nødvendig handling ble funnet som bare identifiseres ved form, plassering, farge eller lyd. Betjente forløp har navngitte kontroller.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#133",
+      "remaining": "Les instruksjoner; bekreft at de kan forstås uten bare farge, form, lyd eller plassering.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Instruksjoner i nettsideutvalget og PDF-teksten er gjennomgått. Ingen nødvendig handling ble funnet som bare identifiseres ved form, plassering, farge eller lyd. Betjente forløp har navngitte kontroller.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "not_tested",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "not_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "1.3.4",
+      "title": "Visningsretning",
+      "status": "U",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "20 sider ved 1280×900, 320×740 og 844×390 uten sidebredde-overflyt. Dette undersøker responsive størrelser, men bekrefter ikke fysisk rotasjon eller orienteringslås på en enhet. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#134",
+      "remaining": "Test med fysisk mobil/nettbrett eller dokumentert orienteringsstøtte, begge retninger og kritiske forløp.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "20 sider ved 1280×900, 320×740 og 844×390 uten sidebredde-overflyt. Dette undersøker responsive størrelser, men bekrefter ikke fysisk rotasjon eller orienteringslås på en enhet. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "1.3.5",
+      "title": "Identifiser formål med inndata",
+      "status": "I",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Synlige inndatafelt i det lokale utvalget er ressurssøk og spørsmål til kunnskapsbasen. Ingen felt samler standardiserte opplysninger om brukeren selv; ingen innlogging eller personskjema er i denne testversjonen. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#135",
+      "remaining": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Synlige inndatafelt i det lokale utvalget er ressurssøk og spørsmål til kunnskapsbasen. Ingen felt samler standardiserte opplysninger om brukeren selv; ingen innlogging eller personskjema er i denne testversjonen. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "1.4.1",
+      "title": "Bruk av farge",
+      "status": "K",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Ressursfiltre har tekst og aria-pressed/markert bakgrunn. Statusetiketter i oversikter og priser har forklarende tekst; undersøkte lenker har visuelle tillegg. PDF-side 7 har tekstlige gruppetitler i tillegg til farge. Ingen bekreftet farge-alene-avvik i utvalget.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#141",
+      "remaining": "Vurder om farge alene bærer mening i lenker, diagrammer, feil og tilstander.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Ressursfiltre har tekst og aria-pressed/markert bakgrunn. Statusetiketter i oversikter og priser har forklarende tekst; undersøkte lenker har visuelle tillegg. PDF-side 7 har tekstlige gruppetitler i tillegg til farge. Ingen bekreftet farge-alene-avvik i utvalget.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "not_tested",
+      "new_native_rules": 9,
+      "new_native_test_date": "2026-11-10",
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "1.4.2",
+      "title": "Styring av lyd",
+      "status": "I",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Ingen lyd-/videoelementer eller automatisk lyd funnet i DOM eller appens kildekartlegging. Ingen hørbar automatisk lyd observert under nettleserforløpene. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#142",
+      "remaining": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Ingen lyd-/videoelementer eller automatisk lyd funnet i DOM eller appens kildekartlegging. Ingen hørbar automatisk lyd observert under nettleserforløpene. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "1.4.3",
+      "title": "Kontrast (minimum)",
+      "status": "K",
+      "test_date": "2026-11-10",
+      "evidence": [
+        "manual-tests.json",
+        "raw/interactive-contrast.json",
+        "raw/pdf-text-contrast.json",
+        "raw/ripple-theme-proof.json",
+        "../135417-d3e318e119fd/raw/contrast86-bounds.json"
+      ],
+      "observation": "694 faktiske tekstmålinger i 23 UI-tilstander: minst 5,209084:1 for aktive/aktuelle tekster; eneste lavere måling er inaktiv Tøm chat under kontrollert lasting. Alle 2694 synlige PDF-tegn er målt mot riktig opaque bakgrunn og bekreftet i render, minst 4,932072:1. Faktisk :hover, valg, validering, kilder, dialog og sidechat er prøvd. Lasting/tjenestefeil er kontrollert fixture i eksisterende UI, ikke ekte modell-/nettverksprøve. Ingen bekreftet tekstkontrastbrudd; ingen retting nødvendig. Tidligere 86 gradient- og fokusmålinger inngår med dato/omfang.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#143",
+      "remaining": "Ingen åpen tekstkontrastoppgave i dette prøvde lokale innholds-/tilstandsutvalget. Gjenta ved nye komponenter/innhold/modelltilstander eller utrulling; dette erstatter ikke ny vurdering av endret innhold.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-10",
+        "observation": "Axe rapporterte ingen kontrastbrudd, men tre uavklarte color-contrast-regelgrupper på forsiden, Spør KI og Oversikt (80 elementforekomster) på grunn av gradienter/pseudoelementer. Dette er ikke terskelmålinger under minstekravet. Tidligere PDF-retting og øvrig kontrastgrunnlag beholdes.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T13:56:21.345885+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 24,
+      "new_native_test_date": "2026-11-10",
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "694 faktiske tekstmålinger i 23 UI-tilstander: minst 5,209084:1 for aktive/aktuelle tekster; eneste lavere måling er inaktiv Tøm chat under kontrollert lasting. Alle 2694 synlige PDF-tegn er målt mot riktig opaque bakgrunn og bekreftet i render, minst 4,932072:1. Faktisk :hover, valg, validering, kilder, dialog og sidechat er prøvd. Lasting/tjenestefeil er kontrollert fixture i eksisterende UI, ikke ekte modell-/nettverksprøve. Ingen bekreftet tekstkontrastbrudd; ingen retting nødvendig. Tidligere 86 gradient- og fokusmålinger inngår med dato/omfang.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "1.4.4",
+      "title": "Endring av tekststørrelse",
+      "status": "U",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Zoomsnarvei forsøkt i testnettleseren. CSS-viewport og devicePixelRatio endret seg ikke; faktisk 200 % tekstforstørring er derfor ikke dokumentert.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#144",
+      "remaining": "Prøv faktisk 200 % tekstforstørring/zoom i en nettleser som eksponerer funksjonen og gjennomfør representative oppgaver. Faktisk Chrome-tilgang ble avvist av automatisk godkjenningskontroll; IAB-viewport er ikke zoom.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Zoomsnarvei forsøkt i testnettleseren. CSS-viewport og devicePixelRatio endret seg ikke; faktisk 200 % tekstforstørring er derfor ikke dokumentert.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "not_tested",
+      "new_native_rules": 21,
+      "new_native_test_date": "2026-11-10",
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "1.4.5",
+      "title": "Bilder av tekst",
+      "status": "K",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Nettsidene bruker tekst fremfor bilder av brødtekst; SVG-logo er merkevare. PDF-en har tekstuttrekk på alle syv sider og ingen rasterbilder. Visuell PDF-side 5 og 7 stemmer med tekstbasert innhold.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#145",
+      "remaining": "Undersøk tekst i bilder og om ekte tekst kan brukes; begrunn nødvendige unntak.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Nettsidene bruker tekst fremfor bilder av brødtekst; SVG-logo er merkevare. PDF-en har tekstuttrekk på alle syv sider og ingen rasterbilder. Visuell PDF-side 5 og 7 stemmer med tekstbasert innhold.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "not_tested",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "not_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "1.4.10",
+      "title": "Dynamisk tilpasning (Reflow)",
+      "status": "U",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "60 responsive DOM-kontroller uten sidebredde-overflyt; pristabell kunne rulles lokalt ved 320 px. Faktisk 400 % zoom er ikke verifisert og holdes adskilt fra viewport-resultatet. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#1410",
+      "remaining": "Test 400 % med faktisk zoom, effektiv 320 CSS-px og alle kritiske forløp. Faktisk Chrome-tilgang ble avvist av automatisk godkjenningskontroll; IAB-viewport er ikke zoom.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "60 responsive DOM-kontroller uten sidebredde-overflyt; pristabell kunne rulles lokalt ved 320 px. Faktisk 400 % zoom er ikke verifisert og holdes adskilt fra viewport-resultatet. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "1.4.11",
+      "title": "Kontrast for ikke-tekstlig innhold",
+      "status": "U",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Utvalgte kontrollfarger og tastaturfokus er undersøkt; filterkant med 50 % aksent ga 4,23:1. Alle grafiske objekter, PDF-figurer, gradienter og komponenttilstander er ikke ferdig vurdert.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#1411",
+      "remaining": "Fullfør faglig klassifisering og kontrastvurdering av nødvendige grafiske relasjoner/detaljer i diagram og øvrige kontrolltilstander, med alternativ formidling der det trengs. Ikke før PDF-tekstkontrast som en uutført rest; den er målt.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Utvalgte kontrollfarger og tastaturfokus er undersøkt; filterkant med 50 % aksent ga 4,23:1. Alle grafiske objekter, PDF-figurer, gradienter og komponenttilstander er ikke ferdig vurdert.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "not_tested",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "not_tested",
+      "focused_observation": "27 nødvendige/representative feltkant-, ikon- og fokusmålinger har minst 3,421389:1. PDF-symboler/visuell avgrensning er undersøkt på syv renderinger. Full vurdering av hvilke grafiske relasjoner/markeringer som er nødvendige for forståelse er fortsatt uavklart; ikke alle lave dekorlinjer er automatisk brudd.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "1.4.12",
+      "title": "Tekstavstand",
+      "status": "K",
+      "test_date": "2026-11-10",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/text-spacing-pages.json",
+        "../094541-e2907a5c27e2/raw/text-spacing-states.json",
+        "../094541-e2907a5c27e2/raw/textarea-spacing-review.json",
+        "../094541-e2907a5c27e2/raw/price-scroll-settled.json",
+        "../094541-e2907a5c27e2/raw/text-spacing-instrumentation.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "42 nye side-/viewportmålinger med linjehøyde 1,5, avsnitt 2 em, bokstavavstand 0,12 em og ordavstand 0,16 em. Ingen sidebredde-overflyt. Null treff, valgt filter, dialogfeil, lasting, kildebasert svar, tømming og seks åpne prisdetaljer er prøvd ved representative størrelser. Tekstfeltets målekandidat er vurdert som rullbart/autosize-innhold, ikke bekreftet tap; alle seks pristabeller flyttet scrollLeft til 40 med piltast. Visuelt utvalg er dokumentert, ikke alle 42 sider som manuelle skjermbilder. Test-CSS er fjernet med identisk originalhash.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#1412",
+      "remaining": "Ingen åpen kandidat i prøvd lokal tekstavstand. Retest øvrige støttede nettlesere og faktisk modellinnhold når de er tilgjengelige. PDF faller utenfor dette markup-kravet.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "40 nye DOM-kontroller med alle fire tekstavstandsverdier viste ingen sidebredde-overflyt eller maskinelle klippekandidater. Utvalgte skjermbilder og stabil chat med feil ved 320 px er undersøkt. Ikke alle utfoldede pristilstander og dynamiske kombinasjoner er visuelt kontrollert. Test-CSS er fjernet med identisk originalhash.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "not_tested",
+      "new_native_rules": 1,
+      "new_native_test_date": "2026-11-10",
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "not_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "1.4.13",
+      "title": "Pekerfølsomt innhold eller innhold ved tastaturfokus",
+      "status": "I",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Ingen egendefinert hover-/fokusutløst ekstra informasjon funnet i appkoden eller det undersøkte grensesnittet. CSS-hover endrer utseende; detaljer åpnes ved aktivering. title-treffene i kildekartleggingen er sidekomponentegenskaper.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#1413",
+      "remaining": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Ingen egendefinert hover-/fokusutløst ekstra informasjon funnet i appkoden eller det undersøkte grensesnittet. CSS-hover endrer utseende; detaljer åpnes ved aktivering. title-treffene i kildekartleggingen er sidekomponentegenskaper.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "not_tested",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "not_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "2.1.1",
+      "title": "Tastatur",
+      "status": "K",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Hoppelenke, illustrasjon, katalogreset/filter, chatåpning/validering/innsending/lukking, seks prisdetaljer og tabellrulling er brukt med tastatur. 160 Tab-steg fordelt på 20 sider er registrert. Resultatet gjelder disse forløpene, ikke alle mulige kombinasjoner. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#211",
+      "remaining": "Fullfør alle kritiske oppgaver med tastatur; Tab-spor dekker ikke alle handlinger.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Hoppelenke, illustrasjon, katalogreset/filter, chatåpning/validering/innsending/lukking, seks prisdetaljer og tabellrulling er brukt med tastatur. 160 Tab-steg fordelt på 20 sider er registrert. Resultatet gjelder disse forløpene, ikke alle mulige kombinasjoner. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "2.1.2",
+      "title": "Ingen tastaturfelle",
+      "status": "K",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Tab går ut av illustrasjonen til søk. Åtte Tab-steg i chat viser modal fokusløkke; Escape lukker og returnerer til åpneknappen. Ingen tastaturfelle funnet i de betjente forløpene. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#212",
+      "remaining": "Prøv inn/ut av hver interaktiv komponent, begge retninger og eventuelle instruksjoner.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Tab går ut av illustrasjonen til søk. Åtte Tab-steg i chat viser modal fokusløkke; Escape lukker og returnerer til åpneknappen. Ingen tastaturfelle funnet i de betjente forløpene. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "2.1.4",
+      "title": "Hurtigtaster som består av ett tegn",
+      "status": "I",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Ingen egne keydown-/keyup-håndterere eller enkelttast-snarveier funnet under src. Betjeningen som er prøvd bruker vanlige native kontrolltaster. Utviklingsverktøyets egne snarveier inngår ikke i produktet.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#214",
+      "remaining": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Ingen egne keydown-/keyup-håndterere eller enkelttast-snarveier funnet under src. Betjeningen som er prøvd bruker vanlige native kontrolltaster. Utviklingsverktøyets egne snarveier inngår ikke i produktet.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "not_tested",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "not_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "2.2.1",
+      "title": "Justerbar hastighet",
+      "status": "I",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Ingen brukerfrist eller sesjonsutløp funnet i den lokale lesetjenesten. Kildekartleggingen fant én klokke for prisalder; server-/modelltimeout er ikke en frist for å fullføre brukerens inndata. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#221",
+      "remaining": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Ingen brukerfrist eller sesjonsutløp funnet i den lokale lesetjenesten. Kildekartleggingen fant én klokke for prisalder; server-/modelltimeout er ikke en frist for å fullføre brukerens inndata. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "2.2.2",
+      "title": "Pause, stopp, skjul",
+      "status": "U",
+      "test_date": "2026-11-10",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/animation-paused.json",
+        "../094541-e2907a5c27e2/raw/animation-running.json",
+        "../094541-e2907a5c27e2/raw/animation-pause-after-tab.json",
+        "../094541-e2907a5c27e2/raw/freshness-threshold.json",
+        "../094541-e2907a5c27e2/raw/freshness-harness-build.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Alle tre animerte elementer skifter faktisk beregnet animationPlayState mellom paused/running ved Space/Enter. Pausen består etter Tab ut av illustrasjonen. Den faktiske prisalderkomponenten er prøvd isolert med simulert Date.now og fanget timeintervall: ingen melding før/ved sju dager; én ved neste tick etter terskel; fortsatt én ved flere tick; intervallet ryddes ved avmontering. Ingen maskinklokke eller produktkode er permanent endret. Ingen automatisk B eller Ja utledes fra intervallet alene.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#222",
+      "remaining": "Faglig vurder om prisaldervarselets tidsstyrte innsetting omfattes av 2.2.2 og i så fall trenger pause/skjul. Test faktisk redusert-bevegelse-innstilling separat; dette er ikke simulert som fullført.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Mellomrom pauser alle tre animerte deler; pause beholdes etter fokus flyttes, og Enter starter igjen. I tillegg fant kodegjennomgangen et automatisk prisaldervarsel som kan dukke opp når sju dager passeres. Denne oppdateringens relevans/betjening er ikke ferdig vurdert. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "not_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "2.3.1",
+      "title": "Terskelverdi på maksimalt tre glimt",
+      "status": "K",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Forsidebevegelse er observert og langsomme rotasjonsregler er inspisert. Ingen lyd/video eller hurtige lys-/fargeblink ble funnet i innholdsutvalget. Ingen luminansanalyse er påstått; ny blinkekandidat krever slik vurdering.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#231",
+      "remaining": "Undersøk alt blinkende innhold; bruk egnet glimtanalysator ved mulig terskelrisiko, unngå risikofylt avspilling.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Forsidebevegelse er observert og langsomme rotasjonsregler er inspisert. Ingen lyd/video eller hurtige lys-/fargeblink ble funnet i innholdsutvalget. Ingen luminansanalyse er påstått; ny blinkekandidat krever slik vurdering.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "not_tested",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "not_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "2.4.1",
+      "title": "Hoppe over blokker",
+      "status": "K",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Enter på Hopp til innhold satte aktivt element til MAIN#innhold. Hoppelenken er også brukt før fokussekvensene på alle 20 sider. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#241",
+      "remaining": "Bruk hoppelenke/landemerker med tastatur og skjermleser; bekreft at gjentatt innhold faktisk kan hoppes over.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Enter på Hopp til innhold satte aktivt element til MAIN#innhold. Hoppelenken er også brukt før fokussekvensene på alle 20 sider. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 21,
+      "new_native_test_date": "2026-11-10",
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "2.4.2",
+      "title": "Sidetitler",
+      "status": "K",
+      "test_date": "2026-11-10",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Tittelkandidat på feilsiden lukket i lokalt omfang: /404/ har én tittel, Fant ikke siden | KI-Produktutvikling. Det samme er kontrollert i alle tre eksporterte feilfiler. PDF-ens beskrivende Info-/XMP-tittel er bevart.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#242",
+      "remaining": "Prøv faktisk 404-fallback etter utrulling og i øvrige støttede nettlesere.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-10",
+        "observation": "Tittelkandidat på feilsiden lukket i lokalt omfang: /404/ har én tittel, Fant ikke siden | KI-Produktutvikling. Det samme er kontrollert i alle tre eksporterte feilfiler. PDF-ens beskrivende Info-/XMP-tittel er bevart.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "candidates",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 21,
+      "new_native_test_date": "2026-11-10",
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "2.4.3",
+      "title": "Fokusrekkefølge",
+      "status": "U",
+      "test_date": "2026-11-10",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/focus-extra.json",
+        "../094541-e2907a5c27e2/raw/text-spacing-states.json",
+        "../094541-e2907a5c27e2/raw/browser-input.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Nye Tab/Shift+Tab-prøver i dialogen med økt tekstavstand viser avgrensning i dialogen, tastaturtilgjengelig tømming og retur til Spør KI etter Escape. Eksisterende 168 Tab-steg er gjentatt i skillens ordinære nettleserkjøring. Full forstørret/hjelpemiddelstøttet rekkefølge er fortsatt uavklart.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#243",
+      "remaining": "Fullfør fokusrekkefølge ved faktisk forstørring og hjelpemiddel; særlig dynamiske resultater.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "160 Tab-steg på 20 sider og modal fokus-/returflyt er registrert uten nytt bekreftet avvik. Alle forløp ved faktisk zoom og hjelpemiddelbruk er ikke gjennomført. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "2.4.4",
+      "title": "Formål med lenke (i kontekst)",
+      "status": "K",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Hovedmeny, bunntekst, nettstedskart, ressurslenker og chatkilder er gjennomgått i kontekst. Prislenker har tilhørende seksjonsoverskrift og PDF-vedlegget har beskrivende navn. Ingen bekreftet misvisende lenke i utvalget. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#244",
+      "remaining": "Vurder hver lenkes formål i tillatt kontekst, inkludert ikonlenker og lenker i PDF.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Hovedmeny, bunntekst, nettstedskart, ressurslenker og chatkilder er gjennomgått i kontekst. Prislenker har tilhørende seksjonsoverskrift og PDF-vedlegget har beskrivende navn. Ingen bekreftet misvisende lenke i utvalget. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 21,
+      "new_native_test_date": "2026-11-10",
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "2.4.5",
+      "title": "Flere måter",
+      "status": "K",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Felles navigasjon/katalog/oversiktslenker og nettstedskart gir alternative veier til de registrerte sidene. Sidemål i eksporten er kontrollert, og de 20 rutene er åpnet i nettleser.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#245",
+      "remaining": "Bekreft at sider kan finnes på minst to egnede måter, med relevante prosessunntak.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Felles navigasjon/katalog/oversiktslenker og nettstedskart gir alternative veier til de registrerte sidene. Sidemål i eksporten er kontrollert, og de 20 rutene er åpnet i nettleser.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "not_tested",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "not_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "2.4.6",
+      "title": "Overskrifter og ledetekster",
+      "status": "K",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Overskriftsordlyd og feltetiketter i 20 sider er gjennomgått; navn beskriver tema/oppgave. Prisseksjoner har forklarende tabelltekster. PDF-hovedoverskriftene beskriver tilhørende sider. Dette vurderer ordlyd, ikke full PDF-gruppering. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#246",
+      "remaining": "Les overskrifter og etiketter; vurder om de beskriver emne og formål forståelig.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Overskriftsordlyd og feltetiketter i 20 sider er gjennomgått; navn beskriver tema/oppgave. Prisseksjoner har forklarende tabelltekster. PDF-hovedoverskriftene beskriver tilhørende sider. Dette vurderer ordlyd, ikke full PDF-gruppering. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "2.4.7",
+      "title": "Synlig fokus",
+      "status": "U",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Illustrasjon/tabell og chatknapper har synlig fokus i målte tilstander; 160 steg inneholder outline-observasjoner. MUI-felt bruker feltkant og tekstmarkør. Full visuell vurdering av alle flater, faktisk zoom og hjelpemiddeltilstander mangler. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#247",
+      "remaining": "Prøv alle representative kontrolltyper visuelt ved faktisk forstørring og ulike flater. Faktisk Chrome-tilgang ble avvist av automatisk godkjenningskontroll; IAB-viewport er ikke zoom.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Illustrasjon/tabell og chatknapper har synlig fokus i målte tilstander; 160 steg inneholder outline-observasjoner. MUI-felt bruker feltkant og tekstmarkør. Full visuell vurdering av alle flater, faktisk zoom og hjelpemiddeltilstander mangler. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "2.5.1",
+      "title": "Pekerbevegelse",
+      "status": "I",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Ingen appfunksjon med flerfinger- eller stibasert bevegelse funnet i koden eller det undersøkte grensesnittet. Funksjonene bruker lenker, knapper, felt og native rulling. Dette er en kartlegging av fravær av utløsende funksjon.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#251",
+      "remaining": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Ingen appfunksjon med flerfinger- eller stibasert bevegelse funnet i koden eller det undersøkte grensesnittet. Funksjonene bruker lenker, knapper, felt og native rulling. Dette er en kartlegging av fravær av utløsende funksjon.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "not_tested",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "not_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "2.5.2",
+      "title": "Pekeravbrytelse",
+      "status": "K",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Fra eksplisitt nullstilt filter ga nedtrykk og slipp utenfor Skill-knappen ingen aktivering (false→false); vanlig klikk aktiverte filteret (true). Koden bruker onClick og ingen egne down-håndterere. Første forsøk uten nullstilt starttilstand er merket utilstrekkelig som bevis.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#252",
+      "remaining": "Prøv trykk, flytt ut og slipp, avbryt/angre; bekreft at handlinger ikke utløses utilsiktet.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Fra eksplisitt nullstilt filter ga nedtrykk og slipp utenfor Skill-knappen ingen aktivering (false→false); vanlig klikk aktiverte filteret (true). Koden bruker onClick og ingen egne down-håndterere. Første forsøk uten nullstilt starttilstand er merket utilstrekkelig som bevis.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "not_tested",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "not_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "2.5.3",
+      "title": "Ledetekst i navn",
+      "status": "K",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Synlige kontrolltekster i testede søk/filtre/chat/prisdetaljer samsvarer med identifikasjonen i nettlesertreet. Ikonknapper uten synlig tekst har navn. Stemmestyring er ikke testet, og resultatet gjelder navnesammenligningen. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#253",
+      "remaining": "Bekreft faktisk tilgjengelig navn mot all synlig tekst, også sammensatte kontroller og talestyring.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Synlige kontrolltekster i testede søk/filtre/chat/prisdetaljer samsvarer med identifikasjonen i nettlesertreet. Ikonknapper uten synlig tekst har navn. Stemmestyring er ikke testet, og resultatet gjelder navnesammenligningen. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 1,
+      "new_native_test_date": "2026-11-10",
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "2.5.4",
+      "title": "Bevegelsesaktivering",
+      "status": "I",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Ingen bevegelses-/gyroskop-/orienteringsutløst appfunksjon funnet i src eller det undersøkte grensesnittet. Det finnes ingen slik aktivering å slå av i denne lokale versjonen.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#254",
+      "remaining": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Ingen bevegelses-/gyroskop-/orienteringsutløst appfunksjon funnet i src eller det undersøkte grensesnittet. Det finnes ingen slik aktivering å slå av i denne lokale versjonen.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "not_tested",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "not_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "3.1.1",
+      "title": "Språk på siden",
+      "status": "U",
+      "test_date": "2026-11-10",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/pdf-structure-followup.json",
+        "../094541-e2907a5c27e2/raw/browser-input.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Ny PDF-strukturkontroll bekrefter rot-Lang en og 120 nb-overstyringer; dette avgjør ikke effektiv faktisk opplesing. Nettsidenes norske hovedspråk har ingen ny kandidat i nettleserdelkontrollen.",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#311",
+      "remaining": "Prøv effektivt PDF-språk i faktisk leser/skjermleser; korriger bare hvis feil språk er bekreftet.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Alle 20 HTML-sider har lang=nb. PDF-katalogens standard er en, mens tekstspenn har nb; samspillet med ActualText og faktisk PDF-opplesing er ikke ferdig vurdert. Dette er ikke erklært som et nytt språkbrudd alene. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 42,
+      "new_native_test_date": "2026-11-10",
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "3.1.2",
+      "title": "Språk på deler av innhold",
+      "status": "U",
+      "test_date": "2026-11-10",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "A11Y-06 rettet: Ny norsk 404-side arver nb korrekt. Norsk feiltekst og fravær av den gamle engelske meldingen er kontrollert i nettleser og alle eksporterte feilfiler. A11Y-01 for prisvilkår forblir rettet. PDF-språk og faktisk opplesing er ikke fullført.",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#312",
+      "remaining": "Fullfør PDF-språk og faktisk opplesing; kontroller nye dynamiske/modelldrevne svar og publisert feilside når de er tilgjengelige.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-10",
+        "observation": "A11Y-06 rettet: Ny norsk 404-side arver nb korrekt. Norsk feiltekst og fravær av den gamle engelske meldingen er kontrollert i nettleser og alle eksporterte feilfiler. A11Y-01 for prisvilkår forblir rettet. PDF-språk og faktisk opplesing er ikke fullført.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "3.2.1",
+      "title": "Fokus",
+      "status": "K",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Fokussekvenser på 20 sider er gjennomført uten aktivering og uten observert uventet navigasjon eller innsending. Dialog/andre endringer er utløst ved bevisst handling. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#321",
+      "remaining": "Fokuser alle kontroller og bekreft at ingen uventet kontekstendring oppstår.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Fokussekvenser på 20 sider er gjennomført uten aktivering og uten observert uventet navigasjon eller innsending. Dialog/andre endringer er utløst ved bevisst handling. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "3.2.2",
+      "title": "Inndata",
+      "status": "K",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Søk og valg av filter endrer lokal ressursliste, uten å navigere eller flytte fokus til en annen kontekst. Chatvalidering skjer ved innsending. Ingen uvarslet kontekstendring observert i disse inndataforløpene. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#322",
+      "remaining": "Endre felt/valg og vurder kontekstendringer og eventuell forhåndsinformasjon.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Søk og valg av filter endrer lokal ressursliste, uten å navigere eller flytte fokus til en annen kontekst. Chatvalidering skjer ved innsending. Ingen uvarslet kontekstendring observert i disse inndataforløpene. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "not_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "3.2.3",
+      "title": "Konsekvent navigering",
+      "status": "K",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Hovedmeny og informasjonsnavigasjon har konsistent relativ rekkefølge på alle 20 sider i DOM-kartleggingen. Mobilvisning bryter linjer, men endrer ikke hovedrekkefølgen.",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#323",
+      "remaining": "Sammenlign gjentatt navigasjon på tvers av alle relevante sider og tilstander.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Hovedmeny og informasjonsnavigasjon har konsistent relativ rekkefølge på alle 20 sider i DOM-kartleggingen. Mobilvisning bryter linjer, men endrer ikke hovedrekkefølgen.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "not_tested",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "not_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "3.2.4",
+      "title": "Konsekvent identifikasjon",
+      "status": "K",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Felles komponenter bruker samme navn for like funksjoner: chatåpning/lukking, menylenker, ressurstyper og prisdetaljer. Ingen bekreftet inkonsekvent identifikasjon funnet i sammenlignet utvalg.",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#324",
+      "remaining": "Sammenlign navn, ikoner og funksjon for gjentatte komponenter, også dynamisk innhold.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Felles komponenter bruker samme navn for like funksjoner: chatåpning/lukking, menylenker, ressurstyper og prisdetaljer. Ingen bekreftet inkonsekvent identifikasjon funnet i sammenlignet utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "not_tested",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "not_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "3.3.1",
+      "title": "Identifikasjon av feil",
+      "status": "K",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Tom chat og to tegn viste norsk tekst som identifiserer ugyldig spørsmålslengde; feltet hadde aria-invalid og kobling til feilen. Retting til et normalt testspørsmål gjorde innsending mulig. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#331",
+      "remaining": "Utløs relevante feil; vurder om felt og feilårsak identifiseres i tekst og leses med skjermleser.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Tom chat og to tegn viste norsk tekst som identifiserer ugyldig spørsmålslengde; feltet hadde aria-invalid og kobling til feilen. Retting til et normalt testspørsmål gjorde innsending mulig. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "not_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "3.3.2",
+      "title": "Ledetekster eller instruksjoner",
+      "status": "K",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Alle synlige felt på 20 sider hadde påvist etikett i DOM-kartleggingen. Spørsmålsfeltet viser instruksjon om personopplysninger; feilsituasjonen forklarer lengde. Skjult MUI-målefelt er utelatt fra synlige felt. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#332",
+      "remaining": "Vurder forståelige etiketter, obligatoriske felt, formathjelp og instruksjoner før innsending.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Alle synlige felt på 20 sider hadde påvist etikett i DOM-kartleggingen. Spørsmålsfeltet viser instruksjon om personopplysninger; feilsituasjonen forklarer lengde. Skjult MUI-målefelt er utelatt fra synlige felt. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 2,
+      "new_native_test_date": "2026-11-10",
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "3.3.3",
+      "title": "Forslag ved feil",
+      "status": "K",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Validering oppgir 3–1000 tegn. Et korrigert testspørsmål ble akseptert og ga kildebasert veiledning. Ingen treff i katalogen gir forslag om annet søkeord og fungerende nullstilling. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#333",
+      "remaining": "Utløs feil; vurder konkrete rettingsforslag og relevante sikkerhetsunntak.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Validering oppgir 3–1000 tegn. Et korrigert testspørsmål ble akseptert og ga kildebasert veiledning. Ingen treff i katalogen gir forslag om annet søkeord og fungerende nullstilling. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "not_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "3.3.4",
+      "title": "Forhindring av feil (juridiske feil, økonomiske feil, datafeil)",
+      "status": "I",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Ingen kjøp, juridisk forpliktelse, varig endring/sletting av brukerdata eller innlevering av testsvar funnet i portalens brukerforløp. RAG-spørsmål er lesing med lokal samtaletilstand; eksterne nettsteders handlinger inngår ikke i denne erklæringen.",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#334",
+      "remaining": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Ingen kjøp, juridisk forpliktelse, varig endring/sletting av brukerdata eller innlevering av testsvar funnet i portalens brukerforløp. RAG-spørsmål er lesing med lokal samtaletilstand; eksterne nettsteders handlinger inngår ikke i denne erklæringen.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "not_tested",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "not_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "4.1.1",
+      "title": "Parsing (oppdeling)",
+      "status": "K",
+      "test_date": "2026-11-10",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Nu Html Checker 26.11.9 har validert 23 eksportfiler uten HTML-feil. 191 info-/advarselsmeldinger gjelder skråstrek på tomme elementer i serialisert React-HTML; de er vurdert som tekniske noter, ikke bekreftede WCAG-brudd. Tidligere duplikat-ID-/ARIA-kontroller inngår med egen dato.",
+      "procedure": "testprosedyrer/wcag-4-robust.md#411",
+      "remaining": "Prøv aktuell produksjon og relevante dynamiske DOM-tilstander ved endret kode; Nu-valideringen gjelder den bygde eksporten.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-10",
+        "observation": "Nu Html Checker 26.11.9 har validert 23 eksportfiler uten HTML-feil. 191 info-/advarselsmeldinger gjelder skråstrek på tomme elementer i serialisert React-HTML; de er vurdert som tekniske noter, ikke bekreftede WCAG-brudd. Tidligere duplikat-ID-/ARIA-kontroller inngår med egen dato.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 0,
+      "new_native_test_date": "2026-11-10",
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "4.1.2",
+      "title": "Navn, rolle, verdi",
+      "status": "U",
+      "test_date": "2026-11-09",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Kontrollnavn, roller og tilstandsendringer er observert i DOM/AX og ved faktisk tastaturbruk. Dialog, feltfeil, filter og pauseknapp endrer tilstander. Faktisk skjermleserbruk er ikke gjennomført. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+      "procedure": "testprosedyrer/wcag-4-robust.md#412",
+      "remaining": "Prøv kontrolltypene med faktisk skjermleser og dokumenter navn, rolle, verdi og oppdatering.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Kontrollnavn, roller og tilstandsendringer er observert i DOM/AX og ved faktisk tastaturbruk. Dialog, feltfeil, filter og pauseknapp endrer tilstander. Faktisk skjermleserbruk er ikke gjennomført. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 246,
+      "new_native_test_date": "2026-11-10",
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "partial_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    },
+    {
+      "id": "4.1.3",
+      "title": "Statusbeskjeder",
+      "status": "U",
+      "test_date": "2026-11-10",
+      "evidence": [
+        "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+        "../094541-e2907a5c27e2/raw/auto-01.json",
+        "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+        "../094541-e2907a5c27e2/raw/text-spacing-states.json",
+        "../094541-e2907a5c27e2/raw/freshness-threshold.json",
+        "../094541-e2907a5c27e2/raw/native-postverification.json"
+      ],
+      "observation": "Katalogens null treff, valgt ressursfilter og chatvalidering/lasting/kildebasert resultat er utløst på nytt. Snapshot viser log/status/alert og visuelle tilstander; ingen faktisk tale er kontrollert. Prisvarsel er prøvd med simulert klokke uten å hevde opplesing.",
+      "procedure": "testprosedyrer/wcag-4-robust.md#413",
+      "remaining": "Prøv faktiske statusbeskjeder med skjermleser, også prisaldervarselet dersom det skal formidles uten fokusflytting.",
+      "evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+        "test_date": "2026-11-09",
+        "observation": "Resultattall har aria-live, chat har role=log/live og validering har alert. Lasting og et kildebasert svar er observert i nettleseren. Ingen faktisk opplesing av meldingene er verifisert. Ny automatisk delkontroll 10. november: partial_tested. Helhetsvurdering krever fortsatt oppgitt metode/utvalg.",
+        "evidence_base": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6"
+      },
+      "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+      "automatic_status": "partial_tested",
+      "automatic_test_date": "2026-11-10",
+      "new_native_rules": 0,
+      "new_native_test_date": null,
+      "previous_run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+      "previous_evidence_base": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+      "focused_retest_date": "2026-11-10",
+      "focused_scope": [
+        "/",
+        "/spor/",
+        "/priser/",
+        "PDF side 1–7"
+      ],
+      "focused_automatic_status": "not_tested",
+      "focused_observation": "Nye kontrastdelprøver; tidligere øvrig kravvurdering og restarbeid videreføres.",
+      "focused_evidence": [
+        "manual-tests.json",
+        "raw/auto-01.json",
+        "../135417-d3e318e119fd/wcag-grunnlag.json"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "A11Y-01",
+      "criterion": "3.1.2",
+      "status": "fixed",
+      "route": "/priser/#codex-subscription",
+      "priority": "P2 – før produksjonsgodkjenning",
+      "reproduce": [
+        "Åpne /priser/.",
+        "Gå til ChatGPT-abonnement med Codex.",
+        "Åpne Vilkår og avgrensninger.",
+        "Les Pro-/Business-vilkår og undersøk nærmeste lang-attributt."
+      ],
+      "actual": "Engelske setninger om Pro-sammenligning og års-/månedsbetaling arver nb; ingen lang-spenn finnes.",
+      "impact": "Skjermlesere kan uttale engelske vilkår med norsk uttale og gjøre informasjonen vanskeligere å forstå.",
+      "cause": "Engelsk kildetekst og norsk forklaring settes sammen i samme note-streng uten språkinformasjon.",
+      "suggested_fix": "Skill kildeutdrag og norsk forklaring i prisdatastrukturen, merk engelske tekstspenn med lang=en, eller gi en kvalitetssikret norsk oversettelse. Bevar strukturen ved automatisk synkronisering. Ikke sett hele blandede avsnittet til engelsk.",
+      "retest": "Åpne alle seks vilkårsseksjoner etter ny innhenting; kontroller språk på engelske setninger og prøv uttale med skjermleser.",
+      "alternative": "Kontakt khadah@nasjonalarkivet.no for hjelp til å forstå vilkårene; tabellen og norsk forklaring er fortsatt lesbare.",
+      "owner": "Ikke utpekt; foreslått rolle: innholds-/utviklingsansvarlig.",
+      "deadline": null,
+      "evidence": [
+        "../094541-e2907a5c27e2/raw/pricing-language.json",
+        "../094541-e2907a5c27e2/screenshots/pricing-language.png"
+      ],
+      "fixed": true,
+      "fixed_on": "2026-11-09",
+      "retest_run": "docs/tilgjengelighet/2026-11-09/203914-cf2e80bc00f7",
+      "fix": "Kjente kildefelt brukes til norske forklaringer; endret ukjent vilkårsformat avvises og tidligere norske data bevares.",
+      "retest_evidence": [
+        "../094541-e2907a5c27e2/raw/pricing-language-after-refresh.json",
+        "../094541-e2907a5c27e2/raw/live-refresh.json",
+        "../094541-e2907a5c27e2/raw/project-tests.stdout.txt",
+        "../094541-e2907a5c27e2/screenshots/pricing-language-fixed.png"
+      ],
+      "evidence_origin": "docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc",
+      "historical_record": "../053920-3f1e603bfbcd/wcag-grunnlag.json",
+      "carried_from": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a"
+    },
+    {
+      "id": "A11Y-02",
+      "criteria": [
+        "1.3.1"
+      ],
+      "status": "fixed",
+      "priority": "P1 (forslag)",
+      "location": "/vedlegg/mandatforslag-ai-enablement-team.pdf, side 1–7",
+      "reproduction": "Sammenlign synlige overskrifter i de syv rendrerte sidene med PDF-struktur og RoleMap. Tell H/H1–H6 og tagger som faktisk er brukt med mapping til H: ingen.",
+      "actual": "Overskrifter er visuelle, uten semantiske overskriftsroller i strukturen.",
+      "impact": "Brukere av skjermleser kan ikke finne eller hoppe mellom seksjonene ved hjelp av dokumentets overskriftsstruktur.",
+      "suggested_fix": "Bruk overskriftsstiler i kildedokumentet og eksporter korrekt tagget PDF med passende H1/H2. Alternativt publiser hele mandatforslaget som strukturert HTML og følg opp PDF-en.",
+      "retest": "Sammenlign alle syv sidene visuelt med tagget overskriftshierarki og test overskriftsnavigasjon i PDF-leser med faktisk skjermleser.",
+      "owner": "Ikke avklart",
+      "deadline": "Ikke fastsatt",
+      "evidence": [
+        "../094541-e2907a5c27e2/raw/pdf-summary.json",
+        "../094541-e2907a5c27e2/raw/pdf-inspection.json",
+        "../094541-e2907a5c27e2/screenshots/pdf-all-pages.png"
+      ],
+      "fixed": true,
+      "retest_date": "2026-11-09",
+      "retest_scope": "Struktur/metadata og rendering; ingen faktisk skjermlesertest",
+      "retest_evidence": "docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/raw/pdf-retest.json",
+      "evidence_origin": "docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc",
+      "historical_record": "../053920-3f1e603bfbcd/wcag-grunnlag.json",
+      "carried_from": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a"
+    },
+    {
+      "id": "A11Y-03",
+      "criteria": [
+        "2.4.2"
+      ],
+      "status": "fixed",
+      "priority": "P2 (forslag)",
+      "location": "/vedlegg/mandatforslag-ai-enablement-team.pdf, dokumentmetadata",
+      "reproduction": "Les PDF /Info /Title med pdfinfo eller pypdf: Presentation. Sammenlign med dokumentets formål på side 1.",
+      "actual": "Generisk dokumenttittel beskriver ikke mandatforslaget.",
+      "impact": "Brukeren får ikke en beskrivende dokumentidentifikasjon gjennom metadata, for eksempel i dokumentliste eller PDF-leser som viser tittelen.",
+      "suggested_fix": "Sett en beskrivende tittel, eksempelvis Mandatforslag – AI enablement-team i Nasjonalarkivet, og velg visning av dokumenttittel i PDF-leserinnstillingene ved eksport.",
+      "retest": "Kontroller tittelmetadata og faktisk visning i PDF-leser; tittelen må beskrive innholdet.",
+      "owner": "Ikke avklart",
+      "deadline": "Ikke fastsatt",
+      "evidence": [
+        "../094541-e2907a5c27e2/raw/pdf-inspection.json"
+      ],
+      "fixed": true,
+      "retest_date": "2026-11-09",
+      "retest_scope": "Struktur/metadata og rendering; ingen faktisk skjermlesertest",
+      "retest_evidence": "docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/raw/pdf-retest.json",
+      "evidence_origin": "docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc",
+      "historical_record": "../053920-3f1e603bfbcd/wcag-grunnlag.json",
+      "carried_from": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a"
+    },
+    {
+      "id": "A11Y-04",
+      "criteria": [
+        "1.3.1"
+      ],
+      "status": "fixed",
+      "priority": "P1 (forslag)",
+      "location": "/vedlegg/mandatforslag-ai-enablement-team.pdf, side 7",
+      "reproduction": "Sammenlign de synlige punktlistene med PDF-struktur og RoleMap: det finnes ingen L/LI/Lbl/LBody eller tilsvarende listerolle, og punktene ligger som separate P/Span/tekstbokser.",
+      "actual": "Liste-/grupperelasjonene formidles visuelt, men er ikke kodet som lister eller forklart som likeverdig strukturert tekst.",
+      "impact": "Skjermleserbrukere får ikke tilsvarende listeidentifikasjon/navigasjon og gruppering av bidragene. Dette er et strukturfunn, ikke en påstått faktisk opplesing.",
+      "suggested_fix": "Lag semantiske lister og riktig gruppering i kildedokumentet og eksporter korrekt tagget PDF, eller tilby et fullstendig strukturert HTML-alternativ.",
+      "retest": "Sammenlign hvert punkt med korrekt listestruktur og les/naviger det med faktisk skjermleser i PDF-leser.",
+      "evidence": [
+        "../094541-e2907a5c27e2/raw/pdf-page7-structure.json",
+        "../094541-e2907a5c27e2/raw/pdf-inspection.json",
+        "../094541-e2907a5c27e2/screenshots/pdf-page-7.png"
+      ],
+      "owner": "Ikke avklart",
+      "deadline": "Ikke fastsatt",
+      "evidence_origin": "docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc",
+      "latest_review_at": "2026-11-10T06:00:14.604909+01:00",
+      "retained_reason": "Identisk PDF-SHA-256 og ny metadata-/rolle-/fargekontroll; tidligere visuell evidens beholdes med original dato.",
+      "historical_record": "../053920-3f1e603bfbcd/wcag-grunnlag.json",
+      "fixed": true,
+      "fixed_on": "2026-11-10",
+      "retest_at": "2026-11-10T08:17:30.459664+01:00",
+      "retest_run": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a",
+      "retest_scope": "Målrettet struktur/kontrast/språk/tittel og lokal nettleser/eksport; ingen faktisk skjermleser eller produksjonsmiljø.",
+      "retest_evidence": [
+        "../094541-e2907a5c27e2/raw/pdf-retest.json",
+        "../094541-e2907a5c27e2/raw/repair-actions.json"
+      ],
+      "carried_from": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a"
+    },
+    {
+      "id": "A11Y-05",
+      "criteria": [
+        "1.4.3"
+      ],
+      "status": "fixed",
+      "priority": "P1 (forslag)",
+      "location": "/vedlegg/mandatforslag-ai-enablement-team.pdf, side 5",
+      "reproduction": "Hent fargene fra PDF-teksten og bakgrunnsflaten; kryssjekk mot rendrerte piksler. #d8d8d8 mot #2d6a5f gir 4,4133559:1. Sidetall #5d6a66 gir 1,1139667:1. Skriftstørrelsene er ca. 10,1 og 7,22 pt.",
+      "actual": "Vanlig brød-/bunntekst og sidetall ligger under 4,5:1. Tallene er ikke avrundet opp til bestått.",
+      "impact": "Teksten kan være vanskelig å lese for personer med nedsatt syn eller ved krevende visningsforhold.",
+      "suggested_fix": "Endre tekst-/bakgrunnsfarge slik at all berørt vanlig tekst når minst 4,5:1; kontroller særlig brødtekst, dokumentbunntekst og sidetall.",
+      "retest": "Eksporter/rendre på nytt, mål faktiske farger mot bakgrunn og kontroller normal tekststørrelse og alle berørte tekstelementer.",
+      "evidence": [
+        "../094541-e2907a5c27e2/raw/pdf-page5-text-groups.json",
+        "../094541-e2907a5c27e2/raw/pdf-page5-colors.json",
+        "../094541-e2907a5c27e2/raw/pdf-page5-pixels.json",
+        "../094541-e2907a5c27e2/raw/contrast-supplement.json",
+        "../094541-e2907a5c27e2/screenshots/pdf-page-5.png"
+      ],
+      "owner": "Ikke avklart",
+      "deadline": "Ikke fastsatt",
+      "evidence_origin": "docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc",
+      "latest_review_at": "2026-11-10T06:00:14.604909+01:00",
+      "retained_reason": "Identisk PDF-SHA-256 og ny metadata-/rolle-/fargekontroll; tidligere visuell evidens beholdes med original dato.",
+      "historical_record": "../053920-3f1e603bfbcd/wcag-grunnlag.json",
+      "fixed": true,
+      "fixed_on": "2026-11-10",
+      "retest_at": "2026-11-10T08:17:30.459664+01:00",
+      "retest_run": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a",
+      "retest_scope": "Målrettet struktur/kontrast/språk/tittel og lokal nettleser/eksport; ingen faktisk skjermleser eller produksjonsmiljø.",
+      "retest_evidence": [
+        "../094541-e2907a5c27e2/raw/pdf-retest.json",
+        "../094541-e2907a5c27e2/raw/repair-actions.json"
+      ],
+      "carried_from": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a"
+    },
+    {
+      "id": "A11Y-06",
+      "criteria": [
+        "3.1.2"
+      ],
+      "status": "fixed",
+      "priority": "P2 – før produksjonsgodkjenning (forslag)",
+      "location": "/404/ og eksportens 404-fallback",
+      "reproduction": [
+        "Åpne /404/.",
+        "Les h2-meldingen på engelsk.",
+        "Undersøk nærmeste lang-attributt: nb på html; ingen lang=en på tekstspennet."
+      ],
+      "actual": "En full engelsk feilsetning er kodet som norsk.",
+      "impact": "Skjermlesere kan bruke norsk uttale og gjøre feilmeldingen vanskeligere å forstå.",
+      "suggested_fix": "Lag en norsk feilmelding og en beskrivende norsk sidetittel. Alternativt merk bare det engelske tekstspennet med lang=en. Ikke sett hele den norske navigasjonssiden til engelsk.",
+      "retest": "Prøv ukjent adresse i utviklings- og publisert miljø, kontroller effektivt språk og tittel, og lytt med skjermleser.",
+      "alternative": "Bruk hovedmenyen eller nettstedskartet for å finne siden, eller kontakt khadah@nasjonalarkivet.no.",
+      "owner": "Ikke utpekt",
+      "deadline": null,
+      "confirmed_at": "2026-11-10T06:00:14.604909+01:00",
+      "evidence": [
+        "../094541-e2907a5c27e2/raw/404-review.json",
+        "../094541-e2907a5c27e2/screenshots/404-spraak.png"
+      ],
+      "source": "https://www.uutilsynet.no/wcag-standarden/312-sprak-pa-deler-av-innhold-niva-aa/111",
+      "historical_record": "../053920-3f1e603bfbcd/wcag-grunnlag.json",
+      "fixed": true,
+      "fixed_on": "2026-11-10",
+      "retest_at": "2026-11-10T08:17:30.459664+01:00",
+      "retest_run": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a",
+      "retest_scope": "Målrettet struktur/kontrast/språk/tittel og lokal nettleser/eksport; ingen faktisk skjermleser eller produksjonsmiljø.",
+      "retest_evidence": [
+        "../094541-e2907a5c27e2/raw/404-browser.json",
+        "../094541-e2907a5c27e2/raw/404-export.json"
+      ],
+      "carried_from": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a"
+    }
+  ],
+  "note": "1.4.3 U → K i angitt lokalt HTML/PDF-utvalg etter nye hover-/dynamiske-/PDF-kontroller. K er avgrenset arbeidsvurdering, ikke automatisk Ja eller produksjonsgodkjenning. Ingen nye bekreftede åpne avvik; ingen design/PDF-retting nødvendig.",
+  "native_postverification": "raw/native-postverification.json"
+}
