@@ -1,0 +1,7 @@
+[1mRunning axe-core 4.14.0 in chrome-headless[22m
+[1m[22m
+[1mTesting [4m[34mhttp://127.0.0.1:54133/[39m[24m[22m ... please wait, this may take a minute.
+[1mTesting complete of 1 pages[22m
+[1m[22m
+Saved file at /Users/khadah/Documents/ChatGPT/KI-utvikling/docs/tilgjengelighet/2026-11-10/tools-smoke-14ee8e37/axe.json 
+

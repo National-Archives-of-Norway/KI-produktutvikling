@@ -1,0 +1,27 @@
+{
+  "reviewed_at": "2026-11-10T09:10:53.107934+01:00",
+  "agent": "Codex (OpenAI)",
+  "scope": "Ny axe CLI-skann av 20 registrerte sider og feilside i lokal statisk eksport, Nu-validering av 23 eksportfiler. Tidligere nettleser-/PDF-/manuelle vurderinger gjenbrukes med opprinnelig dato; ingen ny full manuell revisjon.",
+  "tests": [
+    {
+      "id": "axe-review",
+      "result": "21 resultater, ingen violations; tre incomplete-grupper / 80 elementforekomster måles videre manuelt.",
+      "evidence": "../090555-native-d984a7c5/raw/axe.json"
+    },
+    {
+      "id": "vnu-review",
+      "result": "23 eksportfiler, ingen HTML-feil; 191 identiske typer tekniske info-/advarselsnoter om slash på tomme elementer. Ikke bekreftet WCAG-brudd.",
+      "evidence": "../090555-native-d984a7c5/raw/vnu.json"
+    },
+    {
+      "id": "tool-negative-test",
+      "result": "Begge faktiske motorene fant tilsiktet manglende alt på egen syntetisk testside. Ikke portalavvik.",
+      "evidence": "../tools-smoke-8f01447c/smoke-result.json"
+    }
+  ],
+  "limits": [
+    "Vanlige sidetilstander i statisk eksport, ikke åpne chatdialoger eller API-/modellgenererte svar.",
+    "Ingen faktisk skjermleser, zoom, fysisk rotasjon eller redusert-bevegelse-test.",
+    "Tidligere nettleserdata er gjenbrukt, ikke kjørt på nytt av native CLI."
+  ]
+}

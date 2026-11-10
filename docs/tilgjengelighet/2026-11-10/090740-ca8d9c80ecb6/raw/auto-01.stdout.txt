@@ -1,0 +1,2367 @@
+{
+  "status": "needs_review",
+  "full_wcag_audit": false,
+  "checks": [
+    {
+      "id": "html",
+      "criteria": [
+        "1.1.1",
+        "1.2.1",
+        "1.2.2",
+        "1.2.5",
+        "1.3.1",
+        "1.3.5",
+        "1.4.2",
+        "2.2.1",
+        "2.4.1",
+        "2.4.2",
+        "2.4.4",
+        "2.4.6",
+        "2.5.3",
+        "3.1.1",
+        "3.1.2",
+        "3.3.2",
+        "4.1.1",
+        "4.1.2"
+      ],
+      "status": "completed",
+      "scope": [
+        "/Users/khadah/Documents/ChatGPT/KI-utvikling/out"
+      ],
+      "findings": [],
+      "reason": null,
+      "full_criterion_assessment": false,
+      "inventory": {
+        "media": [],
+        "forms": [
+          {
+            "file": "spor/index.html"
+          }
+        ],
+        "languages": [
+          {
+            "file": "404/index.html",
+            "tag": "html",
+            "lang": "nb"
+          },
+          {
+            "file": "404.html",
+            "tag": "html",
+            "lang": "nb"
+          },
+          {
+            "file": "_not-found/index.html",
+            "tag": "html",
+            "lang": "nb"
+          },
+          {
+            "file": "funksjonalitet/index.html",
+            "tag": "html",
+            "lang": "nb"
+          },
+          {
+            "file": "index.html",
+            "tag": "html",
+            "lang": "nb"
+          },
+          {
+            "file": "kom-i-gang/index.html",
+            "tag": "html",
+            "lang": "nb"
+          },
+          {
+            "file": "nettstedskart/index.html",
+            "tag": "html",
+            "lang": "nb"
+          },
+          {
+            "file": "om/index.html",
+            "tag": "html",
+            "lang": "nb"
+          },
+          {
+            "file": "oversikt/godkjente-ki-assistenter/index.html",
+            "tag": "html",
+            "lang": "nb"
+          },
+          {
+            "file": "oversikt/godkjente-mcper/index.html",
+            "tag": "html",
+            "lang": "nb"
+          },
+          {
+            "file": "oversikt/index.html",
+            "tag": "html",
+            "lang": "nb"
+          },
+          {
+            "file": "personvern/index.html",
+            "tag": "html",
+            "lang": "nb"
+          },
+          {
+            "file": "priser/index.html",
+            "tag": "html",
+            "lang": "nb"
+          },
+          {
+            "file": "ressurser/brukerbehov/index.html",
+            "tag": "html",
+            "lang": "nb"
+          },
+          {
+            "file": "ressurser/kodegjennomgang/index.html",
+            "tag": "html",
+            "lang": "nb"
+          },
+          {
+            "file": "ressurser/personvernerklaering/index.html",
+            "tag": "html",
+            "lang": "nb"
+          },
+          {
+            "file": "ressurser/tilgjengelighetserklaering/index.html",
+            "tag": "html",
+            "lang": "nb"
+          },
+          {
+            "file": "ressurser/tydelig-kontekst/index.html",
+            "tag": "html",
+            "lang": "nb"
+          },
+          {
+            "file": "retningslinjer/index.html",
+            "tag": "html",
+            "lang": "nb"
+          },
+          {
+            "file": "spor/index.html",
+            "tag": "html",
+            "lang": "nb"
+          },
+          {
+            "file": "tilgjengelighet/index.html",
+            "tag": "html",
+            "lang": "nb"
+          },
+          {
+            "file": "utviklingsplan/index.html",
+            "tag": "html",
+            "lang": "nb"
+          },
+          {
+            "file": "versjonslogg/index.html",
+            "tag": "html",
+            "lang": "nb"
+          }
+        ],
+        "refresh": []
+      },
+      "files_checked": 23,
+      "sha256": {
+        "404/index.html": "576514e5d8b5fa5b02ef368ba6a482cb186f437fe36594387bdedb835ce2c1cb",
+        "404.html": "576514e5d8b5fa5b02ef368ba6a482cb186f437fe36594387bdedb835ce2c1cb",
+        "_not-found/index.html": "576514e5d8b5fa5b02ef368ba6a482cb186f437fe36594387bdedb835ce2c1cb",
+        "funksjonalitet/index.html": "c0721bcda7a313e308978b8c6b7ba2e1380f0ae7bcc622863f0f0e0302f8754c",
+        "index.html": "67fb360fcf4db3012b1c1c321563579a6232cc882cec520aebac6ab73c64df64",
+        "kom-i-gang/index.html": "02544bfc6e6349e7f805670cb5ddda17ced3461bff691f3ac98f8a10c270d7de",
+        "nettstedskart/index.html": "789c36781a654d3ff03f7152d8de9364549c530a168ae85d1036291680510c07",
+        "om/index.html": "369a078b3267df5aa271df2adfd28ea6835d3bd5820e30918fe7405611a8d326",
+        "oversikt/godkjente-ki-assistenter/index.html": "9894b35a44f815dfa6f05922242da7be2c8aa6d27dbde006a8993de38f2b91e4",
+        "oversikt/godkjente-mcper/index.html": "5892b1e1ddb632585357644092379fd7e348a2f60f495366c0da54b58f92e6b8",
+        "oversikt/index.html": "15945003301ed652667bfd1020b20cf04dd990588396a7a47a922ea082e6c659",
+        "personvern/index.html": "28a85011591aebd45ef9606a8c9926e22852420a67af7d11a47367a44fbf63db",
+        "priser/index.html": "32c852c963d0084dc91b608b8293a70032987c2a3a1206c8aba0145ade52f4d7",
+        "ressurser/brukerbehov/index.html": "0196467861507d6c8856e375c644ead22de29abff9b62397062e03c1c4daa41e",
+        "ressurser/kodegjennomgang/index.html": "8f47a19c65c413e7b92c176237814d2a0bd856ff2c47f2d66ba1f980e18535c8",
+        "ressurser/personvernerklaering/index.html": "85f4b3c7e7efd3cb2c7c3efad591e334b8fb411b2b94a01f5ebd9a4287919ae2",
+        "ressurser/tilgjengelighetserklaering/index.html": "59af1f39382a2f231fe29c1819ff8265380fe2a2fbc7069dcda4708717b87216",
+        "ressurser/tydelig-kontekst/index.html": "fd2f038e35b499204ae09c12af05250bb749ad2816bea77bbcfa448c49f700e8",
+        "retningslinjer/index.html": "05d06473ff3030548e1d22b0328101b4481fc3b1b33ccb30d80d29be5e362f32",
+        "spor/index.html": "e804ee01dae2be124c9402ceaf5a816f50605ce2d5897791141e1f7991a72c3d",
+        "tilgjengelighet/index.html": "14ebe05f7f3fa881ffe05e02f886836794dc7c3d61106d73f24c411acfa022c6",
+        "utviklingsplan/index.html": "fc10892f05db9e763bc1ea3dcf42cd3086a2a5ac9831d17059ba5132f48ee4d7",
+        "versjonslogg/index.html": "c5e9edeb3faa1980fe6204de14e5906ffb686ab4c51f003d618dcd7c1319d5a5"
+      },
+      "limitations": [
+        "Statisk HTML, ikke JavaScript-tilstander, komplett HTML-validator eller semantisk kvalitetsvurdering."
+      ]
+    },
+    {
+      "id": "html-validator",
+      "criteria": [
+        "4.1.1"
+      ],
+      "status": "completed",
+      "scope": [
+        "/Users/khadah/Documents/ChatGPT/KI-utvikling/out"
+      ],
+      "findings": [],
+      "reason": null,
+      "full_criterion_assessment": false,
+      "command": [
+        "./node_modules/.bin/vnu",
+        "--format",
+        "json",
+        "--errors-only",
+        "--skip-non-html",
+        "/Users/khadah/Documents/ChatGPT/KI-utvikling/out"
+      ],
+      "exit_code": 0,
+      "raw_stdout": "",
+      "raw_stderr": "{\"version\":\"26.11.9 (524d973)\",\"messages\":[]}\n",
+      "limitations": [
+        "Validatorfunn må vurderes mot kravet; ikke alle HTML-feil er WCAG-brudd."
+      ]
+    },
+    {
+      "id": "pdf",
+      "criteria": [
+        "1.1.1",
+        "1.3.1",
+        "2.4.2",
+        "3.1.1",
+        "3.1.2"
+      ],
+      "status": "completed",
+      "scope": [
+        "/Users/khadah/Documents/ChatGPT/KI-utvikling/public/vedlegg/mandatforslag-ai-enablement-team.pdf"
+      ],
+      "findings": [],
+      "reason": null,
+      "full_criterion_assessment": false,
+      "documents": [
+        {
+          "file": "/Users/khadah/Documents/ChatGPT/KI-utvikling/public/vedlegg/mandatforslag-ai-enablement-team.pdf",
+          "sha256": "ba267d899460e54a911c548c5ddecfd9a83159ec3b6d7b6e30d9d4f34d0c648a",
+          "pages": 7,
+          "title": "Mandatforslag – AI enablement-team i Nasjonalarkivet",
+          "lang": "en",
+          "tagged": true,
+          "roles": {
+            "/Slide": 7,
+            "/Figure": 61,
+            "/Textbox": 80,
+            "/P": 74,
+            "/Span": 122,
+            "/H1": 1,
+            "/H2": 6,
+            "/H3": 20,
+            "/Sect": 3,
+            "/L": 3,
+            "/LI": 12,
+            "/Lbl": 12,
+            "/LBody": 12
+          },
+          "span_languages": [
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb",
+            "nb"
+          ]
+        }
+      ],
+      "errors": [],
+      "tool_version": "6.10.0",
+      "limitations": [
+        "Ingen PDF/UA-validering, visuell kontrast-, leserekkefølge- eller skjermlesertest. RoleMap må vurderes separat."
+      ]
+    },
+    {
+      "id": "axe",
+      "criteria": [
+        "1.3.1",
+        "1.4.12",
+        "1.4.3",
+        "1.4.4",
+        "2.4.1",
+        "2.4.2",
+        "2.4.4",
+        "2.5.3",
+        "3.1.1",
+        "3.3.2",
+        "4.1.2"
+      ],
+      "status": "needs_review",
+      "scope": [
+        "http://127.0.0.1:54049/"
+      ],
+      "findings": [],
+      "reason": "Import av faktisk skann; dette starter ikke en ny axe-kjøring.",
+      "full_criterion_assessment": false,
+      "incomplete": [
+        {
+          "rule": "color-contrast",
+          "criteria": [
+            "1.4.3"
+          ],
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<button class=\"MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorSecondary MuiButton-disableElevation chat-launcher mui-vj96ng\" tabindex=\"0\" type=\"button\" aria-haspopup=\"dialog\" aria-expanded=\"false\">",
+                      "target": [
+                        ".chat-launcher"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<button class=\"MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorSecondary MuiButton-disableElevation chat-launcher mui-vj96ng\" tabindex=\"0\" type=\"button\" aria-haspopup=\"dialog\" aria-expanded=\"false\">",
+              "target": [
+                ".chat-launcher"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "bold",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<section class=\"hero\">",
+                      "target": [
+                        ".hero"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<div class=\"eyebrow\"><span class=\"dot\"></span> KUNNSKAP SOM BLIR TIL PRAKSIS</div>",
+              "target": [
+                ".hero > .eyebrow"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "35.2pt (46.872px)",
+                    "fontWeight": "bold",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "3:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<section class=\"hero\">",
+                      "target": [
+                        ".hero"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<h1>Utvikle ideer.<br><span>Bygg med KI.</span></h1>",
+              "target": [
+                "h1"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "35.2pt (46.872px)",
+                    "fontWeight": "bold",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "3:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<section class=\"hero\">",
+                      "target": [
+                        ".hero"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span>Bygg med KI.</span>",
+              "target": [
+                "h1 > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "13.5pt (18px)",
+                    "fontWeight": "normal",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<section class=\"hero\">",
+                      "target": [
+                        ".hero"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<p>Et felles sted for kunnskap, metoder og verktøy. Utforsk hvordan kunstig intelligens kan støtte god produktutvikling.</p>",
+              "target": [
+                ".hero > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<section class=\"hero\">",
+                      "target": [
+                        ".hero"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeLarge MuiButton-colorSecondary MuiButton-disableElevation mui-98b6p0\" tabindex=\"0\" href=\"/kom-i-gang/\">Kom i gang <span aria-hidden=\"true\">↗</span></a>",
+              "target": [
+                ".mui-98b6p0"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<section class=\"hero\">",
+                      "target": [
+                        ".hero"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-sizeLarge MuiButton-colorSecondary MuiButton-disableElevation mui-1d7qzbu\" tabindex=\"0\" href=\"#ressurser\">Utforsk ressursene <span aria-hidden=\"true\">↓</span></a>",
+              "target": [
+                ".actions > a[href$=\"#ressurser\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">↓</span>",
+              "target": [
+                "a[href$=\"#ressurser\"] > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"catalog-controls\">",
+                      "target": [
+                        ".catalog-controls"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<label for=\"resource-search\">Finn en ressurs</label>",
+              "target": [
+                "label[for=\"resource-search\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "messageKey": "emptyValue",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has no value; test color contrast with a value entered"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<input aria-invalid=\"false\" id=\"resource-search\" placeholder=\"Søk etter tema eller oppgave …\" type=\"search\" class=\"MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputTypeSearch mui-1b4upfv\" value=\"\">",
+              "target": [
+                "#resource-search"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has no value; test color contrast with a value entered"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"catalog-controls\">",
+                      "target": [
+                        ".catalog-controls"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"control-label\">Ressurstype</span>",
+              "target": [
+                ".control-label"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"catalog-controls\">",
+                      "target": [
+                        ".catalog-controls"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<button class=\"MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-sizeMedium MuiButton-colorSecondary MuiButton-disableElevation mui-bcyry4\" tabindex=\"0\" type=\"button\" aria-pressed=\"false\">Skill</button>",
+              "target": [
+                ".mui-bcyry4.MuiButton-outlined.MuiButton-sizeMedium:nth-child(2)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"catalog-controls\">",
+                      "target": [
+                        ".catalog-controls"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<button class=\"MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-sizeMedium MuiButton-colorSecondary MuiButton-disableElevation mui-bcyry4\" tabindex=\"0\" type=\"button\" aria-pressed=\"false\">Instruks</button>",
+              "target": [
+                ".mui-bcyry4.MuiButton-outlined.MuiButton-sizeMedium:nth-child(3)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<div class=\"catalog-controls\">",
+                      "target": [
+                        ".catalog-controls"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<button class=\"MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-sizeMedium MuiButton-colorSecondary MuiButton-disableElevation mui-bcyry4\" tabindex=\"0\" type=\"button\" aria-pressed=\"false\">Prompt</button>",
+              "target": [
+                ".mui-bcyry4.MuiButton-outlined.MuiButton-sizeMedium:nth-child(4)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "9.8pt (13px)",
+                    "fontWeight": "normal",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(1)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"MuiChip-label mui-oruufx\">Skill</span>",
+              "target": [
+                "article:nth-child(1) > div > .mui-zuj605.MuiChip-root.MuiChip-outlined > .MuiChip-label.mui-oruufx"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "9.8pt (13px)",
+                    "fontWeight": "normal",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(1)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"MuiChip-label mui-oruufx\">Beta</span>",
+              "target": [
+                "article:nth-child(1) > div > .mui-bsqhmz.MuiChip-root.MuiChip-outlined > .MuiChip-label.mui-oruufx"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(1)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"MuiTypography-root MuiTypography-caption mui-p7i9kt\">Ennå ikke gjennomgått av et menneske</span>",
+              "target": [
+                "article:nth-child(1) > .MuiTypography-caption.mui-p7i9kt.MuiTypography-root"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "15.0pt (20px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(1)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<h3 class=\"MuiTypography-root MuiTypography-h6 mui-10lr87o\">Test tilgjengelighet og utform erklæring</h3>",
+              "target": [
+                "article:nth-child(1) > h3"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(1)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<p>Kjør automatiske tilgjengelighetskontroller, se hva som gjenstår manuelt for alle 48 krav, og få rapporter, rettingsforslag og tilgjengelighetserklæring fra vurderte resultater.</p>",
+              "target": [
+                "article:nth-child(1) > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(1)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a aria-label=\"Se skill: Test tilgjengelighet og utform erklæring\" href=\"/ressurser/tilgjengelighetserklaering/\">Se skill<!-- --> <span aria-hidden=\"true\">↗</span></a>",
+              "target": [
+                "article:nth-child(1) > a"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "9.8pt (13px)",
+                    "fontWeight": "normal",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(2)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"MuiChip-label mui-oruufx\">Skill</span>",
+              "target": [
+                "article:nth-child(2) > div > .mui-zuj605.MuiChip-root.MuiChip-outlined > .MuiChip-label.mui-oruufx"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "9.8pt (13px)",
+                    "fontWeight": "normal",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(2)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"MuiChip-label mui-oruufx\">Beta</span>",
+              "target": [
+                "article:nth-child(2) > div > .mui-bsqhmz.MuiChip-root.MuiChip-outlined > .MuiChip-label.mui-oruufx"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(2)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"MuiTypography-root MuiTypography-caption mui-p7i9kt\">Ennå ikke gjennomgått av et menneske</span>",
+              "target": [
+                "article:nth-child(2) > .MuiTypography-caption.mui-p7i9kt.MuiTypography-root"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "15.0pt (20px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(2)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<h3 class=\"MuiTypography-root MuiTypography-h6 mui-10lr87o\">Kartlegg personvern og utform erklæring</h3>",
+              "target": [
+                "article:nth-child(2) > h3"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(2)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<p>Kartlegg faktisk databehandling, lagre vurderingsgrunnlaget i prosjektet og opprett eller oppdater personvernerklæringen med tydelige uavklarte forhold.</p>",
+              "target": [
+                "article:nth-child(2) > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(2)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a aria-label=\"Se skill: Kartlegg personvern og utform erklæring\" href=\"/ressurser/personvernerklaering/\">Se skill<!-- --> <span aria-hidden=\"true\">↗</span></a>",
+              "target": [
+                "article:nth-child(2) > a"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "9.8pt (13px)",
+                    "fontWeight": "normal",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(3)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"MuiChip-label mui-oruufx\">Skill</span>",
+              "target": [
+                "article:nth-child(3) > div > .mui-zuj605.MuiChip-root.MuiChip-outlined > .MuiChip-label.mui-oruufx"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "9.8pt (13px)",
+                    "fontWeight": "normal",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(3)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"MuiChip-label mui-oruufx\">Beta</span>",
+              "target": [
+                "article:nth-child(3) > div > .mui-bsqhmz.MuiChip-root.MuiChip-outlined > .MuiChip-label.mui-oruufx"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(3)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"MuiTypography-root MuiTypography-caption mui-p7i9kt\">Ennå ikke gjennomgått av et menneske</span>",
+              "target": [
+                "article:nth-child(3) > .MuiTypography-caption.mui-p7i9kt.MuiTypography-root"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "15.0pt (20px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(3)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<h3 class=\"MuiTypography-root MuiTypography-h6 mui-10lr87o\">Gjennomgå en kodeendring</h3>",
+              "target": [
+                "article:nth-child(3) > h3"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(3)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<p>Et utgangspunkt for strukturert gjennomgang av kvalitet, feilscenarier og tester.</p>",
+              "target": [
+                "article:nth-child(3) > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(3)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a aria-label=\"Se skill: Gjennomgå en kodeendring\" href=\"/ressurser/kodegjennomgang/\">Se skill<!-- --> <span aria-hidden=\"true\">↗</span></a>",
+              "target": [
+                "a[href$=\"kodegjennomgang/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "9.8pt (13px)",
+                    "fontWeight": "normal",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(4)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"MuiChip-label mui-oruufx\">Instruks</span>",
+              "target": [
+                "article:nth-child(4) > div > .mui-zuj605.MuiChip-root.MuiChip-outlined > .MuiChip-label.mui-oruufx"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(4)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"MuiTypography-root MuiTypography-caption mui-p7i9kt\">Eksempel</span>",
+              "target": [
+                "article:nth-child(4) > .MuiTypography-caption.mui-p7i9kt.MuiTypography-root"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "15.0pt (20px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(4)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<h3 class=\"MuiTypography-root MuiTypography-h6 mui-10lr87o\">Gi KI tydelig kontekst</h3>",
+              "target": [
+                "article:nth-child(4) > h3"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(4)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<p>Beskriv mål, rammer og forventet resultat før du starter en oppgave.</p>",
+              "target": [
+                "article:nth-child(4) > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(4)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a aria-label=\"Les instruksen: Gi KI tydelig kontekst\" href=\"/ressurser/tydelig-kontekst/\">Les instruksen<!-- --> <span aria-hidden=\"true\">↗</span></a>",
+              "target": [
+                "a[href$=\"tydelig-kontekst/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "9.8pt (13px)",
+                    "fontWeight": "normal",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(5)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"MuiChip-label mui-oruufx\">Prompt</span>",
+              "target": [
+                "article:nth-child(5) > div > .mui-zuj605.MuiChip-root.MuiChip-outlined > .MuiChip-label.mui-oruufx"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "messageKey": "pseudoContent",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(5)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a pseudo element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"MuiTypography-root MuiTypography-caption mui-p7i9kt\">Eksempel</span>",
+              "target": [
+                "article:nth-child(5) > .MuiTypography-caption.mui-p7i9kt.MuiTypography-root"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "15.0pt (20px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(5)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<h3 class=\"MuiTypography-root MuiTypography-h6 mui-10lr87o\">Utforsk et brukerbehov</h3>",
+              "target": [
+                "article:nth-child(5) > h3"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(5)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<p>Beskriv en situasjon du vil forstå bedre. Få forslag til åpne intervjuspørsmål, og vurder hvilke dere vil prøve med brukere.</p>",
+              "target": [
+                "article:nth-child(5) > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<article class=\"MuiPaper-root MuiPaper-outlined MuiPaper-rounded MuiCard-root resource-card mui-111bmcr\">",
+                      "target": [
+                        "article:nth-child(5)"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a aria-label=\"Se prompten: Utforsk et brukerbehov\" href=\"/ressurser/brukerbehov/\">Se prompten<!-- --> <span aria-hidden=\"true\">↗</span></a>",
+              "target": [
+                "article:nth-child(5) > a[href$=\"brukerbehov/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<a href=\"/kom-i-gang/\"><span class=\"number\">01 / LÆR</span><strong>Kom i gang med KI<!-- --> <span aria-hidden=\"true\">→</span></strong></a>",
+                      "target": [
+                        ".quick-links > a[href$=\"kom-i-gang/\"]"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"number\">01 / LÆR</span>",
+              "target": [
+                "a[href$=\"kom-i-gang/\"] > .number"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<a href=\"/kom-i-gang/\"><span class=\"number\">01 / LÆR</span><strong>Kom i gang med KI<!-- --> <span aria-hidden=\"true\">→</span></strong></a>",
+                      "target": [
+                        ".quick-links > a[href$=\"kom-i-gang/\"]"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<strong>Kom i gang med KI<!-- --> <span aria-hidden=\"true\">→</span></strong>",
+              "target": [
+                "a[href$=\"kom-i-gang/\"] > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">→</span>",
+              "target": [
+                "a[href$=\"kom-i-gang/\"] > strong > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<a href=\"/#ressurser\"><span class=\"number\">02 / PRØV</span><strong>Finn en ressurs til oppgaven<!-- --> <span aria-hidden=\"true\">→</span></strong></a>",
+                      "target": [
+                        ".quick-links > a[href$=\"/#ressurser\"]"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"number\">02 / PRØV</span>",
+              "target": [
+                "a[href$=\"/#ressurser\"] > .number"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<a href=\"/#ressurser\"><span class=\"number\">02 / PRØV</span><strong>Finn en ressurs til oppgaven<!-- --> <span aria-hidden=\"true\">→</span></strong></a>",
+                      "target": [
+                        ".quick-links > a[href$=\"/#ressurser\"]"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<strong>Finn en ressurs til oppgaven<!-- --> <span aria-hidden=\"true\">→</span></strong>",
+              "target": [
+                "a[href$=\"/#ressurser\"] > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">→</span>",
+              "target": [
+                "a[href$=\"/#ressurser\"] > strong > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "9.0pt (12px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<a href=\"/om/#ki-prat\"><span class=\"number\">03 / DEL</span><strong>Del erfaringer i KI-prat<!-- --> <span aria-hidden=\"true\">→</span></strong></a>",
+                      "target": [
+                        "a[href$=\"om/#ki-prat\"]"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span class=\"number\">03 / DEL</span>",
+              "target": [
+                "a[href$=\"om/#ki-prat\"] > .number"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<a href=\"/om/#ki-prat\"><span class=\"number\">03 / DEL</span><strong>Del erfaringer i KI-prat<!-- --> <span aria-hidden=\"true\">→</span></strong></a>",
+                      "target": [
+                        "a[href$=\"om/#ki-prat\"]"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<strong>Del erfaringer i KI-prat<!-- --> <span aria-hidden=\"true\">→</span></strong>",
+              "target": [
+                "a[href$=\"om/#ki-prat\"] > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">→</span>",
+              "target": [
+                "a[href$=\"om/#ki-prat\"] > strong > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<section class=\"reading\" aria-labelledby=\"recommended-task-title\">",
+                      "target": [
+                        ".reading"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<div class=\"eyebrow\">PRØV I PRAKSIS</div>",
+              "target": [
+                "div > .eyebrow"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "22.5pt (30px)",
+                    "fontWeight": "bold",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "3:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<section class=\"reading\" aria-labelledby=\"recommended-task-title\">",
+                      "target": [
+                        ".reading"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<h2 id=\"recommended-task-title\">Utforsk et brukerbehov</h2>",
+              "target": [
+                "#recommended-task-title"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<section class=\"reading\" aria-labelledby=\"recommended-task-title\">",
+                      "target": [
+                        ".reading"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<p>Beskriv en situasjon du vil forstå bedre. Få forslag til åpne intervjuspørsmål, og vurder hvilke dere vil prøve med brukere.</p>",
+              "target": [
+                ".reading > div > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "contrastRatio": 0,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "messageKey": "bgGradient",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<a class=\"MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-sizeLarge MuiButton-colorSecondary MuiButton-disableElevation mui-1d7qzbu\" tabindex=\"0\" href=\"/ressurser/brukerbehov/\">Se oppgaven<!-- --> <span aria-hidden=\"true\">→</span></a>",
+                      "target": [
+                        ".mui-1d7qzbu.MuiButton-sizeLarge[href$=\"brukerbehov/\"]"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element's background color could not be determined due to a background gradient"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<a class=\"MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-sizeLarge MuiButton-colorSecondary MuiButton-disableElevation mui-1d7qzbu\" tabindex=\"0\" href=\"/ressurser/brukerbehov/\">Se oppgaven<!-- --> <span aria-hidden=\"true\">→</span></a>",
+              "target": [
+                ".mui-1d7qzbu.MuiButton-sizeLarge[href$=\"brukerbehov/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "messageKey": "nonBmp"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element content contains only non-text characters"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<span aria-hidden=\"true\">→</span>",
+              "target": [
+                ".mui-1d7qzbu.MuiButton-sizeLarge[href$=\"brukerbehov/\"] > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ],
+          "status": "candidate",
+          "message": "Elements must meet minimum color contrast ratio thresholds"
+        }
+      ],
+      "source_tested_at": "2026-11-10T08:05:56.350Z",
+      "tool_version": "4.14.0",
+      "limitations": [
+        "Pass gjelder navngitte regler/sidetilstand; incomplete krever vurdering, inapplicable er ikke global I-status."
+      ]
+    },
+    {
+      "id": "browser-dom",
+      "criteria": [
+        "1.1.1",
+        "1.3.1",
+        "2.4.2",
+        "2.4.4",
+        "2.4.6",
+        "2.5.3",
+        "3.1.1",
+        "4.1.1",
+        "4.1.2"
+      ],
+      "status": "completed",
+      "scope": [
+        "/",
+        "/ressurser/tilgjengelighetserklaering/",
+        "/ressurser/personvernerklaering/",
+        "/ressurser/kodegjennomgang/",
+        "/ressurser/tydelig-kontekst/",
+        "/ressurser/brukerbehov/",
+        "/spor/",
+        "/oversikt/godkjente-mcper/",
+        "/oversikt/godkjente-ki-assistenter/",
+        "/kom-i-gang/",
+        "/om/",
+        "/retningslinjer/",
+        "/personvern/",
+        "/oversikt/",
+        "/priser/",
+        "/tilgjengelighet/",
+        "/nettstedskart/",
+        "/versjonslogg/",
+        "/utviklingsplan/",
+        "/funksjonalitet/",
+        "/404/"
+      ],
+      "findings": [],
+      "reason": null,
+      "full_criterion_assessment": false,
+      "measurements_ref": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/raw/browser-input.json#checks[0].measurements",
+      "source_tested_at": "2026-11-10T07:04:05.690Z"
+    },
+    {
+      "id": "browser-contrast",
+      "criteria": [
+        "1.4.3"
+      ],
+      "status": "completed",
+      "scope": [
+        "/",
+        "/ressurser/tilgjengelighetserklaering/",
+        "/ressurser/personvernerklaering/",
+        "/ressurser/kodegjennomgang/",
+        "/ressurser/tydelig-kontekst/",
+        "/ressurser/brukerbehov/",
+        "/spor/",
+        "/oversikt/godkjente-mcper/",
+        "/oversikt/godkjente-ki-assistenter/",
+        "/kom-i-gang/",
+        "/om/",
+        "/retningslinjer/",
+        "/personvern/",
+        "/oversikt/",
+        "/priser/",
+        "/tilgjengelighet/",
+        "/nettstedskart/",
+        "/versjonslogg/",
+        "/utviklingsplan/",
+        "/funksjonalitet/",
+        "/404/"
+      ],
+      "findings": [],
+      "reason": null,
+      "full_criterion_assessment": false,
+      "measurements_ref": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/raw/browser-input.json#checks[1].measurements",
+      "source_tested_at": "2026-11-10T07:04:05.690Z"
+    },
+    {
+      "id": "browser-reflow",
+      "criteria": [
+        "1.3.4",
+        "1.4.10"
+      ],
+      "status": "completed",
+      "scope": [
+        "/@1280x800",
+        "/@320x800",
+        "/@800x320",
+        "/ressurser/tilgjengelighetserklaering/@1280x800",
+        "/ressurser/tilgjengelighetserklaering/@320x800",
+        "/ressurser/tilgjengelighetserklaering/@800x320",
+        "/ressurser/personvernerklaering/@1280x800",
+        "/ressurser/personvernerklaering/@320x800",
+        "/ressurser/personvernerklaering/@800x320",
+        "/ressurser/kodegjennomgang/@1280x800",
+        "/ressurser/kodegjennomgang/@320x800",
+        "/ressurser/kodegjennomgang/@800x320",
+        "/ressurser/tydelig-kontekst/@1280x800",
+        "/ressurser/tydelig-kontekst/@320x800",
+        "/ressurser/tydelig-kontekst/@800x320",
+        "/ressurser/brukerbehov/@1280x800",
+        "/ressurser/brukerbehov/@320x800",
+        "/ressurser/brukerbehov/@800x320",
+        "/spor/@1280x800",
+        "/spor/@320x800",
+        "/spor/@800x320",
+        "/oversikt/godkjente-mcper/@1280x800",
+        "/oversikt/godkjente-mcper/@320x800",
+        "/oversikt/godkjente-mcper/@800x320",
+        "/oversikt/godkjente-ki-assistenter/@1280x800",
+        "/oversikt/godkjente-ki-assistenter/@320x800",
+        "/oversikt/godkjente-ki-assistenter/@800x320",
+        "/kom-i-gang/@1280x800",
+        "/kom-i-gang/@320x800",
+        "/kom-i-gang/@800x320",
+        "/om/@1280x800",
+        "/om/@320x800",
+        "/om/@800x320",
+        "/retningslinjer/@1280x800",
+        "/retningslinjer/@320x800",
+        "/retningslinjer/@800x320",
+        "/personvern/@1280x800",
+        "/personvern/@320x800",
+        "/personvern/@800x320",
+        "/oversikt/@1280x800",
+        "/oversikt/@320x800",
+        "/oversikt/@800x320",
+        "/priser/@1280x800",
+        "/priser/@320x800",
+        "/priser/@800x320",
+        "/tilgjengelighet/@1280x800",
+        "/tilgjengelighet/@320x800",
+        "/tilgjengelighet/@800x320",
+        "/nettstedskart/@1280x800",
+        "/nettstedskart/@320x800",
+        "/nettstedskart/@800x320",
+        "/versjonslogg/@1280x800",
+        "/versjonslogg/@320x800",
+        "/versjonslogg/@800x320",
+        "/utviklingsplan/@1280x800",
+        "/utviklingsplan/@320x800",
+        "/utviklingsplan/@800x320",
+        "/funksjonalitet/@1280x800",
+        "/funksjonalitet/@320x800",
+        "/funksjonalitet/@800x320",
+        "/404/@1280x800",
+        "/404/@320x800",
+        "/404/@800x320"
+      ],
+      "findings": [],
+      "reason": null,
+      "full_criterion_assessment": false,
+      "measurements_ref": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/raw/browser-input.json#checks[2].measurements",
+      "source_tested_at": "2026-11-10T07:04:05.690Z"
+    },
+    {
+      "id": "browser-keyboard",
+      "criteria": [
+        "2.1.1",
+        "2.1.2",
+        "2.4.3",
+        "2.4.7",
+        "3.2.1"
+      ],
+      "status": "completed",
+      "scope": [
+        "/",
+        "/ressurser/tilgjengelighetserklaering/",
+        "/ressurser/personvernerklaering/",
+        "/ressurser/kodegjennomgang/",
+        "/ressurser/tydelig-kontekst/",
+        "/ressurser/brukerbehov/",
+        "/spor/",
+        "/oversikt/godkjente-mcper/",
+        "/oversikt/godkjente-ki-assistenter/",
+        "/kom-i-gang/",
+        "/om/",
+        "/retningslinjer/",
+        "/personvern/",
+        "/oversikt/",
+        "/priser/",
+        "/tilgjengelighet/",
+        "/nettstedskart/",
+        "/versjonslogg/",
+        "/utviklingsplan/",
+        "/funksjonalitet/",
+        "/404/"
+      ],
+      "findings": [],
+      "reason": null,
+      "full_criterion_assessment": false,
+      "measurements_ref": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/raw/browser-input.json#checks[3].measurements",
+      "source_tested_at": "2026-11-10T07:04:05.690Z"
+    },
+    {
+      "id": "browser-states",
+      "criteria": [
+        "2.1.1",
+        "2.2.2",
+        "2.4.3",
+        "3.2.2",
+        "3.3.1",
+        "3.3.3",
+        "4.1.3"
+      ],
+      "status": "completed",
+      "scope": [
+        "Animasjon pause og start med Enter",
+        "Katalogfilter med tastatur",
+        "Chatdialog, feil og lukking"
+      ],
+      "findings": [],
+      "reason": null,
+      "full_criterion_assessment": false,
+      "tested_criteria": [
+        "2.1.1",
+        "2.2.2",
+        "3.2.2",
+        "3.3.1",
+        "3.3.3",
+        "4.1.3"
+      ],
+      "measurements_ref": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/raw/browser-input.json#checks[4].measurements",
+      "source_tested_at": "2026-11-10T07:04:05.690Z"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+allowBuilds:
+  chromedriver: true
+  vnu-jar: true
+
+# Keep the existing project-local dependency store.
+storeDir: .pnpm-store

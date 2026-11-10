@@ -1,0 +1,1202 @@
+[
+  {
+    "route": "/",
+    "at": "2026-11-10T08:46:20.778Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "17px",
+        "letter": "2.04px",
+        "line": "25.5px",
+        "margin": "34px",
+        "word": "2.72px"
+      },
+      {
+        "font": "14px",
+        "letter": "1.68px",
+        "line": "21px",
+        "margin": "28px",
+        "word": "2.24px"
+      },
+      {
+        "font": "14px",
+        "letter": "1.68px",
+        "line": "21px",
+        "margin": "28px",
+        "word": "2.24px"
+      }
+    ],
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "route": "/ressurser/tilgjengelighetserklaering/",
+    "at": "2026-11-10T08:46:20.860Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "route": "/ressurser/personvernerklaering/",
+    "at": "2026-11-10T08:46:20.930Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "route": "/ressurser/kodegjennomgang/",
+    "at": "2026-11-10T08:46:20.994Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "route": "/ressurser/tydelig-kontekst/",
+    "at": "2026-11-10T08:46:21.058Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "route": "/ressurser/brukerbehov/",
+    "at": "2026-11-10T08:46:21.141Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "route": "/spor/",
+    "at": "2026-11-10T08:46:21.179Z",
+    "clipped": [
+      {
+        "tag": "TEXTAREA",
+        "text": ""
+      }
+    ],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "14px",
+        "letter": "1.68px",
+        "line": "21px",
+        "margin": "28px",
+        "word": "2.24px"
+      },
+      {
+        "font": "14px",
+        "letter": "1.68px",
+        "line": "21px",
+        "margin": "28px",
+        "word": "2.24px"
+      }
+    ],
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "route": "/oversikt/godkjente-mcper/",
+    "at": "2026-11-10T08:46:21.256Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "route": "/oversikt/godkjente-ki-assistenter/",
+    "at": "2026-11-10T08:46:21.290Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "route": "/kom-i-gang/",
+    "at": "2026-11-10T08:46:21.375Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "route": "/om/",
+    "at": "2026-11-10T08:46:21.448Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "route": "/retningslinjer/",
+    "at": "2026-11-10T08:46:21.521Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "route": "/personvern/",
+    "at": "2026-11-10T08:46:21.594Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "route": "/oversikt/",
+    "at": "2026-11-10T08:46:21.642Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "11px",
+        "letter": "1.32px",
+        "line": "16.5px",
+        "margin": "22px",
+        "word": "1.76px"
+      },
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "11px",
+        "letter": "1.32px",
+        "line": "16.5px",
+        "margin": "22px",
+        "word": "1.76px"
+      }
+    ],
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "route": "/priser/",
+    "at": "2026-11-10T08:46:21.710Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "11px",
+        "letter": "1.32px",
+        "line": "16.5px",
+        "margin": "22px",
+        "word": "1.76px"
+      },
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "route": "/tilgjengelighet/",
+    "at": "2026-11-10T08:46:21.802Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "route": "/nettstedskart/",
+    "at": "2026-11-10T08:46:21.875Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "route": "/versjonslogg/",
+    "at": "2026-11-10T08:46:22.084Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "route": "/utviklingsplan/",
+    "at": "2026-11-10T08:46:22.310Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "route": "/funksjonalitet/",
+    "at": "2026-11-10T08:46:22.403Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "route": "/404/",
+    "at": "2026-11-10T08:46:22.481Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "route": "/",
+    "at": "2026-11-10T08:46:22.553Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "18px",
+        "letter": "2.16px",
+        "line": "27px",
+        "margin": "36px",
+        "word": "2.88px"
+      },
+      {
+        "font": "14px",
+        "letter": "1.68px",
+        "line": "21px",
+        "margin": "28px",
+        "word": "2.24px"
+      },
+      {
+        "font": "14px",
+        "letter": "1.68px",
+        "line": "21px",
+        "margin": "28px",
+        "word": "2.24px"
+      }
+    ],
+    "scroll": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/ressurser/tilgjengelighetserklaering/",
+    "at": "2026-11-10T08:46:22.644Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/ressurser/personvernerklaering/",
+    "at": "2026-11-10T08:46:22.715Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/ressurser/kodegjennomgang/",
+    "at": "2026-11-10T08:46:22.783Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/ressurser/tydelig-kontekst/",
+    "at": "2026-11-10T08:46:22.849Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/ressurser/brukerbehov/",
+    "at": "2026-11-10T08:46:22.920Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/spor/",
+    "at": "2026-11-10T08:46:22.985Z",
+    "clipped": [
+      {
+        "tag": "TEXTAREA",
+        "text": ""
+      }
+    ],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "14px",
+        "letter": "1.68px",
+        "line": "21px",
+        "margin": "28px",
+        "word": "2.24px"
+      },
+      {
+        "font": "14px",
+        "letter": "1.68px",
+        "line": "21px",
+        "margin": "28px",
+        "word": "2.24px"
+      }
+    ],
+    "scroll": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/oversikt/godkjente-mcper/",
+    "at": "2026-11-10T08:46:23.058Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/oversikt/godkjente-ki-assistenter/",
+    "at": "2026-11-10T08:46:23.123Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/kom-i-gang/",
+    "at": "2026-11-10T08:46:23.162Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/om/",
+    "at": "2026-11-10T08:46:23.215Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/retningslinjer/",
+    "at": "2026-11-10T08:46:23.259Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/personvern/",
+    "at": "2026-11-10T08:46:23.312Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/oversikt/",
+    "at": "2026-11-10T08:46:23.379Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "14px",
+        "letter": "1.68px",
+        "line": "21px",
+        "margin": "28px",
+        "word": "2.24px"
+      },
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "14px",
+        "letter": "1.68px",
+        "line": "21px",
+        "margin": "28px",
+        "word": "2.24px"
+      }
+    ],
+    "scroll": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/priser/",
+    "at": "2026-11-10T08:46:23.447Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "14px",
+        "letter": "1.68px",
+        "line": "21px",
+        "margin": "28px",
+        "word": "2.24px"
+      },
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/tilgjengelighet/",
+    "at": "2026-11-10T08:46:23.517Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/nettstedskart/",
+    "at": "2026-11-10T08:46:23.575Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/versjonslogg/",
+    "at": "2026-11-10T08:46:23.783Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/utviklingsplan/",
+    "at": "2026-11-10T08:46:24.018Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/funksjonalitet/",
+    "at": "2026-11-10T08:46:24.099Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/404/",
+    "at": "2026-11-10T08:46:24.173Z",
+    "clipped": [],
+    "paragraphs": [
+      {
+        "font": "21px",
+        "letter": "2.52px",
+        "line": "31.5px",
+        "margin": "42px",
+        "word": "3.36px"
+      },
+      {
+        "font": "16px",
+        "letter": "1.92px",
+        "line": "24px",
+        "margin": "32px",
+        "word": "2.56px"
+      }
+    ],
+    "scroll": 1280,
+    "width": 1280
+  }
+]

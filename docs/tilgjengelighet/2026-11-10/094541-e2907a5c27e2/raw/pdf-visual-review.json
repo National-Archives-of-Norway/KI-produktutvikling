@@ -1,0 +1,15 @@
+{
+  "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+  "method": "Visuell ny gjennomgang av alle syv eksisterende PNG-er etter bekreftet identisk PDF SHA-256 ba267d899460e54a911c548c5ddecfd9a83159ec3b6d7b6e30d9d4f34d0c648a. Ingen ny rendering påstås.",
+  "rendering_source": "../080757-ffaeb036427a/screenshots/after-1.png .. after-7.png",
+  "pages": {
+    "1": "Tittel, mandatmerking, innledning; dekorlinjer/koala gjentar ikke vesentlig tekst.",
+    "2": "Formalia i tekstblokker; visuelt ingen overlapp/tap.",
+    "3": "Tre fokusområder har tekstnavn og beskrivelser ved siden av symbolene.",
+    "4": "Fem nummererte arbeidsmåter med forklaring.",
+    "5": "Fem avgrensninger med hvit tekst på grønn bakgrunn; tidligere kontrastretting bevart.",
+    "6": "Sentralt team og syv navngitte fagmiljøer i ovaler, alle navn/beskrivelser er tekst. Det er ingen piler; sentral plassering/relasjon må også kunne forstås lineært.",
+    "7": "Tre fokusområder med tolv punkter; liste- og ParentTree-retting beholdt."
+  },
+  "remaining": "Faktisk opplesing, leserekkefølge, rolle/liste-navigasjon og vurdering av full likeverdig diagramforklaring er ikke utført."
+}

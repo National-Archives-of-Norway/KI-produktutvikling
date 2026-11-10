@@ -1,0 +1,44 @@
+▲ Next.js 16.4.3 (Turbopack)
+✓ Running next.config.ts took 403ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 988ms
+  Running TypeScript ...
+  Finished TypeScript in 3.6s ...
+  Collecting page data using 17 workers ...
+  Generating static pages using 17 workers (0/25) ...
+  Generating static pages using 17 workers (6/25) 
+  Generating static pages using 17 workers (12/25) 
+  Generating static pages using 17 workers (18/25) 
+✓ Generating static pages using 17 workers (25/25) in 250ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /apple-icon.png
+├ ○ /funksjonalitet
+├ ○ /icon.svg
+├ ○ /kom-i-gang
+├ ○ /nettstedskart
+├ ○ /om
+├ ○ /oversikt
+├ ○ /oversikt/godkjente-ki-assistenter
+├ ○ /oversikt/godkjente-mcper
+├ ○ /personvern
+├ ○ /priser
+├   /ressurser/[slug]
+│ ├ ● /ressurser/tilgjengelighetserklaering
+│ ├ ● /ressurser/personvernerklaering
+│ ├ ● /ressurser/kodegjennomgang
+│ └ ● [+2 more paths]
+├ ○ /retningslinjer
+├ ○ /spor
+├ ○ /tilgjengelighet
+├ ○ /utviklingsplan
+└ ○ /versjonslogg
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+

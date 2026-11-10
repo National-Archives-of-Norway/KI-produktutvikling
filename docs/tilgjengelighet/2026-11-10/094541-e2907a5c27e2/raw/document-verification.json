@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-11-10T09:05:20.223771+00:00",
+  "criteria": 48,
+  "counts": {
+    "K": 22,
+    "I": 11,
+    "U": 15,
+    "B": 0
+  },
+  "references_checked": 341,
+  "missing": [],
+  "manifest_sha256": "f0b5b158052238d104b7f8c9167e140936dcb6888ff5f7653d02170e25df48fe",
+  "original_manifest_preserved": true,
+  "css_restored_identical": true,
+  "automatic_partial": 34,
+  "manual_remaining": 36,
+  "complete_local_sample": 1,
+  "no_trigger": 11,
+  "native_postverification": {
+    "axe_pages": 21,
+    "violations": 0,
+    "incomplete_groups": 3,
+    "incomplete_occurrences": 80,
+    "vnu_errors": 0,
+    "vnu_info_warning": 191,
+    "incomplete_targets_identical_to_gradient_input": true,
+    "native_run": "docs/tilgjengelighet/2026-11-10/100139-native-b7a19485",
+    "date": "2026-11-10T09:03:50.830082+00:00"
+  }
+}

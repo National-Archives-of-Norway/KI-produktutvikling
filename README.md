@@ -6,7 +6,7 @@ Se [versjonsloggen](VERSJONSLOGG.md) for endringer, kontroller og utførende age
 
 ## Start lokalt
 
-Forutsetninger: Node.js 22 eller nyere og pnpm. Installer avhengighetene én gang:
+Forutsetninger: Node.js 22.18.0 eller nyere og pnpm. Installer avhengighetene én gang:
 
 ```sh
 pnpm install --frozen-lockfile
@@ -194,7 +194,7 @@ Prissiden finnes på `/priser/`, med inngang fra Oversikt, nettstedskartet og fu
 
 - `src/content/pricing/snapshot.json` er felles prisgrunnlag for siden og Spør KI. Hver kildegruppe har kilde-URL, `checkedAt` (siste vellykkede henting og parsing), `attemptedAt` og status.
 - `scripts/pricing/sources.mjs` angir de seks offisielle kildene. `parse.mjs` inneholder avgrensede parserregler og utvalget av planer/modeller; nye modeller må vurderes og legges til eksplisitt. Endrede felt eller manglende valgte modeller gir feil, ikke gratispriser.
-- Kjør `pnpm pricing:sync` lokalt for å hente nye priser. Krever utgående HTTPS og Node 22 eller nyere. Ingen modellnøkkel eller GitHub-tilgang brukes av innhentingen. Kontroller diffen og kildestatus før commit. Lokal visning følger innholdsendringer; delt miljø krever nytt bygg og samordnet utrulling av Next.js og RAG.
+- Kjør `pnpm pricing:sync` lokalt for å hente nye priser. Krever utgående HTTPS og Node 22.18.0 eller nyere. Ingen modellnøkkel eller GitHub-tilgang brukes av innhentingen. Kontroller diffen og kildestatus før commit. Lokal visning følger innholdsendringer; delt miljø krever nytt bygg og samordnet utrulling av Next.js og RAG.
 - Ved HTTP-/parsefeil beholdes tidligere prisrader og vellykket kontrolltidspunkt, siste forsøk registreres, og kommandoen avslutter med feil. Siden viser feilen først når dette snapshotet inngår i miljøets bygg. Ingen vellykket kontroll registreres bare fordi kilden svarte med en side.
 - Endrede prisrader gir en automatisk oppføring i `VERSJONSLOGG.md`. Rene tidspunkt/statusendringer trenger ingen ny vesentlig endringsoppføring. Kildeformat, funksjon eller omfang som endres manuelt skal også føres i loggen og avstemmes med utviklingsplanen.
 - `pnpm test:pricing` tester parsere og feilhåndtering uten nettverk. `pnpm test:rag` inkluderer også disse testene. Fixture-utdragene er testgrunnlag fra 9. november 2026, ikke en alternativ priskilde.
@@ -253,7 +253,7 @@ Nye kjøringer av `run_checks.py` får `testplan.json`, et prosedyreøyeblikksbi
 
 ### Gjennomgang med skill 0.4.0 – alle 48 krav
 
-Siste faktiske vurdering: [221027-5ce9daf9d5dc](docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/testrapport.md), 9. november 2026. `docs/tilgjengelighet/latest.json` peker hit. [Testplanen](docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/testplan.json) har forventet/faktisk resultat, metode, evidens og neste steg for alle 48 krav. At et krav er gjennomgått betyr ikke at all nødvendig testing er fullført.
+Historisk vurdering: [221027-5ce9daf9d5dc](docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/testrapport.md), 9. november 2026. `docs/tilgjengelighet/latest.json` viser den nyeste kjøringen. [Testplanen](docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/testplan.json) har forventet/faktisk resultat, metode, evidens og neste steg for alle 48 krav. At et krav er gjennomgått betyr ikke at all nødvendig testing er fullført.
 
 20 sider er undersøkt med 60 responsive DOM-kontroller, 40 tekstavstandskontroller, 160 Tab-steg og utvalgte dynamiske forløp. PDF-en er undersøkt videre. To nye avvik er åpne: A11Y-04 (listestruktur, PDF-side 7) og A11Y-05 (tekstkontrast, PDF-side 5). Arbeidsstatus er 20 K / 11 I / 15 U / 2 B, ikke samsvarsprosent. Tidligere overskrifts-/tittel-/språkrettinger er bevart. PDF-en er ikke endret i dette testoppdraget. Faktisk skjermleser, zoom og videre dekning gjenstår; konkrete instrukser finnes i planen og prosedyreøyeblikksbildet. Erklæringen beskriver barrierene kort, uten interne testtall og rettingshistorikk.
 
@@ -271,6 +271,28 @@ Skillen er faktisk kjørt: 20 sider, 23 eksportfiler, 60 viewport-kontroller, 16
 
 ### Retest etter retting – 10. november 2026
 
-Siste vurderte kjøring: [080757-ffaeb036427a](docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/testrapport.md). A11Y-04–06 er rettet og målrettet retestet: PDF-lister er kodet som tre lister med tolv punkter, tekstkontrast på side 5 er 6,28:1, og feilsiden har norsk tekst og én beskrivende tittel. Ingen bekreftede åpne avvik i undersøkt utvalg; samlet samsvar er fortsatt uavklart. [Manuell restliste](docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/manuell-oppfolging.md) beholder øvrige 37 vurderings-/retestpunkter og 11 krav uten utløsende innholdstype lokalt.
+Historisk retest før installasjon av motorene: [080757-ffaeb036427a](docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/testrapport.md). A11Y-04–06 er rettet og målrettet retestet: PDF-lister er kodet som tre lister med tolv punkter, tekstkontrast på side 5 er 6,28:1, og feilsiden har norsk tekst og én beskrivende tittel. Ingen bekreftede åpne avvik i undersøkt utvalg; samlet samsvar er fortsatt uavklart. [Manuell restliste](docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/manuell-oppfolging.md) beholder øvrige 37 vurderings-/retestpunkter og 11 krav uten utløsende innholdstype lokalt.
 
 HTML-grunnkontrollen avviser nå også tomme og dupliserte sidetitler, inkludert eksporterte feilsider. Kjør `python3 -m unittest discover -s tests -p 'test_html_accessibility.py'` for regresjonstestene og `python3 scripts/check-accessibility.py --root out` etter Pages-bygg. Utrullingsmiljøets faktiske 404-fallback, skjermleser og øvrige manuelle kontroller må fortsatt prøves. PDF-en er 139 kB; tekst/sidegeometri og tidligere overskrifter/tittel er bevart.
+
+### Lokale axe- og HTML-skann
+
+Verktøyene er låst som utviklingsavhengigheter: `@axe-core/cli` 4.14.0, `vnu-jar` 26.11.9 og `chromedriver` 157.0.0. Node må være minst 22.18.0, og Nu krever Java 17 eller nyere. Verktøypakken har installert en lokal Java 17-runtime på denne maskinen. Installer med `pnpm install --frozen-lockfile`. Prosjektets `pnpm-workspace.yaml` tillater bare installasjonsskriptene for chromedriver og vnu-jar og beholder prosjektets lokale pakklager. Driver og Java-runtime lastes ned ved oppsett; ingen global Java-installasjon eller repo-/GitHub-tilgang kreves.
+
+Kjør `pnpm build:pages`, deretter `pnpm test:a11y`. Skriptet starter en midlertidig webserver kun på 127.0.0.1, serverer bare eksporten fra `out/` og kjører axe i separat headless Chrome. Sidene og 404-fallback kommer fra funksjonsregisteret. Nu Html Checker leser eksportfilene lokalt. Innhold lastes ikke opp til en ekstern skanntjeneste, og statisk demo gjør ingen modell-API-kall. Dette tester vanlige sidetilstander i eksportvarianten; åpne dialoger, innlogging, skjermleser og modellgenererte svar krever egne tester.
+
+Chrome/Chromium må finnes lokalt. Sett eventuelt `A11Y_CHROME_PATH` til installert nettleser. Den låste driverens hovedversjon må passe nettleseren; oppdater driveren bevisst hvis Chrome oppgraderes. Faktisk nettleser/viewport og motorversjon bevares i originale axe-resultater. Ingen brukerprofil gjenbrukes.
+
+Hver kjøring oppretter en unik mappe i `docs/tilgjengelighet/ÅÅÅÅ-MM-DD/<tid>-native-<id>/`, med `native-manifest.json`, original `raw/axe.json`, én uendret axe-resultatoppføring per side og vnu-resultat/stdout/stderr. Exit 0 betyr fullført i delomfanget; 1 betyr funn/uavklarte kontroller/validatornoter til vurdering; 2 betyr teknisk feil. Manifestets `overall_conformance` er alltid uavklart. En feilet deltest hindrer ikke forsøk på den andre motoren. Ikke bruk en tom/feilet rapport som bestått skann.
+
+`pnpm test:a11y:smoke` prøver begge faktiske motorene på en egen syntetisk side med manglende alt-tekst. Testen lykkes bare hvis begge finner den tilsiktede feilen. Dette er en verktøytest, ikke et funn i portalen. `node --test tests/a11y-tools.test.mjs` kontrollerer protokollfeil, ufullstendige/dupliserte sideresultater, validatorstatuser og avgrensning av eksportutvalget.
+
+Assistenten vurderer de fullstendige native-resultatene sammen med tilgjengelighetsskillens daterte grunnlag. Skillens nåværende `--axe-report` tar én original axe-resultatoppføring; gi eksempelvis `raw/axe-01.json`, og behold manifest og full `raw/axe.json` som evidens for alle sidene. Import av én oppføring skal aldri beskrives som hele flersideskannet. Kjør skillens Python-hjelper via `pnpm exec python3 ...` slik at prosjektets lokale `vnu` er på PATH. Oppdater deretter kravmatrise og erklæring fra vurderte resultater, ikke automatisk fra antall beståtte regler.
+
+Tidligere vurdert motorgrunnlag: [090740-ca8d9c80ecb6](docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6/testrapport.md), med [full native-kjøring](docs/tilgjengelighet/2026-11-10/090555-native-d984a7c5/native-manifest.json). Axe rapporterte 0 violations, men tre uavklarte kontrastgrupper / 80 elementforekomster; Nu rapporterte 0 HTML-feil og 191 tekniske info-/advarselsnoter. Begge motorer er faktisk kjørt. Samlet samsvar er fortsatt uavklart; [restlisten](docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6/manuell-oppfolging.md) viser alle 48 krav, med 37 bredere vurderings-/retestpunkter og 11 uten utløsende innholdstype lokalt. 34 krav har delgrunnlag fra nye og/eller tidligere automatiske tester; dette er ingen samsvarsprosent.
+
+Minimum Node 22.18.0 dekker også direkte TypeScript-importer i test-/ruteskriptene uten ekstra flagg, se [Node-dokumentasjonen](https://nodejs.org/docs/latest-v22.x/api/typescript.html). Daterte auditmapper er unntatt Prettier fordi originalrapporter, verktøyutskrifter og prosedyreøyeblikksbilder skal bevares; rotens vedlikeholdte rapporter og kildekoden kontrolleres fortsatt.
+
+## Lokal oppfølging av tilgjengelighet – 10. november 2026
+
+Siste vurdering er [094541-e2907a5c27e2](docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2/testrapport.md); `latest.json` peker hit. Nye nettleser-/tekstavstands-/dynamiske kontroller, konservative kontrastgrenser for 80 forekomster og isolert simulert prisalder er dokumentert. 22 K / 11 I / 15 U / 0 B er arbeidsstatus, ikke samsvarsprosent. 1.4.12 er K for prøvd lokal HTML-versjon. [Restlisten](docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2/manuell-oppfolging.md) skiller konkrete verktøy-/miljøhindringer fra videre faglig vurdering. Faktisk skjermleser, zoom og enhetsinnstillinger er ikke påstått testet. Native Chrome-tilgang ble avvist automatisk. Midlertidig CSS er tilbakeført med identisk hash; isolert testserver er stoppet. Eksisterende axe/Nu-bevis beholder opprinnelig dato; 80 incomplete-resultater er ikke omskrevet til motorpass.

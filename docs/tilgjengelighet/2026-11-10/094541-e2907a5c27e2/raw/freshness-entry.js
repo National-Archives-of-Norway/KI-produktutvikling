@@ -1,0 +1,6 @@
+import React from 'react';import{createRoot}from'react-dom/client';import{PricingFreshness}from'./component.js';
+const day=86400000,checked=Date.parse('2026-11-01T00:00:00Z');let now=checked+7*day-1;const callbacks=new Map();let seq=0,ticks=0;Date.now=()=>now;window.setInterval=(fn,ms)=>{const id=++seq;callbacks.set(id,{fn,ms});update();return id};window.clearInterval=id=>{callbacks.delete(id);update()};
+function update(){document.querySelector('#status').textContent=JSON.stringify({simulated:true,elapsedMilliseconds:now-checked,intervals:[...callbacks.values()].map(v=>v.ms),ticks})}
+let root=createRoot(document.querySelector('#mount'));root.render(React.createElement(PricingFreshness,{checkedAt:'2026-11-01T00:00:00Z'}));
+for(const [id,offset]of[['before',7*day-1],['at',7*day],['after',7*day+1]])document.querySelector('#'+id).onclick=()=>{now=checked+offset;update()};
+document.querySelector('#tick').onclick=()=>{for(const v of callbacks.values())v.fn();ticks++;update()};document.querySelector('#unmount').onclick=()=>{root.unmount();update()};update();

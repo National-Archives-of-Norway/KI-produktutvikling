@@ -1,0 +1,18 @@
+{
+  "animationStates": [
+    {
+      "class": "hero-art-halo",
+      "state": "paused"
+    },
+    {
+      "class": "hero-art-node hero-art-node-one",
+      "state": "paused"
+    },
+    {
+      "class": "hero-art-node hero-art-node-two",
+      "state": "paused"
+    }
+  ],
+  "focus": "",
+  "label": "Start animasjonen i forsideillustrasjonen"
+}

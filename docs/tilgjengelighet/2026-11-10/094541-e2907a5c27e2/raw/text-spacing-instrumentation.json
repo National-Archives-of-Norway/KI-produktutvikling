@@ -1,0 +1,8 @@
+{
+  "source": "src/app/globals.css",
+  "original_sha256": "97bd41fc5396db7fcd78c5a5d8e21fd738e5985c2148078d94adf656070dd40e",
+  "instrumented_sha256": "06d9a2b4cb11b8f562d8be8ecb8479202f8722f0633594fbc7b1f2daceef615c",
+  "temporary": true,
+  "restored_sha256": "97bd41fc5396db7fcd78c5a5d8e21fd738e5985c2148078d94adf656070dd40e",
+  "restored_identical": true
+}

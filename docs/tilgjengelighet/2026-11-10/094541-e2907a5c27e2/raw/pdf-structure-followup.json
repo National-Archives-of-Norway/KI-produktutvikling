@@ -1,0 +1,332 @@
+{
+  "sha256": "ba267d899460e54a911c548c5ddecfd9a83159ec3b6d7b6e30d9d4f34d0c648a",
+  "pages": 7,
+  "root_lang": "en",
+  "roles": {
+    "": 1,
+    "/Slide": 7,
+    "/Figure": 61,
+    "/Textbox": 80,
+    "/P": 74,
+    "/Span": 122,
+    "/H1": 1,
+    "/H2": 6,
+    "/H3": 20,
+    "/Sect": 3,
+    "/L": 3,
+    "/LI": 12,
+    "/Lbl": 12,
+    "/LBody": 12
+  },
+  "languages": {
+    "nb": 120
+  },
+  "figures": [
+    {
+      "page": 1,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 1,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 1,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 1,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 1,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 1,
+      "alt": "Koala with solid fill",
+      "effective_lang": "en"
+    },
+    {
+      "page": 2,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 2,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 2,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 2,
+      "alt": "Koala with solid fill",
+      "effective_lang": "en"
+    },
+    {
+      "page": 3,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 3,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 3,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 3,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 3,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 3,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 3,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 3,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 3,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 3,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 3,
+      "alt": "Koala with solid fill",
+      "effective_lang": "en"
+    },
+    {
+      "page": 4,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 4,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 4,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 4,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 4,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 4,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 4,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 4,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 4,
+      "alt": "Koala with solid fill",
+      "effective_lang": "en"
+    },
+    {
+      "page": 5,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 5,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 5,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 5,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 5,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 5,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 5,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 5,
+      "alt": "Koala with solid fill",
+      "effective_lang": "en"
+    },
+    {
+      "page": 5,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 6,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 6,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 6,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 6,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 6,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 6,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 6,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 6,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 6,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 6,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 6,
+      "alt": "Koala with solid fill",
+      "effective_lang": "en"
+    },
+    {
+      "page": 6,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 7,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 7,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 7,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 7,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 7,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 7,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 7,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 7,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 7,
+      "alt": "",
+      "effective_lang": "en"
+    },
+    {
+      "page": 7,
+      "alt": "Koala with solid fill",
+      "effective_lang": "en"
+    }
+  ],
+  "limit": "Structure and metadata only; not actual screen reader or PDF/UA validation."
+}

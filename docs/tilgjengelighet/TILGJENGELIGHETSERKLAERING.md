@@ -20,6 +20,8 @@ Du kan be om hjelp eller innhold i et annet format gjennom kontaktkanalen nedenf
 
 Det er foreløpig ikke bekreftet hvordan alle deler av nettstedet fungerer med skjermleser, forstørring og innstillinger for redusert bevegelse. PDF-vedleggets leserekkefølge, språk og diagramalternativer er heller ikke ferdig vurdert. Dette er usikkerhet i vurderingsgrunnlaget, ikke bekreftede problemer i alle disse funksjonene.
 
+Kontrast i enkelte interaktive tilstander og ved overlappende effekter er ikke ferdig vurdert.
+
 Du kan lese ressursene gjennom ressurskatalogen eller nettstedskartet uten å bruke chatten. Animasjonen på forsiden kan pauses ved å klikke på illustrasjonen, eller ved å velge den med Tab og trykke mellomrom eller Enter.
 
 ## Meld fra om problemer eller be om tilgjengelig innhold
@@ -34,6 +36,6 @@ Hvis du ikke får svar, er misfornøyd med svaret eller ikke kan bruke nettstede
 
 ## Vurdering og oppdatering
 
-Tilgjengeligheten ble sist vurdert **10. november 2026**. Grunnlaget omfatter automatiske deltester av nettsidene, lokale tastaturkontroller og målrettet retest av feilsiden og PDF-ens listestruktur og tekstkontrast. Tidligere undersøkelser av øvrig PDF-innhold inngår også i grunnlaget. Faktisk skjermleserbruk er ikke testet.
+Tilgjengeligheten ble sist vurdert **10. november 2026**. Grunnlaget omfatter lokale nettleser- og tastaturkontroller, prøving med økt tekstavstand, kontrastberegninger, kontroll av animasjonens pausefunksjon, simulering av prisaldervarselet, tidligere axe-skann og HTML-validering med Nu Html Checker samt målrettede PDF-kontroller. Tidligere undersøkelser av øvrig innhold inngår også i grunnlaget. Faktisk skjermleserbruk er ikke testet.
 
 Teksten ble sist oppdatert **10. november 2026**.

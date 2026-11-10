@@ -1,0 +1,6 @@
+{
+  "source": "src/components/pricing-freshness.tsx",
+  "sha256": "b09d2f8bdb3f30c80d0744a8eab2f7502f44ebfcdd299667ce80deae1ee9691b",
+  "typescript": "5.9.3",
+  "simulation": "Date.now and setInterval replaced only within dedicated test page; exact original component transpiled"
+}

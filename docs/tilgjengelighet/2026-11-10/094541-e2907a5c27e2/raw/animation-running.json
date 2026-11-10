@@ -1,0 +1,20 @@
+{
+  "label": "Pause animasjonen i forsideillustrasjonen",
+  "nodes": [
+    {
+      "cls": "hero-art-halo",
+      "name": "hero-halo-turn",
+      "state": "running"
+    },
+    {
+      "cls": "hero-art-node hero-art-node-one",
+      "name": "hero-node-one",
+      "state": "running"
+    },
+    {
+      "cls": "hero-art-node hero-art-node-two",
+      "name": "hero-node-two",
+      "state": "running"
+    }
+  ]
+}

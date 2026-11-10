@@ -16,10 +16,12 @@
     "format:check": "prettier --check .",
     "check": "pnpm format:check && pnpm typecheck && pnpm build",
     "pricing:sync": "node scripts/pricing/sync.mjs",
-    "test:pricing": "node --test tests/pricing.test.mjs"
+    "test:pricing": "node --test tests/pricing.test.mjs",
+    "test:a11y": "node scripts/a11y/native.mjs",
+    "test:a11y:smoke": "node scripts/a11y/smoke.mjs"
   },
   "engines": {
-    "node": ">=22"
+    "node": ">=22.18.0"
   },
   "dependencies": {
     "@digitalarkivet/mui-theme": "5.1.0",
@@ -34,11 +36,14 @@
     "react-dom": "19.3.1"
   },
   "devDependencies": {
+    "@axe-core/cli": "4.14.0",
     "@types/node": "22.20.5",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
+    "chromedriver": "157.0.0",
     "prettier": "3.9.10",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "vnu-jar": "26.11.9"
   },
   "packageManager": "pnpm@11.25.0"
 }

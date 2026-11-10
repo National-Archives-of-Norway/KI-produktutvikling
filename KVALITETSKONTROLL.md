@@ -1,5 +1,15 @@
 # Kravvis gjennomgang med skill 0.4.0 – 9. november 2026
 
+## Ny lokal oppfølging – 10. november 2026
+
+[Ny rapport](docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2/testrapport.md) og [konkret restliste](docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2/manuell-oppfolging.md): 21 sider / 63 viewport-kontroller / 168 Tab-steg, 42 tekstavstandsmålinger og utvalgte dynamiske forløp. Ingen ny bekreftet feil; 1.4.12 er K i prøvd lokalt utvalg. 80 gradientforekomster har minst 8,207:1 i avgrenset bakgrunnsmodell. Faktisk pause/start og prisalder med simulert klokke er prøvd. PDF-struktur og syv eksisterende renderinger er kontrollert ved identisk hash. Arbeidsstatus 22 K / 11 I / 15 U / 0 B, ikke samsvarsgodkjenning. Faktisk skjermleser, zoom, enhetsinnstillinger og produksjon gjenstår; Chrome-tilgang ble avvist automatisk. Tidligere avsnitt er historikk.
+
+## Axe og Nu HTML-validator – 10. november 2026
+
+[Oppdatert rapport](docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6/testrapport.md) og [manuell restliste](docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6/manuell-oppfolging.md). Begge tidligere blokkerte motorer er installert og kjørt lokalt. Axe på 21 sidetilstander ga 0 violations, men tre uavklarte kontrastgrupper / 80 elementforekomster. Nu på 23 eksportfiler ga 0 HTML-feil og 191 tekniske info-/advarselsnoter. Disse er ikke registrert som bekreftede WCAG-brudd. Faktisk negativ verktøytest fant tilsiktet manglende alt med begge motorene.
+
+Arbeidsstatus er nå 21 K / 11 I / 16 U / 0 B; 4.1.1 er K for eksporten, mens øvrige uavklarte forhold består. Ingen full tilgjengelighetsgodkjenning. 52 Node-tester, tre Python-tester, TypeScript/produksjonsbygg og HTML-grunnkontroll bestod. Tidligere resultater nedenfor er historikk, ikke nykjørte manuelle tester.
+
 ## Målrettet retest etter retting – 10. november 2026
 
 [Ny rapport](docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/testrapport.md): A11Y-04, A11Y-05 og A11Y-06 er rettet i oppgitt lokalt omfang. Tre PDF-lister/12 punkter, 229 MCID-koblinger, 6,28:1 tekstkontrast på side 5 og norsk 404 med én tittel er verifisert. Ingen bekreftede åpne brudd i gjennomført utvalg; 20 K / 11 I / 17 U / 0 B er fortsatt ikke en full samsvarsvurdering. 21 sidetilstander, 63 viewport-kontroller, 168 Tab-steg og tre deklarerte brukerforløp er retestet. Historiske åpne funn nedenfor beskriver tilstanden før denne rettingen.

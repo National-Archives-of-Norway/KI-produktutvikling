@@ -1,0 +1,2358 @@
+[
+  {
+    "size": 1280,
+    "at": "2026-11-10T09:00:02.102Z",
+    "measure": {
+      "animations": [],
+      "contrast": {
+        "measured": [
+          {
+            "background": [
+              157,
+              241,
+              173
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              29,
+              29,
+              29,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.538164303847376,
+            "tag": "a",
+            "text": "Hopp til innhold"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "18px",
+            "fontWeight": "700",
+            "foreground": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 18.506965525735616,
+            "tag": "a",
+            "text": "KI-Produktutvikling"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Kom i gang"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Retningslinjer"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Ressurskatalog"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Oversikt"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Spør KI"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Om"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 18.506965525735616,
+            "tag": "a",
+            "text": "← Til forsiden"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "14px",
+            "fontWeight": "700",
+            "foreground": [
+              157,
+              241,
+              173,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 13.764920900757057,
+            "tag": "div",
+            "text": "TILGJENGELIGHET · UTKAST"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "48px",
+            "fontWeight": "700",
+            "foreground": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "id": null,
+            "minimum": 3,
+            "ratio": 18.506965525735616,
+            "tag": "h1",
+            "text": "Tilgjengelighetserklæring"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "21px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Her finner du informasjon om tilgjengeligheten i KI-Produktutvikling og hvordan du får hjelp hvis noe ikke fungerer."
+          },
+          {
+            "background": [
+              16,
+              33,
+              41
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 11.474460603391474,
+            "tag": "aside",
+            "text": "Dette er et utkast for portalen under utvikling. Samlet samsvar er ikke ferdig vurdert. Den formelle erklæringen er ikke"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "25px",
+            "fontWeight": "700",
+            "foreground": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "id": null,
+            "minimum": 3,
+            "ratio": 18.506965525735616,
+            "tag": "h2",
+            "text": "Om nettstedet"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "KI-Produktutvikling utvikles i Nasjonalarkivet. Erklæringen gjelder nettsidene og PDF-vedlegget i den lokale utviklingsv"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "25px",
+            "fontWeight": "700",
+            "foreground": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "id": null,
+            "minimum": 3,
+            "ratio": 18.506965525735616,
+            "tag": "h2",
+            "text": "Samsvar med kravene til universell utforming"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Vurderingen av tilgjengelighet er ikke fullført. Vi kan derfor ennå ikke fastslå i hvilken grad nettstedet er i samsvar "
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Vurderingen av tilgjengelighet er ikke fullført. Vi kan derfor ennå ikke fastslå i hvilken grad nettstedet er i samsvar "
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Uu-tilsynets kravoversikt for offentlig sektor"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "25px",
+            "fontWeight": "700",
+            "foreground": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "id": null,
+            "minimum": 3,
+            "ratio": 18.506965525735616,
+            "tag": "h2",
+            "text": "Kjente tilgjengelighetsproblemer"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Det er for tiden ingen bekreftede, åpne brudd i det undersøkte utvalget. Samlet samsvar er fortsatt uavklart fordi vurde"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Du kan be om hjelp eller innhold i et annet format gjennom kontaktkanalen nedenfor."
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Du kan be om hjelp eller innhold i et annet format gjennom kontaktkanalen nedenfor."
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "kontaktkanalen nedenfor"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "25px",
+            "fontWeight": "700",
+            "foreground": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "id": null,
+            "minimum": 3,
+            "ratio": 18.506965525735616,
+            "tag": "h2",
+            "text": "Begrensninger i vurderingen"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Det er foreløpig ikke bekreftet hvordan alle deler av nettstedet fungerer med skjermleser, forstørring og innstillinger "
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Kontrast i enkelte interaktive tilstander og ved overlappende effekter er ikke ferdig vurdert."
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Du kan lese ressursene gjennom ressurskatalogen eller nettstedskartet uten å bruke chatten. Animasjonen på forsiden kan "
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Du kan lese ressursene gjennom ressurskatalogen eller nettstedskartet uten å bruke chatten. Animasjonen på forsiden kan "
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Du kan lese ressursene gjennom ressurskatalogen eller nettstedskartet uten å bruke chatten. Animasjonen på forsiden kan "
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "ressurskatalogen"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "nettstedskartet"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "25px",
+            "fontWeight": "700",
+            "foreground": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "id": "kontakt",
+            "minimum": 3,
+            "ratio": 18.506965525735616,
+            "tag": "h2",
+            "text": "Meld fra om problemer eller be om tilgjengelig innhold"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Send e-post til khadah@nasjonalarkivet.no hvis du opplever problemer eller trenger innhold i et annet format. Oppgi hvil"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Send e-post til khadah@nasjonalarkivet.no hvis du opplever problemer eller trenger innhold i et annet format. Oppgi hvil"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "khadah@nasjonalarkivet.no"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Uu-tilsynets veiledning sier at tilbakemeldinger skal besvares så snart som mulig, vanligvis innen tre uker."
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Uu-tilsynets veiledning"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "25px",
+            "fontWeight": "700",
+            "foreground": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "id": null,
+            "minimum": 3,
+            "ratio": 18.506965525735616,
+            "tag": "h2",
+            "text": "Klage"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Hvis du ikke får svar, er misfornøyd med svaret eller ikke kan bruke nettstedet på grunn av manglende universell utformi"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Hvis du ikke får svar, er misfornøyd med svaret eller ikke kan bruke nettstedet på grunn av manglende universell utformi"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "hvordan du klager til Diskrimineringsnemnda"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "25px",
+            "fontWeight": "700",
+            "foreground": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "id": null,
+            "minimum": 3,
+            "ratio": 18.506965525735616,
+            "tag": "h2",
+            "text": "Vurdering og oppdatering"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Tilgjengeligheten ble sist vurdert 10. november 2026. Grunnlaget omfatter lokale nettleser- og tastaturkontroller, prøvi"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Tilgjengeligheten ble sist vurdert 10. november 2026. Grunnlaget omfatter lokale nettleser- og tastaturkontroller, prøvi"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "time",
+            "text": "10. november 2026"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Teksten ble sist oppdatert 10. november 2026."
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Teksten ble sist oppdatert 10. november 2026."
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "time",
+            "text": "10. november 2026"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "span",
+            "text": "KI-Produktutvikling"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Oversikt"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Personvernerklæring"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Tilgjengelighetserklæring"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Nettstedskart"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Versjonslogg"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Utviklingsplan"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Funksjonalitetsoversikt"
+          }
+        ],
+        "skipped": []
+      },
+      "counts": {
+        "h1": 1,
+        "main": 1
+      },
+      "findings": [],
+      "focus": {
+        "boxShadow": "none",
+        "id": null,
+        "outline": "rgb(255, 255, 255) none 3px",
+        "tabindex": null,
+        "tag": "body",
+        "text": "Hopp til innholdKI-ProduktutviklingKom i gangRetningslinjerRessurskatalogOversiktSpør KIOm← Til forsidenTILGJENGELIGHET "
+      },
+      "lang": "nb",
+      "layout": {
+        "clientWidth": 1280,
+        "overflow": false,
+        "scrollWidth": 1280
+      },
+      "liveRegions": [],
+      "title": "Tilgjengelighetserklæring | KI-Produktutvikling",
+      "url": "http://127.0.0.1:3000/tilgjengelighet",
+      "viewport": {
+        "height": 800,
+        "width": 1280
+      }
+    }
+  },
+  {
+    "size": 320,
+    "at": "2026-11-10T09:00:02.160Z",
+    "measure": {
+      "animations": [],
+      "contrast": {
+        "measured": [
+          {
+            "background": [
+              157,
+              241,
+              173
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              29,
+              29,
+              29,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.538164303847376,
+            "tag": "a",
+            "text": "Hopp til innhold"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "18px",
+            "fontWeight": "700",
+            "foreground": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 18.506965525735616,
+            "tag": "a",
+            "text": "KI-Produktutvikling"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Kom i gang"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Retningslinjer"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Ressurskatalog"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Oversikt"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Spør KI"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "15px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Om"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 18.506965525735616,
+            "tag": "a",
+            "text": "← Til forsiden"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "11px",
+            "fontWeight": "700",
+            "foreground": [
+              157,
+              241,
+              173,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 13.764920900757057,
+            "tag": "div",
+            "text": "TILGJENGELIGHET · UTKAST"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "36px",
+            "fontWeight": "700",
+            "foreground": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "id": null,
+            "minimum": 3,
+            "ratio": 18.506965525735616,
+            "tag": "h1",
+            "text": "Tilgjengelighetserklæring"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "21px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Her finner du informasjon om tilgjengeligheten i KI-Produktutvikling og hvordan du får hjelp hvis noe ikke fungerer."
+          },
+          {
+            "background": [
+              16,
+              33,
+              41
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 11.474460603391474,
+            "tag": "aside",
+            "text": "Dette er et utkast for portalen under utvikling. Samlet samsvar er ikke ferdig vurdert. Den formelle erklæringen er ikke"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "25px",
+            "fontWeight": "700",
+            "foreground": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "id": null,
+            "minimum": 3,
+            "ratio": 18.506965525735616,
+            "tag": "h2",
+            "text": "Om nettstedet"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "KI-Produktutvikling utvikles i Nasjonalarkivet. Erklæringen gjelder nettsidene og PDF-vedlegget i den lokale utviklingsv"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "25px",
+            "fontWeight": "700",
+            "foreground": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "id": null,
+            "minimum": 3,
+            "ratio": 18.506965525735616,
+            "tag": "h2",
+            "text": "Samsvar med kravene til universell utforming"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Vurderingen av tilgjengelighet er ikke fullført. Vi kan derfor ennå ikke fastslå i hvilken grad nettstedet er i samsvar "
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Vurderingen av tilgjengelighet er ikke fullført. Vi kan derfor ennå ikke fastslå i hvilken grad nettstedet er i samsvar "
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Uu-tilsynets kravoversikt for offentlig sektor"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "25px",
+            "fontWeight": "700",
+            "foreground": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "id": null,
+            "minimum": 3,
+            "ratio": 18.506965525735616,
+            "tag": "h2",
+            "text": "Kjente tilgjengelighetsproblemer"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Det er for tiden ingen bekreftede, åpne brudd i det undersøkte utvalget. Samlet samsvar er fortsatt uavklart fordi vurde"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Du kan be om hjelp eller innhold i et annet format gjennom kontaktkanalen nedenfor."
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Du kan be om hjelp eller innhold i et annet format gjennom kontaktkanalen nedenfor."
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "kontaktkanalen nedenfor"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "25px",
+            "fontWeight": "700",
+            "foreground": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "id": null,
+            "minimum": 3,
+            "ratio": 18.506965525735616,
+            "tag": "h2",
+            "text": "Begrensninger i vurderingen"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Det er foreløpig ikke bekreftet hvordan alle deler av nettstedet fungerer med skjermleser, forstørring og innstillinger "
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Kontrast i enkelte interaktive tilstander og ved overlappende effekter er ikke ferdig vurdert."
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Du kan lese ressursene gjennom ressurskatalogen eller nettstedskartet uten å bruke chatten. Animasjonen på forsiden kan "
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Du kan lese ressursene gjennom ressurskatalogen eller nettstedskartet uten å bruke chatten. Animasjonen på forsiden kan "
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Du kan lese ressursene gjennom ressurskatalogen eller nettstedskartet uten å bruke chatten. Animasjonen på forsiden kan "
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "ressurskatalogen"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "nettstedskartet"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "25px",
+            "fontWeight": "700",
+            "foreground": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "id": "kontakt",
+            "minimum": 3,
+            "ratio": 18.506965525735616,
+            "tag": "h2",
+            "text": "Meld fra om problemer eller be om tilgjengelig innhold"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Send e-post til khadah@nasjonalarkivet.no hvis du opplever problemer eller trenger innhold i et annet format. Oppgi hvil"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Send e-post til khadah@nasjonalarkivet.no hvis du opplever problemer eller trenger innhold i et annet format. Oppgi hvil"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "khadah@nasjonalarkivet.no"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Uu-tilsynets veiledning sier at tilbakemeldinger skal besvares så snart som mulig, vanligvis innen tre uker."
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Uu-tilsynets veiledning"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "25px",
+            "fontWeight": "700",
+            "foreground": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "id": null,
+            "minimum": 3,
+            "ratio": 18.506965525735616,
+            "tag": "h2",
+            "text": "Klage"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Hvis du ikke får svar, er misfornøyd med svaret eller ikke kan bruke nettstedet på grunn av manglende universell utformi"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Hvis du ikke får svar, er misfornøyd med svaret eller ikke kan bruke nettstedet på grunn av manglende universell utformi"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "hvordan du klager til Diskrimineringsnemnda"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "25px",
+            "fontWeight": "700",
+            "foreground": [
+              255,
+              255,
+              255,
+              1
+            ],
+            "id": null,
+            "minimum": 3,
+            "ratio": 18.506965525735616,
+            "tag": "h2",
+            "text": "Vurdering og oppdatering"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Tilgjengeligheten ble sist vurdert 10. november 2026. Grunnlaget omfatter lokale nettleser- og tastaturkontroller, prøvi"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Tilgjengeligheten ble sist vurdert 10. november 2026. Grunnlaget omfatter lokale nettleser- og tastaturkontroller, prøvi"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "time",
+            "text": "10. november 2026"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Teksten ble sist oppdatert 10. november 2026."
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "p",
+            "text": "Teksten ble sist oppdatert 10. november 2026."
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "time",
+            "text": "10. november 2026"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "span",
+            "text": "KI-Produktutvikling"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Oversikt"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Personvernerklæring"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Tilgjengelighetserklæring"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Nettstedskart"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Versjonslogg"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Utviklingsplan"
+          },
+          {
+            "background": [
+              9,
+              21,
+              27
+            ],
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "foreground": [
+              215,
+              215,
+              215,
+              1
+            ],
+            "id": null,
+            "minimum": 4.5,
+            "ratio": 12.858683176247323,
+            "tag": "a",
+            "text": "Funksjonalitetsoversikt"
+          }
+        ],
+        "skipped": []
+      },
+      "counts": {
+        "h1": 1,
+        "main": 1
+      },
+      "findings": [],
+      "focus": {
+        "boxShadow": "none",
+        "id": null,
+        "outline": "rgb(255, 255, 255) none 3px",
+        "tabindex": null,
+        "tag": "body",
+        "text": "Hopp til innholdKI-ProduktutviklingKom i gangRetningslinjerRessurskatalogOversiktSpør KIOm← Til forsidenTILGJENGELIGHET "
+      },
+      "lang": "nb",
+      "layout": {
+        "clientWidth": 320,
+        "overflow": false,
+        "scrollWidth": 320
+      },
+      "liveRegions": [],
+      "title": "Tilgjengelighetserklæring | KI-Produktutvikling",
+      "url": "http://127.0.0.1:3000/tilgjengelighet",
+      "viewport": {
+        "height": 800,
+        "width": 320
+      }
+    }
+  }
+]

@@ -1,0 +1,91 @@
+[
+  {
+    "state": "chat-spacing-320",
+    "key": "Tab",
+    "focus": {
+      "height": 50,
+      "name": "Tøm chat",
+      "outline": "rgb(157, 241, 173) solid 2px",
+      "role": null,
+      "tag": "BUTTON",
+      "viewport": 800,
+      "width": 111.484375,
+      "x": 44,
+      "y": 706
+    }
+  },
+  {
+    "state": "chat-spacing-320",
+    "key": "Tab",
+    "focus": {
+      "height": 44,
+      "name": "Lukk chat",
+      "outline": "rgb(157, 241, 173) solid 3px",
+      "role": null,
+      "tag": "BUTTON",
+      "viewport": 800,
+      "width": 44,
+      "x": 248,
+      "y": 142.25
+    }
+  },
+  {
+    "state": "chat-spacing-320",
+    "key": "Shift+Tab",
+    "focus": {
+      "height": 50,
+      "name": "Tøm chat",
+      "outline": "rgb(157, 241, 173) solid 2px",
+      "role": null,
+      "tag": "BUTTON",
+      "viewport": 800,
+      "width": 111.484375,
+      "x": 44,
+      "y": 706
+    }
+  },
+  {
+    "state": "chat-spacing-320",
+    "key": "Shift+Tab",
+    "focus": {
+      "height": 48,
+      "name": "Send spørsmål",
+      "outline": "rgb(157, 241, 173) solid 2px",
+      "role": null,
+      "tag": "BUTTON",
+      "viewport": 800,
+      "width": 183.1171875,
+      "x": 44,
+      "y": 650
+    }
+  },
+  {
+    "state": "chat-spacing-320",
+    "key": "Shift+Tab",
+    "focus": {
+      "height": 72,
+      "name": "",
+      "outline": "rgb(255, 255, 255) none 0px",
+      "role": null,
+      "tag": "TEXTAREA",
+      "viewport": 800,
+      "width": 204,
+      "x": 58,
+      "y": 486.5
+    }
+  },
+  {
+    "state": "dialog-closed",
+    "focus": {
+      "height": 52,
+      "name": "Spør KI",
+      "outline": "rgb(157, 241, 173) solid 2px",
+      "role": null,
+      "tag": "BUTTON",
+      "viewport": 800,
+      "width": 118.234375,
+      "x": 185.765625,
+      "y": 732
+    }
+  }
+]

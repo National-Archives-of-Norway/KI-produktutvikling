@@ -1,0 +1,1983 @@
+{
+  "method": "Conservative per-channel sRGB bounds, each layer alpha-composited over ancestor background; all gradient stop bounds, both hero grid layers at full opacity, ignores spatial masks (overestimates bright grid). No pixel/rendered-hover proof, no arbitrary sibling overlap or shadows model. Card 1px top line excluded subject to separate geometry evidence. Existing axe raw unchanged.",
+  "nodes": 80,
+  "minimum_ratio": 8.207484877955688,
+  "results": [
+    {
+      "route": "/",
+      "target": ".chat-launcher",
+      "mapped_selector": ".chat-launcher",
+      "text": "Sp\u00f8r KI",
+      "minimum_bound_ratio": 10.06885757042478,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.043137254901960784,
+        0.10980392156862745,
+        0.12941176470588237
+      ],
+      "background_upper": [
+        0.09803921568627451,
+        0.2,
+        0.17254901960784313
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": ".hero > .eyebrow",
+      "mapped_selector": ".hero > .eyebrow",
+      "text": " KUNNSKAP SOM BLIR TIL PRAKSIS",
+      "minimum_bound_ratio": 11.376700601840685,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.08635409349705882,
+        0.15825293772647056,
+        0.15625232016617646
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": "h1",
+      "mapped_selector": "h1",
+      "text": "Utvikle ideer.Bygg med KI.",
+      "minimum_bound_ratio": 15.295998237323783,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.08635409349705882,
+        0.15825293772647056,
+        0.15625232016617646
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": "h1 > span",
+      "mapped_selector": "h1 > span",
+      "text": "Bygg med KI.",
+      "minimum_bound_ratio": 11.376700601840685,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.08635409349705882,
+        0.15825293772647056,
+        0.15625232016617646
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": ".hero > p",
+      "mapped_selector": ".hero > p",
+      "text": "Et felles sted for kunnskap, metoder og verkt\u00f8y. Utforsk hvordan kunstig intelligens kan st\u00f8tte god produktutvikling.",
+      "minimum_bound_ratio": 10.627695551962518,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.08635409349705882,
+        0.15825293772647056,
+        0.15625232016617646
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": ".mui-98b6p0",
+      "mapped_selector": "",
+      "text": "Kom i gang \u2197",
+      "minimum_bound_ratio": 12.538164303847376,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.11372549019607843,
+        0.11372549019607843,
+        0.11372549019607843
+      ],
+      "background_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_upper": [
+        0.7686274509803922,
+        0.9725490196078431,
+        0.803921568627451
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": ".actions > a[href$=\"#ressurser\"]",
+      "mapped_selector": ".actions > a[href$=\"#ressurser\"]",
+      "text": "Utforsk ressursene \u2193",
+      "minimum_bound_ratio": 9.526809349360214,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.041098030666669415,
+        0.0909803831372553,
+        0.11160783368627823
+      ],
+      "background_upper": [
+        0.1234073269522647,
+        0.21333209208561763,
+        0.1928048277545441
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": "a[href$=\"#ressurser\"] > span[aria-hidden=\"true\"]",
+      "mapped_selector": "a[href$=\"#ressurser\"] > span[aria-hidden=\"true\"]",
+      "text": "\u2193",
+      "minimum_bound_ratio": 9.526809349360214,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.041098030666669415,
+        0.0909803831372553,
+        0.11160783368627823
+      ],
+      "background_upper": [
+        0.1234073269522647,
+        0.21333209208561763,
+        0.1928048277545441
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": "label[for=\"resource-search\"]",
+      "mapped_selector": "label[for=\"resource-search\"]",
+      "text": "Finn en ressurs",
+      "minimum_bound_ratio": 10.203613750412734,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.0903922,
+        0.170196,
+        0.186667
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": "#resource-search",
+      "mapped_selector": "#resource-search",
+      "text": "",
+      "minimum_bound_ratio": 18.506965525735616,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": ".control-label",
+      "mapped_selector": ".control-label",
+      "text": "Ressurstype",
+      "minimum_bound_ratio": 10.203613750412734,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.0903922,
+        0.170196,
+        0.186667
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": ".mui-bcyry4.MuiButton-outlined.MuiButton-sizeMedium:nth-child(2)",
+      "mapped_selector": ".MuiButton-outlined.MuiButton-sizeMedium:nth-child(2)",
+      "text": "Skill",
+      "minimum_bound_ratio": 10.922730908850168,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.0903922,
+        0.170196,
+        0.186667
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": ".mui-bcyry4.MuiButton-outlined.MuiButton-sizeMedium:nth-child(3)",
+      "mapped_selector": ".MuiButton-outlined.MuiButton-sizeMedium:nth-child(3)",
+      "text": "Instruks",
+      "minimum_bound_ratio": 10.922730908850168,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.0903922,
+        0.170196,
+        0.186667
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": ".mui-bcyry4.MuiButton-outlined.MuiButton-sizeMedium:nth-child(4)",
+      "mapped_selector": ".MuiButton-outlined.MuiButton-sizeMedium:nth-child(4)",
+      "text": "Prompt",
+      "minimum_bound_ratio": 10.922730908850168,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.0903922,
+        0.170196,
+        0.186667
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(1) > div > .mui-zuj605.MuiChip-root.MuiChip-outlined > .MuiChip-label.mui-oruufx",
+      "mapped_selector": "article:nth-child(1) > div > .MuiChip-root.MuiChip-outlined > .MuiChip-label",
+      "text": "Skill",
+      "minimum_bound_ratio": 15.619164498573756,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "background_upper": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(1) > div > .mui-bsqhmz.MuiChip-root.MuiChip-outlined > .MuiChip-label.mui-oruufx",
+      "mapped_selector": "article:nth-child(1) > div > .MuiChip-root.MuiChip-outlined > .MuiChip-label",
+      "text": "Beta",
+      "minimum_bound_ratio": 12.538164303847376,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.11372549019607843,
+        0.11372549019607843,
+        0.11372549019607843
+      ],
+      "background_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(1) > .MuiTypography-caption.mui-p7i9kt.MuiTypography-root",
+      "mapped_selector": "article:nth-child(1) > .MuiTypography-caption.MuiTypography-root",
+      "text": "Enn\u00e5 ikke gjennomg\u00e5tt av et menneske",
+      "minimum_bound_ratio": 9.690584783718865,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.1014509611764706,
+        0.1865098011764706,
+        0.19701958176470588
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(1) > h3",
+      "mapped_selector": "article:nth-child(1) > h3",
+      "text": "Test tilgjengelighet og utform erkl\u00e6ring",
+      "minimum_bound_ratio": 13.947253856272606,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.1014509611764706,
+        0.1865098011764706,
+        0.19701958176470588
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(1) > p",
+      "mapped_selector": "article:nth-child(1) > p",
+      "text": "Kj\u00f8r automatiske tilgjengelighetskontroller, se hva som gjenst\u00e5r manuelt for alle 48 krav, og f\u00e5 rapporter, rettingsfors",
+      "minimum_bound_ratio": 9.690584783718865,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.1014509611764706,
+        0.1865098011764706,
+        0.19701958176470588
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(1) > a",
+      "mapped_selector": "article:nth-child(1) > a",
+      "text": "Se skill \u2197",
+      "minimum_bound_ratio": 10.373545346880428,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.1014509611764706,
+        0.1865098011764706,
+        0.19701958176470588
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(2) > div > .mui-zuj605.MuiChip-root.MuiChip-outlined > .MuiChip-label.mui-oruufx",
+      "mapped_selector": "article:nth-child(2) > div > .MuiChip-root.MuiChip-outlined > .MuiChip-label",
+      "text": "Skill",
+      "minimum_bound_ratio": 15.619164498573756,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "background_upper": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(2) > div > .mui-bsqhmz.MuiChip-root.MuiChip-outlined > .MuiChip-label.mui-oruufx",
+      "mapped_selector": "article:nth-child(2) > div > .MuiChip-root.MuiChip-outlined > .MuiChip-label",
+      "text": "Beta",
+      "minimum_bound_ratio": 12.538164303847376,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.11372549019607843,
+        0.11372549019607843,
+        0.11372549019607843
+      ],
+      "background_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(2) > .MuiTypography-caption.mui-p7i9kt.MuiTypography-root",
+      "mapped_selector": "article:nth-child(2) > .MuiTypography-caption.MuiTypography-root",
+      "text": "Enn\u00e5 ikke gjennomg\u00e5tt av et menneske",
+      "minimum_bound_ratio": 9.690584783718865,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.1014509611764706,
+        0.1865098011764706,
+        0.19701958176470588
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(2) > h3",
+      "mapped_selector": "article:nth-child(2) > h3",
+      "text": "Kartlegg personvern og utform erkl\u00e6ring",
+      "minimum_bound_ratio": 13.947253856272606,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.1014509611764706,
+        0.1865098011764706,
+        0.19701958176470588
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(2) > p",
+      "mapped_selector": "article:nth-child(2) > p",
+      "text": "Kartlegg faktisk databehandling, lagre vurderingsgrunnlaget i prosjektet og opprett eller oppdater personvernerkl\u00e6ringen",
+      "minimum_bound_ratio": 9.690584783718865,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.1014509611764706,
+        0.1865098011764706,
+        0.19701958176470588
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(2) > a",
+      "mapped_selector": "article:nth-child(2) > a",
+      "text": "Se skill \u2197",
+      "minimum_bound_ratio": 10.373545346880428,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.1014509611764706,
+        0.1865098011764706,
+        0.19701958176470588
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(3) > div > .mui-zuj605.MuiChip-root.MuiChip-outlined > .MuiChip-label.mui-oruufx",
+      "mapped_selector": "article:nth-child(3) > div > .MuiChip-root.MuiChip-outlined > .MuiChip-label",
+      "text": "Skill",
+      "minimum_bound_ratio": 15.619164498573756,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "background_upper": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(3) > div > .mui-bsqhmz.MuiChip-root.MuiChip-outlined > .MuiChip-label.mui-oruufx",
+      "mapped_selector": "article:nth-child(3) > div > .MuiChip-root.MuiChip-outlined > .MuiChip-label",
+      "text": "Beta",
+      "minimum_bound_ratio": 12.538164303847376,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.11372549019607843,
+        0.11372549019607843,
+        0.11372549019607843
+      ],
+      "background_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(3) > .MuiTypography-caption.mui-p7i9kt.MuiTypography-root",
+      "mapped_selector": "article:nth-child(3) > .MuiTypography-caption.MuiTypography-root",
+      "text": "Enn\u00e5 ikke gjennomg\u00e5tt av et menneske",
+      "minimum_bound_ratio": 9.690584783718865,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.1014509611764706,
+        0.1865098011764706,
+        0.19701958176470588
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(3) > h3",
+      "mapped_selector": "article:nth-child(3) > h3",
+      "text": "Gjennomg\u00e5 en kodeendring",
+      "minimum_bound_ratio": 13.947253856272606,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.1014509611764706,
+        0.1865098011764706,
+        0.19701958176470588
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(3) > p",
+      "mapped_selector": "article:nth-child(3) > p",
+      "text": "Et utgangspunkt for strukturert gjennomgang av kvalitet, feilscenarier og tester.",
+      "minimum_bound_ratio": 9.690584783718865,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.1014509611764706,
+        0.1865098011764706,
+        0.19701958176470588
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "a[href$=\"kodegjennomgang/\"]",
+      "mapped_selector": "a[href$=\"kodegjennomgang\"]",
+      "text": "Se skill \u2197",
+      "minimum_bound_ratio": 10.373545346880428,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.1014509611764706,
+        0.1865098011764706,
+        0.19701958176470588
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(4) > div > .mui-zuj605.MuiChip-root.MuiChip-outlined > .MuiChip-label.mui-oruufx",
+      "mapped_selector": "article:nth-child(4) > div > .MuiChip-root.MuiChip-outlined > .MuiChip-label",
+      "text": "Instruks",
+      "minimum_bound_ratio": 15.619164498573756,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "background_upper": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(4) > .MuiTypography-caption.mui-p7i9kt.MuiTypography-root",
+      "mapped_selector": "article:nth-child(4) > .MuiTypography-caption.MuiTypography-root",
+      "text": "Eksempel",
+      "minimum_bound_ratio": 9.690584783718865,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.1014509611764706,
+        0.1865098011764706,
+        0.19701958176470588
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(4) > h3",
+      "mapped_selector": "article:nth-child(4) > h3",
+      "text": "Gi KI tydelig kontekst",
+      "minimum_bound_ratio": 13.947253856272606,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.1014509611764706,
+        0.1865098011764706,
+        0.19701958176470588
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(4) > p",
+      "mapped_selector": "article:nth-child(4) > p",
+      "text": "Beskriv m\u00e5l, rammer og forventet resultat f\u00f8r du starter en oppgave.",
+      "minimum_bound_ratio": 9.690584783718865,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.1014509611764706,
+        0.1865098011764706,
+        0.19701958176470588
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "a[href$=\"tydelig-kontekst/\"]",
+      "mapped_selector": "a[href$=\"tydelig-kontekst\"]",
+      "text": "Les instruksen \u2197",
+      "minimum_bound_ratio": 10.373545346880428,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.1014509611764706,
+        0.1865098011764706,
+        0.19701958176470588
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(5) > div > .mui-zuj605.MuiChip-root.MuiChip-outlined > .MuiChip-label.mui-oruufx",
+      "mapped_selector": "article:nth-child(5) > div > .MuiChip-root.MuiChip-outlined > .MuiChip-label",
+      "text": "Prompt",
+      "minimum_bound_ratio": 15.619164498573756,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "background_upper": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(5) > .MuiTypography-caption.mui-p7i9kt.MuiTypography-root",
+      "mapped_selector": "article:nth-child(5) > .MuiTypography-caption.MuiTypography-root",
+      "text": "Eksempel",
+      "minimum_bound_ratio": 9.690584783718865,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.1014509611764706,
+        0.1865098011764706,
+        0.19701958176470588
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(5) > h3",
+      "mapped_selector": "article:nth-child(5) > h3",
+      "text": "Utforsk et brukerbehov",
+      "minimum_bound_ratio": 13.947253856272606,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.1014509611764706,
+        0.1865098011764706,
+        0.19701958176470588
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(5) > p",
+      "mapped_selector": "article:nth-child(5) > p",
+      "text": "Beskriv en situasjon du vil forst\u00e5 bedre. F\u00e5 forslag til \u00e5pne intervjusp\u00f8rsm\u00e5l, og vurder hvilke dere vil pr\u00f8ve med bruk",
+      "minimum_bound_ratio": 9.690584783718865,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.1014509611764706,
+        0.1865098011764706,
+        0.19701958176470588
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "article:nth-child(5) > a[href$=\"brukerbehov/\"]",
+      "mapped_selector": "article:nth-child(5) > a[href$=\"brukerbehov\"]",
+      "text": "Se prompten \u2197",
+      "minimum_bound_ratio": 10.373545346880428,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.1014509611764706,
+        0.1865098011764706,
+        0.19701958176470588
+      ],
+      "excluded_pseudo": [
+        "resource-card::before: 1 px top border; requires geometry check, not a text background"
+      ]
+    },
+    {
+      "route": "/",
+      "target": "a[href$=\"kom-i-gang/\"] > .number",
+      "mapped_selector": "a[href$=\"kom-i-gang\"] > .number",
+      "text": "01 / L\u00c6R",
+      "minimum_bound_ratio": 10.460769961366761,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.0848628,
+        0.162039,
+        0.18149
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": "a[href$=\"kom-i-gang/\"] > strong",
+      "mapped_selector": "a[href$=\"kom-i-gang\"] > strong",
+      "text": "Kom i gang med KI \u2192",
+      "minimum_bound_ratio": 15.055749208074406,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.0848628,
+        0.162039,
+        0.18149
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": "a[href$=\"kom-i-gang/\"] > strong > span[aria-hidden=\"true\"]",
+      "mapped_selector": "a[href$=\"kom-i-gang\"] > strong > span[aria-hidden=\"true\"]",
+      "text": "\u2192",
+      "minimum_bound_ratio": 11.198010644294557,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.0848628,
+        0.162039,
+        0.18149
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": "a[href$=\"/#ressurser\"] > .number",
+      "mapped_selector": "a[href$=\"#ressurser\"] > .number",
+      "text": "02 / PR\u00d8V",
+      "minimum_bound_ratio": 10.460769961366761,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.0848628,
+        0.162039,
+        0.18149
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": "a[href$=\"/#ressurser\"] > strong",
+      "mapped_selector": "a[href$=\"#ressurser\"] > strong",
+      "text": "Finn en ressurs til oppgaven \u2192",
+      "minimum_bound_ratio": 15.055749208074406,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.0848628,
+        0.162039,
+        0.18149
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": "a[href$=\"/#ressurser\"] > strong > span[aria-hidden=\"true\"]",
+      "mapped_selector": "a[href$=\"#ressurser\"] > strong > span[aria-hidden=\"true\"]",
+      "text": "\u2192",
+      "minimum_bound_ratio": 11.198010644294557,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.0848628,
+        0.162039,
+        0.18149
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": "a[href$=\"om/#ki-prat\"] > .number",
+      "mapped_selector": "a[href$=\"om#ki-prat\"] > .number",
+      "text": "03 / DEL",
+      "minimum_bound_ratio": 10.460769961366761,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.0848628,
+        0.162039,
+        0.18149
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": "a[href$=\"om/#ki-prat\"] > strong",
+      "mapped_selector": "a[href$=\"om#ki-prat\"] > strong",
+      "text": "Del erfaringer i KI-prat \u2192",
+      "minimum_bound_ratio": 15.055749208074406,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.0848628,
+        0.162039,
+        0.18149
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": "a[href$=\"om/#ki-prat\"] > strong > span[aria-hidden=\"true\"]",
+      "mapped_selector": "a[href$=\"om#ki-prat\"] > strong > span[aria-hidden=\"true\"]",
+      "text": "\u2192",
+      "minimum_bound_ratio": 11.198010644294557,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.0848628,
+        0.162039,
+        0.18149
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": "div > .eyebrow",
+      "mapped_selector": "div > .eyebrow",
+      "text": "PR\u00d8V I PRAKSIS",
+      "minimum_bound_ratio": 11.198010644294557,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.0848628,
+        0.162039,
+        0.18149
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": "#recommended-task-title",
+      "mapped_selector": "#recommended-task-title",
+      "text": "Utforsk et brukerbehov",
+      "minimum_bound_ratio": 15.055749208074406,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.0848628,
+        0.162039,
+        0.18149
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": ".reading > div > p",
+      "mapped_selector": ".reading > div > p",
+      "text": "Beskriv en situasjon du vil forst\u00e5 bedre. F\u00e5 forslag til \u00e5pne intervjusp\u00f8rsm\u00e5l, og vurder hvilke dere vil pr\u00f8ve med bruk",
+      "minimum_bound_ratio": 10.460769961366761,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.0848628,
+        0.162039,
+        0.18149
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": ".mui-1d7qzbu.MuiButton-sizeLarge[href$=\"brukerbehov/\"]",
+      "mapped_selector": ".MuiButton-sizeLarge[href$=\"brukerbehov\"]",
+      "text": "Se oppgaven \u2192",
+      "minimum_bound_ratio": 9.374001238545404,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.041098030666669415,
+        0.0909803831372553,
+        0.11160783368627823
+      ],
+      "background_upper": [
+        0.122020424,
+        0.21685312999999998,
+        0.21627587
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/",
+      "target": ".mui-1d7qzbu.MuiButton-sizeLarge[href$=\"brukerbehov/\"] > span[aria-hidden=\"true\"]",
+      "mapped_selector": ".MuiButton-sizeLarge[href$=\"brukerbehov\"] > span[aria-hidden=\"true\"]",
+      "text": "\u2192",
+      "minimum_bound_ratio": 9.374001238545404,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.041098030666669415,
+        0.0909803831372553,
+        0.11160783368627823
+      ],
+      "background_upper": [
+        0.122020424,
+        0.21685312999999998,
+        0.21627587
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/spor/",
+      "target": ".MuiButton-outlined.mui-zpy763[type=\"button\"]:nth-child(1)",
+      "mapped_selector": ".MuiButton-outlined[type=\"button\"]:nth-child(1)",
+      "text": "Hvordan gjennomg\u00e5r jeg en kodeendring?",
+      "minimum_bound_ratio": 17.13375678130632,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.05850979294117647,
+        0.11686274352941176,
+        0.1287842988235294
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/spor/",
+      "target": ".MuiButton-outlined.mui-zpy763[type=\"button\"]:nth-child(2)",
+      "mapped_selector": ".MuiButton-outlined[type=\"button\"]:nth-child(2)",
+      "text": "Hvordan gir jeg KI god kontekst?",
+      "minimum_bound_ratio": 17.13375678130632,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.05850979294117647,
+        0.11686274352941176,
+        0.1287842988235294
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/spor/",
+      "target": ".MuiButton-outlined.mui-zpy763[type=\"button\"]:nth-child(3)",
+      "mapped_selector": ".MuiButton-outlined[type=\"button\"]:nth-child(3)",
+      "text": "Hvordan utforsker jeg brukerbehov?",
+      "minimum_bound_ratio": 17.13375678130632,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.05850979294117647,
+        0.11686274352941176,
+        0.1287842988235294
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/spor/",
+      "target": "#_R_25fiuvbb_",
+      "mapped_selector": "textarea:not([aria-hidden=\"true\"])",
+      "text": "",
+      "minimum_bound_ratio": 18.506965525735616,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/spor/",
+      "target": "#_R_25fiuvbb_-helper-text",
+      "mapped_selector": ".MuiFormHelperText-root",
+      "text": "Ikke skriv personopplysninger eller internt innhold.",
+      "minimum_bound_ratio": 11.474460603391474,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "background_upper": [
+        0.06274509803921569,
+        0.12941176470588237,
+        0.1607843137254902
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/spor/",
+      "target": ".MuiButton-contained",
+      "mapped_selector": ".MuiButton-contained",
+      "text": "Send sp\u00f8rsm\u00e5l",
+      "minimum_bound_ratio": 12.538164303847376,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.11372549019607843,
+        0.11372549019607843,
+        0.11372549019607843
+      ],
+      "background_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_upper": [
+        0.7686274509803922,
+        0.9725490196078431,
+        0.803921568627451
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/oversikt/",
+      "target": "section[aria-labelledby=\"priser-og-abonnement\"] > .eyebrow",
+      "mapped_selector": "section[aria-labelledby=\"priser-og-abonnement\"] > .eyebrow",
+      "text": "01 / UTFORSK PRISER",
+      "minimum_bound_ratio": 8.207484877955688,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.06274509803921569,
+        0.12941176470588237,
+        0.1607843137254902
+      ],
+      "background_upper": [
+        0.13462741529411765,
+        0.23545097529411765,
+        0.2280783829411765
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/oversikt/",
+      "target": "#priser-og-abonnement",
+      "mapped_selector": "#priser-og-abonnement",
+      "text": "Priser og abonnement",
+      "minimum_bound_ratio": 11.812690118215627,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "background_lower": [
+        0.06274509803921569,
+        0.12941176470588237,
+        0.1607843137254902
+      ],
+      "background_upper": [
+        0.13462741529411765,
+        0.23545097529411765,
+        0.2280783829411765
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/oversikt/",
+      "target": "section[aria-labelledby=\"priser-og-abonnement\"] > p:nth-child(3)",
+      "mapped_selector": "section[aria-labelledby=\"priser-og-abonnement\"] > p:nth-child(3)",
+      "text": "Sammenlign abonnement for Copilot, Claude og Codex. Se direkte API-priser og tokenpriser i Copilot, med kilde og sist ko",
+      "minimum_bound_ratio": 8.207484877955688,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.06274509803921569,
+        0.12941176470588237,
+        0.1607843137254902
+      ],
+      "background_upper": [
+        0.13462741529411765,
+        0.23545097529411765,
+        0.2280783829411765
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/oversikt/",
+      "target": ".overview-price-types > span:nth-child(1)",
+      "mapped_selector": ".overview-price-types > span:nth-child(1)",
+      "text": "Abonnement per bruker",
+      "minimum_bound_ratio": 8.207484877955688,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.06274509803921569,
+        0.12941176470588237,
+        0.1607843137254902
+      ],
+      "background_upper": [
+        0.13462741529411765,
+        0.23545097529411765,
+        0.2280783829411765
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/oversikt/",
+      "target": "span:nth-child(2)",
+      "mapped_selector": "span:nth-child(2)",
+      "text": "API og tokenbruk",
+      "minimum_bound_ratio": 8.207484877955688,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.06274509803921569,
+        0.12941176470588237,
+        0.1607843137254902
+      ],
+      "background_upper": [
+        0.13462741529411765,
+        0.23545097529411765,
+        0.2280783829411765
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/oversikt/",
+      "target": "a[href$=\"priser/\"]",
+      "mapped_selector": "a[href$=\"priser\"]",
+      "text": "Se priser og abonnement \u2192",
+      "minimum_bound_ratio": 8.78592143462317,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.06274509803921569,
+        0.12941176470588237,
+        0.1607843137254902
+      ],
+      "background_upper": [
+        0.13462741529411765,
+        0.23545097529411765,
+        0.2280783829411765
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/oversikt/",
+      "target": "a[href$=\"priser/\"] > span[aria-hidden=\"true\"]",
+      "mapped_selector": "a[href$=\"priser\"] > span[aria-hidden=\"true\"]",
+      "text": "\u2192",
+      "minimum_bound_ratio": 8.78592143462317,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.06274509803921569,
+        0.12941176470588237,
+        0.1607843137254902
+      ],
+      "background_upper": [
+        0.13462741529411765,
+        0.23545097529411765,
+        0.2280783829411765
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/oversikt/",
+      "target": ".overview-pricing-note",
+      "mapped_selector": ".overview-pricing-note",
+      "text": "Offentlige listepriser. Se kildestatus og vilk\u00e5r p\u00e5 prissiden.",
+      "minimum_bound_ratio": 8.207484877955688,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.06274509803921569,
+        0.12941176470588237,
+        0.1607843137254902
+      ],
+      "background_upper": [
+        0.13462741529411765,
+        0.23545097529411765,
+        0.2280783829411765
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/oversikt/",
+      "target": "section[aria-labelledby=\"godkjente-assistenter\"] > .eyebrow",
+      "mapped_selector": "section[aria-labelledby=\"godkjente-assistenter\"] > .eyebrow",
+      "text": "02 / GODKJENTE ASSISTENTER",
+      "minimum_bound_ratio": 8.207484877955688,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.06274509803921569,
+        0.12941176470588237,
+        0.1607843137254902
+      ],
+      "background_upper": [
+        0.13462741529411765,
+        0.23545097529411765,
+        0.2280783829411765
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/oversikt/",
+      "target": "#godkjente-assistenter",
+      "mapped_selector": "#godkjente-assistenter",
+      "text": "Godkjente KI-assistenter",
+      "minimum_bound_ratio": 11.812690118215627,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "background_lower": [
+        0.06274509803921569,
+        0.12941176470588237,
+        0.1607843137254902
+      ],
+      "background_upper": [
+        0.13462741529411765,
+        0.23545097529411765,
+        0.2280783829411765
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/oversikt/",
+      "target": "section[aria-labelledby=\"godkjente-assistenter\"] > p:nth-child(3)",
+      "mapped_selector": "section[aria-labelledby=\"godkjente-assistenter\"] > p:nth-child(3)",
+      "text": "Copilot, Claude AI og Codex er godkjente KI-utviklingsassistenter for dem som jobber med produktutvikling og utvikling a",
+      "minimum_bound_ratio": 8.207484877955688,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.06274509803921569,
+        0.12941176470588237,
+        0.1607843137254902
+      ],
+      "background_upper": [
+        0.13462741529411765,
+        0.23545097529411765,
+        0.2280783829411765
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/oversikt/",
+      "target": "section[aria-labelledby=\"godkjente-assistenter\"] > .overview-primary",
+      "mapped_selector": "section[aria-labelledby=\"godkjente-assistenter\"] > .overview-primary",
+      "text": "Se godkjente KI-assistenter \u2192",
+      "minimum_bound_ratio": 8.78592143462317,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.06274509803921569,
+        0.12941176470588237,
+        0.1607843137254902
+      ],
+      "background_upper": [
+        0.13462741529411765,
+        0.23545097529411765,
+        0.2280783829411765
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/oversikt/",
+      "target": "section[aria-labelledby=\"godkjente-assistenter\"] > .overview-primary > span[aria-hidden=\"true\"]",
+      "mapped_selector": "section[aria-labelledby=\"godkjente-assistenter\"] > .overview-primary > span[aria-hidden=\"true\"]",
+      "text": "\u2192",
+      "minimum_bound_ratio": 8.78592143462317,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.06274509803921569,
+        0.12941176470588237,
+        0.1607843137254902
+      ],
+      "background_upper": [
+        0.13462741529411765,
+        0.23545097529411765,
+        0.2280783829411765
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/oversikt/",
+      "target": "section[aria-labelledby=\"godkjente-mcper\"] > .eyebrow",
+      "mapped_selector": "section[aria-labelledby=\"godkjente-mcper\"] > .eyebrow",
+      "text": "03 / MCP-STATUS",
+      "minimum_bound_ratio": 8.207484877955688,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.06274509803921569,
+        0.12941176470588237,
+        0.1607843137254902
+      ],
+      "background_upper": [
+        0.13462741529411765,
+        0.23545097529411765,
+        0.2280783829411765
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/oversikt/",
+      "target": "#godkjente-mcper",
+      "mapped_selector": "#godkjente-mcper",
+      "text": "Godkjente MCP-er",
+      "minimum_bound_ratio": 11.812690118215627,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "background_lower": [
+        0.06274509803921569,
+        0.12941176470588237,
+        0.1607843137254902
+      ],
+      "background_upper": [
+        0.13462741529411765,
+        0.23545097529411765,
+        0.2280783829411765
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/oversikt/",
+      "target": "section[aria-labelledby=\"godkjente-mcper\"] > p:nth-child(3)",
+      "mapped_selector": "section[aria-labelledby=\"godkjente-mcper\"] > p:nth-child(3)",
+      "text": "F\u00f8lg arbeidet med vurdering og godkjenning av MCP-integrasjoner i Nasjonalarkivet. Atlassian MCP er under ROS-analyse, o",
+      "minimum_bound_ratio": 8.207484877955688,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.8431372549019608,
+        0.8431372549019608,
+        0.8431372549019608
+      ],
+      "background_lower": [
+        0.06274509803921569,
+        0.12941176470588237,
+        0.1607843137254902
+      ],
+      "background_upper": [
+        0.13462741529411765,
+        0.23545097529411765,
+        0.2280783829411765
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/oversikt/",
+      "target": "a[href$=\"godkjente-mcper/\"]",
+      "mapped_selector": "a[href$=\"godkjente-mcper\"]",
+      "text": "Se MCP-status \u2192",
+      "minimum_bound_ratio": 8.78592143462317,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.06274509803921569,
+        0.12941176470588237,
+        0.1607843137254902
+      ],
+      "background_upper": [
+        0.13462741529411765,
+        0.23545097529411765,
+        0.2280783829411765
+      ],
+      "excluded_pseudo": []
+    },
+    {
+      "route": "/oversikt/",
+      "target": "a[href$=\"godkjente-mcper/\"] > span[aria-hidden=\"true\"]",
+      "mapped_selector": "a[href$=\"godkjente-mcper\"] > span[aria-hidden=\"true\"]",
+      "text": "\u2192",
+      "minimum_bound_ratio": 8.78592143462317,
+      "passes_even_normal_text_4_5": true,
+      "foreground": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "background_lower": [
+        0.06274509803921569,
+        0.12941176470588237,
+        0.1607843137254902
+      ],
+      "background_upper": [
+        0.13462741529411765,
+        0.23545097529411765,
+        0.2280783829411765
+      ],
+      "excluded_pseudo": []
+    }
+  ]
+}

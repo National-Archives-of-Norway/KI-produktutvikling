@@ -4,6 +4,36 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 «Agent» betyr kodeassistenten som utførte arbeidet. Git-forfatteren registreres separat av Git og kan være personen som oppretter commiten. Eksakt modellvariant er ikke registrert for tidligere arbeid og oppgis derfor ikke. Ingen underagenter ble brukt til kvalitetskontrollen eller opprettelsen av denne loggen.
 
+## Ikke utgitt – gjenstående lokale tilgjengelighetskontroller – 10. november 2026
+
+**Utførende agent:** Codex (OpenAI), med `tilgjengelighetserklaering` 0.5.0 og PDF-skillen. Ingen underagenter.
+
+- Gjennomført ny lokal skill-kjøring og målrettet oppfølging i `docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2/`: 21 sidetilstander, 63 viewport-kontroller, 168 Tab-steg, tre deklarerte forløp og 42 tekstavstandsmålinger. Prøvd null treff/valgt filter, chatfeil/lasting/kildebasert svar/tømming/fokusretur og seks åpne pristabeller med tastaturrulling. Midlertidig CSS er tilbakeført byte for byte. Ingen nye bekreftede åpne brudd; 1.4.12 U → K i prøvd lokalt HTML-utvalg.
+- Dokumentert konservative sRGB-bakgrunnsgrenser for alle 80 axe-incomplete-forekomster: minst 8,207:1. Resultatet gjelder lagmodellen, ikke alle faktiske hover/overlagringer eller PDF. Opprinnelige axe-resultater er bevart. Tre CSS-animasjoner er bekreftet paused/running, også pause etter Tab ut. Faktisk prisalderkomponent er prøvd isolert før/ved/etter sju dager og ved gjentatt simulert timekontroll/avmontering; ingen OS-klokkeendring eller permanent komponentendring.
+- Kontrollert PDF-struktur og syv eksisterende renderinger ved identisk hash: 61 Figure etter tidligere listeomkoding, ikke det eldre antallet 73. Faktisk skjermleser, effektivt språk, leserekkefølge og full likeverdig diagramformidling er fortsatt uavklart. PDF-en er ikke endret.
+- Oppdatert 48-kravsmatrise/testplan, rapporter, restliste, latest-peker, kort brukerrettet erklæring/side, README, kvalitetskontroll og utviklingsplan. Arbeidsstatus 22 K / 11 I / 15 U / 0 B; 34 krav har automatisk delgrunnlag. 36 har bredere rest, 11 ingen utløsende innholdstype og ett fullført lokalt manuelt utvalg. Dette er ikke en samsvarsprosent.
+- Begrensninger: Automatisk godkjenningskontroll avviste `cua.getApp('Google Chrome')` («Computer Use was not approved to use Google Chrome»). Ingen omgåelse eller påstått faktisk zoom/hover/OS-preferansetest. Skjermleser, fysisk enhet, videre faglige vurderinger, innlogging, faktisk modell og publisert miljø er særskilt ført i restlisten. Prisalder er simulert; tidligere native axe/Nu gjenbrukes med original dato. Ingen hemmeligheter lest, ingen produktretting, commit, registrering eller publisering.
+
+- Sluttverifisering: 52 Node-tester, tre Python-tester, Pages-produksjonsbygg med TypeScript og HTML-grunnkontroll for 23 eksportfiler bestod. Ny avsluttende native-kjøring `100139-native-b7a19485` på oppdatert eksport ga 0 axe-violations / 3 incomplete-grupper (samme 80 noder) og 0 Nu-feil / 191 tekniske noter. Oppdatert erklæring er lest tilbake ved 1280/320 px uten sideoverflyt eller ny DOM-kandidat. Formatering, dokument-/evidenslenker og `git diff --check` er kontrollert. Dette er ikke samlet samsvarsgodkjenning.
+
+## Ikke utgitt – lokal axe og Nu HTML-validering – 10. november 2026
+
+**Utførende agent:** Codex (OpenAI), med `tilgjengelighetserklaering` 0.5.0. Ingen underagenter.
+
+- Låst `@axe-core/cli` 4.14.0, `vnu-jar` 26.11.9 og `chromedriver` 157.0.0 som utviklingsavhengigheter. Node-minimum er 22.18.0, slik at direkte TypeScript-import også støttes uten ekstra flagg. Prosjektlokal pnpm-konfigurasjon tillater installasjonsskripter bare for driver/validator og beholder eksisterende lokalt lager. Java-runtime installeres i node_modules; ingen globale innstillinger, andre repoer eller GitHub-rettigheter endres.
+- Lagt til `pnpm test:a11y`: midlertidig server på loopback, axe CLI i separat headless Chrome mot bygde sider og Nu-validering av lokale eksportfiler. Ingen opplasting av portalinnhold. Resultater får unik datert mappe, original JSON per side, rå stdout/stderr, verktøyversjoner og tydelig teknisk feilstatus. Den andre motoren forsøkes også hvis én feiler. Koden avviser tomme/dupliserte/manglende axe-resultater og motstridende validatorstatuser. CI aktiveres ikke automatisk.
+- Lagt til faktisk negativ verktøytest (`pnpm test:a11y:smoke`) og fire protokoll-/omfangstester. Begge faktiske motorer fant tilsiktet manglende alt på syntetisk testside; denne er ikke portalinnhold. Første axe-kjøring avdekket at ventemeldinger bryter CLI-ens JSON-stdout. Feilen er bevart som teknisk feil; løsningen bruker nå verktøyets egen JSON-fil og er retestet.
+- Endelig motorresultat: Native-kjøring `docs/tilgjengelighet/2026-11-10/090555-native-d984a7c5/` omfatter 20 registrerte sider og feilside i lokal eksport. Axe ga 0 violations, men tre uavklarte color-contrast-grupper / 80 elementforekomster. Nu validerte 23 eksportfiler med 0 HTML-feil og 191 tekniske info-/advarselsnoter om slash på tomme elementer. Ingen nye bekreftede WCAG-brudd; øvrige kontrastforhold beholdes som manuell rest.
+- Faktisk skill-kjøring og vurdert grunnlag er lagret i `docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6/`, med null blokkerte/teknisk feilede deltester. Skillens import av én original axe-oppføring er tydelig skilt fra det fullstendige native-skannet og en kravvis analyse av alle 21 resultater. Tidligere nettleserdata er referert med opprinnelig tidspunkt og hash, ikke fremstilt som en ny CUA-kjøring. Arbeidsstatus er 21 K / 11 I / 16 U / 0 B; 37 krav har fortsatt bredere vurdering/retest og 11 er uten utløsende innholdstype lokalt.
+- Kontroll: 52 Node-tester, tre Python-regresjonstester, Pages-produksjonsbygg med TypeScript og HTML-grunnkontroll for 23 filer bestod. Nyttig negativ motorprøve og protokolltester skiller feilet/tom kjøring fra faktisk utført kontroll. Ingen full skjermleser-/zoom-/produksjonsvurdering er påstått.
+- Oppdatert dokumentasjon, utviklingsplan og erklæringens korte metode-/begrensningstekst. Ingen produktavvik rettes i dette testoppdraget. Tidligere PDF-/språkrettinger og manuelle uavklarte forhold beholdes. Samlet tilgjengelighetssamsvar er fortsatt uavklart. Ingen commit, registrering eller publisering.
+
+- Avgrenset verktøyprosessene fra globale Selenium remote-/server-/nettleserinnstillinger og implisitte driverstier, slik at den avtalte lokale kjøringen ikke omdirigeres til en annen server. Regresjonstest bekrefter avgrensningen uten å endre foreldreprosessens miljø.
+
+- Unntatt daterte auditmapper fra Prettier for å bevare originalrapporter, råutskrifter og prosedyreøyeblikksbilder. Rotrapporter og kildekode formateres fortsatt.
+
+- Sluttkontroll: Hele prosjektets `pnpm format:check` og `git diff --check` bestod. Erklæringssiden er lest tilbake på stor skjerm og 320 px uten sideoverflyt eller DOM-kandidat. Krav-/status-/evidensfordeling og relative dokumentlenker er avstemt; originalt manifest og motordata er bevart. Ny negativ motorprøve etter miljøavgrensningen bestod også.
+
 ## Ikke utgitt – rettet PDF-lister, PDF-kontrast og 404-språk – 10. november 2026
 
 **Utførende agent:** Codex (OpenAI), med `tilgjengelighetserklaering` 0.5.0 og PDF-skillen. Ingen underagenter.

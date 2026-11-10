@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-11-10T08:59:14.367653+00:00",
+  "native_chrome": {
+    "status": "approval_denied",
+    "action": "cua.getApp('Google Chrome')",
+    "reason": "Computer Use was not approved to use Google Chrome",
+    "consequence": "Ingen faktisk zoom, native pekerhover eller OS-preferanse-test i Chrome. Ingen omgåelse."
+  },
+  "getAnimations": {
+    "status": "unsupported_in_readonly_scope",
+    "replacement": "Beregnet animationPlayState lest for alle tre animerte elementer; ikke påstått native getAnimations-måling."
+  },
+  "screen_reader": "Ingen bekreftet verifiserbar tale-/hjelpemiddeløkt med tilgjengelige godkjente verktøy. DOM/AX er ikke skjermlesertest.",
+  "physical_device": "Ingen styrbar fysisk mobil/nettbrett i dette miljøet.",
+  "external_services": "Innlogging, publisert fallback og faktisk modellgenerering ikke tilgjengelig i testomfanget.",
+  "harness": "To første webpack-forsøk feilet før oppstart (wp.init / DefinePlugin-eksport). Rettet til bundlet webpack-API og faktisk komponent testet deretter. Midlertidig HTTP-server stoppet; testfanen lukket."
+}

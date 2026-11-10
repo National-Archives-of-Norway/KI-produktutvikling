@@ -1,0 +1,11 @@
+{
+  "axe_pages": 21,
+  "violations": 0,
+  "incomplete_groups": 3,
+  "incomplete_occurrences": 80,
+  "vnu_errors": 0,
+  "vnu_info_warning": 191,
+  "incomplete_targets_identical_to_gradient_input": true,
+  "native_run": "docs/tilgjengelighet/2026-11-10/100139-native-b7a19485",
+  "date": "2026-11-10T09:03:50.830082+00:00"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "started_at": "2026-11-10T07:57:56.371Z",
+  "overall_conformance": "not_assessed",
+  "environment": "Local static export, default headless Chrome viewport; original axe testEnvironment is retained.",
+  "output": "docs/tilgjengelighet/2026-11-10/085756-native-b14d07bc",
+  "checks": [
+    {
+      "tool": "axe",
+      "version": "4.14.0",
+      "exit_code": 0,
+      "routes": [
+        "/",
+        "/ressurser/tilgjengelighetserklaering/",
+        "/ressurser/personvernerklaering/",
+        "/ressurser/kodegjennomgang/",
+        "/ressurser/tydelig-kontekst/",
+        "/ressurser/brukerbehov/",
+        "/spor/",
+        "/oversikt/godkjente-mcper/",
+        "/oversikt/godkjente-ki-assistenter/",
+        "/kom-i-gang/",
+        "/om/",
+        "/retningslinjer/",
+        "/personvern/",
+        "/oversikt/",
+        "/priser/",
+        "/tilgjengelighet/",
+        "/nettstedskart/",
+        "/versjonslogg/",
+        "/utviklingsplan/",
+        "/funksjonalitet/",
+        "/404/"
+      ],
+      "result": "raw/axe.json",
+      "violations": 0,
+      "incomplete": 3
+    },
+    {
+      "tool": "vnu",
+      "version": "26.11.9",
+      "exit_code": 0,
+      "result": "raw/vnu.json",
+      "messages": 191
+    }
+  ],
+  "status": "needs_review",
+  "note": "Axe incomplete and all validator messages require review. No automatic WCAG K/I/B or conformance decision.",
+  "finished_at": "2026-11-10T07:58:16.551Z"
+}

@@ -1,0 +1,29 @@
+{
+  "scope": "Verktøyfiler etter oppsett og miljøavgrensning; ingen miljøfiler lest.",
+  "files": [
+    {
+      "path": "package.json",
+      "sha256": "d2e05f7c7fe51ee5b4c8e492685c87917003c6e8ed6ffc5e840c69457ce3a2a6"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "568cf1f2bf0c232b54cd120fb7a7047544b3cbacdbec12dde23ae8128e681d37"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "sha256": "98c3d99a82b364d0f24b2ceacff2d40372ba9ee85bc14f8751b7e81ffb17c880"
+    },
+    {
+      "path": "scripts/a11y/native.mjs",
+      "sha256": "3c703fc783aa6749652bd60ecfd0e0987762ff599c509f141fe4f51df26975d6"
+    },
+    {
+      "path": "scripts/a11y/smoke.mjs",
+      "sha256": "5207484732b4dbddb1cd3c8aa9a2a66e82889ac426a9f9d0658c2ca176ae7de0"
+    },
+    {
+      "path": "tests/a11y-tools.test.mjs",
+      "sha256": "4075a79afebf9f6008c8e0ba5b39b56fdb43df0deda3139d462ca33bc32f5644"
+    }
+  ]
+}

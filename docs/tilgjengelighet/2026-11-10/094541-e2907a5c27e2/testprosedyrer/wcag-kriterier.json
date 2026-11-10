@@ -1,0 +1,444 @@
+{
+  "schema_version": 1,
+  "skill_version": "0.5.0",
+  "checked_at": "2026-11-09",
+  "source_workbook": "Mal – WCAG-sjekkliste for utfylling av tilgjengelighetserklæring for nettløsning.xlsx",
+  "source_sha256": "3cfd5355cf8d72f2563fe091a4f71a1920560cbb3faced26d174bd1718511fbd",
+  "source_revision": "30.01.26",
+  "worksheet": "Liste over krav",
+  "scope": "48 krav i brukerens norske nettstedsmal; kontroller virkeområde og gjeldende kilder ved bruk",
+  "criteria": [
+    {
+      "id": "1.1.1",
+      "title": "Ikke-tekstlig innhold",
+      "excel_cell": "D6",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/111-ikke-tekstlig-innhold-niva/87",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/111-ikke-tekstlig-innhold-niva/87",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-1-oppfatte.md#111"
+    },
+    {
+      "id": "1.2.1",
+      "title": "Bare lyd og video (forhåndsinnspilt)",
+      "excel_cell": "D8",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/121-bare-lyd-og-bare-video-forhandsinnspilt-niva/88",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/121-bare-lyd-og-bare-video-forhandsinnspilt-niva/88",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-1-oppfatte.md#121"
+    },
+    {
+      "id": "1.2.2",
+      "title": "Teksting (forhåndsinnspilt)",
+      "excel_cell": "D9",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/122-teksting-forhandsinnspilt-niva/89",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/122-teksting-forhandsinnspilt-niva/89",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-1-oppfatte.md#122"
+    },
+    {
+      "id": "1.2.5",
+      "title": "Synstolking (forhåndsinnspilt)",
+      "excel_cell": "D10",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/125-synstolking-forhandsinnpilt-niva-aa/842",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/125-synstolking-forhandsinnspilt-niva-aa/842",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-1-oppfatte.md#125"
+    },
+    {
+      "id": "1.3.1",
+      "title": "Informasjon og relasjoner",
+      "excel_cell": "D12",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/131-informasjon-og-relasjoner-niva/90",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/131-informasjon-og-relasjoner-niva/90",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-1-oppfatte.md#131"
+    },
+    {
+      "id": "1.3.2",
+      "title": "Meningsfylt rekkefølge",
+      "excel_cell": "D13",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/132-meningsfylt-rekkefolge-niva/91",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/132-meningsfylt-rekkefolge-niva/91",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-1-oppfatte.md#132"
+    },
+    {
+      "id": "1.3.3",
+      "title": "Sensoriske egenskaper",
+      "excel_cell": "D14",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/133-sensoriske-egenskaper-niva/92",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/133-sensoriske-egenskaper-niva/92",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-1-oppfatte.md#133"
+    },
+    {
+      "id": "1.3.4",
+      "title": "Visningsretning",
+      "excel_cell": "D15",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/134-visningsretning-niva-aa/141",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/134-visningsretning-niva-aa/141",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-1-oppfatte.md#134"
+    },
+    {
+      "id": "1.3.5",
+      "title": "Identifiser formål med inndata",
+      "excel_cell": "D16",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/135-identifiser-formal-med-inndata-niva-aa/142",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/135-identifiser-formal-med-inndata-niva-aa/142",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-1-oppfatte.md#135"
+    },
+    {
+      "id": "1.4.1",
+      "title": "Bruk av farge",
+      "excel_cell": "D18",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/141-bruk-av-farge-niva/93",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/141-bruk-av-farge-niva/93",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-1-oppfatte.md#141"
+    },
+    {
+      "id": "1.4.2",
+      "title": "Styring av lyd",
+      "excel_cell": "D19",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/142-styring-av-lyd-niva/94",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/142-styring-av-lyd-niva/94",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-1-oppfatte.md#142"
+    },
+    {
+      "id": "1.4.3",
+      "title": "Kontrast (minimum)",
+      "excel_cell": "D20",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/143-kontrast-minimum-niva-aa/95",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/143-kontrast-minimum-niva-aa/95",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-1-oppfatte.md#143"
+    },
+    {
+      "id": "1.4.4",
+      "title": "Endring av tekststørrelse",
+      "excel_cell": "D21",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/144-endring-av-tekststorrelse-niva-aa/96",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/144-endring-av-tekststorrelse-niva-aa/96",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-1-oppfatte.md#144"
+    },
+    {
+      "id": "1.4.5",
+      "title": "Bilder av tekst",
+      "excel_cell": "D22",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/145-bilder-av-tekst-niva-aa/97",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/145-bilder-av-tekst-niva-aa/97",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-1-oppfatte.md#145"
+    },
+    {
+      "id": "1.4.10",
+      "title": "Dynamisk tilpasning (Reflow)",
+      "excel_cell": "D23",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/1410-dynamisk-tilpasning-reflow-niva-aa/144",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/1410-dynamisk-tilpasning-reflow-niva-aa/144",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-1-oppfatte.md#1410"
+    },
+    {
+      "id": "1.4.11",
+      "title": "Kontrast for ikke-tekstlig innhold",
+      "excel_cell": "D24",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/1411-kontrast-ikke-tekstlig-innhold-niva-aa/145",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/1411-kontrast-ikke-tekstlig-innhold-niva-aa/145",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-1-oppfatte.md#1411"
+    },
+    {
+      "id": "1.4.12",
+      "title": "Tekstavstand",
+      "excel_cell": "D25",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/1412-tekstavstand-niva-aa/146",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/1412-tekstavstand-niva-aa/146",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-1-oppfatte.md#1412"
+    },
+    {
+      "id": "1.4.13",
+      "title": "Pekerfølsomt innhold eller innhold ved tastaturfokus",
+      "excel_cell": "D26",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/1413-pekerfolsomt-innhold-eller-innhold-ved-tastaturfokus-niva-aa/147",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/1413-pekerfolsomt-innhold-eller-innhold-ved-tastaturfokus-niva-aa/147",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-1-oppfatte.md#1413"
+    },
+    {
+      "id": "2.1.1",
+      "title": "Tastatur",
+      "excel_cell": "D28",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/211-tastatur-niva/98",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/211-tastatur-niva/98",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-2-betjene.md#211"
+    },
+    {
+      "id": "2.1.2",
+      "title": "Ingen tastaturfelle",
+      "excel_cell": "D29",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/212-ingen-tastaturfelle-niva/99",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/212-ingen-tastaturfelle-niva/99",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-2-betjene.md#212"
+    },
+    {
+      "id": "2.1.4",
+      "title": "Hurtigtaster som består av ett tegn",
+      "excel_cell": "D30",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/214-hurtigtaster-som-bestar-av-ett-tegn-niva/782",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/214-hurtigtaster-som-bestar-av-ett-tegn-niva/782",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-2-betjene.md#214"
+    },
+    {
+      "id": "2.2.1",
+      "title": "Justerbar hastighet",
+      "excel_cell": "D32",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/221-justerbar-hastighet-niva/100",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/221-justerbar-hastighet-niva/100",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-2-betjene.md#221"
+    },
+    {
+      "id": "2.2.2",
+      "title": "Pause, stopp, skjul",
+      "excel_cell": "D33",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/222-pause-stopp-skjul-niva/101",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/222-pause-stopp-skjul-niva/101",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-2-betjene.md#222"
+    },
+    {
+      "id": "2.3.1",
+      "title": "Terskelverdi på maksimalt tre glimt",
+      "excel_cell": "D35",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/231-terskelverdi-pa-maksimalt-tre-glimt-niva/102",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/231-terskelverdi-pa-maksimalt-tre-glimt-niva/102",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-2-betjene.md#231"
+    },
+    {
+      "id": "2.4.1",
+      "title": "Hoppe over blokker",
+      "excel_cell": "D37",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/241-hoppe-over-blokker-niva/103",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/241-hoppe-over-blokker-niva/103",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-2-betjene.md#241"
+    },
+    {
+      "id": "2.4.2",
+      "title": "Sidetitler",
+      "excel_cell": "D38",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/242-sidetitler-niva/104",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/242-sidetitler-niva/104",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-2-betjene.md#242"
+    },
+    {
+      "id": "2.4.3",
+      "title": "Fokusrekkefølge",
+      "excel_cell": "D39",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/243-fokusrekkefolge-niva/105",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/243-fokusrekkefolge-niva/105",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-2-betjene.md#243"
+    },
+    {
+      "id": "2.4.4",
+      "title": "Formål med lenke (i kontekst)",
+      "excel_cell": "D40",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/244-formal-med-lenke-i-kontekst-niva/106",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/244-formal-med-lenke-i-kontekst-niva/106",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-2-betjene.md#244"
+    },
+    {
+      "id": "2.4.5",
+      "title": "Flere måter",
+      "excel_cell": "D41",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/245-flere-mater-niva-aa/107",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/245-flere-mater-niva-aa/107",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-2-betjene.md#245"
+    },
+    {
+      "id": "2.4.6",
+      "title": "Overskrifter og ledetekster",
+      "excel_cell": "D42",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/246-overskrifter-og-ledetekster-niva-aa/108",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/246-overskrifter-og-ledetekster-niva-aa/108",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-2-betjene.md#246"
+    },
+    {
+      "id": "2.4.7",
+      "title": "Synlig fokus",
+      "excel_cell": "D43",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/247-synlig-fokus-niva-aa/109",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/247-synlig-fokus-niva-aa/109",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-2-betjene.md#247"
+    },
+    {
+      "id": "2.5.1",
+      "title": "Pekerbevegelse",
+      "excel_cell": "D45",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/251-pekerbevegelser-niva/148",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/251-pekerbevegelser-niva/148",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-2-betjene.md#251"
+    },
+    {
+      "id": "2.5.2",
+      "title": "Pekeravbrytelse",
+      "excel_cell": "D46",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/252-pekeravbrytelse-niva/149",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/252-pekeravbrytelse-niva/149",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-2-betjene.md#252"
+    },
+    {
+      "id": "2.5.3",
+      "title": "Ledetekst i navn",
+      "excel_cell": "D47",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/253-ledetekst-i-navn-niva/150",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/253-ledetekst-i-navn-niva/150",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-2-betjene.md#253"
+    },
+    {
+      "id": "2.5.4",
+      "title": "Bevegelsesaktivering",
+      "excel_cell": "D48",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/254-bevegelsesaktivering-niva/151",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/254-bevegelsesaktivering-niva/151",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-2-betjene.md#254"
+    },
+    {
+      "id": "3.1.1",
+      "title": "Språk på siden",
+      "excel_cell": "D50",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/311-sprak-pa-siden-niva/110",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/311-sprak-pa-siden-niva/110",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-3-forstaelig.md#311"
+    },
+    {
+      "id": "3.1.2",
+      "title": "Språk på deler av innhold",
+      "excel_cell": "D51",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/312-sprak-pa-deler-av-innhold-niva-aa/111",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/312-sprak-pa-deler-av-innhold-niva-aa/111",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-3-forstaelig.md#312"
+    },
+    {
+      "id": "3.2.1",
+      "title": "Fokus",
+      "excel_cell": "D53",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/321-fokus-niva/112",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/321-fokus-niva/112",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-3-forstaelig.md#321"
+    },
+    {
+      "id": "3.2.2",
+      "title": "Inndata",
+      "excel_cell": "D54",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/322-inndata-niva/114",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/322-inndata-niva/114",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-3-forstaelig.md#322"
+    },
+    {
+      "id": "3.2.3",
+      "title": "Konsekvent navigering",
+      "excel_cell": "D55",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/323-konsekvent-navigering-niva-aa/113",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/323-konsekvent-navigering-niva-aa/113",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-3-forstaelig.md#323"
+    },
+    {
+      "id": "3.2.4",
+      "title": "Konsekvent identifikasjon",
+      "excel_cell": "D56",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/324-konsekvent-identifikasjon-niva-aa/115",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/324-konsekvent-identifikasjon-niva-aa/115",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-3-forstaelig.md#324"
+    },
+    {
+      "id": "3.3.1",
+      "title": "Identifikasjon av feil",
+      "excel_cell": "D58",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/331-identifikasjon-av-feil-niva/116",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/331-identifikasjon-av-feil-niva/116",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-3-forstaelig.md#331"
+    },
+    {
+      "id": "3.3.2",
+      "title": "Ledetekster eller instruksjoner",
+      "excel_cell": "D59",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/332-ledetekster-eller-instruksjoner-niva/117",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/332-ledetekster-eller-instruksjoner-niva/117",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-3-forstaelig.md#332"
+    },
+    {
+      "id": "3.3.3",
+      "title": "Forslag ved feil",
+      "excel_cell": "D60",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/333-forslag-ved-feil-niva-aa/118",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/333-forslag-ved-feil-niva-aa/118",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-3-forstaelig.md#333"
+    },
+    {
+      "id": "3.3.4",
+      "title": "Forhindring av feil (juridiske feil, økonomiske feil, datafeil)",
+      "excel_cell": "D61",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/334-forhindring-av-feil-juridiske-feil-okonomiske-feil-datafeil-niva-aa/119",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/334-forhindring-av-feil-juridiske-feil-okonomiske-feil-datafeil-niva-aa/119",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-3-forstaelig.md#334"
+    },
+    {
+      "id": "4.1.1",
+      "title": "Parsing (oppdeling)",
+      "excel_cell": "D63",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/411-parsing-oppdeling-niva/120",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/411-parsing-oppdeling-niva/120",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-4-robust.md#411"
+    },
+    {
+      "id": "4.1.2",
+      "title": "Navn, rolle, verdi",
+      "excel_cell": "D64",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/412-navn-rolle-verdi-niva/121",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/412-navn-rolle-verdi-niva/121",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-4-robust.md#412"
+    },
+    {
+      "id": "4.1.3",
+      "title": "Statusbeskjeder",
+      "excel_cell": "D65",
+      "source_url": "https://www.uutilsynet.no/wcag-standarden/413-statusbeskjeder-niva-aa/152",
+      "verified_url": "https://www.uutilsynet.no/wcag-standarden/413-statusbeskjeder-niva-aa/152",
+      "source_checked_at": "2026-11-09",
+      "procedure": "wcag-4-robust.md#413"
+    }
+  ]
+}

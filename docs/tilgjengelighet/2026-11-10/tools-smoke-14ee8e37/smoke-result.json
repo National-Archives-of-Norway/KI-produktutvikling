@@ -1,0 +1,8 @@
+{
+  "fixture": true,
+  "scope": "Deliberately invalid synthetic HTML, not the portal",
+  "tested_at": "2026-11-10T08:13:36.299Z",
+  "status": "passed",
+  "axe_image_alt_detected": true,
+  "vnu_missing_alt_detected": true
+}

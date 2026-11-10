@@ -1,10 +1,10 @@
 {
-  "run_directory": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a",
-  "automatic_status": "automatic_checks_partial",
+  "run_directory": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+  "automatic_status": "needs_review",
   "overall_conformance": "not_assessed",
-  "manifest": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/manifest.json",
-  "review_status": "targeted_repairs_verified_with_remaining_manual_scope",
-  "reviewed_at": "2026-11-10T08:17:30.459664+01:00",
+  "manifest": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2/manifest.json",
+  "review_status": "local_remaining_checks_reviewed_with_explicit_limits",
+  "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
   "confirmed_findings": 0,
   "open_findings": [],
   "fixed_findings": [
@@ -16,12 +16,14 @@
     "A11Y-06"
   ],
   "counts": {
-    "U": 17,
+    "K": 22,
     "I": 11,
-    "K": 20,
+    "U": 15,
     "B": 0
   },
-  "previous_run": "docs/tilgjengelighet/2026-11-10/053920-3f1e603bfbcd",
-  "review_report": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/testrapport.md",
-  "manual_follow_up": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/manuell-oppfolging.md"
+  "previous_run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
+  "native_run": "docs/tilgjengelighet/2026-11-10/100139-native-b7a19485",
+  "manual_remaining": 36,
+  "completed_local_manual_sample": 1,
+  "native_postverification": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2/raw/native-postverification.json"
 }

@@ -4,7 +4,7 @@ Sist oppdatert: **10. november 2026**. Utførende agent ved denne gjennomgangen:
 
 **Status: Fungerende lokal prototype; ikke klar for produksjon eller deling av internt innhold.** Lokal funksjonalitet og modelladaptere er implementert. Drift, innlogging, faglig godkjenning og samlet lanseringskontroll gjenstår. Første delte miljø skal være en **lukket pilot**. Offentlig publisering vurderes senere, etter en egen beslutning.
 
-Gjennomgangen bygger på kode, dokumentasjon og lokal Git-base `83b87f3` med senere ucommittede endringer, supplert med arbeidet med personvernskillen og portalens erklæringsutkast, prisside og Oversikt. Siste samlede dokumenterte kjøring har **48 beståtte tester og produksjonsbygg**, samt avgrensede nettleserkontroller. Dette er ikke dokumentasjon på produksjonsdrift, godkjent innhold, full tilgjengelighet eller vellykkede kall mot en faktisk modellleverandør. Se versjonsloggen for kontrollomfanget i hver arbeidsøkt; publisering av en planside er ikke produksjonsgodkjenning.
+Gjennomgangen bygger på kode, dokumentasjon og lokal Git-base `b152e73` med senere ucommittede endringer, supplert med arbeidet med personvernskillen og portalens erklæringsutkast, prisside og Oversikt. Siste samlede dokumenterte kjøring har **52 beståtte Node-tester, tre Python-tester og produksjonsbygg**, samt avgrensede nettleserkontroller. Dette er ikke dokumentasjon på produksjonsdrift, godkjent innhold, full tilgjengelighet eller vellykkede kall mot en faktisk modellleverandør. Se versjonsloggen for kontrollomfanget i hver arbeidsøkt; publisering av en planside er ikke produksjonsgodkjenning.
 
 ## Slik brukes og vedlikeholdes planen
 
@@ -66,7 +66,7 @@ Tilgjengelighetsgrunnlag og konkrete uavklarte punkter finnes i [WCAG-kontrollen
 
 ## Faseoversikt
 
-| Fase | Leveranse                                            | Status 9. november 2026                                                             |
+| Fase | Leveranse                                            | Status 10. november 2026                                                            |
 | ---- | ---------------------------------------------------- | ----------------------------------------------------------------------------------- |
 | 1    | Omfang, ansvar og tilgangsvalg                       | Målgruppe og første funksjoner avklart; eierskap, drift og tilgangsmodell åpne      |
 | 2    | Teknisk grunnmur og arbeidsflyt                      | Lokal implementering klar; GitHub-repo, CI og review-regler gjenstår                |
@@ -200,11 +200,17 @@ Fase 5 og 6 må samordnes før MVP 1 deles. Fase 7 kan utvikles parallelt, men f
 - [ ] P4: Legge repoet på GitHub, tillate nødvendige Actions-/PR-rettigheter og prøve planlagt/manuell jobb. Bare samme repo får skriverettigheter; ingen andre repoer eller modellnøkler brukes.
 - [ ] Koble sammenslått prisgrunnlag til faktisk utrulling av både nettside og RAG, og teste feilkilder/varsling i det delte miljøet. Automatisk produksjonsoppdatering er ikke aktiv. Avklare hvem som gjennomgår åpne pris-PR-er og vedlikeholder utvalget; aktiveringsstatus på siden skal oppdateres først etter verifisering.
 
+## Lokale testmotorer – 10. november 2026
+
+- [x] Installere låst axe CLI, Nu Html Checker og kompatibel ChromeDriver som utviklingsavhengigheter, med lokal Java-runtime. Ingen ekstern skanntjeneste eller global Java-konfigurasjon.
+- [x] Kjøre begge motorene på eksporten: axe på 20 registrerte sider og feilside, vnu på eksportfilene. Originalresultater og tekniske feil bevares. Faktisk negativ verktøytest bekrefter at begge motorene finner manglende alt i en separat testside. Kjøring `090555-native-d984a7c5` og vurdert grunnlag `090740-ca8d9c80ecb6`: 0 axe-violations / 0 HTML-feil, men tre kontrastgrupper (80 forekomster) og tekniske noter er vurdert videre. Arbeidsstatus 21 K / 11 I / 16 U / 0 B; ikke samlet godkjenning.
+- [ ] Vurdere de gjenstående kontrastforholdene manuelt og fullføre øvrige hjelpemiddel-/zoom-/produksjonskontroller. Skannene er ingen samlet P8-godkjenning. Første delte miljø er fortsatt lukket pilot.
+
 ## Retting av tre tilgjengelighetsavvik – 10. november 2026
 
 - [x] Rette og målrettet reteste A11Y-04–06: PDF-listestruktur, PDF-tekstkontrast og språk/tittel på 404-siden. Ny kjøring: `docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/`. PDF har tre lister/12 punkter, 229 bevarte MCID-koblinger og 6,28:1 tekstkontrast på side 5. Norsk 404 og én tittel er kontrollert i nettleser/eksport.
 - [x] Oppdatere rapporter, restliste, kort erklæring, funksjonsregister og vedleggsstørrelse. Ingen bekreftede åpne avvik i undersøkt utvalg; samlet samsvar er fortsatt uavklart (20 K / 11 I / 17 U / 0 B).
-- [ ] Fullføre den brede manuelle restlisten og blokkert axe/vnu, og teste faktisk publisert fallback. Rettede lokale avvik fullfører ikke P8 eller produksjonsgodkjenningen.
+- [ ] Fullføre den brede manuelle restlisten og teste faktisk publisert fallback. Axe/vnu er nå installert og kjørt, se nyere resultater. Rettede lokale avvik fullfører ikke P8 eller produksjonsgodkjenningen.
 
 ## Tilgjengelighetskjøring – 10. november 2026
 
@@ -212,7 +218,7 @@ Fase 5 og 6 må samordnes før MVP 1 deles. Fase 7 kan utvikles parallelt, men f
 - [x] Oppdatere testplan, vurdert matrise, kort erklæring og lokal side. Tre åpne avvik og fortsatt uavklart samlet samsvar; 31 krav med automatisk deldekning er ikke 31 oppfylte krav.
 - [x] Rettet og lokalt retestet 10. november i `080757-ffaeb036427a`; tidligere oppgave A11Y-06: engelsk 404-melding uten riktig språkmerking. Vurdere også sidetittelen og faktisk publisert 404-fallback. De to PDF-avvikene nedenfor er også rettet i den nye retesten; produksjonsfallback gjenstår.
 - [ ] Fullføre de 37 gjenstående vurderings-/rettings-/retestpunktene i den manuelle restlisten, særlig faktisk skjermleser, 200/400 % forstørring, enhetsinnstillinger, resterende kontrast, tekstavstand og PDF-semantikk. 11 krav er uten utløsende innholdstype i lokalt omfang og må vurderes på nytt ved endring.
-- [ ] Gjøre lokal axe/full HTML-validator tilgjengelig og kjøre blokkert automatisk skann. Ingen ekstern opplasting eller installasjon er utført. P8 er fortsatt åpent.
+- [x] Gjort lokal axe/full HTML-validator tilgjengelig og kjørt skann 10. november; se nyere motorresultater. Ingen ekstern opplasting er utført. P8 er fortsatt åpent.
 
 ## Tilgjengelighetsretest – 9. november 2026
 
@@ -385,3 +391,9 @@ Detaljer: [WCAG-kontroll](docs/tilgjengelighet/WCAG-KONTROLL.md), [erklæringsgr
 - [ ] Avklare eventuell senere GitHub-publisering, tilgang og distribusjon. Ingen automatisk synkronisering eller installasjon er innført.
 
 Tilgjengelighetskontrollen fra 6. november omfattet ni sider. Den nye skill-detaljsiden utvider portalen til ti sider og må inngå i neste samlede tilgjengelighetsvurdering.
+
+### Lokal tilgjengelighetsoppfølging – 10. november 2026
+
+- [x] Utføre nye nettleser-/tekstavstands-/dynamiske kontroller, konservativ gradientanalyse og isolert simulering av prisaldervarsel. [Rapport og evidens](docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2/testrapport.md). Midlertidig CSS er identisk tilbakeført. 1.4.12 er K i prøvd lokal HTML-versjon; samlet samsvar er uavklart (22 K / 11 I / 15 U / 0 B).
+- [ ] Fullføre faktisk skjermleser, verifisert 200/400 % forstørring, fysisk orientering/redusert bevegelse og avtalte nettlesere. Native Chrome-tilgang ble avvist automatisk; viewport er ikke zoom.
+- [ ] Ferdigstille faglig vurdering av PDF-diagram/språk/rekkefølge, øvrig ikke-tekstlig kontrast/tilstander og prisaldervarselets pausebehov. Test innlogging, faktisk modell og publisert fallback i beskyttet pilot når miljøet finnes. P8 er ikke godkjent; første delte miljø skal fortsatt være lukket.

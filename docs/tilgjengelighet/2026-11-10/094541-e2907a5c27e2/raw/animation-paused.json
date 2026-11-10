@@ -1,0 +1,24 @@
+{
+  "attemptedApi": "getAnimations unavailable in read-only DOM scope; computed style read instead",
+  "label": "Start animasjonen i forsideillustrasjonen",
+  "nodes": [
+    {
+      "cls": "hero-art-halo",
+      "name": "hero-halo-turn",
+      "state": "paused",
+      "tag": "SPAN"
+    },
+    {
+      "cls": "hero-art-node hero-art-node-one",
+      "name": "hero-node-one",
+      "state": "paused",
+      "tag": "I"
+    },
+    {
+      "cls": "hero-art-node hero-art-node-two",
+      "name": "hero-node-two",
+      "state": "paused",
+      "tag": "I"
+    }
+  ]
+}

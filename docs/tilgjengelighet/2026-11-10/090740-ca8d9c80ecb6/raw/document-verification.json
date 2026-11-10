@@ -1,0 +1,22 @@
+{
+  "criteria": 48,
+  "counts": {
+    "K": 21,
+    "I": 11,
+    "U": 16,
+    "B": 0
+  },
+  "automatic_partial": 34,
+  "manual_remaining": 37,
+  "blocked_checks": 0,
+  "failed_checks": 0,
+  "axe_pages": 21,
+  "axe_violations": 0,
+  "axe_incomplete_nodes": 80,
+  "vnu_errors": 0,
+  "vnu_notes": 191,
+  "relative_links_checked": 129,
+  "missing_links": [],
+  "manifest_sha256": "2381a420e5c19b9c3c2255a2315e4caf45653408be332ffef9a43ef4d04e6af4",
+  "note": "Integritetskontroll; ingen automatisk full samsvarsvurdering."
+}

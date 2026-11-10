@@ -1,0 +1,192 @@
+[
+  {
+    "pseudo": {
+      "height": "1px",
+      "position": "absolute",
+      "top": "0px"
+    },
+    "text": [
+      {
+        "height": 19.5,
+        "text": "Skill",
+        "top": 27.25
+      },
+      {
+        "height": 19.5,
+        "text": "Beta",
+        "top": 27.25
+      },
+      {
+        "height": 19.59375,
+        "text": "Ennå ikke gjennomgått av et menneske",
+        "top": 57
+      },
+      {
+        "height": 64,
+        "text": "Test tilgjengelighet og utform erklæring",
+        "top": 100.59375
+      },
+      {
+        "height": 84,
+        "text": "Kjør automatiske tilgjengelighetskontroller, se hva som gjenstår manuelt for alle 48 krav, og få rapporter, rettingsforslag og tilgjengelighetserklæring fra vurderte resultater.",
+        "top": 178.59375
+      },
+      {
+        "height": 44,
+        "text": "Se skill ↗",
+        "top": 292.59375
+      }
+    ],
+    "top": 967.5
+  },
+  {
+    "pseudo": {
+      "height": "1px",
+      "position": "absolute",
+      "top": "0px"
+    },
+    "text": [
+      {
+        "height": 19.5,
+        "text": "Skill",
+        "top": 27.25
+      },
+      {
+        "height": 19.5,
+        "text": "Beta",
+        "top": 27.25
+      },
+      {
+        "height": 19.59375,
+        "text": "Ennå ikke gjennomgått av et menneske",
+        "top": 57
+      },
+      {
+        "height": 64,
+        "text": "Kartlegg personvern og utform erklæring",
+        "top": 100.59375
+      },
+      {
+        "height": 84,
+        "text": "Kartlegg faktisk databehandling, lagre vurderingsgrunnlaget i prosjektet og opprett eller oppdater personvernerklæringen med tydelige uavklarte forhold.",
+        "top": 178.59375
+      },
+      {
+        "height": 44,
+        "text": "Se skill ↗",
+        "top": 292.59375
+      }
+    ],
+    "top": 967.5
+  },
+  {
+    "pseudo": {
+      "height": "1px",
+      "position": "absolute",
+      "top": "0px"
+    },
+    "text": [
+      {
+        "height": 19.5,
+        "text": "Skill",
+        "top": 27.25
+      },
+      {
+        "height": 19.5,
+        "text": "Beta",
+        "top": 27.25
+      },
+      {
+        "height": 19.59375,
+        "text": "Ennå ikke gjennomgått av et menneske",
+        "top": 57
+      },
+      {
+        "height": 32,
+        "text": "Gjennomgå en kodeendring",
+        "top": 100.59375
+      },
+      {
+        "height": 116,
+        "text": "Et utgangspunkt for strukturert gjennomgang av kvalitet, feilscenarier og tester.",
+        "top": 146.59375
+      },
+      {
+        "height": 44,
+        "text": "Se skill ↗",
+        "top": 292.59375
+      }
+    ],
+    "top": 967.5
+  },
+  {
+    "pseudo": {
+      "height": "1px",
+      "position": "absolute",
+      "top": "0px"
+    },
+    "text": [
+      {
+        "height": 19.5,
+        "text": "Instruks",
+        "top": 27.25
+      },
+      {
+        "height": 19.59375,
+        "text": "Eksempel",
+        "top": 57
+      },
+      {
+        "height": 32,
+        "text": "Gi KI tydelig kontekst",
+        "top": 100.59375
+      },
+      {
+        "height": 63,
+        "text": "Beskriv mål, rammer og forventet resultat før du starter en oppgave.",
+        "top": 146.59375
+      },
+      {
+        "height": 44,
+        "text": "Les instruksen ↗",
+        "top": 239.59375
+      }
+    ],
+    "top": 1347.09375
+  },
+  {
+    "pseudo": {
+      "height": "1px",
+      "position": "absolute",
+      "top": "0px"
+    },
+    "text": [
+      {
+        "height": 19.5,
+        "text": "Prompt",
+        "top": 27.25
+      },
+      {
+        "height": 19.59375,
+        "text": "Eksempel",
+        "top": 57
+      },
+      {
+        "height": 32,
+        "text": "Utforsk et brukerbehov",
+        "top": 100.59375
+      },
+      {
+        "height": 63,
+        "text": "Beskriv en situasjon du vil forstå bedre. Få forslag til åpne intervjuspørsmål, og vurder hvilke dere vil prøve med brukere.",
+        "top": 146.59375
+      },
+      {
+        "height": 44,
+        "text": "Se prompten ↗",
+        "top": 239.59375
+      }
+    ],
+    "top": 1347.09375
+  }
+]

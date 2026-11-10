@@ -1,0 +1,4 @@
+
+/* Temporary WCAG 1.4.12 audit override; remove after test. */
+*:not(svg):not(svg *) { line-height: 1.5 !important; letter-spacing: .12em !important; word-spacing: .16em !important; }
+p { margin-bottom: 2em !important; }

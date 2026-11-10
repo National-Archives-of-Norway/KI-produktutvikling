@@ -128,7 +128,7 @@ export function getFeatures(): Feature[] {
       id: "tilgjengelighet",
       title: "Tilgjengelighetserklæring",
       description:
-        "Les om vurderingens begrensninger og hvordan du melder tilgjengelighetsproblemer eller ber om et annet format. Erklæringen er et lokalt utkast; samlet samsvar er ikke ferdig vurdert.",
+        "Les om hva som er undersøkt, vurderingens begrensninger og hvordan du melder tilgjengelighetsproblemer eller ber om et annet format. Erklæringen er et lokalt utkast; samlet samsvar er ikke ferdig vurdert.",
       status: "draft",
       href: "/tilgjengelighet/",
       routes: ["/tilgjengelighet/"],

@@ -57,6 +57,10 @@ export default function AccessibilityPage() {
         funksjonene.
       </p>
       <p>
+        Kontrast i enkelte interaktive tilstander og ved overlappende effekter
+        er ikke ferdig vurdert.
+      </p>
+      <p>
         Du kan lese ressursene gjennom{" "}
         <Link href="/#ressurser">ressurskatalogen</Link> eller{" "}
         <Link href="/nettstedskart/">nettstedskartet</Link> uten å bruke
@@ -94,10 +98,12 @@ export default function AccessibilityPage() {
       <p>
         Tilgjengeligheten ble sist vurdert{" "}
         <time dateTime="2026-11-10">10. november 2026</time>. Grunnlaget
-        omfatter automatiske deltester av nettsidene, lokale tastaturkontroller
-        og målrettet retest av feilsiden og PDF-ens listestruktur og
-        tekstkontrast. Tidligere undersøkelser av øvrig PDF-innhold inngår også
-        i grunnlaget. Faktisk skjermleserbruk er ikke testet.
+        omfatter lokale nettleser- og tastaturkontroller, prøving med økt
+        tekstavstand, kontrastberegninger, kontroll av animasjonens
+        pausefunksjon, simulering av prisaldervarselet, tidligere axe-skann og
+        HTML-validering med Nu Html Checker samt målrettede PDF-kontroller.
+        Tidligere undersøkelser av øvrig innhold inngår også i grunnlaget.
+        Faktisk skjermleserbruk er ikke testet.
       </p>
       <p>
         Teksten ble sist oppdatert{" "}

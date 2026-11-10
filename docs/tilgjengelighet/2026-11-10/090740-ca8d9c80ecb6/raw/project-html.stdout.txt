@@ -1,0 +1,1 @@
+Grunnkontroll bestått for 23 HTML-filer. Ikke en full WCAG-test.
