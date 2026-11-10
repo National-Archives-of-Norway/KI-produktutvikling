@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "skill": "tilgjengelighetserklaering",
+  "skill_version": "0.5.1",
+  "run_id": "135417-d3e318e119fd",
+  "started_at": "2026-11-10T13:54:17.076238+01:00",
+  "finished_at": "2026-11-10T13:54:18.400782+01:00",
+  "timezone": "Europe/Oslo",
+  "agent": "Codex (OpenAI)",
+  "project": "/Users/khadah/Documents/ChatGPT/KI-utvikling",
+  "project_version": "7d8123a",
+  "run_directory": "docs/tilgjengelighet/2026-11-10/135417-d3e318e119fd",
+  "automatic_status": "needs_review",
+  "full_wcag_audit": false,
+  "overall_conformance": "not_assessed",
+  "checks": [
+    {
+      "tool": "auto_suite",
+      "arguments": [
+        "--project-root",
+        "/Users/khadah/Documents/ChatGPT/KI-utvikling",
+        "--base-path",
+        "",
+        "--html-export",
+        "out",
+        "--browser-report",
+        "/private/tmp/contrast86-browser.json",
+        "--axe-report",
+        "docs/tilgjengelighet/2026-11-10/135353-native-2147a40e/raw/axe-01.json"
+      ],
+      "exit_code": 1,
+      "status": "needs_review",
+      "result": "raw/auto-01.json",
+      "stdout": "raw/auto-01.stdout.txt",
+      "stderr": "raw/auto-01.stderr.txt"
+    }
+  ],
+  "automation_coverage": {
+    "total_criteria": 48,
+    "with_automatic_partial_tests": 29,
+    "without_automatic_results": 19,
+    "with_candidates": 0,
+    "manual_remaining": 48,
+    "blocked_checks": 0,
+    "failed_checks": 0
+  },
+  "manual_follow_up": "manuell-oppfolging.md",
+  "test_plan": "testplan.json",
+  "procedure_catalog": {
+    "snapshot": "testprosedyrer/wcag-kriterier.json",
+    "sha256": "607d9420bebb89c70e727950e29a861ea4f5b0e1057b812b953eec45990bc6a1"
+  }
+}

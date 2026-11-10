@@ -26,7 +26,7 @@ Følgende 15 krav er delvis undersøkt, men ikke ferdig vurdert. Uavklart status
 - **1.3.1 Informasjon og relasjoner:** PDF-vedleggets lister, grupperinger og øvrige struktur er ikke ferdig undersøkt med skjermleser.
 - **1.3.2 Meningsfylt rekkefølge:** Leserekkefølgen i PDF-vedlegget, særlig på side 6–7, er ikke ferdig vurdert med hjelpemidler.
 - **1.3.4 Visningsretning:** Det er ikke bekreftet at innhold og funksjoner fungerer i både stående og liggende retning på fysisk mobil eller nettbrett.
-- **1.4.3 Kontrast (minimum):** Tekstkontrast i enkelte interaktive tilstander, ved overlappende effekter og i deler av PDF-vedlegget er ikke ferdig vurdert.
+- **1.4.3 Kontrast (minimum):** Tekst over gradienter er undersøkt i normaltilstand og på utvalgte kontroller med tastaturfokus. Øvrige interaktive tilstander og overlappende effekter, samt deler av PDF-vedlegget, er ikke ferdig vurdert.
 - **1.4.4 Endring av tekststørrelse:** Det er ikke bekreftet at alt innhold og alle nødvendige funksjoner kan brukes ved faktisk 200 prosent forstørring.
 - **1.4.10 Dynamisk tilpasning (Reflow):** Det er ikke bekreftet at innholdet tilpasser seg og nødvendige oppgaver kan utføres ved faktisk 400 prosent nettleserzoom.
 - **1.4.11 Kontrast for ikke-tekstlig innhold:** Kontrasten for nødvendige kontrollmarkeringer og meningsbærende grafikk, inkludert i PDF-vedlegget, er ikke ferdig vurdert.
@@ -61,6 +61,6 @@ Hvis du ikke får svar, er misfornøyd med svaret eller ikke kan bruke nettstede
 
 ## Vurdering og oppdatering
 
-Tilgjengeligheten ble sist vurdert **10. november 2026**. Grunnlaget omfatter lokale nettleser- og tastaturkontroller, prøving med økt tekstavstand, kontrastberegninger, kontroll av animasjonens pausefunksjon, simulering av prisaldervarselet, axe-skann og HTML-validering med Nu Html Checker samt målrettede PDF-kontroller. Tidligere undersøkelser av øvrig innhold inngår også i grunnlaget. Faktisk skjermleserbruk er ikke testet.
+Tilgjengeligheten ble sist vurdert **10. november 2026**. Grunnlaget omfatter lokale nettleser- og tastaturkontroller, prøving med økt tekstavstand, kontrastberegninger av tekst over gradienter og utvalgte fokuserte kontroller, kontroll av animasjonens pausefunksjon, simulering av prisaldervarselet, axe-skann og HTML-validering med Nu Html Checker samt målrettede PDF-kontroller. Tidligere undersøkelser av øvrig innhold inngår også i grunnlaget. Faktisk skjermleserbruk er ikke testet.
 
 Teksten ble sist oppdatert **10. november 2026**.

@@ -4,6 +4,17 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 «Agent» betyr kodeassistenten som utførte arbeidet. Git-forfatteren registreres separat av Git og kan være personen som oppretter commiten. Eksakt modellvariant er ikke registrert for tidligere arbeid og oppgis derfor ikke. Ingen underagenter ble brukt til kvalitetskontrollen eller opprettelsen av denne loggen.
 
+## Ikke utgitt – vurdering av 86 kontrastforekomster – 10. november 2026
+
+**Utførende agent:** Codex (OpenAI), med `tilgjengelighetserklaering` 0.5.1. Ingen underagenter.
+
+- Undersøkt alle 86 opprinnelige axe-incomplete-targets entydig i lokal produksjonseksport ved 1280/320 px. Dokumentert faktisk forgrunn, font, bakgrunnslag, gradient/alpha, pseudo-geometri og tekstglød; konservativ beregnet sRGB-grense minst 7,715057:1. 22 kontroller er faktisk fokusert med tastatur og målt på nytt, minst 8,655854:1. Ingen bekreftet kontrastfeil i prøvde tilstander, ingen designretting nødvendig. Ingen produktfarger eller effekter er endret.
+- Kjørt skillens nettlesermodul på tre sider: ni viewport-prøver, 24 Tab-steg og Enter-pauseforløp, uten kandidater. Ny native axe på 23 ruter: 0 violations / samme 3 incomplete-grupper / 86 noder. Nu på 25 HTML-filer: 0 feil / 207 tekniske info-noter. `run_checks.py --auto` er kjørt med faktisk nettleserdata og original forside-axe; flersideskannet er separat vurdert. Motorenes incomplete-/exitstatus er bevart, ikke omskrevet til pass.
+- Lagret ny vurdert 48-kravsmatrise, testplan, restliste, per-forekomsttabell, råstiler, reproduserbar beregner, skjermbilder og rapport i `docs/tilgjengelighet/2026-11-10/135417-d3e318e119fd/`. Første ufullstendige dev-selektorkartlegging og forklaring av sandbox-blokkert serveroppstart er bevart; autorisert localhost-server ga nøyaktig ett treff per produksjonselement. Oppdatert latest-peker, WCAG-/kvalitetskontroll, README, utviklingsplan og kort erklæring/portalside.
+- 22 K / 11 I / 15 U / 0 B og uavklart samlet samsvar videreføres. De 86 normalforekomstene er undersøkt; øvrige faktiske hover-/dynamiske effekter og PDF-kontrast gjenstår under 1.4.3. Modellgrenser er ikke eksakt pixelmåling eller hjelpemiddel-/zoom-/produksjonsgodkjenning. Tidligere funn/rettinger bevares. Ingen endring i Skills-repoet, commit eller publisering.
+
+- Sluttverifisering: 53 Node-tester, tre Python-tester, Pages-produksjonsbygg med TypeScript/ruteregister og HTML-grunnkontroll for 25 filer bestod. Første bygg fant at en arkivert TypeScript-kildekopi ble typekontrollert; arkivkopiene fikk .txt-suffiks, og nytt bygg bestod uten endring i produktlogikk. Erklæringen er lest tilbake ved 1280/320 px, 15 U-ID-er og 86 rapportlinjer er avstemt, og lokale dokument-/evidenslenker, formatering og Git-diff er kontrollert.
+
 ## Ikke utgitt – tilgjengelighetskontroll av cookie-sider – 10. november 2026
 
 **Utførende agent:** Codex (OpenAI), med `tilgjengelighetserklaering` 0.5.1. Ingen underagenter.

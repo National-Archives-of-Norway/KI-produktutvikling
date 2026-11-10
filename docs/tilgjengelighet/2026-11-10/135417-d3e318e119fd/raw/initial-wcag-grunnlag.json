@@ -1,0 +1,440 @@
+{
+  "overall_conformance": "not_assessed",
+  "scope": "Kun delkontrollene i manifestet",
+  "manifest": "manifest.json",
+  "criteria": [
+    {
+      "id": "1.1.1",
+      "title": "Ikke-tekstlig innhold",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#111"
+    },
+    {
+      "id": "1.2.1",
+      "title": "Bare lyd og video (forhåndsinnspilt)",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#121"
+    },
+    {
+      "id": "1.2.2",
+      "title": "Teksting (forhåndsinnspilt)",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#122"
+    },
+    {
+      "id": "1.2.5",
+      "title": "Synstolking (forhåndsinnspilt)",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#125"
+    },
+    {
+      "id": "1.3.1",
+      "title": "Informasjon og relasjoner",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#131"
+    },
+    {
+      "id": "1.3.2",
+      "title": "Meningsfylt rekkefølge",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#132"
+    },
+    {
+      "id": "1.3.3",
+      "title": "Sensoriske egenskaper",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#133"
+    },
+    {
+      "id": "1.3.4",
+      "title": "Visningsretning",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#134"
+    },
+    {
+      "id": "1.3.5",
+      "title": "Identifiser formål med inndata",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#135"
+    },
+    {
+      "id": "1.4.1",
+      "title": "Bruk av farge",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#141"
+    },
+    {
+      "id": "1.4.2",
+      "title": "Styring av lyd",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#142"
+    },
+    {
+      "id": "1.4.3",
+      "title": "Kontrast (minimum)",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#143"
+    },
+    {
+      "id": "1.4.4",
+      "title": "Endring av tekststørrelse",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#144"
+    },
+    {
+      "id": "1.4.5",
+      "title": "Bilder av tekst",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#145"
+    },
+    {
+      "id": "1.4.10",
+      "title": "Dynamisk tilpasning (Reflow)",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#1410"
+    },
+    {
+      "id": "1.4.11",
+      "title": "Kontrast for ikke-tekstlig innhold",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#1411"
+    },
+    {
+      "id": "1.4.12",
+      "title": "Tekstavstand",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#1412"
+    },
+    {
+      "id": "1.4.13",
+      "title": "Pekerfølsomt innhold eller innhold ved tastaturfokus",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#1413"
+    },
+    {
+      "id": "2.1.1",
+      "title": "Tastatur",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#211"
+    },
+    {
+      "id": "2.1.2",
+      "title": "Ingen tastaturfelle",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#212"
+    },
+    {
+      "id": "2.1.4",
+      "title": "Hurtigtaster som består av ett tegn",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#214"
+    },
+    {
+      "id": "2.2.1",
+      "title": "Justerbar hastighet",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#221"
+    },
+    {
+      "id": "2.2.2",
+      "title": "Pause, stopp, skjul",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#222"
+    },
+    {
+      "id": "2.3.1",
+      "title": "Terskelverdi på maksimalt tre glimt",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#231"
+    },
+    {
+      "id": "2.4.1",
+      "title": "Hoppe over blokker",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#241"
+    },
+    {
+      "id": "2.4.2",
+      "title": "Sidetitler",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#242"
+    },
+    {
+      "id": "2.4.3",
+      "title": "Fokusrekkefølge",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#243"
+    },
+    {
+      "id": "2.4.4",
+      "title": "Formål med lenke (i kontekst)",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#244"
+    },
+    {
+      "id": "2.4.5",
+      "title": "Flere måter",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#245"
+    },
+    {
+      "id": "2.4.6",
+      "title": "Overskrifter og ledetekster",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#246"
+    },
+    {
+      "id": "2.4.7",
+      "title": "Synlig fokus",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#247"
+    },
+    {
+      "id": "2.5.1",
+      "title": "Pekerbevegelse",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#251"
+    },
+    {
+      "id": "2.5.2",
+      "title": "Pekeravbrytelse",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#252"
+    },
+    {
+      "id": "2.5.3",
+      "title": "Ledetekst i navn",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#253"
+    },
+    {
+      "id": "2.5.4",
+      "title": "Bevegelsesaktivering",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#254"
+    },
+    {
+      "id": "3.1.1",
+      "title": "Språk på siden",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#311"
+    },
+    {
+      "id": "3.1.2",
+      "title": "Språk på deler av innhold",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#312"
+    },
+    {
+      "id": "3.2.1",
+      "title": "Fokus",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#321"
+    },
+    {
+      "id": "3.2.2",
+      "title": "Inndata",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#322"
+    },
+    {
+      "id": "3.2.3",
+      "title": "Konsekvent navigering",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#323"
+    },
+    {
+      "id": "3.2.4",
+      "title": "Konsekvent identifikasjon",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#324"
+    },
+    {
+      "id": "3.3.1",
+      "title": "Identifikasjon av feil",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#331"
+    },
+    {
+      "id": "3.3.2",
+      "title": "Ledetekster eller instruksjoner",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#332"
+    },
+    {
+      "id": "3.3.3",
+      "title": "Forslag ved feil",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#333"
+    },
+    {
+      "id": "3.3.4",
+      "title": "Forhindring av feil (juridiske feil, økonomiske feil, datafeil)",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#334"
+    },
+    {
+      "id": "4.1.1",
+      "title": "Parsing (oppdeling)",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-4-robust.md#411"
+    },
+    {
+      "id": "4.1.2",
+      "title": "Navn, rolle, verdi",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-4-robust.md#412"
+    },
+    {
+      "id": "4.1.3",
+      "title": "Statusbeskjeder",
+      "status": "U",
+      "test_date": null,
+      "evidence": [],
+      "observation": "Ikke vurdert. Automatiske delkontroller gir ikke samlet kriteriestatus.",
+      "procedure": "testprosedyrer/wcag-4-robust.md#413"
+    }
+  ],
+  "note": "Alle 48 krav starter uavklart; avstem mot gjeldende virkeområde. Ingen automatisk samsvarsvurdering."
+}

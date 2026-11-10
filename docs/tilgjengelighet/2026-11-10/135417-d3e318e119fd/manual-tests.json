@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-10",
+  "agent": "Codex (OpenAI)",
+  "version": "7d8123a",
+  "method": "Focused source/computed-style/geometry and visual contrast review, plus native axe/Nu and skill browser checks. No product colour/style changes.",
+  "normal": {
+    "nodes": 86,
+    "repeated_at_320": 86,
+    "minimum_bound_ratio": 7.71505709405927,
+    "threshold": 4.5,
+    "below_threshold": 0,
+    "evidence": [
+      "raw/contrast86-static-styles.json",
+      "raw/contrast86-bounds.json",
+      "raw/contrast86-static-styles-320.json",
+      "raw/contrast86-bounds-320.json"
+    ]
+  },
+  "keyboard_focus": {
+    "controls": 22,
+    "actually_focused": 22,
+    "focus_visible": 22,
+    "minimum_bound_ratio": 8.655853600659574,
+    "below_threshold": 0,
+    "action": "locator.press ArrowLeft focuses existing native controls without activating them; activeElement and :focus-visible verified. Not a native hover test.",
+    "evidence": [
+      "raw/contrast86-focus-styles.json",
+      "raw/contrast86-focus-bounds.json"
+    ]
+  },
+  "visual_review": {
+    "viewports": [
+      1280,
+      320
+    ],
+    "pages": [
+      "/",
+      "/spor/",
+      "/oversikt/"
+    ],
+    "result": "Reviewed screenshots of all three pages at both widths. No text-obscuring decorative layer seen in the sample. Hero art separate from heading/prose; card 1px top pseudo-lines above target rectangles; focus/text glows treated conservatively. No claim about arbitrary scroll overlays or all dynamic states.",
+    "screenshots": [
+      "screenshots/contrast-home-320.png",
+      "screenshots/contrast-home.png",
+      "screenshots/contrast-oversikt-320.png",
+      "screenshots/contrast-oversikt.png",
+      "screenshots/contrast-spor-320.png",
+      "screenshots/contrast-spor.png"
+    ]
+  },
+  "technical_follow_up": "Initial dev-target lookup did not match generated production classes/IDs. Partial lookup retained; all 86 were then matched exactly against static export on localhost:4175. First sandbox HTTP-server startup was denied; approved localhost-only server used.",
+  "limits": [
+    "sRGB gradient-stop/alpha envelope is a model, not exact pixel sampling.",
+    "No actual native hover tested; previous unavailable native surface not bypassed.",
+    "No new PDF contrast or full image/diagram assessment.",
+    "No actual screen reader, 200/400% browser zoom, physical device or production/auth/external model tests.",
+    "Axe retains incomplete; no result is rewritten to pass. Full 1.4.3 and all 15 prior U criteria remain unresolved."
+  ]
+}

@@ -1,5 +1,11 @@
 # Kravvis gjennomgang med skill 0.4.0 – 9. november 2026
 
+## Vurdert kontrastoppfølging – 10. november 2026
+
+Siste vurderte oppfølging: [rapport med alle 86 forekomster](docs/tilgjengelighet/2026-11-10/135417-d3e318e119fd/testrapport.md) og [48-kravsrestliste](docs/tilgjengelighet/2026-11-10/135417-d3e318e119fd/manuell-oppfolging.md). Alle 86 opprinnelige axe-targets er entydig undersøkt i produksjonseksporten ved 1280/320 px. Konservativ sRGB-/alpha-grense er minst 7,715057:1; 22 faktisk fokuserte kontroller minst 8,655854:1. Ingen bekreftet kontrastfeil i prøvde tilstander, ingen designretting nødvendig. Effekter og gradienter er beholdt. Modellen er ikke eksakt pixelmåling eller full hover-/PDF-godkjenning.
+
+Ny axe på 23 ruter har 0 violations og samme tre incomplete-grupper / 86 noder. Motorens originalresultat er bevart; den separate vurderingen er ikke omskriving til pass. Nu på 25 eksportfiler gir 0 feil / 207 info-noter. Skill 0.5.1 er faktisk kjørt med nettlesermodul og `--auto`. 22 K / 11 I / 15 U / 0 B og uavklart samlet samsvar videreføres. 1.4.3 gjenstår for øvrige tilstander/overlegg og PDF; alle 15 U-krav beholdes i erklæringen. De 86 normalforekomstene er undersøkt, ikke en uutført restliste. Tidligere avsnitt nedenfor beskriver datert historikk.
+
 ## Målrettet cookie-/skill-kontroll – 10. november 2026
 
 Siste vurderte resultat: [rapport](docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386/testrapport.md) og [48-kravsrestliste](docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386/manuell-oppfolging.md). To nye sider med seks viewport-prøver, to Enter-forløp, 16 automatiske Tab-steg, 72 kontrollerte frem-/tilbake-Tab-overganger, skip-link og fire tekstavstandsprøver. Ingen nytt bekreftet brudd. Full native-regresjon: 23 ruter, 0 axe-violations / 3 incomplete-grupper / 86 noder; 25 HTML-filer, 0 Nu-feil / 207 tekniske info-noter. Begge nye sider har 0 violations/incomplete. Den tidligere 80-node-modellen godkjenner ikke automatisk nye forekomster.

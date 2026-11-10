@@ -1,0 +1,28 @@
+{
+  "run_directory": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+  "automatic_status": "needs_review",
+  "overall_conformance": "not_assessed",
+  "manifest": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386/manifest.json",
+  "review_status": "focused_cookie_and_skill_pages_reviewed_with_previous_assessment",
+  "reviewed_at": "2026-11-10T12:34:00.646578+00:00",
+  "previous_run": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+  "native_run": "docs/tilgjengelighet/2026-11-10/132206-native-5c65230c",
+  "confirmed_findings": 0,
+  "open_findings": [],
+  "fixed_findings": [
+    "A11Y-01",
+    "A11Y-02",
+    "A11Y-03",
+    "A11Y-04",
+    "A11Y-05",
+    "A11Y-06"
+  ],
+  "counts": {
+    "K": 22,
+    "I": 11,
+    "U": 15,
+    "B": 0
+  },
+  "manual_remaining": 36,
+  "completed_local_manual_sample": 1
+}

@@ -1,0 +1,1 @@
+Pages production build: TypeScript failed because archival source snapshot source-src-theme-portal-theme.ts imported ./effects from audit raw folder. Source snapshots renamed to .ts.txt/.tsx.txt; no product logic changed. Original failure: TS2307 Cannot find module './effects' or its corresponding type declarations. New build result recorded separately.

@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-10T12:59:56.938064+00:00",
+  "node_tests_passed": 53,
+  "python_tests_passed": 3,
+  "production_build": "passed after archival TypeScript snapshots renamed to .txt; initial failure preserved in raw/build-first-attempt.txt",
+  "html_basic_files": 25,
+  "local_links_checked": 231,
+  "broken_links": [],
+  "matrix_counts": {
+    "U": 15,
+    "I": 11,
+    "K": 22
+  },
+  "public_unresolved_ids_match": true,
+  "all_86_report_rows_present": true,
+  "product_colour_style_sources_unchanged": true,
+  "declaration_readback": "1280/320, no page overflow, 15 unresolved and updated contrast text",
+  "notes": "Native scan precedes public declaration wording update; no style changes afterwards. No full conformance approval."
+}

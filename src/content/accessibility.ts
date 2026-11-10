@@ -32,7 +32,7 @@ export const unresolvedAccessibilityRequirements = [
         id: "1.4.3",
         title: "Kontrast (minimum)",
         description:
-          "Tekstkontrast i enkelte interaktive tilstander, ved overlappende effekter og i deler av PDF-vedlegget er ikke ferdig vurdert.",
+          "Tekst over gradienter er undersøkt i normaltilstand og på utvalgte kontroller med tastaturfokus. Øvrige interaktive tilstander og overlappende effekter, samt deler av PDF-vedlegget, er ikke ferdig vurdert.",
       },
       {
         id: "1.4.4",

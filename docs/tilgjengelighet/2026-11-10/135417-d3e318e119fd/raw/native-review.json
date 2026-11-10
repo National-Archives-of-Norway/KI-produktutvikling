@@ -1,0 +1,14 @@
+{
+  "native_manifest": "docs/tilgjengelighet/2026-11-10/135353-native-2147a40e/native-manifest.json",
+  "routes": 23,
+  "violations": 0,
+  "incomplete_groups": 3,
+  "incomplete_nodes": 86,
+  "same_original_candidates": true,
+  "original_manifest": "docs/tilgjengelighet/2026-11-10/132206-native-5c65230c/native-manifest.json",
+  "html_files": 25,
+  "validator_errors": 0,
+  "validator_info": 207,
+  "validator_review": "All info messages concern trailing slash on void elements. No errors.",
+  "assessment": "All original 86 mapped to exact production selectors and assessed in normal state using bounds and visual review; 22 actual focused controls additionally assessed. No confirmed low-contrast finding. Original axe incomplete retained unchanged."
+}

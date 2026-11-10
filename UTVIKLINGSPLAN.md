@@ -407,3 +407,8 @@ Tilgjengelighetskontrollen fra 6. november omfattet ni sider. Den nye skill-deta
 - [ ] Før delt pilot: kartlegg faktisk auth, drift/proxy/CDN, integrasjoner og eventuelt samtykkepliktig bruk på nytt (P2/P3/P9). Godkjenn formål, nødvendighet og varighet for nye oppføringer. Hvis samtykke kreves, planlegg separat implementering og test av før valg/avvisning/formålsvalg/godkjenning/tilbaketrekking.
 - [x] Utføre målrettet lokal tilgjengelighetskontroll av cookie-siden og ny skill-detaljside med skill 0.5.1: nettleser, tastatur, tekstavstand og ny axe/Nu-regresjon. [Rapport](docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386/testrapport.md). Ingen nye bekreftede åpne brudd; 15 U-krav består.
 - [ ] Ta begge nye sider med i gjenstående skjermleser-/faktisk zoom-/enhets- og pilotkontroller (P8). Lokale delprøver er ikke produksjonsgodkjenning. Første delte miljø er fortsatt lukket.
+
+### Målrettet kontrastoppfølging – 10. november 2026
+
+- [x] Undersøke alle 86 axe-incomplete-forekomster i produksjonseksporten ved 1280/320 px og 22 kontroller med faktisk tastaturfokus. [Rapport og vurderinger](docs/tilgjengelighet/2026-11-10/135417-d3e318e119fd/testrapport.md). Ingen bekreftet feil i prøvde tilstander; ingen designretting nødvendig. Axe-originalene er bevart.
+- [ ] Fullføre øvrige faktiske hover-/dynamiske tilstander/overlegg og PDF-kontrast under 1.4.3. De 15 U-kravene og P8 er fortsatt uavklart. Dette endrer ikke krav til lukket pilot eller produksjonsgodkjenning.

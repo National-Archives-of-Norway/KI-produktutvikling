@@ -1,0 +1,1843 @@
+{
+  "skill_version": "0.5.1",
+  "overall_conformance": "not_assessed",
+  "catalog_sha256": "607d9420bebb89c70e727950e29a861ea4f5b0e1057b812b953eec45990bc6a1",
+  "note": "Målrettet ny kontrastkontroll. Andre vurderinger videreføres eksplisitt, ikke nykjørt manuelt.",
+  "tests": [
+    {
+      "criterion_id": "1.1.1",
+      "title": "Ikke-tekstlig innhold",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#111",
+      "source": "https://www.uutilsynet.no/wcag-standarden/111-ikke-tekstlig-innhold-niva/87",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Prøv meningsbærende grafikk og side 6 i faktisk PDF-leser/skjermleser; bekreft at relasjoner/formål formidles og dekor ikke forstyrrer.",
+      "criterion_status": "U",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Nye DOM-/kontrast-/bredde-/tastatur-/tekstavstandsdeler er undersøkt uten bekreftet avvik på de to sidene. Se metode og avgrensninger i manual-tests.json. Global kriteriestatus/videre oppfølging er bevart."
+      },
+      "remaining": "Prøv meningsbærende grafikk og side 6 i faktisk PDF-leser/skjermleser; bekreft at relasjoner/formål formidles og dekor ikke forstyrrer.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "1.2.1",
+      "title": "Bare lyd og video (forhåndsinnspilt)",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#121",
+      "source": "https://www.uutilsynet.no/wcag-standarden/121-bare-lyd-og-bare-video-forhandsinnspilt-niva/88",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "criterion_status": "I",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Ingen ny kravspesifikk manuell vurdering utenfor de to statiske sidene; tidligere vurdering og restarbeid videreføres."
+      },
+      "remaining": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "manual_remaining": false,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "1.2.2",
+      "title": "Teksting (forhåndsinnspilt)",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#122",
+      "source": "https://www.uutilsynet.no/wcag-standarden/122-teksting-forhandsinnspilt-niva/89",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "criterion_status": "I",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Ingen ny kravspesifikk manuell vurdering utenfor de to statiske sidene; tidligere vurdering og restarbeid videreføres."
+      },
+      "remaining": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "manual_remaining": false,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "1.2.5",
+      "title": "Synstolking (forhåndsinnspilt)",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#125",
+      "source": "https://www.uutilsynet.no/wcag-standarden/125-synstolking-forhandsinnspilt-niva-aa/842",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "criterion_status": "I",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Ingen ny kravspesifikk manuell vurdering utenfor de to statiske sidene; tidligere vurdering og restarbeid videreføres."
+      },
+      "remaining": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "manual_remaining": false,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "1.3.1",
+      "title": "Informasjon og relasjoner",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#131",
+      "source": "https://www.uutilsynet.no/wcag-standarden/131-informasjon-og-relasjoner-niva/90",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Prøv PDF-listenavigasjon med faktisk skjermleser og vurder øvrige dokumentstrukturer/figurer.",
+      "criterion_status": "U",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Nye DOM-/kontrast-/bredde-/tastatur-/tekstavstandsdeler er undersøkt uten bekreftet avvik på de to sidene. Se metode og avgrensninger i manual-tests.json. Global kriteriestatus/videre oppfølging er bevart."
+      },
+      "remaining": "Prøv PDF-listenavigasjon med faktisk skjermleser og vurder øvrige dokumentstrukturer/figurer.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "1.3.2",
+      "title": "Meningsfylt rekkefølge",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#132",
+      "source": "https://www.uutilsynet.no/wcag-standarden/132-meningsfylt-rekkefolge-niva/91",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Prøv lineær lesing, særlig PDF-side 6–7, med faktisk hjelpemiddel.",
+      "criterion_status": "U",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Ingen ny kravspesifikk manuell vurdering utenfor de to statiske sidene; tidligere vurdering og restarbeid videreføres."
+      },
+      "remaining": "Prøv lineær lesing, særlig PDF-side 6–7, med faktisk hjelpemiddel.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "1.3.3",
+      "title": "Sensoriske egenskaper",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#133",
+      "source": "https://www.uutilsynet.no/wcag-standarden/133-sensoriske-egenskaper-niva/92",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Les instruksjoner; bekreft at de kan forstås uten bare farge, form, lyd eller plassering.",
+      "criterion_status": "K",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Ingen ny kravspesifikk manuell vurdering utenfor de to statiske sidene; tidligere vurdering og restarbeid videreføres."
+      },
+      "remaining": "Les instruksjoner; bekreft at de kan forstås uten bare farge, form, lyd eller plassering.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "1.3.4",
+      "title": "Visningsretning",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#134",
+      "source": "https://www.uutilsynet.no/wcag-standarden/134-visningsretning-niva-aa/141",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Test med fysisk mobil/nettbrett eller dokumentert orienteringsstøtte, begge retninger og kritiske forløp.",
+      "criterion_status": "U",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Nye DOM-/kontrast-/bredde-/tastatur-/tekstavstandsdeler er undersøkt uten bekreftet avvik på de to sidene. Se metode og avgrensninger i manual-tests.json. Global kriteriestatus/videre oppfølging er bevart."
+      },
+      "remaining": "Test med fysisk mobil/nettbrett eller dokumentert orienteringsstøtte, begge retninger og kritiske forløp.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "1.3.5",
+      "title": "Identifiser formål med inndata",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#135",
+      "source": "https://www.uutilsynet.no/wcag-standarden/135-identifiser-formal-med-inndata-niva-aa/142",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "criterion_status": "I",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Ingen ny kravspesifikk manuell vurdering utenfor de to statiske sidene; tidligere vurdering og restarbeid videreføres."
+      },
+      "remaining": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "manual_remaining": false,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "1.4.1",
+      "title": "Bruk av farge",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#141",
+      "source": "https://www.uutilsynet.no/wcag-standarden/141-bruk-av-farge-niva/93",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Vurder om farge alene bærer mening i lenker, diagrammer, feil og tilstander.",
+      "criterion_status": "K",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Ingen ny kravspesifikk manuell vurdering utenfor de to statiske sidene; tidligere vurdering og restarbeid videreføres."
+      },
+      "remaining": "Vurder om farge alene bærer mening i lenker, diagrammer, feil og tilstander.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "1.4.2",
+      "title": "Styring av lyd",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#142",
+      "source": "https://www.uutilsynet.no/wcag-standarden/142-styring-av-lyd-niva/94",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "criterion_status": "I",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Ingen ny kravspesifikk manuell vurdering utenfor de to statiske sidene; tidligere vurdering og restarbeid videreføres."
+      },
+      "remaining": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "manual_remaining": false,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "1.4.3",
+      "title": "Kontrast (minimum)",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#143",
+      "source": "https://www.uutilsynet.no/wcag-standarden/143-kontrast-minimum-niva-aa/95",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Alle 86 opprinnelige axe-kontrastforekomster er koblet entydig til produksjonsbygget ved 1280 og 320 px. Konservative sRGB-/alpha-bakgrunnsgrenser inklusive grid og tekstglød gir minst 7,715057:1, også når vanlig tekst kreves 4,5:1. 22 faktisk fokuserte kontroller gir minst 8,655854:1. Geometri/screenshot er vurdert separat; ingen bekreftet feil og ingen designretting. Axe sine tre incomplete-grupper er bevart, ikke omskrevet.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "candidates",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Test øvrige faktiske hover-/dynamiske tilstander og overlappende effekter, og fullfør PDF-tekstkontrast. De 86 normale forekomstene er undersøkt med dokumentert modell og visuell kontroll; dette er ikke lenger en urørt restliste. Samlet 1.4.3 er fortsatt U.",
+      "criterion_status": "U",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Nye DOM-/kontrast-/bredde-/tastatur-/tekstavstandsdeler er undersøkt uten bekreftet avvik på de to sidene. Se metode og avgrensninger i manual-tests.json. Global kriteriestatus/videre oppfølging er bevart. Full native-regresjon har 86 incomplete-forekomster på forsiden/Spør KI/Oversikt, mot 80 tidligere. Ingen incomplete på de to nye sidene. Den eldre 80-node-modellen er ikke bevis for alle nåværende forekomster."
+      },
+      "remaining": "Test øvrige faktiske hover-/dynamiske tilstander og overlappende effekter, og fullfør PDF-tekstkontrast. De 86 normale forekomstene er undersøkt med dokumentert modell og visuell kontroll; dette er ikke lenger en urørt restliste. Samlet 1.4.3 er fortsatt U.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "1.4.4",
+      "title": "Endring av tekststørrelse",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#144",
+      "source": "https://www.uutilsynet.no/wcag-standarden/144-endring-av-tekststorrelse-niva-aa/96",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Prøv faktisk 200 % tekstforstørring/zoom i en nettleser som eksponerer funksjonen og gjennomfør representative oppgaver. Faktisk Chrome-tilgang ble avvist av automatisk godkjenningskontroll; IAB-viewport er ikke zoom.",
+      "criterion_status": "U",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Ingen ny kravspesifikk manuell vurdering utenfor de to statiske sidene; tidligere vurdering og restarbeid videreføres."
+      },
+      "remaining": "Prøv faktisk 200 % tekstforstørring/zoom i en nettleser som eksponerer funksjonen og gjennomfør representative oppgaver. Faktisk Chrome-tilgang ble avvist av automatisk godkjenningskontroll; IAB-viewport er ikke zoom.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "1.4.5",
+      "title": "Bilder av tekst",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#145",
+      "source": "https://www.uutilsynet.no/wcag-standarden/145-bilder-av-tekst-niva-aa/97",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Undersøk tekst i bilder og om ekte tekst kan brukes; begrunn nødvendige unntak.",
+      "criterion_status": "K",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Ingen ny kravspesifikk manuell vurdering utenfor de to statiske sidene; tidligere vurdering og restarbeid videreføres."
+      },
+      "remaining": "Undersøk tekst i bilder og om ekte tekst kan brukes; begrunn nødvendige unntak.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "1.4.10",
+      "title": "Dynamisk tilpasning (Reflow)",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#1410",
+      "source": "https://www.uutilsynet.no/wcag-standarden/1410-dynamisk-tilpasning-reflow-niva-aa/144",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Test 400 % med faktisk zoom, effektiv 320 CSS-px og alle kritiske forløp. Faktisk Chrome-tilgang ble avvist av automatisk godkjenningskontroll; IAB-viewport er ikke zoom.",
+      "criterion_status": "U",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Nye DOM-/kontrast-/bredde-/tastatur-/tekstavstandsdeler er undersøkt uten bekreftet avvik på de to sidene. Se metode og avgrensninger i manual-tests.json. Global kriteriestatus/videre oppfølging er bevart."
+      },
+      "remaining": "Test 400 % med faktisk zoom, effektiv 320 CSS-px og alle kritiske forløp. Faktisk Chrome-tilgang ble avvist av automatisk godkjenningskontroll; IAB-viewport er ikke zoom.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "1.4.11",
+      "title": "Kontrast for ikke-tekstlig innhold",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#1411",
+      "source": "https://www.uutilsynet.no/wcag-standarden/1411-kontrast-ikke-tekstlig-innhold-niva-aa/145",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Mål nødvendige visuelle deler mot tilstøtende farger i alle relevante tilstander, inkludert PDF.",
+      "criterion_status": "U",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Ingen ny kravspesifikk manuell vurdering utenfor de to statiske sidene; tidligere vurdering og restarbeid videreføres."
+      },
+      "remaining": "Mål nødvendige visuelle deler mot tilstøtende farger i alle relevante tilstander, inkludert PDF.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "1.4.12",
+      "title": "Tekstavstand",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#1412",
+      "source": "https://www.uutilsynet.no/wcag-standarden/1412-tekstavstand-niva-aa/146",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Ingen åpen kandidat i prøvd lokal tekstavstand. Retest øvrige støttede nettlesere og faktisk modellinnhold når de er tilgjengelige. PDF faller utenfor dette markup-kravet.",
+      "criterion_status": "K",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Nye DOM-/kontrast-/bredde-/tastatur-/tekstavstandsdeler er undersøkt uten bekreftet avvik på de to sidene. Se metode og avgrensninger i manual-tests.json. Global kriteriestatus/videre oppfølging er bevart."
+      },
+      "remaining": "Ingen åpen kandidat i prøvd lokal tekstavstand. Retest øvrige støttede nettlesere og faktisk modellinnhold når de er tilgjengelige. PDF faller utenfor dette markup-kravet.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "1.4.13",
+      "title": "Pekerfølsomt innhold eller innhold ved tastaturfokus",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#1413",
+      "source": "https://www.uutilsynet.no/wcag-standarden/1413-pekerfolsomt-innhold-eller-innhold-ved-tastaturfokus-niva-aa/147",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "criterion_status": "I",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Ingen ny kravspesifikk manuell vurdering utenfor de to statiske sidene; tidligere vurdering og restarbeid videreføres."
+      },
+      "remaining": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "manual_remaining": false,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "2.1.1",
+      "title": "Tastatur",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#211",
+      "source": "https://www.uutilsynet.no/wcag-standarden/211-tastatur-niva/98",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Fullfør alle kritiske oppgaver med tastatur; Tab-spor dekker ikke alle handlinger.",
+      "criterion_status": "K",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Nye DOM-/kontrast-/bredde-/tastatur-/tekstavstandsdeler er undersøkt uten bekreftet avvik på de to sidene. Se metode og avgrensninger i manual-tests.json. Global kriteriestatus/videre oppfølging er bevart."
+      },
+      "remaining": "Fullfør alle kritiske oppgaver med tastatur; Tab-spor dekker ikke alle handlinger.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "2.1.2",
+      "title": "Ingen tastaturfelle",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#212",
+      "source": "https://www.uutilsynet.no/wcag-standarden/212-ingen-tastaturfelle-niva/99",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Prøv inn/ut av hver interaktiv komponent, begge retninger og eventuelle instruksjoner.",
+      "criterion_status": "K",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Nye DOM-/kontrast-/bredde-/tastatur-/tekstavstandsdeler er undersøkt uten bekreftet avvik på de to sidene. Se metode og avgrensninger i manual-tests.json. Global kriteriestatus/videre oppfølging er bevart."
+      },
+      "remaining": "Prøv inn/ut av hver interaktiv komponent, begge retninger og eventuelle instruksjoner.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "2.1.4",
+      "title": "Hurtigtaster som består av ett tegn",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#214",
+      "source": "https://www.uutilsynet.no/wcag-standarden/214-hurtigtaster-som-bestar-av-ett-tegn-niva/782",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "criterion_status": "I",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Ingen ny kravspesifikk manuell vurdering utenfor de to statiske sidene; tidligere vurdering og restarbeid videreføres."
+      },
+      "remaining": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "manual_remaining": false,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "2.2.1",
+      "title": "Justerbar hastighet",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#221",
+      "source": "https://www.uutilsynet.no/wcag-standarden/221-justerbar-hastighet-niva/100",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "criterion_status": "I",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Ingen ny kravspesifikk manuell vurdering utenfor de to statiske sidene; tidligere vurdering og restarbeid videreføres."
+      },
+      "remaining": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "manual_remaining": false,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "2.2.2",
+      "title": "Pause, stopp, skjul",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#222",
+      "source": "https://www.uutilsynet.no/wcag-standarden/222-pause-stopp-skjul-niva/101",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Faglig vurder om prisaldervarselets tidsstyrte innsetting omfattes av 2.2.2 og i så fall trenger pause/skjul. Test faktisk redusert-bevegelse-innstilling separat; dette er ikke simulert som fullført.",
+      "criterion_status": "U",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Nye DOM-/kontrast-/bredde-/tastatur-/tekstavstandsdeler er undersøkt uten bekreftet avvik på de to sidene. Se metode og avgrensninger i manual-tests.json. Global kriteriestatus/videre oppfølging er bevart."
+      },
+      "remaining": "Faglig vurder om prisaldervarselets tidsstyrte innsetting omfattes av 2.2.2 og i så fall trenger pause/skjul. Test faktisk redusert-bevegelse-innstilling separat; dette er ikke simulert som fullført.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "2.3.1",
+      "title": "Terskelverdi på maksimalt tre glimt",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#231",
+      "source": "https://www.uutilsynet.no/wcag-standarden/231-terskelverdi-pa-maksimalt-tre-glimt-niva/102",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Undersøk alt blinkende innhold; bruk egnet glimtanalysator ved mulig terskelrisiko, unngå risikofylt avspilling.",
+      "criterion_status": "K",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Ingen ny kravspesifikk manuell vurdering utenfor de to statiske sidene; tidligere vurdering og restarbeid videreføres."
+      },
+      "remaining": "Undersøk alt blinkende innhold; bruk egnet glimtanalysator ved mulig terskelrisiko, unngå risikofylt avspilling.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "2.4.1",
+      "title": "Hoppe over blokker",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#241",
+      "source": "https://www.uutilsynet.no/wcag-standarden/241-hoppe-over-blokker-niva/103",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Bruk hoppelenke/landemerker med tastatur og skjermleser; bekreft at gjentatt innhold faktisk kan hoppes over.",
+      "criterion_status": "K",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Ingen ny kravspesifikk manuell vurdering utenfor de to statiske sidene; tidligere vurdering og restarbeid videreføres."
+      },
+      "remaining": "Bruk hoppelenke/landemerker med tastatur og skjermleser; bekreft at gjentatt innhold faktisk kan hoppes over.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "2.4.2",
+      "title": "Sidetitler",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#242",
+      "source": "https://www.uutilsynet.no/wcag-standarden/242-sidetitler-niva/104",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Prøv faktisk 404-fallback etter utrulling og i øvrige støttede nettlesere.",
+      "criterion_status": "K",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Nye DOM-/kontrast-/bredde-/tastatur-/tekstavstandsdeler er undersøkt uten bekreftet avvik på de to sidene. Se metode og avgrensninger i manual-tests.json. Global kriteriestatus/videre oppfølging er bevart."
+      },
+      "remaining": "Prøv faktisk 404-fallback etter utrulling og i øvrige støttede nettlesere.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "2.4.3",
+      "title": "Fokusrekkefølge",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#243",
+      "source": "https://www.uutilsynet.no/wcag-standarden/243-fokusrekkefolge-niva/105",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Fullfør fokusrekkefølge ved faktisk forstørring og hjelpemiddel; særlig dynamiske resultater.",
+      "criterion_status": "U",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Nye DOM-/kontrast-/bredde-/tastatur-/tekstavstandsdeler er undersøkt uten bekreftet avvik på de to sidene. Se metode og avgrensninger i manual-tests.json. Global kriteriestatus/videre oppfølging er bevart."
+      },
+      "remaining": "Fullfør fokusrekkefølge ved faktisk forstørring og hjelpemiddel; særlig dynamiske resultater.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "2.4.4",
+      "title": "Formål med lenke (i kontekst)",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#244",
+      "source": "https://www.uutilsynet.no/wcag-standarden/244-formal-med-lenke-i-kontekst-niva/106",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Vurder hver lenkes formål i tillatt kontekst, inkludert ikonlenker og lenker i PDF.",
+      "criterion_status": "K",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Nye DOM-/kontrast-/bredde-/tastatur-/tekstavstandsdeler er undersøkt uten bekreftet avvik på de to sidene. Se metode og avgrensninger i manual-tests.json. Global kriteriestatus/videre oppfølging er bevart."
+      },
+      "remaining": "Vurder hver lenkes formål i tillatt kontekst, inkludert ikonlenker og lenker i PDF.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "2.4.5",
+      "title": "Flere måter",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#245",
+      "source": "https://www.uutilsynet.no/wcag-standarden/245-flere-mater-niva-aa/107",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Bekreft at sider kan finnes på minst to egnede måter, med relevante prosessunntak.",
+      "criterion_status": "K",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Ingen ny kravspesifikk manuell vurdering utenfor de to statiske sidene; tidligere vurdering og restarbeid videreføres."
+      },
+      "remaining": "Bekreft at sider kan finnes på minst to egnede måter, med relevante prosessunntak.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "2.4.6",
+      "title": "Overskrifter og ledetekster",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#246",
+      "source": "https://www.uutilsynet.no/wcag-standarden/246-overskrifter-og-ledetekster-niva-aa/108",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Les overskrifter og etiketter; vurder om de beskriver emne og formål forståelig.",
+      "criterion_status": "K",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Nye DOM-/kontrast-/bredde-/tastatur-/tekstavstandsdeler er undersøkt uten bekreftet avvik på de to sidene. Se metode og avgrensninger i manual-tests.json. Global kriteriestatus/videre oppfølging er bevart."
+      },
+      "remaining": "Les overskrifter og etiketter; vurder om de beskriver emne og formål forståelig.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "2.4.7",
+      "title": "Synlig fokus",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#247",
+      "source": "https://www.uutilsynet.no/wcag-standarden/247-synlig-fokus-niva-aa/109",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Prøv alle representative kontrolltyper visuelt ved faktisk forstørring og ulike flater. Faktisk Chrome-tilgang ble avvist av automatisk godkjenningskontroll; IAB-viewport er ikke zoom.",
+      "criterion_status": "U",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Nye DOM-/kontrast-/bredde-/tastatur-/tekstavstandsdeler er undersøkt uten bekreftet avvik på de to sidene. Se metode og avgrensninger i manual-tests.json. Global kriteriestatus/videre oppfølging er bevart."
+      },
+      "remaining": "Prøv alle representative kontrolltyper visuelt ved faktisk forstørring og ulike flater. Faktisk Chrome-tilgang ble avvist av automatisk godkjenningskontroll; IAB-viewport er ikke zoom.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "2.5.1",
+      "title": "Pekerbevegelse",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#251",
+      "source": "https://www.uutilsynet.no/wcag-standarden/251-pekerbevegelser-niva/148",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "criterion_status": "I",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Ingen ny kravspesifikk manuell vurdering utenfor de to statiske sidene; tidligere vurdering og restarbeid videreføres."
+      },
+      "remaining": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "manual_remaining": false,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "2.5.2",
+      "title": "Pekeravbrytelse",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#252",
+      "source": "https://www.uutilsynet.no/wcag-standarden/252-pekeravbrytelse-niva/149",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Prøv trykk, flytt ut og slipp, avbryt/angre; bekreft at handlinger ikke utløses utilsiktet.",
+      "criterion_status": "K",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Ingen ny kravspesifikk manuell vurdering utenfor de to statiske sidene; tidligere vurdering og restarbeid videreføres."
+      },
+      "remaining": "Prøv trykk, flytt ut og slipp, avbryt/angre; bekreft at handlinger ikke utløses utilsiktet.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "2.5.3",
+      "title": "Ledetekst i navn",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#253",
+      "source": "https://www.uutilsynet.no/wcag-standarden/253-ledetekst-i-navn-niva/150",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Bekreft faktisk tilgjengelig navn mot all synlig tekst, også sammensatte kontroller og talestyring.",
+      "criterion_status": "K",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Nye DOM-/kontrast-/bredde-/tastatur-/tekstavstandsdeler er undersøkt uten bekreftet avvik på de to sidene. Se metode og avgrensninger i manual-tests.json. Global kriteriestatus/videre oppfølging er bevart."
+      },
+      "remaining": "Bekreft faktisk tilgjengelig navn mot all synlig tekst, også sammensatte kontroller og talestyring.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "2.5.4",
+      "title": "Bevegelsesaktivering",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#254",
+      "source": "https://www.uutilsynet.no/wcag-standarden/254-bevegelsesaktivering-niva/151",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "criterion_status": "I",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Ingen ny kravspesifikk manuell vurdering utenfor de to statiske sidene; tidligere vurdering og restarbeid videreføres."
+      },
+      "remaining": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "manual_remaining": false,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "3.1.1",
+      "title": "Språk på siden",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#311",
+      "source": "https://www.uutilsynet.no/wcag-standarden/311-sprak-pa-siden-niva/110",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Prøv effektivt PDF-språk i faktisk leser/skjermleser; korriger bare hvis feil språk er bekreftet.",
+      "criterion_status": "U",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Nye DOM-/kontrast-/bredde-/tastatur-/tekstavstandsdeler er undersøkt uten bekreftet avvik på de to sidene. Se metode og avgrensninger i manual-tests.json. Global kriteriestatus/videre oppfølging er bevart."
+      },
+      "remaining": "Prøv effektivt PDF-språk i faktisk leser/skjermleser; korriger bare hvis feil språk er bekreftet.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "3.1.2",
+      "title": "Språk på deler av innhold",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#312",
+      "source": "https://www.uutilsynet.no/wcag-standarden/312-sprak-pa-deler-av-innhold-niva-aa/111",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Fullfør PDF-språk og faktisk opplesing; kontroller nye dynamiske/modelldrevne svar og publisert feilside når de er tilgjengelige.",
+      "criterion_status": "U",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Ingen ny kravspesifikk manuell vurdering utenfor de to statiske sidene; tidligere vurdering og restarbeid videreføres."
+      },
+      "remaining": "Fullfør PDF-språk og faktisk opplesing; kontroller nye dynamiske/modelldrevne svar og publisert feilside når de er tilgjengelige.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "3.2.1",
+      "title": "Fokus",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#321",
+      "source": "https://www.uutilsynet.no/wcag-standarden/321-fokus-niva/112",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Fokuser alle kontroller og bekreft at ingen uventet kontekstendring oppstår.",
+      "criterion_status": "K",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Nye DOM-/kontrast-/bredde-/tastatur-/tekstavstandsdeler er undersøkt uten bekreftet avvik på de to sidene. Se metode og avgrensninger i manual-tests.json. Global kriteriestatus/videre oppfølging er bevart."
+      },
+      "remaining": "Fokuser alle kontroller og bekreft at ingen uventet kontekstendring oppstår.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "3.2.2",
+      "title": "Inndata",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#322",
+      "source": "https://www.uutilsynet.no/wcag-standarden/322-inndata-niva/114",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Endre felt/valg og vurder kontekstendringer og eventuell forhåndsinformasjon.",
+      "criterion_status": "K",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Nye DOM-/kontrast-/bredde-/tastatur-/tekstavstandsdeler er undersøkt uten bekreftet avvik på de to sidene. Se metode og avgrensninger i manual-tests.json. Global kriteriestatus/videre oppfølging er bevart."
+      },
+      "remaining": "Endre felt/valg og vurder kontekstendringer og eventuell forhåndsinformasjon.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "3.2.3",
+      "title": "Konsekvent navigering",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#323",
+      "source": "https://www.uutilsynet.no/wcag-standarden/323-konsekvent-navigering-niva-aa/113",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Sammenlign gjentatt navigasjon på tvers av alle relevante sider og tilstander.",
+      "criterion_status": "K",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Ingen ny kravspesifikk manuell vurdering utenfor de to statiske sidene; tidligere vurdering og restarbeid videreføres."
+      },
+      "remaining": "Sammenlign gjentatt navigasjon på tvers av alle relevante sider og tilstander.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "3.2.4",
+      "title": "Konsekvent identifikasjon",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#324",
+      "source": "https://www.uutilsynet.no/wcag-standarden/324-konsekvent-identifikasjon-niva-aa/115",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Sammenlign navn, ikoner og funksjon for gjentatte komponenter, også dynamisk innhold.",
+      "criterion_status": "K",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Ingen ny kravspesifikk manuell vurdering utenfor de to statiske sidene; tidligere vurdering og restarbeid videreføres."
+      },
+      "remaining": "Sammenlign navn, ikoner og funksjon for gjentatte komponenter, også dynamisk innhold.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "3.3.1",
+      "title": "Identifikasjon av feil",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#331",
+      "source": "https://www.uutilsynet.no/wcag-standarden/331-identifikasjon-av-feil-niva/116",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Utløs relevante feil; vurder om felt og feilårsak identifiseres i tekst og leses med skjermleser.",
+      "criterion_status": "K",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Nye DOM-/kontrast-/bredde-/tastatur-/tekstavstandsdeler er undersøkt uten bekreftet avvik på de to sidene. Se metode og avgrensninger i manual-tests.json. Global kriteriestatus/videre oppfølging er bevart."
+      },
+      "remaining": "Utløs relevante feil; vurder om felt og feilårsak identifiseres i tekst og leses med skjermleser.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "3.3.2",
+      "title": "Ledetekster eller instruksjoner",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#332",
+      "source": "https://www.uutilsynet.no/wcag-standarden/332-ledetekster-eller-instruksjoner-niva/117",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Vurder forståelige etiketter, obligatoriske felt, formathjelp og instruksjoner før innsending.",
+      "criterion_status": "K",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Ingen ny kravspesifikk manuell vurdering utenfor de to statiske sidene; tidligere vurdering og restarbeid videreføres."
+      },
+      "remaining": "Vurder forståelige etiketter, obligatoriske felt, formathjelp og instruksjoner før innsending.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "3.3.3",
+      "title": "Forslag ved feil",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#333",
+      "source": "https://www.uutilsynet.no/wcag-standarden/333-forslag-ved-feil-niva-aa/118",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Utløs feil; vurder konkrete rettingsforslag og relevante sikkerhetsunntak.",
+      "criterion_status": "K",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Nye DOM-/kontrast-/bredde-/tastatur-/tekstavstandsdeler er undersøkt uten bekreftet avvik på de to sidene. Se metode og avgrensninger i manual-tests.json. Global kriteriestatus/videre oppfølging er bevart."
+      },
+      "remaining": "Utløs feil; vurder konkrete rettingsforslag og relevante sikkerhetsunntak.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "3.3.4",
+      "title": "Forhindring av feil (juridiske feil, økonomiske feil, datafeil)",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#334",
+      "source": "https://www.uutilsynet.no/wcag-standarden/334-forhindring-av-feil-juridiske-feil-okonomiske-feil-datafeil-niva-aa/119",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "criterion_status": "I",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Ingen ny kravspesifikk manuell vurdering utenfor de to statiske sidene; tidligere vurdering og restarbeid videreføres."
+      },
+      "remaining": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+      "manual_remaining": false,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "4.1.1",
+      "title": "Parsing (oppdeling)",
+      "procedure": "testprosedyrer/wcag-4-robust.md#411",
+      "source": "https://www.uutilsynet.no/wcag-standarden/411-parsing-oppdeling-niva/120",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Prøv aktuell produksjon og relevante dynamiske DOM-tilstander ved endret kode; Nu-valideringen gjelder den bygde eksporten.",
+      "criterion_status": "K",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Nye DOM-/kontrast-/bredde-/tastatur-/tekstavstandsdeler er undersøkt uten bekreftet avvik på de to sidene. Se metode og avgrensninger i manual-tests.json. Global kriteriestatus/videre oppfølging er bevart."
+      },
+      "remaining": "Prøv aktuell produksjon og relevante dynamiske DOM-tilstander ved endret kode; Nu-valideringen gjelder den bygde eksporten.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "4.1.2",
+      "title": "Navn, rolle, verdi",
+      "procedure": "testprosedyrer/wcag-4-robust.md#412",
+      "source": "https://www.uutilsynet.no/wcag-standarden/412-navn-rolle-verdi-niva/121",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Prøv kontrolltypene med faktisk skjermleser og dokumenter navn, rolle, verdi og oppdatering.",
+      "criterion_status": "U",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Nye DOM-/kontrast-/bredde-/tastatur-/tekstavstandsdeler er undersøkt uten bekreftet avvik på de to sidene. Se metode og avgrensninger i manual-tests.json. Global kriteriestatus/videre oppfølging er bevart."
+      },
+      "remaining": "Prøv kontrolltypene med faktisk skjermleser og dokumenter navn, rolle, verdi og oppdatering.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    },
+    {
+      "criterion_id": "4.1.3",
+      "title": "Statusbeskjeder",
+      "procedure": "testprosedyrer/wcag-4-robust.md#413",
+      "source": "https://www.uutilsynet.no/wcag-standarden/413-statusbeskjeder-niva-aa/152",
+      "status": "focused_contrast_review_with_previous_assessment",
+      "scope": [
+        "Målrettet kontrastoppfølging av de 86 opprinnelige axe-incomplete-forekomstene på forsiden, Spør KI og Oversikt. Alle 86 undersøkt ved 1280/320 px og 22 native kontroller med faktisk tastaturfokus. Ny axe på 23 ruter/Nu på 25 HTML-filer. Øvrige krav og tidligere funn videreføres med opprinnelige bevis."
+      ],
+      "tools_used": [
+        "Skill 0.5.1",
+        "CUA IAB",
+        "axe CLI 4.14.0",
+        "Nu 26.11.9",
+        "Versioned sRGB bound calculator"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Ny kontrastoppfølging og automatiske delprøver; ingen ny full manuell kravvurdering. Tidligere status og restarbeid videreføres.",
+      "evidence": [
+        "raw/auto-01.json",
+        "manual-tests.json",
+        "raw/native-review.json",
+        "../133024-18e0f9e56386/wcag-grunnlag.json"
+      ],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Prøv faktiske statusbeskjeder med skjermleser, også prisaldervarselet dersom det skal formidles uten fokusflytting.",
+      "criterion_status": "U",
+      "previous_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
+        "tested_at": "2026-11-10",
+        "actual_result": "Nye DOM-/kontrast-/bredde-/tastatur-/tekstavstandsdeler er undersøkt uten bekreftet avvik på de to sidene. Se metode og avgrensninger i manual-tests.json. Global kriteriestatus/videre oppfølging er bevart."
+      },
+      "remaining": "Prøv faktiske statusbeskjeder med skjermleser, også prisaldervarselet dersom det skal formidles uten fokusflytting.",
+      "manual_remaining": true,
+      "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+    }
+  ],
+  "reviewed_at": "2026-11-10T12:57:43.473497+00:00"
+}

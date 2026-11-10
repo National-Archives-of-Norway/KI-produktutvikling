@@ -114,11 +114,11 @@ export default function AccessibilityPage() {
         Tilgjengeligheten ble sist vurdert{" "}
         <time dateTime="2026-11-10">10. november 2026</time>. Grunnlaget
         omfatter lokale nettleser- og tastaturkontroller, prøving med økt
-        tekstavstand, kontrastberegninger, kontroll av animasjonens
-        pausefunksjon, simulering av prisaldervarselet, axe-skann og
-        HTML-validering med Nu Html Checker samt målrettede PDF-kontroller.
-        Tidligere undersøkelser av øvrig innhold inngår også i grunnlaget.
-        Faktisk skjermleserbruk er ikke testet.
+        tekstavstand, kontrastberegninger av tekst over gradienter og utvalgte
+        fokuserte kontroller, kontroll av animasjonens pausefunksjon, simulering
+        av prisaldervarselet, axe-skann og HTML-validering med Nu Html Checker
+        samt målrettede PDF-kontroller. Tidligere undersøkelser av øvrig innhold
+        inngår også i grunnlaget. Faktisk skjermleserbruk er ikke testet.
       </p>
       <p>
         Teksten ble sist oppdatert{" "}
