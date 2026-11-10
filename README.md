@@ -231,7 +231,7 @@ Prissiden finnes på `/priser/`, med inngang fra Oversikt, nettstedskartet og fu
 - Endrede rader, kildemetadata, status eller feil gir én automatisk underoppføring i den eksisterende seksjonen `## Ikke utgitt` i `VERSJONSLOGG.md`, med dato, utførende skript, kontroll og begrensning. Tidspunkter alene gir ingen loggoppføring. Den nøyaktige seksjonsoverskriften må finnes; ellers feiler en vesentlig oppdatering før snapshotet skrives. Kildeformat, funksjon eller omfang som endres manuelt skal også føres i loggen og avstemmes med utviklingsplanen.
 - `pnpm test:pricing` tester parsere, filflyt og PR-steget uten nettverk. Filtester bruker midlertidige mapper og fixture-priser; PR-testen bruker et lokalt Git-repo og simulert `gh`. `pnpm test:rag` inkluderer også disse testene. Fixture-utdragene er testgrunnlag fra 9. november 2026, ikke en alternativ priskilde.
 
-Siste plattformkontroll: [testrapport for prisinnhentingen](docs/priser/TESTRAPPORT.md), med 19/19 fixture-tester bestått på Node 22.18.0 i Docker/Linux arm64. Dette er ikke en live kontroll av leverandørprisene eller faktisk GitHub Actions.
+Siste plattformkontroll: [testrapport med full testpakke og produksjonsbygg](docs/priser/TESTRAPPORT.md), med 105/105 Node-tester (inkludert 19 pristester), 3/3 Python-tester, innholdssynk, typekontroll og produksjonsbygg bestått på Node 22.18.0 i Docker/Linux arm64. Kontrollen kjørte uten nettverk etter installasjon av låste avhengigheter. Dette er ikke en live kontroll av leverandørprisene, faktisk GitHub Actions eller utrulling.
 
 ### Aktivere den daglige oppdateringen senere
 

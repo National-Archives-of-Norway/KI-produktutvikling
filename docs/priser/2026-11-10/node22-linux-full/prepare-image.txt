@@ -1,0 +1,218 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 403B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/ki-pricing-node22-test:local
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/6] FROM docker.io/library/ki-pricing-node22-test:local@sha256:577cfd5a3adcdeb8bf5475860245068e879ca82d88d1f3165849e42936a58ed0
+#4 resolve docker.io/library/ki-pricing-node22-test:local@sha256:577cfd5a3adcdeb8bf5475860245068e879ca82d88d1f3165849e42936a58ed0 done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 ...
+
+#6 [2/6] RUN apt-get update && apt-get install -y --no-install-recommends python3 && rm -rf /var/lib/apt/lists/*
+#6 0.135 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+#6 0.156 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+#6 0.167 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [34.8 kB]
+#6 0.193 Get:4 http://deb.debian.org/debian bookworm/main arm64 Packages [8689 kB]
+#6 0.407 Get:5 http://deb.debian.org/debian bookworm-updates/main arm64 Packages [6936 B]
+#6 0.413 Get:6 http://deb.debian.org/debian-security bookworm-security/main arm64 Packages [364 kB]
+#6 0.942 Fetched 9302 kB in 1s (11.0 MB/s)
+#6 0.942 Reading package lists...
+#6 1.185 Reading package lists...
+#6 1.421 Building dependency tree...
+#6 1.491 Reading state information...
+#6 1.573 The following additional packages will be installed:
+#6 1.573   libncursesw6 libnsl2 libpython3-stdlib libpython3.11-minimal
+#6 1.573   libpython3.11-stdlib libreadline8 libsqlite3-0 libtirpc-common libtirpc3
+#6 1.573   media-types python3-minimal python3.11 python3.11-minimal readline-common
+#6 1.573 Suggested packages:
+#6 1.573   python3-doc python3-tk python3-venv python3.11-venv python3.11-doc binutils
+#6 1.573   binfmt-support readline-doc
+#6 1.573 Recommended packages:
+#6 1.573   libgpm2 ca-certificates
+#6 1.630 The following NEW packages will be installed:
+#6 1.630   libncursesw6 libnsl2 libpython3-stdlib libpython3.11-minimal
+#6 1.630   libpython3.11-stdlib libreadline8 libsqlite3-0 libtirpc-common libtirpc3
+#6 1.630   media-types python3 python3-minimal python3.11 python3.11-minimal
+#6 1.630   readline-common
+#6 1.675 0 upgraded, 15 newly installed, 0 to remove and 29 not upgraded.
+#6 1.675 Need to get 6351 kB of archives.
+#6 1.675 After this operation, 26.6 MB of additional disk space will be used.
+#6 1.675 Get:1 http://deb.debian.org/debian-security bookworm-security/main arm64 libpython3.11-minimal arm64 3.11.2-6+deb12u9 [814 kB]
+#6 1.723 Get:2 http://deb.debian.org/debian-security bookworm-security/main arm64 python3.11-minimal arm64 3.11.2-6+deb12u9 [1862 kB]
+#6 1.772 Get:3 http://deb.debian.org/debian bookworm/main arm64 python3-minimal arm64 3.11.2-1+b1 [26.3 kB]
+#6 1.774 Get:4 http://deb.debian.org/debian bookworm/main arm64 media-types all 10.0.0 [26.1 kB]
+#6 1.774 Get:5 http://deb.debian.org/debian bookworm/main arm64 libncursesw6 arm64 6.4-4 [122 kB]
+#6 1.777 Get:6 http://deb.debian.org/debian bookworm/main arm64 libtirpc-common all 1.3.3+ds-1 [14.0 kB]
+#6 1.778 Get:7 http://deb.debian.org/debian bookworm/main arm64 libtirpc3 arm64 1.3.3+ds-1 [80.9 kB]
+#6 1.781 Get:8 http://deb.debian.org/debian bookworm/main arm64 libnsl2 arm64 1.3.0-2 [36.9 kB]
+#6 1.781 Get:9 http://deb.debian.org/debian bookworm/main arm64 readline-common all 8.2-1.3 [69.0 kB]
+#6 1.782 Get:10 http://deb.debian.org/debian bookworm/main arm64 libreadline8 arm64 8.2-1.3 [155 kB]
+#6 1.787 Get:11 http://deb.debian.org/debian bookworm/main arm64 libsqlite3-0 arm64 3.40.1-2+deb12u2 [786 kB]
+#6 1.807 Get:12 http://deb.debian.org/debian-security bookworm-security/main arm64 libpython3.11-stdlib arm64 3.11.2-6+deb12u9 [1750 kB]
+#6 1.847 Get:13 http://deb.debian.org/debian-security bookworm-security/main arm64 python3.11 arm64 3.11.2-6+deb12u9 [575 kB]
+#6 1.862 Get:14 http://deb.debian.org/debian bookworm/main arm64 libpython3-stdlib arm64 3.11.2-1+b1 [9296 B]
+#6 1.862 Get:15 http://deb.debian.org/debian bookworm/main arm64 python3 arm64 3.11.2-1+b1 [26.3 kB]
+#6 1.939 debconf: delaying package configuration, since apt-utils is not installed
+#6 1.952 Fetched 6351 kB in 0s (27.6 MB/s)
+#6 1.964 Selecting previously unselected package libpython3.11-minimal:arm64.
+#6 1.964 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9333 files and directories currently installed.)
+#6 1.983 Preparing to unpack .../libpython3.11-minimal_3.11.2-6+deb12u9_arm64.deb ...
+#6 1.984 Unpacking libpython3.11-minimal:arm64 (3.11.2-6+deb12u9) ...
+#6 2.032 Selecting previously unselected package python3.11-minimal.
+#6 2.033 Preparing to unpack .../python3.11-minimal_3.11.2-6+deb12u9_arm64.deb ...
+#6 2.036 Unpacking python3.11-minimal (3.11.2-6+deb12u9) ...
+#6 2.124 Setting up libpython3.11-minimal:arm64 (3.11.2-6+deb12u9) ...
+#6 2.127 Setting up python3.11-minimal (3.11.2-6+deb12u9) ...
+#6 2.386 Selecting previously unselected package python3-minimal.
+#6 2.386 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9640 files and directories currently installed.)
+#6 2.387 Preparing to unpack .../00-python3-minimal_3.11.2-1+b1_arm64.deb ...
+#6 2.388 Unpacking python3-minimal (3.11.2-1+b1) ...
+#6 2.397 Selecting previously unselected package media-types.
+#6 2.398 Preparing to unpack .../01-media-types_10.0.0_all.deb ...
+#6 2.399 Unpacking media-types (10.0.0) ...
+#6 2.410 Selecting previously unselected package libncursesw6:arm64.
+#6 2.410 Preparing to unpack .../02-libncursesw6_6.4-4_arm64.deb ...
+#6 2.412 Unpacking libncursesw6:arm64 (6.4-4) ...
+#6 2.425 Selecting previously unselected package libtirpc-common.
+#6 2.425 Preparing to unpack .../03-libtirpc-common_1.3.3+ds-1_all.deb ...
+#6 2.426 Unpacking libtirpc-common (1.3.3+ds-1) ...
+#6 2.436 Selecting previously unselected package libtirpc3:arm64.
+#6 2.436 Preparing to unpack .../04-libtirpc3_1.3.3+ds-1_arm64.deb ...
+#6 2.437 Unpacking libtirpc3:arm64 (1.3.3+ds-1) ...
+#6 2.450 Selecting previously unselected package libnsl2:arm64.
+#6 2.450 Preparing to unpack .../05-libnsl2_1.3.0-2_arm64.deb ...
+#6 2.451 Unpacking libnsl2:arm64 (1.3.0-2) ...
+#6 2.460 Selecting previously unselected package readline-common.
+#6 2.460 Preparing to unpack .../06-readline-common_8.2-1.3_all.deb ...
+#6 2.461 Unpacking readline-common (8.2-1.3) ...
+#6 2.472 Selecting previously unselected package libreadline8:arm64.
+#6 2.473 Preparing to unpack .../07-libreadline8_8.2-1.3_arm64.deb ...
+#6 2.474 Unpacking libreadline8:arm64 (8.2-1.3) ...
+#6 2.494 Selecting previously unselected package libsqlite3-0:arm64.
+#6 2.494 Preparing to unpack .../08-libsqlite3-0_3.40.1-2+deb12u2_arm64.deb ...
+#6 2.496 Unpacking libsqlite3-0:arm64 (3.40.1-2+deb12u2) ...
+#6 2.534 Selecting previously unselected package libpython3.11-stdlib:arm64.
+#6 2.534 Preparing to unpack .../09-libpython3.11-stdlib_3.11.2-6+deb12u9_arm64.deb ...
+#6 2.536 Unpacking libpython3.11-stdlib:arm64 (3.11.2-6+deb12u9) ...
+#6 2.620 Selecting previously unselected package python3.11.
+#6 2.621 Preparing to unpack .../10-python3.11_3.11.2-6+deb12u9_arm64.deb ...
+#6 2.622 Unpacking python3.11 (3.11.2-6+deb12u9) ...
+#6 2.639 Selecting previously unselected package libpython3-stdlib:arm64.
+#6 2.640 Preparing to unpack .../11-libpython3-stdlib_3.11.2-1+b1_arm64.deb ...
+#6 2.641 Unpacking libpython3-stdlib:arm64 (3.11.2-1+b1) ...
+#6 2.653 Setting up python3-minimal (3.11.2-1+b1) ...
+#6 2.715 Selecting previously unselected package python3.
+#6 2.715 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 10111 files and directories currently installed.)
+#6 2.716 Preparing to unpack .../python3_3.11.2-1+b1_arm64.deb ...
+#6 2.719 Unpacking python3 (3.11.2-1+b1) ...
+#6 2.733 Setting up media-types (10.0.0) ...
+#6 2.740 Setting up libtirpc-common (1.3.3+ds-1) ...
+#6 2.746 Setting up libsqlite3-0:arm64 (3.40.1-2+deb12u2) ...
+#6 2.750 Setting up libncursesw6:arm64 (6.4-4) ...
+#6 2.754 Setting up readline-common (8.2-1.3) ...
+#6 2.759 Setting up libtirpc3:arm64 (1.3.3+ds-1) ...
+#6 2.762 Setting up libreadline8:arm64 (8.2-1.3) ...
+#6 2.766 Setting up libnsl2:arm64 (1.3.0-2) ...
+#6 2.769 Setting up libpython3.11-stdlib:arm64 (3.11.2-6+deb12u9) ...
+#6 2.773 Setting up libpython3-stdlib:arm64 (3.11.2-1+b1) ...
+#6 2.777 Setting up python3.11 (3.11.2-6+deb12u9) ...
+#6 3.052 Setting up python3 (3.11.2-1+b1) ...
+#6 3.057 running python rtupdate hooks for python3.11...
+#6 3.057 running python post-rtupdate hooks for python3.11...
+#6 3.090 Processing triggers for libc-bin (2.36-9+deb12u10) ...
+#6 DONE 3.3s
+
+#5 [internal] load build context
+#5 transferring context: 595.26MB 4.0s done
+#5 DONE 4.0s
+
+#7 [3/6] RUN npm install --global pnpm@11.25.0
+#7 0.811 
+#7 0.811 added 1 package in 650ms
+#7 0.811 
+#7 0.811 1 package is looking for funding
+#7 0.811   run `npm fund` for details
+#7 0.812 npm notice
+#7 0.812 npm notice New major version of npm available! 10.9.3 -> 12.2.2
+#7 0.812 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+#7 0.812 npm notice To update run: npm install -g npm@12.2.2
+#7 0.812 npm notice
+#7 DONE 0.9s
+
+#8 [4/6] WORKDIR /work
+#8 DONE 0.0s
+
+#9 [5/6] COPY source/ ./
+#9 DONE 0.3s
+
+#10 [6/6] RUN pnpm install --frozen-lockfile --ignore-scripts
+#10 0.351 ? Verifying lockfile against supply-chain policies (224 entries)...
+#10 0.354 Lockfile is up to date, resolution step is skipped
+#10 0.387 Progress: resolved 1, reused 0, downloaded 0, added 0
+#10 0.402 Packages: +192
+#10 0.402 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#10 0.674 Packages are hard linked from the content-addressable store to the virtual store.
+#10 0.674   Content-addressable store is at: /work/.pnpm-store/v11
+#10 0.674   Virtual store is at:             node_modules/.pnpm
+#10 0.752 
+#10 0.752    ╭──────────────────────────────────────────────────────────────────────╮
+#10 0.752    │                                                                      │
+#10 0.752    │                 Update available! 11.25.0 → 12.18.0.                 │
+#10 0.752    │                 Changelog: https://pnpm.io/v/12.18.0                 │
+#10 0.752    │   To update, run: curl -fsSL https://get.pnpm.io/install.sh | sh -   │
+#10 0.752    │                                                                      │
+#10 0.752    ╰──────────────────────────────────────────────────────────────────────╯
+#10 0.752 
+#10 1.388 Progress: resolved 192, reused 0, downloaded 104, added 104
+#10 2.389 Progress: resolved 192, reused 0, downloaded 187, added 187
+#10 2.843 ✓ Lockfile passes supply-chain policies (224 entries in 2.4s)
+#10 3.390 Progress: resolved 192, reused 0, downloaded 189, added 189
+#10 4.389 Progress: resolved 192, reused 0, downloaded 190, added 190
+#10 5.219 Progress: resolved 192, reused 0, downloaded 192, added 192, done
+#10 5.425 
+#10 5.425 dependencies:
+#10 5.425 + @digitalarkivet/mui-theme 5.1.0
+#10 5.425 + @emotion/cache 11.14.0
+#10 5.425 + @emotion/react 11.14.0
+#10 5.425 + @emotion/styled 11.14.1
+#10 5.425 + @mui/icons-material 9.5.0
+#10 5.425 + @mui/material 9.5.0
+#10 5.425 + @mui/material-nextjs 9.5.0
+#10 5.425 + next 16.4.3
+#10 5.425 + react 19.3.1
+#10 5.425 + react-dom 19.3.1
+#10 5.425 
+#10 5.425 devDependencies:
+#10 5.425 + @axe-core/cli 4.14.0
+#10 5.425 + @types/node 22.20.5
+#10 5.425 + @types/react 19.3.0
+#10 5.425 + @types/react-dom 19.3.0
+#10 5.425 + chromedriver 157.0.0
+#10 5.425 + prettier 3.9.10
+#10 5.425 + typescript 5.9.3
+#10 5.425 + vnu-jar 26.11.9
+#10 5.425 
+#10 5.454 Done in 5.3s using pnpm v11.25.0
+#10 DONE 5.6s
+
+#11 exporting to image
+#11 exporting layers
+#11 exporting layers 10.2s done
+#11 exporting manifest sha256:304320113c7d3029be35973b9344c228dc0377c967cf124f11cec5f4e6d6f161 done
+#11 exporting config sha256:8b0664f3ccebe5a046df287dc5d0f7cf56b99d3fe590a5f5143a00aa7130b86c done
+#11 exporting attestation manifest sha256:ca77bfad48c36d64dcf4c2cfa2bd7a8e1121852d33d4f551fe6f9084efff282d done
+#11 exporting manifest list sha256:54dc4a0935c687a6e7d4c4823b5a7c6bb78b06f8099d9cdc14f48c265aefdeee done
+#11 naming to docker.io/library/ki-full-node22-check:local done
+#11 unpacking to docker.io/library/ki-full-node22-check:local
+#11 unpacking to docker.io/library/ki-full-node22-check:local 6.0s done
+#11 DONE 16.2s

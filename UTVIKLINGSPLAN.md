@@ -4,7 +4,9 @@ Sist oppdatert: **10. november 2026**. Utførende agent ved denne gjennomgangen:
 
 **Status: Fungerende lokal prototype; ikke klar for produksjon eller deling av internt innhold.** Lokal funksjonalitet og modelladaptere er implementert. Drift, innlogging, faglig godkjenning og samlet lanseringskontroll gjenstår. Første delte miljø skal være en **lukket pilot**. Offentlig publisering vurderes senere, etter en egen beslutning.
 
-Gjennomgangen bygger på kode, dokumentasjon og lokal Git-base `89b2bd5` med senere ucommittede endringer, supplert med arbeidet med personvernskillen og portalens erklæringsutkast, prisside og Oversikt. Siste samlede dokumenterte kjøring har **53 beståtte Node-tester, tre Python-tester og produksjonsbygg**, samt avgrensede nettleserkontroller. Dette er ikke dokumentasjon på produksjonsdrift, godkjent innhold, full tilgjengelighet eller vellykkede kall mot en faktisk modellleverandør. Se versjonsloggen for kontrollomfanget i hver arbeidsøkt; publisering av en planside er ikke produksjonsgodkjenning.
+Den opprinnelige gjennomgangen bygde på kode, dokumentasjon og lokal Git-base `89b2bd5`, med senere arbeid med personvern, priser og Oversikt. Det tidligere samlede grunnlaget hadde 53 Node-tester, tre Python-tester og produksjonsbygg samt avgrensede nettleserkontroller; dette er historikk.
+
+**Siste samlede kontrollgrunnlag (10. november 2026):** Git-revisjon `e6b5b42` er verifisert i Docker/Linux arm64 med Node 22.18.0: **105/105 Node-tester, 3/3 Python-tester, innholdssynk, typekontroll og produksjonsbygg** bestod. Kontrollene kjørte uten nettverk etter installasjon av låste Linux-avhengigheter; prisdata og låsefil er uendret. Se [testrapport og råresultater](docs/priser/TESTRAPPORT.md). Dette er ikke dokumentasjon på produksjonsdrift, godkjent innhold, full tilgjengelighet eller faktiske modell-/priskildekall. Publisering av en planside er ikke produksjonsgodkjenning; P1–P10 nedenfor er fortsatt åpne.
 
 ## Slik brukes og vedlikeholdes planen
 

@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-10",
+  "agent": "Codex (OpenAI)",
+  "sourceCommit": "e6b5b426d59dac66e3fc6138519db04c55e7c984",
+  "archiveSha256": "3eda3c0ce97a96e851f06ccbc1f17543e66302f281211158bb539f463431010b",
+  "source": "git archive HEAD, all tracked files; no untracked environment or build/cache files",
+  "baseImageWithGit": "sha256:577cfd5a3adcdeb8bf5475860245068e879ca82d88d1f3165849e42936a58ed0",
+  "nodeBaseImage": "node@sha256:752ea8a2f758c34002a0461bd9f1cee4f9a3c36d48494586f60ffce1fc708e0e",
+  "image": {
+    "id": "sha256:54dc4a0935c687a6e7d4c4823b5a7c6bb78b06f8099d9cdc14f48c265aefdeee",
+    "os": "linux",
+    "architecture": "arm64"
+  },
+  "dockerServerVersion": "29.8.2",
+  "preparation": [
+    "Python installed from Debian",
+    "pnpm@11.25.0 installed from npm",
+    "pnpm install --frozen-lockfile --ignore-scripts"
+  ],
+  "checks": [
+    "pnpm test:rag",
+    "python3 -m unittest discover -s tests -p 'test_*.py' -v",
+    "pnpm test:content-sync",
+    "pnpm exec next typegen",
+    "pnpm typecheck",
+    "pnpm build"
+  ],
+  "isolation": {
+    "network": "none",
+    "publishedPorts": [],
+    "hostSourceMounted": false,
+    "code": "container image, writable ephemeral overlay for generated build files",
+    "tmpfs": "/tmp:rw,exec,nosuid,nodev,size=256m",
+    "capabilities": "ALL dropped",
+    "noNewPrivileges": true,
+    "memory": "4g",
+    "cpus": 2,
+    "autoRemove": true,
+    "containerRemovalVerified": true,
+    "telemetryDisabled": true
+  },
+  "notRun": [
+    "pricing:sync",
+    "live model/provider calls",
+    "GitHub API/Actions",
+    "browser/axe/Nu tools",
+    "build:pages",
+    "production deployment"
+  ]
+}

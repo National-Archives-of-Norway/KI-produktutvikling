@@ -1,0 +1,12 @@
+{
+  "node": "v22.18.0",
+  "undici": "6.21.2",
+  "platform": "linux",
+  "arch": "arm64",
+  "kernel": "7.0.14-linuxkit",
+  "pnpm": "11.25.0",
+  "git": "git version 2.39.5",
+  "python": "Python 3.11.2",
+  "next": "16.4.3",
+  "typescript": "5.9.3"
+}

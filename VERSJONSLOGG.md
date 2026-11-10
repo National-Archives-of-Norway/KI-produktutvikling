@@ -6,6 +6,16 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 10. november 2026 – full testpakke og produksjonsbygg i Linux med Node 22
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Verifisert Git-revisjon `e6b5b42` i separat Docker/Linux arm64-bilde med Node 22.18.0, pnpm 11.25.0, TypeScript 5.9.3 og Next.js 16.4.3. Låste Linux-avhengigheter ble installert med frozen-lockfile og deaktiverte livssyklusskript; ingen .env, secrets eller verts-cache ble brukt.
+- Kjørte alle kontrollene uten nettverk: **105/105 Node-tester** (inkludert 19 pristester), **3/3 Python-tester**, faktisk innholdssynk i isolert kopi, Next-typegenerering, **pnpm typecheck** og **pnpm build** bestod. Produksjonsbygget genererte 27/27 byggsider. Testene brukte fixtures/mocktransport/lokal loopback; ingen priskilder, modellleverandør eller GitHub ble kontaktet.
+- Kontrollsummene bekrefter uendret package.json, pnpm-lock.yaml og pris-snapshot før/etter. Klargjøringen brukte Debian og pakkeregister, mens selve kontrollcontaineren hadde deaktivert nettverk og ingen publiserte porter. Containeren ble fjernet etterpå; eksisterende apptjenester ble ikke endret.
+- Oppdatert [testrapporten](docs/priser/TESTRAPPORT.md), README og utviklingsplanens aktuelle kontrollgrunnlag. Utskrifter, manifest, versjoner, bildeidentitet, Dockerfile og kjøreoppsett ligger i `docs/priser/2026-11-10/node22-linux-full/`. Ingen produktkode eller avhengighet er endret; Beta-status og alle produksjonskrav videreføres. Verken Pages-bygg, utrulling, faktisk GitHub-jobb eller ny nettleser-/tilgjengelighetsskanning er utført.
+- Lokal `pnpm format:check` og `git diff --check` er kontrollert. Ingen nye prisdata, commit eller publisering.
+
 ### 10. november 2026 – prisretting testet med Node 22 i Docker/Linux
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

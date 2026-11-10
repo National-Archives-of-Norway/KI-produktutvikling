@@ -1,0 +1,2 @@
+$ node scripts/check-content-sync.mjs
+Bestått: endring i en felles innholdsfil lastes automatisk inn i RAG-API-et med oppdatert tekst og veiledning. Testen brukte en isolert midlertidig prosjektkopi.

@@ -1,0 +1,186 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [
+      {
+        "source": "/api/rag",
+        "destination": "http://127.0.0.1:3001/api/rag",
+        "regex": "^/api/rag(?:/)?$"
+      }
+    ],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/ressurser/[slug]",
+      "regex": "^/ressurser/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/ressurser/(?<nxtPslug>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/apple-icon.png",
+      "regex": "^/apple\\-icon\\.png(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/apple\\-icon\\.png(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/funksjonalitet",
+      "regex": "^/funksjonalitet(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/funksjonalitet(?:/)?$"
+    },
+    {
+      "page": "/icon.svg",
+      "regex": "^/icon\\.svg(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/icon\\.svg(?:/)?$"
+    },
+    {
+      "page": "/informasjonskapsler",
+      "regex": "^/informasjonskapsler(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/informasjonskapsler(?:/)?$"
+    },
+    {
+      "page": "/kom-i-gang",
+      "regex": "^/kom\\-i\\-gang(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/kom\\-i\\-gang(?:/)?$"
+    },
+    {
+      "page": "/nettstedskart",
+      "regex": "^/nettstedskart(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/nettstedskart(?:/)?$"
+    },
+    {
+      "page": "/om",
+      "regex": "^/om(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/om(?:/)?$"
+    },
+    {
+      "page": "/oversikt",
+      "regex": "^/oversikt(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/oversikt(?:/)?$"
+    },
+    {
+      "page": "/oversikt/godkjente-ki-assistenter",
+      "regex": "^/oversikt/godkjente\\-ki\\-assistenter(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/oversikt/godkjente\\-ki\\-assistenter(?:/)?$"
+    },
+    {
+      "page": "/oversikt/godkjente-mcper",
+      "regex": "^/oversikt/godkjente\\-mcper(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/oversikt/godkjente\\-mcper(?:/)?$"
+    },
+    {
+      "page": "/personvern",
+      "regex": "^/personvern(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/personvern(?:/)?$"
+    },
+    {
+      "page": "/priser",
+      "regex": "^/priser(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/priser(?:/)?$"
+    },
+    {
+      "page": "/retningslinjer",
+      "regex": "^/retningslinjer(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/retningslinjer(?:/)?$"
+    },
+    {
+      "page": "/spor",
+      "regex": "^/spor(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/spor(?:/)?$"
+    },
+    {
+      "page": "/tilgjengelighet",
+      "regex": "^/tilgjengelighet(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/tilgjengelighet(?:/)?$"
+    },
+    {
+      "page": "/utviklingsplan",
+      "regex": "^/utviklingsplan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/utviklingsplan(?:/)?$"
+    },
+    {
+      "page": "/versjonslogg",
+      "regex": "^/versjonslogg(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/versjonslogg(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

@@ -1,5 +1,40 @@
 # Testrapport for prisinnhenting
 
+## Full testpakke, typekontroll og produksjonsbygg – 10. november 2026
+
+**Resultat: alle kjørte kontroller bestod på Node 22.18.0 i Docker/Linux arm64.** Utførende agent: Codex (OpenAI), ingen underagenter. Testet Git-revisjon: `e6b5b426d59dac66e3fc6138519db04c55e7c984`. Denne kjøringen utvider den tidligere prisavgrensede Linux-kontrollen nedenfor.
+
+| Kontroll i containeren                                    | Resultat                                                                                             |
+| --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `pnpm test:rag` – hele Node-testpakken                    | **105/105 bestått**, inkludert alle 19 pristestene og HTTP-integrasjonstestene; ingen hoppet over    |
+| `python3 -m unittest discover -s tests -p 'test_*.py' -v` | **3/3 bestått**                                                                                      |
+| `pnpm test:content-sync`                                  | Bestått; lokal watch-tjeneste viste faktisk oppdatert innhold fra isolert testkopi                   |
+| `pnpm exec next typegen`                                  | Bestått; genererte rutetyper før separat typekontroll i ren byggmappe                                |
+| `pnpm typecheck`                                          | Bestått                                                                                              |
+| `pnpm build`                                              | Bestått; Next.js 16.4.3/Turbopack kompilerte, typekontrollerte og genererte alle **27/27** byggsider |
+| Integritet før/etter                                      | package.json, pnpm-lock.yaml og pris-snapshot hadde identiske SHA-256-hasher                         |
+
+### Miljø og offline-avgrensning
+
+Runtime: Node 22.18.0 / Undici 6.21.2, pnpm 11.25.0, TypeScript 5.9.3, Next.js 16.4.3, Git 2.39.5 og Python 3.11.2 på Debian 12/Linux arm64 (LinuxKit 7.0.14). Docker-motor: 29.8.2. [Runtime](2026-11-10/node22-linux-full/runtime.json) og [manifest](2026-11-10/node22-linux-full/manifest.json) angir de faktiske versjonene, revisjon, bildeidentitet og kommandoer.
+
+Et separat kontrollbilde ble bygget fra hele den sporede Git-revisjonen, uten vertens node_modules, .next, .env, .git eller secrets. Det eksisterende Node 22/Git-bildet ble utvidet med Python, pnpm 11.25.0 og prosjektavhengigheter installert med **`pnpm install --frozen-lockfile --ignore-scripts`**. Klargjøringen kontaktet Debian og pakkeregisteret; den hentet ingen priskilder. Avhengighetslivssyklusskript ble deaktivert slik at verktøy som ChromeDriver og Nu ikke lastet ned egne ekstra binærer. Ingen låsefil eller prosjektavhengighet på verten ble endret.
+
+**Alle seks kontrollene i tabellen kjørte deretter med `--network none`**, uten publiserte porter og med telemetri deaktivert. HTTP-testene og innholdssynkroniseringen brukte bare containerens loopback. Pristestene brukte eksisterende fixtures og simulert gh med lokalt bare-repo. Modelladapterne brukte simulert transport. Produksjonsbygget leste det allerede lagrede prisgrunnlaget og hentet ingen nye priser. `pricing:sync` ble ikke kjørt.
+
+Containeren hadde to CPU-er, 4 GB minne, fjernede capabilities, `no-new-privileges` og en midlertidig, kjørbar `/tmp`. Koden og Linux-avhengighetene lå i et eget bilde; byggfiler ble skrevet i containerens midlertidige overlegg, ikke i brukerens prosjekt. Bare resultatmappen var montert skrivbart fra verten. Docker-containeren ble automatisk fjernet med `--rm`, og fravær ble kontrollert. Ingen eksisterende apptjeneste ble stoppet eller rekonfigurert.
+
+### Bevis og begrensninger
+
+- [Node-testutskrift](2026-11-10/node22-linux-full/tests.txt), [Python](2026-11-10/node22-linux-full/python.txt) og [innholdssynk](2026-11-10/node22-linux-full/content-sync.txt).
+- [Typegenerering](2026-11-10/node22-linux-full/typegen.txt), [typekontroll](2026-11-10/node22-linux-full/typecheck.txt) og [produksjonsbygg](2026-11-10/node22-linux-full/build.txt).
+- [Samlede exit-koder, integritet og bygg-ID](2026-11-10/node22-linux-full/summary.json), [innledende kontrollsummer](2026-11-10/node22-linux-full/input-hashes.json), [bildeidentitet](2026-11-10/node22-linux-full/image.json) og [manifest](2026-11-10/node22-linux-full/manifest.json).
+- [Dockerfile for kontrollbildet](2026-11-10/node22-linux-full/Dockerfile), [logg fra klargjøringen](2026-11-10/node22-linux-full/prepare-image.txt) og [kjøreskript](2026-11-10/node22-linux-full/run-linux.sh).
+
+Det kalde bygget varslet om manglende byggcache; dette var informasjon, ikke feil. Alle kontrollkommandoer avsluttet med kode 0. Lokal `pnpm format:check` og `git diff --check` er også kontrollert etter dokumentasjonsoppdateringen.
+
+Dette er et vanlig `pnpm build`, ikke et Pages-bygg eller en utrulling. Ingen faktisk modell, live prisinnhenting, GitHub Actions/API, native nettleser-/axe-/Nu-skanning eller testing fra et delt HTTPS-miljø er utført. AMD64 og andre Node-patchversjoner er ikke undersøkt. Resultatene erstatter ikke tilgjengelighetsvurdering, tilgangskontroll eller produksjonsgodkjenning. Produktkode, prisdata og avhengigheter er uendret; funksjonsregisterets Beta-status videreføres. Utviklingsplanens aktuelle kontrollgrunnlag er oppdatert uten å lukke produksjonskrav. Ingen commit eller publisering i denne oppfølgingen.
+
 ## Docker/Linux med Node 22 – 10. november 2026
 
 **Resultat: 19/19 bestått, ingen feil eller hoppede tester.** Utførende agent: Codex (OpenAI), ingen underagenter. Testet commit `e4e580ab1e2af2a672284aa3cb36403cf0240396`, som inneholder rettingen av prisparser, filflyt og prisworkflow. Ingen produktkode er endret i denne testoppfølgingen.
