@@ -4,6 +4,19 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 «Agent» betyr kodeassistenten som utførte arbeidet. Git-forfatteren registreres separat av Git og kan være personen som oppretter commiten. Eksakt modellvariant er ikke registrert for tidligere arbeid og oppgis derfor ikke. Ingen underagenter ble brukt til kvalitetskontrollen eller opprettelsen av denne loggen.
 
+## Ikke utgitt
+
+### 10. november 2026 – robust prisinnhenting og én fast pris-PR
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Bekreftet med fixtures at like rader likevel endrer snapshot når kontrolltidene endres. Førtester av ekstratall, manglende siste linjeskift og escapede pipes feilet på gammel parser. Ingen nettverkskall eller faktisk `pricing:sync` mot leverandørkilder er utført.
+- Skilt innholdsendring fra kontrolltid: rader, kildemetadata, status og feil teller; checkedAt/attemptedAt alene gjør ikke det. Workflowen vedlikeholder én reservert gren `codex/pricing-sync`, oppdaterer samme PR ved endret innhold og lar et likt forslag stå urørt. Et foreldet forslag lukkes dersom kildene igjen samsvarer med standardgrenen. Lease-beskyttet push, `persist-credentials: false` og bare contents/pull-requests-rettigheter i samme repo beholdes. Ingen automatisk sammenslåing/utrulling.
+- Eksportert testbar `main()` med filstier, fetcher og tidspunkt som parametre. Validerer loggens eksakte `## Ikke utgitt` før snapshot/tempfiler skrives. Automatisk oppføring legges som underoverskrift i seksjonen med dato, utførende skript, kontroll og begrensninger. Tidligere logghistorikk er bevart; ingen ny automatisk toppnivåoverskrift.
+- Strammet inn money(): løse ekstratall og feil tusengruppering avvises. Fixture-kilden viser markør 2 etter MTok i Claudes cache-kolonne; bare dette kjente formatet støttes der, ikke generelt i money(). Tabellenes sluttrad beholdes uten sluttlinjeskift, CRLF og escapede pipes støttes, og ulikt celleantall gir nøytral feil.
+- Oppdatert README, funksjonsregister og utviklingsplan. Forklart at kontrolltid på nettsiden kan bli gammel når bare tidspunkter endres i Actions; det opprettes ikke en PR bare for å fornye dato. Beta og gjenstående GitHub-/produksjonsverifisering beholdes.
+- Kontroller: `pnpm test:pricing` 19/19, `pnpm test:rag` 105/105, `pnpm format:check` og `git diff --check` bestått. PR-stegets faktiske shell er testet med lokalt bare-repo og simulert gh: ett forslag opprettes, datostøy gir ingen push, ny pris oppdaterer samme forslag, og tilbakeføring lukker det. Ingen leverandørtekst i feil og ingen nye prisdata i prosjektets snapshot. Workflowen er ikke kjørt på GitHub. Ingen commit eller publisering.
+
 ## Ikke utgitt – HTTP-retting verifisert i Docker/Linux med Node 22 – 10. november 2026
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

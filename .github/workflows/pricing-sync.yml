@@ -28,43 +28,75 @@ jobs:
       - name: Hent og kontroller offisielle priser
         id: sync
         run: |
-          rc=0
-          node scripts/pricing/sync.mjs || rc=$?
-          echo "result=$rc" >> "$GITHUB_OUTPUT"
-      - name: Foreslå oppdatert prisgrunnlag
+          node --input-type=module <<'JS'
+          import { appendFile } from 'node:fs/promises';
+          import { main } from './scripts/pricing/sync.mjs';
+          const result = await main();
+          await appendFile(process.env.GITHUB_OUTPUT,
+            `changed=${result.changed}\nfailed=${result.failed}\n`);
+          JS
+      - name: Opprett eller oppdater én pris-PR ved reell endring
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
           DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+          CHANGED: ${{ steps.sync.outputs.changed }}
         run: |
           set -euo pipefail
-          if git diff --quiet -- src/content/pricing/snapshot.json VERSJONSLOGG.md; then exit 0; fi
-          # The bot branch contains only generated prices and their changelog.
-          # Existing changes on it must be reviewed/merged before the next run.
-          branch=codex/pricing-sync-${{ github.run_id }}
-          open=$(gh pr list --state open --json number,headRefName --jq '.[] | select(.headRefName | startswith("codex/pricing-sync-")) | .number')
-          if [ -n "$open" ]; then
-            echo "::warning::Pris-PR #$open venter på gjennomgang. Ingen overskriving."
+          branch=codex/pricing-sync
+          open=$(gh pr list --state open --base "$DEFAULT_BRANCH" --head "$branch" --json number --jq '.[0].number // empty')
+          if [ "$CHANGED" != true ]; then
+            # Kilden kan ha gått tilbake til prisene på standardgrenen.
+            # En gammel pris-PR skal da ikke kunne gjeninnføre utdaterte data.
+            if [ -n "$open" ]; then
+              gh pr close "$open" --comment "Ny kildekontroll viser ingen innholdsendring mot standardgrenen. Prisforslaget er ikke lenger aktuelt."
+            fi
             exit 0
           fi
+          # Checkout lagrer ikke credentials. Tokenet brukes bare i denne jobben
+          # og bare i samme repo. Grenen er reservert for genererte prisforslag.
+          gh auth setup-git
+          old_head=$(git ls-remote --heads origin "refs/heads/$branch" | cut -f1)
+          if [ -n "$old_head" ]; then
+            git fetch --no-tags origin "refs/heads/$branch:refs/remotes/origin/$branch"
+            old_head=$(git rev-parse "refs/remotes/origin/$branch")
+          fi
+          if [ -n "$open" ]; then
+            git show "refs/remotes/origin/$branch:src/content/pricing/snapshot.json" > "$RUNNER_TEMP/pricing-pr-snapshot.json"
+            same=$(node --input-type=module - "$RUNNER_TEMP/pricing-pr-snapshot.json" <<'JS'
+          import { readFile } from 'node:fs/promises';
+          import { hasMeaningfulChanges } from './scripts/pricing/sync.mjs';
+          const previous = JSON.parse(await readFile(process.argv[2], 'utf8'));
+          const next = JSON.parse(await readFile('src/content/pricing/snapshot.json', 'utf8'));
+          console.log(!hasMeaningfulChanges(previous, next));
+          JS
+            )
+            if [ "$same" = true ]; then exit 0; fi
+          fi
+          # Bygg alltid forslaget fra dagens standardgren, så gamle prisforslag
+          # ikke legges oppå nye manuelle endringer eller nye loggoppføringer.
           git switch -c "$branch"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -- src/content/pricing/snapshot.json VERSJONSLOGG.md
           git commit -m "chore: oppdater priser og kildestatus"
-          # Fine-grained same-repository token; no PAT or rights to other repositories.
-          gh auth setup-git
-          git push origin "HEAD:refs/heads/$branch"
+          git push --force-with-lease="refs/heads/$branch:$old_head" origin "HEAD:refs/heads/$branch"
           cat > "$RUNNER_TEMP/pricing-pr.md" <<'BODY'
-          Oppdaterte offentlige priser og kontrolltidspunkter for prissiden og Spør KI.
+          Oppdatert prisgrunnlag og kildestatus for prissiden og Spør KI.
 
-          Kontroller kildestatus i snapshot.json. Ved innhentingsfeil beholdes tidligere priser og siste vellykkede kontrolltidspunkt. Jobben er ikke en avtalekontroll.
+          Rader, kildemetadata, status og feil sammenlignes uten kontrolltidspunkter. Prisgrenen er automatisk vedlikeholdt og kan oppdateres mens PR-en er åpen; legg manuelle endringer på standardgrenen.
 
-          Før sammenslåing: kjør portaltestene og produksjonsbygg. GitHub-tokenet som åpner denne PR-en utløser normalt ikke andre PR-arbeidsflyter. Ingen automatisk utrulling eller sammenslåing er konfigurert.
+          Ved innhentingsfeil beholdes tidligere priser og siste vellykkede kontrolltidspunkt. Automatisk parsing er ikke faglig godkjenning eller avtalekontroll.
+
+          Før sammenslåing: kjør portaltestene og produksjonsbygg. PR-er opprettet med GitHub-tokenet utløser normalt ikke andre PR-arbeidsflyter. Ingen automatisk utrulling eller sammenslåing er konfigurert.
           BODY
-          gh pr create --base "$DEFAULT_BRANCH" --head "$branch" --title "Oppdater priser og kildestatus" --body-file "$RUNNER_TEMP/pricing-pr.md"
+          if [ -n "$open" ]; then
+            gh pr edit "$open" --title "Oppdater priser og kildestatus" --body-file "$RUNNER_TEMP/pricing-pr.md"
+          else
+            gh pr create --base "$DEFAULT_BRANCH" --head "$branch" --title "Oppdater priser og kildestatus" --body-file "$RUNNER_TEMP/pricing-pr.md"
+          fi
       - name: Meld mislykket kildekontroll
-        if: steps.sync.outputs.result != '0'
+        if: steps.sync.outputs.failed == 'true'
         run: |
           echo "::error::Minst én priskilde feilet. Se kildestatus og pris-PR."
           exit 1

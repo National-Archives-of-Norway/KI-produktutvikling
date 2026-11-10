@@ -12,7 +12,7 @@ export function clean(text) {
 }
 export function money(text) {
   const m = clean(text).match(
-    /^\$([\d,]+(?:\.\d+)?)(?:\s*\/\s*MTok)?(?:\s*\d+)?$/,
+    /^\$((?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d+)?)(?:\s*\/\s*MTok)?$/,
   );
   if (!m) throw new Error("Ukjent prisformat");
   const value = Number(m[1].replaceAll(",", ""));
@@ -23,24 +23,43 @@ export function money(text) {
 function optionalMoney(s) {
   return !s || /^(?:-|—|Not applicable)$/i.test(s.trim()) ? null : money(s);
 }
+function cells(line) {
+  const result = [];
+  let cell = "";
+  const body = line.slice(1, -1);
+  for (let i = 0; i < body.length; i++) {
+    const char = body[i];
+    if (char === "\\" && ["|", "\\"].includes(body[i + 1])) {
+      cell += body[++i];
+    } else if (char === "|") {
+      result.push(cell.trim());
+      cell = "";
+    } else cell += char;
+  }
+  result.push(cell.trim());
+  return result;
+}
 export function tables(markdown) {
-  return [...markdown.matchAll(/(?:^\|.*\|\r?\n)+/gm)]
-    .map(([block]) =>
-      block
-        .trim()
-        .split(/\r?\n/)
-        .map((line) =>
-          line
-            .slice(1, -1)
-            .split("|")
-            .map((x) => x.trim()),
-        ),
-    )
+  const blocks = [];
+  let block = [];
+  for (const line of [...markdown.split(/\r?\n/), ""]) {
+    if (/^\s*\|.*\|\s*$/.test(line)) block.push(cells(line.trim()));
+    else if (block.length) {
+      blocks.push(block);
+      block = [];
+    }
+  }
+  return blocks
     .filter(
       (rows) => rows.length > 2 && rows[1].every((c) => /^:?-+:?$/.test(c)),
     )
-    .map((rows) => ({ headers: rows[0], rows: rows.slice(2) }));
+    .map((rows) => {
+      if (rows.some((row) => row.length !== rows[0].length))
+        throw new Error("Pristabellens antall celler er endret");
+      return { headers: rows[0], rows: rows.slice(2) };
+    });
 }
+
 function need(table, names) {
   if (!table || names.some((n) => !table.headers.includes(n)))
     throw new Error("Pristabellens kolonner er endret");
@@ -265,7 +284,11 @@ export function claudeTokens(text) {
       context: "Standard",
       input: money(r["Base input tokens"]),
       output: money(r["Output tokens"]),
-      cached: money(r["Cache hits and refreshes"]),
+      // Fixture-kilden har markør 2 etter MTok i denne kolonnen.
+      // Bare dette kjente fotnoteformatet tillates; money() er ellers streng.
+      cached: money(
+        clean(r["Cache hits and refreshes"]).replace(/( \/ MTok) 2$/, "$1"),
+      ),
       write: money(r["5m cache writes"]),
       writeLong: money(r["1h cache writes"]),
       note: "Direkte Claude API. Cache-skriving gjelder henholdsvis 5 minutter og 1 time. Region-, verktøy- og andre tillegg kan gjelde; se kilden.",
