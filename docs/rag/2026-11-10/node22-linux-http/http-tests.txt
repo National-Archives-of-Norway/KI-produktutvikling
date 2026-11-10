@@ -1,0 +1,64 @@
+TAP version 13
+# Subtest: HTTP-serveren bruker konfigurerte origins for annen devport og delt vert
+ok 1 - HTTP-serveren bruker konfigurerte origins for annen devport og delt vert
+  ---
+  duration_ms: 26.08175
+  type: 'test'
+  ...
+# Subtest: HTTP-serveren leser JSON-medietype uten hensyn til bokstavstørrelse og parametre
+ok 2 - HTTP-serveren leser JSON-medietype uten hensyn til bokstavstørrelse og parametre
+  ---
+  duration_ms: 14.93375
+  type: 'test'
+  ...
+# Subtest: HTTP-serveren lukker 413-forbindelsen kontrollert og tåler etterfølgende fetch
+ok 3 - HTTP-serveren lukker 413-forbindelsen kontrollert og tåler etterfølgende fetch
+  ---
+  duration_ms: 52.738458
+  type: 'test'
+  ...
+# Subtest: HTTP-serveren returnerer nøytral 500 ved feil i søket eller ask
+ok 4 - HTTP-serveren returnerer nøytral 500 ved feil i søket eller ask
+  ---
+  duration_ms: 2.581292
+  type: 'test'
+  ...
+# Subtest: origin-konfigurasjon har dagens standarder og normaliserer bare eksplisitte origins
+ok 5 - origin-konfigurasjon har dagens standarder og normaliserer bare eksplisitte origins
+  ---
+  duration_ms: 0.173
+  type: 'test'
+  ...
+# Subtest: ugyldige origins stopper konfigurasjonen før oppstart, uansett modellvalg
+ok 6 - ugyldige origins stopper konfigurasjonen før oppstart, uansett modellvalg
+  ---
+  duration_ms: 0.548208
+  type: 'test'
+  ...
+# Subtest: Content-Length over grensen avvises før klienten sender kroppen
+ok 7 - Content-Length over grensen avvises før klienten sender kroppen
+  ---
+  duration_ms: 5.979959
+  type: 'test'
+  ...
+# Subtest: chunked kropp over grensen gir 413 og neste forespørsel lykkes
+ok 8 - chunked kropp over grensen gir 413 og neste forespørsel lykkes
+  ---
+  duration_ms: 5.960875
+  type: 'test'
+  ...
+# Subtest: klientfeil beholder 400/415 og gyldig kropp på nøyaktig grensen godtas
+ok 9 - klientfeil beholder 400/415 og gyldig kropp på nøyaktig grensen godtas
+  ---
+  duration_ms: 6.964875
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 293.8835

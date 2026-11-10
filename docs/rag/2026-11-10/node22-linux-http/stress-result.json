@@ -1,0 +1,77 @@
+{
+  "testedCommit": "2e5411a",
+  "node": "v22.18.0",
+  "undici": "6.21.2",
+  "platform": "linux",
+  "arch": "arm64",
+  "bodyBytes": 2097152,
+  "repetitionsPerServerAndMode": 50,
+  "followingCallsPerRejection": 4,
+  "servers": [
+    {
+      "trial": 1,
+      "acceptedConnections": 102,
+      "closedAfterCleanup": true,
+      "modes": [
+        {
+          "mode": "content-length",
+          "warmup200": 50,
+          "rejected413": 50,
+          "connectionClose": 50,
+          "following200": 200
+        },
+        {
+          "mode": "chunked",
+          "warmup200": 50,
+          "rejected413": 50,
+          "connectionClose": 50,
+          "following200": 200
+        }
+      ]
+    },
+    {
+      "trial": 2,
+      "acceptedConnections": 102,
+      "closedAfterCleanup": true,
+      "modes": [
+        {
+          "mode": "content-length",
+          "warmup200": 50,
+          "rejected413": 50,
+          "connectionClose": 50,
+          "following200": 200
+        },
+        {
+          "mode": "chunked",
+          "warmup200": 50,
+          "rejected413": 50,
+          "connectionClose": 50,
+          "following200": 200
+        }
+      ]
+    },
+    {
+      "trial": 3,
+      "acceptedConnections": 102,
+      "closedAfterCleanup": true,
+      "modes": [
+        {
+          "mode": "content-length",
+          "warmup200": 50,
+          "rejected413": 50,
+          "connectionClose": 50,
+          "following200": 200
+        },
+        {
+          "mode": "chunked",
+          "warmup200": 50,
+          "rejected413": 50,
+          "connectionClose": 50,
+          "following200": 200
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

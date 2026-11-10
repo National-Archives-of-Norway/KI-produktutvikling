@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-10",
+  "agent": "Codex (OpenAI)",
+  "snapshotCommit": "8aa422f6718dfa664fb35a280ce4da1203d549ce",
+  "httpImplementationCommit": "2e5411a",
+  "httpGitBlob": "854d590872b45fab69e7723c08b8117673a2d5bd",
+  "image": "node@sha256:752ea8a2f758c34002a0461bd9f1cee4f9a3c36d48494586f60ffce1fc708e0e",
+  "dockerServerVersion": "29.8.2",
+  "sourceArchivePaths": [
+    "src",
+    "tests",
+    "scripts",
+    "package.json",
+    "docs/rag/2026-11-10/node22-http/stress.mjs"
+  ],
+  "httpCommand": "node --test tests/rag-http.test.ts",
+  "stressCommand": "node docs/rag/2026-11-10/node22-http/stress.mjs /results/stress-result.json",
+  "isolation": {
+    "network": "none",
+    "publishedPorts": [],
+    "sourceReadOnly": true,
+    "rootReadOnly": true,
+    "tmpfs": "/tmp",
+    "capabilities": "ALL dropped",
+    "noNewPrivileges": true,
+    "memory": "512m",
+    "cpus": 2,
+    "autoRemove": true
+  },
+  "sourceSha256": {
+    "src/server/rag/http.ts": "a7e33c7313cf31142390c3b63b4404db1e60ef88f719241ace76812c5a6f2b6b",
+    "src/server/rag/config.ts": "b7468b34708d5de12472d47ed83b8b305cb9d60520864229e6a5478ffa824c8c",
+    "tests/rag-http.test.ts": "80bbda41435ed5732ece3e2d8b9ad6ac5dcff41dcd2312ceeceeb3bb546626eb",
+    "docs/rag/2026-11-10/node22-http/stress.mjs": "1f7083aeab4a9b7b7e4deddd44a9d565efc106af76aaeb07c96169c9fc581968"
+  }
+}

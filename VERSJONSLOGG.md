@@ -4,6 +4,15 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 «Agent» betyr kodeassistenten som utførte arbeidet. Git-forfatteren registreres separat av Git og kan være personen som oppretter commiten. Eksakt modellvariant er ikke registrert for tidligere arbeid og oppgis derfor ikke. Ingen underagenter ble brukt til kvalitetskontrollen eller opprettelsen av denne loggen.
 
+## Ikke utgitt – HTTP-retting verifisert i Docker/Linux med Node 22 – 10. november 2026
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Testet HTTP-rettingen i faktisk Docker/Linux med Node 22.18.0 / Undici 6.21.2, Debian 12 og arm64. Offisielt Node-bilde låst med digest; kode fra Git-snapshot `8aa422f` med uendret HTTP-implementasjon fra `2e5411a`. Docker Desktop måtte startes. Testcontaineren hadde ingen publiserte porter eller ekstern nettverkstilgang, og kun en skrivebeskyttet kodekopi uten `.env`, secrets eller installerte prosjektavhengigheter.
+- Alle **9/9 HTTP-/konfigurasjonstester** bestod. Samme stressforløp som på macOS, på tre isolerte servere: **300/300** 2 MB-kropper ga 413 med Connection: close og **1200/1200** etterfølgende fetch-kall ga 200. 150 Content-Length- og 150 chunked-opplastinger; også 300/300 vellykkede oppvarmingskall. **Ingen ECONNRESET, EPIPE eller andre forespørselsfeil**, og ingen automatisk retry lagt til. Alle servere ble lukket; containeren ble automatisk fjernet og fraværet kontrollert.
+- Oppdatert [testrapporten](docs/rag/2026-11-10/http-grense.md) og lagret originalutskrifter, JSON-resultater, runtime-/bildeidentitet, manifest og containerens kjøreskript i `docs/rag/2026-11-10/node22-linux-http/`. Den gamle implementasjonen, AMD64, andre patchversjoner, samtidighet og produksjonsproxy er ikke testet. Hele 94-testpakken, TypeScript og API-skriptet er ikke kjørt på nytt i Linux.
+- Formatering og `git diff --check` er kontrollert lokalt. Ingen produkt- eller avhengighetsendring; funksjonsregister, Beta-status og produksjonskrav videreføres. Ingen eksisterende appcontainer ble stoppet eller rekonfigurert. Ingen commit eller publisering.
+
 ## Ikke utgitt – HTTP-retting verifisert med Node 22 – 10. november 2026
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

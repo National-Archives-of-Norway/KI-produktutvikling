@@ -57,3 +57,30 @@ node docs/rag/2026-11-10/node22-http/stress.mjs /tmp/rag-node22-result.json
 Dette bekrefter at den rettede koden tåler prøvde 2 MB-avvisninger og etterfølgende kall på Node 22.18.0. Den gamle implementasjonen er ikke kjørt på nytt med Node 22, så resultatet bekrefter ikke den opprinnelige feilens reproduksjon eller alle mulige timingforhold. Andre Node 22-patchversjoner, Linux/Docker, samtidige opplastinger, treg nettverkstrafikk og delt produksjonsproxy er ikke testet i denne oppfølgingen. `check-rag-api.mjs` er ikke kjørt på nytt; den opprinnelige kontrollen ovenfor gjelder eksisterende tjeneste med ukjent revisjon.
 
 Ingen produktkode, funksjon eller modenhetsstatus er endret. Funksjonsregisteret og produksjonskravene i utviklingsplanen videreføres. Rettelsen ovenfor er committet som `2e5411a`; denne testoppfølgingen er ikke committet eller publisert.
+
+## Oppfølging i Docker/Linux med Node 22 – 10. november 2026
+
+**Resultat: ingen ECONNRESET, EPIPE eller andre forespørselsfeil.** Den rettede HTTP-grensen er nå testet også i en faktisk Linux-container, med Node 22.18.0 / Undici 6.21.2 på Debian 12 (bookworm), Linux arm64. Docker-motor: 29.8.2, LinuxKit-kjerne 7.0.14. Både server og fetch-klient kjørte i containeren. Det offisielle bildet `node:22.18.0-bookworm-slim` ble låst til digest `sha256:752ea8a2f758c34002a0461bd9f1cee4f9a3c36d48494586f60ffce1fc708e0e`.
+
+Testen brukte en isolert Git-snapshot fra `8aa422f6718dfa664fb35a280ce4da1203d549ce`. HTTP-koden er uendret fra rettingen i `2e5411a`, som det opprinnelige stresskriptets `testedCommit` viser. [Manifestet](node22-linux-http/manifest.json) registrerer faktisk snapshot, kodehash, kommandoer, bilde og avgrensninger. Snapshoten inneholdt bare `src`, `tests`, `scripts`, `package.json` og det tidligere stresskriptet. Ingen `.env`, `.git`, server-secrets eller modellkonfigurasjon ble montert eller lastet inn. Ingen prosjektavhengigheter ble installert eller endret.
+
+Containeren kjørte med skrivebeskyttet kode og rotfilsystem, separat resultatmappe, midlertidig `/tmp`, fjernede capabilities, `no-new-privileges`, 512 MB minne og to CPU-er. `--network none` tillot bare containerens interne loopback; ingen vertsporter ble publisert. Serverne brukte `listen(0, "127.0.0.1")`. Alle testservere ble lukket og testcontaineren automatisk slettet med `--rm`; fravær av containeren ble kontrollert etterpå. Docker Desktop måtte startes fordi motoren ikke kjørte. Ingen eksisterende apptjeneste eller container ble stoppet eller rekonfigurert av testkjøringen.
+
+| Kontroll i Linux/Node 22                                                  | Resultat                            |
+| ------------------------------------------------------------------------- | ----------------------------------- |
+| Alle ni HTTP-/konfigurasjonstester (`node --test tests/rag-http.test.ts`) | 9/9 bestått                         |
+| Content-Length: 150 kropper à 2 097 152 byte                              | 150/150 ga 413 og Connection: close |
+| Etterfølgende fetch-kall etter Content-Length-avvisning                   | 600/600 ga 200                      |
+| Chunked via fetch-strøm: 150 kropper à 2 097 152 byte                     | 150/150 ga 413 og Connection: close |
+| Etterfølgende fetch-kall etter chunked-avvisning                          | 600/600 ga 200                      |
+| Oppvarmingskall                                                           | 300/300 ga 200                      |
+| ECONNRESET / EPIPE / øvrige forespørselsfeil                              | 0 / 0 / 0                           |
+| Serveropprydding                                                          | 3/3 bekreftet                       |
+
+Stressforløpet var identisk med macOS-prøven: tre friske servere, 50 runder per opplastingsvariant per server, fire nye kall etter hver avvisning, vanlig fetch-forbindelsespool uten manuell klientlukking, full lesing av svar og kontroll av forventet kilde. Ingen automatisk retry ble lagt til. Begge prosesser avsluttet med kode 0.
+
+Bevis: [HTTP-testutskrift](node22-linux-http/http-tests.txt), [maskinlesbart stressresultat](node22-linux-http/stress-result.json), [original stressutskrift](node22-linux-http/stress-log.txt), [runtime](node22-linux-http/runtime.json), [bildeidentitet](node22-linux-http/image.json), [exit-koder](node22-linux-http/exit-codes.json) og [kjøreskript for containeren](node22-linux-http/run-linux.sh). Det eksisterende [stresskriptet](node22-http/stress.mjs) ble brukt uendret.
+
+Dette er avgrenset lokal verifisering i Docker/Linux arm64, ikke produksjonsgodkjenning. AMD64, andre Node-patchversjoner, gamle HTTP-implementasjonens reproduksjon, samtidige opplastinger, treg trafikk og trafikk gjennom Next.js-/produksjonsproxy er ikke undersøkt. Den samlede pakken på 94 tester, TypeScript og API-kontrollskriptet er ikke kjørt på nytt i denne Linux-kjøringen; de ni relevante HTTP-testene og stressforløpet er kjørt. Formatering og `git diff --check` er kontrollert lokalt.
+
+Ingen produktkode, funksjon eller modenhetsstatus er endret. Funksjonsregister og produksjonskrav videreføres. Denne oppfølgingen er ikke committet eller publisert.
