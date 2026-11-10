@@ -50,7 +50,7 @@ export function getFeatures(): Feature[] {
     {
       id: "katalog",
       title: catalogContent.title,
-      description: `${catalogContent.description} Søk og filtrer blant ${resources.length} ressurser, inkludert ${resources.filter((resource) => resource.type === "Skill").length} skills. Hver ressurs har en egen side med brukssteg og eksempel. Skills er merket Beta og er ennå ikke gjennomgått av et menneske.`,
+      description: `${catalogContent.description} Søk og filtrer blant ${resources.length} ressurser, inkludert ${resources.filter((resource) => resource.type === "Skill").length} skills. Valgt ressurstype markeres med en gang. Hver ressurs har en egen side med brukssteg og eksempel. Skills er merket Beta og er ennå ikke gjennomgått av et menneske.`,
       status: "beta",
       href: "/#ressurser",
       routes: ["/ressurser/[slug]/"],

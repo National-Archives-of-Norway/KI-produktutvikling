@@ -1,0 +1,5290 @@
+{
+  "states": 34,
+  "measurements": 164,
+  "minimum_bound": 1,
+  "below_3": [
+    {
+      "state": "mobile-selected-filter-focus",
+      "kind": "selected-fill",
+      "control": "Skill",
+      "foreground_source": "rgba(0, 0, 0, 0)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.09431376862745099,
+        0.17411756862745098,
+        0.190588568627451
+      ],
+      "composited_foreground_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "composited_foreground_upper": [
+        0.0903922,
+        0.170196,
+        0.186667
+      ],
+      "ratio_lower_bound": 1,
+      "threshold": 3,
+      "below_3": true,
+      "hover": false,
+      "focus": true,
+      "disabled": false
+    }
+  ],
+  "method": "Actual computed state colours; sRGB/alpha gradient envelopes, one byte background rounding margin. Border alpha painted on input inner background then compared also to outer surround. Focus outline measured outside element. Hero frame includes full .07 and .11 halo bounds.",
+  "results": [
+    {
+      "state": "home-normal",
+      "kind": "selected-fill",
+      "control": "Alle",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.09431376862745099,
+        0.17411756862745098,
+        0.190588568627451
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 10.780012343416937,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "home-normal",
+      "kind": "current-page-underline",
+      "control": "Ressurskatalog",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "home-normal",
+      "kind": "button-icon",
+      "control": "Spør KI",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.0392156862745098,
+        0.10588235294117647,
+        0.12549019607843137
+      ],
+      "background_upper": [
+        0.10196078431372549,
+        0.20392156862745098,
+        0.1764705882352941
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 9.929467267838925,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "home-normal",
+      "kind": "illustration-control-frame",
+      "control": "Pause animasjonen i forsideillustrasjonen",
+      "foreground_source": "color(srgb 0.615686 0.945098 0.678431 / 0.7)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.18147959691300575,
+        0.2977479173405134,
+        0.2501453395191913
+      ],
+      "composited_foreground_lower": [
+        0.4415684352941176,
+        0.6862744823529411,
+        0.5066664058823529
+      ],
+      "composited_foreground_upper": [
+        0.4842476084856664,
+        0.7497165046139187,
+        0.5487688312675221
+      ],
+      "ratio_lower_bound": 3.6652484460272046,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "search-focus",
+      "kind": "selected-fill",
+      "control": "Alle",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.09431376862745099,
+        0.17411756862745098,
+        0.190588568627451
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 10.780012343416937,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "search-focus",
+      "kind": "current-page-underline",
+      "control": "Ressurskatalog",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "search-focus",
+      "kind": "button-icon",
+      "control": "Spør KI",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.0392156862745098,
+        0.10588235294117647,
+        0.12549019607843137
+      ],
+      "background_upper": [
+        0.10196078431372549,
+        0.20392156862745098,
+        0.1764705882352941
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 9.929467267838925,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "search-focus",
+      "kind": "illustration-control-frame",
+      "control": "Pause animasjonen i forsideillustrasjonen",
+      "foreground_source": "color(srgb 0.615686 0.945098 0.678431 / 0.7)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.18147959691300575,
+        0.2977479173405134,
+        0.2501453395191913
+      ],
+      "composited_foreground_lower": [
+        0.4415684352941176,
+        0.6862744823529411,
+        0.5066664058823529
+      ],
+      "composited_foreground_upper": [
+        0.4842476084856664,
+        0.7497165046139187,
+        0.5487688312675221
+      ],
+      "ratio_lower_bound": 3.6652484460272046,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "skill-selected-hover",
+      "kind": "selected-fill",
+      "control": "Skill",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.09431376862745099,
+        0.17411756862745098,
+        0.190588568627451
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 10.780012343416937,
+      "threshold": 3,
+      "below_3": false,
+      "hover": true,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "skill-selected-hover",
+      "kind": "current-page-underline",
+      "control": "Ressurskatalog",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "skill-selected-hover",
+      "kind": "button-icon",
+      "control": "Spør KI",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.0392156862745098,
+        0.10588235294117647,
+        0.12549019607843137
+      ],
+      "background_upper": [
+        0.10196078431372549,
+        0.20392156862745098,
+        0.1764705882352941
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 9.929467267838925,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "skill-selected-hover",
+      "kind": "illustration-control-frame",
+      "control": "Pause animasjonen i forsideillustrasjonen",
+      "foreground_source": "color(srgb 0.615686 0.945098 0.678431 / 0.7)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.18147959691300575,
+        0.2977479173405134,
+        0.2501453395191913
+      ],
+      "composited_foreground_lower": [
+        0.4415684352941176,
+        0.6862744823529411,
+        0.5066664058823529
+      ],
+      "composited_foreground_upper": [
+        0.4842476084856664,
+        0.7497165046139187,
+        0.5487688312675221
+      ],
+      "ratio_lower_bound": 3.6652484460272046,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "skill-selected-keyboard-focus",
+      "kind": "selected-fill",
+      "control": "Skill",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.09431376862745099,
+        0.17411756862745098,
+        0.190588568627451
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 10.780012343416937,
+      "threshold": 3,
+      "below_3": false,
+      "hover": true,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "skill-selected-keyboard-focus",
+      "kind": "current-page-underline",
+      "control": "Ressurskatalog",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "skill-selected-keyboard-focus",
+      "kind": "button-icon",
+      "control": "Spør KI",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.0392156862745098,
+        0.10588235294117647,
+        0.12549019607843137
+      ],
+      "background_upper": [
+        0.10196078431372549,
+        0.20392156862745098,
+        0.1764705882352941
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 9.929467267838925,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "skill-selected-keyboard-focus",
+      "kind": "focus-outline",
+      "control": "Skill",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.09431376862745099,
+        0.17411756862745098,
+        0.190588568627451
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 10.780012343416937,
+      "threshold": 3,
+      "below_3": false,
+      "hover": true,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "skill-selected-keyboard-focus",
+      "kind": "illustration-control-frame",
+      "control": "Pause animasjonen i forsideillustrasjonen",
+      "foreground_source": "color(srgb 0.615686 0.945098 0.678431 / 0.7)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.18147959691300575,
+        0.2977479173405134,
+        0.2501453395191913
+      ],
+      "composited_foreground_lower": [
+        0.4415684352941176,
+        0.6862744823529411,
+        0.5066664058823529
+      ],
+      "composited_foreground_upper": [
+        0.4842476084856664,
+        0.7497165046139187,
+        0.5487688312675221
+      ],
+      "ratio_lower_bound": 3.6652484460272046,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "illustration-paused-focus",
+      "kind": "selected-fill",
+      "control": "Skill",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.09431376862745099,
+        0.17411756862745098,
+        0.190588568627451
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 10.780012343416937,
+      "threshold": 3,
+      "below_3": false,
+      "hover": true,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "illustration-paused-focus",
+      "kind": "current-page-underline",
+      "control": "Ressurskatalog",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "illustration-paused-focus",
+      "kind": "button-icon",
+      "control": "Spør KI",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.0392156862745098,
+        0.10588235294117647,
+        0.12549019607843137
+      ],
+      "background_upper": [
+        0.10196078431372549,
+        0.20392156862745098,
+        0.1764705882352941
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 9.929467267838925,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "illustration-paused-focus",
+      "kind": "focus-outline",
+      "control": "Start animasjonen i forsideillustrasjonen",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.18147959691300575,
+        0.2977479173405134,
+        0.2501453395191913
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 7.026985862760074,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "illustration-paused-focus",
+      "kind": "illustration-control-frame",
+      "control": "Start animasjonen i forsideillustrasjonen",
+      "foreground_source": "color(srgb 0.615686 0.945098 0.678431 / 0.7)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.18147959691300575,
+        0.2977479173405134,
+        0.2501453395191913
+      ],
+      "composited_foreground_lower": [
+        0.4415684352941176,
+        0.6862744823529411,
+        0.5066664058823529
+      ],
+      "composited_foreground_upper": [
+        0.4842476084856664,
+        0.7497165046139187,
+        0.5487688312675221
+      ],
+      "ratio_lower_bound": 3.6652484460272046,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "search-hover",
+      "kind": "field-inner-border",
+      "control": "resource-search",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": true,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "search-hover",
+      "kind": "field-outer-border",
+      "control": "resource-search",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.09431376862745099,
+        0.17411756862745098,
+        0.190588568627451
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 10.780012343416937,
+      "threshold": 3,
+      "below_3": false,
+      "hover": true,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "search-focused",
+      "kind": "field-inner-border",
+      "control": "resource-search",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": true,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "search-focused",
+      "kind": "field-outer-border",
+      "control": "resource-search",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.09431376862745099,
+        0.17411756862745098,
+        0.190588568627451
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 10.780012343416937,
+      "threshold": 3,
+      "below_3": false,
+      "hover": true,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "dialog-normal",
+      "kind": "button-icon",
+      "control": "Lukk chat",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.0603921431372549,
+        0.12156862549019608,
+        0.13058821666666665
+      ],
+      "background_upper": [
+        0.12337250921568628,
+        0.21137254333333333,
+        0.19282347539215683
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 9.581458574051686,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "dialog-normal",
+      "kind": "button-icon",
+      "control": "Hvordan gjennomgår jeg en kodeendring?",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.08193252881568627,
+        0.14977254613333335,
+        0.15194350199215684
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 11.65331098094413,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "dialog-normal",
+      "kind": "button-icon",
+      "control": "Hvordan gir jeg KI god kontekst?",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.08193252881568627,
+        0.14977254613333335,
+        0.15194350199215684
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 11.65331098094413,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "dialog-normal",
+      "kind": "button-icon",
+      "control": "Hvordan utforsker jeg brukerbehov?",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.08193252881568627,
+        0.14977254613333335,
+        0.15194350199215684
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 11.65331098094413,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "dialog-normal",
+      "kind": "button-icon",
+      "control": "Send spørsmål",
+      "foreground_source": "rgb(29, 29, 29)",
+      "background_lower": [
+        0.611764705882353,
+        0.9411764705882353,
+        0.6745098039215687
+      ],
+      "background_upper": [
+        0.7725490196078432,
+        0.9764705882352941,
+        0.807843137254902
+      ],
+      "composited_foreground_lower": [
+        0.11372549019607843,
+        0.11372549019607843,
+        0.11372549019607843
+      ],
+      "composited_foreground_upper": [
+        0.11372549019607843,
+        0.11372549019607843,
+        0.11372549019607843
+      ],
+      "ratio_lower_bound": 12.421097374095464,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "dialog-normal-fields",
+      "kind": "field-inner-border",
+      "control": "Skriv et spørsmål",
+      "foreground_source": "color(srgb 0.615686 0.945098 0.678431 / 0.6)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.38352924705882346,
+        0.5999999764705882,
+        0.4494115411764706
+      ],
+      "composited_foreground_upper": [
+        0.38352924705882346,
+        0.5999999764705882,
+        0.4494115411764706
+      ],
+      "ratio_lower_bound": 5.5217737398122475,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "dialog-normal-fields",
+      "kind": "field-outer-border",
+      "control": "Skriv et spørsmål",
+      "foreground_source": "color(srgb 0.615686 0.945098 0.678431 / 0.6)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.06666666666666667,
+        0.13333333333333336,
+        0.1647058823529412
+      ],
+      "composited_foreground_lower": [
+        0.38352924705882346,
+        0.5999999764705882,
+        0.4494115411764706
+      ],
+      "composited_foreground_upper": [
+        0.38352924705882346,
+        0.5999999764705882,
+        0.4494115411764706
+      ],
+      "ratio_lower_bound": 4.9136396227357055,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "close-icon-hover",
+      "kind": "button-icon",
+      "control": "Lukk chat",
+      "foreground_source": "rgb(40, 121, 56)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.1568627450980392,
+        0.4745098039215686,
+        0.2196078431372549
+      ],
+      "composited_foreground_upper": [
+        0.1568627450980392,
+        0.4745098039215686,
+        0.2196078431372549
+      ],
+      "ratio_lower_bound": 3.392300446149769,
+      "threshold": 3,
+      "below_3": false,
+      "hover": true,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "close-icon-hover",
+      "kind": "button-icon",
+      "control": "Hvordan gjennomgår jeg en kodeendring?",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.08193252881568627,
+        0.14977254613333335,
+        0.15194350199215684
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 11.65331098094413,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "close-icon-hover",
+      "kind": "button-icon",
+      "control": "Hvordan gir jeg KI god kontekst?",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.08193252881568627,
+        0.14977254613333335,
+        0.15194350199215684
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 11.65331098094413,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "close-icon-hover",
+      "kind": "button-icon",
+      "control": "Hvordan utforsker jeg brukerbehov?",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.08193252881568627,
+        0.14977254613333335,
+        0.15194350199215684
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 11.65331098094413,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "close-icon-hover",
+      "kind": "button-icon",
+      "control": "Send spørsmål",
+      "foreground_source": "rgb(29, 29, 29)",
+      "background_lower": [
+        0.611764705882353,
+        0.9411764705882353,
+        0.6745098039215687
+      ],
+      "background_upper": [
+        0.7725490196078432,
+        0.9764705882352941,
+        0.807843137254902
+      ],
+      "composited_foreground_lower": [
+        0.11372549019607843,
+        0.11372549019607843,
+        0.11372549019607843
+      ],
+      "composited_foreground_upper": [
+        0.11372549019607843,
+        0.11372549019607843,
+        0.11372549019607843
+      ],
+      "ratio_lower_bound": 12.421097374095464,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "close-icon-focus",
+      "kind": "button-icon",
+      "control": "Lukk chat",
+      "foreground_source": "rgb(40, 121, 56)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.1568627450980392,
+        0.4745098039215686,
+        0.2196078431372549
+      ],
+      "composited_foreground_upper": [
+        0.1568627450980392,
+        0.4745098039215686,
+        0.2196078431372549
+      ],
+      "ratio_lower_bound": 3.392300446149769,
+      "threshold": 3,
+      "below_3": false,
+      "hover": true,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "close-icon-focus",
+      "kind": "button-icon",
+      "control": "Hvordan gjennomgår jeg en kodeendring?",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.08193252881568627,
+        0.14977254613333335,
+        0.15194350199215684
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 11.65331098094413,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "close-icon-focus",
+      "kind": "button-icon",
+      "control": "Hvordan gir jeg KI god kontekst?",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.08193252881568627,
+        0.14977254613333335,
+        0.15194350199215684
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 11.65331098094413,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "close-icon-focus",
+      "kind": "button-icon",
+      "control": "Hvordan utforsker jeg brukerbehov?",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.08193252881568627,
+        0.14977254613333335,
+        0.15194350199215684
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 11.65331098094413,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "close-icon-focus",
+      "kind": "button-icon",
+      "control": "Send spørsmål",
+      "foreground_source": "rgb(29, 29, 29)",
+      "background_lower": [
+        0.611764705882353,
+        0.9411764705882353,
+        0.6745098039215687
+      ],
+      "background_upper": [
+        0.7725490196078432,
+        0.9764705882352941,
+        0.807843137254902
+      ],
+      "composited_foreground_lower": [
+        0.11372549019607843,
+        0.11372549019607843,
+        0.11372549019607843
+      ],
+      "composited_foreground_upper": [
+        0.11372549019607843,
+        0.11372549019607843,
+        0.11372549019607843
+      ],
+      "ratio_lower_bound": 12.421097374095464,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "close-icon-focus",
+      "kind": "focus-outline",
+      "control": "Lukk chat",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.09725487450980393,
+        0.1725490156862745,
+        0.16705878627450982
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 10.881401512123553,
+      "threshold": 3,
+      "below_3": false,
+      "hover": true,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "chat-focused",
+      "kind": "field-inner-border",
+      "control": "Skriv et spørsmål",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "chat-focused",
+      "kind": "field-outer-border",
+      "control": "Skriv et spørsmål",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.06666666666666667,
+        0.13333333333333336,
+        0.1647058823529412
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 12.144798077264042,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "chat-invalid",
+      "kind": "field-inner-border",
+      "control": "Skriv et spørsmål",
+      "foreground_source": "color(srgb 0.615686 0.945098 0.678431 / 0.6)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.38352924705882346,
+        0.5999999764705882,
+        0.4494115411764706
+      ],
+      "composited_foreground_upper": [
+        0.38352924705882346,
+        0.5999999764705882,
+        0.4494115411764706
+      ],
+      "ratio_lower_bound": 5.5217737398122475,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "chat-invalid",
+      "kind": "field-outer-border",
+      "control": "Skriv et spørsmål",
+      "foreground_source": "color(srgb 0.615686 0.945098 0.678431 / 0.6)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.06666666666666667,
+        0.13333333333333336,
+        0.1647058823529412
+      ],
+      "composited_foreground_lower": [
+        0.38352924705882346,
+        0.5999999764705882,
+        0.4494115411764706
+      ],
+      "composited_foreground_upper": [
+        0.38352924705882346,
+        0.5999999764705882,
+        0.4494115411764706
+      ],
+      "ratio_lower_bound": 4.9136396227357055,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "chat-invalid-send-focus",
+      "kind": "button-icon",
+      "control": "Lukk chat",
+      "foreground_source": "rgb(40, 121, 56)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.1568627450980392,
+        0.4745098039215686,
+        0.2196078431372549
+      ],
+      "composited_foreground_upper": [
+        0.1568627450980392,
+        0.4745098039215686,
+        0.2196078431372549
+      ],
+      "ratio_lower_bound": 3.392300446149769,
+      "threshold": 3,
+      "below_3": false,
+      "hover": true,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "chat-invalid-send-focus",
+      "kind": "button-icon",
+      "control": "Hvordan gjennomgår jeg en kodeendring?",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.08193252881568627,
+        0.14977254613333335,
+        0.15194350199215684
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 11.65331098094413,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "chat-invalid-send-focus",
+      "kind": "button-icon",
+      "control": "Hvordan gir jeg KI god kontekst?",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.08193252881568627,
+        0.14977254613333335,
+        0.15194350199215684
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 11.65331098094413,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "chat-invalid-send-focus",
+      "kind": "button-icon",
+      "control": "Hvordan utforsker jeg brukerbehov?",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.08193252881568627,
+        0.14977254613333335,
+        0.15194350199215684
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 11.65331098094413,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "chat-invalid-send-focus",
+      "kind": "button-icon",
+      "control": "Send spørsmål",
+      "foreground_source": "rgb(29, 29, 29)",
+      "background_lower": [
+        0.611764705882353,
+        0.9411764705882353,
+        0.6745098039215687
+      ],
+      "background_upper": [
+        0.7725490196078432,
+        0.9764705882352941,
+        0.807843137254902
+      ],
+      "composited_foreground_lower": [
+        0.11372549019607843,
+        0.11372549019607843,
+        0.11372549019607843
+      ],
+      "composited_foreground_upper": [
+        0.11372549019607843,
+        0.11372549019607843,
+        0.11372549019607843
+      ],
+      "ratio_lower_bound": 12.421097374095464,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "chat-invalid-send-focus",
+      "kind": "focus-outline",
+      "control": "Send spørsmål",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.06666666666666667,
+        0.13333333333333336,
+        0.1647058823529412
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 12.144798077264042,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "pricing-six-disclosures-closed",
+      "kind": "current-page-underline",
+      "control": "Oversikt",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "pricing-six-disclosures-closed",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "pricing-six-disclosures-closed",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "pricing-six-disclosures-closed",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "pricing-six-disclosures-closed",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "pricing-six-disclosures-closed",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "pricing-six-disclosures-closed",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "pricing-six-disclosures-open",
+      "kind": "current-page-underline",
+      "control": "Oversikt",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "pricing-six-disclosures-open",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "pricing-six-disclosures-open",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "pricing-six-disclosures-open",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "pricing-six-disclosures-open",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "pricing-six-disclosures-open",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "pricing-six-disclosures-open",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "pricing-six-disclosures-open",
+      "kind": "focus-outline",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "table-1-focus",
+      "kind": "current-page-underline",
+      "control": "Oversikt",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-1-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-1-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-1-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-1-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-1-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-1-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-1-focus",
+      "kind": "focus-outline",
+      "control": "GitHub Copilot-abonnement, rullbar pristabell",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "table-2-focus",
+      "kind": "current-page-underline",
+      "control": "Oversikt",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-2-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-2-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-2-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-2-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-2-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-2-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-2-focus",
+      "kind": "focus-outline",
+      "control": "Claude-abonnement, rullbar pristabell",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "table-3-focus",
+      "kind": "current-page-underline",
+      "control": "Oversikt",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-3-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-3-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-3-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-3-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-3-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-3-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-3-focus",
+      "kind": "focus-outline",
+      "control": "ChatGPT-abonnement med Codex, rullbar pristabell",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "table-4-focus",
+      "kind": "current-page-underline",
+      "control": "Oversikt",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-4-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-4-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-4-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-4-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-4-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-4-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-4-focus",
+      "kind": "focus-outline",
+      "control": "Tokenpriser i GitHub Copilot, rullbar pristabell",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "table-5-focus",
+      "kind": "current-page-underline",
+      "control": "Oversikt",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-5-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-5-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-5-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-5-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-5-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-5-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-5-focus",
+      "kind": "focus-outline",
+      "control": "Direkte Claude API, rullbar pristabell",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "table-6-focus",
+      "kind": "current-page-underline",
+      "control": "Oversikt",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-6-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-6-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-6-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-6-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-6-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-6-focus",
+      "kind": "disclosure-marker",
+      "control": "Vilkår og avgrensninger",
+      "foreground_source": "rgb(255, 255, 255)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "composited_foreground_upper": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ratio_lower_bound": 18.349621068250073,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "table-6-focus",
+      "kind": "focus-outline",
+      "control": "OpenAI API for Codex, rullbar pristabell",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "page-chat-normal-field",
+      "kind": "field-inner-border",
+      "control": "Skriv et spørsmål",
+      "foreground_source": "color(srgb 0.615686 0.945098 0.678431 / 0.6)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.38352924705882346,
+        0.5999999764705882,
+        0.4494115411764706
+      ],
+      "composited_foreground_upper": [
+        0.38352924705882346,
+        0.5999999764705882,
+        0.4494115411764706
+      ],
+      "ratio_lower_bound": 5.5217737398122475,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "page-chat-normal-field",
+      "kind": "field-outer-border",
+      "control": "Skriv et spørsmål",
+      "foreground_source": "color(srgb 0.615686 0.945098 0.678431 / 0.6)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.06666666666666667,
+        0.13333333333333336,
+        0.1647058823529412
+      ],
+      "composited_foreground_lower": [
+        0.38352924705882346,
+        0.5999999764705882,
+        0.4494115411764706
+      ],
+      "composited_foreground_upper": [
+        0.38352924705882346,
+        0.5999999764705882,
+        0.4494115411764706
+      ],
+      "ratio_lower_bound": 4.9136396227357055,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "chat-sources-disclosures-closed",
+      "kind": "current-page-underline",
+      "control": "Spør KI",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "chat-sources-disclosures-closed",
+      "kind": "button-icon",
+      "control": "Send spørsmål",
+      "foreground_source": "rgb(29, 29, 29)",
+      "background_lower": [
+        0.611764705882353,
+        0.9411764705882353,
+        0.6745098039215687
+      ],
+      "background_upper": [
+        0.7725490196078432,
+        0.9764705882352941,
+        0.807843137254902
+      ],
+      "composited_foreground_lower": [
+        0.11372549019607843,
+        0.11372549019607843,
+        0.11372549019607843
+      ],
+      "composited_foreground_upper": [
+        0.11372549019607843,
+        0.11372549019607843,
+        0.11372549019607843
+      ],
+      "ratio_lower_bound": 12.421097374095464,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "chat-sources-disclosures-closed",
+      "kind": "disclosure-marker",
+      "control": "[1] Utforsk et brukerbehov",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.051686264901960786,
+        0.10862744960784314,
+        0.1219999869607843
+      ],
+      "background_upper": [
+        0.0860195982352941,
+        0.16188235156862746,
+        0.182823516372549
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 11.192793981802739,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "chat-sources-disclosures-closed",
+      "kind": "disclosure-marker",
+      "control": "[2] Informasjonskapsler: Bruk av cookies og behov for samtykke",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.051686264901960786,
+        0.10862744960784314,
+        0.1219999869607843
+      ],
+      "background_upper": [
+        0.0860195982352941,
+        0.16188235156862746,
+        0.182823516372549
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 11.192793981802739,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "chat-sources-disclosures-closed",
+      "kind": "disclosure-marker",
+      "control": "[3] Kom i gang: 1. Velg en avgrenset oppgave",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.051686264901960786,
+        0.10862744960784314,
+        0.1219999869607843
+      ],
+      "background_upper": [
+        0.0860195982352941,
+        0.16188235156862746,
+        0.182823516372549
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 11.192793981802739,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "chat-sources-disclosures-closed",
+      "kind": "focus-outline",
+      "control": "Send spørsmål",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.06666666666666667,
+        0.13333333333333336,
+        0.1647058823529412
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 12.144798077264042,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "chat-sources-disclosures-open",
+      "kind": "current-page-underline",
+      "control": "Spør KI",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "chat-sources-disclosures-open",
+      "kind": "button-icon",
+      "control": "Send spørsmål",
+      "foreground_source": "rgb(29, 29, 29)",
+      "background_lower": [
+        0.611764705882353,
+        0.9411764705882353,
+        0.6745098039215687
+      ],
+      "background_upper": [
+        0.7725490196078432,
+        0.9764705882352941,
+        0.807843137254902
+      ],
+      "composited_foreground_lower": [
+        0.11372549019607843,
+        0.11372549019607843,
+        0.11372549019607843
+      ],
+      "composited_foreground_upper": [
+        0.11372549019607843,
+        0.11372549019607843,
+        0.11372549019607843
+      ],
+      "ratio_lower_bound": 12.421097374095464,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "chat-sources-disclosures-open",
+      "kind": "disclosure-marker",
+      "control": "[1] Utforsk et brukerbehov",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.051686264901960786,
+        0.10862744960784314,
+        0.1219999869607843
+      ],
+      "background_upper": [
+        0.0860195982352941,
+        0.16188235156862746,
+        0.182823516372549
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 11.192793981802739,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "chat-sources-disclosures-open",
+      "kind": "disclosure-marker",
+      "control": "[2] Informasjonskapsler: Bruk av cookies og behov for samtykke",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.051686264901960786,
+        0.10862744960784314,
+        0.1219999869607843
+      ],
+      "background_upper": [
+        0.0860195982352941,
+        0.16188235156862746,
+        0.182823516372549
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 11.192793981802739,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "chat-sources-disclosures-open",
+      "kind": "disclosure-marker",
+      "control": "[3] Kom i gang: 1. Velg en avgrenset oppgave",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.051686264901960786,
+        0.10862744960784314,
+        0.1219999869607843
+      ],
+      "background_upper": [
+        0.0860195982352941,
+        0.16188235156862746,
+        0.182823516372549
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 11.192793981802739,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "chat-sources-disclosures-open",
+      "kind": "focus-outline",
+      "control": "[3] Kom i gang: 1. Velg en avgrenset oppgave",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.051686264901960786,
+        0.10862744960784314,
+        0.1219999869607843
+      ],
+      "background_upper": [
+        0.0860195982352941,
+        0.16188235156862746,
+        0.182823516372549
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 11.192793981802739,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "search-unfocused-normal",
+      "kind": "field-inner-border",
+      "control": "resource-search",
+      "foreground_source": "rgb(142, 141, 141)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.5568627450980392,
+        0.5529411764705883,
+        0.5529411764705883
+      ],
+      "composited_foreground_upper": [
+        0.5568627450980392,
+        0.5529411764705883,
+        0.5529411764705883
+      ],
+      "ratio_lower_bound": 5.54396635763476,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "search-unfocused-normal",
+      "kind": "field-outer-border",
+      "control": "resource-search",
+      "foreground_source": "rgb(142, 141, 141)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.09431376862745099,
+        0.17411756862745098,
+        0.190588568627451
+      ],
+      "composited_foreground_lower": [
+        0.5568627450980392,
+        0.5529411764705883,
+        0.5529411764705883
+      ],
+      "composited_foreground_upper": [
+        0.5568627450980392,
+        0.5529411764705883,
+        0.5529411764705883
+      ],
+      "ratio_lower_bound": 4.3789928894135,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "resource-link-focus",
+      "kind": "selected-fill",
+      "control": "Alle",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.09431376862745099,
+        0.17411756862745098,
+        0.190588568627451
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 10.780012343416937,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "resource-link-focus",
+      "kind": "current-page-underline",
+      "control": "Ressurskatalog",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "resource-link-focus",
+      "kind": "button-icon",
+      "control": "Spør KI",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.0392156862745098,
+        0.10588235294117647,
+        0.12549019607843137
+      ],
+      "background_upper": [
+        0.10196078431372549,
+        0.20392156862745098,
+        0.1764705882352941
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 9.929467267838925,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "resource-link-focus",
+      "kind": "focus-outline",
+      "control": "Se skill: Kartlegg informasjonskapsler og samtykke",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.10537252980392157,
+        0.19043136980392156,
+        0.20094115039215688
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 10.232168248878239,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "resource-link-focus",
+      "kind": "illustration-control-frame",
+      "control": "Pause animasjonen i forsideillustrasjonen",
+      "foreground_source": "color(srgb 0.615686 0.945098 0.678431 / 0.7)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.18147959691300575,
+        0.2977479173405134,
+        0.2501453395191913
+      ],
+      "composited_foreground_lower": [
+        0.4415684352941176,
+        0.6862744823529411,
+        0.5066664058823529
+      ],
+      "composited_foreground_upper": [
+        0.4842476084856664,
+        0.7497165046139187,
+        0.5487688312675221
+      ],
+      "ratio_lower_bound": 3.6652484460272046,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "mobile-search-normal",
+      "kind": "field-inner-border",
+      "control": "resource-search",
+      "foreground_source": "rgb(142, 141, 141)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.5568627450980392,
+        0.5529411764705883,
+        0.5529411764705883
+      ],
+      "composited_foreground_upper": [
+        0.5568627450980392,
+        0.5529411764705883,
+        0.5529411764705883
+      ],
+      "ratio_lower_bound": 5.54396635763476,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "mobile-search-normal",
+      "kind": "field-outer-border",
+      "control": "resource-search",
+      "foreground_source": "rgb(142, 141, 141)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.09431376862745099,
+        0.17411756862745098,
+        0.190588568627451
+      ],
+      "composited_foreground_lower": [
+        0.5568627450980392,
+        0.5529411764705883,
+        0.5529411764705883
+      ],
+      "composited_foreground_upper": [
+        0.5568627450980392,
+        0.5529411764705883,
+        0.5529411764705883
+      ],
+      "ratio_lower_bound": 4.3789928894135,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "mobile-selected-filter-focus",
+      "kind": "selected-fill",
+      "control": "Skill",
+      "foreground_source": "rgba(0, 0, 0, 0)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.09431376862745099,
+        0.17411756862745098,
+        0.190588568627451
+      ],
+      "composited_foreground_lower": [
+        0.03529411764705882,
+        0.08235294117647059,
+        0.10588235294117647
+      ],
+      "composited_foreground_upper": [
+        0.0903922,
+        0.170196,
+        0.186667
+      ],
+      "ratio_lower_bound": 1,
+      "threshold": 3,
+      "below_3": true,
+      "hover": false,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "mobile-selected-filter-focus",
+      "kind": "current-page-underline",
+      "control": "Ressurskatalog",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "mobile-selected-filter-focus",
+      "kind": "button-icon",
+      "control": "Spør KI",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.0392156862745098,
+        0.10588235294117647,
+        0.12549019607843137
+      ],
+      "background_upper": [
+        0.10196078431372549,
+        0.20392156862745098,
+        0.1764705882352941
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 9.929467267838925,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "mobile-selected-filter-focus",
+      "kind": "focus-outline",
+      "control": "Skill",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.09431376862745099,
+        0.17411756862745098,
+        0.190588568627451
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 10.780012343416937,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "mobile-selected-filter-focus",
+      "kind": "illustration-control-frame",
+      "control": "Pause animasjonen i forsideillustrasjonen",
+      "foreground_source": "color(srgb 0.615686 0.945098 0.678431 / 0.7)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.18147959691300575,
+        0.2977479173405134,
+        0.2501453395191913
+      ],
+      "composited_foreground_lower": [
+        0.4415684352941176,
+        0.6862744823529411,
+        0.5066664058823529
+      ],
+      "composited_foreground_upper": [
+        0.4842476084856664,
+        0.7497165046139187,
+        0.5487688312675221
+      ],
+      "ratio_lower_bound": 3.6652484460272046,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "mobile-dialog-field",
+      "kind": "field-inner-border",
+      "control": "Skriv et spørsmål",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": true,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "mobile-dialog-field",
+      "kind": "field-outer-border",
+      "control": "Skriv et spørsmål",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.06666666666666667,
+        0.13333333333333336,
+        0.1647058823529412
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 12.144798077264042,
+      "threshold": 3,
+      "below_3": false,
+      "hover": true,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "mobile-close-hover",
+      "kind": "button-icon",
+      "control": "Lukk chat",
+      "foreground_source": "rgb(40, 121, 56)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.1568627450980392,
+        0.4745098039215686,
+        0.2196078431372549
+      ],
+      "composited_foreground_upper": [
+        0.1568627450980392,
+        0.4745098039215686,
+        0.2196078431372549
+      ],
+      "ratio_lower_bound": 3.392300446149769,
+      "threshold": 3,
+      "below_3": false,
+      "hover": true,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "mobile-close-hover",
+      "kind": "button-icon",
+      "control": "Hvordan gjennomgår jeg en kodeendring?",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.08193252881568627,
+        0.14977254613333335,
+        0.15194350199215684
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 11.65331098094413,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "mobile-close-hover",
+      "kind": "button-icon",
+      "control": "Hvordan gir jeg KI god kontekst?",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.08193252881568627,
+        0.14977254613333335,
+        0.15194350199215684
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 11.65331098094413,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "mobile-close-hover",
+      "kind": "button-icon",
+      "control": "Hvordan utforsker jeg brukerbehov?",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.08193252881568627,
+        0.14977254613333335,
+        0.15194350199215684
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 11.65331098094413,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "mobile-close-hover",
+      "kind": "button-icon",
+      "control": "Send spørsmål",
+      "foreground_source": "rgb(29, 29, 29)",
+      "background_lower": [
+        0.611764705882353,
+        0.9411764705882353,
+        0.6745098039215687
+      ],
+      "background_upper": [
+        0.7725490196078432,
+        0.9764705882352941,
+        0.807843137254902
+      ],
+      "composited_foreground_lower": [
+        0.11372549019607843,
+        0.11372549019607843,
+        0.11372549019607843
+      ],
+      "composited_foreground_upper": [
+        0.11372549019607843,
+        0.11372549019607843,
+        0.11372549019607843
+      ],
+      "ratio_lower_bound": 12.421097374095464,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "mobile-close-focus",
+      "kind": "button-icon",
+      "control": "Lukk chat",
+      "foreground_source": "rgb(40, 121, 56)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.1568627450980392,
+        0.4745098039215686,
+        0.2196078431372549
+      ],
+      "composited_foreground_upper": [
+        0.1568627450980392,
+        0.4745098039215686,
+        0.2196078431372549
+      ],
+      "ratio_lower_bound": 3.392300446149769,
+      "threshold": 3,
+      "below_3": false,
+      "hover": true,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "mobile-close-focus",
+      "kind": "button-icon",
+      "control": "Hvordan gjennomgår jeg en kodeendring?",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.08193252881568627,
+        0.14977254613333335,
+        0.15194350199215684
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 11.65331098094413,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "mobile-close-focus",
+      "kind": "button-icon",
+      "control": "Hvordan gir jeg KI god kontekst?",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.08193252881568627,
+        0.14977254613333335,
+        0.15194350199215684
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 11.65331098094413,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "mobile-close-focus",
+      "kind": "button-icon",
+      "control": "Hvordan utforsker jeg brukerbehov?",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.08193252881568627,
+        0.14977254613333335,
+        0.15194350199215684
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 11.65331098094413,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "mobile-close-focus",
+      "kind": "button-icon",
+      "control": "Send spørsmål",
+      "foreground_source": "rgb(29, 29, 29)",
+      "background_lower": [
+        0.611764705882353,
+        0.9411764705882353,
+        0.6745098039215687
+      ],
+      "background_upper": [
+        0.7725490196078432,
+        0.9764705882352941,
+        0.807843137254902
+      ],
+      "composited_foreground_lower": [
+        0.11372549019607843,
+        0.11372549019607843,
+        0.11372549019607843
+      ],
+      "composited_foreground_upper": [
+        0.11372549019607843,
+        0.11372549019607843,
+        0.11372549019607843
+      ],
+      "ratio_lower_bound": 12.421097374095464,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "mobile-close-focus",
+      "kind": "focus-outline",
+      "control": "Lukk chat",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.09725487450980393,
+        0.1725490156862745,
+        0.16705878627450982
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 10.881401512123553,
+      "threshold": 3,
+      "below_3": false,
+      "hover": true,
+      "focus": true,
+      "disabled": false
+    },
+    {
+      "state": "post-fix-mobile-filter",
+      "kind": "selected-fill",
+      "control": "Instruks",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.09431376862745099,
+        0.17411756862745098,
+        0.190588568627451
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 10.780012343416937,
+      "threshold": 3,
+      "below_3": false,
+      "hover": true,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "post-fix-mobile-filter",
+      "kind": "current-page-underline",
+      "control": "Ressurskatalog",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 13.64789285483298,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "post-fix-mobile-filter",
+      "kind": "button-icon",
+      "control": "Spør KI",
+      "foreground_source": "rgb(157, 241, 173)",
+      "background_lower": [
+        0.0392156862745098,
+        0.10588235294117647,
+        0.12549019607843137
+      ],
+      "background_upper": [
+        0.10196078431372549,
+        0.20392156862745098,
+        0.1764705882352941
+      ],
+      "composited_foreground_lower": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "composited_foreground_upper": [
+        0.615686274509804,
+        0.9450980392156862,
+        0.6784313725490196
+      ],
+      "ratio_lower_bound": 9.929467267838925,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "post-fix-mobile-filter",
+      "kind": "illustration-control-frame",
+      "control": "Pause animasjonen i forsideillustrasjonen",
+      "foreground_source": "color(srgb 0.615686 0.945098 0.678431 / 0.7)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.18147959691300575,
+        0.2977479173405134,
+        0.2501453395191913
+      ],
+      "composited_foreground_lower": [
+        0.4415684352941176,
+        0.6862744823529411,
+        0.5066664058823529
+      ],
+      "composited_foreground_upper": [
+        0.4842476084856664,
+        0.7497165046139187,
+        0.5487688312675221
+      ],
+      "ratio_lower_bound": 3.6652484460272046,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "post-fix-mobile-search",
+      "kind": "field-inner-border",
+      "control": "resource-search",
+      "foreground_source": "rgb(142, 141, 141)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.0392156862745098,
+        0.08627450980392157,
+        0.10980392156862745
+      ],
+      "composited_foreground_lower": [
+        0.5568627450980392,
+        0.5529411764705883,
+        0.5529411764705883
+      ],
+      "composited_foreground_upper": [
+        0.5568627450980392,
+        0.5529411764705883,
+        0.5529411764705883
+      ],
+      "ratio_lower_bound": 5.54396635763476,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    },
+    {
+      "state": "post-fix-mobile-search",
+      "kind": "field-outer-border",
+      "control": "resource-search",
+      "foreground_source": "rgb(142, 141, 141)",
+      "background_lower": [
+        0.03137254901960784,
+        0.0784313725490196,
+        0.10196078431372549
+      ],
+      "background_upper": [
+        0.09431376862745099,
+        0.17411756862745098,
+        0.190588568627451
+      ],
+      "composited_foreground_lower": [
+        0.5568627450980392,
+        0.5529411764705883,
+        0.5529411764705883
+      ],
+      "composited_foreground_upper": [
+        0.5568627450980392,
+        0.5529411764705883,
+        0.5529411764705883
+      ],
+      "ratio_lower_bound": 4.3789928894135,
+      "threshold": 3,
+      "below_3": false,
+      "hover": false,
+      "focus": false,
+      "disabled": false
+    }
+  ]
+}

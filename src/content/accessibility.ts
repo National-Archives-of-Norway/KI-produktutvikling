@@ -40,12 +40,6 @@ export const unresolvedAccessibilityRequirements = [
         description:
           "Det er ikke bekreftet at innholdet tilpasser seg og nødvendige oppgaver kan utføres ved faktisk 400 prosent nettleserzoom.",
       },
-      {
-        id: "1.4.11",
-        title: "Kontrast for ikke-tekstlig innhold",
-        description:
-          "Feltkanter, utvalgte ikoner og fokusmarkeringer er undersøkt. Det er ikke ferdig vurdert hvilke grafiske detaljer og relasjoner, særlig i PDF-diagrammet, som er nødvendige for forståelsen og må ha tilstrekkelig kontrast.",
-      },
     ],
   },
   {

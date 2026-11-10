@@ -1,0 +1,38 @@
+[
+  {
+    "sample": 0,
+    "time": 1794322822235,
+    "background": "rgba(157, 241, 173, 0.01)",
+    "cls": "MuiButtonBase-root Mui-focusVisible MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorSecondary MuiButton-disableElevation mui-i2f7d6-MuiButtonBase-root-MuiButton-root",
+    "color": "rgb(156, 239, 171)",
+    "label": "Prompt",
+    "transition": "background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1)"
+  },
+  {
+    "sample": 1,
+    "time": 1794322822255,
+    "background": "rgba(157, 241, 173, 0.086)",
+    "cls": "MuiButtonBase-root Mui-focusVisible MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorSecondary MuiButton-disableElevation mui-i2f7d6-MuiButtonBase-root-MuiButton-root",
+    "color": "rgb(146, 223, 161)",
+    "label": "Prompt",
+    "transition": "background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1)"
+  },
+  {
+    "sample": 2,
+    "time": 1794322822273,
+    "background": "rgba(157, 241, 173, 0.192)",
+    "cls": "MuiButtonBase-root Mui-focusVisible MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorSecondary MuiButton-disableElevation mui-i2f7d6-MuiButtonBase-root-MuiButton-root",
+    "color": "rgb(133, 201, 146)",
+    "label": "Prompt",
+    "transition": "background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1)"
+  },
+  {
+    "sample": 3,
+    "time": 1794322822290,
+    "background": "rgba(157, 241, 173, 0.357)",
+    "cls": "MuiButtonBase-root Mui-focusVisible MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorSecondary MuiButton-disableElevation mui-i2f7d6-MuiButtonBase-root-MuiButton-root",
+    "color": "rgb(111, 165, 122)",
+    "label": "Prompt",
+    "transition": "background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1)"
+  }
+]

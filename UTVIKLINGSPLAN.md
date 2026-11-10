@@ -418,3 +418,10 @@ Tilgjengelighetskontrollen fra 6. november omfattet ni sider. Den nye skill-deta
 - [x] Undersøkt faktiske hover-/valg-/valideringstilstander, kontrollert lasting/tjenestefeil og alle PDF-siders tekstkontrast. [Rapport](docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/testrapport.md). Ingen bekreftet nytt kontrastbrudd; ingen design-/PDF-retting nødvendig. Testadapter tilbakeført byte for byte.
 - [x] Oppdatert 1.4.3 U → K i prøvd lokalt HTML/PDF-utvalg og avstemt erklæringens liste til 14 U-krav. Arbeidsstatus 23 K / 11 I / 14 U / 0 B, ikke samlet samsvar.
 - [ ] Fullfør 1.4.11-vurdering av nødvendig grafisk informasjon/markeringer. De 27 målte kontroll-/ikon-/fokusdelene passerer, men full klassifisering gjenstår. Øvrig skjermleser-/zoom-/enhets-/pilotarbeid og P8 er fortsatt åpent.
+
+### Fullført lokal 1.4.11-vurdering – 10. november 2026
+
+- [x] Klassifisere nødvendige kontroll-/grafikkdeler, inkludert alle 157 PDF-primitiver og diagrammets supplerende ellipseomriss. [Rapport](docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/testrapport.md). Ingen PDF-retting nødvendig.
+- [x] Rette A11Y-07: filtervalg skifter tekst/bakgrunn samtidig; 16 umiddelbare tastatur-/pekerretester ved 1280/320 bestod. Katalogens funksjonsbeskrivelse er oppdatert, Beta-status beholdt.
+- [x] Oppdatere 1.4.11 U → K i lokalt utvalg og erklæringens liste til 13 U-krav. Arbeidsstatus 24 K / 11 I / 13 U / 0 B, ikke formelt samsvar.
+- [ ] Fullføre øvrige 13 U-krav og faktisk hjelpemiddel-/zoom-/enhets-/pilotprøving. Kontrastavklaringen lukker ikke PDF-alternativer/semantikk/språk eller P8; første delte miljø skal fortsatt være lukket.

@@ -1,0 +1,77 @@
+{
+  "reviewed_at": "2026-11-10T15:08:41.513502+00:00",
+  "sources_checked_at": "2026-11-10",
+  "sources": [
+    "https://www.uutilsynet.no/wcag-standarden/1411-kontrast-ikke-tekstlig-innhold-niva-aa/145",
+    "https://www.uutilsynet.no/veiledning/1411-kontrast-ikke-tekstlig-innhold/1241",
+    "https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html"
+  ],
+  "families": [
+    {
+      "family": "Text-labelled links/buttons, resource cards, badges and overview panels",
+      "required_parts": "Text identifies control/category; focus outline where interactive",
+      "decision": "Card/button boundaries and type-chip enclosures are supplementary, not sole control identification. Existing scoped 1.4.3 text assessment retained; focus colours measured here. No blanket requirement for every box border."
+    },
+    {
+      "family": "Catalog search and chat input",
+      "required_parts": "Field boundary on inner/outer surround, focus/error-state boundary",
+      "decision": "Required field location measured in normal, hover, focused and validation-error states. aria-hidden on visual fieldset is not a reason to exclude it; explicit visual sampling added."
+    },
+    {
+      "family": "Resource type filters",
+      "required_parts": "Selected filled background and keyboard focus outline",
+      "decision": "A11Y-07: real .25s colour/background transition delayed selected-fill cue and temporarily reduced text contrast. transition:none makes foreground/background change together. 16 immediate keyboard/pointer changes at 1280/320 meet 3:1 mark and 4.5:1 text."
+    },
+    {
+      "family": "Main-menu active item",
+      "required_parts": "Current-page underline and focus outline",
+      "decision": "Accent underline distinguishes location, tested against same dark adjacent background. No requirement to compare current colour to previous time state."
+    },
+    {
+      "family": "Chat close control",
+      "required_parts": "X icon is sole visible close identifier; focus outline",
+      "decision": "Required icon measured normal, actual hover and keyboard focus at broad/narrow widths; lower bound 3.3923:1. Explicit aria-label does not exempt visual icon."
+    },
+    {
+      "family": "Chat launcher, Send, suggestions and next-topic controls",
+      "required_parts": "Visible labels identify labelled controls; icons considered conservatively",
+      "decision": "Glyphs measured even where label repeats function. Inactive controls are excluded only while actually blocked; previously sampled loading/disabled state retained with original date."
+    },
+    {
+      "family": "Source/price disclosure controls",
+      "required_parts": "Native triangle position/orientation and focus outline",
+      "decision": "Three source disclosures and six price disclosures tested closed/open; marker colour measured against local background. Six table-region focus outlines tested individually."
+    },
+    {
+      "family": "Hero illustration",
+      "required_parts": "Outer control frame and focus outline; central brand symbol reinforces target",
+      "decision": "Outer .7-alpha frame measured with worst-case halo bounds, paused/running states identified by current UI. Orbital lines/dots are decoration without axes, values or data. No new animation/assistive-technology conformance claim."
+    },
+    {
+      "family": "Header/footer and resource logos",
+      "required_parts": "Wordmarks/labels identify destination; link focus",
+      "decision": "SVG brand mark repeats portal identity; no information unique to logo. Source/HTML inventory contains four static SVG shapes plus runtime close icon, not a hidden chart family."
+    },
+    {
+      "family": "Tables, callouts, dividers and price-age stripe",
+      "required_parts": "Headers, labels, text and control focus where interactive",
+      "decision": "Separators/shading/stripe reinforce explicit text and spacing, encode no extra values. Age notice explicitly says data are old. No contrast exemption is used for its text."
+    },
+    {
+      "family": "PDF diagram, page 6",
+      "required_parts": "Named partners, explicit collaboration introduction, spatial grouping and central team emphasis",
+      "decision": "Central dark ellipse measured conservatively. Seven peripheral outlines/fills are supplementary enclosures: no connecting edges, scales, quantitative values or category legend. Seven names/descriptions remain spatially distinct; introduction states collaboration, green node also says it does not exist. Low outline contrast is recorded but not a breach where enclosure can be omitted without losing content. This visual judgement does not settle alt text/reading order."
+    },
+    {
+      "family": "Other PDF graphics",
+      "required_parts": "Conservatively measure six icon strokes and twelve list bullets",
+      "decision": "Icon meanings repeated by headings; coloured strips, backgrounds, koalas, row/footer rules and panel borders encode no independent information. All 157 primitives classified with individual reason and bounding box; no classification solely from PDF Figure role/Alt."
+    }
+  ],
+  "pdf": {
+    "classified_primitives": 157,
+    "conservative_required_parts": 19,
+    "minimum_ratio": 4.1916713458364505
+  },
+  "note": "Reasoned visual information-removal assessment, not an edited-PDF or screen-reader experiment. Text contrast already assessed separately."
+}

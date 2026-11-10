@@ -1,12 +1,12 @@
 {
-  "run_directory": "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b",
+  "run_directory": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734",
   "automatic_status": "needs_review",
   "overall_conformance": "not_assessed",
-  "manifest": "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/manifest.json",
-  "review_status": "interactive_states_and_all_pdf_text_contrast_reviewed",
-  "reviewed_at": "2026-11-10T13:56:21.345885+00:00",
-  "previous_run": "docs/tilgjengelighet/2026-11-10/135417-d3e318e119fd",
-  "native_run": "docs/tilgjengelighet/2026-11-10/150658-native-bf6961aa",
+  "manifest": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/manifest.json",
+  "review_status": "nontext_contrast_assessed_and_filter_transition_fixed",
+  "reviewed_at": "2026-11-10T15:08:41.513502+00:00",
+  "previous_run": "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b",
+  "native_run": "docs/tilgjengelighet/2026-11-10/162215-native-1eb13e38",
   "confirmed_findings": 0,
   "open_findings": [],
   "fixed_findings": [
@@ -15,24 +15,23 @@
     "A11Y-03",
     "A11Y-04",
     "A11Y-05",
-    "A11Y-06"
+    "A11Y-06",
+    "A11Y-07"
   ],
   "counts": {
-    "K": 23,
+    "K": 24,
     "I": 11,
-    "U": 14,
+    "U": 13,
     "B": 0
   },
-  "manual_remaining": 35,
-  "completed_local_manual_sample": 2,
+  "manual_remaining": 34,
+  "completed_local_manual_sample": 3,
   "contrast_review": {
-    "criterion_1_4_3": "K in stated local sample",
-    "ui_states": 23,
-    "text_measurements": 694,
-    "pdf_visible_characters": 2694,
-    "pdf_pages": 7,
-    "new_confirmed_violations": 0,
-    "nontext_full_assessment": "U"
+    "criterion_1_4_3": "K scoped local sample, filter retest added",
+    "criterion_1_4_11": "K scoped local sample",
+    "fixed_in_current_run": ["A11Y-07"],
+    "pdf_classified_shapes": 157,
+    "filter_retests": 16
   },
-  "native_postverification": "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/raw/native-postverification.json"
+  "native_postverification": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/raw/native-postverification.json"
 }

@@ -1,0 +1,38 @@
+{
+  "run_directory": "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b",
+  "automatic_status": "needs_review",
+  "overall_conformance": "not_assessed",
+  "manifest": "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/manifest.json",
+  "review_status": "interactive_states_and_all_pdf_text_contrast_reviewed",
+  "reviewed_at": "2026-11-10T13:56:21.345885+00:00",
+  "previous_run": "docs/tilgjengelighet/2026-11-10/135417-d3e318e119fd",
+  "native_run": "docs/tilgjengelighet/2026-11-10/150658-native-bf6961aa",
+  "confirmed_findings": 0,
+  "open_findings": [],
+  "fixed_findings": [
+    "A11Y-01",
+    "A11Y-02",
+    "A11Y-03",
+    "A11Y-04",
+    "A11Y-05",
+    "A11Y-06"
+  ],
+  "counts": {
+    "K": 23,
+    "I": 11,
+    "U": 14,
+    "B": 0
+  },
+  "manual_remaining": 35,
+  "completed_local_manual_sample": 2,
+  "contrast_review": {
+    "criterion_1_4_3": "K in stated local sample",
+    "ui_states": 23,
+    "text_measurements": 694,
+    "pdf_visible_characters": 2694,
+    "pdf_pages": 7,
+    "new_confirmed_violations": 0,
+    "nontext_full_assessment": "U"
+  },
+  "native_postverification": "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/raw/native-postverification.json"
+}

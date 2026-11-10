@@ -1,0 +1,231 @@
+{
+  "baseline_note": "Colour/alpha transition on selected filter is an actual computed sequence with rendered screenshots, not simulated hover. Adjacent catalogue gradient endpoints measured in browser-states.",
+  "before": [
+    {
+      "sample": 0,
+      "time": 1794322822235,
+      "background": "rgba(157, 241, 173, 0.01)",
+      "cls": "MuiButtonBase-root Mui-focusVisible MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorSecondary MuiButton-disableElevation mui-i2f7d6-MuiButtonBase-root-MuiButton-root",
+      "color": "rgb(156, 239, 171)",
+      "label": "Prompt",
+      "transition": "background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1)",
+      "fill_ratio_min": 1.0177909690197786,
+      "text_ratio_min": 10.476455333984324
+    },
+    {
+      "sample": 1,
+      "time": 1794322822255,
+      "background": "rgba(157, 241, 173, 0.086)",
+      "cls": "MuiButtonBase-root Mui-focusVisible MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorSecondary MuiButton-disableElevation mui-i2f7d6-MuiButtonBase-root-MuiButton-root",
+      "color": "rgb(146, 223, 161)",
+      "label": "Prompt",
+      "transition": "background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1)",
+      "fill_ratio_min": 1.2038148653257645,
+      "text_ratio_min": 7.440304522539363
+    },
+    {
+      "sample": 2,
+      "time": 1794322822273,
+      "background": "rgba(157, 241, 173, 0.192)",
+      "cls": "MuiButtonBase-root Mui-focusVisible MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorSecondary MuiButton-disableElevation mui-i2f7d6-MuiButtonBase-root-MuiButton-root",
+      "color": "rgb(133, 201, 146)",
+      "label": "Prompt",
+      "transition": "background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1)",
+      "fill_ratio_min": 1.6319360209407288,
+      "text_ratio_min": 4.469021832619242
+    },
+    {
+      "sample": 3,
+      "time": 1794322822290,
+      "background": "rgba(157, 241, 173, 0.357)",
+      "cls": "MuiButtonBase-root Mui-focusVisible MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorSecondary MuiButton-disableElevation mui-i2f7d6-MuiButtonBase-root-MuiButton-root",
+      "color": "rgb(111, 165, 122)",
+      "label": "Prompt",
+      "transition": "background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s cubic-bezier(0.4, 0, 0.2, 1)",
+      "fill_ratio_min": 2.6763743712246244,
+      "text_ratio_min": 1.9176195843849766
+    }
+  ],
+  "after": [
+    {
+      "method": "keyboard",
+      "background": "rgb(157, 241, 173)",
+      "color": "rgb(29, 29, 29)",
+      "pressedCount": 1,
+      "selected": "Prompt",
+      "transition": "none",
+      "width": 1280,
+      "fill_ratio_min": 10.922730908850168,
+      "text_ratio_min": 12.538164303847376
+    },
+    {
+      "method": "keyboard",
+      "background": "rgb(157, 241, 173)",
+      "color": "rgb(29, 29, 29)",
+      "pressedCount": 1,
+      "selected": "Alle",
+      "transition": "none",
+      "width": 1280,
+      "fill_ratio_min": 10.922730908850168,
+      "text_ratio_min": 12.538164303847376
+    },
+    {
+      "method": "keyboard",
+      "background": "rgb(157, 241, 173)",
+      "color": "rgb(29, 29, 29)",
+      "pressedCount": 1,
+      "selected": "Skill",
+      "transition": "none",
+      "width": 1280,
+      "fill_ratio_min": 10.922730908850168,
+      "text_ratio_min": 12.538164303847376
+    },
+    {
+      "method": "keyboard",
+      "background": "rgb(157, 241, 173)",
+      "color": "rgb(29, 29, 29)",
+      "pressedCount": 1,
+      "selected": "Instruks",
+      "transition": "none",
+      "width": 1280,
+      "fill_ratio_min": 10.922730908850168,
+      "text_ratio_min": 12.538164303847376
+    },
+    {
+      "method": "pointer",
+      "background": "rgb(157, 241, 173)",
+      "color": "rgb(29, 29, 29)",
+      "pressedCount": 1,
+      "selected": "Prompt",
+      "transition": "none",
+      "width": 1280,
+      "fill_ratio_min": 10.922730908850168,
+      "text_ratio_min": 12.538164303847376
+    },
+    {
+      "method": "pointer",
+      "background": "rgb(157, 241, 173)",
+      "color": "rgb(29, 29, 29)",
+      "pressedCount": 1,
+      "selected": "Alle",
+      "transition": "none",
+      "width": 1280,
+      "fill_ratio_min": 10.922730908850168,
+      "text_ratio_min": 12.538164303847376
+    },
+    {
+      "method": "pointer",
+      "background": "rgb(157, 241, 173)",
+      "color": "rgb(29, 29, 29)",
+      "pressedCount": 1,
+      "selected": "Skill",
+      "transition": "none",
+      "width": 1280,
+      "fill_ratio_min": 10.922730908850168,
+      "text_ratio_min": 12.538164303847376
+    },
+    {
+      "method": "pointer",
+      "background": "rgb(157, 241, 173)",
+      "color": "rgb(29, 29, 29)",
+      "pressedCount": 1,
+      "selected": "Instruks",
+      "transition": "none",
+      "width": 1280,
+      "fill_ratio_min": 10.922730908850168,
+      "text_ratio_min": 12.538164303847376
+    },
+    {
+      "method": "keyboard",
+      "background": "rgb(157, 241, 173)",
+      "color": "rgb(29, 29, 29)",
+      "pressedCount": 1,
+      "selected": "Prompt",
+      "transition": "none",
+      "width": 320,
+      "fill_ratio_min": 10.922730908850168,
+      "text_ratio_min": 12.538164303847376
+    },
+    {
+      "method": "keyboard",
+      "background": "rgb(157, 241, 173)",
+      "color": "rgb(29, 29, 29)",
+      "pressedCount": 1,
+      "selected": "Alle",
+      "transition": "none",
+      "width": 320,
+      "fill_ratio_min": 10.922730908850168,
+      "text_ratio_min": 12.538164303847376
+    },
+    {
+      "method": "keyboard",
+      "background": "rgb(157, 241, 173)",
+      "color": "rgb(29, 29, 29)",
+      "pressedCount": 1,
+      "selected": "Skill",
+      "transition": "none",
+      "width": 320,
+      "fill_ratio_min": 10.922730908850168,
+      "text_ratio_min": 12.538164303847376
+    },
+    {
+      "method": "keyboard",
+      "background": "rgb(157, 241, 173)",
+      "color": "rgb(29, 29, 29)",
+      "pressedCount": 1,
+      "selected": "Instruks",
+      "transition": "none",
+      "width": 320,
+      "fill_ratio_min": 10.922730908850168,
+      "text_ratio_min": 12.538164303847376
+    },
+    {
+      "method": "pointer",
+      "background": "rgb(157, 241, 173)",
+      "color": "rgb(29, 29, 29)",
+      "pressedCount": 1,
+      "selected": "Prompt",
+      "transition": "none",
+      "width": 320,
+      "fill_ratio_min": 10.922730908850168,
+      "text_ratio_min": 12.538164303847376
+    },
+    {
+      "method": "pointer",
+      "background": "rgb(157, 241, 173)",
+      "color": "rgb(29, 29, 29)",
+      "pressedCount": 1,
+      "selected": "Alle",
+      "transition": "none",
+      "width": 320,
+      "fill_ratio_min": 10.922730908850168,
+      "text_ratio_min": 12.538164303847376
+    },
+    {
+      "method": "pointer",
+      "background": "rgb(157, 241, 173)",
+      "color": "rgb(29, 29, 29)",
+      "pressedCount": 1,
+      "selected": "Skill",
+      "transition": "none",
+      "width": 320,
+      "fill_ratio_min": 10.922730908850168,
+      "text_ratio_min": 12.538164303847376
+    },
+    {
+      "method": "pointer",
+      "background": "rgb(157, 241, 173)",
+      "color": "rgb(29, 29, 29)",
+      "pressedCount": 1,
+      "selected": "Instruks",
+      "transition": "none",
+      "width": 320,
+      "fill_ratio_min": 10.922730908850168,
+      "text_ratio_min": 12.538164303847376
+    }
+  ],
+  "retests": 16,
+  "all_after_pass": true,
+  "min_after_fill_ratio": 10.922730908850168,
+  "min_after_text_ratio": 12.538164303847376
+}

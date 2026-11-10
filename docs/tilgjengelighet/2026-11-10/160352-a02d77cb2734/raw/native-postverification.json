@@ -1,0 +1,13 @@
+{
+  "native_manifest": "docs/tilgjengelighet/2026-11-10/162215-native-1eb13e38/native-manifest.json",
+  "axe_routes": 23,
+  "violations": 0,
+  "incomplete_groups": 3,
+  "incomplete_nodes": 86,
+  "same_incomplete_elements_as_previous": true,
+  "selector_note": "Three resource filter selectors have a new generated MUI class hash after transition fix; route, rule, element HTML apart from hash, order and remaining selectors match.",
+  "nu_html_files": 25,
+  "nu_errors": 0,
+  "nu_info": 207,
+  "review": "New post-build native regression. Original engine incomplete preserved. Same 86 contrast targets as previous run; measured/classified contrast assessment is separate, not a rewrite of engine status. Three filter selector hashes changed; corresponding button HTML was checked. All 207 Nu messages are informational trailing-slash syntax notes."
+}

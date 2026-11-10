@@ -1,5 +1,13 @@
 # KI-Produktutvikling
 
+## Oppfølging av ikke-tekstlig kontrast – 10. november 2026
+
+Siste [rapport](docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/testrapport.md), [klassifisering](docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/raw/classification.json) og [48-kravsrestliste](docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/manuell-oppfolging.md). Nødvendige feltgrenser, ikoner, fokus-, valg-, meny- og trekkspillmarkeringer er vurdert. A11Y-07 i filterets 0,25s fargeovergang er rettet med samtidig tekst-/bakgrunnsskifte; 16 umiddelbare retester med tastatur/peker ved 1280/320 bestod. Øvrige prøvde nødvendige markeringer minst 3,392300:1. Alle 157 PDF-primitiver er klassifisert; 19 nødvendige/konservativt prøvde deler minst 4,191671:1. Svake perifere ellipseomriss er supplerende etter begrunnet informasjonsvurdering, ikke overskrevet til pass. PDF uendret.
+
+**1.4.11 U → K i lokalt utvalg; 24 K / 11 I / 13 U / 0 B.** 1.4.3 beholdes K med ny filtertekst-retest. 35 krav har samlet maskinelt delgrunnlag, 34 har bredere manuell rest, 11 har ingen lokal utløsende innholdstype og tre har fullført lokalt manuelt utvalg. Dette er ikke samlet/formelt samsvar. PDF-alternativer/struktur/språk og faktisk skjermleser/zoom/enhet/pilot er fortsatt uavklart. Erklæringen viser alle 13 gjenværende U-krav. Tidligere avsnitt er datert historikk.
+
+Avsluttende [native-regresjon](docs/tilgjengelighet/2026-11-10/162215-native-1eb13e38/native-manifest.json) etter bygg: 23 ruter / 0 axe-violations / samme 3 incomplete-grupper og 86 targets; Nu gir 0 feil / 207 info-noter. Motorstatus er bevart, med separat manuell kontrastvurdering. 53 Node- og tre Python-tester samt produksjonsbygg bestod.
+
 ## Kontrastoppfølging av tilstander og PDF – 10. november 2026
 
 Siste vurderte resultat: [rapport](docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/testrapport.md) og [48-kravsrestliste](docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/manuell-oppfolging.md). 23 faktiske UI-tilstander / 694 tekstmålinger, inklusive hover/valg, validering og kontrollert lasting/tjenestefeil, gir minst 5,209084:1 for aktuelle tekster. Den eneste svakere målingen gjelder inaktiv Tøm chat under lasting. Alle 2694 synlige tegn på syv PDF-sider er målt mot riktig bakgrunn og kontrollert i render: minst 4,932072:1. Ingen ny bekreftet kontrastfeil og ingen design-/PDF-retting nødvendig. Testresponsen er identisk tilbakeført; PDF-hash er uendret.

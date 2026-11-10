@@ -1,0 +1,241 @@
+{
+  "html_files": 25,
+  "pages": [
+    {
+      "file": "out/404/index.html",
+      "counts": {
+        "svg": 1
+      }
+    },
+    {
+      "file": "out/404.html",
+      "counts": {
+        "svg": 1
+      }
+    },
+    {
+      "file": "out/_not-found/index.html",
+      "counts": {
+        "svg": 1
+      }
+    },
+    {
+      "file": "out/funksjonalitet/index.html",
+      "counts": {
+        "svg": 1
+      }
+    },
+    {
+      "file": "out/index.html",
+      "counts": {
+        "svg": 3,
+        "button": 6,
+        "input": 1
+      }
+    },
+    {
+      "file": "out/informasjonskapsler/index.html",
+      "counts": {
+        "svg": 1
+      }
+    },
+    {
+      "file": "out/kom-i-gang/index.html",
+      "counts": {
+        "svg": 1
+      }
+    },
+    {
+      "file": "out/nettstedskart/index.html",
+      "counts": {
+        "svg": 1
+      }
+    },
+    {
+      "file": "out/om/index.html",
+      "counts": {
+        "svg": 1
+      }
+    },
+    {
+      "file": "out/oversikt/godkjente-ki-assistenter/index.html",
+      "counts": {
+        "svg": 1
+      }
+    },
+    {
+      "file": "out/oversikt/godkjente-mcper/index.html",
+      "counts": {
+        "svg": 1
+      }
+    },
+    {
+      "file": "out/oversikt/index.html",
+      "counts": {
+        "svg": 1
+      }
+    },
+    {
+      "file": "out/personvern/index.html",
+      "counts": {
+        "svg": 1
+      }
+    },
+    {
+      "file": "out/priser/index.html",
+      "counts": {
+        "svg": 1,
+        "summary": 6
+      }
+    },
+    {
+      "file": "out/ressurser/brukerbehov/index.html",
+      "counts": {
+        "svg": 1
+      }
+    },
+    {
+      "file": "out/ressurser/informasjonskapsler-og-samtykke/index.html",
+      "counts": {
+        "svg": 1
+      }
+    },
+    {
+      "file": "out/ressurser/kodegjennomgang/index.html",
+      "counts": {
+        "svg": 1
+      }
+    },
+    {
+      "file": "out/ressurser/personvernerklaering/index.html",
+      "counts": {
+        "svg": 1
+      }
+    },
+    {
+      "file": "out/ressurser/tilgjengelighetserklaering/index.html",
+      "counts": {
+        "svg": 1
+      }
+    },
+    {
+      "file": "out/ressurser/tydelig-kontekst/index.html",
+      "counts": {
+        "svg": 1
+      }
+    },
+    {
+      "file": "out/retningslinjer/index.html",
+      "counts": {
+        "svg": 1
+      }
+    },
+    {
+      "file": "out/spor/index.html",
+      "counts": {
+        "svg": 5,
+        "button": 4,
+        "textarea": 2
+      }
+    },
+    {
+      "file": "out/tilgjengelighet/index.html",
+      "counts": {
+        "svg": 1
+      }
+    },
+    {
+      "file": "out/utviklingsplan/index.html",
+      "counts": {
+        "svg": 1
+      }
+    },
+    {
+      "file": "out/versjonslogg/index.html",
+      "counts": {
+        "svg": 1
+      }
+    }
+  ],
+  "distinct_svg_shapes": [
+    {
+      "class": "brand-mark",
+      "viewBox": "0 0 256 256",
+      "label": null,
+      "paths": [
+        "M 24 61 Q 20 58 20 65 L 20 193 Q 20 199 25 202 L 93 246 Q 101 251 101 242 L 101 232 Q 101 228 97 225 L 49 194 Q 44 191 44 185 L 44 79 Q 44 73 39 70 Z",
+        "M 55 41 Q 50 38 50 46 L 50 173 Q 50 181 56 185 L 133 235 Q 142 241 142 230 L 142 218 Q 142 214 137 211 L 81 175 Q 75 171 75 164 L 75 60 Q 75 54 70 51 Z",
+        "M 93 20 Q 82 13 82 26 L 82 151 Q 82 161 90 166 L 174 221 Q 184 228 184 215 L 184 205 Q 184 199 178 195 L 120 157 Q 112 152 112 144 L 112 136 Q 112 128 119 123 L 177 84 Q 185 79 177 73 Z",
+        "M 207 105 Q 215 100 215 111 L 215 199 Q 215 210 206 204 L 150 167 Q 142 162 150 156 Z"
+      ],
+      "hash": "7159ea85eeaf5338f21bbc125084225e0c1aa8a32483fd89b6366666627cba27",
+      "pages": [
+        "out/404/index.html",
+        "out/404.html",
+        "out/_not-found/index.html",
+        "out/funksjonalitet/index.html",
+        "out/index.html",
+        "out/index.html",
+        "out/informasjonskapsler/index.html",
+        "out/kom-i-gang/index.html",
+        "out/nettstedskart/index.html",
+        "out/om/index.html",
+        "out/oversikt/godkjente-ki-assistenter/index.html",
+        "out/oversikt/godkjente-mcper/index.html",
+        "out/oversikt/index.html",
+        "out/personvern/index.html",
+        "out/priser/index.html",
+        "out/ressurser/brukerbehov/index.html",
+        "out/ressurser/informasjonskapsler-og-samtykke/index.html",
+        "out/ressurser/kodegjennomgang/index.html",
+        "out/ressurser/personvernerklaering/index.html",
+        "out/ressurser/tilgjengelighetserklaering/index.html",
+        "out/ressurser/tydelig-kontekst/index.html",
+        "out/retningslinjer/index.html",
+        "out/spor/index.html",
+        "out/tilgjengelighet/index.html",
+        "out/utviklingsplan/index.html",
+        "out/versjonslogg/index.html"
+      ]
+    },
+    {
+      "class": "MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-iguwhy",
+      "viewBox": "0 0 24 24",
+      "label": null,
+      "paths": [
+        "M20 4v12H5.17L4 17.17V4zm0-2H4c-1.1 0-2 .9-2 2v15.59c0 .89 1.08 1.34 1.71.71L6 18h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2"
+      ],
+      "hash": "cd26bf9a8a2ee1d73291f25b92ab79c1b4f606a24afc8f4d67d06e238c3f90e5",
+      "pages": [
+        "out/index.html"
+      ]
+    },
+    {
+      "class": "MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-iguwhy",
+      "viewBox": "0 0 24 24",
+      "label": null,
+      "paths": [
+        "M6 7c0 .55.45 1 1 1h7.59l-8.88 8.88c-.39.39-.39 1.02 0 1.41s1.02.39 1.41 0L16 9.41V17c0 .55.45 1 1 1s1-.45 1-1V7c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1"
+      ],
+      "hash": "3dc1335a11d3fb184bebeef8fbb8e402e3a55dee0ed1ff956d72a2f3f6c272c9",
+      "pages": [
+        "out/spor/index.html",
+        "out/spor/index.html",
+        "out/spor/index.html"
+      ]
+    },
+    {
+      "class": "MuiSvgIcon-root MuiSvgIcon-fontSizeMedium mui-iguwhy",
+      "viewBox": "0 0 24 24",
+      "label": null,
+      "paths": [
+        "m3.4 20.4 17.45-7.48c.81-.35.81-1.49 0-1.84L3.4 3.6c-.66-.29-1.39.2-1.39.91L2 9.12c0 .5.37.93.87.99L17 12 2.87 13.88c-.5.07-.87.5-.87 1l.01 4.61c0 .71.73 1.2 1.39.91"
+      ],
+      "hash": "e71d6cdcd3e812a2e21d65bc372f5205c949c8cfeb92be68b7c488ef958f1373",
+      "pages": [
+        "out/spor/index.html"
+      ]
+    }
+  ],
+  "note": "Markup inventory, not browser/conformance testing. CSS hero rings/lines and native summary markers classified separately."
+}

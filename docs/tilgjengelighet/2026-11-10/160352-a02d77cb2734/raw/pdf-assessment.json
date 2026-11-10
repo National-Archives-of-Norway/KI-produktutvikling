@@ -1,0 +1,2544 @@
+{
+  "pdf_sha256": "ba267d899460e54a911c548c5ddecfd9a83159ec3b6d7b6e30d9d4f34d0c648a",
+  "primitive_shapes": 157,
+  "classified_shapes": 157,
+  "categories": {
+    "page background": 14,
+    "edge stripe": 8,
+    "title badge or accent rule": 2,
+    "footer rule": 7,
+    "koala mark": 70,
+    "section rule": 1,
+    "icon coloured square": 3,
+    "labelled icon stroke": 6,
+    "row separator": 10,
+    "central team ellipse": 1,
+    "satellite ellipse fill/outline": 14,
+    "column panel/stripe": 9,
+    "list bullet": 12
+  },
+  "measured_graphic_parts": 26,
+  "needed_or_conservative_parts": 19,
+  "minimum_required_ratio": 4.1916713458364505,
+  "confirmed_breaches": [],
+  "measurements": [
+    {
+      "page": 3,
+      "shape": "curve0",
+      "part": "labelled icon stroke",
+      "fg": 1.0,
+      "bg": [
+        0.78,
+        0.361,
+        0.208
+      ],
+      "ratio": 4.1916713458364505,
+      "required_or_conservative": true
+    },
+    {
+      "page": 3,
+      "shape": "curve1",
+      "part": "labelled icon stroke",
+      "fg": 1.0,
+      "bg": [
+        0.78,
+        0.361,
+        0.208
+      ],
+      "ratio": 4.1916713458364505,
+      "required_or_conservative": true
+    },
+    {
+      "page": 3,
+      "shape": "curve2",
+      "part": "labelled icon stroke",
+      "fg": 1.0,
+      "bg": [
+        0.192,
+        0.361,
+        0.486
+      ],
+      "ratio": 7.1093587823868285,
+      "required_or_conservative": true
+    },
+    {
+      "page": 3,
+      "shape": "curve3",
+      "part": "labelled icon stroke",
+      "fg": 1.0,
+      "bg": [
+        0.176,
+        0.416,
+        0.373
+      ],
+      "ratio": 6.28439505211691,
+      "required_or_conservative": true
+    },
+    {
+      "page": 3,
+      "shape": "curve4",
+      "part": "labelled icon stroke",
+      "fg": 1.0,
+      "bg": [
+        0.176,
+        0.416,
+        0.373
+      ],
+      "ratio": 6.28439505211691,
+      "required_or_conservative": true
+    },
+    {
+      "page": 3,
+      "shape": "line0",
+      "part": "labelled icon stroke",
+      "fg": 1.0,
+      "bg": [
+        0.78,
+        0.361,
+        0.208
+      ],
+      "ratio": 4.1916713458364505,
+      "required_or_conservative": true
+    },
+    {
+      "page": 6,
+      "shape": "curve0",
+      "part": "central team ellipse",
+      "fg": [
+        0.0627,
+        0.165,
+        0.18
+      ],
+      "bg": [
+        0.945,
+        0.969,
+        0.949
+      ],
+      "ratio": 13.876229422008977,
+      "required_or_conservative": true
+    },
+    {
+      "page": 6,
+      "shape": "curve2",
+      "part": "satellite ellipse fill/outline",
+      "fg": [
+        0.847,
+        0.816,
+        0.749
+      ],
+      "adjacent": [
+        [
+          0.945,
+          0.969,
+          0.949
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "ratio": 1.4113011445597416,
+      "required_or_conservative": false,
+      "low_ratio_reason": "Enclosure not needed after documented information-removal assessment."
+    },
+    {
+      "page": 6,
+      "shape": "curve4",
+      "part": "satellite ellipse fill/outline",
+      "fg": [
+        0.847,
+        0.816,
+        0.749
+      ],
+      "adjacent": [
+        [
+          0.945,
+          0.969,
+          0.949
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "ratio": 1.4113011445597416,
+      "required_or_conservative": false,
+      "low_ratio_reason": "Enclosure not needed after documented information-removal assessment."
+    },
+    {
+      "page": 6,
+      "shape": "curve6",
+      "part": "satellite ellipse fill/outline",
+      "fg": [
+        0.847,
+        0.816,
+        0.749
+      ],
+      "adjacent": [
+        [
+          0.945,
+          0.969,
+          0.949
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "ratio": 1.4113011445597416,
+      "required_or_conservative": false,
+      "low_ratio_reason": "Enclosure not needed after documented information-removal assessment."
+    },
+    {
+      "page": 6,
+      "shape": "curve8",
+      "part": "satellite ellipse fill/outline",
+      "fg": [
+        0.847,
+        0.816,
+        0.749
+      ],
+      "adjacent": [
+        [
+          0.945,
+          0.969,
+          0.949
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "ratio": 1.4113011445597416,
+      "required_or_conservative": false,
+      "low_ratio_reason": "Enclosure not needed after documented information-removal assessment."
+    },
+    {
+      "page": 6,
+      "shape": "curve10",
+      "part": "satellite ellipse fill/outline",
+      "fg": [
+        0.847,
+        0.816,
+        0.749
+      ],
+      "adjacent": [
+        [
+          0.945,
+          0.969,
+          0.949
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "ratio": 1.4113011445597416,
+      "required_or_conservative": false,
+      "low_ratio_reason": "Enclosure not needed after documented information-removal assessment."
+    },
+    {
+      "page": 6,
+      "shape": "curve12",
+      "part": "satellite ellipse fill/outline",
+      "fg": [
+        0.847,
+        0.816,
+        0.749
+      ],
+      "adjacent": [
+        [
+          0.945,
+          0.969,
+          0.949
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "ratio": 1.4113011445597416,
+      "required_or_conservative": false,
+      "low_ratio_reason": "Enclosure not needed after documented information-removal assessment."
+    },
+    {
+      "page": 6,
+      "shape": "curve14",
+      "part": "satellite ellipse fill/outline",
+      "fg": [
+        0.847,
+        0.816,
+        0.749
+      ],
+      "adjacent": [
+        [
+          0.945,
+          0.969,
+          0.949
+        ],
+        [
+          0.851,
+          0.973,
+          0.839
+        ]
+      ],
+      "ratio": 1.3401237636225876,
+      "required_or_conservative": false,
+      "low_ratio_reason": "Enclosure not needed after documented information-removal assessment."
+    },
+    {
+      "page": 7,
+      "shape": "rect6",
+      "part": "list bullet",
+      "fg": [
+        0.192,
+        0.361,
+        0.486
+      ],
+      "bg": [
+        1,
+        1,
+        1
+      ],
+      "ratio": 7.1093587823868285,
+      "required_or_conservative": true
+    },
+    {
+      "page": 7,
+      "shape": "rect7",
+      "part": "list bullet",
+      "fg": [
+        0.192,
+        0.361,
+        0.486
+      ],
+      "bg": [
+        1,
+        1,
+        1
+      ],
+      "ratio": 7.1093587823868285,
+      "required_or_conservative": true
+    },
+    {
+      "page": 7,
+      "shape": "rect11",
+      "part": "list bullet",
+      "fg": [
+        0.78,
+        0.361,
+        0.208
+      ],
+      "bg": [
+        1,
+        1,
+        1
+      ],
+      "ratio": 4.1916713458364505,
+      "required_or_conservative": true
+    },
+    {
+      "page": 7,
+      "shape": "rect12",
+      "part": "list bullet",
+      "fg": [
+        0.78,
+        0.361,
+        0.208
+      ],
+      "bg": [
+        1,
+        1,
+        1
+      ],
+      "ratio": 4.1916713458364505,
+      "required_or_conservative": true
+    },
+    {
+      "page": 7,
+      "shape": "rect13",
+      "part": "list bullet",
+      "fg": [
+        0.78,
+        0.361,
+        0.208
+      ],
+      "bg": [
+        1,
+        1,
+        1
+      ],
+      "ratio": 4.1916713458364505,
+      "required_or_conservative": true
+    },
+    {
+      "page": 7,
+      "shape": "rect17",
+      "part": "list bullet",
+      "fg": [
+        0.176,
+        0.416,
+        0.373
+      ],
+      "bg": [
+        1,
+        1,
+        1
+      ],
+      "ratio": 6.28439505211691,
+      "required_or_conservative": true
+    },
+    {
+      "page": 7,
+      "shape": "rect18",
+      "part": "list bullet",
+      "fg": [
+        0.176,
+        0.416,
+        0.373
+      ],
+      "bg": [
+        1,
+        1,
+        1
+      ],
+      "ratio": 6.28439505211691,
+      "required_or_conservative": true
+    },
+    {
+      "page": 7,
+      "shape": "rect19",
+      "part": "list bullet",
+      "fg": [
+        0.176,
+        0.416,
+        0.373
+      ],
+      "bg": [
+        1,
+        1,
+        1
+      ],
+      "ratio": 6.28439505211691,
+      "required_or_conservative": true
+    },
+    {
+      "page": 7,
+      "shape": "rect21",
+      "part": "list bullet",
+      "fg": [
+        0.78,
+        0.361,
+        0.208
+      ],
+      "bg": [
+        1,
+        1,
+        1
+      ],
+      "ratio": 4.1916713458364505,
+      "required_or_conservative": true
+    },
+    {
+      "page": 7,
+      "shape": "rect22",
+      "part": "list bullet",
+      "fg": [
+        0.78,
+        0.361,
+        0.208
+      ],
+      "bg": [
+        1,
+        1,
+        1
+      ],
+      "ratio": 4.1916713458364505,
+      "required_or_conservative": true
+    },
+    {
+      "page": 7,
+      "shape": "rect23",
+      "part": "list bullet",
+      "fg": [
+        0.78,
+        0.361,
+        0.208
+      ],
+      "bg": [
+        1,
+        1,
+        1
+      ],
+      "ratio": 4.1916713458364505,
+      "required_or_conservative": true
+    },
+    {
+      "page": 7,
+      "shape": "rect24",
+      "part": "list bullet",
+      "fg": [
+        0.192,
+        0.361,
+        0.486
+      ],
+      "bg": [
+        1,
+        1,
+        1
+      ],
+      "ratio": 7.1093587823868285,
+      "required_or_conservative": true
+    }
+  ],
+  "classification": [
+    {
+      "page": 1,
+      "shape": "rect0",
+      "bbox": [
+        0.0,
+        -0.004929999999944812,
+        959.76,
+        540.13507
+      ],
+      "category": "page background",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Paint/background, not independent information."
+    },
+    {
+      "page": 1,
+      "shape": "rect1",
+      "bbox": [
+        0.35999,
+        0.3551800000000185,
+        960.11999,
+        540.49518
+      ],
+      "category": "page background",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Paint/background, not independent information."
+    },
+    {
+      "page": 1,
+      "shape": "rect2",
+      "bbox": [
+        0.35999,
+        0.3551800000000185,
+        12.59999,
+        540.49518
+      ],
+      "category": "edge stripe",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Brand decoration, no quantity, group or status encoded."
+    },
+    {
+      "page": 1,
+      "shape": "rect3",
+      "bbox": [
+        57.24,
+        55.815,
+        156.6,
+        76.69999999999999
+      ],
+      "category": "title badge or accent rule",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Visible Mandatforslag text identifies badge; horizontal line encodes no data."
+    },
+    {
+      "page": 1,
+      "shape": "rect4",
+      "bbox": [
+        57.24,
+        259.6293,
+        432.36,
+        262.51
+      ],
+      "category": "title badge or accent rule",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Visible Mandatforslag text identifies badge; horizontal line encodes no data."
+    },
+    {
+      "page": 1,
+      "shape": "rect5",
+      "bbox": [
+        54.36,
+        496.56385,
+        906.12,
+        497.284
+      ],
+      "category": "footer rule",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Divider; footer text already identifies document and page."
+    },
+    {
+      "page": 1,
+      "shape": "curve0",
+      "bbox": [
+        924.4074548361376,
+        53.24363766120547,
+        931.9418828286027,
+        57.332254724731456
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 1,
+      "shape": "curve1",
+      "bbox": [
+        927.8139530686879,
+        20.454554904277416,
+        937.6327391063361,
+        37.53050409559853
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 1,
+      "shape": "curve2",
+      "bbox": [
+        927.693731249034,
+        43.02207479620421,
+        933.7052466596907,
+        47.150766744316286
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 1,
+      "shape": "curve3",
+      "bbox": [
+        912.7851725717646,
+        34.604328519619855,
+        935.5086962188493,
+        52.04106213538523
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 1,
+      "shape": "curve4",
+      "bbox": [
+        913.7069161821432,
+        24.743582764117946,
+        932.8235339402075,
+        37.00940239379025
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 1,
+      "shape": "curve5",
+      "bbox": [
+        928.2948602677192,
+        26.587465838294634,
+        931.3406969583184,
+        30.756243415130882
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 1,
+      "shape": "curve6",
+      "bbox": [
+        926.3311040562104,
+        30.876492746831275,
+        927.5334070823855,
+        32.07902489941745
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 1,
+      "shape": "curve7",
+      "bbox": [
+        922.7241954812911,
+        31.157079277318246,
+        925.6498016790216,
+        35.32585763758118
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 1,
+      "shape": "curve8",
+      "bbox": [
+        920.2394354872473,
+        31.758340988805287,
+        921.4417385134224,
+        32.96087314139146
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 1,
+      "shape": "curve9",
+      "bbox": [
+        915.4702948976618,
+        28.3912463841134,
+        918.3558220821433,
+        32.43977177533753
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 2,
+      "shape": "rect0",
+      "bbox": [
+        0.0,
+        -0.004929999999944812,
+        959.76,
+        540.13507
+      ],
+      "category": "page background",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Paint/background, not independent information."
+    },
+    {
+      "page": 2,
+      "shape": "rect1",
+      "bbox": [
+        0.35999,
+        0.3551800000000185,
+        960.11999,
+        540.49518
+      ],
+      "category": "page background",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Paint/background, not independent information."
+    },
+    {
+      "page": 2,
+      "shape": "rect2",
+      "bbox": [
+        0.35999,
+        0.3551800000000185,
+        12.59999,
+        540.49518
+      ],
+      "category": "edge stripe",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Brand decoration, no quantity, group or status encoded."
+    },
+    {
+      "page": 2,
+      "shape": "rect3",
+      "bbox": [
+        54.36,
+        496.56385,
+        906.12,
+        497.284
+      ],
+      "category": "footer rule",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Divider; footer text already identifies document and page."
+    },
+    {
+      "page": 2,
+      "shape": "curve0",
+      "bbox": [
+        924.4074548361376,
+        53.24363766120547,
+        931.9418828286027,
+        57.332254724731456
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 2,
+      "shape": "curve1",
+      "bbox": [
+        927.8139530686879,
+        20.454554904277416,
+        937.6327391063361,
+        37.53050409559853
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 2,
+      "shape": "curve2",
+      "bbox": [
+        927.693731249034,
+        43.02207479620421,
+        933.7052466596907,
+        47.150766744316286
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 2,
+      "shape": "curve3",
+      "bbox": [
+        912.7851725717646,
+        34.604328519619855,
+        935.5086962188493,
+        52.04106213538523
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 2,
+      "shape": "curve4",
+      "bbox": [
+        913.7069161821432,
+        24.743582764117946,
+        932.8235339402075,
+        37.00940239379025
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 2,
+      "shape": "curve5",
+      "bbox": [
+        928.2948602677192,
+        26.587465838294634,
+        931.3406969583184,
+        30.756243415130882
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 2,
+      "shape": "curve6",
+      "bbox": [
+        926.3311040562104,
+        30.876492746831275,
+        927.5334070823855,
+        32.07902489941745
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 2,
+      "shape": "curve7",
+      "bbox": [
+        922.7241954812911,
+        31.157079277318246,
+        925.6498016790216,
+        35.32585763758118
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 2,
+      "shape": "curve8",
+      "bbox": [
+        920.2394354872473,
+        31.758340988805287,
+        921.4417385134224,
+        32.96087314139146
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 2,
+      "shape": "curve9",
+      "bbox": [
+        915.4702948976618,
+        28.3912463841134,
+        918.3558220821433,
+        32.43977177533753
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 3,
+      "shape": "rect0",
+      "bbox": [
+        0.0,
+        -0.004929999999944812,
+        959.76,
+        540.13507
+      ],
+      "category": "page background",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Paint/background, not independent information."
+    },
+    {
+      "page": 3,
+      "shape": "rect1",
+      "bbox": [
+        6.12,
+        1.0752999999999702,
+        965.88,
+        541.2153
+      ],
+      "category": "page background",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Paint/background, not independent information."
+    },
+    {
+      "page": 3,
+      "shape": "rect2",
+      "bbox": [
+        0.35999,
+        0.3551800000000185,
+        12.59999,
+        540.49518
+      ],
+      "category": "edge stripe",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Brand decoration, no quantity, group or status encoded."
+    },
+    {
+      "page": 3,
+      "shape": "rect3",
+      "bbox": [
+        54.36,
+        216.40985,
+        796.6800000000001,
+        217.13
+      ],
+      "category": "section rule",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Heading and whitespace identify section."
+    },
+    {
+      "page": 3,
+      "shape": "rect4",
+      "bbox": [
+        54.36,
+        247.382,
+        85.32,
+        279.07
+      ],
+      "category": "icon coloured square",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Background for labelled icon; its hue does not encode a separate value."
+    },
+    {
+      "page": 3,
+      "shape": "rect5",
+      "bbox": [
+        54.36,
+        308.592,
+        85.32,
+        339.56
+      ],
+      "category": "icon coloured square",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Background for labelled icon; its hue does not encode a separate value."
+    },
+    {
+      "page": 3,
+      "shape": "rect6",
+      "bbox": [
+        54.36,
+        369.812,
+        85.32,
+        401.5
+      ],
+      "category": "icon coloured square",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Background for labelled icon; its hue does not encode a separate value."
+    },
+    {
+      "page": 3,
+      "shape": "rect7",
+      "bbox": [
+        54.36,
+        496.56385,
+        906.12,
+        497.284
+      ],
+      "category": "footer rule",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Divider; footer text already identifies document and page."
+    },
+    {
+      "page": 3,
+      "shape": "curve0",
+      "bbox": [
+        62.36261332214782,
+        258.3341149901158,
+        76.65498609757796,
+        265.2695943576934
+      ],
+      "category": "labelled icon stroke",
+      "contrast_required_or_conservatively_tested": true,
+      "reason": "Conservatively measure icon even though adjacent heading names its meaning."
+    },
+    {
+      "page": 3,
+      "shape": "curve1",
+      "bbox": [
+        65.18202653602839,
+        263.60035242048895,
+        73.8242445276601,
+        268.2770935835758
+      ],
+      "category": "labelled icon stroke",
+      "contrast_required_or_conservatively_tested": true,
+      "reason": "Conservatively measure icon even though adjacent heading names its meaning."
+    },
+    {
+      "page": 3,
+      "shape": "curve2",
+      "bbox": [
+        62.748146630124,
+        316.6876837767401,
+        76.55320138461047,
+        330.47948768539896
+      ],
+      "category": "labelled icon stroke",
+      "contrast_required_or_conservatively_tested": true,
+      "reason": "Conservatively measure icon even though adjacent heading names its meaning."
+    },
+    {
+      "page": 3,
+      "shape": "curve3",
+      "bbox": [
+        63.741687278178404,
+        377.95755913456003,
+        75.26458121626149,
+        392.109598008928
+      ],
+      "category": "labelled icon stroke",
+      "contrast_required_or_conservatively_tested": true,
+      "reason": "Conservatively measure icon even though adjacent heading names its meaning."
+    },
+    {
+      "page": 3,
+      "shape": "curve4",
+      "bbox": [
+        67.34253265079529,
+        383.51208089991997,
+        71.66373665504321,
+        386.38959178682796
+      ],
+      "category": "labelled icon stroke",
+      "contrast_required_or_conservatively_tested": true,
+      "reason": "Conservatively measure icon even though adjacent heading names its meaning."
+    },
+    {
+      "page": 3,
+      "shape": "curve5",
+      "bbox": [
+        924.4074548361376,
+        53.24363766120547,
+        931.9418828286027,
+        57.332254724731456
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 3,
+      "shape": "curve6",
+      "bbox": [
+        927.8139530686879,
+        20.454554904277416,
+        937.6327391063361,
+        37.53050409559853
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 3,
+      "shape": "curve7",
+      "bbox": [
+        927.693731249034,
+        43.02207479620421,
+        933.7052466596907,
+        47.150766744316286
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 3,
+      "shape": "curve8",
+      "bbox": [
+        912.7851725717646,
+        34.604328519619855,
+        935.5086962188493,
+        52.04106213538523
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 3,
+      "shape": "curve9",
+      "bbox": [
+        913.7069161821432,
+        24.743582764117946,
+        932.8235339402075,
+        37.00940239379025
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 3,
+      "shape": "curve10",
+      "bbox": [
+        928.2948602677192,
+        26.587465838294634,
+        931.3406969583184,
+        30.756243415130882
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 3,
+      "shape": "curve11",
+      "bbox": [
+        926.3311040562104,
+        30.876492746831275,
+        927.5334070823855,
+        32.07902489941745
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 3,
+      "shape": "curve12",
+      "bbox": [
+        922.7241954812911,
+        31.157079277318246,
+        925.6498016790216,
+        35.32585763758118
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 3,
+      "shape": "curve13",
+      "bbox": [
+        920.2394354872473,
+        31.758340988805287,
+        921.4417385134224,
+        32.96087314139146
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 3,
+      "shape": "curve14",
+      "bbox": [
+        915.4702948976618,
+        28.3912463841134,
+        918.3558220821433,
+        32.43977177533753
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 3,
+      "shape": "line0",
+      "bbox": [
+        76.7049179050432,
+        261.8021053671021,
+        76.7049195276601,
+        266.1186115300101
+      ],
+      "category": "labelled icon stroke",
+      "contrast_required_or_conservatively_tested": true,
+      "reason": "Conservatively measure icon even though adjacent heading names its meaning."
+    },
+    {
+      "page": 4,
+      "shape": "rect0",
+      "bbox": [
+        0.0,
+        -0.004929999999944812,
+        959.76,
+        540.13507
+      ],
+      "category": "page background",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Paint/background, not independent information."
+    },
+    {
+      "page": 4,
+      "shape": "rect1",
+      "bbox": [
+        0.35999,
+        -0.3650400000000218,
+        960.11999,
+        539.77496
+      ],
+      "category": "page background",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Paint/background, not independent information."
+    },
+    {
+      "page": 4,
+      "shape": "rect2",
+      "bbox": [
+        0.35999,
+        0.3551800000000185,
+        12.59999,
+        540.49518
+      ],
+      "category": "edge stripe",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Brand decoration, no quantity, group or status encoded."
+    },
+    {
+      "page": 4,
+      "shape": "rect3",
+      "bbox": [
+        112.68,
+        183.28985,
+        847.8,
+        184.01
+      ],
+      "category": "row separator",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Numbered X/01 row labels, headings and whitespace preserve each row without the divider."
+    },
+    {
+      "page": 4,
+      "shape": "rect4",
+      "bbox": [
+        112.68,
+        240.17985,
+        847.8,
+        240.89999999999998
+      ],
+      "category": "row separator",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Numbered X/01 row labels, headings and whitespace preserve each row without the divider."
+    },
+    {
+      "page": 4,
+      "shape": "rect5",
+      "bbox": [
+        112.68,
+        297.06985,
+        847.8,
+        297.78999999999996
+      ],
+      "category": "row separator",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Numbered X/01 row labels, headings and whitespace preserve each row without the divider."
+    },
+    {
+      "page": 4,
+      "shape": "rect6",
+      "bbox": [
+        112.68,
+        354.68985,
+        847.8,
+        355.40999999999997
+      ],
+      "category": "row separator",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Numbered X/01 row labels, headings and whitespace preserve each row without the divider."
+    },
+    {
+      "page": 4,
+      "shape": "rect7",
+      "bbox": [
+        112.68,
+        411.57984999999996,
+        847.8,
+        412.3
+      ],
+      "category": "row separator",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Numbered X/01 row labels, headings and whitespace preserve each row without the divider."
+    },
+    {
+      "page": 4,
+      "shape": "rect8",
+      "bbox": [
+        54.36,
+        496.56385,
+        906.12,
+        497.284
+      ],
+      "category": "footer rule",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Divider; footer text already identifies document and page."
+    },
+    {
+      "page": 4,
+      "shape": "curve0",
+      "bbox": [
+        924.4074548361376,
+        53.24363766120547,
+        931.9418828286027,
+        57.332254724731456
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 4,
+      "shape": "curve1",
+      "bbox": [
+        927.8139530686879,
+        20.454554904277416,
+        937.6327391063361,
+        37.53050409559853
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 4,
+      "shape": "curve2",
+      "bbox": [
+        927.693731249034,
+        43.02207479620421,
+        933.7052466596907,
+        47.150766744316286
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 4,
+      "shape": "curve3",
+      "bbox": [
+        912.7851725717646,
+        34.604328519619855,
+        935.5086962188493,
+        52.04106213538523
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 4,
+      "shape": "curve4",
+      "bbox": [
+        913.7069161821432,
+        24.743582764117946,
+        932.8235339402075,
+        37.00940239379025
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 4,
+      "shape": "curve5",
+      "bbox": [
+        928.2948602677192,
+        26.587465838294634,
+        931.3406969583184,
+        30.756243415130882
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 4,
+      "shape": "curve6",
+      "bbox": [
+        926.3311040562104,
+        30.876492746831275,
+        927.5334070823855,
+        32.07902489941745
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 4,
+      "shape": "curve7",
+      "bbox": [
+        922.7241954812911,
+        31.157079277318246,
+        925.6498016790216,
+        35.32585763758118
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 4,
+      "shape": "curve8",
+      "bbox": [
+        920.2394354872473,
+        31.758340988805287,
+        921.4417385134224,
+        32.96087314139146
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 4,
+      "shape": "curve9",
+      "bbox": [
+        915.4702948976618,
+        28.3912463841134,
+        918.3558220821433,
+        32.43977177533753
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 5,
+      "shape": "rect0",
+      "bbox": [
+        0.0,
+        -0.004929999999944812,
+        959.76,
+        540.13507
+      ],
+      "category": "page background",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Paint/background, not independent information."
+    },
+    {
+      "page": 5,
+      "shape": "rect1",
+      "bbox": [
+        0.35999,
+        -0.3650400000000218,
+        960.11999,
+        539.77496
+      ],
+      "category": "page background",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Paint/background, not independent information."
+    },
+    {
+      "page": 5,
+      "shape": "rect2",
+      "bbox": [
+        0.35999,
+        0.3551800000000185,
+        12.59999,
+        540.49518
+      ],
+      "category": "edge stripe",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Brand decoration, no quantity, group or status encoded."
+    },
+    {
+      "page": 5,
+      "shape": "rect3",
+      "bbox": [
+        0.35999,
+        0.3551800000000185,
+        12.59999,
+        540.49518
+      ],
+      "category": "edge stripe",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Brand decoration, no quantity, group or status encoded."
+    },
+    {
+      "page": 5,
+      "shape": "rect4",
+      "bbox": [
+        112.68,
+        183.28985,
+        847.8,
+        184.01
+      ],
+      "category": "row separator",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Numbered X/01 row labels, headings and whitespace preserve each row without the divider."
+    },
+    {
+      "page": 5,
+      "shape": "rect5",
+      "bbox": [
+        112.68,
+        240.17985,
+        847.8,
+        240.89999999999998
+      ],
+      "category": "row separator",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Numbered X/01 row labels, headings and whitespace preserve each row without the divider."
+    },
+    {
+      "page": 5,
+      "shape": "rect6",
+      "bbox": [
+        112.68,
+        297.06985,
+        847.8,
+        297.78999999999996
+      ],
+      "category": "row separator",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Numbered X/01 row labels, headings and whitespace preserve each row without the divider."
+    },
+    {
+      "page": 5,
+      "shape": "rect7",
+      "bbox": [
+        112.68,
+        354.68985,
+        847.8,
+        355.40999999999997
+      ],
+      "category": "row separator",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Numbered X/01 row labels, headings and whitespace preserve each row without the divider."
+    },
+    {
+      "page": 5,
+      "shape": "rect8",
+      "bbox": [
+        54.36,
+        496.56385,
+        906.12,
+        497.284
+      ],
+      "category": "footer rule",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Divider; footer text already identifies document and page."
+    },
+    {
+      "page": 5,
+      "shape": "rect9",
+      "bbox": [
+        113.4,
+        415.89975000000004,
+        848.52,
+        416.62
+      ],
+      "category": "row separator",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Numbered X/01 row labels, headings and whitespace preserve each row without the divider."
+    },
+    {
+      "page": 5,
+      "shape": "curve0",
+      "bbox": [
+        924.4074548361376,
+        53.24363766120547,
+        931.9418828286027,
+        57.332254724731456
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 5,
+      "shape": "curve1",
+      "bbox": [
+        927.8139530686879,
+        20.454554904277416,
+        937.6327391063361,
+        37.53050409559853
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 5,
+      "shape": "curve2",
+      "bbox": [
+        927.693731249034,
+        43.02207479620421,
+        933.7052466596907,
+        47.150766744316286
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 5,
+      "shape": "curve3",
+      "bbox": [
+        912.7851725717646,
+        34.604328519619855,
+        935.5086962188493,
+        52.04106213538523
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 5,
+      "shape": "curve4",
+      "bbox": [
+        913.7069161821432,
+        24.743582764117946,
+        932.8235339402075,
+        37.00940239379025
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 5,
+      "shape": "curve5",
+      "bbox": [
+        928.2948602677192,
+        26.587465838294634,
+        931.3406969583184,
+        30.756243415130882
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 5,
+      "shape": "curve6",
+      "bbox": [
+        926.3311040562104,
+        30.876492746831275,
+        927.5334070823855,
+        32.07902489941745
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 5,
+      "shape": "curve7",
+      "bbox": [
+        922.7241954812911,
+        31.157079277318246,
+        925.6498016790216,
+        35.32585763758118
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 5,
+      "shape": "curve8",
+      "bbox": [
+        920.2394354872473,
+        31.758340988805287,
+        921.4417385134224,
+        32.96087314139146
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 5,
+      "shape": "curve9",
+      "bbox": [
+        915.4702948976618,
+        28.3912463841134,
+        918.3558220821433,
+        32.43977177533753
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 6,
+      "shape": "rect0",
+      "bbox": [
+        0.0,
+        -0.004929999999944812,
+        959.76,
+        540.13507
+      ],
+      "category": "page background",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Paint/background, not independent information."
+    },
+    {
+      "page": 6,
+      "shape": "rect1",
+      "bbox": [
+        0.35999,
+        0.3551800000000185,
+        960.11999,
+        540.49518
+      ],
+      "category": "page background",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Paint/background, not independent information."
+    },
+    {
+      "page": 6,
+      "shape": "rect2",
+      "bbox": [
+        54.36,
+        496.56385,
+        906.12,
+        497.284
+      ],
+      "category": "footer rule",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Divider; footer text already identifies document and page."
+    },
+    {
+      "page": 6,
+      "shape": "rect3",
+      "bbox": [
+        0.35999,
+        0.3551800000000185,
+        12.59999,
+        540.49518
+      ],
+      "category": "edge stripe",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Brand decoration, no quantity, group or status encoded."
+    },
+    {
+      "page": 6,
+      "shape": "curve0",
+      "bbox": [
+        314.28,
+        235.86,
+        572.04,
+        371.25
+      ],
+      "category": "central team ellipse",
+      "contrast_required_or_conservatively_tested": true,
+      "reason": "Conservatively retain visual central emphasis as needed for central/peripheral grouping."
+    },
+    {
+      "page": 6,
+      "shape": "curve1",
+      "bbox": [
+        89.64,
+        225.77999999999997,
+        284.76,
+        289.87
+      ],
+      "category": "satellite ellipse fill/outline",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Supplementary enclosure: 7 partner names and descriptions identify the nodes; introduction explicitly states team collaboration. No arrows, legend, category key, count or quantitative scale depends on edge/fill. Green node also says Eksisterer ikke in text. Omitting these low-contrast enclosures leaves named partners and spatial arrangement intact. This decision is about visual contrast, not screen-reader alternatives/reading order."
+    },
+    {
+      "page": 6,
+      "shape": "curve2",
+      "bbox": [
+        89.64,
+        225.77999999999997,
+        284.76,
+        289.87
+      ],
+      "category": "satellite ellipse fill/outline",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Supplementary enclosure: 7 partner names and descriptions identify the nodes; introduction explicitly states team collaboration. No arrows, legend, category key, count or quantitative scale depends on edge/fill. Green node also says Eksisterer ikke in text. Omitting these low-contrast enclosures leaves named partners and spatial arrangement intact. This decision is about visual contrast, not screen-reader alternatives/reading order."
+    },
+    {
+      "page": 6,
+      "shape": "curve3",
+      "bbox": [
+        107.64,
+        344.61,
+        302.76,
+        409.41999999999996
+      ],
+      "category": "satellite ellipse fill/outline",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Supplementary enclosure: 7 partner names and descriptions identify the nodes; introduction explicitly states team collaboration. No arrows, legend, category key, count or quantitative scale depends on edge/fill. Green node also says Eksisterer ikke in text. Omitting these low-contrast enclosures leaves named partners and spatial arrangement intact. This decision is about visual contrast, not screen-reader alternatives/reading order."
+    },
+    {
+      "page": 6,
+      "shape": "curve4",
+      "bbox": [
+        107.64,
+        344.61,
+        302.76,
+        409.41999999999996
+      ],
+      "category": "satellite ellipse fill/outline",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Supplementary enclosure: 7 partner names and descriptions identify the nodes; introduction explicitly states team collaboration. No arrows, legend, category key, count or quantitative scale depends on edge/fill. Green node also says Eksisterer ikke in text. Omitting these low-contrast enclosures leaves named partners and spatial arrangement intact. This decision is about visual contrast, not screen-reader alternatives/reading order."
+    },
+    {
+      "page": 6,
+      "shape": "curve5",
+      "bbox": [
+        302.76,
+        150.16000000000003,
+        497.88,
+        214.97000000000003
+      ],
+      "category": "satellite ellipse fill/outline",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Supplementary enclosure: 7 partner names and descriptions identify the nodes; introduction explicitly states team collaboration. No arrows, legend, category key, count or quantitative scale depends on edge/fill. Green node also says Eksisterer ikke in text. Omitting these low-contrast enclosures leaves named partners and spatial arrangement intact. This decision is about visual contrast, not screen-reader alternatives/reading order."
+    },
+    {
+      "page": 6,
+      "shape": "curve6",
+      "bbox": [
+        302.76,
+        150.16000000000003,
+        497.88,
+        214.97000000000003
+      ],
+      "category": "satellite ellipse fill/outline",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Supplementary enclosure: 7 partner names and descriptions identify the nodes; introduction explicitly states team collaboration. No arrows, legend, category key, count or quantitative scale depends on edge/fill. Green node also says Eksisterer ikke in text. Omitting these low-contrast enclosures leaves named partners and spatial arrangement intact. This decision is about visual contrast, not screen-reader alternatives/reading order."
+    },
+    {
+      "page": 6,
+      "shape": "curve7",
+      "bbox": [
+        607.32,
+        258.18,
+        802.44,
+        322.28
+      ],
+      "category": "satellite ellipse fill/outline",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Supplementary enclosure: 7 partner names and descriptions identify the nodes; introduction explicitly states team collaboration. No arrows, legend, category key, count or quantitative scale depends on edge/fill. Green node also says Eksisterer ikke in text. Omitting these low-contrast enclosures leaves named partners and spatial arrangement intact. This decision is about visual contrast, not screen-reader alternatives/reading order."
+    },
+    {
+      "page": 6,
+      "shape": "curve8",
+      "bbox": [
+        607.32,
+        258.18,
+        802.44,
+        322.28
+      ],
+      "category": "satellite ellipse fill/outline",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Supplementary enclosure: 7 partner names and descriptions identify the nodes; introduction explicitly states team collaboration. No arrows, legend, category key, count or quantitative scale depends on edge/fill. Green node also says Eksisterer ikke in text. Omitting these low-contrast enclosures leaves named partners and spatial arrangement intact. This decision is about visual contrast, not screen-reader alternatives/reading order."
+    },
+    {
+      "page": 6,
+      "shape": "curve9",
+      "bbox": [
+        556.92,
+        358.28999999999996,
+        752.04,
+        423.11
+      ],
+      "category": "satellite ellipse fill/outline",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Supplementary enclosure: 7 partner names and descriptions identify the nodes; introduction explicitly states team collaboration. No arrows, legend, category key, count or quantitative scale depends on edge/fill. Green node also says Eksisterer ikke in text. Omitting these low-contrast enclosures leaves named partners and spatial arrangement intact. This decision is about visual contrast, not screen-reader alternatives/reading order."
+    },
+    {
+      "page": 6,
+      "shape": "curve10",
+      "bbox": [
+        556.92,
+        358.28999999999996,
+        752.04,
+        423.11
+      ],
+      "category": "satellite ellipse fill/outline",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Supplementary enclosure: 7 partner names and descriptions identify the nodes; introduction explicitly states team collaboration. No arrows, legend, category key, count or quantitative scale depends on edge/fill. Green node also says Eksisterer ikke in text. Omitting these low-contrast enclosures leaves named partners and spatial arrangement intact. This decision is about visual contrast, not screen-reader alternatives/reading order."
+    },
+    {
+      "page": 6,
+      "shape": "curve11",
+      "bbox": [
+        320.04,
+        401.5,
+        515.16,
+        465.596
+      ],
+      "category": "satellite ellipse fill/outline",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Supplementary enclosure: 7 partner names and descriptions identify the nodes; introduction explicitly states team collaboration. No arrows, legend, category key, count or quantitative scale depends on edge/fill. Green node also says Eksisterer ikke in text. Omitting these low-contrast enclosures leaves named partners and spatial arrangement intact. This decision is about visual contrast, not screen-reader alternatives/reading order."
+    },
+    {
+      "page": 6,
+      "shape": "curve12",
+      "bbox": [
+        320.04,
+        401.5,
+        515.16,
+        465.596
+      ],
+      "category": "satellite ellipse fill/outline",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Supplementary enclosure: 7 partner names and descriptions identify the nodes; introduction explicitly states team collaboration. No arrows, legend, category key, count or quantitative scale depends on edge/fill. Green node also says Eksisterer ikke in text. Omitting these low-contrast enclosures leaves named partners and spatial arrangement intact. This decision is about visual contrast, not screen-reader alternatives/reading order."
+    },
+    {
+      "page": 6,
+      "shape": "curve13",
+      "bbox": [
+        544.68,
+        171.04000000000002,
+        739.08,
+        235.86
+      ],
+      "category": "satellite ellipse fill/outline",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Supplementary enclosure: 7 partner names and descriptions identify the nodes; introduction explicitly states team collaboration. No arrows, legend, category key, count or quantitative scale depends on edge/fill. Green node also says Eksisterer ikke in text. Omitting these low-contrast enclosures leaves named partners and spatial arrangement intact. This decision is about visual contrast, not screen-reader alternatives/reading order."
+    },
+    {
+      "page": 6,
+      "shape": "curve14",
+      "bbox": [
+        544.68,
+        171.04000000000002,
+        739.08,
+        235.86
+      ],
+      "category": "satellite ellipse fill/outline",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Supplementary enclosure: 7 partner names and descriptions identify the nodes; introduction explicitly states team collaboration. No arrows, legend, category key, count or quantitative scale depends on edge/fill. Green node also says Eksisterer ikke in text. Omitting these low-contrast enclosures leaves named partners and spatial arrangement intact. This decision is about visual contrast, not screen-reader alternatives/reading order."
+    },
+    {
+      "page": 6,
+      "shape": "curve15",
+      "bbox": [
+        924.4074548361376,
+        53.24363766120547,
+        931.9418828286027,
+        57.332254724731456
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 6,
+      "shape": "curve16",
+      "bbox": [
+        927.8139530686879,
+        20.454554904277416,
+        937.6327391063361,
+        37.53050409559853
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 6,
+      "shape": "curve17",
+      "bbox": [
+        927.693731249034,
+        43.02207479620421,
+        933.7052466596907,
+        47.150766744316286
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 6,
+      "shape": "curve18",
+      "bbox": [
+        912.7851725717646,
+        34.604328519619855,
+        935.5086962188493,
+        52.04106213538523
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 6,
+      "shape": "curve19",
+      "bbox": [
+        913.7069161821432,
+        24.743582764117946,
+        932.8235339402075,
+        37.00940239379025
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 6,
+      "shape": "curve20",
+      "bbox": [
+        928.2948602677192,
+        26.587465838294634,
+        931.3406969583184,
+        30.756243415130882
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 6,
+      "shape": "curve21",
+      "bbox": [
+        926.3311040562104,
+        30.876492746831275,
+        927.5334070823855,
+        32.07902489941745
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 6,
+      "shape": "curve22",
+      "bbox": [
+        922.7241954812911,
+        31.157079277318246,
+        925.6498016790216,
+        35.32585763758118
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 6,
+      "shape": "curve23",
+      "bbox": [
+        920.2394354872473,
+        31.758340988805287,
+        921.4417385134224,
+        32.96087314139146
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 6,
+      "shape": "curve24",
+      "bbox": [
+        915.4702948976618,
+        28.3912463841134,
+        918.3558220821433,
+        32.43977177533753
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 7,
+      "shape": "rect0",
+      "bbox": [
+        0.0,
+        -0.004929999999944812,
+        959.76,
+        540.13507
+      ],
+      "category": "page background",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Paint/background, not independent information."
+    },
+    {
+      "page": 7,
+      "shape": "rect1",
+      "bbox": [
+        0.35999,
+        0.3551800000000185,
+        960.11999,
+        540.49518
+      ],
+      "category": "page background",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Paint/background, not independent information."
+    },
+    {
+      "page": 7,
+      "shape": "rect2",
+      "bbox": [
+        0.35999,
+        0.3551800000000185,
+        12.59999,
+        540.49518
+      ],
+      "category": "edge stripe",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Brand decoration, no quantity, group or status encoded."
+    },
+    {
+      "page": 7,
+      "shape": "rect3",
+      "bbox": [
+        474.12,
+        172.49,
+        660.6,
+        431.75
+      ],
+      "category": "column panel/stripe",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Three explicitly named headings and spatially separated text lists identify columns. No chart value or status is encoded by panel border or strip."
+    },
+    {
+      "page": 7,
+      "shape": "rect4",
+      "bbox": [
+        474.12,
+        172.49,
+        660.6,
+        431.75
+      ],
+      "category": "column panel/stripe",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Three explicitly named headings and spatially separated text lists identify columns. No chart value or status is encoded by panel border or strip."
+    },
+    {
+      "page": 7,
+      "shape": "rect5",
+      "bbox": [
+        474.12,
+        172.4783,
+        660.6,
+        179.68
+      ],
+      "category": "column panel/stripe",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Three explicitly named headings and spatially separated text lists identify columns. No chart value or status is encoded by panel border or strip."
+    },
+    {
+      "page": 7,
+      "shape": "rect6",
+      "bbox": [
+        492.12,
+        256.0289,
+        496.44,
+        260.35
+      ],
+      "category": "list bullet",
+      "contrast_required_or_conservatively_tested": true,
+      "reason": "Conservatively measure list markers, even where spacing/text groups reinforce items."
+    },
+    {
+      "page": 7,
+      "shape": "rect7",
+      "bbox": [
+        492.12,
+        297.79859999999996,
+        496.44,
+        302.84000000000003
+      ],
+      "category": "list bullet",
+      "contrast_required_or_conservatively_tested": true,
+      "reason": "Conservatively measure list markers, even where spacing/text groups reinforce items."
+    },
+    {
+      "page": 7,
+      "shape": "rect8",
+      "bbox": [
+        55.8,
+        172.49,
+        421.56,
+        431.75
+      ],
+      "category": "column panel/stripe",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Three explicitly named headings and spatially separated text lists identify columns. No chart value or status is encoded by panel border or strip."
+    },
+    {
+      "page": 7,
+      "shape": "rect9",
+      "bbox": [
+        55.8,
+        172.49,
+        421.56,
+        431.75
+      ],
+      "category": "column panel/stripe",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Three explicitly named headings and spatially separated text lists identify columns. No chart value or status is encoded by panel border or strip."
+    },
+    {
+      "page": 7,
+      "shape": "rect10",
+      "bbox": [
+        55.8,
+        172.47899999999998,
+        421.56,
+        176.8
+      ],
+      "category": "column panel/stripe",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Three explicitly named headings and spatially separated text lists identify columns. No chart value or status is encoded by panel border or strip."
+    },
+    {
+      "page": 7,
+      "shape": "rect11",
+      "bbox": [
+        73.8,
+        256.0289,
+        78.12,
+        260.35
+      ],
+      "category": "list bullet",
+      "contrast_required_or_conservatively_tested": true,
+      "reason": "Conservatively measure list markers, even where spacing/text groups reinforce items."
+    },
+    {
+      "page": 7,
+      "shape": "rect12",
+      "bbox": [
+        73.8,
+        297.79859999999996,
+        78.12,
+        302.84000000000003
+      ],
+      "category": "list bullet",
+      "contrast_required_or_conservatively_tested": true,
+      "reason": "Conservatively measure list markers, even where spacing/text groups reinforce items."
+    },
+    {
+      "page": 7,
+      "shape": "rect13",
+      "bbox": [
+        73.8,
+        340.2889,
+        78.12,
+        344.61
+      ],
+      "category": "list bullet",
+      "contrast_required_or_conservatively_tested": true,
+      "reason": "Conservatively measure list markers, even where spacing/text groups reinforce items."
+    },
+    {
+      "page": 7,
+      "shape": "rect14",
+      "bbox": [
+        713.16,
+        172.49,
+        898.92,
+        431.75
+      ],
+      "category": "column panel/stripe",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Three explicitly named headings and spatially separated text lists identify columns. No chart value or status is encoded by panel border or strip."
+    },
+    {
+      "page": 7,
+      "shape": "rect15",
+      "bbox": [
+        713.16,
+        172.49,
+        898.92,
+        431.75
+      ],
+      "category": "column panel/stripe",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Three explicitly named headings and spatially separated text lists identify columns. No chart value or status is encoded by panel border or strip."
+    },
+    {
+      "page": 7,
+      "shape": "rect16",
+      "bbox": [
+        713.16,
+        172.4783,
+        898.92,
+        179.68
+      ],
+      "category": "column panel/stripe",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Three explicitly named headings and spatially separated text lists identify columns. No chart value or status is encoded by panel border or strip."
+    },
+    {
+      "page": 7,
+      "shape": "rect17",
+      "bbox": [
+        731.16,
+        256.0289,
+        735.48,
+        260.35
+      ],
+      "category": "list bullet",
+      "contrast_required_or_conservatively_tested": true,
+      "reason": "Conservatively measure list markers, even where spacing/text groups reinforce items."
+    },
+    {
+      "page": 7,
+      "shape": "rect18",
+      "bbox": [
+        731.16,
+        297.79859999999996,
+        735.48,
+        302.84000000000003
+      ],
+      "category": "list bullet",
+      "contrast_required_or_conservatively_tested": true,
+      "reason": "Conservatively measure list markers, even where spacing/text groups reinforce items."
+    },
+    {
+      "page": 7,
+      "shape": "rect19",
+      "bbox": [
+        731.16,
+        340.2889,
+        735.48,
+        344.61
+      ],
+      "category": "list bullet",
+      "contrast_required_or_conservatively_tested": true,
+      "reason": "Conservatively measure list markers, even where spacing/text groups reinforce items."
+    },
+    {
+      "page": 7,
+      "shape": "rect20",
+      "bbox": [
+        54.36,
+        496.56385,
+        906.12,
+        497.284
+      ],
+      "category": "footer rule",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Divider; footer text already identifies document and page."
+    },
+    {
+      "page": 7,
+      "shape": "rect21",
+      "bbox": [
+        248.76,
+        256.0289,
+        253.07999999999998,
+        260.35
+      ],
+      "category": "list bullet",
+      "contrast_required_or_conservatively_tested": true,
+      "reason": "Conservatively measure list markers, even where spacing/text groups reinforce items."
+    },
+    {
+      "page": 7,
+      "shape": "rect22",
+      "bbox": [
+        248.76,
+        297.79859999999996,
+        253.07999999999998,
+        302.84000000000003
+      ],
+      "category": "list bullet",
+      "contrast_required_or_conservatively_tested": true,
+      "reason": "Conservatively measure list markers, even where spacing/text groups reinforce items."
+    },
+    {
+      "page": 7,
+      "shape": "rect23",
+      "bbox": [
+        248.76,
+        340.2889,
+        253.07999999999998,
+        344.61
+      ],
+      "category": "list bullet",
+      "contrast_required_or_conservatively_tested": true,
+      "reason": "Conservatively measure list markers, even where spacing/text groups reinforce items."
+    },
+    {
+      "page": 7,
+      "shape": "rect24",
+      "bbox": [
+        491.4,
+        340.2889,
+        495.7199,
+        344.61
+      ],
+      "category": "list bullet",
+      "contrast_required_or_conservatively_tested": true,
+      "reason": "Conservatively measure list markers, even where spacing/text groups reinforce items."
+    },
+    {
+      "page": 7,
+      "shape": "curve0",
+      "bbox": [
+        924.4074548361376,
+        53.24363766120547,
+        931.9418828286027,
+        57.332254724731456
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 7,
+      "shape": "curve1",
+      "bbox": [
+        927.8139530686879,
+        20.454554904277416,
+        937.6327391063361,
+        37.53050409559853
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 7,
+      "shape": "curve2",
+      "bbox": [
+        927.693731249034,
+        43.02207479620421,
+        933.7052466596907,
+        47.150766744316286
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 7,
+      "shape": "curve3",
+      "bbox": [
+        912.7851725717646,
+        34.604328519619855,
+        935.5086962188493,
+        52.04106213538523
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 7,
+      "shape": "curve4",
+      "bbox": [
+        913.7069161821432,
+        24.743582764117946,
+        932.8235339402075,
+        37.00940239379025
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 7,
+      "shape": "curve5",
+      "bbox": [
+        928.2948602677192,
+        26.587465838294634,
+        931.3406969583184,
+        30.756243415130882
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 7,
+      "shape": "curve6",
+      "bbox": [
+        926.3311040562104,
+        30.876492746831275,
+        927.5334070823855,
+        32.07902489941745
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 7,
+      "shape": "curve7",
+      "bbox": [
+        922.7241954812911,
+        31.157079277318246,
+        925.6498016790216,
+        35.32585763758118
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 7,
+      "shape": "curve8",
+      "bbox": [
+        920.2394354872473,
+        31.758340988805287,
+        921.4417385134224,
+        32.96087314139146
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    },
+    {
+      "page": 7,
+      "shape": "curve9",
+      "bbox": [
+        915.4702948976618,
+        28.3912463841134,
+        918.3558220821433,
+        32.43977177533753
+      ],
+      "category": "koala mark",
+      "contrast_required_or_conservatively_tested": false,
+      "reason": "Repeated ornament, no control, status or diagram relationship."
+    }
+  ],
+  "method": "Fresh source geometry and 120dpi visual assessment on 7 pages; exact source solid sRGB colours. Removing optional enclosures is a reasoned informational assessment, not an edited-PDF or assistive-technology experiment. All unmeasured primitive decorations have explicit reasons. No blanket Figure/empty-Alt exemption."
+}

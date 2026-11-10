@@ -4,6 +4,17 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 «Agent» betyr kodeassistenten som utførte arbeidet. Git-forfatteren registreres separat av Git og kan være personen som oppretter commiten. Eksakt modellvariant er ikke registrert for tidligere arbeid og oppgis derfor ikke. Ingen underagenter ble brukt til kvalitetskontrollen eller opprettelsen av denne loggen.
 
+## Ikke utgitt – fullført lokal 1.4.11-vurdering – 10. november 2026
+
+**Utførende agent:** Codex (OpenAI), med `tilgjengelighetserklaering` 0.5.1 og PDF-skillen. Ingen underagenter.
+
+- Vurdert nødvendig grafikk/kontrollmarkeringer i dagens portal og alle syv PDF-sider mot kontrollerte Uu-/W3C-kilder. Klassifisert alle 157 PDF-primitiver med begrunnelse; 19 nødvendige/konservativt prøvde deler minst 4,191671:1. Syv svake perifere ellipseomriss er supplerende innramming etter konkret informasjonsvurdering. PDF uendret; ingen blanket dekor-/Alt-fritak eller påstått skjermleserprøve.
+- Funnet og rettet A11Y-07: MUI-filterets 0,25s bakgrunns-/fargeovergang svekket valgtmarkering og tekst. Førmålinger/funn bevares. Filtertekst og valgt bakgrunn skifter nå samtidig; 16 umiddelbare tastatur-/pekerretester ved 1280/320 gir minst 10,922731:1 for valgt flate og 12,538164:1 for tekst. Stabil palett og forsideanimasjon er beholdt. Funksjonsregisterets katalogbeskrivelse er oppdatert; Beta-status er uendret.
+- Øvrige prøvde nødvendige markeringer minst 3,392300:1, med faktiske hover/fokus/feil/valg, tre kilde- og seks prismarkører og seks tabellfokus. Visuelt aria-hidden feltgrenser er eksplisitt målt etter at en generell DOM-filterregel utelot dem. Kombinert råfil bevarer 32 før- og to ekstra etter-tilstander; dette presenteres ikke som 34 feilfrie etter-retting-tilstander.
+- Lagret vurdert 48-matrise/testplan/restliste, klassifiseringer, målrettede beregnere, funn/retest og PDF-/nettleserbevis i `docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/`. Oppdatert latest, rapporter, README, utviklingsplan, erklæring/portalside. **1.4.11 U → K i lokalt utvalg; 24 K / 11 I / 13 U / 0 B.** 1.4.3 K beholdes med ny filterretest. Samlet samsvar og øvrig hjelpemiddel/zoom/PDF-semantikk/pilot er fortsatt uavklart. Ingen endring i Skills-repoet eller publisering.
+
+- Sluttverifisering: 53 Node-tester, tre Python-tester, Pages-produksjonsbygg med TypeScript/ruteregister og HTML-grunnkontroll for 25 filer bestod. Ny avsluttende native-kjøring `162215-native-1eb13e38`: 23 ruter / 0 axe-violations / samme 3 incomplete-grupper og 86 targets; Nu gir 0 feil / 207 tekniske info-noter om avsluttende skråstrek. Original motorstatus er bevart. Erklæringen er lest tilbake ved 1280/320 uten overflyt med nøyaktig de 13 U-ID-ene fra matrisen. PDF-en er identisk med HEAD. Lokale dokumentlenker, formatering og Git-diff er kontrollert.
+
 ## Ikke utgitt – interaktive kontrasttilstander og PDF – 10. november 2026
 
 **Utførende agent:** Codex (OpenAI), med `tilgjengelighetserklaering` 0.5.1 og PDF-skillen. Ingen underagenter.

@@ -63,6 +63,8 @@ export function Catalog() {
                   minHeight: 44,
                   textTransform: "none",
                   borderRadius: "10px",
+                  // Valgtekst og bakgrunn må skifte samtidig for å bevare kontrasten.
+                  transition: "none",
                   ...(type === t && {
                     bgcolor: "secondary.main",
                     color: "text.primaryInvert",

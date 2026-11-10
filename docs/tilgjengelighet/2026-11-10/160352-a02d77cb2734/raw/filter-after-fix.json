@@ -1,0 +1,146 @@
+[
+  {
+    "method": "keyboard",
+    "background": "rgb(157, 241, 173)",
+    "color": "rgb(29, 29, 29)",
+    "pressedCount": 1,
+    "selected": "Prompt",
+    "transition": "none",
+    "width": 1280
+  },
+  {
+    "method": "keyboard",
+    "background": "rgb(157, 241, 173)",
+    "color": "rgb(29, 29, 29)",
+    "pressedCount": 1,
+    "selected": "Alle",
+    "transition": "none",
+    "width": 1280
+  },
+  {
+    "method": "keyboard",
+    "background": "rgb(157, 241, 173)",
+    "color": "rgb(29, 29, 29)",
+    "pressedCount": 1,
+    "selected": "Skill",
+    "transition": "none",
+    "width": 1280
+  },
+  {
+    "method": "keyboard",
+    "background": "rgb(157, 241, 173)",
+    "color": "rgb(29, 29, 29)",
+    "pressedCount": 1,
+    "selected": "Instruks",
+    "transition": "none",
+    "width": 1280
+  },
+  {
+    "method": "pointer",
+    "background": "rgb(157, 241, 173)",
+    "color": "rgb(29, 29, 29)",
+    "pressedCount": 1,
+    "selected": "Prompt",
+    "transition": "none",
+    "width": 1280
+  },
+  {
+    "method": "pointer",
+    "background": "rgb(157, 241, 173)",
+    "color": "rgb(29, 29, 29)",
+    "pressedCount": 1,
+    "selected": "Alle",
+    "transition": "none",
+    "width": 1280
+  },
+  {
+    "method": "pointer",
+    "background": "rgb(157, 241, 173)",
+    "color": "rgb(29, 29, 29)",
+    "pressedCount": 1,
+    "selected": "Skill",
+    "transition": "none",
+    "width": 1280
+  },
+  {
+    "method": "pointer",
+    "background": "rgb(157, 241, 173)",
+    "color": "rgb(29, 29, 29)",
+    "pressedCount": 1,
+    "selected": "Instruks",
+    "transition": "none",
+    "width": 1280
+  },
+  {
+    "method": "keyboard",
+    "background": "rgb(157, 241, 173)",
+    "color": "rgb(29, 29, 29)",
+    "pressedCount": 1,
+    "selected": "Prompt",
+    "transition": "none",
+    "width": 320
+  },
+  {
+    "method": "keyboard",
+    "background": "rgb(157, 241, 173)",
+    "color": "rgb(29, 29, 29)",
+    "pressedCount": 1,
+    "selected": "Alle",
+    "transition": "none",
+    "width": 320
+  },
+  {
+    "method": "keyboard",
+    "background": "rgb(157, 241, 173)",
+    "color": "rgb(29, 29, 29)",
+    "pressedCount": 1,
+    "selected": "Skill",
+    "transition": "none",
+    "width": 320
+  },
+  {
+    "method": "keyboard",
+    "background": "rgb(157, 241, 173)",
+    "color": "rgb(29, 29, 29)",
+    "pressedCount": 1,
+    "selected": "Instruks",
+    "transition": "none",
+    "width": 320
+  },
+  {
+    "method": "pointer",
+    "background": "rgb(157, 241, 173)",
+    "color": "rgb(29, 29, 29)",
+    "pressedCount": 1,
+    "selected": "Prompt",
+    "transition": "none",
+    "width": 320
+  },
+  {
+    "method": "pointer",
+    "background": "rgb(157, 241, 173)",
+    "color": "rgb(29, 29, 29)",
+    "pressedCount": 1,
+    "selected": "Alle",
+    "transition": "none",
+    "width": 320
+  },
+  {
+    "method": "pointer",
+    "background": "rgb(157, 241, 173)",
+    "color": "rgb(29, 29, 29)",
+    "pressedCount": 1,
+    "selected": "Skill",
+    "transition": "none",
+    "width": 320
+  },
+  {
+    "method": "pointer",
+    "background": "rgb(157, 241, 173)",
+    "color": "rgb(29, 29, 29)",
+    "pressedCount": 1,
+    "selected": "Instruks",
+    "transition": "none",
+    "width": 320
+  }
+]
