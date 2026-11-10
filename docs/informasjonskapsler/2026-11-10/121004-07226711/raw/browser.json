@@ -1,0 +1,3677 @@
+{
+  "observations": [
+    {
+      "observed_at": "2026-11-10T11:04:57.809Z",
+      "url": "http://127.0.0.1:3000/",
+      "phase": "initial_development",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_219uq1sj0q91c._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_Select_1w8yof8em5-q0._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_0af782w1t60ia._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_1-tpc087671gj._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_0bd5fosm89_s9._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:05:22.998Z",
+      "url": "http://127.0.0.1:3000/",
+      "phase": "page_visit_development",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_219uq1sj0q91c._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_1-tpc087671gj._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_Select_1w8yof8em5-q0._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_0af782w1t60ia._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_0bd5fosm89_s9._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:05:23.431Z",
+      "url": "http://127.0.0.1:3000/ressurser/tilgjengelighetserklaering",
+      "phase": "page_visit_development",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_02oqb34m787dl._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:05:23.840Z",
+      "url": "http://127.0.0.1:3000/ressurser/personvernerklaering",
+      "phase": "page_visit_development",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_02oqb34m787dl._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:05:24.248Z",
+      "url": "http://127.0.0.1:3000/ressurser/kodegjennomgang",
+      "phase": "page_visit_development",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_02oqb34m787dl._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:05:24.655Z",
+      "url": "http://127.0.0.1:3000/ressurser/tydelig-kontekst",
+      "phase": "page_visit_development",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_02oqb34m787dl._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:05:25.073Z",
+      "url": "http://127.0.0.1:3000/ressurser/brukerbehov",
+      "phase": "page_visit_development",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_02oqb34m787dl._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:05:25.514Z",
+      "url": "http://127.0.0.1:3000/spor",
+      "phase": "page_visit_development",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_0uzrodu0936ga._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_Select_1w8yof8em5-q0._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_0buocs_186f3-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_0o_2k_b793s1j._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_1nnadsr9xu194._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:05:25.948Z",
+      "url": "http://127.0.0.1:3000/oversikt/godkjente-mcper",
+      "phase": "page_visit_development",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_13gthq_lduf7t._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:05:26.381Z",
+      "url": "http://127.0.0.1:3000/oversikt/godkjente-ki-assistenter",
+      "phase": "page_visit_development",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1vu7wy_tjxpjo._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:05:26.823Z",
+      "url": "http://127.0.0.1:3000/kom-i-gang",
+      "phase": "page_visit_development",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_0q-ztw15lo0-i._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:05:27.256Z",
+      "url": "http://127.0.0.1:3000/om",
+      "phase": "page_visit_development",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_0e4b739cgj-zj._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:05:27.689Z",
+      "url": "http://127.0.0.1:3000/retningslinjer",
+      "phase": "page_visit_development",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1sp-0pp9idp87._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:05:28.131Z",
+      "url": "http://127.0.0.1:3000/personvern",
+      "phase": "page_visit_development",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1rxcgtv1jybo7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:05:28.572Z",
+      "url": "http://127.0.0.1:3000/oversikt",
+      "phase": "page_visit_development",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_app_oversikt_overview_0bq6be1fd02h9.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1cdcgg96zb17b._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:05:29.031Z",
+      "url": "http://127.0.0.1:3000/priser",
+      "phase": "page_visit_development",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_app_priser_pricing_0_kkckirstm45.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1blst3___ro0-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:05:29.448Z",
+      "url": "http://127.0.0.1:3000/tilgjengelighet",
+      "phase": "page_visit_development",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1v4xl1er751dc._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:05:29.881Z",
+      "url": "http://127.0.0.1:3000/nettstedskart",
+      "phase": "page_visit_development",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_0jbpgukg5f57h._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:05:30.473Z",
+      "url": "http://127.0.0.1:3000/versjonslogg",
+      "phase": "page_visit_development",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_0jp3jidmjy_hw._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:05:31.064Z",
+      "url": "http://127.0.0.1:3000/utviklingsplan",
+      "phase": "page_visit_development",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_16vxnt21nllen._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:05:31.514Z",
+      "url": "http://127.0.0.1:3000/funksjonalitet",
+      "phase": "page_visit_development",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1s6x3_vfy9xh1._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:05:31.948Z",
+      "url": "http://127.0.0.1:3000/404",
+      "phase": "page_visit_development",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_18x7jxupx5rou._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:05:44.290Z",
+      "url": "http://127.0.0.1:3000/",
+      "phase": "after_catalog_search",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_219uq1sj0q91c._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_1-tpc087671gj._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_0af782w1t60ia._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_Select_1w8yof8em5-q0._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_0bd5fosm89_s9._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:05:44.598Z",
+      "url": "http://127.0.0.1:3000/",
+      "phase": "after_filter_and_animation_pause",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_219uq1sj0q91c._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_1-tpc087671gj._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_0af782w1t60ia._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_Select_1w8yof8em5-q0._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_0bd5fosm89_s9._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:06:06.223Z",
+      "url": "http://127.0.0.1:3000/",
+      "phase": "after_server_chat",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_219uq1sj0q91c._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_1-tpc087671gj._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_0af782w1t60ia._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_Select_1w8yof8em5-q0._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_0bd5fosm89_s9._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/api/rag",
+          "initiatorType": "fetch"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:06:06.656Z",
+      "url": "http://127.0.0.1:3000/",
+      "phase": "after_reload",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_219uq1sj0q91c._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_1-tpc087671gj._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_Select_1w8yof8em5-q0._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_0af782w1t60ia._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_0bd5fosm89_s9._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/icon.svg",
+          "initiatorType": "other"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/favicon.ico",
+          "initiatorType": "other"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/icon.svg",
+          "initiatorType": "other"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/icon.svg",
+          "initiatorType": "other"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    },
+    {
+      "observed_at": "2026-11-10T11:06:07.065Z",
+      "url": "http://127.0.0.1:3000/priser",
+      "phase": "after_price_details",
+      "storage": [],
+      "blocked": [],
+      "resources": [
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_17csy-gsake_x._.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_app_priser_pricing_0_kkckirstm45.css",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "link"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_compiled_13jzex4d2k06d._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1anvha4rlo79g._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0zix_%40swc_helpers_cjs_0hi-e474n4mns._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/_1blst3___ro0-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/turbopack-_1cyi2hki6ejbt._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_0uetze2wz15a6._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_18w62-huxxk48._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/0hg5_%40mui_system_1pi1gtgrb6-0z._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1gjo_next_dist_client_0sv5sz4cw-wu-._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/06i3_%40mui_material_1ylpshcc4-5b7._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted].js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/1l8o_%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/src_0ii0usjtdx60w._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/node_modules__pnpm_1m3rl183bkgzm._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/_next/static/chunks/%5Bturbopack%[redacted]._.js",
+          "initiatorType": "script"
+        },
+        {
+          "origin": "http://127.0.0.1:3000",
+          "pathname": "/__nextjs_font/geist-latin.woff2",
+          "initiatorType": "css"
+        }
+      ],
+      "scriptOrigins": [
+        "http://127.0.0.1:3000"
+      ],
+      "iframeOrigins": [],
+      "limitations": [
+        "Cookie values and stored values are not collected.",
+        "HttpOnly, cross-origin storage, response headers and all network traffic are not observable by this probe.",
+        "Existing browser profile may contain earlier data; no storage is cleared.",
+        "Probe is temporary local source instrumentation."
+      ]
+    }
+  ]
+}

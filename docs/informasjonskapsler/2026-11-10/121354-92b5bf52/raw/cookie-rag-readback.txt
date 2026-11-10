@@ -1,0 +1,82 @@
+- link "Hopp til innhold":
+  - /url: "#innhold"
+- banner:
+  - link "KI-Produktutvikling":
+    - /url: /
+    - text: KI-Produktutvikling
+  - navigation "Hovedmeny":
+    - link "Kom i gang":
+      - /url: /kom-i-gang
+    - link "Retningslinjer":
+      - /url: /retningslinjer
+    - link "Ressurskatalog":
+      - /url: /#ressurser
+    - link "Oversikt":
+      - /url: /oversikt
+    - link "Spør KI":
+      - /url: /spor
+    - link "Om":
+      - /url: /om
+- main:
+  - article:
+    - generic: KUNNSKAPSASSISTENT · UTPRØVING
+    - heading "Spør kunnskapsbasen" [level=1]
+    - paragraph: Finn svar med utgangspunkt i portalens innhold og følg kildene tilbake til originalen.
+    - generic: UTFORSK KUNNSKAPEN
+    - strong: Hei! Hva vil du utforske?
+    - paragraph: Få hjelp til tilgjengelighet, kodegjennomgang og gode KI-instrukser. Jeg finner også informasjon om KI-prat og utkastet til retningslinjer.
+    - generic: Du får konkrete steg og lenker til kildene. Hvert spørsmål behandles separat.
+    - log "Spørsmål og svar":
+      - text: Du
+      - paragraph: Trenger portalen et samtykkebanner?
+      - text: Kunnskapsassistenten
+      - paragraph: Veiledning fra portalen · uten språkmodell
+      - paragraph: "Informasjonskapsler: Bruk av cookies og behov for samtykke"
+      - paragraph: Det er ikke påvist behov for et samtykkebanner i den kontrollerte lokale utgaven. Vi har derfor ikke lagt inn et banner. Dette gjelder de undersøkte funksjonene og miljøet; behovet skal vurderes på nytt før delt drift og ved nye integrasjoner.
+      - paragraph:
+        - strong: Slik går du frem
+      - list:
+        - listitem: Det ble ikke observert informasjonskapsler eller oppføringer i localStorage, sessionStorage, IndexedDB eller Cache Storage i det undersøkte lokale utvalget. Anonyme HTTP-kontroller av 21 sidestier viste heller ingen Set-Cookie-headere. Vi undersøkte navigasjon og blant annet katalogsøk, filtrering, pause av animasjonen, et chatspørsmål, prisvilkår og ny innlasting.
+        - listitem: Nettleserkontrollen viser metadata fra et eksisterende lokalt testmiljø. Den gir ikke full tilgang til HttpOnly- eller tredjepartslagring i alle tilstander. Utviklingsverktøy og avhengigheter kan oppføre seg annerledes enn en produksjonsutgave. Innlogging, framtidig driftsplattform, proxy/CDN, analyseverktøy og innebygde tjenester må undersøkes i det miljøet som faktisk skal tas i bruk.
+      - paragraph: Utkast, kontrollert 10. november 2026 i den lokale utviklingsutgaven. Dette er ikke en bekreftet oversikt over en framtidig produksjonstjeneste.
+      - link "Les hele veiledningen →":
+        - /url: /informasjonskapsler
+      - generic: Dette er hentet fra den mest relevante siden, ikke et fritt formulert svar på spørsmålet ditt.
+      - paragraph: Kilder og mer lesing
+      - 'generic "[1] Informasjonskapsler: Bruk av cookies og behov for samtykke"'
+      - 'generic "[2] Om portalen: Et felles sted for læring og verktøy"'
+      - 'generic "[3] Personvernerklæring: Ansvar og kontakt"'
+      - group "Utforsk et nytt spørsmål":
+        - paragraph: Du kan også spørre om
+        - button "Hvordan tester jeg tilgjengeligheten?"
+        - button "Hva er KI-prat?"
+        - button "Hvilke retningslinjer gjelder for KI?"
+    - status: Bruk kildene til å kontrollere veiledningen. Hvert spørsmål behandles separat.
+    - generic: Skriv et spørsmål
+    - textbox "Skriv et spørsmål"
+    - generic: Skriv et spørsmål
+    - paragraph: Ikke skriv personopplysninger eller internt innhold.
+    - button "Send spørsmål" [active]:
+      - text: Send spørsmål
+    - button "Tøm chat"
+- contentinfo:
+  - text: KI-Produktutvikling
+  - navigation "Informasjon om nettstedet":
+    - link "Oversikt":
+      - /url: /oversikt
+    - link "Personvernerklæring":
+      - /url: /personvern
+    - link "Informasjonskapsler":
+      - /url: /informasjonskapsler
+    - link "Tilgjengelighetserklæring":
+      - /url: /tilgjengelighet
+    - link "Nettstedskart":
+      - /url: /nettstedskart
+    - link "Versjonslogg":
+      - /url: /versjonslogg
+    - link "Utviklingsplan":
+      - /url: /utviklingsplan
+    - link "Funksjonalitetsoversikt":
+      - /url: /funksjonalitet
+- button "Open Next.js Dev Tools":
+- alert: Spør kunnskapsbasen

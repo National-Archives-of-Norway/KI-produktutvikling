@@ -1,0 +1,382 @@
+{
+  "checked_files": [
+    {
+      "file": "next.config.ts",
+      "sha256": "70050359f3ca72abf7080f193d22362a093e20b432e5e5b0c995534dea0693c5"
+    },
+    {
+      "file": "scripts/a11y/native.mjs",
+      "sha256": "3c703fc783aa6749652bd60ecfd0e0987762ff599c509f141fe4f51df26975d6"
+    },
+    {
+      "file": "scripts/a11y/smoke.mjs",
+      "sha256": "5207484732b4dbddb1cd3c8aa9a2a66e82889ac426a9f9d0658c2ca176ae7de0"
+    },
+    {
+      "file": "scripts/build-pages.mjs",
+      "sha256": "fd6c4dc610e8d476858e7800017dc2475f97bbb2c592ec8ae37253e13c82d3bc"
+    },
+    {
+      "file": "scripts/check-content-sync.mjs",
+      "sha256": "37400c82fb2655777731bde56b77c503c0dd347ab80ea671c0d210201982bf22"
+    },
+    {
+      "file": "scripts/check-rag-api.mjs",
+      "sha256": "b5c76003f9975359e6ee26f50303f57a542488a79a59ab457f679388c513fe5e"
+    },
+    {
+      "file": "scripts/dev.mjs",
+      "sha256": "07a8d9ff209c0ca8c83cb27d5e8f81a47d816273c75152ef1ecc321f2eb08e5f"
+    },
+    {
+      "file": "scripts/pricing/parse.mjs",
+      "sha256": "984433d2c0727e7d909f65e2cc6824e37b5e311c7dd99176547ca04e74962050"
+    },
+    {
+      "file": "scripts/pricing/sources.mjs",
+      "sha256": "252e57df4f7fcf3d2e08d1b19dbb884e1b332b6a87a6519a02cc8c029c8c7bbf"
+    },
+    {
+      "file": "scripts/pricing/sync.mjs",
+      "sha256": "b615db0b85ef61b6a69fa6a93e34cf72a0164a859250fc52d3abe8d303ec4d21"
+    },
+    {
+      "file": "scripts/rag-server.mjs",
+      "sha256": "6c1f9e872f65b147620988eeb6ff00a654bace8c88c327deae7f4ed0b6856882"
+    },
+    {
+      "file": "src/app/funksjonalitet/page.tsx",
+      "sha256": "e5bf08873c18f268ddcc423de3c491de094fea3fb7e92bfa45a8251b567a29a3"
+    },
+    {
+      "file": "src/app/informasjonskapsler/page.tsx",
+      "sha256": "e1cd27c38428294172898ba927c80243cf32c9612f9303edee4f3b40e9d5791c"
+    },
+    {
+      "file": "src/app/kom-i-gang/page.tsx",
+      "sha256": "3bd65204243fb434453c67aea4a7ad8922ef24e5d3f0c6b3cd3f039fb2df8b85"
+    },
+    {
+      "file": "src/app/layout.tsx",
+      "sha256": "e71cb25c953d1e8ea3ed40e6974408923b403ef11f158ab2eb5cb17f8556f27d"
+    },
+    {
+      "file": "src/app/nettstedskart/page.tsx",
+      "sha256": "a5e560f3d5e7f0c51d331e55b1792da7f00eeece6b457443558b1dc7cc105962"
+    },
+    {
+      "file": "src/app/not-found.tsx",
+      "sha256": "e63d14b80f871abdc08e7eb53425a27e540e27394aa122b71eca16de74050963"
+    },
+    {
+      "file": "src/app/om/page.tsx",
+      "sha256": "3464b807666dd0dfb0207a3a0289a42271a8001f3b8e82c1825bf71af0321832"
+    },
+    {
+      "file": "src/app/oversikt/godkjente-ki-assistenter/page.tsx",
+      "sha256": "08aa46bb216856cbcc962c3fde70068d1502798c72902135da1c059d10608eac"
+    },
+    {
+      "file": "src/app/oversikt/godkjente-mcper/page.tsx",
+      "sha256": "93c61693741e3897e1c0defdb069c88ac1514f085b81a0f85da4befbceb0d74e"
+    },
+    {
+      "file": "src/app/oversikt/page.tsx",
+      "sha256": "ca43ed9bbc4336fbcfd6e342cb569355dbaccc6bafe285063885edb9d101836b"
+    },
+    {
+      "file": "src/app/page.tsx",
+      "sha256": "248f3708da4173114297cb059c5cbb8680c77a0186c463d6da77eb4de91e90ab"
+    },
+    {
+      "file": "src/app/personvern/page.tsx",
+      "sha256": "7224f37cddbf65cc102d1fb240242525f17a6392673566e156b6946b572a11f5"
+    },
+    {
+      "file": "src/app/priser/page.tsx",
+      "sha256": "59a179a00d14b455674a5626e4d3efc7788126ef8e0c3912988e0d11fea0920d"
+    },
+    {
+      "file": "src/app/ressurser/[slug]/page.tsx",
+      "sha256": "94c34fb6172d19ca6d9e5b58cb1a7d869dc57e5c43f399483f63433edd154914"
+    },
+    {
+      "file": "src/app/retningslinjer/page.tsx",
+      "sha256": "887f4bb247d9c998a6d436600a26cf387ea872f7eee956bb248af2276725614b"
+    },
+    {
+      "file": "src/app/spor/page.tsx",
+      "sha256": "defb42a9b0a9281b193b5ff9021fc975e14c8ff91dd8cde978507c889c5f371c"
+    },
+    {
+      "file": "src/app/tilgjengelighet/page.tsx",
+      "sha256": "0c89d6ff49a958386efbad2460d7ebff08d5b1e652e9e7d81a5439a79d103223"
+    },
+    {
+      "file": "src/app/utviklingsplan/page.tsx",
+      "sha256": "400f74d4ab4f24e67e55c82d88df60ca86cae366f8a2e374b3aeb7f35dbfd092"
+    },
+    {
+      "file": "src/app/versjonslogg/page.tsx",
+      "sha256": "914a628dd6104883108cb1b194b462e32b26d5ce14a0b3318a8d66aec5df05b4"
+    },
+    {
+      "file": "src/components/catalog.tsx",
+      "sha256": "cf50c1882952b9c72293a358562c8cc6b86dc4d9906b696ccb1fe0362a0eb6ba"
+    },
+    {
+      "file": "src/components/content-article.tsx",
+      "sha256": "49ab35da18778af1f3475bf84dabd838f8f22a349f6528d2e0693ccfcf4a5b98"
+    },
+    {
+      "file": "src/components/hero-illustration.tsx",
+      "sha256": "9bfd83ca47d6409dbafd6531671a25a123b4fb5e88be785aeda7aa55eaffefae"
+    },
+    {
+      "file": "src/components/logo-mark.tsx",
+      "sha256": "1ea4b6610ac6b55631966ea9c3338b7009259aebb02d2c2e857068faadcc740a"
+    },
+    {
+      "file": "src/components/navigation.tsx",
+      "sha256": "f973ce6f761c8927997b9d5d1e801f3c6d492c4512fcb7cea3a3c52995d63944"
+    },
+    {
+      "file": "src/components/portal-button.tsx",
+      "sha256": "e657600a046ccfbf039526e12fec759a74c5f5e97816a3b59691c3846479e4bd"
+    },
+    {
+      "file": "src/components/pricing-freshness.tsx",
+      "sha256": "b09d2f8bdb3f30c80d0744a8eab2f7502f44ebfcdd299667ce80deae1ee9691b"
+    },
+    {
+      "file": "src/components/repository-document.tsx",
+      "sha256": "4e435e53120afb8e70dc7aca8abb1a4004a11ef573063b9796b27a0bb3c14a0b"
+    },
+    {
+      "file": "src/content/accessibility.ts",
+      "sha256": "0a65033e298acf45c3336ff02c6358b35c4fc4fdfd9fd79d20e4eaa6f0e4b1e8"
+    },
+    {
+      "file": "src/content/catalog.ts",
+      "sha256": "3dc571cfa7c0820f3c8a00676c2bf06e28d4d65ce4cde7ef9ea4121db4202d5a"
+    },
+    {
+      "file": "src/content/features.ts",
+      "sha256": "2c2490b13831af948743f2cd5730518eac0e7dac3d6c301a703bcbda6e7b95a4"
+    },
+    {
+      "file": "src/content/home.ts",
+      "sha256": "652777d775f2089ee0b4bf05a2401342ee0d232a4a389cc3800d103ca225820e"
+    },
+    {
+      "file": "src/content/knowledge.ts",
+      "sha256": "3d8d3f3581ea5ef56d67937bba1b0e38a49d070c5111c7db201c79850e2ae9d5"
+    },
+    {
+      "file": "src/content/overview.ts",
+      "sha256": "10486c9360e782a3129744c8037ad463117e32a907d85be94a57adef55cad21e"
+    },
+    {
+      "file": "src/content/page-content.ts",
+      "sha256": "4f9104f3b45d928ae1f8f6dac42348d4c2da28518a4038dae1a46adf8198af20"
+    },
+    {
+      "file": "src/content/pages/godkjente-ki-assistenter.ts",
+      "sha256": "fcf46354cba1a06e261c1cf78bc9ce8ada5ab2a7c173c9d171e17a308fe6207b"
+    },
+    {
+      "file": "src/content/pages/godkjente-mcper.ts",
+      "sha256": "9198271ff70de68d53f208700ee0adeab569a91730128889e1155b99441f8b66"
+    },
+    {
+      "file": "src/content/pages/informasjonskapsler.ts",
+      "sha256": "0c91549d9726c6f27bcb97ae3713bba703709d1363885df613f8df2f558d84cf"
+    },
+    {
+      "file": "src/content/pages/kom-i-gang.ts",
+      "sha256": "754c84dcf7cfe1b54c362d04f68494543bfdea240a1c1facbb5cebbe15fdbe16"
+    },
+    {
+      "file": "src/content/pages/om.ts",
+      "sha256": "6487b398c9aac83f694b6d5b26597ad254a17068f6559c43b537938f310a4cfa"
+    },
+    {
+      "file": "src/content/pages/personvern.ts",
+      "sha256": "61342a36395a81579c6a32dd54dddf59e48326541a1b15074d0092ce782591e9"
+    },
+    {
+      "file": "src/content/pages/retningslinjer.ts",
+      "sha256": "9a590dd581f8f741bbe8359f2ee0f4d7579f966c3584b9e692adb4116b92a031"
+    },
+    {
+      "file": "src/content/pricing/index.ts",
+      "sha256": "168aea5d971652012d6973d60bd50e8e3e2432517847fcc66c14985744e69037"
+    },
+    {
+      "file": "src/content/resource-search.ts",
+      "sha256": "6b7f0c8f2861c2234b7553e187cc9c363b560754a75e9b57ba0f5d24568ce59b"
+    },
+    {
+      "file": "src/content/resources.ts",
+      "sha256": "32b63a0e1428d141ac34da94d9da18634eddc1a1a8f42bb31aeb1137983daebf"
+    },
+    {
+      "file": "src/features/rag/chat-state.ts",
+      "sha256": "dd3cac673f7b33badb59827828feae4e0cc9d4a0cdc4461527090e8c40814922"
+    },
+    {
+      "file": "src/features/rag/client.ts",
+      "sha256": "b6c4946c271b9733ffdfa200bc2c239da2d9830beb996f7d0e7aeb397d7bb86b"
+    },
+    {
+      "file": "src/features/rag/components/answer-content.tsx",
+      "sha256": "babccd93d1af36b0a0dd9b5ed32bc92959683958606d368095896b2316f8692c"
+    },
+    {
+      "file": "src/features/rag/components/chat-composer.tsx",
+      "sha256": "6bf11f6c077372eda3e00b310509307189f78c9de3dcb04ed6cef6e218e9a9ca"
+    },
+    {
+      "file": "src/features/rag/components/chat-transcript.tsx",
+      "sha256": "4d449df0396b4c38a8f5695b0610ecbe97ef4b1ea045d5949bfe22c1f26aa01f"
+    },
+    {
+      "file": "src/features/rag/components/chat-welcome.tsx",
+      "sha256": "c7a0bbee1caba66137de696eb35ee0ecd21a981db5d856dfe5ede8b458a1e49a"
+    },
+    {
+      "file": "src/features/rag/components/chatbot.tsx",
+      "sha256": "44ee9a0e06fd41da525ec4befe81b1b0ab46bee9adb2af082c8022222aa00f2c"
+    },
+    {
+      "file": "src/features/rag/components/rag-assistant.tsx",
+      "sha256": "a8a3cd6c22c6f6945d5e6b19a56122b836fb149a34fe433119fce4b015e733e8"
+    },
+    {
+      "file": "src/features/rag/contracts.ts",
+      "sha256": "97986cd65250ac3dfbc0976d922805228283b232cef6ca34dbda49b204a8371e"
+    },
+    {
+      "file": "src/features/rag/retrieval.ts",
+      "sha256": "59fd749afac808ee81d7b1113056afdeee3cc65622add335750895538c5ce000"
+    },
+    {
+      "file": "src/features/rag/use-chat.ts",
+      "sha256": "f65bd18964c6ab3d25dbcc0867675cb5bbf97c140ff9e882520be1a0392dce4c"
+    },
+    {
+      "file": "src/server/features/validate.ts",
+      "sha256": "2edf6f56be54f8c7ad340e4ff12b52d2d85fa930c25962ff70b9c1a2bea9ccf5"
+    },
+    {
+      "file": "src/server/rag/config.ts",
+      "sha256": "2c8db2ed859db4f54f4e10b66b6912d01d84b0f1a94ae0ba588e97527c9b23d1"
+    },
+    {
+      "file": "src/server/rag/external.ts",
+      "sha256": "f82a4001a068bd6ef164c30e8bbc1c418d91784f74cf408529ce3b07b95ce76e"
+    },
+    {
+      "file": "src/server/rag/http.ts",
+      "sha256": "5dd79946f93db5414c6193d13110a624ee3c607f0ebd011f44f899d7a9c9cbf3"
+    },
+    {
+      "file": "src/server/rag/messages.ts",
+      "sha256": "1e2a79f196219d440cb3b1b81f6df6fb3c6f9246cace74774edf2963b2bd4b2d"
+    },
+    {
+      "file": "src/server/rag/model.ts",
+      "sha256": "e4cec7fe2861a68631e1f580211ccc5a19575c9821f321475ef11dd2ec0f2d56"
+    },
+    {
+      "file": "src/server/rag/ollama.ts",
+      "sha256": "26c88ce14413803135afc4523ee3ab49d82e21100ab3b41051ff3a48a002aef1"
+    },
+    {
+      "file": "src/server/rag/prompt.ts",
+      "sha256": "978364940cac87fa17d2f9e919bb8744924fd76f3cd75e6ba42fa7c48aca724d"
+    },
+    {
+      "file": "src/server/rag/provider.ts",
+      "sha256": "59d9ef27669be0ad7b3c9a469ef7f07e3f178d2ca6481da64aeb0b37da99588a"
+    },
+    {
+      "file": "src/server/rag/service.ts",
+      "sha256": "b85bb778fbbbbaf4bf0215543bbb4b594c7281c201431444cee6dd82a95e9e72"
+    },
+    {
+      "file": "src/theme/effects.ts",
+      "sha256": "cf7e43a6ddb2de4b4a54ab8935fd04eb27d4632c0ed5faeb9866ac49e246efe5"
+    },
+    {
+      "file": "src/theme/portal-theme.ts",
+      "sha256": "cc9ad4d490e03f51edc770b997ea825889ade63246c00dba53ecff27c444c521"
+    },
+    {
+      "file": "src/theme/provider.tsx",
+      "sha256": "2d56a5242f6c1e1f171fa50edeb1b5c1ba50bb72a872c55adce89046072e2530"
+    }
+  ],
+  "indicators": [
+    {
+      "file": "scripts/check-content-sync.mjs",
+      "line": 47,
+      "indicator": "integration"
+    },
+    {
+      "file": "scripts/check-rag-api.mjs",
+      "line": 4,
+      "indicator": "integration"
+    },
+    {
+      "file": "scripts/pricing/parse.mjs",
+      "line": 4,
+      "indicator": "integration"
+    },
+    {
+      "file": "src/content/pages/informasjonskapsler.ts",
+      "line": 25,
+      "indicator": "cookie"
+    },
+    {
+      "file": "src/content/pages/informasjonskapsler.ts",
+      "line": 25,
+      "indicator": "storage"
+    },
+    {
+      "file": "src/content/pages/informasjonskapsler.ts",
+      "line": 32,
+      "indicator": "storage"
+    },
+    {
+      "file": "src/content/pages/informasjonskapsler.ts",
+      "line": 33,
+      "indicator": "storage"
+    },
+    {
+      "file": "src/content/pages/personvern.ts",
+      "line": 63,
+      "indicator": "cookie"
+    },
+    {
+      "file": "src/content/resources.ts",
+      "line": 88,
+      "indicator": "storage"
+    },
+    {
+      "file": "src/content/resources.ts",
+      "line": 89,
+      "indicator": "storage"
+    },
+    {
+      "file": "src/content/resources.ts",
+      "line": 90,
+      "indicator": "storage"
+    }
+  ],
+  "limitations": [
+    "Indicators are not confirmed runtime behavior.",
+    "Dependencies, backend infrastructure and secrets are not scanned.",
+    "Source lines and values are not retained."
+  ]
+}

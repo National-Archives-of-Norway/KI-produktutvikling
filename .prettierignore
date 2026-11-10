@@ -6,3 +6,6 @@ next-env.d.ts
 
 # Bevar daterte testbevis og originale verktøyutskrifter byte for byte.
 docs/tilgjengelighet/????-??-??/**
+
+# Preserve original cookie audit evidence and timestamps.
+docs/informasjonskapsler/????-??-??/**

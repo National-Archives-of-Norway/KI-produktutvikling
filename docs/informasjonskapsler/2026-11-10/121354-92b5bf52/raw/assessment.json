@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-10T11:19:09.950321+00:00",
+  "agent": "Codex (OpenAI)",
+  "base_commit": "89b2bd5 + current uncommitted work",
+  "browser_observations": 27,
+  "browser_routes": 21,
+  "http_statuses": {
+    "200": 20,
+    "404": 1
+  },
+  "source_files_before": 77,
+  "source_files_after": 79,
+  "same_origin_api_observed": "/api/rag",
+  "model_generation_observed": false,
+  "cookies_or_storage_values_saved": false,
+  "instrumentation_restored_before_product_changes": true,
+  "later_product_changes": "Shared static cookie content, footer link, catalog resource and privacy cross-reference; no storage/analytics implementation. New pages have separate build/DOM verification.",
+  "previous_attempts": [
+    "../120630-824358be/manifest.json",
+    "../121004-07226711/manifest.json"
+  ]
+}

@@ -1,5 +1,6 @@
 import { mcpOverview } from "./pages/godkjente-mcper.ts";
 import { approvedAssistants } from "./pages/godkjente-ki-assistenter.ts";
+import { cookieInformation } from "./pages/informasjonskapsler.ts";
 import { privacy } from "./pages/personvern.ts";
 import { about } from "./pages/om.ts";
 import { gettingStarted } from "./pages/kom-i-gang.ts";
@@ -14,6 +15,7 @@ export const contentPages: ContentPage[] = [
   about,
   guidelines,
   privacy,
+  cookieInformation,
 ];
 
 type SourceSelection = {
@@ -26,6 +28,12 @@ type SourceSelection = {
 
 // References only: prose lives in the page files, never in the RAG index.
 const selections: SourceSelection[] = [
+  {
+    pageId: "informasjonskapsler",
+    summary: "beslutning",
+    steps: ["funn", "begrensning"],
+    note: "status",
+  },
   {
     pageId: "godkjente-mcper",
     summary: "lead",

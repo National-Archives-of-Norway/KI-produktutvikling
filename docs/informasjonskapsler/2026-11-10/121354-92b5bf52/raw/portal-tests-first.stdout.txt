@@ -1,0 +1,121 @@
+✔ axe requires a real result for every requested page, without duplicates (0.471959ms)
+✔ Nu distinguishes warnings, HTML errors, invalid output and failed execution (0.12625ms)
+✔ export scope remains inside its root and includes registered resources and fallback (0.816083ms)
+✔ tool child processes cannot inherit a remote Selenium target or implicit browser (0.071042ms)
+✔ portalens tekstfarger oppfyller 4,5:1 på de to grunnflatene (0.322667ms)
+✔ chatfeltets transparente kant oppfyller 3:1 på grunnflatene (0.077125ms)
+✔ tilgjengelighetsskillen finnes med navn, tema og relevante fagord (0.892584ms)
+✔ søk og typefilter virker sammen uten å vise feil ressurstype (0.447292ms)
+✔ personvernskillen finnes med navn, tema og relevante fagord (1.907458ms)
+✔ samtalen blokkerer doble innsendinger og bevarer historikk (0.439917ms)
+✔ historikken begrenses til ti og ukjente svar endrer ikke tilstanden (0.083834ms)
+✔ Pages-demo sender aldri spørsmål til et API (1.407416ms)
+✖ modellfeil bevarer kildeutdrag (10.77275ms)
+✔ nettverksfeil og ugyldig API-format vises som feil, ikke svar (0.243541ms)
+✖ alle avsnitt på innholdssidene inngår i kunnskapsgrunnlaget (3.307ms)
+✔ endret sidetekst oppdaterer RAG-tekst, introduksjon og steg uten egne utdrag (0.670333ms)
+✔ endret forbehold følger med og slettede innholdsreferanser gir feil (0.450084ms)
+✔ modellvalg er eksplisitt, med støtte for eksisterende Ollama-oppsett (0.415625ms)
+✔ eksternt API krever komplett oppsett uten å røpe verdiene i feil (0.219917ms)
+✔ adapteren bruker nøyaktig endepunkt, Bearer-header og nummererte kilder (2.394708ms)
+✔ HTTP-feil, ugyldige svar, nettverksfeil og timeout får nøytral feil (1.590541ms)
+✔ nettleseren får svar og kilder, aldri nøkkel, URL eller rå leverandørfeil (3.178583ms)
+✔ alle eksisterende sider er registrert og lenkene i nettstedskartet er unike (4.868667ms)
+✔ nye og slettede sider samt feilaktige funksjonslenker stopper kontrollen (2.172917ms)
+✔ sideoppdagelse håndterer rot, grupper og dynamiske ressurssider (8.184542ms)
+✔ ressursantall og sidebeskrivelser avledes av gjeldende innhold (0.848375ms)
+✔ Spør KI og oversikten bruker samme funksjoner og forbehold (1.715584ms)
+✔ personvernets utkaststatus og bekreftede kontakt følger felles kilde til RAG (0.8655ms)
+✔ prissiden og Spør KI bruker samme kontrollerte prisgrunnlag (2.717709ms)
+✔ alle seks offisielle prisstrukturer gir rader med riktige enheter (8.739875ms)
+✔ API-utvalg skiller kontekst, cache-varighet og standard fra andre hastigheter (0.618167ms)
+✔ endrede kolonner, manglende modeller og tvetydige planpriser avvises (0.187625ms)
+✔ kildesvikt bevarer pris og vellykket dato, men registrerer mislykket forsøk (0.9085ms)
+✔ førstegangssvikt gir tomt grunnlag, aldri gratispriser eller falsk kontrolldato (0.111292ms)
+✔ automatisk prisoppdatering og JSON-lagring bevarer norske vilkår (0.823708ms)
+✔ endret brukerkrav og månedspris oppdaterer norsk tekst fra kildefeltene (1.77025ms)
+✔ ukjente engelske tilleggsvilkår gir feil og bevarer tidligere norsk tekst (0.868375ms)
+✔ uten modell gir tjenesten kildeutdrag i delt API-format (2.310083ms)
+✔ spørsmål uten kilder utløser aldri generering (0.693583ms)
+✔ samtidighet avvises og modellen frigjøres etter feil (1.810625ms)
+✔ Ollama-adapteren sender nummererte kilder og blokkerer videresending (1.46825ms)
+✔ Ollama-adapteren avviser tomt svar og HTTP-feil (0.633667ms)
+✔ konfigurasjon avviser ekstern modelladresse og credentials (0.171959ms)
+✔ HTTP-grensen håndterer kontrakt, ugyldig JSON, størrelse og origin (2.420208ms)
+✔ relevant kodekilde rangeres først (2.113667ms)
+✔ irrelevante spørsmål gir ikke tilfeldige kilder (0.916083ms)
+✖ offentlig liste inneholder bare kjente interne lenker (2.213375ms)
+✔ vanlige spørsmål finner riktig veiledning med konkrete steg og status (4.550084ms)
+✔ API-kilder avviser eksterne lenker og ugyldig veiledning (0.081333ms)
+✔ tilgjengelighetsskillen kan finnes i kildesøket (0.565375ms)
+✔ ugyldige forespørsler avvises (0.085833ms)
+✔ personvernspørsmål finner riktig skill med egne begrensninger (0.574459ms)
+ℹ tests 52
+ℹ suites 0
+ℹ pass 49
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1444.208834
+
+✖ failing tests:
+
+test at tests/chat.test.ts:58:1
+✖ modellfeil bevarer kildeutdrag (10.77275ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + undefined
+  - 'sources'
+  
+      at TestContext.<anonymous> (file:///Users/khadah/Documents/ChatGPT/KI-utvikling/tests/chat.test.ts:65:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 'sources',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/content.test.ts:7:1
+✖ alle avsnitt på innholdssidene inngår i kunnskapsgrunnlaget (3.307ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(isSources(sources))
+  
+      at TestContext.<anonymous> (file:///Users/khadah/Documents/ChatGPT/KI-utvikling/tests/content.test.ts:9:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/rag.test.ts:14:1
+✖ offentlig liste inneholder bare kjente interne lenker (2.213375ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(isSources(corpus))
+  
+      at TestContext.<anonymous> (file:///Users/khadah/Documents/ChatGPT/KI-utvikling/tests/rag.test.ts:21:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

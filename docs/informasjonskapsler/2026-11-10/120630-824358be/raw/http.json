@@ -1,0 +1,107 @@
+[
+  {
+    "url": "http://127.0.0.1:3000/",
+    "status": null,
+    "error": "HTTP request failed; no headers/body retained."
+  },
+  {
+    "url": "http://127.0.0.1:3000/ressurser/tilgjengelighetserklaering/",
+    "status": null,
+    "error": "HTTP request failed; no headers/body retained."
+  },
+  {
+    "url": "http://127.0.0.1:3000/ressurser/personvernerklaering/",
+    "status": null,
+    "error": "HTTP request failed; no headers/body retained."
+  },
+  {
+    "url": "http://127.0.0.1:3000/ressurser/kodegjennomgang/",
+    "status": null,
+    "error": "HTTP request failed; no headers/body retained."
+  },
+  {
+    "url": "http://127.0.0.1:3000/ressurser/tydelig-kontekst/",
+    "status": null,
+    "error": "HTTP request failed; no headers/body retained."
+  },
+  {
+    "url": "http://127.0.0.1:3000/ressurser/brukerbehov/",
+    "status": null,
+    "error": "HTTP request failed; no headers/body retained."
+  },
+  {
+    "url": "http://127.0.0.1:3000/spor/",
+    "status": null,
+    "error": "HTTP request failed; no headers/body retained."
+  },
+  {
+    "url": "http://127.0.0.1:3000/oversikt/godkjente-mcper/",
+    "status": null,
+    "error": "HTTP request failed; no headers/body retained."
+  },
+  {
+    "url": "http://127.0.0.1:3000/oversikt/godkjente-ki-assistenter/",
+    "status": null,
+    "error": "HTTP request failed; no headers/body retained."
+  },
+  {
+    "url": "http://127.0.0.1:3000/kom-i-gang/",
+    "status": null,
+    "error": "HTTP request failed; no headers/body retained."
+  },
+  {
+    "url": "http://127.0.0.1:3000/om/",
+    "status": null,
+    "error": "HTTP request failed; no headers/body retained."
+  },
+  {
+    "url": "http://127.0.0.1:3000/retningslinjer/",
+    "status": null,
+    "error": "HTTP request failed; no headers/body retained."
+  },
+  {
+    "url": "http://127.0.0.1:3000/personvern/",
+    "status": null,
+    "error": "HTTP request failed; no headers/body retained."
+  },
+  {
+    "url": "http://127.0.0.1:3000/oversikt/",
+    "status": null,
+    "error": "HTTP request failed; no headers/body retained."
+  },
+  {
+    "url": "http://127.0.0.1:3000/priser/",
+    "status": null,
+    "error": "HTTP request failed; no headers/body retained."
+  },
+  {
+    "url": "http://127.0.0.1:3000/tilgjengelighet/",
+    "status": null,
+    "error": "HTTP request failed; no headers/body retained."
+  },
+  {
+    "url": "http://127.0.0.1:3000/nettstedskart/",
+    "status": null,
+    "error": "HTTP request failed; no headers/body retained."
+  },
+  {
+    "url": "http://127.0.0.1:3000/versjonslogg/",
+    "status": null,
+    "error": "HTTP request failed; no headers/body retained."
+  },
+  {
+    "url": "http://127.0.0.1:3000/utviklingsplan/",
+    "status": null,
+    "error": "HTTP request failed; no headers/body retained."
+  },
+  {
+    "url": "http://127.0.0.1:3000/funksjonalitet/",
+    "status": null,
+    "error": "HTTP request failed; no headers/body retained."
+  },
+  {
+    "url": "http://127.0.0.1:3000/404/",
+    "status": null,
+    "error": "HTTP request failed; no headers/body retained."
+  }
+]

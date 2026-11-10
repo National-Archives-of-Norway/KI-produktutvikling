@@ -1,0 +1,16 @@
+✔ runs all routes, widths and Tab steps, but leaves undeclared states blocked (2.759833ms)
+✔ one broken route does not stop other routes or erase failure status (0.410333ms)
+✔ failed viewport override remains an error and is reset (0.123041ms)
+✔ state flow reports only declared criteria; bad expectation is error (0.302792ms)
+✔ rejects off-origin routes and undeclared state criteria before actions (0.143208ms)
+✔ contrast catches low contrast and refuses gradients instead of passing them (0.847ms)
+✔ local probe exposes metadata only and strips URL credentials/query (3.579584ms)
+✔ probe refuses nonlocal host (0.46475ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 44.687208

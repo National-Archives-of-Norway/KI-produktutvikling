@@ -1,0 +1,34 @@
+{
+  "reviewed_at": "2026-11-10T11:19:09.950321+00:00",
+  "scope": "Anonymous local development instance http://127.0.0.1:3000; 21 existing routes/27 snapshots, source review, document GET headers. Cookie page/new skill detail added afterward as static shared-content pages.",
+  "items": [],
+  "observed_totals": {
+    "browser_cookie_names": 0,
+    "localStorage_keys": 0,
+    "sessionStorage_keys": 0,
+    "IndexedDB_database_names": 0,
+    "CacheStorage_names": 0,
+    "document_set_cookie": 0,
+    "external_resource_origins": 0
+  },
+  "memory_state": {
+    "catalog": "React state while page is open",
+    "chat": "React state; observed response without language model; same-origin /api/rag request"
+  },
+  "potential_not_confirmed_entries": {
+    "MUI_theme_preferences": "Dependency supports reads/writes; no persisted keys observed. No configured theme-selection control in examined portal."
+  },
+  "unknown": [
+    "Transient operations between snapshots",
+    "HttpOnly outside inspected document responses and any authenticated flows",
+    "Cross-origin storage and all network/server-to-server traffic",
+    "Actual production/identity/proxy/CDN/analytics/model integrations"
+  ],
+  "evidence": [
+    "raw/source.json",
+    "raw/source-final.json",
+    "raw/http.json",
+    "raw/browser.json",
+    "raw/dependency-review.json"
+  ]
+}

@@ -63,7 +63,7 @@ Portalen bruker `@digitalarkivet/mui-theme` 5.1.0 og MUI 9.5.0. `src/theme/porta
 
 Portalens egne former, dekorasjoner og responsive layout ligger i eget komponent- og CSS-lag. Lyse grønne aksenter hentes fra temaets sekundærfarge. Suisse-skriftfilene følger ikke med pakken og er ikke lastet inn; temaets reserveskrift brukes inntil godkjente skriftfiler er tilgjengelige. Portalens valgte arkillustrasjon er gjenskapt som ren SVG og vises ved siden av navnet i toppmenyen. Den følger aksentfargen #9DF1AD. Nedlastbar logo ligger i `public/brand/logo.svg`; favicon som SVG/ICO og Apple-ikon ligger i `src/app/`. Dette er portalens eget symbol, ikke Nasjonalarkivets offisielle virksomhetslogo. Pakken installeres fra npm uten tilgang til organisasjonens GitHub-repoer.
 
-Portalen viser tre eksempelressurser og beskrivelser av tilgjengelighetsskillen og personvernskillen i det separate lokale `Skills`-repoet. Eksempelressurser er merket; skillene har egne detaljsider med brukseksempel, versjon og plassering. Selve skill-pakkene importeres ikke i portalen eller publiseres gjennom statisk bygg. Automatisk synkronisering og installasjon er ikke implementert.
+Portalen viser tre eksempelressurser og beskrivelser av tilgjengelighets-, personvern- og cookie-skillen i det separate lokale `Skills`-repoet. Eksempelressurser er merket; skillene har egne detaljsider med brukseksempel, versjon og plassering. Selve skill-pakkene importeres ikke i portalen eller publiseres gjennom statisk bygg. Automatisk synkronisering og installasjon er ikke implementert.
 
 ## Tilgang og sikkerhet
 
@@ -300,3 +300,11 @@ Siste vurdering er [094541-e2907a5c27e2](docs/tilgjengelighet/2026-11-10/094541-
 ## Erklæringens vurderingsstatus
 
 `/tilgjengelighet/` og [Markdown-erklæringen](docs/tilgjengelighet/TILGJENGELIGHETSERKLAERING.md) skiller mellom kjente brudd og forhold som ikke er ferdig vurdert. De 15 uavklarte kravene fra siste vurderte matrise er listet med ID, tittel og en kort forklaring. Sidens brukerrettede sammendrag ligger i `src/content/accessibility.ts`; det skal avstemmes med ny vurdert kravmatrise når testgrunnlaget endres. Det er ingen automatisk import av interne rårapporter. Tilgjengelighetsskill 0.5.1 viderefører dette skillet. Testdato og samlet samsvar er uendret; denne oppdateringen er redaksjonell.
+
+## Informasjonskapsler og samtykke
+
+`/informasjonskapsler/` er lenket fra bunnteksten. Innholdet ligger i `src/content/pages/informasjonskapsler.ts` og brukes også av Spør KI og funksjons-/sideoversiktene. [Markdown-utdrag](docs/informasjonskapsler/INFORMASJONSKAPSLER.md) og [vurdert kartlegging](docs/informasjonskapsler/2026-11-10/121354-92b5bf52/rapport.md) dokumenterer lokalt omfang. `docs/informasjonskapsler/latest.json` peker til siste vurdering.
+
+Den selvstendige skillen `informasjonskapsler-og-samtykke` 0.1.0 finnes i Skills-repoet og installert kopi. Den har egne kilder, mal, metadata-probe og standardbibliotekbasert Python-verktøy; ingen andre skills eller tidligere rapporter er påkrevd. Den er søkbar som Beta i katalogen. Nye kartlegginger lagres datert i målprosjektet, uten lagringsverdier eller cookie-verdier. Samtykke implementeres først etter avklart behov og autorisert oppdrag.
+
+27 nettlesersnapshots / 21 sider og 21 dokumentresponser viste ingen lagrede oppføringer/Set-Cookie i lokalt utvalg. Det er ikke påvist behov for banner i dette omfanget; ingen banner er implementert. Dette er ikke en produksjonsgaranti: auth/drift/tredjeparter og mer fullstendig nettverks-/HttpOnly-innsyn gjenstår før pilot. Probeinstrumentering er fjernet; den skal ikke følge sluttbygget. Oppdater både brukerrettet informasjon og vurderingsgrunnlag ved nye integrasjoner.

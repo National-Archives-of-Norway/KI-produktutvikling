@@ -1,0 +1,12 @@
+{
+  "status": "uavklart",
+  "scope": "http://127.0.0.1:3000",
+  "reason": "Agent assessment required after reading original evidence.",
+  "implementation_authorized": false,
+  "evidence": [
+    "raw/source.json",
+    "raw/http.json",
+    "raw/browser.json"
+  ],
+  "remaining": []
+}

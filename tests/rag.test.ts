@@ -70,3 +70,25 @@ test("personvernspørsmål finner riktig skill med egne begrensninger", () => {
   assert.match(source.guide!.note!, /Beta/);
   assert.ok(!source.text.includes("uustatus.no"));
 });
+
+test("cookie-informasjon kan leveres som RAG-kilde uten å åpne for ukjente ruter", () => {
+  const source = corpus.find((item) => item.id === "informasjonskapsler")!;
+  assert.ok(source);
+  assert.ok(isSources([source]));
+  assert.equal(
+    retrieve("Trenger portalen et samtykkebanner?")[0]?.id,
+    "informasjonskapsler",
+  );
+  assert.equal(
+    retrieve("Bruker portalen cookies?")[0]?.id,
+    "informasjonskapsler",
+  );
+  assert.match(source.guide!.summary, /lokale/);
+  assert.ok(
+    corpus.some((item) => item.id === "informasjonskapsler-og-samtykke"),
+  );
+  assert.equal(
+    isSources([{ ...source, href: "/informasjonskapsler-ukjent/" }]),
+    false,
+  );
+});

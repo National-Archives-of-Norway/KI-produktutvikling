@@ -1,0 +1,19 @@
+{
+  "other_skills_present": false,
+  "checks": [
+    {
+      "check": "isolated-python",
+      "exit_code": 0
+    },
+    {
+      "check": "isolated-node",
+      "exit_code": 0
+    },
+    {
+      "check": "isolated-cli-with-source-only",
+      "exit_code": 2,
+      "expected_partial": true,
+      "no_values_saved": true
+    }
+  ]
+}

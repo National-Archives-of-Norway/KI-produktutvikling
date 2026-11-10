@@ -12,7 +12,7 @@ export const privacy = {
     {
       id: "status",
       type: "note",
-      text: "Utkast, sist oppdatert 9. november 2026. Gjennomgangen gjelder lokalmiljøet, ikke en verifisert produksjonstjeneste. Erklæringen er ikke godkjent av virksomheten. Ansvar, rettsgrunnlag, leverandører og lagringsrutiner må bekreftes før produksjonssetting.",
+      text: "Utkast, sist oppdatert 10. november 2026. Gjennomgangen gjelder lokalmiljøet, ikke en verifisert produksjonstjeneste. Erklæringen er ikke godkjent av virksomheten. Ansvar, rettsgrunnlag, leverandører og lagringsrutiner må bekreftes før produksjonssetting.",
     },
     { id: "ansvar", type: "heading", text: "Ansvar og kontakt" },
     {
@@ -60,7 +60,7 @@ export const privacy = {
     {
       id: "nettleser-1",
       type: "paragraph",
-      text: "Kartleggingen av informasjonskapsler og annen nettleserlagring er ufullstendig. Nettleserverktøyet ga ikke tilgang til å kontrollere disse lagrene, og avhengigheter og framtidig driftsplattform er ikke fullstendig undersøkt. Vi kan derfor ikke bekrefte at tjenesten er uten informasjonskapsler eller sporing. Før delt drift må faktisk bruk, formål, varighet og behov for samtykke kartlegges. Se [Nkoms veiledning om informasjonskapsler](https://nkom.no/internett/informasjonskapsler-cookies).",
+      text: "En egen kontroll 10. november 2026 fant ingen lagringsoppføringer i de undersøkte lokale nettleserlagrene eller Set-Cookie-headere i dokumentresponsene. Det er ikke påvist behov for samtykkebanner i dette lokale utvalget. Innlogging, faktisk drift og tredjepartslagring i andre tilstander er ikke avklart. Les om [informasjonskapsler og nettleserlagring](/informasjonskapsler/), inkludert kontrollens begrensninger. Denne delkontrollen endrer ikke de øvrige uavklarte personvernforholdene.",
     },
     {
       id: "grunnlag",

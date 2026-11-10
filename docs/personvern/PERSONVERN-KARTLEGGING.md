@@ -10,3 +10,7 @@ Status: **Uavklart / utkast**, kontrollert 9. november 2026 med personvernerklae
 Kontakt for personvernspørsmål: khadah@nasjonalarkivet.no. Personvernombud er ikke bekreftet. Lokal modellgenerering var deaktivert. Nettleserlagring kunne ikke verifiseres. Behandlingsansvarlig, rettsgrunnlag, hosting, logger, avtaler og lagring må bekreftes før ferdigstilling. Ingen produksjonsgodkjenning er gitt.
 
 `latest.json` peker til siste arbeidsmappe. Bevar eldre kjøringer. Ikke legg hemmelig konfigurasjon, rå chatspørsmål eller personopplysninger i dokumentasjonen.
+
+## Avgrenset cookie-oppfølging – 10. november 2026
+
+Den selvstendige cookie-skillen har utført en egen [kartlegging og bannerbeslutning](../informasjonskapsler/2026-11-10/121354-92b5bf52/rapport.md). Ingen oppføringer ble observert i undersøkte nettleserlagre, og 21 anonyme dokumentresponser ga ingen Set-Cookie. Ingen banner er innført; behov er ikke påvist i lokalt utvalg, men faktisk drift/innlogging/tredjeparter er fortsatt uavklart. Kildeteksten til personvernsiden er oppdatert med kryssreferanse. Tidligere personvernmanifest, testdato og øvrige uavklarte forhold beholdes; dette er ikke en ny full personvernrevisjon.

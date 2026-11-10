@@ -4,6 +4,19 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 «Agent» betyr kodeassistenten som utførte arbeidet. Git-forfatteren registreres separat av Git og kan være personen som oppretter commiten. Eksakt modellvariant er ikke registrert for tidligere arbeid og oppgis derfor ikke. Ingen underagenter ble brukt til kvalitetskontrollen eller opprettelsen av denne loggen.
 
+## Ikke utgitt – selvstendig cookie-skill og cookie-side – 10. november 2026
+
+**Utførende agent:** Codex (OpenAI), med `skill-creator` og den nye `informasjonskapsler-og-samtykke` 0.1.0. Ingen underagenter.
+
+- Opprettet selvstendig skill i Skills-repoet og installert kopi, med egne kilder, kartleggingsveiledning, erklæringsmal, Python-kilde-/HTTP-kontroll og valgfri lokal metadata-probe. Ingen andre skills eller tidligere rapporter kreves. Bibliotekets README og versjonslogg er oppdatert separat.
+- Brukt skillens faktiske verktøy og probe på portalen: 27 nettlesersnapshots på 21 eksisterende sider/tilstander og 21 anonyme dokumentresponser (20 HTTP 200, én 404). Ingen oppføringer i fem undersøkte lagertyper eller Set-Cookie-headere; ingen eksterne ressurs-/script-/iframe-origins i utvalget. Syntetisk chatspørsmål ga kildebasert svar uten modell og en lokal API-request. MUI-temalagringsstøtte er kildeundersøkt, uten observerte persistente nøkler. Ingen lagringsverdier eller hemmeligheter er lagret.
+- Beslutning: ikke påvist behov for banner i testet lokalt omfang; ingen banner er implementert. Produksjon/auth/proxy/CDN/tredjeparts-/fullstendig nettverksinnsyn er uavklart. Ingen global «cookie-fri» eller juridisk godkjenning er påstått. Første sandbox-blokkerte HTTP-forsøk og redirect-delkjøring er bevart; faktisk oppfølging bruker observerte dokumentstier.
+- Lagret vurdert grunnlag i `docs/informasjonskapsler/2026-11-10/121354-92b5bf52/`, med inventar, redigerte rådata, rapport og bannerbeslutning. Midlertidig probe ble fjernet med identisk gjenoppretting av layout før permanente produktendringer. Daterte tilgjengelighets-/personvernresultater er bevart.
+- Lagt til `/informasjonskapsler/` med footerlenke, felles innhold for nettside/Spør KI, automatisk registrering i funksjons-/sideoversikten og ny selvstendig Beta-skill i katalogen. Oppdatert personvernkryssreferanse, Markdown-utdrag, README og utviklingsplan. Nye sider må også inngå i neste brede tilgjengelighetskontroll; dette er ikke en full ny WCAG-vurdering.
+
+- Rettet integrasjonen med Spør KI ved å tillate den konkrete cookie-ruten i RAG-kontrakten. Første testkjøring fant tre feil knyttet til rutelisten; etter retting bestod 53 portaltester, inkludert regresjon for cookie-kilden og fortsatt avvisning av ukjente ruter. Ordlyden i kildens overskrift gjør at vanlige spørsmål om cookies/banner finner riktig side først. Ingen generell åpning av URL-valideringen.
+- Sluttverifisering: 53 Node-tester, tre Python-tester, Pages-produksjonsbygg med TypeScript/ruteregister og HTML-grunnkontroll for 25 eksportfiler bestod. Begge nye sider er lest tilbake ved 1280/320 px uten sideoverflyt eller probe. Footer, katalogsøk/Beta-detaljer og faktisk Spør KI-svar er verifisert. Skillens 45 Python-/åtte Node-tester bestod, og isolert pakke med bare egne filer bestod ti Python-/to Node-prøver og CLI-prøve med forventet delstatus. Quick_validate kunne ikke starte uten PyYAML; dette er dokumentert. Daterte cookie-bevis er unntatt fra Prettier for å bevare originaldata; rot-/produktdokumenter formateres fortsatt.
+
 ## Ikke utgitt – avklaringsplan for 15 tilgjengelighetskrav – 10. november 2026
 
 **Utførende agent:** Codex (OpenAI), med `tilgjengelighetserklaering` 0.5.1. Ingen underagenter.

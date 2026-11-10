@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-11-10T11:39:43.957Z",
+  "pages": [
+    {
+      "externalScripts": 0,
+      "h1": "Informasjonskapsler og nettleserlagring",
+      "scrollWidth": 1280,
+      "temporaryProbePresent": false,
+      "url": "http://127.0.0.1:3000/informasjonskapsler",
+      "width": 1280
+    },
+    {
+      "h1": "Informasjonskapsler og nettleserlagring",
+      "scrollWidth": 320,
+      "temporaryProbePresent": false,
+      "url": "http://127.0.0.1:3000/informasjonskapsler#samtykke",
+      "width": 320
+    },
+    {
+      "h1": "Kartlegg informasjonskapsler og samtykke",
+      "scrollWidth": 1280,
+      "temporaryProbePresent": false,
+      "url": "http://127.0.0.1:3000/ressurser/informasjonskapsler-og-samtykke",
+      "width": 1280
+    },
+    {
+      "h1": "Kartlegg informasjonskapsler og samtykke",
+      "scrollWidth": 320,
+      "temporaryProbePresent": false,
+      "url": "http://127.0.0.1:3000/ressurser/informasjonskapsler-og-samtykke",
+      "width": 320
+    }
+  ],
+  "rag_cookie_answer_verified": true,
+  "catalog_cookie_skill_verified": true,
+  "footer_link_verified": true,
+  "notes": [
+    "New dynamic skill route initially used a stale dev parameter cache; resource route was recompiled without source-content change and reloaded successfully.",
+    "No storage instrumentation remains on new pages."
+  ]
+}

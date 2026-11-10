@@ -1,0 +1,12 @@
+{
+  "source": "src/app/layout.tsx",
+  "original_sha256": "9f8e80b75f559b1eaf447d8cf09f9fd0b03d22e746a5316e114ecea781b7e4fc",
+  "instrumented_sha256": "7b5ebba4fcc5066425784085588ef89ab2a7f1c63d70397702aa7f69428de23d",
+  "temporary_files": [
+    "src/components/cookie-audit-probe.js",
+    "src/components/cookie-audit-probe.tsx"
+  ],
+  "purpose": "Metadata-only authorized local source instrumentation; not browser evaluate injection",
+  "restored_sha256": "9f8e80b75f559b1eaf447d8cf09f9fd0b03d22e746a5316e114ecea781b7e4fc",
+  "restored_identical": true
+}

@@ -1,0 +1,17 @@
+{
+  "reviewed_at": "2026-11-10T11:19:09.950321+00:00",
+  "files": [
+    {
+      "file": "node_modules/.pnpm/@mui+system@9.5.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.1__@emotion+sty_52a30419c1516986dc83ae59b406b756/node_modules/@mui/system/cssVars/localStorageManager.js",
+      "sha256": "61e0f7e57f8f30786cf43b201b132397dfbeef37ec951b4ab52ae06071b6d742",
+      "role": "MUI has support for getItem/setItem of theme preferences; source capability is not observed persisted entries."
+    },
+    {
+      "file": "node_modules/.pnpm/@mui+system@9.5.0_@emotion+react@11.14.0_@types+react@19.3.0_react@19.3.1__@emotion+sty_52a30419c1516986dc83ae59b406b756/node_modules/@mui/system/cssVars/useCurrentColorScheme.js",
+      "sha256": "ab7d4c3602867686df77aa5b0f6398ede869f554b18b2a116ef4178f310e3242",
+      "role": "MUI has support for getItem/setItem of theme preferences; source capability is not observed persisted entries."
+    }
+  ],
+  "scope": "Selected theme storage support and portal provider; not a full dependency audit.",
+  "observation": "No theme preference keys were present in collected runtime snapshots. Empty storage does not exclude reads of absent keys or short-lived writes."
+}

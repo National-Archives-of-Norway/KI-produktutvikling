@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-11-10T11:51:25.481176+00:00",
+  "local_links_checked": 69,
+  "missing_links": [],
+  "skill_sha256": {
+    "SKILL.md": "06d2c27de342ca042effb1cabc544b177a8bca5f2b21a0af21cc0dea3ba89e75",
+    "AGENTS.md": "372d63088fe148f1ca99fed75b166f5f77f59e7937c62374c0100549dfcdb8cd",
+    "references/kilder.md": "255e5033c223675a6b73659414cea693a5666076811851643cd8d0f40c694973",
+    "references/kartlegging.md": "231dcd2c2671f123117125bca6a3d0fa5ca12e934df58a4926400cda64db70c4",
+    "agents/openai.yaml": "eb9ba7271dda21df52b3b07ba6fe79ab24c538fedee5108ebf3a53c233958205",
+    "scripts/review.py": "0189bc5d90908903a006f18f5ca39e8d7d579dd4bb976081c012a51d04223506",
+    "assets/erklaering.md": "11157a2106ccf5cda3d9188d4ec54d442839ae09fd4387366cde55b5728fadd7",
+    "assets/browser-probe.js": "24b2ed10a20c40ce909f93c4ca89606196a5f0401bb25b12619aca8dda71ea51"
+  },
+  "installed_copy_identical": true,
+  "other_skills_required": false,
+  "page_sizes": [
+    1280,
+    320
+  ],
+  "no_side_overflow": true,
+  "no_temporary_probe_in_new_pages": true,
+  "old_a11y_and_privacy_latest_unchanged": true,
+  "technical_tests": {
+    "portal_node_pass": 53,
+    "portal_python_pass": 3,
+    "skills_python_pass": 45,
+    "skills_node_pass": 8,
+    "isolated_python_pass": 10,
+    "isolated_node_pass": 2
+  },
+  "limitations": [
+    "quick_validate unavailable without PyYAML",
+    "No production/identity or complete cross-origin/HttpOnly network coverage"
+  ]
+}

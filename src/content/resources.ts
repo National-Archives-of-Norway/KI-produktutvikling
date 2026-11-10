@@ -65,6 +65,48 @@ export const resources: Resource[] = [
     },
   },
   {
+    slug: "informasjonskapsler-og-samtykke",
+    type: "Skill",
+    action: "Se skill",
+    title: "Kartlegg informasjonskapsler og samtykke",
+    description:
+      "Undersøk cookies, annen nettleserlagring og sporing, avklar behovet for samtykke og utform cookie-informasjon fra faktiske funn.",
+    usage:
+      "Bruk skillen selvstendig ved oppstart eller endringer i drift, innlogging, analyse og innebygget innhold. Ingen andre skills eller tidligere rapporter er nødvendige.",
+    steps: [
+      "Hent hele mappen informasjonskapsler-og-samtykke fra Skills-biblioteket, og installer den i assistentens skill-katalog.",
+      "Oppgi prosjektmappe, faktisk nettadresse, miljø og relevante brukerforløp. Ikke oppgi nøkler eller lagringsverdier.",
+      "Be assistenten undersøke kildekode, HTTP og nettlesermetadata med tilgjengelige, tillatte verktøy. Manglende innsyn skal dokumenteres.",
+      "Lagre redigerte metadata og vurdering i en egen datert mappe under docs/informasjonskapsler/ i målprosjektet.",
+      "Avklar samtykkebehov før et banner implementeres. Oppdater cookie-informasjon, README og versjonslogg fra faktisk grunnlag.",
+    ],
+    example:
+      "Bruk $informasjonskapsler-og-samtykke til å kartlegge [prosjektmappe] på [URL/miljø], lagre resultatene og oppdatere cookie-informasjonen. Vurder behovet for samtykkebanner før implementering. Skillen skal kunne kjøres uten andre skills.",
+    keywords: [
+      "cookies",
+      "informasjonskapsler",
+      "samtykke",
+      "cookie-banner",
+      "sporing",
+      "localStorage",
+      "sessionStorage",
+      "IndexedDB",
+      "nettleserlagring",
+      "Nkom",
+      "Datatilsynet",
+    ],
+    skill: {
+      name: "informasjonskapsler-og-samtykke",
+      version: "0.1.0",
+      repository: "Skills",
+      path: "skills/informasjonskapsler-og-samtykke",
+      capabilities:
+        "Selvstendig kartlegging med egne kilder, testveiledning og mal. Et Python-verktøy undersøker kildeindikatorer og anonyme HTTP-responser, importerer redigerte nettlesermetadata og lagrer daterte resultater. Assistenten vurderer bannerbehov og oppdaterer cookie-informasjonen.",
+      limitations:
+        "Krever ingen andre skills. En skann avgjør ikke alene nødvendighet eller juridisk samsvar. HttpOnly, tredjeparter, innlogging og faktisk produksjon kan kreve ytterligere tilgang eller manuell kontroll. Samtykke implementeres bare når det er bestilt og behovet er avklart.",
+    },
+  },
+  {
     slug: "personvernerklaering",
     type: "Skill",
     action: "Se skill",

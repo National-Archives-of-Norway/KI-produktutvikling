@@ -1,0 +1,128 @@
+[
+  {
+    "url": "http://127.0.0.1:3000/",
+    "status": 200,
+    "set_cookies": [],
+    "redirect_followed": false
+  },
+  {
+    "url": "http://127.0.0.1:3000/ressurser/tilgjengelighetserklaering",
+    "status": 200,
+    "set_cookies": [],
+    "redirect_followed": false
+  },
+  {
+    "url": "http://127.0.0.1:3000/ressurser/personvernerklaering",
+    "status": 200,
+    "set_cookies": [],
+    "redirect_followed": false
+  },
+  {
+    "url": "http://127.0.0.1:3000/ressurser/kodegjennomgang",
+    "status": 200,
+    "set_cookies": [],
+    "redirect_followed": false
+  },
+  {
+    "url": "http://127.0.0.1:3000/ressurser/tydelig-kontekst",
+    "status": 200,
+    "set_cookies": [],
+    "redirect_followed": false
+  },
+  {
+    "url": "http://127.0.0.1:3000/ressurser/brukerbehov",
+    "status": 200,
+    "set_cookies": [],
+    "redirect_followed": false
+  },
+  {
+    "url": "http://127.0.0.1:3000/spor",
+    "status": 200,
+    "set_cookies": [],
+    "redirect_followed": false
+  },
+  {
+    "url": "http://127.0.0.1:3000/oversikt/godkjente-mcper",
+    "status": 200,
+    "set_cookies": [],
+    "redirect_followed": false
+  },
+  {
+    "url": "http://127.0.0.1:3000/oversikt/godkjente-ki-assistenter",
+    "status": 200,
+    "set_cookies": [],
+    "redirect_followed": false
+  },
+  {
+    "url": "http://127.0.0.1:3000/kom-i-gang",
+    "status": 200,
+    "set_cookies": [],
+    "redirect_followed": false
+  },
+  {
+    "url": "http://127.0.0.1:3000/om",
+    "status": 200,
+    "set_cookies": [],
+    "redirect_followed": false
+  },
+  {
+    "url": "http://127.0.0.1:3000/retningslinjer",
+    "status": 200,
+    "set_cookies": [],
+    "redirect_followed": false
+  },
+  {
+    "url": "http://127.0.0.1:3000/personvern",
+    "status": 200,
+    "set_cookies": [],
+    "redirect_followed": false
+  },
+  {
+    "url": "http://127.0.0.1:3000/oversikt",
+    "status": 200,
+    "set_cookies": [],
+    "redirect_followed": false
+  },
+  {
+    "url": "http://127.0.0.1:3000/priser",
+    "status": 200,
+    "set_cookies": [],
+    "redirect_followed": false
+  },
+  {
+    "url": "http://127.0.0.1:3000/tilgjengelighet",
+    "status": 200,
+    "set_cookies": [],
+    "redirect_followed": false
+  },
+  {
+    "url": "http://127.0.0.1:3000/nettstedskart",
+    "status": 200,
+    "set_cookies": [],
+    "redirect_followed": false
+  },
+  {
+    "url": "http://127.0.0.1:3000/versjonslogg",
+    "status": 200,
+    "set_cookies": [],
+    "redirect_followed": false
+  },
+  {
+    "url": "http://127.0.0.1:3000/utviklingsplan",
+    "status": 200,
+    "set_cookies": [],
+    "redirect_followed": false
+  },
+  {
+    "url": "http://127.0.0.1:3000/funksjonalitet",
+    "status": 200,
+    "set_cookies": [],
+    "redirect_followed": false
+  },
+  {
+    "url": "http://127.0.0.1:3000/404",
+    "status": 404,
+    "set_cookies": [],
+    "redirect_followed": false
+  }
+]
