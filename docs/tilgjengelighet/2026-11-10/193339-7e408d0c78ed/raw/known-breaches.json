@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Prinsipp 2: Mulig å betjene",
+    "requirements": [
+      {
+        "id": "2.2.2",
+        "title": "Pause, stopp, skjul",
+        "description": "På prissiden kan varselet om eldre priskontroll dukke opp automatisk mens du leser. Det finnes ingen kontroll for å pause eller skjule denne oppdateringen. Dette kan forstyrre lesingen og flytte innholdet. Animasjonen på forsiden har en egen pausefunksjon.",
+        "alternative": "Du kan lese datoen for siste kontroll og følge lenken til leverandørens prisliste."
+      }
+    ]
+  },
+  {
+    "title": "Prinsipp 3: Forståelig",
+    "requirements": [
+      {
+        "id": "3.1.1",
+        "title": "Språk på siden",
+        "description": "PDF-vedlegget om AI enablement-teamet har engelsk hovedspråk i filen, selv om innholdet er på norsk. Deler av teksten er også merket som engelsk. Dette kan gi feil uttale i hjelpemidler.",
+        "alternative": "Kontakt oss dersom du trenger innholdet som norsk tekst i et annet tilgjengelig format."
+      },
+      {
+        "id": "3.1.2",
+        "title": "Språk på deler av innhold",
+        "description": "Flere norske setninger i PDF-vedlegget, særlig på side 4–6, er merket som engelsk. Hjelpemidler kan derfor behandle disse tekstpartiene som engelsk.",
+        "alternative": "Kontakt oss dersom du trenger innholdet som norsk tekst i et annet tilgjengelig format."
+      }
+    ]
+  }
+]

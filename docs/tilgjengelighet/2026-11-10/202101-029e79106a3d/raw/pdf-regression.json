@@ -1,0 +1,1208 @@
+{
+  "status": "passed",
+  "before_sha256": "ba267d899460e54a911c548c5ddecfd9a83159ec3b6d7b6e30d9d4f34d0c648a",
+  "after_sha256": "8b068da112df40b70a4c9e5c16f268ea3eff6996ad08d6eff2b9c1bb1ad14713",
+  "catalog_language": "nb-NO",
+  "visible_text_language_counts": {
+    "nb-NO": 2694
+  },
+  "structural_roles": {
+    "/Slide": 7,
+    "/Figure": 61,
+    "/Textbox": 80,
+    "/P": 74,
+    "/Span": 122,
+    "/H1": 1,
+    "/H2": 6,
+    "/H3": 20,
+    "/Sect": 3,
+    "/L": 3,
+    "/LI": 12,
+    "/Lbl": 12,
+    "/LBody": 12
+  },
+  "title_preserved": "Mandatforslag – AI enablement-team i Nasjonalarkivet",
+  "english_alternatives_preserved": [
+    [
+      "/Figure",
+      "Koala with solid fill",
+      "en"
+    ],
+    [
+      "/Figure",
+      "Koala with solid fill",
+      "en"
+    ],
+    [
+      "/Figure",
+      "Koala with solid fill",
+      "en"
+    ],
+    [
+      "/Figure",
+      "Koala with solid fill",
+      "en"
+    ],
+    [
+      "/Figure",
+      "Koala with solid fill",
+      "en"
+    ],
+    [
+      "/Figure",
+      "Koala with solid fill",
+      "en"
+    ],
+    [
+      "/Figure",
+      "Koala with solid fill",
+      "en"
+    ]
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "text_geometry_fonts_colours_mcid_identical": true,
+      "operations_except_language_identical": true,
+      "pixel_difference_bbox": null,
+      "render_dpi": 120
+    },
+    {
+      "page": 2,
+      "text_geometry_fonts_colours_mcid_identical": true,
+      "operations_except_language_identical": true,
+      "pixel_difference_bbox": null,
+      "render_dpi": 120
+    },
+    {
+      "page": 3,
+      "text_geometry_fonts_colours_mcid_identical": true,
+      "operations_except_language_identical": true,
+      "pixel_difference_bbox": null,
+      "render_dpi": 120
+    },
+    {
+      "page": 4,
+      "text_geometry_fonts_colours_mcid_identical": true,
+      "operations_except_language_identical": true,
+      "pixel_difference_bbox": null,
+      "render_dpi": 120
+    },
+    {
+      "page": 5,
+      "text_geometry_fonts_colours_mcid_identical": true,
+      "operations_except_language_identical": true,
+      "pixel_difference_bbox": null,
+      "render_dpi": 120
+    },
+    {
+      "page": 6,
+      "text_geometry_fonts_colours_mcid_identical": true,
+      "operations_except_language_identical": true,
+      "pixel_difference_bbox": null,
+      "render_dpi": 120
+    },
+    {
+      "page": 7,
+      "text_geometry_fonts_colours_mcid_identical": true,
+      "operations_except_language_identical": true,
+      "pixel_difference_bbox": null,
+      "render_dpi": 120
+    }
+  ],
+  "reverse_parenttree_crosscheck": [
+    {
+      "page": 1,
+      "mcid": 3,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 13
+    },
+    {
+      "page": 1,
+      "mcid": 4,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 14
+    },
+    {
+      "page": 1,
+      "mcid": 5,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 2
+    },
+    {
+      "page": 1,
+      "mcid": 6,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 10
+    },
+    {
+      "page": 1,
+      "mcid": 7,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 1
+    },
+    {
+      "page": 1,
+      "mcid": 8,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 4
+    },
+    {
+      "page": 1,
+      "mcid": 10,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 73
+    },
+    {
+      "page": 1,
+      "mcid": 12,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 2
+    },
+    {
+      "page": 1,
+      "mcid": 13,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 10
+    },
+    {
+      "page": 1,
+      "mcid": 14,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 1
+    },
+    {
+      "page": 1,
+      "mcid": 15,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 16
+    },
+    {
+      "page": 1,
+      "mcid": 16,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 2
+    },
+    {
+      "page": 2,
+      "mcid": 1,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 8
+    },
+    {
+      "page": 2,
+      "mcid": 4,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 2
+    },
+    {
+      "page": 2,
+      "mcid": 5,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 10
+    },
+    {
+      "page": 2,
+      "mcid": 6,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 1
+    },
+    {
+      "page": 2,
+      "mcid": 7,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 16
+    },
+    {
+      "page": 2,
+      "mcid": 8,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 2
+    },
+    {
+      "page": 2,
+      "mcid": 9,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 9
+    },
+    {
+      "page": 2,
+      "mcid": 10,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 31
+    },
+    {
+      "page": 2,
+      "mcid": 11,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 1
+    },
+    {
+      "page": 2,
+      "mcid": 12,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 25
+    },
+    {
+      "page": 2,
+      "mcid": 13,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 10
+    },
+    {
+      "page": 2,
+      "mcid": 14,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 47
+    },
+    {
+      "page": 2,
+      "mcid": 15,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 10
+    },
+    {
+      "page": 2,
+      "mcid": 16,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 39
+    },
+    {
+      "page": 2,
+      "mcid": 17,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 12
+    },
+    {
+      "page": 2,
+      "mcid": 18,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 88
+    },
+    {
+      "page": 3,
+      "mcid": 2,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 13
+    },
+    {
+      "page": 3,
+      "mcid": 3,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 6
+    },
+    {
+      "page": 3,
+      "mcid": 4,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 4
+    },
+    {
+      "page": 3,
+      "mcid": 5,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 21
+    },
+    {
+      "page": 3,
+      "mcid": 9,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 27
+    },
+    {
+      "page": 3,
+      "mcid": 10,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 6
+    },
+    {
+      "page": 3,
+      "mcid": 11,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 1
+    },
+    {
+      "page": 3,
+      "mcid": 12,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 32
+    },
+    {
+      "page": 3,
+      "mcid": 13,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 2
+    },
+    {
+      "page": 3,
+      "mcid": 14,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 7
+    },
+    {
+      "page": 3,
+      "mcid": 17,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 9
+    },
+    {
+      "page": 3,
+      "mcid": 18,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 10
+    },
+    {
+      "page": 3,
+      "mcid": 19,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 47
+    },
+    {
+      "page": 3,
+      "mcid": 22,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 22
+    },
+    {
+      "page": 3,
+      "mcid": 23,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 11
+    },
+    {
+      "page": 3,
+      "mcid": 24,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 43
+    },
+    {
+      "page": 3,
+      "mcid": 26,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 2
+    },
+    {
+      "page": 3,
+      "mcid": 27,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 10
+    },
+    {
+      "page": 3,
+      "mcid": 28,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 1
+    },
+    {
+      "page": 3,
+      "mcid": 29,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 16
+    },
+    {
+      "page": 3,
+      "mcid": 30,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 2
+    },
+    {
+      "page": 4,
+      "mcid": 2,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 15
+    },
+    {
+      "page": 4,
+      "mcid": 3,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 2
+    },
+    {
+      "page": 4,
+      "mcid": 4,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 16
+    },
+    {
+      "page": 4,
+      "mcid": 5,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 36
+    },
+    {
+      "page": 4,
+      "mcid": 6,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 1
+    },
+    {
+      "page": 4,
+      "mcid": 7,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 35
+    },
+    {
+      "page": 4,
+      "mcid": 9,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 1
+    },
+    {
+      "page": 4,
+      "mcid": 10,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 1
+    },
+    {
+      "page": 4,
+      "mcid": 11,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 18
+    },
+    {
+      "page": 4,
+      "mcid": 12,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 44
+    },
+    {
+      "page": 4,
+      "mcid": 14,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 1
+    },
+    {
+      "page": 4,
+      "mcid": 15,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 1
+    },
+    {
+      "page": 4,
+      "mcid": 16,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 21
+    },
+    {
+      "page": 4,
+      "mcid": 17,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 71
+    },
+    {
+      "page": 4,
+      "mcid": 19,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 1
+    },
+    {
+      "page": 4,
+      "mcid": 20,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 1
+    },
+    {
+      "page": 4,
+      "mcid": 21,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 19
+    },
+    {
+      "page": 4,
+      "mcid": 22,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 42
+    },
+    {
+      "page": 4,
+      "mcid": 24,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 1
+    },
+    {
+      "page": 4,
+      "mcid": 25,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 1
+    },
+    {
+      "page": 4,
+      "mcid": 26,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 24
+    },
+    {
+      "page": 4,
+      "mcid": 29,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 29
+    },
+    {
+      "page": 4,
+      "mcid": 30,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 2
+    },
+    {
+      "page": 4,
+      "mcid": 31,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 85
+    },
+    {
+      "page": 5,
+      "mcid": 2,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 20
+    },
+    {
+      "page": 5,
+      "mcid": 3,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 2
+    },
+    {
+      "page": 5,
+      "mcid": 4,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 18
+    },
+    {
+      "page": 5,
+      "mcid": 5,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 38
+    },
+    {
+      "page": 5,
+      "mcid": 7,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 2
+    },
+    {
+      "page": 5,
+      "mcid": 8,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 14
+    },
+    {
+      "page": 5,
+      "mcid": 9,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 63
+    },
+    {
+      "page": 5,
+      "mcid": 11,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 1
+    },
+    {
+      "page": 5,
+      "mcid": 12,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 1
+    },
+    {
+      "page": 5,
+      "mcid": 13,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 15
+    },
+    {
+      "page": 5,
+      "mcid": 14,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 1
+    },
+    {
+      "page": 5,
+      "mcid": 15,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 7
+    },
+    {
+      "page": 5,
+      "mcid": 16,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 63
+    },
+    {
+      "page": 5,
+      "mcid": 18,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 1
+    },
+    {
+      "page": 5,
+      "mcid": 19,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 1
+    },
+    {
+      "page": 5,
+      "mcid": 20,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 15
+    },
+    {
+      "page": 5,
+      "mcid": 21,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 67
+    },
+    {
+      "page": 5,
+      "mcid": 24,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 29
+    },
+    {
+      "page": 5,
+      "mcid": 25,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 2
+    },
+    {
+      "page": 5,
+      "mcid": 27,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 2
+    },
+    {
+      "page": 5,
+      "mcid": 28,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 10
+    },
+    {
+      "page": 5,
+      "mcid": 29,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 64
+    },
+    {
+      "page": 6,
+      "mcid": 1,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 22
+    },
+    {
+      "page": 6,
+      "mcid": 2,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 6
+    },
+    {
+      "page": 6,
+      "mcid": 3,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 78
+    },
+    {
+      "page": 6,
+      "mcid": 5,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 13
+    },
+    {
+      "page": 6,
+      "mcid": 6,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 4
+    },
+    {
+      "page": 6,
+      "mcid": 7,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 30
+    },
+    {
+      "page": 6,
+      "mcid": 9,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 14
+    },
+    {
+      "page": 6,
+      "mcid": 10,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 19
+    },
+    {
+      "page": 6,
+      "mcid": 12,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 23
+    },
+    {
+      "page": 6,
+      "mcid": 13,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 22
+    },
+    {
+      "page": 6,
+      "mcid": 15,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 15
+    },
+    {
+      "page": 6,
+      "mcid": 16,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 20
+    },
+    {
+      "page": 6,
+      "mcid": 18,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 13
+    },
+    {
+      "page": 6,
+      "mcid": 19,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 20
+    },
+    {
+      "page": 6,
+      "mcid": 21,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 19
+    },
+    {
+      "page": 6,
+      "mcid": 22,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 14
+    },
+    {
+      "page": 6,
+      "mcid": 24,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 12
+    },
+    {
+      "page": 6,
+      "mcid": 25,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 14
+    },
+    {
+      "page": 6,
+      "mcid": 27,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 29
+    },
+    {
+      "page": 6,
+      "mcid": 28,
+      "parenttree_language": "nb-NO",
+      "inline_language": "nb-NO",
+      "characters": 2
+    },
+    {
+      "page": 6,
+      "mcid": 30,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 2
+    },
+    {
+      "page": 6,
+      "mcid": 31,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 1
+    },
+    {
+      "page": 6,
+      "mcid": 32,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 16
+    },
+    {
+      "page": 6,
+      "mcid": 33,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 22
+    },
+    {
+      "page": 6,
+      "mcid": 34,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 23
+    },
+    {
+      "page": 7,
+      "mcid": 2,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 30
+    },
+    {
+      "page": 7,
+      "mcid": 5,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 9
+    },
+    {
+      "page": 7,
+      "mcid": 6,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 10
+    },
+    {
+      "page": 7,
+      "mcid": 11,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 27
+    },
+    {
+      "page": 7,
+      "mcid": 17,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 16
+    },
+    {
+      "page": 7,
+      "mcid": 18,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 6
+    },
+    {
+      "page": 7,
+      "mcid": 20,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 23
+    },
+    {
+      "page": 7,
+      "mcid": 21,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 7
+    },
+    {
+      "page": 7,
+      "mcid": 23,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 9
+    },
+    {
+      "page": 7,
+      "mcid": 24,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 2
+    },
+    {
+      "page": 7,
+      "mcid": 25,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 8
+    },
+    {
+      "page": 7,
+      "mcid": 26,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 7
+    },
+    {
+      "page": 7,
+      "mcid": 27,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 17
+    },
+    {
+      "page": 7,
+      "mcid": 29,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 26
+    },
+    {
+      "page": 7,
+      "mcid": 30,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 24
+    },
+    {
+      "page": 7,
+      "mcid": 32,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 2
+    },
+    {
+      "page": 7,
+      "mcid": 33,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 10
+    },
+    {
+      "page": 7,
+      "mcid": 34,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 1
+    },
+    {
+      "page": 7,
+      "mcid": 35,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 16
+    },
+    {
+      "page": 7,
+      "mcid": 36,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 2
+    },
+    {
+      "page": 7,
+      "mcid": 37,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 28
+    },
+    {
+      "page": 7,
+      "mcid": 38,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 24
+    },
+    {
+      "page": 7,
+      "mcid": 39,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 9
+    },
+    {
+      "page": 7,
+      "mcid": 40,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 25
+    },
+    {
+      "page": 7,
+      "mcid": 41,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 15
+    },
+    {
+      "page": 7,
+      "mcid": 42,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 29
+    },
+    {
+      "page": 7,
+      "mcid": 43,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 20
+    },
+    {
+      "page": 7,
+      "mcid": 44,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 19
+    },
+    {
+      "page": 7,
+      "mcid": 45,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 17
+    },
+    {
+      "page": 7,
+      "mcid": 46,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 29
+    },
+    {
+      "page": 7,
+      "mcid": 47,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 12
+    },
+    {
+      "page": 7,
+      "mcid": 51,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 26
+    },
+    {
+      "page": 7,
+      "mcid": 52,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 7
+    },
+    {
+      "page": 7,
+      "mcid": 53,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 28
+    },
+    {
+      "page": 7,
+      "mcid": 54,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 23
+    },
+    {
+      "page": 7,
+      "mcid": 57,
+      "parenttree_language": "nb",
+      "inline_language": "nb-NO",
+      "characters": 23
+    }
+  ],
+  "limits": "No actual PDF-reader speech. Language metadata is validated; remaining PDF semantics/alternatives/reading-order are separate unresolved requirements."
+}

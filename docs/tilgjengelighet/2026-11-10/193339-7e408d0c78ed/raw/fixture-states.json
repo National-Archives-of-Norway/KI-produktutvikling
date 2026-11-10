@@ -1,0 +1,78 @@
+[
+  {
+    "controls": [
+      "Vilkår og avgrensninger",
+      "Vilkår og avgrensninger",
+      "Vilkår og avgrensninger",
+      "Vilkår og avgrensninger",
+      "Vilkår og avgrensninger",
+      "Vilkår og avgrensninger"
+    ],
+    "focus": "<body><div hidden=\"\"><!--$--><!--/$--></div><a class=\"skip-link\" href=\"#innhold\">Hopp til innhold</a><header class=\"header\"><a class=\"brand\" href=\"/\"><svg class=\"brand-mark\" viewBox=\"0 0 256 256\" fill",
+    "label": "before-threshold",
+    "phase": "before",
+    "syntheticNow": "1794857940169",
+    "warnings": []
+  },
+  {
+    "controls": [
+      "Vilkår og avgrensninger",
+      "Vilkår og avgrensninger",
+      "Vilkår og avgrensninger",
+      "Vilkår og avgrensninger",
+      "Vilkår og avgrensninger",
+      "Vilkår og avgrensninger"
+    ],
+    "focus": "<summary>Vilkår og avgrensninger</summary>",
+    "label": "after-threshold-first-details-open",
+    "phase": "before",
+    "syntheticNow": "1794857940169",
+    "warnings": []
+  },
+  {
+    "controls": [
+      "Vilkår og avgrensninger",
+      "Vilkår og avgrensninger",
+      "Vilkår og avgrensninger",
+      "Vilkår og avgrensninger",
+      "Vilkår og avgrensninger",
+      "Vilkår og avgrensninger"
+    ],
+    "focus": "<summary>Vilkår og avgrensninger</summary>",
+    "label": "after-hourly-callbacks",
+    "phase": "after",
+    "syntheticNow": "1794857942169",
+    "warnings": [
+      {
+        "controls": 0,
+        "role": null,
+        "text": "Kontrollen er eldre enn sju dager. Sjekk leverandørens prisliste før du bruker tallene."
+      },
+      {
+        "controls": 0,
+        "role": null,
+        "text": "Kontrollen er eldre enn sju dager. Sjekk leverandørens prisliste før du bruker tallene."
+      },
+      {
+        "controls": 0,
+        "role": null,
+        "text": "Kontrollen er eldre enn sju dager. Sjekk leverandørens prisliste før du bruker tallene."
+      },
+      {
+        "controls": 0,
+        "role": null,
+        "text": "Kontrollen er eldre enn sju dager. Sjekk leverandørens prisliste før du bruker tallene."
+      },
+      {
+        "controls": 0,
+        "role": null,
+        "text": "Kontrollen er eldre enn sju dager. Sjekk leverandørens prisliste før du bruker tallene."
+      },
+      {
+        "controls": 0,
+        "role": null,
+        "text": "Kontrollen er eldre enn sju dager. Sjekk leverandørens prisliste før du bruker tallene."
+      }
+    ]
+  }
+]

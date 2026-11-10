@@ -1,0 +1,444 @@
+[
+  {
+    "focus": {
+      "id": "",
+      "label": "Start animasjonen i forsideillustrasjonen",
+      "tag": "BUTTON",
+      "text": ""
+    },
+    "height": 800,
+    "hero": {
+      "animations": [
+        {
+          "animation": "hero-halo-turn",
+          "playState": "paused",
+          "transform": "matrix(-0.500247, 0.865882, -0.865882, -0.500247, 0, 0)"
+        },
+        {
+          "animation": "hero-node-one",
+          "playState": "paused",
+          "transform": "matrix(0.911866, -0.410489, 0.410489, 0.911866, 154.105, -69.3726)"
+        },
+        {
+          "animation": "hero-node-two",
+          "playState": "paused",
+          "transform": "matrix(-0.959702, 0.281019, -0.281019, -0.959702, -162.19, 47.4922)"
+        }
+      ],
+      "paused": "true"
+    },
+    "name": "pause-keyboard-desktop",
+    "scrollWidth": 1280,
+    "statuses": [
+      {
+        "live": "polite",
+        "role": null,
+        "text": "6 ressurser"
+      },
+      {
+        "live": "polite",
+        "role": "log",
+        "text": ""
+      },
+      {
+        "live": null,
+        "role": "status",
+        "text": "Bruk kildene til å kontrollere veiledningen. Hvert spørsmål behandles separat."
+      }
+    ],
+    "time": "2026-11-10T18:35:30.573Z",
+    "url": "http://127.0.0.1:3000/",
+    "width": 1280
+  },
+  {
+    "focus": {
+      "id": "resource-search",
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    },
+    "height": 800,
+    "hero": {
+      "animations": [
+        {
+          "animation": "hero-halo-turn",
+          "playState": "paused",
+          "transform": "matrix(-0.500247, 0.865882, -0.865882, -0.500247, 0, 0)"
+        },
+        {
+          "animation": "hero-node-one",
+          "playState": "paused",
+          "transform": "matrix(0.911866, -0.410489, 0.410489, 0.911866, 154.105, -69.3726)"
+        },
+        {
+          "animation": "hero-node-two",
+          "playState": "paused",
+          "transform": "matrix(-0.959702, 0.281019, -0.281019, -0.959702, -162.19, 47.4922)"
+        }
+      ],
+      "paused": "true"
+    },
+    "name": "pause-persists-after-focus-move",
+    "scrollWidth": 1280,
+    "statuses": [
+      {
+        "live": "polite",
+        "role": null,
+        "text": "6 ressurser"
+      },
+      {
+        "live": "polite",
+        "role": "log",
+        "text": ""
+      },
+      {
+        "live": null,
+        "role": "status",
+        "text": "Bruk kildene til å kontrollere veiledningen. Hvert spørsmål behandles separat."
+      }
+    ],
+    "time": "2026-11-10T18:35:39.466Z",
+    "url": "http://127.0.0.1:3000/",
+    "width": 1280
+  },
+  {
+    "focus": {
+      "id": "",
+      "label": "Pause animasjonen i forsideillustrasjonen",
+      "tag": "BUTTON",
+      "text": ""
+    },
+    "height": 800,
+    "hero": {
+      "animations": [
+        {
+          "animation": "hero-halo-turn",
+          "playState": "running",
+          "transform": "matrix(-0.501221, 0.86532, -0.86532, -0.501221, 0, 0)"
+        },
+        {
+          "animation": "hero-node-one",
+          "playState": "running",
+          "transform": "matrix(0.912858, -0.408276, 0.408276, 0.912858, 154.273, -68.9987)"
+        },
+        {
+          "animation": "hero-node-two",
+          "playState": "running",
+          "transform": "matrix(-0.959502, 0.281703, -0.281703, -0.959502, -162.156, 47.6078)"
+        }
+      ],
+      "paused": "false"
+    },
+    "name": "restart-space-desktop",
+    "scrollWidth": 1280,
+    "statuses": [
+      {
+        "live": "polite",
+        "role": null,
+        "text": "6 ressurser"
+      },
+      {
+        "live": "polite",
+        "role": "log",
+        "text": ""
+      },
+      {
+        "live": null,
+        "role": "status",
+        "text": "Bruk kildene til å kontrollere veiledningen. Hvert spørsmål behandles separat."
+      }
+    ],
+    "time": "2026-11-10T18:35:39.517Z",
+    "url": "http://127.0.0.1:3000/",
+    "width": 1280
+  },
+  {
+    "focus": {
+      "id": "resource-search",
+      "label": null,
+      "tag": "INPUT",
+      "text": ""
+    },
+    "height": 800,
+    "hero": {
+      "animations": [
+        {
+          "animation": "hero-halo-turn",
+          "playState": "running",
+          "transform": "matrix(-0.412345, -0.911028, 0.911028, -0.412345, 0, 0)"
+        },
+        {
+          "animation": "hero-node-one",
+          "playState": "running",
+          "transform": "matrix(0.781226, -0.624248, 0.624248, 0.781226, 132.027, -105.498)"
+        },
+        {
+          "animation": "hero-node-two",
+          "playState": "running",
+          "transform": "matrix(-0.705453, 0.708757, -0.708757, -0.705453, -119.222, 119.78)"
+        }
+      ],
+      "paused": "false"
+    },
+    "name": "mobile-no-results",
+    "scrollWidth": 1280,
+    "statuses": [
+      {
+        "live": "polite",
+        "role": null,
+        "text": "0 ressurser"
+      },
+      {
+        "live": "polite",
+        "role": "log",
+        "text": ""
+      },
+      {
+        "live": null,
+        "role": "status",
+        "text": "Bruk kildene til å kontrollere veiledningen. Hvert spørsmål behandles separat."
+      }
+    ],
+    "time": "2026-11-10T18:38:48.347Z",
+    "url": "http://127.0.0.1:3000/",
+    "width": 1280
+  },
+  {
+    "focus": {
+      "id": "",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "Alle"
+    },
+    "height": 800,
+    "hero": {
+      "animations": [
+        {
+          "animation": "hero-halo-turn",
+          "playState": "running",
+          "transform": "matrix(-0.410619, -0.911807, 0.911807, -0.410619, 0, 0)"
+        },
+        {
+          "animation": "hero-node-one",
+          "playState": "running",
+          "transform": "matrix(0.778119, -0.628117, 0.628117, 0.778119, 131.502, -106.152)"
+        },
+        {
+          "animation": "hero-node-two",
+          "playState": "running",
+          "transform": "matrix(-0.703161, 0.711031, -0.711031, -0.703161, -118.834, 120.164)"
+        }
+      ],
+      "paused": "false"
+    },
+    "name": "mobile-focus-next-after-search",
+    "scrollWidth": 1280,
+    "statuses": [
+      {
+        "live": "polite",
+        "role": null,
+        "text": "0 ressurser"
+      },
+      {
+        "live": "polite",
+        "role": "log",
+        "text": ""
+      },
+      {
+        "live": null,
+        "role": "status",
+        "text": "Bruk kildene til å kontrollere veiledningen. Hvert spørsmål behandles separat."
+      }
+    ],
+    "time": "2026-11-10T18:38:48.388Z",
+    "url": "http://127.0.0.1:3000/",
+    "width": 1280
+  },
+  {
+    "focus": {
+      "id": "",
+      "label": null,
+      "tag": "BODY",
+      "text": "Hopp til innholdKI-ProduktutviklingKom i gangRetningslinjerRessurskatalogOversiktSpør KIOmSpør KI KUNNSKAP SOM BLIR TIL PRAKSISUtvikle ideer"
+    },
+    "height": 800,
+    "hero": {
+      "animations": [
+        {
+          "animation": "hero-halo-turn",
+          "playState": "running",
+          "transform": "matrix(0.516238, 0.856445, -0.856445, 0.516238, 0, 0)"
+        },
+        {
+          "animation": "hero-node-one",
+          "playState": "running",
+          "transform": "matrix(0.669936, -0.742419, 0.742419, 0.669936, 56.2746, -62.3632)"
+        },
+        {
+          "animation": "hero-node-two",
+          "playState": "running",
+          "transform": "matrix(-0.955904, 0.29368, -0.29368, -0.955904, -80.2959, 24.6691)"
+        }
+      ],
+      "paused": "false"
+    },
+    "name": "reset-keyboard-320",
+    "scrollWidth": 320,
+    "statuses": [
+      {
+        "live": "polite",
+        "role": null,
+        "text": "6 ressurser"
+      },
+      {
+        "live": "polite",
+        "role": "log",
+        "text": ""
+      },
+      {
+        "live": null,
+        "role": "status",
+        "text": "Bruk kildene til å kontrollere veiledningen. Hvert spørsmål behandles separat."
+      }
+    ],
+    "time": "2026-11-10T18:39:55.749Z",
+    "url": "http://127.0.0.1:3000/",
+    "width": 320
+  },
+  {
+    "focus": {
+      "id": "",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "Send spørsmål"
+    },
+    "height": 800,
+    "hero": {
+      "animations": [
+        {
+          "animation": "hero-halo-turn",
+          "playState": "running",
+          "transform": "matrix(-0.232563, 0.972581, -0.972581, -0.232563, 0, 0)"
+        },
+        {
+          "animation": "hero-node-one",
+          "playState": "running",
+          "transform": "matrix(0.574153, -0.818748, 0.818748, 0.574153, 48.2288, -68.7748)"
+        },
+        {
+          "animation": "hero-node-two",
+          "playState": "running",
+          "transform": "matrix(-0.607122, 0.794608, -0.794608, -0.607122, -50.9983, 66.7471)"
+        }
+      ],
+      "paused": "false"
+    },
+    "name": "320-empty-chat-validation",
+    "scrollWidth": 320,
+    "statuses": [
+      {
+        "live": "polite",
+        "role": null,
+        "text": "6 ressurser"
+      },
+      {
+        "live": "polite",
+        "role": "log",
+        "text": ""
+      },
+      {
+        "live": null,
+        "role": "status",
+        "text": "Bruk kildene til å kontrollere veiledningen. Hvert spørsmål behandles separat."
+      },
+      {
+        "live": null,
+        "role": "alert",
+        "text": "Skriv et spørsmål på 3–1000 tegn."
+      }
+    ],
+    "time": "2026-11-10T18:40:13.054Z",
+    "url": "http://127.0.0.1:3000/",
+    "width": 320
+  },
+  {
+    "focus": {
+      "id": "",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "Send spørsmål"
+    },
+    "height": 800,
+    "hero": {
+      "animations": [
+        {
+          "animation": "hero-halo-turn",
+          "playState": "running",
+          "transform": "matrix(-0.543247, 0.839573, -0.839573, -0.543247, 0, 0)"
+        },
+        {
+          "animation": "hero-node-one",
+          "playState": "running",
+          "transform": "matrix(0.945592, -0.325355, 0.325355, 0.945592, 79.4297, -27.3298)"
+        },
+        {
+          "animation": "hero-node-two",
+          "playState": "running",
+          "transform": "matrix(-0.939595, 0.342289, -0.342289, -0.939595, -78.926, 28.7523)"
+        }
+      ],
+      "paused": "false"
+    },
+    "name": "320-chat-sent",
+    "scrollWidth": 320,
+    "statuses": [
+      {
+        "live": "polite",
+        "role": null,
+        "text": "6 ressurser"
+      },
+      {
+        "live": "polite",
+        "role": "log",
+        "text": "DuHvordan utforsker jeg brukerbehov?KunnskapsassistentenVeiledning fra portalen · uten språkmodellUtforsk et brukerbehovBruk eksemplet til å forberede utforsking. KI-forslag erstatter ikke undersøkelser med faktiske brukere.Slik går du fremBeskriv situasjonen uten personopplysninger.Be om åpne spørsmål og alternative forklaringer.Test antakelsene gjennom samtaler eller observasjon med brukere.Dette er eksempelinnhold til utprøving.Les hele veiledningen →Dette er hentet fra den mest relevante sid"
+      },
+      {
+        "live": null,
+        "role": "status",
+        "text": "Bruk kildene til å kontrollere veiledningen. Hvert spørsmål behandles separat."
+      }
+    ],
+    "time": "2026-11-10T18:40:20.625Z",
+    "url": "http://127.0.0.1:3000/",
+    "width": 320
+  },
+  {
+    "focus": {
+      "id": "",
+      "label": null,
+      "tag": "BUTTON",
+      "text": "Send spørsmål"
+    },
+    "height": 800,
+    "hero": {
+      "animations": []
+    },
+    "name": "1280-spor-answer",
+    "scrollWidth": 1280,
+    "statuses": [
+      {
+        "live": "polite",
+        "role": "log",
+        "text": "DuHvordan gir jeg KI god kontekst?KunnskapsassistentenVeiledning fra portalen · uten språkmodellGi KI tydelig kontekstBruk denne sjekklisten når du formulerer en oppgave til et KI-verktøy.Slik går du fremBeskriv målet og hvem resultatet er til for.Oppgi relevante rammer, begrensninger og hvilke kilder som skal brukes.Beskriv hvordan resultatet skal vurderes, og be om at usikkerhet synliggjøres.Dette er eksempelinnhold til utprøving.Les hele veiledningen →Dette er hentet fra den mest relevante si"
+      },
+      {
+        "live": null,
+        "role": "status",
+        "text": "Bruk kildene til å kontrollere veiledningen. Hvert spørsmål behandles separat."
+      }
+    ],
+    "time": "2026-11-10T18:41:22.380Z",
+    "url": "http://127.0.0.1:3000/spor#innhold",
+    "width": 1280
+  }
+]

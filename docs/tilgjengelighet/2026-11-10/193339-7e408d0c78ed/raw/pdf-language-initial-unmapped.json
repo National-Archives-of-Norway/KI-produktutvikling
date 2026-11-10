@@ -1,0 +1,3624 @@
+{
+  "sha256": "ba267d899460e54a911c548c5ddecfd9a83159ec3b6d7b6e30d9d4f34d0c648a",
+  "catalog_language": "en",
+  "visible_nonblank_characters_by_effective_structural_language": {
+    "UNMAPPED": 2694
+  },
+  "nodes": [
+    {
+      "role": "/Slide",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H1",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": "Koala with solid fill"
+    },
+    {
+      "role": "/Slide",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H2",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H3",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H3",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H3",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H3",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": "Koala with solid fill"
+    },
+    {
+      "role": "/Slide",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H2",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H3",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H3",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H3",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": "Koala with solid fill"
+    },
+    {
+      "role": "/Slide",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H2",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H3",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H3",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H3",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H3",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H3",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": "Koala with solid fill"
+    },
+    {
+      "role": "/Slide",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H2",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H3",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H3",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H3",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H3",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": "Koala with solid fill"
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H3",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Slide",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H2",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": "Koala with solid fill"
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Slide",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Figure",
+      "language": "en",
+      "page": null,
+      "alt": "Koala with solid fill"
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H2",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Sect",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H3",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/L",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/LI",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Lbl",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/LBody",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/LI",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Lbl",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/LBody",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/LI",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Lbl",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/LBody",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/LI",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Lbl",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/LBody",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/LI",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Lbl",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/LBody",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/LI",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Lbl",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/LBody",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Sect",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H3",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/L",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/LI",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Lbl",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/LBody",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/LI",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Lbl",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/LBody",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/LI",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Lbl",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/LBody",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Sect",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/H3",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/L",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/LI",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Lbl",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/LBody",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/LI",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Lbl",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/LBody",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/LI",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Lbl",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/LBody",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Textbox",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/P",
+      "language": "en",
+      "page": null,
+      "alt": ""
+    },
+    {
+      "role": "/Span",
+      "language": "nb",
+      "page": null,
+      "alt": ""
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "full_text": "Mandatforslag\nMål og rammer for\nAI enablement-team\nTeamet skal bidra til at utviklingsteamene i Nasjonalarkivet bruker KI på en god måte.\nAI enablement-team | mål og rammer 01",
+      "spans": [
+        {
+          "mcid": 3,
+          "text": "Mandatforslag",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 13
+        },
+        {
+          "mcid": 4,
+          "text": "Målogrammerfor",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 14
+        },
+        {
+          "mcid": 5,
+          "text": "AI",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 2
+        },
+        {
+          "mcid": 6,
+          "text": "enablement",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 10
+        },
+        {
+          "mcid": 7,
+          "text": "-",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 1
+        },
+        {
+          "mcid": 8,
+          "text": "team",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 4
+        },
+        {
+          "mcid": 10,
+          "text": "TeametskalbidratilatutviklingsteameneiNasjonalarkivetbrukerKIpåengodmåte.",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 73
+        },
+        {
+          "mcid": 12,
+          "text": "AI",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 2
+        },
+        {
+          "mcid": 13,
+          "text": "enablement",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 10
+        },
+        {
+          "mcid": 14,
+          "text": "-",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 1
+        },
+        {
+          "mcid": 15,
+          "text": "team|målogrammer",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 16
+        },
+        {
+          "mcid": 16,
+          "text": "01",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 2
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "full_text": "Formalia\nEierskap:\nLeder for systemutvikling, leder IT-tjenester og sjefsarkitekt.\nDeltakere:\nKent, Erik D, Are og Khalil. Ved behov involveres andre.\nKapasitet:\nInntil 1 dag per uke per deltaker i oppstarten.\nAvgrensning:\nTjenester og tekniske miljøer etableres av ansvarlige team. Teamet kan gi innspill og bidra til læring.\nAI enablement-team | mål og rammer 06",
+      "spans": [
+        {
+          "mcid": 1,
+          "text": "Formalia",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 8
+        },
+        {
+          "mcid": 4,
+          "text": "AI",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 2
+        },
+        {
+          "mcid": 5,
+          "text": "enablement",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 10
+        },
+        {
+          "mcid": 6,
+          "text": "-",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 1
+        },
+        {
+          "mcid": 7,
+          "text": "team|målogrammer",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 16
+        },
+        {
+          "mcid": 8,
+          "text": "06",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 2
+        },
+        {
+          "mcid": 9,
+          "text": "Eierskap:",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 9
+        },
+        {
+          "mcid": 10,
+          "text": "Lederforsystemutvikling,lederIT",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 31
+        },
+        {
+          "mcid": 11,
+          "text": "-",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 1
+        },
+        {
+          "mcid": 12,
+          "text": "tjenesterogsjefsarkitekt.",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 25
+        },
+        {
+          "mcid": 13,
+          "text": "Deltakere:",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 10
+        },
+        {
+          "mcid": 14,
+          "text": "Kent,ErikD,AreogKhalil.Vedbehovinvolveresandre.",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 47
+        },
+        {
+          "mcid": 15,
+          "text": "Kapasitet:",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 10
+        },
+        {
+          "mcid": 16,
+          "text": "Inntil1dagperukeperdeltakerioppstarten.",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 39
+        },
+        {
+          "mcid": 17,
+          "text": "Avgrensning:",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 12
+        },
+        {
+          "mcid": 18,
+          "text": "Tjenesterogtekniskemiljøeretableresavansvarligeteam.Teametkangiinnspillogbidratillæring.",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 88
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "full_text": "Veier mot målet\nVi vil bidra innen tre fokusområder:\nKompetanse og erfaringsdeling\nHeve KI-kompetansen gjennom testing, læringogdeling.\nOppsett og guardrails\nTeknisk lett for utviklerne å ta i bruk KI på en trygg måte\nRetningslinjer og policy\nArbeidet med retningslinjer og anbefalinger for KI i utvikling\nAI enablement-team | mål og rammer 02",
+      "spans": [
+        {
+          "mcid": 2,
+          "text": "Veiermotmålet",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 13
+        },
+        {
+          "mcid": 3,
+          "text": "Vivilb",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 6
+        },
+        {
+          "mcid": 4,
+          "text": "idra",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 4
+        },
+        {
+          "mcid": 5,
+          "text": "innentrefokusområder:",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 21
+        },
+        {
+          "mcid": 9,
+          "text": "Kompetanseogerfaringsdeling",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 27
+        },
+        {
+          "mcid": 10,
+          "text": "HeveKI",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 6
+        },
+        {
+          "mcid": 11,
+          "text": "-",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 1
+        },
+        {
+          "mcid": 12,
+          "text": "kompetansengjennomtesting,læring",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 32
+        },
+        {
+          "mcid": 13,
+          "text": "og",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 2
+        },
+        {
+          "mcid": 14,
+          "text": "deling.",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 7
+        },
+        {
+          "mcid": 17,
+          "text": "Oppsettog",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 9
+        },
+        {
+          "mcid": 18,
+          "text": "guardrails",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 10
+        },
+        {
+          "mcid": 19,
+          "text": "TeknisklettforutviklerneåtaibrukKIpåentryggmåte",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 47
+        },
+        {
+          "mcid": 22,
+          "text": "Retningslinjerogpolicy",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 22
+        },
+        {
+          "mcid": 23,
+          "text": "Arbeidetmed",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 11
+        },
+        {
+          "mcid": 24,
+          "text": "retningslinjeroganbefalingerforKIiutvikling",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 43
+        },
+        {
+          "mcid": 26,
+          "text": "AI",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 2
+        },
+        {
+          "mcid": 27,
+          "text": "enablement",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 10
+        },
+        {
+          "mcid": 28,
+          "text": "-",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 1
+        },
+        {
+          "mcid": 29,
+          "text": "team|målogrammer",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 16
+        },
+        {
+          "mcid": 30,
+          "text": "02",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 2
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "full_text": "Sånn skal vi jobbe\n01 Undersøke praksis Vi skal se på hvordan teamene bruker KI i dag –hva funker bra, dårlig, hindringer, osv.\n02 Utforske muligheter Vi skal orientere oss i hvilke muligheter som finnes\n03 Skape arenaer for deling Gjennom deling vil vi få løftet fram god praksis og bekymringer, feiret feiltrinn, …\n04 Gi anbefalinger og råd Vi vil bidra i arbeidet med å lage retningslinjer,\n05 Tilrettelegge, ikke utføre Teamet skal ikke primært utvikle ting selv, men komme med anbefalinger og legge til rette for deling.\nAI enablement-team | målogrammer 03",
+      "spans": [
+        {
+          "mcid": 2,
+          "text": "Sånnskalvijobbe",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 15
+        },
+        {
+          "mcid": 3,
+          "text": "01",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 2
+        },
+        {
+          "mcid": 4,
+          "text": "Undersøkepraksis",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 16
+        },
+        {
+          "mcid": 5,
+          "text": "ViskalsepåhvordanteamenebrukerKIidag",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 36
+        },
+        {
+          "mcid": 6,
+          "text": "–",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 1
+        },
+        {
+          "mcid": 7,
+          "text": "hvafunkerbra,dårlig,hindringer,osv.",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 35
+        },
+        {
+          "mcid": 9,
+          "text": "0",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 1
+        },
+        {
+          "mcid": 10,
+          "text": "2",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 1
+        },
+        {
+          "mcid": 11,
+          "text": "Utforskemuligheter",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 18
+        },
+        {
+          "mcid": 12,
+          "text": "Viskalorientereossihvilkemulighetersomfinnes",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 44
+        },
+        {
+          "mcid": 14,
+          "text": "0",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 1
+        },
+        {
+          "mcid": 15,
+          "text": "3",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 1
+        },
+        {
+          "mcid": 16,
+          "text": "Skapearenaerfordeling",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 21
+        },
+        {
+          "mcid": 17,
+          "text": "Gjennomdelingvilvifåløftetframgodpraksisogbekymringer,feiretfeiltrinn,…",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 71
+        },
+        {
+          "mcid": 19,
+          "text": "0",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 1
+        },
+        {
+          "mcid": 20,
+          "text": "4",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 1
+        },
+        {
+          "mcid": 21,
+          "text": "Gianbefalingerogråd",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 19
+        },
+        {
+          "mcid": 22,
+          "text": "Vivilbidraiarbeidetmedålageretningslinjer,",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 42
+        },
+        {
+          "mcid": 24,
+          "text": "0",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 1
+        },
+        {
+          "mcid": 25,
+          "text": "5",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 1
+        },
+        {
+          "mcid": 26,
+          "text": "Tilrettelegge,ikkeutføre",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 24
+        },
+        {
+          "mcid": 29,
+          "text": "AIenablement-team|målogrammer",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 29
+        },
+        {
+          "mcid": 30,
+          "text": "03",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 2
+        },
+        {
+          "mcid": 31,
+          "text": "Teametskalikkeprimærtutvikletingselv,menkommemedanbefalingerogleggetilrettefordeling.",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 85
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "full_text": "Dette skal vi ikke gjøre\nX1 Avgjøre enkeltsaker \"Kan denne tjenesten brukes på denne måten?\"\nX2 Bestemme policy Vi skal ikke bestemme reglenefor hvordan KI skal brukes i Nasjonalarkivet\nX3 Være førstelinje-support Vi skal ikke håndterelisensforespørsler, verktøyfeil og -installasjon\nX4 Være NAV for KI i NA Vi kan trekkes inn i ulike prosesser, men skal ikke sitte som flaskehals i midten\nX5 Påtvinge KI Vi skal kun bidra til å etablere god praksis og verdiøkning gjennom bruk av KI\nAI enablement-team | målogrammer 03",
+      "spans": [
+        {
+          "mcid": 2,
+          "text": "Detteskalviikkegjøre",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 20
+        },
+        {
+          "mcid": 3,
+          "text": "X1",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 2
+        },
+        {
+          "mcid": 4,
+          "text": "Avgjøreenkeltsaker",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 18
+        },
+        {
+          "mcid": 5,
+          "text": "\"Kandennetjenestenbrukespådennemåten?\"",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 38
+        },
+        {
+          "mcid": 7,
+          "text": "X2",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 2
+        },
+        {
+          "mcid": 8,
+          "text": "Bestemmepolicy",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 14
+        },
+        {
+          "mcid": 9,
+          "text": "ViskalikkebestemmeregleneforhvordanKIskalbrukesiNasjonalarkivet",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 63
+        },
+        {
+          "mcid": 11,
+          "text": "X",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 1
+        },
+        {
+          "mcid": 12,
+          "text": "3",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 1
+        },
+        {
+          "mcid": 13,
+          "text": "Væreførstelinje",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 15
+        },
+        {
+          "mcid": 14,
+          "text": "-",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 1
+        },
+        {
+          "mcid": 15,
+          "text": "support",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 7
+        },
+        {
+          "mcid": 16,
+          "text": "Viskalikkehåndterelisensforespørsler,verktøyfeilog-installasjon",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 63
+        },
+        {
+          "mcid": 18,
+          "text": "X",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 1
+        },
+        {
+          "mcid": 19,
+          "text": "4",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 1
+        },
+        {
+          "mcid": 20,
+          "text": "VæreNAVforKIiNA",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 15
+        },
+        {
+          "mcid": 21,
+          "text": "Vikantrekkesinniulikeprosesser,menskalikkesittesomflaskehalsimidten",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 67
+        },
+        {
+          "mcid": 24,
+          "text": "AIenablement-team|målogrammer",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 29
+        },
+        {
+          "mcid": 25,
+          "text": "03",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 2
+        },
+        {
+          "mcid": 27,
+          "text": "X5",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 2
+        },
+        {
+          "mcid": 28,
+          "text": "PåtvingeKI",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 10
+        },
+        {
+          "mcid": 29,
+          "text": "ViskalkunbidratilåetableregodpraksisogverdiøkninggjennombrukavKI",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 64
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "full_text": "Grensesnitt og samarbeid\nTeametskal være koblet på de relevante fagmiljøene, men ikke som mellomleder eller saksbehandler\nArkitekturmiljø\nKI-forvaltningsteam\nprinsipper og kvalitet\nFørstelinje og ansvarlig\nfor policy. Eksister ikke.\nUtviklingsteam\npraktisk bruk og behov\nJuridiskmiljø\nAI enablement-\nteam lovverkogavklaringer\nKobler erfaringer, behov og rammer\nIT-tjenester og plattform\nCommunity of Practice\nverktøy og infrastruktur\ndeling og læring\nEksterne fora\nomverdensblikk\nAI enablement-team | mål og rammer 04",
+      "spans": [
+        {
+          "mcid": 1,
+          "text": "Grensesnittogsamarbeid",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 22
+        },
+        {
+          "mcid": 2,
+          "text": "Teamet",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 6
+        },
+        {
+          "mcid": 3,
+          "text": "skalværekobletpåderelevantefagmiljøene,menikkesommellomlederellersaksbehandler",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 78
+        },
+        {
+          "mcid": 5,
+          "text": "AIenablement-",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 13
+        },
+        {
+          "mcid": 6,
+          "text": "team",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 4
+        },
+        {
+          "mcid": 7,
+          "text": "Koblererfaringer,behovogrammer",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 30
+        },
+        {
+          "mcid": 9,
+          "text": "Utviklingsteam",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 14
+        },
+        {
+          "mcid": 10,
+          "text": "praktiskbrukogbehov",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 19
+        },
+        {
+          "mcid": 12,
+          "text": "IT-tjenesterogplattform",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 23
+        },
+        {
+          "mcid": 13,
+          "text": "verktøyoginfrastruktur",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 22
+        },
+        {
+          "mcid": 15,
+          "text": "Arkitekturmiljø",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 15
+        },
+        {
+          "mcid": 16,
+          "text": "prinsipperogkvalitet",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 20
+        },
+        {
+          "mcid": 18,
+          "text": "Juridiskmiljø",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 13
+        },
+        {
+          "mcid": 19,
+          "text": "lovverkogavklaringer",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 20
+        },
+        {
+          "mcid": 21,
+          "text": "CommunityofPractice",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 19
+        },
+        {
+          "mcid": 22,
+          "text": "delingoglæring",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 14
+        },
+        {
+          "mcid": 24,
+          "text": "Eksternefora",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 12
+        },
+        {
+          "mcid": 25,
+          "text": "omverdensblikk",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 14
+        },
+        {
+          "mcid": 27,
+          "text": "AIenablement-team|målogrammer",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 29
+        },
+        {
+          "mcid": 28,
+          "text": "04",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 2
+        },
+        {
+          "mcid": 30,
+          "text": "KI",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 2
+        },
+        {
+          "mcid": 31,
+          "text": "-",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 1
+        },
+        {
+          "mcid": 32,
+          "text": "forvaltningsteam",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 16
+        },
+        {
+          "mcid": 33,
+          "text": "Førstelinjeogansvarlig",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 22
+        },
+        {
+          "mcid": 34,
+          "text": "forpolicy.Eksisterikke.",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 23
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "full_text": "Forslag til bidrag per fokusområde\nKompetanse og erfaringsdeling Oppsett og guardrails Retningslinjer og\npolicy\nFange læring fra tester i teamene Ambassadører/champions i Ferdiglagde oppsett for ulike Retningslinjer for hvordan bruke\nteamene miljøer KI på en forsvarlig måte\nBygge læringslogg og felles CommunityofPractice, demoer Byggestener til AX, eksempelvis Innspill til policy og\neksempler og erfaringsdeling felles AGENTS.md og skills risikovurderinger\nVurdere hva som bør løftes til Støtte til team som prøver KI på MCPer og trygg datatilgang Innspill til verktøy, modeller og\nanbefalt praksis nye måter i egen arbeidsflyt sikre miljøer\nAI enablement-team | mål og rammer 05",
+      "spans": [
+        {
+          "mcid": 2,
+          "text": "Forslagtilbidragperfokusområde",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 30
+        },
+        {
+          "mcid": 5,
+          "text": "Oppsettog",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 9
+        },
+        {
+          "mcid": 6,
+          "text": "guardrails",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 10
+        },
+        {
+          "mcid": 11,
+          "text": "Kompetanseogerfaringsdeling",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 27
+        },
+        {
+          "mcid": 17,
+          "text": "Retningslinjerog",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 16
+        },
+        {
+          "mcid": 18,
+          "text": "policy",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 6
+        },
+        {
+          "mcid": 20,
+          "text": "Ambassadører/championsi",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 23
+        },
+        {
+          "mcid": 21,
+          "text": "teamene",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 7
+        },
+        {
+          "mcid": 23,
+          "text": "Community",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 9
+        },
+        {
+          "mcid": 24,
+          "text": "of",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 2
+        },
+        {
+          "mcid": 25,
+          "text": "Practice",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 8
+        },
+        {
+          "mcid": 26,
+          "text": ",demoer",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 7
+        },
+        {
+          "mcid": 27,
+          "text": "ogerfaringsdeling",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 17
+        },
+        {
+          "mcid": 29,
+          "text": "StøttetilteamsomprøverKIpå",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 26
+        },
+        {
+          "mcid": 30,
+          "text": "nyemåteriegenarbeidsflyt",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 24
+        },
+        {
+          "mcid": 32,
+          "text": "AI",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 2
+        },
+        {
+          "mcid": 33,
+          "text": "enablement",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 10
+        },
+        {
+          "mcid": 34,
+          "text": "-",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 1
+        },
+        {
+          "mcid": 35,
+          "text": "team|målogrammer",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 16
+        },
+        {
+          "mcid": 36,
+          "text": "05",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 2
+        },
+        {
+          "mcid": 37,
+          "text": "Fangelæringfratesteriteamene",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 28
+        },
+        {
+          "mcid": 38,
+          "text": "Byggelæringsloggogfelles",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 24
+        },
+        {
+          "mcid": 39,
+          "text": "eksempler",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 9
+        },
+        {
+          "mcid": 40,
+          "text": "Vurderehvasombørløftestil",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 25
+        },
+        {
+          "mcid": 41,
+          "text": "anbefaltpraksis",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 15
+        },
+        {
+          "mcid": 42,
+          "text": "Retningslinjerforhvordanbruke",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 29
+        },
+        {
+          "mcid": 43,
+          "text": "KIpåenforsvarligmåte",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 20
+        },
+        {
+          "mcid": 44,
+          "text": "Innspilltilpolicyog",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 19
+        },
+        {
+          "mcid": 45,
+          "text": "risikovurderinger",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 17
+        },
+        {
+          "mcid": 46,
+          "text": "Innspilltilverktøy,modellerog",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 29
+        },
+        {
+          "mcid": 47,
+          "text": "sikremiljøer",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 12
+        },
+        {
+          "mcid": 51,
+          "text": "Ferdiglagdeoppsettforulike",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 26
+        },
+        {
+          "mcid": 52,
+          "text": "miljøer",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 7
+        },
+        {
+          "mcid": 53,
+          "text": "ByggestenertilAX,eksempelvis",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 28
+        },
+        {
+          "mcid": 54,
+          "text": "fellesAGENTS.mdogskills",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 23
+        },
+        {
+          "mcid": 57,
+          "text": "MCPerogtryggdatatilgang",
+          "language": "UNMAPPED",
+          "roles": [],
+          "character_count": 23
+        }
+      ]
+    }
+  ],
+  "limits": "Structure/content mapping, not actual PDF-reader speech. Text content reviewed separately for language; defaults and overrides are both retained."
+}

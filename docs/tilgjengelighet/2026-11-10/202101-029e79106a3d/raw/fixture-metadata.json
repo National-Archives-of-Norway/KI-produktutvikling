@@ -1,0 +1,9 @@
+{
+  "threshold_epoch_ms": 1794857941169,
+  "scope": "Unchanged new production export; fresh/stale page-opening modes, synthetic clock crossing plus replay of any actual hourly callbacks",
+  "delay_ms": 10000,
+  "component_sha256": "796e731bbc2a38831a68e8853bcd396cea95a12889c91ed74039fa3f0e09ef1a",
+  "expected_hourly_callbacks": 0,
+  "expected_fresh_warnings_after_crossing": 0,
+  "expected_stale_warnings_on_open": 6
+}

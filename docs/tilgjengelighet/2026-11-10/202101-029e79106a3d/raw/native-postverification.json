@@ -1,0 +1,12 @@
+{
+  "native_manifest": "docs/tilgjengelighet/2026-11-10/203306-native-1c441fbd/native-manifest.json",
+  "axe_routes": 23,
+  "axe_violations": 0,
+  "axe_incomplete_groups": 3,
+  "axe_incomplete_nodes": 86,
+  "same_incomplete_targets_as_previous": true,
+  "nu_html_files": 25,
+  "nu_errors": 0,
+  "nu_info": 207,
+  "note": "New post-fix, post-declaration-build native run. Original engine needs_review/incomplete retained; all Nu notes are trailing-slash information. Manual contrast evidence is separate."
+}

@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { unresolvedAccessibilityRequirements } from "@/content/accessibility";
+import {
+  knownAccessibilityBreaches,
+  unresolvedAccessibilityRequirements,
+} from "@/content/accessibility";
 
 export const metadata: Metadata = {
   title: "Tilgjengelighetserklæring",
@@ -41,10 +44,29 @@ export default function AccessibilityPage() {
         .
       </p>
       <h2 id="kjente-brudd">Kjente brudd</h2>
-      <p>
-        Det er for tiden ingen bekreftede, åpne brudd i det undersøkte utvalget.
-        Samlet samsvar er fortsatt uavklart fordi vurderingen ikke er fullført.
-      </p>
+      {knownAccessibilityBreaches.length === 0 && (
+        <p>
+          Det er for tiden ingen bekreftede, åpne brudd i det undersøkte
+          utvalget. Samlet samsvar er fortsatt uavklart fordi vurderingen ikke
+          er fullført.
+        </p>
+      )}
+      {knownAccessibilityBreaches.map((group) => (
+        <section key={group.title}>
+          <h3>{group.title}</h3>
+          <ul>
+            {group.requirements.map((requirement) => (
+              <li key={requirement.id}>
+                <strong>
+                  {requirement.id} {requirement.title}
+                </strong>
+                <p>{requirement.description}</p>
+                <p>{requirement.alternative}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
       <p>
         Du kan be om hjelp eller innhold i et annet format gjennom{" "}
         <a href="#kontakt">kontaktkanalen nedenfor</a>.
@@ -117,9 +139,9 @@ export default function AccessibilityPage() {
         tekstavstand, kontrastvurdering av tekst, kontrollmarkeringer og
         nødvendig grafikk, også i PDF-diagrammet, kontroll av animasjonens
         pausefunksjon, simulering av prisaldervarselet, axe-skann og
-        HTML-validering med Nu Html Checker samt målrettede PDF-kontroller.
-        Tidligere undersøkelser av øvrig innhold inngår også i grunnlaget.
-        Faktisk skjermleserbruk er ikke testet.
+        HTML-validering med Nu Html Checker samt målrettede PDF-kontroller av
+        blant annet språkmerking. Tidligere undersøkelser av øvrig innhold
+        inngår også i grunnlaget. Faktisk skjermleserbruk er ikke testet.
       </p>
       <p>
         Teksten ble sist oppdatert{" "}

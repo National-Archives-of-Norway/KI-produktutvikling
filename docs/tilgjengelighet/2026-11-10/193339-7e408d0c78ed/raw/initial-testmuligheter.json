@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "skill_version": "0.6.0",
+  "scope": null,
+  "capabilities": [
+    {
+      "id": "browser_keyboard",
+      "status": "unverified",
+      "environment": null,
+      "checked_at": null,
+      "evidence": [],
+      "limitation": null,
+      "next_action": "Avklar faktisk tilgang med tillatt verktøy eller testeren."
+    },
+    {
+      "id": "browser_zoom",
+      "status": "unverified",
+      "environment": null,
+      "checked_at": null,
+      "evidence": [],
+      "limitation": null,
+      "next_action": "Avklar faktisk tilgang med tillatt verktøy eller testeren."
+    },
+    {
+      "id": "screen_reader",
+      "status": "unverified",
+      "environment": null,
+      "checked_at": null,
+      "evidence": [],
+      "limitation": null,
+      "next_action": "Avklar faktisk tilgang med tillatt verktøy eller testeren."
+    },
+    {
+      "id": "pdf_reader",
+      "status": "unverified",
+      "environment": null,
+      "checked_at": null,
+      "evidence": [],
+      "limitation": null,
+      "next_action": "Avklar faktisk tilgang med tillatt verktøy eller testeren."
+    },
+    {
+      "id": "pdf_structure",
+      "status": "unverified",
+      "environment": null,
+      "checked_at": null,
+      "evidence": [],
+      "limitation": null,
+      "next_action": "Avklar faktisk tilgang med tillatt verktøy eller testeren."
+    },
+    {
+      "id": "physical_rotation",
+      "status": "unverified",
+      "environment": null,
+      "checked_at": null,
+      "evidence": [],
+      "limitation": null,
+      "next_action": "Avklar faktisk tilgang med tillatt verktøy eller testeren."
+    },
+    {
+      "id": "reduced_motion",
+      "status": "unverified",
+      "environment": null,
+      "checked_at": null,
+      "evidence": [],
+      "limitation": null,
+      "next_action": "Avklar faktisk tilgang med tillatt verktøy eller testeren."
+    },
+    {
+      "id": "dynamic_test_service",
+      "status": "unverified",
+      "environment": null,
+      "checked_at": null,
+      "evidence": [],
+      "limitation": null,
+      "next_action": "Avklar faktisk tilgang med tillatt verktøy eller testeren."
+    }
+  ],
+  "note": "Mal, ikke utført kartlegging. Installert verktøy betyr ikke at assistenten kan betjene det."
+}

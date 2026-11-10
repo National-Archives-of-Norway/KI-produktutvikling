@@ -1,0 +1,28 @@
+{
+  "status": "consistent",
+  "checked_at": "2026-11-10T18:48:02.998256+00:00",
+  "overall_conformance": "not_assessed_by_this_check",
+  "criteria_counts": {
+    "B": 3,
+    "I": 11,
+    "K": 26,
+    "U": 8
+  },
+  "unresolved_ids": [
+    "1.1.1",
+    "1.3.1",
+    "1.3.2",
+    "1.3.4",
+    "1.4.10",
+    "1.4.4",
+    "4.1.2",
+    "4.1.3"
+  ],
+  "open_breach_ids": [
+    "2.2.2",
+    "3.1.1",
+    "3.1.2"
+  ],
+  "issues": [],
+  "note": "Konsistens er ikke tilgjengelighetsgodkjenning eller kontroll av bevisenes faglige tilstrekkelighet."
+}

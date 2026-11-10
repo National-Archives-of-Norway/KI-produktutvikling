@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "skill_version": "0.6.0",
+  "scope": "Målrettet retting/retest av PDF-språk og ferskhetsvarsel. Tidligere blokkerte hjelpemiddel-/zoom-/enhetsprøver er ikke forsøkt på nytt.",
+  "capabilities": [
+    {
+      "id": "browser_keyboard",
+      "status": "available",
+      "environment": "IAB via CUA documented Playwright; actual Tab/Shift+Tab/Enter/Space/Escape and DOM/focus observations",
+      "checked_at": "2026-11-10T19:22:39.178275+00:00",
+      "evidence": [
+        "raw/browser.json"
+      ],
+      "limitation": null,
+      "next_action": "Utført i oppgitt utvalg."
+    },
+    {
+      "id": "browser_zoom",
+      "status": "blocked",
+      "environment": "IAB has viewport but no advertised zoom; native Chrome access denied",
+      "checked_at": "2026-11-10T18:45:42.960224+00:00",
+      "evidence": [
+        "../193339-7e408d0c78ed/raw/test-environment.json"
+      ],
+      "limitation": "Native apptilgang mangler; viewport er ikke zoom.",
+      "next_action": "Tester med lokal nettleser utfører dokumentert 200/400 % zoom."
+    },
+    {
+      "id": "screen_reader",
+      "status": "needs_assistance",
+      "environment": "No speech/VoiceOver control advertised; native app access denied",
+      "checked_at": "2026-11-10T18:45:42.960224+00:00",
+      "evidence": [
+        "../193339-7e408d0c78ed/raw/test-environment.json"
+      ],
+      "limitation": "Faktisk tale og hjelpemiddelbetjening kan ikke observeres her.",
+      "next_action": "Utfør testforløp med faktisk skjermleser og tale-/handlingsnotater."
+    },
+    {
+      "id": "pdf_reader",
+      "status": "needs_assistance",
+      "environment": "Python structure/render access; no interactive native PDF-reader access",
+      "checked_at": "2026-11-10T18:45:42.960224+00:00",
+      "evidence": [
+        "../193339-7e408d0c78ed/raw/test-environment.json"
+      ],
+      "limitation": "Parser/rendring er ikke en PDF-leser med skjermleser.",
+      "next_action": "Åpne PDF i egnet leser og prøv faktisk navigasjon/opplesing."
+    },
+    {
+      "id": "pdf_structure",
+      "status": "available",
+      "environment": "Python pypdf 6.10.0 and pdfplumber 0.11.9",
+      "checked_at": "2026-11-10T19:22:39.178275+00:00",
+      "evidence": [
+        "raw/pdf-language-after.json",
+        "raw/pdf-regression.json"
+      ],
+      "limitation": null,
+      "next_action": "Programmatisk språk-/innholdskobling utført; ingen faktisk opplesing."
+    },
+    {
+      "id": "physical_rotation",
+      "status": "needs_assistance",
+      "environment": "No physical device interface in available environment",
+      "checked_at": "2026-11-10T18:45:42.960224+00:00",
+      "evidence": [
+        "../193339-7e408d0c78ed/raw/test-environment.json"
+      ],
+      "limitation": "Ingen tilgjengelig fysisk mobil/nettbrettflate.",
+      "next_action": "Tester roterer fysisk enhet gjennom navigasjon, katalog, chat og prisvisning."
+    },
+    {
+      "id": "reduced_motion",
+      "status": "needs_assistance",
+      "environment": "CSS rule inspected; OS-setting control not available",
+      "checked_at": "2026-11-10T18:45:42.960224+00:00",
+      "evidence": [
+        "../193339-7e408d0c78ed/raw/test-environment.json"
+      ],
+      "limitation": "Ingen faktisk OS-innstillingsprøve. Dette er separat produktkontroll, ikke alene et 2.2.2-godkjenningsvilkår.",
+      "next_action": "Prøv faktisk OS-innstilling som supplement; behold dokumenterte pauseprøver."
+    },
+    {
+      "id": "dynamic_test_service",
+      "status": "available",
+      "environment": "Local source-guidance RAG plus isolated static export with controlled clock",
+      "checked_at": "2026-11-10T19:22:39.178275+00:00",
+      "evidence": [
+        "raw/clock-retest.json",
+        "raw/fixture-metadata.json"
+      ],
+      "limitation": null,
+      "next_action": "Utført uten ekstern modell. Klokkeprøven er eksplisitt simulert."
+    }
+  ],
+  "note": "Mal, ikke utført kartlegging. Installert verktøy betyr ikke at assistenten kan betjene det."
+}

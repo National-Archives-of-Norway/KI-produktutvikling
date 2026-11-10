@@ -36,7 +36,7 @@ Reglene er også lagt i `AGENTS.md`, og gjelder fremtidig agentarbeid i prosjekt
 | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | Forside og navigasjon            | Lær/Prøv/Del, anbefalt oppgave «Utforsk et brukerbehov» fra ressursdata, menyen Kom i gang → Retningslinjer → Ressurskatalog → Oversikt → Spør KI → Om                    | Begrenset intern brukertesting gjenstår                                                                          |
 | Innhold og KI-prat               | Felles innholdsfiler for Kom i gang, Om og Retningslinjer, tydelig retningslinjelenke, KI-prat med deltakelsesinvitasjon og mandatforslag som vedlegg                     | Retningslinjer og mandat er utkast; eiere og godkjenning gjenstår                                                |
-| Ressurser og Skills              | Seks katalogressurser, separat lokalt Skills-repo, tilgjengelighetsskill 0.5.1 og personvernskill 0.1.0 med kartleggings-/rapportflyt og generell installasjonsveiledning | Skills er Beta og ikke menneskelig gjennomgått; ingen distribusjon fra portalen eller GitHub er etablert         |
+| Ressurser og Skills              | Seks katalogressurser, separat lokalt Skills-repo, tilgjengelighetsskill 0.6.0 og personvernskill 0.1.0 med kartleggings-/rapportflyt og generell installasjonsveiledning | Skills er Beta og ikke menneskelig gjennomgått; ingen distribusjon fra portalen eller GitHub er etablert         |
 | Spør KI                          | Kildebasert veiledning, konkrete steg, kilder, nye spørsmål, forbedret presentasjon av modellsvar og serveradapter for eksternt API                                       | Ingen faktisk modellgenerering er verifisert; hvert spørsmål behandles separat                                   |
 | Kontinuerlig innholdsoppdatering | Sider og RAG deler innhold; lokal RAG lastes om ved innholdsendringer; isolert synkroniseringstest finnes                                                                 | I produksjon må Next.js og RAG utrulles fra samme revisjon; gamle chatsvar er historikk                          |
 | Oversikter                       | Nettstedskart, versjonsloggside og funksjonalitetsoversikt med bunntekstlenker; byggkontroll for manglende/ukjente sider                                                  | Funksjonenes mening og modenhet må vedlikeholdes i registeret                                                    |
@@ -107,7 +107,7 @@ Fase 5 og 6 må samordnes før MVP 1 deles. Fase 7 kan utvikles parallelt, men f
 
 ## Fase 3 – Design, komponenter og tilgjengelighet
 
-Arbeidsgrunnlaget for P8 er konkretisert i [avklaringsplanen for de 15 uavklarte kravene](docs/tilgjengelighet/WCAG-KONTROLL.md#avklaringsplan-for-de-15-kravene), oppdatert 10. november 2026. Den angir tester/kompetanse, utstyr, lokale og pilotavhengige kontroller samt dokumentasjon per krav. Planen er ikke en ny test eller en fullført leveranse. Ansvarlig tester og godkjenner må utpekes.
+Arbeidsgrunnlaget for P8 er konkretisert i [avklaringsplanen for de 8 uavklarte kravene](docs/tilgjengelighet/WCAG-KONTROLL.md#avklaringsplan-for-de-15-kravene), oppdatert 10. november 2026. Den angir tester/kompetanse, utstyr, lokale og pilotavhengige kontroller samt dokumentasjon per krav. Planen er ikke en ny test eller en fullført leveranse. Ansvarlig tester og godkjenner må utpekes.
 
 - [x] Integrere `@digitalarkivet/mui-theme` og eget tema uten privat GitHub-tilgang.
 - [x] Implementere valgt arklogo/favicon, futuristisk forside, navigasjon, bunntekst, katalog, artikkeloppsett og chat.
@@ -425,3 +425,19 @@ Tilgjengelighetskontrollen fra 6. november omfattet ni sider. Den nye skill-deta
 - [x] Rette A11Y-07: filtervalg skifter tekst/bakgrunn samtidig; 16 umiddelbare tastatur-/pekerretester ved 1280/320 bestod. Katalogens funksjonsbeskrivelse er oppdatert, Beta-status beholdt.
 - [x] Oppdatere 1.4.11 U → K i lokalt utvalg og erklæringens liste til 13 U-krav. Arbeidsstatus 24 K / 11 I / 13 U / 0 B, ikke formelt samsvar.
 - [ ] Fullføre øvrige 13 U-krav og faktisk hjelpemiddel-/zoom-/enhets-/pilotprøving. Kontrastavklaringen lukker ikke PDF-alternativer/semantikk/språk eller P8; første delte miljø skal fortsatt være lukket.
+
+### Lokal oppfølging med skill 0.6.0 – 10. november 2026
+
+- [x] Kartlagt faktisk testtilgang og fullført tilgjengelige tastatur-/fokus-/metadata-/klokkekontroller, med avslutningsvilkår og automatisk dokumentavstemming. Se [rapport](docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/testrapport.md).
+- [x] Avklart 2.4.3/2.4.7 i prøvd lokalt utvalg; dokumentert åtte uavklarte krav med konkret bistand. Samlet 26 K / 11 I / 8 U / 3 B.
+- [x] Rettet og retestet A11Y-08 (PDF-språk, 3.1.1/3.1.2) og A11Y-09 (varsel om gamle prisdata, 2.2.2), 10. november 2026. Se [retest](docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/testrapport.md). P8 krever fortsatt de øvrige kontrollene.
+- [ ] Gjennomfør faktisk skjermleser/PDF-leser, 200/400 % zoom og fysisk rotasjon. Native appkontroll var blokkert i denne økten; viewport-/DOM-prøver er delgrunnlag.
+
+P8 og samlet produksjonsgodkjenning er fortsatt åpne. Første delte miljø er fortsatt lukket pilot; ingen utrulling eller offentlig publisering er utført.
+
+### Retest av PDF-språk og varsel om gamle prisdata – 10. november 2026
+
+- [x] Korrigert norsk PDF-språk og eksplisitte språkspenn, bevart engelske alternativtekster og bekreftet identisk render på alle syv sider.
+- [x] Fjernet automatisk timeoppdatering av aldersvarselet og retestet både sideåpning med gamle data og senere terskelpassering.
+- [x] Oppdatert erklæring og testgrunnlag til 29 K / 11 I / 8 U / 0 B, med dokumentavstemming. [Rapport](docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/testrapport.md).
+- [ ] Fullfør de åtte uavklarte kravene med egnet hjelpemiddel-/zoom-/enhetstilgang. Samlet samsvar, P8 og produksjonsgodkjenning er fortsatt ikke fullført; første delte miljø er lukket pilot.

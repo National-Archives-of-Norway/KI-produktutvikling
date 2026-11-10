@@ -1,0 +1,2141 @@
+[
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-filter-and-reset-0",
+    "outline": "rgb(157, 241, 173) solid 2px",
+    "rect": {
+      "height": 50,
+      "width": 64,
+      "x": 109,
+      "y": 739.046875
+    },
+    "tag": "BUTTON",
+    "text": "Skill",
+    "time": "2026-11-10T18:39:43.625Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-filter-and-reset-1",
+    "outline": "rgb(157, 241, 173) solid 2px",
+    "rect": {
+      "height": 50,
+      "width": 82.015625,
+      "x": 181,
+      "y": 738.546875
+    },
+    "tag": "BUTTON",
+    "text": "Instruks",
+    "time": "2026-11-10T18:39:43.635Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-filter-and-reset-2",
+    "outline": "rgb(157, 241, 173) solid 2px",
+    "rect": {
+      "height": 50,
+      "width": 77.5703125,
+      "x": 37,
+      "y": 794.546875
+    },
+    "tag": "BUTTON",
+    "text": "Prompt",
+    "time": "2026-11-10T18:39:43.649Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "1px solid rgba(255, 255, 255, 0.12)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-filter-and-reset-3",
+    "outline": "rgb(157, 241, 173) solid 2px",
+    "rect": {
+      "height": 50,
+      "width": 163.8046875,
+      "x": 45,
+      "y": 1062.0625
+    },
+    "tag": "BUTTON",
+    "text": "Nullstill søk og filtre",
+    "time": "2026-11-10T18:39:43.662Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 0px",
+        "shadow": "none",
+        "tag": "DIV"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "rgba(0, 0, 0, 0.6) 0px 24px 100px 0px, color(srgb 0.615686 0.945098 0.678431 / 0.08) 0px 0px 40px 0px",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-chat-initial-focus",
+    "outline": "rgb(255, 255, 255) none 0px",
+    "rect": {
+      "height": 700,
+      "width": 304,
+      "x": 8,
+      "y": 92
+    },
+    "tag": "DIV",
+    "text": "KI-PRODUKTUTVIKLINGSpør kunnskapsbasenSvar med kilder · under utprøvingUTFORSK KUNNSKAPENHei! Hva vi",
+    "time": "2026-11-10T18:39:55.790Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 0px",
+        "shadow": "rgba(0, 0, 0, 0.6) 0px 24px 100px 0px, color(srgb 0.615686 0.945098 0.678431 / 0.08) 0px 0px 40px 0px",
+        "tag": "DIV"
+      }
+    ],
+    "ariaLabel": "Lukk chat",
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-dialog-Tab",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 44,
+      "width": 44,
+      "x": 248,
+      "y": 121.390625
+    },
+    "tag": "BUTTON",
+    "text": "",
+    "time": "2026-11-10T18:40:12.951Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "color(srgb 0.0352941 0.0823529 0.105882 / 0.501961) 0px -8px 24px 0px",
+        "tag": "FORM"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-dialog-Shift+Tab",
+    "outline": "rgb(157, 241, 173) solid 2px",
+    "rect": {
+      "height": 48,
+      "width": 155.59375,
+      "x": 44,
+      "y": 707.7578125
+    },
+    "tag": "BUTTON",
+    "text": "Send spørsmål",
+    "time": "2026-11-10T18:40:12.963Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 0px",
+        "shadow": "rgba(0, 0, 0, 0.6) 0px 24px 100px 0px, color(srgb 0.615686 0.945098 0.678431 / 0.08) 0px 0px 40px 0px",
+        "tag": "DIV"
+      }
+    ],
+    "ariaLabel": "Lukk chat",
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-dialog-Tab",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 44,
+      "width": 44,
+      "x": 248,
+      "y": 121.390625
+    },
+    "tag": "BUTTON",
+    "text": "",
+    "time": "2026-11-10T18:40:12.984Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "color(srgb 0.0352941 0.0823529 0.105882 / 0.501961) 0px -8px 24px 0px",
+        "tag": "FORM"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-textarea-to-send",
+    "outline": "rgb(157, 241, 173) solid 2px",
+    "rect": {
+      "height": 48,
+      "width": 155.59375,
+      "x": 44,
+      "y": 650
+    },
+    "tag": "BUTTON",
+    "text": "Send spørsmål",
+    "time": "2026-11-10T18:40:29.705Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "color(srgb 0.0352941 0.0823529 0.105882 / 0.501961) 0px -8px 24px 0px",
+        "tag": "FORM"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-send-to-clear",
+    "outline": "rgb(157, 241, 173) solid 2px",
+    "rect": {
+      "height": 50,
+      "width": 93.5625,
+      "x": 44,
+      "y": 706
+    },
+    "tag": "BUTTON",
+    "text": "Tøm chat",
+    "time": "2026-11-10T18:40:29.743Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "color(srgb 0.615686 0.945098 0.678431 / 0.07) 0px 0px 18px 0px",
+        "tag": "DIV"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "_r_1_",
+    "label": "320-after-clear",
+    "outline": "rgb(255, 255, 255) none 0px",
+    "rect": {
+      "height": 70,
+      "width": 204,
+      "x": 58,
+      "y": 572.6640625
+    },
+    "tag": "TEXTAREA",
+    "text": "",
+    "time": "2026-11-10T18:40:29.779Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "MAIN"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "BODY"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "oklab(0.886988 -0.10689 0.0633639 / 0.194789) 0px 3.89579px 31.1663px 0px",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-dialog-closed-focus-return",
+    "outline": "rgb(157, 241, 173) solid 2px",
+    "rect": {
+      "height": 52,
+      "width": 102.234375,
+      "x": 201.765625,
+      "y": 732
+    },
+    "tag": "BUTTON",
+    "text": "Spør KI",
+    "time": "2026-11-10T18:40:29.827Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "HTML"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": false,
+    "id": "",
+    "label": "320-reset-unmounted-control",
+    "outline": "rgb(255, 255, 255) none 3px",
+    "rect": {
+      "height": 4848.984375,
+      "width": 320,
+      "x": 0,
+      "y": -1236.5
+    },
+    "tag": "BODY",
+    "text": "Hopp til innholdKI-ProduktutviklingKom i gangRetningslinjerRessurskatalogOversiktSpør KIOmSpør KI KU",
+    "time": "2026-11-10T18:40:38.629Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "BODY"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "HTML"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-first-tab-after-reset",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 44,
+      "width": 130.296875,
+      "x": 20,
+      "y": -1224
+    },
+    "tag": "A",
+    "text": "Hopp til innhold",
+    "time": "2026-11-10T18:40:38.665Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "HEADER"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "BODY"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-home-tab-0",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 44,
+      "width": 214.40625,
+      "x": 60,
+      "y": 28
+    },
+    "tag": "A",
+    "text": "KI-Produktutvikling",
+    "time": "2026-11-10T18:41:09.693Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "NAV"
+      },
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "HEADER"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-home-tab-1",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 44,
+      "width": 70.8203125,
+      "x": 688.7265625,
+      "y": 28
+    },
+    "tag": "A",
+    "text": "Kom i gang",
+    "time": "2026-11-10T18:41:09.708Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "NAV"
+      },
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "HEADER"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-home-tab-2",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 44,
+      "width": 84.8203125,
+      "x": 789.546875,
+      "y": 28
+    },
+    "tag": "A",
+    "text": "Retningslinjer",
+    "time": "2026-11-10T18:41:09.722Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "NAV"
+      },
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "HEADER"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-home-tab-3",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 44,
+      "width": 104.2734375,
+      "x": 904.3671875,
+      "y": 28
+    },
+    "tag": "A",
+    "text": "Ressurskatalog",
+    "time": "2026-11-10T18:41:09.736Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "NAV"
+      },
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "HEADER"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-home-tab-4",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 44,
+      "width": 51.34375,
+      "x": 1038.640625,
+      "y": 28
+    },
+    "tag": "A",
+    "text": "Oversikt",
+    "time": "2026-11-10T18:41:09.749Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "NAV"
+      },
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "HEADER"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-home-tab-5",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 44,
+      "width": 47.4609375,
+      "x": 1119.984375,
+      "y": 28
+    },
+    "tag": "A",
+    "text": "Spør KI",
+    "time": "2026-11-10T18:41:09.762Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "NAV"
+      },
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "HEADER"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-home-tab-6",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 44,
+      "width": 22.5546875,
+      "x": 1197.4453125,
+      "y": 28
+    },
+    "tag": "A",
+    "text": "Om",
+    "time": "2026-11-10T18:41:09.783Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "MAIN"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "BODY"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "oklab(0.886988 -0.10689 0.0633639 / 0.2) 0px 4px 32px 0px",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-home-tab-7",
+    "outline": "rgb(157, 241, 173) solid 2px",
+    "rect": {
+      "height": 56,
+      "width": 110.234375,
+      "x": 1145.765625,
+      "y": 720
+    },
+    "tag": "BUTTON",
+    "text": "Spør KI",
+    "time": "2026-11-10T18:41:09.797Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "oklab(0.886988 -0.10689 0.0633639 / 0.12) 0px 4px 24px 0px",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-home-tab-8",
+    "outline": "rgb(157, 241, 173) solid 2px",
+    "rect": {
+      "height": 58,
+      "width": 144.9375,
+      "x": 60,
+      "y": 498
+    },
+    "tag": "A",
+    "text": "Kom i gang ↗",
+    "time": "2026-11-10T18:41:09.811Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-home-tab-9",
+    "outline": "rgb(157, 241, 173) solid 2px",
+    "rect": {
+      "height": 58,
+      "width": 192.265625,
+      "x": 218.9375,
+      "y": 498
+    },
+    "tag": "A",
+    "text": "Utforsk ressursene ↓",
+    "time": "2026-11-10T18:41:09.825Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "MAIN"
+      }
+    ],
+    "ariaLabel": "Pause animasjonen i forsideillustrasjonen",
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-home-tab-10",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 340,
+      "width": 340,
+      "x": 856,
+      "y": 176.5
+    },
+    "tag": "BUTTON",
+    "text": "",
+    "time": "2026-11-10T18:41:09.839Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "color(srgb 0.615686 0.945098 0.678431 / 0.08) 0px 0px 20px 0px",
+        "tag": "DIV"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "resource-search",
+    "label": "1280-home-tab-11",
+    "outline": "rgb(255, 255, 255) none 0px",
+    "rect": {
+      "height": 55,
+      "width": 766.4140625,
+      "x": 81,
+      "y": 839.5
+    },
+    "tag": "INPUT",
+    "text": "",
+    "time": "2026-11-10T18:41:09.855Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-home-tab-12",
+    "outline": "rgb(157, 241, 173) solid 2px",
+    "rect": {
+      "height": 58,
+      "width": 64,
+      "x": 871.4140625,
+      "y": 835.5
+    },
+    "tag": "BUTTON",
+    "text": "Alle",
+    "time": "2026-11-10T18:41:09.870Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-home-tab-13",
+    "outline": "rgb(157, 241, 173) solid 2px",
+    "rect": {
+      "height": 58,
+      "width": 64,
+      "x": 943.4140625,
+      "y": 834.5
+    },
+    "tag": "BUTTON",
+    "text": "Skill",
+    "time": "2026-11-10T18:41:09.886Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-home-tab-14",
+    "outline": "rgb(157, 241, 173) solid 2px",
+    "rect": {
+      "height": 58,
+      "width": 90.015625,
+      "x": 1015.4140625,
+      "y": 833
+    },
+    "tag": "BUTTON",
+    "text": "Instruks",
+    "time": "2026-11-10T18:41:09.900Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-home-tab-15",
+    "outline": "rgb(157, 241, 173) solid 2px",
+    "rect": {
+      "height": 58,
+      "width": 85.5703125,
+      "x": 1113.4296875,
+      "y": 827.5
+    },
+    "tag": "BUTTON",
+    "text": "Prompt",
+    "time": "2026-11-10T18:41:09.911Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "1px solid rgb(157, 241, 173)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "oklab(0 0 0 / 0.0509804) 0px 4px 20px 0px",
+        "tag": "ARTICLE"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      }
+    ],
+    "ariaLabel": "Se skill: Test tilgjengelighet og utform erklæring",
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-home-tab-16",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 44,
+      "width": 70.3515625,
+      "x": 85,
+      "y": 1243.09375
+    },
+    "tag": "A",
+    "text": "Se skill ↗",
+    "time": "2026-11-10T18:41:09.923Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "1px solid rgb(157, 241, 173)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "oklab(0 0 0 / 0.0509804) 0px 4px 20px 0px",
+        "tag": "ARTICLE"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      }
+    ],
+    "ariaLabel": "Se skill: Kartlegg informasjonskapsler og samtykke",
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-home-tab-17",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 44,
+      "width": 70.3515625,
+      "x": 477.6640625,
+      "y": 1242.09375
+    },
+    "tag": "A",
+    "text": "Se skill ↗",
+    "time": "2026-11-10T18:41:09.937Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-spor-first-control-after-skip",
+    "outline": "rgb(157, 241, 173) solid 2px",
+    "rect": {
+      "height": 44,
+      "width": 760,
+      "x": 260,
+      "y": 533
+    },
+    "tag": "BUTTON",
+    "text": "Hvordan gjennomgår jeg en kodeendring?",
+    "time": "2026-11-10T18:41:22.250Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-spor-input-order-0",
+    "outline": "rgb(157, 241, 173) solid 2px",
+    "rect": {
+      "height": 44,
+      "width": 760,
+      "x": 260,
+      "y": 580.5
+    },
+    "tag": "BUTTON",
+    "text": "Hvordan gir jeg KI god kontekst?",
+    "time": "2026-11-10T18:41:22.267Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-spor-input-order-1",
+    "outline": "rgb(157, 241, 173) solid 2px",
+    "rect": {
+      "height": 44,
+      "width": 760,
+      "x": 260,
+      "y": 627
+    },
+    "tag": "BUTTON",
+    "text": "Hvordan utforsker jeg brukerbehov?",
+    "time": "2026-11-10T18:41:22.282Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "color(srgb 0.615686 0.945098 0.678431 / 0.07) 0px 0px 18px 0px",
+        "tag": "DIV"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "_R_29bn5rfllb_",
+    "label": "1280-spor-input-order-2",
+    "outline": "rgb(255, 255, 255) none 0px",
+    "rect": {
+      "height": 78,
+      "width": 700,
+      "x": 290,
+      "y": 753.5
+    },
+    "tag": "TEXTAREA",
+    "text": "",
+    "time": "2026-11-10T18:41:22.301Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none color(srgb 0.615686 0.945098 0.678431 / 0.4)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DETAILS"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-first-source-open",
+    "outline": "rgb(157, 241, 173) solid 2px",
+    "rect": {
+      "height": 64,
+      "width": 692,
+      "x": 288,
+      "y": 607.25
+    },
+    "tag": "SUMMARY",
+    "text": "[1] Gi KI tydelig kontekst",
+    "time": "2026-11-10T18:41:31.053Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none color(srgb 0.615686 0.945098 0.678431 / 0.4)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DETAILS"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "DIV"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-open-source-next-link",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 15.5,
+      "width": 91.0546875,
+      "x": 288,
+      "y": 700.75
+    },
+    "tag": "A",
+    "text": "Åpne kilden →",
+    "time": "2026-11-10T18:41:31.103Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(215, 215, 215)",
+        "outline": "rgb(215, 215, 215) none 3px",
+        "shadow": "none",
+        "tag": "DETAILS"
+      },
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-pricing-summary-0",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 24,
+      "width": 280,
+      "x": 20,
+      "y": 2018.46875
+    },
+    "tag": "SUMMARY",
+    "text": "Vilkår og avgrensninger",
+    "time": "2026-11-10T18:41:45.446Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": "GitHub Copilot-abonnement, rullbar pristabell",
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-pricing-table-0",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 440.5,
+      "width": 280,
+      "x": 20,
+      "y": 1556.96875
+    },
+    "tag": "DIV",
+    "text": "USD per bruker eller sete per månedPlanMånedsbetalingÅrsbetaling, per månedCopilot Pro10,00 USDper b",
+    "time": "2026-11-10T18:41:45.460Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(215, 215, 215)",
+        "outline": "rgb(215, 215, 215) none 3px",
+        "shadow": "none",
+        "tag": "DETAILS"
+      },
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-pricing-summary-1",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 24,
+      "width": 280,
+      "x": 20,
+      "y": 3463.46875
+    },
+    "tag": "SUMMARY",
+    "text": "Vilkår og avgrensninger",
+    "time": "2026-11-10T18:41:45.474Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": "Claude-abonnement, rullbar pristabell",
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-pricing-table-1",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 440.5,
+      "width": 280,
+      "x": 20,
+      "y": 3002.46875
+    },
+    "tag": "DIV",
+    "text": "USD per bruker eller sete per månedPlanMånedsbetalingÅrsbetaling, per månedClaude Pro20,00 USDper br",
+    "time": "2026-11-10T18:41:45.489Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(215, 215, 215)",
+        "outline": "rgb(215, 215, 215) none 3px",
+        "shadow": "none",
+        "tag": "DETAILS"
+      },
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-pricing-summary-2",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 24,
+      "width": 280,
+      "x": 20,
+      "y": 4700.96875
+    },
+    "tag": "SUMMARY",
+    "text": "Vilkår og avgrensninger",
+    "time": "2026-11-10T18:41:45.502Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": "ChatGPT-abonnement med Codex, rullbar pristabell",
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-pricing-table-2",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 297.5,
+      "width": 280,
+      "x": 20,
+      "y": 4382.96875
+    },
+    "tag": "DIV",
+    "text": "USD per bruker eller sete per månedPlanMånedsbetalingÅrsbetaling, per månedChatGPT Plus / Codex20,00",
+    "time": "2026-11-10T18:41:45.516Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(215, 215, 215)",
+        "outline": "rgb(215, 215, 215) none 3px",
+        "shadow": "none",
+        "tag": "DETAILS"
+      },
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-pricing-summary-3",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 24,
+      "width": 280,
+      "x": 20,
+      "y": 6449.96875
+    },
+    "tag": "SUMMARY",
+    "text": "Vilkår og avgrensninger",
+    "time": "2026-11-10T18:41:45.533Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": "Tokenpriser i GitHub Copilot, rullbar pristabell",
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-pricing-table-3",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 440.5,
+      "width": 280,
+      "x": 20,
+      "y": 5863.46875
+    },
+    "tag": "DIV",
+    "text": "USD per én million tokensModell og kontekstInputOutputCache-lesingCache-skriving*GPT-5.3-Codex · Def",
+    "time": "2026-11-10T18:41:45.546Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(215, 215, 215)",
+        "outline": "rgb(215, 215, 215) none 3px",
+        "shadow": "none",
+        "tag": "DETAILS"
+      },
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-pricing-summary-4",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 24,
+      "width": 280,
+      "x": 20,
+      "y": 7732.46875
+    },
+    "tag": "SUMMARY",
+    "text": "Vilkår og avgrensninger",
+    "time": "2026-11-10T18:41:45.558Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": "Direkte Claude API, rullbar pristabell",
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-pricing-table-4",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 297.5,
+      "width": 280,
+      "x": 20,
+      "y": 7288.96875
+    },
+    "tag": "DIV",
+    "text": "USD per én million tokensModell og kontekstInputOutputCache-lesingCache-skriving*Claude Opus 5.5Stan",
+    "time": "2026-11-10T18:41:45.572Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(215, 215, 215)",
+        "outline": "rgb(215, 215, 215) none 3px",
+        "shadow": "none",
+        "tag": "DETAILS"
+      },
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-pricing-summary-5",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 24,
+      "width": 280,
+      "x": 20,
+      "y": 9137.46875
+    },
+    "tag": "SUMMARY",
+    "text": "Vilkår og avgrensninger",
+    "time": "2026-11-10T18:41:45.584Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": "OpenAI API for Codex, rullbar pristabell",
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-pricing-table-5",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 539.5,
+      "width": 280,
+      "x": 20,
+      "y": 8450.96875
+    },
+    "tag": "DIV",
+    "text": "USD per én million tokensModell og kontekstInputOutputCache-lesingCache-skriving*gpt-6.1-sol · Short",
+    "time": "2026-11-10T18:41:45.598Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(215, 215, 215)",
+        "outline": "rgb(215, 215, 215) none 3px",
+        "shadow": "none",
+        "tag": "DETAILS"
+      },
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-pricing-summary-0",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 24,
+      "width": 1100,
+      "x": 90,
+      "y": 1227.8125
+    },
+    "tag": "SUMMARY",
+    "text": "Vilkår og avgrensninger",
+    "time": "2026-11-10T18:41:45.710Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": "GitHub Copilot-abonnement, rullbar pristabell",
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-pricing-table-0",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 440.5,
+      "width": 1100,
+      "x": 90,
+      "y": 748.3125
+    },
+    "tag": "DIV",
+    "text": "USD per bruker eller sete per månedPlanMånedsbetalingÅrsbetaling, per månedCopilot Pro10,00 USDper b",
+    "time": "2026-11-10T18:41:45.724Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(215, 215, 215)",
+        "outline": "rgb(215, 215, 215) none 3px",
+        "shadow": "none",
+        "tag": "DETAILS"
+      },
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-pricing-summary-1",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 24,
+      "width": 1100,
+      "x": 90,
+      "y": 1919.3125
+    },
+    "tag": "SUMMARY",
+    "text": "Vilkår og avgrensninger",
+    "time": "2026-11-10T18:41:45.738Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": "Claude-abonnement, rullbar pristabell",
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-pricing-table-1",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 440.5,
+      "width": 1100,
+      "x": 90,
+      "y": 1457.8125
+    },
+    "tag": "DIV",
+    "text": "USD per bruker eller sete per månedPlanMånedsbetalingÅrsbetaling, per månedClaude Pro20,00 USDper br",
+    "time": "2026-11-10T18:41:45.757Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(215, 215, 215)",
+        "outline": "rgb(215, 215, 215) none 3px",
+        "shadow": "none",
+        "tag": "DETAILS"
+      },
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-pricing-summary-2",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 24,
+      "width": 1100,
+      "x": 90,
+      "y": 2485.3125
+    },
+    "tag": "SUMMARY",
+    "text": "Vilkår og avgrensninger",
+    "time": "2026-11-10T18:41:45.770Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": "ChatGPT-abonnement med Codex, rullbar pristabell",
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-pricing-table-2",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 297.5,
+      "width": 1100,
+      "x": 90,
+      "y": 2167.3125
+    },
+    "tag": "DIV",
+    "text": "USD per bruker eller sete per månedPlanMånedsbetalingÅrsbetaling, per månedChatGPT Plus / Codex20,00",
+    "time": "2026-11-10T18:41:45.784Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(215, 215, 215)",
+        "outline": "rgb(215, 215, 215) none 3px",
+        "shadow": "none",
+        "tag": "DETAILS"
+      },
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-pricing-summary-3",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 24,
+      "width": 1100,
+      "x": 90,
+      "y": 3453.3125
+    },
+    "tag": "SUMMARY",
+    "text": "Vilkår og avgrensninger",
+    "time": "2026-11-10T18:41:45.798Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": "Tokenpriser i GitHub Copilot, rullbar pristabell",
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-pricing-table-3",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 440.5,
+      "width": 1100,
+      "x": 90,
+      "y": 2929.8125
+    },
+    "tag": "DIV",
+    "text": "USD per én million tokensModell og kontekstInputOutputCache-lesingCache-skriving*GPT-5.3-Codex · Def",
+    "time": "2026-11-10T18:41:45.814Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(215, 215, 215)",
+        "outline": "rgb(215, 215, 215) none 3px",
+        "shadow": "none",
+        "tag": "DETAILS"
+      },
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-pricing-summary-4",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 24,
+      "width": 1100,
+      "x": 90,
+      "y": 4080.3125
+    },
+    "tag": "SUMMARY",
+    "text": "Vilkår og avgrensninger",
+    "time": "2026-11-10T18:41:45.842Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": "Direkte Claude API, rullbar pristabell",
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-pricing-table-4",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 297.5,
+      "width": 1100,
+      "x": 90,
+      "y": 3699.3125
+    },
+    "tag": "DIV",
+    "text": "USD per én million tokensModell og kontekstInputOutputCache-lesingCache-skriving*Claude Opus 5.5Stan",
+    "time": "2026-11-10T18:41:45.855Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "0px none rgb(215, 215, 215)",
+        "outline": "rgb(215, 215, 215) none 3px",
+        "shadow": "none",
+        "tag": "DETAILS"
+      },
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": null,
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-pricing-summary-5",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 24,
+      "width": 1100,
+      "x": 90,
+      "y": 4851.3125
+    },
+    "tag": "SUMMARY",
+    "text": "Vilkår og avgrensninger",
+    "time": "2026-11-10T18:41:45.867Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": "OpenAI API for Codex, rullbar pristabell",
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-pricing-table-5",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 440.5,
+      "width": 1100,
+      "x": 90,
+      "y": 4327.8125
+    },
+    "tag": "DIV",
+    "text": "USD per én million tokensModell og kontekstInputOutputCache-lesingCache-skriving*gpt-6.1-sol · Short",
+    "time": "2026-11-10T18:41:45.881Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": "OpenAI API for Codex, rullbar pristabell",
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "1280-pricing-table-settled",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 440.5,
+      "width": 1100,
+      "x": 90,
+      "y": 141.8125
+    },
+    "tag": "DIV",
+    "text": "USD per én million tokensModell og kontekstInputOutputCache-lesingCache-skriving*gpt-6.1-sol · Short",
+    "time": "2026-11-10T18:42:06.246Z",
+    "width": 1280
+  },
+  {
+    "ancestors": [
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": "GitHub Copilot-abonnement, rullbar pristabell",
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-first-pricing-table-final",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 440.5,
+      "width": 280,
+      "x": 20,
+      "y": -2752.03125
+    },
+    "tag": "DIV",
+    "text": "USD per bruker eller sete per månedPlanMånedsbetalingÅrsbetaling, per månedCopilot Pro10,00 USDper b",
+    "time": "2026-11-10T18:42:06.348Z",
+    "width": 320
+  },
+  {
+    "ancestors": [
+      {
+        "border": "",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      },
+      {
+        "border": "0px none rgb(255, 255, 255)",
+        "outline": "rgb(255, 255, 255) none 3px",
+        "shadow": "none",
+        "tag": "SECTION"
+      }
+    ],
+    "ariaLabel": "GitHub Copilot-abonnement, rullbar pristabell",
+    "boxShadow": "none",
+    "dialog": null,
+    "focusVisible": true,
+    "id": "",
+    "label": "320-first-table-settled",
+    "outline": "rgb(157, 241, 173) solid 3px",
+    "rect": {
+      "height": 440.5,
+      "width": 280,
+      "x": 20,
+      "y": 141.96875
+    },
+    "tag": "DIV",
+    "text": "USD per bruker eller sete per månedPlanMånedsbetalingÅrsbetaling, per månedCopilot Pro10,00 USDper b",
+    "time": "2026-11-10T18:42:27.463Z",
+    "width": 320
+  }
+]

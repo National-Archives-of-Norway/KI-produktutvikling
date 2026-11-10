@@ -1,0 +1,37 @@
+{
+  "run_directory": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734",
+  "automatic_status": "needs_review",
+  "overall_conformance": "not_assessed",
+  "manifest": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/manifest.json",
+  "review_status": "nontext_contrast_assessed_and_filter_transition_fixed",
+  "reviewed_at": "2026-11-10T15:08:41.513502+00:00",
+  "previous_run": "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b",
+  "native_run": "docs/tilgjengelighet/2026-11-10/162215-native-1eb13e38",
+  "confirmed_findings": 0,
+  "open_findings": [],
+  "fixed_findings": [
+    "A11Y-01",
+    "A11Y-02",
+    "A11Y-03",
+    "A11Y-04",
+    "A11Y-05",
+    "A11Y-06",
+    "A11Y-07"
+  ],
+  "counts": {
+    "K": 24,
+    "I": 11,
+    "U": 13,
+    "B": 0
+  },
+  "manual_remaining": 34,
+  "completed_local_manual_sample": 3,
+  "contrast_review": {
+    "criterion_1_4_3": "K scoped local sample, filter retest added",
+    "criterion_1_4_11": "K scoped local sample",
+    "fixed_in_current_run": ["A11Y-07"],
+    "pdf_classified_shapes": 157,
+    "filter_retests": 16
+  },
+  "native_postverification": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/raw/native-postverification.json"
+}

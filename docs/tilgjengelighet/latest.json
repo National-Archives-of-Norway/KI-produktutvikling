@@ -1,12 +1,17 @@
 {
-  "run_directory": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734",
+  "run_directory": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d",
   "automatic_status": "needs_review",
   "overall_conformance": "not_assessed",
-  "manifest": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/manifest.json",
-  "review_status": "nontext_contrast_assessed_and_filter_transition_fixed",
-  "reviewed_at": "2026-11-10T15:08:41.513502+00:00",
-  "previous_run": "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b",
-  "native_run": "docs/tilgjengelighet/2026-11-10/162215-native-1eb13e38",
+  "manifest": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/manifest.json",
+  "review_status": "A11Y_08_and_09_fixed_and_retested",
+  "reviewed_at": "2026-11-10T19:29:44.455739+00:00",
+  "previous_run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+  "counts": {
+    "K": 29,
+    "I": 11,
+    "U": 8,
+    "B": 0
+  },
   "confirmed_findings": 0,
   "open_findings": [],
   "fixed_findings": [
@@ -16,22 +21,13 @@
     "A11Y-04",
     "A11Y-05",
     "A11Y-06",
-    "A11Y-07"
+    "A11Y-07",
+    "A11Y-08",
+    "A11Y-09"
   ],
-  "counts": {
-    "K": 24,
-    "I": 11,
-    "U": 13,
-    "B": 0
-  },
-  "manual_remaining": 34,
-  "completed_local_manual_sample": 3,
-  "contrast_review": {
-    "criterion_1_4_3": "K scoped local sample, filter retest added",
-    "criterion_1_4_11": "K scoped local sample",
-    "fixed_in_current_run": ["A11Y-07"],
-    "pdf_classified_shapes": 157,
-    "filter_retests": 16
-  },
-  "native_postverification": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/raw/native-postverification.json"
+  "unresolved_requirements": 8,
+  "open_breach_requirements": 0,
+  "consistency": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/raw/consistency.json",
+  "native_run": "docs/tilgjengelighet/2026-11-10/203306-native-1c441fbd",
+  "native_postverification": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/raw/native-postverification.json"
 }

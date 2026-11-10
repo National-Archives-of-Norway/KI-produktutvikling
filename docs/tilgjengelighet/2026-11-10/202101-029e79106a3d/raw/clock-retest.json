@@ -1,0 +1,64 @@
+[
+  {
+    "focus": "BODY",
+    "hourlyCallbacks": "0",
+    "label": "fresh-initial",
+    "mode": "fresh",
+    "openDetails": 0,
+    "phase": "initial",
+    "scrollWidth": 1280,
+    "syntheticNow": "1794857940169",
+    "warnings": [],
+    "width": 1280
+  },
+  {
+    "focus": "SUMMARY",
+    "hourlyCallbacks": "0",
+    "label": "fresh-after-threshold",
+    "mode": "fresh",
+    "openDetails": 1,
+    "phase": "crossed",
+    "scrollWidth": 1280,
+    "syntheticNow": "1794857943169",
+    "warnings": [],
+    "width": 1280
+  },
+  {
+    "focus": "BODY",
+    "hourlyCallbacks": "0",
+    "label": "stale-on-open",
+    "mode": "stale",
+    "openDetails": 0,
+    "phase": "initial",
+    "scrollWidth": 1280,
+    "syntheticNow": "1794857942169",
+    "warnings": [
+      "Kontrollen er eldre enn sju dager. Sjekk leverandørens prisliste før du bruker tallene.",
+      "Kontrollen er eldre enn sju dager. Sjekk leverandørens prisliste før du bruker tallene.",
+      "Kontrollen er eldre enn sju dager. Sjekk leverandørens prisliste før du bruker tallene.",
+      "Kontrollen er eldre enn sju dager. Sjekk leverandørens prisliste før du bruker tallene.",
+      "Kontrollen er eldre enn sju dager. Sjekk leverandørens prisliste før du bruker tallene.",
+      "Kontrollen er eldre enn sju dager. Sjekk leverandørens prisliste før du bruker tallene."
+    ],
+    "width": 1280
+  },
+  {
+    "focus": "BODY",
+    "hourlyCallbacks": "0",
+    "label": "stale-open-320",
+    "mode": "stale",
+    "openDetails": 0,
+    "phase": "crossed",
+    "scrollWidth": 320,
+    "syntheticNow": "1794857943169",
+    "warnings": [
+      "Kontrollen er eldre enn sju dager. Sjekk leverandørens prisliste før du bruker tallene.",
+      "Kontrollen er eldre enn sju dager. Sjekk leverandørens prisliste før du bruker tallene.",
+      "Kontrollen er eldre enn sju dager. Sjekk leverandørens prisliste før du bruker tallene.",
+      "Kontrollen er eldre enn sju dager. Sjekk leverandørens prisliste før du bruker tallene.",
+      "Kontrollen er eldre enn sju dager. Sjekk leverandørens prisliste før du bruker tallene.",
+      "Kontrollen er eldre enn sju dager. Sjekk leverandørens prisliste før du bruker tallene."
+    ],
+    "width": 320
+  }
+]

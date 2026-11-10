@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-10T19:22:39.178275+00:00",
+  "agent": "Codex (OpenAI)",
+  "skill_version": "0.6.0",
+  "scope": "Målrettet retting/retest av A11Y-08 (PDF-språk, 3.1.1/3.1.2) og A11Y-09 (varsel om gamle prisdata, 2.2.2). Øvrige vurderinger videreføres med opprinnelig bevis og dato; ingen ny full manuell revisjon.",
+  "new_results": {
+    "3.1.1": {
+      "status": "K",
+      "result": "PDF-ens hovedspråk er nå nb-NO. Alle 2694 ikke-blanke synlige tegn er koblet til norske språkspenn; ParentTree-arving er kontrollert uavhengig. Syv engelske alternativtekster har eksplisitt en. A11Y-08 er rettet; faktisk opplesing er ikke testet.",
+      "evidence": [
+        "raw/pdf-regression.json",
+        "raw/pdf-language-after.json",
+        "raw/pdf-repair.json"
+      ]
+    },
+    "3.1.2": {
+      "status": "K",
+      "result": "De 36 feilmerkede norske innholdsspennene er endret fra en-US til nb-NO, mens engelske alternativtekster er bevart med eksplisitt engelsk språk. Norsk synlig innhold og programmatisk språk samsvarer i prøvd dokument. Dette er metadata-/innholdskontroll, ikke faktisk uttale.",
+      "evidence": [
+        "raw/pdf-regression.json",
+        "raw/pdf-language-after.json",
+        "raw/pdf-repair.json"
+      ]
+    },
+    "2.2.2": {
+      "status": "K",
+      "result": "Prisdata vurderes ved åpning/nytt checkedAt-grunnlag uten tidsstyrte innsettinger. Kontrollert klokke: 0 varsler før/etter terskel i åpen fersk side, 6 ved åpning med gamle data, ingen registrerte time-callbacks. Hero-pause/start er retestet med tastatur. A11Y-09 er lukket i prøvd lokalt utvalg.",
+      "evidence": [
+        "raw/clock-verdict.json",
+        "raw/clock-retest.json",
+        "raw/fixture-metadata.json",
+        "raw/browser.json",
+        "raw/source-pricing-freshness.tsx.txt"
+      ]
+    }
+  },
+  "pdf_regression": "raw/pdf-regression.json",
+  "clock_regression": "raw/clock-verdict.json",
+  "previous_run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+  "limits": [
+    "No actual screen-reader speech",
+    "No actual browser zoom or physical rotation",
+    "Clock test is synthetic",
+    "No actual external model/auth/published pilot test"
+  ]
+}

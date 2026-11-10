@@ -1,0 +1,226 @@
+{
+  "before_sha256": "ba267d899460e54a911c548c5ddecfd9a83159ec3b6d7b6e30d9d4f34d0c648a",
+  "after_sha256": "8b068da112df40b70a4c9e5c16f268ea3eff6996ad08d6eff2b9c1bb1ad14713",
+  "catalog_before": "en",
+  "catalog_after": "nb-NO",
+  "content_language_changes": [
+    {
+      "page": 4,
+      "mcid": 3,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 4,
+      "mcid": 10,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 4,
+      "mcid": 12,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 4,
+      "mcid": 15,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 4,
+      "mcid": 17,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 4,
+      "mcid": 20,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 4,
+      "mcid": 25,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 4,
+      "mcid": 29,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 4,
+      "mcid": 30,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 4,
+      "mcid": 31,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 5,
+      "mcid": 3,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 5,
+      "mcid": 9,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 5,
+      "mcid": 12,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 5,
+      "mcid": 16,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 5,
+      "mcid": 19,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 5,
+      "mcid": 24,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 5,
+      "mcid": 25,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 6,
+      "mcid": 1,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 6,
+      "mcid": 2,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 6,
+      "mcid": 5,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 6,
+      "mcid": 6,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 6,
+      "mcid": 7,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 6,
+      "mcid": 9,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 6,
+      "mcid": 10,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 6,
+      "mcid": 12,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 6,
+      "mcid": 13,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 6,
+      "mcid": 15,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 6,
+      "mcid": 16,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 6,
+      "mcid": 18,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 6,
+      "mcid": 19,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 6,
+      "mcid": 21,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 6,
+      "mcid": 22,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 6,
+      "mcid": 24,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 6,
+      "mcid": 25,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 6,
+      "mcid": 27,
+      "before": "en-US",
+      "after": "nb-NO"
+    },
+    {
+      "page": 6,
+      "mcid": 28,
+      "before": "en-US",
+      "after": "nb-NO"
+    }
+  ],
+  "english_alt_labels_explicitly_preserved": 7,
+  "scope": "Language metadata/properties only. No text, colour, geometry, list or reading-order edits."
+}

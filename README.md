@@ -1,12 +1,12 @@
 # KI-Produktutvikling
 
-## Oppfølging av ikke-tekstlig kontrast – 10. november 2026
+## Gjeldende tilgjengelighetsvurdering
 
-Siste [rapport](docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/testrapport.md), [klassifisering](docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/raw/classification.json) og [48-kravsrestliste](docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/manuell-oppfolging.md). Nødvendige feltgrenser, ikoner, fokus-, valg-, meny- og trekkspillmarkeringer er vurdert. A11Y-07 i filterets 0,25s fargeovergang er rettet med samtidig tekst-/bakgrunnsskifte; 16 umiddelbare retester med tastatur/peker ved 1280/320 bestod. Øvrige prøvde nødvendige markeringer minst 3,392300:1. Alle 157 PDF-primitiver er klassifisert; 19 nødvendige/konservativt prøvde deler minst 4,191671:1. Svake perifere ellipseomriss er supplerende etter begrunnet informasjonsvurdering, ikke overskrevet til pass. PDF uendret.
+**Gjeldende vurdering – retting og retest med skill 0.6.0, 10. november 2026.** [Rapport](docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/testrapport.md), [testmuligheter](docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/testmuligheter.json) og [avstemt restliste](docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/manuell-oppfolging.md).
 
-**1.4.11 U → K i lokalt utvalg; 24 K / 11 I / 13 U / 0 B.** 1.4.3 beholdes K med ny filtertekst-retest. 35 krav har samlet maskinelt delgrunnlag, 34 har bredere manuell rest, 11 har ingen lokal utløsende innholdstype og tre har fullført lokalt manuelt utvalg. Dette er ikke samlet/formelt samsvar. PDF-alternativer/struktur/språk og faktisk skjermleser/zoom/enhet/pilot er fortsatt uavklart. Erklæringen viser alle 13 gjenværende U-krav. Tidligere avsnitt er datert historikk.
+**29 K / 11 I / 8 U / 0 B.** A11Y-08 (PDF-språk, 3.1.1/3.1.2) og A11Y-09 (varsel om gamle prisdata, 2.2.2) er rettet og retestet. Alle 2694 synlige ikke-blanke PDF-tegn har norsk språkmerking, engelske alternativtekster har egen engelsk merking, og alle syv sider er pikselidentiske med førversjonen. Prisvarslet vurderes ved åpning/nytt prisgrunnlag; ingen timer setter inn varsel under lesing. Kontrollert klokke viser 0 varsler ved senere terskelpassering og 6 ved åpning med gamle data.
 
-Avsluttende [native-regresjon](docs/tilgjengelighet/2026-11-10/162215-native-1eb13e38/native-manifest.json) etter bygg: 23 ruter / 0 axe-violations / samme 3 incomplete-grupper og 86 targets; Nu gir 0 feil / 207 info-noter. Motorstatus er bevart, med separat manuell kontrastvurdering. 53 Node- og tre Python-tester samt produksjonsbygg bestod.
+Ingen kjente åpne brudd gjenstår i det prøvde utvalget. Åtte krav krever fortsatt faktisk hjelpemiddelbruk, zoom eller fysisk enhet; samlet samsvar er ikke ferdig vurdert. Nettlesermodul, `--auto` og dokumentavstemming er kjørt. Tidligere daterte avsnitt nedenfor er historikk, ikke gjeldende status.
 
 ## Kontrastoppfølging av tilstander og PDF – 10. november 2026
 

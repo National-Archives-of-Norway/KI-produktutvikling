@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-10T19:35:02.653447+00:00",
+  "node_tests_passed": 53,
+  "python_tests_passed": 3,
+  "pages_build": "passed incl TypeScript and feature route registry",
+  "html_basic_files": 25,
+  "consistency": "consistent; see raw/consistency-final.json",
+  "criterion_counts": {
+    "K": 29,
+    "I": 11,
+    "U": 8,
+    "B": 0
+  },
+  "pdf_regression": "7/7 pixel-identical at 120dpi; text/geometry/fonts/colours/MCID/roles/title preserved; language corrected",
+  "clock_regression": "fresh 0 to 0; stale open 6; 0 hourly callbacks; synthetic clock",
+  "declaration_readback": "0 known open IDs and exact 8 U IDs at observed 320/1280; no width overflow",
+  "screenshot_limits": "declaration-fixed.png was captured during viewport resizing and is not used as proof of stable layout; stale-320.png shows page context, DOM counts carry warning evidence. fresh-after.png and PDF renders have been visually reviewed.",
+  "local_markdown_targets_checked": 207,
+  "broken_targets": [],
+  "native": {
+    "native_manifest": "docs/tilgjengelighet/2026-11-10/203306-native-1c441fbd/native-manifest.json",
+    "axe_routes": 23,
+    "axe_violations": 0,
+    "axe_incomplete_groups": 3,
+    "axe_incomplete_nodes": 86,
+    "same_incomplete_targets_as_previous": true,
+    "nu_html_files": 25,
+    "nu_errors": 0,
+    "nu_info": 207,
+    "note": "New post-fix, post-declaration-build native run. Original engine needs_review/incomplete retained; all Nu notes are trailing-slash information. Manual contrast evidence is separate."
+  },
+  "temporary_fixture": "test tab closed; server PID 88127 stopped; viewport reset",
+  "overall_conformance": "not_assessed",
+  "format_check": "passed",
+  "git_diff_check": "passed"
+}

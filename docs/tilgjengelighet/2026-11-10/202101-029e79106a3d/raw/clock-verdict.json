@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "fresh_initial_warnings": 0,
+  "fresh_after_threshold_warnings": 0,
+  "hourly_callbacks_registered": 0,
+  "stale_on_open_warnings": 6,
+  "stale_320_warnings": 6,
+  "limits": "Synthetic page clock, no system clock change or seven-day wait. Same component bundle as production export."
+}

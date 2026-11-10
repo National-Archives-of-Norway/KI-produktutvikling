@@ -1,0 +1,8 @@
+{
+  "source": "src/components/pricing-freshness.tsx",
+  "source_sha256": "b09d2f8bdb3f30c80d0744a8eab2f7502f44ebfcdd299667ce80deae1ee9691b",
+  "checkedAt_min_epoch_ms": 1794253141169.0,
+  "threshold_epoch_ms": 1794857941169,
+  "test": "Unchanged exported production component with synthetic Date.now and replayed actual hourly callbacks in isolated temporary export",
+  "real_wait_seconds": 30
+}

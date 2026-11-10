@@ -1,0 +1,2223 @@
+{
+  "skill_version": "0.6.0",
+  "overall_conformance": "not_assessed",
+  "catalog_sha256": "d9b4a705a6a24a1ea9b9cdebb0332164f5486ddd7255a400c7e93b9b06db1ac8",
+  "note": "Planlagte tester er ikke gjennomførte tester. Fyll faktiske resultater og evidens.",
+  "tests": [
+    {
+      "criterion_id": "1.1.1",
+      "title": "Ikke-tekstlig innhold",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#111",
+      "source": "https://www.uutilsynet.no/wcag-standarden/111-ikke-tekstlig-innhold-niva/87",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Vurder om tekstalternativer formidler formål og innhold; prøv meningsbærende grafikk med skjermleser.",
+      "criterion_status": "U",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Meningsbærende innhold har et likeverdig alternativ, funksjonelle bilder har riktig navn/formål, og dekor kan ignoreres. Spesialtilfeller som medier, sanseinntrykk og tester vurderes etter kilden; alt-attributt alene er ikke nok."
+        ],
+        "required_evidence": [
+          "Element/side, skjermbilde, beregnet navn/alt, alternativets plassering, faktisk opplesing og begrunnet klassifisering som dekor eller meningsbærende."
+        ],
+        "capability_ids": [
+          "screen_reader",
+          "pdf_reader"
+        ],
+        "execution": "needs_assistance",
+        "blocker": "Faktisk tale og hjelpemiddelbetjening kan ikke observeres her.; Parser/rendring er ikke en PDF-leser med skjermleser.",
+        "next_step": "Prøv meningsbærende grafikk og side 6 i faktisk PDF-leser/skjermleser; bekreft at relasjoner/formål formidles og dekor ikke forstyrrer.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-10",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/pdf-structure-followup.json",
+          "../094541-e2907a5c27e2/raw/pdf-visual-review.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "1.2.1",
+      "title": "Bare lyd og video (forhåndsinnspilt)",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#121",
+      "source": "https://www.uutilsynet.no/wcag-standarden/121-bare-lyd-og-bare-video-forhandsinnspilt-niva/88",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Bekreft medieutvalget; sammenlign lyd/video uten lyd med et fullstendig alternativ.",
+      "criterion_status": "I",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Lyd alene har en dekkende tekstlig gjengivelse; video alene har et dekkende tekst- eller lydalternativ. Tilgangen er knyttet tydelig til klippet. Eventuelt tekstbasert mediealternativ dokumenteres særskilt."
+        ],
+        "required_evidence": [
+          "Klipp-ID, publiseringsdato der relevant, tidskoder for sammenligning, alternativets URL og eventuelle informasjonsmangler."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "1.2.2",
+      "title": "Teksting (forhåndsinnspilt)",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#122",
+      "source": "https://www.uutilsynet.no/wcag-standarden/122-teksting-forhandsinnspilt-niva/89",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Se og lytt til video; kontroller tekstingens innhold, timing og betjening.",
+      "criterion_status": "I",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Korrekt teksting eller et dekkende alternativ som aksepteres etter valgt norsk vurderingsgrunnlag formidler nødvendig lydinformasjon. Automatisk teksting uten kvalitetskontroll er ikke tilstrekkelig bevis."
+        ],
+        "required_evidence": [
+          "Valgt oppfyllelsesmåte, tekstspor/alternativ, spillerkontroller, publiseringsdato og konkrete tidskoder for feil eller kontrollerte sekvenser."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "1.2.5",
+      "title": "Synstolking (forhåndsinnspilt)",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#125",
+      "source": "https://www.uutilsynet.no/wcag-standarden/125-synstolking-forhandsinnspilt-niva-aa/842",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Vurder om viktige visuelle hendelser trenger og har synstolking.",
+      "criterion_status": "I",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Nødvendig visuell mening er forståelig gjennom lyd, enten i originalsporet eller synstolking. En transkripsjon alene erstatter ikke synstolking for dette kriteriet."
+        ],
+        "required_evidence": [
+          "Virkeområde/publiseringsdato, valgt spor eller versjon, betjening og tidskoder som kobler visuelt innhold til lydforklaring."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "1.3.1",
+      "title": "Informasjon og relasjoner",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#131",
+      "source": "https://www.uutilsynet.no/wcag-standarden/131-informasjon-og-relasjoner-niva/90",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Vurder faktisk struktur, lister, tabellkoblinger og grupper, også i PDF og skjermleser.",
+      "criterion_status": "U",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Informasjon og relasjoner som formidles visuelt er også tilgjengelige programmatisk eller gjennom et egnet tekstalternativ etter kilden. Ingen regel om nøyaktig én h1 innføres som et selvstendig WCAG-krav."
+        ],
+        "required_evidence": [
+          "Visuell/semantisk sammenstilling per innholdstype, kodereferanse eller PDF-tag, og faktisk hjelpemiddelresultat. Manglende PDF-/tabelltest begrenser konklusjonen."
+        ],
+        "capability_ids": [
+          "screen_reader",
+          "pdf_reader"
+        ],
+        "execution": "needs_assistance",
+        "blocker": "Faktisk tale og hjelpemiddelbetjening kan ikke observeres her.; Parser/rendring er ikke en PDF-leser med skjermleser.",
+        "next_step": "Prøv PDF-listenavigasjon med faktisk skjermleser og vurder øvrige dokumentstrukturer/figurer.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-10",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "1.3.2",
+      "title": "Meningsfylt rekkefølge",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#132",
+      "source": "https://www.uutilsynet.no/wcag-standarden/132-meningsfylt-rekkefolge-niva/91",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Sammenlign visuell rekkefølge med faktisk opplesing og dokumentets leserekkefølge.",
+      "criterion_status": "U",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Minst én programmatisk bestemt leserekkefølge bevarer mening og forståelige relasjoner. Visuell og kodet rekkefølge trenger ikke være identisk der betydningen er uavhengig av rekkefølgen."
+        ],
+        "required_evidence": [
+          "Forventet og faktisk sekvens med innholdsreferanser, relevant DOM/PDF-struktur og hjelpemiddel/versjon."
+        ],
+        "capability_ids": [
+          "screen_reader",
+          "pdf_reader"
+        ],
+        "execution": "needs_assistance",
+        "blocker": "Faktisk tale og hjelpemiddelbetjening kan ikke observeres her.; Parser/rendring er ikke en PDF-leser med skjermleser.",
+        "next_step": "Prøv lineær lesing, særlig PDF-side 6–7, med faktisk hjelpemiddel.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "1.3.3",
+      "title": "Sensoriske egenskaper",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#133",
+      "source": "https://www.uutilsynet.no/wcag-standarden/133-sensoriske-egenskaper-niva/92",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Les instruksjoner; bekreft at de kan forstås uten bare farge, form, lyd eller plassering.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Instruksjonen kan forstås uten å være avhengig bare av sanseegenskaper. Vanlige rekkefølgeord kan brukes når den samme forståelige rekkefølgen er bestemt i innholdet."
+        ],
+        "required_evidence": [
+          "Instruksjonens ordlyd, kontroll/handling den viser til, alternativ identifikasjon og eventuell tvetydighet."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Les instruksjoner; bekreft at de kan forstås uten bare farge, form, lyd eller plassering.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "1.3.4",
+      "title": "Visningsretning",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#134",
+      "source": "https://www.uutilsynet.no/wcag-standarden/134-visningsretning-niva-aa/141",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Prøv faktisk enhetsrotasjon; kontroller at ingen oppgaver låses til én orientering uten nødvendig grunn.",
+      "criterion_status": "U",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Innhold og betjening er tilgjengelig i begge retninger, med dokumenterte nødvendige unntak. Lik layout er ikke påkrevd. Endret vindusbredde alene beviser ikke at enheten kan roteres."
+        ],
+        "required_evidence": [
+          "Enhet/OS, retninger, skjermbilder, fullførte handlinger og grunnlag for eventuell låsing."
+        ],
+        "capability_ids": [
+          "physical_rotation"
+        ],
+        "execution": "needs_assistance",
+        "blocker": "Ingen tilgjengelig fysisk mobil/nettbrettflate.",
+        "next_step": "Test med fysisk mobil/nettbrett eller dokumentert orienteringsstøtte, begge retninger og kritiske forløp.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "1.3.5",
+      "title": "Identifiser formål med inndata",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#135",
+      "source": "https://www.uutilsynet.no/wcag-standarden/135-identifiser-formal-med-inndata-niva-aa/142",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Identifiser personopplysningsfelt og vurder korrekt inputformål/autofullføring mot feltets betydning.",
+      "criterion_status": "I",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Relevante felt har programmatisk gjenkjennelig og korrekt inndataformål. En synlig etikett eller type=email alene dokumenterer ikke hele kravet."
+        ],
+        "required_evidence": [
+          "Feltutvalg, formål, kode/token, testet autofyll og begrunnelse for felt som faller utenfor."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "1.4.1",
+      "title": "Bruk av farge",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#141",
+      "source": "https://www.uutilsynet.no/wcag-standarden/141-bruk-av-farge-niva/93",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Vurder om farge alene bærer mening i lenker, diagrammer, feil og tilstander.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Meningsbærende farge har et synlig alternativ. Lenker kan bruke en dokumentert løsning med minst 3:1 mot nabotekst og tilleggskjennetegn ved hover/fokus, eller et permanent annet kjennetegn."
+        ],
+        "required_evidence": [
+          "Informasjonen som fargen uttrykker, alternativ markering, skjermbilder av tilstandene og relevante målinger."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Vurder om farge alene bærer mening i lenker, diagrammer, feil og tilstander.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "1.4.2",
+      "title": "Styring av lyd",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#142",
+      "source": "https://www.uutilsynet.no/wcag-standarden/142-styring-av-lyd-niva/94",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Kontroller automatisk lyd over tre sekunder og tilgjengelig uavhengig stopp/volumkontroll.",
+      "criterion_status": "I",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Automatisk lyd over tre sekunder kan stoppes/pauses eller reguleres uavhengig av systemvolumet. Fravær av automatisk lyd dokumenteres gjennom observert bruk, ikke bare søk etter audio-taggen."
+        ],
+        "required_evidence": [
+          "URL, varighet, startbetingelse, kontrollens navn/plassering, antall Tab-steg og faktisk virkning."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "1.4.3",
+      "title": "Kontrast (minimum)",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#143",
+      "source": "https://www.uutilsynet.no/wcag-standarden/143-kontrast-minimum-niva-aa/95",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "candidates",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Bekreft kontrastkandidater visuelt; mål PDF, bilder, gradienter, overlegg og alle utestede tilstander.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b"
+        ],
+        "acceptance_conditions": [
+          "Vanlig tekst når minst 4,5:1; stor tekst når minst 3:1 når vilkårene gjelder (18 pt eller 14 pt fet, omtrent 24/18,7 CSS-px). Følg kildens særpresisering for bilder av tekst; et par målte grunnfarger beviser ikke alle flater."
+        ],
+        "required_evidence": [
+          "Fargeverdier/alpha, bakgrunnssammensetning, tekststørrelse/-vekt, målepunkt, uavrundet forhold og valgt terskel."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Ingen åpen tekstkontrastoppgave i dette prøvde lokale innholds-/tilstandsutvalget. Gjenta ved nye komponenter/innhold/modelltilstander eller utrulling; dette erstatter ikke ny vurdering av endret innhold.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-10",
+        "evidence": [
+          "../145250-bd1373c8699b/manual-tests.json",
+          "../145250-bd1373c8699b/raw/interactive-contrast.json",
+          "../145250-bd1373c8699b/raw/pdf-text-contrast.json",
+          "../145250-bd1373c8699b/raw/ripple-theme-proof.json",
+          "../135417-d3e318e119fd/raw/contrast86-bounds.json",
+          "../160352-a02d77cb2734/raw/filter-retest-results.json",
+          "raw/pdf-regression.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "1.4.4",
+      "title": "Endring av tekststørrelse",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#144",
+      "source": "https://www.uutilsynet.no/wcag-standarden/144-endring-av-tekststorrelse-niva-aa/96",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Bruk faktisk 200 % tekstforstørring; kontroller innhold og funksjon i komplette oppgaver.",
+      "criterion_status": "U",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Teksten kan forstørres til 200 % uten bortfall av innhold eller betjening innenfor kriteriets avgrensninger. En smal viewport eller større tekst satt i kildekoden erstatter ikke dokumentert nettleserforstørring."
+        ],
+        "required_evidence": [
+          "Grunnoppløsning, zoom-/tekstnivå og faktisk mekanisme, skjermbilder før/etter og fullførte handlinger."
+        ],
+        "capability_ids": [
+          "browser_zoom"
+        ],
+        "execution": "needs_assistance",
+        "blocker": "Native apptilgang mangler; viewport er ikke zoom.",
+        "next_step": "Prøv faktisk 200 % tekstforstørring/zoom i en nettleser som eksponerer funksjonen og gjennomfør representative oppgaver. Faktisk Chrome-tilgang ble avvist av automatisk godkjenningskontroll; IAB-viewport er ikke zoom.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "1.4.5",
+      "title": "Bilder av tekst",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#145",
+      "source": "https://www.uutilsynet.no/wcag-standarden/145-bilder-av-tekst-niva-aa/97",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Undersøk tekst i bilder og om ekte tekst kan brukes; begrunn nødvendige unntak.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Vanlig informasjon presenteres som faktisk tekst der teknologien tillater det; tillatte bildeunntak er konkret begrunnet. OCR eller markerbar tekst alene beviser ikke at en skannet PDF har tilgjengelig struktur."
+        ],
+        "required_evidence": [
+          "Bilde/PDF-side, tekstens funksjon, tilpasningsmulighet og dokumentert unntaksgrunnlag eller manglende tekstalternativ."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Undersøk tekst i bilder og om ekte tekst kan brukes; begrunn nødvendige unntak.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "1.4.10",
+      "title": "Dynamisk tilpasning (Reflow)",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#1410",
+      "source": "https://www.uutilsynet.no/wcag-standarden/1410-dynamisk-tilpasning-reflow-niva-aa/144",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Prøv faktisk 400 % zoom; vurder klipping, oppgaver og nødvendige todimensjonale unntak.",
+      "criterion_status": "U",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Innholdet flyter om uten tap av informasjon/betjening eller unødvendig rulling i to retninger. Unntak må kreve todimensjonal presentasjon. Viewport 320 alene registreres som responsiv deltest, ikke som faktisk zoom."
+        ],
+        "required_evidence": [
+          "Zoommekanisme, start-/sluttbredde eller høyde, rulleområder, skjermbilder og begrunnelse for hvert unntak."
+        ],
+        "capability_ids": [
+          "browser_zoom"
+        ],
+        "execution": "needs_assistance",
+        "blocker": "Native apptilgang mangler; viewport er ikke zoom.",
+        "next_step": "Test 400 % med faktisk zoom, effektiv 320 CSS-px og alle kritiske forløp. Faktisk Chrome-tilgang ble avvist av automatisk godkjenningskontroll; IAB-viewport er ikke zoom.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "1.4.11",
+      "title": "Kontrast for ikke-tekstlig innhold",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#1411",
+      "source": "https://www.uutilsynet.no/wcag-standarden/1411-kontrast-ikke-tekstlig-innhold-niva-aa/145",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Mål kontrast for nødvendige kontrollgrenser, fokus, valgte tilstander og meningsbærende grafikk.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734"
+        ],
+        "acceptance_conditions": [
+          "Nødvendig ikke-tekstlig informasjon når minst 3:1 mot relevante tilstøtende farger. Det kreves ikke automatisk 3:1 mellom en kontrolls tidligere og nye tilstand; mål riktig relasjon."
+        ],
+        "required_evidence": [
+          "Element og tilstand, hvilke kanter/deler som er nødvendige, tilstøtende farger, målepunkter og ratio med terskel."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Ingen åpen 1.4.11-oppgave i oppgitt lokalt innholds-/kontrollutvalg. Gjenta ved nye grafiske relasjoner, komponenter eller utrulling. Dette lukker ikke alternative tekster/struktur, faktisk hjelpemiddel/zoom eller produksjonsgodkjenning.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-10",
+        "evidence": [
+          "../160352-a02d77cb2734/raw/classification.json",
+          "../160352-a02d77cb2734/raw/pdf-assessment.json",
+          "../160352-a02d77cb2734/raw/ui-before-fix.json",
+          "../160352-a02d77cb2734/raw/filter-retest-results.json",
+          "../160352-a02d77cb2734/manual-tests.json",
+          "raw/pdf-regression.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "1.4.12",
+      "title": "Tekstavstand",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#1412",
+      "source": "https://www.uutilsynet.no/wcag-standarden/1412-tekstavstand-niva-aa/146",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Bruk tillatt tekstavstandsoverstyring; vurder visuelt tap, klipping og overlapping i alle tilstander.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Brukeren kan øke de fire avstandene uten tap av innhold eller funksjon. Siden trenger ikke bruke disse verdiene som standard. Ingen sidebredde-overflyt alene er ikke nok til å utelukke klipping."
+        ],
+        "required_evidence": [
+          "Anvendt overstyring, beregnede verdier, skjermbilder og resultater fra både normal og dynamisk visning; bekreft at teststil er fjernet."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Ingen åpen kandidat i prøvd lokal tekstavstand. Retest øvrige støttede nettlesere og faktisk modellinnhold når de er tilgjengelige. PDF faller utenfor dette markup-kravet.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-10",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/text-spacing-pages.json",
+          "../094541-e2907a5c27e2/raw/text-spacing-states.json",
+          "../094541-e2907a5c27e2/raw/textarea-spacing-review.json",
+          "../094541-e2907a5c27e2/raw/price-scroll-settled.json",
+          "../094541-e2907a5c27e2/raw/text-spacing-instrumentation.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "1.4.13",
+      "title": "Pekerfølsomt innhold eller innhold ved tastaturfokus",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#1413",
+      "source": "https://www.uutilsynet.no/wcag-standarden/1413-pekerfolsomt-innhold-eller-innhold-ved-tastaturfokus-niva-aa/147",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Åpne innhold ved hover/fokus; prøv lukking, peker over innhold og varighet.",
+      "criterion_status": "I",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Der vilkårene gjelder, kan innholdet avvises uten å flytte hover/fokus, pekeren kan føres over det, og det blir stående til utløsende tilstand avsluttes, bruker avviser eller informasjonen blir ugyldig."
+        ],
+        "required_evidence": [
+          "Utløser, ekstra innhold, pekerbane, lukkemetode og observert varighet/forsvinning i begge betjeningsmåter."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "2.1.1",
+      "title": "Tastatur",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#211",
+      "source": "https://www.uutilsynet.no/wcag-standarden/211-tastatur-niva/98",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Fullfør alle kritiske oppgaver med tastatur; Tab-spor dekker ikke alle handlinger.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "All relevant funksjon er mulig gjennom tastaturgrensesnitt uten særskilt timing, eller har et likeverdig tastaturalternativ. Et klikk sendt av et automatiseringsverktøy teller ikke som tastaturtest."
+        ],
+        "required_evidence": [
+          "Oppgave, nøyaktig tastsekvens, komponenter og resultat, inkludert alternativ metode og begrunnede unntak."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Fullfør alle kritiske oppgaver med tastatur; Tab-spor dekker ikke alle handlinger.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "2.1.2",
+      "title": "Ingen tastaturfelle",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#212",
+      "source": "https://www.uutilsynet.no/wcag-standarden/212-ingen-tastaturfelle-niva/99",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Prøv inn/ut av hver interaktiv komponent, begge retninger og eventuelle instruksjoner.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Fokus kan forlate komponenten ved tastatur. En fungerende modal fokusløkke er ikke i seg selv en felle dersom dialogen kan lukkes og videre navigasjon er mulig."
+        ],
+        "required_evidence": [
+          "Inn-/utgangssekvens, aktivt element før/etter, lukkekontroll og eventuell synlig veiledning om spesialtaster."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Prøv inn/ut av hver interaktiv komponent, begge retninger og eventuelle instruksjoner.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "2.1.4",
+      "title": "Hurtigtaster som består av ett tegn",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#214",
+      "source": "https://www.uutilsynet.no/wcag-standarden/214-hurtigtaster-som-bestar-av-ett-tegn-niva/782",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Finn ett-tegns snarveier og kontroller mulighet for av, omdefinering eller bare aktivt fokus.",
+      "criterion_status": "I",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Hver relevant enkelttast-snarvei kan deaktiveres eller omkonfigureres, eller virker bare når den aktuelle komponenten har fokus. At ingen snarvei tilfeldigvis ble utløst beviser ikke fravær."
+        ],
+        "required_evidence": [
+          "Snarvei, virkeområde, alternativ innstilling og resultat både med og uten komponentfokus."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "2.2.1",
+      "title": "Justerbar hastighet",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#221",
+      "source": "https://www.uutilsynet.no/wcag-standarden/221-justerbar-hastighet-niva/100",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Undersøk tidsgrenser, sesjoner og forlengelse; vurder eventuelle nødvendige unntak.",
+      "criterion_status": "I",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "En relevant tidsbegrensning kan håndteres gjennom en av kriteriets tillatte løsninger, eller et dokumentert unntak gjelder. Et varsel uten mulighet til reell forlengelse er ikke nok."
+        ],
+        "required_evidence": [
+          "Fristlengde, varslings-/utløpstid, handling og antall prøvde forlengelser, konfigurasjon og eventuelt unntaksgrunnlag."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "2.2.2",
+      "title": "Pause, stopp, skjul",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#222",
+      "source": "https://www.uutilsynet.no/wcag-standarden/222-pause-stopp-skjul-niva/101",
+      "status": "completed_local_manual_sample",
+      "scope": [
+        "/",
+        "/priser/"
+      ],
+      "tools_used": [
+        "Documented CUA keyboard/viewport with controlled-clock fixture"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "Prisdata vurderes ved åpning/nytt checkedAt-grunnlag uten tidsstyrte innsettinger. Kontrollert klokke: 0 varsler før/etter terskel i åpen fersk side, 6 ved åpning med gamle data, ingen registrerte time-callbacks. Hero-pause/start er retestet med tastatur. A11Y-09 er lukket i prøvd lokalt utvalg.",
+      "evidence": [
+        "raw/clock-verdict.json",
+        "raw/clock-retest.json",
+        "raw/fixture-metadata.json",
+        "raw/browser.json",
+        "raw/source-pricing-freshness.tsx.txt"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Prøv pause/stopp/skjul for bevegelse og automatiske oppdateringer; kontroller varighet og gjenopptakelse.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "/",
+          "/spor/",
+          "/priser/",
+          "PDF side 1–7"
+        ],
+        "acceptance_conditions": [
+          "Relevant bevegelse over fem sekunder kan pauses, stoppes eller skjules; automatiske oppdateringer kan styres etter kriteriet. Redusert bevegelse kan supplere, men dokumenterer ikke alene all nødvendig brukerkontroll."
+        ],
+        "required_evidence": [
+          "Startbetingelse, varighet, løkke-/oppdateringsform, tastsekvens, faktisk stanset aktivitet og resultat etter fokus flyttes."
+        ],
+        "capability_ids": [
+          "browser_keyboard",
+          "dynamic_test_service"
+        ],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Ingen åpen oppgave for dette kravet i det målrettet prøvde lokale utvalget. Gjenta ved relevante innholds-/komponentendringer eller utrulling.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-10",
+        "evidence": [
+          "raw/clock-verdict.json",
+          "raw/clock-retest.json",
+          "raw/fixture-metadata.json",
+          "raw/browser.json",
+          "raw/source-pricing-freshness.tsx.txt"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "2.3.1",
+      "title": "Terskelverdi på maksimalt tre glimt",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#231",
+      "source": "https://www.uutilsynet.no/wcag-standarden/231-terskelverdi-pa-maksimalt-tre-glimt-niva/102",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Undersøk alt blinkende innhold; bruk egnet glimtanalysator ved mulig terskelrisiko, unngå risikofylt avspilling.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Ingen risikofylt blinking forekommer, eller det er dokumentert at den holder seg innenfor relevante hyppighets-/glimtterskler. Pausemulighet alene opphever ikke dette kravet. Mer enn tre glimt krever vurdering av de normative tersklene."
+        ],
+        "required_evidence": [
+          "Analysert klipp, tidsintervall, verktøy/versjon, oppløsning, måleinnstillinger, analyseresultat og eventuelt behov for ekspertvurdering."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Undersøk alt blinkende innhold; bruk egnet glimtanalysator ved mulig terskelrisiko, unngå risikofylt avspilling.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "2.4.1",
+      "title": "Hoppe over blokker",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#241",
+      "source": "https://www.uutilsynet.no/wcag-standarden/241-hoppe-over-blokker-niva/103",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Bruk hoppelenke/landemerker med tastatur og skjermleser; bekreft at gjentatt innhold faktisk kan hoppes over.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Det finnes en fungerende måte å hoppe forbi gjentatt innhold. En visuelt riktig ankerlenke som etterlater tastaturbrukeren øverst gir ikke tilstrekkelig bevis."
+        ],
+        "required_evidence": [
+          "Valgt mekanisme, tast-/skjermlesersekvens, målelement og faktisk neste fokuspunkt."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Bruk hoppelenke/landemerker med tastatur og skjermleser; bekreft at gjentatt innhold faktisk kan hoppes over.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "2.4.2",
+      "title": "Sidetitler",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#242",
+      "source": "https://www.uutilsynet.no/wcag-standarden/242-sidetitler-niva/104",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Vurder om hver sidetittel og PDF-tittel beskriver siden, formålet og forskjellen fra andre sider.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Korrekt kodet tittel beskriver sidens eller dokumentets formål. Et generisk produktnavn alene er utilstrekkelig når sidens egen oppgave ikke fremgår."
+        ],
+        "required_evidence": [
+          "URL/rute og faktisk tittel, relevant kode/metadata, dokumentleser og forklaring av samsvar med temaet."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Prøv faktisk 404-fallback etter utrulling og i øvrige støttede nettlesere.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-10",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "2.4.3",
+      "title": "Fokusrekkefølge",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#243",
+      "source": "https://www.uutilsynet.no/wcag-standarden/243-fokusrekkefolge-niva/105",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Vurder fokusrekkefølge og fokusretur i hele oppgaver, dialoger, feil og dynamiske oppdateringer.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "/",
+          "/spor/",
+          "/priser/",
+          "PDF side 1–7"
+        ],
+        "acceptance_conditions": [
+          "Fokusrekkefølgen bevarer mening og gjør oppgaven mulig. Mer enn én logisk rekkefølge kan være gyldig; den trenger ikke følge hver piksel i det visuelle oppsettet."
+        ],
+        "required_evidence": [
+          "Trinnvis fokusliste før/etter dynamisk endring, forventet sammenheng, skjermbilder og relevante tabindex-/DOM-funn."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Ingen åpen 2.4.3-oppgave i prøvde lokale kontrollfamilier. Gjenta berørte forløp ved nye komponenter/auth/utrulling.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-10",
+        "evidence": [
+          "../193339-7e408d0c78ed/raw/focus-trail.json",
+          "../193339-7e408d0c78ed/raw/manual-ui.json",
+          "../193339-7e408d0c78ed/screenshots/focus-chat-close-320.png",
+          "../193339-7e408d0c78ed/screenshots/focus-source-1280.png"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "2.4.4",
+      "title": "Formål med lenke (i kontekst)",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#244",
+      "source": "https://www.uutilsynet.no/wcag-standarden/244-formal-med-lenke-i-kontekst-niva/106",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Vurder hver lenkes formål i tillatt kontekst, inkludert ikonlenker og lenker i PDF.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Brukeren kan forstå lenkens formål fra teksten alene eller tillatt programmatisk kontekst. En tilfeldig tekst et annet sted på siden er ikke nødvendigvis lenkekontekst."
+        ],
+        "required_evidence": [
+          "Lenketekst, beregnet navn, relevant kontekststruktur, mål og faktisk hjelpemiddelgjengivelse."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Vurder hver lenkes formål i tillatt kontekst, inkludert ikonlenker og lenker i PDF.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "2.4.5",
+      "title": "Flere måter",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#245",
+      "source": "https://www.uutilsynet.no/wcag-standarden/245-flere-mater-niva-aa/107",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Bekreft at sider kan finnes på minst to egnede måter, med relevante prosessunntak.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Minst to fungerende måter gjør relevante sider i settet gjenfinnbare. To lenker med samme rute er ikke automatisk to forskjellige navigasjonsmåter; prosessunntak vurderes konkret."
+        ],
+        "required_evidence": [
+          "Valgte målsider, de to gjennomførte stiene og grunnlag for eventuelle prosessunntak."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Bekreft at sider kan finnes på minst to egnede måter, med relevante prosessunntak.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "2.4.6",
+      "title": "Overskrifter og ledetekster",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#246",
+      "source": "https://www.uutilsynet.no/wcag-standarden/246-overskrifter-og-ledetekster-niva-aa/108",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Les overskrifter og etiketter; vurder om de beskriver emne og formål forståelig.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Overskrifter og etiketter som finnes gir en relevant og forståelig beskrivelse av tema eller formål. Kriteriet innfører ikke alene krav om at enhver tekstblokk må ha en overskrift."
+        ],
+        "required_evidence": [
+          "Utvalg av ordlyd og tilhørende innhold/felt, vurdert kontekst og konkrete misvisende eksempler."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Les overskrifter og etiketter; vurder om de beskriver emne og formål forståelig.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "2.4.7",
+      "title": "Synlig fokus",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#247",
+      "source": "https://www.uutilsynet.no/wcag-standarden/247-synlig-fokus-niva-aa/109",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Se faktisk fokusindikator i alle kontrolltilstander og bakgrunner; CSS-egenskaper er bare støttebevis.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "/",
+          "/spor/",
+          "/priser/",
+          "PDF side 1–7"
+        ],
+        "acceptance_conditions": [
+          "Brukeren kan se hvilket element som har tastaturfokus. Ikke gjør et bestemt pikselmål eller WCAG 2.2s strengere fokuskrav til en automatisk del av denne 48-punktslisten; vurder kontrast separat der relevant."
+        ],
+        "required_evidence": [
+          "Tastaturutløst tilstand, skjermbilde, komponent/bakgrunn og tilfeller der fokus er vanskelig eller umulig å se."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Ingen åpen 2.4.7-oppgave i prøvd lokalt utvalg. Gjenta ved nye flater/overlegg/komponenter; ingen påstand om faktisk zoom.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-10",
+        "evidence": [
+          "../193339-7e408d0c78ed/raw/focus-trail.json",
+          "../193339-7e408d0c78ed/screenshots/focus-reset-320.png",
+          "../193339-7e408d0c78ed/screenshots/focus-chat-close-320.png",
+          "../193339-7e408d0c78ed/screenshots/focus-textarea-1280.png",
+          "../193339-7e408d0c78ed/screenshots/focus-source-1280.png",
+          "../193339-7e408d0c78ed/screenshots/focus-table-320-settled.png",
+          "../193339-7e408d0c78ed/screenshots/focus-table-1280-settled.png"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "2.5.1",
+      "title": "Pekerbevegelse",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#251",
+      "source": "https://www.uutilsynet.no/wcag-standarden/251-pekerbevegelser-niva/148",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Prøv alternativer til flerpunkt- og banebaserte gester; begrunn nødvendige unntak.",
+      "criterion_status": "I",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "De aktuelle funksjonene har en likeverdig enkel pekerhandling, med mindre gesten er nødvendig. Tastaturalternativ alene beviser ikke et enkeltpekeralternativ."
+        ],
+        "required_evidence": [
+          "Gesttype, testet enhet, oppgave, alternativ enkeltpekersekvens og eventuell unntaksbegrunnelse."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "2.5.2",
+      "title": "Pekeravbrytelse",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#252",
+      "source": "https://www.uutilsynet.no/wcag-standarden/252-pekeravbrytelse-niva/149",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Prøv trykk, flytt ut og slipp, avbryt/angre; bekreft at handlinger ikke utløses utilsiktet.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "En tillatt mekanisme forebygger feilaktivering: handling først ved slipp med avbrytelse/angre, reversering av nedtrykk ved slipp, eller et dokumentert nødvendig nedtrykk. Hendelsesnavn alene avgjør ikke resultatet."
+        ],
+        "required_evidence": [
+          "Nedtrykk, bevegelse, slipp, avbrytelse/angre og faktisk sideeffekt før/etter."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Prøv trykk, flytt ut og slipp, avbryt/angre; bekreft at handlinger ikke utløses utilsiktet.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "2.5.3",
+      "title": "Ledetekst i navn",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#253",
+      "source": "https://www.uutilsynet.no/wcag-standarden/253-ledetekst-i-navn-niva/150",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Bekreft faktisk tilgjengelig navn mot all synlig tekst, også sammensatte kontroller og talestyring.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Det tilgjengelige navnet inneholder den synlige etikettens tekst etter kriteriets regler. Navnet kan gi ekstra kontekst; en ikonknapp uten synlig tekst vurderes ellers under 4.1.2."
+        ],
+        "required_evidence": [
+          "Synlig etikett, beregnet navn og navnekilde, dynamiske varianter og eventuell stemmestyringssekvens."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Bekreft faktisk tilgjengelig navn mot all synlig tekst, også sammensatte kontroller og talestyring.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "2.5.4",
+      "title": "Bevegelsesaktivering",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#254",
+      "source": "https://www.uutilsynet.no/wcag-standarden/254-bevegelsesaktivering-niva/151",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Prøv bevegelsesaktiverte funksjoner og alternativ kontroll/deaktivering, eller dokumenter fravær.",
+      "criterion_status": "I",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Relevante bevegelser har både et grensesnittalternativ og en måte å hindre bevegelsesaktivering på, med de avgrensede unntakene i kriteriet."
+        ],
+        "required_evidence": [
+          "Sensor/enhet, utløsende bevegelse, alternativ betjening, av-innstilling og faktisk resultat etter deaktivering."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "3.1.1",
+      "title": "Språk på siden",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#311",
+      "source": "https://www.uutilsynet.no/wcag-standarden/311-sprak-pa-siden-niva/110",
+      "status": "completed_local_manual_sample",
+      "scope": [
+        "PDF side 1–7"
+      ],
+      "tools_used": [
+        "pypdf/pdfplumber/Poppler/PIL"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "PDF-ens hovedspråk er nå nb-NO. Alle 2694 ikke-blanke synlige tegn er koblet til norske språkspenn; ParentTree-arving er kontrollert uavhengig. Syv engelske alternativtekster har eksplisitt en. A11Y-08 er rettet; faktisk opplesing er ikke testet.",
+      "evidence": [
+        "raw/pdf-regression.json",
+        "raw/pdf-language-after.json",
+        "raw/pdf-repair.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Bekreft faktisk hovedspråk og opplesingsspråk, også når PDF har språk på underliggende elementer.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "/",
+          "/spor/",
+          "/priser/",
+          "PDF side 1–7"
+        ],
+        "acceptance_conditions": [
+          "Dokumentets hovedspråk kan bestemmes programmatisk og samsvarer med innholdet. Gyldig merking for bokmål/nynorsk vurderes etter språkstandard og kilde; tilstedeværelse av et vilkårlig lang-attributt er ikke nok."
+        ],
+        "required_evidence": [
+          "URL/dokument, vurdert hovedspråk, faktisk språkkode, metadata/kode og eventuell opplesing med stemmevalg."
+        ],
+        "capability_ids": [
+          "pdf_structure"
+        ],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Ingen åpen oppgave for dette kravet i det målrettet prøvde lokale utvalget. Gjenta ved relevante innholds-/komponentendringer eller utrulling.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-10",
+        "evidence": [
+          "raw/pdf-regression.json",
+          "raw/pdf-language-after.json",
+          "raw/pdf-repair.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "3.1.2",
+      "title": "Språk på deler av innhold",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#312",
+      "source": "https://www.uutilsynet.no/wcag-standarden/312-sprak-pa-deler-av-innhold-niva-aa/111",
+      "status": "completed_local_manual_sample",
+      "scope": [
+        "PDF side 1–7"
+      ],
+      "tools_used": [
+        "pypdf/pdfplumber/Poppler/PIL"
+      ],
+      "tested_at": "2026-11-10",
+      "actual_result": "De 36 feilmerkede norske innholdsspennene er endret fra en-US til nb-NO, mens engelske alternativtekster er bevart med eksplisitt engelsk språk. Norsk synlig innhold og programmatisk språk samsvarer i prøvd dokument. Dette er metadata-/innholdskontroll, ikke faktisk uttale.",
+      "evidence": [
+        "raw/pdf-regression.json",
+        "raw/pdf-language-after.json",
+        "raw/pdf-repair.json"
+      ],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Les innholdet for språkbytter og vurder koding/unntak, også dynamiske svar og PDF.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "/",
+          "/spor/",
+          "/priser/",
+          "PDF side 1–7"
+        ],
+        "acceptance_conditions": [
+          "Relevante språkpassasjer har riktig, programmatisk bestemt språk. Dokumentert unntak for enkeltord/termer er mulig. Språkdeteksjon alene avgjør ikke semantiske unntak."
+        ],
+        "required_evidence": [
+          "Tekstutdrag, lokasjon/tilstand, hovedspråk, arvet og lokal språkkode, eventuell opplesing og begrunnede unntak."
+        ],
+        "capability_ids": [
+          "pdf_structure"
+        ],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Ingen åpen oppgave for dette kravet i det målrettet prøvde lokale utvalget. Gjenta ved relevante innholds-/komponentendringer eller utrulling.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-10",
+        "evidence": [
+          "raw/pdf-regression.json",
+          "raw/pdf-language-after.json",
+          "raw/pdf-repair.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "3.2.1",
+      "title": "Fokus",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#321",
+      "source": "https://www.uutilsynet.no/wcag-standarden/321-fokus-niva/112",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Fokuser alle kontroller og bekreft at ingen uventet kontekstendring oppstår.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Fokus alene utløser ikke en uventet kontekstendring. Et lite verktøytips eller en lokal beskrivelse er ikke automatisk det samme som en ny kontekst."
+        ],
+        "required_evidence": [
+          "Fokustrinn, URL/vindu/aktivt element før og etter og forklaring av eventuell kontekstendring."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Fokuser alle kontroller og bekreft at ingen uventet kontekstendring oppstår.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "3.2.2",
+      "title": "Inndata",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#322",
+      "source": "https://www.uutilsynet.no/wcag-standarden/322-inndata-niva/114",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Endre felt/valg og vurder kontekstendringer og eventuell forhåndsinformasjon.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Verdiendring gir ikke automatisk kontekstendring uten forhåndsinformasjon. En oppdatering av et resultatfelt er ikke alltid en kontekstendring, men kan kreve statusmelding etter 4.1.3."
+        ],
+        "required_evidence": [
+          "Felt/verdi, forhåndsvarsel slik det var før bruk, utløsende hendelse og observerte endringer i side/fokus."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Endre felt/valg og vurder kontekstendringer og eventuell forhåndsinformasjon.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "3.2.3",
+      "title": "Konsekvent navigering",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#323",
+      "source": "https://www.uutilsynet.no/wcag-standarden/323-konsekvent-navigering-niva-aa/113",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Sammenlign gjentatt navigasjon på tvers av alle relevante sider og tilstander.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Gjentatte navigasjonselementer beholder sin relative rekkefølge, med tillatte brukerinitierte endringer. Lik posisjon i absolutt antall piksler er ikke et krav."
+        ],
+        "required_evidence": [
+          "Sideutvalg, navigasjonssekvenser per bredde, skjermbilder og årsak til eventuelle forskjeller."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Sammenlign gjentatt navigasjon på tvers av alle relevante sider og tilstander.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "3.2.4",
+      "title": "Konsekvent identifikasjon",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#324",
+      "source": "https://www.uutilsynet.no/wcag-standarden/324-konsekvent-identifikasjon-niva-aa/115",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Sammenlign navn, ikoner og funksjon for gjentatte komponenter, også dynamisk innhold.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Tilsvarende funksjoner identifiseres konsekvent slik at brukeren gjenkjenner dem, både visuelt og via hjelpemidler. Identisk grafikk bør ikke gi skjult forskjellig funksjon."
+        ],
+        "required_evidence": [
+          "Funksjonsgruppe, sider/komponenter, synlige og beregnede navn, symboler og begrunnet vurdering av ulikheter."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Sammenlign navn, ikoner og funksjon for gjentatte komponenter, også dynamisk innhold.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "3.3.1",
+      "title": "Identifikasjon av feil",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#331",
+      "source": "https://www.uutilsynet.no/wcag-standarden/331-identifikasjon-av-feil-niva/116",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Utløs relevante feil; vurder om felt og feilårsak identifiseres i tekst og leses med skjermleser.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Automatisk avdekkede inndatafeil er forståelig beskrevet i tekst, og berørt felt er identifisert. Farge, ikon eller deaktivert knapp alene er ikke en tilstrekkelig feilbeskrivelse."
+        ],
+        "required_evidence": [
+          "Testverdi, valideringstrigger, feilmeldingens ordlyd, feltkobling og faktisk opplesing der den er prøvd."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Utløs relevante feil; vurder om felt og feilårsak identifiseres i tekst og leses med skjermleser.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "3.3.2",
+      "title": "Ledetekster eller instruksjoner",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#332",
+      "source": "https://www.uutilsynet.no/wcag-standarden/332-ledetekster-eller-instruksjoner-niva/117",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Vurder forståelige etiketter, obligatoriske felt, formathjelp og instruksjoner før innsending.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Brukeren får tilstrekkelig og synlig veiledning til å oppgi riktig informasjon. Kun et skjult aria-label løser ikke nødvendigvis dette synlige informasjonskravet; kodet etikett vurderes også under 1.3.1/4.1.2."
+        ],
+        "required_evidence": [
+          "Feltutvalg, etikett/instruksjon, krav til verdier og skjermbilder før og under skriving."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Vurder forståelige etiketter, obligatoriske felt, formathjelp og instruksjoner før innsending.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "3.3.3",
+      "title": "Forslag ved feil",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#333",
+      "source": "https://www.uutilsynet.no/wcag-standarden/333-forslag-ved-feil-niva-aa/118",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Utløs feil; vurder konkrete rettingsforslag og relevante sikkerhetsunntak.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Kjent og trygg hjelp til å rette feilen blir gitt og virker i praksis. «Ugyldig verdi» alene gir normalt ikke nok hjelp når riktig format eller område er kjent."
+        ],
+        "required_evidence": [
+          "Feil og verdi, foreslått korrigering, resultat ved nytt forsøk og konkret grunnlag for eventuelt unntak."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Utløs feil; vurder konkrete rettingsforslag og relevante sikkerhetsunntak.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "3.3.4",
+      "title": "Forhindring av feil (juridiske feil, økonomiske feil, datafeil)",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#334",
+      "source": "https://www.uutilsynet.no/wcag-standarden/334-forhindring-av-feil-juridiske-feil-okonomiske-feil-datafeil-niva-aa/119",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Kartlegg rettslige/økonomiske og dataendrende handlinger; prøv reversering, kontroll eller bekreftelse.",
+      "criterion_status": "I",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Minst én av de tre tillatte feilforebyggende løsningene beskytter hver relevant prosess. Ingen av dem krever at agenten utfører en reell irreversibel handling uten særskilt autorisasjon."
+        ],
+        "required_evidence": [
+          "Prosess og konsekvens, testmiljø, beskyttelsesmetode, tastsekvens og reverserings-/korrigeringsresultat med anonymiserte testdata."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Ingen utløsende innholdstype i undersøkt lokalt omfang. Vurder på nytt ved endring.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "4.1.1",
+      "title": "Parsing (oppdeling)",
+      "procedure": "testprosedyrer/wcag-4-robust.md#411",
+      "source": "https://www.uutilsynet.no/wcag-standarden/411-parsing-oppdeling-niva/120",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Bruk full HTML-validator når tilgjengelig; vurder gjenstående syntaksfeil mot relevant kravgrunnlag.",
+      "criterion_status": "K",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Ingen relevante syntaksfeil i disse kategoriene, med spesifikasjonens tillatte tilfeller hensyntatt. Kriteriet er med i den aktuelle norske malen selv om WCAG 2.2 fjernet det; det skal ikke stilletiende utelates."
+        ],
+        "required_evidence": [
+          "Original/dynamisk HTML-utvalg, validator og versjon, rårapport, linjer/ID-er og begrunnelse for hver feils klassifisering."
+        ],
+        "capability_ids": [],
+        "execution": "local_now",
+        "blocker": null,
+        "next_step": "Prøv aktuell produksjon og relevante dynamiske DOM-tilstander ved endret kode; Nu-valideringen gjelder den bygde eksporten.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-10",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "4.1.2",
+      "title": "Navn, rolle, verdi",
+      "procedure": "testprosedyrer/wcag-4-robust.md#412",
+      "source": "https://www.uutilsynet.no/wcag-standarden/412-navn-rolle-verdi-niva/121",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "partial_tested",
+      "automatic_evidence": [
+        "raw/auto-01.json"
+      ],
+      "manual_next_step": "Prøv faktisk navn, rolle, verdi og tilstandsoppdateringer med skjermleser i alle komponenter.",
+      "criterion_status": "U",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Komponentens navn og rolle kan bestemmes programmatisk; brukerendrede verdier/tilstander er tilgjengelige og endringer kan formidles til brukeragenten. Native HTML er støtte, ikke automatisk full godkjenning."
+        ],
+        "required_evidence": [
+          "Komponent og tilstandssekvens, beregnede navn/roller/verdier og faktisk skjermleserresultat med OS/verktøyversjon."
+        ],
+        "capability_ids": [
+          "screen_reader"
+        ],
+        "execution": "needs_assistance",
+        "blocker": "Faktisk tale og hjelpemiddelbetjening kan ikke observeres her.",
+        "next_step": "Prøv kontrolltypene med faktisk skjermleser og dokumenter navn, rolle, verdi og oppdatering.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-09",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    },
+    {
+      "criterion_id": "4.1.3",
+      "title": "Statusbeskjeder",
+      "procedure": "testprosedyrer/wcag-4-robust.md#413",
+      "source": "https://www.uutilsynet.no/wcag-standarden/413-statusbeskjeder-niva-aa/152",
+      "status": "not_tested",
+      "scope": [],
+      "tools_used": [],
+      "tested_at": null,
+      "actual_result": null,
+      "evidence": [],
+      "automatic_status": "not_tested",
+      "automatic_evidence": [],
+      "manual_next_step": "Utløs lasting, feil og resultat; lytt med faktisk skjermleser uten å flytte fokus.",
+      "criterion_status": "U",
+      "completion": {
+        "scope": [
+          "Eksisterende lokal vurdering med bevart dato og evidens; docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2"
+        ],
+        "acceptance_conditions": [
+          "Relevante statusbeskjeder kan bestemmes programmatisk og presenteres av hjelpemiddelet uten å motta fokus. En tekst i DOM eller et aria-live-attributt uten faktisk funksjon er bare delbevis."
+        ],
+        "required_evidence": [
+          "Utløsende handling, fokus før/etter, beskjedens tekst, rolle/live-egenskaper, tidsrekkefølge og faktisk opplesing/logg."
+        ],
+        "capability_ids": [
+          "screen_reader"
+        ],
+        "execution": "needs_assistance",
+        "blocker": "Faktisk tale og hjelpemiddelbetjening kan ikke observeres her.",
+        "next_step": "Prøv faktiske søkeresultat-, validerings-, ventings-, svar- og relevante feilbeskjeder med skjermleser og naturlig fokus. Prisvarselet er nå innledende sideinnhold; faktisk opplesing er fortsatt ikke prøvd.",
+        "note": "Planlagte vilkår er ikke testresultater. Tilpass til faktisk innhold."
+      },
+      "inherited_assessment": {
+        "run": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed",
+        "test_date": "2026-11-10",
+        "evidence": [
+          "../090740-ca8d9c80ecb6/wcag-grunnlag.json",
+          "../094541-e2907a5c27e2/raw/auto-01.json",
+          "../090740-ca8d9c80ecb6/raw/native-coverage.json",
+          "../094541-e2907a5c27e2/raw/text-spacing-states.json",
+          "../094541-e2907a5c27e2/raw/freshness-threshold.json",
+          "../094541-e2907a5c27e2/raw/native-postverification.json"
+        ],
+        "note": "Bare oppgitte rettinger og tilhørende regresjon er nye tester."
+      }
+    }
+  ],
+  "assessed_summary": {
+    "criteria_counts": {
+      "B": 0,
+      "I": 11,
+      "K": 29,
+      "U": 8
+    },
+    "note": "Avledet vurderingsstatus; motorenes deldekning og manuelle arbeidskategorier er separate."
+  }
+}

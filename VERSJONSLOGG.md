@@ -4,6 +4,30 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 «Agent» betyr kodeassistenten som utførte arbeidet. Git-forfatteren registreres separat av Git og kan være personen som oppretter commiten. Eksakt modellvariant er ikke registrert for tidligere arbeid og oppgis derfor ikke. Ingen underagenter ble brukt til kvalitetskontrollen eller opprettelsen av denne loggen.
 
+## Ikke utgitt – rettet PDF-språk og varsel om gamle prisdata – 10. november 2026
+
+**Utførende agent:** Codex (OpenAI), med `tilgjengelighetserklaering` 0.6.0 og PDF-skillen. Ingen underagenter.
+
+- Rettet A11Y-08: PDF-katalogen har nå nb-NO, og 36 feilmerkede norske innholdsspenn er endret fra en-US til nb-NO. Alle 2694 ikke-blanke synlige tegn har korrekt norsk språk. Syv engelske alternativtekster har eksplisitt en. ParentTree og mest lokal BDC-merking er kontrollert; ingen faktisk opplesing påstås.
+- Rendret alle syv PDF-sider før/etter ved 120 dpi: null pixelavvik. Tekst/geometri/skrifter/farger/MCID, strukturroller, tittel og tegne-/tekstoperasjoner unntatt Lang er bevart. Tidligere kontrastvurderinger videreføres med ny hash og dokumentert visuell identitet.
+- Rettet A11Y-09: fjernet timeintervallet fra PricingFreshness. Alder vurderes ved åpning eller nytt checkedAt-grunnlag, uten tidsstyrt innsetting under lesing. Kontrollert klokke mot ny produksjonseksport: 0 varsler før/etter senere terskelpassering, 6 ved åpning med gamle data og 0 time-callbacks; også prøvd ved 320 px. Ingen endring i systemklokke eller lagrede priser. Funksjonsregisterets beskrivelse er oppdatert; Beta-status beholdes.
+- Retestet hero-pause/start og relevante nettleserdeler. A11Y-08/A11Y-09 er lukket; 3.1.1/3.1.2/2.2.2 B → K i lokalt utvalg. **29 K / 11 I / 8 U / 0 B**. Oppdatert brukerrettet erklæring/side, rapporter, README, arbeidsmatrise, latest og utviklingsplan. Bevis, førversjon, verktøy og retester er lagret i `docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/`. Skillens avstemming består; ingen samlet tilgjengelighetsgodkjenning.
+- Åtte øvrige krav, faktisk hjelpemiddel-/zoom-/enhetsprøving og P8 er fortsatt åpne. Ingen endring i Skills-repoet, commit eller publisering.
+
+- Sluttverifisering: 53 Node-tester, tre Python-tester, Pages-produksjonsbygg med TypeScript/ruteregister og HTML-grunnkontroll for 25 filer bestod. Ny native-kjøring `203306-native-1c441fbd`: 23 ruter / 0 axe-violations / samme 3 incomplete-grupper og 86 targets; Nu 0 feil / 207 info-noter. Original motorstatus er bevart. Erklæringen er lest tilbake ved 320/1280 med nøyaktig åtte U-ID-er og ingen kjente åpne brudd. Bevisreferanser, lokale dokumentlenker, dokumentavstemming, formatering og Git-diff er kontrollert. Den midlertidige testfanen/serveren er lukket/stoppet og viewport er gjenopprettet.
+
+## Ikke utgitt – lokal oppfølging med tilgjengelighetsskill 0.6.0 – 10. november 2026
+
+**Utførende agent:** Codex (OpenAI), med `tilgjengelighetserklaering` 0.6.0 og PDF-skillen. Ingen underagenter.
+
+- Kjørt oppdatert skill med faktisk testmulighetskartlegging, avslutningsvilkår for alle 48 krav, nettlesermodul, `--auto` og ny axe/Nu-kjøring. Gjennomført 65 fokussnapshots og målrettede tastatur-/statusforløp i katalog, dialog, chatside, kilder og seks pristabeller. 2.4.3 og 2.4.7 U → K i oppgitt lokalt utvalg; faktisk zoom/skjermleser er ikke påstått utført.
+- Bekreftet A11Y-08: PDF-ens norske hovedinnhold har engelsk katalogspråk, og 709 av 2694 ikke-blanke synlige tegn ligger i eksplisitt engelske spenn på side 4–6. Uavhengig ParentTree-oppslag og mest lokal BDC-merking er sammenholdt med synlig norsk tekst. 3.1.1 og 3.1.2 U → B. PDF uendret; ingen uttaletest er oppfunnet.
+- Bekreftet A11Y-09: uendret priskomponent setter automatisk inn seks varsler uten pause/skjul/frekvenskontroll ved passert terskel. Kontrollert klokke og reelle time-callbacks er prøvd i isolert eksport, uten endring av produktkilde/systemklokke. 2.2.2 U → B; hero-pause vedvarer etter fokusflytting og består separat.
+- Oppdatert kort brukerrettet erklæring/side med tre bruddkrav og åtte uavklarte krav. Oppdatert rapporter, gjeldende oppsummering, arbeidsmatrise/restplan, README, utviklingsplan og latest. Samlet **26 K / 11 I / 8 U / 3 B**. Funn/rettingsforslag, bevis og konkret bistand er lagret i `docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/`. Ingen funksjons-/PDF-retting er utført i dette testoppdraget.
+- Den nye avstemmingen fanget en feil i første Markdown-sammenstilling og gamle brudd på retesthenvisninger; dette er rettet i den nye vurderingen, med datert originalgrunnlag og normalisert skjema. Avstemmingen består uten omskriving av råmotorstatus eller gamle kjøringer. Faktisk native Chrome-tilgang ble blokkert av manglende Computer Use-tillatelse. Zoom, skjermleser/PDF-leser, fysisk rotasjon og OS-innstilling er ikke gjennomført. Ingen endring i Skills-repoet, commit eller publisering.
+
+- Sluttverifisering: 53 Node-tester og tre Python-tester bestod, sammen med Pages-produksjonsbygg/TypeScript/ruteregister og HTML-grunnkontroll av 25 filer. Ny native-kjøring `195227-native-1d4e7aee`: 23 ruter / 0 axe-violations / samme 3 incomplete-grupper og 86 targets; Nu 0 feil / 207 info-noter. Rendrert erklæring viser nøyaktig tre B-krav og åtte U-krav ved 320/1280 uten overflyt. PDF og funksjonskomponentene er identiske med HEAD. Formatering, Git-diff og lokale bevis-/dokumentlenker er kontrollert. Testfanen er lukket, viewport gjenopprettet og den isolerte loopback-serveren stoppet.
+
 ## Ikke utgitt – fullført lokal 1.4.11-vurdering – 10. november 2026
 
 **Utførende agent:** Codex (OpenAI), med `tilgjengelighetserklaering` 0.5.1 og PDF-skillen. Ingen underagenter.

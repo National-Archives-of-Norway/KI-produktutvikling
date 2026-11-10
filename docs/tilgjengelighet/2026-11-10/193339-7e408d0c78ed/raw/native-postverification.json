@@ -1,0 +1,12 @@
+{
+  "native_manifest": "docs/tilgjengelighet/2026-11-10/195227-native-1d4e7aee/native-manifest.json",
+  "axe_routes": 23,
+  "violations": 0,
+  "incomplete_groups": 3,
+  "incomplete_nodes": 86,
+  "same_incomplete_targets_as_before_declaration_update": true,
+  "nu_html_files": 25,
+  "nu_errors": 0,
+  "nu_info": 207,
+  "review": "New post-declaration-build regression. Original needs_review preserved. All Nu notes are trailing-slash information. Confirmed PDF-language and timer findings are separate manual assessments, not contradicted by 0 axe violations."
+}

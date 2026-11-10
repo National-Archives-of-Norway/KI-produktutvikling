@@ -42,46 +42,7 @@ export const unresolvedAccessibilityRequirements = [
       },
     ],
   },
-  {
-    title: "Prinsipp 2: Mulig å betjene",
-    requirements: [
-      {
-        id: "2.2.2",
-        title: "Pause, stopp, skjul",
-        description:
-          "Animasjonens pause- og startfunksjon er undersøkt. Det er ikke avklart om det tidsstyrte varselet om eldre priskontroll trenger en mulighet for pause eller skjuling. Virkningen av innstillingen for redusert bevegelse er heller ikke bekreftet.",
-      },
-      {
-        id: "2.4.3",
-        title: "Fokusrekkefølge",
-        description:
-          "Rekkefølgen ved tastaturnavigasjon er ikke ferdig vurdert med faktisk forstørring og hjelpemidler, særlig når innhold endres.",
-      },
-      {
-        id: "2.4.7",
-        title: "Synlig fokus",
-        description:
-          "Det er ikke ferdig vurdert om fokusmarkeringen er synlig på representative kontroller og bakgrunner ved faktisk forstørring.",
-      },
-    ],
-  },
-  {
-    title: "Prinsipp 3: Forståelig",
-    requirements: [
-      {
-        id: "3.1.1",
-        title: "Språk på siden",
-        description:
-          "Det er ikke bekreftet at PDF-vedlegget leses opp med riktig hovedspråk.",
-      },
-      {
-        id: "3.1.2",
-        title: "Språk på deler av innhold",
-        description:
-          "Språkbytter og faktisk opplesing i PDF-vedlegget er ikke ferdig vurdert. Modellgenererte svar og feilsiden i et publisert miljø er heller ikke undersøkt.",
-      },
-    ],
-  },
+
   {
     title: "Prinsipp 4: Robust",
     requirements: [
@@ -95,8 +56,18 @@ export const unresolvedAccessibilityRequirements = [
         id: "4.1.3",
         title: "Statusbeskjeder",
         description:
-          "Det er ikke bekreftet at søkeresultater, feil, venting og chatsvar blir formidlet med skjermleser uten at brukeren må flytte fokus. Dette gjelder også prisaldervarselet dersom det skal formidles på denne måten.",
+          "Det er ikke bekreftet at søkeresultater, feil, venting og chatsvar blir formidlet med skjermleser uten at brukeren må flytte fokus.",
       },
     ],
   },
 ];
+
+export const knownAccessibilityBreaches: Array<{
+  title: string;
+  requirements: Array<{
+    id: string;
+    title: string;
+    description: string;
+    alternative: string;
+  }>;
+}> = [];

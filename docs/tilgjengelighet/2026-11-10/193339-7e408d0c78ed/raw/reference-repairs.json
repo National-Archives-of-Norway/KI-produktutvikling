@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1.4.3",
+    "note": "Mixed evidence base: filter retest actually belongs to 160352, while other contrast evidence belongs to 145250."
+  },
+  {
+    "id": "A11Y-01",
+    "original": [
+      "../094541-e2907a5c27e2/raw/pricing-language-after-refresh.json",
+      "../094541-e2907a5c27e2/raw/live-refresh.json",
+      "../094541-e2907a5c27e2/raw/project-tests.stdout.txt",
+      "../094541-e2907a5c27e2/screenshots/pricing-language-fixed.png"
+    ],
+    "normalized": [
+      "../../2026-11-09/203914-cf2e80bc00f7/raw/pricing-language-after-refresh.json",
+      "../../2026-11-09/203914-cf2e80bc00f7/raw/live-refresh.json",
+      "../../2026-11-09/203914-cf2e80bc00f7/raw/project-tests.stdout.txt",
+      "../../2026-11-09/203914-cf2e80bc00f7/screenshots/pricing-language-fixed.png"
+    ],
+    "note": "Actual original files verified; old pointer base and string/list schema normalized in new assessment only. Legacy runs unchanged."
+  },
+  {
+    "id": "A11Y-02",
+    "original": "docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/raw/pdf-retest.json",
+    "normalized": [
+      "../../2026-11-09/210420-07c855b7770e/raw/pdf-retest.json"
+    ],
+    "note": "Actual original files verified; old pointer base and string/list schema normalized in new assessment only. Legacy runs unchanged."
+  },
+  {
+    "id": "A11Y-03",
+    "original": "docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/raw/pdf-retest.json",
+    "normalized": [
+      "../../2026-11-09/210420-07c855b7770e/raw/pdf-retest.json"
+    ],
+    "note": "Actual original files verified; old pointer base and string/list schema normalized in new assessment only. Legacy runs unchanged."
+  },
+  {
+    "id": "A11Y-04",
+    "original": [
+      "../094541-e2907a5c27e2/raw/pdf-retest.json",
+      "../094541-e2907a5c27e2/raw/repair-actions.json"
+    ],
+    "normalized": [
+      "../080757-ffaeb036427a/raw/pdf-retest.json",
+      "../080757-ffaeb036427a/raw/repair-actions.json"
+    ],
+    "note": "Actual original files verified; old pointer base and string/list schema normalized in new assessment only. Legacy runs unchanged."
+  },
+  {
+    "id": "A11Y-05",
+    "original": [
+      "../094541-e2907a5c27e2/raw/pdf-retest.json",
+      "../094541-e2907a5c27e2/raw/repair-actions.json"
+    ],
+    "normalized": [
+      "../080757-ffaeb036427a/raw/pdf-retest.json",
+      "../080757-ffaeb036427a/raw/repair-actions.json"
+    ],
+    "note": "Actual original files verified; old pointer base and string/list schema normalized in new assessment only. Legacy runs unchanged."
+  },
+  {
+    "id": "A11Y-06",
+    "original": [
+      "../094541-e2907a5c27e2/raw/404-browser.json",
+      "../094541-e2907a5c27e2/raw/404-export.json"
+    ],
+    "normalized": [
+      "../080757-ffaeb036427a/raw/404-browser.json",
+      "../080757-ffaeb036427a/raw/404-export.json"
+    ],
+    "note": "Actual original files verified; old pointer base and string/list schema normalized in new assessment only. Legacy runs unchanged."
+  }
+]

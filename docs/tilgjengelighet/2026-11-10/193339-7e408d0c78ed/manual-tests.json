@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-10T18:45:42.960224+00:00",
+  "agent": "Codex (OpenAI)",
+  "skill_version": "0.6.0",
+  "scope": "Gjennomgang med skill 0.6.0 av de 13 tidligere U-kravene. Nye faktiske tastatur-/fokus-/statusprøver ved bekreftet 1280/320, PDF-språk koblet til synlige tegn og kontrollert klokkeprøve av uendret priskomponent. Øvrige kriterier videreføres med opprinnelig bevis/dato; ingen ny full manuell 48-kravstest.",
+  "new_decisions": {
+    "2.2.2": {
+      "status": "B",
+      "result": "Prisaldervarselet oppdateres automatisk etter sju-dagersgrensen via timeintervall, parallelt med tabellinnhold. Kontrollert klokkeprøve viser seks nye varsler mens fokus står i åpne vilkår. Ingen pause/skjul/frekvenskontroll finnes. A11Y-09. Hero-pause med Enter/Space består og vedvarer etter fokusflytting; redusert bevegelse er ikke faktisk OS-testet.",
+      "remaining": "Rett A11Y-09 ved styring av oppdateringen eller brukerstyrt/innledende ferskhetsvurdering, og retest med kontrollert terskel og tastatur.",
+      "evidence": [
+        "raw/fixture-states.json",
+        "raw/fixture-metadata.json",
+        "raw/manual-ui.json",
+        "raw/source-pricing-freshness.tsx.txt"
+      ]
+    },
+    "3.1.1": {
+      "status": "B",
+      "result": "PDF-katalogens hovedspråk er en. Synlig norsk tekst på side 4–6 har en/en-US etter både ParentTree, struktur og mest lokal BDC-merking; 709 av 2694 ikke-blanke tegn er i disse spennene. Resten er nb/nb-NO. Ikke en antatt uttalefeil: den faktiske merkingen er dokumentert. A11Y-08.",
+      "remaining": "Rett PDF-ens hovedspråk og konkrete feilmerkede norske innholdsspenn; behold eventuell bevisst engelsk tekst med korrekt lokal merking. Retest begge språkbaner og visning.",
+      "evidence": [
+        "raw/pdf-language.json",
+        "raw/pdf-language-parenttree.json",
+        "screenshots/pdf-page-4.png",
+        "screenshots/pdf-page-6.png"
+      ]
+    },
+    "3.1.2": {
+      "status": "B",
+      "result": "Flere hele norske setninger/spenn på PDF-side 4–6 er eksplisitt merket en-US; dette gjelder ikke bare engelske produktnavn eller faguttrykk. Mest lokal BDC-merking er kontrollert mot struktur og synlige tegn. A11Y-08 gjelder også dette kravet. Fremtidig ekstern modell inngår ikke i dagens lokale omfang.",
+      "remaining": "Rett språkmerkingen i de dokumenterte PDF-spennene, og kontroller setninger/avsnitt mot faktisk språk. Faktisk opplesing kan supplere, men feil kode er allerede bekreftet.",
+      "evidence": [
+        "raw/pdf-language.json",
+        "raw/pdf-language-parenttree.json"
+      ]
+    },
+    "2.4.3": {
+      "status": "K",
+      "result": "Faktiske Tab/Shift+Tab-forløp dekker meny/katalog, dialogens initialfokus/fokusfelle/retur, validering/svar/tømming, kildedetaljer og seks pristabeller ved 1280/320. Fokusrekkefølgen bevarer mening og betjening i dette lokale utvalget. Nullstillingsknappen avmonteres: neste Tab starter ved hoppelenken; dette er en dokumentert forbedringsmulighet, ikke i seg selv bekreftet meningsstridig fokusrekkefølge. Ekte zoom vurderes separat under 1.4.4/1.4.10; skjermleser er ikke et generelt tilleggsvilkår her.",
+      "remaining": "Ingen åpen 2.4.3-oppgave i prøvde lokale kontrollfamilier. Gjenta berørte forløp ved nye komponenter/auth/utrulling.",
+      "evidence": [
+        "raw/focus-trail.json",
+        "raw/manual-ui.json",
+        "screenshots/focus-chat-close-320.png",
+        "screenshots/focus-source-1280.png"
+      ]
+    },
+    "2.4.7": {
+      "status": "K",
+      "result": "Faktisk tastaturfokus er undersøkt for lenker, filtre, hero, tekstfelt/textarea, chatkontroller, summary og seks tabellrulleområder ved 1280/320. Fokusmarkeringene er synlige i vurderte renderinger; felt bruker samlet feltmarkering. Umiddelbare offscreen-geometrier under smooth scrolling er ikke brukt som falske feil; sluttposisjoner og skjermbilder er kontrollert. Ingen nye bekreftede fokusavvik. Ekte zoom står som egen uavklart kontroll.",
+      "remaining": "Ingen åpen 2.4.7-oppgave i prøvd lokalt utvalg. Gjenta ved nye flater/overlegg/komponenter; ingen påstand om faktisk zoom.",
+      "evidence": [
+        "raw/focus-trail.json",
+        "screenshots/focus-reset-320.png",
+        "screenshots/focus-chat-close-320.png",
+        "screenshots/focus-textarea-1280.png",
+        "screenshots/focus-source-1280.png",
+        "screenshots/focus-table-320-settled.png",
+        "screenshots/focus-table-1280-settled.png"
+      ]
+    }
+  },
+  "inherited_assessment": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/wcag-grunnlag.json",
+  "environment": "raw/test-environment.json",
+  "limits": [
+    "No actual screen reader speech",
+    "No actual browser zoom",
+    "No physical device rotation",
+    "No real OS reduced-motion setting test",
+    "No external model/auth/published pilot test",
+    "Clock threshold is synthetic; product sources unchanged"
+  ]
+}

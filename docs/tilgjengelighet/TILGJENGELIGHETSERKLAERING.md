@@ -18,7 +18,7 @@ Du kan be om hjelp eller innhold i et annet format gjennom kontaktkanalen nedenf
 
 ## Forhold som ikke er ferdig vurdert
 
-Følgende 13 krav er delvis undersøkt, men ikke ferdig vurdert. Uavklart status betyr at det trengs flere undersøkelser før vi kan konkludere. Samlet samsvar er derfor fortsatt uavklart.
+Følgende 8 krav er delvis undersøkt, men ikke ferdig vurdert. Uavklart status betyr at det trengs flere undersøkelser før vi kan konkludere. Samlet samsvar er derfor fortsatt uavklart.
 
 ### Prinsipp 1: Mulig å oppfatte
 
@@ -29,21 +29,10 @@ Følgende 13 krav er delvis undersøkt, men ikke ferdig vurdert. Uavklart status
 - **1.4.4 Endring av tekststørrelse:** Det er ikke bekreftet at alt innhold og alle nødvendige funksjoner kan brukes ved faktisk 200 prosent forstørring.
 - **1.4.10 Dynamisk tilpasning (Reflow):** Det er ikke bekreftet at innholdet tilpasser seg og nødvendige oppgaver kan utføres ved faktisk 400 prosent nettleserzoom.
 
-### Prinsipp 2: Mulig å betjene
-
-- **2.2.2 Pause, stopp, skjul:** Animasjonens pause- og startfunksjon er undersøkt. Det er ikke avklart om det tidsstyrte varselet om eldre priskontroll trenger en mulighet for pause eller skjuling. Virkningen av innstillingen for redusert bevegelse er heller ikke bekreftet.
-- **2.4.3 Fokusrekkefølge:** Rekkefølgen ved tastaturnavigasjon er ikke ferdig vurdert med faktisk forstørring og hjelpemidler, særlig når innhold endres.
-- **2.4.7 Synlig fokus:** Det er ikke ferdig vurdert om fokusmarkeringen er synlig på representative kontroller og bakgrunner ved faktisk forstørring.
-
-### Prinsipp 3: Forståelig
-
-- **3.1.1 Språk på siden:** Det er ikke bekreftet at PDF-vedlegget leses opp med riktig hovedspråk.
-- **3.1.2 Språk på deler av innhold:** Språkbytter og faktisk opplesing i PDF-vedlegget er ikke ferdig vurdert. Modellgenererte svar og feilsiden i et publisert miljø er heller ikke undersøkt.
-
 ### Prinsipp 4: Robust
 
 - **4.1.2 Navn, rolle, verdi:** Det er ikke bekreftet at skjermlesere formidler kontrollenes navn, rolle, verdi og tilstand riktig gjennom de aktuelle brukerforløpene.
-- **4.1.3 Statusbeskjeder:** Det er ikke bekreftet at søkeresultater, feil, venting og chatsvar blir formidlet med skjermleser uten at brukeren må flytte fokus. Dette gjelder også prisaldervarselet dersom det skal formidles på denne måten.
+- **4.1.3 Statusbeskjeder:** Det er ikke bekreftet at søkeresultater, feil, venting og chatsvar blir formidlet med skjermleser uten at brukeren må flytte fokus.
 
 Du kan lese ressursene gjennom ressurskatalogen eller nettstedskartet uten å bruke chatten. Animasjonen på forsiden kan pauses ved å klikke på illustrasjonen, eller ved å velge den med Tab og trykke mellomrom eller Enter.
 
@@ -59,6 +48,6 @@ Hvis du ikke får svar, er misfornøyd med svaret eller ikke kan bruke nettstede
 
 ## Vurdering og oppdatering
 
-Tilgjengeligheten ble sist vurdert **10. november 2026**. Grunnlaget omfatter lokale nettleser- og tastaturkontroller, prøving med økt tekstavstand, kontrastvurdering av tekst, kontrollmarkeringer og nødvendig grafikk, også i PDF-diagrammet, kontroll av animasjonens pausefunksjon, simulering av prisaldervarselet, axe-skann og HTML-validering med Nu Html Checker samt målrettede PDF-kontroller. Tidligere undersøkelser av øvrig innhold inngår også i grunnlaget. Faktisk skjermleserbruk er ikke testet.
+Tilgjengeligheten ble sist vurdert **10. november 2026**. Grunnlaget omfatter lokale nettleser- og tastaturkontroller, prøving med økt tekstavstand, kontrastvurdering av tekst, kontrollmarkeringer og nødvendig grafikk, også i PDF-diagrammet, kontroll av animasjonens pausefunksjon, simulering av prisaldervarselet, axe-skann og HTML-validering med Nu Html Checker samt målrettede PDF-kontroller av blant annet språkmerking. Tidligere undersøkelser av øvrig innhold inngår også i grunnlaget. Faktisk skjermleserbruk er ikke testet.
 
 Teksten ble sist oppdatert **10. november 2026**.

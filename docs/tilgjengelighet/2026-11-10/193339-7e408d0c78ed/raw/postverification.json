@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-10T18:53:48.155002+00:00",
+  "node_tests_passed": 53,
+  "python_tests_passed": 3,
+  "pages_build": "passed after declaration update, including TypeScript and route registry",
+  "html_basic_files": 25,
+  "declaration_readback": "Exact 3 B and 8 U IDs at observed 320/1280, no overflow",
+  "criterion_counts": {
+    "K": 26,
+    "I": 11,
+    "U": 8,
+    "B": 3
+  },
+  "document_consistency": "raw/consistency-final.json: consistent, 0 conflicts",
+  "local_markdown_targets_checked": 208,
+  "broken_targets": [],
+  "pdf_and_functional_components_unchanged_from_HEAD": true,
+  "native": {
+    "native_manifest": "docs/tilgjengelighet/2026-11-10/195227-native-1d4e7aee/native-manifest.json",
+    "axe_routes": 23,
+    "violations": 0,
+    "incomplete_groups": 3,
+    "incomplete_nodes": 86,
+    "same_incomplete_targets_as_before_declaration_update": true,
+    "nu_html_files": 25,
+    "nu_errors": 0,
+    "nu_info": 207,
+    "review": "New post-declaration-build regression. Original needs_review preserved. All Nu notes are trailing-slash information. Confirmed PDF-language and timer findings are separate manual assessments, not contradicted by 0 axe violations."
+  },
+  "temporary_fixture_server": "Stopped PID 86936 after test tab closed; loopback port 50240",
+  "overall_conformance": "not_assessed",
+  "format_check": "passed",
+  "git_diff_check": "passed"
+}
