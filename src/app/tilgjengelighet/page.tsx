@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { unresolvedAccessibilityRequirements } from "@/content/accessibility";
 
 export const metadata: Metadata = {
   title: "Tilgjengelighetserklæring",
@@ -38,7 +39,7 @@ export default function AccessibilityPage() {
         </a>
         .
       </p>
-      <h2>Kjente tilgjengelighetsproblemer</h2>
+      <h2 id="kjente-brudd">Kjente brudd</h2>
       <p>
         Det er for tiden ingen bekreftede, åpne brudd i det undersøkte utvalget.
         Samlet samsvar er fortsatt uavklart fordi vurderingen ikke er fullført.
@@ -47,19 +48,32 @@ export default function AccessibilityPage() {
         Du kan be om hjelp eller innhold i et annet format gjennom{" "}
         <a href="#kontakt">kontaktkanalen nedenfor</a>.
       </p>
-      <h2>Begrensninger i vurderingen</h2>
+      <h2 id="ikke-ferdig-vurdert">Forhold som ikke er ferdig vurdert</h2>
       <p>
-        Det er foreløpig ikke bekreftet hvordan alle deler av nettstedet
-        fungerer med skjermleser, forstørring og innstillinger for redusert
-        bevegelse. PDF-vedleggets leserekkefølge, språk og diagramalternativer
-        er heller ikke ferdig vurdert. Dette er usikkerhet i
-        vurderingsgrunnlaget, ikke bekreftede problemer i alle disse
-        funksjonene.
+        Følgende{" "}
+        {unresolvedAccessibilityRequirements.reduce(
+          (count, group) => count + group.requirements.length,
+          0,
+        )}{" "}
+        krav er delvis undersøkt, men ikke ferdig vurdert. Uavklart status betyr
+        at det trengs flere undersøkelser før vi kan konkludere. Samlet samsvar
+        er derfor fortsatt uavklart.
       </p>
-      <p>
-        Kontrast i enkelte interaktive tilstander og ved overlappende effekter
-        er ikke ferdig vurdert.
-      </p>
+      {unresolvedAccessibilityRequirements.map((group) => (
+        <section key={group.title}>
+          <h3>{group.title}</h3>
+          <ul>
+            {group.requirements.map((requirement) => (
+              <li key={requirement.id}>
+                <strong>
+                  {requirement.id} {requirement.title}
+                </strong>
+                <p>{requirement.description}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
       <p>
         Du kan lese ressursene gjennom{" "}
         <Link href="/#ressurser">ressurskatalogen</Link> eller{" "}

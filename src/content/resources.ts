@@ -34,7 +34,7 @@ export const resources: Resource[] = [
       "Legg skill-mappen i skill-katalogen til kodeassistenten du bruker. Følg assistentens installasjonsveiledning, og kontroller at skillen er tilgjengelig før du starter.",
       "Oppgi nettadresse eller testmiljø, viktige brukeroppgaver, eventuelle tidligere testresultater og bekreftet kontaktkanal. Be assistenten teste tilgjengeligheten med eksemplet nedenfor.",
       "La assistenten kjøre tilgjengelige automatiske deltester. Gå gjennom rapporten og den kravvise oversikten over gjenstående manuelle kontroller. Manglende verktøy og tester skal stå som uavklart. Be særskilt om kodeendringer hvis du ønsker at forslagene skal implementeres.",
-      "Lagre hver gjennomgang i en egen datert mappe under docs/tilgjengelighet/ i prosjektet som testes. Behold råresultater, testmetadata og eventuell manuell evidens, og oppdater rapportene med henvisning til gjennomgangen og skriv en kort brukerrettet erklæring uten intern arbeidshistorikk.",
+      "Lagre hver gjennomgang i en egen datert mappe under docs/tilgjengelighet/ i prosjektet som testes. Behold råresultater, testmetadata og eventuell manuell evidens, og oppdater rapportene med henvisning til gjennomgangen og skriv en brukerrettet erklæring med kjente brudd og en egen liste over krav som ikke er ferdig vurdert, uten intern arbeidshistorikk.",
       "Test rettinger på nytt før et funn lukkes. Utform erklæringen fra siste verifiserte resultater, og fullfør gjenstående manuelle kontroller. Virksomheten må godkjenne og registrere den formelle erklæringen i uustatus.no.",
     ],
     example:
@@ -55,11 +55,11 @@ export const resources: Resource[] = [
     ],
     skill: {
       name: "tilgjengelighetserklaering",
-      version: "0.5.0",
+      version: "0.5.1",
       repository: "Skills",
       path: "skills/tilgjengelighetserklaering",
       capabilities:
-        "Skillen har testprosedyrer for alle 48 krav og kjører tilgjengelige automatiske deltester for HTML, PDF, rendret innhold, beregnbar tekstkontrast, omflyting, fokus og konfigurerte brukerforløp. Den samler eventuell lokal validering og faktiske axe-resultater. Hver datert kjøring får en oversikt over automatisk deldekning, funn, blokkeringer og konkrete manuelle teststeg for alle 48 krav. Vurderte resultater brukes til rettingsforslag og en kort brukerrettet erklæring.",
+        "Skillen har testprosedyrer for alle 48 krav og kjører tilgjengelige automatiske deltester for HTML, PDF, rendret innhold, beregnbar tekstkontrast, omflyting, fokus og konfigurerte brukerforløp. Den samler eventuell lokal validering og faktiske axe-resultater. Hver datert kjøring får en oversikt over automatisk deldekning, funn, blokkeringer og konkrete manuelle teststeg for alle 48 krav. Vurderte resultater brukes til rettingsforslag og en brukerrettet erklæring med separate deler for kjente brudd og krav som ikke er ferdig vurdert.",
       limitations:
         "Automatiske deltester gir ingen samlet godkjenning av de 48 kravene. Alle krav trenger fortsatt vurdering av innhold, utvalg eller brukbarhet. Manglende verktøy rapporteres som blokkert. Faktisk skjermleser, zoom og øvrige manuelle tester må følges opp. Kode endres bare når det er del av oppdraget, og den formelle erklæringen må godkjennes av virksomheten.",
     },

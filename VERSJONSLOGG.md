@@ -4,6 +4,16 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 «Agent» betyr kodeassistenten som utførte arbeidet. Git-forfatteren registreres separat av Git og kan være personen som oppretter commiten. Eksakt modellvariant er ikke registrert for tidligere arbeid og oppgis derfor ikke. Ingen underagenter ble brukt til kvalitetskontrollen eller opprettelsen av denne loggen.
 
+## Ikke utgitt – kjente brudd og uavklarte krav i erklæringen – 10. november 2026
+
+**Utførende agent:** Codex (OpenAI), med `tilgjengelighetserklaering` og `skill-creator`. Ingen underagenter.
+
+- Delt tilgjengelighetserklæringen og portalsiden i «Kjente brudd» og «Forhold som ikke er ferdig vurdert». Alle 15 U-krav fra siste vurderte matrise er listet med ID, tittel og kort brukerforklaring, gruppert etter WCAG-prinsipp. Ingen bekreftede åpne brudd i det undersøkte utvalget; samlet samsvar og faktisk testdato er bevart.
+- Lagt sidens offentlige kravsammendrag i `src/content/accessibility.ts`, oppdatert funksjonsbeskrivelse og katalogmetadata til tilgjengelighetsskill 0.5.1. Private rapportfiler importeres ikke i nettsiden. Oppdatert README. Ingen ny full tilgjengelighetsrevisjon eller endring i produksjonsgodkjenning.
+- Oppdatert skillens instruksjoner og erklæringsmal, vurderings-/lagringsveiledning, README og versjonslogg i Skills-repoet samt installert kopi. Uavklarte krav holdes tydelig atskilt fra bekreftede brudd; teknisk arbeidshistorikk blir fortsatt i rapportene. Skill-versjonering og kildeindeks er avstemt.
+
+- Verifisering: 52 portaltester, Pages-produksjonsbygg med TypeScript og HTML-grunnkontroll for 23 eksportfiler bestod. Krav-ID-ene er avstemt mot de 15 U-radene i siste vurderte matrise. Siden er lest tilbake med 15 krav og uten sideoverflyt ved 1280/320 px. Skillens 35 Python- og seks Node-tester bestod; standard quick_validate kunne ikke starte uten PyYAML. Formatering og Git-diff kontrolleres før levering. Testdato/samsvarsstatus og daterte auditresultater er ikke endret; dette er validering av innhold og verktøyversjon, ikke en ny full tilgjengelighetskontroll.
+
 ## Ikke utgitt – gjenstående lokale tilgjengelighetskontroller – 10. november 2026
 
 **Utførende agent:** Codex (OpenAI), med `tilgjengelighetserklaering` 0.5.0 og PDF-skillen. Ingen underagenter.
