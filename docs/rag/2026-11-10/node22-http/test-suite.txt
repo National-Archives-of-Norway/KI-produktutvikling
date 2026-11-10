@@ -1,0 +1,574 @@
+TAP version 13
+# Subtest: axe requires a real result for every requested page, without duplicates
+ok 1 - axe requires a real result for every requested page, without duplicates
+  ---
+  duration_ms: 0.422625
+  type: 'test'
+  ...
+# Subtest: Nu distinguishes warnings, HTML errors, invalid output and failed execution
+ok 2 - Nu distinguishes warnings, HTML errors, invalid output and failed execution
+  ---
+  duration_ms: 0.092833
+  type: 'test'
+  ...
+# Subtest: export scope remains inside its root and includes registered resources and fallback
+ok 3 - export scope remains inside its root and includes registered resources and fallback
+  ---
+  duration_ms: 0.906458
+  type: 'test'
+  ...
+# Subtest: tool child processes cannot inherit a remote Selenium target or implicit browser
+ok 4 - tool child processes cannot inherit a remote Selenium target or implicit browser
+  ---
+  duration_ms: 0.114042
+  type: 'test'
+  ...
+# Subtest: portalens tekstfarger oppfyller 4,5:1 på de to grunnflatene
+ok 5 - portalens tekstfarger oppfyller 4,5:1 på de to grunnflatene
+  ---
+  duration_ms: 0.391125
+  type: 'test'
+  ...
+# Subtest: chatfeltets transparente kant oppfyller 3:1 på grunnflatene
+ok 6 - chatfeltets transparente kant oppfyller 3:1 på grunnflatene
+  ---
+  duration_ms: 0.064791
+  type: 'test'
+  ...
+# Subtest: tilgjengelighetsskillen finnes med navn, tema og relevante fagord
+ok 7 - tilgjengelighetsskillen finnes med navn, tema og relevante fagord
+  ---
+  duration_ms: 0.982166
+  type: 'test'
+  ...
+# Subtest: søk og typefilter virker sammen uten å vise feil ressurstype
+ok 8 - søk og typefilter virker sammen uten å vise feil ressurstype
+  ---
+  duration_ms: 0.496792
+  type: 'test'
+  ...
+# Subtest: personvernskillen finnes med navn, tema og relevante fagord
+ok 9 - personvernskillen finnes med navn, tema og relevante fagord
+  ---
+  duration_ms: 0.549542
+  type: 'test'
+  ...
+# Subtest: samtalen blokkerer doble innsendinger og bevarer historikk
+ok 10 - samtalen blokkerer doble innsendinger og bevarer historikk
+  ---
+  duration_ms: 0.470291
+  type: 'test'
+  ...
+# Subtest: historikken begrenses til ti og ukjente svar endrer ikke tilstanden
+ok 11 - historikken begrenses til ti og ukjente svar endrer ikke tilstanden
+  ---
+  duration_ms: 0.107333
+  type: 'test'
+  ...
+# Subtest: Pages-demo sender aldri spørsmål til et API
+ok 12 - Pages-demo sender aldri spørsmål til et API
+  ---
+  duration_ms: 4.117542
+  type: 'test'
+  ...
+# Subtest: modellfeil bevarer kildeutdrag
+ok 13 - modellfeil bevarer kildeutdrag
+  ---
+  duration_ms: 8.580833
+  type: 'test'
+  ...
+# Subtest: nettverksfeil og ugyldig API-format vises som feil, ikke svar
+ok 14 - nettverksfeil og ugyldig API-format vises som feil, ikke svar
+  ---
+  duration_ms: 0.244792
+  type: 'test'
+  ...
+# Subtest: alle avsnitt på innholdssidene inngår i kunnskapsgrunnlaget
+ok 15 - alle avsnitt på innholdssidene inngår i kunnskapsgrunnlaget
+  ---
+  duration_ms: 1.197208
+  type: 'test'
+  ...
+# Subtest: endret sidetekst oppdaterer RAG-tekst, introduksjon og steg uten egne utdrag
+ok 16 - endret sidetekst oppdaterer RAG-tekst, introduksjon og steg uten egne utdrag
+  ---
+  duration_ms: 0.454541
+  type: 'test'
+  ...
+# Subtest: endret forbehold følger med og slettede innholdsreferanser gir feil
+ok 17 - endret forbehold følger med og slettede innholdsreferanser gir feil
+  ---
+  duration_ms: 0.308333
+  type: 'test'
+  ...
+# Subtest: modellvalg er eksplisitt, med støtte for eksisterende Ollama-oppsett
+ok 18 - modellvalg er eksplisitt, med støtte for eksisterende Ollama-oppsett
+  ---
+  duration_ms: 0.457958
+  type: 'test'
+  ...
+# Subtest: eksternt API krever komplett oppsett uten å røpe verdiene i feil
+ok 19 - eksternt API krever komplett oppsett uten å røpe verdiene i feil
+  ---
+  duration_ms: 0.235667
+  type: 'test'
+  ...
+# Subtest: adapteren bruker nøyaktig endepunkt, Bearer-header og nummererte kilder
+ok 20 - adapteren bruker nøyaktig endepunkt, Bearer-header og nummererte kilder
+  ---
+  duration_ms: 1.752583
+  type: 'test'
+  ...
+# Subtest: HTTP-feil, ugyldige svar, nettverksfeil og timeout får nøytral feil
+ok 21 - HTTP-feil, ugyldige svar, nettverksfeil og timeout får nøytral feil
+  ---
+  duration_ms: 2.809334
+  type: 'test'
+  ...
+# Subtest: nettleseren får svar og kilder, aldri nøkkel, URL eller rå leverandørfeil
+ok 22 - nettleseren får svar og kilder, aldri nøkkel, URL eller rå leverandørfeil
+  ---
+  duration_ms: 7.74475
+  type: 'test'
+  ...
+# Subtest: alle eksisterende sider er registrert og lenkene i nettstedskartet er unike
+ok 23 - alle eksisterende sider er registrert og lenkene i nettstedskartet er unike
+  ---
+  duration_ms: 3.9515
+  type: 'test'
+  ...
+# Subtest: nye og slettede sider samt feilaktige funksjonslenker stopper kontrollen
+ok 24 - nye og slettede sider samt feilaktige funksjonslenker stopper kontrollen
+  ---
+  duration_ms: 1.946417
+  type: 'test'
+  ...
+# Subtest: sideoppdagelse håndterer rot, grupper og dynamiske ressurssider
+ok 25 - sideoppdagelse håndterer rot, grupper og dynamiske ressurssider
+  ---
+  duration_ms: 7.50675
+  type: 'test'
+  ...
+# Subtest: ressursantall og sidebeskrivelser avledes av gjeldende innhold
+ok 26 - ressursantall og sidebeskrivelser avledes av gjeldende innhold
+  ---
+  duration_ms: 0.56325
+  type: 'test'
+  ...
+# Subtest: Spør KI og oversikten bruker samme funksjoner og forbehold
+ok 27 - Spør KI og oversikten bruker samme funksjoner og forbehold
+  ---
+  duration_ms: 3.739083
+  type: 'test'
+  ...
+# Subtest: personvernets utkaststatus og bekreftede kontakt følger felles kilde til RAG
+ok 28 - personvernets utkaststatus og bekreftede kontakt følger felles kilde til RAG
+  ---
+  duration_ms: 3.002083
+  type: 'test'
+  ...
+# Subtest: prissiden og Spør KI bruker samme kontrollerte prisgrunnlag
+ok 29 - prissiden og Spør KI bruker samme kontrollerte prisgrunnlag
+  ---
+  duration_ms: 3.800625
+  type: 'test'
+  ...
+# Subtest: alle seks offisielle prisstrukturer gir rader med riktige enheter
+ok 30 - alle seks offisielle prisstrukturer gir rader med riktige enheter
+  ---
+  duration_ms: 12.576042
+  type: 'test'
+  ...
+# Subtest: API-utvalg skiller kontekst, cache-varighet og standard fra andre hastigheter
+ok 31 - API-utvalg skiller kontekst, cache-varighet og standard fra andre hastigheter
+  ---
+  duration_ms: 0.852708
+  type: 'test'
+  ...
+# Subtest: endrede kolonner, manglende modeller og tvetydige planpriser avvises
+ok 32 - endrede kolonner, manglende modeller og tvetydige planpriser avvises
+  ---
+  duration_ms: 0.362375
+  type: 'test'
+  ...
+# Subtest: kildesvikt bevarer pris og vellykket dato, men registrerer mislykket forsøk
+ok 33 - kildesvikt bevarer pris og vellykket dato, men registrerer mislykket forsøk
+  ---
+  duration_ms: 2.012
+  type: 'test'
+  ...
+# Subtest: førstegangssvikt gir tomt grunnlag, aldri gratispriser eller falsk kontrolldato
+ok 34 - førstegangssvikt gir tomt grunnlag, aldri gratispriser eller falsk kontrolldato
+  ---
+  duration_ms: 0.221583
+  type: 'test'
+  ...
+# Subtest: automatisk prisoppdatering og JSON-lagring bevarer norske vilkår
+ok 35 - automatisk prisoppdatering og JSON-lagring bevarer norske vilkår
+  ---
+  duration_ms: 1.683667
+  type: 'test'
+  ...
+# Subtest: endret brukerkrav og månedspris oppdaterer norsk tekst fra kildefeltene
+ok 36 - endret brukerkrav og månedspris oppdaterer norsk tekst fra kildefeltene
+  ---
+  duration_ms: 2.309333
+  type: 'test'
+  ...
+# Subtest: ukjente engelske tilleggsvilkår gir feil og bevarer tidligere norsk tekst
+ok 37 - ukjente engelske tilleggsvilkår gir feil og bevarer tidligere norsk tekst
+  ---
+  duration_ms: 1.48775
+  type: 'test'
+  ...
+# Subtest: HTTP-serveren bruker konfigurerte origins for annen devport og delt vert
+ok 38 - HTTP-serveren bruker konfigurerte origins for annen devport og delt vert
+  ---
+  duration_ms: 29.765292
+  type: 'test'
+  ...
+# Subtest: HTTP-serveren leser JSON-medietype uten hensyn til bokstavstørrelse og parametre
+ok 39 - HTTP-serveren leser JSON-medietype uten hensyn til bokstavstørrelse og parametre
+  ---
+  duration_ms: 15.88625
+  type: 'test'
+  ...
+# Subtest: HTTP-serveren lukker 413-forbindelsen kontrollert og tåler etterfølgende fetch
+ok 40 - HTTP-serveren lukker 413-forbindelsen kontrollert og tåler etterfølgende fetch
+  ---
+  duration_ms: 51.470208
+  type: 'test'
+  ...
+# Subtest: HTTP-serveren returnerer nøytral 500 ved feil i søket eller ask
+ok 41 - HTTP-serveren returnerer nøytral 500 ved feil i søket eller ask
+  ---
+  duration_ms: 2.053917
+  type: 'test'
+  ...
+# Subtest: origin-konfigurasjon har dagens standarder og normaliserer bare eksplisitte origins
+ok 42 - origin-konfigurasjon har dagens standarder og normaliserer bare eksplisitte origins
+  ---
+  duration_ms: 0.101625
+  type: 'test'
+  ...
+# Subtest: ugyldige origins stopper konfigurasjonen før oppstart, uansett modellvalg
+ok 43 - ugyldige origins stopper konfigurasjonen før oppstart, uansett modellvalg
+  ---
+  duration_ms: 0.574792
+  type: 'test'
+  ...
+# Subtest: Content-Length over grensen avvises før klienten sender kroppen
+ok 44 - Content-Length over grensen avvises før klienten sender kroppen
+  ---
+  duration_ms: 4.922333
+  type: 'test'
+  ...
+# Subtest: chunked kropp over grensen gir 413 og neste forespørsel lykkes
+ok 45 - chunked kropp over grensen gir 413 og neste forespørsel lykkes
+  ---
+  duration_ms: 5.09175
+  type: 'test'
+  ...
+# Subtest: klientfeil beholder 400/415 og gyldig kropp på nøyaktig grensen godtas
+ok 46 - klientfeil beholder 400/415 og gyldig kropp på nøyaktig grensen godtas
+  ---
+  duration_ms: 5.456084
+  type: 'test'
+  ...
+# Subtest: uten modell gir tjenesten kildeutdrag i delt API-format
+ok 47 - uten modell gir tjenesten kildeutdrag i delt API-format
+  ---
+  duration_ms: 4.255542
+  type: 'test'
+  ...
+# Subtest: spørsmål uten kilder utløser aldri generering
+ok 48 - spørsmål uten kilder utløser aldri generering
+  ---
+  duration_ms: 2.683042
+  type: 'test'
+  ...
+# Subtest: samtidighet avvises og modellen frigjøres etter feil
+ok 49 - samtidighet avvises og modellen frigjøres etter feil
+  ---
+  duration_ms: 7.059
+  type: 'test'
+  ...
+# Subtest: Ollama-adapteren sender nummererte kilder og blokkerer videresending
+ok 50 - Ollama-adapteren sender nummererte kilder og blokkerer videresending
+  ---
+  duration_ms: 1.62475
+  type: 'test'
+  ...
+# Subtest: Ollama-adapteren avviser tomt svar og HTTP-feil
+ok 51 - Ollama-adapteren avviser tomt svar og HTTP-feil
+  ---
+  duration_ms: 0.898
+  type: 'test'
+  ...
+# Subtest: konfigurasjon avviser ekstern modelladresse og credentials
+ok 52 - konfigurasjon avviser ekstern modelladresse og credentials
+  ---
+  duration_ms: 0.17375
+  type: 'test'
+  ...
+# Subtest: HTTP-grensen håndterer kontrakt, ugyldig JSON, størrelse og origin
+ok 53 - HTTP-grensen håndterer kontrakt, ugyldig JSON, størrelse og origin
+  ---
+  duration_ms: 5.448083
+  type: 'test'
+  ...
+# Subtest: relevant kodekilde rangeres først
+ok 54 - relevant kodekilde rangeres først
+  ---
+  duration_ms: 4.207833
+  type: 'test'
+  ...
+# Subtest: irrelevante spørsmål gir ikke tilfeldige kilder
+ok 55 - irrelevante spørsmål gir ikke tilfeldige kilder
+  ---
+  duration_ms: 2.939125
+  type: 'test'
+  ...
+# Subtest: offentlig liste inneholder bare kjente interne lenker
+ok 56 - offentlig liste inneholder bare kjente interne lenker
+  ---
+  duration_ms: 0.350375
+  type: 'test'
+  ...
+# Subtest: vanlige spørsmål finner riktig veiledning med konkrete steg og status
+ok 57 - vanlige spørsmål finner riktig veiledning med konkrete steg og status
+  ---
+  duration_ms: 15.367041
+  type: 'test'
+  ...
+# Subtest: API-kilder avviser eksterne lenker og ugyldig veiledning
+ok 58 - API-kilder avviser eksterne lenker og ugyldig veiledning
+  ---
+  duration_ms: 0.08
+  type: 'test'
+  ...
+# Subtest: tilgjengelighetsskillen kan finnes i kildesøket
+ok 59 - tilgjengelighetsskillen kan finnes i kildesøket
+  ---
+  duration_ms: 2.332292
+  type: 'test'
+  ...
+# Subtest: ugyldige forespørsler avvises
+ok 60 - ugyldige forespørsler avvises
+  ---
+  duration_ms: 0.085916
+  type: 'test'
+  ...
+# Subtest: personvernspørsmål finner riktig skill med egne begrensninger
+ok 61 - personvernspørsmål finner riktig skill med egne begrensninger
+  ---
+  duration_ms: 2.416084
+  type: 'test'
+  ...
+# Subtest: cookie-informasjon kan leveres som RAG-kilde uten å åpne for ukjente ruter
+ok 62 - cookie-informasjon kan leveres som RAG-kilde uten å åpne for ukjente ruter
+  ---
+  duration_ms: 4.685291
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: Hvem er statsministeren?
+ok 63 - kildeevaluering: Hvem er statsministeren?
+  ---
+  duration_ms: 2.540042
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: Hva er været i Oslo i morgen?
+ok 64 - kildeevaluering: Hva er været i Oslo i morgen?
+  ---
+  duration_ms: 2.202792
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: Hva koster Claude?
+ok 65 - kildeevaluering: Hva koster Claude?
+  ---
+  duration_ms: 2.347542
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: Når kommer modelloversikten?
+ok 66 - kildeevaluering: Når kommer modelloversikten?
+  ---
+  duration_ms: 2.229917
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: kodeendring tester
+ok 67 - kildeevaluering: kodeendring tester
+  ---
+  duration_ms: 2.132458
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: værmelding bananer
+ok 68 - kildeevaluering: værmelding bananer
+  ---
+  duration_ms: 2.185
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: Hva er KI?
+ok 69 - kildeevaluering: Hva er KI?
+  ---
+  duration_ms: 0.021084
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: Hvordan tester jeg tilgjengeligheten?
+ok 70 - kildeevaluering: Hvordan tester jeg tilgjengeligheten?
+  ---
+  duration_ms: 2.186792
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: Hva er KI-prat?
+ok 71 - kildeevaluering: Hva er KI-prat?
+  ---
+  duration_ms: 2.082792
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: Hvordan kommer jeg i gang med KI?
+ok 72 - kildeevaluering: Hvordan kommer jeg i gang med KI?
+  ---
+  duration_ms: 2.127959
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: Hvilke retningslinjer gjelder for KI?
+ok 73 - kildeevaluering: Hvilke retningslinjer gjelder for KI?
+  ---
+  duration_ms: 2.043417
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: Hvilke verktøy er godkjent?
+ok 74 - kildeevaluering: Hvilke verktøy er godkjent?
+  ---
+  duration_ms: 2.100459
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: tilgjengelighet
+ok 75 - kildeevaluering: tilgjengelighet
+  ---
+  duration_ms: 2.150916
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: retningslinjer
+ok 76 - kildeevaluering: retningslinjer
+  ---
+  duration_ms: 2.05675
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: tilgjengelighetserklæring
+ok 77 - kildeevaluering: tilgjengelighetserklæring
+  ---
+  duration_ms: 2.130958
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: personvernerklæring GDPR
+ok 78 - kildeevaluering: personvernerklæring GDPR
+  ---
+  duration_ms: 2.18575
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: Trenger portalen et samtykkebanner?
+ok 79 - kildeevaluering: Trenger portalen et samtykkebanner?
+  ---
+  duration_ms: 2.158416
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: Bruker portalen cookies?
+ok 80 - kildeevaluering: Bruker portalen cookies?
+  ---
+  duration_ms: 2.329709
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: Hvordan blir jeg med på KI-prat?
+ok 81 - kildeevaluering: Hvordan blir jeg med på KI-prat?
+  ---
+  duration_ms: 2.114875
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: Hva er status for Atlassian MCP?
+ok 82 - kildeevaluering: Hva er status for Atlassian MCP?
+  ---
+  duration_ms: 2.267833
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: Hva koster Copilot-abonnement?
+ok 83 - kildeevaluering: Hva koster Copilot-abonnement?
+  ---
+  duration_ms: 2.347792
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: Hvordan utforsker jeg brukerbehov?
+ok 84 - kildeevaluering: Hvordan utforsker jeg brukerbehov?
+  ---
+  duration_ms: 2.126792
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: Hvor finner jeg versjonsloggen?
+ok 85 - kildeevaluering: Hvor finner jeg versjonsloggen?
+  ---
+  duration_ms: 2.128417
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: Hvordan behandles spørsmålene mine og personopplysninger?
+ok 86 - kildeevaluering: Hvordan behandles spørsmålene mine og personopplysninger?
+  ---
+  duration_ms: 2.193375
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: Hvordan installerer jeg tilgjengelighetsskillen?
+ok 87 - kildeevaluering: Hvordan installerer jeg tilgjengelighetsskillen?
+  ---
+  duration_ms: 2.034333
+  type: 'test'
+  ...
+# Subtest: kildeevaluering: Kan du anbefale en restaurant i Bergen?
+ok 88 - kildeevaluering: Kan du anbefale en restaurant i Bergen?
+  ---
+  duration_ms: 2.131708
+  type: 'test'
+  ...
+# Subtest: prefiks krever langt kildeord og går bare fra spørsmålsord til kildeord
+ok 89 - prefiks krever langt kildeord og går bare fra spørsmålsord til kildeord
+  ---
+  duration_ms: 8.021375
+  type: 'test'
+  ...
+# Subtest: ett svakt brødtekstprefiks blir ikke relevant ved å gjenta spørsmålsordet
+ok 90 - ett svakt brødtekstprefiks blir ikke relevant ved å gjenta spørsmålsordet
+  ---
+  duration_ms: 6.300875
+  type: 'test'
+  ...
+# Subtest: titteltreff avgjør lik poengsum før antall ord og plass i korpuset
+ok 91 - titteltreff avgjør lik poengsum før antall ord og plass i korpuset
+  ---
+  duration_ms: 2.21075
+  type: 'test'
+  ...
+# Subtest: flere treffende ord avgjør når poengsum og titteltreff er like
+ok 92 - flere treffende ord avgjør når poengsum og titteltreff er like
+  ---
+  duration_ms: 2.349958
+  type: 'test'
+  ...
+# Subtest: direkte emneangivelse ved linjestart slår tilfeldig omtale ved ellers like treff
+ok 93 - direkte emneangivelse ved linjestart slår tilfeldig omtale ved ellers like treff
+  ---
+  duration_ms: 4.217875
+  type: 'test'
+  ...
+# Subtest: aksenter, Unicode-form og store bokstaver normaliseres også i stoppord
+ok 94 - aksenter, Unicode-form og store bokstaver normaliseres også i stoppord
+  ---
+  duration_ms: 8.071458
+  type: 'test'
+  ...
+1..94
+# tests 94
+# suites 0
+# pass 94
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1291.7075

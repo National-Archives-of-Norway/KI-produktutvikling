@@ -4,6 +4,16 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 «Agent» betyr kodeassistenten som utførte arbeidet. Git-forfatteren registreres separat av Git og kan være personen som oppretter commiten. Eksakt modellvariant er ikke registrert for tidligere arbeid og oppgis derfor ikke. Ingen underagenter ble brukt til kvalitetskontrollen eller opprettelsen av denne loggen.
 
+## Ikke utgitt – HTTP-retting verifisert med Node 22 – 10. november 2026
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Testet rettingen i commit `2e5411a` med faktisk Node 22.18.0 / Undici 6.21.2 på macOS arm64. Hentet offisiell binærpakke til midlertidig mappe og verifisert SHA-256 mot Node-distribusjonens sjekksum. Ingen endring i systemets Node eller prosjektets avhengigheter.
+- Hele testkommandoen bak `pnpm test:rag`, kjørt direkte med Node 22, bestod: **94/94**, inkludert de ni HTTP-/konfigurasjonstestene. Utvidet stresstest på tre isolerte servere: **300/300** 2 MB-kropper ga 413 med Connection: close, **1200/1200** etterfølgende fetch-kall og 300/300 oppvarmingskall ga 200. Halvparten av opplastingene brukte Content-Length og halvparten chunked. **Ingen ECONNRESET, EPIPE eller andre forespørselsfeil**. Alle testservere ble lukket.
+- Oppdatert [testrapporten](docs/rag/2026-11-10/http-grense.md) med runtime, omfang, resultattabell og begrensninger. Lagret original testutskrift, gjentakbart stresskript og maskinlesbare resultater i `docs/rag/2026-11-10/node22-http/`.
+- Gammel kode er ikke retestet med Node 22; opprinnelig feilreproduksjon på denne versjonen påstås fortsatt ikke. Andre patchversjoner, Docker/Linux, samtidige opplastinger og delt proxy er ikke verifisert. API-kontrollskriptet er ikke kjørt på nytt; tjenesten på port 3001 ble ikke endret. Ingen produktendring; funksjonsregister, Beta-status og produksjonskrav videreføres.
+- Dokumentasjonens formatering og `git diff --check` er kontrollert. Ingen commit eller publisering.
+
 ## Ikke utgitt – rettet HTTP-grense for RAG – 10. november 2026
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.
