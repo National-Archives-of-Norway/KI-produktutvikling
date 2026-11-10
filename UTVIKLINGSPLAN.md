@@ -126,6 +126,7 @@ Arbeidsgrunnlaget for P8 er konkretisert i [avklaringsplanen for de 8 uavklarte 
 - [x] Implementere oppstartsveiledning med retningslinjelenke, retningslinjeutkast og Om med KI-prat og mandatvedlegg.
 - [x] Implementere søk/filter, ressursdetaljer, Beta-/eksempelmerking og generell bruksveiledning.
 - [x] Implementere Spør KI med kildebasert veiledning og forberedt modellgenerering.
+- [x] Rette og regresjonsteste relevansen i det lokale kildesøket (10. november 2026): 26 spørsmål med positive og negative forventninger, retningsbestemt prefiks, relevansterskel og deterministisk rangering. Se [før-/etter-evalueringen](docs/rag/2026-11-10/relevans.md). Dette erstatter ikke oppgavebasert brukertesting eller verifisering av faktisk modellgenerering.
 - [x] Implementere nettstedskart, tilgjengelighetsside, versjonslogg og funksjonalitetsoversikt.
 - [ ] Faglig gjennomgå og godkjenne representativt pilotinnhold, inkludert skill-beskrivelse og PDF.
 - [ ] Dele via lukket testmiljø først når tilgang, drift og aktuelle krav P1–P9 er håndtert for pilotens omfang.

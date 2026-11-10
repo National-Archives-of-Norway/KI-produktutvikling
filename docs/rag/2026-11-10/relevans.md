@@ -1,0 +1,56 @@
+# Kildesøk: relevanse før og etter retting
+
+Dato: 10. november 2026. Utførende agent: Codex (OpenAI), ingen underagenter.
+
+Baseline er faktisk `retrieve()` på kode fra commit `6a57d77`, med evalueringssettet lagt til før produktendringen. Etterresultatet bruker den rettede algoritmen og oppdatert funksjonsbeskrivelse. Testspørsmål og forventninger er uendret mellom kjøringene. Råresultater finnes i [relevans.json](relevans.json), og alle forventninger kjøres av `pnpm test:rag` fra `tests/rag.test.ts`.
+
+**Før: 20 av 26. Etter: 26 av 26.** De fire innmeldte feilene ble bekreftet før retting. Alle opprinnelige tester og forventninger er beholdt. Settet omfatter de fire innmeldte spørsmålene, eksisterende søkeforventninger og åtte nye realistiske spørsmål. Seks ekstra regresjonstester kontrollerer mekanismene med isolerte kilder.
+
+## Hele evalueringssettet
+
+Kilde-ID-er står i rangert rekkefølge, maksimalt tre. `[]` betyr ingen treff. Forventningen gjelder første plass med mindre topp 3 er angitt.
+
+| Spørsmål                                                  | Forventning                | Før                                                                               | Etter                                                                             | Bestått før → etter |
+| --------------------------------------------------------- | -------------------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ------------------- |
+| Hvem er statsministeren?                                  | []                         | tydelig-kontekst, personvern, retningslinjer                                      | []                                                                                | Nei → Ja            |
+| Hva er været i Oslo i morgen?                             | []                         | om                                                                                | []                                                                                | Nei → Ja            |
+| Hva koster Claude?                                        | priser                     | funksjonalitet, priser, godkjente-ki-assistenter                                  | priser, funksjonalitet, godkjente-ki-assistenter                                  | Nei → Ja            |
+| Når kommer modelloversikten?                              | oversikt (topp 3)          | funksjonalitet, personvern, kom-i-gang                                            | funksjonalitet, oversikt                                                          | Nei → Ja            |
+| kodeendring tester                                        | kodegjennomgang            | kodegjennomgang, tilgjengelighetserklaering, retningslinjer                       | kodegjennomgang, tilgjengelighetserklaering, retningslinjer                       | Ja → Ja             |
+| værmelding bananer                                        | []                         | []                                                                                | []                                                                                | Ja → Ja             |
+| Hva er KI?                                                | []                         | []                                                                                | []                                                                                | Ja → Ja             |
+| Hvordan tester jeg tilgjengeligheten?                     | tilgjengelighetserklaering | tilgjengelighetserklaering, kodegjennomgang, retningslinjer                       | tilgjengelighetserklaering, personvernerklaering, kodegjennomgang                 | Ja → Ja             |
+| Hva er KI-prat?                                           | ki-prat                    | ki-prat, om, retningslinjer                                                       | ki-prat, om, funksjonalitet                                                       | Ja → Ja             |
+| Hvordan kommer jeg i gang med KI?                         | kom-i-gang                 | kom-i-gang, om, retningslinjer                                                    | kom-i-gang, om, ki-prat                                                           | Ja → Ja             |
+| Hvilke retningslinjer gjelder for KI?                     | retningslinjer             | retningslinjer, informasjonskapsler, godkjente-ki-assistenter                     | retningslinjer, funksjonalitet, informasjonskapsler                               | Ja → Ja             |
+| Hvilke verktøy er godkjent?                               | retningslinjer             | retningslinjer, om, priser                                                        | retningslinjer, om, priser                                                        | Ja → Ja             |
+| tilgjengelighet                                           | tilgjengelighetserklaering | tilgjengelighetserklaering, personvernerklaering, funksjonalitet                  | tilgjengelighetserklaering, personvernerklaering, funksjonalitet                  | Ja → Ja             |
+| retningslinjer                                            | retningslinjer             | retningslinjer, om, funksjonalitet                                                | retningslinjer, funksjonalitet, om                                                | Ja → Ja             |
+| tilgjengelighetserklæring                                 | tilgjengelighetserklaering | tilgjengelighetserklaering, funksjonalitet, personvernerklaering                  | tilgjengelighetserklaering, funksjonalitet, personvernerklaering                  | Ja → Ja             |
+| personvernerklæring GDPR                                  | personvernerklaering       | personvernerklaering, personvern, funksjonalitet                                  | personvernerklaering, personvern, funksjonalitet                                  | Ja → Ja             |
+| Trenger portalen et samtykkebanner?                       | informasjonskapsler        | informasjonskapsler, om, personvern                                               | informasjonskapsler, om, personvern                                               | Ja → Ja             |
+| Bruker portalen cookies?                                  | informasjonskapsler        | informasjonskapsler, om, funksjonalitet                                           | informasjonskapsler, om, funksjonalitet                                           | Ja → Ja             |
+| Hvordan blir jeg med på KI-prat?                          | ki-prat                    | ki-prat, om, retningslinjer                                                       | ki-prat, om, funksjonalitet                                                       | Ja → Ja             |
+| Hva er status for Atlassian MCP?                          | godkjente-mcper            | godkjente-mcper, funksjonalitet, oversikt                                         | godkjente-mcper, funksjonalitet, oversikt                                         | Ja → Ja             |
+| Hva koster Copilot-abonnement?                            | priser                     | funksjonalitet, priser, godkjente-ki-assistenter                                  | priser, funksjonalitet, godkjente-ki-assistenter                                  | Nei → Ja            |
+| Hvordan utforsker jeg brukerbehov?                        | brukerbehov                | brukerbehov, informasjonskapsler, kom-i-gang                                      | brukerbehov, kom-i-gang, funksjonalitet                                           | Ja → Ja             |
+| Hvor finner jeg versjonsloggen?                           | funksjonalitet (topp 3)    | funksjonalitet, personvernerklaering, informasjonskapsler                         | funksjonalitet, tilgjengelighetserklaering, informasjonskapsler-og-samtykke       | Ja → Ja             |
+| Hvordan behandles spørsmålene mine og personopplysninger? | personvern                 | personvern, funksjonalitet, brukerbehov                                           | personvern, brukerbehov, retningslinjer                                           | Ja → Ja             |
+| Hvordan installerer jeg tilgjengelighetsskillen?          | tilgjengelighetserklaering | tilgjengelighetserklaering, informasjonskapsler-og-samtykke, personvernerklaering | tilgjengelighetserklaering, informasjonskapsler-og-samtykke, personvernerklaering | Ja → Ja             |
+| Kan du anbefale en restaurant i Bergen?                   | []                         | funksjonalitet                                                                    | []                                                                                | Nei → Ja            |
+
+## Poengberegning og avgrensning
+
+- Spørsmålsord dedupliseres. Eksakt titteltreff gir 5 poeng, tittelprefiks 3, eksakt brødtekst 2, brødtekstprefiks med minst 8 tegn 2 og øvrige tillatte brødtekstprefiks 1. Minst 2 poeng kreves. Gjentatte ord øker ikke poengsummen.
+- Prefiks går bare fra et kildeord til et lengre spørsmålsord: `query.startsWith(sourceTerm)`, med minst 5 tegn i kildeordet. Dermed kan «tilgjengeligheten» treffe «tilgjengelighet», mens «været» ikke treffer «være» og «kommer» ikke treffer «kom». Ett svakt brødtekstprefiks er utilstrekkelig, mens et langt konkret emne som «modelloversikten» fortsatt kan finne «modelloversikt» alene.
+- Ved lik sum prioriteres antall titteltreff, antall forskjellige treffende spørsmålsord og deretter emnetreff ved starten av innholdslinjer. Corpusrekkefølge er kun siste reserve. Linjestart er et generelt signal for direkte omtale i kilder som serialiseres med én innholdsdel per linje; ingen kilde-ID favoriseres. Det skiller priser fra den brede funksjonalitetsoversikten når begge ellers får 4 poeng, og direkte versjonsloggomtale fra omtale i skillbeskrivelser.
+- Døde stoppord under tre tegn er fjernet; tokeniseringen utelater dem allerede. Vanlige spørreord og fyllord, inkludert «hvem», «når», «hvorfor», «ikke» og «kommer», filtreres.
+- Samme normalisering som ressurskatalogen: Unicode NFD, fjerning av kombinerende aksenttegn og norske små bokstaver. Også stoppord normaliseres. Det gjør søket konsistent ved aksenter og ulike Unicode-former. Æ og ø beholdes som egne bokstaver; dette er ikke generell translitterering eller språklig bøyningsanalyse.
+
+API-kontrakten er uendret: `RagSource[]`, høyst tre opprinnelige kilder. Ingen nye avhengigheter, modell, embeddings, nettverks- eller filsystemtilgang i søket. Funksjonsregisteret og utviklingsplanen er oppdatert, Beta-status beholdes.
+
+Dette avgrensede settet dokumenterer regresjoner og treff i dagens offentlige innhold. Ordmatching kan fortsatt gi irrelevante resultater ved andre fellesord; resultatene gir ingen garanti for semantisk relevans eller modellgenererte svar. Pilotbrukertest og reell modellverifisering gjenstår.
+
+## Kontroller
+
+`pnpm test:rag`: 85 av 85 bestått, inkludert 26 evalueringsspørsmål og seks mekanismetester. `pnpm typecheck` og `pnpm format:check` bestått. Ingen eksisterende forventning er endret.

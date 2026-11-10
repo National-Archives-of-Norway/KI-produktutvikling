@@ -4,6 +4,16 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 «Agent» betyr kodeassistenten som utførte arbeidet. Git-forfatteren registreres separat av Git og kan være personen som oppretter commiten. Eksakt modellvariant er ikke registrert for tidligere arbeid og oppgis derfor ikke. Ingen underagenter ble brukt til kvalitetskontrollen eller opprettelsen av denne loggen.
 
+## Ikke utgitt – rettet relevans i RAG-kildesøket – 10. november 2026
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Bekreftet de fire innmeldte relevansfeilene med faktisk `retrieve()` før produktendring. Lagt til et fast evalueringssett med 26 spørsmål før retting: de fire feilene, eksisterende forventninger og åtte nye realistiske spørsmål. Resultatet gikk fra 20/26 til 26/26 uten endrede forventninger; [hele før-/etter-tabellen og råresultater](docs/rag/2026-11-10/relevans.md) er lagret.
+- Prefiks går nå bare fra kildeord til lengre spørsmålsord og krever minst fem tegn. Minstesum to avviser ett svakt brødtekstprefiks; minst åtte tegn gir et sterkere brødteksttreff. Unike spørsmålsord hindrer at gjentakelser omgår terskelen.
+- Lik poengsum avgjøres med titteltreff, antall treffende ord og direkte emneangivelse ved linjestart før corpusrekkefølge. Ingen kilde-ID har særbehandling. Fjernet virkningsløse korte stoppord og utvidet med vanlige spørreord/fyllord. NFD-/aksentnormalisering følger ressurskatalogen; æ/ø beholdes, og stoppord normaliseres likt.
+- Oppdatert funksjonsregisterets Spør KI-beskrivelse og fase 4 i utviklingsplanen. Beta og gjenstående pilot-/modellkontroller videreføres. Ingen nye avhengigheter eller endret API-kontrakt; ingen modell/embeddings eller nye sider.
+- Kontroller: `pnpm test:rag` 85/85, inkludert seks tester av prefiksretning, terskel, rangering og normalisering. `pnpm typecheck`, `pnpm format:check` og `git diff --check` bestått. Eksisterende tester er beholdt. Avgrenset ordsøk er ikke en generell garanti for semantisk relevans. Ingen commit eller publisering.
+
 ## Ikke utgitt – rettet PDF-språk og varsel om gamle prisdata – 10. november 2026
 
 **Utførende agent:** Codex (OpenAI), med `tilgjengelighetserklaering` 0.6.0 og PDF-skillen. Ingen underagenter.

@@ -92,3 +92,194 @@ test("cookie-informasjon kan leveres som RAG-kilde uten å åpne for ukjente rut
     false,
   );
 });
+
+// Atferdsevaluering: forventningene fastsettes før rangeringen endres.
+// maxRank=3 tillater andre relevante kilder foran den etterspurte oversikten.
+export const retrievalEvaluation: {
+  question: string;
+  expectedId: string | null;
+  maxRank?: number;
+}[] = [
+  { question: "Hvem er statsministeren?", expectedId: null },
+  { question: "Hva er været i Oslo i morgen?", expectedId: null },
+  { question: "Hva koster Claude?", expectedId: "priser" },
+  {
+    question: "Når kommer modelloversikten?",
+    expectedId: "oversikt",
+    maxRank: 3,
+  },
+  { question: "kodeendring tester", expectedId: "kodegjennomgang" },
+  { question: "værmelding bananer", expectedId: null },
+  { question: "Hva er KI?", expectedId: null },
+  {
+    question: "Hvordan tester jeg tilgjengeligheten?",
+    expectedId: "tilgjengelighetserklaering",
+  },
+  { question: "Hva er KI-prat?", expectedId: "ki-prat" },
+  { question: "Hvordan kommer jeg i gang med KI?", expectedId: "kom-i-gang" },
+  {
+    question: "Hvilke retningslinjer gjelder for KI?",
+    expectedId: "retningslinjer",
+  },
+  { question: "Hvilke verktøy er godkjent?", expectedId: "retningslinjer" },
+  { question: "tilgjengelighet", expectedId: "tilgjengelighetserklaering" },
+  { question: "retningslinjer", expectedId: "retningslinjer" },
+  {
+    question: "tilgjengelighetserklæring",
+    expectedId: "tilgjengelighetserklaering",
+  },
+  { question: "personvernerklæring GDPR", expectedId: "personvernerklaering" },
+  {
+    question: "Trenger portalen et samtykkebanner?",
+    expectedId: "informasjonskapsler",
+  },
+  { question: "Bruker portalen cookies?", expectedId: "informasjonskapsler" },
+  { question: "Hvordan blir jeg med på KI-prat?", expectedId: "ki-prat" },
+  {
+    question: "Hva er status for Atlassian MCP?",
+    expectedId: "godkjente-mcper",
+  },
+  { question: "Hva koster Copilot-abonnement?", expectedId: "priser" },
+  { question: "Hvordan utforsker jeg brukerbehov?", expectedId: "brukerbehov" },
+  {
+    question: "Hvor finner jeg versjonsloggen?",
+    expectedId: "funksjonalitet",
+    maxRank: 3,
+  },
+  {
+    question: "Hvordan behandles spørsmålene mine og personopplysninger?",
+    expectedId: "personvern",
+  },
+  {
+    question: "Hvordan installerer jeg tilgjengelighetsskillen?",
+    expectedId: "tilgjengelighetserklaering",
+  },
+  { question: "Kan du anbefale en restaurant i Bergen?", expectedId: null },
+];
+
+for (const { question, expectedId, maxRank = 1 } of retrievalEvaluation) {
+  test(`kildeevaluering: ${question}`, () => {
+    const ids = retrieve(question).map((source) => source.id);
+    if (expectedId === null) {
+      assert.deepEqual(ids, [], question);
+    } else {
+      const rank = ids.indexOf(expectedId) + 1;
+      assert.ok(
+        rank > 0 && rank <= maxRank,
+        `${question}: forventet ${expectedId} blant de ${maxRank} første, fikk ${JSON.stringify(ids)}`,
+      );
+    }
+  });
+}
+
+function withSources(sources: typeof corpus, run: () => void) {
+  const originalLength = corpus.length;
+  corpus.push(...sources);
+  try {
+    run();
+  } finally {
+    corpus.splice(originalLength);
+  }
+}
+
+test("prefiks krever langt kildeord og går bare fra spørsmålsord til kildeord", () => {
+  const source = {
+    id: "prefiks-proeve",
+    title: "Avgrenset prøve",
+    href: "/kom-i-gang/",
+    text: "kom være referansedokument",
+  };
+  withSources([source], () => {
+    assert.equal(retrieve("referansedokumentet")[0]?.id, source.id);
+    for (const question of ["referanse", "kommentar", "været"]) {
+      assert.ok(!retrieve(question).some((item) => item.id === source.id));
+    }
+  });
+});
+
+test("ett svakt brødtekstprefiks blir ikke relevant ved å gjenta spørsmålsordet", () => {
+  const source = {
+    id: "terskel-proeve",
+    title: "Avgrenset prøve",
+    href: "/kom-i-gang/",
+    text: "indeks",
+  };
+  withSources([source], () => {
+    for (const question of [
+      "indeksering",
+      "indeksering indeksering indeksering",
+    ]) {
+      assert.ok(!retrieve(question).some((item) => item.id === source.id));
+    }
+    assert.equal(retrieve("indeks")[0]?.id, source.id);
+  });
+});
+
+test("titteltreff avgjør lik poengsum før antall ord og plass i korpuset", () => {
+  const body = {
+    id: "lik-score-broedtekst",
+    title: "Avgrenset prøve",
+    href: "/kom-i-gang/",
+    text: "alfanøkkel indeks gammaverdi",
+  };
+  const title = {
+    id: "lik-score-tittel",
+    title: "alfanøkkel",
+    href: "/kom-i-gang/",
+    text: "",
+  };
+  withSources([body, title], () => {
+    assert.equal(retrieve("alfanøkkel indeksen gammaverdi")[0]?.id, title.id);
+  });
+});
+
+test("flere treffende ord avgjør når poengsum og titteltreff er like", () => {
+  const narrow = {
+    id: "ett-temaord",
+    title: "alfanøkkel",
+    href: "/kom-i-gang/",
+    text: "",
+  };
+  const broad = {
+    id: "to-temaord",
+    title: "indeks",
+    href: "/kom-i-gang/",
+    text: "alfanøkkel",
+  };
+  withSources([narrow, broad], () => {
+    assert.equal(retrieve("alfanøkkel indeksen")[0]?.id, broad.id);
+  });
+});
+
+test("direkte emneangivelse ved linjestart slår tilfeldig omtale ved ellers like treff", () => {
+  const mention = {
+    id: "tilfeldig-omtale",
+    title: "Avgrenset prøve",
+    href: "/kom-i-gang/",
+    text: "Denne veiledningen nevner versjonsnøkkelen i en annen sammenheng.",
+  };
+  const topic = {
+    id: "direkte-emne",
+    title: "Avgrenset prøve",
+    href: "/kom-i-gang/",
+    text: "Versjonsnøkkel: informasjon om emnet.",
+  };
+  withSources([mention, topic], () => {
+    const first = retrieve("versjonsnøkkelen").map((item) => item.id);
+    assert.equal(first[0], topic.id);
+    assert.deepEqual(
+      retrieve("versjonsnøkkelen").map((item) => item.id),
+      first,
+    );
+  });
+});
+
+test("aksenter, Unicode-form og store bokstaver normaliseres også i stoppord", () => {
+  assert.deepEqual(retrieve("HVA ER KÍ-PRÁT?"), retrieve("Hva er KI-prat?"));
+  assert.deepEqual(
+    retrieve("Na\u030ar kommer modelloversikten?"),
+    retrieve("Når kommer modelloversikten?"),
+  );
+  assert.deepEqual(retrieve("HVEM NÅR HVORFOR IKKE"), []);
+  assert.deepEqual(retrieve("KI og en et er på av om"), []);
+});

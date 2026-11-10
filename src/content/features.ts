@@ -60,7 +60,7 @@ export function getFeatures(): Feature[] {
       id: "spor",
       title: "Spør KI",
       description:
-        "Still spørsmål om portalens innhold. Få veiledning med konkrete steg, kilder og forslag til nye spørsmål. Chatten finnes på en egen side og fra forsiden. Spørsmål behandles separat, og historikken lagres ikke etter sideoppdatering.",
+        "Still spørsmål om portalens innhold. Få veiledning med konkrete steg, kilder og forslag til nye spørsmål. Kildesøket prioriterer direkte emnetreff og kan returnere uten treff når grunnlaget er for svakt. Chatten finnes på en egen side og fra forsiden. Spørsmål behandles separat, og historikken lagres ikke etter sideoppdatering.",
       status: "beta",
       href: "/spor/",
       routes: ["/spor/"],
