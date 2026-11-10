@@ -36,7 +36,7 @@ Reglene er også lagt i `AGENTS.md`, og gjelder fremtidig agentarbeid i prosjekt
 | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
 | Forside og navigasjon            | Lær/Prøv/Del, anbefalt oppgave «Utforsk et brukerbehov» fra ressursdata, menyen Kom i gang → Retningslinjer → Ressurskatalog → Oversikt → Spør KI → Om                   | Begrenset intern brukertesting gjenstår                                                                          |
 | Innhold og KI-prat               | Felles innholdsfiler for Kom i gang, Om og Retningslinjer, tydelig retningslinjelenke, KI-prat med deltakelsesinvitasjon og mandatforslag som vedlegg                    | Retningslinjer og mandat er utkast; eiere og godkjenning gjenstår                                                |
-| Ressurser og Skills              | Fem katalogressurser, separat lokalt Skills-repo, tilgjengelighetsskill 0.5.0 og personvernskill 0.1.0 med kartleggings-/rapportflyt og generell installasjonsveiledning | Skills er Beta og ikke menneskelig gjennomgått; ingen distribusjon fra portalen eller GitHub er etablert         |
+| Ressurser og Skills              | Fem katalogressurser, separat lokalt Skills-repo, tilgjengelighetsskill 0.5.1 og personvernskill 0.1.0 med kartleggings-/rapportflyt og generell installasjonsveiledning | Skills er Beta og ikke menneskelig gjennomgått; ingen distribusjon fra portalen eller GitHub er etablert         |
 | Spør KI                          | Kildebasert veiledning, konkrete steg, kilder, nye spørsmål, forbedret presentasjon av modellsvar og serveradapter for eksternt API                                      | Ingen faktisk modellgenerering er verifisert; hvert spørsmål behandles separat                                   |
 | Kontinuerlig innholdsoppdatering | Sider og RAG deler innhold; lokal RAG lastes om ved innholdsendringer; isolert synkroniseringstest finnes                                                                | I produksjon må Next.js og RAG utrulles fra samme revisjon; gamle chatsvar er historikk                          |
 | Oversikter                       | Nettstedskart, versjonsloggside og funksjonalitetsoversikt med bunntekstlenker; byggkontroll for manglende/ukjente sider                                                 | Funksjonenes mening og modenhet må vedlikeholdes i registeret                                                    |
@@ -106,6 +106,8 @@ Fase 5 og 6 må samordnes før MVP 1 deles. Fase 7 kan utvikles parallelt, men f
 **Ferdig når:** P4 er verifisert gjennom en faktisk pull request og kontrollert utrulling. Lokale kontroller alene lukker ikke fasen.
 
 ## Fase 3 – Design, komponenter og tilgjengelighet
+
+Arbeidsgrunnlaget for P8 er konkretisert i [avklaringsplanen for de 15 uavklarte kravene](docs/tilgjengelighet/WCAG-KONTROLL.md#avklaringsplan-for-de-15-kravene), oppdatert 10. november 2026. Den angir tester/kompetanse, utstyr, lokale og pilotavhengige kontroller samt dokumentasjon per krav. Planen er ikke en ny test eller en fullført leveranse. Ansvarlig tester og godkjenner må utpekes.
 
 - [x] Integrere `@digitalarkivet/mui-theme` og eget tema uten privat GitHub-tilgang.
 - [x] Implementere valgt arklogo/favicon, futuristisk forside, navigasjon, bunntekst, katalog, artikkeloppsett og chat.

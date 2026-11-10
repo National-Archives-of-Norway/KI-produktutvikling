@@ -4,6 +4,16 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 «Agent» betyr kodeassistenten som utførte arbeidet. Git-forfatteren registreres separat av Git og kan være personen som oppretter commiten. Eksakt modellvariant er ikke registrert for tidligere arbeid og oppgis derfor ikke. Ingen underagenter ble brukt til kvalitetskontrollen eller opprettelsen av denne loggen.
 
+## Ikke utgitt – avklaringsplan for 15 tilgjengelighetskrav – 10. november 2026
+
+**Utførende agent:** Codex (OpenAI), med `tilgjengelighetserklaering` 0.5.1. Ingen underagenter.
+
+- Oppdatert `docs/tilgjengelighet/WCAG-KONTROLL.md` med konkrete forutsetninger og kravvis plan for alle 15 U-krav: kompetanse, skjermleser-/nettleser-/mobil-/PDF-/kontrastoppsett, handlinger, forventet resultat og nødvendig dokumentasjon. Skilt lokale undersøkelser, faglige vurderinger og kontroller som trenger beskyttet pilot. Ingen verktøy er installert, ingen systeminnstillinger eller tilganger er endret.
+- Beskrevet kriterier for ny vurdering, retest og oppdatering av rapporter/erklæring, med bevarte historiske bevis og uavklart status. Godkjenner/tester er ikke utpekt. Supplerende redusert bevegelse er skilt fra kravet til kontroll over automatisk innhold; støttematrise og verktøyvalg er anbefalinger, ikke et påstått lovpålagt produktvalg.
+- Lenket planen fra kvalitetskontroll og fase 3/P8 i utviklingsplanen; rettet dagens skill-versjon i planoversikten til 0.5.1. Testdato, 22 K / 11 I / 15 U / 0 B, `latest.json`, offentlig erklæring og daterte testresultater er uendret. Dette er dokumentasjons-/planarbeid, ikke en ny tilgjengelighetsrevisjon eller produksjonsgodkjenning.
+
+- Kontroll: Alle 15 planlagte krav er avstemt mot U-radene i siste vurderte matrise, med alle fire planfeltene til stede. 34 lokale dokumentlenker er kontrollert. Eksisterende testgrunnlag, latest-peker og erklæring er verifisert uendret mot Git HEAD. Formatering og `git diff --check` er kontrollert. Ingen nettleser-/hjelpemiddel-/produkttester er utført i denne dokumentasjonsoppgaven; ingen nye testresultater påstås.
+
 ## Ikke utgitt – kjente brudd og uavklarte krav i erklæringen – 10. november 2026
 
 **Utførende agent:** Codex (OpenAI), med `tilgjengelighetserklaering` og `skill-creator`. Ingen underagenter.

@@ -1,5 +1,9 @@
 # Kravvis gjennomgang med skill 0.4.0 – 9. november 2026
 
+## Plan for gjenstående tilgjengelighetsvurdering – 10. november 2026
+
+[WCAG-kontrollens kravvise avklaringsplan](docs/tilgjengelighet/WCAG-KONTROLL.md#avklaringsplan-for-de-15-kravene) beskriver hva som trengs for hvert av de 15 U-kravene: kompetanse/verktøy, testhandling, forventet resultat og evidens. Den skiller lokale kontroller fra beskyttet pilot og faglige vurderinger. Ingen nye testresultater eller endret samsvarsstatus i denne planoppdateringen; siste faktiske testgrunnlag er fortsatt kjøringen som `docs/tilgjengelighet/latest.json` viser.
+
 ## Ny lokal oppfølging – 10. november 2026
 
 [Ny rapport](docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2/testrapport.md) og [konkret restliste](docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2/manuell-oppfolging.md): 21 sider / 63 viewport-kontroller / 168 Tab-steg, 42 tekstavstandsmålinger og utvalgte dynamiske forløp. Ingen ny bekreftet feil; 1.4.12 er K i prøvd lokalt utvalg. 80 gradientforekomster har minst 8,207:1 i avgrenset bakgrunnsmodell. Faktisk pause/start og prisalder med simulert klokke er prøvd. PDF-struktur og syv eksisterende renderinger er kontrollert ved identisk hash. Arbeidsstatus 22 K / 11 I / 15 U / 0 B, ikke samsvarsgodkjenning. Faktisk skjermleser, zoom, enhetsinnstillinger og produksjon gjenstår; Chrome-tilgang ble avvist automatisk. Tidligere avsnitt er historikk.

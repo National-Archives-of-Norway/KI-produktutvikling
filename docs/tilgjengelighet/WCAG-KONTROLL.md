@@ -12,6 +12,151 @@ Faktisk skjermleser, 200/400 % forstørring, fysisk orientering/redusert bevegel
 
 1.4.12 er endret U → K i prøvd lokal HTML-versjon. 34 krav har automatisk delgrunnlag, 36 har bredere rest, 11 har ingen utløsende innholdstype og ett har fullført lokalt manuelt utvalg. Dette er arbeidskategorier, ikke lovmessig samsvar.
 
+## Avklaringsplan for de 15 kravene
+
+**Plan oppdatert 10. november 2026 av Codex (OpenAI), med tilgjengelighetsskill 0.5.1.** Dette er en plan basert på siste vurderte testgrunnlag, ikke nye testresultater. Alle 15 krav beholder U inntil ny dokumentert vurdering. Testdato, siste kjøringspeker, rettede funn og samlet samsvarsstatus er uendret. Ingen påkrevd ny gjennomgang er markert som utført her.
+
+### Hva vi trenger
+
+| Behov                       | Konkret oppsett                                                                                                                                                                           | Tilgjengelighet / avklaring                                                                                                                                                                                                               |
+| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Tester og faglig vurdering  | En tester som behersker skjermleser og tastatur, og tilgang til kompetanse på WCAG/PDF for tvilstilfellene. Samme person kan dekke flere roller.                                          | Ansvarlig tester, vurderer og godkjenner er ikke utpekt. Faglig erfaring må avklares; en ekstern leverandør er et alternativ, ikke en forutsetning.                                                                                       |
+| Mac-oppsett                 | Faktisk VoiceOver og Safari, samt en vanlig nettleser med zoom, tastatur og peker.                                                                                                        | Kan brukes til første lokale økt. Tidligere avvist agenttilgang til native Chrome er en verktøybegrensning; en menneskelig tester kan utføre og dokumentere kontrollene i vanlig nettleser. Ny agentstyring følger gjeldende tillatelser. |
+| Supplerende Windows-oppsett | NVDA med en nettleser som inngår i avtalt støtte, og en PDF-leser som fungerer med hjelpemiddelet.                                                                                        | Anbefalt supplerende dekning for Windows-brukere. Avtal faktisk støttematrise og dokumenter testede kombinasjoner; verktøylisten er ikke et lovpålagt bestemt produktvalg.                                                                |
+| Mobil/nettbrett             | En fysisk enhet med rotasjon, vanlig nettleser og mulighet til å prøve redusert bevegelse.                                                                                                | Krever testadresse som enheten faktisk når. Mobilens localhost peker på mobilen, ikke utviklingsmaskinen. Bruk kontrollert lokal tilgang eller beskyttet pilot; avklar tilgangen før deling.                                              |
+| Kontrast og PDF             | Kontrastmåler, for eksempel Colour Contrast Analyser, tilgang til CSS/faktiske bakgrunnslag og PDF-strukturvisning. Kildepresentasjonen er nyttig hvis PDF må rettes/eksporteres på nytt. | Måleverktøyet gir støtte; gradienter, nødvendige diagramdeler og språk/relasjoner trenger faglig vurdering. Et bestemt betalt PDF-verktøy er ikke en forutsetning for å starte.                                                           |
+| Testversjon og scenarier    | Samme revisjon av Next.js og RAG, gjeldende PDF og prisdata; syntetiske spørsmål og kontrollerbare feil-/lastetilstander.                                                                 | Registrer commit, miljø og dataversjon. Ikke be om nøkler i rapporten. Modellgenerering som skal testes må være konfigurert med serverlagrede secrets av ansvarlig.                                                                       |
+| Beskyttet pilot             | Faktisk URL, innlogging/autorisering, publisert 404-fallback og godkjent modell hvis den inngår i leveransen.                                                                             | Trengs for disse miljøspesifikke delene, ikke for å begynne lokale skjermleser-, zoom-, PDF- og kontrastkontroller. Første delte miljø skal fortsatt være lukket.                                                                         |
+
+### Praktisk gjennomføring
+
+1. **Avtal omfang og tester.** Bruk nettstedskart/registre for sideutvalg og noter alle komponenttyper. Ta med navigasjon, ressursdetaljer, katalogfilter/null treff, begge chatvisninger, feil/venting/resultat/tømming, alle seks pristabeller med åpne vilkår, feilside og PDF-ens syv sider. Angi hva som er modellgenerert og hva som er kildebasert veiledning.
+2. **Gjennomfør skjermleser- og PDF-økten.** Start med tilgjengelig Mac-oppsett og suppler med avtalt Windows-kombinasjon. Dokumenter faktisk lesing og handlinger. Dette gir felles bevis for flere krav; gjør likevel en separat kriterievurdering.
+3. **Gjennomfør zoom, fokus, kontrast og enhet.** Bruk ekte nettleserforstørring og fysisk rotasjon. Prøv relevante normale og dynamiske tilstander. Dokumenter faktiske innstillinger, ikke bare en smal viewport eller CSS-overstyring.
+4. **Avklar prisaldervarselet faglig.** Bruk eksisterende terskelsimulering som delbevis og avgjør om den tidsstyrte oppdateringen krever pause/skjul. Faktisk redusert bevegelse prøves separat; innstillingen erstatter ikke vurderingen av brukerkontroll.
+5. **Test utrullingsdelene i lukket pilot.** Gjenta relevante språk-, status-, fokus- og betjeningsforløp med faktisk identitet, URL, modell og 404. Ny innlogging eller modell gir nytt innhold som også kan påvirke andre krav enn disse 15.
+
+### Hva som må dokumenteres for hvert krav
+
+Alle krav nedenfor har fortsatt status **U – uavklart/delvis**. «Ferdig når» beskriver grunnlaget for å kunne konkludere; det er ikke et beståttresultat. Et bekreftet avvik gir B og rettingsforslag, mens dekkende undersøkelser uten funn kan gi en begrunnet oppfylt-vurdering for avtalt omfang. Ingen bestemt testkombinasjon gir automatisk godkjenning.
+
+#### 1.1.1 Ikke-tekstlig innhold
+
+- **Trenger:** Skjermlesertester, PDF-leser og en fagperson som kjenner diagrammets budskap.
+- **Gjennomfør:** Sammenlign alle meningsbærende bilder/ikoner med tekstalternativene. Les PDF-side 6 uten å støtte deg på grafikken; vurder hva plasseringen av team og fagmiljøer formidler. Klassifiser de 61 Figure-nodene etter formål og begrunn dekorasjon.
+- **Ferdig når:** Budskap og funksjon har likeverdige alternativer; dekor forstyrrer ikke lesingen. Eventuelle mangler blir konkrete avvik. Tom Alt alene avgjør ikke resultatet.
+- **Dokumenter:** Element/side, formål, tekstalternativ og plassering, faglig begrunnelse og faktisk opplesing.
+
+#### 1.3.1 Informasjon og relasjoner
+
+- **Trenger:** Skjermleser og PDF-verktøy som kan vise struktur/tagger, med kompetanse til å tolke dem.
+- **Gjennomfør:** Naviger overskrifter, lister, tabeller og feltgrupper på nettsidene. Prøv PDF-ens tre lister på side 7 og koblingen mellom overskrifter, punkter og grupper. Sammenlign tagger med det som faktisk leses.
+- **Ferdig når:** Visuell struktur og relasjoner kan bestemmes programmatisk eller formidles gjennom et egnet alternativ. Antall tagger er bare støttebevis.
+- **Dokumenter:** Faktisk liste-/overskrifts-/tabellnavigasjon, lest sammenheng, aktuelle tagger og berørt side.
+
+#### 1.3.2 Meningsfylt rekkefølge
+
+- **Trenger:** Skjermleser med lineær lesing og en tester som kan sammenligne mening med den visuelle presentasjonen.
+- **Gjennomfør:** Les flerspalter og dynamiske resultater i logisk rekkefølge. Les PDF-side 6–7 lineært og vurder om sentralt team, fagmiljøer og punktene i hver kolonne fortsatt henger sammen.
+- **Ferdig når:** Minst én programmatisk bestemt leserekkefølge bevarer mening. Dette vurderes separat fra Tab-rekkefølgen.
+- **Dokumenter:** Forventet meningsfull sekvens og faktisk lest sekvens, med konkrete innholdsreferanser.
+
+#### 1.3.4 Visningsretning
+
+- **Trenger:** Fysisk mobil eller nettbrett med rotasjonslås slått av, og tilgang til samme testversjon.
+- **Gjennomfør:** Utfør navigasjon, katalogsøk/filter, chat og prisvisning i stående og liggende retning. Roter begge veier mens en dialog er åpen; kontroller tilgang til felt, lukking og svar.
+- **Ferdig når:** Innhold og betjening fungerer i begge retninger. Eventuell nødvendig orienteringsbegrensning må begrunnes særskilt.
+- **Dokumenter:** Enhet, OS/nettleser, retning, utførte oppgaver og skjermbilder før/etter rotasjon.
+
+#### 1.4.3 Kontrast (minimum)
+
+- **Trenger:** Kontrastmåler, inspeksjon av beregnede farger/alfalag og faglig vurdering av PDF/gradienter.
+- **Gjennomfør:** Mål tekst i normal-, fokus-, hover-, valgt- og feiltilstand, også i chat og PDF. Følg opp de 80 axe-incomplete-forekomstene og bakgrunnsmodellens begrensninger, med svakeste relevante bakgrunn. Bruk ikke utjevnede kantpiksler som tekstfarge.
+- **Ferdig når:** Vanlig tekst når 4,5:1 og stor tekst 3:1 når kravet gjelder. Stor tekst vurderes etter størrelse/vekt; unntak begrunnes. Uavrundede resultater brukes.
+- **Dokumenter:** Forgrunn/bakgrunn og alfa, størrelse/vekt, tilstand, målepunkt, kontrastforhold og valgt terskel.
+
+#### 1.4.4 Endring av tekststørrelse
+
+- **Trenger:** Vanlig nettleser med faktisk tekstforstørring eller sidezoom og et tastatur.
+- **Gjennomfør:** Dokumenter 100 prosent grunnvisning. Forstørr til 200 prosent med nettleserens funksjon; gjennomfør navigasjon, katalog, chatvalidering/svar, prisdetaljer og lenker. Undersøk klipping og overlapp.
+- **Ferdig når:** Teksten kan forstørres til 200 prosent uten tap av nødvendig innhold eller funksjon innenfor kravets avgrensninger.
+- **Dokumenter:** Nettleser/versjon, faktisk zoom-/tekstfunksjon og nivå, grunnvisning, skjermbilder og fullførte handlinger.
+
+#### 1.4.10 Dynamisk tilpasning (Reflow)
+
+- **Trenger:** Vanlig nettleser med faktisk 400 prosent zoom, måling av effektiv CSS-bredde og tastatur.
+- **Gjennomfør:** Start for eksempel ved 1280 CSS-px og 100 prosent, sett 400 prosent og bekreft effektiv bredde rundt 320 CSS-px. Gjennomfør hele kritiske forløp. Undersøk siderulling og avgrens lokale tabellrulleområder.
+- **Ferdig når:** Ingen tap eller unødvendig rulling i to retninger for vertikalt innhold ved tilsvarende 320 CSS-px. Nødvendig todimensjonal tabellvisning vurderes særskilt og fritar ikke resten av siden.
+- **Dokumenter:** Dokumentert zoom, start-/sluttbredde, skjermbilder, handlinger og begrunnelse for eventuelle todimensjonale unntak.
+
+#### 1.4.11 Kontrast for ikke-tekstlig innhold
+
+- **Trenger:** Kontrastmåler og en vurdering av hvilke visuelle deler som er nødvendige for betjening eller forståelse.
+- **Gjennomfør:** Kartlegg feltgrenser, ikoner, fokus-/valgtmarkeringer og diagramdeler. Mål nødvendige deler mot relevante tilstøtende farger i aktuelle tilstander. Skill dekorative kortlinjer fra nødvendige signaler.
+- **Ferdig når:** Nødvendig ikke-tekstlig informasjon når 3:1 mot relevante tilstøtende farger når kravet gjelder; dokumenter unntak. Ikke krev 3:1 for enhver dekorlinje eller mellom to tidsmessige kontrolltilstander.
+- **Dokumenter:** Element/tilstand, hvorfor delen er nødvendig, tilstøtende farger og uavrundet forhold.
+
+#### 2.2.2 Pause, stopp, skjul
+
+- **Trenger:** Nettleser og tastatur, testoppsett for prisalder, samt fagperson som kan vurdere anvendelsen av kravet.
+- **Gjennomfør:** Bevar tidligere pause-/startbevis for animasjonen. Vurder prisaldervarselets automatiske innsetting ut fra kriteriets vilkår; dokumenter hvorfor pause/skjul eller styring av oppdatering er eller ikke er nødvendig. Hvis kontroll kreves, implementeres den i et eget rettingsoppdrag og retestes. Prøv faktisk redusert-bevegelse-innstilling som supplerende produktkontroll.
+- **Ferdig når:** Relevant automatisk bevegelse/oppdatering kan styres etter kravet, eller vurderingen begrunner at det aktuelle innholdet ikke utløser plikten. Automatiske oppdateringer har ikke samme femsekundersavgrensning som bevegelse. Redusert bevegelse alene avgjør ikke samsvar.
+- **Dokumenter:** Startbetingelse, varighet/oppdateringsform, anvendelsesvurdering, faktisk virkning av kontroll etter fokusflytting og eventuell klokkesimulering tydelig merket.
+
+#### 2.4.3 Fokusrekkefølge
+
+- **Trenger:** Tastatur, faktisk forstørring og skjermleser som supplerende brukerforløpstest.
+- **Gjennomfør:** Gå med Tab og Shift+Tab gjennom navigasjon, filtre, chatdialog, nye svar, tømming, lukking og prisdetaljer. Gjenta ved 200/400 prosent forstørring; noter hvor fokus kommer etter endringer.
+- **Ferdig når:** Fokusrekkefølgen bevarer mening og betjening. Dynamiske endringer fører ikke fokus til et ulogisk sted, og dialoglukking gir en forståelig retur.
+- **Dokumenter:** Trinnvis fokusliste før/etter dynamisk endring, forstørringsnivå og observerte feil eller begrunnet resultat.
+
+#### 2.4.7 Synlig fokus
+
+- **Trenger:** Tastatur og visuell inspeksjon i vanlig nettleser, også ved faktisk forstørring.
+- **Gjennomfør:** Følg fokus på alle representative kontrolltyper uten å starte med museklikk. Kontroller tekstfeltets samlede fokusmarkering, dialogknapper, lenker, filtre, summary og tabellrulleområder mot ulike flater.
+- **Ferdig når:** Det er synlig hvilket element som har tastaturfokus. Måling av kontrast vurderes separat der den er relevant; WCAG 2.2s nye arealkrav legges ikke automatisk til denne vurderingen.
+- **Dokumenter:** Tastatursekvens, kontroll/bakgrunn, zoomnivå og skjermbilder av faktiske fokusmarkeringer.
+
+#### 3.1.1 Språk på siden
+
+- **Trenger:** Språkkyndig gjennomgang, dokumentmetadata og skjermleser/PDF-leser med tilgjengelige norske og engelske stemmer.
+- **Gjennomfør:** Bestem faktisk hovedspråk på sider og i PDF. Undersøk hvorfor PDF-roten har en mens 120 underordnede noder har nb; vurder effektiv språkmerking og opplesing. Skill dokumentfeil fra manglende eller feil konfigurert stemme.
+- **Ferdig når:** Hovedspråket kan bestemmes programmatisk og samsvarer med innholdet. Reelle merkingsfeil dokumenteres selv om en skjermleser gjetter riktig.
+- **Dokumenter:** Innholdets hovedspråk, dokumentkode, effektive overstyringer, leser/stemme og faktisk uttale.
+
+#### 3.1.2 Språk på deler av innhold
+
+- **Trenger:** Språkkyndig gjennomgang, DOM/PDF-spenn og skjermleser med aktuelle stemmer. Modelltest krever senere et konfigurert, godkjent testmiljø.
+- **Gjennomfør:** Undersøk faktiske språkpassasjer i PDF og dynamisk innhold. Kontroller avgrensede språkkoder og opplesing. Gjenta på publisert feilside og modellgenererte svar når de inngår i løsningen. Vurder egennavn og innarbeidede faguttrykk som mulige unntak.
+- **Ferdig når:** Reelle språkbytter kan bestemmes programmatisk, med begrunnede unntak. Enkeltstående produktnavn behandles ikke automatisk som brudd.
+- **Dokumenter:** Tekstutdrag/lokasjon, hovedspråk, arvet/lokal språkkode, uttale og begrunnede unntak; manglende miljø føres som avgrensning.
+
+#### 4.1.2 Navn, rolle, verdi
+
+- **Trenger:** Faktisk skjermleser med tastatur, støttet nettleser og tilgjengelighetstre som støtte.
+- **Gjennomfør:** Bruk søkefelt, filtre, pauseknapp, chatknapper/felt/dialog og utfellbare prisvilkår. Sammenlign navn, rolle, verdi og tilstand før og etter valg, feil, åpning og lukking.
+- **Ferdig når:** Navn og rolle kan bestemmes programmatisk; brukerendrede verdier og tilstander er tilgjengelige og endringer kan formidles. Ikke krev en bestemt engelsk opplesingsformulering.
+- **Dokumenter:** Kontroll/tilstand, forventet betydning, eksponerte egenskaper og faktisk opplesing før/etter handling.
+
+#### 4.1.3 Statusbeskjeder
+
+- **Trenger:** Faktisk skjermleser med talelogging eller manuelle opplesingsnotater, og kontrollerbar chat-/statusflyt.
+- **Gjennomfør:** Utløs katalogens null treff og filterendring, chatvalidering, venting, svar og relevante tjenestefeil mens fokus står naturlig. Vurder prisaldervarselet som mulig status. Kontroller at informasjonen formidles uten påtvunget fokusflytting og uten unødvendige gjentakelser.
+- **Ferdig når:** Relevante statusbeskjeder kan bestemmes programmatisk og formidles av hjelpemiddelet uten å motta fokus. Vurder faktisk meldingstype; ikke alt dynamisk innhold krever samme live-rolle.
+- **Dokumenter:** Utløsende handling, beskjedtekst, fokus før/etter, tidsrekkefølge og faktisk tale/logg, med angitt modell-/tjenestemodus.
+
+### Når ny vurdering kan føres inn
+
+Ved faktisk ny test opprettes en ny datert kjøringsmappe i prosjektet. Registrer testdato, tester, commit, OS/nettleser/hjelpemiddel og versjoner, testobjekt/tilstand, eksakte handlinger, forventet/observert resultat og evidens. Skjermbilde viser visuell tilstand; en skjermlesertest trenger også notater om faktisk tale eller egnet talelogging. Bruk syntetiske data og oppbevar eventuell lyd/video med avklart tilgang.
+
+Knytt bevis til krav-ID og tilstrekkelig utvalg. Vurder alle relevante deler før U lukkes; behold konkrete brudd selv om øvrig omfang fortsatt er uavklart. Retest eventuelle rettinger på samme oppgave og relevante nabotilstander. Oppdater deretter kravmatrise, rapport, manuell restliste og `latest.json`, og avstem `src/content/accessibility.ts` og begge brukerrettede erklæringer med den nye vurderingen. Tidligere kjøringer endres ikke. Virksomheten må til slutt avklare godkjenner, omfang og formell erklæring. De øvrige K/I-resultatene er avgrenset delgrunnlag og må inngå i helhetsvurderingen; lukking av disse 15 alene er ikke automatisk produksjonsgodkjenning.
+
+### Kilder og detaljerte prosedyrer
+
+Skillens [prosedyreoversikt for alle 48 krav](2026-11-10/094541-e2907a5c27e2/testprosedyrer/wcag-testprosedyrer.md) har kravvise fremgangsmåter og kilder. Prosedyreøyeblikksbildet tilhører den tidligere kjøringen og har sin opprinnelige dato.
+
+Følgende primærkilder er kontrollert 10. november 2026 for denne planen: [Apple – VoiceOver for Mac](https://support.apple.com/no-no/guide/voiceover/welcome/mac), [NV Access – NVDA-brukerveiledning](https://api.nvaccess.org/documentation/userGuide.html), [Vispero – Colour Contrast Analyser](https://vispero.com/lp/color-contrast-checker/), [W3C – tekstforstørring](https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html), [omflyting](https://www.w3.org/WAI/WCAG21/Understanding/reflow.html), [tekstkontrast](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html), [ikke-tekstlig kontrast](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html) og [pause/stopp/skjul](https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html). Verktøyforslag og testmatrise er prosjektets anbefalinger; ingen nye rettslige virkeområde- eller samsvarsvurderinger er gjort.
+
 ## Gjeldende 48-punkts arbeidsmatrise
 
 | Krav   | Tema                                                            | Status | Testdato   | Observasjon / neste steg                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
