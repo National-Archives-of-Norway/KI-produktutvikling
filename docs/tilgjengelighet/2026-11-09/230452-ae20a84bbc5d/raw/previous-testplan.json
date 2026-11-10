@@ -1,0 +1,1170 @@
+{
+  "skill_version": "0.4.0",
+  "overall_conformance": "not_assessed",
+  "catalog_sha256": "2b1a75fd0260ecb213cbe8f099c74df851af96fedc90a98f694103d9a0c2daeb",
+  "note": "Alle 48 prosedyrer er gjennomgått. U/partial/blocked betyr at nødvendig deltesting gjenstår; ingen automatisk godkjenning.",
+  "tests": [
+    {
+      "criterion_id": "1.1.1",
+      "title": "Ikke-tekstlig innhold",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#111",
+      "source": "https://www.uutilsynet.no/wcag-standarden/111-ikke-tekstlig-innhold-niva/87",
+      "status": "partial",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "PDF-sider/struktur spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "pypdf 6.10.0, pdfplumber 0.11.9 og relevante Poppler/PIL-delkontroller"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "HTML-bilder og SVG-er er kartlagt på 20 sider. PDF-en har 73 Figure-elementer med blant annet tom Alt og generiske koalabeskrivelser. Skjermleser og endelig klassifisering av dekor/diagram er ikke gjennomført.",
+      "evidence": [
+        "raw/browser-pages.json",
+        "raw/browser-layout.json",
+        "raw/pdf-inspection.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Meningsbærende innhold har et likeverdig alternativ, funksjonelle bilder har riktig navn/formål, og dekor kan ignoreres. Spesialtilfeller som medier, sanseinntrykk og tester vurderes etter kilden; alt-attributt alene er ikke nok.",
+      "remaining": "Vurder alle PDF-figurers formål og alternativer og prøv faktisk skjermleser. Tom Alt alene er ikke merket brudd."
+    },
+    {
+      "criterion_id": "1.2.1",
+      "title": "Bare lyd og video (forhåndsinnspilt)",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#121",
+      "source": "https://www.uutilsynet.no/wcag-standarden/121-bare-lyd-og-bare-video-forhandsinnspilt-niva/88",
+      "status": "no_applicable_content",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "Appens ts/tsx/css-kilder",
+        "PDF-sider/struktur spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "Lokal rg/Python-kildekartlegging av src",
+        "pypdf 6.10.0, pdfplumber 0.11.9 og relevante Poppler/PIL-delkontroller"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Ingen lyd-/videoklipp funnet i 20 levende HTML-sider eller src-kartleggingen. PDF-en har tekst/grafikk og ingen registrerte annotasjoner/medier. Fravær gjelder dette lokale utvalget, ikke fremtidig innhold.",
+      "evidence": [
+        "raw/browser-pages.json",
+        "raw/browser-layout.json",
+        "raw/source-inventory.json",
+        "raw/pdf-inspection.json",
+        "raw/media-api-inventory.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Lyd alene har en dekkende tekstlig gjengivelse; video alene har et dekkende tekst- eller lydalternativ. Tilgangen er knyttet tydelig til klippet. Eventuelt tekstbasert mediealternativ dokumenteres særskilt.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "1.2.2",
+      "title": "Teksting (forhåndsinnspilt)",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#122",
+      "source": "https://www.uutilsynet.no/wcag-standarden/122-teksting-forhandsinnspilt-niva/89",
+      "status": "no_applicable_content",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "Appens ts/tsx/css-kilder",
+        "PDF-sider/struktur spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "Lokal rg/Python-kildekartlegging av src",
+        "pypdf 6.10.0, pdfplumber 0.11.9 og relevante Poppler/PIL-delkontroller"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Ingen lyd-/videoklipp funnet i 20 levende HTML-sider eller src-kartleggingen. PDF-en har tekst/grafikk og ingen registrerte annotasjoner/medier. Fravær gjelder dette lokale utvalget, ikke fremtidig innhold.",
+      "evidence": [
+        "raw/browser-pages.json",
+        "raw/browser-layout.json",
+        "raw/source-inventory.json",
+        "raw/pdf-inspection.json",
+        "raw/media-api-inventory.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Korrekt teksting eller et dekkende alternativ som aksepteres etter valgt norsk vurderingsgrunnlag formidler nødvendig lydinformasjon. Automatisk teksting uten kvalitetskontroll er ikke tilstrekkelig bevis.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "1.2.5",
+      "title": "Synstolking (forhåndsinnspilt)",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#125",
+      "source": "https://www.uutilsynet.no/wcag-standarden/125-synstolking-forhandsinnspilt-niva-aa/842",
+      "status": "no_applicable_content",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "Appens ts/tsx/css-kilder",
+        "PDF-sider/struktur spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "Lokal rg/Python-kildekartlegging av src",
+        "pypdf 6.10.0, pdfplumber 0.11.9 og relevante Poppler/PIL-delkontroller"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Ingen lyd-/videoklipp funnet i 20 levende HTML-sider eller src-kartleggingen. PDF-en har tekst/grafikk og ingen registrerte annotasjoner/medier. Fravær gjelder dette lokale utvalget, ikke fremtidig innhold.",
+      "evidence": [
+        "raw/browser-pages.json",
+        "raw/browser-layout.json",
+        "raw/source-inventory.json",
+        "raw/pdf-inspection.json",
+        "raw/media-api-inventory.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Nødvendig visuell mening er forståelig gjennom lyd, enten i originalsporet eller synstolking. En transkripsjon alene erstatter ikke synstolking for dette kriteriet.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "1.3.1",
+      "title": "Informasjon og relasjoner",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#131",
+      "source": "https://www.uutilsynet.no/wcag-standarden/131-informasjon-og-relasjoner-niva/90",
+      "status": "confirmed_finding",
+      "scope": ["PDF-sider/struktur spesifisert i faktisk resultat"],
+      "tools_used": [
+        "pypdf 6.10.0, pdfplumber 0.11.9 og relevante Poppler/PIL-delkontroller"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "A11Y-04: Synlige punktlister på PDF-side 7 mangler semantiske lister/listemedlemmer; ingen L/LI/Lbl/LBody eller tilsvarende rollemapping finnes. Tidligere overskriftsretting (27 H-roller) består. HTML-tabeller har caption og scope.",
+      "evidence": [
+        "raw/pdf-inspection.json",
+        "raw/pdf-page7-structure.json",
+        "screenshots/pdf-page-7.png"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Informasjon og relasjoner som formidles visuelt er også tilgjengelige programmatisk eller gjennom et egnet tekstalternativ etter kilden. Ingen regel om nøyaktig én h1 innføres som et selvstendig WCAG-krav.",
+      "remaining": "Rett liste-/gruppekoding, og kontroller øvrig PDF-semantikk og faktisk hjelpemiddelbruk."
+    },
+    {
+      "criterion_id": "1.3.2",
+      "title": "Meningsfylt rekkefølge",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#132",
+      "source": "https://www.uutilsynet.no/wcag-standarden/132-meningsfylt-rekkefolge-niva/91",
+      "status": "partial",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "PDF-sider/struktur spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "pypdf 6.10.0, pdfplumber 0.11.9 og relevante Poppler/PIL-delkontroller"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "20 siders overskrifter og synlige tekster er kartlagt. PDF-side 7 har flere kolonner, og tekst-/taggrekkefølgen er undersøkt som støtte. Ingen faktisk skjermleserlesing av hele dokumentet.",
+      "evidence": [
+        "raw/browser-pages.json",
+        "raw/browser-layout.json",
+        "raw/pdf-inspection.json",
+        "raw/pdf-page7-structure.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Minst én programmatisk bestemt leserekkefølge bevarer mening og forståelige relasjoner. Visuell og kodet rekkefølge trenger ikke være identisk der betydningen er uavhengig av rekkefølgen.",
+      "remaining": "Prøv lineær lesing, særlig PDF-side 6–7, med faktisk hjelpemiddel."
+    },
+    {
+      "criterion_id": "1.3.3",
+      "title": "Sensoriske egenskaper",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#133",
+      "source": "https://www.uutilsynet.no/wcag-standarden/133-sensoriske-egenskaper-niva/92",
+      "status": "reviewed_no_findings_in_scope",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "PDF-sider/struktur spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "pypdf 6.10.0, pdfplumber 0.11.9 og relevante Poppler/PIL-delkontroller"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Instruksjoner i nettsideutvalget og PDF-teksten er gjennomgått. Ingen nødvendig handling ble funnet som bare identifiseres ved form, plassering, farge eller lyd. Betjente forløp har navngitte kontroller.",
+      "evidence": [
+        "raw/browser-pages.json",
+        "raw/browser-layout.json",
+        "raw/pdf-inspection.json",
+        "raw/manual-interactions.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Instruksjonen kan forstås uten å være avhengig bare av sanseegenskaper. Vanlige rekkefølgeord kan brukes når den samme forståelige rekkefølgen er bestemt i innholdet.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "1.3.4",
+      "title": "Visningsretning",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#134",
+      "source": "https://www.uutilsynet.no/wcag-standarden/134-visningsretning-niva-aa/141",
+      "status": "partial",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "IAB; ingen faktisk skjermleser eller verifisert zoom"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "Dokumentert nettleserkapasitet og zoomsnarveiforsøk"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "20 sider ved 1280×900, 320×740 og 844×390 uten sidebredde-overflyt. Dette undersøker responsive størrelser, men bekrefter ikke fysisk rotasjon eller orienteringslås på en enhet.",
+      "evidence": [
+        "raw/browser-pages.json",
+        "raw/browser-layout.json",
+        "raw/test-capabilities.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Innhold og betjening er tilgjengelig i begge retninger, med dokumenterte nødvendige unntak. Lik layout er ikke påkrevd. Endret vindusbredde alene beviser ikke at enheten kan roteres.",
+      "remaining": "Test med fysisk mobil/nettbrett eller dokumentert orienteringsstøtte, begge retninger og kritiske forløp."
+    },
+    {
+      "criterion_id": "1.3.5",
+      "title": "Identifiser formål med inndata",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#135",
+      "source": "https://www.uutilsynet.no/wcag-standarden/135-identifiser-formal-med-inndata-niva-aa/142",
+      "status": "no_applicable_content",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "Appens ts/tsx/css-kilder"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "Lokal rg/Python-kildekartlegging av src"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Synlige inndatafelt i det lokale utvalget er ressurssøk og spørsmål til kunnskapsbasen. Ingen felt samler standardiserte opplysninger om brukeren selv; ingen innlogging eller personskjema er i denne testversjonen.",
+      "evidence": [
+        "raw/browser-pages.json",
+        "raw/browser-layout.json",
+        "raw/source-inventory.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Relevante felt har programmatisk gjenkjennelig og korrekt inndataformål. En synlig etikett eller type=email alene dokumenterer ikke hele kravet.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "1.4.1",
+      "title": "Bruk av farge",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#141",
+      "source": "https://www.uutilsynet.no/wcag-standarden/141-bruk-av-farge-niva/93",
+      "status": "reviewed_no_findings_in_scope",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "PDF-sider/struktur spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "pypdf 6.10.0, pdfplumber 0.11.9 og relevante Poppler/PIL-delkontroller"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Ressursfiltre har tekst og aria-pressed/markert bakgrunn. Statusetiketter i oversikter og priser har forklarende tekst; undersøkte lenker har visuelle tillegg. PDF-side 7 har tekstlige gruppetitler i tillegg til farge. Ingen bekreftet farge-alene-avvik i utvalget.",
+      "evidence": [
+        "raw/browser-pages.json",
+        "raw/browser-layout.json",
+        "raw/pricing-expanded.json",
+        "raw/manual-interactions.json",
+        "screenshots/pdf-page-7.png"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Meningsbærende farge har et synlig alternativ. Lenker kan bruke en dokumentert løsning med minst 3:1 mot nabotekst og tilleggskjennetegn ved hover/fokus, eller et permanent annet kjennetegn.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "1.4.2",
+      "title": "Styring av lyd",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#142",
+      "source": "https://www.uutilsynet.no/wcag-standarden/142-styring-av-lyd-niva/94",
+      "status": "no_applicable_content",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "Appens ts/tsx/css-kilder"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "Lokal rg/Python-kildekartlegging av src"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Ingen lyd-/videoelementer eller automatisk lyd funnet i DOM eller appens kildekartlegging. Ingen hørbar automatisk lyd observert under nettleserforløpene.",
+      "evidence": [
+        "raw/browser-pages.json",
+        "raw/browser-layout.json",
+        "raw/source-inventory.json",
+        "raw/media-api-inventory.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Automatisk lyd over tre sekunder kan stoppes/pauses eller reguleres uavhengig av systemvolumet. Fravær av automatisk lyd dokumenteres gjennom observert bruk, ikke bare søk etter audio-taggen.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "1.4.3",
+      "title": "Kontrast (minimum)",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#143",
+      "source": "https://www.uutilsynet.no/wcag-standarden/143-kontrast-minimum-niva-aa/95",
+      "status": "confirmed_finding",
+      "scope": [
+        "PDF-sider/struktur spesifisert i faktisk resultat",
+        "De eksplisitt oppgitte fargeparene"
+      ],
+      "tools_used": [
+        "pypdf 6.10.0, pdfplumber 0.11.9 og relevante Poppler/PIL-delkontroller",
+        "Skillens sRGB-kontrastberegning"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "A11Y-05: PDF-side 5 bruker lys grå vanlig brød-/bunntekst (#d8d8d8) på grønn bakgrunn (#2d6a5f), ca. 4,41:1; sidetall #5d6a66 gir ca. 1,11:1. Teksten er ca. 10,1/7,22 pt og krever 4,5:1. Andre målte webfargepar oppfylte valgte terskler.",
+      "evidence": [
+        "raw/pdf-page5-text-groups.json",
+        "raw/pdf-page5-colors.json",
+        "raw/pdf-page5-pixels.json",
+        "raw/contrast-supplement.json",
+        "screenshots/pdf-page-5.png",
+        "raw/pdf-contrast-confirmed.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Vanlig tekst når minst 4,5:1; stor tekst når minst 3:1 når vilkårene gjelder (18 pt eller 14 pt fet, omtrent 24/18,7 CSS-px). Følg kildens særpresisering for bilder av tekst; et par målte grunnfarger beviser ikke alle flater.",
+      "remaining": "Rett de aktuelle PDF-fargene, mål på nytt og fullfør øvrige flater/tilstander."
+    },
+    {
+      "criterion_id": "1.4.4",
+      "title": "Endring av tekststørrelse",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#144",
+      "source": "https://www.uutilsynet.no/wcag-standarden/144-endring-av-tekststorrelse-niva-aa/96",
+      "status": "blocked",
+      "scope": ["IAB; ingen faktisk skjermleser eller verifisert zoom"],
+      "tools_used": ["Dokumentert nettleserkapasitet og zoomsnarveiforsøk"],
+      "tested_at": "2026-11-09",
+      "actual_result": "Zoomsnarvei forsøkt i testnettleseren. CSS-viewport og devicePixelRatio endret seg ikke; faktisk 200 % tekstforstørring er derfor ikke dokumentert.",
+      "evidence": ["raw/test-capabilities.json"],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Teksten kan forstørres til 200 % uten bortfall av innhold eller betjening innenfor kriteriets avgrensninger. En smal viewport eller større tekst satt i kildekoden erstatter ikke dokumentert nettleserforstørring.",
+      "remaining": "Prøv faktisk 200 % tekstforstørring/zoom i en nettleser som eksponerer funksjonen og gjennomfør representative oppgaver."
+    },
+    {
+      "criterion_id": "1.4.5",
+      "title": "Bilder av tekst",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#145",
+      "source": "https://www.uutilsynet.no/wcag-standarden/145-bilder-av-tekst-niva-aa/97",
+      "status": "reviewed_no_findings_in_scope",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "PDF-sider/struktur spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "pypdf 6.10.0, pdfplumber 0.11.9 og relevante Poppler/PIL-delkontroller"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Nettsidene bruker tekst fremfor bilder av brødtekst; SVG-logo er merkevare. PDF-en har tekstuttrekk på alle syv sider og ingen rasterbilder. Visuell PDF-side 5 og 7 stemmer med tekstbasert innhold.",
+      "evidence": [
+        "raw/browser-pages.json",
+        "raw/browser-layout.json",
+        "raw/pdf-inspection.json",
+        "screenshots/pdf-page-5.png",
+        "screenshots/pdf-page-7.png"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Vanlig informasjon presenteres som faktisk tekst der teknologien tillater det; tillatte bildeunntak er konkret begrunnet. OCR eller markerbar tekst alene beviser ikke at en skannet PDF har tilgjengelig struktur.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "1.4.10",
+      "title": "Dynamisk tilpasning (Reflow)",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#1410",
+      "source": "https://www.uutilsynet.no/wcag-standarden/1410-dynamisk-tilpasning-reflow-niva-aa/144",
+      "status": "partial",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "IAB; ingen faktisk skjermleser eller verifisert zoom"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "Dokumentert nettleserkapasitet og zoomsnarveiforsøk"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "60 responsive DOM-kontroller uten sidebredde-overflyt; pristabell kunne rulles lokalt ved 320 px. Faktisk 400 % zoom er ikke verifisert og holdes adskilt fra viewport-resultatet.",
+      "evidence": [
+        "raw/browser-pages.json",
+        "raw/browser-layout.json",
+        "raw/manual-interactions.json",
+        "raw/test-capabilities.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Innholdet flyter om uten tap av informasjon/betjening eller unødvendig rulling i to retninger. Unntak må kreve todimensjonal presentasjon. Viewport 320 alene registreres som responsiv deltest, ikke som faktisk zoom.",
+      "remaining": "Test 400 % med faktisk zoom, effektiv 320 CSS-px og alle kritiske forløp."
+    },
+    {
+      "criterion_id": "1.4.11",
+      "title": "Kontrast for ikke-tekstlig innhold",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#1411",
+      "source": "https://www.uutilsynet.no/wcag-standarden/1411-kontrast-ikke-tekstlig-innhold-niva-aa/145",
+      "status": "partial",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "De eksplisitt oppgitte fargeparene"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "Skillens sRGB-kontrastberegning"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Utvalgte kontrollfarger og tastaturfokus er undersøkt; filterkant med 50 % aksent ga 4,23:1. Alle grafiske objekter, PDF-figurer, gradienter og komponenttilstander er ikke ferdig vurdert.",
+      "evidence": [
+        "raw/contrast-supplement.json",
+        "raw/keyboard-pages.json",
+        "raw/manual-interactions.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Nødvendig ikke-tekstlig informasjon når minst 3:1 mot relevante tilstøtende farger. Det kreves ikke automatisk 3:1 mellom en kontrolls tidligere og nye tilstand; mål riktig relasjon.",
+      "remaining": "Mål nødvendige visuelle deler mot tilstøtende farger i alle relevante tilstander, inkludert PDF."
+    },
+    {
+      "criterion_id": "1.4.12",
+      "title": "Tekstavstand",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#1412",
+      "source": "https://www.uutilsynet.no/wcag-standarden/1412-tekstavstand-niva-aa/146",
+      "status": "partial",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "40 nye DOM-kontroller med alle fire tekstavstandsverdier viste ingen sidebredde-overflyt eller maskinelle klippekandidater. Utvalgte skjermbilder og stabil chat med feil ved 320 px er undersøkt. Ikke alle utfoldede pristilstander og dynamiske kombinasjoner er visuelt kontrollert. Test-CSS er fjernet med identisk originalhash.",
+      "evidence": [
+        "raw/text-spacing.json",
+        "raw/text-spacing-overrides.json",
+        "raw/manual-interactions.json",
+        "screenshots/spacing-chat-320.png",
+        "screenshots/spacing-pricing-320.png"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Brukeren kan øke de fire avstandene uten tap av innhold eller funksjon. Siden trenger ikke bruke disse verdiene som standard. Ingen sidebredde-overflyt alene er ikke nok til å utelukke klipping.",
+      "remaining": "Fullfør visuell kontroll av resterende dynamiske tilstander med overstyringen aktiv."
+    },
+    {
+      "criterion_id": "1.4.13",
+      "title": "Pekerfølsomt innhold eller innhold ved tastaturfokus",
+      "procedure": "testprosedyrer/wcag-1-oppfatte.md#1413",
+      "source": "https://www.uutilsynet.no/wcag-standarden/1413-pekerfolsomt-innhold-eller-innhold-ved-tastaturfokus-niva-aa/147",
+      "status": "no_applicable_content",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "Appens ts/tsx/css-kilder"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "Lokal rg/Python-kildekartlegging av src"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Ingen egendefinert hover-/fokusutløst ekstra informasjon funnet i appkoden eller det undersøkte grensesnittet. CSS-hover endrer utseende; detaljer åpnes ved aktivering. title-treffene i kildekartleggingen er sidekomponentegenskaper.",
+      "evidence": [
+        "raw/source-inventory.json",
+        "raw/browser-pages.json",
+        "raw/browser-layout.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Der vilkårene gjelder, kan innholdet avvises uten å flytte hover/fokus, pekeren kan føres over det, og det blir stående til utløsende tilstand avsluttes, bruker avviser eller informasjonen blir ugyldig.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "2.1.1",
+      "title": "Tastatur",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#211",
+      "source": "https://www.uutilsynet.no/wcag-standarden/211-tastatur-niva/98",
+      "status": "reviewed_no_findings_in_scope",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Hoppelenke, illustrasjon, katalogreset/filter, chatåpning/validering/innsending/lukking, seks prisdetaljer og tabellrulling er brukt med tastatur. 160 Tab-steg fordelt på 20 sider er registrert. Resultatet gjelder disse forløpene, ikke alle mulige kombinasjoner.",
+      "evidence": [
+        "raw/manual-interactions.json",
+        "raw/keyboard-pages.json",
+        "raw/pricing-expanded.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "All relevant funksjon er mulig gjennom tastaturgrensesnitt uten særskilt timing, eller har et likeverdig tastaturalternativ. Et klikk sendt av et automatiseringsverktøy teller ikke som tastaturtest.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "2.1.2",
+      "title": "Ingen tastaturfelle",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#212",
+      "source": "https://www.uutilsynet.no/wcag-standarden/212-ingen-tastaturfelle-niva/99",
+      "status": "reviewed_no_findings_in_scope",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Tab går ut av illustrasjonen til søk. Åtte Tab-steg i chat viser modal fokusløkke; Escape lukker og returnerer til åpneknappen. Ingen tastaturfelle funnet i de betjente forløpene.",
+      "evidence": ["raw/manual-interactions.json", "raw/keyboard-pages.json"],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Fokus kan forlate komponenten ved tastatur. En fungerende modal fokusløkke er ikke i seg selv en felle dersom dialogen kan lukkes og videre navigasjon er mulig.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "2.1.4",
+      "title": "Hurtigtaster som består av ett tegn",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#214",
+      "source": "https://www.uutilsynet.no/wcag-standarden/214-hurtigtaster-som-bestar-av-ett-tegn-niva/782",
+      "status": "no_applicable_content",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "Appens ts/tsx/css-kilder"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "Lokal rg/Python-kildekartlegging av src"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Ingen egne keydown-/keyup-håndterere eller enkelttast-snarveier funnet under src. Betjeningen som er prøvd bruker vanlige native kontrolltaster. Utviklingsverktøyets egne snarveier inngår ikke i produktet.",
+      "evidence": ["raw/source-inventory.json", "raw/manual-interactions.json"],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Hver relevant enkelttast-snarvei kan deaktiveres eller omkonfigureres, eller virker bare når den aktuelle komponenten har fokus. At ingen snarvei tilfeldigvis ble utløst beviser ikke fravær.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "2.2.1",
+      "title": "Justerbar hastighet",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#221",
+      "source": "https://www.uutilsynet.no/wcag-standarden/221-justerbar-hastighet-niva/100",
+      "status": "no_applicable_content",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "Appens ts/tsx/css-kilder"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "Lokal rg/Python-kildekartlegging av src"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Ingen brukerfrist eller sesjonsutløp funnet i den lokale lesetjenesten. Kildekartleggingen fant én klokke for prisalder; server-/modelltimeout er ikke en frist for å fullføre brukerens inndata.",
+      "evidence": [
+        "raw/source-inventory.json",
+        "raw/browser-pages.json",
+        "raw/browser-layout.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "En relevant tidsbegrensning kan håndteres gjennom en av kriteriets tillatte løsninger, eller et dokumentert unntak gjelder. Et varsel uten mulighet til reell forlengelse er ikke nok.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "2.2.2",
+      "title": "Pause, stopp, skjul",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#222",
+      "source": "https://www.uutilsynet.no/wcag-standarden/222-pause-stopp-skjul-niva/101",
+      "status": "partial",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "Appens ts/tsx/css-kilder"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "Lokal rg/Python-kildekartlegging av src"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Mellomrom pauser alle tre animerte deler; pause beholdes etter fokus flyttes, og Enter starter igjen. I tillegg fant kodegjennomgangen et automatisk prisaldervarsel som kan dukke opp når sju dager passeres. Denne oppdateringens relevans/betjening er ikke ferdig vurdert.",
+      "evidence": ["raw/manual-interactions.json", "raw/source-inventory.json"],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Relevant bevegelse over fem sekunder kan pauses, stoppes eller skjules; automatiske oppdateringer kan styres etter kriteriet. Redusert bevegelse kan supplere, men dokumenterer ikke alene all nødvendig brukerkontroll.",
+      "remaining": "Vurder og prøv prisaldervarselet ved terskelpassering; prøv også faktisk redusert-bevegelse-innstilling. Ingen nytt brudd er utledet bare av setInterval."
+    },
+    {
+      "criterion_id": "2.3.1",
+      "title": "Terskelverdi på maksimalt tre glimt",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#231",
+      "source": "https://www.uutilsynet.no/wcag-standarden/231-terskelverdi-pa-maksimalt-tre-glimt-niva/102",
+      "status": "reviewed_no_findings_in_scope",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "Appens ts/tsx/css-kilder"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "Lokal rg/Python-kildekartlegging av src"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Forsidebevegelse er observert og langsomme rotasjonsregler er inspisert. Ingen lyd/video eller hurtige lys-/fargeblink ble funnet i innholdsutvalget. Ingen luminansanalyse er påstått; ny blinkekandidat krever slik vurdering.",
+      "evidence": [
+        "raw/browser-pages.json",
+        "raw/browser-layout.json",
+        "raw/source-inventory.json",
+        "raw/manual-interactions.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Ingen risikofylt blinking forekommer, eller det er dokumentert at den holder seg innenfor relevante hyppighets-/glimtterskler. Pausemulighet alene opphever ikke dette kravet. Mer enn tre glimt krever vurdering av de normative tersklene.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "2.4.1",
+      "title": "Hoppe over blokker",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#241",
+      "source": "https://www.uutilsynet.no/wcag-standarden/241-hoppe-over-blokker-niva/103",
+      "status": "reviewed_no_findings_in_scope",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Enter på Hopp til innhold satte aktivt element til MAIN#innhold. Hoppelenken er også brukt før fokussekvensene på alle 20 sider.",
+      "evidence": ["raw/manual-interactions.json", "raw/keyboard-pages.json"],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Det finnes en fungerende måte å hoppe forbi gjentatt innhold. En visuelt riktig ankerlenke som etterlater tastaturbrukeren øverst gir ikke tilstrekkelig bevis.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "2.4.2",
+      "title": "Sidetitler",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#242",
+      "source": "https://www.uutilsynet.no/wcag-standarden/242-sidetitler-niva/104",
+      "status": "reviewed_no_findings_in_scope",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "PDF-sider/struktur spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "pypdf 6.10.0, pdfplumber 0.11.9 og relevante Poppler/PIL-delkontroller"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "20 sider har beskrivende dokumenttitler. PDF-tittelen er norsk og beskrivende i både Info og XMP, med DisplayDocTitle=true. Tidligere tittelretting er bekreftet på nytt.",
+      "evidence": [
+        "raw/browser-pages.json",
+        "raw/browser-layout.json",
+        "raw/pdf-inspection.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Korrekt kodet tittel beskriver sidens eller dokumentets formål. Et generisk produktnavn alene er utilstrekkelig når sidens egen oppgave ikke fremgår.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "2.4.3",
+      "title": "Fokusrekkefølge",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#243",
+      "source": "https://www.uutilsynet.no/wcag-standarden/243-fokusrekkefolge-niva/105",
+      "status": "partial",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "IAB; ingen faktisk skjermleser eller verifisert zoom"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "Dokumentert nettleserkapasitet og zoomsnarveiforsøk"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "160 Tab-steg på 20 sider og modal fokus-/returflyt er registrert uten nytt bekreftet avvik. Alle forløp ved faktisk zoom og hjelpemiddelbruk er ikke gjennomført.",
+      "evidence": [
+        "raw/keyboard-pages.json",
+        "raw/manual-interactions.json",
+        "raw/test-capabilities.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Fokusrekkefølgen bevarer mening og gjør oppgaven mulig. Mer enn én logisk rekkefølge kan være gyldig; den trenger ikke følge hver piksel i det visuelle oppsettet.",
+      "remaining": "Fullfør kritiske sekvenser ved faktisk forstørring og med hjelpemiddel, inkludert dynamiske resultater."
+    },
+    {
+      "criterion_id": "2.4.4",
+      "title": "Formål med lenke (i kontekst)",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#244",
+      "source": "https://www.uutilsynet.no/wcag-standarden/244-formal-med-lenke-i-kontekst-niva/106",
+      "status": "reviewed_no_findings_in_scope",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Hovedmeny, bunntekst, nettstedskart, ressurslenker og chatkilder er gjennomgått i kontekst. Prislenker har tilhørende seksjonsoverskrift og PDF-vedlegget har beskrivende navn. Ingen bekreftet misvisende lenke i utvalget.",
+      "evidence": [
+        "raw/browser-pages.json",
+        "raw/browser-layout.json",
+        "raw/sitemap-links.json",
+        "raw/pricing-expanded.json",
+        "raw/manual-interactions.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Brukeren kan forstå lenkens formål fra teksten alene eller tillatt programmatisk kontekst. En tilfeldig tekst et annet sted på siden er ikke nødvendigvis lenkekontekst.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "2.4.5",
+      "title": "Flere måter",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#245",
+      "source": "https://www.uutilsynet.no/wcag-standarden/245-flere-mater-niva-aa/107",
+      "status": "reviewed_no_findings_in_scope",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "23 HTML-eksportfiler"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "Skillens statiske HTML-grunnkontroll"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Felles navigasjon/katalog/oversiktslenker og nettstedskart gir alternative veier til de registrerte sidene. Sidemål i eksporten er kontrollert, og de 20 rutene er åpnet i nettleser.",
+      "evidence": [
+        "raw/sitemap-links.json",
+        "raw/browser-pages.json",
+        "raw/browser-layout.json",
+        "raw/html-01.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Minst to fungerende måter gjør relevante sider i settet gjenfinnbare. To lenker med samme rute er ikke automatisk to forskjellige navigasjonsmåter; prosessunntak vurderes konkret.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "2.4.6",
+      "title": "Overskrifter og ledetekster",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#246",
+      "source": "https://www.uutilsynet.no/wcag-standarden/246-overskrifter-og-ledetekster-niva-aa/108",
+      "status": "reviewed_no_findings_in_scope",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "PDF-sider/struktur spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "pypdf 6.10.0, pdfplumber 0.11.9 og relevante Poppler/PIL-delkontroller"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Overskriftsordlyd og feltetiketter i 20 sider er gjennomgått; navn beskriver tema/oppgave. Prisseksjoner har forklarende tabelltekster. PDF-hovedoverskriftene beskriver tilhørende sider. Dette vurderer ordlyd, ikke full PDF-gruppering.",
+      "evidence": [
+        "raw/browser-pages.json",
+        "raw/browser-layout.json",
+        "raw/pdf-inspection.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Overskrifter og etiketter som finnes gir en relevant og forståelig beskrivelse av tema eller formål. Kriteriet innfører ikke alene krav om at enhver tekstblokk må ha en overskrift.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "2.4.7",
+      "title": "Synlig fokus",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#247",
+      "source": "https://www.uutilsynet.no/wcag-standarden/247-synlig-fokus-niva-aa/109",
+      "status": "partial",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Illustrasjon/tabell og chatknapper har synlig fokus i målte tilstander; 160 steg inneholder outline-observasjoner. MUI-felt bruker feltkant og tekstmarkør. Full visuell vurdering av alle flater, faktisk zoom og hjelpemiddeltilstander mangler.",
+      "evidence": [
+        "raw/keyboard-pages.json",
+        "raw/manual-interactions.json",
+        "screenshots/spacing-chat-320.png"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Brukeren kan se hvilket element som har tastaturfokus. Ikke gjør et bestemt pikselmål eller WCAG 2.2s strengere fokuskrav til en automatisk del av denne 48-punktslisten; vurder kontrast separat der relevant.",
+      "remaining": "Prøv alle representative kontrolltyper visuelt ved faktisk forstørring og ulike flater."
+    },
+    {
+      "criterion_id": "2.5.1",
+      "title": "Pekerbevegelse",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#251",
+      "source": "https://www.uutilsynet.no/wcag-standarden/251-pekerbevegelser-niva/148",
+      "status": "no_applicable_content",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "Appens ts/tsx/css-kilder"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "Lokal rg/Python-kildekartlegging av src"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Ingen appfunksjon med flerfinger- eller stibasert bevegelse funnet i koden eller det undersøkte grensesnittet. Funksjonene bruker lenker, knapper, felt og native rulling. Dette er en kartlegging av fravær av utløsende funksjon.",
+      "evidence": [
+        "raw/source-inventory.json",
+        "raw/browser-pages.json",
+        "raw/browser-layout.json",
+        "raw/gesture-inventory.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "De aktuelle funksjonene har en likeverdig enkel pekerhandling, med mindre gesten er nødvendig. Tastaturalternativ alene beviser ikke et enkeltpekeralternativ.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "2.5.2",
+      "title": "Pekeravbrytelse",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#252",
+      "source": "https://www.uutilsynet.no/wcag-standarden/252-pekeravbrytelse-niva/149",
+      "status": "reviewed_no_findings_in_scope",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "Appens ts/tsx/css-kilder"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "Lokal rg/Python-kildekartlegging av src"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Fra eksplisitt nullstilt filter ga nedtrykk og slipp utenfor Skill-knappen ingen aktivering (false→false); vanlig klikk aktiverte filteret (true). Koden bruker onClick og ingen egne down-håndterere. Første forsøk uten nullstilt starttilstand er merket utilstrekkelig som bevis.",
+      "evidence": ["raw/manual-interactions.json", "raw/source-inventory.json"],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "En tillatt mekanisme forebygger feilaktivering: handling først ved slipp med avbrytelse/angre, reversering av nedtrykk ved slipp, eller et dokumentert nødvendig nedtrykk. Hendelsesnavn alene avgjør ikke resultatet.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "2.5.3",
+      "title": "Ledetekst i navn",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#253",
+      "source": "https://www.uutilsynet.no/wcag-standarden/253-ledetekst-i-navn-niva/150",
+      "status": "reviewed_no_findings_in_scope",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Synlige kontrolltekster i testede søk/filtre/chat/prisdetaljer samsvarer med identifikasjonen i nettlesertreet. Ikonknapper uten synlig tekst har navn. Stemmestyring er ikke testet, og resultatet gjelder navnesammenligningen.",
+      "evidence": [
+        "raw/browser-pages.json",
+        "raw/browser-layout.json",
+        "raw/manual-interactions.json",
+        "raw/pricing-expanded.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Det tilgjengelige navnet inneholder den synlige etikettens tekst etter kriteriets regler. Navnet kan gi ekstra kontekst; en ikonknapp uten synlig tekst vurderes ellers under 4.1.2.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "2.5.4",
+      "title": "Bevegelsesaktivering",
+      "procedure": "testprosedyrer/wcag-2-betjene.md#254",
+      "source": "https://www.uutilsynet.no/wcag-standarden/254-bevegelsesaktivering-niva/151",
+      "status": "no_applicable_content",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "Appens ts/tsx/css-kilder"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "Lokal rg/Python-kildekartlegging av src"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Ingen bevegelses-/gyroskop-/orienteringsutløst appfunksjon funnet i src eller det undersøkte grensesnittet. Det finnes ingen slik aktivering å slå av i denne lokale versjonen.",
+      "evidence": [
+        "raw/source-inventory.json",
+        "raw/browser-pages.json",
+        "raw/browser-layout.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Relevante bevegelser har både et grensesnittalternativ og en måte å hindre bevegelsesaktivering på, med de avgrensede unntakene i kriteriet.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "3.1.1",
+      "title": "Språk på siden",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#311",
+      "source": "https://www.uutilsynet.no/wcag-standarden/311-sprak-pa-siden-niva/110",
+      "status": "partial",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "PDF-sider/struktur spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "pypdf 6.10.0, pdfplumber 0.11.9 og relevante Poppler/PIL-delkontroller"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Alle 20 HTML-sider har lang=nb. PDF-katalogens standard er en, mens tekstspenn har nb; samspillet med ActualText og faktisk PDF-opplesing er ikke ferdig vurdert. Dette er ikke erklært som et nytt språkbrudd alene.",
+      "evidence": [
+        "raw/browser-pages.json",
+        "raw/browser-layout.json",
+        "raw/pdf-inspection.json",
+        "raw/pdf-language.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Dokumentets hovedspråk kan bestemmes programmatisk og samsvarer med innholdet. Gyldig merking for bokmål/nynorsk vurderes etter språkstandard og kilde; tilstedeværelse av et vilkårlig lang-attributt er ikke nok.",
+      "remaining": "Avklar PDF-ens effektive hovedspråk og prøv opplesing med aktuell PDF-leser/skjermleser."
+    },
+    {
+      "criterion_id": "3.1.2",
+      "title": "Språk på deler av innhold",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#312",
+      "source": "https://www.uutilsynet.no/wcag-standarden/312-sprak-pa-deler-av-innhold-niva-aa/111",
+      "status": "partial",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "PDF-sider/struktur spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "pypdf 6.10.0, pdfplumber 0.11.9 og relevante Poppler/PIL-delkontroller"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Alle seks utfoldede prisvilkår er lest tilbake, og tidligere engelske vilkårssetninger er fortsatt norske. PDF-ens tekstalternativer og arvede språk er ikke fullstendig vurdert. Egennavn og etablerte termer er ikke automatisk brudd.",
+      "evidence": [
+        "raw/pricing-expanded.json",
+        "raw/pdf-inspection.json",
+        "raw/pdf-language.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Relevante språkpassasjer har riktig, programmatisk bestemt språk. Dokumentert unntak for enkeltord/termer er mulig. Språkdeteksjon alene avgjør ikke semantiske unntak.",
+      "remaining": "Fullfør språk-/alternativgjennomgang av PDF-en og faktisk opplesing der nødvendig. A11Y-01 forblir rettet i sitt opprinnelige omfang."
+    },
+    {
+      "criterion_id": "3.2.1",
+      "title": "Fokus",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#321",
+      "source": "https://www.uutilsynet.no/wcag-standarden/321-fokus-niva/112",
+      "status": "reviewed_no_findings_in_scope",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Fokussekvenser på 20 sider er gjennomført uten aktivering og uten observert uventet navigasjon eller innsending. Dialog/andre endringer er utløst ved bevisst handling.",
+      "evidence": ["raw/keyboard-pages.json", "raw/manual-interactions.json"],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Fokus alene utløser ikke en uventet kontekstendring. Et lite verktøytips eller en lokal beskrivelse er ikke automatisk det samme som en ny kontekst.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "3.2.2",
+      "title": "Inndata",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#322",
+      "source": "https://www.uutilsynet.no/wcag-standarden/322-inndata-niva/114",
+      "status": "reviewed_no_findings_in_scope",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Søk og valg av filter endrer lokal ressursliste, uten å navigere eller flytte fokus til en annen kontekst. Chatvalidering skjer ved innsending. Ingen uvarslet kontekstendring observert i disse inndataforløpene.",
+      "evidence": ["raw/manual-interactions.json", "raw/keyboard-pages.json"],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Verdiendring gir ikke automatisk kontekstendring uten forhåndsinformasjon. En oppdatering av et resultatfelt er ikke alltid en kontekstendring, men kan kreve statusmelding etter 4.1.3.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "3.2.3",
+      "title": "Konsekvent navigering",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#323",
+      "source": "https://www.uutilsynet.no/wcag-standarden/323-konsekvent-navigering-niva-aa/113",
+      "status": "reviewed_no_findings_in_scope",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Hovedmeny og informasjonsnavigasjon har konsistent relativ rekkefølge på alle 20 sider i DOM-kartleggingen. Mobilvisning bryter linjer, men endrer ikke hovedrekkefølgen.",
+      "evidence": ["raw/browser-pages.json", "raw/browser-layout.json"],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Gjentatte navigasjonselementer beholder sin relative rekkefølge, med tillatte brukerinitierte endringer. Lik posisjon i absolutt antall piksler er ikke et krav.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "3.2.4",
+      "title": "Konsekvent identifikasjon",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#324",
+      "source": "https://www.uutilsynet.no/wcag-standarden/324-konsekvent-identifikasjon-niva-aa/115",
+      "status": "reviewed_no_findings_in_scope",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Felles komponenter bruker samme navn for like funksjoner: chatåpning/lukking, menylenker, ressurstyper og prisdetaljer. Ingen bekreftet inkonsekvent identifikasjon funnet i sammenlignet utvalg.",
+      "evidence": [
+        "raw/browser-pages.json",
+        "raw/browser-layout.json",
+        "raw/manual-interactions.json",
+        "raw/pricing-expanded.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Tilsvarende funksjoner identifiseres konsekvent slik at brukeren gjenkjenner dem, både visuelt og via hjelpemidler. Identisk grafikk bør ikke gi skjult forskjellig funksjon.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "3.3.1",
+      "title": "Identifikasjon av feil",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#331",
+      "source": "https://www.uutilsynet.no/wcag-standarden/331-identifikasjon-av-feil-niva/116",
+      "status": "reviewed_no_findings_in_scope",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Tom chat og to tegn viste norsk tekst som identifiserer ugyldig spørsmålslengde; feltet hadde aria-invalid og kobling til feilen. Retting til et normalt testspørsmål gjorde innsending mulig.",
+      "evidence": [
+        "raw/manual-interactions.json",
+        "screenshots/spacing-chat-320.png"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Automatisk avdekkede inndatafeil er forståelig beskrevet i tekst, og berørt felt er identifisert. Farge, ikon eller deaktivert knapp alene er ikke en tilstrekkelig feilbeskrivelse.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "3.3.2",
+      "title": "Ledetekster eller instruksjoner",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#332",
+      "source": "https://www.uutilsynet.no/wcag-standarden/332-ledetekster-eller-instruksjoner-niva/117",
+      "status": "reviewed_no_findings_in_scope",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Alle synlige felt på 20 sider hadde påvist etikett i DOM-kartleggingen. Spørsmålsfeltet viser instruksjon om personopplysninger; feilsituasjonen forklarer lengde. Skjult MUI-målefelt er utelatt fra synlige felt.",
+      "evidence": [
+        "raw/browser-pages.json",
+        "raw/browser-layout.json",
+        "raw/manual-interactions.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Brukeren får tilstrekkelig og synlig veiledning til å oppgi riktig informasjon. Kun et skjult aria-label løser ikke nødvendigvis dette synlige informasjonskravet; kodet etikett vurderes også under 1.3.1/4.1.2.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "3.3.3",
+      "title": "Forslag ved feil",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#333",
+      "source": "https://www.uutilsynet.no/wcag-standarden/333-forslag-ved-feil-niva-aa/118",
+      "status": "reviewed_no_findings_in_scope",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Validering oppgir 3–1000 tegn. Et korrigert testspørsmål ble akseptert og ga kildebasert veiledning. Ingen treff i katalogen gir forslag om annet søkeord og fungerende nullstilling.",
+      "evidence": ["raw/manual-interactions.json"],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Kjent og trygg hjelp til å rette feilen blir gitt og virker i praksis. «Ugyldig verdi» alene gir normalt ikke nok hjelp når riktig format eller område er kjent.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "3.3.4",
+      "title": "Forhindring av feil (juridiske feil, økonomiske feil, datafeil)",
+      "procedure": "testprosedyrer/wcag-3-forstaelig.md#334",
+      "source": "https://www.uutilsynet.no/wcag-standarden/334-forhindring-av-feil-juridiske-feil-okonomiske-feil-datafeil-niva-aa/119",
+      "status": "no_applicable_content",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "Appens ts/tsx/css-kilder"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "Lokal rg/Python-kildekartlegging av src"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Ingen kjøp, juridisk forpliktelse, varig endring/sletting av brukerdata eller innlevering av testsvar funnet i portalens brukerforløp. RAG-spørsmål er lesing med lokal samtaletilstand; eksterne nettsteders handlinger inngår ikke i denne erklæringen.",
+      "evidence": [
+        "raw/source-inventory.json",
+        "raw/browser-pages.json",
+        "raw/browser-layout.json",
+        "raw/manual-interactions.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Minst én av de tre tillatte feilforebyggende løsningene beskytter hver relevant prosess. Ingen av dem krever at agenten utfører en reell irreversibel handling uten særskilt autorisasjon.",
+      "remaining": ""
+    },
+    {
+      "criterion_id": "4.1.1",
+      "title": "Parsing (oppdeling)",
+      "procedure": "testprosedyrer/wcag-4-robust.md#411",
+      "source": "https://www.uutilsynet.no/wcag-standarden/411-parsing-oppdeling-niva/120",
+      "status": "partial",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "23 HTML-eksportfiler",
+        "IAB; ingen faktisk skjermleser eller verifisert zoom"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "Skillens statiske HTML-grunnkontroll",
+        "Dokumentert nettleserkapasitet og zoomsnarveiforsøk"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "23 HTML-eksportfiler ga ingen kandidater i skillens grunnkontroll; 60 DOM-kontroller fant ingen dupliserte ID-er. Ingen full lokal HTML-validator er tilgjengelig, så relevant nøsting/start-/sluttagger og dupliserte attributter er ikke komplett validert.",
+      "evidence": [
+        "raw/html-01.json",
+        "raw/browser-pages.json",
+        "raw/browser-layout.json",
+        "raw/test-capabilities.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Ingen relevante syntaksfeil i disse kategoriene, med spesifikasjonens tillatte tilfeller hensyntatt. Kriteriet er med i den aktuelle norske malen selv om WCAG 2.2 fjernet det; det skal ikke stilletiende utelates.",
+      "remaining": "Kjør lokal HTML-validator og vurder de kriterierelevante syntaksfeilene; ikke last opp intern HTML uten autorisasjon."
+    },
+    {
+      "criterion_id": "4.1.2",
+      "title": "Navn, rolle, verdi",
+      "procedure": "testprosedyrer/wcag-4-robust.md#412",
+      "source": "https://www.uutilsynet.no/wcag-standarden/412-navn-rolle-verdi-niva/121",
+      "status": "partial",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Kontrollnavn, roller og tilstandsendringer er observert i DOM/AX og ved faktisk tastaturbruk. Dialog, feltfeil, filter og pauseknapp endrer tilstander. Faktisk skjermleserbruk er ikke gjennomført.",
+      "evidence": [
+        "raw/browser-pages.json",
+        "raw/browser-layout.json",
+        "raw/manual-interactions.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Komponentens navn og rolle kan bestemmes programmatisk; brukerendrede verdier/tilstander er tilgjengelige og endringer kan formidles til brukeragenten. Native HTML er støtte, ikke automatisk full godkjenning.",
+      "remaining": "Prøv kontrolltypene med faktisk skjermleser og dokumenter navn, rolle, verdi og oppdatering."
+    },
+    {
+      "criterion_id": "4.1.3",
+      "title": "Statusbeskjeder",
+      "procedure": "testprosedyrer/wcag-4-robust.md#413",
+      "source": "https://www.uutilsynet.no/wcag-standarden/413-statusbeskjeder-niva-aa/152",
+      "status": "partial",
+      "scope": [
+        "20 HTML-sider og/eller brukerforløpene spesifisert i faktisk resultat",
+        "IAB; ingen faktisk skjermleser eller verifisert zoom"
+      ],
+      "tools_used": [
+        "CUA / ChatGPT in-app browser, DOM og dokumentert tastatur-/pekerbruk",
+        "Dokumentert nettleserkapasitet og zoomsnarveiforsøk"
+      ],
+      "tested_at": "2026-11-09",
+      "actual_result": "Resultattall har aria-live, chat har role=log/live og validering har alert. Lasting og et kildebasert svar er observert i nettleseren. Ingen faktisk opplesing av meldingene er verifisert.",
+      "evidence": [
+        "raw/manual-interactions.json",
+        "raw/test-capabilities.json"
+      ],
+      "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+      "expected_result": "Relevante statusbeskjeder kan bestemmes programmatisk og presenteres av hjelpemiddelet uten å motta fokus. En tekst i DOM eller et aria-live-attributt uten faktisk funksjon er bare delbevis.",
+      "remaining": "Prøv søkeresultat, null treff, validering, venting og chatresultat med faktisk skjermleser uten uønsket fokusflytting."
+    }
+  ],
+  "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
+  "assessment_counts": {
+    "U": 15,
+    "I": 11,
+    "B": 2,
+    "K": 20
+  }
+}

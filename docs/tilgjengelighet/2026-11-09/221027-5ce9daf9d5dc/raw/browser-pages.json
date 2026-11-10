@@ -1,0 +1,2861 @@
+[
+  {
+    "route": "/",
+    "duplicateIds": [],
+    "fields": [
+      {
+        "autocomplete": null,
+        "id": "resource-search",
+        "label": "Finn en ressurs",
+        "tag": "INPUT",
+        "type": "search"
+      }
+    ],
+    "h1": [
+      "Utvikle ideer.Bygg med KI."
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Utvikle ideer.Bygg med KI."
+      },
+      {
+        "tag": "H2",
+        "text": "Finn en ressurs"
+      },
+      {
+        "tag": "H3",
+        "text": "Test tilgjengelighet og utform erklæring"
+      },
+      {
+        "tag": "H3",
+        "text": "Kartlegg personvern og utform erklæring"
+      },
+      {
+        "tag": "H3",
+        "text": "Gjennomgå en kodeendring"
+      },
+      {
+        "tag": "H3",
+        "text": "Gi KI tydelig kontekst"
+      },
+      {
+        "tag": "H3",
+        "text": "Utforsk et brukerbehov"
+      },
+      {
+        "tag": "H2",
+        "text": "Utforsk et brukerbehov"
+      },
+      {
+        "tag": "H2",
+        "text": "Spør kunnskapsbasen"
+      }
+    ],
+    "height": 900,
+    "images": [],
+    "lang": "nb",
+    "mainCount": 1,
+    "mainText": "Spør KI\nKUNNSKAP SOM BLIR TIL PRAKSIS\nUtvikle ideer.\nBygg med KI.\n\nEt felles sted for kunnskap, metoder og verktøy. Utforsk hvordan kunstig intelligens kan støtte god produktutvikling.\n\nKom i gang\n↗\nUtforsk ressursene\n↓\nRESSURSKATALOG\nFinn en ressurs\n\nSkills, instruksjoner og prompter som hjelper deg å bruke KI i produktutviklingen.\n\nFinn en ressurs\n​\nRessurstype\nAlle\nSkill\nInstruks\nPrompt\n\n5 ressurser\n\nSkill\nBeta\nEnnå ikke gjennomgått av et menneske\nTest tilgjengelighet og utform erklæring\n\nTest tilgjengeligheten, lagre resultatene i prosjektet og få oppdaterte rapporter, rettingsforslag og tilgjengelighetserklæring basert på funnene.\n\nSe skill\n↗\nSkill\nBeta\nEnnå ikke gjennomgått av et menneske\nKartlegg personvern og utform erklæring\n\nKartlegg faktisk databehandling, lagre vurderingsgrunnlaget i prosjektet og opprett eller oppdater personvernerklæringen med tydelige uavklarte forhold.\n\nSe skill\n↗\nSkill\nBeta\nEnnå ikke gjennomgått av et menneske\nGjennomgå en kodeendring\n\nEt utgangspunkt for strukturert gjennomgang av kvalitet, feilscenarier og tester.\n\nSe skill\n↗\nInstruks\nEksempel\nGi KI tydelig kontekst\n\nBeskriv mål, rammer og forventet resultat før du starter en oppgave.\n\nLes instruksen\n↗\nPrompt\nEksempel\nUtforsk et brukerbehov\n\nBeskriv en situasjon du vil forstå bedre. Få forslag til åpne intervjuspørsmål, og vurder hvilke dere vil prøve med brukere.\n\nSe prompten\n↗\n01 / LÆR\nKom i gang med KI\n→\n02 / PRØV\nFinn en ressurs til oppgaven\n→\n03 / DEL\nDel erfaringer i KI-prat\n→\nPRØV I PRAKSIS\nUtforsk et brukerbehov\n\nBeskriv en situasjon du vil forstå bedre. Få forslag til åpne intervjuspørsmål, og vurder hvilke dere vil prøve med brukere.\n\nSe oppgaven\n→",
+    "media": [],
+    "navigation": [
+      {
+        "links": [
+          {
+            "href": "/kom-i-gang",
+            "text": "Kom i gang"
+          },
+          {
+            "href": "/retningslinjer",
+            "text": "Retningslinjer"
+          },
+          {
+            "href": "/#ressurser",
+            "text": "Ressurskatalog"
+          },
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/spor",
+            "text": "Spør KI"
+          },
+          {
+            "href": "/om",
+            "text": "Om"
+          }
+        ],
+        "name": "Hovedmeny"
+      },
+      {
+        "links": [
+          {
+            "href": "/kom-i-gang",
+            "text": "01 / LÆRKom i gang med KI →"
+          },
+          {
+            "href": "/#ressurser",
+            "text": "02 / PRØVFinn en ressurs til oppgaven →"
+          },
+          {
+            "href": "/om#ki-prat",
+            "text": "03 / DELDel erfaringer i KI-prat →"
+          }
+        ],
+        "name": "Lær, prøv og del"
+      },
+      {
+        "links": [
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/personvern",
+            "text": "Personvernerklæring"
+          },
+          {
+            "href": "/tilgjengelighet",
+            "text": "Tilgjengelighetserklæring"
+          },
+          {
+            "href": "/nettstedskart",
+            "text": "Nettstedskart"
+          },
+          {
+            "href": "/versjonslogg",
+            "text": "Versjonslogg"
+          },
+          {
+            "href": "/utviklingsplan",
+            "text": "Utviklingsplan"
+          },
+          {
+            "href": "/funksjonalitet",
+            "text": "Funksjonalitetsoversikt"
+          }
+        ],
+        "name": "Informasjon om nettstedet"
+      }
+    ],
+    "scrollWidth": 1280,
+    "tables": [],
+    "title": "KI-Produktutvikling",
+    "width": 1280
+  },
+  {
+    "route": "/kom-i-gang/",
+    "duplicateIds": [],
+    "fields": [],
+    "h1": [
+      "Kom i gang med KI i produktutvikling"
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Kom i gang med KI i produktutvikling"
+      },
+      {
+        "tag": "H2",
+        "text": "1. Velg en avgrenset oppgave"
+      },
+      {
+        "tag": "H2",
+        "text": "2. Beskriv konteksten"
+      },
+      {
+        "tag": "H2",
+        "text": "3. Vurder forslagene"
+      },
+      {
+        "tag": "H2",
+        "text": "4. Del erfaringene"
+      }
+    ],
+    "height": 900,
+    "images": [],
+    "lang": "nb",
+    "mainCount": 1,
+    "mainText": "← Til forsiden\nVEILEDNING · EKSEMPELINNHOLD\nKom i gang med KI i produktutvikling\n\nBegynn med én oppgave, et tydelig mål og tid til å vurdere resultatet.\n\nFør du begynner: Les retningslinjene for bruk av KI og avklar hvilke verktøy og data du kan bruke. Retningslinjesiden er et arbeidsutkast; virksomhetens gjeldende regler og godkjenninger gjelder.\n1. Velg en avgrenset oppgave\n\nPrøv for eksempel å utforske et brukerbehov, forbedre en tekst eller foreslå testtilfeller for kode du kjenner. Bruk verktøy og data virksomheten har godkjent.\n\n2. Beskriv konteksten\n\nForklar hva dere vil oppnå, hvilke rammer som gjelder og hvordan et godt resultat ser ut. Del bare informasjon verktøyet har lov til å behandle.\n\n3. Vurder forslagene\n\nSjekk fakta, antakelser og kode. Den som bruker forslaget, har ansvar for å forstå og kvalitetssikre det.\n\n4. Del erfaringene\n\nDokumenter hva som hjalp og hva dere måtte endre. Gode arbeidsmåter kan etter hvert bli til felles skills, instrukser og prompter.\n\nRessursene i denne lokale prototypen er eksempler. Innlogging, interne ressurser og installasjon kommer i senere faser.",
+    "media": [],
+    "navigation": [
+      {
+        "links": [
+          {
+            "href": "/kom-i-gang",
+            "text": "Kom i gang"
+          },
+          {
+            "href": "/retningslinjer",
+            "text": "Retningslinjer"
+          },
+          {
+            "href": "/#ressurser",
+            "text": "Ressurskatalog"
+          },
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/spor",
+            "text": "Spør KI"
+          },
+          {
+            "href": "/om",
+            "text": "Om"
+          }
+        ],
+        "name": "Hovedmeny"
+      },
+      {
+        "links": [
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/personvern",
+            "text": "Personvernerklæring"
+          },
+          {
+            "href": "/tilgjengelighet",
+            "text": "Tilgjengelighetserklæring"
+          },
+          {
+            "href": "/nettstedskart",
+            "text": "Nettstedskart"
+          },
+          {
+            "href": "/versjonslogg",
+            "text": "Versjonslogg"
+          },
+          {
+            "href": "/utviklingsplan",
+            "text": "Utviklingsplan"
+          },
+          {
+            "href": "/funksjonalitet",
+            "text": "Funksjonalitetsoversikt"
+          }
+        ],
+        "name": "Informasjon om nettstedet"
+      }
+    ],
+    "scrollWidth": 1280,
+    "tables": [],
+    "title": "Kom i gang | KI-Produktutvikling",
+    "width": 1280
+  },
+  {
+    "route": "/retningslinjer/",
+    "duplicateIds": [],
+    "fields": [],
+    "h1": [
+      "Trygge rammer for å jobbe med KI"
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Trygge rammer for å jobbe med KI"
+      },
+      {
+        "tag": "H2",
+        "text": "Verktøy og tilgang"
+      },
+      {
+        "tag": "H2",
+        "text": "Analogt og digitalt arkivmateriale"
+      },
+      {
+        "tag": "H2",
+        "text": "Kvalitet og menneskelig gjennomgang"
+      },
+      {
+        "tag": "H2",
+        "text": "Agenter, skills og integrasjoner"
+      },
+      {
+        "tag": "H2",
+        "text": "Avklaringer før ferdigstilling"
+      },
+      {
+        "tag": "H2",
+        "text": "Del erfaringer og spørsmål"
+      },
+      {
+        "tag": "H2",
+        "text": "Inspirasjon og status"
+      }
+    ],
+    "height": 900,
+    "images": [],
+    "lang": "nb",
+    "mainCount": 1,
+    "mainText": "← Til forsiden\nRETNINGSLINJER · UTKAST\nTrygge rammer for å jobbe med KI\n\nFor deg som jobber med produktutvikling i Nasjonalarkivet og vil bruke KI til å utforske, lære og løse oppgaver.\n\nDette er et arbeidsutkast til veiledning, ikke vedtatte retningslinjer for Nasjonalarkivet. Virksomhetens gjeldende regler og godkjenninger gjelder. Verktøy, databruk og ansvar må avklares før denne siden kan brukes som en autoritativ føring.\nVerktøy og tilgang\n\nAvklar hvilket verktøy og hvilken konto som er godkjent for oppgaven. At et verktøy finnes i portalen, betyr ikke at det er godkjent for intern informasjon. Se Godkjente KI-assistenter for assistentene som er godkjent. Tillatte datatyper, modeller, kontoer og lisenser er ikke spesifisert i oversikten.\n\nAnalogt og digitalt arkivmateriale\n\nVurder innholdet før du bruker arkivmateriale i en KI-tjeneste. Det gjelder også skannede dokumenter, bilder, metadata og tekst fra OCR. Avklar hvilken informasjon tjenesten kan behandle, og bruk syntetiske eksempler når reelt materiale ikke er avklart.\n\nKvalitet og menneskelig gjennomgang\n\nKontroller fakta, kode og antakelser før forslag tas i bruk. Velg relevante tester og la en annen fagperson gjennomgå viktige endringer. KI-forslag trenger samme kvalitetssikring som annet arbeid.\n\nAgenter, skills og integrasjoner\n\nSe Godkjente MCP-er for status på integrasjoner og pågående vurderinger. Undersøk hvilke filer, tjenester og handlinger en agent får tilgang til. Gi bare tilgangen oppgaven krever, og gjennomgå endringer før sammenslåing eller publisering. Skills merket «Beta» i portalen er ennå ikke gjennomgått av et menneske.\n\nAvklaringer før ferdigstilling\nHvem eier og godkjenner retningslinjene?\nHvilke verktøy og datakategorier er godkjent, og til hvilke oppgaver?\nHvor meldes spørsmål, avvik og behov for tilgang?\nNår skal innholdet gjennomgås på nytt?\nDel erfaringer og spørsmål\n\nBruk KI-prat til erfaringsdeling og diskusjon. Forumet erstatter ikke virksomhetens godkjenningsprosesser. Se også Kom i gang for en praktisk introduksjon.\n\nInspirasjon og status\n\nOppbygningen er inspirert av NAVs retningslinjeside. NAVs verktøygodkjenninger og abonnementsregler gjelder ikke automatisk hos oss. Utkastet er sist oppdatert 9. november 2026.",
+    "media": [],
+    "navigation": [
+      {
+        "links": [
+          {
+            "href": "/kom-i-gang",
+            "text": "Kom i gang"
+          },
+          {
+            "href": "/retningslinjer",
+            "text": "Retningslinjer"
+          },
+          {
+            "href": "/#ressurser",
+            "text": "Ressurskatalog"
+          },
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/spor",
+            "text": "Spør KI"
+          },
+          {
+            "href": "/om",
+            "text": "Om"
+          }
+        ],
+        "name": "Hovedmeny"
+      },
+      {
+        "links": [
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/personvern",
+            "text": "Personvernerklæring"
+          },
+          {
+            "href": "/tilgjengelighet",
+            "text": "Tilgjengelighetserklæring"
+          },
+          {
+            "href": "/nettstedskart",
+            "text": "Nettstedskart"
+          },
+          {
+            "href": "/versjonslogg",
+            "text": "Versjonslogg"
+          },
+          {
+            "href": "/utviklingsplan",
+            "text": "Utviklingsplan"
+          },
+          {
+            "href": "/funksjonalitet",
+            "text": "Funksjonalitetsoversikt"
+          }
+        ],
+        "name": "Informasjon om nettstedet"
+      }
+    ],
+    "scrollWidth": 1280,
+    "tables": [],
+    "title": "Retningslinjer | KI-Produktutvikling",
+    "width": 1280
+  },
+  {
+    "route": "/om/",
+    "duplicateIds": [],
+    "fields": [],
+    "h1": [
+      "Kunnskap som hjelper i praksis"
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Kunnskap som hjelper i praksis"
+      },
+      {
+        "tag": "H2",
+        "text": "Et felles sted for læring og verktøy"
+      },
+      {
+        "tag": "H2",
+        "text": "AI enablement-teamet"
+      },
+      {
+        "tag": "H2",
+        "text": "KI-prat"
+      },
+      {
+        "tag": "H2",
+        "text": "Del det dere lærer"
+      },
+      {
+        "tag": "H2",
+        "text": "Finn en god start"
+      }
+    ],
+    "height": 900,
+    "images": [],
+    "lang": "nb",
+    "mainCount": 1,
+    "mainText": "← Til forsiden\nOM PORTALEN\nKunnskap som hjelper i praksis\n\nKI-Produktutvikling skal gjøre det enklere å finne, prøve og dele nyttige arbeidsmåter for produktutvikling med KI i Nasjonalarkivet.\n\nEt felles sted for læring og verktøy\n\nHer samler vi veiledninger, konkrete eksempler, erfaringer og gjenbrukbare byggesteiner som skills, instrukser og prompter. Innholdet skal hjelpe deg med oppgavene du står i, enten du vil komme i gang eller forbedre en arbeidsmåte du allerede bruker.\n\nMålet er god produktutvikling. Bruk av KI skal vurderes ut fra nytten det gir, og erfaringer med begrensninger og forsøk som ikke fungerte er også verdifulle.\n\nAI enablement-teamet\n\nMandatforslaget beskriver et team som skal bidra til at utviklingsteamene bruker KI på en god måte. De foreslåtte fokusområdene er kompetanse og erfaringsdeling, oppsett og guardrails, og innspill til retningslinjer og policy.\n\nTeamets rolle er å gi råd, koble erfaringer og legge til rette for læring. Forslaget legger ikke opp til at teamet skal bestemme policy, avgjøre enkeltsaker eller være førstelinje for lisenser og verktøyfeil. Ansvarlige team etablerer tjenester og tekniske miljøer.\n\nPortalen skal være en ressurs for brukerne på tvers av team. Innholdet prioriteres etter praktisk nytte, og er ikke begrenset til enablement-teamets aktiviteter.\n\nOmtalen av AI enablement-teamet bygger på et mandatforslag. Den beskriver foreslått ansvar og arbeidsmåte, ikke et bekreftet vedtak.\n\nVedlegg: Mandatforslag for AI enablement-teamet (PDF, 127 kB)\n\nKI-prat\n\nKI-prat er et forum for alle som jobber med produktutvikling i Nasjonalarkivet, der vi deler erfaringer, tanker og refleksjoner om bruk av KI i utviklingsarbeidet. Ta med noe du har prøvd, et spørsmål eller et tema du vil utforske sammen med andre.\n\nVi møtes på Teams annenhver torsdag i opptil én time. Møtene har hovedsakelig åpen mikrofon, og vi avslutter tidligere hvis ingen har mer de vil ta opp.\n\nI Teams-kanalen «KI-prat» kan du fortsette diskusjonen etter møtet og foreslå temaer til neste gang. Kanalen er et sted for erfaringsdeling også mellom møtene.\n\nJobber du med produktutvikling eller utvikling av løsninger i Nasjonalarkivet, og ønsker å bli med på KI-prat? Ta kontakt med AI enablement-teamet.\n\nDel det dere lærer\n\nEn nyttig erfaring beskriver oppgaven, hva dere prøvde, hvordan dere vurderte resultatet og hva andre kan lære av forsøket. Ta gjerne med det som ikke fungerte. Fjern interne og sensitive opplysninger før noe deles offentlig. En felles bidragskanal er foreløpig ikke etablert.\n\nFinn en god start\n\nLes veiledningen for å komme i gang eller utforsk ressurskatalogen. Den lokale prototypen inneholder foreløpig eksempelressurser.",
+    "media": [],
+    "navigation": [
+      {
+        "links": [
+          {
+            "href": "/kom-i-gang",
+            "text": "Kom i gang"
+          },
+          {
+            "href": "/retningslinjer",
+            "text": "Retningslinjer"
+          },
+          {
+            "href": "/#ressurser",
+            "text": "Ressurskatalog"
+          },
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/spor",
+            "text": "Spør KI"
+          },
+          {
+            "href": "/om",
+            "text": "Om"
+          }
+        ],
+        "name": "Hovedmeny"
+      },
+      {
+        "links": [
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/personvern",
+            "text": "Personvernerklæring"
+          },
+          {
+            "href": "/tilgjengelighet",
+            "text": "Tilgjengelighetserklæring"
+          },
+          {
+            "href": "/nettstedskart",
+            "text": "Nettstedskart"
+          },
+          {
+            "href": "/versjonslogg",
+            "text": "Versjonslogg"
+          },
+          {
+            "href": "/utviklingsplan",
+            "text": "Utviklingsplan"
+          },
+          {
+            "href": "/funksjonalitet",
+            "text": "Funksjonalitetsoversikt"
+          }
+        ],
+        "name": "Informasjon om nettstedet"
+      }
+    ],
+    "scrollWidth": 1280,
+    "tables": [],
+    "title": "Om portalen | KI-Produktutvikling",
+    "width": 1280
+  },
+  {
+    "route": "/oversikt/",
+    "duplicateIds": [],
+    "fields": [],
+    "h1": [
+      "Oversikt"
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Oversikt"
+      },
+      {
+        "tag": "H2",
+        "text": "Priser og abonnement"
+      },
+      {
+        "tag": "H2",
+        "text": "Godkjente KI-assistenter"
+      },
+      {
+        "tag": "H2",
+        "text": "Godkjente MCP-er"
+      },
+      {
+        "tag": "H2",
+        "text": "Videre utvidelser"
+      },
+      {
+        "tag": "H3",
+        "text": "Modelloversikt"
+      },
+      {
+        "tag": "H3",
+        "text": "Forbruk og kostnader"
+      }
+    ],
+    "height": 900,
+    "images": [],
+    "lang": "nb",
+    "mainCount": 1,
+    "mainText": "← Til forsiden\n\nVERKTØY OG KOSTNADER\n\nOversikt\n\nFå oversikt over KI-verktøy, abonnement og kostnader. Se assistenter, MCP-status og priser, og finn detaljene som passer måten dere jobber på.\n\n01 / UTFORSK PRISER\n\nPriser og abonnement\n\nSammenlign abonnement for Copilot, Claude og Codex. Se direkte API-priser og tokenpriser i Copilot, med kilde og sist kontrollert dato.\n\nAbonnement per bruker\nAPI og tokenbruk\nSe priser og abonnement\n→\n\nOffentlige listepriser. Se kildestatus og vilkår på prissiden.\n\n02 / GODKJENTE ASSISTENTER\n\nGodkjente KI-assistenter\n\nCopilot, Claude AI og Codex er godkjente KI-utviklingsassistenter for dem som jobber med produktutvikling og utvikling av løsninger i Nasjonalarkivet.\n\nSe godkjente KI-assistenter\n→\n\n03 / MCP-STATUS\n\nGodkjente MCP-er\n\nFølg arbeidet med vurdering og godkjenning av MCP-integrasjoner i Nasjonalarkivet. Atlassian MCP er under ROS-analyse, og Slack MCP er planlagt vurdert. Ingen av disse er oppført som godkjent ennå.\n\nSe MCP-status\n→\nVidere utvidelser\n\nPLANLAGT\n\nModelloversikt\n\nEn samlet oversikt over modellenes egenskaper og bruksområder. Dette er planlagt og er ikke tilgjengelig ennå.\n\nPLANLAGT\n\nForbruk og kostnader\n\nInnsikt i faktisk bruk og kostnader. Dette er planlagt og krever avklart tilgang til bruksdata før det kan vises.",
+    "media": [],
+    "navigation": [
+      {
+        "links": [
+          {
+            "href": "/kom-i-gang",
+            "text": "Kom i gang"
+          },
+          {
+            "href": "/retningslinjer",
+            "text": "Retningslinjer"
+          },
+          {
+            "href": "/#ressurser",
+            "text": "Ressurskatalog"
+          },
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/spor",
+            "text": "Spør KI"
+          },
+          {
+            "href": "/om",
+            "text": "Om"
+          }
+        ],
+        "name": "Hovedmeny"
+      },
+      {
+        "links": [
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/personvern",
+            "text": "Personvernerklæring"
+          },
+          {
+            "href": "/tilgjengelighet",
+            "text": "Tilgjengelighetserklæring"
+          },
+          {
+            "href": "/nettstedskart",
+            "text": "Nettstedskart"
+          },
+          {
+            "href": "/versjonslogg",
+            "text": "Versjonslogg"
+          },
+          {
+            "href": "/utviklingsplan",
+            "text": "Utviklingsplan"
+          },
+          {
+            "href": "/funksjonalitet",
+            "text": "Funksjonalitetsoversikt"
+          }
+        ],
+        "name": "Informasjon om nettstedet"
+      }
+    ],
+    "scrollWidth": 1280,
+    "tables": [],
+    "title": "Oversikt | KI-Produktutvikling",
+    "width": 1280
+  },
+  {
+    "route": "/oversikt/godkjente-ki-assistenter/",
+    "duplicateIds": [],
+    "fields": [],
+    "h1": [
+      "Godkjente KI-assistenter"
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Godkjente KI-assistenter"
+      },
+      {
+        "tag": "H2",
+        "text": "Assistenter du kan bruke"
+      },
+      {
+        "tag": "H2",
+        "text": "Rammer for bruk"
+      },
+      {
+        "tag": "H2",
+        "text": "Priser og videre oversikt"
+      }
+    ],
+    "height": 900,
+    "images": [],
+    "lang": "nb",
+    "mainCount": 1,
+    "mainText": "← Til forsiden\nOVERSIKT · GODKJENTE ASSISTENTER\nGodkjente KI-assistenter\n\nCopilot, Claude AI og Codex er godkjente KI-utviklingsassistenter for dem som jobber med produktutvikling og utvikling av løsninger i Nasjonalarkivet.\n\nAssistenter du kan bruke\nGitHub Copilot – Godkjent.\nClaude AI – Godkjent.\nCodex – Godkjent.\nRammer for bruk\n\nBruk assistentene i tråd med virksomhetens gjeldende regler. Godkjenningen her gjelder assistentene; hvilke kontoer, abonnement, modeller, integrasjoner og datatyper som kan brukes, må følge de rammene som gjelder for oppgaven.\n\nOversikten angir foreløpig ikke tillatte datakategorier eller hvilke kontoer og lisenser som skal brukes. Avklar dette før du tar i bruk intern informasjon. Se retningslinjene for veiledning om databruk og kvalitetssikring.\n\nPriser og videre oversikt\n\nSe priser og abonnement for offentlige listepriser. Prislisten viser ikke hvilke avtaler eller lisenser Nasjonalarkivet har. Gå tilbake til Oversikt for flere temaer.\n\nGodkjenningsstatus er oppgitt for portalen 9. november 2026. Siden er sist oppdatert samme dato.",
+    "media": [],
+    "navigation": [
+      {
+        "links": [
+          {
+            "href": "/kom-i-gang",
+            "text": "Kom i gang"
+          },
+          {
+            "href": "/retningslinjer",
+            "text": "Retningslinjer"
+          },
+          {
+            "href": "/#ressurser",
+            "text": "Ressurskatalog"
+          },
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/spor",
+            "text": "Spør KI"
+          },
+          {
+            "href": "/om",
+            "text": "Om"
+          }
+        ],
+        "name": "Hovedmeny"
+      },
+      {
+        "links": [
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/personvern",
+            "text": "Personvernerklæring"
+          },
+          {
+            "href": "/tilgjengelighet",
+            "text": "Tilgjengelighetserklæring"
+          },
+          {
+            "href": "/nettstedskart",
+            "text": "Nettstedskart"
+          },
+          {
+            "href": "/versjonslogg",
+            "text": "Versjonslogg"
+          },
+          {
+            "href": "/utviklingsplan",
+            "text": "Utviklingsplan"
+          },
+          {
+            "href": "/funksjonalitet",
+            "text": "Funksjonalitetsoversikt"
+          }
+        ],
+        "name": "Informasjon om nettstedet"
+      }
+    ],
+    "scrollWidth": 1280,
+    "tables": [],
+    "title": "Godkjente KI-assistenter | KI-Produktutvikling",
+    "width": 1280
+  },
+  {
+    "route": "/oversikt/godkjente-mcper/",
+    "duplicateIds": [],
+    "fields": [],
+    "h1": [
+      "Godkjente MCP-er"
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Godkjente MCP-er"
+      },
+      {
+        "tag": "H2",
+        "text": "Atlassian MCP"
+      },
+      {
+        "tag": "H2",
+        "text": "Slack MCP"
+      },
+      {
+        "tag": "H2",
+        "text": "Hva betyr statusene?"
+      }
+    ],
+    "height": 900,
+    "images": [],
+    "lang": "nb",
+    "mainCount": 1,
+    "mainText": "← Til forsiden\nOVERSIKT · MCP-STATUS\nGodkjente MCP-er\n\nFølg arbeidet med vurdering og godkjenning av MCP-integrasjoner i Nasjonalarkivet. Atlassian MCP er under ROS-analyse, og Slack MCP er planlagt vurdert. Ingen av disse er oppført som godkjent ennå.\n\nAtlassian MCP\n\nStatus: ROS-analyse pågår. Ikke godkjent ennå.\n\nSlack MCP\n\nStatus: Planlagt. ROS-analyse er planlagt; integrasjonen er ikke godkjent ennå.\n\nHva betyr statusene?\nPlanlagt: Vurderingen er planlagt, men er ikke oppgitt som startet.\nROS-analyse pågår: Risiko- og sårbarhetsanalysen er under arbeid. Dette innebærer ikke godkjenning.\nGodkjent: Bruk er bekreftet godkjent innenfor angitte rammer. Ingen integrasjoner har denne statusen i oversikten nå.\n\nGodkjenning av en KI-assistent innebærer ikke automatisk godkjenning av MCP-integrasjoner. Følg virksomhetens gjeldende regler for bruk og tilgang. Denne oversikten oppretter ingen tilkoblinger eller rettigheter.\n\nSe retningslinjene og Godkjente KI-assistenter, eller gå tilbake til Oversikt.\n\nStatusene er oppgitt for portalen 9. november 2026. Oppdater oversikten når vurderinger eller godkjenninger endres.",
+    "media": [],
+    "navigation": [
+      {
+        "links": [
+          {
+            "href": "/kom-i-gang",
+            "text": "Kom i gang"
+          },
+          {
+            "href": "/retningslinjer",
+            "text": "Retningslinjer"
+          },
+          {
+            "href": "/#ressurser",
+            "text": "Ressurskatalog"
+          },
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/spor",
+            "text": "Spør KI"
+          },
+          {
+            "href": "/om",
+            "text": "Om"
+          }
+        ],
+        "name": "Hovedmeny"
+      },
+      {
+        "links": [
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/personvern",
+            "text": "Personvernerklæring"
+          },
+          {
+            "href": "/tilgjengelighet",
+            "text": "Tilgjengelighetserklæring"
+          },
+          {
+            "href": "/nettstedskart",
+            "text": "Nettstedskart"
+          },
+          {
+            "href": "/versjonslogg",
+            "text": "Versjonslogg"
+          },
+          {
+            "href": "/utviklingsplan",
+            "text": "Utviklingsplan"
+          },
+          {
+            "href": "/funksjonalitet",
+            "text": "Funksjonalitetsoversikt"
+          }
+        ],
+        "name": "Informasjon om nettstedet"
+      }
+    ],
+    "scrollWidth": 1280,
+    "tables": [],
+    "title": "Godkjente MCP-er | KI-Produktutvikling",
+    "width": 1280
+  },
+  {
+    "route": "/personvern/",
+    "duplicateIds": [],
+    "fields": [],
+    "h1": [
+      "Personvern i KI-Produktutvikling"
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Personvern i KI-Produktutvikling"
+      },
+      {
+        "tag": "H2",
+        "text": "Ansvar og kontakt"
+      },
+      {
+        "tag": "H2",
+        "text": "Når du besøker portalen"
+      },
+      {
+        "tag": "H2",
+        "text": "Når du bruker Spør KI"
+      },
+      {
+        "tag": "H2",
+        "text": "Informasjonskapsler og lagring i nettleseren"
+      },
+      {
+        "tag": "H2",
+        "text": "Formål, rettsgrunnlag og mottakere"
+      },
+      {
+        "tag": "H2",
+        "text": "Dine rettigheter og klageadgang"
+      },
+      {
+        "tag": "H2",
+        "text": "Videre avklaringer og oppdateringer"
+      }
+    ],
+    "height": 900,
+    "images": [],
+    "lang": "nb",
+    "mainCount": 1,
+    "mainText": "← Til forsiden\nPERSONVERN · UTKAST\nPersonvern i KI-Produktutvikling\n\nHer beskriver vi kartlagt bruk av opplysninger i den lokale utviklingsutgaven av portalen, og hva som fortsatt må avklares.\n\nUtkast, sist oppdatert 9. november 2026. Gjennomgangen gjelder lokalmiljøet, ikke en verifisert produksjonstjeneste. Erklæringen er ikke godkjent av virksomheten. Ansvar, rettsgrunnlag, leverandører og lagringsrutiner må bekreftes før produksjonssetting.\nAnsvar og kontakt\n\nPortalen er utviklet for produktutvikling i Nasjonalarkivet. Formelt navn på behandlingsansvarlig, kontaktopplysninger til virksomheten og kontakt til personvernombudet er foreløpig ikke bekreftet for denne tjenesten.\n\nSpørsmål om personvern i portalen kan sendes til khadah@nasjonalarkivet.no. Dette er bekreftet som kontaktadresse for personvernspørsmål, ikke som adressen til personvernombudet. Unngå sensitive opplysninger i vanlig e-post.\n\nNår du besøker portalen\n\nNettleseren henter sider og ressurser fra nettstedet. Den lokale utviklingsserveren viser tekniske forespørsler og feil i konsollen. Hvilke opplysninger en framtidig driftsplattform vil registrere, blant annet IP-adresser, hvem som får tilgang og hvor lenge logger beholdes, er ikke avklart. Vi har ikke funnet analyseintegrasjoner i den gjennomgåtte applikasjonskoden; dette er ikke en full kontroll av avhengigheter eller framtidig drift.\n\nSøk og filtrering i ressurskatalogen skjer i nettleseren for å finne relevante ressurser. Den gjennomgåtte katalogfunksjonen sender ikke søketeksten til et eget søke-API.\n\nNår du bruker Spør KI\n\nI serverutgaven sendes spørsmålet til portalens RAG-tjeneste for å finne og forklare relevant innhold. Chatvisningen beholder de siste meldingene i minnet mens siden er åpen. Tidligere meldinger sendes ikke med som samtalehistorikk i neste modellforespørsel. I den statiske demonstrasjonsutgaven skjer kildesøket lokalt i nettleseren.\n\nModellgenerering var deaktivert ved lokal kontroll 9. november 2026. Dersom en modell senere aktiveres, kan spørsmålet og relevante kildeutdrag sendes til den konfigurerte modellen. Leverandør, behandlingssted, eventuell overføring utenfor EØS, lagring og videre bruk av spørsmål må avklares før aktivering. At API-nøkkelen bare finnes på serveren, betyr ikke at spørsmålet forblir lokalt. Ikke skriv personopplysninger, taushetsbelagt informasjon eller hemmeligheter i Spør KI.\n\nTøm chat fjerner meldingene fra chatvisningen. Historikken starter også på nytt ved ny innlasting av siden. Dette sletter ikke eventuelle server-, drifts- eller modellleverandørlogger. Vi har ikke funnet lagring av spørsmål i database eller filer i de gjennomgåtte RAG-funksjonene. Lagringstid og sletterutiner for øvrig drift er uavklart.\n\nInformasjonskapsler og lagring i nettleseren\n\nKartleggingen av informasjonskapsler og annen nettleserlagring er ufullstendig. Nettleserverktøyet ga ikke tilgang til å kontrollere disse lagrene, og avhengigheter og framtidig driftsplattform er ikke fullstendig undersøkt. Vi kan derfor ikke bekrefte at tjenesten er uten informasjonskapsler eller sporing. Før delt drift må faktisk bruk, formål, varighet og behov for samtykke kartlegges. Se Nkoms veiledning om informasjonskapsler.\n\nFormål, rettsgrunnlag og mottakere\n\nDe kartlagte formålene er å vise innhold, finne ressurser, gi kildebasert hjelp og drive tjenesten. Ved kontakt på e-post er formålet å følge opp henvendelsen. Virksomheten må bekrefte rettsgrunnlag for hver behandling. Det er ikke valgt et rettsgrunnlag i dette utkastet. Se Datatilsynets veiledning om behandlingsgrunnlag.\n\nEndelig driftsleverandør, databehandlere, tilgangsroller og eventuelle overføringer utenfor EØS er ikke bekreftet. Det samme gjelder lagring og eventuell arkivering av e-posthenvendelser. Avtaler, mottakere og konkrete slettefrister eller kriterier må dokumenteres før denne erklæringen kan ferdigstilles. Lokal kontroll gir ikke grunnlag for løfter om at ingen logger lagres eller at data aldri brukes til modelltrening.\n\nDine rettigheter og klageadgang\n\nKontakt oss hvis du vil vite om vi behandler opplysninger om deg, be om innsyn eller få feil rettet. Retten til sletting, begrensning, protest og dataportabilitet avhenger av behandlingen og rettsgrunnlaget. Eventuelle arkiv- og bevaringsplikter må også vurderes. Uavklarte forhold i dette utkastet må avklares ved behandlingen av henvendelsen. Les om retten til informasjon.\n\nDu kan klage til Datatilsynet dersom du mener personopplysningene dine behandles i strid med regelverket. Vi har ikke funnet automatiserte individuelle avgjørelser med rettsvirkning eller tilsvarende betydelig virkning i de gjennomgåtte portalfunksjonene.\n\nVidere avklaringer og oppdateringer\n\nFør delt pilot må ansvar, faktisk dataflyt, rettsgrunnlag, driftsleverandører, lagring og nettleserlagring vurderes for pilotens omfang. Erklæringen skal oppdateres ved endringer i innlogging, logging, analyse, modellbruk eller leverandører, og kontrolleres mot faktisk drift. En ferdig erklæring krever bekreftelse fra ansvarlig virksomhet.",
+    "media": [],
+    "navigation": [
+      {
+        "links": [
+          {
+            "href": "/kom-i-gang",
+            "text": "Kom i gang"
+          },
+          {
+            "href": "/retningslinjer",
+            "text": "Retningslinjer"
+          },
+          {
+            "href": "/#ressurser",
+            "text": "Ressurskatalog"
+          },
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/spor",
+            "text": "Spør KI"
+          },
+          {
+            "href": "/om",
+            "text": "Om"
+          }
+        ],
+        "name": "Hovedmeny"
+      },
+      {
+        "links": [
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/personvern",
+            "text": "Personvernerklæring"
+          },
+          {
+            "href": "/tilgjengelighet",
+            "text": "Tilgjengelighetserklæring"
+          },
+          {
+            "href": "/nettstedskart",
+            "text": "Nettstedskart"
+          },
+          {
+            "href": "/versjonslogg",
+            "text": "Versjonslogg"
+          },
+          {
+            "href": "/utviklingsplan",
+            "text": "Utviklingsplan"
+          },
+          {
+            "href": "/funksjonalitet",
+            "text": "Funksjonalitetsoversikt"
+          }
+        ],
+        "name": "Informasjon om nettstedet"
+      }
+    ],
+    "scrollWidth": 1280,
+    "tables": [],
+    "title": "Personvernerklæring | KI-Produktutvikling",
+    "width": 1280
+  },
+  {
+    "route": "/priser/",
+    "duplicateIds": [],
+    "fields": [],
+    "h1": [
+      "Priser for KI-verktøy"
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Priser for KI-verktøy"
+      },
+      {
+        "tag": "H2",
+        "text": "Abonnement"
+      },
+      {
+        "tag": "H3",
+        "text": "GitHub Copilot-abonnement"
+      },
+      {
+        "tag": "H3",
+        "text": "Claude-abonnement"
+      },
+      {
+        "tag": "H3",
+        "text": "ChatGPT-abonnement med Codex"
+      },
+      {
+        "tag": "H2",
+        "text": "API og tokenpriser"
+      },
+      {
+        "tag": "H3",
+        "text": "Tokenpriser i GitHub Copilot"
+      },
+      {
+        "tag": "H3",
+        "text": "Direkte Claude API"
+      },
+      {
+        "tag": "H3",
+        "text": "OpenAI API for Codex"
+      },
+      {
+        "tag": "H2",
+        "text": "Kilder og automatisk oppdatering"
+      }
+    ],
+    "height": 900,
+    "images": [],
+    "lang": "nb",
+    "mainCount": 1,
+    "mainText": "Oversikt / Priser og abonnement\n\nPRISER OG BRUK\n\nPriser for KI-verktøy\n\nSammenlign abonnement for Copilot, Claude og Codex, og se hva modellbruk koster. Velg prisgrunnlaget som passer måten dere bruker verktøyet på.\n\nUtvalg av offentlige listepriser i USD. Dette er ikke en oversikt over Nasjonalarkivets avtaler eller godkjente verktøy. Skatter, valutakurs, rabatter og tillegg er ikke beregnet. Kontroller gjeldende vilkår hos leverandøren før kjøp.\n\n01 / Abonnement\n02 / API og tokenpriser\n03 / Kilder og oppdatering\nAbonnement\n\nPris per bruker og periode. Inkludert bruk, tilgang og tillegg følger den enkelte planen. Årsbetaling kan kreve forskuddsbetaling og flere seter. Gratisplaner, særordninger og avtalebaserte Enterprise-priser er ikke med i utvalget.\n\nCopilot\n\nGitHub Copilot-abonnement\nOffisiell prisliste ↗\n\nSist kontrollert: 9. november 2026 kl. 20:39\n\nUSD per bruker eller sete per måned\nPlan\tMånedsbetaling\tÅrsbetaling, per måned\nCopilot Pro\t10,00 USD\nper bruker/måned\n\tIkke oppgitt\nCopilot Pro+\t39,00 USD\nper bruker/måned\n\tIkke oppgitt\nCopilot Max\t100,00 USD\nper bruker/måned\n\tIkke oppgitt\nCopilot Business\t19,00 USD\nper bruker/måned\n\tIkke oppgitt\nCopilot Enterprise\t39,00 USD\nper bruker/måned\n\tIkke oppgitt\nVilkår og avgrensninger\n\nClaude\n\nClaude-abonnement\nOffisiell prisliste ↗\n\nSist kontrollert: 9. november 2026 kl. 20:39\n\nUSD per bruker eller sete per måned\nPlan\tMånedsbetaling\tÅrsbetaling, per måned\nClaude Pro\t20,00 USD\nper bruker/måned\n\t17,00 USD\nClaude Max\t100,00 USD\nper bruker/måned\n\tIkke oppgitt\nClaude Ultra\t200,00 USD\nper bruker/måned\n\tIkke oppgitt\nClaude Team – Standard\t25,00 USD\nper sete/måned\n\t20,00 USD\nClaude Team – Premium\t125,00 USD\nper sete/måned\n\t100,00 USD\nVilkår og avgrensninger\n\nCodex\n\nChatGPT-abonnement med Codex\nOffisiell prisliste ↗\n\nSist kontrollert: 9. november 2026 kl. 20:39\n\nUSD per bruker eller sete per måned\nPlan\tMånedsbetaling\tÅrsbetaling, per måned\nChatGPT Plus / Codex\t20,00 USD\nper bruker/måned\n\tIkke oppgitt\nChatGPT Pro / Codex\tFra 100,00 USD\nper bruker/måned\n\tIkke oppgitt\nChatGPT Business / Codex\t25,00 USD\nper bruker/måned\n\t20,00 USD\nVilkår og avgrensninger\nAPI og tokenpriser\n\nAPI betales etter forbruk. Input er det modellen leser, output er det den skriver. Cache betyr gjenbruk av kontekst. Dette utvalget viser standard satser; terskler, hastighet, region og verktøy kan gi andre kostnader.\n\nCopilot-tabellen viser tokenpriser inne i Copilot. De er ikke et eget API-tilbud. Direkte Claude- og OpenAI-API faktureres etter egne vilkår, og er adskilt fra abonnementets inkluderte bruk.\n\nCopilot\n\nTokenpriser i GitHub Copilot\nOffisiell prisliste ↗\n\nSist kontrollert: 9. november 2026 kl. 20:39\n\nUSD per én million tokens\nModell og kontekst\tInput\tOutput\tCache-lesing\tCache-skriving*\nGPT-5.3-Codex · Default\nStandard\n\t1,75 USD\t14,00 USD\t0,175 USD\tIkke oppgitt\nGPT-6.1 Sol · Default\n≤ 272K\n\t2,00 USD\t10,00 USD\t0,10 USD\t2,50 USD\nGPT-6.1 Sol · Long context\n> 272K\n\t4,00 USD\t15,00 USD\t0,20 USD\t5,00 USD\nClaude Opus 5.5 · Default\nStandard\n\t4,00 USD\t20,00 USD\t0,20 USD\t5,00 USD\nClaude Sonnet 5.5 · Default\nStandard\n\t2,00 USD\t10,00 USD\t0,10 USD\t2,50 USD\n\n* Claude API: 5 min / 1 time. OpenAI API: 30 min / 12 timer. Copilot følger GitHubs vilkår. «Ikke oppgitt» betyr at tabellen ikke oppgir en separat sats; det betyr ikke nødvendigvis gratis.\n\nVilkår og avgrensninger\n\nClaude\n\nDirekte Claude API\nOffisiell prisliste ↗\n\nSist kontrollert: 9. november 2026 kl. 20:39\n\nUSD per én million tokens\nModell og kontekst\tInput\tOutput\tCache-lesing\tCache-skriving*\nClaude Opus 5.5\nStandard\n\t4,00 USD\t20,00 USD\t0,20 USD\t5,00 USD\nLang varighet: 8,00 USD\n\nClaude Sonnet 5.5\nStandard\n\t2,00 USD\t10,00 USD\t0,10 USD\t2,50 USD\nLang varighet: 4,00 USD\n\nClaude Haiku 4.5\nStandard\n\t1,00 USD\t5,00 USD\t0,10 USD\t1,25 USD\nLang varighet: 2,00 USD\n\n* Claude API: 5 min / 1 time. OpenAI API: 30 min / 12 timer. Copilot følger GitHubs vilkår. «Ikke oppgitt» betyr at tabellen ikke oppgir en separat sats; det betyr ikke nødvendigvis gratis.\n\nVilkår og avgrensninger\n\nCodex\n\nOpenAI API for Codex\nOffisiell prisliste ↗\n\nSist kontrollert: 9. november 2026 kl. 20:39\n\nUSD per én million tokens\nModell og kontekst\tInput\tOutput\tCache-lesing\tCache-skriving*\ngpt-6.1-sol · Short\nKort kontekst (se terskel i kilden)\n\t2,00 USD\t10,00 USD\t0,10 USD\t2,50 USD\nLang varighet: 5,00 USD\n\ngpt-6.1-sol · Long\nLang kontekst (se terskel i kilden)\n\t4,00 USD\t15,00 USD\t0,20 USD\t5,00 USD\nLang varighet: 10,00 USD\n\ngpt-6-luna · Short\nKort kontekst (se terskel i kilden)\n\t0,10 USD\t0,50 USD\t0,01 USD\t0,125 USD\nLang varighet: 0,25 USD\n\ngpt-6-luna · Long\nLang kontekst (se terskel i kilden)\n\t0,20 USD\t0,75 USD\t0,02 USD\t0,25 USD\nLang varighet: 0,50 USD\n\ngpt-5.3-codex\nStandard\n\t1,75 USD\t14,00 USD\t0,175 USD\tIkke oppgitt\n\n* Claude API: 5 min / 1 time. OpenAI API: 30 min / 12 timer. Copilot følger GitHubs vilkår. «Ikke oppgitt» betyr at tabellen ikke oppgir en separat sats; det betyr ikke nødvendigvis gratis.\n\nVilkår og avgrensninger\nKilder og automatisk oppdatering\n\nHver tabell har lenke til kilden og tidspunktet da prisene sist ble hentet og formatkontrollert. Dette er automatisk kontroll, ikke bekreftelse på en inngått avtale eller godkjenning av et verktøy.\n\nAutomatisk oppdatering er klargjort, men er ennå ikke aktivert. Prisene vises fra et lagret øyeblikksbilde. Oppdateringer må gjennomgås før de tas inn på nettsiden. Kontrolltidspunktet viser når vi hentet og formatkontrollerte prisene, ikke når leverandøren sist endret dem.\n\nHvis en kilde feiler, beholdes forrige kontrollerte pris og feilen vises. Gamle data merkes etter sju dager når siden åpnes. Utvalget av planer og modeller vedlikeholdes separat; en helt ny modell blir ikke automatisk lagt til. Se også retningslinjene før bruk.",
+    "media": [],
+    "navigation": [
+      {
+        "links": [
+          {
+            "href": "/kom-i-gang",
+            "text": "Kom i gang"
+          },
+          {
+            "href": "/retningslinjer",
+            "text": "Retningslinjer"
+          },
+          {
+            "href": "/#ressurser",
+            "text": "Ressurskatalog"
+          },
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/spor",
+            "text": "Spør KI"
+          },
+          {
+            "href": "/om",
+            "text": "Om"
+          }
+        ],
+        "name": "Hovedmeny"
+      },
+      {
+        "links": [
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          }
+        ],
+        "name": "Brødsmulesti"
+      },
+      {
+        "links": [
+          {
+            "href": "#abonnement",
+            "text": "01 / Abonnement"
+          },
+          {
+            "href": "#tokenpriser",
+            "text": "02 / API og tokenpriser"
+          },
+          {
+            "href": "#oppdatering",
+            "text": "03 / Kilder og oppdatering"
+          }
+        ],
+        "name": "På prissiden"
+      },
+      {
+        "links": [
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/personvern",
+            "text": "Personvernerklæring"
+          },
+          {
+            "href": "/tilgjengelighet",
+            "text": "Tilgjengelighetserklæring"
+          },
+          {
+            "href": "/nettstedskart",
+            "text": "Nettstedskart"
+          },
+          {
+            "href": "/versjonslogg",
+            "text": "Versjonslogg"
+          },
+          {
+            "href": "/utviklingsplan",
+            "text": "Utviklingsplan"
+          },
+          {
+            "href": "/funksjonalitet",
+            "text": "Funksjonalitetsoversikt"
+          }
+        ],
+        "name": "Informasjon om nettstedet"
+      }
+    ],
+    "scrollWidth": 1280,
+    "tables": [
+      {
+        "caption": "USD per bruker eller sete per måned",
+        "headers": [
+          {
+            "scope": "col",
+            "text": "Plan"
+          },
+          {
+            "scope": "col",
+            "text": "Månedsbetaling"
+          },
+          {
+            "scope": "col",
+            "text": "Årsbetaling, per måned"
+          },
+          {
+            "scope": "row",
+            "text": "Copilot Pro"
+          },
+          {
+            "scope": "row",
+            "text": "Copilot Pro+"
+          },
+          {
+            "scope": "row",
+            "text": "Copilot Max"
+          },
+          {
+            "scope": "row",
+            "text": "Copilot Business"
+          },
+          {
+            "scope": "row",
+            "text": "Copilot Enterprise"
+          }
+        ]
+      },
+      {
+        "caption": "USD per bruker eller sete per måned",
+        "headers": [
+          {
+            "scope": "col",
+            "text": "Plan"
+          },
+          {
+            "scope": "col",
+            "text": "Månedsbetaling"
+          },
+          {
+            "scope": "col",
+            "text": "Årsbetaling, per måned"
+          },
+          {
+            "scope": "row",
+            "text": "Claude Pro"
+          },
+          {
+            "scope": "row",
+            "text": "Claude Max"
+          },
+          {
+            "scope": "row",
+            "text": "Claude Ultra"
+          },
+          {
+            "scope": "row",
+            "text": "Claude Team – Standard"
+          },
+          {
+            "scope": "row",
+            "text": "Claude Team – Premium"
+          }
+        ]
+      },
+      {
+        "caption": "USD per bruker eller sete per måned",
+        "headers": [
+          {
+            "scope": "col",
+            "text": "Plan"
+          },
+          {
+            "scope": "col",
+            "text": "Månedsbetaling"
+          },
+          {
+            "scope": "col",
+            "text": "Årsbetaling, per måned"
+          },
+          {
+            "scope": "row",
+            "text": "ChatGPT Plus / Codex"
+          },
+          {
+            "scope": "row",
+            "text": "ChatGPT Pro / Codex"
+          },
+          {
+            "scope": "row",
+            "text": "ChatGPT Business / Codex"
+          }
+        ]
+      },
+      {
+        "caption": "USD per én million tokens",
+        "headers": [
+          {
+            "scope": "col",
+            "text": "Modell og kontekst"
+          },
+          {
+            "scope": "col",
+            "text": "Input"
+          },
+          {
+            "scope": "col",
+            "text": "Output"
+          },
+          {
+            "scope": "col",
+            "text": "Cache-lesing"
+          },
+          {
+            "scope": "col",
+            "text": "Cache-skriving*"
+          },
+          {
+            "scope": "row",
+            "text": "GPT-5.3-Codex · DefaultStandard"
+          },
+          {
+            "scope": "row",
+            "text": "GPT-6.1 Sol · Default≤ 272K"
+          },
+          {
+            "scope": "row",
+            "text": "GPT-6.1 Sol · Long context> 272K"
+          },
+          {
+            "scope": "row",
+            "text": "Claude Opus 5.5 · DefaultStandard"
+          },
+          {
+            "scope": "row",
+            "text": "Claude Sonnet 5.5 · DefaultStandard"
+          }
+        ]
+      },
+      {
+        "caption": "USD per én million tokens",
+        "headers": [
+          {
+            "scope": "col",
+            "text": "Modell og kontekst"
+          },
+          {
+            "scope": "col",
+            "text": "Input"
+          },
+          {
+            "scope": "col",
+            "text": "Output"
+          },
+          {
+            "scope": "col",
+            "text": "Cache-lesing"
+          },
+          {
+            "scope": "col",
+            "text": "Cache-skriving*"
+          },
+          {
+            "scope": "row",
+            "text": "Claude Opus 5.5Standard"
+          },
+          {
+            "scope": "row",
+            "text": "Claude Sonnet 5.5Standard"
+          },
+          {
+            "scope": "row",
+            "text": "Claude Haiku 4.5Standard"
+          }
+        ]
+      },
+      {
+        "caption": "USD per én million tokens",
+        "headers": [
+          {
+            "scope": "col",
+            "text": "Modell og kontekst"
+          },
+          {
+            "scope": "col",
+            "text": "Input"
+          },
+          {
+            "scope": "col",
+            "text": "Output"
+          },
+          {
+            "scope": "col",
+            "text": "Cache-lesing"
+          },
+          {
+            "scope": "col",
+            "text": "Cache-skriving*"
+          },
+          {
+            "scope": "row",
+            "text": "gpt-6.1-sol · ShortKort kontekst (se terskel i kilden)"
+          },
+          {
+            "scope": "row",
+            "text": "gpt-6.1-sol · LongLang kontekst (se terskel i kilden)"
+          },
+          {
+            "scope": "row",
+            "text": "gpt-6-luna · ShortKort kontekst (se terskel i kilden)"
+          },
+          {
+            "scope": "row",
+            "text": "gpt-6-luna · LongLang kontekst (se terskel i kilden)"
+          },
+          {
+            "scope": "row",
+            "text": "gpt-5.3-codexStandard"
+          }
+        ]
+      }
+    ],
+    "title": "Priser for KI-verktøy | KI-Produktutvikling",
+    "width": 1280
+  },
+  {
+    "route": "/funksjonalitet/",
+    "duplicateIds": [],
+    "fields": [],
+    "h1": [
+      "Hva kan du gjøre i portalen?"
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Hva kan du gjøre i portalen?"
+      },
+      {
+        "tag": "H2",
+        "text": "Dette finnes i portalen"
+      },
+      {
+        "tag": "H3",
+        "text": "Forside"
+      },
+      {
+        "tag": "H3",
+        "text": "Ressurskatalog"
+      },
+      {
+        "tag": "H3",
+        "text": "Spør KI"
+      },
+      {
+        "tag": "H3",
+        "text": "KI-prat"
+      },
+      {
+        "tag": "H3",
+        "text": "Godkjente MCP-er"
+      },
+      {
+        "tag": "H3",
+        "text": "Godkjente KI-assistenter"
+      },
+      {
+        "tag": "H3",
+        "text": "Kom i gang"
+      },
+      {
+        "tag": "H3",
+        "text": "Om portalen"
+      },
+      {
+        "tag": "H3",
+        "text": "Retningslinjer"
+      },
+      {
+        "tag": "H3",
+        "text": "Personvernerklæring"
+      },
+      {
+        "tag": "H3",
+        "text": "Oversikt"
+      },
+      {
+        "tag": "H3",
+        "text": "Priser for KI-verktøy"
+      },
+      {
+        "tag": "H3",
+        "text": "Tilgjengelighetserklæring"
+      },
+      {
+        "tag": "H3",
+        "text": "Nettstedskart"
+      },
+      {
+        "tag": "H3",
+        "text": "Versjonslogg"
+      },
+      {
+        "tag": "H3",
+        "text": "Utviklingsplan"
+      },
+      {
+        "tag": "H3",
+        "text": "Funksjonalitetsoversikt"
+      },
+      {
+        "tag": "H2",
+        "text": "Krever mer oppsett eller utvikling"
+      },
+      {
+        "tag": "H3",
+        "text": "Modellgenererte svar"
+      },
+      {
+        "tag": "H3",
+        "text": "Modelloversikt"
+      },
+      {
+        "tag": "H3",
+        "text": "Forbruk og kostnader"
+      },
+      {
+        "tag": "H3",
+        "text": "Innlogging og internt innhold"
+      }
+    ],
+    "height": 900,
+    "images": [],
+    "lang": "nb",
+    "mainCount": 1,
+    "mainText": "← Til forsiden\nPORTALENS FUNKSJONER\nHva kan du gjøre i portalen?\n\nEn oversikt over funksjonene som finnes, hva du kan prøve og hva som gjenstår.\n\n5 ressurser · 3 skills · 6 felles innholdssider\n\nOversikten oppdateres fra portalens funksjonsregister og innhold ved bygging. Statusene beskriver funksjonenes modenhet og behov for oppsett, ikke om en ekstern tjeneste er tilgjengelig akkurat nå.\n\nDette finnes i portalen\n\nTilgjengelig\n\nForside\n\nEn felles inngang til veiledninger, verktøy og kunnskapsassistenten, med snarveier til å lære, prøve og dele. Forsideillustrasjonen har rolig bevegelse som kan pauses/startes ved klikk på illustrasjonen eller med tastatur, og slås av ved redusert bevegelse. Anbefalt prøveoppgave: Utforsk et brukerbehov.\n\nGå til Forside →\n\nBeta\n\nRessurskatalog\n\nSkills, instruksjoner og prompter som hjelper deg å bruke KI i produktutviklingen. Søk og filtrer blant 5 ressurser, inkludert 3 skills. Hver ressurs har en egen side med brukssteg og eksempel. Skills er merket Beta og er ennå ikke gjennomgått av et menneske.\n\nGå til Ressurskatalog →\n\nBeta\n\nSpør KI\n\nStill spørsmål om portalens innhold. Få veiledning med konkrete steg, kilder og forslag til nye spørsmål. Chatten finnes på en egen side og fra forsiden. Spørsmål behandles separat, og historikken lagres ikke etter sideoppdatering.\n\nGå til Spør KI →\n\nTilgjengelig\n\nKI-prat\n\nKI-prat er et forum for alle som jobber med produktutvikling i Nasjonalarkivet, der vi deler erfaringer, tanker og refleksjoner om bruk av KI i utviklingsarbeidet. Ta med noe du har prøvd, et spørsmål eller et tema du vil utforske sammen med andre.\n\nGå til KI-prat →\n\nTilgjengelig\n\nGodkjente MCP-er\n\nFølg arbeidet med vurdering og godkjenning av MCP-integrasjoner i Nasjonalarkivet. Atlassian MCP er under ROS-analyse, og Slack MCP er planlagt vurdert. Ingen av disse er oppført som godkjent ennå.\n\nGå til Godkjente MCP-er →\n\nTilgjengelig\n\nGodkjente KI-assistenter\n\nCopilot, Claude AI og Codex er godkjente KI-utviklingsassistenter for dem som jobber med produktutvikling og utvikling av løsninger i Nasjonalarkivet.\n\nGå til Godkjente KI-assistenter →\n\nTilgjengelig\n\nKom i gang\n\nBegynn med én oppgave, et tydelig mål og tid til å vurdere resultatet.\n\nGå til Kom i gang →\n\nTilgjengelig\n\nOm portalen\n\nKI-Produktutvikling skal gjøre det enklere å finne, prøve og dele nyttige arbeidsmåter for produktutvikling med KI i Nasjonalarkivet.\n\nGå til Om portalen →\n\nUtkast\n\nRetningslinjer\n\nFor deg som jobber med produktutvikling i Nasjonalarkivet og vil bruke KI til å utforske, lære og løse oppgaver.\n\nGå til Retningslinjer →\n\nUtkast\n\nPersonvernerklæring\n\nHer beskriver vi kartlagt bruk av opplysninger i den lokale utviklingsutgaven av portalen, og hva som fortsatt må avklares.\n\nGå til Personvernerklæring →\n\nBeta\n\nOversikt\n\nFå oversikt over KI-verktøy, abonnement og kostnader. Se assistenter, MCP-status og priser, og finn detaljene som passer måten dere jobber på.\n\nGå til Oversikt →\n\nBeta\n\nPriser for KI-verktøy\n\nSammenlign abonnement for Copilot, Claude og Codex, og se hva modellbruk koster. Velg prisgrunnlaget som passer måten dere bruker verktøyet på. Kilder og kontrolltidspunkt vises per tabell. Daglig GitHub-jobb er klargjort, men krever GitHub-repo, Actions og utrulling.\n\nGå til Priser for KI-verktøy →\n\nUtkast\n\nTilgjengelighetserklæring\n\nLes om tilgjengelighet, vurderingens begrensninger og hvordan du melder problemer eller ber om et annet format. Erklæringen er et lokalt utkast; samlet samsvar er ikke ferdig vurdert.\n\nGå til Tilgjengelighetserklæring →\n\nTilgjengelig\n\nNettstedskart\n\nFinn sidene og ressursene gjennom en samlet lenkeoversikt.\n\nGå til Nettstedskart →\n\nTilgjengelig\n\nVersjonslogg\n\nLes endringer, utførende agent og dokumenterte kontroller. Siden bygges fra prosjektets versjonslogg.\n\nGå til Versjonslogg →\n\nTilgjengelig\n\nUtviklingsplan\n\nSe leverte funksjoner, faseoversikt og krav som gjenstår før produksjonssetting. Siden bygges direkte fra prosjektets utviklingsplan.\n\nGå til Utviklingsplan →\n\nTilgjengelig\n\nFunksjonalitetsoversikt\n\nSe hva portalen tilbyr, hva som er under utprøving og hva som krever mer oppsett. Oversikten og nettstedskartet oppdateres fra det samme funksjonsregisteret.\n\nGå til Funksjonalitetsoversikt →\nKrever mer oppsett eller utvikling\n\nKrever oppsett\n\nModellgenererte svar\n\nModellkoblingen støtter lokal Ollama og eksternt OpenAI-kompatibelt Chat Completions-API. Generering krever valgt modell og serverkonfigurasjon. API-nøkkelen håndteres på serveren. Uten modell brukes veiledning fra innholdet.\n\nGå til Modellgenererte svar →\n\nIkke implementert\n\nModelloversikt\n\nEn samlet oversikt over modellenes egenskaper og bruksområder. Dette er planlagt og er ikke tilgjengelig ennå.\n\nIkke implementert\n\nForbruk og kostnader\n\nInnsikt i faktisk bruk og kostnader. Dette er planlagt og krever avklart tilgang til bruksdata før det kan vises.\n\nIkke implementert\n\nInnlogging og internt innhold\n\nTilgangsstyring for interne brukere og beskyttede ressurser er ikke implementert. At kildekoderepoet er privat, beskytter ikke i seg selv nettstedets innhold.\n\nSe versjonsloggen for endringer og dokumenterte kontroller.",
+    "media": [],
+    "navigation": [
+      {
+        "links": [
+          {
+            "href": "/kom-i-gang",
+            "text": "Kom i gang"
+          },
+          {
+            "href": "/retningslinjer",
+            "text": "Retningslinjer"
+          },
+          {
+            "href": "/#ressurser",
+            "text": "Ressurskatalog"
+          },
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/spor",
+            "text": "Spør KI"
+          },
+          {
+            "href": "/om",
+            "text": "Om"
+          }
+        ],
+        "name": "Hovedmeny"
+      },
+      {
+        "links": [
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/personvern",
+            "text": "Personvernerklæring"
+          },
+          {
+            "href": "/tilgjengelighet",
+            "text": "Tilgjengelighetserklæring"
+          },
+          {
+            "href": "/nettstedskart",
+            "text": "Nettstedskart"
+          },
+          {
+            "href": "/versjonslogg",
+            "text": "Versjonslogg"
+          },
+          {
+            "href": "/utviklingsplan",
+            "text": "Utviklingsplan"
+          },
+          {
+            "href": "/funksjonalitet",
+            "text": "Funksjonalitetsoversikt"
+          }
+        ],
+        "name": "Informasjon om nettstedet"
+      }
+    ],
+    "scrollWidth": 1280,
+    "tables": [],
+    "title": "Funksjonalitetsoversikt | KI-Produktutvikling",
+    "width": 1280
+  },
+  {
+    "route": "/nettstedskart/",
+    "duplicateIds": [],
+    "fields": [],
+    "h1": [
+      "Nettstedskart"
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Nettstedskart"
+      },
+      {
+        "tag": "H2",
+        "text": "Sider"
+      },
+      {
+        "tag": "H2",
+        "text": "Ressurser"
+      }
+    ],
+    "height": 900,
+    "images": [],
+    "lang": "nb",
+    "mainCount": 1,
+    "mainText": "← Til forsiden\nNettstedskart\n\nFinn alle sidene i KI-Produktutvikling.\n\nSider\nForsiden\nRessurskatalog\nSpør kunnskapsbasen\nGodkjente MCP-er\nGodkjente KI-assistenter\nKom i gang\nOm portalen\nRetningslinjer\nPersonvernerklæring\nOversikt\nPriser\nTilgjengelighetserklæring\nNettstedskart\nVersjonslogg\nUtviklingsplan\nFunksjonalitetsoversikt\nRessurser\nTest tilgjengelighet og utform erklæring\nKartlegg personvern og utform erklæring\nGjennomgå en kodeendring\nGi KI tydelig kontekst\nUtforsk et brukerbehov",
+    "media": [],
+    "navigation": [
+      {
+        "links": [
+          {
+            "href": "/kom-i-gang",
+            "text": "Kom i gang"
+          },
+          {
+            "href": "/retningslinjer",
+            "text": "Retningslinjer"
+          },
+          {
+            "href": "/#ressurser",
+            "text": "Ressurskatalog"
+          },
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/spor",
+            "text": "Spør KI"
+          },
+          {
+            "href": "/om",
+            "text": "Om"
+          }
+        ],
+        "name": "Hovedmeny"
+      },
+      {
+        "links": [
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/personvern",
+            "text": "Personvernerklæring"
+          },
+          {
+            "href": "/tilgjengelighet",
+            "text": "Tilgjengelighetserklæring"
+          },
+          {
+            "href": "/nettstedskart",
+            "text": "Nettstedskart"
+          },
+          {
+            "href": "/versjonslogg",
+            "text": "Versjonslogg"
+          },
+          {
+            "href": "/utviklingsplan",
+            "text": "Utviklingsplan"
+          },
+          {
+            "href": "/funksjonalitet",
+            "text": "Funksjonalitetsoversikt"
+          }
+        ],
+        "name": "Informasjon om nettstedet"
+      }
+    ],
+    "scrollWidth": 1280,
+    "tables": [],
+    "title": "Nettstedskart | KI-Produktutvikling",
+    "width": 1280
+  },
+  {
+    "route": "/tilgjengelighet/",
+    "duplicateIds": [],
+    "fields": [],
+    "h1": [
+      "Tilgjengelighetserklæring"
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Tilgjengelighetserklæring"
+      },
+      {
+        "tag": "H2",
+        "text": "Om nettstedet"
+      },
+      {
+        "tag": "H2",
+        "text": "Samsvar med kravene til universell utforming"
+      },
+      {
+        "tag": "H2",
+        "text": "Tilgjengelighet og begrensninger"
+      },
+      {
+        "tag": "H2",
+        "text": "Meld fra om problemer eller be om tilgjengelig innhold"
+      },
+      {
+        "tag": "H2",
+        "text": "Klage"
+      },
+      {
+        "tag": "H2",
+        "text": "Vurdering og oppdatering"
+      }
+    ],
+    "height": 900,
+    "images": [],
+    "lang": "nb",
+    "mainCount": 1,
+    "mainText": "← Til forsiden\nTILGJENGELIGHET · UTKAST\nTilgjengelighetserklæring\n\nHer finner du informasjon om tilgjengeligheten i KI-Produktutvikling og hvordan du får hjelp hvis noe ikke fungerer.\n\nDette er et utkast for portalen under utvikling. Samlet samsvar er ikke ferdig vurdert. Den formelle erklæringen er ikke publisert i uustatus.no.\nOm nettstedet\n\nKI-Produktutvikling utvikles i Nasjonalarkivet. Erklæringen gjelder nettsidene og PDF-vedlegget i den lokale utviklingsversjonen av portalen.\n\nSamsvar med kravene til universell utforming\n\nVurderingen av tilgjengelighet er ikke fullført. Vi kan derfor ennå ikke fastslå i hvilken grad nettstedet er i samsvar med kravene. Vurderingen tar utgangspunkt i Uu-tilsynets kravoversikt for offentlig sektor.\n\nTilgjengelighet og begrensninger\n\nDet er foreløpig ikke bekreftet hvordan alle deler av nettstedet fungerer med skjermleser, forstørring og innstillinger for redusert bevegelse. PDF-vedleggets leserekkefølge, lister og diagramalternativer er heller ikke ferdig vurdert. Dette er usikkerhet i vurderingsgrunnlaget, ikke bekreftede problemer i alle disse funksjonene.\n\nDu kan lese ressursene gjennom ressurskatalogen eller nettstedskartet uten å bruke chatten. Animasjonen på forsiden kan pauses ved å klikke på illustrasjonen, eller ved å velge den med Tab og trykke mellomrom eller Enter.\n\nMeld fra om problemer eller be om tilgjengelig innhold\n\nSend e-post til khadah@nasjonalarkivet.no hvis du opplever problemer eller trenger innhold i et annet format. Oppgi hvilken side eller funksjon det gjelder, og hva du forsøkte å gjøre. Unngå sensitive opplysninger.\n\nUu-tilsynets veiledning sier at tilbakemeldinger skal besvares så snart som mulig, vanligvis innen tre uker.\n\nKlage\n\nHvis du ikke får svar, er misfornøyd med svaret eller ikke kan bruke nettstedet på grunn av manglende universell utforming, kan du lese hvordan du klager til Diskrimineringsnemnda.\n\nVurdering og oppdatering\n\nTilgjengeligheten ble sist vurdert 9. november 2026. Grunnlaget omfatter lokale nettleserkontroller, HTML- og kontrastkontroller og undersøkelse av PDF-ens struktur og metadata. Faktisk skjermleserbruk er ikke testet.\n\nTeksten ble sist oppdatert 9. november 2026.",
+    "media": [],
+    "navigation": [
+      {
+        "links": [
+          {
+            "href": "/kom-i-gang",
+            "text": "Kom i gang"
+          },
+          {
+            "href": "/retningslinjer",
+            "text": "Retningslinjer"
+          },
+          {
+            "href": "/#ressurser",
+            "text": "Ressurskatalog"
+          },
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/spor",
+            "text": "Spør KI"
+          },
+          {
+            "href": "/om",
+            "text": "Om"
+          }
+        ],
+        "name": "Hovedmeny"
+      },
+      {
+        "links": [
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/personvern",
+            "text": "Personvernerklæring"
+          },
+          {
+            "href": "/tilgjengelighet",
+            "text": "Tilgjengelighetserklæring"
+          },
+          {
+            "href": "/nettstedskart",
+            "text": "Nettstedskart"
+          },
+          {
+            "href": "/versjonslogg",
+            "text": "Versjonslogg"
+          },
+          {
+            "href": "/utviklingsplan",
+            "text": "Utviklingsplan"
+          },
+          {
+            "href": "/funksjonalitet",
+            "text": "Funksjonalitetsoversikt"
+          }
+        ],
+        "name": "Informasjon om nettstedet"
+      }
+    ],
+    "scrollWidth": 1280,
+    "tables": [],
+    "title": "Tilgjengelighetserklæring | KI-Produktutvikling",
+    "width": 1280
+  },
+  {
+    "route": "/utviklingsplan/",
+    "duplicateIds": [],
+    "fields": [],
+    "h1": [
+      "Utviklingsplan"
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Utviklingsplan"
+      },
+      {
+        "tag": "H2",
+        "text": "Slik brukes og vedlikeholdes planen"
+      },
+      {
+        "tag": "H2",
+        "text": "Mål og rammer"
+      },
+      {
+        "tag": "H2",
+        "text": "Levert siden forrige planoppdatering"
+      },
+      {
+        "tag": "H2",
+        "text": "Hva gjenstår før produksjonssetting?"
+      },
+      {
+        "tag": "H2",
+        "text": "Faseoversikt"
+      },
+      {
+        "tag": "H2",
+        "text": "Fase 1 – Avklaringer og prosjektgrunnlag"
+      },
+      {
+        "tag": "H2",
+        "text": "Fase 2 – Teknisk grunnmur og sikker arbeidsflyt"
+      },
+      {
+        "tag": "H2",
+        "text": "Fase 3 – Design, komponenter og tilgjengelighet"
+      },
+      {
+        "tag": "H2",
+        "text": "Fase 4 – MVP 1: lokal portal og lukket pilot"
+      },
+      {
+        "tag": "H2",
+        "text": "Fase 5 – Servermiljø, modellkobling og utrulling"
+      },
+      {
+        "tag": "H2",
+        "text": "Fase 6 – MVP 2: innlogging og beskyttet tilgang"
+      },
+      {
+        "tag": "H2",
+        "text": "Fase 7 – MVP 3: skills og distribusjon"
+      },
+      {
+        "tag": "H2",
+        "text": "Ressurskatalog – navngiving oppdatert 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Oversikt – levert lokalt 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Prisoversikt – levert lokalt 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Tilgjengelighetsretest – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Fase 8 – MVP 4: forvaltning og produksjonsgodkjenning"
+      },
+      {
+        "tag": "H2",
+        "text": "Neste arbeidsbolk"
+      },
+      {
+        "tag": "H2",
+        "text": "Beslutninger og avklaringer"
+      },
+      {
+        "tag": "H2",
+        "text": "Endring 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Historikk fra tidligere arbeidsøkter"
+      },
+      {
+        "tag": "H3",
+        "text": "Lokal status – 30. oktober 2026"
+      },
+      {
+        "tag": "H3",
+        "text": "Neste oppgaver slik de var formulert 30. oktober"
+      },
+      {
+        "tag": "H3",
+        "text": "Endringslogg"
+      },
+      {
+        "tag": "H2",
+        "text": "Tillegg – RAG-tjeneste"
+      },
+      {
+        "tag": "H3",
+        "text": "Chatbot på forsiden – 30. oktober 2026"
+      },
+      {
+        "tag": "H3",
+        "text": "Visuell tilpasning av chatbot – 30. oktober 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Teknisk opprydding – 30. oktober 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Statusgjennomgang – 6. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Tilgjengelighet og erklæring – 6. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Første skill i lokalt bibliotek – 7. november 2026"
+      }
+    ],
+    "height": 900,
+    "images": [],
+    "lang": "nb",
+    "mainCount": 1,
+    "mainText": "← Til forsiden\nFREMDRIFT OG PRODUKSJONSKRAV\nUtviklingsplan\n\nSist oppdatert: 9. november 2026. Utførende agent ved denne gjennomgangen: Codex (OpenAI).\n\nStatus: Fungerende lokal prototype; ikke klar for produksjon eller deling av internt innhold. Lokal funksjonalitet og modelladaptere er implementert. Drift, innlogging, faglig godkjenning og samlet lanseringskontroll gjenstår. Første delte miljø skal være en lukket pilot. Offentlig publisering vurderes senere, etter en egen beslutning.\n\nGjennomgangen bygger på kode, dokumentasjon og lokal Git-historikk til og med 56d6886, supplert med arbeidet med personvernskillen og portalens erklæringsutkast, prisside og Oversikt. Siste samlede dokumenterte kjøring har 48 beståtte tester og produksjonsbygg, samt avgrensede nettleserkontroller. Dette er ikke dokumentasjon på produksjonsdrift, godkjent innhold, full tilgjengelighet eller vellykkede kall mot en faktisk modellleverandør. Se versjonsloggen for kontrollomfanget i hver arbeidsøkt; publisering av en planside er ikke produksjonsgodkjenning.\n\nSlik brukes og vedlikeholdes planen\n\nDenne filen er den gjeldende utviklingsplanen. Faseoversikten og produksjonskravene nedenfor viser dagens status. Avsnittet med historikk bevarer tidligere vurderinger; eldre testantall, oppgaver og prioriteringer der beskriver den aktuelle datoen, ikke dagens løsning.\n\nLes relevante faser før vesentlig arbeid. Oppdater fremdrift, gjenstående arbeid, avhengigheter og dato i samme arbeidsøkt som endringen, før ferdigmelding eller commit.\nKryss av bare arbeid som er utført og verifisert. Skill mellom «implementert lokalt», «testet med simulert tjeneste», «verifisert i delt miljø» og «godkjent for produksjon».\nOppdater både planen og versjonsloggen ved endringer i omfang, leveranser, prioriteringer eller produksjonskrav. Funksjonsbeskrivelser vedlikeholdes i src/content/features.ts.\nOppgi faktisk kontrollgrunnlag, kjente begrensninger og commit/issue når de finnes. Navngitt eier eller frist skal ikke oppfinnes; bruk «ikke avklart» og oppgi hvilken rolle som må avklares.\nFør en utrulling gjennomgås alle aktuelle krav i tabellen nedenfor, også når bygg og tester består. Et grønt bygg betyr ikke at alle lanseringskrav er oppfylt.\n\nReglene er også lagt i AGENTS.md, og gjelder fremtidig agentarbeid i prosjektet. Planen er ikke en automatisk tolkning av kode eller en periodisk jobb: meningen med endringer og godkjenninger må fortsatt vurderes av personen eller agenten som utfører arbeidet. Generell CI og en fast gjennomgang i forbindelse med pull requests er ennå ikke etablert. En egen daglig prisjobb er klargjort lokalt, men ikke aktivert på GitHub.\n\nMål og rammer\nMålgruppe: De som jobber med produktutvikling eller utvikling av løsninger i Nasjonalarkivet. Portalen skal gjøre det enklere å lære, prøve og dele nyttige arbeidsmåter med KI.\nOmfang nå: Oppstartsveiledning, retningslinjeutkast, ressurskatalog, Spør KI, informasjon om teamet og KI-prat, tilgjengelighetsgrunnlag, versjonslogg og funksjonalitetsoversikt. Nyheter og egne agenter er mulige senere tillegg, ikke et krav til første pilot.\nTeknologi: Next.js, TypeScript, MUI og @digitalarkivet/mui-theme, med portalens eget futuristiske komponent-/designlag. Publisert npm-pakke brukes uten tilgang til designbibliotekets private GitHub-repo.\nUtvikling og versjonering: Lokal utvikling og Git er etablert. Portalrepoet har ingen GitHub-remote. Eget organisasjonsrepo, CI og utrulling må avklares og opprettes separat.\nDrift: Driftsplattform, domene og ansvar er ikke valgt. Dagens løsning starter Next.js og RAG på lokal loopback. Pages finnes som statisk byggvariant, ikke som besluttet miljø for lukket pilot eller modellgenerering.\nTilgang: Brukerne skal i første delte miljø avgrenses til godkjente GitHub-brukere hos virksomheten. Organisasjon/team, nødvendige abonnementsegenskaper og konkret tilgangsløsning er ikke endelig avklart. Innlogging og autorisering er ikke implementert.\nGitHub-rettigheter: Portalen skal ikke ha skrivetilgang til andre koderepoer. En eventuell medlemskontroll skal få et avgrenset formål og minimale nødvendige rettigheter.\nInnhold: Felles innholdsdata brukes av sider, katalog, anbefalinger og RAG. Dette sikrer teknisk samsvar, men innebærer ikke faglig godkjenning. Internt materiale skal ikke legges i klientdata, public/, offentlige bygg eller dagens RAG-korpus.\nModell: Lokal Ollama og eksternt OpenAI-kompatibelt Chat Completions-API er støttet i kode. Leverandør, modell og virkelig API-tilkobling er ikke konfigurert/verifisert. API-nøkkelen skal bare være en serverhemmelighet.\nLevert siden forrige planoppdatering\nOmråde\tImplementert og dokumentert\tBegrensning som fortsatt gjelder\nForside og navigasjon\tLær/Prøv/Del, anbefalt oppgave «Utforsk et brukerbehov» fra ressursdata, menyen Kom i gang → Retningslinjer → Ressurskatalog → Oversikt → Spør KI → Om\tBegrenset intern brukertesting gjenstår\nInnhold og KI-prat\tFelles innholdsfiler for Kom i gang, Om og Retningslinjer, tydelig retningslinjelenke, KI-prat med deltakelsesinvitasjon og mandatforslag som vedlegg\tRetningslinjer og mandat er utkast; eiere og godkjenning gjenstår\nRessurser og Skills\tFem katalogressurser, separat lokalt Skills-repo, tilgjengelighetsskill 0.3.0 og personvernskill 0.1.0 med kartleggings-/rapportflyt og generell installasjonsveiledning\tSkills er Beta og ikke menneskelig gjennomgått; ingen distribusjon fra portalen eller GitHub er etablert\nSpør KI\tKildebasert veiledning, konkrete steg, kilder, nye spørsmål, forbedret presentasjon av modellsvar og serveradapter for eksternt API\tIngen faktisk modellgenerering er verifisert; hvert spørsmål behandles separat\nKontinuerlig innholdsoppdatering\tSider og RAG deler innhold; lokal RAG lastes om ved innholdsendringer; isolert synkroniseringstest finnes\tI produksjon må Next.js og RAG utrulles fra samme revisjon; gamle chatsvar er historikk\nOversikter\tNettstedskart, versjonsloggside og funksjonalitetsoversikt med bunntekstlenker; byggkontroll for manglende/ukjente sider\tFunksjonenes mening og modenhet må vedlikeholdes i registeret\nTilgjengelighet\tAvgrensede kontroller, rettinger, WCAG-matrise, lokalt erklæringsutkast og daterte testresultater under docs/tilgjengelighet/\tFlere manuelle kontroller og formell godkjenning/registrering gjenstår; nyere sider og chatendringer må inngå i neste kontroll\nTeknisk kvalitet\tModuldeling, lokale tester, TypeScript, formatering, produksjonsbygg og test av at en falsk modellnøkkel ikke følger med klientfiler\tCI, driftssikkerhet og kontroll i det faktiske utrullingsmiljøet gjenstår\n\nReferanser: Portalcommitene 797cd7b, 9f27564 og e93e5f9, samt versjonsloggen. Skills-repoets siste lokale commit er cf8f6d5; repoene har separate logger og historikk.\n\nHva gjenstår før produksjonssetting?\n\nIngen av kravene nedenfor er ferdig godkjent. Alle eiere er foreløpig ikke avklart; rolleangivelsene viser hvem som må utpekes. «Lukket pilot» betyr også et delt miljø og krever beskyttelse før tilgang gis.\n\nID\tPrioritet / tidspunkt\tGjenstående leveranse og ferdigkriterium\tRolle som må avklares\nP1\tFør delt pilot\tBeslutte driftsplattform, domene, tilgangsløsning, målgruppe og ansvar. Første miljø skal være lukket; offentlig utrulling skal ikke skje som standard.\tProsjekteier og plattform/drift\nP2\tFør delt pilot\tImplementere og verifisere innlogging og autorisering. Avvis brukere uten tilgang også på direkte sideadresser, vedlegg og /api/rag. Test utlogging, utløpt/fjernet medlemskap og feil i identitetskontrollen.\tTeknisk ansvarlig og identitetsforvaltning\nP3\tFør delt pilot\tEtablere drift for Next.js og RAG med HTTPS, intern ruting og prosessovervåking. Erstatte lokale forutsetninger: RAGs Origin-kontroll tillater bare localhost i dag, og Next.js peker på loopback. Test fra faktisk nettadresse med korrekte tillatte origins og interne tjenesteadresser.\tPlattform/drift\nP4\tFør delt pilot\tEtablere eget organisasjonsrepo, PR-/review-regler og CI som kjører relevante tester, format, typer og bygg. pnpm check kjører ikke testpakken i dag; testkommandoene må tas med uttrykkelig. Gi utrullingen minimale rettigheter og bruk server-secrets.\tTeknisk ansvarlig og repoansvarlig\nP5\tFør pilot med genererte svar\tVelge godkjent leverandør/modell, avklare databehandling og konfigurere URL/modell/nøkkel. Test faktiske svar, kildestøtte, manglende treff, timeout og leverandørfeil. Hvis dette utsettes, må piloten uttrykkelig lanseres som kildebasert veiledning uten modellgenerering.\tProdukteier, modellansvarlig og personvern/sikkerhet\nP6\tFør delt pilot\tInnføre tilgangs- og misbruksvern for API-et, rate-/kostnadsgrenser og avklart kapasitet. Dagens enkeltkallslås er ikke ratebegrensning. Bekreft at nøkkel og rå leverandørfeil ikke eksponeres i det utrullede miljøet.\tTeknisk ansvarlig og drift\nP7\tFør pilotinnhold tas i bruk\tGodkjenne første innhold, vedlegg og profilressurser, og utpeke innholdsansvarlige. Behold utkast-/Beta-merking til faktisk gjennomgang er gjort. Suisse-filer skal bare brukes hvis rettighetene er avklart; reserveskrift kan beholdes.\tFag-/innholdseier og profilansvarlig\nP8\tFør produksjonsgodkjenning\tFullføre skjermleser, faktisk tekstforstørring/zoom, kontrast-/fokustilstander og relevante nettlesere på dagens sider og chat. Oppdatere testgrunnlag/erklæring, avklare godkjenner og endelig URL og ferdigstille formell erklæring etter virksomhetens prosess.\tTilgjengelighetsansvarlig og godkjenner\nP9\tFør produksjonsgodkjenning\tVerifisere overvåking, feilhåndtering, logg-/lagringsrutiner, hendelsesansvar og tilbakeføring i faktisk miljø. Gjennomføre sikkerhets-/avhengighetskontroll og kontrollere personverninformasjon mot reell databehandling.\tDrift, sikkerhet og personvern\nP10\tFør bredere lansering\tGjennomføre lukket brukertest, rette prioriterte funn og godkjenne leveransen. Offentlig publisering krever en separat vurdering av innhold, tilgangsskille, drift og lanseringskrav.\tProsjekteier med fag- og driftsansvarlige\n\nTilgjengelighetsgrunnlag og konkrete uavklarte punkter finnes i WCAG-kontrollen (docs/tilgjengelighet/WCAG-KONTROLL.md) og erklæringsutkastet (docs/tilgjengelighet/TILGJENGELIGHETSERKLAERING.md). Disse dokumentene skal oppdateres fra nye resultater; denne planoppdateringen er ikke en ny tilgjengelighetsrevisjon.\n\nFaseoversikt\nFase\tLeveranse\tStatus 9. november 2026\n1\tOmfang, ansvar og tilgangsvalg\tMålgruppe og første funksjoner avklart; eierskap, drift og tilgangsmodell åpne\n2\tTeknisk grunnmur og arbeidsflyt\tLokal implementering klar; GitHub-repo, CI og review-regler gjenstår\n3\tDesign og tilgjengelighet\tDesign og avgrensede kontroller utført; samlet tilgjengelighetsgodkjenning gjenstår\n4\tMVP 1: lokal portal og forberedelse til lukket pilot\tLokal leveranse klar; ikke delt eller brukertestet som pilot\n5\tServermiljø, modellkobling og utrulling\tAdaptere klargjort; driftsmiljø og faktisk modelltilkobling ikke etablert\n6\tMVP 2: innlogging og beskyttet tilgang\tIkke implementert; nødvendig før første delte pilot\n7\tMVP 3: versjonerte skills og distribusjon\tLokalt bibliotek og katalogintegrasjon på plass; review og distribusjon gjenstår\n8\tMVP 4: forvaltning og produksjonsgodkjenning\tIkke godkjent; produksjonskrav P1–P10 følges opp\n\nFase 5 og 6 må samordnes før MVP 1 deles. Fase 7 kan utvikles parallelt, men full automatisk skill-installasjon er ikke et krav til første pilot med lesbart innhold. Pages beholdes foreløpig som bygg-/demovariant; det er ikke en beslutning om offentlig hosting.\n\nFase 1 – Avklaringer og prosjektgrunnlag\nUtført: Definere målgruppe og portalens praktiske formål.\nUtført: Velge første innholdsområder og eget futuristisk design basert på publisert MUI-tema.\nUtført: Beslutte at første delte miljø skal være lukket, og at offentlig publisering utsettes.\nGjenstår: Utpeke prosjekteier, teknisk ansvarlig, innholdsansvarlige og driftsansvarlig.\nGjenstår: Bekrefte GitHub-organisasjon/team, tilgangsmodell og egnet abonnement/oppsett uten å anta at et privat repo beskytter nettstedet.\nGjenstår: Velge driftsplattform og domene, og avklare hvilke data og verktøy første pilot kan bruke.\nGjenstår: Avklare faglig godkjenning og rettigheter for innhold, vedlegg og eventuelle ekstra profilressurser.\n\nFerdig når: P1 er besluttet og eiere er navngitt. Avklaringer registreres her med faktisk beslutningsgrunnlag.\n\nFase 2 – Teknisk grunnmur og sikker arbeidsflyt\nUtført: Etablere lokal Git, Next.js, TypeScript, modulgrenser og dokumentert oppstart.\nUtført: Ha lokal formatering, tester, typekontroll og byggvarianter for server og statisk eksport.\nUtført: Implementere felles innholdskilde for sider, anbefalinger og RAG, med kontroll av innholdsreferanser.\nUtført: Implementere automatisk lokal omlasting av RAG og isolert test av innholdssynkronisering.\nUtført: Etablere funksjonsregister med automatisk avledet oversikt og nettstedskart, og kontroll av sideregistrering ved oppstart/bygg.\nUtført: Etablere versjonslogg og agentinstruksjoner for vedlikehold av logg og funksjonsregister; denne økten utvider regelen til utviklingsplanen.\nGjenstår: Opprette/tilknytte organisasjonsrepo og avtale branch-/PR-/review-regler.\nGjenstår: Etablere CI med tester, formatering, typekontroll, relevante bygg og kontroll av offentlige artefakter. Vurdere linting som tillegg.\nGjenstår: Etablere rutiner for avhengigheter, serverhemmeligheter, nøkkelrotasjon og minste privilegium for CI/utrulling.\n\nFerdig når: P4 er verifisert gjennom en faktisk pull request og kontrollert utrulling. Lokale kontroller alene lukker ikke fasen.\n\nFase 3 – Design, komponenter og tilgjengelighet\nUtført: Integrere @digitalarkivet/mui-theme og eget tema uten privat GitHub-tilgang.\nUtført: Implementere valgt arklogo/favicon, futuristisk forside, navigasjon, bunntekst, katalog, artikkeloppsett og chat.\nUtført: Legge til rolige bevegelser i illustrasjonens punkter og ytre ring, med klikk på selve illustrasjonen for pause/start, tastaturbetjening og statisk visning ved redusert bevegelse.\nUtført: Tilpasse grunnleggende responsivitet, fokus, kontrast og redusert bevegelse, og utføre avgrensede kontroller med dokumenterte rettinger.\nUtført: Opprette WCAG-matrise, testhistorikk og lokalt erklæringsgrunnlag med bekreftet kontaktadresse.\nGjenstår: Gjennomføre resterende manuelle kontroller, inkludert dagens nye sider, innhold og chatvisning.\nGjenstår: Prøve innlogging og tilgangsfeil med tastatur, hjelpemidler og mobil når funksjonene finnes.\nGjenstår: Ferdigstille tilgjengelighetsvurdering og erklæring med navngitt godkjenner og faktisk nettadresse.\n\nFerdig når: P8 er dokumentert for den aktuelle leveransen. Tidligere delkontroller er ikke full samsvarsgodkjenning.\n\nFase 4 – MVP 1: lokal portal og lukket pilot\nUtført: Implementere forside med katalog, Lær/Prøv/Del og anbefalt ressurs fra felles innhold.\nUtført: Implementere oppstartsveiledning med retningslinjelenke, retningslinjeutkast og Om med KI-prat og mandatvedlegg.\nUtført: Implementere søk/filter, ressursdetaljer, Beta-/eksempelmerking og generell bruksveiledning.\nUtført: Implementere Spør KI med kildebasert veiledning og forberedt modellgenerering.\nUtført: Implementere nettstedskart, tilgjengelighetsside, versjonslogg og funksjonalitetsoversikt.\nGjenstår: Faglig gjennomgå og godkjenne representativt pilotinnhold, inkludert skill-beskrivelse og PDF.\nGjenstår: Dele via lukket testmiljø først når tilgang, drift og aktuelle krav P1–P9 er håndtert for pilotens omfang.\nGjenstår: Gjennomføre oppgavebasert brukertest og prioritere forbedringer.\n\nFerdig når: En avgrenset, autorisert brukergruppe kan finne en veiledning og en ressurs, få forståelig hjelp og melde problemer. Lokal funksjonalitet er klar, men pilotleveransen er ikke fullført.\n\nAvgrensning: Ingen offentlig publisering nå. Statisk Pages-eksport skal fortsatt bare inneholde offentlig beskrivende data; den er ikke i seg selv et beskyttet miljø eller en modellserver.\n\nFase 5 – Servermiljø, modellkobling og utrulling\nUtført: Implementere separat RAG-HTTP-tjeneste og serverkonfigurasjon med valgene none, ollama og openai-compatible.\nUtført: Implementere ekstern adapter med HTTPS, serverlagret Bearer-nøkkel, timeout, avvist videresending og nøytrale feilmeldinger.\nUtført: Teste adaptere og HTTP-kontrakt med simulert transport, inkludert feil, manglende innstillinger og at hemmeligheter ikke returneres.\nGjenstår: Etablere drift av Next.js og RAG og intern ruting som passer den valgte plattformen.\nGjenstår: Gjøre produksjonsorigins og intern RAG-adresse konfigurerbare; verifisere endepunktet fra faktisk HTTPS-adresse.\nGjenstår: Velge modell/leverandør og avklare databehandling, før virkelige server-secrets legges inn.\nGjenstår: Teste reell generering med representative spørsmål, kildestøtte og utilstrekkelig grunnlag, samt feil, treghet og kostnads-/kapasitetsgrenser.\nGjenstår: Etablere ratebegrensning, logger uten hemmeligheter, helsesjekker, alarmer og en dokumentert tilbakeføringsprøve.\nGjenstår: Bygge og utrulle nettside og RAG fra samme revisjon med kontroll av innhold og hemmeligheter i artefaktene.\n\nFerdig når: P3, P5 (eller eksplisitt avgrensning til veiledning uten modell), P6 og relevante deler av P9 er testet i det delte miljøet. Pages alene leverer ikke disse serverfunksjonene.\n\nFase 6 – MVP 2: innlogging og beskyttet tilgang\nGjenstår: Velge identitets-/tilgangsløsning og avgrenset GitHub-medlemskontroll uten skriverettigheter til andre repoer.\nGjenstår: Implementere innlogging, sikre sesjoner og utlogging, og kontrollere tilgang på serveren.\nGjenstår: Beskytte hele pilotmiljøet etter avtalt målgruppe, inkludert /api/rag og vedlegg; beskytte det senere interne området før internt innhold legges til.\nGjenstår: Definere ny medlemskontroll, fjernet tilgang, utløp og oppførsel når identitetstjenesten feiler.\nGjenstår: Teste direkte lenker, ressursnedlasting, manglende/fjernet medlemskap, utløpte sesjoner og uautorisert API-bruk.\nGjenstår: Før private kilder innføres: etablere tilgangsfiltrert henting, søk og mellomlagring, og kontrollere at private data ikke følger med offentlig bygg.\n\nFerdig når: P2 er verifisert og uautoriserte brukere ikke kan hente beskyttet innhold eller bruke beskyttede API-er. Dette er en forutsetning for første deling, ikke en oppgave som utsettes til etter piloten.\n\nFase 7 – MVP 3: skills og distribusjon\nUtført: Opprette separat lokalt Skills-repo med struktur for flere skills og egen versjonslogg.\nUtført: Utvide tilgjengelighetsskillen til testing, rettingsforslag og erklæringsutforming, med daterte resultater i målprosjektet.\nUtført: Utvide skillen til 0.4.0 med konkrete prosedyrer for alle 48 nettkrav og automatisk opprettet, uutfylt testplan. Dette er utvidelse av testverktøyet, ikke gjennomføring av portalens gjenstående tilgjengelighetskontroller.\nUtført: Opprette personvernskill 0.1.0 med kartlegging, arbeidsmaler, faglige referanser og datert resultatlagring, installere lik lokal kopi og registrere Beta-beskrivelsen i katalogen og Spør KI. Seks tester av lagringsverktøyet bestod i isolerte prosjekter; dette er ingen juridisk godkjenning.\nUtført: Validere pakke/metadata og teste lagringsverktøyene; tidligere dokumenterte 15 regresjonstester bestod i isolerte prosjekter.\nUtført: Gjøre skillen gjenfinnbar i katalog og Spør KI med versjon, plassering og generell bruksveiledning.\nGjenstår: Få skillen gjennomgått av et menneske, og avklare eier/godkjenner før Beta-status eventuelt endres.\nGjenstår: Avklare om/når Skills-repoet skal få GitHub-remote og hvilke ressurser som kan distribueres.\nGjenstår: Etablere versjonerte utgaver og faktisk nedlasting/installasjon, med autorisasjon for private ressurser.\nGjenstår: Prøve bestemt versjon, oppdatering og tilbakeføring med et pilotteam, uten å overskrive lokale endringer utilsiktet.\n\nFerdig når: Et godkjent bibliotek kan installeres og oppdateres etter en testet prosess. Dagens katalogbeskrivelse betyr ikke at portalen allerede distribuerer skill-pakken.\n\nRessurskatalog – navngiving oppdatert 9. november 2026\nUtført: Rette «Utforsk ressursene» til et vanlig ankerhopp på samme side, inkludert gjentatte klikk når ankeret allerede står i adressen.\nUtført: Endre meny- og katalognavn til Ressurskatalog, bruke «Finn en ressurs» som overskrift og presisere innholdet som skills, instruksjoner og prompter. Felles tekst brukes på forsiden, i menyen og i funksjonsregisteret/Spør KI. Henvisninger på detaljsider, Om og erklæringssider er avstemt. Nettadressen /#ressurser beholdes.\nOversikt – levert lokalt 9. november 2026\nUtført: Opprette Godkjente MCP-er under Oversikt med Atlassian MCP (ROS-analyse pågår) og Slack MCP (planlagt). Ingen av dem oppgis som godkjent. Status deles med Spør KI og retningslinjene peker til oversikten.\nGjenstår: Oppdatere MCP-status etter bekreftede vurderinger og beslutninger, med godkjent bruksomfang når dette foreligger. ROS-arbeidet er ikke gjennomført av portalen.\nUtført: Legge til Godkjente KI-assistenter under Oversikt, med Copilot, Claude AI og Codex som godkjent etter brukerens opplysning 9. november 2026. Siden og Spør KI deler innhold; retningslinjene viser til listen.\nGjenstår: Supplere assistentoversikten med bekreftede konto-/lisensrammer, modeller, integrasjoner og tillatte datakategorier. Assistentgodkjenningen er ikke en avklaring av disse forholdene eller portalens produksjonskrav.\nUtført: Opprette /oversikt/ som inngang med priser og abonnement som første del. Hovedmeny og bunntekst er oppdatert; /priser/ beholder adressen og har brødsmulesti til Oversikt.\nUtført: Dele beskrivelsene mellom siden, funksjonsregisteret og Spør KI. Modelloversikt og forbruk er merket planlagt, uten falske data eller døde lenker. Alle 45 tester og produksjonsbygg bestod.\nGjenstår: Utvide med modelloversikt når egenskaper, kilder og innholdsansvar er avklart.\nGjenstår: Utvide med faktisk forbruk først etter avklart datatilgang, personvern, autorisering og kilde. Ingen innhenting av bruksdata er implementert.\nPrisoversikt – levert lokalt 9. november 2026\nUtført: Opprette /priser/ med abonnement for Copilot/Claude/Codex, separate direkte API-tabeller og Copilot-tokenpriser, offisielle kilder og kontrolltidspunkt. Registrert som Beta, med lenke i bunnteksten.\nUtført: Hente og formatkontrollere alle seks kilder; samme snapshot brukes av siden og Spør KI. HTTP-/parsefeil bevarer forrige vellykkede data og gir synlig feilstatus ved neste bygg. Prisutvalget er eksplisitt og omfatter ikke alle planer/modeller.\nUtført: Lage lokale parser-/feilhåndteringstester, foreldelsesvarsel og daglig GitHub-arbeidsflyt som foreslår prisdata og versjonslogg i PR. Alle 45 tester og lokalt produksjonsbygg bestod.\nGjenstår: P4: Legge repoet på GitHub, tillate nødvendige Actions-/PR-rettigheter og prøve planlagt/manuell jobb. Bare samme repo får skriverettigheter; ingen andre repoer eller modellnøkler brukes.\nGjenstår: Koble sammenslått prisgrunnlag til faktisk utrulling av både nettside og RAG, og teste feilkilder/varsling i det delte miljøet. Automatisk produksjonsoppdatering er ikke aktiv. Avklare hvem som gjennomgår åpne pris-PR-er og vedlikeholder utvalget; aktiveringsstatus på siden skal oppdateres først etter verifisering.\nTilgjengelighetsretest – 9. november 2026\nUtført: Rydde den brukerrettede erklæringen og oppdatere tilgjengelighetsskill 0.3.1 slik at tekniske resultater og arbeids-/rettingshistorikk holdes i rapportene. Teststatus og gjenstående kontroller er uendret.\nUtført: Kontrollere 20 nåværende HTML-sider, nye oversikter/priser/personvern og animasjonen med skill 0.3.0. Lagre resultatene i docs/tilgjengelighet/2026-11-09/201443-73cb0a3e52e0/ og oppdatere erklæring og 48-punkts arbeidsmatrise. 23 eksportfiler, 60 responsive DOM-kontroller og 40 tekstavstandskontroller er dokumentert.\nUtført: Rette og reteste A11Y-01 (3.1.2) i en egen oppfølging: prisvilkår genereres på norsk, faktisk prisoppdatering og alle seks vilkårsseksjoner er kontrollert. Tre nye regresjonstester dekker gjentatt oppdatering, endrede vilkår og ukjent format. Se docs/tilgjengelighet/2026-11-09/203914-cf2e80bc00f7/. P8 er fortsatt åpent grunnet øvrige uavklarte kontroller.\nUtført: Fortsette lokale kontroller av syv PDF-sider, supplerende kontrastpar, tastaturflyt på fire nye sider og chatfokus. Ny rapport: docs/tilgjengelighet/2026-11-09/205326-389241d1fd6e/. Arbeidsstatus 25 K / 10 I / 11 U / 2 B, ikke en samsvarsprosent.\nUtført: Rette og struktur-/metadatareteste A11Y-02 (PDF-overskrifter, 1.3.1) og A11Y-03 (dokumenttittel, 2.4.2). Retest docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/ bekrefter 27 overskriftsroller, 229 MCID-koblinger, korrekt Info-/XMP-tittel og uendret rendering/tekst på syv sider. Faktisk skjermlesertest er ikke utført. Ny status: 26 K / 10 I / 12 U / 0 B. 1.3.1 forblir U for øvrig PDF-semantikk; P8 er fortsatt åpent.\nGjenstår: Fullføre de 12 uavklarte vurderingene, inkludert faktisk skjermleser/overskriftsnavigasjon i rettet PDF, øvrig PDF-semantikk/alternativer/leserekkefølge, faktisk zoom, full kontrast/fokus, redusert bevegelse med faktisk innstilling og utestede dynamiske tilstander. K/I-resultater er delgrunnlag, ikke automatisk formell etterlevelse.\nGjenstår: Bekrefte juridiske virksomhetsopplysninger, endelig URL, oppfølgingsansvar og godkjenner før registrering. P8 er fortsatt åpent; ingen samsvarskategori er ferdig vurdert.\nFase 8 – MVP 4: forvaltning og produksjonsgodkjenning\nGjenstår: Utpeke ansvarlige for drift, innhold, tilgjengelighet, modeller og tilgang.\nGjenstår: Etablere bidragsmaler, faglig review, dato/ansvar for innholdsgjennomgang og vedlikehold av Beta-/utkaststatus.\nUtført: Lage lokalt personvernerklæringsutkast på /personvern/, lenke i bunnteksten og datert kartlegging i docs/personvern/2026-11-09/161600-a3368ac30b20/. Nettsiden og Spør KI bruker felles kilde; kontaktadresse er bekreftet.\nGjenstår: Ferdigstille personvern-/databehandlingsinformasjon ut fra valgt drift, modell og eventuell logging. P9 er fortsatt åpent: bekreft behandlingsansvarlig, ombud, rettsgrunnlag per aktivitet, leverandøravtaler, overføringer og lagring; gjennomfør nettleser-/nettverkskontroll i faktisk pilotmiljø.\nGjenstår: Gjennomføre samlet sikkerhets-, tilgjengelighets- og produksjonskontroll og dokumentere avvik/tiltak.\nGjenstår: Prøve produksjonsutrulling, overvåking, hendelseshåndtering og tilbakeføring.\nGjenstår: Lukke prioriterte pilotfunn og dokumentere beslutning om lansering.\nGjenstår: Før offentlig åpning: godkjenne offentlig innhold og kontrollere skillet mot eventuelt internt område på nytt.\n\nFerdig når: De aktuelle kravene P1–P10 er dokumentert håndtert, og prosjekteier og navngitte fag-/driftsansvarlige godkjenner leveransen. Utsatt skill-installasjon eller modellgenerering skal være et eksplisitt omfangsvalg, ikke skjult manglende funksjonalitet.\n\nNeste arbeidsbolk\nAvklar P1: Velg ansvarlige, driftsmiljø og metode for lukket tilgang. Dette styrer videre implementering.\nGjennomfør P2–P4 og P6: Implementer tilgang, produksjonsruting, CI og API-vern i det valgte miljøet.\nVelg om modellgenerering skal være med i piloten: Gjennomfør P5 eller avtal at piloten bare gir kildebasert veiledning.\nArbeid parallelt med P7–P8: Gjennomgå innhold/skill og fullfør tilgjengelighetskontrollen; ikke vent til lanseringsdagen.\nVerifiser P9–P10: Prøv drift/tilbakeføring og gjennomfør lukket brukertest før produksjonsgodkjenning.\nBeslutninger og avklaringer\nTema\tGjeldende retning\tGjenstående beslutning\nPubliseringsrekkefølge\tLokal utvikling → lukket pilot → eventuell offentlig portal\tHvem kan få pilottilgang og hvordan den beskyttes\nGitHub\tLokale repoer for portal og Skills; ingen remote i portalrepoet\tOrganisasjonsrepo, abonnement/oppsett, PR-regler og utrullingsrettigheter\nInnhold\tPraktisk nytte, felles kilder og tydelig Beta-/utkaststatus\tNavngitte eiere og faglig godkjenning\nModeller\tLokal eller ekstern adapter; nøkkel kun på server\tGodkjent leverandør/modell, databehandling og om generering inngår i pilot\nDrift\tNext.js og RAG må driftes og utrulles samlet fra samme revisjon\tPlattform, domene, intern ruting, overvåking og driftsansvar\nPages\tStatisk demo-/byggvariant beholdes lokalt\tOm den får en senere rolle; offentlig demo er ikke prioritert nå\nForvaltning\tPlan, versjonslogg og funksjonsregister oppdateres i samme arbeidsøkt\tRoller, PR-prosess og faste gjennomganger når samarbeid etableres\nEndring 9. november 2026\n\nPlanen er også tilgjengelig som /utviklingsplan/ i portalen, med lenke fra bunnteksten, nettstedskartet og funksjonalitetsoversikten. Nettsiden bygges direkte fra denne filen; oppdateringer følger neste bygg/utrulling.\n\nPlanen er avstemt med kode, dokumentasjon og commit e93e5f9. Fase 4 er endret fra offentlig Pages-demo til lokal portal og lukket pilot, i samsvar med ønsket om å avvente offentlig publisering. Gjennomført arbeid med innhold, RAG, skills og oversikter er registrert, og produksjonskrav P1–P10 er prioritert. De tidligere datostemplede avsnittene nedenfor bevares som historikk.\n\nHistorikk fra tidligere arbeidsøkter\nLokal status – 30. oktober 2026\nEn «Om»-side beskriver portalens praktiske formål og AI enablement-teamets foreslåtte rolle. Mandatet brukes som bakgrunn; brukernytte styrer innholdsprioriteringen.\nNode.js fra Codex sin medfølgende runtime benyttes; ingen global installasjon er gjort.\nNext.js, React og TypeScript er installert med låste versjoner og pnpm-lock.yaml.\nsh scripts/dev.sh starter portalen på http://127.0.0.1:3000.\nVanlig produksjonsbygg og statisk Pages-bygg er verifisert.\nForside, søk, kategorifiltrering og veiledningsside er prøvd i nettleseren.\nDigitalarkivets MUI-tema 5.1.0 er integrert med MUI 9.5.0 og et eget futuristisk tilpasningslag. Innholdet er fortsatt eksempler.\nPalett, typografi og komponentstiler hentes fra designbiblioteket. Portalens egen arklogo er senere implementert. Godkjente Suisse-skriftfiler gjenstår; reserveskrift brukes foreløpig.\nGitHub-tilgang, innlogging, CI og faktisk publisering er ikke konfigurert.\nFormatering og typekontroll finnes lokalt; øvrig kodekontroll og CI gjenstår.\n\nVed oppdatering av planen:\n\nKryss av bare oppgaver som er utført og verifisert.\nOppdater status i faseoversikten og datoen øverst.\nRegistrer vesentlige beslutninger og endringer nedenfor.\nLegg til ansvarlige og lenker til GitHub-issues eller pull requests når disse finnes.\nJuster fremtidige faser ut fra erfaringene, og bevar begrunnelsen for større endringer.\nNeste oppgaver slik de var formulert 30. oktober\nGjenstår: Bekrefte GitHub-organisasjon og ønsket tilgangsmodell.\nGjenstår: Avklare godkjente Suisse-skriftfiler og logo for full profiltilpasning.\nGjenstår: Velge første artikler og ressurser, eller godkjenne bruk av eksempelinnhold.\nGjenstår: Avklare prosjekt- og innholdsansvarlige.\nEndringslogg\nDato\tEndring\tBegrunnelse\n2026-10-30\tOpprettet planen med åtte faser og fire MVPer.\tSamlet avtalt retning, Pages-demonstrasjon, futuristisk design og avgrenset GitHub-tilgang i et dokument for løpende oppfølging.\n2026-10-30\tEtablert lokalmiljø og første prototype.\tVerifisere lokal kjøring og begge byggvarianter før integrasjon med designbibliotek og GitHub.\n2026-10-30\tIntegrert publisert Digitalarkivet-tema og MUI-komponenter.\tErstatte midlertidige designverdier med virksomhetens bibliotek uten tilgang til andre GitHub-repoer.\n2026-10-30\tForbedret visuell struktur og navigasjon.\tKortere introduksjon, katalog høyere opp, samlet søk/filter, aktiv meny, klikkbare snarveier og egne eksempelsider. Logo og Suisse-filer mangler fortsatt.\n2026-10-30\tGjeninnført romslig, futuristisk forside og tilpasset MUI-uttrykket.\tStor overskrift og KI-illustrasjon, mørke blågrønne flater, diskret rutenett og lys-/gradienteffekter. Katalog, navigasjon og detaljsider beholdes.\n2026-10-30\tImplementert valgt arklogo og favicon.\tRen SVG i toppmenyen med samme aksentfarge som overskriften, SVG-favicon, ICO i 16/32/48 piksler og Apple-ikon i 180 piksler.\n2026-10-30\tArklogo erstatter KI-tekst i forsideillustrasjonen.\tTo dempede ringer, to datapunkter og statisk grønt lys. Kompakt illustrasjon vises også på mobil.\n2026-10-30\tHentet tilbake opprinnelige kryssende ringer.\tMindre arklogo i sentrum, med opprinnelig futuristisk ringuttrykk etter visuell tilbakemelding.\n2026-10-30\tLagt til første lokale RAG-tjeneste og «Spør KI».\tOffentlig kildehenting, lokal Ollama-adapter og kildesøk i Pages. Modellvalg, live generering og produksjonstilgang gjenstår.\nTillegg – RAG-tjeneste\nUtført: Opprette offentlig kildegrunnlag fra tre eksempelressurser.\nUtført: Implementere nøkkelordbasert henting og vise kildeutdrag.\nUtført: Lage separat lokal API og modelladapter for Ollama.\nUtført: Beholde statisk Pages-bygg med kildesøk uten modellkall.\nUtført: Verifisere henting, validering og avvisning av fremmed opprinnelse.\nGjenstår: Bekrefte godkjent modell og konfigurere modellnavn.\nGjenstår: Verifisere genererte svar, feilsvar og kildebruk mot faktisk modell.\nUtført: Visuell kontroll av «Spør KI» i nettleseren ved 320 piksler, inkludert lukking med Escape og retur av fokus (6. november).\nGjenstår: Utvide kunnskapsgrunnlaget og evaluere søkekvalitet; vurdere embeddings ved behov.\nGjenstår: Etablere produksjonsdrift, autentisering og ratebegrensning før ekstern lansering.\nGjenstår: Utforme separat tilgangskontroll for interne kilder før slike kilder legges til.\nChatbot på forsiden – 30. oktober 2026\nUtført: Knapp som åpner chatdialog på forsiden.\nUtført: Samtalehistorikk i minnet, kildeutdrag og tømming av chat.\nUtført: Gjenbruk av RAG-API og statisk kildesøk.\nUtført: Første visuelle nettleserkontroll utført 6. november; se KVALITETSKONTROLL.md.\nVisuell tilpasning av chatbot – 30. oktober 2026\nPortalens arklogo, mørke blågrønne flater, gradienter og grønne lyskanter brukes i chatten.\nMeldinger, kildekort og skrivefelt har felles formspråk.\nForslag til spørsmål fyller skrivefeltet uten å sende automatisk.\nVisuell nettleserkontroll er fortsatt uverifisert grunnet tidligere avvisning fra nettleserverktøyets URL-policy.\nTeknisk opprydding – 30. oktober 2026\nUtført: Skilt grunnstiler, layout, forside, katalog, artikler og chat i egne stilfiler.\nUtført: Fjernet overskrevne CSS-deklarasjoner uten å endre eksisterende klassenavn.\nUtført: Delt chatbot i logikk, tilstand, API-klient og mindre visningskomponenter.\nUtført: Samlet API-typer og validering i en delt kontraktmodul.\nUtført: Skilt HTTP, modelladapter, instruksjoner og RAG-svarflyt.\nUtført: Samlet gjentatte farger og effekter i tema-/designverdier.\nUtført: Lagt til tester for samtaletilstand, API-kontrakt, samtidighet og modellfeil.\nUtført: Dokumentert modulgrenser i ARCHITECTURE.md.\n\nOppdelingen skal bevare eksisterende utseende, kilder og tilgangsbegrensninger. Visuell nettlesersammenligning er foreløpig ikke verifisert på grunn av tidligere blokkering i nettleserverktøyet.\n\nStatusgjennomgang – 6. november 2026\nFaseoversikt og oppgaver er avstemt mot eksisterende kode og lokal Git-historikk. Tidligere «ikke startet»-status for design og demo var utdatert.\nLokal Git har første commit. GitHub-remote, CI, publisering og innlogging er fortsatt ikke konfigurert.\nFørste nettleserkontroll er nå mulig og gjennomført. Tidligere merknader om blokkering beskriver situasjonen 30. oktober, ikke dagens status.\nHovedinnholdet er gjort fokuserbart for «Hopp til innhold». Fokusmarkering omfatter også tekstområder og kildeutdrag. Menylenkene har minst 44 pikslers høyde, og bunnteksten har plass under chatknappen.\nSe kontrollrapporten (KVALITETSKONTROLL.md) for omfang, funn og gjenstående kontroller. Dette er første kvalitetssjekk, ikke en full WCAG-revisjon.\nPrioritert videre: utvidet tilgjengelighetskontroll, godkjent offentlig innhold, eget GitHub-repo og CI, deretter Pages-demo og brukertest.\nTilgjengelighet og erklæring – 6. november 2026\nUtført: Vurdere alle 48 krav i en egen kontrollmatrise, med eksplisitte avgrensninger og uavklarte punkter.\nUtført: Utføre utvidet lokal tastatur-, DOM-, mobil-, landskaps- og tekstavstandskontroll og rette funn.\nUtført: Legge til kontrasttester, HTML-grunnkontroll, nettstedskart og lokal tilgjengelighetsside.\nUtført: Lage erklæringsgrunnlag med bekreftet kontaktadresse, klageadgang og vedlikeholdsrutine.\nGjenstår: Fullføre skjermleser, verifisert zoom, resterende kontrast-/fokustilstander og flere nettlesere.\nGjenstår: Avklare ansvarlig godkjenner, juridiske registreringsopplysninger og endelig nettadresse.\nGjenstår: Registrere og publisere den formelle erklæringen i uustatus.no og lenke den fra portalen før lansering.\n\nDetaljer: WCAG-kontroll (docs/tilgjengelighet/WCAG-KONTROLL.md), erklæringsgrunnlag (docs/tilgjengelighet/TILGJENGELIGHETSERKLAERING.md). Fase 3 er ikke ferdig godkjent før de gjenstående manuelle kontrollene er gjennomført.\n\nFørste skill i lokalt bibliotek – 7. november 2026\nUtført: Opprettet separat lokalt Skills-repo med første commit 85af197 og struktur for flere skills. Ingen GitHub-remote er konfigurert, i tråd med brukerens avklaring.\nUtført: Kopiert tilgjengelighetsskillen med arbeidsmal, referanser og agentmetadata til skills/tilgjengelighetserklaering/.\nUtført: Gjort skillen søkbar i portalens katalog med egen detaljside og tydelig skille mellom lokal skill og eksempelressurser.\nUtført: Lagt til tester for søk, nøkkelord, typefilter og kildehenting; 21 tester passerer.\nGjenstår: Avklare eventuell senere GitHub-publisering, tilgang og distribusjon. Ingen automatisk synkronisering eller installasjon er innført.\n\nTilgjengelighetskontrollen fra 6. november omfattet ni sider. Den nye skill-detaljsiden utvider portalen til ti sider og må inngå i neste samlede tilgjengelighetsvurdering.",
+    "media": [],
+    "navigation": [
+      {
+        "links": [
+          {
+            "href": "/kom-i-gang",
+            "text": "Kom i gang"
+          },
+          {
+            "href": "/retningslinjer",
+            "text": "Retningslinjer"
+          },
+          {
+            "href": "/#ressurser",
+            "text": "Ressurskatalog"
+          },
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/spor",
+            "text": "Spør KI"
+          },
+          {
+            "href": "/om",
+            "text": "Om"
+          }
+        ],
+        "name": "Hovedmeny"
+      },
+      {
+        "links": [
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/personvern",
+            "text": "Personvernerklæring"
+          },
+          {
+            "href": "/tilgjengelighet",
+            "text": "Tilgjengelighetserklæring"
+          },
+          {
+            "href": "/nettstedskart",
+            "text": "Nettstedskart"
+          },
+          {
+            "href": "/versjonslogg",
+            "text": "Versjonslogg"
+          },
+          {
+            "href": "/utviklingsplan",
+            "text": "Utviklingsplan"
+          },
+          {
+            "href": "/funksjonalitet",
+            "text": "Funksjonalitetsoversikt"
+          }
+        ],
+        "name": "Informasjon om nettstedet"
+      }
+    ],
+    "scrollWidth": 1280,
+    "tables": [
+      {
+        "headers": [
+          {
+            "scope": "col",
+            "text": "Område"
+          },
+          {
+            "scope": "col",
+            "text": "Implementert og dokumentert"
+          },
+          {
+            "scope": "col",
+            "text": "Begrensning som fortsatt gjelder"
+          }
+        ]
+      },
+      {
+        "headers": [
+          {
+            "scope": "col",
+            "text": "ID"
+          },
+          {
+            "scope": "col",
+            "text": "Prioritet / tidspunkt"
+          },
+          {
+            "scope": "col",
+            "text": "Gjenstående leveranse og ferdigkriterium"
+          },
+          {
+            "scope": "col",
+            "text": "Rolle som må avklares"
+          }
+        ]
+      },
+      {
+        "headers": [
+          {
+            "scope": "col",
+            "text": "Fase"
+          },
+          {
+            "scope": "col",
+            "text": "Leveranse"
+          },
+          {
+            "scope": "col",
+            "text": "Status 9. november 2026"
+          }
+        ]
+      },
+      {
+        "headers": [
+          {
+            "scope": "col",
+            "text": "Tema"
+          },
+          {
+            "scope": "col",
+            "text": "Gjeldende retning"
+          },
+          {
+            "scope": "col",
+            "text": "Gjenstående beslutning"
+          }
+        ]
+      },
+      {
+        "headers": [
+          {
+            "scope": "col",
+            "text": "Dato"
+          },
+          {
+            "scope": "col",
+            "text": "Endring"
+          },
+          {
+            "scope": "col",
+            "text": "Begrunnelse"
+          }
+        ]
+      }
+    ],
+    "title": "Utviklingsplan | KI-Produktutvikling",
+    "width": 1280
+  },
+  {
+    "route": "/versjonslogg/",
+    "duplicateIds": [],
+    "fields": [],
+    "h1": [
+      "Versjonslogg"
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Versjonslogg"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – testprosedyrer for alle 48 krav i tilgjengelighetsskillen – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – ryddigere tilgjengelighetserklæring – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – rettet PDF-overskrifter og dokumenttittel – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – videre lokal tilgjengelighetskontroll – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – rettet språkavvik i prisoppdateringen – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – oppdaterte prisdata – 9.11.2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – ny tilgjengelighetskontroll og erklæringsoppdatering – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – styr animasjonen ved klikk på illustrasjonen – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – rolig animasjon i forsideillustrasjonen – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – MCP-oversikt under Oversikt – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – fjernet Priser fra bunnteksten – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – Godkjente KI-assistenter under Oversikt – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – pålitelig ankerlenke til ressurskatalogen – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – Ressurskatalog og tydeligere introduksjon – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – Oversikt som inngang til priser – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – prisside og automatisk prisinnhenting – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – oppdaterte prisdata – 9.11.2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – personvernerklæring for portalen – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – personvernskill i bibliotek og katalog – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – fjernet prototypetekst i bunnteksten – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – utviklingsplan i bunnteksten – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – avstemt utviklingsplan og produksjonskrav – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – menyrekkefølge og lenke til retningslinjer – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – invitasjon til KI-prat – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – tydeligere innganger og anbefalt prøveoppgave – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – automatisk funksjonalitetsoversikt – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – versjonslogg i bunnteksten – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – klargjort eksternt modell-API – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – felles innholdskilde for sider og Spør KI – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – mer nyttige svar i Spør KI – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – retningslinjeside – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – mandatforslag som vedlegg – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – KI-prat på Om-siden – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – Beta-merking av skills – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – samlet tilgjengelighetsdokumentasjon – 9. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – regler for versjonslogg – 7. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – tilgjengelighetsskill 0.3.0 – 7. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – tilgjengelighetsskill 0.2.0 – 7. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – generell brukerveiledning – 7. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – lokalt Skills-bibliotek og katalog – 7. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – oppdatert erklæringsutkast – 7. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Ikke utgitt – utvidet tilgjengelighetskontroll – 6. november 2026"
+      },
+      {
+        "tag": "H2",
+        "text": "Dokumentasjon og tilgjengelighetsrettinger – 6. november 2026"
+      },
+      {
+        "tag": "H3",
+        "text": "Endret"
+      },
+      {
+        "tag": "H3",
+        "text": "Rettet"
+      },
+      {
+        "tag": "H3",
+        "text": "Kontrollert"
+      },
+      {
+        "tag": "H2",
+        "text": "0.1.0 – første lokale versjon – 6. november 2026"
+      },
+      {
+        "tag": "H3",
+        "text": "Lagt til"
+      },
+      {
+        "tag": "H3",
+        "text": "Begrensninger"
+      },
+      {
+        "tag": "H2",
+        "text": "Slik vedlikeholdes loggen"
+      }
+    ],
+    "height": 900,
+    "images": [],
+    "lang": "nb",
+    "mainCount": 1,
+    "mainText": "← Til forsiden\nUTVIKLING OG ENDRINGER\nVersjonslogg\n\nEndringer i KI-Produktutvikling føres her, med dato, utførende agent, kontrollresultat og Git-referanse. Nyeste endringer står først. Loggen beskriver prosjektversjoner; en oppføring betyr ikke at nettstedet er publisert.\n\n«Agent» betyr kodeassistenten som utførte arbeidet. Git-forfatteren registreres separat av Git og kan være personen som oppretter commiten. Eksakt modellvariant er ikke registrert for tidligere arbeid og oppgis derfor ikke. Ingen underagenter ble brukt til kvalitetskontrollen eller opprettelsen av denne loggen.\n\nIkke utgitt – testprosedyrer for alle 48 krav i tilgjengelighetsskillen – 9. november 2026\n\nUtførende agent: Codex (OpenAI), med skill-creator og regnearksskillen. Ingen underagenter.\n\nOppdatert katalogmetadata til tilgjengelighetsskill 0.4.0. Skillen har nå konkrete prosedyrer for alle 48 krav i nettstedsmalen, med kilde/cellereferanse, verktøy, handlinger, forventet resultat og dokumentasjon. Prosedyrene og maskinlesbar indeks ligger i det separate Skills-repoet, med samme installerte kopi.\nNye skill-kjøringer lager en plan med alle krav som ikke testet, et eget prosedyreøyeblikksbilde og 48 uavklarte rader i kravgrunnlaget. HTML/kontrast gir fortsatt bare delresultater; dette er ingen automatisk fulltest eller godkjenning. Endringen er dokumentert i Skills-repoets egen versjonslogg.\nOppdatert README og utviklingsplan. Tidligere portaltester, siste testkjøring og samlet uavklart samsvarsstatus er ikke endret. Den korte brukerrettede erklæringen beholdes.\nKontroll: Skills-repoets 25 tester bestod, inkludert fire nye tester for dekning, ærlig planstatus, historikk og ugyldig kravindeks. Alle 48 ID-er, celler og opprinnelige URL-er er sammenlignet med brukerens Excel-mal; kildesidene er kontrollert. Portalens 48 prosjekttester og Pages-produksjonsbygg med TypeScript bestod. Katalogsiden er lest tilbake i nettleser med versjon 0.4.0 og beskrivelse av 48 prosedyrer. Kildepakken og installert kopi er like; formatering og git diff --check er kontrollert. Ingen ny tilgjengelighetsrevisjon, commit, registrering eller publisering.\nIkke utgitt – ryddigere tilgjengelighetserklæring – 9. november 2026\n\nUtførende agent: Codex (OpenAI), med skill-creator og tilgjengelighetserklaering 0.3.1. Ingen underagenter.\n\nForenklet lokal erklæringsside og Markdown-erklæring til omfang, samsvar, relevante begrensninger/alternativer, kontakt, klage og kort vurderings-/oppdateringsinformasjon. Fjernet testtall, funn-ID-er, kjøringsreferanser, agentdetaljer og historikk over rettede feil fra den brukerrettede teksten. Teknisk evidens og historikk er bevart i eksisterende rapporter og Git.\nBeholdt utkaststatus, bekreftet kontakt, vesentlig usikkerhet og faktisk vurderingsdato. Dette er redaksjonell opprydding, ikke ny tilgjengelighetsrevisjon eller høyere samsvarsstatus. Siste faktiske testkjøring og 12 uavklarte vurderinger er uendret.\nOppdatert skillens instruksjoner/mal/lagringsveiledning til 0.3.1 i Skills-repoet og installert kopi, med egen logg der. Oppdatert katalogmetadata, funksjonsregister, README og utviklingsplan.\nKontroll: 48 prosjekttester og Pages-produksjonsbygg med TypeScript bestod. Skills-repoets 21 eksisterende tester bestod; endrede skill-filer og lokale referanser er kontrollert, og kilde/installerte kopi er like. quick_validate.py kunne ikke kjøre uten PyYAML; dette er dokumentert i Skills-loggen. Utkaststatus, kontakt, klage og vurderingsdato er bevart; historisk evidens er urørt. Prettier, git diff --check i begge repoer og nettleservisning er kontrollert. Ingen commit, formell registrering eller publisering.\nIkke utgitt – rettet PDF-overskrifter og dokumenttittel – 9. november 2026\n\nUtførende agent: Codex (OpenAI), med tilgjengelighetserklaering 0.3.0 og PDF-skillen. Ingen underagenter.\n\nRettet A11Y-02 ved å gi de kartlagte PDF-overskriftene reelle roller: én H1, seks H2 og 20 H3. Eksisterende tekst-/MCID-koblinger er beholdt. Rettet A11Y-03 med beskrivende norsk tittel i både Info og XMP og beholdt visning av dokumenttittel. PDF 1.7, sideinnhold, tekst og visuell utforming er bevart; filstørrelsen i felles Om-innhold er oppdatert til 127 kB.\nNy datert retest: docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/. Uavhengig kontroll bekrefter 27 overskriftsroller, 229 MCID-koblinger, riktig tittel begge steder og pikselidentisk rendering/tekst/innholdsstrøm på alle syv sider. Original PDF, reparasjonsskript, retestskript og råresultater er arkivert. Et første ugyldig XMP-skriveforsøk ble fanget, dokumentert og korrigert før endelig retest.\nOppdatert kravmatrise, testresultater, erklæringsutkast og portalens erklæringsside, funksjonsregister, README, kvalitetskontroll og utviklingsplan. Begge konkrete PDF-avvik er rettet og struktur-/metadataretestet. Ny arbeidsfordeling: 26 K / 10 I / 12 U / 0 B, ikke samsvarsprosent. 1.3.1 er B→U fordi øvrig PDF-semantikk og faktisk skjermleserbruk fortsatt er uavklart; 2.4.2 er B→K. Tidligere 11 U-punkter er bevart.\nBegrensning: Ingen faktisk skjermlesernavigasjon, full PDF/UA-validering, produksjonsgodkjenning, registrering, publisering eller commit. Redigerbar presentasjonskilde finnes ikke i prosjektet; ved ny eksport må også kildens overskriftsstiler/tittel rettes.\nKontroll av side-/dokumentoppdateringen: 48 prosjekttester, Pages-produksjonsbygg med TypeScript og HTML-grunnkontroll av 23 eksportfiler bestod uten kandidater i delomfanget. Den eksporterte PDF-en er byteidentisk med den reparerte kildefilen. 48 unike kriterier, statusfordeling og 82 relative dokumentlenker er kontrollert. Oppdatert erklæring er lest tilbake i nettleser og skjermbilde lagret. Prettier og git diff --check er kontrollert for endrede dokument-/kildefiler; rå bygglogger er bevart med opprinnelige terminalkontrolltegn. Bygg-/enhetstester er utviklingsverifisering, ikke tilgjengelighetsgodkjenning.\nIkke utgitt – videre lokal tilgjengelighetskontroll – 9. november 2026\n\nUtførende agent: Codex (OpenAI), med tilgjengelighetserklaering 0.3.0 og PDF-skillen. Ingen underagenter.\n\nLagret ny oppfølging mot commit 67108ac i docs/tilgjengelighet/2026-11-09/205326-389241d1fd6e/. Undersøkt syv PDF-sider med rendering, struktur-/metadata-/tekstuttrekk, seks supplerende kontrastpar, 40 Tab-steg på fire sider og åtte i chat, samt chatfeltfokus ved 320 px. Alle valgte kontrastterskler er oppfylt; ingen nye bekreftede webfunn i dette delomfanget.\nBekreftet to PDF-avvik: A11Y-02 / 1.3.1 (synlige overskrifter uten semantiske overskriftsroller) og A11Y-03 / 2.4.2 (generisk dokumenttittel). Rettingsforslag, konsekvenser og reteststeg er dokumentert; PDF-en er ikke endret. Tidligere språkavvik A11Y-01 forblir lukket.\nOppdatert testprotokoll, full 48-punkts matrise, erklæringsutkast, lokal erklæringsside, funksjonsregister, README, kvalitetskontroll og utviklingsplan. Tidligere evidens og manifest er bevart. Ny arbeidsfordeling er 25 K / 10 I / 11 U / 2 B, ikke en samsvarsprosent. 1.4.5 er undersøkt også i PDF-en; 1.3.1 og 2.4.2 inkluderer nå PDF-funn.\nBegrensning: Zoomsnarveien endret ikke målt visning. Ingen faktisk skjermleser, verifisert 200/400 % zoom, systeminnstilling for redusert bevegelse eller full automatisk WCAG-skanning. OS-innstillinger er ikke endret; viewport er nullstilt. Samlet samsvar er fortsatt uavklart. Ingen publisering, registrering eller commit.\nKontroll av dokument- og sideendringene: 48 prosjekttester bestod; Pages-produksjonsbygg med TypeScript bestod. Ny HTML-grunnkontroll av 23 eksportfiler ga ingen kandidater. Prettier og git diff --check bestod for de endrede dokument-/kildefilene; 48 unike kriterier, statusfordeling og 73 relative dokumentlenker er kontrollert. Erklæringen er lest tilbake i nettleser og skjermbilde lagret. Bygg-/enhetstester er utviklingsverifisering, ikke tilgjengelighetsgodkjenning. Rå bygglogg er bevart med opprinnelige terminalkontrolltegn.\nIkke utgitt – rettet språkavvik i prisoppdateringen – 9. november 2026\n\nUtførende agent: Codex (OpenAI), med tilgjengelighetserklaering 0.3.0 for retest og erklæringsoppdatering. Ingen underagenter.\n\nRettet A11Y-01 ved å generere norske vilkår fra kjente Copilot-/Codex-felt i innhentingsparseren. Minstekrav til brukere, kredittall, fra-pris og betalingsintervall bevares. Ukjent vilkårsformat avvises, og oppdateringsflyten beholder tidligere norsk tekst i stedet for å kopiere nye engelske setninger inn på siden.\nKjørt virkelig prisoppdatering mot alle seks kilder: 26 rader, uendrede numeriske priser og oppdaterte kontrolltidspunkter. Retestet alle seks utvidede vilkårsseksjoner i nettleser. Tre nye regresjonstester kontrollerer gjentatt oppdatering/JSON-lagring, endrede kildetall og ukjent format. De kjøres også av den eksisterende prisarbeidsflyten.\nLagret ny målrettet retest i docs/tilgjengelighet/2026-11-09/203914-cf2e80bc00f7/, med tidligere funn bevart i den brede kjøringen. Oppdatert matrise og erklæring viser avviket som rettet og retestet; øvrige 13 U er videreført. Arbeidsfordeling: 25 K, 10 I, 13 U og 0 B, ikke en samsvarsprosent.\nOppdatert lokal erklæringsside, funksjonsregister, README, kvalitetskontroll og utviklingsplan. Samlet samsvar er fortsatt uavklart. Ingen faktisk skjermleseropplesing, GitHub-kjøring, registrering, publisering eller commit er utført.\nKontroll: Alle 48 prosjekttester (inkludert åtte prisparsertester), produksjonsbygg med TypeScript, Pages-bygg, skillens HTML-grunnkontroll, Prettier og git diff --check bestod. Bygget prisside og erklæring, 48 unike kriterier og 30 relative dokumentlenker er kontrollert. Prisarbeidsflytens testkommando er kjørt lokalt med åtte beståtte tester; ingen GitHub-kjøring er påstått.\nIkke utgitt – oppdaterte prisdata – 9.11.2026\n\nUtførende: Prisoppdateringsskriptet (pricing:sync).\n\nOppdatert lagrede prisrader fra offisielle kilder; kilde og tidspunkt følger hver gruppe. Mislykkede kilder beholder forrige kontrollerte rader.\nAutomatisk parsing er utført, ikke faglig godkjenning eller kontroll av en virksomhetsavtale. Se kildestatus på prissiden.\nIkke utgitt – ny tilgjengelighetskontroll og erklæringsoppdatering – 9. november 2026\n\nUtførende agent: Codex (OpenAI), med tilgjengelighetserklaering 0.3.0. Ingen underagenter.\n\nGjennomført ny avgrenset kontroll mot commit c622090, inkludert alle 20 HTML-sider og animasjonen. Lagret råresultater, originalmanifest, skjermbilder og etterfølgende manuelle observasjoner i docs/tilgjengelighet/2026-11-09/201443-73cb0a3e52e0/. Tidligere resultater er bevart.\n23 HTML-eksportfiler uten kandidater i skillens grunnkontroll; 60 responsive DOM-kontroller og 40 tekstavstandskontroller uten sidebredde-overflyt. Utvalgte tastaturforløp, pristabeller, animasjon, dialog/validering og tre kontrastpar er undersøkt. En etikettkandidat ble avvist som et skjult MUI-målefelt etter inspeksjon. Midlertidig test-CSS er fjernet.\nDokumentert ett bekreftet brudd, A11Y-01 / 3.1.2: engelske prisvilkår mangler språkmerking. Ingen produktfeil er rettet; rettingsforslag og retestinstruksjon er lagret. Tidligere «ikke relevant» for 2.2.2 er erstattet av faktisk pause-/starttest.\nOppdatert hovedrapport, 48-punkts matrise, erklæringsgrunnlag, lokal erklæringsside, funksjonsregister, README, kvalitetskontroll og utviklingsplan. Ny arbeidsfordeling er 24 K, 10 I, 13 U og 1 B; dette er ikke en samsvarsprosent. Juridiske virksomhetsopplysninger/godkjenner er fortsatt uavklart. Bekreftet kontakt beholdes.\nSamlet samsvar er ikke ferdig vurdert. Faktisk skjermleser, zoom, PDF, flere nettlesere, alle kontrast-/fokustilstander og redusert-bevegelse-innstilling gjenstår. Ingen axe/Lighthouse, faktisk modellgenerering, registrering, publisering eller commit er utført i testoppdraget.\nKontroll av dokumentoppdateringen: Alle 45 prosjekt-/parser-/RAG-tester, produksjonsbygg med TypeScript, Pages-bygg, Prettier og git diff --check bestod. 48 unike kriterier, statusfordeling, lagrede resultater og fjernet test-CSS er kontrollert. Oppdatert erklæring er lest tilbake i nettleseren. Bygg-/enhetstester er separat utviklingsverifisering, ikke en tilgjengelighetsgodkjenning.\nIkke utgitt – styr animasjonen ved klikk på illustrasjonen – 9. november 2026\n\nUtførende agent: Codex (OpenAI). Ingen underagenter.\n\nFjernet den synlige pause-/startknappen og gjort selve illustrasjonen til en knapp som veksler mellom pause og start. Skjermlesernavnet beskriver neste handling, og Enter/mellomrom støttes gjennom en vanlig HTML-knapp. Redusert bevegelse respekteres fortsatt.\nFjernet kontrollens ekstra avstand og oppdatert funksjonsregister og utviklingsplan.\nKontroll: Lokal nettleser bekreftet pause og start ved gjentatte klikk, med animation-play-state paused/running. Mellomrom pauset og Enter startet igjen. Klikkflaten ligger over de dekorative tekstflatene. Produksjonsbygg med TypeScript, Prettier og git diff --check bestod.\nIkke utgitt – rolig animasjon i forsideillustrasjonen – 9. november 2026\n\nUtførende agent: Codex (OpenAI). Ingen underagenter.\n\nLagt til rolige bevegelser frem og tilbake for de to lyspunktene langs ytterkanten, og svært langsom rotasjon av den stiplede ringen. Logo og hovedringer beholder sin plassering.\nFlyttet illustrasjonen til en egen komponent med pause-/startknapp. Ved redusert bevegelse slås animasjonen av og kontrollen skjules. Animasjonen bruker CSS-transformasjoner; ingen eksterne ressurser eller avhengigheter.\nOppdatert funksjonsregister og utviklingsplan.\nKontroll: Alle 45 tester og produksjonsbygg med TypeScript bestod. Lokal nettleser viste aktive transformasjoner; pauseknappen satte både punkter og ring til paused og kunne starte dem igjen. Regelen for redusert bevegelse er kontrollert i CSS, ikke med endret systeminnstilling. Ingen full tilgjengelighetsrevisjon er utført.\nIkke utgitt – MCP-oversikt under Oversikt – 9. november 2026\n\nUtførende agent: Codex (OpenAI). Ingen underagenter.\n\nOpprettet /oversikt/godkjente-mcper/ med Atlassian MCP som «ROS-analyse pågår» og Slack MCP som «Planlagt», basert på brukerens opplysning. Ingen av dem er merket godkjent, og ingen tilkobling eller tilgang er aktivert.\nLagt til inngang fra Oversikt og retningslinjene. Nettsiden, Spør KI og funksjonsregisteret bruker felles innhold; nettstedskartet tar med ruten. README og utviklingsplan er oppdatert.\nKontroll: Alle 45 tester og produksjonsbygg med TypeScript bestod. Bygget HTML er kontrollert for begge statuser og lenken fra Oversikt. Prettier og git diff --check bestod. Ingen ROS-analyse, full tilgjengelighetsrevisjon eller utrulling er utført.\nIkke utgitt – fjernet Priser fra bunnteksten – 9. november 2026\n\nUtførende agent: Codex (OpenAI).\n\nFjernet den direkte Priser-lenken fra bunnteksten. Prissiden finnes fortsatt via Oversikt og nettstedskartet. README er avstemt med den nye navigasjonen.\nKontroll: Lenkeendringen er lest tilbake. Prettier og git diff --check bestod. Ingen funksjonalitet eller produksjonsstatus er endret.\nIkke utgitt – Godkjente KI-assistenter under Oversikt – 9. november 2026\n\nUtførende agent: Codex (OpenAI). Ingen underagenter.\n\nOpprettet /oversikt/godkjente-ki-assistenter/ med Copilot, Claude AI og Codex som godkjente assistenter i Nasjonalarkivet etter brukerens opplysning. Ingen bestemt konto, lisens, modell, integrasjon eller datakategori er gitt godkjenning på dette grunnlaget.\nLagt inngang under Oversikt etter priser og abonnement, og oppdatert aktiv overordnet navigasjon, retningslinjer, nettstedskart, Spør KI, README og utviklingsplan. Beskrivelser og godkjenningsstatus vedlikeholdes i felles innholdskilde.\nKontroll: Alle 45 tester og produksjonsbygg med TypeScript bestod. Bygget HTML er kontrollert for de tre godkjente assistentene, inngang fra Oversikt og aktivt overordnet menypunkt. Prettier og git diff --check bestod. Ingen ny full tilgjengelighetsrevisjon eller utrulling.\nIkke utgitt – pålitelig ankerlenke til ressurskatalogen – 9. november 2026\n\nUtførende agent: Codex (OpenAI). Ingen underagenter.\n\nEndret PortalButton til å bruke nettleserens vanlige anker for lenker til en seksjon på samme side. «Utforsk ressursene» hopper dermed til ressurskatalogen også når #ressurser allerede står i adressen. Lenker til andre sider bruker fortsatt Next.js Link.\nKontroll: Gjentatt klikk med #ressurser allerede i adressen er kontrollert i lokal nettleser: siden startet på toppen, og katalogen endte 48 px fra toppen av visningen. Produksjonsbygg med TypeScript, Prettier og git diff --check bestod. Ingen full tilgjengelighetsrevisjon er utført.\nIkke utgitt – Ressurskatalog og tydeligere introduksjon – 9. november 2026\n\nUtførende agent: Codex (OpenAI). Ingen underagenter.\n\nEndret Verktøykatalog til Ressurskatalog i meny, katalogmerking, funksjonsregister og henvisninger fra øvrige sider. Nettstedskart og Spør KI følger registeret og felles innhold.\nSatt seksjonsoverskriften til «Finn en ressurs», med beskrivelsen «Skills, instruksjoner og prompter som hjelper deg å bruke KI i produktutviklingen.» Navn og introduksjon ligger i felles src/content/catalog.ts. Forsidens handlingslenke heter nå «Utforsk ressursene».\nBeholdt nettadresse og søk/filtrering. Oppdatert README og utviklingsplan; historiske rapporter og tidligere loggoppføringer er bevart.\nKontroll: Alle 45 tester og produksjonsbygg med TypeScript bestod. Navn, overskrift og beskrivelse er kontrollert i bygget HTML; tekstsøk finner ingen rester av Verktøykatalog i gjeldende src-innhold. Prettier og git diff --check bestod.\nIkke utgitt – Oversikt som inngang til priser – 9. november 2026\n\nUtførende agent: Codex (OpenAI). Ingen underagenter.\n\nOpprettet /oversikt/ med priser og abonnement som første del, og modelloversikt og forbruk som tydelig planlagte utvidelser. Prisene beholdes på /priser/; ingen priskopier eller simulerte bruksdata er innført.\nLagt Oversikt mellom Verktøykatalog og Spør KI i hovedmenyen og i bunnteksten. På prissiden markeres Oversikt som overordnet menypunkt, med brødsmulesti tilbake.\nSiden, Spør KI og funksjonsregisteret henter beskrivelser og planlagt status fra felles innhold. README og utviklingsplan er oppdatert.\nKontroll: Alle 45 tester og produksjonsbygg med TypeScript bestod. Byggkontrollen validerer den nye ruten mot funksjonsregisteret. Ingen ny full tilgjengelighetskontroll eller utrulling er gjennomført.\nIkke utgitt – prisside og automatisk prisinnhenting – 9. november 2026\n\nUtførende agent: Codex (OpenAI), med OpenAI Docs for offisielle Codex-kilder. Ingen underagenter.\n\nOpprettet /priser/ i portalens design, med abonnement og tydelig separate direkte API-priser og Copilot-tokenpriser. Viser utvalgte planer/modeller, kontekst, cache-satser, vilkår, kilde og siste vellykkede kontroll. Fra-pris og årsbetaling er særskilt markert. Siden er lenket i bunnteksten og registrert som Beta.\nHentet seks offisielle kilder 9. november 2026 og lagret felles prisgrunnlag for nettsiden og Spør KI. HTTP-/parsefeil bevarer gamle rader og vellykket dato, med ny feilstatus og forsøksdato. Gamle kontroller varsles etter sju dager i nettleseren.\nKlargjort daglig GitHub Actions-jobb med parserregresjonstester og PR for prisfil og eventuell automatisk versjonslogg. Bare dette repoets kortlivede token brukes; ingen modellnøkler eller tilgang til andre repoer. Eksisterende åpen pris-PR overskrives ikke. Oppdateringsskriptet loggfører endrede prisrader.\nOppdatert README, utviklingsplan, funksjonsregister og felles RAG-kilde. Testkommandoen inkluderer nå prisparserne.\nKontroll: Alle 45 tester og produksjonsbygg med TypeScript bestod. Reell kildeinnhenting lyktes for alle seks grupper. Lokal nettleser viser seks tabeller, kilde/dato, bunntekstlenke og fungerende seksjonssnarvei; ingen sidebredde-overflyt observert ved 523 px. Ingen full tilgjengelighetsrevisjon er utført.\nBegrensning: Repoet har ingen remote; arbeidsflyten er ikke kjørt på GitHub og ingen automatisk utrulling er aktivert. Oppdateringer krever gjennomgang/sammenslåing og nytt bygg/utrulling. Dette er listepriser, ikke virksomhetsavtaler eller verktøygodkjenninger. Nye modeller legges ikke til automatisk.\nIkke utgitt – oppdaterte prisdata – 9.11.2026\n\nUtførende: Prisoppdateringsskriptet (pricing:sync).\n\nOppdatert lagrede prisrader fra offisielle kilder; kilde og tidspunkt følger hver gruppe. Mislykkede kilder beholder forrige kontrollerte rader.\nAutomatisk parsing er utført, ikke faglig godkjenning eller kontroll av en virksomhetsavtale. Se kildestatus på prissiden.\nIkke utgitt – personvernerklæring for portalen – 9. november 2026\n\nUtførende agent: Codex (OpenAI), med personvernerklaering 0.1.0. Ingen underagenter.\n\nKartlagt katalog, chat, valgfri modellkobling og lokale nettleserobservasjoner. Lagret manifest, behandlingsoversikt, sanitert evidens, rapport og datert erklæringsutkast i docs/personvern/2026-11-09/161600-a3368ac30b20/. Ingen hemmelige miljøverdier eller rå chatspørsmål er innhentet.\nOpprettet /personvern/ med lenke i bunnteksten og bekreftet personvernkontakt khadah@nasjonalarkivet.no. Nettsiden og Spør KI bruker samme innholdskilde. Funksjonsregister og nettstedskart viser siden, med eksplisitt utkaststatus.\nGitt felles innholdssider et statusfelt og støtte for e-postlenker i artikkelvisningen. Retningslinjenes eksisterende utkaststatus er bevart. Oppdatert README og utviklingsplan; P9 er fortsatt åpent.\nLokal helseside viste deaktivert modellgenerering. Nettleserlagring kunne ikke undersøkes fullstendig; dette er ikke bevis for fravær av cookies eller logger. Behandlingsansvarlig, personvernombud, rettsgrunnlag, leverandøravtaler, overføringer og lagring må bekreftes. Primærveiledning fra Datatilsynet og Nkom er brukt, med Digdir som strukturinspirasjon. Ingen juridisk godkjenning eller publisering.\nKontroll: Alle 39 portaltester og produksjonsbygg med TypeScript bestod. Bygget HTML har riktig tittel, utkastmerking, e-postlenke og lenke fra forsiden. Prettier og git diff --check bestod. Ingen ny full tilgjengelighetsrevisjon, visuell nettleserkontroll av erklæringssiden eller produksjonskontroll er utført.\nIkke utgitt – personvernskill i bibliotek og katalog – 9. november 2026\n\nUtførende agent: Codex (OpenAI), med skill-creator. Ingen underagenter.\n\nOpprettet personvernerklaering 0.1.0 i Skills-biblioteket og installert en lik kopi i assistentens skill-katalog. Samme hovedoppsett som tilgjengelighetsskillen: instrukser, agentmetadata, maler, faglige referanser og datert lagring i målprosjektet.\nLagt til Beta-ressursen «Kartlegg personvern og utform erklæring», søkbar i katalogen og Spør KI. Detaljsidene henter nå skillenes egne beskrivelser og begrensninger fra ressursdata, slik at personvern ikke får tilgjengelighetsspesifikk tekst.\nOppdatert README og utviklingsplanen. Kildegrunnlaget omfatter Digdirs eksempel, Datatilsynets veiledning og Nkom. Skillen bevarer uavklarte opplysninger og gir ingen automatisk juridisk godkjenning.\nHjelpeskriptet oppretter bare en arbeidsmappe og foreløpige filer, ikke en ferdig kartlegging eller publisert erklæring. Ingen personvernerklæring for portalen er utformet som del av dette oppdraget.\nKontroll: Skill-validering bestod for kilde og installasjon; alle ti pakkefiler er identiske, og lokale referanser finnes. Alle 21 bibliotekstester (inkludert seks nye), 38 portaltester og produksjonsbygg med TypeScript bestod. Bygget detaljside har riktig versjon/Beta-status og egne begrensninger, uten feil omtale av WCAG/uustatus.\nIkke utgitt – fjernet prototypetekst i bunnteksten – 9. november 2026\n\nUtførende agent: Codex (OpenAI).\n\nFjernet «Lokal prototype · under utprøving» fra den felles bunnteksten etter ønske. Dette endrer ikke funksjonsstatus eller produksjonskrav i utviklingsplanen.\nKontroll: Prettier og git diff --check bestod.\nIkke utgitt – utviklingsplan i bunnteksten – 9. november 2026\n\nUtførende agent: Codex (OpenAI).\n\nLagt til Utviklingsplan i bunnteksten, nettstedskartet og funksjonsregisteret, med en lesbar side på /utviklingsplan/.\nSiden bygges direkte fra UTVIKLINGSPLAN.md. Planen og versjonsloggen bruker en felles dokumentvisning med overskrifter, lister, lenker, oppgavestatus og tabeller som kan rulles på smale skjermer. Ingen separat plankopi vedlikeholdes.\nOppdatert README og planen med hvor nettsiden finnes og når endringer blir synlige.\nKontroll: Alle 36 tester og produksjonsbygg med TypeScript bestod. Bunntekstlenke, hovedoverskrifter for begge dokumentene og fem tabeller med samsvarende kolonnetall er kontrollert i bygget HTML. Ingen ny full tilgjengelighetsrevisjon er utført.\nIkke utgitt – avstemt utviklingsplan og produksjonskrav – 9. november 2026\n\nUtførende agent: Codex (OpenAI).\n\nOppdatert utviklingsplanens leveranser og åtte faser mot kode, dokumentasjon og commit e93e5f9, inkludert felles innhold, Spør KI, eksternt modell-API, Skills-bibliotek, oversikter og forside/navigasjon.\nEndret første delte leveranse fra offentlig Pages-demo til lukket pilot. Tydeliggjort krav P1–P10 for tilgang, drift, produksjonsruting/Origin, CI, modellverifisering, API-vern, innhold, tilgjengelighet og forvaltning.\nSkilt mellom implementert kode, simulerte tester, reelt verifisert drift og produksjonsgodkjenning. Tidligere datostemplet historikk er bevart som historikk.\nLagt til vedlikeholdsregel i AGENTS.md og README om oppdatering av plan, berørte faser og produksjonskrav i samme arbeidsøkt som vesentlige endringer. Ingen periodisk jobb eller automatisk produksjonsgodkjenning er innført.\nKontroll: 13 lokale dokumentlenker, produksjonskrav P1–P10, bevart historikk og uendrede Next.js-instruksjoner er kontrollert. Prettier og git diff --check bestod. Dette er en dokumentasjonsoppdatering; ingen nye funksjonstester eller utrullinger er gjennomført.\nIkke utgitt – menyrekkefølge og lenke til retningslinjer – 9. november 2026\n\nUtførende agent: Codex (OpenAI).\n\nEndret hovedmenyen til Kom i gang → Retningslinjer → Verktøykatalog → Spør KI → Om, slik at oppstart og rammer kommer før verktøy og assistent.\nLagt til en tydelig «Før du begynner»-henvisning tidlig i Kom i gang, med lenke til retningslinjene og presisering av utkaststatus. Teksten ligger i felles innholdskilde og inngår også i RAG-grunnlaget.\nKontroll: TypeScript, Prettier og git diff --check bestod. Rekkefølgen, aktivt menypunkt og henvisningen er kontrollert i lokal nettleser. Lokalmiljøet ble startet for forhåndsvisningen.\nIkke utgitt – invitasjon til KI-prat – 9. november 2026\n\nUtførende agent: Codex (OpenAI).\n\nLagt til en invitasjon i den felles Om-teksten for dem som jobber med produktutvikling eller utvikling av løsninger i Nasjonalarkivet, med oppfordring om å kontakte AI enablement-teamet for å delta.\nSamme avsnitt brukes i Spør KIs veiledning om KI-prat. Ingen ubekreftet e-postadresse eller Teams-lenke er lagt til.\nKontroll: Alle åtte tester av felles innhold og funksjonsregister, Prettier og git diff --check bestod.\nIkke utgitt – tydeligere innganger og anbefalt prøveoppgave – 9. november 2026\n\nUtførende agent: Codex (OpenAI).\n\nEndret Lær/Prøv/Del til «Kom i gang med KI», «Finn en ressurs til oppgaven» og «Del erfaringer i KI-prat», med lenker til oppstartsveiledningen, katalogen og KI-prat.\nErstattet det gjentakende Første steg-feltet med «Prøv i praksis» og ressursen «Utforsk et brukerbehov». Tittel, beskrivelse og lenke hentes fra ressurskilden; valget av anbefaling og snarveiene ligger i src/content/home.ts.\nGjort ressursens felles beskrivelse mer konkret om intervjuspørsmål og brukerinnsikt. Samme tekst brukes på forside, i katalogen, på detaljsiden og i Spør KI.\nRedusert luft og høyde i anbefalingsfeltet, bevart portalens uttrykk og oppdatert funksjonsregisteret og README. En anbefaling til en manglende ressurs gir feil ved oppstart/bygging.\nKontroll: Alle 36 tester og produksjonsbygg med TypeScript bestod. De tre inngangene, anbefalingens tekst og lenke og det mer kompakte feltet er kontrollert i lokal nettleser. Ingen ny full tilgjengelighetsrevisjon er utført.\nIkke utgitt – automatisk funksjonalitetsoversikt – 9. november 2026\n\nUtførende agent: Codex (OpenAI).\n\nOpprettet /funksjonalitet/ med lenke fra bunnteksten og nettstedskartet, og tydelig skille mellom tilgjengelig funksjonalitet, Beta/utkast, modelloppsett og uimplementert tilgangsstyring.\nSamlet funksjonsdefinisjoner i src/content/features.ts. Oversikten, nettstedskartet og Spør KI bruker samme register; ressursantall, KI-prat og beskrivelser av innholdssidene avledes av gjeldende innholdsdata.\nLagt til kontroll i Next.js-konfigurasjonen ved oppstart og bygging som avviser uregistrerte eller slettede sider, duplisering og ukjente rutelenker. Dokumentert at meningsendringer og modenhetsstatus må vurderes når funksjoner endres; dette kan ikke utledes automatisk av all kode.\nOppdatert README og AGENTS.md med vedlikeholdsregler og regresjonstester. Oversikten viser ikke hemmelig konfigurasjon eller sanntidsstatus for modelltjenesten.\nKontroll: Alle 36 tester, TypeScript og produksjonsbygg bestod. Siden, statusene og bunntekstlenken er kontrollert i lokal nettleser. Dette er ikke en ny full tilgjengelighetsrevisjon.\nIkke utgitt – versjonslogg i bunnteksten – 9. november 2026\n\nUtførende agent: Codex (OpenAI).\n\nLagt til «Versjonslogg» i den felles bunnteksten og nettstedskartet, med en lesbar side på /versjonslogg/.\nSiden bygges direkte fra denne filen, slik at endringer ikke trenger å vedlikeholdes i en separat kopi. Neste bygg/utrulling tar med den oppdaterte loggen.\nKontroll: Produksjonsbygg med TypeScript bestod. Bunntekstlenken ble funnet på alle 13 sider med felles layout; Next.js sin separate globale feilside inngår ikke. Versjonsloggsiden har riktig hovedoverskrift. git diff --check bestod.\nIkke utgitt – klargjort eksternt modell-API – 9. november 2026\n\nUtførende agent: Codex (OpenAI), med openai-docs for kontroll av API-format og nøkkelhåndtering.\n\nLagt til valg mellom veiledning uten modell, lokal Ollama og et eksternt OpenAI-kompatibelt Chat Completions-API. Serveren konfigureres med MODEL_PROVIDER, MODEL_API_URL, MODEL_NAME og MODEL_API_KEY.\nEkstern adapter bruker full konfigurert HTTPS-adresse og Bearer-header. Nøkkelen leses bare i serveroppsettet og inngår ikke i modellens meldinger, API-svar eller oppstartslogger. Ufullstendig oppsett og utrygge URL-formater avvises uten å vise innlagte verdier.\nModellkall har timeout, følger ikke videresendinger og skjuler rå leverandør-/transportfeil. Veiledning og kilder bevares ved feil. Ollama og ekstern adapter bruker samme kildebaserte meldingsgrunnlag.\nOppdatert .env.example, README og isolert synkroniseringstest. Beskrevet server-secrets, omstart, støttet API-format og begrensninger. Ingen ekstern URL, virkelig nøkkel eller leverandør er aktivert.\nKontroll: Alle 31 tester, TypeScript, produksjonsbygg og Prettier bestod. En falsk testnøkkel satt ved bygging og variabelnavnet MODEL_API_KEY ble ikke funnet i 84 klient-/statiske sidefiler. HTTP-tester verifiserte at nøkkel, API-adresse og rå leverandørfeil ikke returneres til nettleseren. Isolert test av automatisk innholdsomlasting bestod. Eksterne modellkall er bare testet med simulert transport, ikke en virkelig leverandør.\nIkke utgitt – felles innholdskilde for sider og Spør KI – 9. november 2026\n\nUtførende agent: Codex (OpenAI).\n\nFlyttet innholdet for Kom i gang, Om (inkludert KI-prat) og Retningslinjer til src/content/pages/. Sidekomponentene viser innholdet gjennom en felles renderer som bevarer overskrifter, avsnitt, lister, forbehold og lenker til vedlegg.\nknowledge.ts avleder RAG-kilder og veiledning fra samme innhold, med referanser til avsnitts-ID-er i stedet for kopiert tekst. Manglende referanser gir feil ved bygging/testing. Om-sidens øvrige innhold inngår nå også i grunnlaget. Ressurskatalogen bruker fortsatt resources.ts.\nLokalmiljøet kjører RAG med automatisk omlasting når importerte innholdsfiler endres. I produksjon skal nettsiden bygges og RAG-tjenesten startes fra samme revisjon; gamle chatmeldinger beholdes som historikk.\nDokumentert hvor teksten vedlikeholdes og hvordan endringer kontrolleres. Lagt til regresjonstester for endret innhold, forbehold og ugyldige referanser, samt test:content-sync for automatisk API-omlasting i en isolert prosjektkopi.\nKontroll: 26 tester og produksjonsbygg bestod. Alle 47 titler, ingresser og innholdsblokker ble funnet i de ferdigbygde sidene. Isolert integrasjonstest bekreftet at en endring i innholdsfilen automatisk oppdaterer RAG-tekst og veiledning. Ingen modellgenerering eller ny full tilgjengelighetsrevisjon er utført.\nIkke utgitt – mer nyttige svar i Spør KI – 9. november 2026\n\nUtførende agent: Codex (OpenAI).\n\nErstatter visningen av lange kildeutdrag med en lesbar introduksjon, konkrete steg, forbehold og en direkte lenke til den mest relevante veiledningen. Uten språkmodell merkes dette tydelig som hentet veiledning, ikke et individuelt generert svar.\nUtvidet det eksplisitte kunnskapsgrunnlaget med Kom i gang, KI-prat og retningslinjeutkastet. Beta-status sendes også til en eventuell modell. Ingen private repoer eller dokumenter leses.\nModellsvar kan vise avsnitt, lister, utheving og klikkbare kildehenvisninger uten å tolke HTML eller vilkårlige lenker. Forbedret instruksen for korte, kildebaserte svar med forbehold.\nLagt til spørsmålsknapper, bedre veiledning ved manglende treff og rulling til starten av siste svar fremfor bunnen. Spørsmål behandles fortsatt separat.\nOppdatert README og tester for relevante treff, Beta-/utkaststatus og validering av kildeformat og lenker. Lokal språkmodell er fortsatt ikke konfigurert; reell generering mot Ollama er ikke testet.\nKontroll: Alle 23 tester, TypeScript, produksjonsbygg og formateringskontroll bestod. Kontrollert svar om KI-prat og verktøygodkjenning i lokal nettleser; sistnevnte beholder uavklart godkjenningsstatus. Dette er ikke en full tilgjengelighetsrevisjon. Lokalmiljøet er startet på nytt med oppdaterte kilder.\nIkke utgitt – retningslinjeside – 9. november 2026\n\nUtførende agent: Codex (OpenAI).\n\nOpprettet /retningslinjer/ med veiledning om verktøy, arkivmateriale, kvalitet og agenttilgang, inspirert av NAVs side og tilpasset portalens målgruppe og design.\nMerket innholdet som arbeidsutkast, med avklaringspunkter for eierskap, godkjenninger og oppfølging. NAVs interne tillatelser er ikke overført til Nasjonalarkivet.\nLagt til siden i hovedmenyen og nettstedskartet. Siden inngår ennå ikke i den dokumenterte tilgjengelighetsgjennomgangen eller RAG-kildene.\nKontroll: TypeScript og git diff --check bestod, og de berørte kodefilene er formatert med Prettier. Ingen visuell nettleserkontroll er utført.\nIkke utgitt – mandatforslag som vedlegg – 9. november 2026\n\nUtførende agent: Codex (OpenAI).\n\nLagt til den opprinnelige ai-enablement-team.pdf som vedlegg under omtalen av AI enablement-teamet på Om-siden, tydelig merket som mandatforslag med filtype og størrelse.\nPDF-en er kopiert uendret til public/vedlegg/mandatforslag-ai-enablement-team.pdf og følger nettstedet ved bygging. Ingen publisering eller ny tilgjengelighetsvurdering av PDF-en er utført.\nKontroll: Filkopien er sammenlignet med originalen uten forskjeller. Prettier og git diff --check bestod.\nIkke utgitt – KI-prat på Om-siden – 9. november 2026\n\nUtførende agent: Codex (OpenAI).\n\nLagt til omtale av KI-prat under «Om», basert på invitasjonsteksten: erfaringsdeling om KI, Teams-møter annenhver torsdag i opptil én time og videre diskusjon i Teams-kanalen.\nTilpasset invitasjonen til varig informasjon på portalen; omtalen av det første møtet er utelatt.\nPresisert at KI-prat er for alle som jobber med produktutvikling i Nasjonalarkivet.\nKontroll: Prettier og git diff --check bestod. Ingen funksjonalitet er endret.\nIkke utgitt – Beta-merking av skills – 9. november 2026\n\nUtførende agent: Codex (OpenAI).\n\nLagt til en synlig «Beta»-etikett på skill-kortene i ressurskatalogen, med forklaring om at de ennå ikke er gjennomgått av et menneske.\nViser samme status og forklaring på skillenes detaljsider for å gjøre modenheten tydelig også ved direkte lenking.\nKontroll: TypeScript, Prettier for de berørte filene og git diff --check bestod. Ingen visuell nettleserkontroll er utført i denne endringen.\nIkke utgitt – samlet tilgjengelighetsdokumentasjon – 9. november 2026\n\nUtførende agent: Codex (OpenAI).\n\nFlyttet erklæringsgrunnlaget og WCAG-kontrollen fra prosjektroten til docs/tilgjengelighet/, sammen med den daterte testhistorikken, for å samle dokumentasjonen og rydde prosjektroten.\nOppdatert lenkene i README, kvalitetskontrollen og utviklingsplanen, samt WCAG-kontrollens relative lenker til testresultatene. Nettsidens URL og vurderinger er uendret.\nKontroll: Lokale Markdown-lenker i de berørte dokumentene er kontrollert mot filsystemet, og git diff --check er kjørt uten feil. Ingen ny tilgjengelighetstest eller publisering er utført.\nIkke utgitt – regler for versjonslogg – 7. november 2026\n\nUtførende agent: Codex (OpenAI).\n\nLagt inn krav i portalens AGENTS.md om å oppdatere loggen ved vesentlige endringer. Next.js-instruksjonene er bevart.\nTilsvarende regler er lagt i Skills-repoet og tilgjengelighetsskillen, med tydelig ansvar for riktig repo-/prosjektlogg.\nOppføringer skal dokumentere endring, begrunnelse, agent/person, kontroller og begrensninger. Dette er instruksjoner, ikke en automatisk Git-kontroll.\nKontroll: Instruksjonene er lest tilbake, og git diff --check er kjørt uten feil i begge repoene.\nIkke utgitt – tilgjengelighetsskill 0.3.0 – 7. november 2026\n\nUtførende agent: Codex (OpenAI), med skill-creator. Ingen underagenter.\n\nStandardisert lagring av testgjennomganger i det testede prosjektets daterte mapper, med unik kjørings-ID og bevaring av tidligere evidens.\nNytt kjøringsverktøy lagrer rådata, feil, exitkoder, tidsstempler, agent og versjon, samt foreløpige rapporter med uavklart samlet status.\nSkillen skal etter vurdering oppdatere prosjektets eksisterende rapporter, lokale erklæring, README og versjonslogg med sporbarhet til kjøringen. Ingen blind automatisk overskriving av tidligere vurderinger.\nOppdatert bibliotekets README, lagrings-/testveiledning, maler og versjonslogg. Portalens beskrivelse og brukseksempel viser versjon 0.3.0.\nAlle 15 regresjonstester av hjelpeverktøyene bestod i isolerte testprosjekter. Dette er ikke en ny full WCAG-revisjon av portalen.\nIkke utgitt – tilgjengelighetsskill 0.2.0 – 7. november 2026\n\nUtførende agent: Codex (OpenAI), med skill-creator. Ingen underagenter.\n\nUtvidet skillen i Skills-repoet fra erklæringsutforming til testing med tilgjengelige verktøy, dokumenterte funn, prioriterte rettingsforslag, retest og erklæringsgrunnlag.\nLagt til testveiledning, rapportmal og lokale Python-hjelpere for avgrenset HTML-grunnkontroll og kontrastberegning. Kandidater, bekreftede brudd og uavklarte tester skilles fra hverandre.\nKodeendringer i et testet nettsted krever at dette er del av brukerens oppdrag. Ingen automatisk sertifisering eller publisering innføres.\nOppdatert portalens tittel, beskrivelse, brukssteg, søkeord, eksempel og versjonsmerking til 0.2.0. Instruksjonene er generelle for alle brukere.\nHjelperne er kontrollert med åtte regresjonstester og prøvd mot portalens lokale HTML-eksport. Dette validerer hjelpeverktøyene, ikke full tilgjengelighet eller agentens samlede vurdering.\nJustert kildehenting slik at eksakte tittelord rangeres høyere enn prefikstreff; den utvidede skill-beskrivelsen skal ikke fortrenge kodegjennomgang for spørsmål om kodeendringer.\nAlle 21 portaltester og begge byggvariantene bestod. Beskrivelsen og versjon 0.2.0 er kontrollert i nettleseren. Skill-repoet og den installerte kopien er identiske.\nIkke utgitt – generell brukerveiledning – 7. november 2026\n\nUtførende agent: Codex (OpenAI).\n\nOmskrevet skillens installasjonsveiledning for alle brukere, uten antakelser om en bestemt maskin, assistent eller eksisterende installasjon.\nBrukseksemplet ber om navn eller nettadresse til brukerens nettsted.\nErstattet «Lokal skill» med «Under utprøving» og presisert at distribusjon ennå ikke er satt opp. Ingen nedlasting eller GitHub-lenke er lovet som tilgjengelig.\nIkke utgitt – lokalt Skills-bibliotek og katalog – 7. november 2026\n\nUtførende agent: Codex (OpenAI). Ingen underagenter.\n\nOpprettet separat lokalt Skills-repo i /Users/khadah/Documents/ChatGPT/Skills, med første commit 85af197. GitHub-tilkobling er ikke konfigurert; brukeren avklarte at repoet skulle være lokalt.\nLagt tilgjengelighetsskillen i skills/tilgjengelighetserklaering/, med README og bidragsveiledning for flere skills. Den installerte Codex-kopien er beholdt.\nLagt til søkbar katalogressurs og detaljside med versjon, brukseksempel og lokal repo-plassering.\nKatalogen søker også på nøkkelord, skill-navn og flere søkeord, uavhengig av store/små bokstaver og aksenter.\nSkilt lokale skills fra eksempelressurser i visningen. Bare godkjent beskrivende innhold inngår i klient- og RAG-data; selve skill-pakken følger ikke med i nettstedet.\n21 tester passerer, inkludert nye søke- og kildehentingstester. Begge byggvariantene og HTML-grunnkontrollen for 13 filer bestod.\nSøk på fire relevante ord og åpning av skillens detaljside er kontrollert i nettleseren. Utviklingsmiljøet er startet på nytt for å laste nye statiske ruter og kilder.\nIkke utgitt – oppdatert erklæringsutkast – 7. november 2026\n\nUtførende agent: Codex (OpenAI), med skillen tilgjengelighetserklaering. Ingen underagenter.\n\nStatus: Lokale endringer; ikke committet eller publisert.\n\nTilpasset tilgjengelighetssiden og erklæringsgrunnlaget til skillens arbeidsmal og kontrollert veiledning hos Uu-tilsynet.\nPresisert hvilke ni sider testgrunnlaget gjelder, alternative veier til innholdet og kontaktoppfølging som fortsatt må avklares.\nSkilt testdato 6. november fra tekstoppdatering og kildekontroll 7. november. Ingen ny WCAG-revisjon eller nye testresultater er påstått.\nDokumentert de åtte uavklarte kriteriene og betydningen av arbeidskodene K/I/U. Utkastet er ikke klart til formell registrering.\nKontaktadressen fra prosjekteier er beholdt. Juridiske registreringsopplysninger, endelig nettadresse og godkjenner er fortsatt uavklart.\nProduksjonsbygg bestod. Den oppdaterte siden er kontrollert visuelt; skjermbilde ligger i docs/tilgjengelighet/2026-11-07/. Dette er tekst-/visningskontroll, ikke en ny full WCAG-test.\nIkke utgitt – utvidet tilgjengelighetskontroll – 6. november 2026\n\nUtførende agent: Codex (OpenAI). Ingen underagenter.\n\nStatus: Lokale endringer på grunnlag av f055757. Ikke committet eller publisert.\n\nVurderingsmatrise for 48 WCAG-krav med avgrensede kontroller og uavklarte punkter.\nTilgjengelighetsside og nettstedskart med lenker fra alle siders bunntekst.\nGrunnlag for formell erklæring i uustatus.no, kontaktadressen oppgitt av brukeren og informasjon om klage. Ingen formell erklæring registrert.\nForbedret kantkontrast, feilmeldinger, tastaturfokus og kildevisning i chatten. Bedre linjebryting og støtte for redusert bevegelse.\nTo kontrasttester og grunnkontroll av eksportert HTML. Alle 18 tester, begge byggvarianter og HTML-kontrollen bestod.\nNi sider kontrollert ved tre skjermstørrelser, tekstavstander prøvd på åtte sider og chat. Evidens i docs/tilgjengelighet/2026-11-06/.\nSamlet samsvar kan ikke bekreftes før gjenstående skjermleser-, zoom- og manuelle kontroller er utført.\nDokumentasjon og tilgjengelighetsrettinger – 6. november 2026\n\nStatus: Committet lokalt som f055757; ikke publisert.\n\nUtførende agent: Codex (OpenAI), i prosjektets eksisterende chat.\n\nEndret\nOppdatert utviklingsplanens faseoversikt og oppgaver mot faktisk implementasjon og lokal Git-historikk.\nOpprettet KVALITETSKONTROLL.md med utførte kontroller, funn og gjenstående arbeid.\nOpprettet denne versjonsloggen og lenket den fra README.\nRettet\n«Hopp til innhold» flytter nå tastaturfokus til hovedinnholdet.\nUtvidet fokusmarkering til tekstområder, utfellbare kilder og hovedinnhold.\nFjernet duplisert ID i chatdialogen, slik at dialogens tittel identifiseres entydig.\nGitt menylenker og utfellbare kilder minst 44 pikslers høyde.\nReservert plass i bunnteksten under den flytende chatknappen.\nMarkert eksisterende myk rulling med Next.js-attributtet data-scroll-behavior.\nKontrollert\nForsiden visuelt ved 320, 390 og 1280 pikslers bredde; alle seks undersider kontrollert for horisontal overflyt ved 320 piksler.\nInterne lenkemål, katalogsøk, tomtilstand, nullstilling og typefilter.\nChat med kildeutdrag, kildelenke, Escape-lukking, retur av fokus og entydig dialogtittel.\nAlle 16 eksisterende tester, vanlig produksjonsbygg, Pages-bygg og formateringskontroll bestod etter kodeendringene.\nSkjermleser, zoom, full kontrastkontroll og flere nettlesere gjenstår. Se kontrollrapporten (KVALITETSKONTROLL.md).\n\nGit-referanse: f055757, bygger på ed873b7.\n\n0.1.0 – første lokale versjon – 6. november 2026\n\nStatus: Lagret i lokal Git. Ikke publisert. Versjonsnummeret følger package.json.\n\nUtførende agent: Codex (OpenAI), basert på arbeid dokumentert i prosjektets chat og utviklingsplan.\n\nGit-referanse: ed873b7 – «Første versjon av KI-Produktutvikling».\n\nImplementasjonen ble i hovedsak dokumentert 30. oktober 2026; 6. november er datoen for den første commiten.\n\nLagt til\nLokal Next.js-portal med TypeScript og separat statisk Pages-bygg.\nDigitalarkivets MUI-tema med portalens eget futuristiske uttrykk, arklogo og favicon.\nForside, verktøykatalog med søk og filtre, tre ressursdetaljer, Kom i gang og Om.\nChat på forsiden og egen spørreside, offentlig nøkkelordbasert kildehenting og lokal Ollama-adapter.\nStatisk kildesøk uten modellkall i Pages-varianten.\nModuldeling av chat, RAG-server, stiler og designverdier.\nTester og dokumentasjon for oppstart, arkitektur og videre utvikling.\nBegrensninger\nInnholdet består av offentlige eksempler. Faktiske installasjonspakker, innlogging og internt innhold er ikke implementert.\nIngen GitHub-remote, CI eller automatisk publisering er konfigurert.\nGenerering med en faktisk modell er ikke verifisert.\nSlik vedlikeholdes loggen\nFør nye endringer under «Ikke utgitt», med dato og faktisk utførende agent eller person. Ved flere agenter oppgis hvem som gjorde hvilke deler.\nBeskriv endringen, hvorfor den ble gjort, hva som er kontrollert og eventuelle begrensninger.\nVed versjonering: opprett en datert versjonsoppføring og oppgi faktisk commit eller tag. Ikke merk en versjon som publisert før utrullingen er verifisert.\nGit-forfatter, agent og versjonsnummer skal ikke antas å være det samme. Ikke oppgi en modellvariant uten at den er kjent.",
+    "media": [],
+    "navigation": [
+      {
+        "links": [
+          {
+            "href": "/kom-i-gang",
+            "text": "Kom i gang"
+          },
+          {
+            "href": "/retningslinjer",
+            "text": "Retningslinjer"
+          },
+          {
+            "href": "/#ressurser",
+            "text": "Ressurskatalog"
+          },
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/spor",
+            "text": "Spør KI"
+          },
+          {
+            "href": "/om",
+            "text": "Om"
+          }
+        ],
+        "name": "Hovedmeny"
+      },
+      {
+        "links": [
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/personvern",
+            "text": "Personvernerklæring"
+          },
+          {
+            "href": "/tilgjengelighet",
+            "text": "Tilgjengelighetserklæring"
+          },
+          {
+            "href": "/nettstedskart",
+            "text": "Nettstedskart"
+          },
+          {
+            "href": "/versjonslogg",
+            "text": "Versjonslogg"
+          },
+          {
+            "href": "/utviklingsplan",
+            "text": "Utviklingsplan"
+          },
+          {
+            "href": "/funksjonalitet",
+            "text": "Funksjonalitetsoversikt"
+          }
+        ],
+        "name": "Informasjon om nettstedet"
+      }
+    ],
+    "scrollWidth": 1280,
+    "tables": [],
+    "title": "Versjonslogg | KI-Produktutvikling",
+    "width": 1280
+  },
+  {
+    "route": "/spor/",
+    "duplicateIds": [],
+    "fields": [
+      {
+        "autocomplete": null,
+        "id": "_R_29bn5rfllb_",
+        "label": "Skriv et spørsmål",
+        "tag": "TEXTAREA",
+        "type": null
+      }
+    ],
+    "h1": [
+      "Spør kunnskapsbasen"
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Spør kunnskapsbasen"
+      }
+    ],
+    "height": 900,
+    "images": [],
+    "lang": "nb",
+    "mainCount": 1,
+    "mainText": "KUNNSKAPSASSISTENT · UTPRØVING\nSpør kunnskapsbasen\n\nFinn svar med utgangspunkt i portalens innhold og følg kildene tilbake til originalen.\n\nUTFORSK KUNNSKAPEN\nHei! Hva vil du utforske?\n\nFå hjelp til tilgjengelighet, kodegjennomgang og gode KI-instrukser. Jeg finner også informasjon om KI-prat og utkastet til retningslinjer.\n\nDu får konkrete steg og lenker til kildene. Hvert spørsmål behandles separat.\nHvordan gjennomgår jeg en kodeendring?\nHvordan gir jeg KI god kontekst?\nHvordan utforsker jeg brukerbehov?\n\nBruk kildene til å kontrollere veiledningen. Hvert spørsmål behandles separat.\n\nSkriv et spørsmål\nSkriv et spørsmål\n\nIkke skriv personopplysninger eller internt innhold.\n\nSend spørsmål",
+    "media": [],
+    "navigation": [
+      {
+        "links": [
+          {
+            "href": "/kom-i-gang",
+            "text": "Kom i gang"
+          },
+          {
+            "href": "/retningslinjer",
+            "text": "Retningslinjer"
+          },
+          {
+            "href": "/#ressurser",
+            "text": "Ressurskatalog"
+          },
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/spor",
+            "text": "Spør KI"
+          },
+          {
+            "href": "/om",
+            "text": "Om"
+          }
+        ],
+        "name": "Hovedmeny"
+      },
+      {
+        "links": [
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/personvern",
+            "text": "Personvernerklæring"
+          },
+          {
+            "href": "/tilgjengelighet",
+            "text": "Tilgjengelighetserklæring"
+          },
+          {
+            "href": "/nettstedskart",
+            "text": "Nettstedskart"
+          },
+          {
+            "href": "/versjonslogg",
+            "text": "Versjonslogg"
+          },
+          {
+            "href": "/utviklingsplan",
+            "text": "Utviklingsplan"
+          },
+          {
+            "href": "/funksjonalitet",
+            "text": "Funksjonalitetsoversikt"
+          }
+        ],
+        "name": "Informasjon om nettstedet"
+      }
+    ],
+    "scrollWidth": 1280,
+    "tables": [],
+    "title": "Spør kunnskapsbasen | KI-Produktutvikling",
+    "width": 1280
+  },
+  {
+    "route": "/ressurser/brukerbehov/",
+    "duplicateIds": [],
+    "fields": [],
+    "h1": [
+      "Utforsk et brukerbehov"
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Utforsk et brukerbehov"
+      },
+      {
+        "tag": "H2",
+        "text": "Når passer dette?"
+      },
+      {
+        "tag": "H2",
+        "text": "Slik prøver du det"
+      },
+      {
+        "tag": "H2",
+        "text": "Eksempeltekst"
+      }
+    ],
+    "height": 900,
+    "images": [],
+    "lang": "nb",
+    "mainCount": 1,
+    "mainText": "← Til ressurskatalogen\nPROMPT · EKSEMPEL\nUtforsk et brukerbehov\n\nBeskriv en situasjon du vil forstå bedre. Få forslag til åpne intervjuspørsmål, og vurder hvilke dere vil prøve med brukere.\n\nNår passer dette?\n\nBruk eksemplet til å forberede utforsking. KI-forslag erstatter ikke undersøkelser med faktiske brukere.\n\nSlik prøver du det\nBeskriv situasjonen uten personopplysninger.\nBe om åpne spørsmål og alternative forklaringer.\nTest antakelsene gjennom samtaler eller observasjon med brukere.\nEksempeltekst\nVi utforsker følgende situasjon: …\nForeslå fem åpne spørsmål til et brukerintervju. Pek på antakelsene i beskrivelsen vår, og skill mellom det vi vet og det vi må undersøke.\nDette er eksempelinnhold til utprøving, ikke en ferdig installasjonspakke eller vedtatt føring. Bruk bare verktøy og data virksomheten har godkjent.",
+    "media": [],
+    "navigation": [
+      {
+        "links": [
+          {
+            "href": "/kom-i-gang",
+            "text": "Kom i gang"
+          },
+          {
+            "href": "/retningslinjer",
+            "text": "Retningslinjer"
+          },
+          {
+            "href": "/#ressurser",
+            "text": "Ressurskatalog"
+          },
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/spor",
+            "text": "Spør KI"
+          },
+          {
+            "href": "/om",
+            "text": "Om"
+          }
+        ],
+        "name": "Hovedmeny"
+      },
+      {
+        "links": [
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/personvern",
+            "text": "Personvernerklæring"
+          },
+          {
+            "href": "/tilgjengelighet",
+            "text": "Tilgjengelighetserklæring"
+          },
+          {
+            "href": "/nettstedskart",
+            "text": "Nettstedskart"
+          },
+          {
+            "href": "/versjonslogg",
+            "text": "Versjonslogg"
+          },
+          {
+            "href": "/utviklingsplan",
+            "text": "Utviklingsplan"
+          },
+          {
+            "href": "/funksjonalitet",
+            "text": "Funksjonalitetsoversikt"
+          }
+        ],
+        "name": "Informasjon om nettstedet"
+      }
+    ],
+    "scrollWidth": 1280,
+    "tables": [],
+    "title": "Utforsk et brukerbehov | KI-Produktutvikling",
+    "width": 1280
+  },
+  {
+    "route": "/ressurser/kodegjennomgang/",
+    "duplicateIds": [],
+    "fields": [],
+    "h1": [
+      "Gjennomgå en kodeendring"
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Gjennomgå en kodeendring"
+      },
+      {
+        "tag": "H2",
+        "text": "Når passer dette?"
+      },
+      {
+        "tag": "H2",
+        "text": "Slik prøver du det"
+      },
+      {
+        "tag": "H2",
+        "text": "Eksempeltekst"
+      }
+    ],
+    "height": 900,
+    "images": [],
+    "lang": "nb",
+    "mainCount": 1,
+    "mainText": "← Til ressurskatalogen\nSKILL · BETA\nGjennomgå en kodeendring\n\nEt utgangspunkt for strukturert gjennomgang av kvalitet, feilscenarier og tester.\n\nBeta: Denne skillen er ennå ikke gjennomgått av et menneske.\n\nNår passer dette?\n\nBruk eksemplet når du vil få innspill til en kodeendring du selv kan forstå og kvalitetssikre.\n\nSlik prøver du det\nBeskriv hensikten med endringen og forventet oppførsel.\nBe om konkrete feilscenarier og manglende tester, med henvisning til relevant kode.\nVurder hvert forslag selv og kjør prosjektets relevante kontroller.\nEksempeltekst\nGå gjennom denne kodeendringen. Se etter feilscenarier, utilsiktet oppførsel og manglende tester. Forklar funnene med konkrete eksempler. Skill mellom sikre funn og antakelser.\nDette er eksempelinnhold til utprøving, ikke en ferdig installasjonspakke eller vedtatt føring. Bruk bare verktøy og data virksomheten har godkjent.",
+    "media": [],
+    "navigation": [
+      {
+        "links": [
+          {
+            "href": "/kom-i-gang",
+            "text": "Kom i gang"
+          },
+          {
+            "href": "/retningslinjer",
+            "text": "Retningslinjer"
+          },
+          {
+            "href": "/#ressurser",
+            "text": "Ressurskatalog"
+          },
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/spor",
+            "text": "Spør KI"
+          },
+          {
+            "href": "/om",
+            "text": "Om"
+          }
+        ],
+        "name": "Hovedmeny"
+      },
+      {
+        "links": [
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/personvern",
+            "text": "Personvernerklæring"
+          },
+          {
+            "href": "/tilgjengelighet",
+            "text": "Tilgjengelighetserklæring"
+          },
+          {
+            "href": "/nettstedskart",
+            "text": "Nettstedskart"
+          },
+          {
+            "href": "/versjonslogg",
+            "text": "Versjonslogg"
+          },
+          {
+            "href": "/utviklingsplan",
+            "text": "Utviklingsplan"
+          },
+          {
+            "href": "/funksjonalitet",
+            "text": "Funksjonalitetsoversikt"
+          }
+        ],
+        "name": "Informasjon om nettstedet"
+      }
+    ],
+    "scrollWidth": 1280,
+    "tables": [],
+    "title": "Gjennomgå en kodeendring | KI-Produktutvikling",
+    "width": 1280
+  },
+  {
+    "route": "/ressurser/personvernerklaering/",
+    "duplicateIds": [],
+    "fields": [],
+    "h1": [
+      "Kartlegg personvern og utform erklæring"
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Kartlegg personvern og utform erklæring"
+      },
+      {
+        "tag": "H2",
+        "text": "Om skillen"
+      },
+      {
+        "tag": "H2",
+        "text": "Når passer dette?"
+      },
+      {
+        "tag": "H2",
+        "text": "Slik prøver du det"
+      },
+      {
+        "tag": "H2",
+        "text": "Eksempel på bruk"
+      }
+    ],
+    "height": 900,
+    "images": [],
+    "lang": "nb",
+    "mainCount": 1,
+    "mainText": "← Til ressurskatalogen\nSKILL · BETA\nKartlegg personvern og utform erklæring\n\nKartlegg faktisk databehandling, lagre vurderingsgrunnlaget i prosjektet og opprett eller oppdater personvernerklæringen med tydelige uavklarte forhold.\n\nBeta: Denne skillen er ennå ikke gjennomgått av et menneske.\n\nOm skillen\n\nVersjon 0.1.0. Skill-bibliotek: Skills, i mappen skills/personvernerklaering. Distribusjon via GitHub eller nedlasting fra portalen er foreløpig ikke satt opp.\n\nSkillen har en kartleggingsveiledning, egne rapport- og erklæringsmaler, faglige referanser og et skript som oppretter en datert arbeidsmappe. Oppsettet er inspirert av Digdirs eksempel, med Datatilsynets veiledning som faglig grunnlag. Kartlegging og vurdering utføres av assistenten med tilgjengelige verktøy; skriptet utfører ingen skanning eller juridisk kontroll.\n\nNår passer dette?\n\nBruk skillen ved en ny personvernerklæring eller når innlogging, logging, informasjonskapsler, leverandører eller KI-tjenester endrer databehandlingen. Teksten skal bygge på bekreftede opplysninger om den aktuelle tjenesten og miljøet.\n\nSlik prøver du det\nHent hele mappen personvernerklaering fra Skills-biblioteket, inkludert SKILL.md, arbeidsmaler, referanser og skript.\nLegg mappen i skill-katalogen til kodeassistenten du bruker, og kontroller at skillen er tilgjengelig.\nOppgi prosjektmappe, nettadresse/miljø, eksisterende erklæring og bekreftede opplysninger om ansvar og databehandling. Oppgi ingen API-nøkler eller rå personopplysninger.\nBe assistenten kartlegge relevante dataflyter og markere hva som er observert, bekreftet eller uavklart. Behandlingsgrunnlag, leverandørpraksis og lagring skal ikke oppfinnes.\nLagre gjennomgangen i en unik datert mappe under docs/personvern/ i målprosjektet. Bevar historikken og oppdater prosjektets rapporter, erklæring, README og versjonslogg fra det vurderte grunnlaget.\nGå gjennom vesentlige mangler med virksomhetens ansvarlige før teksten brukes som ferdig informasjon. Tekstoppdatering innebærer ikke automatisk publisering eller retting av nettstedets kode.\nEksempel på bruk\nBruk $personvernerklaering til å kartlegge databehandlingen for [nettadresse/miljø] i [prosjektmappe]. Lagre grunnlaget i en datert mappe og opprett eller oppdater personvernerklæringen, rapportene, README og versjonsloggen. Merk ubekreftede fakta som uavklart og skill faktisk behandling fra planlagte funksjoner. Ikke endre funksjonskode eller publiser i denne gjennomgangen.\nUavklarte opplysninger skal stå synlig i utkastet. Skillen kan foreslå tiltak, men gir ingen automatisk juridisk godkjenning og erstatter ikke virksomhetens vurderinger. Publisering og kodeendringer må inngå i oppdraget. Bruk bare verktøy og data virksomheten har godkjent.",
+    "media": [],
+    "navigation": [
+      {
+        "links": [
+          {
+            "href": "/kom-i-gang",
+            "text": "Kom i gang"
+          },
+          {
+            "href": "/retningslinjer",
+            "text": "Retningslinjer"
+          },
+          {
+            "href": "/#ressurser",
+            "text": "Ressurskatalog"
+          },
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/spor",
+            "text": "Spør KI"
+          },
+          {
+            "href": "/om",
+            "text": "Om"
+          }
+        ],
+        "name": "Hovedmeny"
+      },
+      {
+        "links": [
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/personvern",
+            "text": "Personvernerklæring"
+          },
+          {
+            "href": "/tilgjengelighet",
+            "text": "Tilgjengelighetserklæring"
+          },
+          {
+            "href": "/nettstedskart",
+            "text": "Nettstedskart"
+          },
+          {
+            "href": "/versjonslogg",
+            "text": "Versjonslogg"
+          },
+          {
+            "href": "/utviklingsplan",
+            "text": "Utviklingsplan"
+          },
+          {
+            "href": "/funksjonalitet",
+            "text": "Funksjonalitetsoversikt"
+          }
+        ],
+        "name": "Informasjon om nettstedet"
+      }
+    ],
+    "scrollWidth": 1280,
+    "tables": [],
+    "title": "Kartlegg personvern og utform erklæring | KI-Produktutvikling",
+    "width": 1280
+  },
+  {
+    "route": "/ressurser/tilgjengelighetserklaering/",
+    "duplicateIds": [],
+    "fields": [],
+    "h1": [
+      "Test tilgjengelighet og utform erklæring"
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Test tilgjengelighet og utform erklæring"
+      },
+      {
+        "tag": "H2",
+        "text": "Om skillen"
+      },
+      {
+        "tag": "H2",
+        "text": "Når passer dette?"
+      },
+      {
+        "tag": "H2",
+        "text": "Slik prøver du det"
+      },
+      {
+        "tag": "H2",
+        "text": "Eksempel på bruk"
+      }
+    ],
+    "height": 900,
+    "images": [],
+    "lang": "nb",
+    "mainCount": 1,
+    "mainText": "← Til ressurskatalogen\nSKILL · BETA\nTest tilgjengelighet og utform erklæring\n\nTest tilgjengeligheten, lagre resultatene i prosjektet og få oppdaterte rapporter, rettingsforslag og tilgjengelighetserklæring basert på funnene.\n\nBeta: Denne skillen er ennå ikke gjennomgått av et menneske.\n\nOm skillen\n\nVersjon 0.4.0. Skill-bibliotek: Skills, i mappen skills/tilgjengelighetserklaering. Distribusjon via GitHub eller nedlasting fra portalen er foreløpig ikke satt opp.\n\nSkillen har konkrete testprosedyrer for alle 48 krav i nettstedsmalen, med verktøy, fremgangsmåte, forventet resultat og dokumentasjon. Nye kjøringer får en testplan der alle krav starter som ikke testet. Lokale kontrollskript dekker HTML og utvalgte kontrastpar. Den dokumenterer funn og foreslår rettinger, og skiller en kort brukerrettet erklæring fra tekniske rapporter og intern arbeidshistorikk. Hva som faktisk kan testes, avhenger av tilgjengelige verktøy; resultatet er ikke en automatisk godkjenning av nettstedet.\n\nNår passer dette?\n\nBruk skillen når du vil undersøke tilgjengeligheten i et nettsted eller en app, få konkrete forslag til rettinger og utforme eller oppdatere tilgjengelighetserklæringen. Testene tilpasses verktøyene og tilgangen som faktisk finnes.\n\nSlik prøver du det\nHent hele mappen tilgjengelighetserklaering fra Skills-biblioteket, inkludert SKILL.md, arbeidsmal og referanser.\nLegg skill-mappen i skill-katalogen til kodeassistenten du bruker. Følg assistentens installasjonsveiledning, og kontroller at skillen er tilgjengelig før du starter.\nOppgi nettadresse eller testmiljø, viktige brukeroppgaver, eventuelle tidligere testresultater og bekreftet kontaktkanal. Be assistenten teste tilgjengeligheten med eksemplet nedenfor.\nGå gjennom testrapporten med funn, konsekvenser og prioriterte rettingsforslag. Tester som ikke kunne gjennomføres, skal stå som uavklart. Be særskilt om kodeendringer hvis du ønsker at forslagene skal implementeres.\nLagre hver gjennomgang i en egen datert mappe under docs/tilgjengelighet/ i prosjektet som testes. Behold råresultater, testmetadata og eventuell manuell evidens, og oppdater rapportene med henvisning til gjennomgangen og skriv en kort brukerrettet erklæring uten intern arbeidshistorikk.\nTest rettinger på nytt før et funn lukkes. Utform erklæringen fra siste verifiserte resultater, og fullfør gjenstående manuelle kontroller. Virksomheten må godkjenne og registrere den formelle erklæringen i uustatus.no.\nEksempel på bruk\nBruk $tilgjengelighetserklaering til å teste tilgjengeligheten for [nettadresse] i prosjektet [prosjektmappe]. Lagre resultatene i en datert mappe, dokumenter funn og rettingsforslag, og oppdater prosjektets rapporter, README, versjonslogg og lokale tilgjengelighetserklæring. Behold manglende tester som uavklart. Ikke endre nettstedets funksjonskode i denne gjennomgangen.\nSkillen kan teste med tilgjengelige verktøy og foreslå rettinger. Skjermleser og andre manuelle kontroller må utføres når de er relevante. Kode endres bare når det er del av oppdraget, og den formelle erklæringen må godkjennes av virksomheten. Bruk bare verktøy og data virksomheten har godkjent.",
+    "media": [],
+    "navigation": [
+      {
+        "links": [
+          {
+            "href": "/kom-i-gang",
+            "text": "Kom i gang"
+          },
+          {
+            "href": "/retningslinjer",
+            "text": "Retningslinjer"
+          },
+          {
+            "href": "/#ressurser",
+            "text": "Ressurskatalog"
+          },
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/spor",
+            "text": "Spør KI"
+          },
+          {
+            "href": "/om",
+            "text": "Om"
+          }
+        ],
+        "name": "Hovedmeny"
+      },
+      {
+        "links": [
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/personvern",
+            "text": "Personvernerklæring"
+          },
+          {
+            "href": "/tilgjengelighet",
+            "text": "Tilgjengelighetserklæring"
+          },
+          {
+            "href": "/nettstedskart",
+            "text": "Nettstedskart"
+          },
+          {
+            "href": "/versjonslogg",
+            "text": "Versjonslogg"
+          },
+          {
+            "href": "/utviklingsplan",
+            "text": "Utviklingsplan"
+          },
+          {
+            "href": "/funksjonalitet",
+            "text": "Funksjonalitetsoversikt"
+          }
+        ],
+        "name": "Informasjon om nettstedet"
+      }
+    ],
+    "scrollWidth": 1280,
+    "tables": [],
+    "title": "Test tilgjengelighet og utform erklæring | KI-Produktutvikling",
+    "width": 1280
+  },
+  {
+    "route": "/ressurser/tydelig-kontekst/",
+    "duplicateIds": [],
+    "fields": [],
+    "h1": [
+      "Gi KI tydelig kontekst"
+    ],
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "Gi KI tydelig kontekst"
+      },
+      {
+        "tag": "H2",
+        "text": "Når passer dette?"
+      },
+      {
+        "tag": "H2",
+        "text": "Slik prøver du det"
+      },
+      {
+        "tag": "H2",
+        "text": "Eksempeltekst"
+      }
+    ],
+    "height": 900,
+    "images": [],
+    "lang": "nb",
+    "mainCount": 1,
+    "mainText": "← Til ressurskatalogen\nINSTRUKS · EKSEMPEL\nGi KI tydelig kontekst\n\nBeskriv mål, rammer og forventet resultat før du starter en oppgave.\n\nNår passer dette?\n\nBruk denne sjekklisten når du formulerer en oppgave til et KI-verktøy.\n\nSlik prøver du det\nBeskriv målet og hvem resultatet er til for.\nOppgi relevante rammer, begrensninger og hvilke kilder som skal brukes.\nBeskriv hvordan resultatet skal vurderes, og be om at usikkerhet synliggjøres.\nEksempeltekst\nMål: …\nMålgruppe: …\nRelevant kontekst: …\nRammer: …\nØnsket resultat: …\nSpør hvis nødvendig informasjon mangler, og gjør antakelser tydelige.\nDette er eksempelinnhold til utprøving, ikke en ferdig installasjonspakke eller vedtatt føring. Bruk bare verktøy og data virksomheten har godkjent.",
+    "media": [],
+    "navigation": [
+      {
+        "links": [
+          {
+            "href": "/kom-i-gang",
+            "text": "Kom i gang"
+          },
+          {
+            "href": "/retningslinjer",
+            "text": "Retningslinjer"
+          },
+          {
+            "href": "/#ressurser",
+            "text": "Ressurskatalog"
+          },
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/spor",
+            "text": "Spør KI"
+          },
+          {
+            "href": "/om",
+            "text": "Om"
+          }
+        ],
+        "name": "Hovedmeny"
+      },
+      {
+        "links": [
+          {
+            "href": "/oversikt",
+            "text": "Oversikt"
+          },
+          {
+            "href": "/personvern",
+            "text": "Personvernerklæring"
+          },
+          {
+            "href": "/tilgjengelighet",
+            "text": "Tilgjengelighetserklæring"
+          },
+          {
+            "href": "/nettstedskart",
+            "text": "Nettstedskart"
+          },
+          {
+            "href": "/versjonslogg",
+            "text": "Versjonslogg"
+          },
+          {
+            "href": "/utviklingsplan",
+            "text": "Utviklingsplan"
+          },
+          {
+            "href": "/funksjonalitet",
+            "text": "Funksjonalitetsoversikt"
+          }
+        ],
+        "name": "Informasjon om nettstedet"
+      }
+    ],
+    "scrollWidth": 1280,
+    "tables": [],
+    "title": "Gi KI tydelig kontekst | KI-Produktutvikling",
+    "width": 1280
+  }
+]

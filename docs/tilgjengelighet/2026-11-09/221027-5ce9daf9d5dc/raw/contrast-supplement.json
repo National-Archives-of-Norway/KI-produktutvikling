@@ -1,0 +1,84 @@
+[
+  {
+    "name": "pdf-footer-page5",
+    "foreground": "#5d6a66",
+    "background": "#2d6a5f",
+    "alpha": 1,
+    "minimum": 4.5,
+    "exit_code": 1,
+    "result": {
+      "status": "below_selected_threshold",
+      "full_wcag_audit": false,
+      "coverage": "solid-srgb-contrast",
+      "ratio": 1.1139667481928681,
+      "minimum": 4.5,
+      "foreground_alpha": 1.0
+    },
+    "measured_element": "Mørkt sidetall 03 på side 5 (ikke den lyse bunnteksten)"
+  },
+  {
+    "name": "pdf-page-number-page5",
+    "foreground": "#d8d8d8",
+    "background": "#2d6a5f",
+    "alpha": 1,
+    "minimum": 4.5,
+    "exit_code": 1,
+    "result": {
+      "status": "below_selected_threshold",
+      "full_wcag_audit": false,
+      "coverage": "solid-srgb-contrast",
+      "ratio": 4.413355906138064,
+      "minimum": 4.5,
+      "foreground_alpha": 1.0
+    },
+    "measured_element": "Lys grå brødtekst og bunntekst på side 5 (ikke sidetallet)"
+  },
+  {
+    "name": "selected-filter",
+    "foreground": "#1d1d1d",
+    "background": "#9df1ad",
+    "alpha": 1,
+    "minimum": 4.5,
+    "exit_code": 0,
+    "result": {
+      "status": "meets_selected_threshold",
+      "full_wcag_audit": false,
+      "coverage": "solid-srgb-contrast",
+      "ratio": 12.538164303847376,
+      "minimum": 4.5,
+      "foreground_alpha": 1.0
+    }
+  },
+  {
+    "name": "filter-border",
+    "foreground": "#9df1ad",
+    "background": "#09151b",
+    "alpha": 0.5,
+    "minimum": 3,
+    "exit_code": 0,
+    "result": {
+      "status": "meets_selected_threshold",
+      "full_wcag_audit": false,
+      "coverage": "solid-srgb-contrast",
+      "ratio": 4.228700467199336,
+      "minimum": 3.0,
+      "foreground_alpha": 0.5
+    }
+  },
+  {
+    "name": "chat-error",
+    "foreground": "#ffdcd7",
+    "background": "#102129",
+    "alpha": 1,
+    "minimum": 4.5,
+    "exit_code": 0,
+    "result": {
+      "status": "meets_selected_threshold",
+      "full_wcag_audit": false,
+      "coverage": "solid-srgb-contrast",
+      "ratio": 12.952676543504902,
+      "minimum": 4.5,
+      "foreground_alpha": 1.0
+    }
+  }
+]

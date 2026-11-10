@@ -1,0 +1,6 @@
+Warning: Detected unsettled top-level await at file:///Users/khadah/Documents/ChatGPT/KI-utvikling/scripts/check-content-sync.mjs:11
+await new Promise((resolve) => reserve.listen(0, "127.0.0.1", resolve));
+^
+
+
+

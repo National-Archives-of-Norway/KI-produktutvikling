@@ -1,0 +1,16 @@
+{
+  "focus": {
+    "tag": "BUTTON",
+    "text": "Send spørsmål"
+  },
+  "live": [
+    {
+      "busy": null,
+      "live": "polite",
+      "text": "DuHvordan utforsker jeg brukerbehov?KunnskapsassistentenVeiledning fra portalen · uten språkmodellUtforsk et brukerbehovBruk eksemplet til å forberede utforsking. KI-forslag erstatter ikke undersøkelser med faktiske brukere.Slik går du fremBeskriv situasjonen uten personopplysninger.Be om åpne spørsmål og alternative forklaringer.Test antakelsene gjennom samtaler eller observasjon med brukere.Dette er eksempelinnhold til utprøving.Les hele veiledningen →Dette er hentet fra den mest relevante siden, ikke et fritt formulert svar på spørsmålet ditt.Kilder og mer lesing[1] Utforsk et brukerbehovBruk eksemplet til å forberede utforsking. KI-forslag erstatter ikke undersøkelser med faktiske brukere.Åpne kilden →[2] Kom i gang: 1. Velg en avgrenset oppgaveBegynn med én oppgave, et tydelig mål og tid til å vurdere resultatet.Åpne kilden →[3] FunksjonalitetsoversiktEn oversikt over funksjonene som finnes, hva du kan prøve og hva som gjenstår.Åpne kilden →Du kan også spørre omHvordan tester jeg tilgjengeligheten?Hva er KI-prat?Hvilke retningslinjer gjelder for KI?"
+    }
+  ],
+  "status": [
+    "Bruk kildene til å kontrollere veiledningen. Hvert spørsmål behandles separat."
+  ]
+}

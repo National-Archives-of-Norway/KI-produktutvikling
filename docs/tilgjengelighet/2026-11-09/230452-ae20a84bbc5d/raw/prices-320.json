@@ -1,0 +1,42 @@
+{
+  "regions": [
+    {
+      "clientWidth": 280,
+      "name": "GitHub Copilot-abonnement, rullbar pristabell",
+      "scrollWidth": 640,
+      "tabindex": "0"
+    },
+    {
+      "clientWidth": 280,
+      "name": "Claude-abonnement, rullbar pristabell",
+      "scrollWidth": 640,
+      "tabindex": "0"
+    },
+    {
+      "clientWidth": 280,
+      "name": "ChatGPT-abonnement med Codex, rullbar pristabell",
+      "scrollWidth": 640,
+      "tabindex": "0"
+    },
+    {
+      "clientWidth": 280,
+      "name": "Tokenpriser i GitHub Copilot, rullbar pristabell",
+      "scrollWidth": 640,
+      "tabindex": "0"
+    },
+    {
+      "clientWidth": 280,
+      "name": "Direkte Claude API, rullbar pristabell",
+      "scrollWidth": 640,
+      "tabindex": "0"
+    },
+    {
+      "clientWidth": 280,
+      "name": "OpenAI API for Codex, rullbar pristabell",
+      "scrollWidth": 640,
+      "tabindex": "0"
+    }
+  ],
+  "scrollWidth": 320,
+  "viewport": 320
+}

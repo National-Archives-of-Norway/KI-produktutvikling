@@ -1,0 +1,13 @@
+{
+  "criteria": 48,
+  "counts": {
+    "K": 20,
+    "I": 11,
+    "U": 15,
+    "B": 2
+  },
+  "all_tests_have_observation_expected_and_evidence": true,
+  "evidence_files_resolve": true,
+  "relative_links_checked": 54,
+  "missing_links": []
+}

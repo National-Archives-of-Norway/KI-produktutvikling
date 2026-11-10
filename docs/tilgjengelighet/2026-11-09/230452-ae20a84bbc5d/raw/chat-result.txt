@@ -1,0 +1,196 @@
+- link:
+  - /url: "#innhold"
+  - text: Hopp til innhold
+- banner:
+  - link:
+    - /url: /
+    - text: KI-Produktutvikling
+  - navigation:
+    - link:
+      - /url: /kom-i-gang
+      - text: Kom i gang
+    - link:
+      - /url: /retningslinjer
+      - text: Retningslinjer
+    - link:
+      - /url: /#ressurser
+      - text: Ressurskatalog
+    - link:
+      - /url: /oversikt
+      - text: Oversikt
+    - link:
+      - /url: /spor
+      - text: Spør KI
+    - link:
+      - /url: /om
+      - text: Om
+- main:
+  - button [expanded]:
+    - text: Spør KI
+  - generic: KUNNSKAP SOM BLIR TIL PRAKSIS
+  - heading [level=1]: Utvikle ideer. Bygg med KI.
+  - paragraph: Et felles sted for kunnskap, metoder og verktøy. Utforsk hvordan kunstig intelligens kan støtte god produktutvikling.
+  - link:
+    - /url: /kom-i-gang
+    - text: Kom i gang
+    - generic: ↗
+  - link:
+    - /url: "#ressurser"
+    - text: Utforsk ressursene
+    - generic: ↓
+  - button:
+  - generic: RESSURSKATALOG
+  - heading [level=2]: Finn en ressurs
+  - paragraph: Skills, instruksjoner og prompter som hjelper deg å bruke KI i produktutviklingen.
+  - generic: Finn en ressurs
+  - searchbox
+  - generic: Ressurstype
+  - button [pressed]: Alle
+  - button: Skill
+  - button: Instruks
+  - button: Prompt
+  - paragraph: 5 ressurser
+  - article:
+    - generic: Skill
+    - generic: Beta
+    - generic: Ennå ikke gjennomgått av et menneske
+    - heading [level=3]: Test tilgjengelighet og utform erklæring
+    - paragraph: Kjør automatiske tilgjengelighetskontroller, se hva som gjenstår manuelt for alle 48 krav, og få rapporter, rettingsforslag og tilgjengelighetserklæring fra vurderte resultater.
+    - link:
+      - /url: /ressurser/tilgjengelighetserklaering
+      - text: Se skill
+      - generic: ↗
+  - article:
+    - generic: Skill
+    - generic: Beta
+    - generic: Ennå ikke gjennomgått av et menneske
+    - heading [level=3]: Kartlegg personvern og utform erklæring
+    - paragraph: Kartlegg faktisk databehandling, lagre vurderingsgrunnlaget i prosjektet og opprett eller oppdater personvernerklæringen med tydelige uavklarte forhold.
+    - link:
+      - /url: /ressurser/personvernerklaering
+      - text: Se skill
+      - generic: ↗
+  - article:
+    - generic: Skill
+    - generic: Beta
+    - generic: Ennå ikke gjennomgått av et menneske
+    - heading [level=3]: Gjennomgå en kodeendring
+    - paragraph: Et utgangspunkt for strukturert gjennomgang av kvalitet, feilscenarier og tester.
+    - link:
+      - /url: /ressurser/kodegjennomgang
+      - text: Se skill
+      - generic: ↗
+  - article:
+    - generic: Instruks
+    - generic: Eksempel
+    - heading [level=3]: Gi KI tydelig kontekst
+    - paragraph: Beskriv mål, rammer og forventet resultat før du starter en oppgave.
+    - link:
+      - /url: /ressurser/tydelig-kontekst
+      - text: Les instruksen
+      - generic: ↗
+  - article:
+    - generic: Prompt
+    - generic: Eksempel
+    - heading [level=3]: Utforsk et brukerbehov
+    - paragraph: Beskriv en situasjon du vil forstå bedre. Få forslag til åpne intervjuspørsmål, og vurder hvilke dere vil prøve med brukere.
+    - link:
+      - /url: /ressurser/brukerbehov
+      - text: Se prompten
+      - generic: ↗
+  - navigation:
+    - link:
+      - /url: /kom-i-gang
+      - generic: 01 / LÆR
+      - strong:
+        - text: Kom i gang med KI
+        - generic: →
+    - link:
+      - /url: /#ressurser
+      - generic: 02 / PRØV
+      - strong:
+        - text: Finn en ressurs til oppgaven
+        - generic: →
+    - link:
+      - /url: /om#ki-prat
+      - generic: 03 / DEL
+      - strong:
+        - text: Del erfaringer i KI-prat
+        - generic: →
+  - region:
+    - generic: PRØV I PRAKSIS
+    - heading [level=2]: Utforsk et brukerbehov
+    - paragraph: Beskriv en situasjon du vil forstå bedre. Få forslag til åpne intervjuspørsmål, og vurder hvilke dere vil prøve med brukere.
+    - link:
+      - /url: /ressurser/brukerbehov
+      - text: Se oppgaven
+      - generic: →
+- contentinfo:
+  - text: KI-Produktutvikling
+  - navigation:
+    - link:
+      - /url: /oversikt
+      - text: Oversikt
+    - link:
+      - /url: /personvern
+      - text: Personvernerklæring
+    - link:
+      - /url: /tilgjengelighet
+      - text: Tilgjengelighetserklæring
+    - link:
+      - /url: /nettstedskart
+      - text: Nettstedskart
+    - link:
+      - /url: /versjonslogg
+      - text: Versjonslogg
+    - link:
+      - /url: /utviklingsplan
+      - text: Utviklingsplan
+    - link:
+      - /url: /funksjonalitet
+      - text: Funksjonalitetsoversikt
+- button "Open Next.js Dev Tools":
+- alert
+- dialog "Spør kunnskapsbasen":
+  - generic: KI-PRODUKTUTVIKLING
+  - heading "Spør kunnskapsbasen" [level=2]
+  - generic: Svar med kilder · under utprøving
+  - button "Lukk chat":
+  - generic: UTFORSK KUNNSKAPEN
+  - strong: Hei! Hva vil du utforske?
+  - paragraph: Få hjelp til tilgjengelighet, kodegjennomgang og gode KI-instrukser. Jeg finner også informasjon om KI-prat og utkastet til retningslinjer.
+  - generic: Du får konkrete steg og lenker til kildene. Hvert spørsmål behandles separat.
+  - log "Spørsmål og svar":
+    - text: Du
+    - paragraph: Hvordan utforsker jeg brukerbehov?
+    - text: Kunnskapsassistenten
+    - paragraph: Veiledning fra portalen · uten språkmodell
+    - paragraph: Utforsk et brukerbehov
+    - paragraph: Bruk eksemplet til å forberede utforsking. KI-forslag erstatter ikke undersøkelser med faktiske brukere.
+    - paragraph:
+      - strong: Slik går du frem
+    - list:
+      - listitem: Beskriv situasjonen uten personopplysninger.
+      - listitem: Be om åpne spørsmål og alternative forklaringer.
+      - listitem: Test antakelsene gjennom samtaler eller observasjon med brukere.
+    - paragraph: Dette er eksempelinnhold til utprøving.
+    - link "Les hele veiledningen →":
+      - /url: /ressurser/brukerbehov
+    - generic: Dette er hentet fra den mest relevante siden, ikke et fritt formulert svar på spørsmålet ditt.
+    - paragraph: Kilder og mer lesing
+    - generic "[1] Utforsk et brukerbehov"
+    - 'generic "[2] Kom i gang: 1. Velg en avgrenset oppgave"'
+    - generic "[3] Funksjonalitetsoversikt"
+    - group "Utforsk et nytt spørsmål":
+      - paragraph: Du kan også spørre om
+      - button "Hvordan tester jeg tilgjengeligheten?"
+      - button "Hva er KI-prat?"
+      - button "Hvilke retningslinjer gjelder for KI?"
+  - status: Bruk kildene til å kontrollere veiledningen. Hvert spørsmål behandles separat.
+  - generic: Skriv et spørsmål
+  - textbox "Skriv et spørsmål"
+  - generic: Skriv et spørsmål
+  - paragraph: Ikke skriv personopplysninger eller internt innhold.
+  - button "Send spørsmål" [active]:
+    - text: Send spørsmål
+  - button "Tøm chat"

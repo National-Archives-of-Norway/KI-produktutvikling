@@ -1,0 +1,14 @@
+{
+  "contact": "mailto:khadah@nasjonalarkivet.no",
+  "h1": 1,
+  "hasContrastFinding": true,
+  "hasInternalIds": false,
+  "hasPdfListFinding": true,
+  "lang": "nb",
+  "main": 1,
+  "title": "Tilgjengelighetserklæring | KI-Produktutvikling",
+  "mobile": {
+    "scrollWidth": 320,
+    "width": 320
+  }
+}

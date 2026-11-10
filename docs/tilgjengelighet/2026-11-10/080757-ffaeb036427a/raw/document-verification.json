@@ -1,0 +1,21 @@
+{
+  "criteria": 48,
+  "counts": {
+    "U": 17,
+    "I": 11,
+    "K": 20,
+    "B": 0
+  },
+  "manual_remaining": 37,
+  "relative_links_checked": 131,
+  "missing_links": [],
+  "fixed_findings": [
+    "A11Y-01",
+    "A11Y-02",
+    "A11Y-03",
+    "A11Y-04",
+    "A11Y-05",
+    "A11Y-06"
+  ],
+  "note": "Sporbarhetskontroll, ingen full tilgjengelighetsgodkjenning."
+}

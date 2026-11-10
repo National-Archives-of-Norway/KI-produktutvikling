@@ -1,3 +1,19 @@
+# Kravvis gjennomgang med skill 0.4.0 – 9. november 2026
+
+## Målrettet retest etter retting – 10. november 2026
+
+[Ny rapport](docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/testrapport.md): A11Y-04, A11Y-05 og A11Y-06 er rettet i oppgitt lokalt omfang. Tre PDF-lister/12 punkter, 229 MCID-koblinger, 6,28:1 tekstkontrast på side 5 og norsk 404 med én tittel er verifisert. Ingen bekreftede åpne brudd i gjennomført utvalg; 20 K / 11 I / 17 U / 0 B er fortsatt ikke en full samsvarsvurdering. 21 sidetilstander, 63 viewport-kontroller, 168 Tab-steg og tre deklarerte brukerforløp er retestet. Historiske åpne funn nedenfor beskriver tilstanden før denne rettingen.
+
+## Ny kontroll med skill 0.5.0 – 10. november 2026
+
+Siste resultat: [rapport](docs/tilgjengelighet/2026-11-10/053920-3f1e603bfbcd/testrapport.md), [manuell restliste for alle 48 krav](docs/tilgjengelighet/2026-11-10/053920-3f1e603bfbcd/manuell-oppfolging.md). 20 sider / 23 eksportfiler, 60 viewport-kontroller, 160 Tab-steg og tre deklarerte forløp. Ingen kandidat i de navngitte nettleserdelene; 2484 kontrastmålinger og 75 hoppede forekomster. Automatisk samlet kjøringsstatus er delvis fordi axe/vnu mangler.
+
+Tre åpne bekreftede avvik: A11Y-04 PDF-lister, A11Y-05 PDF-kontrast og nytt A11Y-06, engelsk 404-melding uten riktig språkmerking. Tittelelementene på feilsiden er fortsatt uavklart. Arbeidsmatrisen er 19 K / 11 I / 15 U / 3 B; K er avgrenset delomfang, ikke formell samsvarsgodkjenning. Restlisten skiller 37 gjenstående vurderings-/rettings-/retestpunkter fra 11 krav uten utløsende innholdstype lokalt. Skjermleser, faktisk zoom, enhetsinnstillinger, resterende kontrast/tekstavstand/PDF og blokkert fullskann gjenstår. Tidligere resultater nedenfor er historikk, ikke siste status.
+
+Alle 48 prosedyrer er gjennomgått i ny [testrapport og plan](docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/testrapport.md), med 20 sider, relevante dynamiske forløp og PDF. Gjennomgått betyr ikke ferdig testet: arbeidsfordeling **20 K, 11 I, 15 U, 2 B**, ikke samsvarsprosent. Faktisk skjermleser/zoom/orientering, videre kontrast/fokus/PDF og full lokal HTML-validator gjenstår som angitt per krav.
+
+Nye funn: A11Y-04 (1.3.1, manglende listestruktur på PDF-side 7) og A11Y-05 (1.4.3, utilstrekkelig tekstkontrast på PDF-side 5). Ingen produktretting er utført. De tidligere rettede overskriftene og dokumenttittelen er fortsatt på plass. Nye undersøkelser omfatter 60 responsive DOM-kontroller, 40 tekstavstandskontroller, 160 Tab-steg og utvalgte handlinger i animasjon, katalog, priser og chat. Test-CSS er fjernet med identisk hash. Full dokumentasjon og gjenstående arbeid står i kjøringsmappen; nedenstående rapporter er historiske.
+
 # PDF-avvik rettet og struktur-/metadataretestet – 9. november 2026
 
 A11Y-02 og A11Y-03 er rettet. PDF-en har én H1, seks H2 og 20 H3, og riktig norsk dokumenttittel i Info og XMP. 229 MCID-koblinger er kontrollert gjennom ParentTree; alle syv sider har identisk tekst, innholdsstrøm og rendering før/etter. Ingen faktisk skjermlesertest eller full PDF/UA-validering er utført. 1.3.1 er derfor fortsatt U for øvrig PDF-semantikk. Arbeidsfordeling: **26 K, 10 I, 12 U, 0 B**, ikke en samsvarsprosent. [Ny retest og evidens](docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/testrapport.md).

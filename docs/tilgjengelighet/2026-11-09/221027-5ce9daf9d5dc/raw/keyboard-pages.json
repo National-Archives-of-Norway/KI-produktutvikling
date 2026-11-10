@@ -1,0 +1,1062 @@
+[
+  {
+    "route": "/",
+    "sequence": [
+      {
+        "href": null,
+        "name": "Spør KI",
+        "outline": "rgb(157, 241, 173) solid 2px",
+        "tag": "BUTTON"
+      },
+      {
+        "href": "/kom-i-gang",
+        "name": "Kom i gang ↗",
+        "outline": "rgb(157, 241, 173) solid 2px",
+        "tag": "A"
+      },
+      {
+        "href": "#ressurser",
+        "name": "Utforsk ressursene ↓",
+        "outline": "rgb(157, 241, 173) solid 2px",
+        "tag": "A"
+      },
+      {
+        "href": null,
+        "name": "Pause animasjonen i forsideillustrasjonen",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "BUTTON"
+      },
+      {
+        "href": null,
+        "name": "",
+        "outline": "rgb(255, 255, 255) none 0px",
+        "tag": "INPUT"
+      },
+      {
+        "href": null,
+        "name": "Alle",
+        "outline": "rgb(157, 241, 173) solid 2px",
+        "tag": "BUTTON"
+      },
+      {
+        "href": null,
+        "name": "Skill",
+        "outline": "rgb(157, 241, 173) solid 2px",
+        "tag": "BUTTON"
+      },
+      {
+        "href": null,
+        "name": "Instruks",
+        "outline": "rgb(157, 241, 173) solid 2px",
+        "tag": "BUTTON"
+      }
+    ]
+  },
+  {
+    "route": "/kom-i-gang/",
+    "sequence": [
+      {
+        "href": "/",
+        "name": "← Til forsiden",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/retningslinjer",
+        "name": "retningslinjene for bruk av KI",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/oversikt",
+        "name": "Oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/personvern",
+        "name": "Personvernerklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/tilgjengelighet",
+        "name": "Tilgjengelighetserklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/nettstedskart",
+        "name": "Nettstedskart",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/versjonslogg",
+        "name": "Versjonslogg",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/utviklingsplan",
+        "name": "Utviklingsplan",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      }
+    ]
+  },
+  {
+    "route": "/retningslinjer/",
+    "sequence": [
+      {
+        "href": "/",
+        "name": "← Til forsiden",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/oversikt/godkjente-ki-assistenter",
+        "name": "Godkjente KI-assistenter",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/oversikt/godkjente-mcper",
+        "name": "Godkjente MCP-er",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/om#ki-prat",
+        "name": "KI-prat",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/kom-i-gang",
+        "name": "Kom i gang",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "https://ki-utvikling.nav.no/retningslinjer",
+        "name": "NAVs retningslinjeside",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/oversikt",
+        "name": "Oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/personvern",
+        "name": "Personvernerklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      }
+    ]
+  },
+  {
+    "route": "/om/",
+    "sequence": [
+      {
+        "href": "/",
+        "name": "← Til forsiden",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/vedlegg/mandatforslag-ai-enablement-team.pdf",
+        "name": "Vedlegg: Mandatforslag for AI enablement-teamet (PDF, 127 kB)",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/kom-i-gang",
+        "name": "veiledningen for å komme i gang",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/#ressurser",
+        "name": "ressurskatalogen",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/oversikt",
+        "name": "Oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/personvern",
+        "name": "Personvernerklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/tilgjengelighet",
+        "name": "Tilgjengelighetserklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/nettstedskart",
+        "name": "Nettstedskart",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      }
+    ]
+  },
+  {
+    "route": "/oversikt/",
+    "sequence": [
+      {
+        "href": "/",
+        "name": "← Til forsiden",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/priser",
+        "name": "Se priser og abonnement →",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/oversikt/godkjente-ki-assistenter",
+        "name": "Se godkjente KI-assistenter →",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/oversikt/godkjente-mcper",
+        "name": "Se MCP-status →",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/oversikt",
+        "name": "Oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/personvern",
+        "name": "Personvernerklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/tilgjengelighet",
+        "name": "Tilgjengelighetserklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/nettstedskart",
+        "name": "Nettstedskart",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      }
+    ]
+  },
+  {
+    "route": "/oversikt/godkjente-ki-assistenter/",
+    "sequence": [
+      {
+        "href": "/",
+        "name": "← Til forsiden",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/retningslinjer",
+        "name": "retningslinjene",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/priser",
+        "name": "priser og abonnement",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/oversikt",
+        "name": "Oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/oversikt",
+        "name": "Oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/personvern",
+        "name": "Personvernerklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/tilgjengelighet",
+        "name": "Tilgjengelighetserklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/nettstedskart",
+        "name": "Nettstedskart",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      }
+    ]
+  },
+  {
+    "route": "/oversikt/godkjente-mcper/",
+    "sequence": [
+      {
+        "href": "/",
+        "name": "← Til forsiden",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/retningslinjer",
+        "name": "retningslinjene",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/oversikt/godkjente-ki-assistenter",
+        "name": "Godkjente KI-assistenter",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/oversikt",
+        "name": "Oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/oversikt",
+        "name": "Oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/personvern",
+        "name": "Personvernerklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/tilgjengelighet",
+        "name": "Tilgjengelighetserklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/nettstedskart",
+        "name": "Nettstedskart",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      }
+    ]
+  },
+  {
+    "route": "/personvern/",
+    "sequence": [
+      {
+        "href": "/",
+        "name": "← Til forsiden",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "mailto:khadah@nasjonalarkivet.no",
+        "name": "khadah@nasjonalarkivet.no",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "https://nkom.no/internett/informasjonskapsler-cookies",
+        "name": "Nkoms veiledning om informasjonskapsler",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "https://www.datatilsynet.no/rettigheter-og-plikter/virksomhetenes-plikter/om-behandlingsgrunnlag/innledning/",
+        "name": "Datatilsynets veiledning om behandlingsgrunnlag",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "https://www.datatilsynet.no/rettigheter-og-plikter/den-registrertes-rettigheter/rett-til-informasjon/",
+        "name": "retten til informasjon",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "https://www.datatilsynet.no/om-datatilsynet/kontakt-oss/klage-til-datatilsynet/",
+        "name": "klage til Datatilsynet",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/oversikt",
+        "name": "Oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/personvern",
+        "name": "Personvernerklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      }
+    ]
+  },
+  {
+    "route": "/priser/",
+    "sequence": [
+      {
+        "href": "/oversikt",
+        "name": "Oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "#abonnement",
+        "name": "01 / Abonnement",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "#tokenpriser",
+        "name": "02 / API og tokenpriser",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "#oppdatering",
+        "name": "03 / Kilder og oppdatering",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "https://docs.github.com/en/copilot/get-started/plans",
+        "name": "Offisiell prisliste ↗",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": null,
+        "name": "GitHub Copilot-abonnement, rullbar pristabell",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "DIV"
+      },
+      {
+        "href": null,
+        "name": "Vilkår og avgrensninger",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "SUMMARY"
+      },
+      {
+        "href": "https://claude.com/pricing",
+        "name": "Offisiell prisliste ↗",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      }
+    ]
+  },
+  {
+    "route": "/funksjonalitet/",
+    "sequence": [
+      {
+        "href": "/",
+        "name": "← Til forsiden",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/",
+        "name": "Gå til Forside →",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/#ressurser",
+        "name": "Gå til Ressurskatalog →",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/spor",
+        "name": "Gå til Spør KI →",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/om#ki-prat",
+        "name": "Gå til KI-prat →",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/oversikt/godkjente-mcper",
+        "name": "Gå til Godkjente MCP-er →",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/oversikt/godkjente-ki-assistenter",
+        "name": "Gå til Godkjente KI-assistenter →",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/kom-i-gang",
+        "name": "Gå til Kom i gang →",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      }
+    ]
+  },
+  {
+    "route": "/nettstedskart/",
+    "sequence": [
+      {
+        "href": "/",
+        "name": "← Til forsiden",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/",
+        "name": "Forsiden",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/#ressurser",
+        "name": "Ressurskatalog",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/spor",
+        "name": "Spør kunnskapsbasen",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/oversikt/godkjente-mcper",
+        "name": "Godkjente MCP-er",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/oversikt/godkjente-ki-assistenter",
+        "name": "Godkjente KI-assistenter",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/kom-i-gang",
+        "name": "Kom i gang",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/om",
+        "name": "Om portalen",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      }
+    ]
+  },
+  {
+    "route": "/tilgjengelighet/",
+    "sequence": [
+      {
+        "href": "/",
+        "name": "← Til forsiden",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "https://www.uutilsynet.no/wcag-standarden/wcag-standarden/86",
+        "name": "Uu-tilsynets kravoversikt for offentlig sektor",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/#ressurser",
+        "name": "ressurskatalogen",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/nettstedskart",
+        "name": "nettstedskartet",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "mailto:khadah@nasjonalarkivet.no",
+        "name": "khadah@nasjonalarkivet.no",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "https://www.uutilsynet.no/tilgjengelighetserklaering/hva-betyr-det-brukeren/1129",
+        "name": "Uu-tilsynets veiledning",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "https://www.diskrimineringsnemnda.no/klage",
+        "name": "hvordan du klager til Diskrimineringsnemnda",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/oversikt",
+        "name": "Oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      }
+    ]
+  },
+  {
+    "route": "/utviklingsplan/",
+    "sequence": [
+      {
+        "href": "/",
+        "name": "← Til forsiden",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/versjonslogg",
+        "name": "versjonsloggen",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": null,
+        "name": "Utviklingsplan: Område",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "DIV"
+      },
+      {
+        "href": "/versjonslogg",
+        "name": "versjonsloggen",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": null,
+        "name": "Utviklingsplan: ID",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "DIV"
+      },
+      {
+        "href": null,
+        "name": "Utviklingsplan: Fase",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "DIV"
+      },
+      {
+        "href": null,
+        "name": "Utviklingsplan: Tema",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "DIV"
+      },
+      {
+        "href": null,
+        "name": "Utviklingsplan: Dato",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "DIV"
+      }
+    ]
+  },
+  {
+    "route": "/versjonslogg/",
+    "sequence": [
+      {
+        "href": "/",
+        "name": "← Til forsiden",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/oversikt",
+        "name": "Oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/personvern",
+        "name": "Personvernerklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/tilgjengelighet",
+        "name": "Tilgjengelighetserklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/nettstedskart",
+        "name": "Nettstedskart",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/versjonslogg",
+        "name": "Versjonslogg",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/utviklingsplan",
+        "name": "Utviklingsplan",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/funksjonalitet",
+        "name": "Funksjonalitetsoversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      }
+    ]
+  },
+  {
+    "route": "/spor/",
+    "sequence": [
+      {
+        "href": null,
+        "name": "Hvordan gjennomgår jeg en kodeendring?",
+        "outline": "rgb(157, 241, 173) solid 2px",
+        "tag": "BUTTON"
+      },
+      {
+        "href": null,
+        "name": "Hvordan gir jeg KI god kontekst?",
+        "outline": "rgb(157, 241, 173) solid 2px",
+        "tag": "BUTTON"
+      },
+      {
+        "href": null,
+        "name": "Hvordan utforsker jeg brukerbehov?",
+        "outline": "rgb(157, 241, 173) solid 2px",
+        "tag": "BUTTON"
+      },
+      {
+        "href": null,
+        "name": "",
+        "outline": "rgb(255, 255, 255) none 0px",
+        "tag": "TEXTAREA"
+      },
+      {
+        "href": null,
+        "name": "Send spørsmål",
+        "outline": "rgb(157, 241, 173) solid 2px",
+        "tag": "BUTTON"
+      },
+      {
+        "href": "/oversikt",
+        "name": "Oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/personvern",
+        "name": "Personvernerklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/tilgjengelighet",
+        "name": "Tilgjengelighetserklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      }
+    ]
+  },
+  {
+    "route": "/ressurser/brukerbehov/",
+    "sequence": [
+      {
+        "href": "/#ressurser",
+        "name": "← Til ressurskatalogen",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/oversikt",
+        "name": "Oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/personvern",
+        "name": "Personvernerklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/tilgjengelighet",
+        "name": "Tilgjengelighetserklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/nettstedskart",
+        "name": "Nettstedskart",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/versjonslogg",
+        "name": "Versjonslogg",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/utviklingsplan",
+        "name": "Utviklingsplan",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/funksjonalitet",
+        "name": "Funksjonalitetsoversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      }
+    ]
+  },
+  {
+    "route": "/ressurser/kodegjennomgang/",
+    "sequence": [
+      {
+        "href": "/#ressurser",
+        "name": "← Til ressurskatalogen",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/oversikt",
+        "name": "Oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/personvern",
+        "name": "Personvernerklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/tilgjengelighet",
+        "name": "Tilgjengelighetserklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/nettstedskart",
+        "name": "Nettstedskart",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/versjonslogg",
+        "name": "Versjonslogg",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/utviklingsplan",
+        "name": "Utviklingsplan",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/funksjonalitet",
+        "name": "Funksjonalitetsoversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      }
+    ]
+  },
+  {
+    "route": "/ressurser/personvernerklaering/",
+    "sequence": [
+      {
+        "href": "/#ressurser",
+        "name": "← Til ressurskatalogen",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/oversikt",
+        "name": "Oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/personvern",
+        "name": "Personvernerklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/tilgjengelighet",
+        "name": "Tilgjengelighetserklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/nettstedskart",
+        "name": "Nettstedskart",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/versjonslogg",
+        "name": "Versjonslogg",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/utviklingsplan",
+        "name": "Utviklingsplan",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/funksjonalitet",
+        "name": "Funksjonalitetsoversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      }
+    ]
+  },
+  {
+    "route": "/ressurser/tilgjengelighetserklaering/",
+    "sequence": [
+      {
+        "href": "/#ressurser",
+        "name": "← Til ressurskatalogen",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/oversikt",
+        "name": "Oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/personvern",
+        "name": "Personvernerklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/tilgjengelighet",
+        "name": "Tilgjengelighetserklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/nettstedskart",
+        "name": "Nettstedskart",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/versjonslogg",
+        "name": "Versjonslogg",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/utviklingsplan",
+        "name": "Utviklingsplan",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/funksjonalitet",
+        "name": "Funksjonalitetsoversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      }
+    ]
+  },
+  {
+    "route": "/ressurser/tydelig-kontekst/",
+    "sequence": [
+      {
+        "href": "/#ressurser",
+        "name": "← Til ressurskatalogen",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/oversikt",
+        "name": "Oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/personvern",
+        "name": "Personvernerklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/tilgjengelighet",
+        "name": "Tilgjengelighetserklæring",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/nettstedskart",
+        "name": "Nettstedskart",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/versjonslogg",
+        "name": "Versjonslogg",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/utviklingsplan",
+        "name": "Utviklingsplan",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      },
+      {
+        "href": "/funksjonalitet",
+        "name": "Funksjonalitetsoversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "A"
+      }
+    ]
+  }
+]

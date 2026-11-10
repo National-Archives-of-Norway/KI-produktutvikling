@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python3",
+    "/Users/khadah/.codex/skills/tilgjengelighetserklaering/scripts/audit_export.py",
+    "--root",
+    "out"
+  ],
+  "exit_code": 0,
+  "result": {
+    "status": "no_findings_in_scope",
+    "full_wcag_audit": false,
+    "coverage": "static-html-baseline",
+    "files_checked": 23,
+    "findings": []
+  }
+}

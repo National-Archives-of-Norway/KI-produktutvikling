@@ -1,0 +1,26 @@
+[
+  {
+    "file": "404.html",
+    "language": "nb",
+    "titles": [
+      "Fant ikke siden | KI-Produktutvikling"
+    ],
+    "result": "passed"
+  },
+  {
+    "file": "404/index.html",
+    "language": "nb",
+    "titles": [
+      "Fant ikke siden | KI-Produktutvikling"
+    ],
+    "result": "passed"
+  },
+  {
+    "file": "_not-found/index.html",
+    "language": "nb",
+    "titles": [
+      "Fant ikke siden | KI-Produktutvikling"
+    ],
+    "result": "passed"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "background_rgb": [
+    45,
+    106,
+    95
+  ],
+  "gray_text_pixels": [
+    [
+      [
+        216,
+        216,
+        216
+      ],
+      148
+    ],
+    [
+      [
+        215,
+        215,
+        215
+      ],
+      4
+    ]
+  ],
+  "note": "Read-only pixel probe of rendered page, supplementary to PDF fill values."
+}

@@ -1,0 +1,25 @@
+{
+  "tested_at": "2026-11-10T04:40:38.427Z",
+  "snapshot": "- link \"Hopp til innhold\":\n  - /url: \"#innhold\"\n- banner:\n  - link \"KI-Produktutvikling\":\n    - /url: /\n    - text: KI-Produktutvikling\n  - navigation \"Hovedmeny\":\n    - link \"Kom i gang\":\n      - /url: /kom-i-gang\n    - link \"Retningslinjer\":\n      - /url: /retningslinjer\n    - link \"Ressurskatalog\":\n      - /url: /#ressurser\n    - link \"Oversikt\":\n      - /url: /oversikt\n    - link \"Spør KI\":\n      - /url: /spor\n    - link \"Om\":\n      - /url: /om\n- main:\n  - heading \"404\" [level=1]\n  - heading \"This page could not be found.\" [level=2]\n- contentinfo:\n  - text: KI-Produktutvikling\n  - navigation \"Informasjon om nettstedet\":\n    - link \"Oversikt\":\n      - /url: /oversikt\n    - link \"Personvernerklæring\":\n      - /url: /personvern\n    - link \"Tilgjengelighetserklæring\":\n      - /url: /tilgjengelighet\n    - link \"Nettstedskart\":\n      - /url: /nettstedskart\n    - link \"Versjonslogg\":\n      - /url: /versjonslogg\n    - link \"Utviklingsplan\":\n      - /url: /utviklingsplan\n    - link \"Funksjonalitetsoversikt\":\n      - /url: /funksjonalitet",
+  "dom": {
+    "headings": [
+      {
+        "lang": "nb",
+        "tag": "H1",
+        "text": "404"
+      },
+      {
+        "lang": "nb",
+        "tag": "H2",
+        "text": "This page could not be found."
+      }
+    ],
+    "lang": "nb",
+    "title": "KI-Produktutvikling",
+    "titles": [
+      "KI-Produktutvikling",
+      "404: This page could not be found."
+    ],
+    "url": "http://127.0.0.1:3000/404"
+  }
+}

@@ -1,0 +1,642 @@
+[
+  {
+    "route": "/",
+    "size": {
+      "width": 1280,
+      "height": 900
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "79.36px",
+      "letter": "9.5232px",
+      "line": "119.04px",
+      "word": "12.6976px"
+    },
+    "scrollWidth": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/kom-i-gang/",
+    "size": {
+      "width": 1280,
+      "height": 900
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "48px",
+      "letter": "5.76px",
+      "line": "72px",
+      "word": "7.68px"
+    },
+    "scrollWidth": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/retningslinjer/",
+    "size": {
+      "width": 1280,
+      "height": 900
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "48px",
+      "letter": "5.76px",
+      "line": "72px",
+      "word": "7.68px"
+    },
+    "scrollWidth": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/om/",
+    "size": {
+      "width": 1280,
+      "height": 900
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "48px",
+      "letter": "5.76px",
+      "line": "72px",
+      "word": "7.68px"
+    },
+    "scrollWidth": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/oversikt/",
+    "size": {
+      "width": 1280,
+      "height": 900
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "48px",
+      "letter": "5.76px",
+      "line": "72px",
+      "word": "7.68px"
+    },
+    "scrollWidth": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/oversikt/godkjente-ki-assistenter/",
+    "size": {
+      "width": 1280,
+      "height": 900
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "48px",
+      "letter": "5.76px",
+      "line": "72px",
+      "word": "7.68px"
+    },
+    "scrollWidth": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/oversikt/godkjente-mcper/",
+    "size": {
+      "width": 1280,
+      "height": 900
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "48px",
+      "letter": "5.76px",
+      "line": "72px",
+      "word": "7.68px"
+    },
+    "scrollWidth": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/personvern/",
+    "size": {
+      "width": 1280,
+      "height": 900
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "48px",
+      "letter": "5.76px",
+      "line": "72px",
+      "word": "7.68px"
+    },
+    "scrollWidth": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/priser/",
+    "size": {
+      "width": 1280,
+      "height": 900
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "48px",
+      "letter": "5.76px",
+      "line": "72px",
+      "word": "7.68px"
+    },
+    "scrollWidth": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/funksjonalitet/",
+    "size": {
+      "width": 1280,
+      "height": 900
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "48px",
+      "letter": "5.76px",
+      "line": "72px",
+      "word": "7.68px"
+    },
+    "scrollWidth": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/nettstedskart/",
+    "size": {
+      "width": 1280,
+      "height": 900
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "48px",
+      "letter": "5.76px",
+      "line": "72px",
+      "word": "7.68px"
+    },
+    "scrollWidth": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/tilgjengelighet/",
+    "size": {
+      "width": 1280,
+      "height": 900
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "48px",
+      "letter": "5.76px",
+      "line": "72px",
+      "word": "7.68px"
+    },
+    "scrollWidth": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/utviklingsplan/",
+    "size": {
+      "width": 1280,
+      "height": 900
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "48px",
+      "letter": "5.76px",
+      "line": "72px",
+      "word": "7.68px"
+    },
+    "scrollWidth": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/versjonslogg/",
+    "size": {
+      "width": 1280,
+      "height": 900
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "48px",
+      "letter": "5.76px",
+      "line": "72px",
+      "word": "7.68px"
+    },
+    "scrollWidth": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/spor/",
+    "size": {
+      "width": 1280,
+      "height": 900
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "48px",
+      "letter": "5.76px",
+      "line": "72px",
+      "word": "7.68px"
+    },
+    "scrollWidth": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/ressurser/brukerbehov/",
+    "size": {
+      "width": 1280,
+      "height": 900
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "48px",
+      "letter": "5.76px",
+      "line": "72px",
+      "word": "7.68px"
+    },
+    "scrollWidth": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/ressurser/kodegjennomgang/",
+    "size": {
+      "width": 1280,
+      "height": 900
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "48px",
+      "letter": "5.76px",
+      "line": "72px",
+      "word": "7.68px"
+    },
+    "scrollWidth": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/ressurser/personvernerklaering/",
+    "size": {
+      "width": 1280,
+      "height": 900
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "48px",
+      "letter": "5.76px",
+      "line": "72px",
+      "word": "7.68px"
+    },
+    "scrollWidth": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/ressurser/tilgjengelighetserklaering/",
+    "size": {
+      "width": 1280,
+      "height": 900
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "48px",
+      "letter": "5.76px",
+      "line": "72px",
+      "word": "7.68px"
+    },
+    "scrollWidth": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/ressurser/tydelig-kontekst/",
+    "size": {
+      "width": 1280,
+      "height": 900
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "48px",
+      "letter": "5.76px",
+      "line": "72px",
+      "word": "7.68px"
+    },
+    "scrollWidth": 1280,
+    "width": 1280
+  },
+  {
+    "route": "/",
+    "size": {
+      "width": 320,
+      "height": 740
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "42px",
+      "letter": "5.04px",
+      "line": "63px",
+      "word": "6.72px"
+    },
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "route": "/kom-i-gang/",
+    "size": {
+      "width": 320,
+      "height": 740
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "36px",
+      "letter": "4.32px",
+      "line": "54px",
+      "word": "5.76px"
+    },
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "route": "/retningslinjer/",
+    "size": {
+      "width": 320,
+      "height": 740
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "36px",
+      "letter": "4.32px",
+      "line": "54px",
+      "word": "5.76px"
+    },
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "route": "/om/",
+    "size": {
+      "width": 320,
+      "height": 740
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "36px",
+      "letter": "4.32px",
+      "line": "54px",
+      "word": "5.76px"
+    },
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "route": "/oversikt/",
+    "size": {
+      "width": 320,
+      "height": 740
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "36px",
+      "letter": "4.32px",
+      "line": "54px",
+      "word": "5.76px"
+    },
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "route": "/oversikt/godkjente-ki-assistenter/",
+    "size": {
+      "width": 320,
+      "height": 740
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "36px",
+      "letter": "4.32px",
+      "line": "54px",
+      "word": "5.76px"
+    },
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "route": "/oversikt/godkjente-mcper/",
+    "size": {
+      "width": 320,
+      "height": 740
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "36px",
+      "letter": "4.32px",
+      "line": "54px",
+      "word": "5.76px"
+    },
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "route": "/personvern/",
+    "size": {
+      "width": 320,
+      "height": 740
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "36px",
+      "letter": "4.32px",
+      "line": "54px",
+      "word": "5.76px"
+    },
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "route": "/priser/",
+    "size": {
+      "width": 320,
+      "height": 740
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "36px",
+      "letter": "4.32px",
+      "line": "54px",
+      "word": "5.76px"
+    },
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "route": "/funksjonalitet/",
+    "size": {
+      "width": 320,
+      "height": 740
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "36px",
+      "letter": "4.32px",
+      "line": "54px",
+      "word": "5.76px"
+    },
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "route": "/nettstedskart/",
+    "size": {
+      "width": 320,
+      "height": 740
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "36px",
+      "letter": "4.32px",
+      "line": "54px",
+      "word": "5.76px"
+    },
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "route": "/tilgjengelighet/",
+    "size": {
+      "width": 320,
+      "height": 740
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "36px",
+      "letter": "4.32px",
+      "line": "54px",
+      "word": "5.76px"
+    },
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "route": "/utviklingsplan/",
+    "size": {
+      "width": 320,
+      "height": 740
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "36px",
+      "letter": "4.32px",
+      "line": "54px",
+      "word": "5.76px"
+    },
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "route": "/versjonslogg/",
+    "size": {
+      "width": 320,
+      "height": 740
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "36px",
+      "letter": "4.32px",
+      "line": "54px",
+      "word": "5.76px"
+    },
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "route": "/spor/",
+    "size": {
+      "width": 320,
+      "height": 740
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "36px",
+      "letter": "4.32px",
+      "line": "54px",
+      "word": "5.76px"
+    },
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "route": "/ressurser/brukerbehov/",
+    "size": {
+      "width": 320,
+      "height": 740
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "36px",
+      "letter": "4.32px",
+      "line": "54px",
+      "word": "5.76px"
+    },
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "route": "/ressurser/kodegjennomgang/",
+    "size": {
+      "width": 320,
+      "height": 740
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "36px",
+      "letter": "4.32px",
+      "line": "54px",
+      "word": "5.76px"
+    },
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "route": "/ressurser/personvernerklaering/",
+    "size": {
+      "width": 320,
+      "height": 740
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "36px",
+      "letter": "4.32px",
+      "line": "54px",
+      "word": "5.76px"
+    },
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "route": "/ressurser/tilgjengelighetserklaering/",
+    "size": {
+      "width": 320,
+      "height": 740
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "36px",
+      "letter": "4.32px",
+      "line": "54px",
+      "word": "5.76px"
+    },
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "route": "/ressurser/tydelig-kontekst/",
+    "size": {
+      "width": 320,
+      "height": 740
+    },
+    "clippingCandidates": [],
+    "h1Style": {
+      "font": "36px",
+      "letter": "4.32px",
+      "line": "54px",
+      "word": "5.76px"
+    },
+    "scrollWidth": 320,
+    "width": 320
+  }
+]

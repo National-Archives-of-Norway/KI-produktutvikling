@@ -1,0 +1,509 @@
+{
+  "source_sha256": "d19ae321ec459f0086e8815e7d35cdec7b346cf2b59d1a770374a190a009d33f",
+  "output_sha256": "ba267d899460e54a911c548c5ddecfd9a83159ec3b6d7b6e30d9d4f34d0c648a",
+  "lists": [
+    {
+      "section": "Kompetanse og erfaringsdeling",
+      "items": 6,
+      "label_body_source_ids": [
+        [
+          488,
+          543
+        ],
+        [
+          491,
+          546
+        ],
+        [
+          494,
+          550
+        ],
+        [
+          566,
+          510
+        ],
+        [
+          569,
+          517
+        ],
+        [
+          572,
+          527
+        ]
+      ]
+    },
+    {
+      "section": "Oppsett og guardrails",
+      "items": 3,
+      "label_body_source_ids": [
+        [
+          473,
+          575
+        ],
+        [
+          476,
+          579
+        ],
+        [
+          586,
+          589
+        ]
+      ]
+    },
+    {
+      "section": "Retningslinjer og policy",
+      "items": 3,
+      "label_body_source_ids": [
+        [
+          507,
+          554
+        ],
+        [
+          514,
+          558
+        ],
+        [
+          524,
+          562
+        ]
+      ]
+    }
+  ],
+  "color_changes": [
+    {
+      "operation": 93,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 146,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 158,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 170,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 182,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 194,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 206,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 218,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 230,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 242,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 254,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 266,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 278,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 290,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 302,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 314,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 326,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 338,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 350,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 362,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 456,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 468,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 480,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 492,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 504,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 516,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 528,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 540,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 553,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 565,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 577,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 590,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 602,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 614,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 680,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 714,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 726,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 738,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 750,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 762,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 775,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    },
+    {
+      "operation": 789,
+      "operator": "rg",
+      "before": [
+        0.365,
+        0.416,
+        0.4
+      ],
+      "after": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "operation": 845,
+      "operator": "g",
+      "before": [
+        0.847
+      ],
+      "after": [
+        1
+      ]
+    }
+  ],
+  "note": "Preserves original text, MCIDs, page geometry and prior heading/title fixes. Only page 5 content stream and page 7 structural hierarchy change."
+}

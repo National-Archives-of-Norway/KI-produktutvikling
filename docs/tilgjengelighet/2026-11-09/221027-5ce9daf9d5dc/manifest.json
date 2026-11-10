@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "skill": "tilgjengelighetserklaering",
+  "skill_version": "0.4.0",
+  "run_id": "221027-5ce9daf9d5dc",
+  "started_at": "2026-11-09T22:10:27.210584+01:00",
+  "finished_at": "2026-11-09T22:10:27.360934+01:00",
+  "timezone": "Europe/Oslo",
+  "agent": "Codex (OpenAI)",
+  "project": "/Users/khadah/Documents/ChatGPT/KI-utvikling",
+  "project_version": "83b87f3 med lokal erklæringsopprydding og skill-metadata 0.4.0",
+  "run_directory": "docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc",
+  "automatic_status": "automatic_checks_completed",
+  "full_wcag_audit": false,
+  "overall_conformance": "not_assessed",
+  "checks": [
+    {
+      "tool": "audit_export",
+      "arguments": [
+        "--root",
+        "/Users/khadah/Documents/ChatGPT/KI-utvikling/out",
+        "--base-path",
+        ""
+      ],
+      "exit_code": 0,
+      "status": "no_findings_in_scope",
+      "result": "raw/html-01.json",
+      "stdout": "raw/html-01.stdout.txt",
+      "stderr": "raw/html-01.stderr.txt"
+    },
+    {
+      "tool": "contrast",
+      "arguments": [
+        "#ffffff",
+        "#09151b",
+        "--alpha",
+        "1",
+        "--minimum",
+        "4.5"
+      ],
+      "exit_code": 0,
+      "status": "meets_selected_threshold",
+      "result": "raw/contrast-01.json",
+      "stdout": "raw/contrast-01.stdout.txt",
+      "stderr": "raw/contrast-01.stderr.txt"
+    },
+    {
+      "tool": "contrast",
+      "arguments": [
+        "#d7d7d7",
+        "#09151b",
+        "--alpha",
+        "1",
+        "--minimum",
+        "4.5"
+      ],
+      "exit_code": 0,
+      "status": "meets_selected_threshold",
+      "result": "raw/contrast-02.json",
+      "stdout": "raw/contrast-02.stdout.txt",
+      "stderr": "raw/contrast-02.stderr.txt"
+    },
+    {
+      "tool": "contrast",
+      "arguments": [
+        "#9df1ad",
+        "#09151b",
+        "--alpha",
+        "1",
+        "--minimum",
+        "3"
+      ],
+      "exit_code": 0,
+      "status": "meets_selected_threshold",
+      "result": "raw/contrast-03.json",
+      "stdout": "raw/contrast-03.stdout.txt",
+      "stderr": "raw/contrast-03.stderr.txt"
+    }
+  ],
+  "test_plan": "testplan.json",
+  "procedure_catalog": {
+    "snapshot": "testprosedyrer/wcag-kriterier.json",
+    "sha256": "2b1a75fd0260ecb213cbe8f099c74df851af96fedc90a98f694103d9a0c2daeb"
+  }
+}

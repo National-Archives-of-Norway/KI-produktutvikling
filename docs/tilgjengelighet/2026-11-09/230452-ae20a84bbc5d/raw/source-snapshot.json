@@ -1,0 +1,314 @@
+{
+  "recorded_at": "2026-11-09T22:04:53.941769+00:00",
+  "files": [
+    {
+      "path": "src/app/funksjonalitet/page.tsx",
+      "sha256": "e5bf08873c18f268ddcc423de3c491de094fea3fb7e92bfa45a8251b567a29a3"
+    },
+    {
+      "path": "src/app/globals.css",
+      "sha256": "97bd41fc5396db7fcd78c5a5d8e21fd738e5985c2148078d94adf656070dd40e"
+    },
+    {
+      "path": "src/app/kom-i-gang/page.tsx",
+      "sha256": "3bd65204243fb434453c67aea4a7ad8922ef24e5d3f0c6b3cd3f039fb2df8b85"
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "sha256": "9f8e80b75f559b1eaf447d8cf09f9fd0b03d22e746a5316e114ecea781b7e4fc"
+    },
+    {
+      "path": "src/app/nettstedskart/page.tsx",
+      "sha256": "a5e560f3d5e7f0c51d331e55b1792da7f00eeece6b457443558b1dc7cc105962"
+    },
+    {
+      "path": "src/app/om/page.tsx",
+      "sha256": "3464b807666dd0dfb0207a3a0289a42271a8001f3b8e82c1825bf71af0321832"
+    },
+    {
+      "path": "src/app/oversikt/godkjente-ki-assistenter/page.tsx",
+      "sha256": "08aa46bb216856cbcc962c3fde70068d1502798c72902135da1c059d10608eac"
+    },
+    {
+      "path": "src/app/oversikt/godkjente-mcper/page.tsx",
+      "sha256": "93c61693741e3897e1c0defdb069c88ac1514f085b81a0f85da4befbceb0d74e"
+    },
+    {
+      "path": "src/app/oversikt/overview.css",
+      "sha256": "0ddc1b3569edb997abaf9b575247f134974610532a8ceb08c3e7bd7830e8238e"
+    },
+    {
+      "path": "src/app/oversikt/page.tsx",
+      "sha256": "ca43ed9bbc4336fbcfd6e342cb569355dbaccc6bafe285063885edb9d101836b"
+    },
+    {
+      "path": "src/app/page.tsx",
+      "sha256": "248f3708da4173114297cb059c5cbb8680c77a0186c463d6da77eb4de91e90ab"
+    },
+    {
+      "path": "src/app/personvern/page.tsx",
+      "sha256": "7224f37cddbf65cc102d1fb240242525f17a6392673566e156b6946b572a11f5"
+    },
+    {
+      "path": "src/app/priser/page.tsx",
+      "sha256": "59a179a00d14b455674a5626e4d3efc7788126ef8e0c3912988e0d11fea0920d"
+    },
+    {
+      "path": "src/app/priser/pricing.css",
+      "sha256": "7f6a4723d20d30fb9f6c475972acb5b792cdbb06e150593bb385d67e4e915a1d"
+    },
+    {
+      "path": "src/app/ressurser/[slug]/page.tsx",
+      "sha256": "94c34fb6172d19ca6d9e5b58cb1a7d869dc57e5c43f399483f63433edd154914"
+    },
+    {
+      "path": "src/app/retningslinjer/page.tsx",
+      "sha256": "887f4bb247d9c998a6d436600a26cf387ea872f7eee956bb248af2276725614b"
+    },
+    {
+      "path": "src/app/spor/page.tsx",
+      "sha256": "defb42a9b0a9281b193b5ff9021fc975e14c8ff91dd8cde978507c889c5f371c"
+    },
+    {
+      "path": "src/app/tilgjengelighet/page.tsx",
+      "sha256": "d7303f38151beda8c0cbe025a636f889c9adafed7fc9e9dfbdc24e259b530d2d"
+    },
+    {
+      "path": "src/app/utviklingsplan/page.tsx",
+      "sha256": "400f74d4ab4f24e67e55c82d88df60ca86cae366f8a2e374b3aeb7f35dbfd092"
+    },
+    {
+      "path": "src/app/versjonslogg/page.tsx",
+      "sha256": "914a628dd6104883108cb1b194b462e32b26d5ce14a0b3318a8d66aec5df05b4"
+    },
+    {
+      "path": "src/components/catalog.css",
+      "sha256": "ead40173ac67d0a6229d59f5e7e9e5074f901f88beff05baf20f3ceb0ae28cbf"
+    },
+    {
+      "path": "src/components/catalog.tsx",
+      "sha256": "cf50c1882952b9c72293a358562c8cc6b86dc4d9906b696ccb1fe0362a0eb6ba"
+    },
+    {
+      "path": "src/components/content-article.tsx",
+      "sha256": "49ab35da18778af1f3475bf84dabd838f8f22a349f6528d2e0693ccfcf4a5b98"
+    },
+    {
+      "path": "src/components/hero-illustration.tsx",
+      "sha256": "9bfd83ca47d6409dbafd6531671a25a123b4fb5e88be785aeda7aa55eaffefae"
+    },
+    {
+      "path": "src/components/logo-mark.tsx",
+      "sha256": "1ea4b6610ac6b55631966ea9c3338b7009259aebb02d2c2e857068faadcc740a"
+    },
+    {
+      "path": "src/components/navigation.tsx",
+      "sha256": "f973ce6f761c8927997b9d5d1e801f3c6d492c4512fcb7cea3a3c52995d63944"
+    },
+    {
+      "path": "src/components/portal-button.tsx",
+      "sha256": "e657600a046ccfbf039526e12fec759a74c5f5e97816a3b59691c3846479e4bd"
+    },
+    {
+      "path": "src/components/pricing-freshness.tsx",
+      "sha256": "b09d2f8bdb3f30c80d0744a8eab2f7502f44ebfcdd299667ce80deae1ee9691b"
+    },
+    {
+      "path": "src/components/repository-document.tsx",
+      "sha256": "4e435e53120afb8e70dc7aca8abb1a4004a11ef573063b9796b27a0bb3c14a0b"
+    },
+    {
+      "path": "src/content/catalog.ts",
+      "sha256": "3dc571cfa7c0820f3c8a00676c2bf06e28d4d65ce4cde7ef9ea4121db4202d5a"
+    },
+    {
+      "path": "src/content/features.ts",
+      "sha256": "4c34dcf225ab29ec5909ea965986adfa19a32a2496525be1079256c628456389"
+    },
+    {
+      "path": "src/content/home.ts",
+      "sha256": "652777d775f2089ee0b4bf05a2401342ee0d232a4a389cc3800d103ca225820e"
+    },
+    {
+      "path": "src/content/knowledge.ts",
+      "sha256": "11d7730237fc1c53b3b11fc449b5f5b52832073fcea4d889928d9a2ae998f2d8"
+    },
+    {
+      "path": "src/content/overview.ts",
+      "sha256": "10486c9360e782a3129744c8037ad463117e32a907d85be94a57adef55cad21e"
+    },
+    {
+      "path": "src/content/page-content.ts",
+      "sha256": "4f9104f3b45d928ae1f8f6dac42348d4c2da28518a4038dae1a46adf8198af20"
+    },
+    {
+      "path": "src/content/pages/godkjente-ki-assistenter.ts",
+      "sha256": "fcf46354cba1a06e261c1cf78bc9ce8ada5ab2a7c173c9d171e17a308fe6207b"
+    },
+    {
+      "path": "src/content/pages/godkjente-mcper.ts",
+      "sha256": "9198271ff70de68d53f208700ee0adeab569a91730128889e1155b99441f8b66"
+    },
+    {
+      "path": "src/content/pages/kom-i-gang.ts",
+      "sha256": "754c84dcf7cfe1b54c362d04f68494543bfdea240a1c1facbb5cebbe15fdbe16"
+    },
+    {
+      "path": "src/content/pages/om.ts",
+      "sha256": "c2ac6cebd1dda023248d3e682c40963c6c1be2255db48545c2e3bf9b70ff04f6"
+    },
+    {
+      "path": "src/content/pages/personvern.ts",
+      "sha256": "d75092c898a7ce218f206c93b9805d75d8288bf414bafde81ff6fa41cb4e9349"
+    },
+    {
+      "path": "src/content/pages/retningslinjer.ts",
+      "sha256": "9a590dd581f8f741bbe8359f2ee0f4d7579f966c3584b9e692adb4116b92a031"
+    },
+    {
+      "path": "src/content/pricing/index.ts",
+      "sha256": "168aea5d971652012d6973d60bd50e8e3e2432517847fcc66c14985744e69037"
+    },
+    {
+      "path": "src/content/pricing/snapshot.json",
+      "sha256": "c5d79a0add306b1c4ef7b0bda21691f235784788916ec58803bbf7f3e2dc6955"
+    },
+    {
+      "path": "src/content/resource-search.ts",
+      "sha256": "6b7f0c8f2861c2234b7553e187cc9c363b560754a75e9b57ba0f5d24568ce59b"
+    },
+    {
+      "path": "src/content/resources.ts",
+      "sha256": "94ab7b5de72c3fec7607b510ad3f6ac49c308fd0c14ec68126214fb914dc62b8"
+    },
+    {
+      "path": "src/features/rag/chat-state.ts",
+      "sha256": "dd3cac673f7b33badb59827828feae4e0cc9d4a0cdc4461527090e8c40814922"
+    },
+    {
+      "path": "src/features/rag/chat.css",
+      "sha256": "623f3d38ab96d1383576d932551e024df0ca01a40fc726cdd7b34eb352045901"
+    },
+    {
+      "path": "src/features/rag/client.ts",
+      "sha256": "b6c4946c271b9733ffdfa200bc2c239da2d9830beb996f7d0e7aeb397d7bb86b"
+    },
+    {
+      "path": "src/features/rag/components/answer-content.tsx",
+      "sha256": "babccd93d1af36b0a0dd9b5ed32bc92959683958606d368095896b2316f8692c"
+    },
+    {
+      "path": "src/features/rag/components/chat-composer.tsx",
+      "sha256": "6bf11f6c077372eda3e00b310509307189f78c9de3dcb04ed6cef6e218e9a9ca"
+    },
+    {
+      "path": "src/features/rag/components/chat-transcript.tsx",
+      "sha256": "4d449df0396b4c38a8f5695b0610ecbe97ef4b1ea045d5949bfe22c1f26aa01f"
+    },
+    {
+      "path": "src/features/rag/components/chat-welcome.tsx",
+      "sha256": "c7a0bbee1caba66137de696eb35ee0ecd21a981db5d856dfe5ede8b458a1e49a"
+    },
+    {
+      "path": "src/features/rag/components/chatbot.tsx",
+      "sha256": "44ee9a0e06fd41da525ec4befe81b1b0ab46bee9adb2af082c8022222aa00f2c"
+    },
+    {
+      "path": "src/features/rag/components/rag-assistant.tsx",
+      "sha256": "a8a3cd6c22c6f6945d5e6b19a56122b836fb149a34fe433119fce4b015e733e8"
+    },
+    {
+      "path": "src/features/rag/contracts.ts",
+      "sha256": "97986cd65250ac3dfbc0976d922805228283b232cef6ca34dbda49b204a8371e"
+    },
+    {
+      "path": "src/features/rag/retrieval.ts",
+      "sha256": "59fd749afac808ee81d7b1113056afdeee3cc65622add335750895538c5ce000"
+    },
+    {
+      "path": "src/features/rag/use-chat.ts",
+      "sha256": "f65bd18964c6ab3d25dbcc0867675cb5bbf97c140ff9e882520be1a0392dce4c"
+    },
+    {
+      "path": "src/server/features/validate.ts",
+      "sha256": "2edf6f56be54f8c7ad340e4ff12b52d2d85fa930c25962ff70b9c1a2bea9ccf5"
+    },
+    {
+      "path": "src/server/rag/config.ts",
+      "sha256": "2c8db2ed859db4f54f4e10b66b6912d01d84b0f1a94ae0ba588e97527c9b23d1"
+    },
+    {
+      "path": "src/server/rag/external.ts",
+      "sha256": "f82a4001a068bd6ef164c30e8bbc1c418d91784f74cf408529ce3b07b95ce76e"
+    },
+    {
+      "path": "src/server/rag/http.ts",
+      "sha256": "5dd79946f93db5414c6193d13110a624ee3c607f0ebd011f44f899d7a9c9cbf3"
+    },
+    {
+      "path": "src/server/rag/messages.ts",
+      "sha256": "1e2a79f196219d440cb3b1b81f6df6fb3c6f9246cace74774edf2963b2bd4b2d"
+    },
+    {
+      "path": "src/server/rag/model.ts",
+      "sha256": "e4cec7fe2861a68631e1f580211ccc5a19575c9821f321475ef11dd2ec0f2d56"
+    },
+    {
+      "path": "src/server/rag/ollama.ts",
+      "sha256": "26c88ce14413803135afc4523ee3ab49d82e21100ab3b41051ff3a48a002aef1"
+    },
+    {
+      "path": "src/server/rag/prompt.ts",
+      "sha256": "978364940cac87fa17d2f9e919bb8744924fd76f3cd75e6ba42fa7c48aca724d"
+    },
+    {
+      "path": "src/server/rag/provider.ts",
+      "sha256": "59d9ef27669be0ad7b3c9a469ef7f07e3f178d2ca6481da64aeb0b37da99588a"
+    },
+    {
+      "path": "src/server/rag/service.ts",
+      "sha256": "b85bb778fbbbbaf4bf0215543bbb4b594c7281c201431444cee6dd82a95e9e72"
+    },
+    {
+      "path": "src/styles/article.css",
+      "sha256": "4fcd1ee2232e7bd045a1ca033875affb97dca209b7a71140abe07c306f714cd0"
+    },
+    {
+      "path": "src/styles/base.css",
+      "sha256": "4ed29e2ddac5ad22d14bab26790f744f2433168da176b405ac8b1b8626f66501"
+    },
+    {
+      "path": "src/styles/home.css",
+      "sha256": "dab287ec6def650eb65d3549fa25e4126b813ff936da820323c6eaaece512e03"
+    },
+    {
+      "path": "src/styles/layout.css",
+      "sha256": "87c2ac9f14ba5702904190fe249572065e368679cae068fd11f03a938e96bcb3"
+    },
+    {
+      "path": "src/theme/effects.ts",
+      "sha256": "cf7e43a6ddb2de4b4a54ab8935fd04eb27d4632c0ed5faeb9866ac49e246efe5"
+    },
+    {
+      "path": "src/theme/portal-theme.ts",
+      "sha256": "cc9ad4d490e03f51edc770b997ea825889ade63246c00dba53ecff27c444c521"
+    },
+    {
+      "path": "src/theme/provider.tsx",
+      "sha256": "2d56a5242f6c1e1f171fa50edeb1b5c1ba50bb72a872c55adce89046072e2530"
+    },
+    {
+      "path": "src/theme/tokens.css",
+      "sha256": "f0ff7728da74fa6fda32e2d50009d4d13b1a59a844ddaf8daa233f4ed875986d"
+    },
+    {
+      "path": "public/vedlegg/mandatforslag-ai-enablement-team.pdf",
+      "sha256": "d19ae321ec459f0086e8815e7d35cdec7b346cf2b59d1a770374a190a009d33f"
+    },
+    {
+      "path": "package.json",
+      "sha256": "c268efb23a375e9a6a41aad90eede69e66a33f815b3c4ca543bacf03f3a2cedd"
+    }
+  ],
+  "note": "Kun src, PDF-vedlegg og package.json; ingen miljøfiler lest."
+}

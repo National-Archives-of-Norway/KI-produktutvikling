@@ -12,9 +12,22 @@ class Document(HTMLParser):
         super().__init__()
         self.path = path
         self.elements = []
+        self.titles = []
+        self.in_title = False
 
     def handle_starttag(self, tag, attrs):
         self.elements.append((tag, dict(attrs)))
+        if tag == "title":
+            self.titles.append("")
+            self.in_title = True
+
+    def handle_endtag(self, tag):
+        if tag == "title":
+            self.in_title = False
+
+    def handle_data(self, data):
+        if self.in_title:
+            self.titles[-1] += data
 
 
 def check(root, base):
@@ -29,6 +42,8 @@ def check(root, base):
         ids = [attrs["id"] for _, attrs in elements if attrs.get("id")]
         labels = {attrs.get("for") for tag, attrs in elements if tag == "label"}
         issues = []
+        if len(doc.titles) != 1 or not doc.titles[0].strip():
+            issues.append("forventer én ikke-tom sidetittel")
         if not any(tag == "html" and attrs.get("lang") for tag, attrs in elements):
             issues.append("mangler sidespråk")
         if sum(tag == "h1" for tag, _ in elements) != 1:

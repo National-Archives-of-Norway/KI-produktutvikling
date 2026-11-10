@@ -1,0 +1,1443 @@
+{
+  "inspected_at": "2026-11-09T22:16:33.121451+01:00",
+  "sha256": "d19ae321ec459f0086e8815e7d35cdec7b346cf2b59d1a770374a190a009d33f",
+  "pdf_version": "%PDF-1.7",
+  "title": "Mandatforslag – AI enablement-team i Nasjonalarkivet",
+  "xmp_title": {
+    "x-default": "Mandatforslag – AI enablement-team i Nasjonalarkivet"
+  },
+  "display_doc_title": true,
+  "tag_counts": {
+    "/Slide": 7,
+    "/Figure": 73,
+    "/Textbox": 92,
+    "/P": 74,
+    "/Span": 122,
+    "/H1": 1,
+    "/H2": 6,
+    "/H3": 20
+  },
+  "nodes": [
+    {
+      "/S": "/Slide"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/H1",
+      "/ActualText": "Mål og rammer for AI enablement-team"
+    },
+    {
+      "/S": "/Span"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": "Koala with solid fill"
+    },
+    {
+      "/S": "/Slide"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/H2"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/H3"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/H3"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/H3"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/H3"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": "Koala with solid fill"
+    },
+    {
+      "/S": "/Slide"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/H2"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Figure"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/H3"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Figure"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/H3"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Figure"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/H3"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": "Koala with solid fill"
+    },
+    {
+      "/S": "/Slide"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/H2"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/H3"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/H3"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/H3"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/H3"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/H3"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": "Koala with solid fill"
+    },
+    {
+      "/S": "/Slide"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/H2"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/H3"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/H3"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/H3"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/H3"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": "Koala with solid fill"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/H3"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Slide"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/H2"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": "Koala with solid fill"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Slide"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/H2"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/H3"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/H3"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/H3"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": "Koala with solid fill"
+    },
+    {
+      "/S": "/Figure",
+      "/Alt": ""
+    },
+    {
+      "/S": "/Textbox"
+    },
+    {
+      "/S": "/P"
+    },
+    {
+      "/S": "/Span",
+      "/Lang": "nb"
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "text": "Mandatforslag\nMål og rammer for\nAI enablement-team\nTeamet skal bidra til at utviklingsteamene i Nasjonalarkivet bruker KI på en god måte.\nAI enablement-team | mål og rammer 01",
+      "images": 0,
+      "annotations": 0
+    },
+    {
+      "page": 2,
+      "text": "Formalia\nEierskap:\nLeder for systemutvikling, leder IT-tjenester og sjefsarkitekt.\nDeltakere:\nKent, Erik D, Are og Khalil. Ved behov involveres andre.\nKapasitet:\nInntil 1 dag per uke per deltaker i oppstarten.\nAvgrensning:\nTjenester og tekniske miljøer etableres av ansvarlige team. Teamet kan gi innspill og bidra til læring.\nAI enablement-team | mål og rammer 06",
+      "images": 0,
+      "annotations": 0
+    },
+    {
+      "page": 3,
+      "text": "Veier mot målet\nVi vil bidra innen tre fokusområder:\nKompetanse og erfaringsdeling\nHeve KI-kompetansen gjennom testing, læringogdeling.\nOppsett og guardrails\nTeknisk lett for utviklerne å ta i bruk KI på en trygg måte\nRetningslinjer og policy\nArbeidet med retningslinjer og anbefalinger for KI i utvikling\nAI enablement-team | mål og rammer 02",
+      "images": 0,
+      "annotations": 0
+    },
+    {
+      "page": 4,
+      "text": "Sånn skal vi jobbe\n01 Undersøke praksis Vi skal se på hvordan teamene bruker KI i dag –hva funker bra, dårlig, hindringer, osv.\n02 Utforske muligheter Vi skal orientere oss i hvilke muligheter som finnes\n03 Skape arenaer for deling Gjennom deling vil vi få løftet fram god praksis og bekymringer, feiret feiltrinn, …\n04 Gi anbefalinger og råd Vi vil bidra i arbeidet med å lage retningslinjer,\n05 Tilrettelegge, ikke utføre Teamet skal ikke primært utvikle ting selv, men komme med anbefalinger og legge til rette for deling.\nAI enablement-team | målogrammer 03",
+      "images": 0,
+      "annotations": 0
+    },
+    {
+      "page": 5,
+      "text": "Dette skal vi ikke gjøre\nX1 Avgjøre enkeltsaker \"Kan denne tjenesten brukes på denne måten?\"\nX2 Bestemme policy Vi skal ikke bestemme reglenefor hvordan KI skal brukes i Nasjonalarkivet\nX3 Være førstelinje-support Vi skal ikke håndterelisensforespørsler, verktøyfeil og -installasjon\nX4 Være NAV for KI i NA Vi kan trekkes inn i ulike prosesser, men skal ikke sitte som flaskehals i midten\nX5 Påtvinge KI Vi skal kun bidra til å etablere god praksis og verdiøkning gjennom bruk av KI\nAI enablement-team | målogrammer 03",
+      "images": 0,
+      "annotations": 0
+    },
+    {
+      "page": 6,
+      "text": "Grensesnitt og samarbeid\nTeametskal være koblet på de relevante fagmiljøene, men ikke som mellomleder eller saksbehandler\nArkitekturmiljø\nKI-forvaltningsteam\nprinsipper og kvalitet\nFørstelinje og ansvarlig\nfor policy. Eksister ikke.\nUtviklingsteam\npraktisk bruk og behov\nJuridiskmiljø\nAI enablement-\nteam lovverkogavklaringer\nKobler erfaringer, behov og rammer\nIT-tjenester og plattform\nCommunity of Practice\nverktøy og infrastruktur\ndeling og læring\nEksterne fora\nomverdensblikk\nAI enablement-team | mål og rammer 04",
+      "images": 0,
+      "annotations": 0
+    },
+    {
+      "page": 7,
+      "text": "Forslag til bidrag per fokusområde\nKompetanse og erfaringsdeling Oppsett og guardrails Retningslinjer og\npolicy\nFange læring fra tester i teamene Ambassadører/champions i Ferdiglagde oppsett for ulike Retningslinjer for hvordan bruke\nteamene miljøer KI på en forsvarlig måte\nBygge læringslogg og felles CommunityofPractice, demoer Byggestener til AX, eksempelvis Innspill til policy og\neksempler og erfaringsdeling felles AGENTS.md og skills risikovurderinger\nVurdere hva som bør løftes til Støtte til team som prøver KI på MCPer og trygg datatilgang Innspill til verktøy, modeller og\nanbefalt praksis nye måter i egen arbeidsflyt sikre miljøer\nAI enablement-team | mål og rammer 05",
+      "images": 0,
+      "annotations": 0
+    }
+  ],
+  "scope": "Struktur/metadata/tekst, ikke faktisk skjermleser"
+}

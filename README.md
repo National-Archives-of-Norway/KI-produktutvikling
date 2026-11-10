@@ -174,7 +174,7 @@ Tilgjengelighetsskillen ligger i `skills/tilgjengelighetserklaering/`. Den eksis
 
 Katalogmetadata ligger i `src/content/resources.ts`. Søk i `resource-search.ts` bruker tittel, beskrivelse og nøkkelord; skillen finnes med blant annet «tilgjengelighet», «tilgjengelighetserklaering», «WCAG» og «uustatus». Portalens katalog og RAG bruker bare beskrivende metadata, ikke filer fra Skills-repoet.
 
-Tilgjengelighetsskill 0.3.0 lagrer nye testgjennomganger i målprosjektets `docs/tilgjengelighet/ÅÅÅÅ-MM-DD/<kjørings-id>/`, med råresultater, metadata og foreløpige rapporter. Etter vurdering skal kodeassistenten oppdatere eksisterende rapporter og lokal erklæring med lenke til kjøringen. Skriptet alene overskriver ikke slike hoveddokumenter. Eldre kontrollmapper fra 6.–7. november er beholdt som historisk evidens, og er ikke nye kjøringer av lagringsverktøyet.
+Tilgjengelighetsskill 0.5.0 lagrer nye testgjennomganger i målprosjektets `docs/tilgjengelighet/ÅÅÅÅ-MM-DD/<kjørings-id>/`, med råresultater, metadata og foreløpige rapporter. Etter vurdering skal kodeassistenten oppdatere rapportene med henvisning til kjøringen og skrive en separat brukerrettet erklæring. Skriptet alene overskriver ikke slike hoveddokumenter. Eldre kontrollmapper fra 6.–7. november er beholdt som historisk evidens, og er ikke nye kjøringer av lagringsverktøyet.
 
 Personvernskill 0.1.0 ligger i `skills/personvernerklaering/` og er også installert under `~/.codex/skills/personvernerklaering/`. Den kartlegger faktisk databehandling og utformer eller oppdaterer personvernerklæringen fra vurdert grunnlag, med unike arbeidsmapper under `docs/personvern/ÅÅÅÅ-MM-DD/<kjørings-id>/` i målprosjektet. Hjelperen `scripts/start_review.py` oppretter bare arbeidsmappen; assistenten utfører kartleggingen og oppdaterer rapporter og eksisterende erklæring. Uavklarte fakta beholdes synlige, og ingen juridisk godkjenning eller publisering skjer automatisk.
 
@@ -237,6 +237,40 @@ Historisk oppfølging før PDF-retting: [205326-389241d1fd6e](docs/tilgjengeligh
 
 ### PDF-avvik rettet og retestet – 9. november 2026
 
-Siste kjøring er [210420-07c855b7770e](docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/testrapport.md); `docs/tilgjengelighet/latest.json` peker hit. PDF-en har nå 27 kartlagte overskriftsroller og en beskrivende norsk tittel i både Info og XMP. Retest bekrefter 229 MCID-koblinger, PDF 1.7 og identisk tekst/sideinnhold/rendering på alle syv sider. Original, reparasjonsskript og uavhengig kontrollskript er bevart i kjøringens `raw/`. Scripts krever pypdf/pdfplumber/PIL fra det bundlede Python-miljøet; de er ikke nye npm-avhengigheter.
+Målrettet PDF-retest før den nye 48-punktsgjennomgangen: [210420-07c855b7770e](docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/testrapport.md). Statusen i dette avsnittet gjelder denne historiske retesten. PDF-en har nå 27 kartlagte overskriftsroller og en beskrivende norsk tittel i både Info og XMP. Retest bekrefter 229 MCID-koblinger, PDF 1.7 og identisk tekst/sideinnhold/rendering på alle syv sider. Original, reparasjonsskript og uavhengig kontrollskript er bevart i kjøringens `raw/`. Scripts krever pypdf/pdfplumber/PIL fra det bundlede Python-miljøet; de er ikke nye npm-avhengigheter.
 
 A11Y-02 og A11Y-03 er rettet i avgrenset struktur-/metadataomfang. 26 K / 10 I / 12 U / 0 B er arbeidsstatuser, ikke samsvarsprosent. 1.3.1 er fortsatt U for øvrig PDF-semantikk og faktisk hjelpemiddeltest, mens de tidligere 11 U-punktene består. Den redigerbare presentasjonskilden er ikke i prosjektet: ved fremtidig eksport må også kildefilens overskriftsstiler og tittel rettes. PDF-en er reparert direkte, og tekst/visuell utforming er beholdt. Samlet samsvar er ikke ferdig vurdert.
+
+### Erklæring og testdokumentasjon
+
+Den brukerrettede erklæringen ligger på `/tilgjengelighet/` og i `docs/tilgjengelighet/TILGJENGELIGHETSERKLAERING.md`. Den beskriver tilgjengelighet, vesentlig usikkerhet og hjelp/kontakt, uten intern oppgaveliste eller rettingshistorikk. Testgrunnlag, arbeidsstatuser, åpne avklaringer og retester beholdes i `WCAG-KONTROLL.md`, daterte rapporter og utviklingsplanen. `latest.json` viser siste faktiske testkjøring; tekstlig opprydding endrer ikke testdato eller samsvarsstatus. Skill 0.4.0 i Skills-repoet og den installerte kopien bruker samme skille.
+
+### 48 kravvise testprosedyrer i skill 0.4.0
+
+Tilgjengelighetsskillen har nå egne prosedyrer for alle 48 krav i nettstedsmalen, fordelt på fire prinsippfiler. Hvert krav beskriver utvalg, nødvendig verktøy, fremgangsmåte, forventet resultat og dokumentasjon, med kilde hos Uu-tilsynet og celle i Excel-malen. Les `skills/tilgjengelighetserklaering/references/wcag-testprosedyrer.md` i Skills-biblioteket.
+
+Nye kjøringer av `run_checks.py` får `testplan.json`, et prosedyreøyeblikksbilde i `testprosedyrer/` og 48 uavklarte kriterier i `wcag-grunnlag.json`. Dette utfører ikke automatisk prosedyrene eller gir bestått status. Faktiske tester må gjennomføres og dokumenteres med tilgjengelige verktøy. Portalens tidligere testresultater, siste kjøringspeker og erklæringens samsvarsstatus er ikke endret av denne skill-utvidelsen.
+
+### Gjennomgang med skill 0.4.0 – alle 48 krav
+
+Siste faktiske vurdering: [221027-5ce9daf9d5dc](docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/testrapport.md), 9. november 2026. `docs/tilgjengelighet/latest.json` peker hit. [Testplanen](docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/testplan.json) har forventet/faktisk resultat, metode, evidens og neste steg for alle 48 krav. At et krav er gjennomgått betyr ikke at all nødvendig testing er fullført.
+
+20 sider er undersøkt med 60 responsive DOM-kontroller, 40 tekstavstandskontroller, 160 Tab-steg og utvalgte dynamiske forløp. PDF-en er undersøkt videre. To nye avvik er åpne: A11Y-04 (listestruktur, PDF-side 7) og A11Y-05 (tekstkontrast, PDF-side 5). Arbeidsstatus er 20 K / 11 I / 15 U / 2 B, ikke samsvarsprosent. Tidligere overskrifts-/tittel-/språkrettinger er bevart. PDF-en er ikke endret i dette testoppdraget. Faktisk skjermleser, zoom og videre dekning gjenstår; konkrete instrukser finnes i planen og prosedyreøyeblikksbildet. Erklæringen beskriver barrierene kort, uten interne testtall og rettingshistorikk.
+
+### Automatisk testflyt i skill 0.5.0
+
+Tilgjengelighetsskillen kjører nå tilgjengelige automatiske deltester som del av testoppdraget. `browser_checks.mjs` brukes gjennom assistentens dokumenterte nettleser-API; `run_checks.py --auto` samler lokale HTML-/PDF-kontroller, tilgjengelig vnu og faktiske nettleser-/axe-resultater. Hver datert kjøring får `automatisk-dekning.json` og `manuell-oppfolging.md` med utførte deler, manglende verktøy og konkrete manuelle steg for alle 48 krav. Se `references/automatisering.md` i skill-pakken. Det er ingen automatisk fullgodkjenning; manglende tester gir fortsatt uavklart status.
+
+Denne utvidelsen endrer skill og katalogbeskrivelse, ikke portalens siste tilgjengelighetsvurdering. `latest.json`, de to åpne PDF-avvikene og den brukerrettede erklæringen beholder sitt faktiske grunnlag. Nettlesermodulen er utviklingstestet i et isolert testoppsett; dette er ikke en ny full revisjon.
+
+### Tilgjengelighetskjøring med skill 0.5.0 – 10. november 2026
+
+Historisk hovedkjøring før retting: [testrapport](docs/tilgjengelighet/2026-11-10/053920-3f1e603bfbcd/testrapport.md). [Manuell restliste](docs/tilgjengelighet/2026-11-10/053920-3f1e603bfbcd/manuell-oppfolging.md) viser alle 48 krav med automatisk deldekning, vurdert arbeidsstatus og neste steg. 31 krav har automatiske delresultater; etter vurdering har 37 gjenstående vurdering/retting/retest, mens 11 ikke har utløsende innholdstype i lokalt omfang. Dette er ikke en samsvarsprosent eller full godkjenning.
+
+Skillen er faktisk kjørt: 20 sider, 23 eksportfiler, 60 viewport-kontroller, 160 Tab-steg og tre deklarerte brukerforløp. 2484 tekstforekomster ble kontrastmålt; 75 ble hoppet over og krever vurdering. Axe/vnu manglet og står som blokkert. Bekreftede åpne avvik er PDF-listene, PDF-kontrast og et nytt språkavvik på 404-siden. Tittelelementene på feilsiden krever videre vurdering. Ingen produktfeil er rettet. Nye råresultater, tidligere bevis med opprinnelig dato og kort brukerrettet erklæring er holdt atskilt; `latest.json` viser siste hovedkjøring. Første delkjøring fra 9. november er bevart.
+
+### Retest etter retting – 10. november 2026
+
+Siste vurderte kjøring: [080757-ffaeb036427a](docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/testrapport.md). A11Y-04–06 er rettet og målrettet retestet: PDF-lister er kodet som tre lister med tolv punkter, tekstkontrast på side 5 er 6,28:1, og feilsiden har norsk tekst og én beskrivende tittel. Ingen bekreftede åpne avvik i undersøkt utvalg; samlet samsvar er fortsatt uavklart. [Manuell restliste](docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/manuell-oppfolging.md) beholder øvrige 37 vurderings-/retestpunkter og 11 krav uten utløsende innholdstype lokalt.
+
+HTML-grunnkontrollen avviser nå også tomme og dupliserte sidetitler, inkludert eksporterte feilsider. Kjør `python3 -m unittest discover -s tests -p 'test_html_accessibility.py'` for regresjonstestene og `python3 scripts/check-accessibility.py --root out` etter Pages-bygg. Utrullingsmiljøets faktiske 404-fallback, skjermleser og øvrige manuelle kontroller må fortsatt prøves. PDF-en er 139 kB; tekst/sidegeometri og tidligere overskrifter/tittel er bevart.

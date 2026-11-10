@@ -1,0 +1,494 @@
+{
+  "animations": [],
+  "contrast": {
+    "measured": [
+      {
+        "background": [
+          157,
+          241,
+          173
+        ],
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "foreground": [
+          29,
+          29,
+          29,
+          1
+        ],
+        "id": null,
+        "minimum": 4.5,
+        "ratio": 12.538164303847376,
+        "tag": "a",
+        "text": "Hopp til innhold"
+      },
+      {
+        "background": [
+          9,
+          21,
+          27
+        ],
+        "fontSize": "18px",
+        "fontWeight": "700",
+        "foreground": [
+          255,
+          255,
+          255,
+          1
+        ],
+        "id": null,
+        "minimum": 4.5,
+        "ratio": 18.506965525735616,
+        "tag": "a",
+        "text": "KI-Produktutvikling"
+      },
+      {
+        "background": [
+          9,
+          21,
+          27
+        ],
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "foreground": [
+          215,
+          215,
+          215,
+          1
+        ],
+        "id": null,
+        "minimum": 4.5,
+        "ratio": 12.858683176247323,
+        "tag": "a",
+        "text": "Kom i gang"
+      },
+      {
+        "background": [
+          9,
+          21,
+          27
+        ],
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "foreground": [
+          215,
+          215,
+          215,
+          1
+        ],
+        "id": null,
+        "minimum": 4.5,
+        "ratio": 12.858683176247323,
+        "tag": "a",
+        "text": "Retningslinjer"
+      },
+      {
+        "background": [
+          9,
+          21,
+          27
+        ],
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "foreground": [
+          215,
+          215,
+          215,
+          1
+        ],
+        "id": null,
+        "minimum": 4.5,
+        "ratio": 12.858683176247323,
+        "tag": "a",
+        "text": "Ressurskatalog"
+      },
+      {
+        "background": [
+          9,
+          21,
+          27
+        ],
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "foreground": [
+          215,
+          215,
+          215,
+          1
+        ],
+        "id": null,
+        "minimum": 4.5,
+        "ratio": 12.858683176247323,
+        "tag": "a",
+        "text": "Oversikt"
+      },
+      {
+        "background": [
+          9,
+          21,
+          27
+        ],
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "foreground": [
+          215,
+          215,
+          215,
+          1
+        ],
+        "id": null,
+        "minimum": 4.5,
+        "ratio": 12.858683176247323,
+        "tag": "a",
+        "text": "Spør KI"
+      },
+      {
+        "background": [
+          9,
+          21,
+          27
+        ],
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "foreground": [
+          215,
+          215,
+          215,
+          1
+        ],
+        "id": null,
+        "minimum": 4.5,
+        "ratio": 12.858683176247323,
+        "tag": "a",
+        "text": "Om"
+      },
+      {
+        "background": [
+          9,
+          21,
+          27
+        ],
+        "fontSize": "11px",
+        "fontWeight": "700",
+        "foreground": [
+          157,
+          241,
+          173,
+          1
+        ],
+        "id": null,
+        "minimum": 4.5,
+        "ratio": 13.764920900757057,
+        "tag": "div",
+        "text": "404 · SIDE IKKE FUNNET"
+      },
+      {
+        "background": [
+          9,
+          21,
+          27
+        ],
+        "fontSize": "36px",
+        "fontWeight": "700",
+        "foreground": [
+          255,
+          255,
+          255,
+          1
+        ],
+        "id": null,
+        "minimum": 3,
+        "ratio": 18.506965525735616,
+        "tag": "h1",
+        "text": "Fant ikke siden"
+      },
+      {
+        "background": [
+          9,
+          21,
+          27
+        ],
+        "fontSize": "21px",
+        "fontWeight": "400",
+        "foreground": [
+          215,
+          215,
+          215,
+          1
+        ],
+        "id": null,
+        "minimum": 4.5,
+        "ratio": 12.858683176247323,
+        "tag": "p",
+        "text": "Adressen kan være feil, eller siden kan ha blitt flyttet."
+      },
+      {
+        "background": [
+          9,
+          21,
+          27
+        ],
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "foreground": [
+          215,
+          215,
+          215,
+          1
+        ],
+        "id": null,
+        "minimum": 4.5,
+        "ratio": 12.858683176247323,
+        "tag": "p",
+        "text": "Gå til forsiden eller finn innholdet i nettstedskartet."
+      },
+      {
+        "background": [
+          9,
+          21,
+          27
+        ],
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "foreground": [
+          215,
+          215,
+          215,
+          1
+        ],
+        "id": null,
+        "minimum": 4.5,
+        "ratio": 12.858683176247323,
+        "tag": "p",
+        "text": "Gå til forsiden eller finn innholdet i nettstedskartet."
+      },
+      {
+        "background": [
+          9,
+          21,
+          27
+        ],
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "foreground": [
+          215,
+          215,
+          215,
+          1
+        ],
+        "id": null,
+        "minimum": 4.5,
+        "ratio": 12.858683176247323,
+        "tag": "a",
+        "text": "Gå til forsiden"
+      },
+      {
+        "background": [
+          9,
+          21,
+          27
+        ],
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "foreground": [
+          215,
+          215,
+          215,
+          1
+        ],
+        "id": null,
+        "minimum": 4.5,
+        "ratio": 12.858683176247323,
+        "tag": "a",
+        "text": "nettstedskartet"
+      },
+      {
+        "background": [
+          9,
+          21,
+          27
+        ],
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "foreground": [
+          215,
+          215,
+          215,
+          1
+        ],
+        "id": null,
+        "minimum": 4.5,
+        "ratio": 12.858683176247323,
+        "tag": "span",
+        "text": "KI-Produktutvikling"
+      },
+      {
+        "background": [
+          9,
+          21,
+          27
+        ],
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "foreground": [
+          215,
+          215,
+          215,
+          1
+        ],
+        "id": null,
+        "minimum": 4.5,
+        "ratio": 12.858683176247323,
+        "tag": "a",
+        "text": "Oversikt"
+      },
+      {
+        "background": [
+          9,
+          21,
+          27
+        ],
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "foreground": [
+          215,
+          215,
+          215,
+          1
+        ],
+        "id": null,
+        "minimum": 4.5,
+        "ratio": 12.858683176247323,
+        "tag": "a",
+        "text": "Personvernerklæring"
+      },
+      {
+        "background": [
+          9,
+          21,
+          27
+        ],
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "foreground": [
+          215,
+          215,
+          215,
+          1
+        ],
+        "id": null,
+        "minimum": 4.5,
+        "ratio": 12.858683176247323,
+        "tag": "a",
+        "text": "Tilgjengelighetserklæring"
+      },
+      {
+        "background": [
+          9,
+          21,
+          27
+        ],
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "foreground": [
+          215,
+          215,
+          215,
+          1
+        ],
+        "id": null,
+        "minimum": 4.5,
+        "ratio": 12.858683176247323,
+        "tag": "a",
+        "text": "Nettstedskart"
+      },
+      {
+        "background": [
+          9,
+          21,
+          27
+        ],
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "foreground": [
+          215,
+          215,
+          215,
+          1
+        ],
+        "id": null,
+        "minimum": 4.5,
+        "ratio": 12.858683176247323,
+        "tag": "a",
+        "text": "Versjonslogg"
+      },
+      {
+        "background": [
+          9,
+          21,
+          27
+        ],
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "foreground": [
+          215,
+          215,
+          215,
+          1
+        ],
+        "id": null,
+        "minimum": 4.5,
+        "ratio": 12.858683176247323,
+        "tag": "a",
+        "text": "Utviklingsplan"
+      },
+      {
+        "background": [
+          9,
+          21,
+          27
+        ],
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "foreground": [
+          215,
+          215,
+          215,
+          1
+        ],
+        "id": null,
+        "minimum": 4.5,
+        "ratio": 12.858683176247323,
+        "tag": "a",
+        "text": "Funksjonalitetsoversikt"
+      }
+    ],
+    "skipped": []
+  },
+  "counts": {
+    "h1": 1,
+    "main": 1
+  },
+  "findings": [],
+  "focus": {
+    "boxShadow": "none",
+    "id": null,
+    "outline": "rgb(255, 255, 255) none 3px",
+    "tabindex": null,
+    "tag": "body",
+    "text": "Hopp til innholdKI-ProduktutviklingKom i gangRetningslinjerRessurskatalogOversiktSpør KIOm404 · SIDE IKKE FUNNETFant ikk"
+  },
+  "lang": "nb",
+  "layout": {
+    "clientWidth": 320,
+    "overflow": false,
+    "scrollWidth": 320
+  },
+  "liveRegions": [],
+  "title": "Fant ikke siden | KI-Produktutvikling",
+  "url": "http://127.0.0.1:3000/404",
+  "viewport": {
+    "height": 800,
+    "width": 320
+  }
+}

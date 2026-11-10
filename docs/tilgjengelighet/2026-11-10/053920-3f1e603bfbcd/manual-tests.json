@@ -1,0 +1,79 @@
+{
+  "reviewed_at": "2026-11-10T06:00:14.604909+01:00",
+  "agent": "Codex (OpenAI)",
+  "skill_version": "0.5.0",
+  "status": "partial_with_findings",
+  "environment": "macOS / ChatGPT in-app browser, lokal Next.js-utvikling. Nettlesermotor-/OS-versjon ikke registrert.",
+  "tests": [
+    {
+      "id": "all-20-pages",
+      "date": "2026-11-10",
+      "method": "Skillens browser_checks.mjs, DOM/kontrast/viewport og 8 Tab-steg per side",
+      "result": "20 sider, 60 størrelser, 160 Tab-steg, tre deklarerte forløp uten kandidat i delomfanget.",
+      "evidence": "raw/browser-input.json"
+    },
+    {
+      "id": "404-language",
+      "date": "2026-11-10",
+      "result": "Bekreftet språkavvik A11Y-06. Tittelkandidat forblir U.",
+      "evidence": "raw/404-review.json"
+    },
+    {
+      "id": "chat-flow",
+      "date": "2026-11-09",
+      "result": "Ugyldig input ble varslet; gyldig syntetisk spørsmål ga lasting og kildebasert veiledning uten språkmodell. Escape returnerte fokus til Spør KI. Ingen faktisk skjermleser. Innledende fyll-forsøk fant ikke synlig felt; etter ny tilstandsinspeksjon og åpning ble flyten gjennomført.",
+      "evidence": [
+        "../../2026-11-09/230452-ae20a84bbc5d/raw/chat-loading.txt",
+        "../../2026-11-09/230452-ae20a84bbc5d/raw/chat-result.txt",
+        "../../2026-11-09/230452-ae20a84bbc5d/raw/chat-return-focus.json"
+      ]
+    },
+    {
+      "id": "price-terms",
+      "date": "2026-11-09",
+      "result": "Alle seks vilkårsseksjoner åpnet med Enter og norske forklaringer inspisert. 320 px ga lokale rullbare tabeller, uten sideoverflyt.",
+      "evidence": [
+        "../../2026-11-09/230452-ae20a84bbc5d/raw/prices-keyboard.json",
+        "../../2026-11-09/230452-ae20a84bbc5d/raw/prices-320.json"
+      ]
+    },
+    {
+      "id": "table-scroll",
+      "date": "2026-11-10",
+      "result": "ArrowRight i fokusert pristabell flyttet scrollLeft over 0; 280 px region, 640 px innhold.",
+      "evidence": "raw/table-keyboard-scroll.json"
+    },
+    {
+      "id": "pdf-followup",
+      "date": "2026-11-09",
+      "result": "Identisk PDF-hash, ingen liste-RoleMap og samme fargegrupper. Tidligere PDF-funn består; full visuell/PDF-UA-/skjermlesertest er ikke nykjørt.",
+      "evidence": "../../2026-11-09/230452-ae20a84bbc5d/raw/pdf-targeted-retest.json"
+    },
+    {
+      "id": "source-reuse",
+      "date": "2026-11-10",
+      "result": "71 src-filer er identiske med forrige kildeliste. Endringer gjelder erklærings-/funksjons-/ressursbeskrivelser og prisdata; ingen ny medie-/innloggings-/transaksjonsfunksjon. Tidligere I gjelder bare lokalt omfang.",
+      "evidence": "../../2026-11-09/230452-ae20a84bbc5d/raw/source-comparison.json"
+    },
+    {
+      "id": "updated-declaration",
+      "date": "2026-11-10",
+      "result": "Ny avvikstekst og dato er lest tilbake på desktop og 320 px; ingen sideoverflyt eller DOM-kandidat i utvalget. Ingen skjermlesertest.",
+      "evidence": [
+        "raw/declaration-desktop.json",
+        "raw/declaration-320.json",
+        "screenshots/erklaering-desktop.png",
+        "screenshots/erklaering-320.png"
+      ]
+    }
+  ],
+  "manual_remaining": 37,
+  "no_trigger": 11,
+  "limits": [
+    "Ingen faktisk skjermleser, 200/400 % zoom, fysisk enhetsrotasjon eller redusert-bevegelse-innstilling.",
+    "Ingen ny full tekstavstandstest; tidligere 9. november-evidens er beholdt uten ny testdato.",
+    "Axe og vnu mangler; ingen tom rapport tolkes som bestått.",
+    "Produksjon, innlogging og faktisk modellgenerert svar er ikke testet.",
+    "75 tekstforekomster med ukjent/sammensatt bakgrunn er hoppet over i automatisk kontrast."
+  ]
+}

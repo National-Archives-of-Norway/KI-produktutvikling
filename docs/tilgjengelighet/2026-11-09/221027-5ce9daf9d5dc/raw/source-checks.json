@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-11-09",
+  "sources": [
+    "https://www.uutilsynet.no/wcag-standarden/wcag-standarden/86",
+    "https://www.uutilsynet.no/tilgjengelighetserklaering/korleis-lage-og-oppdatere-tilgjengelegheitserklaering/1131",
+    "https://www.uutilsynet.no/wcag-standarden/131-informasjon-og-relasjoner-niva/90",
+    "https://www.uutilsynet.no/wcag-standarden/143-kontrast-minimum-niva-aa/95"
+  ],
+  "procedure_source_index": "testprosedyrer/wcag-kriterier.json",
+  "note": "Øvrige kravvise kilder er videreført fra skillens daterte kildekontroll samme dag; ikke påstått åpnet på nytt alle 48 i denne prosjektkjøringen."
+}

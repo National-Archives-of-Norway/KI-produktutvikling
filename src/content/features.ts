@@ -117,10 +117,18 @@ export function getFeatures(): Feature[] {
       sitemapLabel: "Priser",
     },
     {
+      // not-found.tsx håndterer ukjente adresser og er ingen ordinær siderute.
+      id: "feilside",
+      title: "Feilside for ukjent adresse",
+      description:
+        "En norsk feilside med beskrivende sidetittel og lenker til forsiden og nettstedskartet hjelper deg videre når en adresse ikke finnes.",
+      status: "available",
+    },
+    {
       id: "tilgjengelighet",
       title: "Tilgjengelighetserklæring",
       description:
-        "Se testomfang, kjente begrensninger og kontaktkanal for tilgjengelighetsproblemer. Lokal oppfølging 9. november 2026 omfatter PDF, kontrast og tastatur. PDF-overskrifter og dokumenttittel er rettet og struktur-/metadataretestet; tidligere språkavvik på prissiden er også rettet. Faktisk skjermlesertest og øvrig PDF-vurdering gjenstår. Samlet samsvar er uavklart og erklæringen er et lokalt utkast.",
+        "Les om vurderingens begrensninger og hvordan du melder tilgjengelighetsproblemer eller ber om et annet format. Erklæringen er et lokalt utkast; samlet samsvar er ikke ferdig vurdert.",
       status: "draft",
       href: "/tilgjengelighet/",
       routes: ["/tilgjengelighet/"],

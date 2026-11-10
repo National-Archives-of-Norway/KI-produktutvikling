@@ -1,18 +1,27 @@
 {
-  "run_directory": "docs/tilgjengelighet/2026-11-09/210420-07c855b7770e",
-  "automatic_status": "automatic_checks_completed",
+  "run_directory": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a",
+  "automatic_status": "automatic_checks_partial",
   "overall_conformance": "not_assessed",
-  "manifest": "docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/manifest.json",
-  "review_status": "targeted_pdf_retest_completed",
+  "manifest": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/manifest.json",
+  "review_status": "targeted_repairs_verified_with_remaining_manual_scope",
+  "reviewed_at": "2026-11-10T08:17:30.459664+01:00",
   "confirmed_findings": 0,
   "open_findings": [],
-  "fixed_findings": ["A11Y-01", "A11Y-02", "A11Y-03"],
+  "fixed_findings": [
+    "A11Y-01",
+    "A11Y-02",
+    "A11Y-03",
+    "A11Y-04",
+    "A11Y-05",
+    "A11Y-06"
+  ],
   "counts": {
-    "K": 26,
-    "I": 10,
-    "U": 12,
+    "U": 17,
+    "I": 11,
+    "K": 20,
     "B": 0
   },
-  "review_report": "docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/testrapport.md",
-  "previous_run": "docs/tilgjengelighet/2026-11-09/205326-389241d1fd6e"
+  "previous_run": "docs/tilgjengelighet/2026-11-10/053920-3f1e603bfbcd",
+  "review_report": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/testrapport.md",
+  "manual_follow_up": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/manuell-oppfolging.md"
 }

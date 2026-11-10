@@ -1,0 +1,32 @@
+{
+  "reviewed_at": "2026-11-10T08:17:30.459664+01:00",
+  "skill_version": "0.5.0",
+  "agent": "Codex (OpenAI)",
+  "scope": "Målrettet retting/retest av A11Y-04–06, 20 registrerte sider og lokal feilside; 23 eksportfiler. Tidligere øvrige vurderinger videreføres med egen dato/evidens.",
+  "tests": [
+    {
+      "id": "PDF",
+      "actual": "Tre lister, 12 punkter, 229 MCID-koblinger; 27 overskriftsroller og metadata bevart. Side 5 har 6,284:1 tekstkontrast; tekst/sidegeometri uendret på syv sider og seks sider er pikselidentiske.",
+      "evidence": "raw/pdf-retest.json"
+    },
+    {
+      "id": "404",
+      "actual": "Norsk tekst, én beskrivende tittel i nettleser og alle eksportfiler. Rettslige unntak ikke forutsatt.",
+      "evidence": [
+        "raw/404-browser.json",
+        "raw/404-export.json"
+      ]
+    },
+    {
+      "id": "browser",
+      "actual": "21 sidetilstander, 63 viewport-kontroller, 168 Tab-steg og tre deklarerte forløp uten navngitt kandidat.",
+      "evidence": "raw/browser-input.json"
+    }
+  ],
+  "limits": [
+    "Ingen faktisk skjermleser eller full PDF/UA-validator.",
+    "Ingen ny full zoom-/tekstavstands-/enhetskontroll.",
+    "Axe/vnu er fortsatt blokkert.",
+    "Produksjonsfallback og innlogging er ikke testet."
+  ]
+}

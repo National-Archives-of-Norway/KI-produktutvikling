@@ -1,0 +1,34 @@
+[
+  {
+    "element": "Brødtekst og bunntekst",
+    "foreground_pdf": [
+      0.847,
+      0.847,
+      0.847
+    ],
+    "background_pdf": [
+      0.176,
+      0.416,
+      0.373
+    ],
+    "unrounded_ratio": 4.408520173794279,
+    "minimum": 4.5,
+    "meets_minimum": false
+  },
+  {
+    "element": "Sidetall",
+    "foreground_pdf": [
+      0.365,
+      0.416,
+      0.4
+    ],
+    "background_pdf": [
+      0.176,
+      0.416,
+      0.373
+    ],
+    "unrounded_ratio": 1.1141302638610253,
+    "minimum": 4.5,
+    "meets_minimum": false
+  }
+]

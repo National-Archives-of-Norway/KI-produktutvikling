@@ -1,0 +1,8 @@
+{
+  "original_sha256": "97bd41fc5396db7fcd78c5a5d8e21fd738e5985c2148078d94adf656070dd40e",
+  "test_css": "\n/* TEMP: WCAG 1.4.12 skill 0.4.0 */\n* { line-height: 1.5 !important; letter-spacing: .12em !important; word-spacing: .16em !important; }\np { margin-bottom: 2em !important; }\n",
+  "restored_at": "2026-11-09T22:15:18.760995+01:00",
+  "restored_sha256": "97bd41fc5396db7fcd78c5a5d8e21fd738e5985c2148078d94adf656070dd40e",
+  "dynamic_retest_restored_at": "2026-11-09T22:16:50.030349+01:00",
+  "dynamic_retest_restored_sha256": "97bd41fc5396db7fcd78c5a5d8e21fd738e5985c2148078d94adf656070dd40e"
+}

@@ -1,0 +1,13 @@
+{
+  "reviewed_at": "2026-11-10T04:15:18.742491+00:00",
+  "previous_run": "docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc",
+  "changed_src": [
+    "src/app/tilgjengelighet/page.tsx",
+    "src/content/features.ts",
+    "src/content/pricing/snapshot.json",
+    "src/content/resources.ts"
+  ],
+  "removed_src": [],
+  "unchanged_src_count": 71,
+  "note": "Hashsammenligning; semantisk betydning må vurderes. Ingen miljøfiler lest."
+}

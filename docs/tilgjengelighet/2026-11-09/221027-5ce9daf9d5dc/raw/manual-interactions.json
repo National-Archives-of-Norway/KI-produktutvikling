@@ -1,0 +1,249 @@
+[
+  {
+    "id": "skip",
+    "result": {
+      "id": "innhold",
+      "tag": "MAIN"
+    }
+  },
+  {
+    "id": "motion-focus",
+    "result": {
+      "name": "Pause animasjonen i forsideillustrasjonen",
+      "outline": "rgb(157, 241, 173) solid 3px"
+    }
+  },
+  {
+    "id": "motion-paused",
+    "result": {
+      "name": "Start animasjonen i forsideillustrasjonen",
+      "states": [
+        "paused",
+        "paused",
+        "paused"
+      ]
+    }
+  },
+  {
+    "id": "motion-after-leaving",
+    "result": {
+      "active": "resource-search",
+      "states": [
+        "paused",
+        "paused",
+        "paused"
+      ]
+    }
+  },
+  {
+    "id": "motion-resumed",
+    "result": {
+      "name": "Pause animasjonen i forsideillustrasjonen",
+      "states": [
+        "running",
+        "running",
+        "running"
+      ]
+    }
+  },
+  {
+    "id": "catalog-no-hits",
+    "result": {
+      "statuses": [
+        "Bruk kildene til å kontrollere veiledningen. Hvert spørsmål behandles separat."
+      ],
+      "text": "RESSURSKATALOGFinn en ressursSkills, instruksjoner og prompter som hjelper deg å bruke KI i produktutviklingen.Finn en ressurs​RessurstypeAlleSkillInstruksPrompt0 ressurserIngen ressurser funnetPrøv et annet søkeord eller vis alle ressurstyper.Nullstill søk og filtre"
+    }
+  },
+  {
+    "id": "catalog-reset",
+    "result": {
+      "input": "",
+      "live": [
+        {
+          "live": "polite",
+          "text": "5 ressurser"
+        },
+        {
+          "live": "polite",
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "id": "catalog-filter",
+    "result": {
+      "pressed": [
+        {
+          "pressed": "false",
+          "text": "Alle"
+        },
+        {
+          "pressed": "true",
+          "text": "Skill"
+        },
+        {
+          "pressed": "false",
+          "text": "Instruks"
+        },
+        {
+          "pressed": "false",
+          "text": "Prompt"
+        }
+      ],
+      "resourceCount": "3 ressurser"
+    }
+  },
+  {
+    "id": "dialog-focus-cycle",
+    "result": [
+      {
+        "inDialog": true,
+        "name": "Lukk chat",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "BUTTON"
+      },
+      {
+        "inDialog": true,
+        "name": "Hvordan gjennomgår jeg en kodeendring?",
+        "outline": "rgb(157, 241, 173) solid 2px",
+        "tag": "BUTTON"
+      },
+      {
+        "inDialog": true,
+        "name": "Hvordan gir jeg KI god kontekst?",
+        "outline": "rgb(157, 241, 173) solid 2px",
+        "tag": "BUTTON"
+      },
+      {
+        "inDialog": true,
+        "name": "Hvordan utforsker jeg brukerbehov?",
+        "outline": "rgb(157, 241, 173) solid 2px",
+        "tag": "BUTTON"
+      },
+      {
+        "inDialog": true,
+        "name": "",
+        "outline": "rgb(255, 255, 255) none 0px",
+        "tag": "TEXTAREA"
+      },
+      {
+        "inDialog": true,
+        "name": "Send spørsmål",
+        "outline": "rgb(157, 241, 173) solid 2px",
+        "tag": "BUTTON"
+      },
+      {
+        "inDialog": true,
+        "name": "Lukk chat",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "tag": "BUTTON"
+      },
+      {
+        "inDialog": true,
+        "name": "Hvordan gjennomgår jeg en kodeendring?",
+        "outline": "rgb(157, 241, 173) solid 2px",
+        "tag": "BUTTON"
+      }
+    ]
+  },
+  {
+    "id": "chat-empty-validation",
+    "result": {
+      "alerts": [
+        "Skriv et spørsmål på 3–1000 tegn."
+      ],
+      "fields": [
+        {
+          "describedby": "_r_1_-helper-text",
+          "invalid": "true"
+        }
+      ]
+    }
+  },
+  {
+    "id": "chat-loading",
+    "result": {
+      "observed": "Finner relevant veiledning … / Arbeider med spørsmålet ditt.",
+      "sendDisabled": true,
+      "question": "Hvordan utforsker jeg et brukerbehov?"
+    }
+  },
+  {
+    "id": "chat-response",
+    "result": {
+      "alerts": [],
+      "invalid": [
+        "false"
+      ],
+      "live": [
+        {
+          "live": "polite",
+          "role": null,
+          "text": "3 ressurser"
+        },
+        {
+          "live": "polite",
+          "role": "log",
+          "text": "DuHvordan utforsker jeg et brukerbehov?KunnskapsassistentenVeiledning fra portalen · uten språkmodellUtforsk et brukerbehovBruk eksemplet til å forberede utforsking. KI-forslag erstatter ikke undersøkelser med faktiske brukere.Slik går du fremBeskriv situasjonen uten personopplysninger.Be om åpne spørsmål og alternative forklaringer.Test antakelsene gjennom samtaler eller observasjon med brukere.Dette er eksempelinnhold til utprøving.Les hele veiledningen →Dette er hentet fra den mest relevante siden, ikke et fritt formulert svar på spørsmålet ditt.Kilder og mer lesing[1] Utforsk et brukerbehovBruk eksemplet til å forberede utforsking. KI-forslag erstatter ikke undersøkelser med faktiske brukere.Åpne kilden →[2] Kom i gang: 1. Velg en avgrenset oppgaveBegynn med én oppgave, et tydelig mål og tid til å vurdere resultatet.Åpne kilden →[3] FunksjonalitetsoversiktEn oversikt over funksjonene som finnes, hva du kan prøve og hva som gjenstår.Åpne kilden →Du kan også spørre omHvordan tester jeg tilgjengeligheten?Hva er KI-prat?Hvilke retningslinjer gjelder for KI?"
+        },
+        {
+          "live": null,
+          "role": "status",
+          "text": "Bruk kildene til å kontrollere veiledningen. Hvert spørsmål behandles separat."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dialog-return",
+    "result": {
+      "name": "Spør KI",
+      "tag": "BUTTON"
+    }
+  },
+  {
+    "id": "pointer-cancel",
+    "result": "true"
+  },
+  {
+    "id": "pointer-normal-click",
+    "result": "true"
+  },
+  {
+    "id": "table-scroll",
+    "result": {
+      "before": {
+        "scroll": 0,
+        "scrollWidth": 640,
+        "width": 280
+      },
+      "after": {
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "scroll": 21
+      }
+    }
+  },
+  {
+    "id": "pointer-cancel-retest",
+    "result": {
+      "before": "false",
+      "afterDragOutside": "false",
+      "afterNormalClick": "true",
+      "preliminaryTest": "Tidligere forsøk hadde ikke eksplisitt nullstilt filter; bruk denne dokumenterte starttilstanden."
+    }
+  },
+  {
+    "id": "spacing-chat-stable",
+    "result": {
+      "active": "Send spørsmål",
+      "alerts": [
+        "Skriv et spørsmål på 3–1000 tegn."
+      ],
+      "dialogWidth": 304,
+      "documentWidth": 320,
+      "opacity": "1"
+    }
+  }
+]

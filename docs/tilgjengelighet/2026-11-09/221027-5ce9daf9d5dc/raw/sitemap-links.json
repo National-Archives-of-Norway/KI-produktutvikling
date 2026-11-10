@@ -1,0 +1,90 @@
+[
+  {
+    "href": "/",
+    "text": "← Til forsiden"
+  },
+  {
+    "href": "/",
+    "text": "Forsiden"
+  },
+  {
+    "href": "/#ressurser",
+    "text": "Ressurskatalog"
+  },
+  {
+    "href": "/spor",
+    "text": "Spør kunnskapsbasen"
+  },
+  {
+    "href": "/oversikt/godkjente-mcper",
+    "text": "Godkjente MCP-er"
+  },
+  {
+    "href": "/oversikt/godkjente-ki-assistenter",
+    "text": "Godkjente KI-assistenter"
+  },
+  {
+    "href": "/kom-i-gang",
+    "text": "Kom i gang"
+  },
+  {
+    "href": "/om",
+    "text": "Om portalen"
+  },
+  {
+    "href": "/retningslinjer",
+    "text": "Retningslinjer"
+  },
+  {
+    "href": "/personvern",
+    "text": "Personvernerklæring"
+  },
+  {
+    "href": "/oversikt",
+    "text": "Oversikt"
+  },
+  {
+    "href": "/priser",
+    "text": "Priser"
+  },
+  {
+    "href": "/tilgjengelighet",
+    "text": "Tilgjengelighetserklæring"
+  },
+  {
+    "href": "/nettstedskart",
+    "text": "Nettstedskart"
+  },
+  {
+    "href": "/versjonslogg",
+    "text": "Versjonslogg"
+  },
+  {
+    "href": "/utviklingsplan",
+    "text": "Utviklingsplan"
+  },
+  {
+    "href": "/funksjonalitet",
+    "text": "Funksjonalitetsoversikt"
+  },
+  {
+    "href": "/ressurser/tilgjengelighetserklaering",
+    "text": "Test tilgjengelighet og utform erklæring"
+  },
+  {
+    "href": "/ressurser/personvernerklaering",
+    "text": "Kartlegg personvern og utform erklæring"
+  },
+  {
+    "href": "/ressurser/kodegjennomgang",
+    "text": "Gjennomgå en kodeendring"
+  },
+  {
+    "href": "/ressurser/tydelig-kontekst",
+    "text": "Gi KI tydelig kontekst"
+  },
+  {
+    "href": "/ressurser/brukerbehov",
+    "text": "Utforsk et brukerbehov"
+  }
+]

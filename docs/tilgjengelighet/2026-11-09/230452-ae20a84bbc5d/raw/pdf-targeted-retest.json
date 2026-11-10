@@ -1,0 +1,192 @@
+{
+  "tested_at": "2026-11-09T22:07:32.859555+00:00",
+  "file": "public/vedlegg/mandatforslag-ai-enablement-team.pdf",
+  "sha256": "d19ae321ec459f0086e8815e7d35cdec7b346cf2b59d1a770374a190a009d33f",
+  "roles_map": {
+    "/Footnote": "/Note",
+    "/Endnote": "/Note",
+    "/Textbox": "/Sect",
+    "/Header": "/Sect",
+    "/Footer": "/Sect",
+    "/InlineShape": "/Sect",
+    "/Annotation": "/Sect",
+    "/Artifact": "/Sect",
+    "/Workbook": "/Document",
+    "/Worksheet": "/Part",
+    "/Macrosheet": "/Part",
+    "/Chartsheet": "/Part",
+    "/Dialogsheet": "/Part",
+    "/Slide": "/Sect",
+    "/Chart": "/Sect",
+    "/Diagram": "/Figure",
+    "/Title": "/H1",
+    "/CommentAnchor": "/Span",
+    "/Notes": "/Sect"
+  },
+  "page5_text_groups": {
+    "((1.0,), 27.41)": {
+      "count": 24,
+      "text": "Dette skal vi ikke gjøre"
+    },
+    "((0.851, 0.973, 0.839), 18.75)": {
+      "count": 8,
+      "text": "X1X2X3X4"
+    },
+    "((1.0,), 11.55)": {
+      "count": 19,
+      "text": "Avgjøre enkeltsaker"
+    },
+    "((0.847,), 10.08)": {
+      "count": 113,
+      "text": "\"Kan denne tjenesten brukes på denne måten?\"Vi skal ikke håndterelisensforespørsler, verktøyfeil og -installasjon"
+    },
+    "((1.0,), 11.52)": {
+      "count": 26,
+      "text": "Bestemme policyPåtvinge KI"
+    },
+    "((0.847,), 10.1)": {
+      "count": 73,
+      "text": "Vi skal ikke bestemme reglenefor hvordan KI skal brukes i Nasjonalarkivet"
+    },
+    "((1.0,), 12.26)": {
+      "count": 24,
+      "text": "Være førstelinje-support"
+    },
+    "((1.0,), 11.54)": {
+      "count": 20,
+      "text": "Være NAV for KI i NA"
+    },
+    "((0.847,), 10.11)": {
+      "count": 162,
+      "text": "Vi kan trekkes inn i ulike prosesser, men skal ikke sitte som flaskehals i midten   Vi skal kun bidra til å etablere god praksis og verdiøkning gjennom bruk av KI"
+    },
+    "((0.847,), 7.22)": {
+      "count": 32,
+      "text": "AI enablement-team | målogrammer"
+    },
+    "((0.365, 0.416, 0.4), 7.22)": {
+      "count": 2,
+      "text": "03"
+    },
+    "((0.851, 0.973, 0.839), 18.77)": {
+      "count": 2,
+      "text": "X5"
+    }
+  },
+  "page5_fills": [
+    {
+      "color": 1.0,
+      "bbox": [
+        0.0,
+        -0.004929999999944812,
+        959.76,
+        540.13507
+      ]
+    },
+    {
+      "color": [
+        0.176,
+        0.416,
+        0.373
+      ],
+      "bbox": [
+        0.35999,
+        -0.3650400000000218,
+        960.11999,
+        539.77496
+      ]
+    },
+    {
+      "color": [
+        0.851,
+        0.973,
+        0.839
+      ],
+      "bbox": [
+        0.35999,
+        0.3551800000000185,
+        12.59999,
+        540.49518
+      ]
+    },
+    {
+      "color": [
+        0.847,
+        0.816,
+        0.749
+      ],
+      "bbox": [
+        112.68,
+        183.28985,
+        847.8,
+        184.01
+      ]
+    },
+    {
+      "color": [
+        0.847,
+        0.816,
+        0.749
+      ],
+      "bbox": [
+        112.68,
+        240.17985,
+        847.8,
+        240.89999999999998
+      ]
+    },
+    {
+      "color": [
+        0.847,
+        0.816,
+        0.749
+      ],
+      "bbox": [
+        112.68,
+        297.06985,
+        847.8,
+        297.78999999999996
+      ]
+    },
+    {
+      "color": [
+        0.847,
+        0.816,
+        0.749
+      ],
+      "bbox": [
+        112.68,
+        354.68985,
+        847.8,
+        355.40999999999997
+      ]
+    },
+    {
+      "color": [
+        0.847,
+        0.816,
+        0.749
+      ],
+      "bbox": [
+        54.36,
+        496.56385,
+        906.12,
+        497.284
+      ]
+    },
+    {
+      "color": [
+        0.847,
+        0.816,
+        0.749
+      ],
+      "bbox": [
+        113.4,
+        415.89975000000004,
+        848.52,
+        416.62
+      ]
+    }
+  ],
+  "limitations": "Fargegrupper er støttebevis. Tidligere visuell bekreftelse og uavrundede kontrastmål beholdes bare for identisk PDF-hash."
+}

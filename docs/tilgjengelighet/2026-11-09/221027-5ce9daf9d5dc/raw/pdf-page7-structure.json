@@ -1,0 +1,205 @@
+{
+  "role_map": {
+    "/Footnote": "/Note",
+    "/Endnote": "/Note",
+    "/Textbox": "/Sect",
+    "/Header": "/Sect",
+    "/Footer": "/Sect",
+    "/InlineShape": "/Sect",
+    "/Annotation": "/Sect",
+    "/Artifact": "/Sect",
+    "/Workbook": "/Document",
+    "/Worksheet": "/Part",
+    "/Macrosheet": "/Part",
+    "/Chartsheet": "/Part",
+    "/Dialogsheet": "/Part",
+    "/Slide": "/Sect",
+    "/Chart": "/Sect",
+    "/Diagram": "/Figure",
+    "/Title": "/H1",
+    "/CommentAnchor": "/Span",
+    "/Notes": "/Sect"
+  },
+  "nodes": [
+    {
+      "role": "/H2",
+      "text": "Forslag til bidrag per fokusområde",
+      "object": 461
+    },
+    {
+      "role": "/Textbox",
+      "text": "Forslag til bidrag per fokusområde",
+      "object": 460
+    },
+    {
+      "role": "/H3",
+      "text": "Oppsett og guardrails",
+      "object": 470
+    },
+    {
+      "role": "/Textbox",
+      "text": "Oppsett og guardrails",
+      "object": 469
+    },
+    {
+      "role": "/H3",
+      "text": "Kompetanse og erfaringsdeling ",
+      "object": 486
+    },
+    {
+      "role": "/Textbox",
+      "text": "Kompetanse og erfaringsdeling ",
+      "object": 485
+    },
+    {
+      "role": "/H3",
+      "text": "Retningslinjer og policy",
+      "object": 504
+    },
+    {
+      "role": "/Textbox",
+      "text": "Retningslinjer og policy",
+      "object": 503
+    },
+    {
+      "role": "/P",
+      "text": "Ambassadører/champions i teamene",
+      "object": 511
+    },
+    {
+      "role": "/Textbox",
+      "text": "Ambassadører/champions i teamene",
+      "object": 510
+    },
+    {
+      "role": "/P",
+      "text": "CommunityofPractice, demoer og erfaringsdeling",
+      "object": 518
+    },
+    {
+      "role": "/Textbox",
+      "text": "CommunityofPractice, demoer og erfaringsdeling",
+      "object": 517
+    },
+    {
+      "role": "/P",
+      "text": "Støtte til team som prøver KI på nye måter i egen arbeidsflyt",
+      "object": 528
+    },
+    {
+      "role": "/Textbox",
+      "text": "Støtte til team som prøver KI på nye måter i egen arbeidsflyt",
+      "object": 527
+    },
+    {
+      "role": "/P",
+      "text": "AI enablement-team | mål og rammer",
+      "object": 535
+    },
+    {
+      "role": "/Textbox",
+      "text": "AI enablement-team | mål og rammer",
+      "object": 534
+    },
+    {
+      "role": "/P",
+      "text": "05",
+      "object": 541
+    },
+    {
+      "role": "/Textbox",
+      "text": "05",
+      "object": 540
+    },
+    {
+      "role": "/P",
+      "text": "Fange læring fra tester i teamene",
+      "object": 544
+    },
+    {
+      "role": "/Textbox",
+      "text": "Fange læring fra tester i teamene",
+      "object": 543
+    },
+    {
+      "role": "/P",
+      "text": "Bygge læringslogg og felles eksempler",
+      "object": 547
+    },
+    {
+      "role": "/Textbox",
+      "text": "Bygge læringslogg og felles eksempler",
+      "object": 546
+    },
+    {
+      "role": "/P",
+      "text": "Vurdere hva som bør løftes til anbefalt praksis",
+      "object": 551
+    },
+    {
+      "role": "/Textbox",
+      "text": "Vurdere hva som bør løftes til anbefalt praksis",
+      "object": 550
+    },
+    {
+      "role": "/P",
+      "text": "Retningslinjer for hvordan bruke KI på en forsvarlig måte",
+      "object": 555
+    },
+    {
+      "role": "/Textbox",
+      "text": "Retningslinjer for hvordan bruke KI på en forsvarlig måte",
+      "object": 554
+    },
+    {
+      "role": "/P",
+      "text": "Innspill til policy og risikovurderinger",
+      "object": 559
+    },
+    {
+      "role": "/Textbox",
+      "text": "Innspill til policy og risikovurderinger",
+      "object": 558
+    },
+    {
+      "role": "/P",
+      "text": "Innspill til verktøy, modeller og sikre miljøer",
+      "object": 563
+    },
+    {
+      "role": "/Textbox",
+      "text": "Innspill til verktøy, modeller og sikre miljøer",
+      "object": 562
+    },
+    {
+      "role": "/P",
+      "text": "Ferdiglagde oppsett for ulike miljøer",
+      "object": 576
+    },
+    {
+      "role": "/Textbox",
+      "text": "Ferdiglagde oppsett for ulike miljøer",
+      "object": 575
+    },
+    {
+      "role": "/P",
+      "text": "Byggestener til AX, eksempelvis felles AGENTS.md og skills",
+      "object": 580
+    },
+    {
+      "role": "/Textbox",
+      "text": "Byggestener til AX, eksempelvis felles AGENTS.md og skills",
+      "object": 579
+    },
+    {
+      "role": "/P",
+      "text": "MCPer og trygg datatilgang",
+      "object": 590
+    },
+    {
+      "role": "/Textbox",
+      "text": "MCPer og trygg datatilgang",
+      "object": 589
+    }
+  ]
+}

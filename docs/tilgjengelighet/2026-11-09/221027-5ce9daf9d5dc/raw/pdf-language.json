@@ -1,0 +1,13 @@
+{
+  "document_language": "en",
+  "explicit_language_counts": {
+    "nb": 120
+  },
+  "actual_text_nodes": [
+    {
+      "/S": "/H1",
+      "/ActualText": "Mål og rammer for AI enablement-team"
+    }
+  ],
+  "note": "Metadata og språkarv er støttebevis; faktisk PDF-opplesing er ikke testet."
+}

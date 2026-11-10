@@ -1,0 +1,15 @@
+{
+  "criteria": 48,
+  "counts": {
+    "U": 15,
+    "I": 11,
+    "B": 3,
+    "K": 19
+  },
+  "automatic_partial": 31,
+  "manual_remaining": 37,
+  "relative_links_checked": 129,
+  "missing_links": [],
+  "manifest_sha256": "a098534747f8c72cd2aa690a8496a94cb73f6335c2022254ee83b6baf5bbff71",
+  "note": "Integritet og dokumentlenker, ikke en ny tilgjengelighetstest."
+}
