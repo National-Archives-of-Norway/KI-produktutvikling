@@ -116,6 +116,16 @@ Siden oppdateres når innholdsdata/registeret endres og nettstedet bygges. Den v
 
 Åpne chatboten med «Spør KI»-knappen nederst til høyre på forsiden, eller bruk `/spor/` for en egen side. Chatvinduet har tastaturfokus, lukking med Escape, samtalehistorikk og utfellbare kilder. Historikken beholdes mens vinduet lukkes og åpnes på forsiden, men lagres ikke etter sideoppdatering. Hvert spørsmål behandles separat av API-et; tidligere meldinger sendes ikke til modellen. `pnpm dev` / `sh scripts/dev.sh` starter både Next.js (127.0.0.1:3000) og RAG-tjenesten (127.0.0.1:3001). Nettleseren bruker `/api/rag` på portalens adresse, og Next.js videresender lokalt til tjenesten.
 
+Tillatte nettleseropprinnelser settes **på RAG-serveren** med `RAG_ALLOWED_ORIGINS`, uten `NEXT_PUBLIC_`-prefiks. Når variabelen mangler, tillates `http://127.0.0.1:3000` og `http://localhost:3000`. En satt liste erstatter standardene. For eksempel i `.env.local` før `pnpm dev -- -p 3005`:
+
+```dotenv
+RAG_ALLOWED_ORIGINS=http://127.0.0.1:3005,http://localhost:3005
+```
+
+I et delt miljø brukes portalens faktiske origin, for eksempel `RAG_ALLOWED_ORIGINS=https://pilot.example.no`. Listen er kommaseparert og kan bare inneholde HTTP(S)-origins med eventuell port, uten sti, query, fragment, wildcard eller påloggingsinformasjon. Mellomrom rundt elementer og en avsluttende skråstrek tillates; origins normaliseres og duplikater fjernes. Tom verdi eller tomme/ugyldige elementer stopper oppstart med en feil som navngir variabelen. Start RAG-prosessen på nytt etter endring. Dette er en kontroll av innsendt Origin-header, ikke innlogging, autorisering eller en CORS-løsning for direkte kall fra en annen nettleseradresse. Manglende Origin godtas fortsatt for interne/serverbaserte kall. Nettleseren bruker fortsatt portalens `/api/rag` via proxy.
+
+HTTP-grensen godtar `application/json` uavhengig av bokstavstørrelse og ignorerer medietypeparametre. Kroppsgrensen er 8192 byte: for høy `Content-Length` avvises før buffering, og strømmede kropper kontrolleres under lesing. 413 sendes med `Connection: close`; resten forkastes uten buffering med maksimalt ett sekund til kontrollert lukking. Ugyldig input gir 400/413/415, mens uventede søke-/tjenestefeil gir 500 med en nøytral melding. Modelladapterens egne 502-svar beholdes.
+
 Nettsidene og kunnskapsbasen bruker felles innhold fra `src/content/`. Teksten for Kom i gang, Om (inkludert KI-prat) og Retningslinjer ligger i `src/content/pages/`. Sidekomponentene viser dette gjennom `ContentArticle`, og `knowledge.ts` lager RAG-kilder fra de samme avsnittene. Introduksjon, steg og forbehold velges med avsnitts-ID-er; det finnes ingen manuelt kopierte utdrag i `retrieval.ts`. Ressursbeskrivelsene kommer fortsatt direkte fra `resources.ts`.
 
 Rediger teksten i innholdsfilen, ikke i sidekomponenten eller RAG-koden. Bevar avsnitts-ID-er, eller oppdater referansene i `knowledge.ts` hvis strukturen endres. En slettet referanse gir feil ved bygging og i testene. Nye innholdssider registreres eksplisitt i `knowledge.ts` og får en rute; private dokumenter eller vedleggsinnhold leses ikke automatisk. Kun innhold som kan inngå i den offentlige klienten skal registreres her.
@@ -173,7 +183,7 @@ pnpm test:rag
 node scripts/check-rag-api.mjs
 ```
 
-Testene dekker rangering, manglende treff, spørsmålsvalidering, offentlig kildeliste, samtaletilstand, API-kontrakt og modelladapterens feiltilfeller. Modelladapteren testes med simulert transport uten eksterne kall. API-kontrollen dekker henting og avvisning av ugyldig JSON/fremmed opprinnelse. Live modellgenerering er ikke verifisert uten konfigurert modell.
+Testene dekker rangering, manglende treff, spørsmålsvalidering, offentlig kildeliste, samtaletilstand, API-kontrakt og modelladapterens feiltilfeller. HTTP-integrasjonstestene starter og lukker egne servere med `listen(0, "127.0.0.1")`; lokale loopback-porter må derfor være tillatt. De prøver konfigurerte origins, JSON-medietype, store og chunked kropper, etterfølgende forespørsler og interne feil. Modelladapteren testes med simulert transport uten eksterne kall. API-kontrollen dekker henting og avvisning av ugyldig JSON/fremmed opprinnelse. Live modellgenerering er ikke verifisert uten konfigurert modell.
 
 ## Tilgjengelighetskontroller
 

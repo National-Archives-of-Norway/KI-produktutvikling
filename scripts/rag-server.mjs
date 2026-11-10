@@ -9,7 +9,7 @@ export function startRagServer() {
   const service = createRagService({
     model: createConfiguredModel(config),
   });
-  const server = createRagHttpServer(service);
+  const server = createRagHttpServer(service, config);
   server.listen(config.port, "127.0.0.1", () =>
     console.log(`RAG: http://127.0.0.1:${config.port} (${config.provider})`),
   );

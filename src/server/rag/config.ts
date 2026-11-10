@@ -1,6 +1,40 @@
 import { env as serverEnv } from "node:process";
 
-export type RagConfig = { port: number } & (
+export const DEFAULT_ALLOWED_ORIGINS = [
+  "http://127.0.0.1:3000",
+  "http://localhost:3000",
+] as const;
+
+function loadAllowedOrigins(value: string | undefined): string[] {
+  if (value === undefined) return [...DEFAULT_ALLOWED_ORIGINS];
+  return [
+    ...new Set(
+      value.split(",").map((entry) => {
+        const origin = entry.trim();
+        try {
+          const url = new URL(origin);
+          if (
+            !/^https?:\/\/[^/?#\\]+\/?$/i.test(origin) ||
+            /[\s*]/.test(origin) ||
+            url.username ||
+            url.password ||
+            url.pathname !== "/" ||
+            url.search ||
+            url.hash
+          )
+            throw new Error();
+          return url.origin;
+        } catch {
+          throw new Error(
+            "Ugyldig RAG_ALLOWED_ORIGINS: forventer kommaseparerte HTTP(S)-origins uten sti, query, fragment, wildcard eller påloggingsinformasjon.",
+          );
+        }
+      }),
+    ),
+  ];
+}
+
+export type RagConfig = { port: number; allowedOrigins: readonly string[] } & (
   | { provider: "none" }
   | { provider: "ollama"; model: string; endpoint: URL }
   | {
@@ -17,10 +51,11 @@ export function loadRagConfig(
   const port = Number(env.RAG_PORT || 3001);
   if (!Number.isInteger(port) || port < 0 || port > 65535)
     throw new Error("Ugyldig RAG-port.");
+  const allowedOrigins = loadAllowedOrigins(env.RAG_ALLOWED_ORIGINS);
   const provider =
     env.MODEL_PROVIDER?.trim() ||
     (env.OLLAMA_MODEL?.trim() ? "ollama" : "none");
-  if (provider === "none") return { port, provider };
+  if (provider === "none") return { port, allowedOrigins, provider };
   if (provider === "openai-compatible") {
     const model = env.MODEL_NAME?.trim();
     const apiKey = env.MODEL_API_KEY?.trim();
@@ -45,7 +80,7 @@ export function loadRagConfig(
         "MODEL_API_URL må være en HTTPS-adresse uten brukernavn, passord, query eller fragment. Bruk MODEL_API_KEY for nøkkelen.",
       );
     if (/[\r\n]/.test(apiKey)) throw new Error("Ugyldig MODEL_API_KEY.");
-    return { port, provider, model, endpoint, apiKey };
+    return { port, allowedOrigins, provider, model, endpoint, apiKey };
   }
   if (provider !== "ollama")
     throw new Error(
@@ -68,5 +103,5 @@ export function loadRagConfig(
     throw new Error(
       "Denne versjonen tillater bare Ollama på lokal loopback-adresse.",
     );
-  return { port, provider, endpoint, model };
+  return { port, allowedOrigins, provider, endpoint, model };
 }

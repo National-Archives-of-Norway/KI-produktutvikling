@@ -4,6 +4,17 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 «Agent» betyr kodeassistenten som utførte arbeidet. Git-forfatteren registreres separat av Git og kan være personen som oppretter commiten. Eksakt modellvariant er ikke registrert for tidligere arbeid og oppgis derfor ikke. Ingen underagenter ble brukt til kvalitetskontrollen eller opprettelsen av denne loggen.
 
+## Ikke utgitt – rettet HTTP-grense for RAG – 10. november 2026
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Skrev og kjørte førtester mot uendret produktkode: konfigurerte dev-/delte origins ga 403, `Application/JSON` ga 415, og både søkefeil og kast fra `service.ask` ga 400. Tre 2 MB-kropper ga 413 med feilaktig keep-alive, men ECONNRESET ble ikke reprodusert: alle tolv etterfølgende kall lyktes på tilgjengelig Node 24.22.1. Node 22 er ikke testet; ingen påstand om bekreftet reset-retting. Se [før-/etter-rapport](docs/rag/2026-11-10/http-grense.md).
+- Lagt til servervariabelen `RAG_ALLOWED_ORIGINS` med validering ved oppstart og dagens to loopback-origins som standard. Oppstartsskriptet sender listen til HTTP-serveren. En eksplisitt liste erstatter standardene; tomme/ugyldige elementer avvises. Ingen `NEXT_PUBLIC_`-variabel eller serverkonfigurasjon i offentlig funksjonsregister.
+- JSON-medietype sammenlignes uten hensyn til bokstavstørrelse/parametre. Beholdt 400/413/415 for klientfeil og skilt uventede søke-/tjenestefeil til nøytral 500 uten interne detaljer. Modelladapterens eksisterende feilsvar beholdes.
+- For høy Content-Length avvises før buffering; chunked kropp har fortsatt bytegrense. 413 sendes straks med Connection: close og kontrollert forkasting/lukking innen ett sekund. Strømiteratoren ødelegger ikke socketen ved tidlig retur. Første forsøk med umiddelbar lukking ga EPIPE i testen; rettet variant består 2 MB- og etterfølgende forespørsler.
+- Oppdatert `.env.example`, README, arkitekturens testforutsetninger, funksjonsregister og fase 5/P3. Tillatte origins er lokalt implementert, mens faktisk delt HTTPS-drift, intern ruting, autorisering og produksjonsgodkjenning gjenstår. Beta-status beholdes.
+- Kontroller: `pnpm test:rag` 94/94, `pnpm typecheck`, `pnpm format:check` og `git diff --check` bestått. Ni nye tester, inkludert HTTP-kontroller på midlertidige loopback-servere med opprydding. API-kontrollskriptet bestod mot eksisterende tjeneste på 3001; revisjonen der er ikke verifisert. Separat oppstart på samme port ga EADDRINUSE; eksisterende tjeneste ble ikke endret. Ingen ny avhengighet, commit eller publisering.
+
 ## Ikke utgitt – rettet relevans i RAG-kildesøket – 10. november 2026
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

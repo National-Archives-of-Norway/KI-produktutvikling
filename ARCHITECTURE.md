@@ -40,6 +40,8 @@ Chatvisning → useChat → requestAnswer → /api/rag
 
 I Pages-modus bruker klienten offentlig kildehenting direkte, uten nettverkskall til en modell. Ikke legg private kilder i `retrieval.ts` eller andre klientimporterte moduler. Interne kilder krever en separat autorisert serverflyt.
 
+HTTP-grensen får tillatte origins fra den validerte serverkonfigurasjonen (`RAG_ALLOWED_ORIGINS`). Oppstartsskriptet sender konfigurasjonen til HTTP-serveren; klienten leser ikke variabelen. En konfigurert liste erstatter loopback-standardene. Origin-kontroll erstatter ikke autorisering. HTTP-lesefeil/ugyldig input skilles fra uventede søke-/tjenestefeil. For store forespørsler avvises med 413 og eksplisitt lukking etter et begrenset tidsrom for å forkaste gjenværende opplasting uten buffering.
+
 ## Stilstruktur
 
 `src/app/globals.css` inneholder bare importrekkefølgen. Grunnstiler, layout, forside, katalog, artikler og chat har egne stilfiler. Eksisterende klassenavn beholdes, og filer importeres sentralt slik at dialogens portal også får stilene.
@@ -48,7 +50,7 @@ I Pages-modus bruker klienten offentlig kildehenting direkte, uten nettverkskall
 
 ## Kontroller
 
-- `pnpm test:rag`: kildehenting, API-kontrakt, chattilstand, modelladapter og feiltilfeller. Ingen modell eller nettverksporter kreves.
+- `pnpm test:rag`: kildehenting, API-kontrakt, chattilstand, modelladapter og feiltilfeller. Ingen modell kreves. HTTP-integrasjonstestene åpner midlertidige loopback-porter med `listen(0, "127.0.0.1")` og lukker serverne etterpå.
 - `pnpm typecheck`: TypeScript i klient, server og tester.
 - `pnpm build`: vanlig Next.js-bygg.
 - `pnpm build:pages`: statisk eksport.
