@@ -1,0 +1,4 @@
+{
+  "command": "node --test tests/pricing.test.mjs",
+  "exitCode": 0
+}

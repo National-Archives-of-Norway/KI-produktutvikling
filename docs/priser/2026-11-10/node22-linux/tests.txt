@@ -1,0 +1,124 @@
+TAP version 13
+# Subtest: alle seks offisielle prisstrukturer gir rader med riktige enheter
+ok 1 - alle seks offisielle prisstrukturer gir rader med riktige enheter
+  ---
+  duration_ms: 8.7065
+  type: 'test'
+  ...
+# Subtest: API-utvalg skiller kontekst, cache-varighet og standard fra andre hastigheter
+ok 2 - API-utvalg skiller kontekst, cache-varighet og standard fra andre hastigheter
+  ---
+  duration_ms: 0.372125
+  type: 'test'
+  ...
+# Subtest: endrede kolonner, manglende modeller og tvetydige planpriser avvises
+ok 3 - endrede kolonner, manglende modeller og tvetydige planpriser avvises
+  ---
+  duration_ms: 0.368166
+  type: 'test'
+  ...
+# Subtest: kildesvikt bevarer pris og vellykket dato, men registrerer mislykket forsøk
+ok 4 - kildesvikt bevarer pris og vellykket dato, men registrerer mislykket forsøk
+  ---
+  duration_ms: 1.226
+  type: 'test'
+  ...
+# Subtest: førstegangssvikt gir tomt grunnlag, aldri gratispriser eller falsk kontrolldato
+ok 5 - førstegangssvikt gir tomt grunnlag, aldri gratispriser eller falsk kontrolldato
+  ---
+  duration_ms: 0.120292
+  type: 'test'
+  ...
+# Subtest: automatisk prisoppdatering og JSON-lagring bevarer norske vilkår
+ok 6 - automatisk prisoppdatering og JSON-lagring bevarer norske vilkår
+  ---
+  duration_ms: 0.997
+  type: 'test'
+  ...
+# Subtest: endret brukerkrav og månedspris oppdaterer norsk tekst fra kildefeltene
+ok 7 - endret brukerkrav og månedspris oppdaterer norsk tekst fra kildefeltene
+  ---
+  duration_ms: 0.511458
+  type: 'test'
+  ...
+# Subtest: ukjente engelske tilleggsvilkår gir feil og bevarer tidligere norsk tekst
+ok 8 - ukjente engelske tilleggsvilkår gir feil og bevarer tidligere norsk tekst
+  ---
+  duration_ms: 0.744625
+  type: 'test'
+  ...
+# Subtest: money avviser løse ekstratall og feil tusenskille
+ok 9 - money avviser løse ekstratall og feil tusenskille
+  ---
+  duration_ms: 0.2845
+  type: 'test'
+  ...
+# Subtest: tables beholder siste rad uten sluttlinjeskift og støtter CRLF
+ok 10 - tables beholder siste rad uten sluttlinjeskift og støtter CRLF
+  ---
+  duration_ms: 0.405208
+  type: 'test'
+  ...
+# Subtest: tables skiller escapede pipes fra cellegrenser
+ok 11 - tables skiller escapede pipes fra cellegrenser
+  ---
+  duration_ms: 0.095583
+  type: 'test'
+  ...
+# Subtest: bare kjent Claude-fotnote 2 i cache-kolonnen tillates
+ok 12 - bare kjent Claude-fotnote 2 i cache-kolonnen tillates
+  ---
+  duration_ms: 0.147917
+  type: 'test'
+  ...
+# Subtest: alle fixture-tabeller beholder rader uten avsluttende linjeskift
+ok 13 - alle fixture-tabeller beholder rader uten avsluttende linjeskift
+  ---
+  duration_ms: 1.084583
+  type: 'test'
+  ...
+# Subtest: meningsfull endring ignorerer bare tider, ikke priser, status, feil eller kildemetadata
+ok 14 - meningsfull endring ignorerer bare tider, ikke priser, status, feil eller kildemetadata
+  ---
+  duration_ms: 1.328333
+  type: 'test'
+  ...
+# Subtest: main registrerer ny kontrolltid uten endring i versjonsloggen ved uendrede priser
+ok 15 - main registrerer ny kontrolltid uten endring i versjonsloggen ved uendrede priser
+  ---
+  duration_ms: 6.706
+  type: 'test'
+  ...
+# Subtest: main legger nøyaktig én prisoppføring under eksisterende Ikke utgitt og er idempotent
+ok 16 - main legger nøyaktig én prisoppføring under eksisterende Ikke utgitt og er idempotent
+  ---
+  duration_ms: 6.978041
+  type: 'test'
+  ...
+# Subtest: main avviser manglende innsettingspunkt før snapshot eller tempfiler skrives
+ok 17 - main avviser manglende innsettingspunkt før snapshot eller tempfiler skrives
+  ---
+  duration_ms: 2.547875
+  type: 'test'
+  ...
+# Subtest: main fører statusfeil og gjenoppretting én gang, og gjentar ikke feiloppføringer bare for ny dato
+ok 18 - main fører statusfeil og gjenoppretting én gang, og gjentar ikke feiloppføringer bare for ny dato
+  ---
+  duration_ms: 4.364625
+  type: 'test'
+  ...
+# Subtest: workflow oppdaterer samme pris-PR, ignorerer bare nye tider og lukker foreldet forslag
+ok 19 - workflow oppdaterer samme pris-PR, ignorerer bare nye tider og lukker foreldet forslag
+  ---
+  duration_ms: 100.22075
+  type: 'test'
+  ...
+1..19
+# tests 19
+# suites 0
+# pass 19
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 163.208667

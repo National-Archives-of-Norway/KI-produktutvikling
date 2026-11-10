@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-10",
+  "agent": "Codex (OpenAI)",
+  "commit": "e4e580ab1e2af2a672284aa3cb36403cf0240396",
+  "baseImage": "node@sha256:752ea8a2f758c34002a0461bd9f1cee4f9a3c36d48494586f60ffce1fc708e0e",
+  "image": {
+    "id": "sha256:577cfd5a3adcdeb8bf5475860245068e879ca82d88d1f3165849e42936a58ed0",
+    "os": "linux",
+    "architecture": "arm64"
+  },
+  "dockerServerVersion": "29.8.2",
+  "command": "node --test tests/pricing.test.mjs",
+  "sourceArchivePaths": [
+    "scripts/pricing",
+    "tests/pricing.test.mjs",
+    "tests/fixtures/pricing",
+    ".github/workflows/pricing-sync.yml",
+    "package.json"
+  ],
+  "archiveSha256": "13680a73ba2c8a6048d96e854b6fcdbd88b0d170a53cad72e9a1b5c1e02ce886",
+  "isolation": {
+    "network": "none",
+    "publishedPorts": [],
+    "sourceReadOnly": true,
+    "rootReadOnly": true,
+    "tmpfs": "/tmp:rw,exec,nosuid,nodev,size=64m",
+    "capabilities": "ALL dropped",
+    "noNewPrivileges": true,
+    "memory": "512m",
+    "cpus": 2,
+    "autoRemove": true,
+    "containerRemovalVerified": true
+  },
+  "initialAttempt": {
+    "httpOrSourceRequests": false,
+    "passed": 18,
+    "failed": 1,
+    "reason": "Docker tmpfs did not permit executing the gh test double; rerun with explicit exec on temporary /tmp."
+  },
+  "sourceSha256": {
+    "scripts/pricing/sync.mjs": "bd4d2ea8ac8bb76d78cd3ec716fd4d887d23b74179ba876865fa6692d24ba97e",
+    "scripts/pricing/parse.mjs": "cf6b4117f85de30b8113d5827eb8f765624f86133330a284f04e84658f5e0e44",
+    "scripts/pricing/sources.mjs": "252e57df4f7fcf3d2e08d1b19dbb884e1b332b6a87a6519a02cc8c029c8c7bbf",
+    "tests/pricing.test.mjs": "9558d51f9006b1892aa1a5c38b70548848f85439ac96d3a9a4fd9b2af9d63ba9",
+    ".github/workflows/pricing-sync.yml": "9b5a4be58a7b2adb8207edfce82bef80e383a6b6b5c8fa29ed810ef609f1fed9"
+  }
+}

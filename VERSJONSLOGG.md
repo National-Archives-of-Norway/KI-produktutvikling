@@ -6,6 +6,16 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 10. november 2026 – prisretting testet med Node 22 i Docker/Linux
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Testet commit `e4e580a` med faktisk Node 22.18.0 på Debian 12/Linux arm64, Git 2.39.5 og Bash 5.2.15. Alle **19/19 pristester** bestod, inkludert filflyt og workflowens faktiske shell mot lokalt bare-repo og simulert gh.
+- Testcontaineren hadde deaktivert nettverk, skrivebeskyttet kode/rotfilsystem og ingen `.env`, secrets eller virkelige prisdata montert. Kun eksisterende fixtures ble brukt; ingen nettverkskall til priskilder eller GitHub. Git ble installert fra Debian i et separat testbilde før offline-kjøringen. Ingen prosjektavhengighet eller produktkode er endret.
+- Første kjøring ga 18/19 fordi Docker sin midlertidige /tmp ikke tillot kjøring av gh-stubben. Retest av uendret kode med exec på tmpfs ga 19/19; begge utskrifter er bevart. Testcontaineren er fjernet, og ingen appcontainer ble endret.
+- Opprettet [testrapport for prisinnhentingen](docs/priser/TESTRAPPORT.md), med raw-resultater, runtime-/bildeidentitet, manifest, Dockerfile og kjøreskript i `docs/priser/2026-11-10/node22-linux/`. README peker til rapporten. Virkelig GitHub-jobb, AMD64, live prisdata og utrulling er fortsatt ikke verifisert; funksjonsregister, Beta-status og produksjonskrav videreføres.
+- Kontroller: 19/19 i Linux/Node 22, lokal `pnpm format:check` og `git diff --check`. Prosjektets snapshot.json er uendret. Hele RAG-pakken, TypeScript og produksjonsbygg er ikke kjørt på nytt i denne dokumentasjonsoppfølgingen. Ingen commit eller publisering.
+
 ### 10. november 2026 – robust prisinnhenting og én fast pris-PR
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.
