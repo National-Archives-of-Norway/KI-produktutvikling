@@ -27,7 +27,8 @@ export default function AccessibilityPage() {
       <p>
         KI-Produktutvikling utvikles i Nasjonalarkivet. Erklæringen gjelder
         nettsidene og PDF-vedlegget i den lokale utviklingsversjonen av
-        portalen.
+        portalen. Cookie-siden og den tilhørende skill-detaljsiden inngår i det
+        undersøkte utvalget.
       </p>
       <h2>Samsvar med kravene til universell utforming</h2>
       <p>
@@ -114,7 +115,7 @@ export default function AccessibilityPage() {
         <time dateTime="2026-11-10">10. november 2026</time>. Grunnlaget
         omfatter lokale nettleser- og tastaturkontroller, prøving med økt
         tekstavstand, kontrastberegninger, kontroll av animasjonens
-        pausefunksjon, simulering av prisaldervarselet, tidligere axe-skann og
+        pausefunksjon, simulering av prisaldervarselet, axe-skann og
         HTML-validering med Nu Html Checker samt målrettede PDF-kontroller.
         Tidligere undersøkelser av øvrig innhold inngår også i grunnlaget.
         Faktisk skjermleserbruk er ikke testet.

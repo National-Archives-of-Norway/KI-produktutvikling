@@ -1,10 +1,12 @@
 # WCAG-kontroll av KI-Produktutvikling
 
-**10. november 2026 · Codex (OpenAI) · tilgjengelighetsskill 0.5.0.**
+**10. november 2026 · Codex (OpenAI) · tilgjengelighetsskill 0.5.1.**
 
-Nye lokale kontroller er utført, inkludert tekstavstand, dynamiske forløp, 80 gradientforekomster, CSS-pause/start og simulert prisalder. Ingen nye bekreftede åpne brudd. **22 K / 11 I / 15 U / 0 B**. K gjelder oppgitt delomfang, I er ingen utløsende innholdstype lokalt, U er uavklart/delvis og B er bekreftet brudd. Ingen samsvarsprosent eller samlet godkjenning.
+Siste oppfølging gjelder cookie-siden og den nye cookie-skill-detaljsiden: DOM, kontrast, seks viewport-prøver, to Enter-forløp, 16 automatiske Tab-steg, 72 kontrollerte frem-/tilbake-Tab-overganger, hopp til innhold og fire tekstavstandsprøver. Ingen nye bekreftede åpne brudd. **22 K / 11 I / 15 U / 0 B** videreføres fra tidligere vurdering med opprinnelig delomfang. K er ikke automatisk Ja, I er ingen utløsende innholdstype lokalt, U er uavklart/delvis og B er bekreftet brudd. Samlet samsvar er ikke ferdig vurdert.
 
-[Ny rapport](2026-11-10/094541-e2907a5c27e2/testrapport.md), [alle gjenstående kontroller og hindringer](2026-11-10/094541-e2907a5c27e2/manuell-oppfolging.md), [testplan](2026-11-10/094541-e2907a5c27e2/testplan.json), [JSON-grunnlag](2026-11-10/094541-e2907a5c27e2/wcag-grunnlag.json).
+[Ny rapport](2026-11-10/133024-18e0f9e56386/testrapport.md), [alle 48 krav og gjenstående kontroller](2026-11-10/133024-18e0f9e56386/manuell-oppfolging.md), [testplan](2026-11-10/133024-18e0f9e56386/testplan.json), [JSON-grunnlag](2026-11-10/133024-18e0f9e56386/wcag-grunnlag.json). [Forrige brede lokale oppfølging](2026-11-10/094541-e2907a5c27e2/testrapport.md) er historikk, ikke kjørt på nytt manuelt i sin helhet.
+
+Ny axe-regresjon på 23 ruter gir 0 violations / 3 incomplete-grupper / 86 noder. Begge nye sider har 0 violations og 0 incomplete. Nu på 25 eksportfiler gir 0 feil / 207 info-noter om avsluttende skråstrek. De 86 uavklarte kontrastforekomstene på eksisterende sider er bevart; den eldre 80-node-modellen dekker ikke automatisk det utvidede utvalget. Se [original native-manifest](2026-11-10/132206-native-5c65230c/native-manifest.json). Test-CSS er identisk tilbakeført. Første for lange Tab-kjøring feilet teknisk og er bevart; kortere kjøring og kontrollert full gjennomgang er dokumentert separat.
 
 ## Hva gjenstår?
 
@@ -14,7 +16,7 @@ Faktisk skjermleser, 200/400 % forstørring, fysisk orientering/redusert bevegel
 
 ## Avklaringsplan for de 15 kravene
 
-**Plan oppdatert 10. november 2026 av Codex (OpenAI), med tilgjengelighetsskill 0.5.1.** Dette er en plan basert på siste vurderte testgrunnlag, ikke nye testresultater. Alle 15 krav beholder U inntil ny dokumentert vurdering. Testdato, siste kjøringspeker, rettede funn og samlet samsvarsstatus er uendret. Ingen påkrevd ny gjennomgang er markert som utført her.
+**Plan oppdatert 10. november 2026 av Codex (OpenAI), med tilgjengelighetsskill 0.5.1.** Planen nedenfor er bevart etter målrettet oppfølging av cookie-sidene. Alle 15 krav beholder U; lokale delprøver lukker ikke det bredere restarbeidet. Ny kjøringspeker og nye bevis er ført ovenfor. Rettede funn og samlet samsvarsstatus er uendret. Ingen påkrevd hjelpemiddel-/zoom-/pilotgjennomgang er markert som utført her.
 
 ### Hva vi trenger
 

@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-10T12:36:05.294030+00:00",
+  "node_tests": {
+    "passed": 53,
+    "failed": 0
+  },
+  "python_html_tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "pages_production_build": "passed, TypeScript and route registry included",
+  "html_basic": {
+    "passed": true,
+    "files": 25
+  },
+  "css_restored_identically": true,
+  "criterion_counts": {
+    "U": 15,
+    "I": 11,
+    "K": 22
+  },
+  "public_unresolved_ids_match": true,
+  "local_markdown_links_checked": 226,
+  "broken_links": [],
+  "declaration_readback": "1280/320 px, 15 unresolved and focused scope present, no page overflow",
+  "note": "Implementation/document verification, not full WCAG conformance. Actual test output observed in tool session; no invented full raw transcript."
+}

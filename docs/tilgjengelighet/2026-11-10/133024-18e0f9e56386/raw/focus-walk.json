@@ -1,0 +1,422 @@
+[
+  {
+    "route": "/informasjonskapsler/",
+    "forward": [
+      {
+        "href": "/",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "KI-Produktutvikling"
+      },
+      {
+        "href": "/kom-i-gang",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Kom i gang"
+      },
+      {
+        "href": "/retningslinjer",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Retningslinjer"
+      },
+      {
+        "href": "/#ressurser",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Ressurskatalog"
+      },
+      {
+        "href": "/oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Oversikt"
+      },
+      {
+        "href": "/spor",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Spør KI"
+      },
+      {
+        "href": "/om",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Om"
+      },
+      {
+        "href": "/",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "← Til forsiden"
+      },
+      {
+        "href": "https://www.datatilsynet.no/personvern-pa-ulike-omrader/internett-og-apper/bruk-av-informasjonskapsler-og-andre-sporingsteknologier/?print=true",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Datatilsynets veiledning om samtykke"
+      },
+      {
+        "href": "https://nkom.no/internett/informasjonskapsler-cookies",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Nkoms veiledning"
+      },
+      {
+        "href": "/personvern",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "personvernerklæringen"
+      },
+      {
+        "href": "mailto:khadah@nasjonalarkivet.no",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "khadah@nasjonalarkivet.no"
+      },
+      {
+        "href": "/oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Oversikt"
+      },
+      {
+        "href": "/personvern",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Personvernerklæring"
+      },
+      {
+        "href": "/informasjonskapsler",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Informasjonskapsler"
+      },
+      {
+        "href": "/tilgjengelighet",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Tilgjengelighetserklæring"
+      },
+      {
+        "href": "/nettstedskart",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Nettstedskart"
+      },
+      {
+        "href": "/versjonslogg",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Versjonslogg"
+      },
+      {
+        "href": "/utviklingsplan",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Utviklingsplan"
+      },
+      {
+        "href": "/funksjonalitet",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Funksjonalitetsoversikt"
+      }
+    ],
+    "reverse": [
+      {
+        "href": "/utviklingsplan",
+        "text": "Utviklingsplan"
+      },
+      {
+        "href": "/versjonslogg",
+        "text": "Versjonslogg"
+      },
+      {
+        "href": "/nettstedskart",
+        "text": "Nettstedskart"
+      },
+      {
+        "href": "/tilgjengelighet",
+        "text": "Tilgjengelighetserklæring"
+      },
+      {
+        "href": "/informasjonskapsler",
+        "text": "Informasjonskapsler"
+      },
+      {
+        "href": "/personvern",
+        "text": "Personvernerklæring"
+      },
+      {
+        "href": "/oversikt",
+        "text": "Oversikt"
+      },
+      {
+        "href": "mailto:khadah@nasjonalarkivet.no",
+        "text": "khadah@nasjonalarkivet.no"
+      },
+      {
+        "href": "/personvern",
+        "text": "personvernerklæringen"
+      },
+      {
+        "href": "https://nkom.no/internett/informasjonskapsler-cookies",
+        "text": "Nkoms veiledning"
+      },
+      {
+        "href": "https://www.datatilsynet.no/personvern-pa-ulike-omrader/internett-og-apper/bruk-av-informasjonskapsler-og-andre-sporingsteknologier/?print=true",
+        "text": "Datatilsynets veiledning om samtykke"
+      },
+      {
+        "href": "/",
+        "text": "← Til forsiden"
+      },
+      {
+        "href": "/om",
+        "text": "Om"
+      },
+      {
+        "href": "/spor",
+        "text": "Spør KI"
+      },
+      {
+        "href": "/oversikt",
+        "text": "Oversikt"
+      },
+      {
+        "href": "/#ressurser",
+        "text": "Ressurskatalog"
+      },
+      {
+        "href": "/retningslinjer",
+        "text": "Retningslinjer"
+      },
+      {
+        "href": "/kom-i-gang",
+        "text": "Kom i gang"
+      },
+      {
+        "href": "/",
+        "text": "KI-Produktutvikling"
+      },
+      {
+        "href": "#innhold",
+        "text": "Hopp til innhold"
+      }
+    ],
+    "skip": {
+      "id": "innhold",
+      "tag": "MAIN"
+    },
+    "snapshot": "- link \"Hopp til innhold\":\n  - /url: \"#innhold\"\n- banner:\n  - link \"KI-Produktutvikling\":\n    - /url: /\n    - text: KI-Produktutvikling\n  - navigation \"Hovedmeny\":\n    - link \"Kom i gang\":\n      - /url: /kom-i-gang\n    - link \"Retningslinjer\":\n      - /url: /retningslinjer\n    - link \"Ressurskatalog\":\n      - /url: /#ressurser\n    - link \"Oversikt\":\n      - /url: /oversikt\n    - link \"Spør KI\":\n      - /url: /spor\n    - link \"Om\":\n      - /url: /om\n- main:\n  - article:\n    - link \"← Til forsiden\":\n      - /url: /\n    - generic: INFORMASJONSKAPSLER · LOKAL KONTROLL\n    - heading \"Informasjonskapsler og nettleserlagring\" [level=1]\n    - paragraph: Her finner du hva vi har undersøkt om cookies og annen lagring i KI-Produktutvikling, og hva som må avklares før delt drift.\n    - complementary: Utkast, kontrollert 10. november 2026 i den lokale utviklingsutgaven. Dette er ikke en bekreftet oversikt over en framtidig produksjonstjeneste.\n    - heading \"Bruk av cookies og behov for samtykke\" [level=2]\n    - paragraph: Det ble ikke observert informasjonskapsler eller oppføringer i localStorage, sessionStorage, IndexedDB eller Cache Storage i det undersøkte lokale utvalget. Anonyme HTTP-kontroller av 21 sidestier viste heller ingen Set-Cookie-headere. Vi undersøkte navigasjon og blant annet katalogsøk, filtrering, pause av animasjonen, et chatspørsmål, prisvilkår og ny innlasting.\n    - list:\n      - listitem: \"Informasjonskapsler: ingen navn observert i nettleseren eller i de undersøkte dokumentresponsene.\"\n      - listitem: \"localStorage og sessionStorage: ingen lagrede nøkler observert.\"\n      - listitem: \"IndexedDB og Cache Storage: ingen databaser eller cache-navn observert.\"\n      - listitem: \"Eksternt innhold: ingen eksterne script-/iframe-origins eller eksterne ressursorigins ble registrert i dette utvalget. Dette er ikke en full nettverksanalyse.\"\n    - paragraph: Siden vi ikke fant aktive lagringsoppføringer i utvalget, har vi ingen bekreftede cookie-navn, leverandører eller lagringstider å oppgi for disse oppføringene. Vi oppgir ikke eksempelkapsler eller en standard varighet som om de var i bruk hos oss.\n    - heading \"Trenger portalen et samtykkebanner?\" [level=2]\n    - paragraph: Det er ikke påvist behov for et samtykkebanner i den kontrollerte lokale utgaven. Vi har derfor ikke lagt inn et banner. Dette gjelder de undersøkte funksjonene og miljøet; behovet skal vurderes på nytt før delt drift og ved nye integrasjoner.\n    - paragraph:\n      - text: Dersom samtykkepliktig lagring eller sporing innføres, må bruken vente på et gyldig samtykke. Da må brukerne få forståelige valg, enkel avvisning og mulighet til å trekke samtykket tilbake. Teknologi som omfattes av unntakene skal vurderes ut fra faktisk formål. Se\n      - link \"Datatilsynets veiledning om samtykke\":\n        - /url: https://www.datatilsynet.no/personvern-pa-ulike-omrader/internett-og-apper/bruk-av-informasjonskapsler-og-andre-sporingsteknologier/?print=true\n      - text: og\n      - link \"Nkoms veiledning\":\n        - /url: https://nkom.no/internett/informasjonskapsler-cookies\n      - text: .\n    - heading \"Hva kontrollen ikke avklarer\" [level=2]\n    - paragraph: Nettleserkontrollen viser metadata fra et eksisterende lokalt testmiljø. Den gir ikke full tilgang til HttpOnly- eller tredjepartslagring i alle tilstander. Utviklingsverktøy og avhengigheter kan oppføre seg annerledes enn en produksjonsutgave. Innlogging, framtidig driftsplattform, proxy/CDN, analyseverktøy og innebygde tjenester må undersøkes i det miljøet som faktisk skal tas i bruk.\n    - heading \"Søk og Spør KI\" [level=2]\n    - paragraph:\n      - text: Katalogvalg og chatvisning bruker midlertidig tilstand mens siden er åpen. Ved kontrollen ga det syntetiske chatspørsmålet kildebasert veiledning uten språkmodell. Serverbehandling, eventuelle logger og framtidig modellbruk er andre forhold enn cookies. Les mer i\n      - link \"personvernerklæringen\":\n        - /url: /personvern\n      - text: .\n    - heading \"Spørsmål og oppdatering\" [level=2]\n    - paragraph:\n      - text: Ta kontakt på\n      - link \"khadah@nasjonalarkivet.no\":\n        - /url: mailto:khadah@nasjonalarkivet.no\n      - text: hvis du har spørsmål om kartleggingen. Oversikten må oppdateres når innlogging, drift, analyse, innebygget innhold eller nettleserlagring endres.\n- contentinfo:\n  - text: KI-Produktutvikling\n  - navigation \"Informasjon om nettstedet\":\n    - link \"Oversikt\":\n      - /url: /oversikt\n    - link \"Personvernerklæring\":\n      - /url: /personvern\n    - link \"Informasjonskapsler\":\n      - /url: /informasjonskapsler\n    - link \"Tilgjengelighetserklæring\":\n      - /url: /tilgjengelighet\n    - link \"Nettstedskart\":\n      - /url: /nettstedskart\n    - link \"Versjonslogg\":\n      - /url: /versjonslogg\n    - link \"Utviklingsplan\":\n      - /url: /utviklingsplan\n    - link \"Funksjonalitetsoversikt\":\n      - /url: /funksjonalitet\n- button \"Open Next.js Dev Tools\":\n- alert"
+  },
+  {
+    "route": "/ressurser/informasjonskapsler-og-samtykke/",
+    "forward": [
+      {
+        "href": "/",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "KI-Produktutvikling"
+      },
+      {
+        "href": "/kom-i-gang",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Kom i gang"
+      },
+      {
+        "href": "/retningslinjer",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Retningslinjer"
+      },
+      {
+        "href": "/#ressurser",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Ressurskatalog"
+      },
+      {
+        "href": "/oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Oversikt"
+      },
+      {
+        "href": "/spor",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Spør KI"
+      },
+      {
+        "href": "/om",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Om"
+      },
+      {
+        "href": "/#ressurser",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "← Til ressurskatalogen"
+      },
+      {
+        "href": "/oversikt",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Oversikt"
+      },
+      {
+        "href": "/personvern",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Personvernerklæring"
+      },
+      {
+        "href": "/informasjonskapsler",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Informasjonskapsler"
+      },
+      {
+        "href": "/tilgjengelighet",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Tilgjengelighetserklæring"
+      },
+      {
+        "href": "/nettstedskart",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Nettstedskart"
+      },
+      {
+        "href": "/versjonslogg",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Versjonslogg"
+      },
+      {
+        "href": "/utviklingsplan",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Utviklingsplan"
+      },
+      {
+        "href": "/funksjonalitet",
+        "outline": "rgb(157, 241, 173) solid 3px",
+        "shadow": "none",
+        "tag": "A",
+        "text": "Funksjonalitetsoversikt"
+      }
+    ],
+    "reverse": [
+      {
+        "href": "/utviklingsplan",
+        "text": "Utviklingsplan"
+      },
+      {
+        "href": "/versjonslogg",
+        "text": "Versjonslogg"
+      },
+      {
+        "href": "/nettstedskart",
+        "text": "Nettstedskart"
+      },
+      {
+        "href": "/tilgjengelighet",
+        "text": "Tilgjengelighetserklæring"
+      },
+      {
+        "href": "/informasjonskapsler",
+        "text": "Informasjonskapsler"
+      },
+      {
+        "href": "/personvern",
+        "text": "Personvernerklæring"
+      },
+      {
+        "href": "/oversikt",
+        "text": "Oversikt"
+      },
+      {
+        "href": "/#ressurser",
+        "text": "← Til ressurskatalogen"
+      },
+      {
+        "href": "/om",
+        "text": "Om"
+      },
+      {
+        "href": "/spor",
+        "text": "Spør KI"
+      },
+      {
+        "href": "/oversikt",
+        "text": "Oversikt"
+      },
+      {
+        "href": "/#ressurser",
+        "text": "Ressurskatalog"
+      },
+      {
+        "href": "/retningslinjer",
+        "text": "Retningslinjer"
+      },
+      {
+        "href": "/kom-i-gang",
+        "text": "Kom i gang"
+      },
+      {
+        "href": "/",
+        "text": "KI-Produktutvikling"
+      },
+      {
+        "href": "#innhold",
+        "text": "Hopp til innhold"
+      }
+    ],
+    "skip": {
+      "id": "innhold",
+      "tag": "MAIN"
+    },
+    "snapshot": "- link \"Hopp til innhold\":\n  - /url: \"#innhold\"\n- banner:\n  - link \"KI-Produktutvikling\":\n    - /url: /\n    - text: KI-Produktutvikling\n  - navigation \"Hovedmeny\":\n    - link \"Kom i gang\":\n      - /url: /kom-i-gang\n    - link \"Retningslinjer\":\n      - /url: /retningslinjer\n    - link \"Ressurskatalog\":\n      - /url: /#ressurser\n    - link \"Oversikt\":\n      - /url: /oversikt\n    - link \"Spør KI\":\n      - /url: /spor\n    - link \"Om\":\n      - /url: /om\n- main:\n  - article:\n    - link \"← Til ressurskatalogen\":\n      - /url: /#ressurser\n    - generic: SKILL · BETA\n    - heading \"Kartlegg informasjonskapsler og samtykke\" [level=1]\n    - paragraph: Undersøk cookies, annen nettleserlagring og sporing, avklar behovet for samtykke og utform cookie-informasjon fra faktiske funn.\n    - paragraph: \"Beta: Denne skillen er ennå ikke gjennomgått av et menneske.\"\n    - region \"Om skillen\":\n      - heading \"Om skillen\" [level=2]\n      - paragraph:\n        - text: \"Versjon 0.1.0. Skill-bibliotek:\"\n        - strong: Skills\n        - text: \", i mappen\"\n        - code: skills/informasjonskapsler-og-samtykke\n        - text: . Distribusjon via GitHub eller nedlasting fra portalen er foreløpig ikke satt opp.\n      - paragraph: Selvstendig kartlegging med egne kilder, testveiledning og mal. Et Python-verktøy undersøker kildeindikatorer og anonyme HTTP-responser, importerer redigerte nettlesermetadata og lagrer daterte resultater. Assistenten vurderer bannerbehov og oppdaterer cookie-informasjonen.\n    - heading \"Når passer dette?\" [level=2]\n    - paragraph: Bruk skillen selvstendig ved oppstart eller endringer i drift, innlogging, analyse og innebygget innhold. Ingen andre skills eller tidligere rapporter er nødvendige.\n    - heading \"Slik prøver du det\" [level=2]\n    - list:\n      - listitem: Hent hele mappen informasjonskapsler-og-samtykke fra Skills-biblioteket, og installer den i assistentens skill-katalog.\n      - listitem: Oppgi prosjektmappe, faktisk nettadresse, miljø og relevante brukerforløp. Ikke oppgi nøkler eller lagringsverdier.\n      - listitem: Be assistenten undersøke kildekode, HTTP og nettlesermetadata med tilgjengelige, tillatte verktøy. Manglende innsyn skal dokumenteres.\n      - listitem: Lagre redigerte metadata og vurdering i en egen datert mappe under docs/informasjonskapsler/ i målprosjektet.\n      - listitem: Avklar samtykkebehov før et banner implementeres. Oppdater cookie-informasjon, README og versjonslogg fra faktisk grunnlag.\n    - heading \"Eksempel på bruk\" [level=2]\n    - code: Bruk $informasjonskapsler-og-samtykke til å kartlegge [prosjektmappe] på [URL/miljø], lagre resultatene og oppdatere cookie-informasjonen. Vurder behovet for samtykkebanner før implementering. Skillen skal kunne kjøres uten andre skills.\n    - complementary: Krever ingen andre skills. En skann avgjør ikke alene nødvendighet eller juridisk samsvar. HttpOnly, tredjeparter, innlogging og faktisk produksjon kan kreve ytterligere tilgang eller manuell kontroll. Samtykke implementeres bare når det er bestilt og behovet er avklart. Bruk bare verktøy og data virksomheten har godkjent.\n- contentinfo:\n  - text: KI-Produktutvikling\n  - navigation \"Informasjon om nettstedet\":\n    - link \"Oversikt\":\n      - /url: /oversikt\n    - link \"Personvernerklæring\":\n      - /url: /personvern\n    - link \"Informasjonskapsler\":\n      - /url: /informasjonskapsler\n    - link \"Tilgjengelighetserklæring\":\n      - /url: /tilgjengelighet\n    - link \"Nettstedskart\":\n      - /url: /nettstedskart\n    - link \"Versjonslogg\":\n      - /url: /versjonslogg\n    - link \"Utviklingsplan\":\n      - /url: /utviklingsplan\n    - link \"Funksjonalitetsoversikt\":\n      - /url: /funksjonalitet"
+  }
+]

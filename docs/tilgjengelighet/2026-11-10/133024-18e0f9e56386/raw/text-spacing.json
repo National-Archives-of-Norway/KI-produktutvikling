@@ -1,0 +1,172 @@
+[
+  {
+    "route": "/informasjonskapsler/",
+    "measurement": {
+      "fontSize": "21px",
+      "headings": [
+        {
+          "scrollWidth": 760,
+          "text": "Informasjonskapsler og nettleserlagring",
+          "width": 760
+        },
+        {
+          "scrollWidth": 760,
+          "text": "Bruk av cookies og behov for samtykke",
+          "width": 760
+        },
+        {
+          "scrollWidth": 760,
+          "text": "Trenger portalen et samtykkebanner?",
+          "width": 760
+        },
+        {
+          "scrollWidth": 760,
+          "text": "Hva kontrollen ikke avklarer",
+          "width": 760
+        },
+        {
+          "scrollWidth": 760,
+          "text": "Søk og Spør KI",
+          "width": 760
+        },
+        {
+          "scrollWidth": 760,
+          "text": "Spørsmål og oppdatering",
+          "width": 760
+        }
+      ],
+      "letterSpacing": "2.52px",
+      "lineHeight": "31.5px",
+      "marginBottom": "42px",
+      "scrollWidth": 1280,
+      "width": 1280,
+      "wordSpacing": "3.36px"
+    },
+    "screenshot": "screenshots/spacing-0-1280.png"
+  },
+  {
+    "route": "/informasjonskapsler/",
+    "measurement": {
+      "fontSize": "21px",
+      "headings": [
+        {
+          "scrollWidth": 280,
+          "text": "Informasjonskapsler og nettleserlagring",
+          "width": 280
+        },
+        {
+          "scrollWidth": 280,
+          "text": "Bruk av cookies og behov for samtykke",
+          "width": 280
+        },
+        {
+          "scrollWidth": 280,
+          "text": "Trenger portalen et samtykkebanner?",
+          "width": 280
+        },
+        {
+          "scrollWidth": 280,
+          "text": "Hva kontrollen ikke avklarer",
+          "width": 280
+        },
+        {
+          "scrollWidth": 280,
+          "text": "Søk og Spør KI",
+          "width": 280
+        },
+        {
+          "scrollWidth": 280,
+          "text": "Spørsmål og oppdatering",
+          "width": 280
+        }
+      ],
+      "letterSpacing": "2.52px",
+      "lineHeight": "31.5px",
+      "marginBottom": "42px",
+      "scrollWidth": 320,
+      "width": 320,
+      "wordSpacing": "3.36px"
+    },
+    "screenshot": "screenshots/spacing-0-320.png"
+  },
+  {
+    "route": "/ressurser/informasjonskapsler-og-samtykke/",
+    "measurement": {
+      "fontSize": "21px",
+      "headings": [
+        {
+          "scrollWidth": 760,
+          "text": "Kartlegg informasjonskapsler og samtykke",
+          "width": 760
+        },
+        {
+          "scrollWidth": 760,
+          "text": "Om skillen",
+          "width": 760
+        },
+        {
+          "scrollWidth": 760,
+          "text": "Når passer dette?",
+          "width": 760
+        },
+        {
+          "scrollWidth": 760,
+          "text": "Slik prøver du det",
+          "width": 760
+        },
+        {
+          "scrollWidth": 760,
+          "text": "Eksempel på bruk",
+          "width": 760
+        }
+      ],
+      "letterSpacing": "2.52px",
+      "lineHeight": "31.5px",
+      "marginBottom": "42px",
+      "scrollWidth": 1280,
+      "width": 1280,
+      "wordSpacing": "3.36px"
+    },
+    "screenshot": "screenshots/spacing-1-1280.png"
+  },
+  {
+    "route": "/ressurser/informasjonskapsler-og-samtykke/",
+    "measurement": {
+      "fontSize": "21px",
+      "headings": [
+        {
+          "scrollWidth": 280,
+          "text": "Kartlegg informasjonskapsler og samtykke",
+          "width": 280
+        },
+        {
+          "scrollWidth": 280,
+          "text": "Om skillen",
+          "width": 280
+        },
+        {
+          "scrollWidth": 280,
+          "text": "Når passer dette?",
+          "width": 280
+        },
+        {
+          "scrollWidth": 280,
+          "text": "Slik prøver du det",
+          "width": 280
+        },
+        {
+          "scrollWidth": 280,
+          "text": "Eksempel på bruk",
+          "width": 280
+        }
+      ],
+      "letterSpacing": "2.52px",
+      "lineHeight": "31.5px",
+      "marginBottom": "42px",
+      "scrollWidth": 320,
+      "width": 320,
+      "wordSpacing": "3.36px"
+    },
+    "screenshot": "screenshots/spacing-1-320.png"
+  }
+]

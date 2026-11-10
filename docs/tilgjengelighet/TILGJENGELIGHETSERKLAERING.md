@@ -4,7 +4,7 @@
 
 ## Om nettstedet
 
-KI-Produktutvikling utvikles i Nasjonalarkivet. Erklæringen gjelder nettsidene og PDF-vedlegget i den lokale utviklingsversjonen av portalen.
+KI-Produktutvikling utvikles i Nasjonalarkivet. Erklæringen gjelder nettsidene og PDF-vedlegget i den lokale utviklingsversjonen av portalen. Cookie-siden og den tilhørende skill-detaljsiden inngår i det undersøkte utvalget.
 
 ## Samsvar med kravene til universell utforming
 
@@ -61,6 +61,6 @@ Hvis du ikke får svar, er misfornøyd med svaret eller ikke kan bruke nettstede
 
 ## Vurdering og oppdatering
 
-Tilgjengeligheten ble sist vurdert **10. november 2026**. Grunnlaget omfatter lokale nettleser- og tastaturkontroller, prøving med økt tekstavstand, kontrastberegninger, kontroll av animasjonens pausefunksjon, simulering av prisaldervarselet, tidligere axe-skann og HTML-validering med Nu Html Checker samt målrettede PDF-kontroller. Tidligere undersøkelser av øvrig innhold inngår også i grunnlaget. Faktisk skjermleserbruk er ikke testet.
+Tilgjengeligheten ble sist vurdert **10. november 2026**. Grunnlaget omfatter lokale nettleser- og tastaturkontroller, prøving med økt tekstavstand, kontrastberegninger, kontroll av animasjonens pausefunksjon, simulering av prisaldervarselet, axe-skann og HTML-validering med Nu Html Checker samt målrettede PDF-kontroller. Tidligere undersøkelser av øvrig innhold inngår også i grunnlaget. Faktisk skjermleserbruk er ikke testet.
 
 Teksten ble sist oppdatert **10. november 2026**.

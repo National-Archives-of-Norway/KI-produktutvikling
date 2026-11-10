@@ -1,5 +1,11 @@
 # Kravvis gjennomgang med skill 0.4.0 – 9. november 2026
 
+## Målrettet cookie-/skill-kontroll – 10. november 2026
+
+Siste vurderte resultat: [rapport](docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386/testrapport.md) og [48-kravsrestliste](docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386/manuell-oppfolging.md). To nye sider med seks viewport-prøver, to Enter-forløp, 16 automatiske Tab-steg, 72 kontrollerte frem-/tilbake-Tab-overganger, skip-link og fire tekstavstandsprøver. Ingen nytt bekreftet brudd. Full native-regresjon: 23 ruter, 0 axe-violations / 3 incomplete-grupper / 86 noder; 25 HTML-filer, 0 Nu-feil / 207 tekniske info-noter. Begge nye sider har 0 violations/incomplete. Den tidligere 80-node-modellen godkjenner ikke automatisk nye forekomster.
+
+22 K / 11 I / 15 U / 0 B er videreførte arbeidsstatuser, ikke samlet samsvar. Skjermleser, faktisk zoom, fysisk enhet og videre faglig-/pilotvurdering gjenstår; ingen banner finnes å teste. Første lange Tab-kjøring feilet teknisk og er bevart; vellykket kort og full kontrollert gjennomgang er dokumentert. Midlertidig test-CSS er identisk tilbakeført. Tidligere avsnitt er datert historikk.
+
 ## Plan for gjenstående tilgjengelighetsvurdering – 10. november 2026
 
 [WCAG-kontrollens kravvise avklaringsplan](docs/tilgjengelighet/WCAG-KONTROLL.md#avklaringsplan-for-de-15-kravene) beskriver hva som trengs for hvert av de 15 U-kravene: kompetanse/verktøy, testhandling, forventet resultat og evidens. Den skiller lokale kontroller fra beskyttet pilot og faglige vurderinger. Ingen nye testresultater eller endret samsvarsstatus i denne planoppdateringen; siste faktiske testgrunnlag er fortsatt kjøringen som `docs/tilgjengelighet/latest.json` viser.

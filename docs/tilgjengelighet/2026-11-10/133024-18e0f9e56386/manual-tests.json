@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-10",
+  "agent": "Codex (OpenAI)",
+  "scope": "Målrettet lokal nettleser-/tastatur-/tekstavstandskontroll av /informasjonskapsler/ og /ressurser/informasjonskapsler-og-samtykke/. Ny axe-regresjon på 23 ruter og Nu/HTML på 25 eksportfiler. Tidligere vurderinger videreføres med opprinnelig omfang og dato; ingen ny full manuell revisjon av alle sider eller 48 krav.",
+  "results": [
+    {
+      "method": "browser_checks.mjs 0.5.1",
+      "routes": [
+        "/informasjonskapsler/",
+        "/ressurser/informasjonskapsler-og-samtykke/"
+      ],
+      "result": "DOM, contrast, reflow, keyboard and declared states completed without candidate. Two routes, six viewport measurements, 16 Tab steps, two actual Enter flows.",
+      "evidence": "raw/focused-browser-original.json"
+    },
+    {
+      "method": "Full forward/reverse keyboard sequence and skip-link activation",
+      "result": "20 forward + 20 reverse transitions on cookie-page; 16 + 16 on skill-page. Stop at first/last product link, not developer tools. Both skip links move actual focus to MAIN#innhold. Final footer link outline rgb(157,241,173) solid 3px. No trap or unexpected sequence observed.",
+      "evidence": "raw/focus-walk.json"
+    },
+    {
+      "method": "Text spacing with temporary source CSS and visual review",
+      "result": "Four measurements at 320/1280 ×800: applied 1.5 line-height, .12em letters, .16em words, 2em paragraph margin confirmed. No page overflow, clipped headings or lost content observed; long words/code wrap. Source CSS restored byte for byte.",
+      "evidence": [
+        "raw/text-spacing.json",
+        "raw/css-restoration.json",
+        "screenshots/spacing-0-320.png",
+        "screenshots/spacing-1-320.png",
+        "screenshots/spacing-0-1280.png",
+        "screenshots/spacing-1-1280.png"
+      ]
+    },
+    {
+      "method": "DOM/snapshot and visual content review",
+      "result": "One named H1 per page, ordered H2 sections, ordinary links and lists. Cookie side has descriptive external authority links, privacy link and mailto; skill side has ordered five-step instructions, visible Beta status and wrapped example. Norwegian prose with technical identifiers. DOM/AX is not actual screen-reader reading. No forms, media or consent banner on the two pages.",
+      "evidence": "raw/focus-walk.json"
+    }
+  ],
+  "technical_failure": {
+    "evidence": "raw/browser-first-attempt.json",
+    "reason": "Initial 32-Tab attempt passed beyond page controls and locator body timed out; keyboard part errored on both routes. Preserved rather than reported successful. Successful 8-step re-run and controlled full forward/reverse walkthrough recorded separately."
+  },
+  "limitations": [
+    "Actual screen reader and speech not tested.",
+    "320px is viewport, not actual 200/400% zoom.",
+    "Physical rotation, OS reduced motion, native hover and other browser combinations not tested. Previous native Chrome access was rejected, not re-requested.",
+    "No consent banner exists; banner keyboard/dialog/choice behavior cannot be tested.",
+    "No authentication, external model API or production deployment in scope.",
+    "PDF structural helper repeated; no new manual PDF or language/reading-order assessment.",
+    "New catalog axe incomplete nodes on homepage require continued manual contrast review."
+  ]
+}

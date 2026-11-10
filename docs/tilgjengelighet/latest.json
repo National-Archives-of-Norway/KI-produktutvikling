@@ -1,10 +1,12 @@
 {
-  "run_directory": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+  "run_directory": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386",
   "automatic_status": "needs_review",
   "overall_conformance": "not_assessed",
-  "manifest": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2/manifest.json",
-  "review_status": "local_remaining_checks_reviewed_with_explicit_limits",
-  "reviewed_at": "2026-11-10T08:59:14.367653+00:00",
+  "manifest": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386/manifest.json",
+  "review_status": "focused_cookie_and_skill_pages_reviewed_with_previous_assessment",
+  "reviewed_at": "2026-11-10T12:34:00.646578+00:00",
+  "previous_run": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2",
+  "native_run": "docs/tilgjengelighet/2026-11-10/132206-native-5c65230c",
   "confirmed_findings": 0,
   "open_findings": [],
   "fixed_findings": [
@@ -21,9 +23,6 @@
     "U": 15,
     "B": 0
   },
-  "previous_run": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6",
-  "native_run": "docs/tilgjengelighet/2026-11-10/100139-native-b7a19485",
   "manual_remaining": 36,
-  "completed_local_manual_sample": 1,
-  "native_postverification": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2/raw/native-postverification.json"
+  "completed_local_manual_sample": 1
 }

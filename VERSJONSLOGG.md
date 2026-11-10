@@ -4,6 +4,17 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 «Agent» betyr kodeassistenten som utførte arbeidet. Git-forfatteren registreres separat av Git og kan være personen som oppretter commiten. Eksakt modellvariant er ikke registrert for tidligere arbeid og oppgis derfor ikke. Ingen underagenter ble brukt til kvalitetskontrollen eller opprettelsen av denne loggen.
 
+## Ikke utgitt – tilgjengelighetskontroll av cookie-sider – 10. november 2026
+
+**Utførende agent:** Codex (OpenAI), med `tilgjengelighetserklaering` 0.5.1. Ingen underagenter.
+
+- Kjørt skillens nettlesermodul og `run_checks.py --auto` på cookie-siden og den nye cookie-skill-detaljsiden. Seks viewport-prøver, to Enter-forløp, 16 automatiske Tab-steg, 72 kontrollerte frem-/tilbake-Tab-overganger med hopp til innhold og fire tekstavstandsprøver ved 320/1280 px. Ingen ny bekreftet åpen feil. Test-CSS er tilbakeført byte for byte. Første for lange Tab-kjøring feilet teknisk; råfeil, vellykket kortere kjøring og separat full gjennomgang er bevart.
+- Ny lokal axe-regresjon på 23 ruter: 0 violations / 3 incomplete-grupper / 86 nodeforekomster. Begge nye sider har 0 violations og 0 incomplete. Nu på 25 HTML-filer: 0 feil / 207 info-noter om avsluttende skråstrek. Tidligere modell for 80 gradientforekomster er historisk delbevis og brukes ikke som automatisk godkjenning av det utvidede utvalget.
+- Lagret vurdert grunnlag i `docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386/`, med uendret originalmanifest, raw/initial-filer, vurdert 48-kravsmatrise/testplan, nye bevis, rapport og restliste. Oppdatert latest-peker, erklæringen/portalsiden, README, WCAG-kontroll, kvalitetskontroll og utviklingsplan. Tidligere rapporter/rettede funn er bevart med dato/omfang.
+- 22 K / 11 I / 15 U / 0 B og uavklart samlet samsvar videreføres. Faktisk skjermleser, 200/400 % zoom, fysisk enhet, videre faglig vurdering og produksjon er ikke testet nå. Ingen banner finnes og ingen bannerkontroll påstås. Ingen produktrettinger, endringer i Skills-repoet, commit eller publisering.
+
+- Sluttverifisering: 53 Node-tester, tre Python-tester, Pages-produksjonsbygg med TypeScript/ruteregister og HTML-grunnkontroll for 25 eksportfiler bestod. Erklæringen er lest tilbake ved 1280/320 px uten sideoverflyt; kravlisten er avstemt mot 15 U-rader. Lokale dokument-/evidenslenker, CSS-gjenoppretting, formatering og Git-diff er kontrollert.
+
 ## Ikke utgitt – selvstendig cookie-skill og cookie-side – 10. november 2026
 
 **Utførende agent:** Codex (OpenAI), med `skill-creator` og den nye `informasjonskapsler-og-samtykke` 0.1.0. Ingen underagenter.

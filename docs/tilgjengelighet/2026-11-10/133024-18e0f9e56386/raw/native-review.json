@@ -1,0 +1,42 @@
+{
+  "native_manifest": "docs/tilgjengelighet/2026-11-10/132206-native-5c65230c/native-manifest.json",
+  "routes": 23,
+  "violations": 0,
+  "incomplete_groups": 3,
+  "incomplete_nodes": 86,
+  "incomplete": [
+    {
+      "route": "/",
+      "rule": "color-contrast",
+      "nodes": 62
+    },
+    {
+      "route": "/spor/",
+      "rule": "color-contrast",
+      "nodes": 6
+    },
+    {
+      "route": "/oversikt/",
+      "rule": "color-contrast",
+      "nodes": 18
+    }
+  ],
+  "validator_errors": 0,
+  "validator_info": 207,
+  "validator_review": "207 info messages only: trailing slash on void elements. No HTML errors.",
+  "focused_routes": [
+    {
+      "route": "/informasjonskapsler/",
+      "axe_original": "docs/tilgjengelighet/2026-11-10/132206-native-5c65230c/raw/axe-15.json",
+      "violations": 0,
+      "incomplete": 0
+    },
+    {
+      "route": "/ressurser/informasjonskapsler-og-samtykke/",
+      "axe_original": "docs/tilgjengelighet/2026-11-10/132206-native-5c65230c/raw/axe-03.json",
+      "violations": 0,
+      "incomplete": 0
+    }
+  ],
+  "incomplete_review": "86 occurrences in three existing page groups. Previous background model covers the previous 80 occurrences only; expanded catalog changes targets/count by net six. Current 86 are retained as incomplete, not converted to pass. Continue contrast/interactive review under 1.4.3. No incomplete on the two focused pages."
+}
