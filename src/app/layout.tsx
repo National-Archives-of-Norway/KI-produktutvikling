@@ -41,7 +41,6 @@ export default function RootLayout({
                 className="footer-links"
                 aria-label="Informasjon om nettstedet"
               >
-                <Link href="/oversikt/">Oversikt</Link>
                 <Link href="/personvern/">Personvernerklæring</Link>
                 <Link href="/informasjonskapsler/">Informasjonskapsler</Link>
                 <Link href="/tilgjengelighet/">Tilgjengelighetserklæring</Link>

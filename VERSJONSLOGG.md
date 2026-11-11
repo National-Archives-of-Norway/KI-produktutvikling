@@ -6,6 +6,22 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 11. november 2026 – fjernet Oversikt fra bunnmenyen
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Fjernet lenken Oversikt fra bunnmenyen etter ønske. Oversikt er fortsatt tilgjengelig fra hovedmenyen; sidene og funksjonaliteten er beholdt. Funksjonsregister og utviklingsplan er vurdert og videreføres uten endret modenhet eller produksjonsstatus.
+- Oppdatert den lokale Docker-forhåndsvisningen på port 3005 fra arbeidskopien (ffca8a1 med denne ukommiterte endringen). Linux-produksjonsbygget og HTML-kontroll bestod: HTTP 200, ingen Oversikt-lenke i footer og fortsatt Oversikt i header. Prettier-kontroll av de berørte filene og git diff --check bestod. Forrige Docker-loggføring er bevart; ingen commit, push eller ekstern publisering.
+
+### 11. november 2026 – oppdatert lokal Docker-forhåndsvisning
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Fant ingen eksisterende portalcontainer eller Compose-prosjekt; port 3000/3001 var lokale Node-prosesser. Bygget derfor ki-produktutvikling:local fra commit ffca8a1 i en midlertidig byggkontekst, med Node 24.22.2 og avhengigheter kontrollert mot uendret package.json/låsefil. Linux-produksjonsbygget bestod uten nettverk. Ingen .env.local, host node_modules, Git-metadata eller modellnøkler ble kopiert.
+- Startet container ki-produktutvikling-local med lokal binding 127.0.0.1:3005 til Next på containerport 3000; RAG kjører på intern loopback 3001 med MODEL_PROVIDER=none. Den eksisterende Node-siden er ikke stoppet eller rekonfigurert. Dette er en lokal forhåndsvisning, ikke et nytt produksjons-/Compose-oppsett i repoet.
+- Kontrollert HTTP 200 for forsiden og RAG-proxyen; syntetisk kontekstspørsmål ga kildebasert svar med tydelig-kontekst først. Gammel korttekst finnes ikke i forsidens HTML. Nettleserkontroll bekrefter skill-kort uten underteksten og med Beta-etikett; den oppdaterte ressurskatalogen er åpnet på port 3005. Ingen priskilder eller ekte modell er kalt.
+- Funksjonsregister og utviklingsplan er vurdert og videreføres uten nye funksjoner, modenhetsendring eller produksjonsgodkjenning. Ingen commit, push eller ekstern publisering. Prettier-kontroll av versjonsloggen og git diff --check bestod etter loggføringen.
+
 ### 11. november 2026 – enklere skill-kort
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.
