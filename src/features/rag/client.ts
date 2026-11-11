@@ -1,4 +1,5 @@
 import {
+  REQUEST_CANCELLED,
   isResult,
   isSources,
   type RagRequest,
@@ -11,12 +12,14 @@ export async function requestAnswer(
   question: string,
   options: { demo: boolean; fetcher?: typeof fetch; signal?: AbortSignal },
 ): Promise<AnswerOutcome> {
+  if (options.signal?.aborted) return { error: REQUEST_CANCELLED };
   if (options.demo) {
     // Next erstatter dette med en byggkonstant. Serverbygget skal ikke engang
     // sende demoens retrieval-chunk; Node-testene uten byggvariabel kan prøve demo.
     try {
       if (process.env.NEXT_PUBLIC_STATIC_DEMO !== "false") {
         const { retrieve } = await import("./retrieval.ts");
+        if (options.signal?.aborted) return { error: REQUEST_CANCELLED };
         return {
           result: {
             mode: "sources",
@@ -60,6 +63,7 @@ export async function requestAnswer(
           "Tjenesten eller mellomtjeneren returnerte et uventet svarformat (forventet JSON). Prøv igjen om litt.",
       };
     }
+    if (options.signal?.aborted) return { error: REQUEST_CANCELLED };
     const fallback = isSources(data?.sources)
       ? {
           result: {
@@ -84,7 +88,7 @@ export async function requestAnswer(
       };
     return { result: data };
   } catch (error) {
-    if (options.signal?.aborted) return { error: "Forespørselen ble avbrutt." };
+    if (options.signal?.aborted) return { error: REQUEST_CANCELLED };
     if (error instanceof Error && error.name === "TimeoutError")
       return {
         error: "Kunnskapstjenesten brukte for lang tid. Prøv igjen om litt.",

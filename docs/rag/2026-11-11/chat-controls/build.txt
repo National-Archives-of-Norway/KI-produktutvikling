@@ -1,0 +1,48 @@
+$ next build
+▲ Next.js 16.4.3 (Turbopack)
+✓ Running next.config.ts took 473ms
+- Experiments (use with caution):
+  · proxyTimeout: 65000
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 1395ms
+  Running TypeScript ...
+  Finished TypeScript in 2.9s ...
+  Collecting page data using 17 workers ...
+  Generating static pages using 17 workers (0/27) ...
+  Generating static pages using 17 workers (6/27) 
+  Generating static pages using 17 workers (13/27) 
+  Generating static pages using 17 workers (20/27) 
+✓ Generating static pages using 17 workers (27/27) in 219ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /apple-icon.png
+├ ○ /funksjonalitet
+├ ○ /icon.svg
+├ ○ /informasjonskapsler
+├ ○ /kom-i-gang
+├ ○ /nettstedskart
+├ ○ /om
+├ ○ /oversikt
+├ ○ /oversikt/godkjente-ki-assistenter
+├ ○ /oversikt/godkjente-mcper
+├ ○ /personvern
+├ ○ /priser
+├   /ressurser/[slug]
+│ ├ ● /ressurser/tilgjengelighetserklaering
+│ ├ ● /ressurser/informasjonskapsler-og-samtykke
+│ ├ ● /ressurser/personvernerklaering
+│ └ ● [+3 more paths]
+├ ○ /retningslinjer
+├ ○ /spor
+├ ○ /tilgjengelighet
+├ ○ /utviklingsplan
+└ ○ /versjonslogg
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+

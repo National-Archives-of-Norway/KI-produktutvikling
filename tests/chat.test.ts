@@ -94,3 +94,91 @@ test("serverbygg med demo deaktivert laster ikke demo og gjør ikke feil API-kal
     else process.env.NEXT_PUBLIC_STATIC_DEMO = previous;
   }
 });
+
+test("avbrudd frigjør turen, og sent svar kan ikke overskrive ny innsending", () => {
+  let state = chatReducer(initialChatState, {
+    type: "start",
+    id: 1,
+    question: "første",
+  });
+  state = chatReducer(state, { type: "cancel", id: 1 });
+  assert.equal(state.busy, false);
+  assert.equal(state.activeId, null);
+  assert.equal(state.turns[0].error, "Forespørselen ble avbrutt.");
+  assert.equal(chatReducer(state, { type: "complete", id: 1 }), state);
+  state = chatReducer(state, {
+    type: "start",
+    id: 2,
+    question: "nytt spørsmål",
+  });
+  assert.equal(state.busy, true);
+  assert.equal(state.activeId, 2);
+  assert.equal(chatReducer(state, { type: "cancel", id: 1 }), state);
+  assert.equal(
+    chatReducer(state, { type: "complete", id: 1, error: "gammel feil" }),
+    state,
+  );
+  state = chatReducer(state, {
+    type: "complete",
+    id: 2,
+    result: { mode: "sources", sources: [], answer: null },
+  });
+  assert.equal(state.busy, false);
+  assert.ok(state.turns[1].result);
+  assert.equal(state.turns[0].error, "Forespørselen ble avbrutt.");
+});
+
+test("klientavbrudd gir riktig melding og et nytt signal kan sende igjen", async () => {
+  const controller = new AbortController();
+  let observed: AbortSignal | null = null;
+  const pending = requestAnswer("første", {
+    demo: false,
+    signal: controller.signal,
+    fetcher: async (_url, init) =>
+      new Promise((_resolve, reject) => {
+        observed = init!.signal as AbortSignal;
+        observed.addEventListener("abort", () => reject(observed!.reason), {
+          once: true,
+        });
+      }),
+  });
+  controller.abort();
+  assert.equal((observed as AbortSignal | null)?.aborted, true);
+  assert.deepEqual(await pending, { error: "Forespørselen ble avbrutt." });
+  const next = await requestAnswer("neste", {
+    demo: false,
+    signal: new AbortController().signal,
+    fetcher: async () =>
+      Response.json({ mode: "sources", sources: [], answer: null }),
+  });
+  assert.equal(next.error, undefined);
+  assert.equal(next.result?.mode, "sources");
+});
+
+test("allerede avbrutt klient gjør ikke fetch, og sen transport kan ikke gi et svar", async () => {
+  const controller = new AbortController();
+  controller.abort();
+  let fetchCalls = 0;
+  assert.deepEqual(
+    await requestAnswer("test", {
+      demo: false,
+      signal: controller.signal,
+      fetcher: async () => {
+        fetchCalls++;
+        throw new Error("skal ikke kalles");
+      },
+    }),
+    { error: "Forespørselen ble avbrutt." },
+  );
+  assert.equal(fetchCalls, 0);
+  const during = new AbortController();
+  const late = await requestAnswer("test", {
+    demo: false,
+    signal: during.signal,
+    fetcher: async () => {
+      during.abort();
+      return Response.json({ mode: "sources", sources: [], answer: null });
+    },
+  });
+  assert.deepEqual(late, { error: "Forespørselen ble avbrutt." });
+});

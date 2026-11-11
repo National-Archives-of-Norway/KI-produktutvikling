@@ -58,8 +58,14 @@ export function parseAnswer(text: string, sourceCount = 0): AnswerBlock[] {
   }
   function flushList() {
     if (!list) return;
-    const items = list.items.map((item) => ({
-      number: item.number,
+    // Ikke-stigende Markdown-markører er vanlig automatisk nummerering.
+    // Bare en strengt stigende sekvens kan uttrykke bevisste nummerhopp.
+    const increasing = list.items.every(
+      (item, index) =>
+        index === 0 || item.number > list!.items[index - 1].number,
+    );
+    const items = list.items.map((item, index) => ({
+      number: increasing ? item.number : list!.items[0].number + index,
       children: inline(item.text, sourceCount),
     }));
     blocks.push(

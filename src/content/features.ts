@@ -60,7 +60,7 @@ export function getFeatures(): Feature[] {
       id: "spor",
       title: "Spør KI",
       description:
-        "Still spørsmål om portalens innhold. Få veiledning med konkrete steg, kilder og forslag til nye spørsmål. Kildesøket prioriterer direkte emnetreff, tar hensyn til norske bøyninger og krever tilstrekkelig orddekning. Det kan returnere uten treff når grunnlaget er for svakt. Chatten finnes på en egen side og fra forsiden. Modellfeil og kapasitetsavvisning beholder tilgjengelige kilder. Uventet svarformat gir en forståelig feilmelding. Modellsvar beholder listenummer og kildehenvisninger også i fet tekst. Spørsmål kan inneholde 3–1000 brukeropplevde tegn, inkludert sammensatte emoji. Spørsmål behandles separat, og historikken lagres ikke etter sideoppdatering.",
+        "Still spørsmål om portalens innhold. Få veiledning med konkrete steg, kilder og forslag til nye spørsmål. Kildesøket prioriterer direkte emnetreff, tar hensyn til norske bøyninger og krever tilstrekkelig orddekning. Det kan returnere uten treff når grunnlaget er for svakt. Chatten finnes på en egen side og fra forsiden. Modellfeil og kapasitetsavvisning beholder tilgjengelige kilder. Uventet svarformat gir en forståelig feilmelding. Modellsvar viser fortløpende nummerering ved gjentatte listemarkører og beholder tydelige nummerhopp og kildehenvisninger også i fet tekst. Spørsmål kan inneholde 3–1000 brukeropplevde tegn, inkludert sammensatte emoji. Feltet varsler når teksten kuttes og viser en teller nær grensen. Du kan avbryte mens et svar hentes og sende et nytt spørsmål med en gang. Spørsmål behandles separat, og historikken lagres ikke etter sideoppdatering.",
       status: "beta",
       href: "/spor/",
       routes: ["/spor/"],

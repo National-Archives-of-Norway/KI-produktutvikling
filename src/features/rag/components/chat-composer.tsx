@@ -4,8 +4,9 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import SendRounded from "@mui/icons-material/SendRounded";
 import type { FormEventHandler } from "react";
-import { useRef } from "react";
-import { QUESTION_LIMIT, limitQuestion } from "../contracts";
+import { useRef, useState } from "react";
+import { QUESTION_LIMIT } from "../contracts";
+import { prepareQuestionInput, questionInputFeedback } from "../question-input";
 export function ChatComposer({
   inputId,
   question,
@@ -15,6 +16,7 @@ export function ChatComposer({
   onSubmit,
   onQuestionChange,
   onClear,
+  onCancel,
 }: {
   inputId: string;
   question: string;
@@ -24,11 +26,18 @@ export function ChatComposer({
   onSubmit: FormEventHandler<HTMLFormElement>;
   onQuestionChange: (value: string) => void;
   onClear: () => void;
+  onCancel: () => void;
 }) {
   const input = useRef<HTMLTextAreaElement>(null);
   const composing = useRef(false);
+  const [wasTruncated, setWasTruncated] = useState(false);
+  function change(value: string) {
+    const edit = prepareQuestionInput(value);
+    setWasTruncated(edit.truncated);
+    onQuestionChange(edit.value);
+  }
   return (
-    <form className="chat-composer" onSubmit={onSubmit} aria-busy={busy}>
+    <form className="chat-composer" onSubmit={onSubmit}>
       <TextField
         id={inputId}
         inputRef={input}
@@ -39,14 +48,27 @@ export function ChatComposer({
         fullWidth
         value={question}
         onChange={(e) =>
-          onQuestionChange(
-            composing.current ? e.target.value : limitQuestion(e.target.value),
-          )
+          composing.current
+            ? onQuestionChange(e.target.value)
+            : change(e.target.value)
         }
         error={Boolean(validation)}
         helperText={
-          validation ||
-          `Ikke skriv personopplysninger eller internt innhold. Maks ${QUESTION_LIMIT} tegn.`
+          <>
+            {validation ? (
+              <span role="alert">{validation}</span>
+            ) : (
+              `Ikke skriv personopplysninger eller internt innhold. Maks ${QUESTION_LIMIT} tegn.`
+            )}
+            <span
+              className="chat-input-feedback"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            >
+              {questionInputFeedback(question, wasTruncated)}
+            </span>
+          </>
         }
         slotProps={{
           // HTML maxLength teller UTF-16, ikke grafemer. Grensen håndheves
@@ -58,11 +80,9 @@ export function ChatComposer({
             },
             onCompositionEnd: () => {
               composing.current = false;
-              if (input.current)
-                onQuestionChange(limitQuestion(input.current.value));
+              if (input.current) change(input.current.value);
             },
           },
-          formHelperText: { role: validation ? "alert" : undefined },
         }}
         variant="outlined"
         sx={{
@@ -81,17 +101,20 @@ export function ChatComposer({
       />
       <div className="chat-actions">
         <Button
-          type="submit"
+          type={busy ? "button" : "submit"}
           variant="contained"
-          aria-disabled={busy}
           onClick={(event) => {
-            if (busy) event.preventDefault();
+            if (busy) {
+              event.preventDefault();
+              onCancel();
+              input.current?.focus();
+            }
           }}
           sx={{ minHeight: 44 }}
           className="chat-send"
-          endIcon={<SendRounded />}
+          endIcon={busy ? undefined : <SendRounded />}
         >
-          {busy ? "Henter svar …" : "Send spørsmål"}
+          {busy ? "Avbryt" : "Send spørsmål"}
         </Button>
         {hasTurns && (
           <Button

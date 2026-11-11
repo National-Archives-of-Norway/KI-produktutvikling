@@ -355,3 +355,7 @@
     font-size: 11px;
   }
 }
+
+.chat-input-feedback {
+  display: block;
+}

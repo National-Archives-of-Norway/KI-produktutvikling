@@ -130,3 +130,36 @@ test("feltgrensen kutter på samme grafemgrense som servervalideringen", () => {
   assert.equal(limitQuestion("e\u0301😀", 1), "e\u0301");
   assert.equal(validateQuestion("  😀😀😀  "), "😀😀😀");
 });
+
+test("gjentatt eller synkende nummerering blir fortløpende fra første nummer", () => {
+  for (const [input, expected] of [
+    ["1. A\n1. B\n1. C", [1, 2, 3]],
+    ["4. A\n2. B\n2. C", [4, 5, 6]],
+    ["1. A\n2. B", [1, 2]],
+  ] as const) {
+    const [list] = parseAnswer(input);
+    assert.equal(list.type, "ordered-list");
+    if (list.type === "ordered-list")
+      assert.deepEqual(
+        list.items.map((item) => item.number),
+        expected,
+      );
+  }
+});
+
+test("ny liste etter et avsnitt beholder sin egen start og normaliseres separat", () => {
+  const blocks = parseAnswer("1. A\n1. B\n\nEt avsnitt\n\n5. C\n5. D");
+  assert.equal(blocks[1].type, "paragraph");
+  const lists = blocks.filter((block) => block.type === "ordered-list");
+  assert.deepEqual(
+    lists.map((list) => list.start),
+    [1, 5],
+  );
+  assert.deepEqual(
+    lists.map((list) => list.items.map((item) => item.number)),
+    [
+      [1, 2],
+      [5, 6],
+    ],
+  );
+});

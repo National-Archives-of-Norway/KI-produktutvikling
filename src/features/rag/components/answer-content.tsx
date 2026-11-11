@@ -37,7 +37,14 @@ export function AnswerContent({
           return (
             <ol key={index} start={block.start}>
               {block.items.map((item, i) => (
-                <li key={i} value={item.number}>
+                <li
+                  key={i}
+                  value={
+                    i > 0 && item.number !== block.items[i - 1].number + 1
+                      ? item.number
+                      : undefined
+                  }
+                >
                   {inline(item.children)}
                 </li>
               ))}

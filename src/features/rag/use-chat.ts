@@ -3,49 +3,70 @@ import { useEffect, useReducer, useRef, useState } from "react";
 import { chatReducer, initialChatState } from "./chat-state";
 import { QUESTION_ERROR, validateQuestion } from "./contracts";
 import { requestAnswer } from "./client";
+import {
+  beginRequest,
+  finishRequest,
+  cancelRequest,
+  type PendingRequest,
+} from "./request-control";
 
 export function useChat() {
   const [state, dispatch] = useReducer(chatReducer, initialChatState);
   const [question, setQuestion] = useState("");
   const [validation, setValidation] = useState("");
-  const pending = useRef(false);
   const nextId = useRef(0);
-  const controller = useRef<AbortController | null>(null);
-  useEffect(() => () => controller.current?.abort(), []);
+  const controller = useRef<PendingRequest | null>(null);
+  useEffect(
+    () => () => {
+      cancelRequest(controller);
+    },
+    [],
+  );
   const demo = process.env.NEXT_PUBLIC_STATIC_DEMO === "true";
   async function ask(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    if (pending.current) return;
+    if (controller.current) return;
     const text = validateQuestion(question);
     if (!text) {
       setValidation(QUESTION_ERROR);
       return;
     }
-    pending.current = true;
-    controller.current = new AbortController();
+    const id = ++nextId.current;
+    const request = beginRequest(controller, id);
+    if (!request) return;
     setValidation("");
     setQuestion("");
-    const id = ++nextId.current;
     dispatch({ type: "start", id, question: text });
     try {
-      dispatch({
-        type: "complete",
-        id,
-        ...(await requestAnswer(text, {
-          demo,
-          signal: controller.current.signal,
-        })),
+      const outcome = await requestAnswer(text, {
+        demo,
+        signal: request.controller.signal,
       });
+      if (finishRequest(controller, request))
+        dispatch({ type: "complete", id, ...outcome });
     } finally {
-      pending.current = false;
-      controller.current = null;
+      finishRequest(controller, request);
     }
   }
+  function cancel() {
+    const id = cancelRequest(controller);
+    if (id !== null) dispatch({ type: "cancel", id });
+  }
+
   function clear() {
-    if (!pending.current) {
+    if (!controller.current) {
       dispatch({ type: "clear" });
       setValidation("");
     }
   }
-  return { ...state, question, setQuestion, validation, demo, ask, clear };
+  return {
+    ...state,
+    question,
+    setQuestion,
+    validation,
+    demo,
+    ask,
+    clear,
+    cancel,
+  };
 }

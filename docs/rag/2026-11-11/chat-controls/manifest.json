@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-11",
+  "agent": "Codex (OpenAI)",
+  "baselineCommit": "2ecb86c5f0046d17c90635c94fcc9cfb43cbc774",
+  "workingTreeTested": true,
+  "node": "24.22.1",
+  "next": "16.4.3",
+  "nodeTests": 172,
+  "pythonTests": 3,
+  "checks": {
+    "test": 0,
+    "typecheck": 0,
+    "build": 0,
+    "format": 0
+  },
+  "beforeListRegressionTests": {
+    "passed": 10,
+    "failed": 2
+  },
+  "browser": {
+    "environment": "isolated Next dev/webpack copy",
+    "viewport": {
+      "width": 320,
+      "height": 800
+    },
+    "keyboard": true,
+    "actualPaste": true,
+    "simulatedTransport": true,
+    "realModel": false,
+    "actualScreenReader": false,
+    "manualIme": false,
+    "viewportReset": true,
+    "testServersStopped": true,
+    "testCopyRemoved": true
+  },
+  "originalProductionRewrite": "http://127.0.0.1:3001/api/rag",
+  "sourceSha256": {
+    "src/features/rag/parse-answer.ts": "9c2f8c1b612bf1267d7d80ae24813159d5c0b654a9b6acfa23cd01fc04fed620",
+    "src/features/rag/components/answer-content.tsx": "73562c9ec22f558eb962f316d91a81dbcefdbed2890003bc4085c91ecb5d53dd",
+    "src/features/rag/components/chat-composer.tsx": "8698a3ca8c1e70c895f2e3a661e666c0d4f996d5da138b496e558065f645ffb9",
+    "src/features/rag/components/chat-transcript.tsx": "e540322f0cb473fa43c7bb4ddce65dcd4b71616a0d459834900035a11b0261c6",
+    "src/features/rag/components/rag-assistant.tsx": "79dd3384f2572aa856e14ce09269083ad5e0b596af9a993793940acc8e3e0788",
+    "src/features/rag/chat-state.ts": "1600e015aba30cb2d4591b115d36ac0905c86b753072bb24b322313e9ed9cb3d",
+    "src/features/rag/use-chat.ts": "6d5ac11c7fc59b097eeac3cd046c530feb1760808b893bb81f0511b47e1bd284",
+    "src/features/rag/client.ts": "0f99dbccceb076fdd23ca3c9bc4629c066be3cd816ed917e6068fd2e17f3a820",
+    "src/features/rag/contracts.ts": "1d8e7081747d9bf3af7d965411bb7dc878729d1b22b35b2008923f0faba007d8",
+    "src/features/rag/request-control.ts": "1b93557f71cd0d061d33a5d9050c28d1835cbd88c8752f2a22a4258ee06385e3",
+    "src/features/rag/question-input.ts": "d68a62549761bbc716f80ac3e4d3a98a688b550259ad7671abda0870661823cb",
+    "tests/chat.test.ts": "e396ce371c86aafc5a9ab14a73e1b09986996e53f3e84c3801f53e3952ee69d7",
+    "tests/chat-controls.test.ts": "2f31de3a0f38dc19be4b10a8fe372b7b35e588576f543cd825ed3e8c0dc79520",
+    "tests/answer-content.test.ts": "d3f4dc634652dd901bf7ca3146f1ab0eb113bb270fac6bd050eed4e790106ce1"
+  },
+  "evidenceSha256": {
+    "resubmitted-320.png": "087a10b01bc8249158e0b0164f819280ea160c00f619a4f6677f5eaa97e1efce",
+    "runtime.json": "d3b61ef0a9028032e394fe7b2b5e0a0e1646a641d4e94a09172b697a229c9683",
+    "cut-320.png": "cdeb421db343258f93df3d8a57e5ae7d400f387a9bf53eb373adb12fb8bc2631",
+    "cancel-button-320.png": "8495ad65aa2a397d34b796938cccc22150224cc19c142c2d6a4e1861724f3ec0",
+    "tests.txt": "0a7caacb6e6b82bf287288438f518873787cccef2b5d0e26bdc729076418a7cb",
+    "before.txt": "c0aa83d1631b64a6e969c542a73387900e938ec88fdf1521250420c359fd52d8",
+    "cancelled-320.png": "70b62bce589cb3ee9f759b326b99d120c88c90929bb7629f4ebc291f9d059e9d",
+    "build.txt": "86207a34fad0689c58d3f5032700fb9ea82825448003adc6528edadccfc2ebec",
+    "events.jsonl": "3f623cda20988f3878eeb445efedd4cc59b368648f0b7a84d8693f2a67da2d10",
+    "browser-check.json": "5fad32ded4f577da761c41ee1d1c2bb54e42b979a5068d9b6fa3651d355f6a71",
+    "format.txt": "1d66faad74f5e8709353f7288592866bd3a9095da1174a916e7aa632949971e2",
+    "typecheck.txt": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92"
+  }
+}

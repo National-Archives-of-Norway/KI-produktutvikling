@@ -1,0 +1,83 @@
+✔ nummerert liste slås sammen over tomme linjer (1.011416ms)
+✔ listens start og eksplisitte nummerhopp bevares (0.098875ms)
+✔ innrykkede fortsettelseslinjer tilhører listepunktet (0.1395ms)
+✔ avsnitt avslutter lister, og ulike listetyper blandes ikke (0.555ms)
+✔ kildehenvisning tolkes også inne i fet tekst (0.117708ms)
+✔ kildenummer utenfor området blir tekst, også i fet skrift (0.1505ms)
+✔ modellens HTML og URL-er er bare tekst (0.046834ms)
+✔ CRLF, overskrift og uavsluttet fet tekst håndteres som tekstformat (0.046666ms)
+✔ spørsmålsvalidering teller grafemer for emoji, flagg og sammensatte tegn (0.924667ms)
+✔ feltgrensen kutter på samme grafemgrense som servervalideringen (0.310291ms)
+✖ gjentatt eller synkende nummerering blir fortløpende fra første nummer (0.557875ms)
+✖ ny liste etter et avsnitt beholder sin egen start og normaliseres separat (0.172375ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 10
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 77.55825
+
+✖ failing tests:
+
+test at tests/answer-content.test.ts:134:1
+✖ gjentatt eller synkende nummerering blir fortløpende fra første nummer (0.557875ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+      1,
+  +   1,
+  +   1
+  -   2,
+  -   3
+    ]
+  
+      at TestContext.<anonymous> (file:///Users/khadah/Documents/ChatGPT/KI-utvikling/tests/answer-content.test.ts:142:46)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 1, 1, 1 ],
+    expected: [ 1, 2, 3 ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/answer-content.test.ts:146:1
+✖ ny liste etter et avsnitt beholder sin egen start og normaliseres separat (0.172375ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+      [
+        1,
+  +     1
+  -     2
+      ],
+      [
+        5,
+  +     5
+  -     6
+      ]
+    ]
+  
+      at TestContext.<anonymous> (file:///Users/khadah/Documents/ChatGPT/KI-utvikling/tests/answer-content.test.ts:151:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ [ 1, 1 ], [ 5, 5 ] ],
+    expected: [ [ 1, 2 ], [ 5, 6 ] ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

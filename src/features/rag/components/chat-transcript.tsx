@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 import Link from "next/link";
+import { REQUEST_CANCELLED } from "../contracts";
 import type { ChatTurn } from "../chat-state";
 import { AnswerContent } from "./answer-content";
 export function ChatTranscript({
@@ -38,7 +39,11 @@ export function ChatTranscript({
           <div className="chat-response">
             <span>Kunnskapsassistenten</span>
             {!turn.result && !turn.error && <p>Finner relevant veiledning …</p>}
-            {turn.error && <p role="alert">{turn.error}</p>}
+            {turn.error && (
+              <p role={turn.error === REQUEST_CANCELLED ? "status" : "alert"}>
+                {turn.error}
+              </p>
+            )}
             {turn.result && (
               <>
                 {turn.result.mode === "generated" ? (

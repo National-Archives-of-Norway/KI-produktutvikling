@@ -4,24 +4,26 @@ Portalen er én Next.js-applikasjon med en separat lokal RAG-prosess. Oppdelinge
 
 ## Hvor endrer jeg hva?
 
-| Behov                                  | Modul                                                 |
-| -------------------------------------- | ----------------------------------------------------- |
-| Sider, metadata og ruting              | `src/app/`                                            |
-| Offentlige eksempelressurser           | `src/content/resources.ts`                            |
-| Profilfarger, flater og effekter       | `src/theme/`                                          |
-| Grunnstiler og sidelayouter            | `src/styles/`                                         |
-| Katalogens stil og visning             | `src/components/catalog.css` og `catalog.tsx`         |
-| Ren svarparser og grafemvalidering     | `src/features/rag/parse-answer.ts` og `contracts.ts`  |
-| Chatvindu, meldinger og skjema         | `src/features/rag/components/`                        |
-| Chattilstand og brukerhandlinger       | `src/features/rag/use-chat.ts` og `chat-state.ts`     |
-| Nettleserens RAG-forespørsler          | `src/features/rag/client.ts`                          |
-| Felles API-typer og validering         | `src/features/rag/contracts.ts`                       |
-| Offentlig kildehenting                 | `src/features/rag/retrieval.ts`                       |
-| Modelluavhengig svarflyt               | `src/server/rag/service.ts`                           |
-| Modelladapter og instruksjoner         | `src/server/rag/ollama.ts`, `model.ts` og `prompt.ts` |
-| HTTP, grenser og opprinnelseskontroll  | `src/server/rag/http.ts`                              |
-| Miljøkonfigurasjon                     | `src/server/rag/config.ts`                            |
-| Oppstart, bygg og manuell API-kontroll | `scripts/`                                            |
+| Behov                                     | Modul                                                 |
+| ----------------------------------------- | ----------------------------------------------------- |
+| Sider, metadata og ruting                 | `src/app/`                                            |
+| Offentlige eksempelressurser              | `src/content/resources.ts`                            |
+| Profilfarger, flater og effekter          | `src/theme/`                                          |
+| Grunnstiler og sidelayouter               | `src/styles/`                                         |
+| Katalogens stil og visning                | `src/components/catalog.css` og `catalog.tsx`         |
+| Ren svarparser og grafemvalidering        | `src/features/rag/parse-answer.ts` og `contracts.ts`  |
+| Chatvindu, meldinger og skjema            | `src/features/rag/components/`                        |
+| Chattilstand og brukerhandlinger          | `src/features/rag/use-chat.ts` og `chat-state.ts`     |
+| Avbrudd og eierskap til aktiv forespørsel | `src/features/rag/request-control.ts`                 |
+| Grafembasert feltgrense og tilbakemelding | `src/features/rag/question-input.ts`                  |
+| Nettleserens RAG-forespørsler             | `src/features/rag/client.ts`                          |
+| Felles API-typer og validering            | `src/features/rag/contracts.ts`                       |
+| Offentlig kildehenting                    | `src/features/rag/retrieval.ts`                       |
+| Modelluavhengig svarflyt                  | `src/server/rag/service.ts`                           |
+| Modelladapter og instruksjoner            | `src/server/rag/ollama.ts`, `model.ts` og `prompt.ts` |
+| HTTP, grenser og opprinnelseskontroll     | `src/server/rag/http.ts`                              |
+| Miljøkonfigurasjon                        | `src/server/rag/config.ts`                            |
+| Oppstart, bygg og manuell API-kontroll    | `scripts/`                                            |
 
 ## RAG-flyt
 
@@ -52,6 +54,14 @@ Tidsbudsjettet defineres én gang i den miljøfrie `src/config/rag.ts` og reeksp
 Spørsmål og offentlige kilder får samme aksentnormalisering og avgrensede norske suffiksstamming. Generelle handlinger tas ut av emneordene. Brødtekst matches på stammer; tittel og ressursnavn kan også gi avgrensede sammensetningstreff. Minst halvparten av de ulike emnestammene må treffe, med sterkere krav ved ett treff. Score skiller tittel/innledning/brødtekst og vekter sjeldne ord. Lik score avgjøres av tittel, dekning, linjestart og kildefokus før corpusrekkefølge. Ingen embeddings eller modell brukes til rangeringen.
 
 [Evaluering og eksakte regler](docs/rag/2026-11-11/relevans-boyninger.md) beskriver terskelvalget, forventningene og begrensningen ved gjenbruk av testsettet. Norsk stamming er en heuristikk; API-kontrakten er uendret.
+
+## Chatkontroller og svarvisning
+
+Den rene request-control-modulen holder én aktiv AbortController. Brukeravbrudd frigjør den med en gang, og identitetskontroll hindrer at et gammelt svar eller finally rydder bort en nyere forespørsel. Reduceren kontrollerer også aktiv tur-ID før complete/cancel. Avbryt bruker samme signal som allerede går til HTTP-/modellflyten; dette garanterer ikke at ekstern leverandør stanser beregning/fakturering.
+
+Composer flytter fokus til spørsmålsfeltet etter avbrudd og har en tastaturbetjent Avbryt-knapp mens forespørselen pågår. En permanent polite-status i feltets helpertekst varsler om kutting og viser grafemteller fra 90 % av grensen. IME begrenses etter avsluttet komposisjon. Meldingen og grenseberegningen samt forespørselseierskap kan testes uten React-testavhengigheter.
+
+Parseren normaliserer hele listen fra første nummer hvis markørene ikke er strengt stigende. Strengt stigende markører beholder hopp. Renderer bruker ol start for startverdien og li value bare ved faktiske hopp; avsnitt starter en separat liste med egen start.
 
 ## Stilstruktur
 

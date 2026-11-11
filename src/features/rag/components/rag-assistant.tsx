@@ -40,6 +40,7 @@ export function RagAssistant({ compact = false }: { compact?: boolean }) {
         onSubmit={chat.ask}
         onQuestionChange={chat.setQuestion}
         onClear={chat.clear}
+        onCancel={chat.cancel}
       />
     </div>
   );

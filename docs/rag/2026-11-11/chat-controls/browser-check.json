@@ -1,0 +1,36 @@
+{
+  "simulatedTransport": true,
+  "realModel": false,
+  "cutCheck": {
+    "describedBy": "_R_29bn5rfllb_-helper-text",
+    "feedback": "Teksten ble kuttet til 1000 tegn. Resten ble ikke tatt med. 1000 av 1000 tegn.",
+    "focused": true,
+    "length": 1000,
+    "live": "polite",
+    "role": "status",
+    "scrollWidth": 320,
+    "width": 320
+  },
+  "cancelCheck": {
+    "focused": true,
+    "inputRect": {
+      "bottom": 396.84375,
+      "top": 326.84375
+    },
+    "inputVisible": true,
+    "message": "Forespørselen ble avbrutt.",
+    "readOnly": false,
+    "scrollWidth": 320,
+    "width": 320
+  },
+  "resultCheck": {
+    "cancelledTurnStillPresent": true,
+    "itemTexts": ["Første punkt", "Andre punkt", "Tredje punkt"],
+    "itemValues": [null, null, null],
+    "listStart": "1",
+    "scrollWidth": 320,
+    "width": 320
+  },
+  "counterAt900Observed": true,
+  "keyboardSubmitAndCancel": true
+}

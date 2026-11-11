@@ -6,6 +6,16 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 11. november 2026 – avbryt chat, tydelig feltgrense og fortløpende lister
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Bekreftet listenummereringsfeilen med to førtester. Ikke-stigende markører normaliseres nå fortløpende fra første nummer; strengt stigende sekvenser beholder hopp. ol start styrer start og li value brukes bare ved faktiske hopp. Dette følger vanlig Markdown-bruk med gjentatte 1-markører, uten å fjerne eksplisitt stigende nummerhopp eller start etter avsnitt.
+- Innført tilgjengelig melding om kutting ved 1000 grafemer, og løpende teller fra 900. Permanent polite-status ligger i feltets helpertekst; generelt aria-busy på skjemaet er fjernet slik at kontrollene og meldingene er tilgjengelige under venting. IME begrenses fortsatt etter komposisjon.
+- Avbryt-knappen bruker forespørselens AbortController, markerer turen «Forespørselen ble avbrutt.» og flytter fokus til feltet. Aktiv forespørsel frigjøres umiddelbart; identitetskontroll i ren request-control-modul og aktiv tur-ID i reducer hindrer sene svar/finally fra å endre en ny tur. Klienten avviser også sene svar når signalet er avbrutt.
+- Lagt til rene tester for inputtilbakemelding, nummerering, avbrudd, ny innsending og sen fullføring. Oppdatert funksjonsregister, arkitektur og utviklingsplan. Ingen nye avhengigheter eller endret HTTP-kontrakt.
+- Kort nettleserkontroll med tastatur ved 320 px er gjennomført i isolert kopi med simulert transport: faktisk innliming viste kuttemelding/teller, Avbryt ga riktig status og fokus i synlig felt, ny innsending virket og 1/1/1 ble vist som 1/2/3 uten li value. Backend observerte avbrutt forbindelse. [Rapport og skjermbilder](docs/rag/2026-11-11/chat-controls.md) er lagret; viewport er nullstilt og testservere/kopi ryddet. Automatiske kontroller: `pnpm test` **172/172 Node-tester**, **3/3 Python-tester**, faktisk innholdssynk og Markdown-lenker, samt `pnpm typecheck`, `pnpm format:check`, `pnpm build` og `git diff --check` bestått. IME og faktisk skjermleser er ikke manuelt testet. Ingen ekte modell- eller full tilgjengelighetsverifisering, commit eller publisering. Beta og P1–P10 videreføres.
+
 ### 11. november 2026 – avgrenset prisparsing og entydig RAG-konfigurasjon
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

@@ -21,6 +21,7 @@ export type RagError = { error: string; sources?: RagSource[] };
 export type RagResponse = { status: number; body: RagResult | RagError };
 export type RagRequest = { question: string };
 export const QUESTION_LIMIT = 1000;
+export const REQUEST_CANCELLED = "Forespørselen ble avbrutt.";
 export const QUESTION_ERROR = "Skriv et spørsmål på 3–1000 tegn.";
 
 const questionSegments = new Intl.Segmenter("nb", { granularity: "grapheme" });
