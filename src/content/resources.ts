@@ -55,7 +55,7 @@ export const resources: Resource[] = [
     ],
     skill: {
       name: "tilgjengelighetserklaering",
-      version: "0.5.1",
+      version: "0.6.0",
       repository: "Skills",
       path: "skills/tilgjengelighetserklaering",
       capabilities:

@@ -1,0 +1,15 @@
+{
+  "build": "server-final",
+  "jsFiles": 16,
+  "markers": {
+    "fetchUrl": [],
+    "copilotPlans": [],
+    "codexTokens": [],
+    "\"retrieve\"": []
+  },
+  "rewrite": {
+    "source": "/api/rag",
+    "destination": "http://127.0.0.1:3001/api/rag",
+    "regex": "^/api/rag(?:/)?$"
+  }
+}

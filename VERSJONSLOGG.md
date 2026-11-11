@@ -6,6 +6,25 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 11. november 2026 – samlet avstemming av plan, funksjonsregister og versjonslogg
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Avstemt leveransestatus mot kode, logghistorikk og daterte kontrollresultater. Planen skiller nå siste lokale 132-testgrunnlag på Node 24 fra Node 22-kjøringene med 119 og 105 tester på eldre revisjoner. Nyere chatendringer er ikke fremstilt som Linux- eller tilgjengelighetsverifisert.
+- Tatt med cookie-/samtykkeskill, Oversikt og nyere RAG-rettinger i sammendraget. Merket tidligere tilgjengelighetsrestlister som historikk; gjeldende grunnlag har åtte uavklarte krav og ni rettede funn, uten samlet samsvarsvurdering. P1–P10 og krav om lukket pilot videreføres.
+- Presisert i funksjonsregisteret at virkelig modelltilkobling ikke er verifisert og at kontrolltid alene ikke utløser prisforslag. Rettet katalogens foreldede skill-versjon fra 0.5.1 til 0.6.0 etter kontroll mot metadata i lokalt Skills-repo. Ingen endring i Skills-repoet eller modenhetsstatusene.
+- Kontroller ved denne avstemmingen: `node --test tests/features.test.ts tests/rag.test.ts` **48/48**, `pnpm typecheck`, `pnpm format:check` og `git diff --check` bestått. Ingen ny modell-, pris-, Docker-, bygg- eller tilgjengelighetskjøring; tidligere kontroller beholder dato og omfang. Ingen commit eller publisering.
+
+### 11. november 2026 – rettet chatsvar, grafemlengde og demo-import
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Flyttet svarparsing til ren parseAnswer-funksjon med blokker og inline-deler. Nummererte punkter slås sammen over tomme linjer, eksplisitt start/nummerhopp og fortsettelseslinjer bevares. Kildehenvisninger i fet tekst blir lenker; ukjente numre og modellens HTML/URL-er forblir tekst. Ingen React-testbibliotek eller nye avhengigheter.
+- Felles validering teller grafemer med Intl.Segmenter på klient/server. Fjernet native UTF-16-maxLength og bruker kontrollert grafemgrense på 1000, med støtte for IME-komposisjon. To emoji avvises som for kort; 1000 sammensatte emoji godtas uten oppdeling. Økt HTTP-grense fra 8192 til 65536 byte, slik at 1000 familie-emoji passer; ekstreme kombinasjonssekvenser møter fortsatt en separat bytegrense. Eksisterende HTTP-grensetester bruker nå den nye grensekonstanten, med samme testhensikt.
+- Retrieval lastes med await import bare i demo, bak byggkonstant. Serverbyggets klient-JavaScript mangler de kontrollerte retrieval-/kildemarkørene; Pages-bygget har dem som positiv motprøve. Offentlig kataloginnhold er fortsatt nødvendig klientdata. Demolastefeil får forståelig melding uten feil API-kall.
+- Kort visuell kontroll i nettleseren på produksjonsbygg med simulert modell: liste 1/2 og senere 4, fortsettelse i samme punkt, lenke inne i strong, [99]/HTML-lignende tekst som tekst og korrekt grafemgrense. Ingen ekte modell brukt; IME er implementert, ikke manuelt prøvd. Skjermbilde, DOM-bevis og byggkontroller er lagret med [testrapport](docs/rag/2026-11-11/chat-client.md). Alle testprosesser er stoppet; vanlig serverbygg er gjenopprettet uten testport etter Pages-/visuell prøve.
+- Oppdatert README, arkitektur, funksjonsregister og utviklingsplan. Kontroller: pnpm test:rag **132/132**, pnpm typecheck, pnpm build, pnpm build:pages, pnpm format:check og git diff --check bestått. Ingen ny Docker/Node 22-kjøring eller full tilgjengelighetsvurdering. Ingen prisdata, commit eller publisering.
+
 ### 11. november 2026 – RAG-frister og avbrudd testet i Docker/Linux med Node 22
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

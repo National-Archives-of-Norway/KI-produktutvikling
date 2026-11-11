@@ -60,7 +60,7 @@ export function getFeatures(): Feature[] {
       id: "spor",
       title: "Spør KI",
       description:
-        "Still spørsmål om portalens innhold. Få veiledning med konkrete steg, kilder og forslag til nye spørsmål. Kildesøket prioriterer direkte emnetreff og kan returnere uten treff når grunnlaget er for svakt. Chatten finnes på en egen side og fra forsiden. Modellfeil og kapasitetsavvisning beholder tilgjengelige kilder. Uventet svarformat gir en forståelig feilmelding. Spørsmål behandles separat, og historikken lagres ikke etter sideoppdatering.",
+        "Still spørsmål om portalens innhold. Få veiledning med konkrete steg, kilder og forslag til nye spørsmål. Kildesøket prioriterer direkte emnetreff og kan returnere uten treff når grunnlaget er for svakt. Chatten finnes på en egen side og fra forsiden. Modellfeil og kapasitetsavvisning beholder tilgjengelige kilder. Uventet svarformat gir en forståelig feilmelding. Modellsvar beholder listenummer og kildehenvisninger også i fet tekst. Spørsmål kan inneholde 3–1000 brukeropplevde tegn, inkludert sammensatte emoji. Spørsmål behandles separat, og historikken lagres ikke etter sideoppdatering.",
       status: "beta",
       href: "/spor/",
       routes: ["/spor/"],
@@ -86,7 +86,7 @@ export function getFeatures(): Feature[] {
       id: "modell",
       title: "Modellgenererte svar",
       description:
-        "Modellkoblingen støtter lokal Ollama og eksternt OpenAI-kompatibelt Chat Completions-API. Generering krever valgt modell og serverkonfigurasjon. API-nøkkelen håndteres på serveren. Uten modell brukes veiledning fra innholdet.",
+        "Modellkoblingen støtter lokal Ollama og eksternt OpenAI-kompatibelt Chat Completions-API. Generering krever valgt modell og serverkonfigurasjon. API-nøkkelen håndteres på serveren. Uten modell brukes veiledning fra innholdet, også i statisk demo. Adapterne er testet med simulert transport; tilkobling og svar fra en valgt virkelig modell er ikke verifisert.",
       status: "setup",
       href: "/spor/",
     },
@@ -110,7 +110,7 @@ export function getFeatures(): Feature[] {
       title: pricingOverview.title,
       description:
         pricingOverview.lead +
-        " Kilder og kontrolltidspunkt vises per tabell. Varsel om gamle prisdata vurderes når siden åpnes eller prisgrunnlaget endres. Daglig GitHub-jobb er klargjort for oppdateringsforslag ved endret prisgrunnlag eller kildestatus, men krever GitHub-repo, Actions og utrulling.",
+        " Kilder og kontrolltidspunkt vises per tabell. Varsel om gamle prisdata vurderes når siden åpnes eller prisgrunnlaget endres. Daglig GitHub-jobb er klargjort for oppdateringsforslag ved endret prisgrunnlag eller kildestatus, men krever GitHub-repo, Actions og utrulling. Endrede kontrolltidspunkter alene utløser ikke et oppdateringsforslag.",
       status: "beta",
       href: "/priser/",
       routes: ["/priser/"],

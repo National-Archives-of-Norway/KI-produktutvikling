@@ -1,0 +1,20 @@
+{
+  "listStarts": [
+    {
+      "start": "1",
+      "values": ["1", "2"]
+    },
+    {
+      "start": "4",
+      "values": ["4"]
+    }
+  ],
+  "boldCitations": 1,
+  "allCitations": 2,
+  "scriptsInAnswer": 0,
+  "input": {
+    "utf16Length": 11000,
+    "matches1000Families": true,
+    "maxLength": null
+  }
+}

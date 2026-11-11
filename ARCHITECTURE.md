@@ -11,6 +11,7 @@ Portalen er én Next.js-applikasjon med en separat lokal RAG-prosess. Oppdelinge
 | Profilfarger, flater og effekter       | `src/theme/`                                          |
 | Grunnstiler og sidelayouter            | `src/styles/`                                         |
 | Katalogens stil og visning             | `src/components/catalog.css` og `catalog.tsx`         |
+| Ren svarparser og grafemvalidering     | `src/features/rag/parse-answer.ts` og `contracts.ts`  |
 | Chatvindu, meldinger og skjema         | `src/features/rag/components/`                        |
 | Chattilstand og brukerhandlinger       | `src/features/rag/use-chat.ts` og `chat-state.ts`     |
 | Nettleserens RAG-forespørsler          | `src/features/rag/client.ts`                          |
@@ -38,7 +39,7 @@ Chatvisning → useChat → requestAnswer → /api/rag
 
 `ModelAdapter` tilbyr `generate(question, sources, signal?)`. HTTP-grensen kobler klient-/proxyavbrudd til et AbortSignal, som tjenesten videresender til adapterens fetch sammen med modellfristen via `AbortSignal.any`. Ventingen avgrenses også hvis en adapter ignorerer signalet. Modellplass frigjøres i finally; kildeutdrag bevares i JSON 502/429. Kapasiteten settes med RAG_MAX_CONCURRENT (1–8, standard 1), per prosess, uten kø. Lokal Ollama og eksternt OpenAI-kompatibelt Chat Completions-API er støttet; en ny integrasjon krever egen konfigurasjon og tilgangsvurdering.
 
-I Pages-modus bruker klienten offentlig kildehenting direkte, uten nettverkskall til en modell. Ikke legg private kilder i `retrieval.ts` eller andre klientimporterte moduler. Interne kilder krever en separat autorisert serverflyt.
+I Pages-modus lastes offentlig kildehenting dynamisk i demogrenen, uten nettverkskall til en modell. Den eksplisitte byggkonstanten NEXT_PUBLIC_STATIC_DEMO lar serverbygget fjerne demo-importen helt fra klient-JavaScript. Katalogens egne offentlige ressursdata påvirkes ikke. Ikke legg private kilder i `retrieval.ts` eller andre klientimporterte moduler. Interne kilder krever en separat autorisert serverflyt.
 
 HTTP-grensen får tillatte origins fra den validerte serverkonfigurasjonen (`RAG_ALLOWED_ORIGINS`). Oppstartsskriptet sender konfigurasjonen til HTTP-serveren; klienten leser ikke variabelen. En konfigurert liste erstatter loopback-standardene. Origin-kontroll erstatter ikke autorisering. HTTP-lesefeil/ugyldig input skilles fra uventede søke-/tjenestefeil. For store forespørsler avvises med 413 og eksplisitt lukking etter et begrenset tidsrom for å forkaste gjenværende opplasting uten buffering.
 

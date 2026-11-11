@@ -5,7 +5,7 @@ import TextField from "@mui/material/TextField";
 import SendRounded from "@mui/icons-material/SendRounded";
 import type { FormEventHandler } from "react";
 import { useRef } from "react";
-import { QUESTION_LIMIT } from "../contracts";
+import { QUESTION_LIMIT, limitQuestion } from "../contracts";
 export function ChatComposer({
   inputId,
   question,
@@ -26,6 +26,7 @@ export function ChatComposer({
   onClear: () => void;
 }) {
   const input = useRef<HTMLTextAreaElement>(null);
+  const composing = useRef(false);
   return (
     <form className="chat-composer" onSubmit={onSubmit} aria-busy={busy}>
       <TextField
@@ -37,13 +38,30 @@ export function ChatComposer({
         maxRows={5}
         fullWidth
         value={question}
-        onChange={(e) => onQuestionChange(e.target.value)}
+        onChange={(e) =>
+          onQuestionChange(
+            composing.current ? e.target.value : limitQuestion(e.target.value),
+          )
+        }
         error={Boolean(validation)}
         helperText={
-          validation || "Ikke skriv personopplysninger eller internt innhold."
+          validation ||
+          `Ikke skriv personopplysninger eller internt innhold. Maks ${QUESTION_LIMIT} tegn.`
         }
         slotProps={{
-          htmlInput: { maxLength: QUESTION_LIMIT, readOnly: busy },
+          // HTML maxLength teller UTF-16, ikke grafemer. Grensen håndheves
+          // kontrollert ved onChange og etter avsluttet IME-komposisjon.
+          htmlInput: {
+            readOnly: busy,
+            onCompositionStart: () => {
+              composing.current = true;
+            },
+            onCompositionEnd: () => {
+              composing.current = false;
+              if (input.current)
+                onQuestionChange(limitQuestion(input.current.value));
+            },
+          },
           formHelperText: { role: validation ? "alert" : undefined },
         }}
         variant="outlined"

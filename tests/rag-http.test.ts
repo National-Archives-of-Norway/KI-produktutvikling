@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { request } from "node:http";
-import { createRagHttpServer } from "../src/server/rag/http.ts";
+import { createRagHttpServer, MAX_BODY } from "../src/server/rag/http.ts";
 import { createRagService } from "../src/server/rag/service.ts";
 import { loadRagConfig } from "../src/server/rag/config.ts";
 import type { RagService } from "../src/server/rag/service.ts";
@@ -267,7 +267,7 @@ test("klientfeil beholder 400/415 og gyldig kropp på nøyaktig grensen godtas",
     for (const [body, status] of [
       ["{", 400],
       ["{}", 400],
-      [question.padEnd(8192, " "), 200],
+      [question.padEnd(MAX_BODY, " "), 200],
     ] as const) {
       const response = await post(url, {}, body);
       assert.equal(response.status, status);
@@ -371,3 +371,31 @@ test(
     );
   },
 );
+
+test("1000 sammensatte emoji passer grafemgrensen og HTTP-bytebudsjettet", async () => {
+  const { validateQuestion } = await import("../src/features/rag/contracts.ts");
+  const value = "👨‍👩‍👧‍👦".repeat(1000);
+  const payload = JSON.stringify({ question: value });
+  assert.equal(validateQuestion(value), value);
+  assert.ok(
+    Buffer.byteLength(payload) > 8192 && Buffer.byteLength(payload) < MAX_BODY,
+  );
+  await withServer(async (url) => {
+    const response = await post(url, {}, payload);
+    assert.equal(response.status, 200);
+    await response.arrayBuffer();
+  });
+});
+
+test("ekstremt langt kombinasjonstegn avvises av separat bytegrense", async () => {
+  const { validateQuestion } = await import("../src/features/rag/contracts.ts");
+  const value = "a" + "\u0301".repeat(33000) + "bc";
+  assert.equal(validateQuestion(value), value);
+  const payload = JSON.stringify({ question: value });
+  assert.ok(Buffer.byteLength(payload) > MAX_BODY);
+  await withServer(async (url) => {
+    const response = await post(url, {}, payload);
+    assert.equal(response.status, 413);
+    await response.arrayBuffer();
+  });
+});

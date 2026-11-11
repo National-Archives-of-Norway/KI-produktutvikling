@@ -23,10 +23,24 @@ export type RagRequest = { question: string };
 export const QUESTION_LIMIT = 1000;
 export const QUESTION_ERROR = "Skriv et spørsmål på 3–1000 tegn.";
 
+const questionSegments = new Intl.Segmenter("nb", { granularity: "grapheme" });
+export function questionLength(value: string): number {
+  let count = 0;
+  for (const _ of questionSegments.segment(value)) count++;
+  return count;
+}
+export function limitQuestion(value: string, limit = QUESTION_LIMIT): string {
+  let count = 0;
+  for (const segment of questionSegments.segment(value))
+    if (++count > limit) return value.slice(0, segment.index);
+  return value;
+}
+
 export function validateQuestion(value: unknown): string | null {
   if (typeof value !== "string") return null;
   const text = value.trim();
-  return text.length >= 3 && text.length <= QUESTION_LIMIT ? text : null;
+  const length = questionLength(text);
+  return length >= 3 && length <= QUESTION_LIMIT ? text : null;
 }
 
 export function isSources(value: unknown): value is RagSource[] {

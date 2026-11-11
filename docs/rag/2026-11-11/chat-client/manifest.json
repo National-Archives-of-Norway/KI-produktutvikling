@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-11",
+  "agent": "Codex (OpenAI)",
+  "baselineCommit": "f15c89bb7dfc8349cde1c5c9ef1668dde1756482",
+  "workingTreeChangesTested": true,
+  "node": "v24.22.1",
+  "next": "16.4.3",
+  "tests": {
+    "passed": 132,
+    "failed": 0
+  },
+  "checks": {
+    "typecheck": 0,
+    "serverBuild": 0,
+    "pagesBuild": 0,
+    "format": 0,
+    "gitDiffCheck": 0
+  },
+  "bodyLimitBytes": 65536,
+  "graphemeLimit": 1000,
+  "simulatedVisualModel": true,
+  "realModelTested": false,
+  "node22Retested": false,
+  "serverBundle": {
+    "build": "server-final",
+    "jsFiles": 16,
+    "markers": {
+      "fetchUrl": [],
+      "copilotPlans": [],
+      "codexTokens": [],
+      "\"retrieve\"": []
+    },
+    "rewrite": {
+      "source": "/api/rag",
+      "destination": "http://127.0.0.1:3001/api/rag",
+      "regex": "^/api/rag(?:/)?$"
+    }
+  },
+  "pagesBundle": {
+    "build": "pages-final",
+    "jsFiles": 20,
+    "markers": {
+      "fetchUrl": [
+        "out/_next/static/chunks/1u5jzao-fpztn.js",
+        "out/_next/static/chunks/44_hp_r6a-isz.js"
+      ],
+      "copilotPlans": [
+        "out/_next/static/chunks/1u5jzao-fpztn.js",
+        "out/_next/static/chunks/44_hp_r6a-isz.js"
+      ],
+      "codexTokens": [
+        "out/_next/static/chunks/1u5jzao-fpztn.js",
+        "out/_next/static/chunks/44_hp_r6a-isz.js"
+      ],
+      "\"retrieve\"": [
+        "out/_next/static/chunks/1u5jzao-fpztn.js",
+        "out/_next/static/chunks/44_hp_r6a-isz.js"
+      ]
+    }
+  },
+  "sourceSha256": {
+    "src/features/rag/parse-answer.ts": "ff207198b835e50f1923a66066458f8b22c4b1fe71404b201128cb098c815bf0",
+    "src/features/rag/components/answer-content.tsx": "5dac3ceb8fa800216af023555c8b29c359cf08252696396e2905d2b644261d4e",
+    "src/features/rag/contracts.ts": "d1f95ea92e95db01827f6421d485766a6a253c60c4dc8e5af66e4f4b1ad7a1f7",
+    "src/features/rag/components/chat-composer.tsx": "b60b7e5034e7c7e0d455bc241b4cb1cb7be4cc535c71591345ff51ff1a75954a",
+    "src/features/rag/client.ts": "d932a430479254e96db72262742b4e54d15d60db5baa616c578e3aada950e319",
+    "src/server/rag/http.ts": "632fdcf9dd5522dc74b4a952af149363a51eac7bbd7e2ce8992ff86d1ff210d1",
+    "tests/answer-content.test.ts": "c83ea41d6fe471bcdd1e04dafc23e873814c6d2b181592e627b42f0efcdf03b7",
+    "tests/chat.test.ts": "327bb489a0be88c4c7b56b018677b7a0b0b7bedccaab757d825cb518d1e4a85e",
+    "tests/rag-http.test.ts": "38398a805111e90975580236522f8d491c1e4ced1e4e8a043a3a3c976eb9b86b",
+    "tests/rag-service.test.ts": "508dffe06928431b6c34de587968f568721fc6db9f7e521d0e8aeff981d5ffae"
+  }
+}

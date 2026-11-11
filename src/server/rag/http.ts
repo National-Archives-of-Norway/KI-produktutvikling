@@ -8,7 +8,7 @@ import { DEFAULT_ALLOWED_ORIGINS } from "./config.ts";
 import type { RagConfig } from "./config.ts";
 import type { RagService } from "./service.ts";
 
-const MAX_BODY = 8192;
+export const MAX_BODY = 64 * 1024;
 type HttpConfig = Pick<RagConfig, "allowedOrigins">;
 const defaultHttpConfig: HttpConfig = {
   allowedOrigins: DEFAULT_ALLOWED_ORIGINS,

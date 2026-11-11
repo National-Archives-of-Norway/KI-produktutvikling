@@ -5,22 +5,35 @@ import {
   type RagResult,
 } from "./contracts.ts";
 import { RAG_TIMEOUTS } from "../../config/rag.ts";
-import { retrieve } from "./retrieval.ts";
 
 export type AnswerOutcome = { result?: RagResult; error?: string };
 export async function requestAnswer(
   question: string,
   options: { demo: boolean; fetcher?: typeof fetch; signal?: AbortSignal },
 ): Promise<AnswerOutcome> {
-  if (options.demo)
-    return {
-      result: {
-        mode: "sources",
-        sources: retrieve(question),
-        answer: null,
-        reason: "static_demo",
-      },
-    };
+  if (options.demo) {
+    // Next erstatter dette med en byggkonstant. Serverbygget skal ikke engang
+    // sende demoens retrieval-chunk; Node-testene uten byggvariabel kan prøve demo.
+    try {
+      if (process.env.NEXT_PUBLIC_STATIC_DEMO !== "false") {
+        const { retrieve } = await import("./retrieval.ts");
+        return {
+          result: {
+            mode: "sources",
+            sources: retrieve(question),
+            answer: null,
+            reason: "static_demo",
+          },
+        };
+      }
+      return { error: "Statisk demo er ikke aktivert i dette bygget." };
+    } catch {
+      return {
+        error: "Demokildene kunne ikke lastes. Prøv å laste siden på nytt.",
+      };
+    }
+  }
+
   try {
     const body: RagRequest = { question };
     const response = await (options.fetcher ?? fetch)("/api/rag", {

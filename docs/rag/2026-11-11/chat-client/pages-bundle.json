@@ -1,0 +1,22 @@
+{
+  "build": "pages-final",
+  "jsFiles": 20,
+  "markers": {
+    "fetchUrl": [
+      "out/_next/static/chunks/1u5jzao-fpztn.js",
+      "out/_next/static/chunks/44_hp_r6a-isz.js"
+    ],
+    "copilotPlans": [
+      "out/_next/static/chunks/1u5jzao-fpztn.js",
+      "out/_next/static/chunks/44_hp_r6a-isz.js"
+    ],
+    "codexTokens": [
+      "out/_next/static/chunks/1u5jzao-fpztn.js",
+      "out/_next/static/chunks/44_hp_r6a-isz.js"
+    ],
+    "\"retrieve\"": [
+      "out/_next/static/chunks/1u5jzao-fpztn.js",
+      "out/_next/static/chunks/44_hp_r6a-isz.js"
+    ]
+  }
+}

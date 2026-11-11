@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { createRagService } from "../src/server/rag/service.ts";
 import { createOllamaAdapter } from "../src/server/rag/ollama.ts";
 import { loadRagConfig } from "../src/server/rag/config.ts";
-import { handleRagRequest } from "../src/server/rag/http.ts";
+import { handleRagRequest, MAX_BODY } from "../src/server/rag/http.ts";
 import { corpus } from "../src/features/rag/retrieval.ts";
 import { isResult } from "../src/features/rag/contracts.ts";
 
@@ -106,8 +106,12 @@ test("HTTP-grensen håndterer kontrakt, ugyldig JSON, størrelse og origin", asy
   assert.equal(ok.headers.get("cache-control"), "no-store");
   assert.equal((await handleRagRequest(request("{"), service)).status, 400);
   assert.equal(
-    (await handleRagRequest(request('"' + "x".repeat(8193) + '"'), service))
-      .status,
+    (
+      await handleRagRequest(
+        request('"' + "x".repeat(MAX_BODY + 1) + '"'),
+        service,
+      )
+    ).status,
     413,
   );
   assert.equal(

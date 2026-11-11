@@ -6,7 +6,16 @@ Sist oppdatert: **11. november 2026**. Utførende agent ved denne gjennomgangen:
 
 Den opprinnelige gjennomgangen bygde på kode, dokumentasjon og lokal Git-base `89b2bd5`, med senere arbeid med personvern, priser og Oversikt. Det tidligere samlede grunnlaget hadde 53 Node-tester, tre Python-tester og produksjonsbygg samt avgrensede nettleserkontroller; dette er historikk.
 
-**Siste samlede kontrollgrunnlag (10. november 2026):** Git-revisjon `e6b5b42` er verifisert i Docker/Linux arm64 med Node 22.18.0: **105/105 Node-tester, 3/3 Python-tester, innholdssynk, typekontroll og produksjonsbygg** bestod. Kontrollene kjørte uten nettverk etter installasjon av låste Linux-avhengigheter; prisdata og låsefil er uendret. Se [testrapport og råresultater](docs/priser/TESTRAPPORT.md). Dette er ikke dokumentasjon på produksjonsdrift, godkjent innhold, full tilgjengelighet eller faktiske modell-/priskildekall. Publisering av en planside er ikke produksjonsgodkjenning; P1–P10 nedenfor er fortsatt åpne.
+**Gjeldende kontrollgrunnlag, avstemt 11. november 2026:** Kontrollene gjelder ulike revisjoner og skal ikke summeres til én produksjonsgodkjenning.
+
+| Grunnlag                                                                   | Dokumentert resultat                                                                                                                                                                                                   | Avgrensning                                                                                                                                                            |
+| -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Siste lokale chatendringer, arbeidskopi basert på `f15c89b` (11. november) | **132/132 Node-tester**, typekontroll, serverbygg, Pages-bygg og formatering bestod på Node 24.22.1. Visuell chatprøve med simulert modell og kontroll av klientpakken. [Rapport](docs/rag/2026-11-11/chat-client.md). | Ikke committet ved avstemmingen. Ikke testet på nytt med Node 22/Docker eller full tilgjengelighetskontroll. Ingen ekte modell; IME-komposisjon er ikke manuelt prøvd. |
+| RAG-frister og avbrudd, `7ebbab3` (11. november)                           | **119/119 Node-tester**, **460/460 gjentatte fokusprøver** og faktiske 35-/60-sekundersforløp med simulert transport på Node 22.18.0 i Docker/Linux arm64. [Rapport](docs/rag/2026-11-10/lifecycle.md).                | Omfatter ikke de nyere chatendringene. Ingen ny typekontroll eller Linux-bygg i denne kjøringen.                                                                       |
+| Tidligere samlede Linux-kontroller, `e6b5b42` (10. november)               | **105/105 Node-tester, 3/3 Python-tester**, innholdssynk, typekontroll og produksjonsbygg på Node 22.18.0 i Docker/Linux arm64. [Rapport](docs/priser/TESTRAPPORT.md).                                                 | Historisk bygggrunnlag; ikke en verifisering av senere rettinger.                                                                                                      |
+| Siste vurderte tilgjengelighetsgrunnlag (10. november)                     | **29 K / 11 I / 8 U / 0 B**, ni rettede funn og ingen bekreftede åpne brudd i undersøkt versjon. [Gjeldende peker](docs/tilgjengelighet/latest.json).                                                                  | Åtte krav er uavklart; samlet samsvar er ikke vurdert. Senere chatendringer trenger relevant tilgjengelighetsretest.                                                   |
+
+Ingen av disse kontrollene dokumenterer produksjonsdrift, godkjent innhold eller faktiske modell-/priskildekall. P1–P10 nedenfor er fortsatt åpne.
 
 ## Slik brukes og vedlikeholdes planen
 
@@ -23,7 +32,7 @@ Reglene er også lagt i `AGENTS.md`, og gjelder fremtidig agentarbeid i prosjekt
 ## Mål og rammer
 
 - **Målgruppe:** De som jobber med produktutvikling eller utvikling av løsninger i Nasjonalarkivet. Portalen skal gjøre det enklere å lære, prøve og dele nyttige arbeidsmåter med KI.
-- **Omfang nå:** Oppstartsveiledning, retningslinjeutkast, ressurskatalog, Spør KI, informasjon om teamet og KI-prat, tilgjengelighetsgrunnlag, versjonslogg og funksjonalitetsoversikt. Nyheter og egne agenter er mulige senere tillegg, ikke et krav til første pilot.
+- **Omfang nå:** Oppstartsveiledning, retningslinjeutkast, ressurskatalog, Spør KI, Oversikt med assistenter/MCP-status/priser, informasjon om teamet og KI-prat, tilgjengelighets-, personvern- og cookie-utkast, versjonslogg og funksjonalitetsoversikt. Nyheter og egne agenter er mulige senere tillegg, ikke et krav til første pilot.
 - **Teknologi:** Next.js, TypeScript, MUI og `@digitalarkivet/mui-theme`, med portalens eget futuristiske komponent-/designlag. Publisert npm-pakke brukes uten tilgang til designbibliotekets private GitHub-repo.
 - **Utvikling og versjonering:** Lokal utvikling og Git er etablert. Portalrepoet har ingen GitHub-remote. Eget organisasjonsrepo, CI og utrulling må avklares og opprettes separat.
 - **Drift:** Driftsplattform, domene og ansvar er ikke valgt. Dagens løsning starter Next.js og RAG på lokal loopback. Pages finnes som statisk byggvariant, ikke som besluttet miljø for lukket pilot eller modellgenerering.
@@ -32,20 +41,20 @@ Reglene er også lagt i `AGENTS.md`, og gjelder fremtidig agentarbeid i prosjekt
 - **Innhold:** Felles innholdsdata brukes av sider, katalog, anbefalinger og RAG. Dette sikrer teknisk samsvar, men innebærer ikke faglig godkjenning. Internt materiale skal ikke legges i klientdata, `public/`, offentlige bygg eller dagens RAG-korpus.
 - **Modell:** Lokal Ollama og eksternt OpenAI-kompatibelt Chat Completions-API er støttet i kode. Leverandør, modell og virkelig API-tilkobling er ikke konfigurert/verifisert. API-nøkkelen skal bare være en serverhemmelighet.
 
-## Levert siden forrige planoppdatering
+## Samlet leveransestatus – 11. november 2026
 
-| Område                           | Implementert og dokumentert                                                                                                                                               | Begrensning som fortsatt gjelder                                                                                 |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| Forside og navigasjon            | Lær/Prøv/Del, anbefalt oppgave «Utforsk et brukerbehov» fra ressursdata, menyen Kom i gang → Retningslinjer → Ressurskatalog → Oversikt → Spør KI → Om                    | Begrenset intern brukertesting gjenstår                                                                          |
-| Innhold og KI-prat               | Felles innholdsfiler for Kom i gang, Om og Retningslinjer, tydelig retningslinjelenke, KI-prat med deltakelsesinvitasjon og mandatforslag som vedlegg                     | Retningslinjer og mandat er utkast; eiere og godkjenning gjenstår                                                |
-| Ressurser og Skills              | Seks katalogressurser, separat lokalt Skills-repo, tilgjengelighetsskill 0.6.0 og personvernskill 0.1.0 med kartleggings-/rapportflyt og generell installasjonsveiledning | Skills er Beta og ikke menneskelig gjennomgått; ingen distribusjon fra portalen eller GitHub er etablert         |
-| Spør KI                          | Kildebasert veiledning, konkrete steg, kilder, nye spørsmål, forbedret presentasjon av modellsvar og serveradapter for eksternt API                                       | Ingen faktisk modellgenerering er verifisert; hvert spørsmål behandles separat                                   |
-| Kontinuerlig innholdsoppdatering | Sider og RAG deler innhold; lokal RAG lastes om ved innholdsendringer; isolert synkroniseringstest finnes                                                                 | I produksjon må Next.js og RAG utrulles fra samme revisjon; gamle chatsvar er historikk                          |
-| Oversikter                       | Nettstedskart, versjonsloggside og funksjonalitetsoversikt med bunntekstlenker; byggkontroll for manglende/ukjente sider                                                  | Funksjonenes mening og modenhet må vedlikeholdes i registeret                                                    |
-| Tilgjengelighet                  | Avgrensede kontroller, rettinger, WCAG-matrise, lokalt erklæringsutkast og daterte testresultater under `docs/tilgjengelighet/`                                           | De tre kjente avvikene er lokalt rettet; øvrige manuelle kontroller og formell godkjenning/registrering gjenstår |
-| Teknisk kvalitet                 | Moduldeling, lokale tester, TypeScript, formatering, produksjonsbygg og test av at en falsk modellnøkkel ikke følger med klientfiler                                      | CI, driftssikkerhet og kontroll i det faktiske utrullingsmiljøet gjenstår                                        |
+| Område                           | Implementert og dokumentert                                                                                                                                      | Begrensning som fortsatt gjelder                                                                                        |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Forside og navigasjon            | Lær/Prøv/Del, anbefalt oppgave «Utforsk et brukerbehov» fra ressursdata, menyen Kom i gang → Retningslinjer → Ressurskatalog → Oversikt → Spør KI → Om           | Begrenset intern brukertesting gjenstår                                                                                 |
+| Innhold og KI-prat               | Felles innholdsfiler for Kom i gang, Om og Retningslinjer, tydelig retningslinjelenke, KI-prat med deltakelsesinvitasjon og mandatforslag som vedlegg            | Retningslinjer og mandat er utkast; eiere og godkjenning gjenstår                                                       |
+| Ressurser og Skills              | Seks katalogressurser, separat lokalt Skills-repo, tilgjengelighetsskill 0.6.0, personvernskill 0.1.0 og selvstendig cookie-/samtykkeskill 0.1.0 med rapportflyt | Skills er Beta og ikke menneskelig gjennomgått; ingen distribusjon fra portalen eller GitHub er etablert                |
+| Spør KI                          | Relevansstyrt kildesøk, kildebevaring ved modellfeil, frister/avbrudd og modellkapasitet, liste-/kildevisning, grafemvalidering og demo uten modell              | Ingen faktisk modellgenerering er verifisert; hvert spørsmål behandles separat                                          |
+| Kontinuerlig innholdsoppdatering | Sider og RAG deler innhold; lokal RAG lastes om ved innholdsendringer; isolert synkroniseringstest finnes                                                        | I produksjon må Next.js og RAG utrulles fra samme revisjon; gamle chatsvar er historikk                                 |
+| Oversikter                       | Oversikt med priser, godkjente assistenter og MCP-vurderingsstatus; nettstedskart, versjonslogg, utviklingsplan og avledet funksjonalitetsoversikt               | Funksjonenes mening og modenhet må vedlikeholdes i registeret                                                           |
+| Tilgjengelighet                  | Avgrensede kontroller, rettinger, WCAG-matrise, lokalt erklæringsutkast og daterte testresultater under `docs/tilgjengelighet/`                                  | Ni funn er rettet i siste vurderte utvalg; åtte krav, retest av nyere chat og formell godkjenning/registrering gjenstår |
+| Teknisk kvalitet                 | Moduldeling, lokale tester, TypeScript, formatering, produksjonsbygg og test av at en falsk modellnøkkel ikke følger med klientfiler                             | CI, driftssikkerhet og kontroll i det faktiske utrullingsmiljøet gjenstår                                               |
 
-Referanser: Portalcommitene `797cd7b`, `9f27564` og `e93e5f9`, samt [versjonsloggen](VERSJONSLOGG.md). Skills-repoets siste lokale commit er `cf8f6d5`; repoene har separate logger og historikk.
+Referanser: [versjonsloggen](VERSJONSLOGG.md) og kontrollgrunnlaget ovenfor. Portalens HEAD ved avstemmingen er `f15c89b`; nyere chatendringer og denne avstemmingen ligger i arbeidskopien. Skill-versjonene er kontrollert mot metadata i det lokale Skills-repoet; repoene har separate logger og historikk.
 
 ## Hva gjenstår før produksjonssetting?
 
@@ -68,16 +77,16 @@ Tilgjengelighetsgrunnlag og konkrete uavklarte punkter finnes i [WCAG-kontrollen
 
 ## Faseoversikt
 
-| Fase | Leveranse                                            | Status 10. november 2026                                                            |
-| ---- | ---------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| 1    | Omfang, ansvar og tilgangsvalg                       | Målgruppe og første funksjoner avklart; eierskap, drift og tilgangsmodell åpne      |
-| 2    | Teknisk grunnmur og arbeidsflyt                      | Lokal implementering klar; GitHub-repo, CI og review-regler gjenstår                |
-| 3    | Design og tilgjengelighet                            | Design og avgrensede kontroller utført; samlet tilgjengelighetsgodkjenning gjenstår |
-| 4    | MVP 1: lokal portal og forberedelse til lukket pilot | Lokal leveranse klar; ikke delt eller brukertestet som pilot                        |
-| 5    | Servermiljø, modellkobling og utrulling              | Adaptere klargjort; driftsmiljø og faktisk modelltilkobling ikke etablert           |
-| 6    | MVP 2: innlogging og beskyttet tilgang               | Ikke implementert; nødvendig før første delte pilot                                 |
-| 7    | MVP 3: versjonerte skills og distribusjon            | Lokalt bibliotek og katalogintegrasjon på plass; review og distribusjon gjenstår    |
-| 8    | MVP 4: forvaltning og produksjonsgodkjenning         | Ikke godkjent; produksjonskrav P1–P10 følges opp                                    |
+| Fase | Leveranse                                            | Status 11. november 2026                                                                        |
+| ---- | ---------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| 1    | Omfang, ansvar og tilgangsvalg                       | Målgruppe og første funksjoner avklart; eierskap, drift og tilgangsmodell åpne                  |
+| 2    | Teknisk grunnmur og arbeidsflyt                      | Lokal implementering klar; GitHub-repo, CI og review-regler gjenstår                            |
+| 3    | Design og tilgjengelighet                            | Design og avgrensede kontroller utført; samlet tilgjengelighetsgodkjenning gjenstår             |
+| 4    | MVP 1: lokal portal og forberedelse til lukket pilot | Lokal leveranse klar; ikke delt eller brukertestet som pilot                                    |
+| 5    | Servermiljø, modellkobling og utrulling              | Adaptere, frister/avbrudd og kapasitet simulert testet; drift og ekte modelltilkobling gjenstår |
+| 6    | MVP 2: innlogging og beskyttet tilgang               | Ikke implementert; nødvendig før første delte pilot                                             |
+| 7    | MVP 3: versjonerte skills og distribusjon            | Lokalt bibliotek og katalogintegrasjon på plass; review og distribusjon gjenstår                |
+| 8    | MVP 4: forvaltning og produksjonsgodkjenning         | Ikke godkjent; produksjonskrav P1–P10 følges opp                                                |
 
 Fase 5 og 6 må samordnes før MVP 1 deles. Fase 7 kan utvikles parallelt, men full automatisk skill-installasjon er ikke et krav til første pilot med lesbart innhold. Pages beholdes foreløpig som bygg-/demovariant; det er ikke en beslutning om offentlig hosting.
 
@@ -100,7 +109,7 @@ Fase 5 og 6 må samordnes før MVP 1 deles. Fase 7 kan utvikles parallelt, men f
 - [x] Implementere felles innholdskilde for sider, anbefalinger og RAG, med kontroll av innholdsreferanser.
 - [x] Implementere automatisk lokal omlasting av RAG og isolert test av innholdssynkronisering.
 - [x] Etablere funksjonsregister med automatisk avledet oversikt og nettstedskart, og kontroll av sideregistrering ved oppstart/bygg.
-- [x] Etablere versjonslogg og agentinstruksjoner for vedlikehold av logg og funksjonsregister; denne økten utvider regelen til utviklingsplanen.
+- [x] Etablere versjonslogg og agentinstruksjoner for vedlikehold av logg og funksjonsregister; og vedlikehold av utviklingsplanen.
 - [ ] Opprette/tilknytte organisasjonsrepo og avtale branch-/PR-/review-regler.
 - [ ] Etablere CI med tester, formatering, typekontroll, relevante bygg og kontroll av offentlige artefakter. Vurdere linting som tillegg.
 - [ ] Etablere rutiner for avhengigheter, serverhemmeligheter, nøkkelrotasjon og minste privilegium for CI/utrulling.
@@ -128,6 +137,7 @@ Arbeidsgrunnlaget for P8 er konkretisert i [avklaringsplanen for de 8 uavklarte 
 - [x] Implementere oppstartsveiledning med retningslinjelenke, retningslinjeutkast og Om med KI-prat og mandatvedlegg.
 - [x] Implementere søk/filter, ressursdetaljer, Beta-/eksempelmerking og generell bruksveiledning.
 - [x] Implementere Spør KI med kildebasert veiledning og forberedt modellgenerering.
+- [x] Rette svarvisning, grafemlengde og demo-import (11. november 2026): ren testbar parser for lister/fet tekst/kildehenvisninger, felles grafemvalidering og 64 KiB kroppsgrense, og demokilder fjernet fra normalt klientbygg. Server- og Pages-bygg samt kort visuell prøve med simulert svar er kontrollert; dette er ikke full tilgjengelighets- eller modellverifisering.
 - [x] Rette og regresjonsteste relevansen i det lokale kildesøket (10. november 2026): 26 spørsmål med positive og negative forventninger, retningsbestemt prefiks, relevansterskel og deterministisk rangering. Se [før-/etter-evalueringen](docs/rag/2026-11-10/relevans.md). Dette erstatter ikke oppgavebasert brukertesting eller verifisering av faktisk modellgenerering.
 - [x] Implementere nettstedskart, tilgjengelighetsside, versjonslogg og funksjonalitetsoversikt.
 - [ ] Faglig gjennomgå og godkjenne representativt pilotinnhold, inkludert skill-beskrivelse og PDF.
@@ -171,6 +181,8 @@ Arbeidsgrunnlaget for P8 er konkretisert i [avklaringsplanen for de 8 uavklarte 
 - [x] Opprette separat lokalt Skills-repo med struktur for flere skills og egen versjonslogg.
 - [x] Utvide tilgjengelighetsskillen til testing, rettingsforslag og erklæringsutforming, med daterte resultater i målprosjektet.
 - [x] Utvide skillen til 0.4.0 med konkrete prosedyrer for alle 48 nettkrav og automatisk opprettet, uutfylt testplan. Dette er utvidelse av testverktøyet, ikke gjennomføring av portalens gjenstående tilgjengelighetskontroller.
+- [x] Videreutvikle tilgjengelighetsskillen til 0.6.0 med kartlegging av testmuligheter, avslutningsvilkår og dokumentavstemming; brukt i siste lokale oppfølging. Portalens katalogversjon er avstemt mot skillens metadata.
+- [x] Opprette selvstendig cookie-/samtykkeskill 0.1.0 og lokal cookie-side med datert kartlegging. Kartleggingen begrunnet at samtykkebanner ikke trengs i undersøkt lokal versjon; nytt miljø eller nye integrasjoner må vurderes på nytt.
 - [x] Opprette personvernskill 0.1.0 med kartlegging, arbeidsmaler, faglige referanser og datert resultatlagring, installere lik lokal kopi og registrere Beta-beskrivelsen i katalogen og Spør KI. Seks tester av lagringsverktøyet bestod i isolerte prosjekter; dette er ingen juridisk godkjenning.
 - [x] Validere pakke/metadata og teste lagringsverktøyene; tidligere dokumenterte 15 regresjonstester bestod i isolerte prosjekter.
 - [x] Gjøre skillen gjenfinnbar i katalog og Spør KI med versjon, plassering og generell bruksveiledning.
@@ -202,26 +214,30 @@ Arbeidsgrunnlaget for P8 er konkretisert i [avklaringsplanen for de 8 uavklarte 
 
 ## Prisoversikt – levert lokalt 9. november 2026
 
-- [x] Opprette `/priser/` med abonnement for Copilot/Claude/Codex, separate direkte API-tabeller og Copilot-tokenpriser, offisielle kilder og kontrolltidspunkt. Registrert som Beta, med lenke i bunnteksten.
+- [x] Opprette `/priser/` med abonnement for Copilot/Claude/Codex, separate direkte API-tabeller og Copilot-tokenpriser, offisielle kilder og kontrolltidspunkt. Registrert som Beta, opprinnelig med lenke i bunnteksten; inngangen går nå via Oversikt.
 - [x] Hente og formatkontrollere alle seks kilder; samme snapshot brukes av siden og Spør KI. HTTP-/parsefeil bevarer forrige vellykkede data og gir synlig feilstatus ved neste bygg. Prisutvalget er eksplisitt og omfatter ikke alle planer/modeller.
 - [x] Lage lokale parser-/feilhåndteringstester, foreldelsesvarsel og daglig GitHub-arbeidsflyt som foreslår prisdata og versjonslogg i PR. Alle 45 tester og lokalt produksjonsbygg bestod.
 - [x] Rette prisparser og lagringsflyt, og klargjøre én fast prisgren som reagerer på rader/kildemetadata/status/feil, ikke tidspunkter alene (10. november 2026). Lokale fixture-tester og simulert PR-flyt dekker oppretting, oppdatering, datostøy og tilbakeført prisforslag. Ingen live prisinnhenting eller GitHub-verifisering utført i denne rettingen.
 - [ ] P4: Legge repoet på GitHub, tillate nødvendige Actions-/PR-rettigheter og prøve planlagt/manuell jobb. Bare samme repo får skriverettigheter; ingen andre repoer eller modellnøkler brukes.
 - [ ] Koble sammenslått prisgrunnlag til faktisk utrulling av både nettside og RAG, og teste feilkilder/varsling i det delte miljøet. Automatisk produksjonsoppdatering er ikke aktiv. Avklare hvem som gjennomgår åpne pris-PR-er og vedlikeholder utvalget; aktiveringsstatus på siden skal oppdateres først etter verifisering.
 
-## Lokale testmotorer – 10. november 2026
+## Datert kontrollhistorikk – 9.–10. november 2026
+
+Avsnittene frem til fase 8 bevarer tidligere kjøringer og deres daværende restlister. Tall som 37 restpunkter og 15 uavklarte krav er historiske, ikke dagens restantall. Bruk kontrollgrunnlaget øverst og [gjeldende WCAG-kontroll](docs/tilgjengelighet/WCAG-KONTROLL.md) for oppfølging av de åtte uavklarte kravene. Tidligere avkrysninger endres ikke uten ny evidens.
+
+### Lokale testmotorer – 10. november 2026
 
 - [x] Installere låst axe CLI, Nu Html Checker og kompatibel ChromeDriver som utviklingsavhengigheter, med lokal Java-runtime. Ingen ekstern skanntjeneste eller global Java-konfigurasjon.
 - [x] Kjøre begge motorene på eksporten: axe på 20 registrerte sider og feilside, vnu på eksportfilene. Originalresultater og tekniske feil bevares. Faktisk negativ verktøytest bekrefter at begge motorene finner manglende alt i en separat testside. Kjøring `090555-native-d984a7c5` og vurdert grunnlag `090740-ca8d9c80ecb6`: 0 axe-violations / 0 HTML-feil, men tre kontrastgrupper (80 forekomster) og tekniske noter er vurdert videre. Arbeidsstatus 21 K / 11 I / 16 U / 0 B; ikke samlet godkjenning.
 - [ ] Vurdere de gjenstående kontrastforholdene manuelt og fullføre øvrige hjelpemiddel-/zoom-/produksjonskontroller. Skannene er ingen samlet P8-godkjenning. Første delte miljø er fortsatt lukket pilot.
 
-## Retting av tre tilgjengelighetsavvik – 10. november 2026
+### Retting av tre tilgjengelighetsavvik – 10. november 2026
 
 - [x] Rette og målrettet reteste A11Y-04–06: PDF-listestruktur, PDF-tekstkontrast og språk/tittel på 404-siden. Ny kjøring: `docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/`. PDF har tre lister/12 punkter, 229 bevarte MCID-koblinger og 6,28:1 tekstkontrast på side 5. Norsk 404 og én tittel er kontrollert i nettleser/eksport.
 - [x] Oppdatere rapporter, restliste, kort erklæring, funksjonsregister og vedleggsstørrelse. Ingen bekreftede åpne avvik i undersøkt utvalg; samlet samsvar er fortsatt uavklart (20 K / 11 I / 17 U / 0 B).
 - [ ] Fullføre den brede manuelle restlisten og teste faktisk publisert fallback. Axe/vnu er nå installert og kjørt, se nyere resultater. Rettede lokale avvik fullfører ikke P8 eller produksjonsgodkjenningen.
 
-## Tilgjengelighetskjøring – 10. november 2026
+### Tilgjengelighetskjøring – 10. november 2026
 
 - [x] Kjøre skill 0.5.0 på alle 20 registrerte sider med automatiske HTML/PDF-/nettleserdeler og tre deklarerte forløp. Rapport og kravvis manuell restliste ligger i `docs/tilgjengelighet/2026-11-10/053920-3f1e603bfbcd/`. Tidligere kjøringer er bevart.
 - [x] Oppdatere testplan, vurdert matrise, kort erklæring og lokal side. Tre åpne avvik og fortsatt uavklart samlet samsvar; 31 krav med automatisk deldekning er ikke 31 oppfylte krav.
@@ -229,7 +245,7 @@ Arbeidsgrunnlaget for P8 er konkretisert i [avklaringsplanen for de 8 uavklarte 
 - [ ] Fullføre de 37 gjenstående vurderings-/rettings-/retestpunktene i den manuelle restlisten, særlig faktisk skjermleser, 200/400 % forstørring, enhetsinnstillinger, resterende kontrast, tekstavstand og PDF-semantikk. 11 krav er uten utløsende innholdstype i lokalt omfang og må vurderes på nytt ved endring.
 - [x] Gjort lokal axe/full HTML-validator tilgjengelig og kjørt skann 10. november; se nyere motorresultater. Ingen ekstern opplasting er utført. P8 er fortsatt åpent.
 
-## Tilgjengelighetsretest – 9. november 2026
+### Tilgjengelighetsretest – 9. november 2026
 
 - [x] Utvide skillen til 0.5.0 med automatiske deltester og kravvis manuell restliste for alle 48 krav. HTML/PDF, rendret DOM, beregnbar kontrast, omflyting, fokus og deklarerte forløp støttes; lokal validator og faktisk axe-rapport brukes når tilgjengelig. Manglende verktøy blir synlig blokkert. Utvidelsen endrer ikke siste portalvurdering eller åpne avvik.
 

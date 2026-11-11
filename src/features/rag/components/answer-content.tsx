@@ -1,8 +1,9 @@
 import { Fragment } from "react";
 import Link from "next/link";
 import type { RagSource } from "../contracts";
+import { parseAnswer, type AnswerInline } from "../parse-answer";
 
-// Render a small, safe text format. Model output never becomes HTML or an arbitrary URL.
+// Bare kjente kilder gir lenker; modelltekst blir aldri HTML eller URL-er.
 export function AnswerContent({
   text,
   sources,
@@ -10,50 +11,48 @@ export function AnswerContent({
   text: string;
   sources: RagSource[];
 }) {
-  function inline(value: string) {
-    return value.split(/(\[\d+\]|\*\*[^*]+\*\*)/g).map((part, index) => {
-      const match = part.match(/^\[(\d+)\]$/);
-      const source = match ? sources[Number(match[1]) - 1] : undefined;
-      if (source)
+  function inline(parts: AnswerInline[]) {
+    return parts.map((part, index) => {
+      if (part.type === "strong")
+        return <strong key={index}>{inline(part.children)}</strong>;
+      if (part.type === "citation") {
+        const source = sources[part.number - 1];
         return (
           <Link
             key={index}
             href={source.href}
-            aria-label={`Kilde ${match![1]}: ${source.title}`}
+            aria-label={`Kilde ${part.number}: ${source.title}`}
           >
-            {part}
+            [{part.number}]
           </Link>
         );
-      if (part.startsWith("**") && part.endsWith("**"))
-        return <strong key={index}>{part.slice(2, -2)}</strong>;
-      return <Fragment key={index}>{part}</Fragment>;
+      }
+      return <Fragment key={index}>{part.text}</Fragment>;
     });
   }
   return (
     <div className="chat-answer">
-      {text
-        .split(/\n\s*\n/)
-        .filter(Boolean)
-        .map((block, index) => {
-          const lines = block.trim().split("\n");
-          if (lines.every((line) => /^\d+[.)]\s+/.test(line)))
-            return (
-              <ol key={index}>
-                {lines.map((line, i) => (
-                  <li key={i}>{inline(line.replace(/^\d+[.)]\s+/, ""))}</li>
-                ))}
-              </ol>
-            );
-          if (lines.every((line) => /^[-*]\s+/.test(line)))
-            return (
-              <ul key={index}>
-                {lines.map((line, i) => (
-                  <li key={i}>{inline(line.replace(/^[-*]\s+/, ""))}</li>
-                ))}
-              </ul>
-            );
-          return <p key={index}>{inline(block.replace(/^#{1,6}\s+/gm, ""))}</p>;
-        })}
+      {parseAnswer(text, sources.length).map((block, index) => {
+        if (block.type === "ordered-list")
+          return (
+            <ol key={index} start={block.start}>
+              {block.items.map((item, i) => (
+                <li key={i} value={item.number}>
+                  {inline(item.children)}
+                </li>
+              ))}
+            </ol>
+          );
+        if (block.type === "unordered-list")
+          return (
+            <ul key={index}>
+              {block.items.map((item, i) => (
+                <li key={i}>{inline(item.children)}</li>
+              ))}
+            </ul>
+          );
+        return <p key={index}>{inline(block.children)}</p>;
+      })}
     </div>
   );
 }

@@ -76,3 +76,21 @@ test("nettverksfeil og ugyldig API-format vises som feil, ikke svar", async () =
     assert.equal(outcome.result, undefined);
   }
 });
+
+test("serverbygg med demo deaktivert laster ikke demo og gjør ikke feil API-kall", async () => {
+  const previous = process.env.NEXT_PUBLIC_STATIC_DEMO;
+  process.env.NEXT_PUBLIC_STATIC_DEMO = "false";
+  try {
+    const result = await requestAnswer("test", {
+      demo: true,
+      fetcher: async () => {
+        throw new Error("skal ikke kalles");
+      },
+    });
+    assert.match(result.error!, /ikke aktivert/);
+    assert.equal(result.result, undefined);
+  } finally {
+    if (previous === undefined) delete process.env.NEXT_PUBLIC_STATIC_DEMO;
+    else process.env.NEXT_PUBLIC_STATIC_DEMO = previous;
+  }
+});
