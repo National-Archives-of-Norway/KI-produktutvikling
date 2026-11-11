@@ -1,5 +1,43 @@
 # Testrapport for prisinnhenting
 
+## Parseravgrensning, fotnoter og workflow – 11. november 2026
+
+Utførende: Codex (OpenAI), uten underagenter. Lokal arbeidskopi basert på `f2ec93f`, Node 24.22.1 på macOS arm64. Tidligere Linux-/Node 22-resultater nedenfor beholder dato og omfang.
+
+### Førtester og rettinger
+
+| Funn                                                   | Før retting                                       | Etter retting                                                                       |
+| ------------------------------------------------------ | ------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| Ekstra ugyldig fotnotetabell etter Claude-pristabellen | Feilet med celleantall-feil                       | Uvedkommende tabeller markeres; tabellen med alle nødvendige kolonner velges        |
+| Fotnote 3/hevet siffer i alle Claude-priskolonner      | Feilet med ukjent prisformat                      | Ett siffer 1–9 etter MTok godtas, også hevet eller HTML-sup                         |
+| Feil i faktisk pristabell / ekstratall som $1 500      | Allerede avvist                                   | Fortsatt synlig feil; money er ikke gjort mer tolerant                              |
+| Tom RAG_PORT mot tom RAG_MAX_CONCURRENT                | Ny likhetskontroll feilet; porten brukte standard | Usatt gir standard; eksplisitt tom/blank port, kapasitet eller origin-liste er feil |
+| RAG_PORT=0                                             | Ny avvisningstest feilet                          | Miljøport må være 1–65535; 0 tillates kun via eksplisitt testinjeksjon              |
+
+Alle funnene i punkt 1–4 ble testet før produktkode ble endret. Den gamle tabelltesten som krevde global kasting er erstattet med kontroll av invalid-markør, og en egen test krever feil i valgt pristabell. Fotnote-3-testen er tilsiktet endret fra avvisning til aksept. Eksisterende fixtures er ikke endret.
+
+### Hele workflowen: hva er faktisk kontrollert?
+
+| Del av pricing-sync.yml                                  | Lokal kontroll                                                                                                                                              | Hva gjenstår                                                                         |
+| -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| Schedule, dispatch, standardgren, concurrency og timeout | Innstillinger lest og testet mot YAML                                                                                                                       | Faktisk planlegging og GitHub-eventer                                                |
+| Checkout / Node 24 / rettigheter                         | Konfigurasjon kontrollert, persist-credentials false og avgrensede contents/PR-rettigheter bevart                                                           | Actions-runtime, faktisk checkout og token-/repo-/branch-regler                      |
+| Test innhenting uten nettverk                            | Eksakt run-kommando er node --test tests/pricing.test.mjs; den kjøres av test:pricing                                                                       | Ingen rekursiv invokasjon inne i sin egen test; GitHub-runneren er ikke prøvd        |
+| Hent og kontroller offisielle priser                     | Eksakt shell/heredoc kjørt med fixture-fetch for alle seks kilder; changed/failed leses fra ekte midlertidig GITHUB_OUTPUT-fil                              | Levende leverandørformater, HTTP og runner-outputmekanismen                          |
+| Opprett/oppdater pris-PR                                 | Eksakt shell, faktisk Git mot lokalt bare-repo og simulert gh: opprett, samme forslag ved ny pris, ingen ny push ved bare nye tider, lukk ved tilbakeføring | Ekte gh-autentisering, PR-oppretting/redigering/lukking og konkurrerende GitHub-push |
+| Kildefeil og gjenoppretting                              | Feilforslag beholder gamle rader og vellykket dato uten leverandørtekst. Gjentatt feil endrer ikke forslaget. Gjenoppretting til standardgrenen lukker det  | Faktisk synlighet/status i GitHub og leverandørutfall                                |
+| Meld mislykket kildekontroll                             | Eksakt shell gir exit 1 etter feilforslaget. Det kjører ikke når failed er false i den lokale simuleringen                                                  | GitHubs evaluering av if-uttrykket og samlet jobbutfall                              |
+
+Alle fire run-steg er syntakskontrollert med bash -n; rekkefølge og forventet antall steg er testet. actionlint er ikke installert, og ingen ny prosjektavhengighet er innført. Dette er en lokal simulering og konfigurasjonsgjennomgang, ikke full Actions-verifisering. Under utvikling av testen ble en escape-feil i fixture-hooken og et manglende blanklinjeskille mellom to testtabeller rettet før bestått retest; disse var testoppsettfeil, ikke nye leverandør- eller produktfunn.
+
+### Må prøves med workflow_dispatch på GitHub
+
+Når repoet og workflowen finnes på GitHub: kontroller faktisk standardgren/Node-oppsett, kortlivet token og tillatelse til å opprette PR-er, synlige changed/failed-outputs, én fast prisgren og riktig jobbutfall ved kildefeil. Før sammenslåing kjøres CI manuelt på gjeldende pris-PR-gren og revisjonen kontrolleres. Ingen PAT, automatisk sammenslåing eller deploy er innført. Den virkelige prisjobben henter leverandører; ingen slik kjøring er gjort i denne oppgaven.
+
+### Sluttkontroller
+
+`pnpm test:pricing` **24/24**, `pnpm test` **164/164 Node-tester**, **3/3 Python-tester**, faktisk innholdssynk og Markdown-lenker bestod. `pnpm typecheck`, `pnpm format:check` og `git diff --check` bestod. [Manifest og kontrollsummer](2026-11-11/parser-config/manifest.json) og råresultater ligger under `2026-11-11/parser-config/`. Ingen endring av portalens pris-snapshot, låsefil eller fixtures. Ingen ny Linux/Node 22-, bygg-, nettleser-/tilgjengelighets- eller virkelig modellkontroll.
+
 ## Full testpakke, typekontroll og produksjonsbygg – 10. november 2026
 
 **Resultat: alle kjørte kontroller bestod på Node 22.18.0 i Docker/Linux arm64.** Utførende agent: Codex (OpenAI), ingen underagenter. Testet Git-revisjon: `e6b5b426d59dac66e3fc6138519db04c55e7c984`. Denne kjøringen utvider den tidligere prisavgrensede Linux-kontrollen nedenfor.

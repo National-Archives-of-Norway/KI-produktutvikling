@@ -110,7 +110,7 @@ export function getFeatures(): Feature[] {
       title: pricingOverview.title,
       description:
         pricingOverview.lead +
-        " Kilder og kontrolltidspunkt vises per tabell. Varsel om gamle prisdata vurderes når siden åpnes eller prisgrunnlaget endres. Daglig GitHub-jobb er klargjort for oppdateringsforslag ved endret prisgrunnlag eller kildestatus, men krever GitHub-repo, Actions og utrulling. Endrede kontrolltidspunkter alene utløser ikke et oppdateringsforslag.",
+        " Kilder og kontrolltidspunkt vises per tabell. Ved kildefeil beholdes forrige kontrollerte priser. Varsel om gamle prisdata vurderes når siden åpnes eller prisgrunnlaget endres. Daglig GitHub-jobb er klargjort for oppdateringsforslag ved endret prisgrunnlag eller kildestatus, men krever GitHub-repo, Actions og utrulling. Endrede kontrolltidspunkter alene utløser ikke et oppdateringsforslag.",
       status: "beta",
       href: "/priser/",
       routes: ["/priser/"],

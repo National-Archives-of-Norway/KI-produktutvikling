@@ -225,13 +225,14 @@ test("tables skiller escapede pipes fra cellegrenser", () => {
   ]);
 });
 
-test("bare kjent Claude-fotnote 2 i cache-kolonnen tillates", () => {
+test("Claude-fotnote kan variere, mens generell money fortsatt er streng", () => {
   assert.equal(parsers.claudeTokens(fixtures.claudeTokens)[0].cached, 0.2);
   assert.throws(() => money("$0.20 / MTok 2"));
-  assert.throws(() =>
+  assert.equal(
     parsers.claudeTokens(
       fixtures.claudeTokens.replace("$0.20 / MTok 2", "$0.20 / MTok 3"),
-    ),
+    )[0].cached,
+    0.2,
   );
   assert.throws(() =>
     parsers.claudeTokens(
@@ -247,9 +248,9 @@ test("alle fixture-tabeller beholder rader uten avsluttende linjeskift", () => {
       parse(fixtures[name]),
       name,
     );
-  assert.throws(
-    () => tables("| A | B |\n| --- | --- |\n| bare en celle |"),
-    /antall celler/,
+  assert.equal(
+    tables("| A | B |\n| --- | --- |\n| bare en celle |")[0].invalid,
+    true,
   );
 });
 
@@ -422,7 +423,7 @@ test("main fører statusfeil og gjenoppretting én gang, og gjentar ikke feilopp
 
 // Workflowens faktiske shell kjøres mot et lokalt bare-repo og en gh-stub.
 // Verken fetcher, git-remote eller GitHub-klient bruker nettverket i testen.
-test("workflow oppdaterer samme pris-PR, ignorerer bare nye tider og lukker foreldet forslag", async () => {
+test("hele workflowens run-steg simuleres med fixtures, PR-livsløp og kildefeil", async () => {
   const { spawnSync } = await import("node:child_process");
   const { mkdir, chmod } = await import("node:fs/promises");
   const directory = await mkdtemp(join(tmpdir(), "pricing-workflow-"));
@@ -430,12 +431,17 @@ test("workflow oppdaterer samme pris-PR, ignorerer bare nye tider og lukker fore
     remote = join(directory, "remote.git"),
     bin = join(directory, "bin");
   const command = (cmd, args, options = {}) => {
+    const { expectedStatus = 0, ...spawnOptions } = options;
     const result = spawnSync(cmd, args, {
       cwd: work,
       encoding: "utf8",
-      ...options,
+      ...spawnOptions,
     });
-    assert.equal(result.status, 0, `${cmd}: ${result.stderr ?? result.error}`);
+    assert.equal(
+      result.status,
+      expectedStatus,
+      `${cmd}: ${result.stderr ?? result.error}`,
+    );
     return result.stdout.trim();
   };
   const git = (...args) => command("git", args);
@@ -484,17 +490,90 @@ esac
       new URL("../.github/workflows/pricing-sync.yml", import.meta.url),
       "utf8",
     );
-    const step = yaml
-      .split(
-        "      - name: Opprett eller oppdater én pris-PR ved reell endring\n",
-      )[1]
-      .split("      - name:")[0];
-    assert.ok(step);
-    const script = step
-      .split("        run: |\n")[1]
-      .split("\n")
-      .map((line) => (line.startsWith("          ") ? line.slice(10) : line))
-      .join("\n");
+    const runStep = (name) => {
+      const step = yaml
+        .split(`      - name: ${name}\n`)[1]
+        ?.split("      - name:")[0];
+      assert.ok(step, name);
+      const run = step.split("        run: ")[1];
+      assert.ok(run, name);
+      return run.startsWith("|\n")
+        ? run
+            .slice(2)
+            .split("\n")
+            .map((line) =>
+              line.startsWith("          ") ? line.slice(10) : line,
+            )
+            .join("\n")
+        : run.trim();
+    };
+    const testScript = runStep("Test innhenting uten nettverk");
+    const syncScript = runStep("Hent og kontroller offisielle priser");
+    const script = runStep(
+      "Opprett eller oppdater én pris-PR ved reell endring",
+    );
+    const failureScript = runStep("Meld mislykket kildekontroll");
+    // Den første kommandoen er selve denne testfilen, kjørt av test:pricing.
+    // Ikke start den rekursivt fra dens egen workflow-simulering.
+    assert.equal(testScript, "node --test tests/pricing.test.mjs");
+    assert.equal((yaml.match(/^        run:/gm) ?? []).length, 4);
+    const ordered = [
+      "Test innhenting uten nettverk",
+      "Hent og kontroller offisielle priser",
+      "Opprett eller oppdater én pris-PR ved reell endring",
+      "Meld mislykket kildekontroll",
+    ].map((name) => yaml.indexOf("- name: " + name));
+    assert.deepEqual(
+      [...ordered].sort((a, b) => a - b),
+      ordered,
+    );
+    assert.match(yaml, /node-version: "24"/);
+    assert.match(yaml, /timeout-minutes: 10/);
+    assert.match(yaml, /cancel-in-progress: false/);
+    assert.match(yaml, /cron: "0 6 \* \* \*"/);
+    assert.match(yaml, /  workflow_dispatch:/);
+    assert.match(yaml, /permissions:\n  contents: read/);
+    assert.match(
+      yaml,
+      /    permissions:\n      contents: write\n      pull-requests: write/,
+    );
+    assert.match(
+      yaml,
+      /ref: \$\{\{ github.event.repository.default_branch \}\}/,
+    );
+    assert.match(yaml, /persist-credentials: false/);
+    assert.match(yaml, /if: steps.sync.outputs.failed == 'true'/);
+    assert.doesNotMatch(
+      yaml,
+      /secrets\.|pull_request_target|pr merge|contents: admin/,
+    );
+    for (const shell of [testScript, syncScript, script, failureScript])
+      command("bash", ["-n"], { input: shell });
+    const { pathToFileURL } = await import("node:url");
+    const hook = join(directory, "fixture-transport.mjs");
+    const fixtureData = join(directory, "fixtures.json");
+    await writeFile(fixtureData, JSON.stringify(fixtures));
+    await writeFile(
+      hook,
+      String.raw`
+import { readFileSync, appendFileSync } from "node:fs";
+import { sources } from ${JSON.stringify(pathToFileURL(join(work, "scripts/pricing/sources.mjs")).href)};
+const fixtures = JSON.parse(readFileSync(process.env.PRICE_FIXTURES, "utf8"));
+const NativeDate = Date;
+globalThis.Date = class extends NativeDate {
+  constructor(...args) { super(...(args.length ? args : [process.env.FIXTURE_NOW])); }
+  static now() { return NativeDate.parse(process.env.FIXTURE_NOW); }
+};
+globalThis.fetch = async (url) => {
+  const source = sources.find(source=>source.fetchUrl === url);
+  if (!source) throw new Error("Nettverkskall uten fixture er blokkert");
+  appendFileSync(process.env.FETCH_LOG, source.id + "\n");
+  if (process.env.FIXTURE_FAIL === "true" && source.id === sources[0].id)
+    throw new Error("Hemmelig leverandørtekst skal ikke videreføres");
+  return {ok:true, text:async()=>fixtures[source.parser].replace("$10 USD per month", "$" + process.env.FIXTURE_PRICE + " USD per month")};
+};
+`,
+    );
     const env = {
       ...process.env,
       PATH: bin + ":" + process.env.PATH,
@@ -504,25 +583,47 @@ esac
       GH_TOKEN: "fake-only",
       GH_REPO: "fixture/pricing",
     };
-    const run = async (price, date) => {
-      const result = await main({
-        snapshotPath,
-        logPath,
-        now: date,
-        logger: () => {},
-        fetcher: async (url) => ({
-          ok: true,
-          text: async () =>
-            (await (await fetcher(url)).text()).replace(
-              "$10 USD per month",
-              `$${price} USD per month`,
-            ),
-        }),
+    const run = async (price, date, failed = false) => {
+      const outputPath = join(directory, "outputs");
+      const fetchLog = join(directory, "fetch.log");
+      await writeFile(outputPath, "");
+      await writeFile(fetchLog, "");
+      // Workflowens eksakte sync-shell kjøres med global fixture-transport,
+      // ikke en annen direkte main()-invokasjon enn den GitHub vil bruke.
+      command("bash", ["-e", "-c", syncScript], {
+        env: {
+          ...env,
+          NODE_OPTIONS: "--import=" + pathToFileURL(hook).href,
+          PRICE_FIXTURES: fixtureData,
+          GITHUB_OUTPUT: outputPath,
+          FETCH_LOG: fetchLog,
+          FIXTURE_PRICE: String(price),
+          FIXTURE_NOW: date,
+          FIXTURE_FAIL: String(failed),
+        },
       });
-      command("bash", ["-n"], { input: script });
-      command("bash", ["-c", script], {
-        env: { ...env, CHANGED: String(result.changed) },
+      assert.deepEqual(
+        (await readFile(fetchLog, "utf8")).trim().split("\n").sort(),
+        sources.map((source) => source.id).sort(),
+      );
+      const outputs = Object.fromEntries(
+        (await readFile(outputPath, "utf8"))
+          .trim()
+          .split("\n")
+          .map((line) => line.split("=")),
+      );
+      assert.match(outputs.changed, /^(true|false)$/);
+      assert.equal(outputs.failed, String(failed));
+      command("bash", ["-e", "-c", script], {
+        env: { ...env, CHANGED: outputs.changed },
       });
+      // Samme if-uttrykk som i workflowen; feil skal meldes etter PR-forslaget.
+      if (outputs.failed === "true")
+        command("bash", ["-e", "-c", failureScript], {
+          env,
+          expectedStatus: 1,
+        });
+      return outputs;
     };
     const reset = () => {
       git("switch", "main");
@@ -567,6 +668,38 @@ esac
       await readFile(join(directory, "operations"), "utf8"),
       "create\nedit\nclose\n",
     );
+    // Kildeutfall må gi et feilforslag med bevarte priser, deretter rød jobb.
+    git("restore", "VERSJONSLOGG.md", "src/content/pricing/snapshot.json");
+    const failed = await run(10, "2026-11-13T06:00:00Z", true);
+    assert.equal(failed.changed, "true");
+    const errorHead = git("rev-parse", "origin/codex/pricing-sync");
+    const errorSnapshot = JSON.parse(
+      git(
+        "show",
+        "origin/codex/pricing-sync:src/content/pricing/snapshot.json",
+      ),
+    );
+    assert.equal(errorSnapshot.groups[0].status, "error");
+    assert.deepEqual(errorSnapshot.groups[0].rows, previous.groups[0].rows);
+    assert.equal(
+      errorSnapshot.groups[0].checkedAt,
+      previous.groups[0].checkedAt,
+    );
+    assert.doesNotMatch(
+      JSON.stringify(errorSnapshot),
+      /Hemmelig leverandørtekst/,
+    );
+    reset();
+    await run(10, "2026-11-14T06:00:00Z", true);
+    assert.equal(git("rev-parse", "origin/codex/pricing-sync"), errorHead);
+    git("restore", "VERSJONSLOGG.md", "src/content/pricing/snapshot.json");
+    // Gjenoppretting tilbake til standardgrenen lukker også et gammelt feilforslag.
+    const recovered = await run(10, "2026-11-15T06:00:00Z");
+    assert.equal(recovered.changed, "false");
+    assert.equal(
+      await readFile(join(directory, "operations"), "utf8"),
+      "create\nedit\nclose\ncreate\nclose\n",
+    );
     assert.equal(
       git("show", "main:src/content/pricing/snapshot.json"),
       JSON.stringify(previous),
@@ -574,4 +707,73 @@ esac
   } finally {
     await rm(directory, { recursive: true, force: true });
   }
+});
+
+test("en ugyldig uvedkommende fotnotetabell endrer ikke Claude-priser", () => {
+  const extra =
+    "\n\n| Fotnote | Forklaring |\n| --- | --- |\n| Bare en celle |\n";
+  assert.deepEqual(
+    parsers.claudeTokens(fixtures.claudeTokens + extra),
+    parsers.claudeTokens(fixtures.claudeTokens),
+  );
+});
+
+test("feil celleantall og ukjent format i den valgte pristabellen er fortsatt feil", () => {
+  assert.throws(
+    () =>
+      parsers.claudeTokens(
+        fixtures.claudeTokens.replace("| $20 / MTok", "| ekstra | $20 / MTok"),
+      ),
+    /antall celler/,
+  );
+  assert.throws(
+    () =>
+      parsers.claudeTokens(
+        fixtures.claudeTokens.replace("$4 / MTok", "$1 500 / MTok"),
+      ),
+    /prisformat/,
+  );
+});
+
+test("Claude godtar én avgrenset fotnote etter MTok i alle fem priskolonner", () => {
+  const base = fixtures.claudeTokens.replaceAll(" / MTok 2", " / MTok");
+  const expected = parsers.claudeTokens(base);
+  for (const marker of [" 3", "⁴", " <sup>5</sup>"]) {
+    const marked = base.replaceAll("/ MTok", "/ MTok" + marker);
+    assert.deepEqual(parsers.claudeTokens(marked), expected, marker);
+  }
+});
+
+test("Claude-fotnoter tillater ikke ekstratall før enheten eller flere markører", () => {
+  const base = fixtures.claudeTokens.replaceAll(" / MTok 2", " / MTok");
+  for (const price of [
+    "$1 500 / MTok 3",
+    "$4 2 / MTok 3",
+    "$4 / MTok 2 3",
+    "$4 / MTok 12",
+    "$4 / MTok xx",
+    "$4 / MTok ³⁴",
+  ]) {
+    assert.throws(
+      () => parsers.claudeTokens(base.replace("$4 / MTok", price)),
+      /prisformat/,
+      price,
+    );
+  }
+});
+
+test("andre Markdown-prisparsere ignorerer ugyldige tabeller uten riktige kolonner", () => {
+  const unrelated =
+    "\n\n| Fotnote | Detalj |\n| --- | --- |\n| feil celleantall |\n\n";
+  for (const name of [
+    "copilotPlans",
+    "copilotTokens",
+    "claudeTokens",
+    "codexTokens",
+  ])
+    assert.deepEqual(
+      parsers[name](unrelated + fixtures[name] + unrelated),
+      parsers[name](fixtures[name]),
+      name,
+    );
 });

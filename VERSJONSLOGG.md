@@ -6,6 +6,17 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 11. november 2026 – avgrenset prisparsing og entydig RAG-konfigurasjon
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Bekreftet funnene med nye førtester: ugyldig uvedkommende tabell og generaliserte Claude-fotnoter feilet; RAG-port godtok tom verdi og 0. Kontrolltestene for ugyldig faktisk pristabell og strengt tallformat bestod allerede.
+- tables markerer ugyldig celleantall i stedet for å kaste for alle tabeller. Parserne velger ut fra alle nødvendige kolonner; bare valgt ugyldig tabell gir cellefeil, og ukjent prisformat er fortsatt feil. Gammel tables-test er oppdatert til markørkontrakten, med egen test av synlig feil i valgt tabell.
+- Claude godtar ett fotnotesiffer (1–9), vanlig eller hevet, etter MTok i alle fem priskolonner. HTML-sup med ett siffer blir samme avgrensede format etter rensing. money er fortsatt streng og avviser blant annet $1 500; flere markører eller fotnote utenfor enheten godtas ikke. Tidligere test som avviste fotnote 3 er endret fordi det er den tilsiktede utvidelsen.
+- RAG_PORT, RAG_MAX_CONCURRENT og RAG_ALLOWED_ORIGINS bruker standard bare når variabelen er usatt; eksplisitt tom/blank verdi er feil. Dette følger de utfylte RAG-eksemplene i .env.example og gjør driftsfeil synlige. Miljøport må være 1–65535. startRagServer kan få en eksplisitt injisert testkonfigurasjon med port 0, og oppstartsregresjonen er tilpasset uten å åpne port 0 via miljøet.
+- Gjennomgått hele pricing-sync.yml. Eksakte sync-, PR- og feil-shell er testet med fixture-fetch, lokalt Git-remote og gh-stub, inkludert outputfelt, datostøy, én PR, oppdatering, foreldelse, kildefeil og gjenoppretting. Første workflow-kommando er den faktisk kjørte pristestfilen; den kjøres ikke rekursivt i simuleringen. YAML-innstillinger og shellsyntaks er kontrollert. actionlint finnes ikke lokalt; ingen ny avhengighet installert. Workflowen er uendret og må fortsatt prøves med workflow_dispatch på GitHub.
+- Oppdatert README, arkitektur, utviklingsplan, funksjonsregister og [testrapport](docs/priser/TESTRAPPORT.md). Kontroller: `pnpm test:pricing` **24/24**, `pnpm test` **164/164 Node-tester**, **3/3 Python-tester**, faktisk innholdsomlasting og Markdown-lenker, samt `pnpm typecheck`, `pnpm format:check` og `git diff --check` bestått. Manifest og råresultater ligger i `docs/priser/2026-11-11/parser-config/`. Kontrollsummer bekrefter uendret pris-snapshot, fixtures, package.json og låsefil. Ingen ekte priskilder eller modell er kalt; ingen nye prisdata, avhengigheter, commit eller publisering. Beta og P1–P10 videreføres.
+
 ### 11. november 2026 – norsk stamming og emneorddekning i kildesøket
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

@@ -4,8 +4,8 @@ import { createConfiguredModel } from "../src/server/rag/provider.ts";
 import { createRagService } from "../src/server/rag/service.ts";
 import { createRagHttpServer } from "../src/server/rag/http.ts";
 
-export function startRagServer() {
-  const config = loadRagConfig();
+// Injisert konfigurasjon brukes av isolerte tester (port 0), aldri via miljøet.
+export function startRagServer(config = loadRagConfig()) {
   const service = createRagService({
     model: createConfiguredModel(config),
     maxConcurrent: config.maxConcurrent,

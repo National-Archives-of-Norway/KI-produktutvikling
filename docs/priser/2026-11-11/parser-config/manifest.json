@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-11",
+  "agent": "Codex (OpenAI)",
+  "baselineCommit": "f2ec93fc5b0e6b1c6d531180711451efff055104",
+  "workingTreeTested": true,
+  "node": "24.22.1",
+  "platform": "macOS arm64",
+  "pricingTests": {
+    "passed": 24,
+    "failed": 0
+  },
+  "nodeTests": {
+    "passed": 164,
+    "failed": 0
+  },
+  "pythonTests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "contentSync": "passed",
+  "markdownLinks": "passed",
+  "typecheck": 0,
+  "format": 0,
+  "workflowActualRunBlocksReviewed": 4,
+  "workflowCloudVerified": false,
+  "actionlintAvailable": false,
+  "livePricingFetch": false,
+  "dependenciesChanged": false,
+  "unchangedSha256": {
+    "src/content/pricing/snapshot.json": "c5d79a0add306b1c4ef7b0bda21691f235784788916ec58803bbf7f3e2dc6955",
+    "pnpm-lock.yaml": "568cf1f2bf0c232b54cd120fb7a7047544b3cbacdbec12dde23ae8128e681d37",
+    "package.json": "9c1f6c83dde0a9a0b69d1d584a10493b04105c72f80cbf9084e4228260c88b07",
+    "tests/fixtures/pricing/copilot-tokens.md": "11d5b6f14fc443d3e2bebb2bb4135b7f4eed820f13e9fd6702921b815a199e11",
+    "tests/fixtures/pricing/claude-tokens.md": "0ca74b8e59bb30cefa92b0c42ddd8bd878e2247b018712fdfefb7da29f529bdc",
+    "tests/fixtures/pricing/codex-plans.md": "863c1b21c90dcca3655a12dd01f236015df20053c820f1c1e053c9cbe10ae374",
+    "tests/fixtures/pricing/claude-plans.html": "f918274ffef732ba72caabfcaa6b6e97bb9d7a1bac069c18879ad54477d173bf",
+    "tests/fixtures/pricing/copilot-plans.md": "b35ad12466d14027d9ffd05bb9e9b8d1565fdbdaec6db9a9d35760e266776084",
+    "tests/fixtures/pricing/codex-tokens.md": "68c1261cb9f032762320383af7d6410c3af2ef59d48d74219fe6a28cc16ae29a"
+  },
+  "sourceSha256": {
+    "scripts/pricing/parse.mjs": "cea02419051a070e2032c357d9eac1f81856b85f2bc362d32d2deeefcf39d72f",
+    "src/server/rag/config.ts": "58a0a1b3856abddb530b73c84cd116597f39d5df34cfa56be1471c7563d3ff48",
+    "scripts/rag-server.mjs": "43cf5242151a7003d409a247fb1c16e27522c8b1f2740b8d5eda0b8baf9b606e",
+    "tests/pricing.test.mjs": "a4bd4bd7812ff55dd15993fcee6531322e339b0f8b9e700ff3046b39f4a23137",
+    "tests/rag-config.test.ts": "5bf00fefc9aaec7e9cdad7d50713ebbf418e49724f9607367f71c474fb580dab",
+    "tests/content-sync.test.mjs": "f5f502de468d746a30429bc680af83354dcbf7df63d9aad17aae8c084e596bc3"
+  },
+  "evidenceSha256": {
+    "pricing-before.txt": "ecd77646d0ac9b6471e0e1fa87b05487775242fe4311a452027742fe104acc2e",
+    "rag-config-before.txt": "884cbe249fa01efbe075038d4db5295376890772ff771f563a695b78e3081360",
+    "pricing-after.txt": "113042ca5d58a337d1315d516680e1c6d1fd43d78131b39125c5dddce207eb62",
+    "test.txt": "b051303bed9e84eff2c3f18d8c7e7324f0406be5642c95942639d459c8c11d10",
+    "typecheck.txt": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92",
+    "format.txt": "1d66faad74f5e8709353f7288592866bd3a9095da1174a916e7aa632949971e2"
+  }
+}

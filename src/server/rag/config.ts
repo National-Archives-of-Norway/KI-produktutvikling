@@ -57,15 +57,26 @@ export type RagConfig = {
     }
 );
 
+function configuredValue(env: Record<string, string | undefined>, key: string) {
+  const value = env[key];
+  if (value !== undefined && !value.trim())
+    throw new Error(
+      `Ugyldig ${key}: verdien kan ikke være tom. Utelat variabelen for standardverdi.`,
+    );
+  return value;
+}
+
 export function loadRagConfig(
   env: Record<string, string | undefined> = serverEnv,
 ): RagConfig {
-  const port = Number(env.RAG_PORT || 3001);
-  if (!Number.isInteger(port) || port < 0 || port > 65535)
-    throw new Error("Ugyldig RAG-port.");
-  const allowedOrigins = loadAllowedOrigins(env.RAG_ALLOWED_ORIGINS);
+  const port = Number(configuredValue(env, "RAG_PORT") ?? 3001);
+  if (!Number.isInteger(port) || port < 1 || port > 65535)
+    throw new Error("RAG_PORT må være et heltall fra 1 til 65535.");
+  const allowedOrigins = loadAllowedOrigins(
+    configuredValue(env, "RAG_ALLOWED_ORIGINS"),
+  );
   const maxConcurrent = validateConcurrency(
-    Number(env.RAG_MAX_CONCURRENT ?? 1),
+    Number(configuredValue(env, "RAG_MAX_CONCURRENT") ?? 1),
   );
   const provider =
     env.MODEL_PROVIDER?.trim() ||

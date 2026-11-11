@@ -158,6 +158,7 @@ Arbeidsgrunnlaget for P8 er konkretisert i [avklaringsplanen for de 8 uavklarte 
 
 ## Fase 5 – Servermiljø, modellkobling og utrulling
 
+- [x] Samordne tomme RAG-miljøverdier og portgrenser (11. november): bare usatte verdier gir standard; tom/blank verdi avvises. Miljøport 0 avvises; isolerte tester injiserer konfigurasjon med dynamisk port eksplisitt.
 - [x] Implementere separat RAG-HTTP-tjeneste og serverkonfigurasjon med valgene `none`, `ollama` og `openai-compatible`.
 - [x] Implementere ekstern adapter med HTTPS, serverlagret Bearer-nøkkel, timeout, avvist videresending og nøytrale feilmeldinger.
 - [x] Teste adaptere og HTTP-kontrakt med simulert transport, inkludert feil, manglende innstillinger og at hemmeligheter ikke returneres.
@@ -226,6 +227,7 @@ Arbeidsgrunnlaget for P8 er konkretisert i [avklaringsplanen for de 8 uavklarte 
 - [x] Hente og formatkontrollere alle seks kilder; samme snapshot brukes av siden og Spør KI. HTTP-/parsefeil bevarer forrige vellykkede data og gir synlig feilstatus ved neste bygg. Prisutvalget er eksplisitt og omfatter ikke alle planer/modeller.
 - [x] Lage lokale parser-/feilhåndteringstester, foreldelsesvarsel og daglig GitHub-arbeidsflyt som foreslår prisdata og versjonslogg i PR. Alle 45 tester og lokalt produksjonsbygg bestod.
 - [x] Rette prisparser og lagringsflyt, og klargjøre én fast prisgren som reagerer på rader/kildemetadata/status/feil, ikke tidspunkter alene (10. november 2026). Lokale fixture-tester og simulert PR-flyt dekker oppretting, oppdatering, datostøy og tilbakeført prisforslag. Ingen live prisinnhenting eller GitHub-verifisering utført i denne rettingen.
+- [x] Rette parseravgrensning og Claude-fotnoter (11. november): bare den valgte pristabellens strukturfeil skal feile; ett avgrenset fotnotesiffer kan stå etter MTok i alle priskolonner. Faktiske sync-/PR-/feil-shell fra workflowen er lokalt simulert med fixtures, bevarte priser ved kildefeil og gjenoppretting. [Rapport](docs/priser/TESTRAPPORT.md). Dette er ikke faktisk Actions, leverandørkontroll eller utrulling.
 - [ ] P4: Legge repoet på GitHub, tillate nødvendige Actions-/PR-rettigheter og prøve planlagt/manuell jobb. Bare samme repo får skriverettigheter; ingen andre repoer eller modellnøkler brukes.
 - [ ] Koble sammenslått prisgrunnlag til faktisk utrulling av både nettside og RAG, og teste feilkilder/varsling i det delte miljøet. Automatisk produksjonsoppdatering er ikke aktiv. Avklare hvem som gjennomgår åpne pris-PR-er og vedlikeholder utvalget; aktiveringsstatus på siden skal oppdateres først etter verifisering.
 

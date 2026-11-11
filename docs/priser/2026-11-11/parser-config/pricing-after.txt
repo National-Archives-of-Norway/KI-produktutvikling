@@ -1,0 +1,33 @@
+$ node --test tests/pricing.test.mjs
+✔ alle seks offisielle prisstrukturer gir rader med riktige enheter (11.989542ms)
+✔ API-utvalg skiller kontekst, cache-varighet og standard fra andre hastigheter (0.29025ms)
+✔ endrede kolonner, manglende modeller og tvetydige planpriser avvises (0.314167ms)
+✔ kildesvikt bevarer pris og vellykket dato, men registrerer mislykket forsøk (1.73125ms)
+✔ førstegangssvikt gir tomt grunnlag, aldri gratispriser eller falsk kontrolldato (0.146125ms)
+✔ automatisk prisoppdatering og JSON-lagring bevarer norske vilkår (1.56175ms)
+✔ endret brukerkrav og månedspris oppdaterer norsk tekst fra kildefeltene (1.489875ms)
+✔ ukjente engelske tilleggsvilkår gir feil og bevarer tidligere norsk tekst (1.052209ms)
+✔ money avviser løse ekstratall og feil tusenskille (0.222833ms)
+✔ tables beholder siste rad uten sluttlinjeskift og støtter CRLF (0.39325ms)
+✔ tables skiller escapede pipes fra cellegrenser (0.091375ms)
+✔ Claude-fotnote kan variere, mens generell money fortsatt er streng (0.189834ms)
+✔ alle fixture-tabeller beholder rader uten avsluttende linjeskift (0.776ms)
+✔ meningsfull endring ignorerer bare tider, ikke priser, status, feil eller kildemetadata (1.248792ms)
+✔ main registrerer ny kontrolltid uten endring i versjonsloggen ved uendrede priser (17.175458ms)
+✔ main legger nøyaktig én prisoppføring under eksisterende Ikke utgitt og er idempotent (29.751625ms)
+✔ main avviser manglende innsettingspunkt før snapshot eller tempfiler skrives (9.179ms)
+✔ main fører statusfeil og gjenoppretting én gang, og gjentar ikke feiloppføringer bare for ny dato (23.973ms)
+✔ hele workflowens run-steg simuleres med fixtures, PR-livsløp og kildefeil (2784.835167ms)
+✔ en ugyldig uvedkommende fotnotetabell endrer ikke Claude-priser (0.28625ms)
+✔ feil celleantall og ukjent format i den valgte pristabellen er fortsatt feil (0.162042ms)
+✔ Claude godtar én avgrenset fotnote etter MTok i alle fem priskolonner (0.739167ms)
+✔ Claude-fotnoter tillater ikke ekstratall før enheten eller flere markører (0.298667ms)
+✔ andre Markdown-prisparsere ignorerer ugyldige tabeller uten riktige kolonner (0.737916ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2965.411042

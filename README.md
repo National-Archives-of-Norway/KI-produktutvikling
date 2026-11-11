@@ -23,10 +23,12 @@ Kopier [.env.example](.env.example) til `.env.local` for lokal utvikling. I drif
 | `MODEL_API_URL`                | Fullt HTTPS Chat Completions-endepunkt, inkludert eventuell gateway-sti. Ingen query, fragment eller påloggingsinformasjon i URL-en.                                     |
 | `MODEL_NAME` / `MODEL_API_KEY` | Modellnavn og serverlagret Bearer-nøkkel. Begge kreves med eksternt API.                                                                                                 |
 | `OLLAMA_MODEL` / `OLLAMA_URL`  | Installert lokal modell og HTTP-loopback-adresse, normalt `http://127.0.0.1:11434`. Bare rotsti tillates.                                                                |
-| `RAG_PORT`                     | Tjenesteport, normalt 3001. Next-rewrite låses ved bygg: bygg og kjøring må bruke samme port.                                                                            |
+| `RAG_PORT`                     | Tjenesteport 1–65535, normalt 3001. Port 0 avvises som miljøverdi. Next-rewrite låses ved bygg: bygg og kjøring må bruke samme port.                                     |
 | `RAG_ALLOWED_ORIGINS`          | Kommaseparerte HTTP(S)-origins. Standard er `http://127.0.0.1:3000,http://localhost:3000`. En satt liste erstatter standardene. Tomme/ugyldige verdier stopper oppstart. |
 | `RAG_MAX_CONCURRENT`           | Modellkall per prosess, heltall 1–8, standard 1. Ingen kø; full kapasitet gir 429 med kilder.                                                                            |
 | `PAGES_BASE_PATH`              | Eventuell prosjektsti ved statisk bygg, for eksempel `/ki-produktutvikling`.                                                                                             |
+
+For `RAG_PORT`, `RAG_MAX_CONCURRENT` og `RAG_ALLOWED_ORIGINS` gir en usatt variabel standardverdien, mens en eksplisitt tom eller blank verdi stopper oppstart. `.env.example` har gyldige RAG-verdier; fjern variabelen for å bruke standard, ikke sett den tom. Tomme `MODEL_API_*`-eksempelverdier er fortsatt tillatt når ekstern modell ikke er valgt. Port 0 brukes bare som eksplisitt injisert testkonfigurasjon. Serveroppstart fra miljøet avviser 0; testinjeksjonen brukes ikke av Next-rewrite.
 
 Start RAG på nytt etter konfigurasjonsendring. Eksterne modeller mottar spørsmål og relevante utdrag; leverandør og databehandling må godkjennes før bruk. Det støttede formatet er Chat Completions med Bearer-nøkkel og `stream: false`; andre API-formater krever tilpasning. Tidsbudsjettet modell/proxy/klient er 60/65/70 sekunder i `src/config/rag.ts`. Origins er ikke autorisering.
 
@@ -58,7 +60,7 @@ Pris-PR-er fra `GITHUB_TOKEN` starter ikke automatisk CI. GitHub kan vise PR-kj�
 
 Første delte miljø skal være en **lukket pilot**. Innlogging/autorisasjon, brukerbasert rate-/kostnadsvern og faktisk modelltilkobling er ikke ferdig verifisert. Privat repo beskytter ikke selve nettstedet. Ikke legg internt innhold eller hemmeligheter i prototypen, klientdata eller `public/`. Personvern-, cookie- og tilgjengelighetstekster er lokale utkast; samlet tilgjengelighetssamsvar er uavklart. Skills er Beta og ikke menneskelig gjennomgått.
 
-Prisene vedlikeholdes i `src/content/pricing/snapshot.json`. `pnpm pricing:sync` henter ekte leverandørpriser og kjøres bevisst, separat fra test/CI. [Prisjobben](.github/workflows/pricing-sync.yml) foreslår rader/status/feil på én fast gren; datoendringer alene gir ikke PR. Faktisk GitHub-jobb og publisering er ikke verifisert. [Prisforvaltning og tidligere parser-/driftsnotater](docs/HISTORIKK.md#priser-for-copilot-claude-og-codex) er bevart.
+Prisene vedlikeholdes i `src/content/pricing/snapshot.json`. `pnpm pricing:sync` henter ekte leverandørpriser og kjøres bevisst, separat fra test/CI. [Prisjobben](.github/workflows/pricing-sync.yml) foreslår rader/status/feil på én fast gren; datoendringer alene gir ikke PR. Faktisk GitHub-jobb og publisering er ikke verifisert. [Ny parser-/workflow-kontroll](docs/priser/TESTRAPPORT.md) beskriver lokal fixture-simulering. Uvedkommende ugyldige tabeller påvirker ikke prishentingen; feil i valgt pristabell er fortsatt synlige. Claude-prisfelt tillater ett fotnotesiffer (1–9), vanlig eller hevet, etter MTok-enheten, mens tallformatet ellers er strengt. [Prisforvaltning og tidligere parser-/driftsnotater](docs/HISTORIKK.md#priser-for-copilot-claude-og-codex) er bevart.
 
 ## Dokumentasjon
 

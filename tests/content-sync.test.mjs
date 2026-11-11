@@ -30,7 +30,8 @@ test(
           "--eval",
           `
       import { startRagServer } from ${JSON.stringify(entry)};
-      const server = startRagServer();
+      const { loadRagConfig } = await import(new URL("../src/server/rag/config.ts", ${JSON.stringify(entry)}));
+      const server = startRagServer({ ...loadRagConfig(), port: 0 });
       server.on("listening", () => console.log("HEALTH_PORT=" + server.address().port));
     `,
         ],
@@ -39,7 +40,6 @@ test(
           // Ingen modell, nettverkskilder eller arvede serverinnstillinger/secrets.
           env: {
             PATH: process.env.PATH,
-            RAG_PORT: "0",
             MODEL_PROVIDER: "none",
           },
           stdio: ["ignore", "pipe", "pipe"],

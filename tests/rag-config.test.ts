@@ -1,0 +1,25 @@
+import assert from "node:assert/strict";
+import { test } from "node:test";
+import { loadRagConfig } from "../src/server/rag/config.ts";
+
+test("usatte RAG-variabler gir standarder, eksplisitt tomme verdier avvises likt", () => {
+  const config = loadRagConfig({});
+  assert.equal(config.port, 3001);
+  assert.equal(config.maxConcurrent, 1);
+  for (const key of ["RAG_PORT", "RAG_MAX_CONCURRENT", "RAG_ALLOWED_ORIGINS"]) {
+    for (const value of ["", " \t "]) {
+      assert.throws(
+        () => loadRagConfig({ [key]: value }),
+        new RegExp(key),
+        `${key}=${JSON.stringify(value)}`,
+      );
+    }
+  }
+});
+
+test("RAG_PORT fra miljøet må være 1–65535, ikke testport 0", () => {
+  for (const value of ["0", "-1", "65536", "abc"])
+    assert.throws(() => loadRagConfig({ RAG_PORT: value }), /RAG_PORT/, value);
+  for (const port of [1, 3001, 65535])
+    assert.equal(loadRagConfig({ RAG_PORT: String(port) }).port, port);
+});

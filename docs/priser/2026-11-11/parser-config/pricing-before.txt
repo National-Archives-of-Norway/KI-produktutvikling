@@ -1,0 +1,41 @@
+✖ en ugyldig uvedkommende fotnotetabell endrer ikke Claude-priser (0.640084ms)
+✔ feil celleantall og ukjent format i den valgte pristabellen er fortsatt feil (0.590084ms)
+✖ Claude godtar én avgrenset fotnote etter MTok i alle fem priskolonner (0.230333ms)
+✔ Claude-fotnoter tillater ikke ekstratall før enheten eller flere markører (0.471708ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 2
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 57.768584
+
+✖ failing tests:
+
+test at tests/pricing.test.mjs:579:1
+✖ en ugyldig uvedkommende fotnotetabell endrer ikke Claude-priser (0.640084ms)
+  Error: Pristabellens antall celler er endret
+      at file:///Users/khadah/Documents/ChatGPT/KI-utvikling/scripts/pricing/parse.mjs:58:15
+      at Array.map (<anonymous>)
+      at tables (file:///Users/khadah/Documents/ChatGPT/KI-utvikling/scripts/pricing/parse.mjs:56:6)
+      at Object.claudeTokens (file:///Users/khadah/Documents/ChatGPT/KI-utvikling/scripts/pricing/parse.mjs:268:5)
+      at TestContext.<anonymous> (file:///Users/khadah/Documents/ChatGPT/KI-utvikling/tests/pricing.test.mjs:581:28)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17)
+
+test at tests/pricing.test.mjs:589:1
+✖ Claude godtar én avgrenset fotnote etter MTok i alle fem priskolonner (0.230333ms)
+  Error: Ukjent prisformat
+      at money (file:///Users/khadah/Documents/ChatGPT/KI-utvikling/scripts/pricing/parse.mjs:17:17)
+      at file:///Users/khadah/Documents/ChatGPT/KI-utvikling/scripts/pricing/parse.mjs:285:14
+      at Array.map (<anonymous>)
+      at Object.claudeTokens (file:///Users/khadah/Documents/ChatGPT/KI-utvikling/scripts/pricing/parse.mjs:279:17)
+      at TestContext.<anonymous> (file:///Users/khadah/Documents/ChatGPT/KI-utvikling/tests/pricing.test.mjs:594:30)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)

@@ -53,18 +53,36 @@ export function tables(markdown) {
     .filter(
       (rows) => rows.length > 2 && rows[1].every((c) => /^:?-+:?$/.test(c)),
     )
-    .map((rows) => {
-      if (rows.some((row) => row.length !== rows[0].length))
-        throw new Error("Pristabellens antall celler er endret");
-      return { headers: rows[0], rows: rows.slice(2) };
-    });
+    .map((rows) => ({
+      headers: rows[0],
+      rows: rows.slice(2),
+      ...(rows.some((row) => row.length !== rows[0].length)
+        ? { invalid: true }
+        : {}),
+    }));
 }
 
 function need(table, names) {
   if (!table || names.some((n) => !table.headers.includes(n)))
     throw new Error("Pristabellens kolonner er endret");
+  if (table.invalid) throw new Error("Pristabellens antall celler er endret");
   return table.rows.map((cells) =>
     Object.fromEntries(table.headers.map((h, i) => [h, cells[i] ?? ""])),
+  );
+}
+function selectTable(markdown, names) {
+  return need(
+    tables(markdown).find((table) =>
+      names.every((name) => table.headers.includes(name)),
+    ),
+    names,
+  );
+}
+// Ett siffer (1–9), vanlig eller hevet, bare etter den eksplisitte MTok-enheten.
+// money() beholder den strenge tallgrammatikken og godtar ingen fotnoter selv.
+function claudeMoney(text) {
+  return money(
+    clean(text).replace(/(\/\s*MTok)(?:\s+[1-9]|\s*[¹²³⁴⁵⁶⁷⁸⁹])$/, "$1"),
   );
 }
 function unique(rows, key = "name") {
@@ -73,12 +91,7 @@ function unique(rows, key = "name") {
   return rows;
 }
 export function copilotPlans(text) {
-  const rows = need(
-    tables(text).find(
-      (t) => t.headers.includes("Pricing") && t.headers.includes("Plan"),
-    ),
-    ["Plan", "Pricing", "GitHub AI Credits"],
-  );
+  const rows = selectTable(text, ["Plan", "Pricing", "GitHub AI Credits"]);
   const names = [
     "Copilot Pro",
     "Copilot Pro+",
@@ -226,24 +239,18 @@ export function copilotTokens(text) {
     "Claude Sonnet 5.5",
     "Claude Opus 5.5",
   ];
+  const required = [
+    "Model",
+    "Tier",
+    "Threshold (input tokens)",
+    "Input",
+    "Output",
+    "Cached input",
+    "Cache write",
+  ];
   const rows = tables(text)
-    .filter(
-      (t) =>
-        t.headers.includes("Cached input") &&
-        t.headers.includes("Tier") &&
-        t.headers.includes("Cache write"),
-    )
-    .flatMap((t) =>
-      need(t, [
-        "Model",
-        "Tier",
-        "Threshold (input tokens)",
-        "Input",
-        "Output",
-        "Cached input",
-        "Cache write",
-      ]),
-    )
+    .filter((table) => required.every((name) => table.headers.includes(name)))
+    .flatMap((table) => need(table, required))
     .filter((r) => wanted.includes(r.Model));
   if (wanted.some((n) => !rows.some((r) => r.Model === n)))
     throw new Error("En valgt Copilot-modell mangler");
@@ -264,17 +271,14 @@ export function copilotTokens(text) {
   );
 }
 export function claudeTokens(text) {
-  const rows = need(
-    tables(text).find((t) => t.headers.includes("Base input tokens")),
-    [
-      "Model",
-      "Base input tokens",
-      "5m cache writes",
-      "1h cache writes",
-      "Cache hits and refreshes",
-      "Output tokens",
-    ],
-  );
+  const rows = selectTable(text, [
+    "Model",
+    "Base input tokens",
+    "5m cache writes",
+    "1h cache writes",
+    "Cache hits and refreshes",
+    "Output tokens",
+  ]);
   const wanted = ["Claude Opus 5.5", "Claude Sonnet 5.5", "Claude Haiku 4.5"];
   return wanted.map((name) => {
     const r = rows.find((r) => r.Model === name);
@@ -282,15 +286,11 @@ export function claudeTokens(text) {
     return {
       name,
       context: "Standard",
-      input: money(r["Base input tokens"]),
-      output: money(r["Output tokens"]),
-      // Fixture-kilden har markør 2 etter MTok i denne kolonnen.
-      // Bare dette kjente fotnoteformatet tillates; money() er ellers streng.
-      cached: money(
-        clean(r["Cache hits and refreshes"]).replace(/( \/ MTok) 2$/, "$1"),
-      ),
-      write: money(r["5m cache writes"]),
-      writeLong: money(r["1h cache writes"]),
+      input: claudeMoney(r["Base input tokens"]),
+      output: claudeMoney(r["Output tokens"]),
+      cached: claudeMoney(r["Cache hits and refreshes"]),
+      write: claudeMoney(r["5m cache writes"]),
+      writeLong: claudeMoney(r["1h cache writes"]),
       note: "Direkte Claude API. Cache-skriving gjelder henholdsvis 5 minutter og 1 time. Region-, verktøy- og andre tillegg kan gjelde; se kilden.",
     };
   });
@@ -300,7 +300,7 @@ export function codexTokens(text) {
   const start = text.indexOf("### Standard pricing data");
   if (start < 0) throw new Error("Standard API-priser mangler");
   const section = text.slice(start).split(/\n###? /)[0];
-  const rows = need(tables(section)[0], [
+  const rows = selectTable(section, [
     "Model",
     "Short context input",
     "Short context output",
@@ -332,10 +332,7 @@ export function codexTokens(text) {
   });
   const specialized = text.indexOf("Specialized models");
   if (specialized < 0) throw new Error("Spesialiserte API-priser mangler");
-  const t = tables(text.slice(specialized)).find((t) =>
-    t.headers.includes("Category"),
-  );
-  const r = need(t, [
+  const r = selectTable(text.slice(specialized), [
     "Category",
     "Model",
     "Input",
