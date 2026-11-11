@@ -3,6 +3,7 @@ import {
   findPageRoutes,
   validateFeatures,
 } from "./src/server/features/validate.ts";
+import { RAG_TIMEOUTS } from "./src/server/rag/config.ts";
 import { join } from "node:path";
 
 validateFeatures(findPageRoutes(join(process.cwd(), "src/app")));
@@ -10,6 +11,7 @@ validateFeatures(findPageRoutes(join(process.cwd(), "src/app")));
 const pages = process.env.BUILD_TARGET === "pages";
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  experimental: { proxyTimeout: RAG_TIMEOUTS.proxyMs },
   env: { NEXT_PUBLIC_STATIC_DEMO: pages ? "true" : "false" },
   ...(!pages
     ? {

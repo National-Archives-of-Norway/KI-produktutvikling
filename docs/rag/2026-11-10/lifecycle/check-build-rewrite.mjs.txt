@@ -1,0 +1,58 @@
+import { createServer } from 'node:http';
+import { once } from 'node:events';
+import { spawn } from 'node:child_process';
+import { readFile, writeFile } from 'node:fs/promises';
+import { createWriteStream } from 'node:fs';
+const root=process.cwd();
+const output='/private/tmp/rag-lifecycle';
+const servers=[];
+const children=[];
+async function listen(server) {
+  servers.push(server);
+  server.listen(0,'127.0.0.1');
+  await once(server,'listening');
+  return server.address().port;
+}
+function child(command,args,env,log) {
+  const proc=spawn(command,args,{cwd:root,env:{...process.env,NEXT_TELEMETRY_DISABLED:'1',...env},stdio:['ignore','pipe','pipe']});
+  const stream=createWriteStream(log);
+  proc.stdout.pipe(stream,{end:false});proc.stderr.pipe(stream,{end:false});
+  proc.once('close',()=>stream.end());
+  children.push(proc);
+  return proc;
+}
+let result;
+try {
+  const hits={build:0,runtime:0};
+  const backend=(id)=>createServer((req,res)=>{req.resume();hits[id]++;res.setHeader('content-type','application/json');res.end(JSON.stringify({backend:id,mode:'sources',sources:[],answer:null}));});
+  const buildPort=await listen(backend('build'));
+  const runtimePort=await listen(backend('runtime'));
+  const build=child('pnpm',['build'],{RAG_PORT:String(buildPort)},`${output}/build.txt`);
+  const [buildCode]=await once(build,'close');
+  if(buildCode!==0)throw new Error(`Build exit ${buildCode}`);
+  const manifest=JSON.parse(await readFile(`${root}/.next/routes-manifest.json`,'utf8'));
+  const rewrite=Object.values(manifest.rewrites).flat().find(r=>r.source==='/api/rag');
+  const required=JSON.parse(await readFile(`${root}/.next/required-server-files.json`,'utf8'));
+  const reservation=createServer();
+  const nextPort=await listen(reservation);
+  await new Promise(resolve=>reservation.close(resolve));
+  const next=child(process.execPath,['node_modules/next/dist/bin/next','start','--hostname','127.0.0.1','--port',String(nextPort)],{RAG_PORT:String(runtimePort)},`${output}/start.txt`);
+  let response;
+  const deadline=Date.now()+15000;
+  while(Date.now()<deadline) {
+    if(next.exitCode!==null)throw new Error(`Next start exited ${next.exitCode}`);
+    try {
+      response=await fetch(`http://127.0.0.1:${nextPort}/api/rag`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:'test'}),signal:AbortSignal.timeout(2000)});
+      break;
+    } catch { await new Promise(resolve=>setTimeout(resolve,100)); }
+  }
+  if(!response)throw new Error('Next start did not respond');
+  const body=await response.json();
+  result={node:process.version,nextVersion:JSON.parse(await readFile(`${root}/node_modules/next/package.json`,'utf8')).version,proxyTimeoutMs:required.config?.experimental?.proxyTimeout,buildCode,buildPort,runtimePort,status:response.status,body,hits,rewrite,passed:response.status===200&&body.backend==='build'&&hits.runtime===0&&required.config?.experimental?.proxyTimeout===65000};
+  await writeFile(`${output}/rewrite-result.json`,JSON.stringify(result,null,2)+'\n');
+  console.log(JSON.stringify(result,null,2));
+  if(!result.passed)process.exitCode=1;
+} finally {
+  for(const proc of children)if(proc.exitCode===null){const exited=once(proc,'close');proc.kill('SIGTERM');await exited;}
+  await Promise.all(servers.map(server=>new Promise(resolve=>{server.closeAllConnections();server.close(resolve);} )));
+}

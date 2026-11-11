@@ -4,12 +4,13 @@ import {
   type RagRequest,
   type RagResult,
 } from "./contracts.ts";
+import { RAG_TIMEOUTS } from "../../config/rag.ts";
 import { retrieve } from "./retrieval.ts";
 
 export type AnswerOutcome = { result?: RagResult; error?: string };
 export async function requestAnswer(
   question: string,
-  options: { demo: boolean; fetcher?: typeof fetch },
+  options: { demo: boolean; fetcher?: typeof fetch; signal?: AbortSignal },
 ): Promise<AnswerOutcome> {
   if (options.demo)
     return {
@@ -26,28 +27,55 @@ export async function requestAnswer(
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),
-      signal: AbortSignal.timeout(70000),
+      signal: AbortSignal.any([
+        AbortSignal.timeout(RAG_TIMEOUTS.clientMs),
+        ...(options.signal ? [options.signal] : []),
+      ]),
     });
-    const data = await response.json();
+    let data;
+    try {
+      data = await response.json();
+    } catch (error) {
+      if (
+        options.signal?.aborted ||
+        (error instanceof Error &&
+          ["AbortError", "TimeoutError"].includes(error.name))
+      )
+        throw error;
+      return {
+        error:
+          "Tjenesten eller mellomtjeneren returnerte et uventet svarformat (forventet JSON). Prøv igjen om litt.",
+      };
+    }
+    const fallback = isSources(data?.sources)
+      ? {
+          result: {
+            mode: "sources",
+            sources: data.sources,
+            answer: null,
+          } as RagResult,
+        }
+      : {};
     if (!response.ok)
       return {
         error:
           typeof data?.error === "string"
             ? data.error
             : "Tjenesten kunne ikke svare.",
-        ...(isSources(data?.sources)
-          ? {
-              result: {
-                mode: "sources",
-                sources: data.sources,
-                answer: null,
-              } as RagResult,
-            }
-          : {}),
+        ...fallback,
       };
-    if (!isResult(data)) throw new Error("invalid_response");
+    if (!isResult(data))
+      return {
+        error: "Tjenesten returnerte et uventet svarformat.",
+        ...fallback,
+      };
     return { result: data };
-  } catch {
+  } catch (error) {
+    if (options.signal?.aborted) return { error: "Forespørselen ble avbrutt." };
+    if (error instanceof Error && error.name === "TimeoutError")
+      return {
+        error: "Kunnskapstjenesten brukte for lang tid. Prøv igjen om litt.",
+      };
     return {
       error:
         "Kunnskapstjenesten er utilgjengelig akkurat nå. Prøv igjen om litt.",

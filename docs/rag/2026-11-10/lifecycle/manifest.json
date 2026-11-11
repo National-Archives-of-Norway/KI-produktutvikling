@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-10",
+  "agent": "Codex (OpenAI)",
+  "baselineCommit": "3bff340",
+  "workingTreeChangesTested": true,
+  "node": "v24.22.1",
+  "next": "16.4.3",
+  "timeoutsMs": {
+    "model": 60000,
+    "proxy": 65000,
+    "client": 70000
+  },
+  "capacity": {
+    "default": 1,
+    "min": 1,
+    "max": 8,
+    "scope": "RAG service instance/process",
+    "queue": false
+  },
+  "checks": {
+    "pnpm test:rag": {
+      "passed": 119,
+      "failed": 0
+    },
+    "pnpm typecheck": 0,
+    "pnpm build (controlled test port)": 0,
+    "pnpm build (ordinary port restored)": 0,
+    "pnpm format:check": 0,
+    "git diff --check": 0
+  },
+  "rewriteProbe": {
+    "node": "v24.22.1",
+    "buildCode": 0,
+    "buildPort": 54975,
+    "runtimePort": 54976,
+    "status": 200,
+    "body": {
+      "backend": "build",
+      "mode": "sources",
+      "sources": [],
+      "answer": null
+    },
+    "hits": {
+      "build": 1,
+      "runtime": 0
+    },
+    "rewrite": {
+      "source": "/api/rag",
+      "destination": "http://127.0.0.1:54975/api/rag",
+      "regex": "^/api/rag(?:/)?$"
+    },
+    "passed": true,
+    "proxyTimeoutMs": 65000,
+    "nextVersion": "16.4.3"
+  },
+  "restoredRewrite": {
+    "source": "/api/rag",
+    "destination": "http://127.0.0.1:3001/api/rag",
+    "regex": "^/api/rag(?:/)?$"
+  },
+  "realModelTested": false,
+  "simulatedTransportsOnly": true,
+  "modelTestsUseScaledTimeouts": true,
+  "node22Retested": false,
+  "dockerRetested": false,
+  "sourceSha256": {
+    "src/config/rag.ts": "3215dea48cfe5dd2a0071dad23ae5b7882379e4c36c68f39c6eab335148f99ca",
+    "next.config.ts": "df9655caa0a8334c94b22f88cbb08266b959ccd7062f6148b5f3a8d9af220d50",
+    "src/server/rag/config.ts": "42390da7c6c947b9ce602dcbcb62ac79ba0f8ae283785c3bd0eca84da6ea6bf9",
+    "src/server/rag/model.ts": "cfdd9dc0b2e0ce12f17e66dc06137dfbcfda939b2a6ae780485bbb66c04510d3",
+    "src/server/rag/service.ts": "c5fa2536f7858d3d5a7c7b2a0b80fa597a442febd51f3b5fd906ac61e80b69b3",
+    "src/server/rag/http.ts": "a8c9fc470bf01aeed76d33258d2ad49161a0f2340a1652ae97a1637decd607a7",
+    "src/server/rag/external.ts": "d980a28fcfdbf156a63e616394716b342603aeba5e0022fd078faf919446b8fc",
+    "src/server/rag/ollama.ts": "b5cfe72ba0179036f63215a4798164ec07524bffaa55a1433fa6009a2520e67a",
+    "src/features/rag/client.ts": "b4f71d4d47495bec8065181a5190c4c04ee52792dbb926f7df57804f88ad3dfb",
+    "src/features/rag/use-chat.ts": "0f9d424fcd345bbc4749333a74f5405ce63ba126dd79977f4fdbd291006179fd",
+    "tests/rag-lifecycle.test.ts": "4ff2d7d739c756711ca8d6895c8e2b9c3e53d41c852922ed6d848e2b24128fab",
+    "tests/rag-proxy.test.ts": "b27f30fc2694fc38bda695f78598c51170c91952839f3d65e367930f913a7f58",
+    "tests/rag-http.test.ts": "122d3f7e891bb5123cae84e77ea8b40eb529debbc7cf573ba3277ad73eb52a15",
+    "node_modules/next/dist/server/lib/router-utils/proxy-request.js": "1e94224e114299f6c136df556c7899e3a6c0cbc7fa7c1a6d85dd17fa8d1765ae",
+    "node_modules/next/dist/server/config-schema.js": "21f7f8638d6085db6eda0e2f30a3f62902c06afd33c5faa3e074e69c115c690c",
+    "node_modules/next/dist/server/lib/router-utils/filesystem.js": "24dde0d99e0aabdcbbc435e7c58a678a295733be87ca4246898a5500a9565488"
+  }
+}

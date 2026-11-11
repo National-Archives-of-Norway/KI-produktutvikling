@@ -8,6 +8,7 @@ export function startRagServer() {
   const config = loadRagConfig();
   const service = createRagService({
     model: createConfiguredModel(config),
+    maxConcurrent: config.maxConcurrent,
   });
   const server = createRagHttpServer(service, config);
   server.listen(config.port, "127.0.0.1", () =>

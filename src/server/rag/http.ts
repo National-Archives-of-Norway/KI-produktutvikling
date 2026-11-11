@@ -78,7 +78,7 @@ export async function handleRagRequest(
   const question = validateQuestion(data?.question);
   if (!question) return json(400, { error: QUESTION_ERROR });
   try {
-    const result = await service.ask(question);
+    const result = await service.ask(question, req.signal);
     return json(result.status, result.body);
   } catch {
     return internalError();
@@ -152,43 +152,56 @@ export function createRagHttpServer(
   config: HttpConfig = defaultHttpConfig,
 ) {
   const server = createServer(async (req, res) => {
-    let response: Response;
+    const controller = new AbortController();
+    const abort = () => controller.abort();
+    const onClose = () => {
+      if (!res.writableFinished) abort();
+    };
+    req.once("aborted", abort);
+    res.once("close", onClose);
     try {
-      const body = await readBody(req);
-      const headers = new Headers();
-      for (const name of ["origin", "content-type"]) {
-        const value = req.headers[name];
-        if (typeof value === "string") headers.set(name, value);
-      }
-      const method = req.method || "GET";
-      let request: Request;
+      let response: Response;
       try {
-        request = new Request(`http://127.0.0.1${req.url || "/"}`, {
-          method,
-          headers,
-          ...(!["GET", "HEAD"].includes(method)
-            ? { body: body.toString("utf8") }
-            : {}),
-        });
-      } catch {
-        throw new BodyError(400);
+        const body = await readBody(req);
+        const headers = new Headers();
+        for (const name of ["origin", "content-type"]) {
+          const value = req.headers[name];
+          if (typeof value === "string") headers.set(name, value);
+        }
+        const method = req.method || "GET";
+        let request: Request;
+        try {
+          request = new Request(`http://127.0.0.1${req.url || "/"}`, {
+            method,
+            headers,
+            signal: controller.signal,
+            ...(!["GET", "HEAD"].includes(method)
+              ? { body: body.toString("utf8") }
+              : {}),
+          });
+        } catch {
+          throw new BodyError(400);
+        }
+        response = await handleRagRequest(request, service, config);
+      } catch (error) {
+        response =
+          error instanceof BodyError
+            ? error.status === 413
+              ? tooLarge()
+              : json(400, { error: "Forespørselen kunne ikke leses." })
+            : internalError();
       }
-      response = await handleRagRequest(request, service, config);
-    } catch (error) {
-      response =
-        error instanceof BodyError
-          ? error.status === 413
-            ? tooLarge()
-            : json(400, { error: "Forespørselen kunne ikke leses." })
-          : internalError();
+      if (res.destroyed) return;
+      if (response.status === 413) {
+        await rejectTooLarge(req, res, response);
+        return;
+      }
+      res.writeHead(response.status, Object.fromEntries(response.headers));
+      res.end(await response.text());
+    } finally {
+      req.off("aborted", abort);
+      res.off("close", onClose);
     }
-    if (res.destroyed) return;
-    if (response.status === 413) {
-      await rejectTooLarge(req, res, response);
-      return;
-    }
-    res.writeHead(response.status, Object.fromEntries(response.headers));
-    res.end(await response.text());
   });
   server.headersTimeout = 10000;
   server.requestTimeout = 15000;

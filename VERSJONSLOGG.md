@@ -6,6 +6,17 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 10. november 2026 – samordnede RAG-frister, avbrudd og modellkapasitet
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Bekreftet 30 s proxydefault i installert Next 16.4.3-kode mot 60 s modell og 70 s klient. Fem førtester av signal/kapasitet, ikke-JSON, Ollama-sti og trimming feilet mot gammel kode. Lest installert dokumentasjon, konfigurasjonsschema, runtime og manifestkode før next.config.ts ble endret.
+- Samlet felles miljøfritt tidsbudsjett (modell/proxy/klient 60/65/70 s), reeksportert av serverkonfigurasjonen; klienten importerer ingen servervariabler/secrets. Satt verifisert experimental.proxyTimeout eksplisitt. Avbrudd videresendes fra lukket klient/proxy via tjenesten til fetch med AbortSignal.any. Lokal kapasitet frigjøres i finally også ved timeout eller adapter som ignorerer avbrudd.
+- Erstattet busy med konfigurert modellkapasitet RAG_MAX_CONCURRENT (1–8, standard 1), per prosess uten kø. Full kapasitet gir 429 med kilder; modelltimeout gir 502 med kilder. Klienten gir forståelig feil ved ikke-JSON, beholder validerte kilder og avbryter ved avmontering. Ollama-svar trimmes; sti/query/fragment i OLLAMA_URL avvises ved oppstart.
+- Bekreftet rewrite-antakelsen med faktisk produksjonsbygg og Next start mot to simulerte backender: byggport A traff A selv med annen runtime-port B (A=1/B=0). RAG_PORT ved bygg må samsvare med faktisk tjenesteport. Alle testprosesser er stoppet, og et vanlig bygg uten testport er kjørt etterpå. Ingen ekte modell eller priskilde er brukt.
+- Oppdatert README, .env.example, arkitektur, funksjonsregister og utviklingsplan. Bevis og [testrapport](docs/rag/2026-11-10/lifecycle.md) beskriver omfang og begrensninger; ingen produksjonsgodkjenning, leverandørberegningsstopp eller ny Node 22/Docker-verifisering påstås. Tidligere rapporter bevares.
+- Kontroller: `pnpm test:rag` **119/119**, `pnpm typecheck`, `pnpm build`, `pnpm format:check` og `git diff --check` bestått. Testene bruker korte frister/simulert transport, samt faktisk lokal Next-proxy; ingen ende-til-ende-prøve mot en ekte modell. Ingen nye avhengigheter, prisdata, commit eller publisering.
+
 ### 10. november 2026 – full testpakke og produksjonsbygg i Linux med Node 22
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

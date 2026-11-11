@@ -1,22 +1,27 @@
 import type { RagResponse, RagSource } from "../../features/rag/contracts.ts";
 import { retrieve } from "../../features/rag/retrieval.ts";
+import { modelSignal, runWithSignal } from "./model.ts";
 import type { ModelAdapter } from "./model.ts";
+import { validateConcurrency } from "./config.ts";
 
 export interface RagService {
   generationEnabled: boolean;
-  ask(question: string): Promise<RagResponse>;
+  ask(question: string, signal?: AbortSignal): Promise<RagResponse>;
 }
 export function createRagService(
   options: {
     model?: ModelAdapter;
+    maxConcurrent?: number;
+    modelTimeoutMs?: number;
     search?: (question: string) => RagSource[];
   } = {},
 ): RagService {
-  let busy = false;
+  const maxConcurrent = validateConcurrency(options.maxConcurrent ?? 1);
+  let active = 0;
   const search = options.search ?? retrieve;
   return {
     generationEnabled: Boolean(options.model),
-    async ask(question) {
+    async ask(question, signal) {
       const sources = search(question);
       if (!sources.length || !options.model)
         return {
@@ -28,20 +33,24 @@ export function createRagService(
             reason: !sources.length ? "no_sources" : "no_model",
           },
         };
-      if (busy)
+      if (active >= maxConcurrent)
         return {
           status: 429,
           body: {
-            error: "Tjenesten svarer på et annet spørsmål. Prøv igjen om litt.",
+            error: "Tjenesten har nådd kapasitetsgrensen. Prøv igjen om litt.",
+            sources,
           },
         };
-      busy = true;
+      const effectiveSignal = modelSignal(signal, options.modelTimeoutMs);
+      active += 1;
       try {
         return {
           status: 200,
           body: {
             mode: "generated",
-            answer: await options.model.generate(question, sources),
+            answer: await runWithSignal(effectiveSignal, () =>
+              options.model!.generate(question, sources, effectiveSignal),
+            ),
             sources,
           },
         };
@@ -55,7 +64,7 @@ export function createRagService(
           },
         };
       } finally {
-        busy = false;
+        active -= 1;
       }
     },
   };

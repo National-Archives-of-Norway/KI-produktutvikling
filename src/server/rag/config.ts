@@ -1,5 +1,13 @@
 import { env as serverEnv } from "node:process";
 
+export { RAG_TIMEOUTS } from "../../config/rag.ts";
+
+export function validateConcurrency(value: number): number {
+  if (!Number.isInteger(value) || value < 1 || value > 8)
+    throw new Error("RAG_MAX_CONCURRENT må være et heltall fra 1 til 8.");
+  return value;
+}
+
 export const DEFAULT_ALLOWED_ORIGINS = [
   "http://127.0.0.1:3000",
   "http://localhost:3000",
@@ -34,7 +42,11 @@ function loadAllowedOrigins(value: string | undefined): string[] {
   ];
 }
 
-export type RagConfig = { port: number; allowedOrigins: readonly string[] } & (
+export type RagConfig = {
+  port: number;
+  allowedOrigins: readonly string[];
+  maxConcurrent: number;
+} & (
   | { provider: "none" }
   | { provider: "ollama"; model: string; endpoint: URL }
   | {
@@ -52,10 +64,14 @@ export function loadRagConfig(
   if (!Number.isInteger(port) || port < 0 || port > 65535)
     throw new Error("Ugyldig RAG-port.");
   const allowedOrigins = loadAllowedOrigins(env.RAG_ALLOWED_ORIGINS);
+  const maxConcurrent = validateConcurrency(
+    Number(env.RAG_MAX_CONCURRENT ?? 1),
+  );
   const provider =
     env.MODEL_PROVIDER?.trim() ||
     (env.OLLAMA_MODEL?.trim() ? "ollama" : "none");
-  if (provider === "none") return { port, allowedOrigins, provider };
+  if (provider === "none")
+    return { port, allowedOrigins, maxConcurrent, provider };
   if (provider === "openai-compatible") {
     const model = env.MODEL_NAME?.trim();
     const apiKey = env.MODEL_API_KEY?.trim();
@@ -80,7 +96,15 @@ export function loadRagConfig(
         "MODEL_API_URL må være en HTTPS-adresse uten brukernavn, passord, query eller fragment. Bruk MODEL_API_KEY for nøkkelen.",
       );
     if (/[\r\n]/.test(apiKey)) throw new Error("Ugyldig MODEL_API_KEY.");
-    return { port, allowedOrigins, provider, model, endpoint, apiKey };
+    return {
+      port,
+      allowedOrigins,
+      maxConcurrent,
+      provider,
+      model,
+      endpoint,
+      apiKey,
+    };
   }
   if (provider !== "ollama")
     throw new Error(
@@ -98,10 +122,13 @@ export function loadRagConfig(
     !["127.0.0.1", "localhost", "[::1]"].includes(endpoint.hostname) ||
     endpoint.protocol !== "http:" ||
     endpoint.username ||
-    endpoint.password
+    endpoint.password ||
+    endpoint.pathname !== "/" ||
+    endpoint.search ||
+    endpoint.hash
   )
     throw new Error(
-      "Denne versjonen tillater bare Ollama på lokal loopback-adresse.",
+      "OLLAMA_URL må være en HTTP-loopback-adresse uten sti, query, fragment eller påloggingsinformasjon.",
     );
-  return { port, allowedOrigins, provider, endpoint, model };
+  return { port, allowedOrigins, maxConcurrent, provider, endpoint, model };
 }

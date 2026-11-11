@@ -1,0 +1,101 @@
+✖ avbrutt modellforespørsel sender signal og frigjør kapasitet (8.123ms)
+✖ konfigurert kapasitet tillater to brukere og avviser den tredje med kilder (6.432458ms)
+✖ ren tekst fra proxy gir forståelig formatfeil uten å vise råsvaret (8.724708ms)
+✖ Ollama avviser sti eksplisitt i konfigurasjonen (0.162ms)
+✖ Ollama trimmer modellsvaret (0.395542ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 0
+ℹ fail 5
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 92.206416
+
+✖ failing tests:
+
+test at tests/rag-lifecycle.test.ts:11:1
+✖ avbrutt modellforespørsel sender signal og frigjør kapasitet (8.123ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(observed?.aborted)
+  
+      at TestContext.<anonymous> (file:///Users/khadah/Documents/ChatGPT/KI-utvikling/tests/rag-lifecycle.test.ts:26:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/rag-lifecycle.test.ts:30:1
+✖ konfigurert kapasitet tillater to brukere og avviser den tredje med kilder (6.432458ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 2
+  
+      at TestContext.<anonymous> (file:///Users/khadah/Documents/ChatGPT/KI-utvikling/tests/rag-lifecycle.test.ts:38:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 2,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/rag-lifecycle.test.ts:44:1
+✖ ren tekst fra proxy gir forståelig formatfeil uten å vise råsvaret (8.724708ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /JSON|svarformat/. Input:
+  
+  'Kunnskapstjenesten er utilgjengelig akkurat nå. Prøv igjen om litt.'
+  
+      at TestContext.<anonymous> (file:///Users/khadah/Documents/ChatGPT/KI-utvikling/tests/rag-lifecycle.test.ts:46:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'Kunnskapstjenesten er utilgjengelig akkurat nå. Prøv igjen om litt.',
+    expected: /JSON|svarformat/,
+    operator: 'match',
+    diff: 'simple'
+  }
+
+test at tests/rag-lifecycle.test.ts:50:1
+✖ Ollama avviser sti eksplisitt i konfigurasjonen (0.162ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///Users/khadah/Documents/ChatGPT/KI-utvikling/tests/rag-lifecycle.test.ts:51:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /OLLAMA_URL|sti/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/rag-lifecycle.test.ts:54:1
+✖ Ollama trimmer modellsvaret (0.395542ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  '  svar  ' !== 'svar'
+  
+      at TestContext.<anonymous> (file:///Users/khadah/Documents/ChatGPT/KI-utvikling/tests/rag-lifecycle.test.ts:56:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '  svar  ',
+    expected: 'svar',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

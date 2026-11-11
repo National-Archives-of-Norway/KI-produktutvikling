@@ -1,0 +1,25 @@
+{
+  "node": "v24.22.1",
+  "buildCode": 0,
+  "buildPort": 54975,
+  "runtimePort": 54976,
+  "status": 200,
+  "body": {
+    "backend": "build",
+    "mode": "sources",
+    "sources": [],
+    "answer": null
+  },
+  "hits": {
+    "build": 1,
+    "runtime": 0
+  },
+  "rewrite": {
+    "source": "/api/rag",
+    "destination": "http://127.0.0.1:54975/api/rag",
+    "regex": "^/api/rag(?:/)?$"
+  },
+  "passed": true,
+  "proxyTimeoutMs": 65000,
+  "nextVersion": "16.4.3"
+}

@@ -317,3 +317,57 @@ function rawPost(url: string, headers: Record<string, string>, body?: string) {
     else req.end(body);
   });
 }
+
+test(
+  "lukket klientforbindelse avbryter modelltransport og frigjør kapasitet",
+  { timeout: 5000 },
+  async () => {
+    const { createOllamaAdapter } = await import("../src/server/rag/ollama.ts");
+    let entered!: () => void, cancelled!: () => void;
+    const started = new Promise<void>((resolve) => {
+      entered = resolve;
+    });
+    const aborted = new Promise<void>((resolve) => {
+      cancelled = resolve;
+    });
+    let calls = 0;
+    const adapter = createOllamaAdapter(
+      { model: "test", endpoint: new URL("http://localhost:11434") },
+      async (_url, init) => {
+        if (++calls !== 1)
+          return Response.json({ message: { content: "  neste svar  " } });
+        entered();
+        return new Promise((_resolve, reject) => {
+          init!.signal!.addEventListener(
+            "abort",
+            () => {
+              cancelled();
+              reject(init!.signal!.reason);
+            },
+            { once: true },
+          );
+        });
+      },
+    );
+    await withServer(
+      async (url) => {
+        const controller = new AbortController();
+        const first = fetch(url, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: question,
+          signal: controller.signal,
+        });
+        await started;
+        controller.abort();
+        await assert.rejects(first);
+        await aborted;
+        await new Promise((resolve) => setImmediate(resolve));
+        const next = await post(url);
+        assert.equal(next.status, 200);
+        assert.equal((await next.json()).answer, "neste svar");
+      },
+      createRagService({ model: adapter }),
+    );
+  },
+);

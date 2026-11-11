@@ -1,5 +1,5 @@
 "use client";
-import { useReducer, useRef, useState } from "react";
+import { useEffect, useReducer, useRef, useState } from "react";
 import { chatReducer, initialChatState } from "./chat-state";
 import { QUESTION_ERROR, validateQuestion } from "./contracts";
 import { requestAnswer } from "./client";
@@ -10,6 +10,8 @@ export function useChat() {
   const [validation, setValidation] = useState("");
   const pending = useRef(false);
   const nextId = useRef(0);
+  const controller = useRef<AbortController | null>(null);
+  useEffect(() => () => controller.current?.abort(), []);
   const demo = process.env.NEXT_PUBLIC_STATIC_DEMO === "true";
   async function ask(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -20,6 +22,7 @@ export function useChat() {
       return;
     }
     pending.current = true;
+    controller.current = new AbortController();
     setValidation("");
     setQuestion("");
     const id = ++nextId.current;
@@ -28,10 +31,14 @@ export function useChat() {
       dispatch({
         type: "complete",
         id,
-        ...(await requestAnswer(text, { demo })),
+        ...(await requestAnswer(text, {
+          demo,
+          signal: controller.current.signal,
+        })),
       });
     } finally {
       pending.current = false;
+      controller.current = null;
     }
   }
   function clear() {
