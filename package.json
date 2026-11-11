@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node --env-file-if-exists=.env.local scripts/dev.mjs",
     "rag:start": "node --env-file-if-exists=.env.local scripts/rag-server.mjs",
-    "test:rag": "node --test tests/*.test.ts tests/*.test.mjs",
+    "test:rag": "pnpm test:node",
     "test:content-sync": "node scripts/check-content-sync.mjs",
     "build": "next build",
     "build:pages": "node scripts/build-pages.mjs",
@@ -14,11 +14,15 @@
     "typecheck": "tsc --noEmit",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "check": "pnpm format:check && pnpm typecheck && pnpm build",
+    "check": "pnpm format:check && pnpm typecheck && pnpm test && pnpm build",
     "pricing:sync": "node scripts/pricing/sync.mjs",
     "test:pricing": "node --test tests/pricing.test.mjs",
     "test:a11y": "node scripts/a11y/native.mjs",
-    "test:a11y:smoke": "node scripts/a11y/smoke.mjs"
+    "test:a11y:smoke": "node scripts/a11y/smoke.mjs",
+    "test:node": "node --test tests/*.test.ts tests/*.test.mjs",
+    "test:python": "python3 -m unittest discover -s tests -p 'test_html_accessibility.py'",
+    "test:links": "node scripts/check-markdown-links.mjs",
+    "test": "pnpm test:node && pnpm test:python && pnpm test:content-sync && pnpm test:links"
   },
   "engines": {
     "node": ">=22.18.0"

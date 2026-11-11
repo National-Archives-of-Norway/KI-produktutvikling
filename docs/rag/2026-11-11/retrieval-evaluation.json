@@ -1,0 +1,1090 @@
+{
+  "date": "2026-11-11",
+  "agent": "Codex (OpenAI)",
+  "before": {
+    "development": [
+      {
+        "question": "Hvem er statsministeren?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hva er været i Oslo i morgen?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hva koster Claude?",
+        "expectedId": "priser",
+        "ids": ["priser", "funksjonalitet", "godkjente-ki-assistenter"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Når kommer modelloversikten?",
+        "expectedId": "oversikt",
+        "maxRank": 3,
+        "ids": ["funksjonalitet", "oversikt"],
+        "rank": 2,
+        "passed": true
+      },
+      {
+        "question": "kodeendring tester",
+        "expectedId": "kodegjennomgang",
+        "ids": [
+          "kodegjennomgang",
+          "tilgjengelighetserklaering",
+          "retningslinjer"
+        ],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "værmelding bananer",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hva er KI?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hvordan tester jeg tilgjengeligheten?",
+        "expectedId": "tilgjengelighetserklaering",
+        "ids": [
+          "tilgjengelighetserklaering",
+          "personvernerklaering",
+          "kodegjennomgang"
+        ],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hva er KI-prat?",
+        "expectedId": "ki-prat",
+        "ids": ["ki-prat", "om", "funksjonalitet"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvordan kommer jeg i gang med KI?",
+        "expectedId": "kom-i-gang",
+        "ids": ["kom-i-gang", "om", "ki-prat"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvilke retningslinjer gjelder for KI?",
+        "expectedId": "retningslinjer",
+        "ids": ["retningslinjer", "funksjonalitet", "informasjonskapsler"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvilke verktøy er godkjent?",
+        "expectedId": "retningslinjer",
+        "ids": ["retningslinjer", "om", "priser"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "tilgjengelighet",
+        "expectedId": "tilgjengelighetserklaering",
+        "ids": [
+          "tilgjengelighetserklaering",
+          "personvernerklaering",
+          "funksjonalitet"
+        ],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "retningslinjer",
+        "expectedId": "retningslinjer",
+        "ids": ["retningslinjer", "funksjonalitet", "om"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "tilgjengelighetserklæring",
+        "expectedId": "tilgjengelighetserklaering",
+        "ids": [
+          "tilgjengelighetserklaering",
+          "funksjonalitet",
+          "personvernerklaering"
+        ],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "personvernerklæring GDPR",
+        "expectedId": "personvernerklaering",
+        "ids": ["personvernerklaering", "personvern", "funksjonalitet"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Trenger portalen et samtykkebanner?",
+        "expectedId": "informasjonskapsler",
+        "ids": ["informasjonskapsler", "om", "personvern"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Bruker portalen cookies?",
+        "expectedId": "informasjonskapsler",
+        "ids": ["informasjonskapsler", "om", "funksjonalitet"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvordan blir jeg med på KI-prat?",
+        "expectedId": "ki-prat",
+        "ids": ["ki-prat", "om", "funksjonalitet"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hva er status for Atlassian MCP?",
+        "expectedId": "godkjente-mcper",
+        "ids": ["godkjente-mcper", "funksjonalitet", "oversikt"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hva koster Copilot-abonnement?",
+        "expectedId": "priser",
+        "ids": ["priser", "funksjonalitet", "godkjente-ki-assistenter"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvordan utforsker jeg brukerbehov?",
+        "expectedId": "brukerbehov",
+        "ids": ["brukerbehov", "kom-i-gang", "funksjonalitet"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvor finner jeg versjonsloggen?",
+        "expectedId": "funksjonalitet",
+        "maxRank": 3,
+        "ids": [
+          "funksjonalitet",
+          "tilgjengelighetserklaering",
+          "informasjonskapsler-og-samtykke"
+        ],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvordan behandles spørsmålene mine og personopplysninger?",
+        "expectedId": "personvern",
+        "ids": ["personvern", "brukerbehov", "retningslinjer"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvordan installerer jeg tilgjengelighetsskillen?",
+        "expectedId": "tilgjengelighetserklaering",
+        "ids": [
+          "tilgjengelighetserklaering",
+          "informasjonskapsler-og-samtykke",
+          "personvernerklaering"
+        ],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Kan du anbefale en restaurant i Bergen?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      }
+    ],
+    "held-out": [
+      {
+        "question": "Hvor mye koster en pizza i Oslo?",
+        "expectedId": null,
+        "ids": ["funksjonalitet", "priser"],
+        "rank": null,
+        "passed": false
+      },
+      {
+        "question": "Hva er Nasjonalarkivet?",
+        "expectedId": null,
+        "ids": [
+          "informasjonskapsler",
+          "godkjente-mcper",
+          "godkjente-ki-assistenter"
+        ],
+        "rank": null,
+        "passed": false
+      },
+      {
+        "question": "Skriv et dikt om arkiv",
+        "expectedId": null,
+        "ids": ["personvern", "tilgjengelighetserklaering"],
+        "rank": null,
+        "passed": false
+      },
+      {
+        "question": "Hva er prisen?",
+        "expectedId": "priser",
+        "ids": [],
+        "rank": 0,
+        "passed": false
+      },
+      {
+        "question": "Hvordan tester jeg koden min?",
+        "expectedId": "kodegjennomgang",
+        "ids": [
+          "tilgjengelighetserklaering",
+          "kodegjennomgang",
+          "retningslinjer"
+        ],
+        "rank": 2,
+        "passed": false
+      },
+      {
+        "question": "Kan jeg dele kode med KI?",
+        "expectedId": "kodegjennomgang",
+        "ids": [
+          "tilgjengelighetserklaering",
+          "personvernerklaering",
+          "kodegjennomgang"
+        ],
+        "rank": 3,
+        "passed": false
+      },
+      {
+        "question": "Hva koster det?",
+        "expectedId": "priser",
+        "ids": ["funksjonalitet", "priser"],
+        "rank": 2,
+        "passed": false
+      },
+      {
+        "question": "Hva koster togbilletten til Bergen?",
+        "expectedId": null,
+        "ids": ["funksjonalitet", "priser"],
+        "rank": null,
+        "passed": false
+      },
+      {
+        "question": "Hvordan tester jeg pizzadeigen?",
+        "expectedId": null,
+        "ids": [
+          "tilgjengelighetserklaering",
+          "kodegjennomgang",
+          "retningslinjer"
+        ],
+        "rank": null,
+        "passed": false
+      },
+      {
+        "question": "Hvem vant fotballkampen i går?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hvor ligger nærmeste bibliotek?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hva bør jeg lage til middag?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hvor er prisene?",
+        "expectedId": "priser",
+        "ids": [],
+        "rank": 0,
+        "passed": false
+      },
+      {
+        "question": "Hva sier retningslinjene?",
+        "expectedId": "retningslinjer",
+        "ids": ["godkjente-mcper", "godkjente-ki-assistenter", "kom-i-gang"],
+        "rank": 0,
+        "passed": false
+      },
+      {
+        "question": "Hvordan gjennomfører jeg kodegjennomgangen?",
+        "expectedId": "kodegjennomgang",
+        "ids": [],
+        "rank": 0,
+        "passed": false
+      },
+      {
+        "question": "Hvilke informasjonskapsler lagres?",
+        "expectedId": "informasjonskapsler",
+        "ids": [
+          "informasjonskapsler-og-samtykke",
+          "informasjonskapsler",
+          "personvern"
+        ],
+        "rank": 2,
+        "passed": false
+      },
+      {
+        "question": "Hvordan finner jeg personvernerklæringen?",
+        "expectedId": "personvern",
+        "ids": ["personvernerklaering", "personvern", "funksjonalitet"],
+        "rank": 2,
+        "passed": false
+      },
+      {
+        "question": "Hvordan avklarer jeg samtykket?",
+        "expectedId": "informasjonskapsler-og-samtykke",
+        "ids": ["informasjonskapsler", "informasjonskapsler-og-samtykke"],
+        "rank": 2,
+        "passed": false
+      },
+      {
+        "question": "Hva skjer på KI-praten?",
+        "expectedId": "ki-prat",
+        "ids": ["personvern"],
+        "rank": 0,
+        "passed": false
+      },
+      {
+        "question": "Hva inneholder modelloversikten?",
+        "expectedId": "oversikt",
+        "ids": ["funksjonalitet", "oversikt", "om"],
+        "rank": 2,
+        "passed": false
+      }
+    ]
+  },
+  "firstUnseen": {
+    "development": [
+      {
+        "question": "Hvem er statsministeren?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hva er været i Oslo i morgen?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hva koster Claude?",
+        "expectedId": "priser",
+        "ids": ["priser", "funksjonalitet"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Når kommer modelloversikten?",
+        "expectedId": "oversikt",
+        "maxRank": 1,
+        "ids": ["oversikt", "funksjonalitet"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "kodeendring tester",
+        "expectedId": "kodegjennomgang",
+        "ids": [
+          "kodegjennomgang",
+          "tilgjengelighetserklaering",
+          "personvernerklaering"
+        ],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "værmelding bananer",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hva er KI?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hvordan tester jeg tilgjengeligheten?",
+        "expectedId": "tilgjengelighetserklaering",
+        "ids": ["tilgjengelighetserklaering"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hva er KI-prat?",
+        "expectedId": "ki-prat",
+        "ids": ["ki-prat", "om", "funksjonalitet"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvordan kommer jeg i gang med KI?",
+        "expectedId": "kom-i-gang",
+        "ids": ["kom-i-gang", "om"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvilke retningslinjer gjelder for KI?",
+        "expectedId": "retningslinjer",
+        "ids": ["retningslinjer", "godkjente-ki-assistenter", "kom-i-gang"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvilke verktøy er godkjent?",
+        "expectedId": "retningslinjer",
+        "ids": ["retningslinjer", "oversikt", "kom-i-gang"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "tilgjengelighet",
+        "expectedId": "tilgjengelighetserklaering",
+        "ids": ["tilgjengelighetserklaering"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "retningslinjer",
+        "expectedId": "retningslinjer",
+        "ids": ["retningslinjer"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "tilgjengelighetserklæring",
+        "expectedId": "tilgjengelighetserklaering",
+        "ids": ["tilgjengelighetserklaering", "funksjonalitet"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "personvernerklæring GDPR",
+        "expectedId": "personvernerklaering",
+        "ids": ["personvernerklaering", "personvern", "funksjonalitet"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Trenger portalen et samtykkebanner?",
+        "expectedId": "informasjonskapsler",
+        "ids": ["informasjonskapsler", "informasjonskapsler-og-samtykke", "om"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Bruker portalen cookies?",
+        "expectedId": "informasjonskapsler",
+        "ids": ["informasjonskapsler", "om", "funksjonalitet"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvordan blir jeg med på KI-prat?",
+        "expectedId": "ki-prat",
+        "ids": ["ki-prat", "om", "funksjonalitet"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hva er status for Atlassian MCP?",
+        "expectedId": "godkjente-mcper",
+        "ids": ["godkjente-mcper", "oversikt", "funksjonalitet"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hva koster Copilot-abonnement?",
+        "expectedId": "priser",
+        "ids": ["priser", "funksjonalitet", "oversikt"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvordan utforsker jeg brukerbehov?",
+        "expectedId": "brukerbehov",
+        "ids": ["brukerbehov", "informasjonskapsler", "kom-i-gang"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvor finner jeg versjonsloggen?",
+        "expectedId": "funksjonalitet",
+        "maxRank": 3,
+        "ids": [
+          "funksjonalitet",
+          "informasjonskapsler-og-samtykke",
+          "personvernerklaering"
+        ],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvordan behandles spørsmålene mine og personopplysninger?",
+        "expectedId": "personvern",
+        "ids": ["personvern", "funksjonalitet", "brukerbehov"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvordan installerer jeg tilgjengelighetsskillen?",
+        "expectedId": "tilgjengelighetserklaering",
+        "ids": ["tilgjengelighetserklaering"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Kan du anbefale en restaurant i Bergen?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      }
+    ],
+    "held-out": [
+      {
+        "question": "Hvor mye koster en pizza i Oslo?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hva er Nasjonalarkivet?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Skriv et dikt om arkiv",
+        "expectedId": null,
+        "ids": ["personvern"],
+        "rank": null,
+        "passed": false
+      },
+      {
+        "question": "Hva er prisen?",
+        "expectedId": "priser",
+        "ids": ["priser", "oversikt", "godkjente-ki-assistenter"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvordan tester jeg koden min?",
+        "expectedId": "kodegjennomgang",
+        "ids": [
+          "tilgjengelighetserklaering",
+          "kodegjennomgang",
+          "retningslinjer"
+        ],
+        "rank": 2,
+        "passed": false
+      },
+      {
+        "question": "Kan jeg dele kode med KI?",
+        "expectedId": "kodegjennomgang",
+        "ids": ["kom-i-gang", "retningslinjer", "tilgjengelighetserklaering"],
+        "rank": 0,
+        "passed": false
+      },
+      {
+        "question": "Hva koster det?",
+        "expectedId": "priser",
+        "ids": ["priser", "funksjonalitet"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hva koster togbilletten til Bergen?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hvordan tester jeg pizzadeigen?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hvem vant fotballkampen i går?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hvor ligger nærmeste bibliotek?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hva bør jeg lage til middag?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hvor er prisene?",
+        "expectedId": "priser",
+        "ids": ["priser", "oversikt", "godkjente-ki-assistenter"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hva sier retningslinjene?",
+        "expectedId": "retningslinjer",
+        "ids": ["retningslinjer"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvordan gjennomfører jeg kodegjennomgangen?",
+        "expectedId": "kodegjennomgang",
+        "ids": [],
+        "rank": 0,
+        "passed": false
+      },
+      {
+        "question": "Hvilke informasjonskapsler lagres?",
+        "expectedId": "informasjonskapsler",
+        "ids": [
+          "informasjonskapsler-og-samtykke",
+          "informasjonskapsler",
+          "personvern"
+        ],
+        "rank": 2,
+        "passed": false
+      },
+      {
+        "question": "Hvordan finner jeg personvernerklæringen?",
+        "expectedId": "personvern",
+        "ids": ["personvernerklaering", "personvern", "funksjonalitet"],
+        "rank": 2,
+        "passed": false
+      },
+      {
+        "question": "Hvordan avklarer jeg samtykket?",
+        "expectedId": "informasjonskapsler-og-samtykke",
+        "ids": ["informasjonskapsler-og-samtykke", "informasjonskapsler"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hva skjer på KI-praten?",
+        "expectedId": "ki-prat",
+        "ids": ["ki-prat"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hva inneholder modelloversikten?",
+        "expectedId": "oversikt",
+        "ids": ["funksjonalitet", "oversikt", "om"],
+        "rank": 2,
+        "passed": false
+      }
+    ]
+  },
+  "after": {
+    "development": [
+      {
+        "question": "Hvem er statsministeren?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hva er været i Oslo i morgen?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hva koster Claude?",
+        "expectedId": "priser",
+        "ids": ["priser", "funksjonalitet"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Når kommer modelloversikten?",
+        "expectedId": "oversikt",
+        "maxRank": 1,
+        "ids": ["oversikt", "funksjonalitet"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "kodeendring tester",
+        "expectedId": "kodegjennomgang",
+        "ids": [
+          "kodegjennomgang",
+          "personvernerklaering",
+          "tilgjengelighetserklaering"
+        ],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "værmelding bananer",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hva er KI?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hvordan tester jeg tilgjengeligheten?",
+        "expectedId": "tilgjengelighetserklaering",
+        "ids": ["tilgjengelighetserklaering"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hva er KI-prat?",
+        "expectedId": "ki-prat",
+        "ids": ["ki-prat", "om", "funksjonalitet"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvordan kommer jeg i gang med KI?",
+        "expectedId": "kom-i-gang",
+        "ids": ["kom-i-gang", "om"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvilke retningslinjer gjelder for KI?",
+        "expectedId": "retningslinjer",
+        "ids": ["retningslinjer", "godkjente-ki-assistenter", "kom-i-gang"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvilke verktøy er godkjent?",
+        "expectedId": "retningslinjer",
+        "ids": ["retningslinjer", "oversikt", "kom-i-gang"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "tilgjengelighet",
+        "expectedId": "tilgjengelighetserklaering",
+        "ids": ["tilgjengelighetserklaering"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "retningslinjer",
+        "expectedId": "retningslinjer",
+        "ids": ["retningslinjer"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "tilgjengelighetserklæring",
+        "expectedId": "tilgjengelighetserklaering",
+        "ids": ["tilgjengelighetserklaering", "funksjonalitet"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "personvernerklæring GDPR",
+        "expectedId": "personvernerklaering",
+        "ids": ["personvernerklaering", "personvern", "funksjonalitet"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Trenger portalen et samtykkebanner?",
+        "expectedId": "informasjonskapsler",
+        "ids": ["informasjonskapsler", "om", "personvern"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Bruker portalen cookies?",
+        "expectedId": "informasjonskapsler",
+        "ids": ["informasjonskapsler", "om", "funksjonalitet"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvordan blir jeg med på KI-prat?",
+        "expectedId": "ki-prat",
+        "ids": ["ki-prat", "om", "funksjonalitet"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hva er status for Atlassian MCP?",
+        "expectedId": "godkjente-mcper",
+        "ids": ["godkjente-mcper", "oversikt", "funksjonalitet"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hva koster Copilot-abonnement?",
+        "expectedId": "priser",
+        "ids": ["priser", "funksjonalitet", "oversikt"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvordan utforsker jeg brukerbehov?",
+        "expectedId": "brukerbehov",
+        "ids": ["brukerbehov", "informasjonskapsler", "kom-i-gang"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvor finner jeg versjonsloggen?",
+        "expectedId": "funksjonalitet",
+        "maxRank": 3,
+        "ids": [
+          "funksjonalitet",
+          "informasjonskapsler-og-samtykke",
+          "personvernerklaering"
+        ],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvordan behandles spørsmålene mine og personopplysninger?",
+        "expectedId": "personvern",
+        "ids": ["personvern", "funksjonalitet", "brukerbehov"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvordan installerer jeg tilgjengelighetsskillen?",
+        "expectedId": "tilgjengelighetserklaering",
+        "ids": ["tilgjengelighetserklaering"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Kan du anbefale en restaurant i Bergen?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      }
+    ],
+    "held-out": [
+      {
+        "question": "Hvor mye koster en pizza i Oslo?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hva er Nasjonalarkivet?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Skriv et dikt om arkiv",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hva er prisen?",
+        "expectedId": "priser",
+        "ids": ["priser", "oversikt", "godkjente-ki-assistenter"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvordan tester jeg koden min?",
+        "expectedId": "kodegjennomgang",
+        "ids": ["kodegjennomgang"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Kan jeg dele kode med KI?",
+        "expectedId": "kodegjennomgang",
+        "ids": ["kodegjennomgang"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hva koster det?",
+        "expectedId": "priser",
+        "ids": ["priser", "funksjonalitet"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hva koster togbilletten til Bergen?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hvordan tester jeg pizzadeigen?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hvem vant fotballkampen i går?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hvor ligger nærmeste bibliotek?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hva bør jeg lage til middag?",
+        "expectedId": null,
+        "ids": [],
+        "rank": null,
+        "passed": true
+      },
+      {
+        "question": "Hvor er prisene?",
+        "expectedId": "priser",
+        "ids": ["priser", "oversikt", "godkjente-ki-assistenter"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hva sier retningslinjene?",
+        "expectedId": "retningslinjer",
+        "ids": ["retningslinjer"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvordan gjennomfører jeg kodegjennomgangen?",
+        "expectedId": "kodegjennomgang",
+        "ids": ["kodegjennomgang"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvilke informasjonskapsler lagres?",
+        "expectedId": "informasjonskapsler",
+        "ids": [
+          "informasjonskapsler",
+          "informasjonskapsler-og-samtykke",
+          "personvernerklaering"
+        ],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvordan finner jeg personvernerklæringen?",
+        "expectedId": "personvern",
+        "ids": ["personvern", "personvernerklaering", "funksjonalitet"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hvordan avklarer jeg samtykket?",
+        "expectedId": "informasjonskapsler-og-samtykke",
+        "ids": ["informasjonskapsler-og-samtykke", "informasjonskapsler"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hva skjer på KI-praten?",
+        "expectedId": "ki-prat",
+        "ids": ["ki-prat"],
+        "rank": 1,
+        "passed": true
+      },
+      {
+        "question": "Hva inneholder modelloversikten?",
+        "expectedId": "oversikt",
+        "ids": ["oversikt", "funksjonalitet"],
+        "rank": 1,
+        "passed": true
+      }
+    ]
+  },
+  "thresholdTrials": [
+    {
+      "coverage": "0.5",
+      "developmentPassed": 26,
+      "total": 26
+    },
+    {
+      "coverage": "2 / 3",
+      "developmentPassed": 24,
+      "total": 26
+    },
+    {
+      "coverage": "1",
+      "developmentPassed": 24,
+      "total": 26
+    }
+  ],
+  "heldOutExpectationsUnchanged": true,
+  "finalTestSetIsIndependent": false,
+  "methodLimitation": "Forventningene ble låst før rangeringen ble endret, men settet ble målt igjen etter generelle rettinger. Sluttresultatet er ikke et uavhengig holdout-estimat.",
+  "baselineCommit": "38fc88679b4c7d40efa2c59bb837789f6fc5240c",
+  "sourceSha256Before": "cd4e99a0042adb34db2801aed79528713197bde837f1cbf627c33ac745fcd007",
+  "sourceSha256After": "7838b6fb28aa0ab27c21d75335b0e97f3298d6be79e3a6cef020c9c01268fa46",
+  "lockedExpectationsSha256": "fb613ce06aee070ac00016c9200533b86251bf60edef817c30765f2e6b7f97f0"
+}

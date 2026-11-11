@@ -45,6 +45,12 @@ HTTP-grensen får tillatte origins fra den validerte serverkonfigurasjonen (`RAG
 
 Tidsbudsjettet defineres én gang i den miljøfrie `src/config/rag.ts` og reeksporteres fra serverkonfigurasjonen: modell 60 s, proxy 65 s, klient 70 s. Den offentlige klienten importerer bare denne sikre verdifilen. Nexts experimental.proxyTimeout er kontrollert mot installert 16.4.3-kode/schema og satt eksplisitt. Rewrites lagres i byggmanifestet: RAG_PORT ved bygg må samsvare med tjenestens port ved kjøring; endret miljø ved next start er ikke en runtime-endring av destinasjonen. Lokal produksjonsprøve med to simulerte backender er dokumentert i `docs/rag/2026-11-10/lifecycle.md`.
 
+## Leksikalsk kildesøk
+
+Spørsmål og offentlige kilder får samme aksentnormalisering og avgrensede norske suffiksstamming. Generelle handlinger tas ut av emneordene. Brødtekst matches på stammer; tittel og ressursnavn kan også gi avgrensede sammensetningstreff. Minst halvparten av de ulike emnestammene må treffe, med sterkere krav ved ett treff. Score skiller tittel/innledning/brødtekst og vekter sjeldne ord. Lik score avgjøres av tittel, dekning, linjestart og kildefokus før corpusrekkefølge. Ingen embeddings eller modell brukes til rangeringen.
+
+[Evaluering og eksakte regler](docs/rag/2026-11-11/relevans-boyninger.md) beskriver terskelvalget, forventningene og begrensningen ved gjenbruk av testsettet. Norsk stamming er en heuristikk; API-kontrakten er uendret.
+
 ## Stilstruktur
 
 `src/app/globals.css` inneholder bare importrekkefølgen. Grunnstiler, layout, forside, katalog, artikler og chat har egne stilfiler. Eksisterende klassenavn beholdes, og filer importeres sentralt slik at dialogens portal også får stilene.
@@ -53,10 +59,16 @@ Tidsbudsjettet defineres én gang i den miljøfrie `src/config/rag.ts` og reeksp
 
 ## Kontroller
 
-- `pnpm test:rag`: kildehenting, API-kontrakt, chattilstand, modelladapter og feiltilfeller. Ingen modell kreves. HTTP-integrasjonstestene åpner midlertidige loopback-porter med `listen(0, "127.0.0.1")` og lukker serverne etterpå.
-- `pnpm typecheck`: TypeScript i klient, server og tester.
-- `pnpm build`: vanlig Next.js-bygg.
-- `pnpm build:pages`: statisk eksport.
+- `pnpm test:node`: alle Node-tester, også priser, innhold, lenkeparser og isolert RAG-oppstart. `test:rag` beholdes som alias for bakoverkompatibilitet.
+- `pnpm test:python`: unittest-discover for HTML-tittelregresjonene.
+- `pnpm test:content-sync`: reell watch-omlasting i midlertidig prosjektkopi. Kopieringsfunksjonen tar med `src/` unntatt `src/app/`; samme funksjon prøves uten watch i Node-pakken.
+- `pnpm test:links`: eksisterende relative filmål i rot-Markdown og direkte `docs/*.md`. Daterte bevismapper skannes ikke rekursivt, og URL-er, portalruter og fragmenter valideres ikke. Skriptet gjør ingen nettverkskall.
+- `pnpm test`: Node, Python, innholdssynk og lenkekontroll i rekkefølge; `pnpm check`: format, typer, test og serverbygg.
+- `pnpm build:pages`: statisk eksport, separat etter serverbygget.
 - `node scripts/check-rag-api.mjs`: kontroll mot en kjørende lokal tjeneste.
 
-Modelltestene bruker simulert transport og verifiserer integrasjonsformatet, ikke kvaliteten på en faktisk modell. Visuell kontroll er fortsatt nødvendig ved designendringer.
+HTTP-testene åpner og lukker midlertidige loopback-servere. Modell- og pristester bruker simulert transport/fixtures, ikke ekte leverandører. Python 3 må finnes på PATH. Visuell kontroll, faktiske hjelpemidler og leverandør-/driftsverifisering er separate kontroller.
+
+`.github/workflows/ci.yml` kjører format, typer, samlet test, serverbygg og Pages-bygg ved push/PR eller manuell kjøring. Node velges fra package.json sine engines og pnpm fra packageManager; låsefilinstallasjon bruker frozen-lockfile. Bare contents:read og ingen prosjektsecrets brukes. Prisinnhenting tilhører fortsatt den separate prisjobben. CI er klargjort i kode, ikke verifisert på GitHub; manuell kjøring på botens prisgren og statuskontroll før sammenslåing er forklart i [README](README.md).
+
+Den tidligere README-en er bevart i [historikken](docs/HISTORIKK.md), med relative lenker tilpasset den nye plasseringen. Historiske testresultater er ikke nåværende godkjenning. Forslag til bevislagring ligger i [eget beslutningsgrunnlag](docs/BEVISLAGRING.md); eksisterende bevis er urørt.

@@ -1,6 +1,11 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { retrieve, corpus } from "../src/features/rag/retrieval.ts";
+import {
+  retrieve,
+  corpus,
+  stemNorwegian,
+  compareSources,
+} from "../src/features/rag/retrieval.ts";
 import { validateQuestion, isSources } from "../src/features/rag/contracts.ts";
 import { resources } from "../src/content/resources.ts";
 
@@ -93,9 +98,8 @@ test("cookie-informasjon kan leveres som RAG-kilde uten å åpne for ukjente rut
   );
 });
 
-// Atferdsevaluering: forventningene fastsettes før rangeringen endres.
-// maxRank=3 tillater andre relevante kilder foran den etterspurte oversikten.
-export const retrievalEvaluation: {
+// Utviklingssett: eksisterende 26 spørsmål. Forventningene bevares.
+export const developmentEvaluation: {
   question: string;
   expectedId: string | null;
   maxRank?: number;
@@ -106,7 +110,7 @@ export const retrievalEvaluation: {
   {
     question: "Når kommer modelloversikten?",
     expectedId: "oversikt",
-    maxRank: 3,
+    maxRank: 1,
   },
   { question: "kodeendring tester", expectedId: "kodegjennomgang" },
   { question: "værmelding bananer", expectedId: null },
@@ -157,19 +161,62 @@ export const retrievalEvaluation: {
   { question: "Kan du anbefale en restaurant i Bergen?", expectedId: null },
 ];
 
-for (const { question, expectedId, maxRank = 1 } of retrievalEvaluation) {
-  test(`kildeevaluering: ${question}`, () => {
-    const ids = retrieve(question).map((source) => source.id);
-    if (expectedId === null) {
-      assert.deepEqual(ids, [], question);
-    } else {
-      const rank = ids.indexOf(expectedId) + 1;
-      assert.ok(
-        rank > 0 && rank <= maxRank,
-        `${question}: forventet ${expectedId} blant de ${maxRank} første, fikk ${JSON.stringify(ids)}`,
-      );
-    }
-  });
+// Låst før rangeringen endres. Brukes først igjen etter valg av regler på utviklingssettet.
+// Spørsmålene oppgitt i oppgaven er kjente regresjoner, så settet er ikke blindt.
+export const heldOutEvaluation: typeof developmentEvaluation = [
+  { question: "Hvor mye koster en pizza i Oslo?", expectedId: null },
+  { question: "Hva er Nasjonalarkivet?", expectedId: null },
+  { question: "Skriv et dikt om arkiv", expectedId: null },
+  { question: "Hva er prisen?", expectedId: "priser" },
+  { question: "Hvordan tester jeg koden min?", expectedId: "kodegjennomgang" },
+  { question: "Kan jeg dele kode med KI?", expectedId: "kodegjennomgang" },
+  { question: "Hva koster det?", expectedId: "priser" },
+  { question: "Hva koster togbilletten til Bergen?", expectedId: null },
+  { question: "Hvordan tester jeg pizzadeigen?", expectedId: null },
+  { question: "Hvem vant fotballkampen i går?", expectedId: null },
+  { question: "Hvor ligger nærmeste bibliotek?", expectedId: null },
+  { question: "Hva bør jeg lage til middag?", expectedId: null },
+  { question: "Hvor er prisene?", expectedId: "priser" },
+  { question: "Hva sier retningslinjene?", expectedId: "retningslinjer" },
+  {
+    question: "Hvordan gjennomfører jeg kodegjennomgangen?",
+    expectedId: "kodegjennomgang",
+  },
+  {
+    question: "Hvilke informasjonskapsler lagres?",
+    expectedId: "informasjonskapsler",
+  },
+  {
+    question: "Hvordan finner jeg personvernerklæringen?",
+    expectedId: "personvern",
+  },
+  {
+    question: "Hvordan avklarer jeg samtykket?",
+    expectedId: "informasjonskapsler-og-samtykke",
+  },
+  { question: "Hva skjer på KI-praten?", expectedId: "ki-prat" },
+  { question: "Hva inneholder modelloversikten?", expectedId: "oversikt" },
+];
+
+// Lar utviklingsrunden kjøres uten innsyn i de nye testresultatene.
+for (const [set, evaluation] of [
+  ["development", developmentEvaluation],
+  ["held-out", heldOutEvaluation],
+] as const) {
+  if (process.env.RAG_EVAL_SET && process.env.RAG_EVAL_SET !== set) continue;
+  for (const { question, expectedId, maxRank = 1 } of evaluation) {
+    test(`kildeevaluering (${set}): ${question}`, () => {
+      const ids = retrieve(question).map((source) => source.id);
+      if (expectedId === null) assert.deepEqual(ids, [], question);
+      else {
+        const rank = ids.indexOf(expectedId) + 1;
+        assert.ok(
+          rank > 0 && rank <= maxRank,
+          `${question}: forventet ${expectedId} blant de ${maxRank} første, fikk ${JSON.stringify(ids)}`,
+        );
+      }
+    });
+  }
 }
 
 function withSources(sources: typeof corpus, run: () => void) {
@@ -182,7 +229,7 @@ function withSources(sources: typeof corpus, run: () => void) {
   }
 }
 
-test("prefiks krever langt kildeord og går bare fra spørsmålsord til kildeord", () => {
+test("bøyninger treffer i brødtekst mens korte og ufullstendige prefikser avvises", () => {
   const source = {
     id: "prefiks-proeve",
     title: "Avgrenset prøve",
@@ -215,22 +262,52 @@ test("ett svakt brødtekstprefiks blir ikke relevant ved å gjenta spørsmålsor
   });
 });
 
-test("titteltreff avgjør lik poengsum før antall ord og plass i korpuset", () => {
+test("titteltreff avgjør lik poengsum før dekning og plass i korpuset", () => {
+  // Tidligere corpus-fixture ga lik score bare med den gamle prefiksregelen.
+  // Nye stammer gir flere reelle treff der; prøv derfor sorteringskontrakten direkte.
   const body = {
-    id: "lik-score-broedtekst",
-    title: "Avgrenset prøve",
-    href: "/kom-i-gang/",
-    text: "alfanøkkel indeks gammaverdi",
+    score: 5,
+    titleMatches: 0,
+    coverage: 1,
+    lineStartMatches: 1,
+    body: [],
+    index: 0,
   };
-  const title = {
-    id: "lik-score-tittel",
-    title: "alfanøkkel",
-    href: "/kom-i-gang/",
-    text: "",
+  const title = { ...body, titleMatches: 1, coverage: 1 / 3, index: 1 };
+  assert.ok(compareSources(title, body) < 0);
+});
+
+test("stamming normaliserer bøyninger symmetrisk uten å slå korte ord sammen", () => {
+  for (const forms of [
+    ["pris", "prisen", "priser", "prisene", "prisens"],
+    ["kode", "koden", "koder", "kodene", "kodens"],
+    ["test", "tester", "testet", "testene", "teste"],
+    ["samtykke", "samtykket", "samtykkene"],
+    ["tilgjengelighet", "tilgjengeligheten", "tilgjengelighetens"],
+    ["avklar", "avklarte"],
+  ])
+    assert.equal(new Set(forms.map(stemNorwegian)).size, 1, forms.join(", "));
+  assert.notEqual(stemNorwegian("kom"), stemNorwegian("kommer"));
+  for (const word of ["ens", "ets", "testene", "koden"])
+    assert.ok(stemNorwegian(word).length >= 3);
+});
+
+test("ved lik score prioriteres dekning, så linjestart, fokus og til slutt corpus", () => {
+  const base = {
+    score: 5,
+    titleMatches: 1,
+    coverage: 0.5,
+    lineStartMatches: 0,
+    body: ["a", "b"],
+    index: 0,
   };
-  withSources([body, title], () => {
-    assert.equal(retrieve("alfanøkkel indeksen gammaverdi")[0]?.id, title.id);
-  });
+  for (const better of [
+    { ...base, coverage: 1 },
+    { ...base, lineStartMatches: 1 },
+    { ...base, body: ["a"] },
+  ])
+    assert.ok(compareSources({ ...better, index: 1 }, base) < 0);
+  assert.ok(compareSources(base, { ...base, index: 1 }) < 0);
 });
 
 test("flere treffende ord avgjør når poengsum og titteltreff er like", () => {

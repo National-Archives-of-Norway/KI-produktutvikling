@@ -1,5 +1,11 @@
 # Kvalitetskontroll av KI-Produktutvikling
 
+## Samlet utviklerkontroll – 11. november 2026
+
+`pnpm check` kjører nå format, typer, alle Node-tester, Python-regresjoner, faktisk innholdssynk, Markdown-lenker og serverbygg. Pages-bygg kjøres separat. CI-definisjonen er klargjort for push/PR/manuell kjøring med samme tester og begge bygg; faktisk GitHub-kjøring, statuskrav og bot-PR-flyt er ikke verifisert. Testene bruker fixtures/simulert modelltransport uten priskildekall. Dette er ingen ny tilgjengelighetsvurdering. Lokalt på Node 24.22.1 bestod `pnpm check`: format, typer, 135/135 Node-tester, 3/3 Python-tester, faktisk watch-synk, 120 relative filmål i åtte Markdown-dokumenter og serverbygg. `pnpm build:pages` bestod også. Ingen ny Node 22-/Docker-kjøring. Hele tidligere README er kontrollert bevart med bare tilpassede relative lenker; SHA-256 for alle 1 345 eksisterende daterte bevisfiler er uendret.
+
+Hele tidligere README er bevart i [historikken](docs/HISTORIKK.md). [Bevislagringsforslaget](docs/BEVISLAGRING.md) er ikke innført; daterte bevismapper er urørt.
+
 ## Gjeldende tilgjengelighetsvurdering
 
 **Gjeldende vurdering – retting og retest med skill 0.6.0, 10. november 2026.** [Rapport](docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/testrapport.md), [testmuligheter](docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/testmuligheter.json) og [avstemt restliste](docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/manuell-oppfolging.md).

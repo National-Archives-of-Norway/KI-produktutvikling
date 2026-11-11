@@ -6,6 +6,27 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 11. november 2026 – norsk stamming og emneorddekning i kildesøket
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Reprodusert alle sju oppgitte feil før algoritmeendring. Delt evalueringen i eksisterende utviklingssett (26) og 20 nye låste spørsmål, inkludert åtte negative. Førresultatene var 26/26 og 3/20. Ingen forventninger i det nye settet er endret.
+- Innført symmetrisk suffiksstamming, avgrensede sammensetningstreff bare i tittel/ressursnavn, 50 % orddekning med ekstra krav til enkeltstående treff, og vekting av tittel/innledning og sjeldne ord. Generelle handlinger er ikke emneord; «kommer» er fjernet fra stoppordene. Lik score avgjøres av tittel, dekning, linjestart og kildefokus før corpusrekkefølge. Ingen nye avhengigheter, embeddings eller endret API-kontrakt.
+- Sluttresultat er 26/26 og 20/20; alle nye negative avvises og modelloversikten er først. Metodebegrensning: første etterprøving av det nye settet ga 13/20, og det ble målt igjen etter generelle rettinger. Sluttresultatet er derfor ikke en uavhengig holdout-test. Ingen regler er knyttet til spørsmålsstrenger eller bestemte kilde-ID-er; et nytt uavhengig sett gjenstår.
+- Strammet modelloversiktens maxRank fra 3 til 1. En syntetisk poenglikhetstest prøver nå sorteringskontrakten direkte fordi stamming endret fixture-poengsummen; forventningen om tittelprioritet er beholdt. Oppdatert funksjonsregister, arkitektur, utviklingsplan og [evaluering med før-/ettertabell](docs/rag/2026-11-11/relevans-boyninger.md), samt maskinlesbare resultater. Tidligere CI-/dokumentasjonsendringer er bevart.
+- Kontroller: `pnpm test` bestod med **157/157 Node-tester**, **3/3 Python-tester**, faktisk innholdsomlasting og Markdown-lenker. `pnpm typecheck`, `pnpm format:check` og `git diff --check` bestod. Sluttkontrollen av Markdown fant 123 gyldige filmål. Ingen ny bygg-, Docker/Node 22-, tilgjengelighets-, GitHub- eller virkelig modellverifisering, commit eller publisering. Beta og P1–P10 videreføres.
+
+### 11. november 2026 – samlet kontrollflyt, CI og kortere README
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Innført `test:node` for alle Node-tester, beholdt `test:rag` som alias, og lagt til Python-, Markdown-lenke- og samlet testkommando. `pnpm check` kjører nå format, typer, hele testløpet og bygg, slik at innholdssynk ikke blir glemt.
+- Klargjort CI for push, pull requests og manuell kjøring, med read-only repositorytilgang, versjoner fra package.json, frozen-lockfile og begge bygg. Ingen PAT, prosjektsecrets, automatisk deploy eller priskildekall. Bot-PR-er krever menneskelig oppfølging; dokumentert dispatch på prisgrenen og GitHubs mulige godkjenningsventing. Faktisk GitHub-kjøring gjenstår.
+- Kortet README til bruksveiledning og bevart hele tidligere tekst i `docs/HISTORIKK.md`, med justerte relative lenker. Oppdatert arkitektur, kvalitetskontroll og utviklingsplan; P1–P10 videreføres. Funksjonsregisteret er vurdert og beholdt siden dette endrer utviklerkontroller, ikke portalens brukerfunksjoner eller modenhet.
+- Lagt til testbar offline-kontroll av relative filmål i rot-Markdown og direkte docs/*.md, inkludert referanselenker og bilder, med kodeeksempler utelatt. Fragmenter, nettadresser og portalruter er utenfor omfanget. Eksisterende bevismapper endres ikke.
+- Målt store docs-mapper og foreslått alternativer for nye bevis og repeterte logger i `docs/BEVISLAGRING.md`. Ingen ny lagringsregel, sletting, flytting eller LFS-oppsett er innført; dette krever brukerens beslutning.
+- Kontroller: `pnpm check` bestod på Node 24.22.1: format, typer, **135/135 Node-tester**, **3/3 Python-tester**, faktisk watch-synk, 120 relative filmål i åtte Markdown-dokumenter og serverbygg. `pnpm build:pages` bestod også. Full tidligere README er verifisert bevart med bare flyttede lenkemål; SHA-256 for alle 1 345 eksisterende daterte bevisfiler er uendret. Faktisk CI og ny Node 22-/Docker-kjøring er ikke utført. Ingen ny modell-/produksjons-/tilgjengelighetsgodkjenning, commit eller publisering.
+
 ### 11. november 2026 – komplett kildekopi for innholdssynkronisering
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

@@ -81,94 +81,170 @@ const stopWords = new Set(
     "finner",
     "finne",
     "blir",
-    "kommer",
     "mine",
+    "min",
+    "din",
+    "du",
+    "oss",
+    "mye",
+    "noe",
+    "seg",
   ].map(normalize),
 );
-function terms(text: string) {
-  return (normalize(text).match(/[\p{L}\p{N}]{3,}/gu) ?? []).filter(
-    (term) => !stopWords.has(term),
-  );
+// Avgrenset norsk suffiksregel, ikke en full lemmatiserer. Behold -het/-itet.
+// Fjern genitiv-s etter bøyning, én endelse og eventuell avsluttende e.
+// Minst tre tegn beholdes; -te krever fire for ikke å gjøre teste til tes.
+export function stemNorwegian(word: string): string {
+  let stem = normalize(word);
+  if (stem.length > 3 && /(en|et|ene)s$/.test(stem)) stem = stem.slice(0, -1);
+  if (/(het|itet)$/.test(stem)) return stem;
+  for (const suffix of ["ene", "en", "et", "er", "te"]) {
+    if (
+      stem.endsWith(suffix) &&
+      stem.length - suffix.length >= (suffix === "te" ? 4 : 3)
+    ) {
+      stem = stem.slice(0, -suffix.length);
+      break;
+    }
+  }
+  return stem.endsWith("e") && stem.length >= 4 ? stem.slice(0, -1) : stem;
+}
+type Term = { word: string; stem: string };
+function terms(text: string): Term[] {
+  return (normalize(text).match(/[\p{L}\p{N}]{3,}/gu) ?? [])
+    .filter((word) => !stopWords.has(word))
+    .map((word) => ({ word, stem: stemNorwegian(word) }));
 }
 
-const minimumPrefixLength = 5;
-const strongBodyPrefixLength = 8;
-const minimumScore = 2;
+// Generelle handlinger beskriver hva brukeren vil gjøre, ikke emnet alene.
+const actionTerms = new Set(
+  terms(
+    "test teste tester testing del dele deler skriv skrive finn finne lag lage kartlegg utforsk gjennomfør installer avklar sammenlign lagre lagrer lagres lagret inneholde inneholder",
+  ).map((term) => term.stem),
+);
+const minimumCoverage = 0.5;
 
-// Bare spørsmålets ord kan være en utvidelse av kildeordet, ikke omvendt.
-// F.eks. tilgjengeligheten → tilgjengelighet, aldri kommer → kom.
-function prefixLength(query: string, sourceTerms: string[]) {
-  return sourceTerms.reduce(
-    (length, term) =>
-      term.length >= minimumPrefixLength && query.startsWith(term)
-        ? Math.max(length, term.length)
-        : length,
-    0,
+function match(query: Term, words: Term[], title = false): number {
+  if (words.some((word) => word.stem === query.stem)) return 2;
+  // Bare titler/ressursnavn får sammensetningstreff. Kontroller råordets lengde
+  // før stemming, slik at kode ikke blir for kort mens kom fortsatt avvises.
+  return title &&
+    words.some(
+      (word) =>
+        Math.min(word.word.length, query.word.length) >= 4 &&
+        Math.abs(word.stem.length - query.stem.length) >= 4 &&
+        (query.stem.startsWith(word.stem) || word.stem.startsWith(query.stem)),
+    )
+    ? 1
+    : 0;
+}
+
+type RankedSource = {
+  score: number;
+  titleMatches: number;
+  primaryTitleMatches?: number;
+  coverage: number;
+  lineStartMatches: number;
+  body: string[];
+  index: number;
+};
+export function compareSources(a: RankedSource, b: RankedSource): number {
+  return (
+    b.score - a.score ||
+    b.titleMatches - a.titleMatches ||
+    (b.primaryTitleMatches ?? 0) - (a.primaryTitleMatches ?? 0) ||
+    b.coverage - a.coverage ||
+    b.lineStartMatches - a.lineStartMatches ||
+    a.body.length - b.body.length ||
+    a.index - b.index
   );
 }
 
 export function retrieve(question: string): RagSource[] {
-  const query = [...new Set(terms(question))];
+  const query = [
+    ...new Map(
+      terms(question)
+        .filter((term) => !actionTerms.has(term.stem))
+        .map((term) => [term.stem, term]),
+    ).values(),
+  ];
   if (!query.length) return [];
-  return (
-    corpus
-      .map((source, index) => {
-        const title = terms(source.title);
-        const body = terms(source.text);
-        // Kildeteksten har én innholdsdel per linje. En emneangivelse i
-        // starten av linjen er mer direkte enn en omtale langt inne i teksten.
-        const lineStarts = source.text
-          .split(/\r?\n/)
-          .map((line) => terms(line)[0])
-          .filter((term) => term !== undefined);
-        let score = 0;
-        let titleMatches = 0;
-        let matchedTerms = 0;
-        let lineStartMatches = 0;
-        for (const q of query) {
-          const exactTitle = title.includes(q);
-          const titlePrefix = prefixLength(q, title);
-          const exactBody = body.includes(q);
-          const bodyPrefix = prefixLength(q, body);
-          const points = exactTitle
-            ? 5
-            : titlePrefix
-              ? 3
-              : exactBody
-                ? 2
-                : bodyPrefix >= strongBodyPrefixLength
-                  ? 2
-                  : bodyPrefix
-                    ? 1
-                    : 0;
-          score += points;
-          if (exactTitle || titlePrefix) titleMatches += 1;
-          if (points) matchedTerms += 1;
-          if (lineStarts.includes(q) || prefixLength(q, lineStarts)) {
-            lineStartMatches += 1;
-          }
-        }
-        return {
-          source,
-          index,
-          score,
-          titleMatches,
-          matchedTerms,
-          lineStartMatches,
-        };
-      })
-      // Ett kort prefikstreff i brødtekst er ikke nok. Et langt, presist
-      // kildeord kan fortsatt finne f.eks. «modelloversikt» alene.
-      .filter((result) => result.score >= minimumScore)
-      .sort(
-        (a, b) =>
-          b.score - a.score ||
-          b.titleMatches - a.titleMatches ||
-          b.matchedTerms - a.matchedTerms ||
-          b.lineStartMatches - a.lineStartMatches ||
-          a.index - b.index,
-      )
-      .slice(0, 3)
-      .map((result) => result.source)
+  const documents = corpus.map((source, index) => {
+    const bodyTerms = terms(source.text);
+    return {
+      source,
+      index,
+      // Ressursens stabile navn er også et eksplisitt emnenavn, ikke prosa.
+      title: terms(source.title + " " + source.id),
+      body: bodyTerms.map((term) => term.stem),
+      bodyTerms,
+      lead: terms(source.text.split(/\r?\n/, 1)[0]),
+      lineStarts: source.text
+        .split(/\r?\n/)
+        .map((line) => terms(line)[0])
+        .filter((term) => term !== undefined),
+    };
+  });
+  const frequency = new Map(
+    query.map((q) => [
+      q.stem,
+      documents.filter(
+        (doc) => match(q, doc.title, true) || match(q, doc.bodyTerms),
+      ).length,
+    ]),
   );
+  return documents
+    .map((doc) => {
+      let score = 0,
+        titleMatches = 0,
+        matchedTerms = 0,
+        lineStartMatches = 0;
+      let primaryTitleMatches = 0;
+      let strongMatch = false;
+      for (const q of query) {
+        const inTitle = match(q, doc.title, true);
+        const inBody = match(q, doc.bodyTerms);
+        if (!inTitle && !inBody) continue;
+        const proportion = frequency.get(q.stem)! / documents.length;
+        const inLead = match(q, doc.lead);
+        const atStart = match(q, doc.lineStarts);
+        // Første ord i den faktiske sidetittelen er et sterkere hovedemne enn
+        // en senere tittelomtale eller et ord i det stabile ressursnavnet.
+        const primaryTitle = terms(doc.source.title)[0]?.stem === q.stem;
+        primaryTitleMatches += Number(primaryTitle);
+        const points = inTitle === 2 ? 5 : inTitle || inLead ? 3 : 2;
+        score +=
+          points *
+          (1 + Math.log((documents.length + 1) / (frequency.get(q.stem)! + 1)));
+        titleMatches += Number(Boolean(inTitle));
+        matchedTerms++;
+        lineStartMatches += Number(Boolean(atStart));
+        strongMatch ||=
+          proportion <= 0.5 &&
+          Boolean(inTitle || (q.stem.length >= 8 && proportion <= 1 / 3));
+      }
+      const coverage = matchedTerms / query.length;
+      return {
+        ...doc,
+        score,
+        titleMatches,
+        primaryTitleMatches,
+        matchedTerms,
+        lineStartMatches,
+        coverage,
+        strongMatch,
+      };
+    })
+    .filter(
+      (result) =>
+        result.coverage >= minimumCoverage &&
+        (query.length === 1
+          ? result.strongMatch ||
+            (query[0].stem.length >= 4 &&
+              frequency.get(query[0].stem)! / documents.length <= 1 / 3)
+          : result.matchedTerms > 1 || result.strongMatch),
+    )
+    .sort(compareSources)
+    .slice(0, 3)
+    .map((result) => result.source);
 }
