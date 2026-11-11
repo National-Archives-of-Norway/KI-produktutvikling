@@ -142,7 +142,7 @@ I lokalmiljøet oppdaterer Next.js sidene, og Node sin watch-modus starter RAG-t
 
 Hentingen bruker nøkkelordrangering og prefiksmatching, ikke embeddings eller en vektordatabase. Titteltreff vektes høyere. Opptil tre relevante kilder sendes til modellen. Kilder uten treff fører ikke til modellkall.
 
-Kontroller endringer med `pnpm test:rag` og `pnpm build`. `pnpm test:content-sync` tester også automatisk omlasting mot et virkelig RAG-API i en isolert midlertidig prosjektkopi. Den endrer ikke portalens innhold, bruker ingen modell og stopper testserveren etterpå.
+Kontroller endringer med `pnpm test:rag` og `pnpm build`. `pnpm test:content-sync` tester også automatisk omlasting mot et virkelig RAG-API i en isolert midlertidig prosjektkopi. Den endrer ikke portalens innhold, bruker ingen modell og stopper testserveren etterpå. Kopien lages fra hele `src/` unntatt `src/app/`, slik at også nye delte moduler følger med. Samme kopieringsfunksjon prøves i `pnpm test:rag` ved å starte RAG uten `--watch` på en tilfeldig loopback-port og kontrollere `/health`.
 
 Uten konfigurert modell vises en strukturert veiledning fra den best rangerte siden: introduksjon, konkrete steg, status/forbehold og en direkte kildelenke. Dette er kildebasert veiledning, ikke et modellgenerert svar på spørsmålet. Andre treff vises som korte, utfellbare kildebeskrivelser. Ved manglende treff vises avgrensningen og forslag til nye spørsmål. Spørsmålsknappene fyller inn feltet uten å sende automatisk.
 

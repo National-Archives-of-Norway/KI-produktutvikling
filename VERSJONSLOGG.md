@@ -6,6 +6,17 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 11. november 2026 – komplett kildekopi for innholdssynkronisering
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Bekreftet at `pnpm test:content-sync` feilet med `ERR_MODULE_NOT_FOUND` for `src/config/rag.ts`. Ny rask oppstartstest feilet også mot den gamle mappelisten før retting.
+- Samlet kopiering i `scripts/lib/content-sync-fixture.mjs`, brukt av både watch-kontrollen og regresjonstesten. Kopierer hele `src/` unntatt `src/app/` fremfor å vedlikeholde en liste over dagens importer; nye delte kildemapper følger dermed med. Ingen node_modules, .env eller andre rotfiler kopieres; bare serverens oppstartsskript og en minimal package.json legges til.
+- Ny test starter faktisk RAG fra kopien uten watch på tilfeldig port og krever HTTP 200 fra `/health` med modellgenerering av. Server og midlertidig mappe ryddes også ved feil. Testen inngår i eksisterende `pnpm test:rag`.
+- Gjennomgått chatdiffen som allerede ligger i `46f449e`, inkludert parser, grafemvalidering, 64 KiB-grense, demo-import, tester og dokumentasjon. De to tidligere loggoppføringene dekker den. Skillversjon 0.6.0 er tilsiktet og bekreftet i Skills-repoets metadata. Beholder denne commiten som chatleveransen; ingen omskriving av historikk.
+- Oppdatert README, utviklingsplan og [testrapport](docs/rag/2026-11-11/content-sync.md). Funksjonsregisteret er gjennomgått og beholdt: dette retter en utviklingskontroll, uten ny brukerfunksjon eller endret modenhet. P1–P10 er fortsatt åpne.
+- Kontroller: `pnpm test:content-sync` og `pnpm test:rag` **133/133** bestått på Node 24.22.1; `pnpm typecheck`, `pnpm format:check` og `git diff --check` bestått. Ingen ekte modell, priskilde, ny Docker-/Node 22-kjøring eller nytt bygg. Ingen push eller publisering.
+
 ### 11. november 2026 – samlet avstemming av plan, funksjonsregister og versjonslogg
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

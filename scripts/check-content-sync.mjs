@@ -1,10 +1,11 @@
 import assert from "node:assert/strict";
-import { cp, mkdtemp, mkdir, writeFile, readFile, rm } from "node:fs/promises";
+import { mkdtemp, writeFile, readFile, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createServer } from "node:net";
 import { spawn } from "node:child_process";
+import { copyContentSyncFixture } from "./lib/content-sync-fixture.mjs";
 const repo = fileURLToPath(new URL("..", import.meta.url));
 const fixture = await mkdtemp(join(tmpdir(), "ki-content-watch-"));
 const reserve = createServer();
@@ -15,14 +16,7 @@ let child;
 let output = "";
 const pause = () => new Promise((resolve) => setTimeout(resolve, 150));
 try {
-  for (const dir of ["src/content", "src/features/rag", "src/server/rag"])
-    await cp(join(repo, dir), join(fixture, dir), { recursive: true });
-  await mkdir(join(fixture, "scripts"));
-  await cp(
-    join(repo, "scripts/rag-server.mjs"),
-    join(fixture, "scripts/rag-server.mjs"),
-  );
-  await writeFile(join(fixture, "package.json"), '{"type":"module"}');
+  await copyContentSyncFixture(repo, fixture);
   child = spawn(process.execPath, ["--watch", "scripts/rag-server.mjs"], {
     cwd: fixture,
     env: {
