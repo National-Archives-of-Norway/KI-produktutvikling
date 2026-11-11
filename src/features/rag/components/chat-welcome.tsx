@@ -1,4 +1,5 @@
 "use client";
+import { chatSuggestions } from "../suggestions";
 import Button from "@mui/material/Button";
 import ArrowOutwardRounded from "@mui/icons-material/ArrowOutwardRounded";
 export function ChatWelcome({
@@ -28,16 +29,12 @@ export function ChatWelcome({
           role="group"
           aria-label="Forslag til spørsmål"
         >
-          {[
-            "Hvordan gjennomgår jeg en kodeendring?",
-            "Hvordan gir jeg KI god kontekst?",
-            "Hvordan utforsker jeg brukerbehov?",
-          ].map((suggestion) => (
+          {chatSuggestions.welcome.map(({ question }) => (
             <Button
-              key={suggestion}
+              key={question}
               type="button"
               onClick={() => {
-                onSelect(suggestion);
+                onSelect(question);
               }}
               endIcon={<ArrowOutwardRounded />}
               sx={{
@@ -48,7 +45,7 @@ export function ChatWelcome({
                 fontSize: 14,
               }}
             >
-              {suggestion}
+              {question}
             </Button>
           ))}
         </div>

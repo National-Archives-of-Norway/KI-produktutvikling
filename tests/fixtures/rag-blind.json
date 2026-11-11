@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "instructions": [
+    "Fylles bare av et menneske som ikke justerer kildesøket. Assistenten skal la blindEvaluation stå tom.",
+    "Fastsett spørsmål og forventet kilde før første kjøring. Bruk kilde-ID fra portalen, eller null hvis ingen kilde skal gis.",
+    "Ikke bruk dette settet til tuning eller flytt spørsmålene til utviklingssettet. Resultatet er rapportering, ikke en bygggrense.",
+    "maxRank er valgfri, med standard 1. Bruk 1 når riktig kilde skal være først; 2 eller 3 bare når dette er bestemt på forhånd.",
+    "Ingen hemmeligheter eller personopplysninger skal legges i spørsmålene."
+  ],
+  "caseSchema": {
+    "type": "object",
+    "required": ["question", "expectedId"],
+    "additionalProperties": false,
+    "properties": {
+      "question": { "type": "string", "minLength": 1 },
+      "expectedId": { "type": ["string", "null"], "minLength": 1 },
+      "maxRank": { "type": "integer", "minimum": 1, "maximum": 3 }
+    }
+  },
+  "blindEvaluation": []
+}

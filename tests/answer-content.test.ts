@@ -163,3 +163,55 @@ test("ny liste etter et avsnitt beholder sin egen start og normaliseres separat"
     ],
   );
 });
+
+for (const value of ["10. november 2026 ble …", "2026. Det året …"]) {
+  test(`dato/årstall blir avsnitt: ${value}`, () => {
+    assert.deepEqual(parseAnswer(value), [
+      { type: "paragraph", children: text(value) },
+    ]);
+  });
+}
+
+test("norske månedsnavn og forkortelser etter nummer er datoer", () => {
+  for (const month of [
+    "januar",
+    "februar",
+    "mars",
+    "april",
+    "mai",
+    "juni",
+    "juli",
+    "august",
+    "september",
+    "oktober",
+    "november",
+    "desember",
+    "jan.",
+    "feb.",
+    "mar.",
+    "apr.",
+    "jun.",
+    "jul.",
+    "aug.",
+    "sep.",
+    "sept.",
+    "okt.",
+    "nov.",
+    "des.",
+    "NOV",
+  ])
+    assert.equal(parseAnswer(`10. ${month} 2026`)[0].type, "paragraph", month);
+});
+
+test("vanlige listenumre og tall opptil tre siffer beholdes", () => {
+  for (const [number, value] of [
+    [1, "Velg …"],
+    [3, "Gjør …"],
+    [10, "Kontroller …"],
+    [999, "Siste punkt"],
+  ] as const) {
+    const [list] = parseAnswer(`${number}. ${value}`);
+    assert.equal(list.type, "ordered-list");
+    if (list.type === "ordered-list") assert.equal(list.start, number);
+  }
+});

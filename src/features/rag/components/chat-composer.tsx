@@ -37,7 +37,7 @@ export function ChatComposer({
     onQuestionChange(edit.value);
   }
   return (
-    <form className="chat-composer" onSubmit={onSubmit}>
+    <form className="chat-composer" onSubmit={onSubmit} aria-busy={busy}>
       <TextField
         id={inputId}
         inputRef={input}
@@ -101,21 +101,27 @@ export function ChatComposer({
       />
       <div className="chat-actions">
         <Button
-          type={busy ? "button" : "submit"}
+          type="submit"
           variant="contained"
-          onClick={(event) => {
-            if (busy) {
-              event.preventDefault();
-              onCancel();
-              input.current?.focus();
-            }
-          }}
+          disabled={busy}
           sx={{ minHeight: 44 }}
           className="chat-send"
-          endIcon={busy ? undefined : <SendRounded />}
+          endIcon={<SendRounded />}
         >
-          {busy ? "Avbryt" : "Send spørsmål"}
+          Send spørsmål
         </Button>
+        {busy && (
+          <Button
+            type="button"
+            onClick={() => {
+              onCancel();
+              input.current?.focus();
+            }}
+            sx={{ minHeight: 44 }}
+          >
+            Avbryt
+          </Button>
+        )}
         {hasTurns && (
           <Button
             disabled={busy}

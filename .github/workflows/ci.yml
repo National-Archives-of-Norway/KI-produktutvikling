@@ -7,26 +7,38 @@ permissions:
   contents: read
 jobs:
   check:
+    name: Node ${{ matrix.node }}
+    strategy:
+      fail-fast: false
+      matrix:
+        # Hold minsteversjonen lik engines.node i package.json.
+        node: ["22.18.0", "24"]
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
       MODEL_PROVIDER: none
       NEXT_TELEMETRY_DISABLED: "1"
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
           persist-credentials: false
-      - uses: actions/setup-node@v7
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
         with:
-          node-version-file: package.json
+          node-version: ${{ matrix.node }}
+          check-latest: true
           package-manager-cache: false
       # Versjonen leses fra packageManager i package.json.
-      - uses: pnpm/action-setup@v6
+      - uses: pnpm/action-setup@73e46992e05b19abd31f2f3c20e0e7370d762115 # v6
         with:
           run_install: false
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: "3.x"
+      - name: Vis verktøyversjoner
+        run: |
+          node --version
+          pnpm --version
+          python --version
       - run: pnpm install --frozen-lockfile
       - run: pnpm format:check
       - run: pnpm typecheck

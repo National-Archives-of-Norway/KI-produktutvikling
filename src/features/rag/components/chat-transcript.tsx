@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { REQUEST_CANCELLED } from "../contracts";
 import type { ChatTurn } from "../chat-state";
+import { chatSuggestions } from "../suggestions";
 import { AnswerContent } from "./answer-content";
 export function ChatTranscript({
   turns,
@@ -139,13 +140,9 @@ export function ChatTranscript({
                     aria-label="Utforsk et nytt spørsmål"
                   >
                     <p>Du kan også spørre om</p>
-                    {[
-                      "Hvordan tester jeg tilgjengeligheten?",
-                      "Hva er KI-prat?",
-                      "Hvilke retningslinjer gjelder for KI?",
-                    ]
-                      .filter((question) => question !== turn.question)
-                      .map((question) => (
+                    {chatSuggestions.followUp
+                      .filter(({ question }) => question !== turn.question)
+                      .map(({ question }) => (
                         <button
                           key={question}
                           type="button"

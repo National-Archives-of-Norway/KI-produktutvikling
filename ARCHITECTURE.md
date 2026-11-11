@@ -43,7 +43,7 @@ Chatvisning → useChat → requestAnswer → /api/rag
 
 I Pages-modus lastes offentlig kildehenting dynamisk i demogrenen, uten nettverkskall til en modell. Den eksplisitte byggkonstanten NEXT_PUBLIC_STATIC_DEMO lar serverbygget fjerne demo-importen helt fra klient-JavaScript. Katalogens egne offentlige ressursdata påvirkes ikke. Ikke legg private kilder i `retrieval.ts` eller andre klientimporterte moduler. Interne kilder krever en separat autorisert serverflyt.
 
-`loadRagConfig` bruker standarder bare når RAG-variabelen er usatt; eksplisitt tom/blank port, samtidighetsgrense eller origin-liste avvises. Miljøport må være 1–65535. Isolerte oppstartstester kan injisere en ferdig konfigurasjon med port 0 i startRagServer, slik at operativsystemet velger port uten å tillate 0 i driftsmiljøet.
+`loadRagConfig` bruker standarder bare når RAG-variabelen er usatt; eksplisitt tom/blank port, samtidighetsgrense eller origin-liste avvises. Den miljøfrie `parseRagPort` i `src/config/rag-port.ts` brukes av både Next-konfigurasjonen og RAG-serveren: standard 3001 bare når usatt, trimming før talltolking og identiske feilmeldinger. Miljøport må være 1–65535. Statisk Pages-bygg har ingen RAG-rewrite og trenger ikke porten. Isolerte oppstartstester kan injisere en ferdig konfigurasjon med port 0 i startRagServer, slik at operativsystemet velger port uten å tillate 0 i driftsmiljøet.
 
 HTTP-grensen får tillatte origins fra den validerte serverkonfigurasjonen (`RAG_ALLOWED_ORIGINS`). Oppstartsskriptet sender konfigurasjonen til HTTP-serveren; klienten leser ikke variabelen. En konfigurert liste erstatter loopback-standardene. Origin-kontroll erstatter ikke autorisering. HTTP-lesefeil/ugyldig input skilles fra uventede søke-/tjenestefeil. For store forespørsler avvises med 413 og eksplisitt lukking etter et begrenset tidsrom for å forkaste gjenværende opplasting uten buffering.
 
@@ -51,17 +51,23 @@ Tidsbudsjettet defineres én gang i den miljøfrie `src/config/rag.ts` og reeksp
 
 ## Leksikalsk kildesøk
 
-Spørsmål og offentlige kilder får samme aksentnormalisering og avgrensede norske suffiksstamming. Generelle handlinger tas ut av emneordene. Brødtekst matches på stammer; tittel og ressursnavn kan også gi avgrensede sammensetningstreff. Minst halvparten av de ulike emnestammene må treffe, med sterkere krav ved ett treff. Score skiller tittel/innledning/brødtekst og vekter sjeldne ord. Lik score avgjøres av tittel, dekning, linjestart og kildefokus før corpusrekkefølge. Ingen embeddings eller modell brukes til rangeringen.
+`retrieval.ts` bygger en indeks av offentlige kilder én gang ved modulinnlasting. `search-language.ts` samler begrunnede bokmåls-småord, normalisering og norsk suffiksstamming. Handlingsord beholdes med vekt 0,25; de teller i orddekningen og scoren, men kan ikke gi treff uten et emneord. Kildeord, tittel, innledning, linjestart, ordantall og termfrekvens beregnes ved indeksbygging, ikke per spørsmål.
 
-[Evaluering og eksakte regler](docs/rag/2026-11-11/relevans-boyninger.md) beskriver terskelvalget, forventningene og begrensningen ved gjenbruk av testsettet. Norsk stamming er en heuristikk; API-kontrakten er uendret.
+Scoren skiller tittel/innledning/brødtekst og bruker dokumentfrekvens, dempet termfrekvens og lengdenormalisering. Orddekning må være minst halvparten; et enkelt brødteksttreff trenger strengere støtte. Lik score avgjøres bare av hovedemne i faktisk tittel og deretter corpusrekkefølge. Ingen embeddings eller modell brukes til rangeringen, og HTTP-kontrakten er uendret.
+
+`createRetriever` lar tester lage egne indekser uten å mutere standardkorpuset. Innholdsendring i utvikling starter RAG-prosessen på nytt via watch, og bygger da en ny indeks. I drift må RAG og nettstedet fortsatt utrulles fra samme revisjon.
+
+`chatSuggestions` i `src/features/rag/suggestions.ts` er felles kilde til spørsmål og forventet ressurs i ChatWelcome, ChatTranscript og regresjonstestene. Ingen av disse koblingene brukes som unntak i rangeringen.
+
+[Evaluering og ablasjoner](docs/rag/2026-11-11/retrieval-suggestions.md) dokumenterer forenklingene. Utviklingssettet og historisk heldOutEvaluation er begge kjente regresjoner. Bare `tests/fixtures/rag-blind.json` skal fylles av et menneske som ikke justerer søket. Den leses kun av en rapporttest: treffsikkerhet, manglende fil og formatfeil rapporteres uten bygggrense. Tomt sett betyr ikke målt, og brukes ikke til tuning. Norsk stamming er fortsatt en heuristikk.
 
 ## Chatkontroller og svarvisning
 
 Den rene request-control-modulen holder én aktiv AbortController. Brukeravbrudd frigjør den med en gang, og identitetskontroll hindrer at et gammelt svar eller finally rydder bort en nyere forespørsel. Reduceren kontrollerer også aktiv tur-ID før complete/cancel. Avbryt bruker samme signal som allerede går til HTTP-/modellflyten; dette garanterer ikke at ekstern leverandør stanser beregning/fakturering.
 
-Composer flytter fokus til spørsmålsfeltet etter avbrudd og har en tastaturbetjent Avbryt-knapp mens forespørselen pågår. En permanent polite-status i feltets helpertekst varsler om kutting og viser grafemteller fra 90 % av grensen. IME begrenses etter avsluttet komposisjon. Meldingen og grenseberegningen samt forespørselseierskap kan testes uten React-testavhengigheter.
+Composer beholder Send som egen submit-knapp og deaktiverer den under venting. En separat tastaturbetjent Avbryt-knapp bruker samme AbortController og flytter fokus tilbake til spørsmålsfeltet. Et ekstra klikk/Enter på Send kan dermed ikke skifte betydning og avbryte. Ingen tidsbasert sperre eller automatisk fokusflytting til Avbryt brukes. Skjemaet eksponerer aria-busy mens forespørselen pågår; samtaleloggen og den generelle ventestatusen ligger utenfor skjemaet. En permanent polite-status i feltets helpertekst varsler om kutting og viser grafemteller fra 90 % av grensen. IME begrenses etter avsluttet komposisjon. Meldingen og grenseberegningen samt forespørselseierskap kan testes uten React-testavhengigheter.
 
-Parseren normaliserer hele listen fra første nummer hvis markørene ikke er strengt stigende. Strengt stigende markører beholder hopp. Renderer bruker ol start for startverdien og li value bare ved faktiske hopp; avsnitt starter en separat liste med egen start.
+Parseren gjenkjenner bare ordnede markører med opptil tre siffer og avviser dem når neste ord er et norsk månedsnavn eller en vanlig forkortelse. Datoer og årstall blir dermed avsnitt. Parseren normaliserer hele listen fra første nummer hvis markørene ikke er strengt stigende. Strengt stigende markører beholder hopp. Renderer bruker ol start for startverdien og li value bare ved faktiske hopp; avsnitt starter en separat liste med egen start.
 
 ## Stilstruktur
 
@@ -81,6 +87,6 @@ Parseren normaliserer hele listen fra første nummer hvis markørene ikke er str
 
 HTTP-testene åpner og lukker midlertidige loopback-servere. Modell- og pristester bruker simulert transport/fixtures, ikke ekte leverandører. Python 3 må finnes på PATH. Visuell kontroll, faktiske hjelpemidler og leverandør-/driftsverifisering er separate kontroller.
 
-`.github/workflows/ci.yml` kjører format, typer, samlet test, serverbygg og Pages-bygg ved push/PR eller manuell kjøring. Node velges fra package.json sine engines og pnpm fra packageManager; låsefilinstallasjon bruker frozen-lockfile. Bare contents:read og ingen prosjektsecrets brukes. Prisinnhenting tilhører fortsatt den separate prisjobben. CI er klargjort i kode, ikke verifisert på GitHub; manuell kjøring på botens prisgren og statuskontroll før sammenslåing er forklart i [README](README.md).
+`.github/workflows/ci.yml` kjører format, typer, samlet test, serverbygg og Pages-bygg ved push/PR eller manuell kjøring. Hele kontrollrekken kjøres i to matrisejobber: Node 22.18.0 (eksakt minsteversjon i engines.node) og Node 24 (nyeste tilgjengelige utgave med check-latest), med fail-fast=false. Prisjobben bruker samme 24-linje og samme SHA-låste checkout/setup-node. pnpm velges fra packageManager; låsefilinstallasjon bruker frozen-lockfile. Alle eksterne actions er låst til verifiserte fullstendige commit-SHA-er med versjonskommentar. Dependabot foreslår github-actions-oppdateringer ukentlig, uten automatisk fletting. Bare contents:read og ingen prosjektsecrets brukes. Prisinnhenting tilhører fortsatt den separate prisjobben. CI er klargjort i kode, ikke verifisert på GitHub; manuell kjøring på botens prisgren og statuskontroll før sammenslåing er forklart i [README](README.md) og [første-push-sjekklisten](docs/FORSTE-PUSH.md). [Lokal kontroll](docs/CI-KONTROLL.md) skiller syntaks-/fixture-testing fra faktisk Actions-kjøring.
 
 Den tidligere README-en er bevart i [historikken](docs/HISTORIKK.md), med relative lenker tilpasset den nye plasseringen. Historiske testresultater er ikke nåværende godkjenning. Forslag til bevislagring ligger i [eget beslutningsgrunnlag](docs/BEVISLAGRING.md); eksisterende bevis er urørt.

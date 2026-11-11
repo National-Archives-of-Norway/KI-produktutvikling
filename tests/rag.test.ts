@@ -5,8 +5,10 @@ import {
   corpus,
   stemNorwegian,
   compareSources,
+  createRetriever,
 } from "../src/features/rag/retrieval.ts";
 import { validateQuestion, isSources } from "../src/features/rag/contracts.ts";
+import { chatSuggestions } from "../src/features/rag/suggestions.ts";
 import { resources } from "../src/content/resources.ts";
 
 test("relevant kodekilde rangeres først", () => {
@@ -161,8 +163,8 @@ export const developmentEvaluation: {
   { question: "Kan du anbefale en restaurant i Bergen?", expectedId: null },
 ];
 
-// Låst før rangeringen endres. Brukes først igjen etter valg av regler på utviklingssettet.
-// Spørsmålene oppgitt i oppgaven er kjente regresjoner, så settet er ikke blindt.
+// Historisk navn: dette er 20 kjente regresjoner, ikke et blindt testsett.
+// Kun rag-blind.json skal fylles uavhengig av den som justerer søket.
 export const heldOutEvaluation: typeof developmentEvaluation = [
   { question: "Hvor mye koster en pizza i Oslo?", expectedId: null },
   { question: "Hva er Nasjonalarkivet?", expectedId: null },
@@ -198,7 +200,7 @@ export const heldOutEvaluation: typeof developmentEvaluation = [
   { question: "Hva inneholder modelloversikten?", expectedId: "oversikt" },
 ];
 
-// Lar utviklingsrunden kjøres uten innsyn i de nye testresultatene.
+// Valgfri avgrensning av de to kjente settene ved lokal diagnostikk.
 for (const [set, evaluation] of [
   ["development", developmentEvaluation],
   ["held-out", heldOutEvaluation],
@@ -219,14 +221,13 @@ for (const [set, evaluation] of [
   }
 }
 
-function withSources(sources: typeof corpus, run: () => void) {
-  const originalLength = corpus.length;
-  corpus.push(...sources);
-  try {
-    run();
-  } finally {
-    corpus.splice(originalLength);
-  }
+function withSources(
+  sources: typeof corpus,
+  run: (
+    retrieve: typeof import("../src/features/rag/retrieval.ts").retrieve,
+  ) => void,
+) {
+  run(createRetriever([...corpus, ...sources]));
 }
 
 test("bøyninger treffer i brødtekst mens korte og ufullstendige prefikser avvises", () => {
@@ -236,7 +237,7 @@ test("bøyninger treffer i brødtekst mens korte og ufullstendige prefikser avvi
     href: "/kom-i-gang/",
     text: "kom være referansedokument",
   };
-  withSources([source], () => {
+  withSources([source], (retrieve) => {
     assert.equal(retrieve("referansedokumentet")[0]?.id, source.id);
     for (const question of ["referanse", "kommentar", "været"]) {
       assert.ok(!retrieve(question).some((item) => item.id === source.id));
@@ -251,7 +252,7 @@ test("ett svakt brødtekstprefiks blir ikke relevant ved å gjenta spørsmålsor
     href: "/kom-i-gang/",
     text: "indeks",
   };
-  withSources([source], () => {
+  withSources([source], (retrieve) => {
     for (const question of [
       "indeksering",
       "indeksering indeksering indeksering",
@@ -262,19 +263,11 @@ test("ett svakt brødtekstprefiks blir ikke relevant ved å gjenta spørsmålsor
   });
 });
 
-test("titteltreff avgjør lik poengsum før dekning og plass i korpuset", () => {
-  // Tidligere corpus-fixture ga lik score bare med den gamle prefiksregelen.
-  // Nye stammer gir flere reelle treff der; prøv derfor sorteringskontrakten direkte.
-  const body = {
-    score: 5,
-    titleMatches: 0,
-    coverage: 1,
-    lineStartMatches: 1,
-    body: [],
-    index: 0,
-  };
-  const title = { ...body, titleMatches: 1, coverage: 1 / 3, index: 1 };
-  assert.ok(compareSources(title, body) < 0);
+test("ved lik score foretrekkes hovedemnet i faktisk tittel, deretter corpus", () => {
+  const mention = { score: 5, primaryTitleMatches: 0, index: 0 };
+  const topic = { score: 5, primaryTitleMatches: 1, index: 1 };
+  assert.ok(compareSources(topic, mention) < 0);
+  assert.ok(compareSources(mention, { ...mention, index: 1 }) < 0);
 });
 
 test("stamming normaliserer bøyninger symmetrisk uten å slå korte ord sammen", () => {
@@ -292,24 +285,6 @@ test("stamming normaliserer bøyninger symmetrisk uten å slå korte ord sammen"
     assert.ok(stemNorwegian(word).length >= 3);
 });
 
-test("ved lik score prioriteres dekning, så linjestart, fokus og til slutt corpus", () => {
-  const base = {
-    score: 5,
-    titleMatches: 1,
-    coverage: 0.5,
-    lineStartMatches: 0,
-    body: ["a", "b"],
-    index: 0,
-  };
-  for (const better of [
-    { ...base, coverage: 1 },
-    { ...base, lineStartMatches: 1 },
-    { ...base, body: ["a"] },
-  ])
-    assert.ok(compareSources({ ...better, index: 1 }, base) < 0);
-  assert.ok(compareSources(base, { ...base, index: 1 }) < 0);
-});
-
 test("flere treffende ord avgjør når poengsum og titteltreff er like", () => {
   const narrow = {
     id: "ett-temaord",
@@ -323,7 +298,7 @@ test("flere treffende ord avgjør når poengsum og titteltreff er like", () => {
     href: "/kom-i-gang/",
     text: "alfanøkkel",
   };
-  withSources([narrow, broad], () => {
+  withSources([narrow, broad], (retrieve) => {
     assert.equal(retrieve("alfanøkkel indeksen")[0]?.id, broad.id);
   });
 });
@@ -341,7 +316,7 @@ test("direkte emneangivelse ved linjestart slår tilfeldig omtale ved ellers lik
     href: "/kom-i-gang/",
     text: "Versjonsnøkkel: informasjon om emnet.",
   };
-  withSources([mention, topic], () => {
+  withSources([mention, topic], (retrieve) => {
     const first = retrieve("versjonsnøkkelen").map((item) => item.id);
     assert.equal(first[0], topic.id);
     assert.deepEqual(
@@ -359,4 +334,63 @@ test("aksenter, Unicode-form og store bokstaver normaliseres også i stoppord", 
   );
   assert.deepEqual(retrieve("HVEM NÅR HVORFOR IKKE"), []);
   assert.deepEqual(retrieve("KI og en et er på av om"), []);
+});
+
+export const knownQuestionEvaluation = [
+  {
+    question: "Hvordan gir jeg KI god kontekst?",
+    expectedId: "tydelig-kontekst",
+  },
+  { question: "Hvordan gir jeg KI kontekst?", expectedId: "tydelig-kontekst" },
+  {
+    question: "Hvordan gir jeg god kontekst til en KI-assistent?",
+    expectedId: "tydelig-kontekst",
+  },
+  { question: "Hvor lagres spørsmålene mine?", expectedId: "personvern" },
+  {
+    question: "Hva gjør dere med spørsmålene etter at jeg har sendt dem?",
+    expectedId: "personvern",
+  },
+];
+for (const { question, expectedId } of [
+  ...Object.values(chatSuggestions).flat(),
+  ...knownQuestionEvaluation,
+]) {
+  test(`forslag/regresjon: ${question}`, () =>
+    assert.equal(retrieve(question)[0]?.id, expectedId));
+}
+
+test("kildeord beregnes ved indeksbygging, ikke ved hvert spørsmål", () => {
+  let textReads = 0;
+  const source = {
+    id: "cached",
+    title: "Indeksnøkkel",
+    href: "/kom-i-gang/",
+    get text() {
+      textReads++;
+      return "Indeksnøkkel: avgrenset emne.";
+    },
+  };
+  const search = createRetriever([source]);
+  const reads = textReads;
+  assert.ok(reads > 0);
+  search("indeksnøkkel");
+  search("indeksnøkkelen");
+  assert.equal(textReads, reads);
+});
+
+test("handlingsord gir ikke treff alene, men skiller mellom kilder med samme emne", () => {
+  for (const question of ["teste", "dele", "lagres"])
+    assert.deepEqual(retrieve(question), []);
+  const make = (id: string, text: string) => ({
+    id,
+    title: "Datasamling",
+    href: "/kom-i-gang/",
+    text,
+  });
+  const search = createRetriever([
+    make("deles", "Datasamling deles."),
+    make("lagres", "Datasamling lagres."),
+  ]);
+  assert.equal(search("datasamling lagres")[0]?.id, "lagres");
 });

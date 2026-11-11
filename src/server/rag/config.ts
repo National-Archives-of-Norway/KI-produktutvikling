@@ -1,4 +1,5 @@
 import { env as serverEnv } from "node:process";
+import { parseRagPort } from "../../config/rag-port.ts";
 
 export { RAG_TIMEOUTS } from "../../config/rag.ts";
 
@@ -69,9 +70,7 @@ function configuredValue(env: Record<string, string | undefined>, key: string) {
 export function loadRagConfig(
   env: Record<string, string | undefined> = serverEnv,
 ): RagConfig {
-  const port = Number(configuredValue(env, "RAG_PORT") ?? 3001);
-  if (!Number.isInteger(port) || port < 1 || port > 65535)
-    throw new Error("RAG_PORT må være et heltall fra 1 til 65535.");
+  const port = parseRagPort(env.RAG_PORT);
   const allowedOrigins = loadAllowedOrigins(
     configuredValue(env, "RAG_ALLOWED_ORIGINS"),
   );

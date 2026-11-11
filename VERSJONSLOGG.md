@@ -6,6 +6,42 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 11. november 2026 – eksplisitt CI-matrise og SHA-låste actions før første push
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Verifisert mot offisiell setup-node-dokumentasjon/kilde at package.json sitt åpne engines-intervall ikke garanterer minsteversjonen; runnercache/nedlasting avgjør. CI kjører nå hele kontrollrekken på eksakt Node 22.18.0 og Node 24 med fail-fast=false. Prisjobben bruker også 24; begge bruker check-latest og deaktivert automatisk pakkecache. pnpm leses fortsatt fra packageManager, installasjonen bruker frozen-lockfile og CI viser verktøyversjonene i loggen.
+- Låst alle fire eksterne actions til fullstendige commit-SHA-er med versjonskommentar, verifisert gjennom offisielle GitHub-ref-API-er og action.yml ved samme SHA. Beholdt CI-hovedversjonene; prisjobben bruker samme checkout/setup-node som CI. contents:read, begrensede skriverettigheter i prisjobben og persist-credentials=false er bevart. Ingen PAT, ny hemmelighet eller automatisk fletting; Dependabot er konfigurert ukentlig for github-actions.
+- Lagt til [kort sjekkliste for første push](docs/FORSTE-PUSH.md), med beslutning om bevislagring før opplasting, branch protection/begge CI-statuskrav, Actions-/PR-rettigheter, force-with-lease på prisgrenen og manuell verifisering av begge workflows/aktuell PR-head. [Lokal kontroll og SHA-kilder](docs/CI-KONTROLL.md) skiller lokale resultater fra alt som gjenstår på GitHub. README, arkitektur og utviklingsplan er avstemt; funksjonsregisteret er vurdert og beholdt fordi portalens brukerfunksjoner/modenhet er uendret.
+- Actionlint 1.7.12 fra offisiell utgivelse, SHA-256-verifisert og kjørt fra /tmp uten ny prosjektavhengighet: 0 feil i begge workflows. ShellCheck/Pyflakes er ikke installert, så de valgfrie integrasjonene ble ikke kjørt. `pnpm test` bestod lokalt på Node 24.22.1 med **206/206 Node-tester**, **3/3 Python-tester**, faktisk innholdssynk og **144 relative filmål** i ti dokumenter. Dette inkluderer fixture-simulering av prisjobbens run-steg. `pnpm format:check` og `git diff --check` bestod. Prisjobbens run-steg er uendret og prøves av eksisterende fixture-simulering; ingen ekte priskilder eller modell er kalt.
+- Repoet har fortsatt ingen remote og ingen workflow er kjørt på GitHub. Ingen GitHub-innstillinger, bevislagringsbeslutning, gamle bevismapper, commit, push eller publisering er endret/utført. Tidligere ukommiterte endringer er bevart. Beta og P1–P10 videreføres; faktisk Actions, bot-PR-status, Dependabot og branch protection gjenstår.
+
+### 11. november 2026 – datoer i svar, separate chatknapper og felles porttolking
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Bekreftet dato-/årstallsfeilen, knappens Send→Avbryt-bytte og manglende aria-busy, samt ulik behandling av tomme/blanke/ugyldige og mellomromsomgitte RAG_PORT-verdier med tester før retting. Gamle parserens årstall er også etterprøvd isolert. Norske månedsnavn og vanlige forkortelser avviser ordnet markør; fire eller flere siffer blir avsnitt. Vanlige punkter, gjentatt nummerering, start og bevisste hopp beholdes.
+- Send beholder navn, plassering og submit-type og deaktiveres under venting; Avbryt er en egen button. Ingen 500 ms-sperre eller skiftende knappbetydning. Tastatur-/skjermleserbruk får separate navn og roller; avbrudd flytter fokus til feltet. Gjeninnført aria-busy på skjemaet og tilpasset disabled-stilen til native disabled. Samtalelogg og generell ventestatus ligger fortsatt utenfor skjemaet.
+- Felles, miljøfri parseRagPort brukes av Next og loadRagConfig, med standard bare når usatt, trimming, intervall 1–65535 og identiske feilmeldinger. Next importerer tidsbudsjett fra den miljøfrie modulen. Pages har ingen RAG-rewrite. Tester sammenligner faktisk Next-rewrite og serverkonfigurasjon for 13 verdier; ingen testbibliotek eller annen avhengighet er lagt til.
+- Kort nettleserkontroll med tastatur og dobbeltklikk ved 320 × 800 px bestod: ingen utilsiktet avbryt, tilgjengelig separat Avbryt, fokus tilbake i feltet, ny innsending, datoer som avsnitt og listenumre 1/3/10. Ingen horisontal overflyt. Brukte isolert Next-kopi med simulert transport; begge testservere/kopien er fjernet og viewport nullstilt. Ingen virkelig modell, faktisk skjermleser eller full tilgjengelighetskontroll.
+- Oppdatert README, arkitektur, funksjonsregister og utviklingsplan; Beta og P1–P10 videreføres. Én [rapport](docs/rag/2026-11-11/chat-dates-port.md) og ett lite skjermbilde dokumenterer arbeidet. `pnpm test` bestod med **206/206 Node-tester**, **3/3 Python-tester**, faktisk innholdssynk og **133 relative filmål** i åtte dokumenter. `pnpm typecheck`, `pnpm format:check`, `pnpm build` og `git diff --check` bestod. Tidligere ukommiterte endringer er bevart; ingen commit eller publisering.
+
+### 11. november 2026 – felles chatforslag og forenklet indeksert kildesøk
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Bekreftet dagens feil før endring: 1/5 oppgitte eksempelspørsmål og 5/6 forslag var riktige, mens de kjente settene bestod 26/26 og 20/20. Samlet forslagene med kildeforventning i én konstant brukt av begge komponentene og testene.
+- Samlet stoppord etter bokmåls-kategorier og beholdt handlinger med vekt 0,25 i score/dekning i stedet for å fjerne dem. Handlinger kan ikke gi treff alene. Kildeord og felt bygges i en modulindeks én gang; tester lager egne indekser i stedet for å mutere standardkorpuset. Content-sync bygger ny indeks ved prosessomstart.
+- Prøvd 20 regelvarianter mot 52 unike, allerede kjente utviklings-/regresjonsspørsmål. Fjernet langord-unntak, frekvenstak for sterke treff og fire unødvendige nivåer ved lik score. Beholdt målbare bidrag og innført dempet termfrekvens/lengdenormalisering, slik at rik emneomtale og korte oversikter balanseres. Sorteringen har nå tre nivåer. Ingen spørsmålsstrenger eller kilde-ID-er er hardkodet i søket.
+- Opprettet tom blindEvaluation med skjema/instruksjoner i tests/fixtures/rag-blind.json. Den skal fylles av et menneske som ikke justerer søket. Rapporttesten har ingen treffsikkerhetsgrense og rapporterer tomt/ugyldig grunnlag uten å feile bygget. Begge tidligere sett behandles som kjente regresjoner; forventningene deres er bevart. Enhetstester for de fire fjernede tie-reglene er erstattet av testen av den enklere sorteringskontrakten.
+- Oppdatert funksjonsregister, arkitektur og utviklingsplan. Før-/ettertabeller, forslag/kilde-koblinger, ablasjoner og begrensninger lagres i én [kort oppsummering](docs/rag/2026-11-11/retrieval-suggestions.md), uten gjentatte logger eller endring i gamle bevis. `pnpm test` bestod med **187/187 Node-tester**, **3/3 Python-tester**, faktisk watch-/innholdssynk og **131 relative filmål** i åtte dokumenter. `pnpm typecheck`, `pnpm format:check` og `git diff --check` bestod. Ingen nye avhengigheter, embeddings, API-kontraktendring, commit eller publisering. Beta og P1–P10 videreføres.
+
+### 11. november 2026 – ignorer genererte Python-cachefiler
+
+**Utførende agent:** Codex (OpenAI).
+
+- Lagt til `__pycache__/` og `*.pyc` i .gitignore, slik at Python-cache ikke vises som usporede filer. Kontrollert med `git check-ignore` og `git status --short`; `git diff --check` bestod. Ingen endring i portalens funksjoner eller produksjonsstatus.
+
 ### 11. november 2026 – chatrettinger testet i Docker/Linux med Node 22
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

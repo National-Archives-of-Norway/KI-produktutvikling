@@ -38,6 +38,11 @@ function inline(
     });
 }
 
+// Norske datoer må ikke forveksles med nummererte punkter. Fullt navn og
+// vanlige forkortelser med/uten punktum; ordgrensen bevarer «marsj» osv.
+const norwegianMonth =
+  /^(?:januar|februar|mars|april|mai|juni|juli|august|september|oktober|november|desember|jan|feb|mar|apr|jun|jul|aug|sep|sept|okt|nov|des)\b/iu;
+
 // Avgrenset tekstformat, ikke HTML/Markdown-motor. URL-er blir vanlig tekst.
 export function parseAnswer(text: string, sourceCount = 0): AnswerBlock[] {
   const blocks: AnswerBlock[] = [];
@@ -83,8 +88,8 @@ export function parseAnswer(text: string, sourceCount = 0): AnswerBlock[] {
       flushParagraph();
       continue;
     }
-    const marker = /^ {0,3}(?:(\d{1,9})[.)]|[-*])\s+(.*)$/.exec(line);
-    if (marker) {
+    const marker = /^ {0,3}(?:(\d{1,3})[.)]|[-*])\s+(.*)$/.exec(line);
+    if (marker && !(marker[1] && norwegianMonth.test(marker[2]))) {
       flushParagraph();
       const kind = marker[1] === undefined ? "unordered" : "ordered";
       if (list && list.kind !== kind) flushList();
