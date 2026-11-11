@@ -6,6 +6,14 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 11. november 2026 – enklere skill-kort
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Fjernet underteksten «Ennå ikke gjennomgått av et menneske» fra skill-kortene i ressurskatalogen. Beta-etiketten beholdes; øvrige ressurskort beholder Eksempel-teksten. Statusinformasjon på detaljsidene er fortsatt tilgjengelig.
+- Oppdatert katalogbeskrivelsen i funksjonsregisteret. Beta-status og utviklingsplanens leveranse-/produksjonsstatus videreføres; denne tekstjusteringen krever ingen ny planoppgave. Ingen endring i Skills-repoet eller skill-innholdet.
+- Kontroller: 75/75 kildesøk-/RAG-regresjoner, pnpm typecheck, pnpm format:check og git diff --check bestod. Ingen ny nettleser-, Docker- eller byggkontroll for denne avgrensede tekstjusteringen. Ingen commit eller publisering.
+
 ### 11. november 2026 – samlet avstemming av Markdown-dokumentasjonen
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

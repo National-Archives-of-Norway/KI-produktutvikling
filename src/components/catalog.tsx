@@ -121,15 +121,15 @@ export function Catalog() {
                 />
               )}
             </div>
-            <Typography
-              component="span"
-              variant="caption"
-              sx={{ mt: 1, color: "text.secondary" }}
-            >
-              {r.type === "Skill"
-                ? "Ennå ikke gjennomgått av et menneske"
-                : "Eksempel"}
-            </Typography>
+            {r.type !== "Skill" && (
+              <Typography
+                component="span"
+                variant="caption"
+                sx={{ mt: 1, color: "text.secondary" }}
+              >
+                Eksempel
+              </Typography>
+            )}
             <Typography
               component="h3"
               variant="h6"
