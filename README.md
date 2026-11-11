@@ -4,12 +4,14 @@ Portal for å lære, prøve og dele KI i produktutviklingen i Nasjonalarkivet. N
 
 ## Oppstart
 
-Krever Node.js som tilfredsstiller `engines.node` i [package.json](package.json), pnpm-versjonen fra `packageManager`, og Python 3 til testene.
+Krever Node.js som tilfredsstiller `engines.node` i [package.json](package.json), pnpm-versjonen fra `packageManager`, og Python 3 til testene. Lokal Linux-kontroll er dokumentert for Node 22.18.0 og 24.22.2; se [kontrollrapporten](docs/CI-KONTROLL.md).
 
 ```sh
 pnpm install --frozen-lockfile
 pnpm dev
 ```
+
+En ny installasjon trenger nettverk også når pnpm-pakkene er cachet: ChromeDriver og vnu-jar kan laste ned støttefiler. Dette er avhengighetsoppsett; testene henter ikke priser eller modellsvar fra leverandører.
 
 Åpne http://127.0.0.1:3000. Next.js og RAG starter på loopback, normalt port 3000 og 3001. `sh scripts/dev.sh` kan bruke Codex-runtime når Node/pnpm mangler på PATH og avhengighetene er installert. Ny devport: `pnpm dev -- -p 3005`; tilpass også tillatte origins.
 
@@ -50,9 +52,9 @@ pnpm build:pages
 | `pnpm test:pricing`      | Avgrensede parser-/fil-/PR-tester uten priskildekall.                                                                                                        |
 | `pnpm test:a11y`         | Separat axe/Nu-kontroll etter Pages-bygg; krever passende Chrome/driver og Java. Er ikke full WCAG-godkjenning.                                              |
 
-[CI](.github/workflows/ci.yml) er klargjort for push, pull requests og manuell kjøring. Matrisen kjører hele kontrollrekken på **Node 22.18.0** (minsteversjonen i engines.node) og **Node 24**. Prisjobben bruker samme 24-linje; check-latest sikrer nyeste tilgjengelige 24-utgave. Endres minsteversjonen i package.json, må matrisen oppdateres samtidig. pnpm velges fra `packageManager`. Python 3 settes opp separat. Installasjon bruker låsefilen, og CI kjører format, typer, test, serverbygg og Pages-bygg uten prosjektsecrets eller prissynkronisering. Installasjon og verktøyoppsett trenger nettverk; testene henter ikke priser.
+[CI](.github/workflows/ci.yml) er klargjort for push, pull requests og manuell kjøring. Matrisen er konfigurert til å kjøre hele kontrollrekken på **Node 22.18.0** (minsteversjonen i engines.node) og **Node 24**. Prisjobben bruker samme 24-linje; check-latest sikrer nyeste tilgjengelige 24-utgave. Endres minsteversjonen i package.json, må matrisen oppdateres samtidig. pnpm velges fra `packageManager`. Python 3 settes opp separat. Installasjon bruker låsefilen, og CI kjører format, typer, test, serverbygg og Pages-bygg uten prosjektsecrets eller prissynkronisering. Installasjon og verktøyoppsett trenger nettverk; testene henter ikke priser.
 
-Pris-PR-er fra `GITHUB_TOKEN` starter ikke automatisk CI. GitHub kan vise PR-kjøringer som venter på godkjenning. Bruk **Actions → CI → Run workflow → velg pris-PR-grenen**, for eksempel `codex/pricing-sync`, og kontroller at grenens commit fortsatt samsvarer med den kontrollerte revisjonen før sammenslåing. Workflowen må først finnes på standardgrenen for manuell kjøring. Ingen PAT trengs. Se [GitHubs forklaring av bot-utløste hendelser](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow). Actions er SHA-låst med versjonskommentarer. Dependabot foreslår ukentlige action-oppdateringer uten automatisk fletting. Se [sjekkliste før første push](docs/FORSTE-PUSH.md) og [lokal CI-kontroll og verifiserte SHA-er](docs/CI-KONTROLL.md). Faktisk Actions-kjøring og obligatorisk statuskontroll må verifiseres på GitHub.
+Pris-PR-er fra `GITHUB_TOKEN` starter ikke automatisk CI. GitHub kan vise PR-kjøringer som venter på godkjenning. Bruk **Actions → CI → Run workflow → velg pris-PR-grenen**, for eksempel `codex/pricing-sync`, og kontroller at grenens commit fortsatt samsvarer med den kontrollerte revisjonen før sammenslåing. Workflowen må først finnes på standardgrenen for manuell kjøring. Ingen PAT trengs. Se [GitHubs forklaring av bot-utløste hendelser](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow). Actions er SHA-låst med versjonskommentarer. Dependabot foreslår ukentlige action-oppdateringer uten automatisk fletting. Se [sjekkliste før første push](docs/FORSTE-PUSH.md) og [lokal CI-kontroll og verifiserte SHA-er](docs/CI-KONTROLL.md). Hele kommandorekken er prøvd i lokal Docker/Linux arm64 for commit c22f1dc, med begge bygg. Faktisk Actions-kjøring på ubuntu-latest, rettigheter og obligatoriske statuskontroller er fortsatt ikke verifisert.
 
 ## Utrulling og begrensninger
 
@@ -63,6 +65,8 @@ Første delte miljø skal være en **lukket pilot**. Innlogging/autorisasjon, br
 Prisene vedlikeholdes i `src/content/pricing/snapshot.json`. `pnpm pricing:sync` henter ekte leverandørpriser og kjøres bevisst, separat fra test/CI. [Prisjobben](.github/workflows/pricing-sync.yml) foreslår rader/status/feil på én fast gren; datoendringer alene gir ikke PR. Faktisk GitHub-jobb og publisering er ikke verifisert. [Ny parser-/workflow-kontroll](docs/priser/TESTRAPPORT.md) beskriver lokal fixture-simulering. Uvedkommende ugyldige tabeller påvirker ikke prishentingen; feil i valgt pristabell er fortsatt synlige. Claude-prisfelt tillater ett fotnotesiffer (1–9), vanlig eller hevet, etter MTok-enheten, mens tallformatet ellers er strengt. [Prisforvaltning og tidligere parser-/driftsnotater](docs/HISTORIKK.md#priser-for-copilot-claude-og-codex) er bevart.
 
 ## Dokumentasjon
+
+[Dokumentasjonsoversikten](docs/DOKUMENTASJON.md) viser hvilke dokumenter som er gjeldende, historiske eller uavklarte.
 
 - [Arkitektur og modulgrenser](ARCHITECTURE.md), [utviklingsplan og produksjonskrav P1–P10](UTVIKLINGSPLAN.md).
 - [Kvalitetskontroll](KVALITETSKONTROLL.md), [WCAG-kontroll](docs/tilgjengelighet/WCAG-KONTROLL.md), [erklæringsgrunnlag](docs/tilgjengelighet/TILGJENGELIGHETSERKLAERING.md).

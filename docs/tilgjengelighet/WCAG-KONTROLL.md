@@ -1,5 +1,11 @@
 # WCAG-kontroll av KI-Produktutvikling
 
+## Dokumentasjonsavstemming – 11. november 2026
+
+Siste vurderte 48-kravsgrunnlag er fortsatt **10. november 2026**, med **29 K / 11 I / 8 U / 0 B**. Denne gjennomgangen endrer ikke vurderingene, testdatoene eller [erklæringsutkastet](TILGJENGELIGHETSERKLAERING.md). [latest.json](latest.json) peker fortsatt til samme daterte skill-kjøring.
+
+Senere chatrettinger omfatter separate Send-/Avbryt-knapper, aria-busy, avbrudd/fokus og dato-/listevisning. En [avgrenset nettleserkontroll ved 320 px](../rag/2026-11-11/chat-dates-port.md) er gjennomført med tastatur og simulert svar. Den er ikke ny full WCAG-testing eller faktisk skjermleserbruk. [Linux-matrisen](../CI-KONTROLL.md) bekrefter utviklerkontroller, ikke nytt tilgjengelighetssamsvar. Før ny konklusjon må relevante chatforløp retestes med hjelpemidler, særlig navn/rolle/tilstand og statusformidling under aria-busy; de åtte uavklarte kravene videreføres. Se [dokumentasjonsoversikten](../DOKUMENTASJON.md).
+
 ## Gjeldende tilgjengelighetsvurdering
 
 **Gjeldende vurdering – retting og retest med skill 0.6.0, 10. november 2026.** [Rapport](2026-11-10/202101-029e79106a3d/testrapport.md), [testmuligheter](2026-11-10/202101-029e79106a3d/testmuligheter.json) og [avstemt restliste](2026-11-10/202101-029e79106a3d/manuell-oppfolging.md).

@@ -6,6 +6,26 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 11. november 2026 – samlet avstemming av Markdown-dokumentasjonen
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Kartlagt 186 eksisterende Markdown-filer og opprettet [dokumentasjonsoversikt](docs/DOKUMENTASJON.md) som skiller gjeldende innganger, historiske rapporter, utkast, lagringsforslag og fixtures. Gjennomgangen omfatter nå 187 filer; antallene er et datert øyeblikksbilde, ikke automatisk filsynk.
+- Avstemt README, arkitektur, kvalitetskontroll, utviklingsplan, CI-/første-push-dokumenter og rullerende pristestrapport mot kildecommit c22f1dc og siste Docker/Linux-kontroll. Gjeldende teknisk sammendrag viser Node 22.18.0/24.22.2, 206 Node-/tre Python-tester, innholdssynk og begge bygg. Eldre 132/133/135-resultater er tydelig historikk med bevart dato/omfang. Dokumentert støttefilnedlasting ved ny installasjon og videreført at selve testene bruker fixtures uten leverandørkall.
+- Lagt til avgrensede vedlikeholdsnotater i personvernkartlegging, cookie-dokumentet og WCAG-kontrollen. Siste faktiske vurderingsdatoer, åtte uavklarte tilgjengelighetskrav, bannerbeslutning og manglende personvern-/driftsavklaringer er ikke endret. Ingen ny audit eller lov-/samsvarskonklusjon. Selve erklæringsutkastet og offentlige innholdskilder er urørt.
+- 166 daterte rapport-/bevisfiler og fem fixtures bevares, sammen med AGENTS, arkivert README, bevislagringsforslaget og tilgjengelighetserklæringen: 175 Markdown-filer kontrolleres byte for byte med SHA-256. Ingen masseformatering av gamle bevis. Funksjonsregisteret er gjennomgått og beholdt; ingen brukerfunksjon eller modenhet endres.
+- Kontroller: pnpm format:check, pnpm test:links (180 filmål i 11 dokumenter), utvidet lenkekontroll av alle 16 gjeldende dokumenter (242 relative filmål, ingen feil), SHA-256-sammenligning av 175 bevarte Markdown-filer og git diff --check bestod. Nettadresser, portalruter og fragmenter er ikke lenkevalidert; daterte bevis og fixtures er ikke omskrevet. Ingen ny full test- eller byggrunde i denne dokumentasjonsrunden. Denne runden endrer bare Markdown; forrige ukommiterte Docker-resultater er bevart. Ingen ny modell-/prisinnhenting, GitHub-kjøring, tilgjengelighets-/personvern-/cookie-test, commit, push eller publisering. Beta og P1–P10 videreføres.
+
+### 11. november 2026 – hele CI-rekken testet i Docker/Linux på Node 22 og 24
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Testet commit c22f1dc med Node **22.18.0** og **24.22.2** på Linux arm64 / Debian 12.11, pnpm 11.25.0 og Python 3.11.2. Begge bestod format, typekontroll, **206/206 Node-tester**, **3/3 Python-tester**, faktisk watch-/innholdssynk, 144 relative filmål og både serverbygg og Pages-bygg. Ingen Node-feil/hoppede tester; Pages-artefakter og serverens RAG-rewrite er kontrollert.
+- Førsteforsøket med en helt ny nettverksløs installasjon på 22.18.0 feilet fordi ChromeDriver/Java-støttefiler trengte nettverk; de påfølgende pnpm-kommandoene forsøkte installasjon igjen og fikk også exit 1 uten å utføre produktkontrollene. Oppsettet ble korrigert ved å kjøre uendret pnpm install --frozen-lockfile i egne bildeoppsett med nettverk, uten ignore-scripts. Begge nye installasjoner bestod. Den komplette seksstegsrekken, inkludert gjenbrukt install-steg, bestod deretter uten nettverk på begge Node-versjoner. Ingen priskilder eller ekte modell er kalt.
+- Isolerte kildekopier fra git archive; ingen host-secrets, host node_modules eller publiserte porter. Bare pnpm-cachen ble gjenbrukt før ny installasjon. Begge testcontainere er fjernet, lokale bilder beholdt for gjenbruk. package.json, låsefil og pris-snapshot er SHA-256-kontrollert uendret i containerne og på verten.
+- Oppdatert [kontrollrapport](docs/CI-KONTROLL.md) og utviklingsplan. Én JSON-oppsummering og én komprimert loggpakke inkluderer begge runtime-varianter, oppsett og førsteforsøket; manifest, bilde-/kildeidentitet og brukte Dockerfiler/kjøreskript følger med under docs/ci/2026-11-11/docker-matrix/. Ingen gamle bevismapper er endret. Funksjonsregisteret er vurdert og beholdt siden dette er verifisering uten brukerrettede endringer.
+- Etter dokumentoppdateringen bestod pnpm format:check, pnpm test:links (149 filmål i ti dokumenter) og git diff --check på verten. Arkiverte logg-/beviskontrollsummer og inputhashene er verifisert. Dette er lokal Linux arm64-verifisering, ikke GitHub Actions/ubuntu-latest x64 eller faktisk leverandør-/tilgjengelighets-/produksjonsgodkjenning. GitHub-matrisen, rettigheter og hendelses-/PR-flyt gjenstår. Ingen commit, remote, push eller publisering. Beta og P1–P10 videreføres.
+
 ### 11. november 2026 – eksplisitt CI-matrise og SHA-låste actions før første push
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

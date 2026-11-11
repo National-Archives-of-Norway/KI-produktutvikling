@@ -1,12 +1,24 @@
 # Kvalitetskontroll av KI-Produktutvikling
 
-## Samlet utviklerkontroll – 11. november 2026
+## Gjeldende teknisk kontrollgrunnlag – 11. november 2026
+
+Siste komplette kontroll gjelder **commit c22f1dc**, kjørt i lokal Docker/Linux arm64 på **Node 22.18.0 og 24.22.2**. Begge bestod frossen installasjon, formatering, typekontroll, **206/206 Node-tester**, **3/3 Python-tester**, faktisk innholdssynk, Markdown-lenker, serverbygg og Pages-bygg. Se [kontrollrapporten](docs/CI-KONTROLL.md) for kommandoer, avvik, runtime, kilde-/bildeidentitet og bevis. Testene brukte fixtures og simulert modelltransport; ingen priskilder eller modeller ble kalt.
+
+Førsteforsøket med ny installasjon uten nettverk stoppet på støttefilnedlasting, før produktkontrollene kom i gang. Separate frosne installasjoner med nettverk bestod; deretter bestod hele kontrollrekken uten nettverk på begge versjoner. Prisdata, package.json og låsefil er kontrollert uendret. Dette erstatter ikke GitHub Actions, ubuntu-latest x64, nettleserkontroll eller produksjonsgodkjenning.
+
+En egen [avgrenset chatprøve](docs/rag/2026-11-11/chat-dates-port.md) omfatter tastatur/dobbeltklikk ved 320 px, separate Send-/Avbryt-knapper, fokus etter avbrudd, ny innsending og dato-/listevisning. Det er ikke en ny full WCAG-vurdering. P1–P10 og åtte uavklarte tilgjengelighetskrav videreføres.
+
+Gjeldende dokumenter og historikk er skilt i [dokumentasjonsoversikten](docs/DOKUMENTASJON.md). Eldre avsnitt nedenfor beholder sine faktiske datoer, revisjoner og testtall.
+
+## Historisk samlet utviklerkontroll – tidligere 11. november 2026
 
 `pnpm check` kjører nå format, typer, alle Node-tester, Python-regresjoner, faktisk innholdssynk, Markdown-lenker og serverbygg. Pages-bygg kjøres separat. CI-definisjonen er klargjort for push/PR/manuell kjøring med samme tester og begge bygg; faktisk GitHub-kjøring, statuskrav og bot-PR-flyt er ikke verifisert. Testene bruker fixtures/simulert modelltransport uten priskildekall. Dette er ingen ny tilgjengelighetsvurdering. Lokalt på Node 24.22.1 bestod `pnpm check`: format, typer, 135/135 Node-tester, 3/3 Python-tester, faktisk watch-synk, 120 relative filmål i åtte Markdown-dokumenter og serverbygg. `pnpm build:pages` bestod også. Ingen ny Node 22-/Docker-kjøring. Hele tidligere README er kontrollert bevart med bare tilpassede relative lenker; SHA-256 for alle 1 345 eksisterende daterte bevisfiler er uendret.
 
 Hele tidligere README er bevart i [historikken](docs/HISTORIKK.md). [Bevislagringsforslaget](docs/BEVISLAGRING.md) er ikke innført; daterte bevismapper er urørt.
 
 ## Gjeldende tilgjengelighetsvurdering
+
+Det siste vurderte 48-kravsgrunnlaget er fra 10. november. Senere chatrettinger er bare avgrenset prøvd som beskrevet ovenfor; de gir ingen ny samsvarskonklusjon eller oppdatert full testdato.
 
 **Gjeldende vurdering – retting og retest med skill 0.6.0, 10. november 2026.** [Rapport](docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/testrapport.md), [testmuligheter](docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/testmuligheter.json) og [avstemt restliste](docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/manuell-oppfolging.md).
 

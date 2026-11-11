@@ -1,0 +1,39 @@
+import fs from 'node:fs';
+import os from 'node:os';
+import crypto from 'node:crypto';
+import {spawnSync} from 'node:child_process';
+const results='/results';
+const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const inputs=['package.json','pnpm-lock.yaml','src/content/pricing/snapshot.json'];
+const before=Object.fromEntries(inputs.map(p=>[p,hash(p)]));
+const version=(command,args)=>{const r=spawnSync(command,args,{encoding:'utf8'});return {exitCode:r.status,output:(r.stdout+r.stderr).trim()};};
+const runtime={node:process.version,undici:process.versions.undici,platform:process.platform,arch:process.arch,kernel:os.release(),debian:fs.readFileSync('/etc/debian_version','utf8').trim(),pnpm:version('pnpm',['--version']),python:version('python3',['--version']),git:version('git',['--version'])};
+const summary={runtime,inputHashes:before,steps:[],artifacts:{},network:'none',priceSourceCalls:false};
+const steps=[['install',['pnpm','install','--frozen-lockfile']],['format',['pnpm','format:check']],['typecheck',['pnpm','typecheck']],['test',['pnpm','test']],['build',['pnpm','build']],['pages',['pnpm','build:pages']]];
+const persist=()=>fs.writeFileSync(results+'/summary.json',JSON.stringify(summary,null,2)+'\n');
+persist();
+for(const [name,[cmd,...args]] of steps){
+ const startedAt=new Date().toISOString();
+ const logFile=`${results}/${name}.txt`;
+ const fd=fs.openSync(logFile,'w');
+ const r=spawnSync(cmd,args,{stdio:['ignore',fd,fd],timeout:600000,env:{...process.env,NO_COLOR:'1',FORCE_COLOR:'0'}});
+ fs.closeSync(fd);
+ const output=fs.readFileSync(logFile,'utf8');
+ const row={name,command:[cmd,...args].join(' '),startedAt,finishedAt:new Date().toISOString(),exitCode:r.status,signal:r.signal,error:r.error?.message??null,logSha256:hash(`${results}/${name}.txt`)};
+ if(name==='test'){
+  row.node=Object.fromEntries(['tests','pass','fail','skipped'].map(key=>[key,Number(output.match(new RegExp(`^(?:# |ℹ )${key} (\\d+)\\s*$`,'m'))?.[1]??-1)]));
+  row.pythonTests=Number(output.match(/Ran (\d+) tests? in /)?.[1]??-1);
+  row.contentSync=output.includes('Bestått: endring i en felles innholdsfil');
+  row.links=output.match(/Markdown-lenker: (.+)/)?.[1]??null;
+ }
+ if(name==='build'&&r.status===0){
+  const routes=JSON.parse(fs.readFileSync('.next/routes-manifest.json','utf8'));
+  summary.artifacts.server={buildId:fs.readFileSync('.next/BUILD_ID','utf8').trim(),routesManifestSha256:hash('.next/routes-manifest.json'),ragRewrites:routes.rewrites?.afterFiles??routes.rewrites};
+ }
+ if(name==='pages'&&r.status===0)summary.artifacts.pages={index:fs.existsSync('out/index.html'),chat:fs.existsSync('out/spor/index.html'),nojekyll:fs.existsSync('out/.nojekyll')};
+ summary.steps.push(row);persist();console.log(`${process.version} ${name}: exit=${r.status}`);
+}
+summary.afterHashes=Object.fromEntries(inputs.map(p=>[p,hash(p)]));
+summary.inputsUnchanged=JSON.stringify(before)===JSON.stringify(summary.afterHashes);
+summary.passed=summary.inputsUnchanged&&summary.steps.every(s=>s.exitCode===0)&&summary.artifacts.pages?.index&&summary.artifacts.pages?.chat&&summary.artifacts.pages?.nojekyll;
+persist();console.log(JSON.stringify(summary,null,2));process.exitCode=summary.passed?0:1;

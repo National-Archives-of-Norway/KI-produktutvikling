@@ -1,0 +1,4 @@
+FROM ki-ci-node22:c22f1dc AS install22
+RUN pnpm install --frozen-lockfile
+FROM ki-ci-node24:c22f1dc AS install24
+RUN pnpm install --frozen-lockfile

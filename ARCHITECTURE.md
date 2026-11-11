@@ -1,6 +1,8 @@
 # Kodestruktur
 
-Portalen er én Next.js-applikasjon med en separat lokal RAG-prosess. Oppdelingen følger ansvar, ikke egne pakker eller mikrotjenester. Offentlig eksempelinnhold er tilgjengelig for statisk bygg; servermoduler importeres aldri av klientkomponenter.
+Portalen er én Next.js-applikasjon med en separat RAG-prosess. Oppdelingen følger ansvar, ikke egne pakker eller mikrotjenester. Offentlig eksempelinnhold er tilgjengelig for statisk bygg; servermoduler importeres aldri av klientkomponenter.
+
+Dokumentasjonen er avstemt 11. november 2026 mot kode i c22f1dc og [Linux-kontrollen](docs/CI-KONTROLL.md). [Dokumentasjonsoversikten](docs/DOKUMENTASJON.md) skiller gjeldende beskrivelser fra historiske bevis.
 
 ## Hvor endrer jeg hva?
 
@@ -18,7 +20,10 @@ Portalen er én Next.js-applikasjon med en separat lokal RAG-prosess. Oppdelinge
 | Grafembasert feltgrense og tilbakemelding | `src/features/rag/question-input.ts`                  |
 | Nettleserens RAG-forespørsler             | `src/features/rag/client.ts`                          |
 | Felles API-typer og validering            | `src/features/rag/contracts.ts`                       |
-| Offentlig kildehenting                    | `src/features/rag/retrieval.ts`                       |
+| Offentlig kildehenting og modulindeks     | `src/features/rag/retrieval.ts`                       |
+| Språkregler, stoppord og handlingsvekt    | `src/features/rag/search-language.ts`                 |
+| Chatforslag og forventede kilder          | `src/features/rag/suggestions.ts`                     |
+| Miljøfri portvalidering og tidsbudsjett   | `src/config/rag-port.ts` og `src/config/rag.ts`       |
 | Modelluavhengig svarflyt                  | `src/server/rag/service.ts`                           |
 | Modelladapter og instruksjoner            | `src/server/rag/ollama.ts`, `model.ts` og `prompt.ts` |
 | HTTP, grenser og opprinnelseskontroll     | `src/server/rag/http.ts`                              |
@@ -34,7 +39,7 @@ Chatvisning → useChat → requestAnswer → /api/rag
                                         ↓
                              RAG-tjeneste → kildehenting
                                         ↓
-                        Valgfri ModelAdapter → lokal Ollama
+                        Valgfri ModelAdapter → Ollama / eksternt modell-API
 ```
 
 `RagResult` skiller mellom kildeutdrag og genererte svar. `RagError` kan beholde kilder når modellen feiler. Klienten validerer formatet før det brukes i visningen.
@@ -87,6 +92,6 @@ Parseren gjenkjenner bare ordnede markører med opptil tre siffer og avviser dem
 
 HTTP-testene åpner og lukker midlertidige loopback-servere. Modell- og pristester bruker simulert transport/fixtures, ikke ekte leverandører. Python 3 må finnes på PATH. Visuell kontroll, faktiske hjelpemidler og leverandør-/driftsverifisering er separate kontroller.
 
-`.github/workflows/ci.yml` kjører format, typer, samlet test, serverbygg og Pages-bygg ved push/PR eller manuell kjøring. Hele kontrollrekken kjøres i to matrisejobber: Node 22.18.0 (eksakt minsteversjon i engines.node) og Node 24 (nyeste tilgjengelige utgave med check-latest), med fail-fast=false. Prisjobben bruker samme 24-linje og samme SHA-låste checkout/setup-node. pnpm velges fra packageManager; låsefilinstallasjon bruker frozen-lockfile. Alle eksterne actions er låst til verifiserte fullstendige commit-SHA-er med versjonskommentar. Dependabot foreslår github-actions-oppdateringer ukentlig, uten automatisk fletting. Bare contents:read og ingen prosjektsecrets brukes. Prisinnhenting tilhører fortsatt den separate prisjobben. CI er klargjort i kode, ikke verifisert på GitHub; manuell kjøring på botens prisgren og statuskontroll før sammenslåing er forklart i [README](README.md) og [første-push-sjekklisten](docs/FORSTE-PUSH.md). [Lokal kontroll](docs/CI-KONTROLL.md) skiller syntaks-/fixture-testing fra faktisk Actions-kjøring.
+`.github/workflows/ci.yml` kjører format, typer, samlet test, serverbygg og Pages-bygg ved push/PR eller manuell kjøring. Hele kontrollrekken kjøres i to matrisejobber: Node 22.18.0 (eksakt minsteversjon i engines.node) og Node 24 (nyeste tilgjengelige utgave med check-latest), med fail-fast=false. Prisjobben bruker samme 24-linje og samme SHA-låste checkout/setup-node. pnpm velges fra packageManager; låsefilinstallasjon bruker frozen-lockfile. Alle eksterne actions er låst til verifiserte fullstendige commit-SHA-er med versjonskommentar. Dependabot foreslår github-actions-oppdateringer ukentlig, uten automatisk fletting. Bare contents:read og ingen prosjektsecrets brukes. Prisinnhenting tilhører fortsatt den separate prisjobben. CI-kommandoene er verifisert i Docker/Linux arm64 med Node 22.18.0 og 24.22.2 for c22f1dc, inkludert begge bygg. Avhengighetsoppsettet trengte støttefilnedlasting; selve kontrollrekkene kjørte uten nettverk. Dette er ikke en GitHub-runner eller full innloggings-/driftsverifisering. CI er fortsatt ikke verifisert på GitHub; manuell kjøring på botens prisgren og statuskontroll før sammenslåing er forklart i [README](README.md) og [første-push-sjekklisten](docs/FORSTE-PUSH.md). [Lokal kontroll](docs/CI-KONTROLL.md) skiller syntaks-/fixture-testing fra faktisk Actions-kjøring.
 
 Den tidligere README-en er bevart i [historikken](docs/HISTORIKK.md), med relative lenker tilpasset den nye plasseringen. Historiske testresultater er ikke nåværende godkjenning. Forslag til bevislagring ligger i [eget beslutningsgrunnlag](docs/BEVISLAGRING.md); eksisterende bevis er urørt.

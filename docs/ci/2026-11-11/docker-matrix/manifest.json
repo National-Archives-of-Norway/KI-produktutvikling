@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-11",
+  "agent": "Codex (OpenAI)",
+  "sourceCommit": "c22f1dcce0fb803eaaad06307a25a8178cb37f73",
+  "sourceArchiveSha256": "d3aae30221f61eb18371b26dba87316261d05e7ee3677208c0b9be07be8c3933",
+  "sourceArchiveBytes": 597073920,
+  "source": "git archive HEAD; all tracked files; no .git, host node_modules, .env.local or generated builds",
+  "images": [
+    {
+      "Id": "sha256:54dc4a0935c687a6e7d4c4823b5a7c6bb78b06f8099d9cdc14f48c265aefdeee",
+      "RepoTags": ["ki-full-node22-check:local"],
+      "RepoDigests": [
+        "ki-full-node22-check@sha256:54dc4a0935c687a6e7d4c4823b5a7c6bb78b06f8099d9cdc14f48c265aefdeee"
+      ],
+      "Os": "linux",
+      "Architecture": "arm64"
+    },
+    {
+      "Id": "sha256:752ea8a2f758c34002a0461bd9f1cee4f9a3c36d48494586f60ffce1fc708e0e",
+      "RepoTags": ["node:22.18.0-bookworm-slim"],
+      "RepoDigests": [
+        "node@sha256:752ea8a2f758c34002a0461bd9f1cee4f9a3c36d48494586f60ffce1fc708e0e"
+      ],
+      "Os": "linux",
+      "Architecture": "arm64"
+    },
+    {
+      "Id": "sha256:01d566e8d94d8c619591d78652babfccd3c6992a3dffa9ed5ab39e11cf6c70e9",
+      "RepoTags": ["node:24-bookworm-slim"],
+      "RepoDigests": [
+        "node@sha256:01d566e8d94d8c619591d78652babfccd3c6992a3dffa9ed5ab39e11cf6c70e9"
+      ],
+      "Os": "linux",
+      "Architecture": "arm64"
+    },
+    {
+      "Id": "sha256:3632b1bb85b92164c86b3d4712c53dfd2c3b63902bae9a625c0863b94e831a3e",
+      "RepoTags": ["ki-ci-node22:installed-c22f1dc"],
+      "RepoDigests": [
+        "ki-ci-node22@sha256:3632b1bb85b92164c86b3d4712c53dfd2c3b63902bae9a625c0863b94e831a3e"
+      ],
+      "Os": "linux",
+      "Architecture": "arm64"
+    },
+    {
+      "Id": "sha256:f99fb74cca9c970fbda36b8bfb9be96e71ea21fac1e24c2a0097bfe026fecfbe",
+      "RepoTags": ["ki-ci-node24:installed-c22f1dc"],
+      "RepoDigests": [
+        "ki-ci-node24@sha256:f99fb74cca9c970fbda36b8bfb9be96e71ea21fac1e24c2a0097bfe026fecfbe"
+      ],
+      "Os": "linux",
+      "Architecture": "arm64"
+    }
+  ],
+  "dockerServer": "29.8.2",
+  "isolation": {
+    "finalNetwork": "none",
+    "dependencyPreparationNetwork": "default",
+    "publishedPorts": [],
+    "hostSourceMounted": false,
+    "autoRemove": true,
+    "containersRemovalVerified": true,
+    "capDrop": "ALL",
+    "noNewPrivileges": true,
+    "memory": "4g",
+    "cpus": 2,
+    "tmpfs": "/tmp:rw,exec,nosuid,nodev,size=512m"
+  },
+  "scope": [
+    "pnpm install --frozen-lockfile",
+    "pnpm format:check",
+    "pnpm typecheck",
+    "pnpm test",
+    "pnpm build",
+    "pnpm build:pages"
+  ],
+  "limitations": [
+    "Linux arm64 Debian 12.11, not GitHub ubuntu-latest x64 or setup-python 3.x.",
+    "GitHub Actions, policies, token permissions and remote event triggers were not executed.",
+    "No browser, real model, real price sync, push, deployment or production approval."
+  ],
+  "files": {
+    "Dockerfile": {
+      "sha256": "728a3e1ec89c6daf684cd841771c3ba75770264953f8914a635aa5646c3dda45",
+      "bytes": 586
+    },
+    "Dockerfile.install": {
+      "sha256": "cb2a2abaa54dec1586083a07ae61f88592ebf7f2efc50b40cbd68bd9802e9800",
+      "bytes": 148
+    },
+    "logs.tar.gz": {
+      "sha256": "163531725b1b622fa379e6f985753a624938c67c06b4da86a419414e8f8bc04d",
+      "bytes": 30159
+    },
+    "result.json": {
+      "sha256": "e67f623c225f589589085914b6b64754a0ab7ee97b60db9175c11551a3a6b45d",
+      "bytes": 12632
+    },
+    "run-initial.mjs.txt": {
+      "sha256": "1e1ffb0852f559e08c48d4937c8fa5e6f06fab56875ac3c07e0fc0b3f8447b2b",
+      "bytes": 3202
+    },
+    "run-matrix.mjs.txt": {
+      "sha256": "71d3638bb1440906f8005b387f57fa892d5d08292283ebc97059468a30aae0ce",
+      "bytes": 3234
+    }
+  },
+  "preparationExitCodes": {
+    "install22ImageBuild": 0,
+    "install24ImageBuild": 0
+  }
+}

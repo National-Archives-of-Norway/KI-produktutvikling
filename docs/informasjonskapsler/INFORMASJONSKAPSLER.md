@@ -4,6 +4,10 @@ Her finner du hva vi har undersøkt om cookies og annen lagring i KI-Produktutvi
 
 Utkast, kontrollert 10. november 2026 i den lokale utviklingsutgaven. Dette er ikke en bekreftet oversikt over en framtidig produksjonstjeneste.
 
+## Dokumentasjonsvedlikehold – 11. november 2026
+
+Teksten er gjennomgått sammen med prosjektets øvrige dokumentasjon. Den siste faktiske cookie-kartleggingen er fortsatt fra **10. november 2026**; det er ikke kjørt en ny lagrings-/nettverksskanning. Senere chatrettinger og [Docker-testene](../CI-KONTROLL.md) gir ingen ny konklusjon om cookies eller samtykke i drift. Kontakt, observerte funn, bannerbeslutning og uavklarte driftsforhold nedenfor videreføres med sitt opprinnelige omfang. [Dokumentasjonsoversikten](../DOKUMENTASJON.md) viser skillet mellom gjeldende utkast og historiske bevis.
+
 ## Bruk av cookies og behov for samtykke
 
 Det ble ikke observert informasjonskapsler eller oppføringer i localStorage, sessionStorage, IndexedDB eller Cache Storage i det undersøkte lokale utvalget. Anonyme HTTP-kontroller av 21 sidestier viste heller ingen Set-Cookie-headere. Vi undersøkte navigasjon og blant annet katalogsøk, filtrering, pause av animasjonen, et chatspørsmål, prisvilkår og ny innlasting.

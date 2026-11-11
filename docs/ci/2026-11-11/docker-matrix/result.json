@@ -1,0 +1,373 @@
+{
+  "source": {
+    "commit": "c22f1dcce0fb803eaaad06307a25a8178cb37f73",
+    "archiveSha256": "d3aae30221f61eb18371b26dba87316261d05e7ee3677208c0b9be07be8c3933",
+    "archiveBytes": 597073920
+  },
+  "matrix": {
+    "22": {
+      "runtime": {
+        "node": "v22.18.0",
+        "undici": "6.21.2",
+        "platform": "linux",
+        "arch": "arm64",
+        "kernel": "7.0.14-linuxkit",
+        "debian": "12.11",
+        "pnpm": {
+          "exitCode": 0,
+          "output": "11.25.0"
+        },
+        "python": {
+          "exitCode": 0,
+          "output": "Python 3.11.2"
+        },
+        "git": {
+          "exitCode": 0,
+          "output": "git version 2.39.5"
+        }
+      },
+      "inputHashes": {
+        "package.json": "9c1f6c83dde0a9a0b69d1d584a10493b04105c72f80cbf9084e4228260c88b07",
+        "pnpm-lock.yaml": "568cf1f2bf0c232b54cd120fb7a7047544b3cbacdbec12dde23ae8128e681d37",
+        "src/content/pricing/snapshot.json": "c5d79a0add306b1c4ef7b0bda21691f235784788916ec58803bbf7f3e2dc6955"
+      },
+      "steps": [
+        {
+          "name": "install",
+          "command": "pnpm install --frozen-lockfile",
+          "startedAt": "2026-11-11T10:58:43.687Z",
+          "finishedAt": "2026-11-11T10:58:43.879Z",
+          "exitCode": 0,
+          "signal": null,
+          "error": null,
+          "logSha256": "5d01cee1c821aa5e558ead84677cc191c2f5a343229d3fd4d87187f993d11631"
+        },
+        {
+          "name": "format",
+          "command": "pnpm format:check",
+          "startedAt": "2026-11-11T10:58:43.881Z",
+          "finishedAt": "2026-11-11T10:58:46.053Z",
+          "exitCode": 0,
+          "signal": null,
+          "error": null,
+          "logSha256": "1d66faad74f5e8709353f7288592866bd3a9095da1174a916e7aa632949971e2"
+        },
+        {
+          "name": "typecheck",
+          "command": "pnpm typecheck",
+          "startedAt": "2026-11-11T10:58:46.054Z",
+          "finishedAt": "2026-11-11T10:58:50.067Z",
+          "exitCode": 0,
+          "signal": null,
+          "error": null,
+          "logSha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92"
+        },
+        {
+          "name": "test",
+          "command": "pnpm test",
+          "startedAt": "2026-11-11T10:58:50.067Z",
+          "finishedAt": "2026-11-11T10:58:54.238Z",
+          "exitCode": 0,
+          "signal": null,
+          "error": null,
+          "logSha256": "d6d62b432736863b654b0d397fb9d478eb140bbed155b218555b38900bb4ad9b",
+          "node": {
+            "tests": 206,
+            "pass": 206,
+            "fail": 0,
+            "skipped": 0
+          },
+          "pythonTests": 3,
+          "contentSync": true,
+          "links": "144 film\u00e5l i 10 dokumenter finnes."
+        },
+        {
+          "name": "build",
+          "command": "pnpm build",
+          "startedAt": "2026-11-11T10:58:54.240Z",
+          "finishedAt": "2026-11-11T10:59:04.636Z",
+          "exitCode": 0,
+          "signal": null,
+          "error": null,
+          "logSha256": "b741e44569e5de89977d40c8506597c8843b162f24208d582e695038717aa96f"
+        },
+        {
+          "name": "pages",
+          "command": "pnpm build:pages",
+          "startedAt": "2026-11-11T10:59:04.637Z",
+          "finishedAt": "2026-11-11T10:59:15.254Z",
+          "exitCode": 0,
+          "signal": null,
+          "error": null,
+          "logSha256": "e014d490e4973545bfafa71d3532e9bf71dbbbd29cd8d5bbf825f31067ea2781"
+        }
+      ],
+      "artifacts": {
+        "server": {
+          "buildId": "sLP8TpqoeOYYu06JTdmhv",
+          "routesManifestSha256": "95129c048f771140eeb92f3ef9b09ab7c4a8abe440a17308cf6e6ad76dcea7e6",
+          "ragRewrites": [
+            {
+              "source": "/api/rag",
+              "destination": "http://127.0.0.1:3001/api/rag",
+              "regex": "^/api/rag(?:/)?$"
+            }
+          ]
+        },
+        "pages": {
+          "index": true,
+          "chat": true,
+          "nojekyll": true
+        }
+      },
+      "network": "none",
+      "priceSourceCalls": false,
+      "afterHashes": {
+        "package.json": "9c1f6c83dde0a9a0b69d1d584a10493b04105c72f80cbf9084e4228260c88b07",
+        "pnpm-lock.yaml": "568cf1f2bf0c232b54cd120fb7a7047544b3cbacdbec12dde23ae8128e681d37",
+        "src/content/pricing/snapshot.json": "c5d79a0add306b1c4ef7b0bda21691f235784788916ec58803bbf7f3e2dc6955"
+      },
+      "inputsUnchanged": true,
+      "passed": true
+    },
+    "24": {
+      "runtime": {
+        "node": "v24.22.2",
+        "undici": "7.30.1",
+        "platform": "linux",
+        "arch": "arm64",
+        "kernel": "7.0.14-linuxkit",
+        "debian": "12.11",
+        "pnpm": {
+          "exitCode": 0,
+          "output": "11.25.0"
+        },
+        "python": {
+          "exitCode": 0,
+          "output": "Python 3.11.2"
+        },
+        "git": {
+          "exitCode": 0,
+          "output": "git version 2.39.5"
+        }
+      },
+      "inputHashes": {
+        "package.json": "9c1f6c83dde0a9a0b69d1d584a10493b04105c72f80cbf9084e4228260c88b07",
+        "pnpm-lock.yaml": "568cf1f2bf0c232b54cd120fb7a7047544b3cbacdbec12dde23ae8128e681d37",
+        "src/content/pricing/snapshot.json": "c5d79a0add306b1c4ef7b0bda21691f235784788916ec58803bbf7f3e2dc6955"
+      },
+      "steps": [
+        {
+          "name": "install",
+          "command": "pnpm install --frozen-lockfile",
+          "startedAt": "2026-11-11T10:59:36.770Z",
+          "finishedAt": "2026-11-11T10:59:36.961Z",
+          "exitCode": 0,
+          "signal": null,
+          "error": null,
+          "logSha256": "960489c738350505676c18b5e155ff1f04593afb1e2a603baf9c9ac85625b909"
+        },
+        {
+          "name": "format",
+          "command": "pnpm format:check",
+          "startedAt": "2026-11-11T10:59:36.966Z",
+          "finishedAt": "2026-11-11T10:59:38.705Z",
+          "exitCode": 0,
+          "signal": null,
+          "error": null,
+          "logSha256": "1d66faad74f5e8709353f7288592866bd3a9095da1174a916e7aa632949971e2"
+        },
+        {
+          "name": "typecheck",
+          "command": "pnpm typecheck",
+          "startedAt": "2026-11-11T10:59:38.709Z",
+          "finishedAt": "2026-11-11T10:59:42.219Z",
+          "exitCode": 0,
+          "signal": null,
+          "error": null,
+          "logSha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92"
+        },
+        {
+          "name": "test",
+          "command": "pnpm test",
+          "startedAt": "2026-11-11T10:59:42.220Z",
+          "finishedAt": "2026-11-11T10:59:46.215Z",
+          "exitCode": 0,
+          "signal": null,
+          "error": null,
+          "logSha256": "80741816f99dc3f0f2a7c52147ebafc73478d4fb63cd2decfd3d9fa40b734445",
+          "node": {
+            "tests": 206,
+            "pass": 206,
+            "fail": 0,
+            "skipped": 0
+          },
+          "pythonTests": 3,
+          "contentSync": true,
+          "links": "144 film\u00e5l i 10 dokumenter finnes."
+        },
+        {
+          "name": "build",
+          "command": "pnpm build",
+          "startedAt": "2026-11-11T10:59:46.216Z",
+          "finishedAt": "2026-11-11T10:59:55.607Z",
+          "exitCode": 0,
+          "signal": null,
+          "error": null,
+          "logSha256": "eb94cccbaaa79ee131feb41c4947f48a1eb088a5f8c6087c72bd495c3edc983d"
+        },
+        {
+          "name": "pages",
+          "command": "pnpm build:pages",
+          "startedAt": "2026-11-11T10:59:55.608Z",
+          "finishedAt": "2026-11-11T11:00:05.108Z",
+          "exitCode": 0,
+          "signal": null,
+          "error": null,
+          "logSha256": "1defa398371b9853166d2c71355b7111926e005360bfa37c83fa2afd01e12727"
+        }
+      ],
+      "artifacts": {
+        "server": {
+          "buildId": "uhwZn0g1rcDM6cE8pb-4g",
+          "routesManifestSha256": "95129c048f771140eeb92f3ef9b09ab7c4a8abe440a17308cf6e6ad76dcea7e6",
+          "ragRewrites": [
+            {
+              "source": "/api/rag",
+              "destination": "http://127.0.0.1:3001/api/rag",
+              "regex": "^/api/rag(?:/)?$"
+            }
+          ]
+        },
+        "pages": {
+          "index": true,
+          "chat": true,
+          "nojekyll": true
+        }
+      },
+      "network": "none",
+      "priceSourceCalls": false,
+      "afterHashes": {
+        "package.json": "9c1f6c83dde0a9a0b69d1d584a10493b04105c72f80cbf9084e4228260c88b07",
+        "pnpm-lock.yaml": "568cf1f2bf0c232b54cd120fb7a7047544b3cbacdbec12dde23ae8128e681d37",
+        "src/content/pricing/snapshot.json": "c5d79a0add306b1c4ef7b0bda21691f235784788916ec58803bbf7f3e2dc6955"
+      },
+      "inputsUnchanged": true,
+      "passed": true
+    }
+  },
+  "initialOfflineAttempt": {
+    "runtime": {
+      "node": "v22.18.0",
+      "undici": "6.21.2",
+      "platform": "linux",
+      "arch": "arm64",
+      "kernel": "7.0.14-linuxkit",
+      "debian": "12.11",
+      "pnpm": {
+        "exitCode": 0,
+        "output": "11.25.0"
+      },
+      "python": {
+        "exitCode": 0,
+        "output": "Python 3.11.2"
+      },
+      "git": {
+        "exitCode": 0,
+        "output": "git version 2.39.5"
+      }
+    },
+    "inputHashes": {
+      "package.json": "9c1f6c83dde0a9a0b69d1d584a10493b04105c72f80cbf9084e4228260c88b07",
+      "pnpm-lock.yaml": "568cf1f2bf0c232b54cd120fb7a7047544b3cbacdbec12dde23ae8128e681d37",
+      "src/content/pricing/snapshot.json": "c5d79a0add306b1c4ef7b0bda21691f235784788916ec58803bbf7f3e2dc6955"
+    },
+    "steps": [
+      {
+        "name": "install",
+        "command": "pnpm install --frozen-lockfile",
+        "startedAt": "2026-11-11T10:55:36.943Z",
+        "finishedAt": "2026-11-11T10:56:04.158Z",
+        "exitCode": 1,
+        "signal": null,
+        "error": null,
+        "logSha256": "f4adc8dc481e1dcb7a2fe5e30c925af97ceabae8be4dd660922552de2ff497ed"
+      },
+      {
+        "name": "format",
+        "command": "pnpm format:check",
+        "startedAt": "2026-11-11T10:56:04.165Z",
+        "finishedAt": "2026-11-11T10:56:09.079Z",
+        "exitCode": 1,
+        "signal": null,
+        "error": null,
+        "logSha256": "6b79afafbf7eb58a49f884026f93df6a6fbd7b7fe704b4d746acfcc7ba6a20e7"
+      },
+      {
+        "name": "typecheck",
+        "command": "pnpm typecheck",
+        "startedAt": "2026-11-11T10:56:09.085Z",
+        "finishedAt": "2026-11-11T10:56:13.914Z",
+        "exitCode": 1,
+        "signal": null,
+        "error": null,
+        "logSha256": "41f8984b4af3d759155938ee6f0c27f28fa146a68fd2bb036f49909c6e94f8b8"
+      },
+      {
+        "name": "test",
+        "command": "pnpm test",
+        "startedAt": "2026-11-11T10:56:13.921Z",
+        "finishedAt": "2026-11-11T10:56:18.800Z",
+        "exitCode": 1,
+        "signal": null,
+        "error": null,
+        "logSha256": "39aa4fa5ffeb79381378409102722eb8dd515950fc86fc3f7dec7b7e9156724a",
+        "node": {
+          "tests": -1,
+          "pass": -1,
+          "fail": -1,
+          "skipped": -1
+        },
+        "pythonTests": -1,
+        "contentSync": false,
+        "links": null
+      },
+      {
+        "name": "build",
+        "command": "pnpm build",
+        "startedAt": "2026-11-11T10:56:18.806Z",
+        "finishedAt": "2026-11-11T10:56:23.638Z",
+        "exitCode": 1,
+        "signal": null,
+        "error": null,
+        "logSha256": "f3072d62d59fc5ec2a83bb5ae527f291af1a1fc0ef5f62d96e95d62c97fbff6c"
+      },
+      {
+        "name": "pages",
+        "command": "pnpm build:pages",
+        "startedAt": "2026-11-11T10:56:23.643Z",
+        "finishedAt": "2026-11-11T10:56:28.480Z",
+        "exitCode": 1,
+        "signal": null,
+        "error": null,
+        "logSha256": "39aa4fa5ffeb79381378409102722eb8dd515950fc86fc3f7dec7b7e9156724a"
+      }
+    ],
+    "artifacts": {},
+    "network": "none",
+    "priceSourceCalls": false,
+    "afterHashes": {
+      "package.json": "9c1f6c83dde0a9a0b69d1d584a10493b04105c72f80cbf9084e4228260c88b07",
+      "pnpm-lock.yaml": "568cf1f2bf0c232b54cd120fb7a7047544b3cbacdbec12dde23ae8128e681d37",
+      "src/content/pricing/snapshot.json": "c5d79a0add306b1c4ef7b0bda21691f235784788916ec58803bbf7f3e2dc6955"
+    },
+    "inputsUnchanged": true,
+    "passed": false
+  },
+  "notes": [
+    "Initial offline install could not fetch ChromeDriver/Java support files; no product tests ran in that attempt.",
+    "Clean frozen installs were then completed during image preparation with network, followed by complete network-none CI sequences.",
+    "The install step in each final network-none sequence reused the completed installation. No live price sync or model calls.",
+    "All step logs and preparation logs are preserved in logs.tar.gz; no stress repetitions were run."
+  ]
+}

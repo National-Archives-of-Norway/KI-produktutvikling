@@ -2,6 +2,8 @@
 
 For repoansvarlig. **Ingen GitHub-remote eller workflow-kjøring finnes ennå.** Dette dokumentet utfører ingen av punktene. Første delte miljø skal være en lukket pilot.
 
+Lokal Docker/Linux arm64-kontroll av c22f1dc har bestått hele kommandorekken på Node 22.18.0 og 24.22.2, inkludert begge bygg. [Kontrollrapporten](CI-KONTROLL.md) dokumenterer dette; den erstatter ikke avkrysning av GitHub-punktene nedenfor. [Dokumentasjonsoversikten](DOKUMENTASJON.md) samler gjeldende status og utkast.
+
 ## Før opplasting
 
 - [ ] Beslutt [bevislagring](BEVISLAGRING.md): hva beholdes i Git, eventuelt Git LFS eller ekstern lagring med sjekksummer. Vurder også bevis som allerede ligger i lokal Git-historikk før første push; en senere sletting fjerner ikke gamle Git-objekter. Ingen eksisterende bevis er flyttet eller slettet i dette arbeidet.

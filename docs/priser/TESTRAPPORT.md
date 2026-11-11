@@ -1,5 +1,11 @@
 # Testrapport for prisinnhenting
 
+## Gjeldende verifiseringsgrunnlag – 11. november 2026
+
+Prisparserne og fixture-simuleringen av workflowens run-steg inngår i siste [komplette CI-kontroll](../CI-KONTROLL.md) av c22f1dc: 206/206 Node-tester og 3/3 Python-tester, innholdssynk, typekontroll, formatering og begge bygg bestod på Node 22.18.0 og 24.22.2 i Docker/Linux arm64. Ingen ny prisinnhenting mot leverandørene ble kjørt, og pris-snapshot er SHA-256-kontrollert uendret.
+
+Begge workflowene bruker samme SHA-låste checkout/setup-node, og prisjobben er konfigurert for Node 24. Actionlint ga 0 feil; valgfrie ShellCheck/Pyflakes ble ikke kjørt. Faktisk Actions/token-/PR-flyt og levende leverandørformater er fortsatt ikke verifisert. Se [første-push-sjekklisten](../FORSTE-PUSH.md) og [dokumentasjonsoversikten](../DOKUMENTASJON.md). Daterte avsnitt nedenfor er bevarte kontrollresultater med sitt opprinnelige omfang.
+
 ## Parseravgrensning, fotnoter og workflow – 11. november 2026
 
 Utførende: Codex (OpenAI), uten underagenter. Lokal arbeidskopi basert på `f2ec93f`, Node 24.22.1 på macOS arm64. Tidligere Linux-/Node 22-resultater nedenfor beholder dato og omfang.
