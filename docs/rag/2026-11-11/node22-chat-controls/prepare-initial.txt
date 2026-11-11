@@ -1,0 +1,18 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 558B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/sha256:54dc4a0935c687a6e7d4c4823b5a7c6bb78b06f8099d9cdc14f48c265aefdeee
+#2 ERROR: pull access denied, repository does not exist or may require authorization: server message: insufficient_scope: authorization failed
+------
+ > [internal] load metadata for docker.io/library/sha256:54dc4a0935c687a6e7d4c4823b5a7c6bb78b06f8099d9cdc14f48c265aefdeee:
+------
+Dockerfile:1
+--------------------
+   1 | >>> FROM sha256:54dc4a0935c687a6e7d4c4823b5a7c6bb78b06f8099d9cdc14f48c265aefdeee
+   2 |     WORKDIR /work
+   3 |     RUN node -e 'const fs=require("node:fs"),crypto=require("node:crypto"),p=require("./package.json");fs.writeFileSync("/installed-contract.json",JSON.stringify({dependencies:p.dependencies,devDependencies:p.devDependencies,lock:crypto.createHash("sha256").update(fs.readFileSync("pnpm-lock.yaml")).digest("hex")}))'
+--------------------
+ERROR: failed to build: failed to solve: sha256:54dc4a0935c687a6e7d4c4823b5a7c6bb78b06f8099d9cdc14f48c265aefdeee: failed to resolve source metadata for docker.io/library/sha256:54dc4a0935c687a6e7d4c4823b5a7c6bb78b06f8099d9cdc14f48c265aefdeee: pull access denied, repository does not exist or may require authorization: server message: insufficient_scope: authorization failed

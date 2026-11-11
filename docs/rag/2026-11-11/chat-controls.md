@@ -29,6 +29,30 @@ Dato: 11. november 2026. Utførende: Codex (OpenAI), uten underagenter. Lokal ar
 
 Dette er en avgrenset visuell/tastatur-/DOM-kontroll, ikke faktisk skjermleserbruk eller en ny full tilgjengelighetsvurdering. Ekstern modell, mobil enhet, IME og øvrige nettlesere er ikke manuelt prøvd.
 
-## Automatiske kontroller
+## Automatiske kontroller – opprinnelig lokal kjøring
 
-`pnpm test` bestod med **172/172 Node-tester**, **3/3 Python-tester**, faktisk innholdssynk og Markdown-lenker. `pnpm typecheck`, `pnpm format:check`, `pnpm build` og `git diff --check` bestod. [Manifest med kilde-/beviskontrollsummer](chat-controls/manifest.json), bygglogg og testbevis er bevart under `chat-controls/`. Ingen ny Docker/Node 22-kjøring, Pages-bygg, utrulling eller publisering.
+`pnpm test` bestod med **172/172 Node-tester**, **3/3 Python-tester**, faktisk innholdssynk og Markdown-lenker. `pnpm typecheck`, `pnpm format:check`, `pnpm build` og `git diff --check` bestod. [Manifest med kilde-/beviskontrollsummer](chat-controls/manifest.json), bygglogg og testbevis er bevart under `chat-controls/`. Ingen Docker/Node 22-kjøring ble gjort i denne opprinnelige lokale kontrollen; oppfølgingen nedenfor gjelder den senere commiten. Ingen Pages-bygg, utrulling eller publisering.
+
+## Oppfølging i Docker/Linux med Node 22 – 11. november 2026
+
+**Commit `065b654` er testet med Node 22.18.0 / Undici 6.21.2, Next.js 16.4.3 på Debian 12.11 / Linux arm64.** Utførende: Codex (OpenAI), uten underagenter. Ingen produktkode eller avhengighet er endret i oppfølgingen.
+
+| Kontroll i containeren                                        | Resultat                                                                                                               |
+| ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Hele Node-testpakken, kommandoen bak test:node                | **172/172**, 0 feil og 0 hoppede tester                                                                                |
+| Chatdelen av samme testpakke                                  | **24/24** i answer-content, chat og chat-controls: lister, grafemer, inputtilbakemelding, avbrudd, ny tur og sene svar |
+| Samlet klient-/kontroll-/reducer-prøve med simulert transport | **100/100** avbrudd og nye innsendinger; 50 gamle svar før nytt svar, 50 etter                                         |
+| Listevarianter i tilleggsprøven                               | **4/4**: 1/1/1 → 1/2/3, 1/2 uendret, 3/7 bevart, ny liste etter avsnitt med egen start                                 |
+| Integritet                                                    | package.json, låsefil og pris-snapshot uendret; installerte dependency-felt og låsefil samsvarer                       |
+
+Tilleggsprøven holder tilbake transportsvaret med vilje etter abort. Klientens kombinerte signal blir avbrutt, turen får riktig melding, og ny innsending kan starte før gammel transport returnerer. Gammel fullføring/finally kan verken frigjøre eller overskrive ny tur. Dette er 100 deterministiske sekvenser med to leveringsrekkefølger, ikke tilfeldig belastningstesting eller en ekstra nettleserkjøring. De 24 chattestene inngår i 172 og skal ikke summeres som nye unike tester.
+
+### Isolasjon og bevis
+
+Eksisterende Linux-avhengigheter ble gjenbrukt uten installasjon eller låsefilendring. En kildekopi fra den navngitte commiten ble lagt i et eget testbilde; historiske docs/bevis ble utelatt fra kildearkivet. Ingen .env eller brukerens installerte node_modules ble montert. Testcontaineren hadde **network none**, ingen publiserte porter, skrivebeskyttet rot, droppede capabilities og no-new-privileges; bare testresultatene og midlertidig /tmp var skrivbare. Loopback-serverne i Node-testene ble lukket, containeren automatisk fjernet og fraværet kontrollert. Eksisterende apptjenester er ikke endret.
+
+Første forsøk på å bruke lokal bilde-ID i FROM ble tolket som et register-navn og feilet under metadataoppslag. Den verifiserte lokale bildetaggen ble deretter brukt uten installasjon; både første feillogg og vellykket oppsett er bevart. Dette var ingen kjøring mot modell eller priskilder.
+
+[Manifest](node22-chat-controls/manifest.json), [runtime](node22-chat-controls/runtime.json), [testutskrift](node22-chat-controls/tests.txt), [tilleggsresultat](node22-chat-controls/late-response-result.json), [kjøreskript](node22-chat-controls/run-linux.sh), [bevart prøveskript](node22-chat-controls/late-response-probe.mjs.txt) og bilde-/arkividentitet ligger i `node22-chat-controls/`. Prøveskriptet er lagret byte for byte som .mjs.txt og ble montert som /probe.mjs i containeren.
+
+Ingen ekte modell eller priskilde er kalt. Ingen ny Linux-bygg-, typekontroll-, Python-, watch-synk-, nettleser-, skjermleser- eller IME-kontroll er utført i denne oppfølgingen. Den tidligere 320 px-kontrollen gjelder fortsatt Node 24-miljøet og fremstilles ikke som nykjørt i Linux. Lokal `pnpm format:check`, `pnpm test:links` (129 filmål i åtte dokumenter) og `git diff --check` bestod etter dokumentoppdateringen. Beta, P1–P10 og manglende produksjonsgodkjenning videreføres.

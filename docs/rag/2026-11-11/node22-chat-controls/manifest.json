@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-11",
+  "agent": "Codex (OpenAI)",
+  "commit": "065b6545e059d9304aa6f07421f41b57d6dace59",
+  "sourceArchiveSha256": "a031be01df74f3aeeb54e258a59599b86c2fa12f91aec9fd76e51fb81d8a172e",
+  "runtime": {
+    "node": "v22.18.0",
+    "undici": "6.21.2",
+    "platform": "linux",
+    "arch": "arm64",
+    "kernel": "7.0.14-linuxkit",
+    "next": "16.4.3",
+    "git": "git version 2.39.5",
+    "debian": "12.11",
+    "dependenciesAndLockMatch": true
+  },
+  "baseImageId": "sha256:54dc4a0935c687a6e7d4c4823b5a7c6bb78b06f8099d9cdc14f48c265aefdeee",
+  "image": {
+    "id": "sha256:cef847356915bc3e8fa4d897e7f67e520af02a7bf12efca2f5aaef97de9b39dd",
+    "os": "linux",
+    "architecture": "arm64"
+  },
+  "dependencies": "Reused existing frozen Linux dependencies; lock and dependency fields matched before tests; no installation",
+  "nodeTests": {
+    "passed": 172,
+    "failed": 0,
+    "skipped": 0
+  },
+  "chatSubsetTests": 24,
+  "probe": {
+    "cycles": 100,
+    "passed": 100,
+    "oldBeforeNew": 50,
+    "oldAfterNew": 50,
+    "listVariantsPassed": 4
+  },
+  "isolation": {
+    "network": "none",
+    "publishedPorts": [],
+    "rootReadOnly": true,
+    "capabilitiesDropped": "ALL",
+    "noNewPrivileges": true,
+    "tmpfs": "/tmp:rw,exec,nosuid,nodev,size=256m",
+    "memory": "2g",
+    "cpus": 2,
+    "autoRemove": true,
+    "containerRemovalVerified": true
+  },
+  "commands": [
+    "node --test tests/*.test.ts tests/*.test.mjs",
+    "node /probe.mjs"
+  ],
+  "probeMountSource": "late-response-probe.mjs.txt (preserved as executed; mounted at /probe.mjs)",
+  "modelTransport": "Simulated; no real model or pricing sources",
+  "newBrowserControl": false,
+  "newBuild": false,
+  "newTypecheck": false,
+  "newPythonControl": false,
+  "newContentSyncWatchControl": false,
+  "inputHashesUnchanged": {
+    "package.json": "9c1f6c83dde0a9a0b69d1d584a10493b04105c72f80cbf9084e4228260c88b07",
+    "pnpm-lock.yaml": "568cf1f2bf0c232b54cd120fb7a7047544b3cbacdbec12dde23ae8128e681d37",
+    "src/content/pricing/snapshot.json": "c5d79a0add306b1c4ef7b0bda21691f235784788916ec58803bbf7f3e2dc6955"
+  },
+  "sourceSha256": {
+    "src/features/rag/parse-answer.ts": "9c2f8c1b612bf1267d7d80ae24813159d5c0b654a9b6acfa23cd01fc04fed620",
+    "src/features/rag/components/answer-content.tsx": "73562c9ec22f558eb962f316d91a81dbcefdbed2890003bc4085c91ecb5d53dd",
+    "src/features/rag/chat-state.ts": "1600e015aba30cb2d4591b115d36ac0905c86b753072bb24b322313e9ed9cb3d",
+    "src/features/rag/use-chat.ts": "6d5ac11c7fc59b097eeac3cd046c530feb1760808b893bb81f0511b47e1bd284",
+    "src/features/rag/client.ts": "0f99dbccceb076fdd23ca3c9bc4629c066be3cd816ed917e6068fd2e17f3a820",
+    "src/features/rag/request-control.ts": "1b93557f71cd0d061d33a5d9050c28d1835cbd88c8752f2a22a4258ee06385e3",
+    "src/features/rag/question-input.ts": "d68a62549761bbc716f80ac3e4d3a98a688b550259ad7671abda0870661823cb",
+    "tests/answer-content.test.ts": "d3f4dc634652dd901bf7ca3146f1ab0eb113bb270fac6bd050eed4e790106ce1",
+    "tests/chat.test.ts": "e396ce371c86aafc5a9ab14a73e1b09986996e53f3e84c3801f53e3952ee69d7",
+    "tests/chat-controls.test.ts": "2f31de3a0f38dc19be4b10a8fe372b7b35e588576f543cd825ed3e8c0dc79520"
+  },
+  "evidenceSha256": {
+    "archive.json": "5d05164ec5a150e2832fffef7197c063f4c8bcba19621177ba14f8e93f1c4d7b",
+    "summary.json": "a004ddeb5198734c07d336cfcc40d26f52b48279c7da6c4d9310c002630f04cb",
+    "input-hashes.json": "ab73a878eb8c7d53dd55277e7cb4cb382b58f7652e340ef06f1caa796a6d3f12",
+    "runtime.json": "6492f258599c96f47ca5036764ae9715fcbac944083e4a63e28b3fc85a51e014",
+    "prepare-image.txt": "c9f00e702fd3434eb064b7f2027b486b6e9733287cd335c7b235ee823019eddb",
+    "exit-codes.txt": "72cc2955890c9770d94f457886e510562f6b54d4becef7f0263f7812f3703e23",
+    "tests.txt": "d2a56eeddc468e73e803954f5ce69f4638dbfd6915a0ab0dc0a0471f77e2b64c",
+    "run-linux.sh": "5a61a24ad90401af3a133ad851de25374c7d09117d76cedfb2c732b62a6b4e2c",
+    "Dockerfile": "a5e02bab383832fc7f94ce51998e11b6bf81b8a8084ab6eee3350de3c0502295",
+    "late-response-result.json": "579d95b1d796733d3b5e09ea36c25ebf61b09de6cd303da8fc3642227da3094d",
+    "late-response-probe.mjs.txt": "56d0c8bfe9caf4e8374e759ef3316a09527d3a81f78f6bba3498f182254f8522",
+    "prepare-initial.txt": "e93aa08fe838e1634c82b5bed5435a2b4eb7b1d1428d8b022d337416cf8b3b98",
+    "probe.txt": "a698c250b12ded817e9a211159f3d286846b82bdf05bc44e1154714b3b640a8f",
+    "image.json": "890f284811d537ff9495563eb537bb46c6e039b6ceeec65eae367b6adef3401d",
+    "container-output.txt": "a004ddeb5198734c07d336cfcc40d26f52b48279c7da6c4d9310c002630f04cb"
+  },
+  "localChecks": {
+    "format": 0,
+    "gitDiffCheck": 0,
+    "markdownLinks": {
+      "exitCode": 0,
+      "checkedTargets": 129,
+      "documents": 8
+    }
+  }
+}

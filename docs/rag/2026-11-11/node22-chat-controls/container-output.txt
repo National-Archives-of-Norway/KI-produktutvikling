@@ -1,0 +1,18 @@
+{
+  "exitCodes": {
+    "node-tests": 0,
+    "late-response-probe": 0
+  },
+  "node": {
+    "passed": 172,
+    "failed": 0,
+    "skipped": 0
+  },
+  "inputUnchanged": true,
+  "afterHashes": {
+    "package.json": "9c1f6c83dde0a9a0b69d1d584a10493b04105c72f80cbf9084e4228260c88b07",
+    "pnpm-lock.yaml": "568cf1f2bf0c232b54cd120fb7a7047544b3cbacdbec12dde23ae8128e681d37",
+    "src/content/pricing/snapshot.json": "c5d79a0add306b1c4ef7b0bda21691f235784788916ec58803bbf7f3e2dc6955"
+  },
+  "passed": true
+}

@@ -6,6 +6,16 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 11. november 2026 – chatrettinger testet i Docker/Linux med Node 22
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Testet commit `065b654` med Node 22.18.0 / Undici 6.21.2, Next 16.4.3 på Debian 12.11 / Linux arm64. Hele Node-pakken bestod **172/172**, uten feil/hoppede tester, inkludert de **24 chattestene** for nummerering, inputgrense, avbrudd, ny innsending og sene svar.
+- Tilleggsprøve med simulert transport bestod **100/100** deterministiske avbrudds-/gjeninnsendingssekvenser: 50 med sent gammelt svar før nytt svar og 50 etter. Gammel fullføring/finally påvirket ikke ny tur. **4/4** listevarianter bestod, inkludert gjentatte markører, eksplisitt hopp og egen start etter avsnitt. Ingen ekte modell eller priskilde ble brukt.
+- Kjørte med network none, ingen publiserte porter og skrivebeskyttet rot. Gjenbrukte eksisterende frosne Linux-avhengigheter; dependency-felt/låsefil er kontrollert. Et første bildeoppsett med lokal ID feilet ved register-metadataoppslag; lokal tagg fungerte uten installasjon. Begge logger er bevart. Containerens fravær er kontrollert; eksisterende appservere er ikke endret.
+- Oppdatert [testrapport](docs/rag/2026-11-11/chat-controls.md) og utviklingsplan med scope og begrensninger. Nye bevis, runtime, bilde-/kildeidentitet, kontrollsummer og kjøreskript ligger i `docs/rag/2026-11-11/node22-chat-controls/`. package.json, låsefil og pris-snapshot er uendret. Funksjonsregisteret er gjennomgått og beholdt; oppfølgingen endrer ikke funksjon eller modenhet.
+- Lokal `pnpm format:check`, `pnpm test:links` (129 filmål i åtte dokumenter) og `git diff --check` bestod. Ingen ny typekontroll, bygg, Python-/watch-synk-, nettleser-/tilgjengelighets- eller virkelig modellverifisering i Linux. Tidligere resultater beholder dato/omfang. Ingen produktkodeendring, commit eller publisering; Beta og P1–P10 videreføres.
+
 ### 11. november 2026 – avbryt chat, tydelig feltgrense og fortløpende lister
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

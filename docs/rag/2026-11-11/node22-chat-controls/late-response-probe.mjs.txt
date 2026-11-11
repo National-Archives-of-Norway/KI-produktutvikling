@@ -1,0 +1,78 @@
+// Kjøres i testcontaineren; all transport simuleres og gjør ingen nettverkskall.
+import assert from "node:assert/strict";
+import { writeFileSync } from "node:fs";
+import { requestAnswer } from "/work/src/features/rag/client.ts";
+import { chatReducer, initialChatState } from "/work/src/features/rag/chat-state.ts";
+import { beginRequest, cancelRequest, finishRequest } from "/work/src/features/rag/request-control.ts";
+import { parseAnswer } from "/work/src/features/rag/parse-answer.ts";
+
+const rows = [];
+for (let run = 1; run <= 100; run++) {
+  let state = initialChatState;
+  const slot = { current: null };
+  const old = beginRequest(slot, 1);
+  state = chatReducer(state, { type: "start", id: 1, question: "første" });
+  let resolveOld, oldSignal;
+  const oldOutcome = requestAnswer("første", { demo: false, signal: old.controller.signal,
+    fetcher: async (_url, init) => {
+      oldSignal = init.signal;
+      // Transporten ignorerer avbruddet med vilje og leverer et sent svar.
+      return new Promise(resolve => { resolveOld = resolve; });
+    },
+  });
+  const id = cancelRequest(slot);
+  state = chatReducer(state, { type: "cancel", id });
+  assert.equal(oldSignal.aborted, true);
+  assert.equal(state.turns[0].error, "Forespørselen ble avbrutt.");
+  assert.equal(state.busy, false);
+  const next = beginRequest(slot, 2);
+  state = chatReducer(state, { type: "start", id: 2, question: "neste" });
+  let resolveNext;
+  const nextOutcome = requestAnswer("neste", { demo: false, signal: next.controller.signal,
+    fetcher: async () => new Promise(resolve => { resolveNext = resolve; }),
+  });
+  const response = () => Response.json({ mode: "sources", sources: [], answer: null });
+  async function late() {
+    resolveOld(response());
+    const outcome = await oldOutcome;
+    assert.equal(outcome.error, "Forespørselen ble avbrutt.");
+    assert.equal(finishRequest(slot, old), false);
+    const before = state;
+    state = chatReducer(state, { type: "complete", id: 1, ...outcome });
+    assert.equal(state, before);
+    assert.equal(state.turns[0].error, "Forespørselen ble avbrutt.");
+  }
+  async function fresh() {
+    assert.equal(next.controller.signal.aborted, false);
+    resolveNext(response());
+    const outcome = await nextOutcome;
+    assert.ok(outcome.result);
+    assert.equal(finishRequest(slot, next), true);
+    state = chatReducer(state, { type: "complete", id: 2, ...outcome });
+  }
+  if (run % 2) {
+    await late();
+    assert.equal(slot.current, next);
+    assert.equal(state.activeId, 2);
+    assert.equal(state.busy, true);
+    await fresh();
+  } else { await fresh(); await late(); }
+  assert.equal(state.busy, false);
+  assert.equal(slot.current, null);
+  assert.ok(state.turns[1].result);
+  rows.push({ run, delivery: run % 2 ? "old-before-new" : "old-after-new", passed: true });
+}
+const variants = [
+  ["1. A\n1. B\n1. C", [[1, 2, 3]]],
+  ["1. A\n2. B", [[1, 2]]],
+  ["3. A\n7. B", [[3, 7]]],
+  ["1. A\n1. B\n\nAvsnitt\n\n5. C\n5. D", [[1, 2], [5, 6]]],
+];
+for (const [text, expected] of variants) {
+  const lists = parseAnswer(text).filter(block => block.type === "ordered-list");
+  assert.deepEqual(lists.map(list => list.items.map(item => item.number)), expected);
+}
+const result = { cycles: rows.length, passed: rows.filter(row => row.passed).length, simulatedTransport: true,
+  oldBeforeNew: 50, oldAfterNew: 50, listVariantsPassed: variants.length, rows };
+writeFileSync("/results/late-response-result.json", JSON.stringify(result, null, 2) + "\n");
+console.log("Bestått: 100/100 avbrudd/ny innsending med sene svar; 4/4 listevarianter.");

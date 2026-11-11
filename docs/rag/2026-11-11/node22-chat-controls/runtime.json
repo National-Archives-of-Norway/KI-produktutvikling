@@ -1,0 +1,11 @@
+{
+  "node": "v22.18.0",
+  "undici": "6.21.2",
+  "platform": "linux",
+  "arch": "arm64",
+  "kernel": "7.0.14-linuxkit",
+  "next": "16.4.3",
+  "git": "git version 2.39.5",
+  "debian": "12.11",
+  "dependenciesAndLockMatch": true
+}
