@@ -3,6 +3,16 @@ import type { ContentPage } from "../page-content.ts";
 export const privacy = {
   id: "personvern",
   href: "/personvern/",
+  keywords: [
+    "lagring",
+    "lagret",
+    "slette",
+    "historikk",
+    "samtale",
+    "chathistorikk",
+    "tømme",
+    "logg",
+  ],
   status: "draft",
   navTitle: "Personvernerklæring",
   title: "Personvern i KI-Produktutvikling",

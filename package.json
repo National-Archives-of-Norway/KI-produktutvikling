@@ -19,10 +19,11 @@
     "test:pricing": "node --test tests/pricing.test.mjs",
     "test:a11y": "node scripts/a11y/native.mjs",
     "test:a11y:smoke": "node scripts/a11y/smoke.mjs",
-    "test:node": "node --test tests/*.test.ts tests/*.test.mjs",
+    "test:node": "node scripts/test-node.mjs",
     "test:python": "python3 -m unittest discover -s tests -p 'test_html_accessibility.py'",
     "test:links": "node scripts/check-markdown-links.mjs",
-    "test": "pnpm test:node && pnpm test:python && pnpm test:content-sync && pnpm test:links"
+    "test": "pnpm test:node && pnpm test:python && pnpm test:content-sync && pnpm test:links",
+    "test:blind": "node --test tests/rag-blind.test.ts"
   },
   "engines": {
     "node": ">=22.18.0"

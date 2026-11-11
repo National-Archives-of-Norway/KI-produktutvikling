@@ -45,12 +45,14 @@ pnpm build:pages
 
 | Kommando                 | Omfang                                                                                                                                                       |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `pnpm test:node`         | Alle Node-tester; `test:rag` er et kompatibilitetsalias.                                                                                                     |
+| `pnpm test:node`         | Ordinære Node-tester, inkludert syntetiske blindrapportkontroller; selve blindmålingen er unntatt. `test:rag` er et kompatibilitetsalias.                    |
 | `pnpm test:python`       | Unittest-discover for `tests/test_html_accessibility.py`.                                                                                                    |
 | `pnpm test:content-sync` | Isolert RAG-kopi og watch-omlasting etter endring i felles innhold.                                                                                          |
 | `pnpm test:links`        | Relative filreferanser i rot-Markdown og direkte `docs/*.md`; ingen nettverkskall eller rekursiv beviskontroll. Fragmenter og portalruter kontrolleres ikke. |
 | `pnpm test:pricing`      | Avgrensede parser-/fil-/PR-tester uten priskildekall.                                                                                                        |
 | `pnpm test:a11y`         | Separat axe/Nu-kontroll etter Pages-bygg; krever passende Chrome/driver og Java. Er ikke full WCAG-godkjenning.                                              |
+
+Blindmåling kjøres separat med `RAG_BLIND_FILE="<fil utenfor repoet>" pnpm test:blind`. [Repo-filen](tests/fixtures/rag-blind.json) er bare en tom mal; det ekte settet oppbevares og vurderes av et menneske utenfor repoet, aldri av den som justerer søket. Stier i repoet og symbolske omveier inn i repoet avvises. Uten variabel måles ingenting. Standardutskriften viser bare riktige/totalt, prosent, bom med forventet kilde og falske treff uten forventet kilde. `RAG_BLIND_VERBOSE=1` viser detaljer **kun for mennesker; aldri for den som justerer søket eller til tuning**. Målingen har ingen beståttgrense og inngår ikke i `pnpm test` eller CI; ordinære tester bruker bare egne syntetiske data.
 
 [CI](.github/workflows/ci.yml) er klargjort for push, pull requests og manuell kjøring. Matrisen er konfigurert til å kjøre hele kontrollrekken på **Node 22.18.0** (minsteversjonen i engines.node) og **Node 24**. Prisjobben bruker samme 24-linje; check-latest sikrer nyeste tilgjengelige 24-utgave. Endres minsteversjonen i package.json, må matrisen oppdateres samtidig. pnpm velges fra `packageManager`. Python 3 settes opp separat. Installasjon bruker låsefilen, og CI kjører format, typer, test, serverbygg og Pages-bygg uten prosjektsecrets eller prissynkronisering. Installasjon og verktøyoppsett trenger nettverk; testene henter ikke priser.
 

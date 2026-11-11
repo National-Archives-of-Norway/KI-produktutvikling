@@ -6,6 +6,47 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 11. november 2026 – tastaturfokus ved sending og avbrudd i chat
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Bekreftet fokusfallet før retting: ny test av faktisk ChatComposer feilet på native disabled, og nettleser viste BUTTON «Send spørsmål» → BODY ved Enter. Historisk chat-dates-port-rapport er bevart.
+- Send beholder fokus med aria-disabled under venting, synlig kant/tekst og sperret standardaktivering. controller.current-sperren i useChat er beholdt. Avbryt er fortsatt egen type=button etter Send. Ved busy→idle flyttes fokus til feltet bare fra Send/body; valgt fokus på andre kontroller beholdes. Rene shouldIgnoreSend/focusTargetAfterRequest og komponenttester prøver gjentatt Enter/klikk, fokuserbarhet, separate knapper og fokusavgjørelser uten nye avhengigheter.
+- Avgrenset nettleserkontroll ved 320 × 800 og 1280 × 900 med isolert prosjektkopi og simulert transport: Enter/dobbel Enter beholder Send; Tab når Avbryt; avbrudd og ferdig svar fra Send gir feltfokus; ny innsending virker og valgt personvernlenke beholdes ved svar i etterprøvingen. Ekte dobbeltklikk ved desktopbredde avbrøt ikke. Rapporten dokumenterer også en ikke-reprodusert mobilobservasjon av MAIN-fokus og et første forsøk før hydrering; disse er ikke regnet som beståtte prøver. Beregnet tekst-/kantkontrast er minst 11,47:1 mot målte mørke flater, og mobilvisningen har ingen horisontal overflyt.
+- Oppdatert funksjonsregister, arkitektur og utviklingsplan. [Én fokusrapport](docs/rag/2026-11-11/chat-focus.md) inneholder document.activeElement etter stegene og ett skjermbilde. Skjermleser er ikke testet. Ingen full tilgjengelighets- eller produksjonsgodkjenning; P8 og øvrige åpne krav videreføres.
+- pnpm test bestod med **263/263 Node-tester**, **3/3 Python-tester**, faktisk innholdssynk og lenkekontroll. pnpm typecheck og pnpm build bestod. Etter dokumentoppdatering bestod pnpm format:check, git diff --check og 190 relative filmål i 11 dokumenter. Ingen nye avhengigheter, API-endring, blindsett, test:blind, ekte modell-/priskildekall, Docker/Node 22, Pages-bygg, commit eller push. Tidligere ukommiterte endringer er bevart.
+
+### 11. november 2026 – søkenøkkelord for innhold i Spør KI
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Skrev fem nye utviklingsforventninger før endring og bekreftet bommene: prompt ga ingen kilder i denne arbeidskopien, instrukser ga Kom i gang/Om, to lagrings-/tømmespørsmål ga ingen kilder og samtalespørsmålet ga brukerbehov. Utvikling var 29/34; uendret heldOutEvaluation 20/20 og chatforslag 6/6.
+- Lagt til valgfrie keywords på ContentPage og SourceSelection. Den bestilte listen ligger på tydelig-kontekst-ressursen og personvernsiden. Prosa vedlikeholdes fortsatt bare i side-/ressursfilene. Ingen ekstra aliaser foreslås; listen med tekstbegrunnelser skal gjennomgås av et menneske før fletting.
+- Indekserer nøkkelord separat med samme språkregler, tre grunnpoeng og sterkt feltfeste. Beste feltbidrag beholdes uten dobbelttelling; metadata inngår ikke i source.text, eksportert corpus, API-svar eller modellgrunnlag. Eksisterende ressursaliaser bruker også dette feltet. Bare ved spørsmål med minst to søkestammer og ingen andre temaord kan en lavvektet handling bli tema gjennom eksplisitt nøkkelord i den aktuelle kilden; ett isolert handlingsord er fortsatt for uklart. Ingen API-kontraktendring eller regler for enkeltspørsmål.
+- Tester avviser tomme, dupliserte, stoppordbaserte og overflødige tittelaliaser på nye sider/seksjoner. Nye ressursaliaser testes med samme validator; eldre katalogmetadata beholdes kompatible. Egne tester dekker rangering, normalisering, seksjonsavgrensning og at metadata ikke vises. Reell watch-kontroll prøver tilføying og fjerning av alias i midlertidig prosjektkopi, i tillegg til prosaomlasting.
+- Oppdatert arkitektur, funksjonsregister og utviklingsplan. [Rapporten](docs/rag/2026-11-11/sokenokkelord.md) har listen, sitater fra eksisterende innhold og alle før-/etterrader. Utvikling er **34/34**, uendret heldOutEvaluation **20/20**, chatforslag **6/6** og øvrige spørsmålsregresjoner **5/5**; ingen eksisterende forventning er endret.
+- pnpm test bestod med **258/258 Node-tester**, **3/3 Python-tester**, faktisk innholdssynk (inkludert nøkkelord) og lenkekontroll. Etter dokumentoppdatering bestod **187 relative filmål i 11 dokumenter**, pnpm typecheck, pnpm format:check og git diff --check. Ingen blindsett er lest/brukt eller pnpm test:blind kjørt. Ingen ekte modell-/priskildekall, nye avhengigheter, Docker-/nettleser-/byggkontroll, commit eller push. Foregående ukommiterte arbeid er bevart; Beta og P1–P10 videreføres.
+
+### 11. november 2026 – norske verbstammer og kilder til to temaer
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Bekreftet før endring at seks verbfamilier fikk ulike stammer, frekvensord ble stående og de tre oppgitte spørsmålene feilet. Med de tre nye forventningene skrevet først var utvikling 26/29; heldOutEvaluation var 20/20, chatforslag 6/6 og øvrige eksisterende spørsmålsregresjoner 5/5.
+- Utvidet den felles stammingen med lengst endelse først, liten unntaksliste, genitiv-s, e-fjerning og avgrenset dobbelkonsonantforenkling. Begrunnede avvik beskytter -sikt/-ment, beholder -er i -ert, tillater korte l-stammer for delt/deling og skiller kom/kommer. Frekvensord er samlet i egen stoppgruppe. ActionTerms bruker samme nye stammer; endre/oppdatere/slette inngår som lavvektede innholdsforvaltningshandlinger.
+- Beholdt det ordinære filteret først. Bare ved null treff prøves sjeldne enkeltord med sterkt felt-/eksakt langt stammetreff, minst to støttede temaer, én beste kilde per tema, avduplisering og maks tre. Grensen for sjeldne ord avrundes til hele dokumenter, og reservens konkrete omtale lengdenormaliseres ikke. Små emnetillegg for tittelhovedord/linjestart bevarer direkte emner framfor tilfeldige omtaler. Ingen spørsmålsstrenger eller kilde-ID-er inngår i rangeringen.
+- Oppdatert funksjonsregister, arkitektur og utviklingsplan. [Én kort rapport](docs/rag/2026-11-11/stamming-og-to-temaer.md) har tabeller før/etter for alle 29 utviklingsspørsmål og de 20 uendrede heldOut-spørsmålene, ordgrupper og eksplisitte avvik fra forslaget. Ingen eksisterende evalueringsforventning er endret; heldOut-arrayet er SHA-256-kontrollert identisk. Foregående ukommiterte blindrapportendringer er bevart.
+- pnpm test bestod med **242/242 Node-tester**, **3/3 Python-tester**, faktisk innholdssynk og **184 relative filmål** i 11 dokumenter. pnpm typecheck, pnpm format:check og git diff --check bestod. De 101 fokuserte språk-/RAG-testene inngår i Node-pakken. Utvikling er 29/29 mot 26/29 før; uendret heldOutEvaluation 20/20, chatforslag 6/6 og øvrige eksisterende spørsmålsregresjoner 5/5. Ingen blinde testsett er lest eller brukt, og pnpm test:blind er ikke kjørt i denne oppgaven. Ordinære tester bruker bare sine egne syntetiske rapportfiler. Ingen nye avhengigheter, embeddings, API-endring, ekte modell-/priskildekall, Docker-/nettleser-/byggkontroll, commit eller push; Beta og P1–P10 videreføres.
+
+### 11. november 2026 – ekstern blindmåling uten spørsmål i standardlogger
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Rapporttesten leser filvalg bare fra RAG_BLIND_FILE. Uten variabel gis den oppgitte ikke-målt-diagnostikken og testen består. Oppgitt sti inne i repoet avvises før lesing, og realpath av fil/reporot hindrer ekstern symbolsk lenke i å omgå grensen. Sti i repoet som peker ut av repoet avvises også; søskenkataloger håndteres med kataloggrenser.
+- Standardutskrift er bare riktige/totalt, prosent, bom med forventet kilde og falske treff uten forventet kilde. Spørsmål, kilde-ID-er og filstier logges ikke. Bare eksakt RAG_BLIND_VERBOSE=1 viser rader, dokumentert kun for menneskelig vurdering og aldri for den som justerer søket eller tuning. Tom/ugyldig/uleselig fil gir ikke målt uten rå feiltekst; ingen poenggrense feiler bygget.
+- Lagt til separat test:blind. test:node bruker nå et lite filutvalgsskript som utelater selve blindmålingen, også via test:rag, pnpm test og CI. Syntetiske kontrolltester for rapporten inngår fortsatt; underprosesser fjerner arvet filvalg/verbose før egne testverdier settes. Malens skjema og tomme liste er beholdt; instruksjonene sier at ekte data holdes utenfor repoet.
+- Oppdatert README, arkitektur og utviklingsplan. Søkealgoritme, kilder, funksjonsregister/modenhet og produksjonsstatus er uendret. Ingen blinde testsett utenfor repoet er søkt etter, åpnet eller lest; bare egne syntetiske tempfiler er brukt. Ingen ekte blindmåling eller spørsmål/innhold er etterspurt.
+- Kontroller: pnpm test bestod med 216/216 Node-tester (inkludert 13 syntetiske blindrapportkontroller), 3/3 Python-tester, faktisk innholdssynk og 181 relative filmål i 11 dokumenter. pnpm typecheck, pnpm format:check og git diff --check bestod. Separat test:blind ble bare kjørt med RAG_BLIND_FILE/RAG_BLIND_VERBOSE eksplisitt fjernet og ga eksakt ikke-målt-melding; ingen ekte blindmåling er kjørt. Ingen nye avhengigheter, ekte modell-/priskildekall, Docker-/nettleser-/byggkontroll, commit eller push. Tidligere bevis og tom mal er ikke fylt med ekte spørsmål.
+
 ### 11. november 2026 – fjernet Oversikt fra bunnmenyen
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

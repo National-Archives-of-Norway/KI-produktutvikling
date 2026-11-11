@@ -1,9 +1,12 @@
 {
   "schemaVersion": 1,
   "instructions": [
-    "Fylles bare av et menneske som ikke justerer kildesøket. Assistenten skal la blindEvaluation stå tom.",
+    "Dette er bare en tom mal. Det ekte blinde settet holdes utenfor repoet og skrives av et menneske som ikke justerer søket.",
+    "Kopier malen til en ekstern fil, fyll den ut der og pek RAG_BLIND_FILE til filen ved eksplisitt pnpm test:blind. Ikke legg det ekte settet i Git.",
+    "Assistenten og den som justerer søket skal ikke søke etter, åpne eller lese det ekte settet. Bruk bare syntetiske data i regresjonstester.",
     "Fastsett spørsmål og forventet kilde før første kjøring. Bruk kilde-ID fra portalen, eller null hvis ingen kilde skal gis.",
-    "Ikke bruk dette settet til tuning eller flytt spørsmålene til utviklingssettet. Resultatet er rapportering, ikke en bygggrense.",
+    "Standardrapporten inneholder bare samlede tall. RAG_BLIND_VERBOSE=1 er kun for mennesker som vurderer settet, aldri for den som justerer søket. Ikke bruk rapportdetaljer til tuning.",
+    "Resultatet er rapportering uten bygggrense; test:blind inngår ikke i pnpm test eller CI.",
     "maxRank er valgfri, med standard 1. Bruk 1 når riktig kilde skal være først; 2 eller 3 bare når dette er bestemt på forhånd.",
     "Ingen hemmeligheter eller personopplysninger skal legges i spørsmålene."
   ],
@@ -12,9 +15,19 @@
     "required": ["question", "expectedId"],
     "additionalProperties": false,
     "properties": {
-      "question": { "type": "string", "minLength": 1 },
-      "expectedId": { "type": ["string", "null"], "minLength": 1 },
-      "maxRank": { "type": "integer", "minimum": 1, "maximum": 3 }
+      "question": {
+        "type": "string",
+        "minLength": 1
+      },
+      "expectedId": {
+        "type": ["string", "null"],
+        "minLength": 1
+      },
+      "maxRank": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 3
+      }
     }
   },
   "blindEvaluation": []

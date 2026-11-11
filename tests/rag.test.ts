@@ -100,12 +100,24 @@ test("cookie-informasjon kan leveres som RAG-kilde uten å åpne for ukjente rut
   );
 });
 
-// Utviklingssett: eksisterende 26 spørsmål. Forventningene bevares.
+// Utviklingssett: kjente spørsmål, inkludert bøyninger og søkenøkkelord.
 export const developmentEvaluation: {
   question: string;
   expectedId: string | null;
   maxRank?: number;
+  additionalIds?: string[];
 }[] = [
+  {
+    question: "Hvordan skriver jeg en god prompt?",
+    expectedId: "tydelig-kontekst",
+  },
+  {
+    question: "Hvordan skriver jeg gode instrukser?",
+    expectedId: "tydelig-kontekst",
+  },
+  { question: "Lagrer dere det jeg skriver?", expectedId: "personvern" },
+  { question: "Hvordan tømmer jeg chatten?", expectedId: "personvern" },
+  { question: "Blir samtalen lagret?", expectedId: "personvern" },
   { question: "Hvem er statsministeren?", expectedId: null },
   { question: "Hva er været i Oslo i morgen?", expectedId: null },
   { question: "Hva koster Claude?", expectedId: "priser" },
@@ -161,10 +173,18 @@ export const developmentEvaluation: {
     expectedId: "tilgjengelighetserklaering",
   },
   { question: "Kan du anbefale en restaurant i Bergen?", expectedId: null },
+  { question: "Kan jeg slette historikken?", expectedId: "personvern" },
+  { question: "Hvor ofte oppdateres prisene?", expectedId: "priser" },
+  {
+    question: "Kan jeg bruke KI på arkivmateriale med personopplysninger?",
+    expectedId: "retningslinjer",
+    maxRank: 3,
+    additionalIds: ["personvern"],
+  },
 ];
 
 // Historisk navn: dette er 20 kjente regresjoner, ikke et blindt testsett.
-// Kun rag-blind.json skal fylles uavhengig av den som justerer søket.
+// Ekte blindsett holdes utenfor repoet og brukes ikke til utvikling.
 export const heldOutEvaluation: typeof developmentEvaluation = [
   { question: "Hvor mye koster en pizza i Oslo?", expectedId: null },
   { question: "Hva er Nasjonalarkivet?", expectedId: null },
@@ -206,16 +226,23 @@ for (const [set, evaluation] of [
   ["held-out", heldOutEvaluation],
 ] as const) {
   if (process.env.RAG_EVAL_SET && process.env.RAG_EVAL_SET !== set) continue;
-  for (const { question, expectedId, maxRank = 1 } of evaluation) {
+  for (const {
+    question,
+    expectedId,
+    maxRank = 1,
+    additionalIds = [],
+  } of evaluation) {
     test(`kildeevaluering (${set}): ${question}`, () => {
       const ids = retrieve(question).map((source) => source.id);
       if (expectedId === null) assert.deepEqual(ids, [], question);
       else {
-        const rank = ids.indexOf(expectedId) + 1;
-        assert.ok(
-          rank > 0 && rank <= maxRank,
-          `${question}: forventet ${expectedId} blant de ${maxRank} første, fikk ${JSON.stringify(ids)}`,
-        );
+        for (const expected of [expectedId, ...additionalIds]) {
+          const rank = ids.indexOf(expected) + 1;
+          assert.ok(
+            rank > 0 && rank <= maxRank,
+            `${question}: forventet ${expected} blant de ${maxRank} første, fikk ${JSON.stringify(ids)}`,
+          );
+        }
       }
     });
   }
@@ -393,4 +420,119 @@ test("handlingsord gir ikke treff alene, men skiller mellom kilder med samme emn
     make("lagres", "Datasamling lagres."),
   ]);
   assert.equal(search("datasamling lagres")[0]?.id, "lagres");
+});
+
+test("reserveløpet krever to støttede temaer og returnerer én kilde per tema", () => {
+  const search = createRetriever([
+    {
+      id: "n1",
+      title: "Første dokument",
+      href: "/kom-i-gang/",
+      text: "Generell innledning.\nDetaljert forklaring om alfatematikk.",
+    },
+    {
+      id: "n2",
+      title: "Andre dokument",
+      href: "/kom-i-gang/",
+      text: "Generell innledning.\nDetaljert forklaring om betatematikk.",
+    },
+  ]);
+  assert.deepEqual(
+    new Set(search("alfatematikk betatematikk").map((s) => s.id)),
+    new Set(["n1", "n2"]),
+  );
+  assert.deepEqual(search("alfatematikk ukjenttema"), []);
+});
+
+test("vanlige ord kan ikke utløse en reservekilde alene", () => {
+  const search = createRetriever(
+    Array.from({ length: 6 }, (_, index) => ({
+      id: `dokument-${index}`,
+      title: "Dokument",
+      href: "/kom-i-gang/",
+      text: "Beskrivelse av fellesstoff og øvrige forhold.",
+    })),
+  );
+  assert.deepEqual(search("fellesstoff ukjenttema"), []);
+});
+
+test("reserveprioritering bruker konkret omtale, ikke bare kort dokumentlengde", () => {
+  const search = createRetriever([
+    {
+      id: "kort",
+      title: "Dokument",
+      href: "/kom-i-gang/",
+      text: "Innledning.\nUnngå alfatematikk.",
+    },
+    {
+      id: "omtale",
+      title: "Dokument",
+      href: "/kom-i-gang/",
+      text: `Innledning.\nDetaljert omtale av alfatematikk og alfatematikk. ${"Fyllstoff. ".repeat(60)}`,
+    },
+    {
+      id: "annet",
+      title: "Dokument",
+      href: "/kom-i-gang/",
+      text: "Innledning.\nDetaljert omtale av betatematikk.",
+    },
+  ]);
+  const ids = search("alfatematikk betatematikk").map((s) => s.id);
+  assert.ok(ids.includes("omtale"));
+  assert.ok(ids.includes("annet"));
+  assert.ok(!ids.includes("kort"));
+});
+
+test("korte brødtekstord uten feltstøtte tas ikke med i reserven", () => {
+  const search = createRetriever([
+    {
+      id: "kortord",
+      title: "Dokument",
+      href: "/kom-i-gang/",
+      text: "Innledning.\nDetaljert omtale av kode.",
+    },
+    {
+      id: "langtord",
+      title: "Dokument",
+      href: "/kom-i-gang/",
+      text: "Innledning.\nDetaljert omtale av betatematikk.",
+    },
+  ]);
+  assert.deepEqual(search("kode betatematikk"), []);
+});
+
+test("reservekilder avdupliseres og begrenses til tre", () => {
+  const words = [
+    "alfatematikk",
+    "betatematikk",
+    "gammatematikk",
+    "deltatematikk",
+    "epsilontematikk",
+    "zetatematikk",
+    "etatematikk",
+    "thetatematikk",
+  ];
+  const search = createRetriever(
+    words.map((word, index) => ({
+      id: `tema-${index}`,
+      title: "Dokument",
+      href: "/kom-i-gang/",
+      text: `Innledning.\nDetaljert omtale av ${word}.`,
+    })),
+  );
+  const result = search(words.join(" "));
+  assert.equal(result.length, 3);
+  assert.equal(new Set(result.map((s) => s.id)).size, 3);
+  const joint = createRetriever([
+    {
+      id: "samlet",
+      title: "Dokument",
+      href: "/kom-i-gang/",
+      text: "Innledning.\nDetaljert omtale av alfatematikk og betatematikk.",
+    },
+  ]);
+  assert.equal(
+    joint("alfatematikk betatematikk ukjenttema utestoff annettema").length,
+    1,
+  );
 });

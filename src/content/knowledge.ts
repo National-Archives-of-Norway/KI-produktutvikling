@@ -6,7 +6,8 @@ import { about } from "./pages/om.ts";
 import { gettingStarted } from "./pages/kom-i-gang.ts";
 import { guidelines } from "./pages/retningslinjer.ts";
 import { blockText, plainContent, type ContentPage } from "./page-content.ts";
-import type { RagSource } from "../features/rag/contracts.ts";
+import type { SearchSource } from "../features/rag/search-source.ts";
+import { validateSearchKeywords } from "../features/rag/search-language.ts";
 
 export const contentPages: ContentPage[] = [
   mcpOverview,
@@ -18,7 +19,8 @@ export const contentPages: ContentPage[] = [
   cookieInformation,
 ];
 
-type SourceSelection = {
+export type SourceSelection = {
+  keywords?: string[];
   pageId: string;
   section?: string;
   summary: string;
@@ -26,7 +28,7 @@ type SourceSelection = {
   note?: string;
 };
 
-// References only: prose lives in the page files, never in the RAG index.
+// Prose lives in page files. Selections contain references and optional search aliases only.
 const selections: SourceSelection[] = [
   {
     pageId: "informasjonskapsler",
@@ -90,8 +92,15 @@ const selections: SourceSelection[] = [
 
 export function buildPageSources(
   pages: ContentPage[] = contentPages,
-): RagSource[] {
-  return selections.map((selection) => {
+  sourceSelections: SourceSelection[] = selections,
+): SearchSource[] {
+  for (const page of pages)
+    validateSearchKeywords(
+      page.keywords,
+      `${page.navTitle} ${page.title}`,
+      page.id,
+    );
+  return sourceSelections.map((selection) => {
     const page = pages.find((item) => item.id === selection.pageId);
     if (!page) throw new Error(`Mangler innholdsside: ${selection.pageId}`);
     const text = (id: string) => {
@@ -118,7 +127,12 @@ export function buildPageSources(
       selection.section && firstHeading
         ? blockText(firstHeading)
         : `${page.navTitle}: ${firstHeading ? blockText(firstHeading) : page.title}`;
+    const keywords = selection.section
+      ? selection.keywords
+      : [...(page.keywords ?? []), ...(selection.keywords ?? [])];
+    validateSearchKeywords(keywords, title, selection.section ?? page.id);
     return {
+      ...(keywords?.length ? { keywords } : {}),
       id: selection.section ?? page.id,
       href: page.href + (selection.section ? `#${selection.section}` : ""),
       title,

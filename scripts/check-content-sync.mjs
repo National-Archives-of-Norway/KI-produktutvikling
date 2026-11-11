@@ -34,14 +34,14 @@ try {
   child.stderr.on("data", (data) => {
     output += data;
   });
-  async function waitForAnswer(check) {
+  async function waitForAnswer(check, question = "Hva er KI-prat?") {
     const deadline = Date.now() + 15000;
     while (Date.now() < deadline) {
       try {
         const result = await fetch(`http://127.0.0.1:${port}/api/rag`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ question: "Hva er KI-prat?" }),
+          body: JSON.stringify({ question }),
           signal: AbortSignal.timeout(1000),
         });
         const data = await result.json();
@@ -76,8 +76,26 @@ try {
       .find((source) => source.id === "ki-prat")
       .text.includes("annenhver torsdag"),
   );
+  // Metadata må utløse samme omlasting som prosa, uten å bli kildeinnhold.
+  const alias = "synkmetadataord";
+  await waitForAnswer((data) => data.sources?.length === 0, alias);
+  const privacyFile = join(fixture, "src/content/pages/personvern.ts");
+  const privacyBefore = await readFile(privacyFile, "utf8");
+  const privacyAfter = privacyBefore.replace(
+    "keywords: [",
+    `keywords: ["${alias}",`,
+  );
+  assert.notEqual(privacyBefore, privacyAfter);
+  await writeFile(privacyFile, privacyAfter);
+  const keywordUpdated = await waitForAnswer(
+    (data) => data.sources?.[0]?.id === "personvern",
+    alias,
+  );
+  assert.ok(!JSON.stringify(keywordUpdated).includes(alias));
+  await writeFile(privacyFile, privacyBefore);
+  await waitForAnswer((data) => data.sources?.length === 0, alias);
   console.log(
-    "Bestått: endring i en felles innholdsfil lastes automatisk inn i RAG-API-et med oppdatert tekst og veiledning. Testen brukte en isolert midlertidig prosjektkopi.",
+    "Bestått: endring i en felles innholdsfil lastes automatisk inn i RAG-API-et med oppdatert tekst og veiledning. Tilføyde og fjernede søkenøkkelord lastes også inn på nytt, uten metadata i API-svaret. Testen brukte en isolert midlertidig prosjektkopi.",
   );
 } finally {
   if (child && child.exitCode === null) {

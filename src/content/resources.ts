@@ -171,6 +171,14 @@ export const resources: Resource[] = [
   },
   {
     slug: "tydelig-kontekst",
+    keywords: [
+      "prompt",
+      "prompting",
+      "instruks",
+      "instruksjon",
+      "ledetekst",
+      "oppgavebeskrivelse",
+    ],
     type: "Instruks",
     action: "Les instruksen",
     title: "Gi KI tydelig kontekst",

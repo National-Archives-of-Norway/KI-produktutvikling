@@ -60,7 +60,7 @@ function buttons(html: string) {
     }),
   );
 }
-test("Send beholder identiteten og deaktiveres mens separat Avbryt er tilgjengelig", () => {
+test("Send er fokuserbar med aria-disabled mens separat Avbryt er tilgjengelig", () => {
   const idle = buttons(render(false)),
     busy = buttons(render(true));
   assert.ok(
@@ -72,12 +72,14 @@ test("Send beholder identiteten og deaktiveres mens separat Avbryt er tilgjengel
   );
   const send = busy.find((button) => button.label === "Send spørsmål");
   assert.ok(send, "Send skal ikke byttes ut med Avbryt ved neste klikk");
-  assert.match(send.attributes, /disabled/);
+  assert.match(send.attributes, /aria-disabled="true"/);
+  assert.doesNotMatch(send.attributes, /(?:^|\s)disabled(?:[=\s]|$)/);
   assert.match(send.attributes, /type="submit"/);
   const cancel = busy.find((button) => button.label === "Avbryt");
   assert.ok(cancel);
   assert.match(cancel.attributes, /type="button"/);
   assert.doesNotMatch(cancel.attributes, /disabled/);
+  assert.ok(busy.indexOf(cancel) > busy.indexOf(send));
   assert.ok(!idle.some((button) => button.label === "Avbryt"));
 });
 test("skjemaet eksponerer aria-busy under forespørsel", () => {

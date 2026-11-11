@@ -4,7 +4,8 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import SendRounded from "@mui/icons-material/SendRounded";
 import type { FormEventHandler } from "react";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { shouldIgnoreSend, focusTargetAfterRequest } from "../composer-focus";
 import { QUESTION_LIMIT } from "../contracts";
 import { prepareQuestionInput, questionInputFeedback } from "../question-input";
 export function ChatComposer({
@@ -29,6 +30,20 @@ export function ChatComposer({
   onCancel: () => void;
 }) {
   const input = useRef<HTMLTextAreaElement>(null);
+  const send = useRef<HTMLButtonElement>(null);
+  const wasBusy = useRef(busy);
+  useEffect(() => {
+    const finished = wasBusy.current && !busy;
+    wasBusy.current = busy;
+    const doc = input.current?.ownerDocument;
+    if (!finished || !doc) return;
+    const target = focusTargetAfterRequest<Element>(doc.activeElement, {
+      send: send.current,
+      body: doc.body,
+      input: input.current,
+    });
+    if (target === input.current) input.current?.focus();
+  }, [busy]);
   const composing = useRef(false);
   const [wasTruncated, setWasTruncated] = useState(false);
   function change(value: string) {
@@ -103,7 +118,11 @@ export function ChatComposer({
         <Button
           type="submit"
           variant="contained"
-          disabled={busy}
+          ref={send}
+          aria-disabled={busy}
+          onClick={(event) => {
+            if (shouldIgnoreSend(busy)) event.preventDefault();
+          }}
           sx={{ minHeight: 44 }}
           className="chat-send"
           endIcon={<SendRounded />}
@@ -111,14 +130,7 @@ export function ChatComposer({
           Send spørsmål
         </Button>
         {busy && (
-          <Button
-            type="button"
-            onClick={() => {
-              onCancel();
-              input.current?.focus();
-            }}
-            sx={{ minHeight: 44 }}
-          >
+          <Button type="button" onClick={onCancel} sx={{ minHeight: 44 }}>
             Avbryt
           </Button>
         )}

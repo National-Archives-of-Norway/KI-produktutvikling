@@ -10,6 +10,7 @@ export type ContentPage = {
   title: string;
   eyebrow: string;
   lead: string;
+  keywords?: string[];
   blocks: ContentBlock[];
 };
 

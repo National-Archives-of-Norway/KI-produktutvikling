@@ -307,9 +307,12 @@
 .chat-send.MuiButton-root:hover {
   box-shadow: 0 0 20px color-mix(in srgb, var(--accent) 13.333333%, transparent);
 }
-.chat-send.MuiButton-root:disabled {
-  background: color-mix(in srgb, var(--accent) 8%, transparent);
+.chat-send.MuiButton-root[aria-disabled="true"] {
+  background: var(--surface);
   color: var(--muted);
+  border: 1px solid var(--muted);
+  box-shadow: none;
+  cursor: not-allowed;
 }
 .chat-launcher.MuiButton-root {
   color: var(--accent);
