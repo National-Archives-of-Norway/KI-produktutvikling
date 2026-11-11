@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-11",
+  "agent": "Codex (OpenAI)",
+  "commit": "7ebbab353442004fb2f70f6d948b5c711db0fddd",
+  "sourceArchiveSha256": "b9d6831936d7033a3fe95647ba451b183aafdeabcad0a325bbbc4d5224fe700f",
+  "baseImage": "sha256:54dc4a0935c687a6e7d4c4823b5a7c6bb78b06f8099d9cdc14f48c265aefdeee",
+  "image": {
+    "id": "sha256:d38f041615b894b98444f21d0d3e62d24c81db4594aff9bb715ad989811da7a4",
+    "os": "linux",
+    "architecture": "arm64"
+  },
+  "dockerServerVersion": "29.8.2",
+  "dependencies": "Reused frozen Linux dependencies from prior Node 22 control image; package.json and pnpm-lock.yaml unchanged",
+  "commands": [
+    "node --test tests/*.test.ts tests/*.test.mjs",
+    "node --test tests/rag-lifecycle.test.ts tests/rag-proxy.test.ts tests/rag-http.test.ts (20 fresh process runs)",
+    "node /realtime-probe.mjs /results/realtime-result.json"
+  ],
+  "isolation": {
+    "network": "none",
+    "publishedPorts": [],
+    "rootReadOnly": true,
+    "tmpfs": "/tmp:rw,exec,nosuid,nodev,size=128m",
+    "capabilities": "ALL dropped",
+    "noNewPrivileges": true,
+    "memory": "2g",
+    "cpus": 2,
+    "autoRemove": true,
+    "testContainersRemovalVerified": true
+  },
+  "modelTransport": "Simulated; actual Next proxyRequest and local RAG HTTP servers; no provider requests",
+  "newProductionBuild": false,
+  "newRewriteBuildProbe": false,
+  "typecheckRetested": false,
+  "sourceSha256": {
+    "src/config/rag.ts": "3215dea48cfe5dd2a0071dad23ae5b7882379e4c36c68f39c6eab335148f99ca",
+    "src/server/rag/config.ts": "42390da7c6c947b9ce602dcbcb62ac79ba0f8ae283785c3bd0eca84da6ea6bf9",
+    "src/server/rag/model.ts": "cfdd9dc0b2e0ce12f17e66dc06137dfbcfda939b2a6ae780485bbb66c04510d3",
+    "src/server/rag/service.ts": "c5fa2536f7858d3d5a7c7b2a0b80fa597a442febd51f3b5fd906ac61e80b69b3",
+    "src/server/rag/http.ts": "a8c9fc470bf01aeed76d33258d2ad49161a0f2340a1652ae97a1637decd607a7",
+    "src/server/rag/external.ts": "d980a28fcfdbf156a63e616394716b342603aeba5e0022fd078faf919446b8fc",
+    "src/server/rag/ollama.ts": "b5cfe72ba0179036f63215a4798164ec07524bffaa55a1433fa6009a2520e67a",
+    "src/features/rag/client.ts": "b4f71d4d47495bec8065181a5190c4c04ee52792dbb926f7df57804f88ad3dfb",
+    "tests/rag-lifecycle.test.ts": "4ff2d7d739c756711ca8d6895c8e2b9c3e53d41c852922ed6d848e2b24128fab",
+    "tests/rag-proxy.test.ts": "b27f30fc2694fc38bda695f78598c51170c91952839f3d65e367930f913a7f58",
+    "tests/rag-http.test.ts": "122d3f7e891bb5123cae84e77ea8b40eb529debbc7cf573ba3277ad73eb52a15"
+  }
+}

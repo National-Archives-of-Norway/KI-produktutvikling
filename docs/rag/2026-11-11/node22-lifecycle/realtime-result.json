@@ -1,0 +1,55 @@
+{
+  "node": "v22.18.0",
+  "platform": "linux",
+  "arch": "arm64",
+  "timeoutsMs": {
+    "modelMs": 60000,
+    "proxyMs": 65000,
+    "clientMs": 70000
+  },
+  "realProviderRequests": false,
+  "cases": [
+    {
+      "kind": "success",
+      "provider": "ollama",
+      "simulatedDelayMs": 35000,
+      "elapsedMs": 35029,
+      "first": {
+        "status": 200,
+        "mode": "generated",
+        "answer": "simulert svar",
+        "sourceCount": 3
+      },
+      "transportAborted": false,
+      "next": {
+        "status": 200,
+        "mode": "generated",
+        "answer": "etterprøve",
+        "sourceCount": 3
+      },
+      "passed": true
+    },
+    {
+      "kind": "timeout",
+      "provider": "openai-compatible",
+      "simulatedDelayMs": 90000,
+      "elapsedMs": 60017,
+      "first": {
+        "status": 502,
+        "mode": "sources",
+        "answer": null,
+        "error": "Modelltjenesten kunne ikke svare akkurat nå. Du kan fortsatt lese veiledningen og kildene nedenfor.",
+        "sourceCount": 3
+      },
+      "transportAborted": true,
+      "next": {
+        "status": 200,
+        "mode": "generated",
+        "answer": "etterprøve",
+        "sourceCount": 3
+      },
+      "passed": true
+    }
+  ],
+  "passed": true
+}

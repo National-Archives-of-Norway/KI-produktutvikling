@@ -1,6 +1,6 @@
 # Utviklingsplan for KI-Produktutvikling
 
-Sist oppdatert: **10. november 2026**. Utførende agent ved denne gjennomgangen: **Codex (OpenAI)**.
+Sist oppdatert: **11. november 2026**. Utførende agent ved denne gjennomgangen: **Codex (OpenAI)**.
 
 **Status: Fungerende lokal prototype; ikke klar for produksjon eller deling av internt innhold.** Lokal funksjonalitet og modelladaptere er implementert. Drift, innlogging, faglig godkjenning og samlet lanseringskontroll gjenstår. Første delte miljø skal være en **lukket pilot**. Offentlig publisering vurderes senere, etter en egen beslutning.
 
@@ -145,7 +145,7 @@ Arbeidsgrunnlaget for P8 er konkretisert i [avklaringsplanen for de 8 uavklarte 
 - [x] Teste adaptere og HTTP-kontrakt med simulert transport, inkludert feil, manglende innstillinger og at hemmeligheter ikke returneres.
 - [ ] Etablere drift av Next.js og RAG og intern ruting som passer den valgte plattformen.
 - [x] Gjøre RAGs tillatte origins konfigurerbare med servervariabelen `RAG_ALLOWED_ORIGINS`, validering ved oppstart og bevarte loopback-standarder (10. november 2026). Lokale HTTP-integrasjonstester dekker annen devport, simulert delt origin, medietype, 413 og 500; dette verifiserer ikke delt drift.
-- [x] Samordne modell-/proxy-/klientfrister (60/65/70 s), videresende avbrudd til transport og frigjøre modellkapasitet, samt gi 429 med kilder ved full konfigurerbar kapasitet. Lokale tester bruker simulerte modeller og faktisk Next-proxy; ingen ekte modellverifisering påstås.
+- [x] Samordne modell-/proxy-/klientfrister (60/65/70 s), videresende avbrudd til transport og frigjøre modellkapasitet, samt gi 429 med kilder ved full konfigurerbar kapasitet. Lokale tester bruker simulerte modeller og faktisk Next-proxy. Oppfølging 11. november med Node 22.18.0/Docker Linux: 119/119 tester, 460/460 gjentatte fokusprøver og faktiske 35-/60-sekundersforløp bestod; se [rapport](docs/rag/2026-11-10/lifecycle.md). Ingen ekte modellverifisering eller nytt Linux-produksjonsbygg påstås.
 - [x] Bekrefte at RAG_PORT i Next-rewrite låses ved bygg i 16.4.3, med lagret manifest og lokal produksjonsprøve: ulik runtime-port endrer ikke målet. Dokumentert krav om samsvar mellom byggport og faktisk tjenesteport.
 - [ ] Gjøre intern RAG-adresse konfigurerbar og verifisere endepunktet fra faktisk HTTPS-adresse med riktig origin-liste.
 - [ ] Velge modell/leverandør og avklare databehandling, før virkelige server-secrets legges inn.

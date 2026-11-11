@@ -6,6 +6,16 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 11. november 2026 – RAG-frister og avbrudd testet i Docker/Linux med Node 22
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Testet commit `7ebbab3` med Node 22.18.0 / Undici 6.21.2 og Next 16.4.3 på Debian/Linux arm64. Hele Node-pakken bestod **119/119**. De 23 HTTP-/proxy-/livsløpstestene ble gjentatt i 20 nye prosesskjøringer: **460/460**, uten feil eller hoppede tester. Dekker samtidighetsgrense, 429 med kilder, avbrudd, frigjøring av kapasitet og 502 med kilder for begge modelladaptere.
+- Verifisert faktiske produksjonsfrister 60/65/70 s med simulert modelltransport gjennom klientfunksjonen, Next-proxy og RAG-HTTP: simulert Ollama-svar ga HTTP 200 etter **35 029 ms**; et simulert eksternt 90 s-kall ble avbrutt og ga JSON 502 etter **60 017 ms**, med tre bevarte kilder. Etterfølgende kall ga 200 i begge tilfeller. Ingen ekte modellgenerering eller leverandørstopp påstås.
+- Kontrollcontainerne hadde deaktivert nettverk og skrivebeskyttet rotfilsystem. Eksisterende låste Linux-avhengigheter ble gjenbrukt uten installasjon/endring. Første pnpm-omslag ble blokkert av SQLite-skriving i skrivebeskyttet lager; identisk underliggende Node-testkommando ble deretter kjørt direkte og bestod. Første feilutskrift og alle resultater er bevart.
+- Oppdatert [testrapporten](docs/rag/2026-11-10/lifecycle.md) og fase 5s kontrollgrunnlag. Råresultater, tidsmålinger, kjøreskript, bildeidentitet og kildehash er lagret i `docs/rag/2026-11-11/node22-lifecycle/`. Kontrollsummer bekrefter uendret package.json, låsefil og pris-snapshot. Testservere er lukket og containere fjernet; eksisterende tjenester er ikke endret.
+- Lokal `pnpm format:check` og `git diff --check` er kontrollert. Ingen ny typekontroll, produksjonsbygg eller Docker-rewrite-byggprøve er utført; tidligere kontroller beholder opprinnelig omfang/dato. Ingen ekte modell, priskilde, GitHub, produktkode-/avhengighetsendring, commit eller publisering. Beta-status og produksjonskrav videreføres.
+
 ### 10. november 2026 – samordnede RAG-frister, avbrudd og modellkapasitet
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

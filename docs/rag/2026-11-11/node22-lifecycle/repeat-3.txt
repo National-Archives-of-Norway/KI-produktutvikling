@@ -1,0 +1,148 @@
+TAP version 13
+# Subtest: HTTP-serveren bruker konfigurerte origins for annen devport og delt vert
+ok 1 - HTTP-serveren bruker konfigurerte origins for annen devport og delt vert
+  ---
+  duration_ms: 25.395708
+  type: 'test'
+  ...
+# Subtest: HTTP-serveren leser JSON-medietype uten hensyn til bokstavstørrelse og parametre
+ok 2 - HTTP-serveren leser JSON-medietype uten hensyn til bokstavstørrelse og parametre
+  ---
+  duration_ms: 14.558334
+  type: 'test'
+  ...
+# Subtest: HTTP-serveren lukker 413-forbindelsen kontrollert og tåler etterfølgende fetch
+ok 3 - HTTP-serveren lukker 413-forbindelsen kontrollert og tåler etterfølgende fetch
+  ---
+  duration_ms: 50.7675
+  type: 'test'
+  ...
+# Subtest: HTTP-serveren returnerer nøytral 500 ved feil i søket eller ask
+ok 4 - HTTP-serveren returnerer nøytral 500 ved feil i søket eller ask
+  ---
+  duration_ms: 1.904042
+  type: 'test'
+  ...
+# Subtest: origin-konfigurasjon har dagens standarder og normaliserer bare eksplisitte origins
+ok 5 - origin-konfigurasjon har dagens standarder og normaliserer bare eksplisitte origins
+  ---
+  duration_ms: 0.13725
+  type: 'test'
+  ...
+# Subtest: ugyldige origins stopper konfigurasjonen før oppstart, uansett modellvalg
+ok 6 - ugyldige origins stopper konfigurasjonen før oppstart, uansett modellvalg
+  ---
+  duration_ms: 0.515542
+  type: 'test'
+  ...
+# Subtest: Content-Length over grensen avvises før klienten sender kroppen
+ok 7 - Content-Length over grensen avvises før klienten sender kroppen
+  ---
+  duration_ms: 4.184209
+  type: 'test'
+  ...
+# Subtest: chunked kropp over grensen gir 413 og neste forespørsel lykkes
+ok 8 - chunked kropp over grensen gir 413 og neste forespørsel lykkes
+  ---
+  duration_ms: 5.250542
+  type: 'test'
+  ...
+# Subtest: klientfeil beholder 400/415 og gyldig kropp på nøyaktig grensen godtas
+ok 9 - klientfeil beholder 400/415 og gyldig kropp på nøyaktig grensen godtas
+  ---
+  duration_ms: 5.158291
+  type: 'test'
+  ...
+# Subtest: lukket klientforbindelse avbryter modelltransport og frigjør kapasitet
+ok 10 - lukket klientforbindelse avbryter modelltransport og frigjør kapasitet
+  ---
+  duration_ms: 7.290959
+  type: 'test'
+  ...
+# Subtest: avbrutt modellforespørsel sender signal og frigjør kapasitet
+ok 11 - avbrutt modellforespørsel sender signal og frigjør kapasitet
+  ---
+  duration_ms: 7.057666
+  type: 'test'
+  ...
+# Subtest: konfigurert kapasitet tillater to brukere og avviser den tredje med kilder
+ok 12 - konfigurert kapasitet tillater to brukere og avviser den tredje med kilder
+  ---
+  duration_ms: 5.958291
+  type: 'test'
+  ...
+# Subtest: ren tekst fra proxy gir forståelig formatfeil uten å vise råsvaret
+ok 13 - ren tekst fra proxy gir forståelig formatfeil uten å vise råsvaret
+  ---
+  duration_ms: 7.140042
+  type: 'test'
+  ...
+# Subtest: Ollama avviser sti eksplisitt i konfigurasjonen
+ok 14 - Ollama avviser sti eksplisitt i konfigurasjonen
+  ---
+  duration_ms: 0.189875
+  type: 'test'
+  ...
+# Subtest: Ollama trimmer modellsvaret
+ok 15 - Ollama trimmer modellsvaret
+  ---
+  duration_ms: 0.537083
+  type: 'test'
+  ...
+# Subtest: modellens tidsgrense gir 502 med kilder for begge adaptere
+ok 16 - modellens tidsgrense gir 502 med kilder for begge adaptere
+  ---
+  duration_ms: 55.279541
+  type: 'test'
+  ...
+# Subtest: tjenestens tidsgrense frigjør kapasitet også om en adapter ignorerer signalet
+ok 17 - tjenestens tidsgrense frigjør kapasitet også om en adapter ignorerer signalet
+  ---
+  duration_ms: 27.502417
+  type: 'test'
+  ...
+# Subtest: klienten bevarer validerte kilder også ved uventet JSON-svarformat
+ok 18 - klienten bevarer validerte kilder også ved uventet JSON-svarformat
+  ---
+  duration_ms: 1.077167
+  type: 'test'
+  ...
+# Subtest: forhåndsavbrutt signal starter ikke modellen og bruker ikke kapasitet
+ok 19 - forhåndsavbrutt signal starter ikke modellen og bruker ikke kapasitet
+  ---
+  duration_ms: 4.311
+  type: 'test'
+  ...
+# Subtest: tidskjeden er felles, og ugyldig samtidighetsgrense avvises ved oppstart
+ok 20 - tidskjeden er felles, og ugyldig samtidighetsgrense avvises ved oppstart
+  ---
+  duration_ms: 0.290458
+  type: 'test'
+  ...
+# Subtest: treg simulert modell svarer gjennom faktisk Next-proxy før lengre proxygrense
+ok 21 - treg simulert modell svarer gjennom faktisk Next-proxy før lengre proxygrense
+  ---
+  duration_ms: 55.187167
+  type: 'test'
+  ...
+# Subtest: modelltimeout gir JSON 502 med kilder før Next-proxyen gir opp
+ok 22 - modelltimeout gir JSON 502 med kilder før Next-proxyen gir opp
+  ---
+  duration_ms: 31.328166
+  type: 'test'
+  ...
+# Subtest: faktisk Next-proxytimeout gir tekstfeil og avbryter nedstrøms modell
+ok 23 - faktisk Next-proxytimeout gir tekstfeil og avbryter nedstrøms modell
+  ---
+  duration_ms: 28.074959
+  type: 'test'
+  ...
+1..23
+# tests 23
+# suites 0
+# pass 23
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 550.367125

@@ -44,3 +44,40 @@ Faktisk `pnpm build` og kort `next start` med simulerte HTTP-backender verifiser
 Se [resultat](lifecycle/rewrite-result.json), [byggutskrift](lifecycle/build.txt), [startutskrift](lifecycle/start.txt) og [orchestreringsskript](lifecycle/check-build-rewrite.mjs.txt). Alle prøveservere/prosesser ble lukket i finally. Deretter ble et **vanlig pnpm build uten testport** kjørt slik at den lokale .next-mappen ikke ble stående med testdestinasjonen. [Vanlig bygg](lifecycle/build-restored.txt) og [gjenopprettet rewrite](lifecycle/restored-rewrite.json) dokumenterer dette.
 
 Sluttkontroller: `pnpm test:rag` 119/119, `pnpm typecheck`, `pnpm build`, `pnpm format:check` og `git diff --check`. Utskrifter lagres sammen med denne rapporten. Ingen produksjonsgodkjenning, faktisk modellkvalitet, ekstern driftsproxy eller ny Docker/Node 22-kjøring påstås. README, .env.example, arkitektur, funksjonsregister og utviklingsplan er oppdatert. Ingen commit eller publisering.
+
+## Node 22 i Docker/Linux – 11. november 2026
+
+**Resultat: 119/119 Node-tester og 460/460 gjentatte fokusprøver bestod. Faktiske 35- og 60-sekundersforløp bestod også.** Testet commit: `7ebbab353442004fb2f70f6d948b5c711db0fddd`. Utførende agent: Codex (OpenAI), ingen underagenter.
+
+Runtime var Node 22.18.0 / Undici 6.21.2, Next.js 16.4.3, pnpm 11.25.0 og Git 2.39.5 på Debian 12/Linux arm64, LinuxKit 7.0.14, Docker 29.8.2. Det tidligere Linux-kontrollbildets låste avhengigheter ble gjenbrukt med ny Git-snapshot; ingen pakker ble installert i denne oppfølgingen. Se [runtime](../2026-11-11/node22-lifecycle/runtime.json), [bilde](../2026-11-11/node22-lifecycle/image.json) og [manifest](../2026-11-11/node22-lifecycle/manifest.json).
+
+### Kontroller og resultater
+
+| Kontroll                                                          | Resultat                                                                    |
+| ----------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| Hele pakken: `node --test tests/*.test.ts tests/*.test.mjs`       | 119/119, ingen feil eller hoppede tester                                    |
+| HTTP-/proxy-/livsløpstestene i 20 nye prosesskjøringer            | 23/23 hver gang, totalt 460/460                                             |
+| Treg simulert Ollama, gjennom faktisk Next-proxy og requestAnswer | HTTP 200 etter **35 029 ms**, trimmet modellsvar og tre kilder              |
+| Simulert eksternt API som ellers skulle vente 90 s                | Modelltransporten avbrutt; JSON **502 etter 60 017 ms**, tre kilder bevart  |
+| Neste kall etter både det trege svaret og timeout                 | HTTP 200 med generert simulert svar; kapasiteten var frigjort               |
+| Integritet                                                        | package.json, pnpm-lock.yaml og pris-snapshot hadde identisk hash før/etter |
+
+De 20 fokusprøvene kjørte de uendrede `rag-lifecycle.test.ts`, `rag-proxy.test.ts` og `rag-http.test.ts`: modellfrister for begge adaptere, 502 med kilder, caller-/klient-/proxyavbrudd, kapasitet som frigjøres selv om en adapter ignorerer signal, grense 2 med tredje kall avvist med 429/kilder, forhåndsavbrutt kall, ikke-JSON, Ollama-konfigurasjon/trimming og tidligere HTTP-regresjoner. Gjentakelsene brukte korte skalerte frister. De separate langvarige prøvene brukte uendrede produksjonsstandarder **60/65/70 s** med faktiske timere, ikke en simulert klokke. 35-sekunderssvaret passerte dermed den tidligere problematiske 30-sekundersgrensen.
+
+Langprøvene brukte applikasjonens klientfunksjon, Nexts faktiske `proxyRequest`, RAG-HTTP-tjenesten og modelladapterne med simulert fetch-transport. Vanlig Next-start/rewrite-probe og produksjonsbygg er ikke kjørt på nytt i Docker denne gangen. Det er ingen ekstern modellverifisering: alle svar og transportavbrudd kom fra testdobler. Testene beviser ikke at en virkelig leverandør stopper beregning/fakturering ved avbrudd.
+
+### Isolasjon, første forsøk og opprydding
+
+Alle kontrollcontainerne kjørte med **`--network none`**, uten publiserte porter, med skrivebeskyttet rotfilsystem og midlertidig kjørbar `/tmp`, to CPU-er og 2 GB minne. Koden og avhengighetene lå i et separat bilde; bare testskript/resultatmappe var montert fra verten. Ingen .env, server-secrets eller modellnøkler ble lastet inn. HTTP trafikkerte bare containerens loopback; modeller og prisinnhenting var simulert/fixture-basert. Ingen ekte priskilde, modellleverandør eller GitHub ble kontaktet.
+
+Første hele pakkeforsøk via `pnpm test:rag` startet **ikke** testene: pnpm forsøkte automatisk å åpne/skrive en SQLite-database i det skrivebeskyttede avhengighetslageret. De 20 direkte fokusprøvene bestod i samme oppsett. Den fulle pakken ble deretter kjørt med den identiske underliggende Node-testkommandoen fra package.json, fortsatt skrivebeskyttet og uten nettverk, og bestod 119/119. Ingen avhengighet, test eller produktkode ble endret for å få grønt resultat. [Første pnpm-utskrift](../2026-11-11/node22-lifecycle/initial-pnpm-readonly/full-tests.txt) og den første samlede delstatusen er bevart.
+
+Alle testservere ble lukket. De tre midlertidige kontrollcontainerne ble automatisk fjernet, og fravær ble kontrollert med Docker. Ingen eksisterende apptjeneste ble stoppet eller rekonfigurert. Nye prisdata er ikke hentet eller lagret.
+
+### Bevis og gjenkjøring
+
+- [Full testutskrift](../2026-11-11/node22-lifecycle/full-tests.txt), [samlet resultat med 20 gjentakelser](../2026-11-11/node22-lifecycle/summary.json) og [fokusprøvenes exit-koder](../2026-11-11/node22-lifecycle/repeat-exit-codes.txt). Hver gjentakelse er også bevart som `repeat-1.txt` til `repeat-20.txt` i samme mappe.
+- [Faktiske tidsmålinger og resultater](../2026-11-11/node22-lifecycle/realtime-result.json), [original langprøveutskrift](../2026-11-11/node22-lifecycle/realtime-log.txt) og [langprøvens kjøreskript](../2026-11-11/node22-lifecycle/realtime-probe.mjs).
+- [Kjøreskript for testpakken/gjentakelsene](../2026-11-11/node22-lifecycle/run-linux.sh), [første kjøreskript](../2026-11-11/node22-lifecycle/initial-run-linux.sh), [Dockerfile](../2026-11-11/node22-lifecycle/Dockerfile), [manifest](../2026-11-11/node22-lifecycle/manifest.json) og [inngangshasher](../2026-11-11/node22-lifecycle/input-hashes.json).
+
+Lokal `pnpm format:check` og `git diff --check` er kontrollert etter dokumentasjonsoppdateringen. Ingen ny typekontroll, produksjonsbygg, nettleser-/tilgjengelighetskontroll eller prøving av ekte ekstern driftsproxy er utført i denne oppfølgingen. AMD64 og andre patchversjoner er ikke testet. Funksjonsregister, Beta-status og produksjonskrav videreføres. Ingen produktkodeendring, commit eller publisering.
