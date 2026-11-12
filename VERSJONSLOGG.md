@@ -6,6 +6,16 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 12. november 2026 – oppdatert lokal Docker-utgave til d2f6ba3
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Bygget fra ren git archive av commit `d2f6ba3e6655b2e35722537a74a443b5523387b8`, uten arbeidskopifiler eller .env. Det eksisterende lokale bildet ble brukt som avhengighetsbase etter kontroll av identisk pnpm-lock.yaml. Bygget kjørte uten nettverk med installert Next build direkte (samme byggkommando som pnpm build); pnpm-wrapperen forsøkte først unødvendig installasjon i en skrivebeskyttet cache. Kjøring er fortsatt som node-bruker.
+- Opprettet `ki-produktutvikling:d2f6ba3` og oppdatert `ki-produktutvikling:local` til samme bilde. Image-ID: `sha256:4cd6fed5f2c9570a388c59d848d2e621719fc850e23757fcb9f5dc956bbf997f`. Commit er registrert i image-label. Ny container `ki-produktutvikling-local` kjører på `http://127.0.0.1:3005` med restart unless-stopped. Den gamle containeren er stoppet og bevart som `ki-produktutvikling-backup-20261112` for tilbakeføring.
+- Next-produksjonsbygg og **124/124 fokuserte søke-, språk-, metadata- og chatfokustester** bestod i Docker/Linux arm64 med Node 24.22.2. Helsesjekk gir HTTP 200 og generationEnabled=false. Kontrollsummer for retrieval.ts og chat-composer.tsx er identiske med kildecommiten.
+- **12/12 kontrollspørsmål** bestod via faktisk portalproxy `/api/rag` på port 3005 med korrekt Origin: prompt/instrukser finner tydelig-kontekst først; lagring, tømming, samtale og sletting finner personvern; prisoppdatering finner priser; spørsmålet om arkivmateriale/personopplysninger finner både retningslinjer og personvern. De fire oppgitte irrelevante spørsmålene gir ingen kilder. Metadata vises ikke i API-svaret. Chattsiden gir HTTP 200.
+- Modellgenerering er fortsatt deaktivert; ingen leverandør-/priskildekall, blindsett eller test:blind. Ingen ny nettleser-/skjermleser-, full testpakke-, Pages- eller Node 22-kontroll i denne ombyggingen. Dette er lokal oppdatering, ikke produksjonsgodkjenning eller delt pilot. Dokumentasjonsoppføringen er gjort etter bygget og ligger bare i arbeidskopien inntil neste commit/bygg; ingen commit eller push utført.
+
 ### 11. november 2026 – tastaturfokus ved sending og avbrudd i chat
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.
