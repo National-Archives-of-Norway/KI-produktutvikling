@@ -22,9 +22,8 @@
       "evidence": [
         "raw/pdf-language.json",
         "raw/pdf-language-parenttree.json",
-        "screenshots/pdf-page-4.png",
-        "screenshots/pdf-page-6.png"
-      ]
+        "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/screenshots/pdf-page-4.png",
+        "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/screenshots/pdf-page-6.png"]
     },
     "3.1.2": {
       "status": "B",

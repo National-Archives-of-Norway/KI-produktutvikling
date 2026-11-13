@@ -23,7 +23,7 @@ Den eksisterende PDF-en er reparert direkte; redigerbar presentasjonskilde ble i
 1. Begge tittelfelter samsvarer; XMP kan leses som gyldig XML og DisplayDocTitle er true.
 2. H1=1, H2=6, H3=20. Alle syv synlige hovedoverskrifter finnes på riktig side. Rålisten med faktiske teksttilknytninger er sammenholdt med de rendrerte sidene.
 3. **229 MCID-koblinger** peker fra ParentTree til riktig eksisterende strukturelement, også etter endret overskriftsrolle. Dette er et sterkere delbevis enn bare å telle H-tagger.
-4. Alle **syv sider** er rendret på nytt. Tekstuttrekk, dekodet sideinnholdsstrøm og renderede piksler er identiske før/etter. Ingen synlig endring i layout, tekst, diagram eller farger. [Alle sider etter retting](screenshots/pdf-retested-all-pages.png).
+4. Alle **syv sider** er rendret på nytt. Tekstuttrekk, dekodet sideinnholdsstrøm og renderede piksler er identiske før/etter. Ingen synlig endring i layout, tekst, diagram eller farger. [Alle sider etter retting](../../../arkiv/skjermbilder/tilgjengelighet/2026-11-09/210420-07c855b7770e/screenshots/pdf-retested-all-pages.png).
 5. SHA-256 før/etter og faktiske testtidspunkter står i JSON-resultatet. Originalen er bevart. Ingen skjermleseropplesing eller reell PDF-leserinteraksjon er simulert.
 
 Første XMP-oppdatering med pypdf-egenskapens setter ga en ugyldig namespace-prefiks og ble fanget av retesten. PDF-en ble regenerert fra den arkiverte originalen med målrettet oppdatering av eksisterende XML-node. Deretter bestod ny retest og rendering. Feilen er bevart i `raw/retest-attempt-01.json`, ikke presentert som bestått kontroll.
@@ -42,7 +42,7 @@ Kriterietolkning og veiledning er videreført fra [forrige rapport](../205326-38
 
 ## Verifisering av portal og dokumentasjon
 
-48 prosjekttester og Pages-produksjonsbygg med TypeScript bestod. Eksportert PDF er byteidentisk med den reparerte kildefilen, og ny HTML-grunnkontroll av 23 eksportfiler ga ingen kandidater i delomfanget. 48 unike kriterier, arbeidsstatusene og 82 relative dokumentlenker er kontrollert. Den bygde erklæringen inneholder ny kjøringsreferanse, rettet PDF-status og 12 uavklarte vurderinger. Den lokale siden er lest tilbake i nettleser; [skjermbilde](screenshots/updated-declaration.png) og råverifikasjon er bevart. Prettier og `git diff --check` gjelder endrede dokument-/kildefiler; rålogger beholder opprinnelige terminalkontrolltegn. Disse kontrollene er ikke tilgjengelighetsgodkjenning.
+48 prosjekttester og Pages-produksjonsbygg med TypeScript bestod. Eksportert PDF er byteidentisk med den reparerte kildefilen, og ny HTML-grunnkontroll av 23 eksportfiler ga ingen kandidater i delomfanget. 48 unike kriterier, arbeidsstatusene og 82 relative dokumentlenker er kontrollert. Den bygde erklæringen inneholder ny kjøringsreferanse, rettet PDF-status og 12 uavklarte vurderinger. Den lokale siden er lest tilbake i nettleser; [skjermbilde](../../../arkiv/skjermbilder/tilgjengelighet/2026-11-09/210420-07c855b7770e/screenshots/updated-declaration.png) og råverifikasjon er bevart. Prettier og `git diff --check` gjelder endrede dokument-/kildefiler; rålogger beholder opprinnelige terminalkontrolltegn. Disse kontrollene er ikke tilgjengelighetsgodkjenning.
 
 For å gjenta PDF-retesten fra prosjektroten, bruk Poppler og Python-miljø med pypdf/pdfplumber/PIL (bundlet runtime ble brukt her):
 

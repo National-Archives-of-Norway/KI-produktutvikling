@@ -41,12 +41,11 @@
     "result": "Reviewed screenshots of all three pages at both widths. No text-obscuring decorative layer seen in the sample. Hero art separate from heading/prose; card 1px top pseudo-lines above target rectangles; focus/text glows treated conservatively. No claim about arbitrary scroll overlays or all dynamic states.",
     "screenshots": [
       "screenshots/contrast-home-320.png",
-      "screenshots/contrast-home.png",
+      "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/135417-d3e318e119fd/screenshots/contrast-home.png",
       "screenshots/contrast-oversikt-320.png",
-      "screenshots/contrast-oversikt.png",
+      "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/135417-d3e318e119fd/screenshots/contrast-oversikt.png",
       "screenshots/contrast-spor-320.png",
-      "screenshots/contrast-spor.png"
-    ]
+      "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/135417-d3e318e119fd/screenshots/contrast-spor.png"]
   },
   "technical_follow_up": "Initial dev-target lookup did not match generated production classes/IDs. Partial lookup retained; all 86 were then matched exactly against static export on localhost:4175. First sandbox HTTP-server startup was denied; approved localhost-only server used.",
   "limits": [

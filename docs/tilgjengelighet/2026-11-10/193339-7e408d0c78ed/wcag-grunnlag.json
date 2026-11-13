@@ -1750,9 +1750,8 @@
       "evidence": [
         "raw/pdf-language.json",
         "raw/pdf-language-parenttree.json",
-        "screenshots/pdf-page-4.png",
-        "screenshots/pdf-page-6.png"
-      ],
+        "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/screenshots/pdf-page-4.png",
+        "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/screenshots/pdf-page-6.png"],
       "observation": "PDF-katalogens hovedspråk er en. Synlig norsk tekst på side 4–6 har en/en-US etter både ParentTree, struktur og mest lokal BDC-merking; 709 av 2694 ikke-blanke tegn er i disse spennene. Resten er nb/nb-NO. Ikke en antatt uttalefeil: den faktiske merkingen er dokumentert. A11Y-08.",
       "procedure": "testprosedyrer/wcag-3-forstaelig.md#311",
       "remaining": "Rett PDF-ens hovedspråk og konkrete feilmerkede norske innholdsspenn; behold eventuell bevisst engelsk tekst med korrekt lokal merking. Retest begge språkbaner og visning.",
@@ -2719,9 +2718,8 @@
       "evidence": [
         "raw/pdf-language.json",
         "raw/pdf-language-parenttree.json",
-        "screenshots/pdf-page-4.png",
-        "screenshots/pdf-page-6.png"
-      ],
+        "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/screenshots/pdf-page-4.png",
+        "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/screenshots/pdf-page-6.png"],
       "owner": "Ikke utpekt; foreslått dokumentansvarlig",
       "deadline": null,
       "alternative": "Be om dokumentet som norsk tekst i et tilgjengelig format via kontaktadressen."

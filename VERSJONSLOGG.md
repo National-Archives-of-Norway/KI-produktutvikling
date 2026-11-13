@@ -6,6 +6,33 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 13. november 2026 – gjennomført skjermbildeopprydding og vedlikeholdsregel
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Gjennomført brukerens godkjente utvalg: 38 aktive testbevis beholdes på opprinnelige steder, 75 historikkbilder er flyttet til docs/arkiv/skjermbilder med opprinnelig mappestruktur og 29 byte-identiske kopier er fjernet fra arbeidskopien. Ingen Git-historikk er omskrevet; ingen rålogger, PDF-er eller andre bevis er fjernet.
+- Oppdatert 177 bildehenvisninger i 27 Markdown-/JSON-filer til arkivet eller identisk motstykke. Opprinnelig utvalg og sikkerhetskartlegging bevares som daterte snapshots; [gjennomføringsrapport og flyttelogg](docs/bevis/2026-11-13/skjermbildeopprydding.md) knytter gamle stier til beholdt fil og kontrollsum. Historiske hashes/resultater er ikke erstattet av nye testpåstander.
+- AGENTS.md krever løpende rydding av egne midlertidige/genererte filer, representative bildebevis, hashverifisering før deduplisering, arkiv/proveniens og fungerende referanser. Større endring av eksisterende bevis krever et konkret godkjent utvalg; Git-historikk ryddes ikke automatisk. README og bevislagringsdokumentet skiller den godkjente bildeoppryddingen fra øvrige uavklarte lagringsforslag.
+- Kun dokumentasjon/bevisplassering og arbeidsinstruksjoner er endret; ingen ny portal- eller fasestatus. Tidligere ukommiterte sikkerhets-/plandokumenter er bevart. Kontroller: 142/142 stirelasjoner og bildehash er verifisert, alle 177 oppdaterte henvisninger kan løses, og bare bildestier er endret i de 14 JSON-bevisfilene. 190 rekursive Markdown-bildelenker ga null nye brudd og fem eksisterende snapshot-lenker. pnpm test:links bestod med 208 filmål i 12 dokumenter; pnpm format:check og git diff --check bestod. HEAD er uendret. Ingen applikasjonstester eller bygg gjentatt; ingen commit eller push.
+
+### 13. november 2026 – foreslått mindre skjermbildeutvalg
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Gjennomgått 142 eksisterende skjermbildefiler med 113 unike innhold. Forslaget beholder 38 representative testbevis (ca. 2,00 MiB), klassifiserer 75 som historikk utenfor aktivt utvalg og 29 som byte-identiske ekstra kopier. Samlet er bildene ca. 10,93 MiB; dette er ikke en beregning av Git-/dokumentasjonsarkivets størrelse.
+- [Rapport med filvis vurdering](docs/bevis/2026-11-13/skjermbildevurdering.md) og maskinlesbar liste viser begrunnelse, hash, dimensjoner, filbytes, identiske motstykker og avgrensede Markdown-referanser. Viktige før-/etterpar, chatforløp, tekstavstand og fokus beholdes i forslaget. Gjentatte erklæringsbilder, eldre UI og PDF-rendringer skilles fra måle-/strukturbevis.
+- Bare et forslag, uavhengig av konto/publisering. Ingen bilder, gamle rapporter, manifest eller Git-historikk er slettet, flyttet eller omskrevet. Tidligere sikkerhetskontroll og ukommiterte endringer er bevart. Ingen ny lagringsregel, funksjons-/faseendring eller tilgjengelighetsvurdering; plan og funksjonsregister trenger ingen ny oppføring.
+- Kontroller: 142/142 bilders SHA-256 og filbytes er uendret, alle 29 duplikatrelasjoner er verifisert, kategoriene samsvarer med listen og 144 lokale rapportlenker finnes. pnpm test:links bestod med 205 filmål i 12 dokumenter; pnpm format:check og git diff --check bestod. Ingen appbygg eller funksjonstester gjentatt. Ingen commit eller push.
+
+### 13. november 2026 – sikkerhets- og innholdskontroll før første push
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Undersøkt 43 lokale commits, nåbare Git-objekter, rapporttekst, 114 unike bilder, fire PDF-versjoner og et arkiv med 20 logger. Lokal Gitleaks 8.30.1 og supplerende innholdskontroll fant to genererte Next-preview-nøkler i historisk byggbevis; fire øvrige Gitleaks-kandidater ble verifisert som filkontrollsummer. Verdiene er ulike dagens lokale og kjørende Docker-bygg. Ingen aktiv leverandørnøkkel er påvist; ingen verdier gjengis.
+- Bekreftet deltakernavn/organisatoriske opplysninger i mandat og bilde-/PDF-kopier, samt arbeidskontakt, Git-identitet og lokale brukerstier. Før push til personlig konto må innholds-/lagringstillatelse og håndtering av historisk nøkkelmateriale avklares. [Rapport med omfang og begrensninger](docs/sikkerhet/2026-11-13/forste-push-kontroll.md) er lagret uten rå sensitiv tekst.
+- Utviklingsplanen peker til kontrollen uten å lukke P7/P9. Funksjonsregister og agentregler er uendret. Ingen eksisterende bevis, Git-historikk eller filer er slettet/omskrevet, og ingen commit/push eller nøkkeltilbakekalling er utført. Blindfixturens to historiske blobber og eksterne blindsett er ikke lest.
+- Kontroller: Git-skann ga seks kandidater som vurdert ovenfor; siste lokale OCR/PDF-ekstraksjon fullførte 118/118 filer uten feil. Medieuttrekk og arkivlogger ga null Gitleaks-kandidater. pnpm test:links bestod med 204 relative filmål i 12 dokumenter; pnpm format:check og git diff --check bestod. Ingen nye applikasjonstester eller bygg.
+
 ### 13. november 2026 – friksjonsprosess innført i prosjektet
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

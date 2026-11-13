@@ -25,7 +25,7 @@ Gjennomført i integrert nettleser ved **320 × 800 px**, med installert Next de
 - Ny innsending med raskt simulert svar virket etter avbrudd. DOM/AX viste dato og årstall i p, én ol med start 1 og bevisste li-hopp til 3 og 10.
 - Send, Avbryt og Tøm chat fikk plass med linjebryting ved behov; ingen horisontal overflyt i ventende eller fullført tilstand. aria-busy ble observert som true under venting og false etter avbrudd/svar.
 
-[Skjermbilde av knappene ved 320 px](chat-dates-buttons-320.png). Begge testservere og prosjektkopien er fjernet; viewport er nullstilt og testfanen lukket. Faktisk skjermleser, IME, fysisk mobil og øvrige nettlesere er ikke testet. Dette er ikke full tilgjengelighetsgodkjenning.
+[Skjermbilde av knappene ved 320 px](../../arkiv/skjermbilder/rag/2026-11-11/chat-dates-buttons-320.png). Begge testservere og prosjektkopien er fjernet; viewport er nullstilt og testfanen lukket. Faktisk skjermleser, IME, fysisk mobil og øvrige nettlesere er ikke testet. Dette er ikke full tilgjengelighetsgodkjenning.
 
 ## Kontroller
 

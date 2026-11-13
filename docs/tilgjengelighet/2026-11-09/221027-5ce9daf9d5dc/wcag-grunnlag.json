@@ -640,8 +640,7 @@
       "evidence": [
         "raw/pdf-page7-structure.json",
         "raw/pdf-inspection.json",
-        "screenshots/pdf-page-7.png"
-      ],
+        "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/screenshots/pdf-page-7.png"],
       "owner": "Ikke avklart",
       "deadline": "Ikke fastsatt"
     },
@@ -661,8 +660,7 @@
         "raw/pdf-page5-colors.json",
         "raw/pdf-page5-pixels.json",
         "raw/contrast-supplement.json",
-        "screenshots/pdf-page-5.png"
-      ],
+        "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/screenshots/pdf-page-5.png"],
       "owner": "Ikke avklart",
       "deadline": "Ikke fastsatt"
     }

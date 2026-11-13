@@ -18,7 +18,7 @@ Før-hash: `ba267d899460e54a911c548c5ddecfd9a83159ec3b6d7b6e30d9d4f34d0c648a`. E
 
 ### Visuell og strukturell regresjon
 
-Alle syv sider er rendret før og etter ved 120 dpi. Pixel-diff er null på hver side. Tekst, tegngeometri, skrifter, farger og MCID-koblinger er identiske. Tegne-/tekstoperasjoner er identiske når bare Lang-egenskapene tas ut av sammenligningen. Rolleantall, liste-/overskriftsstruktur, dokumenttittel og engelske alternativtekster er bevart. [Samlet render](screenshots/pdf-all-pages.png); hvert før-/etterbilde er også arkivert i denne kjøringen.
+Alle syv sider er rendret før og etter ved 120 dpi. Pixel-diff er null på hver side. Tekst, tegngeometri, skrifter, farger og MCID-koblinger er identiske. Tegne-/tekstoperasjoner er identiske når bare Lang-egenskapene tas ut av sammenligningen. Rolleantall, liste-/overskriftsstruktur, dokumenttittel og engelske alternativtekster er bevart. [Samlet render](../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/pdf-all-pages.png); hvert før-/etterbilde er også arkivert i denne kjøringen.
 
 Dette gir grunnlag for å videreføre tidligere kontrast-/grafikkmålinger under 1.4.3/1.4.11 til den nye PDF-hashen, med dokumentert uendret visuelt innhold. Faktisk opplesing er **ikke** testet. PDF-alternativer, faktisk hjelpemiddelbetjening og meningsfull leserekkefølge har fortsatt egne uavklarte krav.
 

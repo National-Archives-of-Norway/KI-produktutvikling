@@ -62,9 +62,8 @@
       "evidence": [
         "raw/declaration-desktop.json",
         "raw/declaration-320.json",
-        "screenshots/erklaering-desktop.png",
-        "screenshots/erklaering-320.png"
-      ]
+        "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/053920-3f1e603bfbcd/screenshots/erklaering-desktop.png",
+        "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/053920-3f1e603bfbcd/screenshots/erklaering-320.png"]
     }
   ],
   "manual_remaining": 37,

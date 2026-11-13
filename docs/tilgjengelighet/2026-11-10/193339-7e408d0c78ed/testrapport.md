@@ -33,7 +33,7 @@ Norsk hovedinnhold har katalogspråk `en`. Av 2694 ikke-blanke synlige tegn er 1
 
 Tegn fra pdfplumber er koblet via side/MCID til strukturtaggenes språkarving. En uavhengig omvendt ParentTree-oppslag gir samme strukturspråk. Deretter er de mest lokale BDC-egenskapene lest: de aktuelle norske delene er også eksplisitt `en-US` i innholdsstrømmen. Ingen konklusjon bygger bare på katalogens språk. Første tekniske uttrekk mistet /Pg sin indirekte objektreferanse og ga UNMAPPED; denne avviste kjøringen er bevart og er ikke et produktfunn. Strukturkontrollen alene er separat bevart før BDC-overstyringer ble lagt til.
 
-Dette kan føre til engelsk uttale av norsk tekst. **Faktisk opplesing er ikke testet.** Programmerbar feilmerking er likevel dokumentert. [Språkdata og all sidetekst](raw/pdf-language.json), [uavhengig kontroll](raw/pdf-language-parenttree.json), [beregner](raw/pdf-language.py), [krysskontroll](raw/pdf-crosscheck.py), [side 4](screenshots/pdf-page-4.png), [side 6](screenshots/pdf-page-6.png).
+Dette kan føre til engelsk uttale av norsk tekst. **Faktisk opplesing er ikke testet.** Programmerbar feilmerking er likevel dokumentert. [Språkdata og all sidetekst](raw/pdf-language.json), [uavhengig kontroll](raw/pdf-language-parenttree.json), [beregner](raw/pdf-language.py), [krysskontroll](raw/pdf-crosscheck.py), [side 4](../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/screenshots/pdf-page-4.png), [side 6](../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/screenshots/pdf-page-6.png).
 
 **Foreslått retting:** Korriger norsk hovedspråk og de aktuelle norske spennene i både struktur og innholdsstrøm, med korrekt merking av eventuell bevisst engelsk tekst. Kontroller språkbaner, rendr alle sider på nytt og suppler med opplesing når tilgjengelig. Alternativ nå: be om norsk tekst i et tilgjengelig format. PDF-en er uendret: `ba267d899460e54a911c548c5ddecfd9a83159ec3b6d7b6e30d9d4f34d0c648a`.
 
@@ -57,7 +57,7 @@ Fokusrekkefølgen bevarer mening i prøvde lokale forløp. Etter nullstilling av
 
 ## Animasjon og øvrige avgrensninger
 
-Hero-animasjonen pauser med Enter og starter med Space. Etter Tab til ressursfeltet er alle tre animasjoner fortsatt `paused`, med uendret transform etter mer enn åtte sekunder. Dette er faktisk fokusflytting, ikke bare pause mens knappen har fokus. Den delprøven består selv om prisvarselet gjør at 2.2.2 samlet er B. [Bevis](raw/manual-ui.json), [bilde](screenshots/paused-focus-away.png).
+Hero-animasjonen pauser med Enter og starter med Space. Etter Tab til ressursfeltet er alle tre animasjoner fortsatt `paused`, med uendret transform etter mer enn åtte sekunder. Dette er faktisk fokusflytting, ikke bare pause mens knappen har fokus. Den delprøven består selv om prisvarselet gjør at 2.2.2 samlet er B. [Bevis](raw/manual-ui.json), [bilde](../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/screenshots/paused-focus-away.png).
 
 To tidlige observasjoner merket «mobile» målte faktisk 1280 fordi viewport-overstyringen lå på en annen åpen testfane. Rådataenes width er bevart. Fysisk 320-bredde ble deretter kontrollert på riktig fane; kun observasjoner med width 320 brukes som smalprøver. Et feilslått summary-oppslag som button og et ikke-støttet Date-oppslag i lesescope ble korrigert gjennom DOM-locator og fixture-dataset; dette er verktøytilpasninger, ikke produktfeil.
 

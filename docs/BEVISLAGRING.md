@@ -2,6 +2,10 @@
 
 Kartlagt 11. november 2026 av Codex (OpenAI). Dette er alternativer for senere beslutning, ingen ny lagringsregel. Eksisterende bevismapper er ikke slettet, flyttet, formatert eller endret.
 
+## Avgrenset beslutning om skjermbilder – 13. november 2026
+
+Brukeren har godkjent oppryddingen av det konkrete utvalget på 142 skjermbilder: 38 aktive bevis beholdes, 75 historikkbilder arkiveres lokalt under docs/arkiv/skjermbilder og 29 identiske ekstra kopier fjernes. Se [gjennomføring og flyttelogg](bevis/2026-11-13/skjermbildeopprydding.md). Git-historikken bevares. Dette vedtar ikke lagringsalternativene eller den foreslåtte regelen for gjentatte loggkjøringer nedenfor. De eldre målingene og forslagene beholdes som datert grunnlag.
+
 ## Største mapper
 
 Målt med `du -k -d 3 docs` på lokal maskin før nye dokumenter ble ferdigstilt. Tallene er allokert diskplass, avrundet til MiB (1024 KiB); overordnede og underordnede mapper overlapper og skal ikke summeres.

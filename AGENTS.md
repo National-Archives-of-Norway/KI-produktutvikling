@@ -87,3 +87,12 @@ For each entry:
     Report a summary table with one row per entry, giving the verdict and the proposed action. Follow it with the evidence behind each verdict (commits, files, or command output) so a reviewer can check it.
 
 When the human confirms the triage is done, remove the triaged entries from FRICTION.md; their value now lives elsewhere. Before asking for that confirmation, list each entry's follow-ups and where each is recorded: a ticket, a document, a pull request, or the triage report. The human decides whether that is enough; don't file tickets yourself unless asked.
+
+## Hold filer og testbevis ryddige
+
+- Rydd som del av hver arbeidsøkt: fjern egne midlertidige filer og unødvendige genererte filer når resultatet er kontrollert. Ikke ta cache, byggutdata, modellfiler eller hemmelig konfigurasjon inn i Git. Dette er løpende vedlikehold under arbeid, ikke en automatisk slettejobb.
+- Lag bare skjermbilder som underbygger et konkret funn, en retting eller en nødvendig tilstand. Velg representative bilder og før-/etterpar fremfor gjentatte helsidesbilder. Bevar feilbevis og relevant kontekst; et nyere bilde erstatter ikke automatisk en annen testtilstand.
+- Kontroller filinnhold med SHA-256 før en kopi regnes som identisk. Behold én etterprøvbar kopi og oppdater berørte lenker/referanser før ekstra kopier fjernes. Ikke slett bilder bare fordi filnavn eller motiv ligner.
+- Arkiver eldre, fortsatt nyttige bilder under `docs/arkiv/skjermbilder/` med opprinnelig struktur og en flyttelogg som angir gammel/ny sti og kontrollsum. Behold rapportdato, testet revisjon, resultat og opprinnelig proveniens. Historiske kontrollsummer er historiske målinger, ikke noe som skal oppdateres til å late som testene kjørte på nytt.
+- For allerede registrerte bevis: bruk et konkret godkjent utvalg før større opprydding. Er formål eller verdi usikker, foreslå håndtering i stedet for å slette. Brukerens øvrige endringer og filer utenfor oppgavens omfang skal bevares.
+- Kontroller etter opprydding at beholdte/arkiverte filer har uendrede kontrollsummer, at berørte lenker virker, og at slettede kopier har et identisk motstykke. Oppdater versjonsloggen ved vesentlig opprydding. Ikke omskriv Git-historikken som del av filrydding uten en egen uttrykkelig bestilling.

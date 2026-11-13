@@ -502,8 +502,7 @@
       "evidence": [
         "raw/pdf-summary.json",
         "raw/pdf-inspection.json",
-        "screenshots/pdf-all-pages.png"
-      ]
+        "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-09/210420-07c855b7770e/screenshots/pdf-retested-all-pages.png"]
     },
     {
       "id": "A11Y-03",

@@ -42,8 +42,7 @@
       "width": 1280,
       "wordSpacing": "3.36px"
     },
-    "screenshot": "screenshots/spacing-0-1280.png"
-  },
+    "screenshot": "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/133024-18e0f9e56386/screenshots/spacing-0-1280.png"},
   {
     "route": "/informasjonskapsler/",
     "measurement": {
@@ -87,8 +86,7 @@
       "width": 320,
       "wordSpacing": "3.36px"
     },
-    "screenshot": "screenshots/spacing-0-320.png"
-  },
+    "screenshot": "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/133024-18e0f9e56386/screenshots/spacing-0-320.png"},
   {
     "route": "/ressurser/informasjonskapsler-og-samtykke/",
     "measurement": {
@@ -127,8 +125,7 @@
       "width": 1280,
       "wordSpacing": "3.36px"
     },
-    "screenshot": "screenshots/spacing-1-1280.png"
-  },
+    "screenshot": "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/133024-18e0f9e56386/screenshots/spacing-1-1280.png"},
   {
     "route": "/ressurser/informasjonskapsler-og-samtykke/",
     "measurement": {
@@ -167,6 +164,5 @@
       "width": 320,
       "wordSpacing": "3.36px"
     },
-    "screenshot": "screenshots/spacing-1-320.png"
-  }
+    "screenshot": "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/133024-18e0f9e56386/screenshots/spacing-1-320.png"}
 ]

@@ -131,8 +131,7 @@
       "evidence": [
         "raw/pdf-inspection.json",
         "raw/pdf-page7-structure.json",
-        "screenshots/pdf-page-7.png"
-      ],
+        "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/screenshots/pdf-page-7.png"],
       "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
       "expected_result": "Informasjon og relasjoner som formidles visuelt er også tilgjengelige programmatisk eller gjennom et egnet tekstalternativ etter kilden. Ingen regel om nøyaktig én h1 innføres som et selvstendig WCAG-krav.",
       "remaining": "Rett liste-/gruppekoding, og kontroller øvrig PDF-semantikk og faktisk hjelpemiddelbruk."
@@ -260,8 +259,7 @@
         "raw/browser-layout.json",
         "raw/pricing-expanded.json",
         "raw/manual-interactions.json",
-        "screenshots/pdf-page-7.png"
-      ],
+        "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/screenshots/pdf-page-7.png"],
       "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
       "expected_result": "Meningsbærende farge har et synlig alternativ. Lenker kan bruke en dokumentert løsning med minst 3:1 mot nabotekst og tilleggskjennetegn ved hover/fokus, eller et permanent annet kjennetegn.",
       "remaining": ""
@@ -313,7 +311,7 @@
         "raw/pdf-page5-colors.json",
         "raw/pdf-page5-pixels.json",
         "raw/contrast-supplement.json",
-        "screenshots/pdf-page-5.png",
+        "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/screenshots/pdf-page-5.png",
         "raw/pdf-contrast-confirmed.json"
       ],
       "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
@@ -355,9 +353,8 @@
         "raw/browser-pages.json",
         "raw/browser-layout.json",
         "raw/pdf-inspection.json",
-        "screenshots/pdf-page-5.png",
-        "screenshots/pdf-page-7.png"
-      ],
+        "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/screenshots/pdf-page-5.png",
+        "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/screenshots/pdf-page-7.png"],
       "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
       "expected_result": "Vanlig informasjon presenteres som faktisk tekst der teknologien tillater det; tillatte bildeunntak er konkret begrunnet. OCR eller markerbar tekst alene beviser ikke at en skannet PDF har tilgjengelig struktur.",
       "remaining": ""
@@ -431,9 +428,8 @@
         "raw/text-spacing.json",
         "raw/text-spacing-overrides.json",
         "raw/manual-interactions.json",
-        "screenshots/spacing-chat-320.png",
-        "screenshots/spacing-pricing-320.png"
-      ],
+        "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/screenshots/spacing-chat-320.png",
+        "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/screenshots/spacing-pricing-320.png"],
       "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
       "expected_result": "Brukeren kan øke de fire avstandene uten tap av innhold eller funksjon. Siden trenger ikke bruke disse verdiene som standard. Ingen sidebredde-overflyt alene er ikke nok til å utelukke klipping.",
       "remaining": "Fullfør visuell kontroll av resterende dynamiske tilstander med overstyringen aktiv."
@@ -760,8 +756,7 @@
       "evidence": [
         "raw/keyboard-pages.json",
         "raw/manual-interactions.json",
-        "screenshots/spacing-chat-320.png"
-      ],
+        "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/screenshots/spacing-chat-320.png"],
       "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
       "expected_result": "Brukeren kan se hvilket element som har tastaturfokus. Ikke gjør et bestemt pikselmål eller WCAG 2.2s strengere fokuskrav til en automatisk del av denne 48-punktslisten; vurder kontrast separat der relevant.",
       "remaining": "Prøv alle representative kontrolltyper visuelt ved faktisk forstørring og ulike flater."
@@ -1010,8 +1005,7 @@
       "actual_result": "Tom chat og to tegn viste norsk tekst som identifiserer ugyldig spørsmålslengde; feltet hadde aria-invalid og kobling til feilen. Retting til et normalt testspørsmål gjorde innsending mulig.",
       "evidence": [
         "raw/manual-interactions.json",
-        "screenshots/spacing-chat-320.png"
-      ],
+        "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/screenshots/spacing-chat-320.png"],
       "reviewed_at": "2026-11-09T22:24:00.664513+01:00",
       "expected_result": "Automatisk avdekkede inndatafeil er forståelig beskrevet i tekst, og berørt felt er identifisert. Farge, ikon eller deaktivert knapp alene er ikke en tilstrekkelig feilbeskrivelse.",
       "remaining": ""

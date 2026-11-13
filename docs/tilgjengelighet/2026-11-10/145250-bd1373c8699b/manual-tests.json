@@ -51,16 +51,15 @@
     "No screen reader, actual 200/400% zoom, physical device, OS preferences, authentication or production validation."
   ],
   "screenshots": [
-    "screenshots/dialog-validation.png",
-    "screenshots/error.png",
-    "screenshots/home-states.png",
-    "screenshots/loading.png",
-    "screenshots/page-1.png",
-    "screenshots/page-2.png",
-    "screenshots/page-3.png",
-    "screenshots/page-4.png",
-    "screenshots/page-5.png",
-    "screenshots/page-6.png",
-    "screenshots/page-7.png"
-  ]
+    "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/145250-bd1373c8699b/screenshots/dialog-validation.png",
+    "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/145250-bd1373c8699b/screenshots/error.png",
+    "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/145250-bd1373c8699b/screenshots/home-states.png",
+    "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/145250-bd1373c8699b/screenshots/loading.png",
+    "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-1.png",
+    "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-2.png",
+    "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-3.png",
+    "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-4.png",
+    "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-5.png",
+    "../202101-029e79106a3d/screenshots/after-6.png",
+    "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-7.png"]
 }

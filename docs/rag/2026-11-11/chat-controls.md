@@ -25,7 +25,7 @@ Dato: 11. november 2026. Utførende: Codex (OpenAI), uten underagenter. Lokal ar
 | Liste med 1/1/1        | Tilgjengelighetstreet viste 1/2/3. DOM hadde ol start=1 og ingen li value-attributter                         |
 | Smal visning           | Viewport og dokumentbredde var begge 320 px; ingen horisontal overflyt i de prøvde tilstandene                |
 
-[DOM-observasjoner](chat-controls/browser-check.json), [simulert backendlogg](chat-controls/events.jsonl), [kuttemelding](chat-controls/cut-320.png), [Avbryt-knapp](chat-controls/cancel-button-320.png), [avbrutt tur](chat-controls/cancelled-320.png) og [ny innsending](chat-controls/resubmitted-320.png) er bevart. Viewport-overstyringen er nullstilt, begge testserverne er stoppet og den isolerte kopien er fjernet. Ordinært produksjonsbygg peker fortsatt på RAG-port 3001, ikke testporten.
+[DOM-observasjoner](chat-controls/browser-check.json), [simulert backendlogg](chat-controls/events.jsonl), [kuttemelding](chat-controls/cut-320.png), [Avbryt-knapp](../../arkiv/skjermbilder/rag/2026-11-11/chat-controls/cancel-button-320.png), [avbrutt tur](chat-controls/cancelled-320.png) og [ny innsending](chat-controls/resubmitted-320.png) er bevart. Viewport-overstyringen er nullstilt, begge testserverne er stoppet og den isolerte kopien er fjernet. Ordinært produksjonsbygg peker fortsatt på RAG-port 3001, ikke testporten.
 
 Dette er en avgrenset visuell/tastatur-/DOM-kontroll, ikke faktisk skjermleserbruk eller en ny full tilgjengelighetsvurdering. Ekstern modell, mobil enhet, IME og øvrige nettlesere er ikke manuelt prøvd.
 

@@ -1270,8 +1270,7 @@
       "confirmed_at": "2026-11-10T06:00:14.604909+01:00",
       "evidence": [
         "raw/404-review.json",
-        "screenshots/404-spraak.png"
-      ],
+        "../../2026-11-09/230452-ae20a84bbc5d/screenshots/404-spraak.png"],
       "source": "https://www.uutilsynet.no/wcag-standarden/312-sprak-pa-deler-av-innhold-niva-aa/111"
     }
   ],

@@ -30,7 +30,7 @@ To nye PDF-avvik er bekreftet: **A11Y-04 / 1.3.1** (visuelle punktlister mangler
 
 **Tiltak:** bruk reelle lister og grupper i kildedokumentet og eksporter korrekt tagget PDF; alternativt tilby et fullstendig strukturert HTML-alternativ. **Retest:** sammenlign hvert punkt og tilhørende gruppe med kodingen og naviger/les listene med faktisk skjermleser i PDF-leser. Eier og frist er ikke avklart.
 
-Evidens: [struktur for side 7](raw/pdf-page7-structure.json), [samlet PDF-inspeksjon](raw/pdf-inspection.json), [rendret side 7](screenshots/pdf-page-7.png).
+Evidens: [struktur for side 7](raw/pdf-page7-structure.json), [samlet PDF-inspeksjon](raw/pdf-inspection.json), [rendret side 7](../../../arkiv/skjermbilder/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/screenshots/pdf-page-7.png).
 
 ### A11Y-05 – utilstrekkelig tekstkontrast
 
@@ -38,7 +38,7 @@ Evidens: [struktur for side 7](raw/pdf-page7-structure.json), [samlet PDF-inspek
 
 **Tiltak:** endre farger slik at all berørt vanlig tekst når minst 4,5:1. **Retest:** eksporter/rendre på nytt og mål faktiske farger for brødtekst, bunntekst og sidetall. Eier og frist er ikke avklart.
 
-Evidens: [tekst-/størrelsesgrupper](raw/pdf-page5-text-groups.json), [PDF-farger](raw/pdf-page5-colors.json), [pikselkontroll](raw/pdf-page5-pixels.json), [kontrastberegninger](raw/contrast-supplement.json), [rendret side 5](screenshots/pdf-page-5.png). [Beregning med rå PDF-fargeverdier](raw/pdf-contrast-confirmed.json) bekrefter også at begge ligger under terskelen; elementene er navngitt i resultatet.
+Evidens: [tekst-/størrelsesgrupper](raw/pdf-page5-text-groups.json), [PDF-farger](raw/pdf-page5-colors.json), [pikselkontroll](raw/pdf-page5-pixels.json), [kontrastberegninger](raw/contrast-supplement.json), [rendret side 5](../../../arkiv/skjermbilder/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/screenshots/pdf-page-5.png). [Beregning med rå PDF-fargeverdier](raw/pdf-contrast-confirmed.json) bekrefter også at begge ligger under terskelen; elementene er navngitt i resultatet.
 
 Det finnes ikke et verifisert fullstendig tilgjengelig alternativ til vedlegget. Be om hjelp eller annet format på **khadah@nasjonalarkivet.no**. Om-siden er bare en kort omtale og ikke et kontrollert fullstendig alternativ. PDF-en er ikke endret i dette oppdraget.
 
@@ -69,6 +69,6 @@ Nettlesermiljøet er macOS/IAB og lokal Next.js-utvikling. Utviklingsindikatoren
 
 ## Etterkontroll av dokument- og sideoppdatering
 
-48 prosjekttester og Pages-produksjonsbygg med TypeScript bestod. Ny HTML-grunnkontroll av 23 eksportfiler ga ingen kandidater. Alle 48 planrader har forventet/faktisk resultat og eksisterende evidens, og statusfordelingen er kontrollert. Relative dokumentlenker er kontrollert i `raw/document-consistency.json`. Den bygde og levende erklæringen viser de to PDF-barrierene, kontakt og uavklart samsvar uten interne funn-/kjørings-ID-er. Desktop og 320 px visning er lest tilbake; ingen sidebredde-overflyt på den nye erklæringssiden. [Skjermbilde](screenshots/updated-declaration.png) og `raw/declaration-browser-verification.json` er lagret.
+48 prosjekttester og Pages-produksjonsbygg med TypeScript bestod. Ny HTML-grunnkontroll av 23 eksportfiler ga ingen kandidater. Alle 48 planrader har forventet/faktisk resultat og eksisterende evidens, og statusfordelingen er kontrollert. Relative dokumentlenker er kontrollert i `raw/document-consistency.json`. Den bygde og levende erklæringen viser de to PDF-barrierene, kontakt og uavklart samsvar uten interne funn-/kjørings-ID-er. Desktop og 320 px visning er lest tilbake; ingen sidebredde-overflyt på den nye erklæringssiden. [Skjermbilde](../../../arkiv/skjermbilder/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/screenshots/updated-declaration.png) og `raw/declaration-browser-verification.json` er lagret.
 
 Prettier og `git diff --check` er brukt på endrede dokument-/kildefiler; rålogger beholder terminalkontrolltegn. PDF-ens SHA-256 er uendret gjennom oppdraget, og den midlertidige tekstavstandsoverstyringen er fjernet. Ingen av utviklingskontrollene er en tilgjengelighetsgodkjenning.

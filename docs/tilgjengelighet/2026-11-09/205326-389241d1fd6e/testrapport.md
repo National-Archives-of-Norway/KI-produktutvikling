@@ -19,7 +19,7 @@ Utført av **Codex (OpenAI)** med tilgjengelighetserklaering 0.3.0 og PDF-skille
 
 **Tiltak:** Rett overskriftsstiler i kilden og eksporter korrekt H1/H2-struktur, eller tilby hele innholdet som strukturert HTML og følg opp PDF-en. **Retest:** sammenlign alle synlige overskrifter med strukturhierarkiet, og prøv faktisk overskriftsnavigasjon med skjermleser i PDF-leser. Eier og frist er ikke avklart.
 
-Evidens: [struktursammendrag](raw/pdf-summary.json), [fullt uttrekk](raw/pdf-inspection.json), [syv rendrerte sider](screenshots/pdf-all-pages.png).
+Evidens: [struktursammendrag](raw/pdf-summary.json), [fullt uttrekk](raw/pdf-inspection.json), [syv rendrerte sider](../../../arkiv/skjermbilder/tilgjengelighet/2026-11-09/210420-07c855b7770e/screenshots/pdf-retested-all-pages.png).
 
 ### A11Y-03 – generisk PDF-tittel (2.4.2)
 
@@ -51,6 +51,6 @@ Kontrollert 9. november 2026: [Uu-tilsynets fremgangsmåte](https://www.uutilsyn
 
 ## Verifisering etter dokumentoppdatering
 
-48 prosjekttester bestod. Pages-produksjonsbygg med TypeScript bestod. Ny HTML-grunnkontroll av 23 eksportfiler fant ingen kandidater i sitt avgrensede omfang; dette er separat etterkontroll i `raw/html-post-update.json`, ikke en endring av originalmanifestet. 48 unike kriterier, statusfordeling og 73 relative dokumentlenker er kontrollert. Prettier og `git diff --check` bestod for dokument-/kildefilene. Den bygde erklæringen inneholder ny kjøringsreferanse og PDF-funn; den lokale siden er lest tilbake i nettleser, med [skjermbilde](screenshots/updated-declaration.png) og `raw/declaration-browser-verification.json`. Rå bygglogg er bevart med opprinnelige terminalkontrolltegn. Disse utviklingskontrollene er ikke en tilgjengelighetsgodkjenning.
+48 prosjekttester bestod. Pages-produksjonsbygg med TypeScript bestod. Ny HTML-grunnkontroll av 23 eksportfiler fant ingen kandidater i sitt avgrensede omfang; dette er separat etterkontroll i `raw/html-post-update.json`, ikke en endring av originalmanifestet. 48 unike kriterier, statusfordeling og 73 relative dokumentlenker er kontrollert. Prettier og `git diff --check` bestod for dokument-/kildefilene. Den bygde erklæringen inneholder ny kjøringsreferanse og PDF-funn; den lokale siden er lest tilbake i nettleser, med [skjermbilde](../../../arkiv/skjermbilder/tilgjengelighet/2026-11-09/205326-389241d1fd6e/screenshots/updated-declaration.png) og `raw/declaration-browser-verification.json`. Rå bygglogg er bevart med opprinnelige terminalkontrolltegn. Disse utviklingskontrollene er ikke en tilgjengelighetsgodkjenning.
 
 PDF-metadata er også kryssjekket mot XMP: tittelen er Presentation begge steder, og DisplayDocTitle er true. Verktøyversjoner og resultat står i `raw/pdf-metadata-verification.json` (pypdf 6.10.0, pdfplumber 0.11.9). Ingen beskrivende alternativ tittel er funnet i metadata.

@@ -1,0 +1,180 @@
+{
+  "date": "2026-11-13",
+  "agent": "Codex (OpenAI); eksakt modellversjon ikke oppgitt",
+  "scope": {
+    "head": "ce43210cc63fca7353293459103bcdab6171d591",
+    "commits_all_refs": 43,
+    "commits_main": 43,
+    "blobs": 1625,
+    "excluded_blind_blobs": 2,
+    "text_blobs": 1503,
+    "image_blobs": 114,
+    "pdf_blobs": 4,
+    "other_binary": {
+      ".gz": 1,
+      ".ico": 1
+    },
+    "git_identity_pairs": 1,
+    "categories": {
+      "internal-host": 55,
+      "email": 210,
+      "local-user-path": 173,
+      "authorization-value": 30,
+      "norwegian-id-candidate": 40,
+      "sensitive-language": 7,
+      "credential-url": 9
+    }
+  },
+  "gitleaks": {
+    "version": "8.30.1",
+    "history_candidates": 6,
+    "confirmed_generated_preview_keys": 2,
+    "confirmed_file_checksum_false_positives": 4,
+    "media_candidates": 0,
+    "archive_candidates": 0
+  },
+  "media": {
+    "files_extracted": 118,
+    "errors": 0,
+    "pdf_versions": 4,
+    "pdf_pages_total": 28,
+    "visual_contact_sheets": 10,
+    "archive_members": 20
+  },
+  "findings_with_media_locations": [
+    {
+      "oid": "d281dff939834cd153cc6afbf2170979bdf1e4aa",
+      "paths": [
+        "docs/informasjonskapsler/2026-11-10/121354-92b5bf52/screenshots/cookie-decision-desktop.png"
+      ],
+      "hits": {
+        "email": 1
+      }
+    },
+    {
+      "oid": "85c3d129672953bb7e12bc4296713034d036a4c6",
+      "paths": [
+        "docs/tilgjengelighet/2026-11-09/205326-389241d1fd6e/screenshots/pdf-all-pages.png",
+        "docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/screenshots/pdf-retested-all-pages.png"
+      ],
+      "hits": {
+        "participant-names": 1
+      }
+    },
+    {
+      "oid": "1403b043b0703ec34f562f12cff7b7d0038dd161",
+      "paths": [
+        "docs/tilgjengelighet/2026-11-10/053920-3f1e603bfbcd/screenshots/erklaering-desktop.png"
+      ],
+      "hits": {
+        "email": 1
+      }
+    },
+    {
+      "oid": "07ab64c0d175bec5bf8bf11719c690aaa07a1c7e",
+      "paths": [
+        "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/after-2.png",
+        "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/original-2.png"
+      ],
+      "hits": {
+        "participant-names": 1
+      }
+    },
+    {
+      "oid": "0724c4100968b2e1d6aa521a2a6bdef6300dba63",
+      "paths": [
+        "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/declaration-after.png"
+      ],
+      "hits": {
+        "email": 1
+      }
+    },
+    {
+      "oid": "f064951ea7b383ae3a8101788b97c07647827fca",
+      "paths": [
+        "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6/screenshots/declaration-320.png"
+      ],
+      "hits": {
+        "email": 1
+      }
+    },
+    {
+      "oid": "e38f8efd8171a0ab9a06935acaa0992b57f56ecb",
+      "paths": [
+        "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6/screenshots/declaration-desktop.png"
+      ],
+      "hits": {
+        "email": 1
+      }
+    },
+    {
+      "oid": "87043bedc694892b670637711a25f609e56c6c2c",
+      "paths": [
+        "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386/screenshots/spacing-0-1280.png"
+      ],
+      "hits": {
+        "email": 1
+      }
+    },
+    {
+      "oid": "21cf6e5a83cc77d1ca261e0484c25fb8f5a1a308",
+      "paths": [
+        "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/screenshots/page-2.png",
+        "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/screenshots/page-2.png",
+        "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/after-2.png",
+        "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-2.png"
+      ],
+      "hits": {
+        "participant-names": 1
+      }
+    },
+    {
+      "oid": "8a6d2c587cb5d695f81e2598d354d31547fe0f4f",
+      "paths": [
+        "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/pdf-all-pages.png"
+      ],
+      "hits": {
+        "participant-names": 1
+      }
+    },
+    {
+      "oid": "9aec51485ba8633475db7b189b14d04f7b9d66a5",
+      "paths": [
+        "docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/raw/mandatforslag-before.pdf",
+        "public/vedlegg/mandatforslag-ai-enablement-team.pdf"
+      ],
+      "hits": {
+        "participant-names": 1
+      }
+    },
+    {
+      "oid": "e1343afb0b0f1eba2d652f261c697251d758ade5",
+      "paths": [
+        "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/raw/original.pdf",
+        "public/vedlegg/mandatforslag-ai-enablement-team.pdf"
+      ],
+      "hits": {
+        "participant-names": 1
+      }
+    },
+    {
+      "oid": "7b56ed7d8ce912124362b6aebf169c82fc93f583",
+      "paths": [
+        "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/raw/before.pdf",
+        "public/vedlegg/mandatforslag-ai-enablement-team.pdf"
+      ],
+      "hits": {
+        "participant-names": 1
+      }
+    },
+    {
+      "oid": "4cc70e23f3bdf6258506f767ef26da2bfdac3bc9",
+      "paths": ["public/vedlegg/mandatforslag-ai-enablement-team.pdf"],
+      "hits": {
+        "participant-names": 1
+      }
+    }
+  ],
+  "changes_to_existing_evidence": false,
+  "pushed": false
+}

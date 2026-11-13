@@ -40,6 +40,6 @@ Sluttkjøring av enhetstestene etter avgrensning av globale Selenium-innstilling
 
 ## Tilbakeavlesning og bevaring
 
-Den oppdaterte erklæringen er lest tilbake på stor skjerm og ved 320 px uten sideoverflyt eller ny kandidat i DOM-delkontrollen: [tilbakeavlesning](raw/declaration-readback.json), [skjermbilde](screenshots/declaration-desktop.png). Dette er en ny kontroll bare av erklæringssiden, ikke av alle sider. Rådata fra øvrige tidligere nettlesertester beholder sitt opprinnelige tidspunkt.
+Den oppdaterte erklæringen er lest tilbake på stor skjerm og ved 320 px uten sideoverflyt eller ny kandidat i DOM-delkontrollen: [tilbakeavlesning](raw/declaration-readback.json), [skjermbilde](../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6/screenshots/declaration-desktop.png). Dette er en ny kontroll bare av erklæringssiden, ikke av alle sider. Rådata fra øvrige tidligere nettlesertester beholder sitt opprinnelige tidspunkt.
 
 Etter avgrensning av globale Selenium-innstillinger ble den faktiske negative motorprøven gjentatt og [bestod på nytt](../tools-smoke-14ee8e37/smoke-result.json). Begge motorer fant tilsiktet alt-feil. Hele prosjektets [formatkontroll](raw/format-final.stdout.txt) bestod; daterte auditmapper unntas slik at originale motordata og prosedyreøyeblikksbilder ikke endres av formatering. [Integritetskontroll](raw/document-verification.json) avstemmer krav, status, evidens og dokumentlenker.

@@ -1619,9 +1619,8 @@
       "evidence": [
         "raw/pdf-language.json",
         "raw/pdf-language-parenttree.json",
-        "screenshots/pdf-page-4.png",
-        "screenshots/pdf-page-6.png"
-      ],
+        "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/screenshots/pdf-page-4.png",
+        "../../../arkiv/skjermbilder/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/screenshots/pdf-page-6.png"],
       "automatic_status": "partial_tested",
       "automatic_evidence": [
         "raw/auto-01.json"

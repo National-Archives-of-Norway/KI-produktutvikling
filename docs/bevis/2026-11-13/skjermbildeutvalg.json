@@ -1,0 +1,1504 @@
+{
+  "date": "2026-11-13",
+  "source_commit": "ce43210cc63fca7353293459103bcdab6171d591",
+  "proposal_only": true,
+  "counts": {
+    "Behold": 38,
+    "Historikk / kan utgå fra aktivt utvalg": 75,
+    "Identisk kopi": 29
+  },
+  "bytes_by_category": {
+    "Behold": 2098653,
+    "Historikk / kan utgå fra aktivt utvalg": 7183580,
+    "Identisk kopi": 2177266
+  },
+  "images": [
+    {
+      "path": "docs/informasjonskapsler/2026-11-10/121354-92b5bf52/screenshots/cookie-320.png",
+      "category": "Behold",
+      "reason": "Representativ mobil-/desktopvisning av cookie-informasjonen og den nye skill-siden. Understøtter layout, ikke fravær av lagring eller juridisk samtykkekonklusjon.",
+      "bytes": 54535,
+      "sha256": "a8ef188b53c928e20799e496c100dbc76a965a2db10c363be61db36d7804d381",
+      "dimensions": [320, 800],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/informasjonskapsler/2026-11-10/121354-92b5bf52/screenshots/cookie-decision-desktop.png",
+      "category": "Behold",
+      "reason": "Representativ mobil-/desktopvisning av cookie-informasjonen og den nye skill-siden. Understøtter layout, ikke fravær av lagring eller juridisk samtykkekonklusjon.",
+      "bytes": 112967,
+      "sha256": "8841c7db0feed8f4607e25067e5290ffad223d0e222bf896c2b8b980cc5904d1",
+      "dimensions": [1280, 800],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/informasjonskapsler/2026-11-10/121354-92b5bf52/rapport.md"
+      ]
+    },
+    {
+      "path": "docs/informasjonskapsler/2026-11-10/121354-92b5bf52/screenshots/skill-320.png",
+      "category": "Behold",
+      "reason": "Representativ mobil-/desktopvisning av cookie-informasjonen og den nye skill-siden. Understøtter layout, ikke fravær av lagring eller juridisk samtykkekonklusjon.",
+      "bytes": 35030,
+      "sha256": "02129a751c6284913daf1cc43c2289a224d53afba16fd724f3a38742b378f8ec",
+      "dimensions": [320, 800],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/informasjonskapsler/2026-11-10/121354-92b5bf52/screenshots/skill-desktop.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Supplerende eller eldre side-/tilstandsvisning uten egen nødvendig før-/etterrolle i det foreslåtte utvalget. Tilsvarende kontrollfamilie dekkes av valgt bilde og datert rapport; kan arkiveres som historikk.",
+      "bytes": 71794,
+      "sha256": "0036459e9e6a38972e4af2cdf7aa93d87872ca153caebf761912415bb5f4fadd",
+      "dimensions": [1280, 720],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/rag/2026-11-11/chat-client/chat.jpg",
+      "category": "Behold",
+      "reason": "Representativ visning av chatens formaterte svar/lister; sammenhold med parserens automatiske tester og datert rapport.",
+      "bytes": 126175,
+      "sha256": "00bc0aa3e801fdf137c3693707eddbf1d80c53f1b8fcf06c57fb2e9c34374535",
+      "dimensions": [1280, 1914],
+      "identical_to": null,
+      "markdown_references": ["docs/rag/2026-11-11/chat-client.md"]
+    },
+    {
+      "path": "docs/rag/2026-11-11/chat-controls/cancel-button-320.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Eldre knapputforming før den senere fokusrettingen. Nyere fokusbilde og konkrete avbrudds-/ny-innsendingstilstander er valgt.",
+      "bytes": 21010,
+      "sha256": "8495ad65aa2a397d34b796938cccc22150224cc19c142c2d6a4e1861724f3ec0",
+      "dimensions": [320, 800],
+      "identical_to": null,
+      "markdown_references": ["docs/rag/2026-11-11/chat-controls.md"]
+    },
+    {
+      "path": "docs/rag/2026-11-11/chat-controls/cancelled-320.png",
+      "category": "Behold",
+      "reason": "Konkrete tilstander: kuttemelding, avbrutt tur og ny innsending. Historisk UI; nyere fokusrapport bestemmer dagens knappoppførsel.",
+      "bytes": 22705,
+      "sha256": "70b62bce589cb3ee9f759b326b99d120c88c90929bb7629f4ebc291f9d059e9d",
+      "dimensions": [320, 800],
+      "identical_to": null,
+      "markdown_references": ["docs/rag/2026-11-11/chat-controls.md"]
+    },
+    {
+      "path": "docs/rag/2026-11-11/chat-controls/cut-320.png",
+      "category": "Behold",
+      "reason": "Konkrete tilstander: kuttemelding, avbrutt tur og ny innsending. Historisk UI; nyere fokusrapport bestemmer dagens knappoppførsel.",
+      "bytes": 36026,
+      "sha256": "cdeb421db343258f93df3d8a57e5ae7d400f387a9bf53eb373adb12fb8bc2631",
+      "dimensions": [320, 800],
+      "identical_to": null,
+      "markdown_references": ["docs/rag/2026-11-11/chat-controls.md"]
+    },
+    {
+      "path": "docs/rag/2026-11-11/chat-controls/resubmitted-320.png",
+      "category": "Behold",
+      "reason": "Konkrete tilstander: kuttemelding, avbrutt tur og ny innsending. Historisk UI; nyere fokusrapport bestemmer dagens knappoppførsel.",
+      "bytes": 24567,
+      "sha256": "087a10b01bc8249158e0b0164f819280ea160c00f619a4f6677f5eaa97e1efce",
+      "dimensions": [320, 800],
+      "identical_to": null,
+      "markdown_references": ["docs/rag/2026-11-11/chat-controls.md"]
+    },
+    {
+      "path": "docs/rag/2026-11-11/chat-dates-buttons-320.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Eldre knapputforming før den senere fokusrettingen. Nyere fokusbilde og konkrete avbrudds-/ny-innsendingstilstander er valgt.",
+      "bytes": 20282,
+      "sha256": "88692c5b3b9a92851171f1e1d85476ff897125bded01a549987794953464e2d2",
+      "dimensions": [320, 800],
+      "identical_to": null,
+      "markdown_references": ["docs/rag/2026-11-11/chat-dates-port.md"]
+    },
+    {
+      "path": "docs/rag/2026-11-11/chat-focus-320.jpg",
+      "category": "Behold",
+      "reason": "Dokumenterer separat Avbryt og fokuserbar Send ved 320 px etter fokusrettingen; DOM-observasjonene i rapporten er avgjørende fokusbevis.",
+      "bytes": 24578,
+      "sha256": "217e885d9626fbd2931d612e83829d2bed28baf53dd4b4fb290519c4f941213f",
+      "dimensions": [320, 800],
+      "identical_to": null,
+      "markdown_references": ["docs/rag/2026-11-11/chat-focus.md"]
+    },
+    {
+      "path": "docs/rag/2026-11-13/chat-label-320.jpg",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Fast etikett var et mellomsteg som brukeren ba om å erstatte. Ikke gjeldende løsning; den nyere flytende etiketten er valgt.",
+      "bytes": 30976,
+      "sha256": "68425ed9953fef6ecaf937739968e3d540aa5b39a68f6cd31b0955a48478d57a",
+      "dimensions": [320, 800],
+      "identical_to": null,
+      "markdown_references": ["docs/rag/2026-11-13/chat-label.md"]
+    },
+    {
+      "path": "docs/rag/2026-11-13/chat-label-floating-320.jpg",
+      "category": "Behold",
+      "reason": "Nyeste bekreftede etikettløsning: flytende MUI-label med utsparing/bakgrunnsmaske ved fokus på mobil.",
+      "bytes": 32456,
+      "sha256": "c45c595b4260175dbd61bcc052d950a4577144bf1be80d2ff9810796bec01051",
+      "dimensions": [320, 800],
+      "identical_to": null,
+      "markdown_references": ["docs/rag/2026-11-13/chat-label-floating.md"]
+    },
+    {
+      "path": "docs/skills/2026-11-07/brukerveiledning.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Eldre katalog-/skillversjoner. Kan beholdes som produkthistorikk, men er ikke nødvendig testbevis for dagens katalog.",
+      "bytes": 61534,
+      "sha256": "592a407b9968b72faef1dfb04ccae771007b5486ec0ad231dbd39e42d3b06d0c",
+      "dimensions": [617, 661],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/skills/2026-11-07/katalog.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Eldre katalog-/skillversjoner. Kan beholdes som produkthistorikk, men er ikke nødvendig testbevis for dagens katalog.",
+      "bytes": 38334,
+      "sha256": "bf9d6c2b7a9449121586347cb89ecd92ef666e8fe5d7b1180177f31d38e167a4",
+      "dimensions": [617, 661],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/skills/2026-11-07/versjon-0-2-0.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Eldre katalog-/skillversjoner. Kan beholdes som produkthistorikk, men er ikke nødvendig testbevis for dagens katalog.",
+      "bytes": 44598,
+      "sha256": "a94908f99a4a0b54d500bfdc714063bc8d92541c1821bd52bbe5166ff381caa1",
+      "dimensions": [617, 661],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/skills/2026-11-07/versjon-0-3-0.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Eldre katalog-/skillversjoner. Kan beholdes som produkthistorikk, men er ikke nødvendig testbevis for dagens katalog.",
+      "bytes": 45248,
+      "sha256": "857a793576d248b0616ee03c4723f25fd7622b87ebc21d9fdcb194d686c06bc8",
+      "dimensions": [617, 661],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-06/erklaering.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Eldre erklæringstilstand. Statushistorikken finnes i vurderingsmatrise/rapport; ett avsluttende skjermbilde er valgt i stedet.",
+      "bytes": 76193,
+      "sha256": "72450d60edd3679d32ce4f4ac8d9d6becc3c8cd447fc9da927774e7fb89322e6",
+      "dimensions": [816, 791],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-07/erklaering.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Eldre erklæringstilstand. Statushistorikken finnes i vurderingsmatrise/rapport; ett avsluttende skjermbilde er valgt i stedet.",
+      "bytes": 83336,
+      "sha256": "bcad127418736ce7dc05c1b0d1dcd20ba5481d741c47d1394bb244ab29d1218d",
+      "dimensions": [816, 791],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-09/201443-73cb0a3e52e0/screenshots/animation-keyboard-pause.png",
+      "category": "Behold",
+      "reason": "Historisk tastatur-/pauseforløp for illustrasjonen. Bildet støtter synlig tilstand, ikke bevegelse eller OS-innstilling alene.",
+      "bytes": 90943,
+      "sha256": "8f6eba4827adb98cdcef9897681678e16eb7249a55f8df179914901b90e01fec",
+      "dimensions": [1280, 900],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-09/201443-73cb0a3e52e0/screenshots/overview-spacing-320.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Supplerende eller eldre side-/tilstandsvisning uten egen nødvendig før-/etterrolle i det foreslåtte utvalget. Tilsvarende kontrollfamilie dekkes av valgt bilde og datert rapport; kan arkiveres som historikk.",
+      "bytes": 28399,
+      "sha256": "73ddcd411a513fc0468707dbf2b1c52e77263d69408b3d794508f75a6f398a66",
+      "dimensions": [320, 740],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-09/201443-73cb0a3e52e0/screenshots/pricing-language.png",
+      "category": "Behold",
+      "reason": "Førbilde av språkavviket i prisvilkår (A11Y-01); bevares sammen med rettet visning.",
+      "bytes": 48205,
+      "sha256": "19a81e486566b14ef484e15bb9fd01d6502e99da0770d4b2a61bf88cb332f639",
+      "dimensions": [320, 740],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-09/201443-73cb0a3e52e0/screenshots/updated-declaration.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Eldre erklæringstilstand. Statushistorikken finnes i vurderingsmatrise/rapport; ett avsluttende skjermbilde er valgt i stedet.",
+      "bytes": 104431,
+      "sha256": "67c92ff7d939674d895cce1371d6fc16928e0780452ace1701a127e7bf7dce73",
+      "dimensions": [1280, 720],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-09/203914-cf2e80bc00f7/screenshots/pricing-language-fixed.png",
+      "category": "Behold",
+      "reason": "Etterbilde av prisvilkår etter språkretning (A11Y-01), sammenhold med førbildet og genereringstestene.",
+      "bytes": 83056,
+      "sha256": "4e2ec8610be5a294e1aa0c171d0a496374365d2007ba486793317d7d7de9a367",
+      "dimensions": [1280, 720],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-09/205326-389241d1fd6e/erklaering-utkast.md",
+        "docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/erklaering-utkast.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-09/205326-389241d1fd6e/screenshots/chat-field-focus-320.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Supplerende eller eldre side-/tilstandsvisning uten egen nødvendig før-/etterrolle i det foreslåtte utvalget. Tilsvarende kontrollfamilie dekkes av valgt bilde og datert rapport; kan arkiveres som historikk.",
+      "bytes": 34824,
+      "sha256": "1b04c09c829d82fa15ca0d7675ebcca80b288ae0bd4980ea4faa8f0cc526312b",
+      "dimensions": [320, 740],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-09/205326-389241d1fd6e/screenshots/pdf-all-pages.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/screenshots/pdf-retested-all-pages.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 331404,
+      "sha256": "abb20e964f2020b10778ed63de7dd4b10b666346b93039f6ff660bf47173885a",
+      "dimensions": [1100, 4515],
+      "identical_to": "docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/screenshots/pdf-retested-all-pages.png",
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-09/205326-389241d1fd6e/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-09/205326-389241d1fd6e/screenshots/updated-declaration.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Eldre erklæringstilstand. Statushistorikken finnes i vurderingsmatrise/rapport; ett avsluttende skjermbilde er valgt i stedet.",
+      "bytes": 75088,
+      "sha256": "eeaf3ea20c5b33010aff0586a8ca4f5cf0416e71f17082eb333af442541a6e92",
+      "dimensions": [1280, 720],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-09/205326-389241d1fd6e/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/screenshots/pdf-retested-all-pages.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Gjentatt full PDF-rendring eller semantikk-/språktest med uendret synlig innhold. PDF-filer, strukturdata og piksel-/hashsammenligning bærer hovedbeviset; utvalgt side 5 og diagram beholdes.",
+      "bytes": 331404,
+      "sha256": "abb20e964f2020b10778ed63de7dd4b10b666346b93039f6ff660bf47173885a",
+      "dimensions": [1100, 4515],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/screenshots/updated-declaration.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Eldre erklæringstilstand. Statushistorikken finnes i vurderingsmatrise/rapport; ett avsluttende skjermbilde er valgt i stedet.",
+      "bytes": 101202,
+      "sha256": "964d9258e6a7ae511fa6d5b1e68d136b07ab72e4730a7772c339ca96671bb8d1",
+      "dimensions": [1280, 720],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/screenshots/chat-result.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Supplerende eller eldre side-/tilstandsvisning uten egen nødvendig før-/etterrolle i det foreslåtte utvalget. Tilsvarende kontrollfamilie dekkes av valgt bilde og datert rapport; kan arkiveres som historikk.",
+      "bytes": 56839,
+      "sha256": "8eacc1f9f6968ea866376dd381e12c154d82874a21f334e5db7d9317a1625fb8",
+      "dimensions": [1280, 720],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/screenshots/pdf-page-5.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Gjentatt full PDF-rendring eller semantikk-/språktest med uendret synlig innhold. PDF-filer, strukturdata og piksel-/hashsammenligning bærer hovedbeviset; utvalgt side 5 og diagram beholdes.",
+      "bytes": 75680,
+      "sha256": "2144bd82171e6e81cc0ac925e45d06693fd16d2bf03b6db3cbf1a8a219854752",
+      "dimensions": [1600, 901],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/screenshots/pdf-page-7.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Gjentatt full PDF-rendring eller semantikk-/språktest med uendret synlig innhold. PDF-filer, strukturdata og piksel-/hashsammenligning bærer hovedbeviset; utvalgt side 5 og diagram beholdes.",
+      "bytes": 60596,
+      "sha256": "67018e3416875e5848f04fed4588270ecd97a78fd018898451be6111dec94ddd",
+      "dimensions": [1100, 619],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/screenshots/pricing-320.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Supplerende eller eldre side-/tilstandsvisning uten egen nødvendig før-/etterrolle i det foreslåtte utvalget. Tilsvarende kontrollfamilie dekkes av valgt bilde og datert rapport; kan arkiveres som historikk.",
+      "bytes": 41663,
+      "sha256": "ed10eac54c0c93fa061c8db0599ce0ecd7ce961fc095165e13b6489850409361",
+      "dimensions": [320, 740],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/screenshots/spacing-chat-320-transition.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Supplerende eller eldre side-/tilstandsvisning uten egen nødvendig før-/etterrolle i det foreslåtte utvalget. Tilsvarende kontrollfamilie dekkes av valgt bilde og datert rapport; kan arkiveres som historikk.",
+      "bytes": 32444,
+      "sha256": "2c50e9da2ef39a3906c0cbffab04ad1edc59513c174a1b5d8828cd3b99e7c57c",
+      "dimensions": [320, 740],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/screenshots/spacing-chat-320.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Supplerende eller eldre side-/tilstandsvisning uten egen nødvendig før-/etterrolle i det foreslåtte utvalget. Tilsvarende kontrollfamilie dekkes av valgt bilde og datert rapport; kan arkiveres som historikk.",
+      "bytes": 26795,
+      "sha256": "52dbb9734a5203c2d9625ad57af2566e303927b7b1817b3f2ef3075cb81c5e2f",
+      "dimensions": [320, 740],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/screenshots/spacing-pricing-320.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Supplerende eller eldre side-/tilstandsvisning uten egen nødvendig før-/etterrolle i det foreslåtte utvalget. Tilsvarende kontrollfamilie dekkes av valgt bilde og datert rapport; kan arkiveres som historikk.",
+      "bytes": 24873,
+      "sha256": "4424d9f4b5a9f549e3bdfbcb5a39787f6132a6c42fdc4c9c1a321687070c0d6b",
+      "dimensions": [320, 740],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/screenshots/updated-declaration.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Eldre erklæringstilstand. Statushistorikken finnes i vurderingsmatrise/rapport; ett avsluttende skjermbilde er valgt i stedet.",
+      "bytes": 105182,
+      "sha256": "5d399f06e8fc994e1f72027b53160530bee1fccd6a518bdef1f363e9d742e2d4",
+      "dimensions": [1280, 720],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-09/230452-ae20a84bbc5d/screenshots/404-spraak.png",
+      "category": "Behold",
+      "reason": "Representativt førbilde av engelsk 404-side (A11Y-06).",
+      "bytes": 13018,
+      "sha256": "7e9d1575a795817c972861d6245a36e77bff3c5229d0965ede1422ba24d0e0c3",
+      "dimensions": [1280, 720],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/053920-3f1e603bfbcd/screenshots/404-spraak.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-09/230452-ae20a84bbc5d/screenshots/404-spraak.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 13018,
+      "sha256": "7e9d1575a795817c972861d6245a36e77bff3c5229d0965ede1422ba24d0e0c3",
+      "dimensions": [1280, 720],
+      "identical_to": "docs/tilgjengelighet/2026-11-09/230452-ae20a84bbc5d/screenshots/404-spraak.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/053920-3f1e603bfbcd/screenshots/erklaering-320.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Eldre erklæringstilstand. Statushistorikken finnes i vurderingsmatrise/rapport; ett avsluttende skjermbilde er valgt i stedet.",
+      "bytes": 237811,
+      "sha256": "ecfea9cfab722e8d1e18837f164ffa501fd479cfe5b7427e4b4afd1447fe013e",
+      "dimensions": [320, 4103],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-10/053920-3f1e603bfbcd/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/053920-3f1e603bfbcd/screenshots/erklaering-desktop.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Eldre erklæringstilstand. Statushistorikken finnes i vurderingsmatrise/rapport; ett avsluttende skjermbilde er valgt i stedet.",
+      "bytes": 262904,
+      "sha256": "f7e6cfe5988bf566833b72240d692b294a677d01b3ee28ba2104b3a68ae76c15",
+      "dimensions": [1280, 2276],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-10/053920-3f1e603bfbcd/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/404-fixed.png",
+      "category": "Behold",
+      "reason": "Etterbilde av norsk 404-side (A11Y-06).",
+      "bytes": 39004,
+      "sha256": "d27b727b6c0be1bf96c495565dbd2bf0d2ecb12bf271c63fbe5d458c9199120d",
+      "dimensions": [1280, 720],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/after-1.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/original-1.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 28126,
+      "sha256": "6ed0bbb65734b45fb3d04a6b5c4b8ce466ca8f94a9441e8aa3e3872d519571b1",
+      "dimensions": [1200, 676],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/original-1.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/after-2.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/original-2.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 36164,
+      "sha256": "ae32fe1485576473e2ec74a8ed2f657d4e3e0dfb761b745b7fb2798a68bcc3eb",
+      "dimensions": [1200, 676],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/original-2.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/after-3.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/original-3.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 41926,
+      "sha256": "9730321ba12e09efb29f1b59c05514cd2a9ef02f960cdbdd8b8de4809cfa7cce",
+      "dimensions": [1200, 676],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/original-3.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/after-4.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/original-4.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 53709,
+      "sha256": "0b9b15f4ccfc2b4618136b49f54de5d5454bb2844798b195b9907f526399857e",
+      "dimensions": [1200, 676],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/original-4.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/after-5.png",
+      "category": "Behold",
+      "reason": "Før-/etterpar for faktisk synlig tekstkontrastretting på PDF-side 5 (A11Y-05); måledata gir kontrastforholdet.",
+      "bytes": 52872,
+      "sha256": "f57823bab403d892b813fe681b10f9234a03c5699b3e6dc9aae455ceca2e622e",
+      "dimensions": [1200, 676],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/after-6.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/original-6.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 75662,
+      "sha256": "470594d30160bb93b80d93913b52c31d18cda766bb412b8d8124a9deb33a2a43",
+      "dimensions": [1200, 676],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/original-6.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/after-7.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/original-7.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 69633,
+      "sha256": "1ce88f0b3754cbfead08ce8904fef9dc816c629e97034573d5968801718ab474",
+      "dimensions": [1200, 676],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/original-7.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/before-7.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Gjentatt full PDF-rendring eller semantikk-/språktest med uendret synlig innhold. PDF-filer, strukturdata og piksel-/hashsammenligning bærer hovedbeviset; utvalgt side 5 og diagram beholdes.",
+      "bytes": 92653,
+      "sha256": "2db745e0fb51ce5578456fb03a006583051bdfb54caec08b33076cc8759f5013",
+      "dimensions": [1600, 901],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/declaration-after.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Eldre erklæringstilstand. Statushistorikken finnes i vurderingsmatrise/rapport; ett avsluttende skjermbilde er valgt i stedet.",
+      "bytes": 230289,
+      "sha256": "ee650147ba044a96a1c4ecaf2bb6f859d23c642f14afe91b09df300a475295ee",
+      "dimensions": [1280, 2112],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/original-1.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Gjentatt full PDF-rendring eller semantikk-/språktest med uendret synlig innhold. PDF-filer, strukturdata og piksel-/hashsammenligning bærer hovedbeviset; utvalgt side 5 og diagram beholdes.",
+      "bytes": 28126,
+      "sha256": "6ed0bbb65734b45fb3d04a6b5c4b8ce466ca8f94a9441e8aa3e3872d519571b1",
+      "dimensions": [1200, 676],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/original-2.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Gjentatt full PDF-rendring eller semantikk-/språktest med uendret synlig innhold. PDF-filer, strukturdata og piksel-/hashsammenligning bærer hovedbeviset; utvalgt side 5 og diagram beholdes.",
+      "bytes": 36164,
+      "sha256": "ae32fe1485576473e2ec74a8ed2f657d4e3e0dfb761b745b7fb2798a68bcc3eb",
+      "dimensions": [1200, 676],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/original-3.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Gjentatt full PDF-rendring eller semantikk-/språktest med uendret synlig innhold. PDF-filer, strukturdata og piksel-/hashsammenligning bærer hovedbeviset; utvalgt side 5 og diagram beholdes.",
+      "bytes": 41926,
+      "sha256": "9730321ba12e09efb29f1b59c05514cd2a9ef02f960cdbdd8b8de4809cfa7cce",
+      "dimensions": [1200, 676],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/original-4.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Gjentatt full PDF-rendring eller semantikk-/språktest med uendret synlig innhold. PDF-filer, strukturdata og piksel-/hashsammenligning bærer hovedbeviset; utvalgt side 5 og diagram beholdes.",
+      "bytes": 53709,
+      "sha256": "0b9b15f4ccfc2b4618136b49f54de5d5454bb2844798b195b9907f526399857e",
+      "dimensions": [1200, 676],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/original-5.png",
+      "category": "Behold",
+      "reason": "Før-/etterpar for faktisk synlig tekstkontrastretting på PDF-side 5 (A11Y-05); måledata gir kontrastforholdet.",
+      "bytes": 52526,
+      "sha256": "4a786b2b56f76d67a318da2faa4c3a25b836f2b0ae7a0063205125b190e0a2cc",
+      "dimensions": [1200, 676],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/original-6.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Gjentatt full PDF-rendring eller semantikk-/språktest med uendret synlig innhold. PDF-filer, strukturdata og piksel-/hashsammenligning bærer hovedbeviset; utvalgt side 5 og diagram beholdes.",
+      "bytes": 75662,
+      "sha256": "470594d30160bb93b80d93913b52c31d18cda766bb412b8d8124a9deb33a2a43",
+      "dimensions": [1200, 676],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/original-7.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Gjentatt full PDF-rendring eller semantikk-/språktest med uendret synlig innhold. PDF-filer, strukturdata og piksel-/hashsammenligning bærer hovedbeviset; utvalgt side 5 og diagram beholdes.",
+      "bytes": 69633,
+      "sha256": "1ce88f0b3754cbfead08ce8904fef9dc816c629e97034573d5968801718ab474",
+      "dimensions": [1200, 676],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6/screenshots/declaration-320.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Eldre erklæringstilstand. Statushistorikken finnes i vurderingsmatrise/rapport; ett avsluttende skjermbilde er valgt i stedet.",
+      "bytes": 212877,
+      "sha256": "95bd8acb2a7d0d1656f5a7a6f5de53ce86ca8effe87f873c3c43a31a3f6381df",
+      "dimensions": [320, 3818],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6/screenshots/declaration-desktop.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Eldre erklæringstilstand. Statushistorikken finnes i vurderingsmatrise/rapport; ett avsluttende skjermbilde er valgt i stedet.",
+      "bytes": 237399,
+      "sha256": "2b3fe6663180215ad801ee859beb58542be703083c48c26f8ca766a6c80cf577",
+      "dimensions": [1280, 2152],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2/screenshots/declaration-320.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Eldre erklæringstilstand. Statushistorikken finnes i vurderingsmatrise/rapport; ett avsluttende skjermbilde er valgt i stedet.",
+      "bytes": 30592,
+      "sha256": "d40164e6e6be6a67d088b4f626d8e74e0575b71a213f4d9fbc0e71c48bf99a22",
+      "dimensions": [320, 800],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2/screenshots/declaration-desktop.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Eldre erklæringstilstand. Statushistorikken finnes i vurderingsmatrise/rapport; ett avsluttende skjermbilde er valgt i stedet.",
+      "bytes": 71018,
+      "sha256": "7e928de9411ed6a2b4e0fda09637b6f6c2a6cc82c466d8125f08717a0b7c075f",
+      "dimensions": [1280, 800],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2/screenshots/freshness-after-threshold.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Supplerende eller eldre side-/tilstandsvisning uten egen nødvendig før-/etterrolle i det foreslåtte utvalget. Tilsvarende kontrollfamilie dekkes av valgt bilde og datert rapport; kan arkiveres som historikk.",
+      "bytes": 36063,
+      "sha256": "4598b46fe14dc04f0f09cba849d76c8c25b4e460240f383bad8991269c7c589b",
+      "dimensions": [1280, 720],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2/screenshots/spacing-chat-answer-320.png",
+      "category": "Behold",
+      "reason": "Utvalgte ulike forløp med overstyrte tekstavstander: svar, feil, desktop, tomtilstand og åpne prisvilkår (1.4.12). Ikke en faktisk 400 %-zoomprøve.",
+      "bytes": 28953,
+      "sha256": "05ba020eaaa430a20e77a4d2648e76e5975132d7c7968c33fd88ece7b2370899",
+      "dimensions": [320, 800],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2/screenshots/spacing-chat-error-320.png",
+      "category": "Behold",
+      "reason": "Utvalgte ulike forløp med overstyrte tekstavstander: svar, feil, desktop, tomtilstand og åpne prisvilkår (1.4.12). Ikke en faktisk 400 %-zoomprøve.",
+      "bytes": 29488,
+      "sha256": "777d33226f9d45713bf3a91c675cdd1259f0d376da1593a76b8846dbf250fef3",
+      "dimensions": [320, 800],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2/screenshots/spacing-chat-page-1280.png",
+      "category": "Behold",
+      "reason": "Utvalgte ulike forløp med overstyrte tekstavstander: svar, feil, desktop, tomtilstand og åpne prisvilkår (1.4.12). Ikke en faktisk 400 %-zoomprøve.",
+      "bytes": 49512,
+      "sha256": "5097a9d502f56eb325bbf0e947e48412455e1f9d43d0664f9453e81101407269",
+      "dimensions": [1280, 800],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2/screenshots/spacing-empty-320.png",
+      "category": "Behold",
+      "reason": "Utvalgte ulike forløp med overstyrte tekstavstander: svar, feil, desktop, tomtilstand og åpne prisvilkår (1.4.12). Ikke en faktisk 400 %-zoomprøve.",
+      "bytes": 27703,
+      "sha256": "be229584524db3e7c70cdc95feeebc2c355200e7998af8c98be26362de491fba",
+      "dimensions": [320, 800],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/094541-e2907a5c27e2/screenshots/spacing-price-details-320.png",
+      "category": "Behold",
+      "reason": "Utvalgte ulike forløp med overstyrte tekstavstander: svar, feil, desktop, tomtilstand og åpne prisvilkår (1.4.12). Ikke en faktisk 400 %-zoomprøve.",
+      "bytes": 31743,
+      "sha256": "167231a8f35801f311e4d2e9ac7a2b5996472984626b9e50edb39cb52166a57c",
+      "dimensions": [320, 800],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386/screenshots/declaration-1280.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Eldre erklæringstilstand. Statushistorikken finnes i vurderingsmatrise/rapport; ett avsluttende skjermbilde er valgt i stedet.",
+      "bytes": 69009,
+      "sha256": "9f323eb439955adc889a754c2425f650b4ed9a43cfb44c16565154f5efe73ce0",
+      "dimensions": [1280, 800],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386/screenshots/declaration-320.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Eldre erklæringstilstand. Statushistorikken finnes i vurderingsmatrise/rapport; ett avsluttende skjermbilde er valgt i stedet.",
+      "bytes": 4131,
+      "sha256": "fa091ec11039bf9e048596d89f4b83b62347e65fc94a6b6a28dd2aefc086d0c9",
+      "dimensions": [320, 200],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386/screenshots/spacing-0-1280.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Supplerende eller eldre side-/tilstandsvisning uten egen nødvendig før-/etterrolle i det foreslåtte utvalget. Tilsvarende kontrollfamilie dekkes av valgt bilde og datert rapport; kan arkiveres som historikk.",
+      "bytes": 293040,
+      "sha256": "2c269fbb43e74c42b7bf0051e6f2572a35de0671bd6b75c049e86aa9ad7fddaf",
+      "dimensions": [1280, 2481],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386/screenshots/spacing-0-320.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Supplerende eller eldre side-/tilstandsvisning uten egen nødvendig før-/etterrolle i det foreslåtte utvalget. Tilsvarende kontrollfamilie dekkes av valgt bilde og datert rapport; kan arkiveres som historikk.",
+      "bytes": 266306,
+      "sha256": "545c3eb97553167a7cf762c39084db4904cf59405b9bcb9a7f7a130d327985e1",
+      "dimensions": [320, 4903],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386/screenshots/spacing-1-1280.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Supplerende eller eldre side-/tilstandsvisning uten egen nødvendig før-/etterrolle i det foreslåtte utvalget. Tilsvarende kontrollfamilie dekkes av valgt bilde og datert rapport; kan arkiveres som historikk.",
+      "bytes": 237231,
+      "sha256": "e8e43c4be1865065b4b2fb1ee629b91af69a267821dcce5e19dc26578506e161",
+      "dimensions": [1280, 2292],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/133024-18e0f9e56386/screenshots/spacing-1-320.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Supplerende eller eldre side-/tilstandsvisning uten egen nødvendig før-/etterrolle i det foreslåtte utvalget. Tilsvarende kontrollfamilie dekkes av valgt bilde og datert rapport; kan arkiveres som historikk.",
+      "bytes": 204607,
+      "sha256": "ef48647011f9f61eaf47ae9dbe79233e4e633103d2b5778b87187ecc8f23b83e",
+      "dimensions": [320, 4161],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/135417-d3e318e119fd/screenshots/contrast-home-320.png",
+      "category": "Behold",
+      "reason": "Representativ mobilvisning av de tre ulike sidetypene i kontrastgjennomgangen. Måleresultatene, ikke bildet alene, dokumenterer kontrast.",
+      "bytes": 187556,
+      "sha256": "e434ff262f2be50725a0cbd20d002622b8718e24c505ca69c915ff74944411bd",
+      "dimensions": [320, 4849],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/135417-d3e318e119fd/screenshots/contrast-home.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Supplerende eller eldre side-/tilstandsvisning uten egen nødvendig før-/etterrolle i det foreslåtte utvalget. Tilsvarende kontrollfamilie dekkes av valgt bilde og datert rapport; kan arkiveres som historikk.",
+      "bytes": 232166,
+      "sha256": "e01bf16d6bbe7a6ebe211c5468645a0e8dd967266c0cff2a73ed7f51aefb612c",
+      "dimensions": [1280, 2243],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/135417-d3e318e119fd/screenshots/contrast-oversikt-320.png",
+      "category": "Behold",
+      "reason": "Representativ mobilvisning av de tre ulike sidetypene i kontrastgjennomgangen. Måleresultatene, ikke bildet alene, dokumenterer kontrast.",
+      "bytes": 125495,
+      "sha256": "c0f821df5876574045e42081bedad858b6bbca0a17f032fcb07843f337b63fad",
+      "dimensions": [320, 3078],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/135417-d3e318e119fd/screenshots/contrast-oversikt.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Supplerende eller eldre side-/tilstandsvisning uten egen nødvendig før-/etterrolle i det foreslåtte utvalget. Tilsvarende kontrollfamilie dekkes av valgt bilde og datert rapport; kan arkiveres som historikk.",
+      "bytes": 154707,
+      "sha256": "f7069e7c64486ad6aae353a71a3c2d4247d355965d45a62c25ed2cbbddd8afee",
+      "dimensions": [1280, 2046],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/135417-d3e318e119fd/screenshots/contrast-spor-320.png",
+      "category": "Behold",
+      "reason": "Representativ mobilvisning av de tre ulike sidetypene i kontrastgjennomgangen. Måleresultatene, ikke bildet alene, dokumenterer kontrast.",
+      "bytes": 68529,
+      "sha256": "21b64600ad8b4e2b73b783a78078e48ccb353f777b9e8332f483eb884f903f66",
+      "dimensions": [320, 1789],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/135417-d3e318e119fd/screenshots/contrast-spor.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Supplerende eller eldre side-/tilstandsvisning uten egen nødvendig før-/etterrolle i det foreslåtte utvalget. Tilsvarende kontrollfamilie dekkes av valgt bilde og datert rapport; kan arkiveres som historikk.",
+      "bytes": 87118,
+      "sha256": "39498a1163af9bce066cd96e71af3bf398c4796a89cc4f550a9c7fc59ae86a0e",
+      "dimensions": [1280, 1231],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/135417-d3e318e119fd/screenshots/declaration-updated.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Eldre erklæringstilstand. Statushistorikken finnes i vurderingsmatrise/rapport; ett avsluttende skjermbilde er valgt i stedet.",
+      "bytes": 87650,
+      "sha256": "0263f45841c6149c96c2ffaaf5ad6bb40e73fe25571e58c74dcd7f9631f5a31e",
+      "dimensions": [1280, 800],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/screenshots/declaration-14-unresolved.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Eldre erklæringstilstand. Statushistorikken finnes i vurderingsmatrise/rapport; ett avsluttende skjermbilde er valgt i stedet.",
+      "bytes": 85518,
+      "sha256": "62101feba3d64766856674ec5796942e88e429e59d35836369a1ade04cdae19d",
+      "dimensions": [1280, 800],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/screenshots/dialog-validation.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Supplerende eller eldre side-/tilstandsvisning uten egen nødvendig før-/etterrolle i det foreslåtte utvalget. Tilsvarende kontrollfamilie dekkes av valgt bilde og datert rapport; kan arkiveres som historikk.",
+      "bytes": 55745,
+      "sha256": "6372b8e519d30d24805c6517802cd2183ad15039a9bd1f3c57eb89df1b66d38c",
+      "dimensions": [1280, 720],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/screenshots/error.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Supplerende eller eldre side-/tilstandsvisning uten egen nødvendig før-/etterrolle i det foreslåtte utvalget. Tilsvarende kontrollfamilie dekkes av valgt bilde og datert rapport; kan arkiveres som historikk.",
+      "bytes": 90119,
+      "sha256": "9810eb0b431f95aff0eb9c19220aacf8f77d00a351251cb8b569b73d7380c09e",
+      "dimensions": [1280, 1287],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/screenshots/home-states.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Supplerende eller eldre side-/tilstandsvisning uten egen nødvendig før-/etterrolle i det foreslåtte utvalget. Tilsvarende kontrollfamilie dekkes av valgt bilde og datert rapport; kan arkiveres som historikk.",
+      "bytes": 234731,
+      "sha256": "71c6f5d7e62a107d8aa40aed95fb9f4751a3f073cc22b3bec1402a9d908b455e",
+      "dimensions": [1280, 2243],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/screenshots/loading.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Supplerende eller eldre side-/tilstandsvisning uten egen nødvendig før-/etterrolle i det foreslåtte utvalget. Tilsvarende kontrollfamilie dekkes av valgt bilde og datert rapport; kan arkiveres som historikk.",
+      "bytes": 83422,
+      "sha256": "96af5ac7137f740a9cd3aaa73c78a206bd3e9234c0db05efe58993ffb8d55682",
+      "dimensions": [1280, 1287],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/screenshots/page-1.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-1.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 39816,
+      "sha256": "01a0f4285c82e31ac4305b82d4cfe4b272a81db1a53a211f2919f99a0a297c81",
+      "dimensions": [1600, 900],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-1.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/screenshots/page-2.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-2.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 54569,
+      "sha256": "8a1e711c226165f635329aab56fa62547ece46dc1e4c9f736c2fba77baa1d320",
+      "dimensions": [1600, 900],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-2.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/screenshots/page-3.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-3.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 59657,
+      "sha256": "f07581a94a55d428bb4ebb95fd89214529c1ae2c33b83132971d2c2f25a2cb02",
+      "dimensions": [1600, 900],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-3.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/screenshots/page-4.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-4.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 78734,
+      "sha256": "1170f6ba6e5fb55ecf397068c1a89c5ed27348507005b2e38a582da9a71f4e45",
+      "dimensions": [1600, 900],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-4.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/screenshots/page-5.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-5.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 75987,
+      "sha256": "0538e18df5fde7d619f2dbc744a285dfa97a3dbaba65502484b8b6173154b82d",
+      "dimensions": [1600, 900],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-5.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/screenshots/page-6.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/after-6.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 106374,
+      "sha256": "cdc544653af748f7fd8326bdec6245f447ec8e967c6909ccdc3c176442dc5931",
+      "dimensions": [1600, 900],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/after-6.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/145250-bd1373c8699b/screenshots/page-7.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-7.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 94071,
+      "sha256": "9609cf577bc3d62e8721e53bf68b8799759cf3f0fbe0126c166c3bb56d8f4ec5",
+      "dimensions": [1600, 900],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-7.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/screenshots/chat-markers.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Supplerende eller eldre side-/tilstandsvisning uten egen nødvendig før-/etterrolle i det foreslåtte utvalget. Tilsvarende kontrollfamilie dekkes av valgt bilde og datert rapport; kan arkiveres som historikk.",
+      "bytes": 172330,
+      "sha256": "bb92139d7197db91c1a83bc845ed23e924c8855d38641cc173514f814b59e3e9",
+      "dimensions": [1280, 2347],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/screenshots/declaration-13-unresolved.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Eldre erklæringstilstand. Statushistorikken finnes i vurderingsmatrise/rapport; ett avsluttende skjermbilde er valgt i stedet.",
+      "bytes": 85546,
+      "sha256": "f42286f04b0b7cc45ff2dc01bbd5838f3255cf02d0f9dacd9455f9ac326013c2",
+      "dimensions": [1280, 800],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/screenshots/filter-after-fix.png",
+      "category": "Behold",
+      "reason": "Konkret før-/etterpar for filterets valgte markering under overgang (A11Y-07). Resten av førserien er støttehistorikk.",
+      "bytes": 30699,
+      "sha256": "e3bd6252aeeff94a5be9cfa8b0be7863b8b73bb853c7bb5c76add6afbfc40e2d",
+      "dimensions": [320, 800],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/screenshots/filter-before-0.png",
+      "category": "Behold",
+      "reason": "Konkret før-/etterpar for filterets valgte markering under overgang (A11Y-07). Resten av førserien er støttehistorikk.",
+      "bytes": 43944,
+      "sha256": "3e052129c597afaeb9441220c6dfd78fbed77c20cc1ab4fb7623cacb0f063821",
+      "dimensions": [1280, 720],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/screenshots/filter-before-1.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Gjentatt full PDF-rendring eller semantikk-/språktest med uendret synlig innhold. PDF-filer, strukturdata og piksel-/hashsammenligning bærer hovedbeviset; utvalgt side 5 og diagram beholdes.",
+      "bytes": 43939,
+      "sha256": "6151dfe473c7c4e1c76bc39ab8ce151d56daf7ccaa655b6f229cf5d695754072",
+      "dimensions": [1280, 720],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/screenshots/filter-before-2.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Gjentatt full PDF-rendring eller semantikk-/språktest med uendret synlig innhold. PDF-filer, strukturdata og piksel-/hashsammenligning bærer hovedbeviset; utvalgt side 5 og diagram beholdes.",
+      "bytes": 43830,
+      "sha256": "fb05304957cb913146e24fae6f488d32ba2fc560da6c3968e41b09441befea92",
+      "dimensions": [1280, 720],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/screenshots/filter-before-3.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Gjentatt full PDF-rendring eller semantikk-/språktest med uendret synlig innhold. PDF-filer, strukturdata og piksel-/hashsammenligning bærer hovedbeviset; utvalgt side 5 og diagram beholdes.",
+      "bytes": 43657,
+      "sha256": "4c72baf73037ad7137f93844e72514b1e62842b5920c5bd8a287c4644ce37098",
+      "dimensions": [1280, 720],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/screenshots/mobile-dialog.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Supplerende eller eldre side-/tilstandsvisning uten egen nødvendig før-/etterrolle i det foreslåtte utvalget. Tilsvarende kontrollfamilie dekkes av valgt bilde og datert rapport; kan arkiveres som historikk.",
+      "bytes": 35130,
+      "sha256": "93112f6fdb086d9690de9431263e7804926c4f0923ab4dbbdde4562c950edf0c",
+      "dimensions": [320, 800],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/screenshots/page-1.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-1.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 39816,
+      "sha256": "01a0f4285c82e31ac4305b82d4cfe4b272a81db1a53a211f2919f99a0a297c81",
+      "dimensions": [1600, 900],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-1.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/screenshots/page-2.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-2.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 54569,
+      "sha256": "8a1e711c226165f635329aab56fa62547ece46dc1e4c9f736c2fba77baa1d320",
+      "dimensions": [1600, 900],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-2.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/screenshots/page-3.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-3.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 59657,
+      "sha256": "f07581a94a55d428bb4ebb95fd89214529c1ae2c33b83132971d2c2f25a2cb02",
+      "dimensions": [1600, 900],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-3.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/screenshots/page-4.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-4.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 78734,
+      "sha256": "1170f6ba6e5fb55ecf397068c1a89c5ed27348507005b2e38a582da9a71f4e45",
+      "dimensions": [1600, 900],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-4.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/screenshots/page-5.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-5.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 75987,
+      "sha256": "0538e18df5fde7d619f2dbc744a285dfa97a3dbaba65502484b8b6173154b82d",
+      "dimensions": [1600, 900],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-5.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/screenshots/page-6.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/after-6.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 106374,
+      "sha256": "cdc544653af748f7fd8326bdec6245f447ec8e967c6909ccdc3c176442dc5931",
+      "dimensions": [1600, 900],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/after-6.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/screenshots/page-7.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-7.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 94071,
+      "sha256": "9609cf577bc3d62e8721e53bf68b8799759cf3f0fbe0126c166c3bb56d8f4ec5",
+      "dimensions": [1600, 900],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-7.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/screenshots/pricing-focus.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Supplerende eller eldre side-/tilstandsvisning uten egen nødvendig før-/etterrolle i det foreslåtte utvalget. Tilsvarende kontrollfamilie dekkes av valgt bilde og datert rapport; kan arkiveres som historikk.",
+      "bytes": 73649,
+      "sha256": "2e53cbc6a0331ee8e8fb0ba8d88c93a5c9c9691f97cc2cf1ce7d293b59729f54",
+      "dimensions": [1280, 720],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/160352-a02d77cb2734/screenshots/resource-focus.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Supplerende eller eldre side-/tilstandsvisning uten egen nødvendig før-/etterrolle i det foreslåtte utvalget. Tilsvarende kontrollfamilie dekkes av valgt bilde og datert rapport; kan arkiveres som historikk.",
+      "bytes": 71976,
+      "sha256": "18be5d8b3cf79805280f3f7dfc960c6a39d184bfedd0c91beda9a4a9713fe721",
+      "dimensions": [1280, 720],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/screenshots/declaration-known-breaches.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Eldre erklæringstilstand. Statushistorikken finnes i vurderingsmatrise/rapport; ett avsluttende skjermbilde er valgt i stedet.",
+      "bytes": 45816,
+      "sha256": "8085a0d22da1cb4b87c3ae98a79061339948e9428579cc97f6060aca58c769ad",
+      "dimensions": [320, 800],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/screenshots/focus-chat-close-320.png",
+      "category": "Behold",
+      "reason": "Representativt fokusbevis for ulike kontrollfamilier; tabellene har både smal og bred, ferdig rendret tilstand. Fokusrekkefølge krever rapportens tastaturdata.",
+      "bytes": 33514,
+      "sha256": "497323198eb705d0283eafd8c5734b1266472a041b2486c15285db4d866b38fd",
+      "dimensions": [320, 800],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/screenshots/focus-reset-320.png",
+      "category": "Behold",
+      "reason": "Representativt fokusbevis for ulike kontrollfamilier; tabellene har både smal og bred, ferdig rendret tilstand. Fokusrekkefølge krever rapportens tastaturdata.",
+      "bytes": 27383,
+      "sha256": "99bdce84d5f933bbdf1968173a809644b38e38aec5c11a5b530a180c61023db3",
+      "dimensions": [320, 800],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/screenshots/focus-source-1280.png",
+      "category": "Behold",
+      "reason": "Representativt fokusbevis for ulike kontrollfamilier; tabellene har både smal og bred, ferdig rendret tilstand. Fokusrekkefølge krever rapportens tastaturdata.",
+      "bytes": 54290,
+      "sha256": "70e17c6292de5d88bb134e860b2dd836fcf5fd7fa99917e78a5dc4527a0fa70f",
+      "dimensions": [1280, 800],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/screenshots/focus-table-1280-settled.png",
+      "category": "Behold",
+      "reason": "Representativt fokusbevis for ulike kontrollfamilier; tabellene har både smal og bred, ferdig rendret tilstand. Fokusrekkefølge krever rapportens tastaturdata.",
+      "bytes": 79618,
+      "sha256": "755bdff438da5fc0f1755a201a455cde77e572815f5f69c902e59f4a62612c7e",
+      "dimensions": [1280, 800],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/screenshots/focus-table-1280.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Mellomtilstand før rulling/visning var ferdig. Tilsvarende settled-bilde er valgt som endelig fokusbevis; hendelsesloggen bevarer mellomtilstanden.",
+      "bytes": 82609,
+      "sha256": "45ba69ecabfd1f6a6a26a6d19d1be01e844541218849590cef2b6d545096b5a2",
+      "dimensions": [1280, 800],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/screenshots/focus-table-320-settled.png",
+      "category": "Behold",
+      "reason": "Representativt fokusbevis for ulike kontrollfamilier; tabellene har både smal og bred, ferdig rendret tilstand. Fokusrekkefølge krever rapportens tastaturdata.",
+      "bytes": 31718,
+      "sha256": "2b649cad3cbb2e66bb29af4a64ce42b3a19ad032fcdc8271837fd86ac553e6a2",
+      "dimensions": [320, 800],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/screenshots/focus-table-320.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Mellomtilstand før rulling/visning var ferdig. Tilsvarende settled-bilde er valgt som endelig fokusbevis; hendelsesloggen bevarer mellomtilstanden.",
+      "bytes": 38563,
+      "sha256": "a0cbcbaa8a6380a0c71bc12c796b9f08131aac1772f2b3c432dbf86cfb639337",
+      "dimensions": [320, 800],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/screenshots/focus-textarea-1280.png",
+      "category": "Behold",
+      "reason": "Representativt fokusbevis for ulike kontrollfamilier; tabellene har både smal og bred, ferdig rendret tilstand. Fokusrekkefølge krever rapportens tastaturdata.",
+      "bytes": 62106,
+      "sha256": "c1373c4b329b3d72513bd51b09b4c55681522cba70ed545f3329df5c76646f03",
+      "dimensions": [1280, 800],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/screenshots/paused-focus-away.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Supplerende eller eldre side-/tilstandsvisning uten egen nødvendig før-/etterrolle i det foreslåtte utvalget. Tilsvarende kontrollfamilie dekkes av valgt bilde og datert rapport; kan arkiveres som historikk.",
+      "bytes": 75599,
+      "sha256": "2b6372f7bf822521c26b9d50e6d2dad682ed251dd19d9960761137af36034e57",
+      "dimensions": [1280, 800],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/screenshots/pdf-page-4.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Gjentatt full PDF-rendring eller semantikk-/språktest med uendret synlig innhold. PDF-filer, strukturdata og piksel-/hashsammenligning bærer hovedbeviset; utvalgt side 5 og diagram beholdes.",
+      "bytes": 56539,
+      "sha256": "0fdc4673de4c85d370e45153c4c55636abf050cc8e1bfb1a28a888f98680a104",
+      "dimensions": [1333, 750],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/screenshots/pdf-page-6.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Gjentatt full PDF-rendring eller semantikk-/språktest med uendret synlig innhold. PDF-filer, strukturdata og piksel-/hashsammenligning bærer hovedbeviset; utvalgt side 5 og diagram beholdes.",
+      "bytes": 78166,
+      "sha256": "9c065ac340283c6e6f6e9fe3f19728b2464899c2f69659ad9a41d94eaf657cb0",
+      "dimensions": [1333, 750],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/screenshots/price-after.png",
+      "category": "Behold",
+      "reason": "Førgrunnlag for prisaldervarsel som endret seg under simulert tid (A11Y-09). Stillbilder må leses sammen med tid-/hendelsesloggen.",
+      "bytes": 39404,
+      "sha256": "85924c9ad3e5492bcbdccef262f07770d14cbf9845d1ce5894a1b630c2220c43",
+      "dimensions": [320, 800],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/screenshots/price-before.png",
+      "category": "Behold",
+      "reason": "Førgrunnlag for prisaldervarsel som endret seg under simulert tid (A11Y-09). Stillbilder må leses sammen med tid-/hendelsesloggen.",
+      "bytes": 71556,
+      "sha256": "d3fb46c5fabf67eb7e8f00d25248c1e04c129b55a19172cdfaf7644d334beef5",
+      "dimensions": [1280, 720],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-10/193339-7e408d0c78ed/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/after-1.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-1.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 39816,
+      "sha256": "01a0f4285c82e31ac4305b82d4cfe4b272a81db1a53a211f2919f99a0a297c81",
+      "dimensions": [1600, 900],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-1.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/after-2.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-2.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 54569,
+      "sha256": "8a1e711c226165f635329aab56fa62547ece46dc1e4c9f736c2fba77baa1d320",
+      "dimensions": [1600, 900],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-2.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/after-3.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-3.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 59657,
+      "sha256": "f07581a94a55d428bb4ebb95fd89214529c1ae2c33b83132971d2c2f25a2cb02",
+      "dimensions": [1600, 900],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-3.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/after-4.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-4.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 78734,
+      "sha256": "1170f6ba6e5fb55ecf397068c1a89c5ed27348507005b2e38a582da9a71f4e45",
+      "dimensions": [1600, 900],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-4.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/after-5.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-5.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 75987,
+      "sha256": "0538e18df5fde7d619f2dbc744a285dfa97a3dbaba65502484b8b6173154b82d",
+      "dimensions": [1600, 900],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-5.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/after-6.png",
+      "category": "Behold",
+      "reason": "Én representativ fullskalarendring av PDF-diagrammet, relevant for fortsatt uavklart tekstalternativ/leserekkefølge. Duplikatene trengs ikke som egne bilder.",
+      "bytes": 106374,
+      "sha256": "cdc544653af748f7fd8326bdec6245f447ec8e967c6909ccdc3c176442dc5931",
+      "dimensions": [1600, 900],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/after-7.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-7.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 94071,
+      "sha256": "9609cf577bc3d62e8721e53bf68b8799759cf3f0fbe0126c166c3bb56d8f4ec5",
+      "dimensions": [1600, 900],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-7.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-1.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Gjentatt full PDF-rendring eller semantikk-/språktest med uendret synlig innhold. PDF-filer, strukturdata og piksel-/hashsammenligning bærer hovedbeviset; utvalgt side 5 og diagram beholdes.",
+      "bytes": 39816,
+      "sha256": "01a0f4285c82e31ac4305b82d4cfe4b272a81db1a53a211f2919f99a0a297c81",
+      "dimensions": [1600, 900],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-2.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Gjentatt full PDF-rendring eller semantikk-/språktest med uendret synlig innhold. PDF-filer, strukturdata og piksel-/hashsammenligning bærer hovedbeviset; utvalgt side 5 og diagram beholdes.",
+      "bytes": 54569,
+      "sha256": "8a1e711c226165f635329aab56fa62547ece46dc1e4c9f736c2fba77baa1d320",
+      "dimensions": [1600, 900],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-3.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Gjentatt full PDF-rendring eller semantikk-/språktest med uendret synlig innhold. PDF-filer, strukturdata og piksel-/hashsammenligning bærer hovedbeviset; utvalgt side 5 og diagram beholdes.",
+      "bytes": 59657,
+      "sha256": "f07581a94a55d428bb4ebb95fd89214529c1ae2c33b83132971d2c2f25a2cb02",
+      "dimensions": [1600, 900],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-4.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Gjentatt full PDF-rendring eller semantikk-/språktest med uendret synlig innhold. PDF-filer, strukturdata og piksel-/hashsammenligning bærer hovedbeviset; utvalgt side 5 og diagram beholdes.",
+      "bytes": 78734,
+      "sha256": "1170f6ba6e5fb55ecf397068c1a89c5ed27348507005b2e38a582da9a71f4e45",
+      "dimensions": [1600, 900],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-5.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Gjentatt full PDF-rendring eller semantikk-/språktest med uendret synlig innhold. PDF-filer, strukturdata og piksel-/hashsammenligning bærer hovedbeviset; utvalgt side 5 og diagram beholdes.",
+      "bytes": 75987,
+      "sha256": "0538e18df5fde7d619f2dbc744a285dfa97a3dbaba65502484b8b6173154b82d",
+      "dimensions": [1600, 900],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-6.png",
+      "category": "Identisk kopi",
+      "reason": "Byte-identisk med docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/after-6.png. Ingen ekstra bildeinformasjon; opprinnelig kjøringsproveniens må fortsatt bevares i rapport/manifest.",
+      "bytes": 106374,
+      "sha256": "cdc544653af748f7fd8326bdec6245f447ec8e967c6909ccdc3c176442dc5931",
+      "dimensions": [1600, 900],
+      "identical_to": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/after-6.png",
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-7.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Gjentatt full PDF-rendring eller semantikk-/språktest med uendret synlig innhold. PDF-filer, strukturdata og piksel-/hashsammenligning bærer hovedbeviset; utvalgt side 5 og diagram beholdes.",
+      "bytes": 94071,
+      "sha256": "9609cf577bc3d62e8721e53bf68b8799759cf3f0fbe0126c166c3bb56d8f4ec5",
+      "dimensions": [1600, 900],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/declaration-fixed.png",
+      "category": "Behold",
+      "reason": "Én avsluttende visuell erklæringstilstand for sist vurderte tilgjengelighetsutgave; de maskinlesbare resultatene beholder historiske statusendringer.",
+      "bytes": 4481,
+      "sha256": "c78362b7294babb9b5660c50eba60a2fdf3c1d12467349a8be76b1c290c5ef4e",
+      "dimensions": [320, 200],
+      "identical_to": null,
+      "markdown_references": []
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/fresh-after.png",
+      "category": "Behold",
+      "reason": "Ettergrunnlag for rettet prisaldervarsel i fersk/gammel tilstand, inkludert 320 px. Ikke en ny live-prisoppdatering.",
+      "bytes": 79234,
+      "sha256": "3f8cbb81967149bcff3c61783707687350b1ce32a05b2ff16ee76319eb6dcf68",
+      "dimensions": [1280, 720],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/pdf-all-pages.png",
+      "category": "Historikk / kan utgå fra aktivt utvalg",
+      "reason": "Gjentatt full PDF-rendring eller semantikk-/språktest med uendret synlig innhold. PDF-filer, strukturdata og piksel-/hashsammenligning bærer hovedbeviset; utvalgt side 5 og diagram beholdes.",
+      "bytes": 338346,
+      "sha256": "526d12d43ed99cbd45cdb6c99cc26fc7cc393b046da5ed8d3f03df38b66a22b4",
+      "dimensions": [1600, 1920],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/testrapport.md"
+      ]
+    },
+    {
+      "path": "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/stale-320.png",
+      "category": "Behold",
+      "reason": "Ettergrunnlag for rettet prisaldervarsel i fersk/gammel tilstand, inkludert 320 px. Ikke en ny live-prisoppdatering.",
+      "bytes": 36690,
+      "sha256": "2bb299b2ea9f0d29a632cd74d9b065daa40ed4afced6e68e5db0739e9c30ad9d",
+      "dimensions": [320, 800],
+      "identical_to": null,
+      "markdown_references": [
+        "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/testrapport.md"
+      ]
+    }
+  ]
+}

@@ -25,4 +25,4 @@ Utført i integrert nettleser mot lokal Next dev på port 3000. Ingen gyldige sp
 
 Fokuserte komponent-/fokustester bestod 8/8, inkludert riktig koblet etikett i vanlig/busy-tilstand. pnpm typecheck bestod. pnpm test bestod med 276/276 Node-tester, 3/3 Python-tester, faktisk innholdssynk og 198 relative filmål i 11 dokumenter. Docker-produksjonsbygg og omstart bestod. I den faktiske Docker-portalen ble samme 8 px klaring bekreftet på chattsiden ved 320 px og i forsidechatten ved 1280 px, uten horisontal overflyt. Midlertidig viewport er nullstilt og testfanen lukket. pnpm format:check og git diff --check bestod etter dokumentoppdatering. Dette er ikke en skjermlesertest eller full tilgjengelighetsvurdering. Ingen blindsett eller test:blind.
 
-![Fast etikett over fokusert felt i Docker ved 320 px](chat-label-320.jpg)
+![Fast etikett over fokusert felt i Docker ved 320 px](../../arkiv/skjermbilder/rag/2026-11-13/chat-label-320.jpg)
