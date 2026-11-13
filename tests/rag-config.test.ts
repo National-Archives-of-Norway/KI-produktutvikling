@@ -23,3 +23,23 @@ test("RAG_PORT fra miljøet må være 1–65535, ikke testport 0", () => {
   for (const port of [1, 3001, 65535])
     assert.equal(loadRagConfig({ RAG_PORT: String(port) }).port, port);
 });
+
+test("Ollama tillater bare eksakt Compose-tjeneste i tillegg til loopback", () => {
+  const base = { MODEL_PROVIDER: "ollama", OLLAMA_MODEL: "qwen3:4b" };
+  for (const OLLAMA_URL of ["http://ollama:11434", "http://ollama:11434/"])
+    assert.equal(loadRagConfig({ ...base, OLLAMA_URL }).provider, "ollama");
+  for (const OLLAMA_URL of [
+    "http://ollama",
+    "http://ollama:11435",
+    "https://ollama:11434",
+    "http://ollama.example:11434",
+    "http://ollama.:11434",
+    "http://host.docker.internal:11434",
+    "http://10.0.0.2:11434",
+    "http://ollama:11434/api/chat",
+    "http://ollama:11434?key=x",
+    "http://ollama:11434/#fragment",
+    "http://user:pass@ollama:11434",
+  ])
+    assert.throws(() => loadRagConfig({ ...base, OLLAMA_URL }), /OLLAMA_URL/);
+});

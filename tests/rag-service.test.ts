@@ -53,6 +53,9 @@ test("Ollama-adapteren sender nummererte kilder og blokkerer videresending", asy
       assert.equal(init?.redirect, "error");
       const payload = JSON.parse(String(init?.body));
       assert.equal(payload.model, "test-model");
+      assert.equal(payload.think, false);
+      assert.equal(payload.stream, false);
+      assert.equal(payload.options.num_ctx, 8192);
       assert.equal(
         JSON.parse(payload.messages[1].content).sources[0].number,
         1,
@@ -135,4 +138,58 @@ test("HTTP-grensen håndterer kontrakt, ugyldig JSON, størrelse og origin", asy
     ).status,
     403,
   );
+});
+
+test("Ollama avviser avkuttet svar i stedet for å vise halvferdig tekst", async () => {
+  await assert.rejects(() =>
+    createOllamaAdapter(
+      { model: "qwen3:4b", endpoint: new URL("http://ollama:11434") },
+      async () =>
+        Response.json({
+          message: { content: "Uferdig tekst" },
+          done_reason: "length",
+        }),
+    ).generate("tester", corpus),
+  );
+});
+
+test("Qwen3 får strukturert svar uten å endre kilde-JSON", async () => {
+  const adapter = createOllamaAdapter(
+    { model: "qwen3:4b", endpoint: new URL("http://ollama:11434") },
+    async (_url, init) => {
+      const payload = JSON.parse(String(init?.body));
+      assert.equal(payload.format.type, "object");
+      assert.deepEqual(payload.format.required, ["answer"]);
+      assert.equal(payload.format.additionalProperties, false);
+      assert.match(payload.messages[0].content, /bare JSON med feltet answer/);
+      assert.match(
+        payload.messages[0].content,
+        /alltid med minst én henvisning/,
+      );
+      assert.equal(JSON.parse(payload.messages[1].content).question, "tester");
+      return Response.json({
+        message: { content: JSON.stringify({ answer: "Svar [1]" }) },
+        done_reason: "stop",
+      });
+    },
+  );
+  assert.equal(await adapter.generate("tester", corpus), "Svar [1]");
+});
+
+test("Qwen3 avviser ugyldige strukturerte svar", async () => {
+  for (const content of [
+    "ikke JSON",
+    "null",
+    "[]",
+    "{}",
+    '{"answer":7}',
+    '{"answer":" "}',
+    '{"answer":"svar","analysis":"skal ikke vises"}',
+  ])
+    await assert.rejects(() =>
+      createOllamaAdapter(
+        { model: "qwen3:4b", endpoint: new URL("http://ollama:11434") },
+        async () => Response.json({ message: { content } }),
+      ).generate("tester", corpus),
+    );
 });

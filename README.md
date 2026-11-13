@@ -15,6 +15,29 @@ En ny installasjon trenger nettverk også når pnpm-pakkene er cachet: ChromeDri
 
 Åpne http://127.0.0.1:3000. Next.js og RAG starter på loopback, normalt port 3000 og 3001. `sh scripts/dev.sh` kan bruke Codex-runtime når Node/pnpm mangler på PATH og avhengighetene er installert. Ny devport: `pnpm dev -- -p 3005`; tilpass også tillatte origins.
 
+## Lokal portal med Qwen3:4b i Docker Compose
+
+```sh
+docker compose up -d --build
+```
+
+Åpne http://127.0.0.1:3005/spor. En eksisterende manuelt startet container på port 3005 må stoppes først. Første oppstart laster ned omtrent 2,5 GB modellfiler og trenger nettverk. `model-init` avsluttes når nedlastingen er ferdig; Compose starter deretter Ollama og portalen når avhengighetene er klare. Se `docker compose logs -f model-init` og `docker compose ps -a` for status. Nedlasting/bildestart kan ta flere minutter.
+
+Qwen3:4b lagres i Docker-volumet `ki-produktutvikling_ollama-models`, utenfor Git og byggkonteksten. `docker compose down` beholder modellen; `down -v` sletter den og krever ny nedlasting. Ikke bruk `-v` ved vanlig omstart. Oppdater kode med `docker compose up -d --build`; modellen gjenbrukes. For eksplisitt modelloppdatering: stopp først portal og ollama med `docker compose stop portal ollama`, kjør `docker compose run --rm -e OLLAMA_FORCE_PULL=1 model-init`, og start igjen med `docker compose up -d`. Vanlig oppstart gjenbruker en modell som finnes i volumet, uten å hente ny modelltagg. Registrer ny digest og test svarene på nytt etter modelloppdatering.
+
+Portalen eksponeres bare på lokal loopback. RAG kjører på loopback inne i portalcontaineren; Ollama bruker fast intern adresse `http://ollama:11434`, uten vertsporter og med internnettverk uten utgående internett. Bare nedlastingstjenesten får utgående nettverk. Ingen Docker-socket, repoer eller modellfiler monteres inn i portalen. Ingen API-nøkkel kreves. Ollamas skyfunksjoner er deaktivert. Dette er lokal utprøving uten innlogging, ikke et delt produksjonsmiljø.
+
+Oppsettet bruker CPU, også i Docker Desktop på Mac. Modellfilstørrelse er ikke samlet minnebehov; tilgjengelig minne og CPU påvirker om 60-sekunders modellfristen holder. Ollama bruker ett modellkall om gangen, 8192 token kontekst, think=false og strukturert JSON-svar for Qwen3. Portalen viser bare det validerte svarfeltet; avkuttede modellutdata gir kildebevarende feil i stedet for halvferdig tekst. Start med offentlige eksempelspørsmål. [Kontrollrapporten](docs/rag/2026-11-12/compose-qwen.md) skiller reelle modellprøver fra automatiske simuleringer.
+
+```sh
+# Leser helsestatus uten å generere svar:
+docker compose exec portal node -e "fetch('http://127.0.0.1:3001/health').then(r=>r.json()).then(console.log)"
+# Kaller den faktiske modellen; inngår aldri i test/CI:
+node scripts/check-rag-model.mjs
+```
+
+Dockerfile installerer med låsefil og bygger Next. Node- og Ollama-bildene er låst til verifiserte digester. `.dockerignore` tillater bare applikasjonsfilene som trengs; Git, miljøfiler, testbevis og lokale modeller utelates. Kjør utvikling/tester lokalt som beskrevet over; runtimebildet inneholder ikke testpakken.
+
 ## Konfigurasjon
 
 Kopier [.env.example](.env.example) til `.env.local` for lokal utvikling. I drift injiseres servervariablene i RAG-prosessen. Ekte nøkler skal ikke i Git, klientkode eller `NEXT_PUBLIC_*`.
@@ -24,7 +47,7 @@ Kopier [.env.example](.env.example) til `.env.local` for lokal utvikling. I drif
 | `MODEL_PROVIDER`               | `none` gir kildebasert veiledning; `ollama` eller `openai-compatible` aktiverer generering.                                                                                                    |
 | `MODEL_API_URL`                | Fullt HTTPS Chat Completions-endepunkt, inkludert eventuell gateway-sti. Ingen query, fragment eller påloggingsinformasjon i URL-en.                                                           |
 | `MODEL_NAME` / `MODEL_API_KEY` | Modellnavn og serverlagret Bearer-nøkkel. Begge kreves med eksternt API.                                                                                                                       |
-| `OLLAMA_MODEL` / `OLLAMA_URL`  | Installert lokal modell og HTTP-loopback-adresse, normalt `http://127.0.0.1:11434`. Bare rotsti tillates.                                                                                      |
+| `OLLAMA_MODEL` / `OLLAMA_URL`  | Installert lokal modell og HTTP-loopback-adresse, normalt `http://127.0.0.1:11434`. Bare rotsti tillates; Compose tillater også nøyaktig `http://ollama:11434`.                                |
 | `RAG_PORT`                     | Tjenesteport 1–65535, normalt 3001. Next og RAG bruker samme validering og trimmer mellomrom. Port 0 avvises som miljøverdi. Next-rewrite låses ved bygg: bygg og kjøring må bruke samme port. |
 | `RAG_ALLOWED_ORIGINS`          | Kommaseparerte HTTP(S)-origins. Standard er `http://127.0.0.1:3000,http://localhost:3000`. En satt liste erstatter standardene. Tomme/ugyldige verdier stopper oppstart.                       |
 | `RAG_MAX_CONCURRENT`           | Modellkall per prosess, heltall 1–8, standard 1. Ingen kø; full kapasitet gir 429 med kilder.                                                                                                  |
@@ -62,7 +85,7 @@ Pris-PR-er fra `GITHUB_TOKEN` starter ikke automatisk CI. GitHub kan vise PR-kj�
 
 `pnpm build` lager serverbygg; drift krever både Next.js (`pnpm start`) og RAG (`pnpm rag:start`) fra samme revisjon. Drift må håndtere HTTPS, intern ruting, modellsecrets, overvåking og tilgang. `pnpm build:pages` lager `out/` som statisk demo uten modellserver, eventuelt med `PAGES_BASE_PATH`. Dette er ikke en valgt løsning for lukket tilgang. Ingen automatisk utrulling er konfigurert.
 
-Første delte miljø skal være en **lukket pilot**. Innlogging/autorisasjon, brukerbasert rate-/kostnadsvern og faktisk modelltilkobling er ikke ferdig verifisert. Privat repo beskytter ikke selve nettstedet. Ikke legg internt innhold eller hemmeligheter i prototypen, klientdata eller `public/`. Personvern-, cookie- og tilgjengelighetstekster er lokale utkast; samlet tilgjengelighetssamsvar er uavklart. Skills er Beta og ikke menneskelig gjennomgått.
+Første delte miljø skal være en **lukket pilot**. Innlogging/autorisasjon, brukerbasert rate-/kostnadsvern og ekstern modelltilkobling er ikke ferdig verifisert. Lokal Qwen/Ollama-utprøving har eget Compose-oppsett; det er ikke en virksomhetsgodkjenning. Privat repo beskytter ikke selve nettstedet. Ikke legg internt innhold eller hemmeligheter i prototypen, klientdata eller `public/`. Personvern-, cookie- og tilgjengelighetstekster er lokale utkast; samlet tilgjengelighetssamsvar er uavklart. Skills er Beta og ikke menneskelig gjennomgått.
 
 Prisene vedlikeholdes i `src/content/pricing/snapshot.json`. `pnpm pricing:sync` henter ekte leverandørpriser og kjøres bevisst, separat fra test/CI. [Prisjobben](.github/workflows/pricing-sync.yml) foreslår rader/status/feil på én fast gren; datoendringer alene gir ikke PR. Faktisk GitHub-jobb og publisering er ikke verifisert. [Ny parser-/workflow-kontroll](docs/priser/TESTRAPPORT.md) beskriver lokal fixture-simulering. Uvedkommende ugyldige tabeller påvirker ikke prishentingen; feil i valgt pristabell er fortsatt synlige. Claude-prisfelt tillater ett fotnotesiffer (1–9), vanlig eller hevet, etter MTok-enheten, mens tallformatet ellers er strengt. [Prisforvaltning og tidligere parser-/driftsnotater](docs/HISTORIKK.md#priser-for-copilot-claude-og-codex) er bevart.
 

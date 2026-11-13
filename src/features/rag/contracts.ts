@@ -56,6 +56,7 @@ export function isSources(value: unknown): value is RagSource[] {
         typeof source.href === "string" &&
         (/^\/ressurser\/[a-z-]+\/$/.test(source.href) ||
           [
+            "/#ressurser",
             "/om/",
             "/om/#ki-prat",
             "/retningslinjer/",

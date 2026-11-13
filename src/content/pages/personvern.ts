@@ -55,7 +55,7 @@ export const privacy = {
     {
       id: "modell",
       type: "paragraph",
-      text: "Modellgenerering var deaktivert ved lokal kontroll 9. november 2026. Dersom en modell senere aktiveres, kan spørsmålet og relevante kildeutdrag sendes til den konfigurerte modellen. Leverandør, behandlingssted, eventuell overføring utenfor EØS, lagring og videre bruk av spørsmål må avklares før aktivering. At API-nøkkelen bare finnes på serveren, betyr ikke at spørsmålet forblir lokalt. Ikke skriv personopplysninger, taushetsbelagt informasjon eller hemmeligheter i Spør KI.",
+      text: "Modellgenerering var deaktivert ved lokal kontroll 9. november 2026. Det lokale Compose-oppsettet bruker nå Qwen3:4b i en separat Ollama-container: spørsmålet og relevante kildeutdrag behandles i Docker på maskinen som kjører portalen. Modellfiler lagres i et eget Docker-volum. Den kjørende modellcontaineren har ikke utgående internett; nedlasting av modellen skjer i en separat oppstartsprosess. Dersom et eksternt modell-API aktiveres, kan spørsmålet og relevante kildeutdrag sendes til den konfigurerte leverandøren. Leverandør, behandlingssted, eventuell overføring utenfor EØS, lagring og videre bruk av spørsmål må avklares før aktivering. At API-nøkkelen bare finnes på serveren, betyr ikke at spørsmålet forblir lokalt. Ikke skriv personopplysninger, taushetsbelagt informasjon eller hemmeligheter i Spør KI.",
     },
     {
       id: "lagring",

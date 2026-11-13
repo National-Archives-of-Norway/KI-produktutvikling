@@ -128,8 +128,14 @@ export function loadRagConfig(
   } catch {
     throw new Error("Ugyldig OLLAMA_URL.");
   }
+  const loopback = ["127.0.0.1", "localhost", "[::1]"].includes(
+    endpoint.hostname,
+  );
+  // Kun den faste interne Compose-tjenesten. Ikke åpne for vilkårlige verter.
+  const composeService =
+    endpoint.hostname === "ollama" && endpoint.port === "11434";
   if (
-    !["127.0.0.1", "localhost", "[::1]"].includes(endpoint.hostname) ||
+    !(loopback || composeService) ||
     endpoint.protocol !== "http:" ||
     endpoint.username ||
     endpoint.password ||
@@ -138,7 +144,7 @@ export function loadRagConfig(
     endpoint.hash
   )
     throw new Error(
-      "OLLAMA_URL må være en HTTP-loopback-adresse uten sti, query, fragment eller påloggingsinformasjon.",
+      "OLLAMA_URL må være en HTTP-loopback-adresse eller http://ollama:11434 uten sti, query, fragment eller påloggingsinformasjon.",
     );
   return { port, allowedOrigins, maxConcurrent, provider, endpoint, model };
 }

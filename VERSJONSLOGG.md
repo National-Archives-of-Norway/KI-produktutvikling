@@ -6,6 +6,53 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 13. november 2026 – instruksjonskort for friksjonslogg og triage
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Lagt til «Add friction triage process to Agents.md» som Instruks i den felles ressurskilden, med brukerens fulle engelske tekst, norsk beskrivelse, brukssteg og søkeord. Kortet og detaljsiden avledes av eksisterende katalog; teksten er også tilgjengelig for Spør KI. Ingen nye føringer er lagt til portalens AGENTS.md, og ingen friksjonslogg er opprettet.
+- Oppdatert funksjonsregisteret. Dette er nytt kataloginnhold innen eksisterende omfang, uten endret fase eller produksjonsstatus; utviklingsplanen får ingen kunstig ny oppføring. Tidligere ukommiterte endringer bevares.
+- Kontroller: pnpm test bestod med 276/276 Node-tester, 3/3 Python-tester, faktisk innholdssynk og 199 relative filmål. pnpm typecheck, pnpm format:check og git diff --check bestod. Første testforsøk ble blokkert av sandboxens lokale portbegrensning; ny kjøring med tilgang til lokale testporter bestod. Docker-produksjonsbygg og omstart bestod; HTTP 200 og tittel/slutten av instruksjonsteksten er kontrollert på detaljsiden ved port 3005. Ingen ny visuell kontroll eller modellprøve. Ingen commit eller push.
+
+### 13. november 2026 – beholdt flytende etikett, fjernet linjen bak teksten
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Korrigert misforståelsen i forrige etikettendring etter brukerens presisering. Den faste etiketten/CSS-en er fjernet, og MUI-etiketten er tilbake: inne i tomt felt uten fokus, løftet ved fokus eller innhold. Bare den løftede etiketten får feltets bakgrunnsfarge som dekker en eventuell rammelinje bak teksten; posisjon, overgang og øvrig feltutforming beholdes.
+- Tilbakestilt funksjonsbeskrivelsens påstand om fast etikett. Den eksisterende gjengivelsestesten er endret til å kreve en tilknyttet flytende MUI-etikett, siden dette er ønsket oppførsel. Forrige rapport/skjermbilde bevares som historikk, ikke som gjeldende løsning. Ingen ny utviklingsfase eller endret produksjonsstatus.
+- Kontroller: pnpm test bestod med 276/276 Node-tester, 3/3 Python-tester, faktisk innholdssynk og 198 relative filmål. Typekontroll, formatkontroll og git diff --check bestod. Docker-produksjonsbygg og omstart bestod. Nettleserkontroll i Docker ved 1280 og 320 px bekreftet etikett inne i tomt felt uten fokus og løftet ved fokus/innhold, med bakgrunnsmaske bare når løftet og uten horisontal overflyt. [Kort rapport](docs/rag/2026-11-13/chat-label-floating.md) bevarer resultatet. Ingen skjermleserkontroll eller ny samlet tilgjengelighetsvurdering. Tidligere ukommiterte endringer er bevart; ingen commit eller push.
+
+### 13. november 2026 – rettet overlappende etikett i Spør KI
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Bekreftet i nettleser at den flytende etiketten «Skriv et spørsmål» krysset feltets øvre ramme ved fokus. Erstattet den med en fast, synlig label over MUI-feltet, koblet med htmlFor/id. Fargeprofil, fokusmarkering, input-/avbruddslogikk og hjelpe-/feilmeldinger beholdes. Samme komponent brukes i chattsiden og forsidechatten.
+- Kontrollert tomt/fokusert/utfylt felt og valideringsfeil ved desktopbredde, og tomt/fokusert/utfylt felt ved 320 px. Etiketten har 8 px klaring til rammen; etikettklikk gir feltfokus og ingen horisontal overflyt ble observert. Ny gjengivelsesregresjon kontrollerer én synlig etikett med korrekt feltkobling i vanlig og busy-tilstand.
+- Oppdatert funksjonsbeskrivelsen uten endret modenhet. Ingen endring i utviklingsfaser, avhengigheter eller produksjonsstatus, så utviklingsplanen får ingen kunstig ny oppføring. [Avgrenset visuell rapport](docs/rag/2026-11-13/chat-label.md) føres med kontroller og skjermbilde. Tidligere ukommiterte Compose-/katalogendringer er bevart; eksisterende Next-generert next-env.d.ts-endring er ikke tilbakestilt.
+- Fokuserte komponent-/fokustester 8/8, pnpm typecheck, pnpm test med 276/276 Node-tester og 3/3 Python-tester, faktisk innholdssynk og lenkekontroll bestod. Docker-produksjonsbygg og omstart bestod; den rettede etiketten er også visuelt kontrollert i Docker ved 320 px og i forsidechatten ved 1280 px. pnpm format:check, git diff --check og 198 relative filmål i 11 dokumenter bestod etter dokumentoppdatering. Ingen ny modell-, skjermleser- eller full tilgjengelighetsgodkjenning; ingen blindsett eller test:blind, commit eller push.
+
+### 12. november 2026 – Spør KI finner den samlede skill-oversikten
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Gjenskapte brukerens «Hvilke skills har vi?» som ingen treff i den kjørende Docker-indeksen. Enkeltressurser var registrert, men en samlet skill-katalog manglet. To nye utviklingsforventninger feilet før endring.
+- Lagt til getSkillCatalogSource, avledet direkte fra samme resources som katalogkortene. Navn, beskrivelser, antall og skille mellom registrerte skill-pakker og eksempler oppdateres ved indeksbygging, uten manuelt vedlikeholdt liste eller spørsmålsspesifikke rangeringer. Fire Skill-ressurser vises: tre med pakkemetadata og ett kodegjennomgangseksempel. Indeksen har nå 18 offentlige kilder, uten innlesing av andre repoer eller private filer.
+- Tillater det konkrete interne katalogankeret /#ressurser i kildevalideringen, fortsatt uten ukjente ankre/eksterne adresser. Vis/vise/viser klassifiseres som lavvektede handlinger på linje med finn/skriv; de gir ikke treff alene. Ny kilde, dynamiske antall, avgrensning til Skill, eksempelstatus og ankergrenser er regresjonstestet. Eksisterende heldOutEvaluation og øvrige forventninger er bevart.
+- Faktisk Qwen-svar ga først riktig liste uten inline-henvisning; generell JSON-svarinstruksjon er tydeliggjort til å kreve minst én kildehenvisning. Etter ombygging svarte modellen på brukerens nøyaktige spørsmål med alle fire oppføringer, skille 3 pakker/1 eksempel og [1], HTTP 200 og kilden skills, på 6,124 sekunder i én prøve. Modellinstruksjonen garanterer ikke fremtidig svarkvalitet.
+- Oppdatert funksjonsregister, arkitektur og utviklingsplan. [Kort rapport](docs/rag/2026-11-12/skill-oversikt.md) dokumenterer årsak, retting og faktisk modellprøve. Docker er bygget/startet på nytt med samme modellvolum; klienten må lastes på nytt for det nye kildeankeret. Kildeantallet avledes i kode, ikke av en ny vektordatabase.
+- Kontroller: pnpm test bestod med **275/275 Node-tester**, **3/3 Python-tester**, faktisk watch-/innholdssynk og lenkekontroll. pnpm typecheck og Next-produksjonsbygg i Docker bestod. pnpm format:check, git diff --check og 197 relative filmål i 11 dokumenter bestod etter dokumentoppdatering. Ingen blindsett, test:blind, eksterne modell-/priskildekall, nye avhengigheter, ny Node 22-/Pages-/nettleser-/skjermleserkontroll, commit eller push. Foregående Compose-arbeid er bevart og alle produksjonsavklaringer videreføres.
+
+### 12. november 2026 – lokal Qwen3:4b med Docker Compose
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Lagt til Dockerfile, avgrenset .dockerignore, Compose og prosessoppstart for Next/RAG. Portal og Ollama er separate tjenester, og engangstjenesten model-init laster modellvektene til eget navngitt volum utenfor Git. Node-/Ollama-bilder er låst til verifiserte offisielle digester; installasjon bruker låsefil, uten postinstall-nedlasting av testverktøy. Modeller og miljøfiler tas ikke med i portalbildet.
+- Kjørende Ollama har bare internt nettverk uten egress/vertsporter og skyfunksjoner av. Kun init har utgående nedlastingsnettverk; portalen publiseres på 127.0.0.1:3005. RAG tillater nøyaktig http://ollama:11434 i tillegg til loopback, fortsatt uten redirects, credentials, sti/query/fragment eller andre verter/porter. Modellen gjenbrukes ved omstart; oppdatering krever eksplisitt valg mens inferens er stoppet.
+- Førtest bekreftet at Compose-adressen ble avvist. Reell Qwen-prøve avslørte tenketekst med think=false i publisert modelltemplate. Endelig adapter ber Qwen3 om JSON med bare answer og validerer før svartekst returneres; avkuttede eller ugyldige modellutdata avvises og tjenesten kan beholde kildene. API-kontrakten er uendret. Init kopierer skriptet ved start for å tåle endringer i arbeidskopien under en lang nedlasting.
+- Faktisk modell: Qwen3:4b digest 359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7, Ollama 0.40.16 i Docker/Linux arm64. To norske svar med forventede kilder og henvisninger bestod gjennom portalens /api/rag, omtrent 5,1 og 12,8 sekunder i én varm prøve. Irrelevant spørsmål ga ingen treff og ingen generering. Helse rapporterer generering aktivert. Dette er format-/integrasjonskontroll med offentlig eksempelinnhold, ikke bred svarkvalitets- eller virksomhetsgodkjenning.
+- Oppdatert README/konfigurasjon, arkitektur, funksjonsregister/modellstatus til Beta, lokal personvernbeskrivelse og utviklingsplan. [Én kontrollrapport](docs/rag/2026-11-12/compose-qwen.md) dokumenterer både de innledende feilene og endelige resultater. scripts/check-rag-model.mjs er en eksplisitt prøve mot ekte modell og inngår aldri i test/CI. Modellfiler ignoreres av Git.
+- pnpm test bestod med **270/270 Node-tester**, **3/3 Python-tester**, faktisk watch-/innholdssynk og lenkekontroll. pnpm typecheck, pnpm format:check, git diff --check, 195 relative filmål i 11 dokumenter, Compose-konfigurasjon og Next-produksjonsbygg i Docker bestod. Modellstatus-forventningen er tilsiktet endret fra setup til beta etter faktisk lokal verifisering; forbehold om eksternt API beholdes. Ordinære tester bruker fixtures/simulering og syntetiske init-filer; reelle lokale modellprøver er kjørt separat. Ingen blindsett, test:blind, eksterne modell-/priskildekall, ny Node 22-/Pages-/nettleser-/skjermleserkontroll, commit eller push. P1–P10 og godkjenning for delt miljø videreføres.
+
 ### 12. november 2026 – oppdatert lokal Docker-utgave til d2f6ba3
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

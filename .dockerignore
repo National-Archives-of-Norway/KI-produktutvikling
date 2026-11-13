@@ -1,0 +1,22 @@
+# Bygg bare applikasjonen. Ingen Git, miljøfiler, modeller eller testbevis.
+*
+!package.json
+!pnpm-lock.yaml
+!next.config.ts
+!tsconfig.json
+!next-env.d.ts
+!VERSJONSLOGG.md
+!UTVIKLINGSPLAN.md
+!src/
+!src/**
+!public/
+!public/**
+!scripts/
+!scripts/rag-server.mjs
+!scripts/start-portal.mjs
+
+# Også utelatt dersom slike filer ved et uhell legges under public/src.
+**/*.gguf
+**/*.safetensors
+**/.env*
+**/.git/**

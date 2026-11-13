@@ -21,6 +21,33 @@ export type Resource = {
 // Kun offentlig beskrivende innhold. Private skill-filer importeres ikke i portalen.
 export const resources: Resource[] = [
   {
+    slug: "friction-triage",
+    type: "Instruks",
+    action: "Les instruksen",
+    title: "Add friction triage process to Agents.md",
+    description:
+      "Dokumenter vesentlige kunnskapshull i FRICTION.md, og vurder årsak og oppfølging før nye regler innføres.",
+    usage:
+      "Bruk instruksen når du vil innføre en friksjonslogg og en prosess for gjennomgang i et prosjekts AGENTS.md. Tilpass innledningen om minimal agentveiledning til prosjektet. Instruksen skiller varige kunnskapshull fra vanlig undersøkelse, feilretting og beslutninger i den aktuelle oppgaven.",
+    steps: [
+      "Les eksisterende AGENTS.md, kode, tester og dokumentasjon før instruksen tas i bruk.",
+      "Kopier instruksjonsteksten til prosjektets AGENTS.md og tilpass den til eksisterende føringer.",
+      "Registrer bare vesentlig friksjon som senere oppgaver også kan møte, med dato, agent, oppgave, observasjon og tiltak.",
+      "Be om triage av FRICTION.md ved behov. Gjennomgangen skal foreslå tiltak med etterprøvbart grunnlag; gjennomføring og fjerning av ferdig vurderte oppføringer krever menneskets bestilling eller bekreftelse.",
+    ],
+    example:
+      "This repository intentionally contains minimal agent-specific guidance. Prefer discovering conventions and architecture from the repository and available documentation over expecting them to be described here. If a competent agent could find the answer by reading the code, tests, or existing docs, it does not belong in this file or in FRICTION.md.\nRecord significant friction in FRICTION.md when:\n- you searched for information needed to proceed and could not find it;\n- available sources are ambiguous or contradictory;\n- you must make a consequential assumption — one that affects behavior visible outside this change;\n- a human corrects something you had reasonable grounds to believe was correct, and the correction depended on knowledge you had no way to discover — as opposed to an ordinary review preference or a plain bug. This is the highest-value entry: it surfaces things you were confidently wrong about.\nDo not record routine investigation or easily resolved questions.\n\nDo not record the questions a task exists to answer. When designing a feature or writing a spec with a human, open questions, the owner's decisions and their corrections to your proposals are the work: record them in the spec. From that work, record friction only for a gap that a different, later task would also hit. That means an existing fact about the repositories or environment that the task would need and could not find, whether or not someone has since answered it.\n\nMistakes you find in working documents, such as reviews, drafts or handoff notes, are findings for the task, not friction.\n\nEntry format:\n```\n### <short title>\nDate: <YYYY-MM-DD>\nAgent: <tool + model/version>\nTask: <what you were doing>\nObservation: <what was ambiguous, contradictory, or surprising>\nAction taken: <what you did, and why>\n\n```\nKeep an entry to the friction and what you did about it; track task progress elsewhere. Add a dated follow-up only when a human resolves or corrects the entry. Resolutions that show up in the repositories, such as a merged fix, are for triage to find.\n\nIf the friction concerns another repository, still log it here — tag it cross-repo: <other-repo-name> rather than splitting the same observation across multiple files.\n\nCall out a new entry to the user at the point you record it, not only in an end-of-session summary.\n\nDo not turn friction findings into new rules in this file automatically.\nWhen asked to triage FRICTION.md, go through every entry. For each, propose a primary disposition plus any follow-ups it needs. Do not act on the proposals unless asked.\n\nFor each entry:\n- Understand the issue and check it against the relevant sources: the current state, or the pinned version where one applies.\n  - Fetch remotes where access permits, but don't pull or switch branches.\n  - State the commit, ref or tag you reviewed, and any freshness limits.\n  - Entries go stale: the issue may have been fixed, merged elsewhere, or settled by a later decision.\n- Consider which agent recorded the entry and in what environment. Missing tools, checkouts, or services may describe that agent's sandbox rather than the developer's machine.\n- Separate verified facts from reported evidence and inferred causes. An unproven cause is a hypothesis: it can justify an investigation, but does not by itself justify a fix.\n- Check for existing tickets and documents before proposing new ones. If you can't search the issue tracker, say so and mark the proposed tickets as unchecked; don't conclude that none exist.\n- Prefer the action that removes the cause over one that only records it:\n  - Close: nothing further is needed for this entry. Either the uncertainty is resolved, or the remaining work is tracked elsewhere; name where. Closing does not mean the entry was wrong or that the linked work is done.\n  - Ticket: tech debt or a bug that caused the confusion, such as stale cluster configuration, outdated Python version bounds, or a half-finished tooling migration. Fixing it makes the fact inferable.\n  - Documentation: architecture, roadmap, or ownership that belongs in an existing README, spec, or design record.\n  - AGENTS.md change: only for durable guidance that applies across tasks and has no better home in existing documentation. Do not copy discoverable repository facts or task-specific decisions here.\n  - Developer setup: friction caused by the agent's environment, such as sandbox mounts, stale local checkouts, or network allow lists.\n  - Question: a fact owned by another team or person. Name who to ask.\nReport a summary table with one row per entry, giving the verdict and the proposed action. Follow it with the evidence behind each verdict (commits, files, or command output) so a reviewer can check it.\n\nWhen the human confirms the triage is done, remove the triaged entries from FRICTION.md; their value now lives elsewhere. Before asking for that confirmation, list each entry's follow-ups and where each is recorded: a ticket, a document, a pull request, or the triage report. The human decides whether that is enough; don't file tickets yourself unless asked.",
+    keywords: [
+      "friction",
+      "triage",
+      "AGENTS.md",
+      "FRICTION.md",
+      "friksjon",
+      "agentinstruksjoner",
+      "kunnskapshull",
+    ],
+  },
+  {
     slug: "tilgjengelighetserklaering",
     type: "Skill",
     action: "Se skill",

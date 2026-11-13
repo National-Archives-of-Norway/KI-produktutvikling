@@ -11,3 +11,9 @@ out/
 # Python-cache
 __pycache__/
 *.pyc
+
+# Lokale modellfiler skal aldri versjoneres. Compose bruker navngitt volum.
+.ollama/
+models/
+*.gguf
+*.safetensors

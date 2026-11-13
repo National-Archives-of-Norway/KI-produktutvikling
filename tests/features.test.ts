@@ -110,9 +110,16 @@ test("Spør KI og oversikten bruker samme funksjoner og forbehold", () => {
     getFeatures().find((feature) => feature.id === "tilgang")!.status,
     "planned",
   );
-  assert.equal(
-    getFeatures().find((feature) => feature.id === "modell")!.status,
-    "setup",
+  // Nå faktisk prøvd lokalt med Qwen; dette godkjenner ikke ekstern/delt drift.
+  const model = getFeatures().find((feature) => feature.id === "modell")!;
+  assert.equal(model.status, "beta");
+  assert.match(
+    model.description,
+    /Lokale Qwen-svar med kildehenvisninger er prøvd/,
+  );
+  assert.match(
+    model.description,
+    /Eksternt modell-API er fortsatt bare testet med simulert transport/,
   );
 });
 

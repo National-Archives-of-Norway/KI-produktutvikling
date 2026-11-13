@@ -107,6 +107,8 @@ export const developmentEvaluation: {
   maxRank?: number;
   additionalIds?: string[];
 }[] = [
+  { question: "Hvilke skills har vi?", expectedId: "skills" },
+  { question: "Vis meg skills i ressurskatalogen", expectedId: "skills" },
   {
     question: "Hvordan skriver jeg en god prompt?",
     expectedId: "tydelig-kontekst",
@@ -407,7 +409,7 @@ test("kildeord beregnes ved indeksbygging, ikke ved hvert spørsmål", () => {
 });
 
 test("handlingsord gir ikke treff alene, men skiller mellom kilder med samme emne", () => {
-  for (const question of ["teste", "dele", "lagres"])
+  for (const question of ["teste", "dele", "lagres", "vis"])
     assert.deepEqual(retrieve(question), []);
   const make = (id: string, text: string) => ({
     id,

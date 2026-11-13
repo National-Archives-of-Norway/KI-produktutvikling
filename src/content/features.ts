@@ -50,7 +50,7 @@ export function getFeatures(): Feature[] {
     {
       id: "katalog",
       title: catalogContent.title,
-      description: `${catalogContent.description} Søk og filtrer blant ${resources.length} ressurser, inkludert ${resources.filter((resource) => resource.type === "Skill").length} skills. Valgt ressurstype markeres med en gang. Hver ressurs har en egen side med brukssteg og eksempel. Skill-kortene har en Beta-etikett. Status og begrensninger beskrives på detaljsiden.`,
+      description: `${catalogContent.description} Søk og filtrer blant ${resources.length} ressurser, inkludert ${resources.filter((resource) => resource.type === "Skill").length} skills. Valgt ressurstype markeres med en gang. Hver ressurs har en egen side med brukssteg og eksempel, inkludert en instruks for friksjonslogg og triage i AGENTS.md. Skill-kortene har en Beta-etikett. Status og begrensninger beskrives på detaljsiden.`,
       status: "beta",
       href: "/#ressurser",
       routes: ["/ressurser/[slug]/"],
@@ -60,7 +60,7 @@ export function getFeatures(): Feature[] {
       id: "spor",
       title: "Spør KI",
       description:
-        "Still spørsmål om portalens innhold. Få veiledning med konkrete steg, kilder og forslag til nye spørsmål. Kildesøket prioriterer relevante emnetreff og gjenkjenner flere norske bøyninger og bruker vedlikeholdte søkeord for å finne relevant veiledning. Ved spørsmål om to ulike temaer kan det finne en kilde til hvert tema når begge har tydelig støtte i innholdet. Det kan returnere uten treff når grunnlaget er for svakt. Chatten finnes på en egen side og fra forsiden. Modellfeil og kapasitetsavvisning beholder tilgjengelige kilder. Uventet svarformat gir en forståelig feilmelding. Modellsvar viser fortløpende nummerering ved gjentatte listemarkører og beholder tydelige nummerhopp og kildehenvisninger også i fet tekst. Spørsmål kan inneholde 3–1000 brukeropplevde tegn, inkludert sammensatte emoji. Feltet varsler når teksten kuttes og viser en teller nær grensen. Send-knappen beholder fokus under venting og sperrer gjentatt innsending; en egen Avbryt-knapp lar deg avbryte og sende et nytt spørsmål med en gang. Etter svar eller avbrudd går fokus tilbake til spørsmålsfeltet hvis det står på Send eller har falt bort, uten å flytte fokus fra en annen valgt kontroll. Datoer og årstall i svar vises som avsnitt fremfor nummererte lister. Spørsmål behandles separat, og historikken lagres ikke etter sideoppdatering.",
+        "Still spørsmål om portalens innhold. Få veiledning med konkrete steg, kilder og forslag til nye spørsmål. En samlet skill-oversikt hentes fra ressurskatalogen, med skille mellom registrerte pakker og eksempler. Kildesøket prioriterer relevante emnetreff og gjenkjenner flere norske bøyninger og bruker vedlikeholdte søkeord for å finne relevant veiledning. Ved spørsmål om to ulike temaer kan det finne en kilde til hvert tema når begge har tydelig støtte i innholdet. Det kan returnere uten treff når grunnlaget er for svakt. Chatten finnes på en egen side og fra forsiden. Modellfeil og kapasitetsavvisning beholder tilgjengelige kilder. Uventet svarformat gir en forståelig feilmelding. Modellsvar viser fortløpende nummerering ved gjentatte listemarkører og beholder tydelige nummerhopp og kildehenvisninger også i fet tekst. Spørsmål kan inneholde 3–1000 brukeropplevde tegn, inkludert sammensatte emoji. Feltet varsler når teksten kuttes og viser en teller nær grensen. Send-knappen beholder fokus under venting og sperrer gjentatt innsending; en egen Avbryt-knapp lar deg avbryte og sende et nytt spørsmål med en gang. Etter svar eller avbrudd går fokus tilbake til spørsmålsfeltet hvis det står på Send eller har falt bort, uten å flytte fokus fra en annen valgt kontroll. Datoer og årstall i svar vises som avsnitt fremfor nummererte lister. Spørsmål behandles separat, og historikken lagres ikke etter sideoppdatering.",
       status: "beta",
       href: "/spor/",
       routes: ["/spor/"],
@@ -86,8 +86,8 @@ export function getFeatures(): Feature[] {
       id: "modell",
       title: "Modellgenererte svar",
       description:
-        "Modellkoblingen støtter lokal Ollama og eksternt OpenAI-kompatibelt Chat Completions-API. Generering krever valgt modell og serverkonfigurasjon. API-nøkkelen håndteres på serveren. Uten modell brukes veiledning fra innholdet, også i statisk demo. Adapterne er testet med simulert transport; tilkobling og svar fra en valgt virkelig modell er ikke verifisert.",
-      status: "setup",
+        "Modellkoblingen støtter lokal Ollama og eksternt OpenAI-kompatibelt Chat Completions-API. Generering krever valgt modell og serverkonfigurasjon. API-nøkkelen håndteres på serveren. Uten modell brukes veiledning fra innholdet, også i statisk demo. Compose-oppsettet kan kjøre Qwen3:4b lokalt i en separat Ollama-tjeneste, med modellfiler i et eget Docker-volum. Lokale Qwen-svar med kildehenvisninger er prøvd gjennom portalens API. Eksternt modell-API er fortsatt bare testet med simulert transport; lokal utprøving er ikke en godkjenning for delt drift.",
+      status: "beta",
       href: "/spor/",
     },
     {

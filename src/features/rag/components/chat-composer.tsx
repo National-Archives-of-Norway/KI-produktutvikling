@@ -110,7 +110,11 @@ export function ChatComposer({
             },
             "&.Mui-focused": { boxShadow: portalEffects.fieldGlow },
           },
-          "& .MuiInputLabel-root": { color: "text.secondary" },
+          "& .MuiInputLabel-root": {
+            color: "text.secondary",
+            // Behold MUIs flytende etikett; maskér bare rammen bak løftet tekst.
+            "&.MuiInputLabel-shrink": { bgcolor: "background.default" },
+          },
           "& .MuiFormHelperText-root": { fontSize: 12, mx: 0 },
         }}
       />

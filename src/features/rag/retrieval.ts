@@ -1,3 +1,4 @@
+import { getSkillCatalogSource } from "../../content/catalog.ts";
 import { buildPageSources } from "../../content/knowledge.ts";
 import { getFeatureSource } from "../../content/features.ts";
 import { getOverviewSource } from "../../content/overview.ts";
@@ -33,6 +34,7 @@ const indexedCorpus: SearchSource[] = [
     },
   })),
   ...buildPageSources(),
+  getSkillCatalogSource(),
   getFeatureSource(),
   getPricingSource(),
   getOverviewSource(),

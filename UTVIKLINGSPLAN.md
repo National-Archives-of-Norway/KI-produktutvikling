@@ -10,7 +10,8 @@ Den opprinnelige gjennomgangen bygde på kode, dokumentasjon og lokal Git-base `
 
 | Grunnlag                                                           | Dokumentert resultat                                                                                                                                                                                                             | Avgrensning                                                                                                                                                                                                    |
 | ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Lokal Docker-utgave, commit d2f6ba3 (12. november)                 | Nytt Next-produksjonsbygg, 124/124 fokuserte søke-/chatfokustester og 12/12 faktiske API-kontroller på port 3005, Docker/Linux arm64 Node 24.22.2. Helse og kildekontrollsummer bekreftet.                                       | Modellgenerering er deaktivert. Ingen ny full testpakke, Node 22, Pages, nettleser-/skjermleserkontroll eller produksjonsgodkjenning. Kilden er eksakt d2f6ba3; senere dokumentasjonsnotater er ikke i bildet. |
+| Lokal Compose/Qwen, arbeidskopi etter 6c304b3 (12. november)       | Faktiske norske Qwen3:4b-svar med kilder via /api/rag, to positive prøver og ett spørsmål uten treff; modell gjenbrukt fra eget volum. [Rapport](docs/rag/2026-11-12/compose-qwen.md).                                           | Lokal CPU-utprøving. Ikke bred svarkvalitetsevaluering, modell-/virksomhetsgodkjenning, eksternt modell-API eller delt produksjonsdrift.                                                                       |
+| Tidligere lokal Docker-utgave, commit d2f6ba3 (12. november)       | Nytt Next-produksjonsbygg, 124/124 fokuserte søke-/chatfokustester og 12/12 faktiske API-kontroller på port 3005, Docker/Linux arm64 Node 24.22.2. Helse og kildekontrollsummer bekreftet.                                       | Modellgenerering er deaktivert. Ingen ny full testpakke, Node 22, Pages, nettleser-/skjermleserkontroll eller produksjonsgodkjenning. Kilden er eksakt d2f6ba3; senere dokumentasjonsnotater er ikke i bildet. |
 | Hele CI-rekken, commit c22f1dc (11. november)                      | **206/206 Node-tester og 3/3 Python-tester på begge Node 22.18.0 og 24.22.2**, frosne installasjoner, format, typer, innholdssynk/lenker, serverbygg og Pages-bygg i Docker/Linux arm64. [Kontrollrapport](docs/CI-KONTROLL.md). | Installasjonsavvik er dokumentert; de endelige kontrollrekkene kjørte uten nettverk. Ikke GitHub Actions/ubuntu-latest x64, faktisk modell eller produksjonsgodkjenning.                                       |
 | Siste avgrensede chatprøve, senere samlet i c22f1dc (11. november) | Tastatur, dobbel aktivering, avbrudd/ny innsending, datoer og listenumre ved 320 px med simulert svar. [Rapport](docs/rag/2026-11-11/chat-dates-port.md).                                                                        | Ikke faktisk skjermleser, IME eller ny full tilgjengelighetsvurdering.                                                                                                                                         |
 | Historisk chatprøve, committet som `46f449e` (11. november)        | **132/132 Node-tester**, typekontroll, serverbygg, Pages-bygg og formatering bestod på Node 24.22.1. Visuell chatprøve med simulert modell og kontroll av klientpakken. [Rapport](docs/rag/2026-11-11/chat-client.md).           | Den visuelle prøven gjelder denne eldre revisjonen. Senere automatiske chatregresjoner inngår i c22f1dc-kontrollen ovenfor; ingen ny full tilgjengelighetskontroll. IME er ikke manuelt prøvd.                 |
@@ -22,7 +23,7 @@ Den opprinnelige gjennomgangen bygde på kode, dokumentasjon og lokal Git-base `
 
 **Historisk oppfølging, tidligere 11. november:** content-sync-feilen er rettet og faktisk watch-omlasting kontrollert på nytt. Hele Node-pakken bestod da med **133/133**, inkludert ny oppstartsregresjon. Se [avgrenset testrapport](docs/rag/2026-11-11/content-sync.md). Tidligere bygg- og Linux-grunnlag ovenfor beholder sitt omfang.
 
-Ingen av disse kontrollene dokumenterer produksjonsdrift, godkjent innhold eller faktiske modell-/priskildekall. P1–P10 nedenfor er fortsatt åpne.
+De historiske kontrollene over dokumenterer ikke produksjonsdrift eller godkjent innhold. Den nye Compose-kontrollen omfatter faktiske lokale Qwen-modellkall, men ingen eksterne modell- eller priskildekall. P1–P10 nedenfor er fortsatt åpne.
 
 ## Slik brukes og vedlikeholdes planen
 
@@ -46,7 +47,7 @@ Reglene er også lagt i `AGENTS.md`, og gjelder fremtidig agentarbeid i prosjekt
 - **Tilgang:** Brukerne skal i første delte miljø avgrenses til godkjente GitHub-brukere hos virksomheten. Organisasjon/team, nødvendige abonnementsegenskaper og konkret tilgangsløsning er ikke endelig avklart. Innlogging og autorisering er ikke implementert.
 - **GitHub-rettigheter:** Portalen skal ikke ha skrivetilgang til andre koderepoer. En eventuell medlemskontroll skal få et avgrenset formål og minimale nødvendige rettigheter.
 - **Innhold:** Felles innholdsdata brukes av sider, katalog, anbefalinger og RAG. Dette sikrer teknisk samsvar, men innebærer ikke faglig godkjenning. Internt materiale skal ikke legges i klientdata, `public/`, offentlige bygg eller dagens RAG-korpus.
-- **Modell:** Lokal Ollama og eksternt OpenAI-kompatibelt Chat Completions-API er støttet i kode. Leverandør, modell og virkelig API-tilkobling er ikke konfigurert/verifisert. API-nøkkelen skal bare være en serverhemmelighet.
+- **Modell:** Lokal Ollama og eksternt OpenAI-kompatibelt Chat Completions-API er støttet i kode. Qwen3:4b er konfigurert i lokal Docker Compose og prøvd med faktiske kildebaserte svar. Virksomhetsgodkjenning og eksternt modell-API er fortsatt ikke avklart/verifisert. API-nøkkelen skal bare være en serverhemmelighet.
 
 ## Samlet leveransestatus – 11. november 2026
 
@@ -55,7 +56,7 @@ Reglene er også lagt i `AGENTS.md`, og gjelder fremtidig agentarbeid i prosjekt
 | Forside og navigasjon            | Lær/Prøv/Del, anbefalt oppgave «Utforsk et brukerbehov» fra ressursdata, menyen Kom i gang → Retningslinjer → Ressurskatalog → Oversikt → Spør KI → Om           | Begrenset intern brukertesting gjenstår                                                                                 |
 | Innhold og KI-prat               | Felles innholdsfiler for Kom i gang, Om og Retningslinjer, tydelig retningslinjelenke, KI-prat med deltakelsesinvitasjon og mandatforslag som vedlegg            | Retningslinjer og mandat er utkast; eiere og godkjenning gjenstår                                                       |
 | Ressurser og Skills              | Seks katalogressurser, separat lokalt Skills-repo, tilgjengelighetsskill 0.6.0, personvernskill 0.1.0 og selvstendig cookie-/samtykkeskill 0.1.0 med rapportflyt | Skills er Beta og ikke menneskelig gjennomgått; ingen distribusjon fra portalen eller GitHub er etablert                |
-| Spør KI                          | Relevansstyrt kildesøk, kildebevaring ved modellfeil, frister/avbrudd og modellkapasitet, liste-/kildevisning, grafemvalidering og demo uten modell              | Ingen faktisk modellgenerering er verifisert; hvert spørsmål behandles separat                                          |
+| Spør KI                          | Relevansstyrt kildesøk, kildebevaring ved modellfeil, frister/avbrudd og modellkapasitet, liste-/kildevisning, grafemvalidering og demo uten modell              | Lokal Qwen3:4b-generering er prøvd; hvert spørsmål behandles separat, og ekstern modell/delt drift gjenstår             |
 | Kontinuerlig innholdsoppdatering | Sider og RAG deler innhold; lokal RAG lastes om ved innholdsendringer; isolert synkroniseringstest finnes                                                        | I produksjon må Next.js og RAG utrulles fra samme revisjon; gamle chatsvar er historikk                                 |
 | Oversikter                       | Oversikt med priser, godkjente assistenter og MCP-vurderingsstatus; nettstedskart, versjonslogg, utviklingsplan og avledet funksjonalitetsoversikt               | Funksjonenes mening og modenhet må vedlikeholdes i registeret                                                           |
 | Tilgjengelighet                  | Avgrensede kontroller, rettinger, WCAG-matrise, lokalt erklæringsutkast og daterte testresultater under `docs/tilgjengelighet/`                                  | Ni funn er rettet i siste vurderte utvalg; åtte krav, retest av nyere chat og formell godkjenning/registrering gjenstår |
@@ -84,16 +85,16 @@ Tilgjengelighetsgrunnlag og konkrete uavklarte punkter finnes i [WCAG-kontrollen
 
 ## Faseoversikt
 
-| Fase | Leveranse                                            | Status 11. november 2026                                                                        |
-| ---- | ---------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| 1    | Omfang, ansvar og tilgangsvalg                       | Målgruppe og første funksjoner avklart; eierskap, drift og tilgangsmodell åpne                  |
-| 2    | Teknisk grunnmur og arbeidsflyt                      | Lokal implementering og CI-definisjon klar; GitHub-kjøring, repo og review-regler gjenstår      |
-| 3    | Design og tilgjengelighet                            | Design og avgrensede kontroller utført; samlet tilgjengelighetsgodkjenning gjenstår             |
-| 4    | MVP 1: lokal portal og forberedelse til lukket pilot | Lokal leveranse klar; ikke delt eller brukertestet som pilot                                    |
-| 5    | Servermiljø, modellkobling og utrulling              | Adaptere, frister/avbrudd og kapasitet simulert testet; drift og ekte modelltilkobling gjenstår |
-| 6    | MVP 2: innlogging og beskyttet tilgang               | Ikke implementert; nødvendig før første delte pilot                                             |
-| 7    | MVP 3: versjonerte skills og distribusjon            | Lokalt bibliotek og katalogintegrasjon på plass; review og distribusjon gjenstår                |
-| 8    | MVP 4: forvaltning og produksjonsgodkjenning         | Ikke godkjent; produksjonskrav P1–P10 følges opp                                                |
+| Fase | Leveranse                                            | Status 11. november 2026                                                                         |
+| ---- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| 1    | Omfang, ansvar og tilgangsvalg                       | Målgruppe og første funksjoner avklart; eierskap, drift og tilgangsmodell åpne                   |
+| 2    | Teknisk grunnmur og arbeidsflyt                      | Lokal implementering og CI-definisjon klar; GitHub-kjøring, repo og review-regler gjenstår       |
+| 3    | Design og tilgjengelighet                            | Design og avgrensede kontroller utført; samlet tilgjengelighetsgodkjenning gjenstår              |
+| 4    | MVP 1: lokal portal og forberedelse til lukket pilot | Lokal leveranse klar; ikke delt eller brukertestet som pilot                                     |
+| 5    | Servermiljø, modellkobling og utrulling              | Adaptere/frister/kapasitet simulert testet; lokal Qwen prøvd; delt drift og godkjenning gjenstår |
+| 6    | MVP 2: innlogging og beskyttet tilgang               | Ikke implementert; nødvendig før første delte pilot                                              |
+| 7    | MVP 3: versjonerte skills og distribusjon            | Lokalt bibliotek og katalogintegrasjon på plass; review og distribusjon gjenstår                 |
+| 8    | MVP 4: forvaltning og produksjonsgodkjenning         | Ikke godkjent; produksjonskrav P1–P10 følges opp                                                 |
 
 Fase 5 og 6 må samordnes før MVP 1 deles. Fase 7 kan utvikles parallelt, men full automatisk skill-installasjon er ikke et krav til første pilot med lesbart innhold. Pages beholdes foreløpig som bygg-/demovariant; det er ikke en beslutning om offentlig hosting.
 
@@ -157,6 +158,7 @@ Arbeidsgrunnlaget for P8 er konkretisert i [avklaringsplanen for de 8 uavklarte 
 - [x] Samle verb-/substantivbøyninger og filtrere frekvensord; prøve en avgrenset tokildersreserve bare etter null ordinære treff og med minst to støttede sjeldne temaer (11. november). Utviklingssettet er utvidet til 29 kjente spørsmål; heldOutEvaluation og øvrige forventninger er bevart. [Før-/etterrapport](docs/rag/2026-11-11/stamming-og-to-temaer.md) forklarer stamme-/terskelavvik og kontroller. Ingen ekte blindsett brukes; uavhengig evaluering og produksjonsgodkjenning gjenstår.
 - [x] Legge til søkenøkkelord som metadata på sider/seksjonsvalg og bruke ressursenes keywords i eget indeksfelt (11. november). De fem nye kjente spørsmålene og falske treff kontrolleres; aliasene inngår ikke i kildetekst/API-/modellgrunnlag. [Rapport](docs/rag/2026-11-11/sokenokkelord.md) dokumenterer bestilt liste, tekstgrunnlag og før/etter. Ingen ekstra nøkkelord foreslås eller flettes automatisk; menneskelig gjennomgang før fletting og videre uavhengig evaluering gjenstår.
 - [x] Beholde tastaturfokus på Send under venting med aria-disabled og sperret aktivering; returnere fokus til feltet ved avslutning bare fra Send/body (11. november). Rene fokus-/aktiveringstester og avgrenset tastaturprøve ved 320/1280 px bruker simulert transport. [Fokusrapport](docs/rag/2026-11-11/chat-focus.md) skiller dette fra full skjermleser-/tilgjengelighets- og produksjonsgodkjenning; P8 videreføres.
+- [x] Legge til samlet skill-katalog i kunnskapsgrunnlaget fra de eksisterende ressursdataene (12. november). Bekreftet at «Hvilke skills har vi?» før ga ingen treff. Oversikten teller og skiller registrerte skill-pakker og øvrige Skill-eksempler automatisk; enkeltressursene beholdes. Regresjon og faktisk Qwen-prøve dokumenteres i [rapporten](docs/rag/2026-11-12/skill-oversikt.md). Dette leser ikke andre repoer eller private skill-filer.
 - [ ] Verifisere søkets generalisering på et nytt uavhengig spørsmålssett og i oppgavebasert brukertest før bredere pilotbruk.
 - [x] Rette og regresjonsteste relevansen i det lokale kildesøket (10. november 2026): 26 spørsmål med positive og negative forventninger, retningsbestemt prefiks, relevansterskel og deterministisk rangering. Se [før-/etter-evalueringen](docs/rag/2026-11-10/relevans.md). Dette erstatter ikke oppgavebasert brukertesting eller verifisering av faktisk modellgenerering.
 - [x] Implementere nettstedskart, tilgjengelighetsside, versjonslogg og funksjonalitetsoversikt.
@@ -171,6 +173,7 @@ Arbeidsgrunnlaget for P8 er konkretisert i [avklaringsplanen for de 8 uavklarte 
 ## Fase 5 – Servermiljø, modellkobling og utrulling
 
 - [x] Samordne tomme RAG-miljøverdier og portgrenser (11. november): bare usatte verdier gir standard; tom/blank verdi avvises. Miljøport 0 avvises; isolerte tester injiserer konfigurasjon med dynamisk port eksplisitt.
+- [x] Sette opp lokal portal/Ollama i Compose med separat modellvolum, intern nettverksadresse og faktisk Qwen3:4b-svar (12. november). Strukturerte svar løser observert tenketekst fra modelltemplaten; avkuttede/ugyldige svar avvises med bevarte kilder. [Rapport](docs/rag/2026-11-12/compose-qwen.md). Dette fullfører ikke P3/P5/P6/P9 i et delt miljø.
 - [x] Implementere separat RAG-HTTP-tjeneste og serverkonfigurasjon med valgene `none`, `ollama` og `openai-compatible`.
 - [x] Implementere ekstern adapter med HTTPS, serverlagret Bearer-nøkkel, timeout, avvist videresending og nøytrale feilmeldinger.
 - [x] Teste adaptere og HTTP-kontrakt med simulert transport, inkludert feil, manglende innstillinger og at hemmeligheter ikke returneres.
@@ -180,7 +183,7 @@ Arbeidsgrunnlaget for P8 er konkretisert i [avklaringsplanen for de 8 uavklarte 
 - [x] Bekrefte at RAG_PORT i Next-rewrite låses ved bygg i 16.4.3, med lagret manifest og lokal produksjonsprøve: ulik runtime-port endrer ikke målet. Dokumentert krav om samsvar mellom byggport og faktisk tjenesteport.
 - [ ] Gjøre intern RAG-adresse konfigurerbar og verifisere endepunktet fra faktisk HTTPS-adresse med riktig origin-liste.
 - [ ] Velge modell/leverandør og avklare databehandling, før virkelige server-secrets legges inn.
-- [ ] Teste reell generering med representative spørsmål, kildestøtte og utilstrekkelig grunnlag, samt feil, treghet og kostnads-/kapasitetsgrenser.
+- [ ] Utvide den innledende lokale Qwen-prøven til reell generering med representative spørsmål, kildestøtte og utilstrekkelig grunnlag, samt feil, treghet og kostnads-/kapasitetsgrenser.
 - [ ] Etablere ratebegrensning, logger uten hemmeligheter, helsesjekker, alarmer og en dokumentert tilbakeføringsprøve.
 - [ ] Bygge og utrulle nettside og RAG fra samme revisjon med kontroll av innhold og hemmeligheter i artefaktene.
 

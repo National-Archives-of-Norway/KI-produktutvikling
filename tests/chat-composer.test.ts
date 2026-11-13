@@ -86,3 +86,16 @@ test("skjemaet eksponerer aria-busy under forespørsel", () => {
   assert.match(render(true), /<form\b[^>]*aria-busy="true"/);
   assert.doesNotMatch(render(false), /<form\b[^>]*aria-busy="true"/);
 });
+
+test("spørsmålsfeltet beholder sin tilknyttede flytende MUI-etikett", () => {
+  for (const busy of [false, true]) {
+    const html = render(busy);
+    assert.match(
+      html,
+      /<label[^>]*for="test-question"[^>]*>Skriv et spørsmål<\/label>/,
+    );
+    assert.match(html, /<textarea[^>]*id="test-question"/);
+    assert.match(html, /MuiInputLabel-root/);
+    assert.doesNotMatch(html, /chat-question-label/);
+  }
+});
