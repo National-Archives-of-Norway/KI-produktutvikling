@@ -6,6 +6,15 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 13. november 2026 – friksjonsprosess innført i prosjektet
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Innført instruksjonskortets prosess i AGENTS.md og opprettet FRICTION.md med oppføringsmal og tom seksjon for åpne oppføringer. Innledningen er tilpasset portalens eksisterende vedlikeholdsregler, som beholdes. Ingen tidligere feil eller brukerpreferanser er omklassifisert til friksjon.
+- Prosessen skiller varige kunnskapshull fra oppgavens funn, krever varsling ved registrering og etterprøvbar triage av alle oppføringer. Tiltak foreslås uten automatisk gjennomføring, og vurderte oppføringer fjernes først etter menneskets bekreftelse. README og dokumentasjonsoversikten peker til loggen.
+- Bare arbeidsinstruksjoner og dokumentasjon er endret; ingen ny portalvisning eller endring av funksjonsregister, fase eller produksjonsstatus. Utviklingsplanen får ingen kunstig ny oppføring.
+- Kontroller: pnpm test:links bestod med 202 relative filmål i 12 dokumenter. pnpm format:check og git diff --check bestod. Ingen funksjonskode er endret; testpakke og bygg er derfor ikke kjørt på nytt. Ingen commit eller push.
+
 ### 13. november 2026 – instruksjonskort for friksjonslogg og triage
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

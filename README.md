@@ -97,4 +97,6 @@ Prisene vedlikeholdes i `src/content/pricing/snapshot.json`. `pnpm pricing:sync`
 - [Kvalitetskontroll](KVALITETSKONTROLL.md), [WCAG-kontroll](docs/tilgjengelighet/WCAG-KONTROLL.md), [erklæringsgrunnlag](docs/tilgjengelighet/TILGJENGELIGHETSERKLAERING.md).
 - [Versjonslogg](VERSJONSLOGG.md), [arkivert README og revisjonshistorikk](docs/HISTORIKK.md), [forslag til bevislagring](docs/BEVISLAGRING.md).
 
+Vesentlige kunnskapshull og motstridende kilder registreres i [FRICTION.md](FRICTION.md) etter kriteriene i AGENTS.md. Triage foreslår tiltak; gjennomføring og sletting av vurderte oppføringer krever bestilling eller bekreftelse.
+
 Oppdater versjonslogg, relevante planpunkter og funksjonsregister ved vesentlige endringer etter [AGENTS.md](AGENTS.md). Rediger felles innhold og register fremfor kopier i sider/RAG. Historikk er bevart; bevislagringsforslaget er ikke innført.
