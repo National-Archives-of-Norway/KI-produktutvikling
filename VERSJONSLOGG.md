@@ -6,6 +6,14 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 16. november 2026 – rullerettingen prøvd ved 320 px og i forsidens chatbot
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Testet ba5aee0-rettingen i eksisterende Docker-portal på 3005: første og neste spørsmål på /spor ved 320 × 762, samt forsidens dialog ved 1280 × 720 og en ny innsending ved 320 × 762. Fire faktiske Qwen-svar med kilder; ingen simulert transport. Synlig svarstart, feltfokus og ingen horisontal overflyt i målte rulleflater i alle fire prøver. Sideankeret lå ca. 24 px fra toppen; dialogankeret lå ved toppen av dialogens egen rulleflate, uten å skjules bak overskriften.
+- Oppdatert [testresultatene](docs/rag/2026-11-16/chat-scroll.md) med mål, fremgangsmåte, ett nytt representativt dialogbilde og begrensninger. Tidligere testgrunnlag/bilde er bevart. Containerens fokus-/transkriptfiler samsvarer med de committede filene ved SHA-256; portalhelse healthy. Ingen kode-/funksjonsstatusendring, ombygging, modellnedlasting eller volumendring. Planen henviser til utvidet testgrunnlag.
+- pnpm test:links bestod med 231 filmål i 12 dokumenter; pnpm format:check og git diff --check bestod. Ingen ny full testpakke, fysisk mobil-/skjermtastatur-/skjermleser-/zoomprøve, full WCAG- eller produksjonsgodkjenning. Midlertidig viewport-overstyring er nullstilt og testfanen lukket. Ingen commit eller push.
+
 ### 16. november 2026 – Spør KI beholder starten på svaret synlig
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.
