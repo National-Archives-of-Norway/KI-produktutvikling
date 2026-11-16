@@ -6,6 +6,14 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 16. november 2026 – samlet lokal kontroll før første push
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Kjørte pnpm check og pnpm build:pages på ren kildebase a762ac1, macOS arm64, Node 24.22.1, pnpm 11.25.0 og Python 3.9.6 med eksisterende avhengigheter. Begge bestod med exit 0: format, typer, 278/278 Node-tester, 3/3 Python-tester, innholdssynk inkludert søkenøkkelord, 218 relative filmål i 12 dokumenter og begge bygg med 28 genererte sider. Første check-forsøk ble blokkert av sandkassens lokale lytteportforbud (EPERM); full kjøring med nødvendig tilgang bestod. url.parse()-deprekasjonsadvarsel uten testfeil.
+- Oppdatert [første-push-sjekklisten](docs/FORSTE-PUSH.md) med lokale resultater og at organisasjonsrepo er opprettet ifølge brukeren. URL/synlighet/tilgang og GitHub-innstillinger er ikke kontrollert. Avklaringer om innhold/historikk, historiske preview-verdier, bevislagring, prisjobb og etterfølgende CI/review er tydelig skilt fra krav til lukket nettstedspilot. Utviklingsplanen er avstemt uten produksjonsgodkjenning eller endret funksjonsstatus.
+- Ingen priskildekall, ekte modellprøve, blindmåling, ny sikkerhetsskanning, Docker-/modellvolumendring, remote, GitHub-innstilling, historikkendring, commit eller push. Dokumentoppdateringene er skrevet etter byggene; etterkontroll av dokumentene bestod med 224 relative filmål i 12 dokumenter, pnpm format:check og git diff --check. Byggenes genererte ruteimportendring i next-env.d.ts er tilbakeført til kildebasen, uten annen kodeendring.
+
 ### 16. november 2026 – aktiv Docker-portal oppdatert til ee26bb2
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.
