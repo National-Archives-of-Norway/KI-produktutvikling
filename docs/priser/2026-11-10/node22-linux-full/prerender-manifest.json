@@ -804,7 +804,7 @@
   "notFoundRoutes": [],
   "preview": {
     "previewModeId": "5e49ddd1421960d393c4f5293a5ced60",
-    "previewModeSigningKey": "6bd48408cd3e8897f00e6efda7581a68d62f61cee57b775bd349a903570e9793",
-    "previewModeEncryptionKey": "bbcc0239f7f8b8b5e29dc1205c1a45d2b2033b2e12ab47505d0e0073a512a4a4"
+    "previewModeSigningKey": "[REDACTED]",
+    "previewModeEncryptionKey": "[REDACTED]"
   }
 }

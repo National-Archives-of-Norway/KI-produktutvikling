@@ -6,6 +6,14 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 16. november 2026 – sladdet preview-nøkler i historisk byggbevis
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Erstattet previewModeSigningKey og previewModeEncryptionKey med [REDACTED] i docs/priser/2026-11-10/node22-linux-full/prerender-manifest.json. Dette er et lagret testbevis, ikke portalens aktive byggmanifest. Feltstruktur, previewModeId og øvrige data er beholdt; filen skal ikke gjenbrukes som et kjørbart manifest.
+- Nøkkelverdiene er ikke vist. Dette fjerner unødvendig generert nøkkelmateriale fra dagens fil, men roterer ingen aktive nøkler og fjerner ikke verdier fra tidligere commits. Eldre kontrollsummer beskriver originalbeviset; sladdingen er ikke en ny kjøring av testen. Funksjonalitet, utviklingsfaser og produksjonsstatus er uendret.
+- Kontroller: programmatisk sammenligning bekrefter at bare de to verdiene er endret og at originalverdiene er fraværende fra den redigerte filen. Prettier-kontroll av manifest/versjonslogg og git diff --check bestod. Ingen appbygg eller funksjonstester nødvendig for sladding av et dokumentasjonsbevis. Ingen Git-historikk omskrevet, commit eller push.
+
 ### 16. november 2026 – rettet fem historiske bildelenker
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.
