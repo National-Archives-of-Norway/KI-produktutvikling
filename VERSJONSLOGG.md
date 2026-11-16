@@ -6,6 +6,14 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 16. november 2026 – Docker-portal oppdatert fra 452b0c5
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Bygget ki-produktutvikling:compose fra ren git archive av 452b0c599cfab3b89be7c2d3a4d01fdabaf5f782, med commitetikett og gjenbruk av byggcache. Bygg bestod på 10.24 s; bare portalcontaineren ble gjenskapt med --no-deps --no-build. Bildets commitetikett og SHA-256 for MCP-innhold, kunnskapsutvalg, versjonslogg og utviklingsplan samsvarer med kildecommiten. Bilde-ID: sha256:0ac71390262530712aab944dfc813beb9f69ad8d2a7b13326d90261bb0ff618d.
+- MCP-siden, versjonsloggen, Oversikt, utviklingsplanen og /spor ga HTTP 200. MCP-oppføringene for Logorama/Prometheus og den tilhørende loggoppføringen er bekreftet i de bygde sidene. Portal healthy og RAG status=ok/generationEnabled=true. Dette er helse-/innholdskontroll, ikke en ny modellgenererings- eller nettleserprøve.
+- Modellvolummetadata og modellmanifestets SHA-256 er uendret. Ollama og init-container beholdt samme ID/starttid; ingen ny modellnedlasting eller volumfjerning. Ingen ny full testpakke, funksjons-/produksjonsstatusendring, commit eller push. Driftsnotatet og ny planoppføring er skrevet etter bildet og inngår ikke i 452b0c5-bildet. pnpm test:links bestod med 231 filmål i 12 dokumenter; pnpm format:check og git diff --check bestod.
+
 ### 16. november 2026 – Logorama og Prometheus i MCP-oversikten
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.
