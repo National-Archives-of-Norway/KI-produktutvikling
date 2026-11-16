@@ -6,6 +6,13 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 16. november 2026 – faktiske Spør KI-svar om MCP-godkjenning kontrollert
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Testet fire spørsmål gjennom /api/rag på Docker-portalen fra 88cc33a med faktisk Qwen3:4b. Samlet liste og separate spørsmål bekrefter Logorama/Prometheus som godkjent. Atlassian oppgis som under ROS-analyse/ikke godkjent, og Slack som planlagt/ikke godkjent. Alle fire ga HTTP 200/generated, riktig første kilde og gyldige kildehenvisninger. Svartider 23,77–49,56 s; ingen frister eller modellinnstillinger endret.
+- [Kort rapport med faktiske svar](docs/rag/2026-11-16/godkjente-mcper.md) dokumenterer forventninger, målinger og avgrensning. Direkte kildesøk ga MCP-oversikten først for alle spørsmål. Portal healthy, Ollama/qwen3:4b og konfigurert firetrådsprofil er kontrollert. Planen er avstemt; ingen kode-, funksjonsstatus- eller produksjonsgodkjenning endret. pnpm test:links bestod med 233 filmål i 12 dokumenter; pnpm format:check og git diff --check bestod. Ingen ny full testpakke, ombygging, modellnedlasting, modell-/volumkonfigurasjon, commit eller push.
+
 ### 16. november 2026 – Docker-portal oppdatert fra 452b0c5
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

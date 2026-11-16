@@ -240,6 +240,7 @@ Arbeidsgrunnlaget for P8 er konkretisert i [avklaringsplanen for de 8 uavklarte 
 
 - [x] Opprette Godkjente MCP-er under Oversikt med Atlassian MCP (ROS-analyse pågår) og Slack MCP (planlagt). Ingen av dem oppgis som godkjent. Status deles med Spør KI og retningslinjene peker til oversikten.
 - [x] Legge til Logorama MCP og Prometheus MCP som godkjent etter brukerens opplysning (16. november). Felles sideinnhold og veiledningsutvalg brukes av Oversikt, funksjonsregister og Spør KI; Atlassian-/Slack-status beholdes. Ingen tilkobling eller nye rettigheter opprettes.
+- [x] Kontrollere Spør KI mot MCP-statusene med faktisk Qwen3:4b (16. november): fire spørsmål på portalen fra 88cc33a ga riktige godkjenninger for Logorama/Prometheus og korrekt skille mot Atlassian/Slack, med kildehenvisninger. [Svar og målinger](docs/rag/2026-11-16/godkjente-mcper.md). Dette er et avgrenset eksempelsett, ikke generell svarkvalitets- eller produksjonsgodkjenning.
 - [ ] Oppdatere MCP-status etter bekreftede vurderinger og beslutninger, med godkjent bruksomfang når dette foreligger. ROS-arbeidet er ikke gjennomført av portalen.
 
 - [x] Legge til Godkjente KI-assistenter under Oversikt, med Copilot, Claude AI og Codex som godkjent etter brukerens opplysning 9. november 2026. Siden og Spør KI deler innhold; retningslinjene viser til listen.
