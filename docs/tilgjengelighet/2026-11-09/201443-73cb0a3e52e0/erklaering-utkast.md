@@ -40,7 +40,7 @@ Samlet samsvar er ikke ferdig vurdert. [WCAG-kontrollen](WCAG-KONTROLL.md) har 2
 - **Tiltak foreslått:** Skill kildeutdrag og forklaring, merk engelsk med `lang=en`, eller gi kvalitetssikret norsk oversettelse. Retest alle vilkårsseksjoner etter ny synkronisering og med skjermleser.
 - **Tilgjengelig alternativ:** Pristabell og norske forklaringer finnes fortsatt; kontakt khadah@nasjonalarkivet.no for hjelp til vilkårene.
 - **Status/eier/frist:** Bruddet er ikke rettet. Ansvar og frist er ikke bekreftet. Foreslått rolle er innholds-/utviklingsansvarlig; ingen person er utpekt.
-- **Evidens:** [språkdata](2026-11-09/201443-73cb0a3e52e0/raw/pricing-language.json), [skjermbilde](2026-11-09/201443-73cb0a3e52e0/screenshots/pricing-language.png).
+- **Evidens:** [språkdata](2026-11-09/201443-73cb0a3e52e0/raw/pricing-language.json), [skjermbilde](screenshots/pricing-language.png).
 
 ## Animasjon og andre testresultater
 

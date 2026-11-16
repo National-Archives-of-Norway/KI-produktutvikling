@@ -50,7 +50,7 @@ Opprinnelig brudd på [3.1.2](https://www.uutilsynet.no/wcag-standarden/312-spra
 
 **Rettet og retestet 9. november 2026.** Copilot- og Codex-notene genereres nå på norsk fra kjente kildefelt. Alle seks prisseksjoner er undersøkt i nettleser etter faktisk prisoppdatering; tidligere engelske setninger er borte. Tre nye regresjonstester bekrefter at gjentatt oppdatering/JSON-lagring bevarer norsk tekst, kildetall oppdaterer forklaringen og ukjent vilkårsformat gir feil uten å erstatte tidligere norske data. Det er ingen generell automatisk språkdetektor.
 
-[Retestbevis](2026-11-09/203914-cf2e80bc00f7/raw/pricing-language-after-refresh.json), [faktisk innhenting](2026-11-09/203914-cf2e80bc00f7/raw/live-refresh.json) og [skjermbilde](2026-11-09/203914-cf2e80bc00f7/screenshots/pricing-language-fixed.png). Ingen faktisk skjermleseropplesing er testet, og lukking av dette avviket betyr ikke fullstendig samsvar. Kontaktadressen er fortsatt tilgjengelig for hjelp til prisvilkår.
+[Retestbevis](2026-11-09/203914-cf2e80bc00f7/raw/pricing-language-after-refresh.json), [faktisk innhenting](2026-11-09/203914-cf2e80bc00f7/raw/live-refresh.json) og [skjermbilde](../../203914-cf2e80bc00f7/screenshots/pricing-language-fixed.png). Ingen faktisk skjermleseropplesing er testet, og lukking av dette avviket betyr ikke fullstendig samsvar. Kontaktadressen er fortsatt tilgjengelig for hjelp til prisvilkår.
 
 ## Animasjon og andre testresultater
 

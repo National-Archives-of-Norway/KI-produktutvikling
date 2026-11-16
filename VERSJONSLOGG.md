@@ -6,6 +6,14 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 16. november 2026 – rettet fem historiske bildelenker
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Rettet fem relative bildelenker i de to erklæringsutkastene fra 9. november (201443/203914) og tre kopier av previous-TILGJENGELIGHETSERKLAERING.md (203914/205326/210420). Lenkene til engelske/rettede prisvilkår beregnes nå fra kopienes faktiske mapper og peker til de opprinnelige beholdte testbevisene.
+- Bare bildelenkemål er endret i historiske erklæringskopier; tekst, vurderinger, testdatoer og bilder er uendret. Ingen ny tilgjengelighetskontroll eller endring i funksjonalitet, fase eller produksjonsstatus. Tidligere daterte rapporter/hashes beskriver fortsatt sine opprinnelige dokumentversjoner.
+- Kontroller: alle 190 relative Markdown-bildelenker under docs er kontrollert, med null brutte mål. pnpm test:links bestod med 208 filmål i 12 dokumenter; pnpm format:check og git diff --check bestod. Ingen appbygg eller funksjonstester gjentatt for dokumentasjonsrettingen. Ingen Git-historikk er omskrevet; ingen commit eller push.
+
 ### 13. november 2026 – gjennomført skjermbildeopprydding og vedlikeholdsregel
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.
