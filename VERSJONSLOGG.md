@@ -6,6 +6,22 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 16. november 2026 – rotårsak til CI-feilen bekreftet: IP-liste
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Lest brukerens vedlagte checkout-logg lokalt: tre git fetch-forsøk gir HTTP 403 med eksplisitt avvisning fra repo-eierens IP allow list. Den tidligere uavklarte exit 128 har dermed en bekreftet nettverks-/organisasjonsårsak før Node-oppsett. Rålogg, nøkler, autorisasjonshoder og IP-adresser er ikke kopiert til repoet eller gjengitt. Linjereferanser og kildehash står i CI-kontrollen; separat full logg fra den andre matrisejobben er ikke lest.
+- Oppdatert første-push-sjekkliste, CI-kontroll og utviklingsplan med nødvendig administratoravklaring: godkjent Linux-runner, gruppe/labels, repoets tilgang og tillatt utgående IP. Begge workflows bruker ubuntu-latest og må avstemmes når faktisk runner er kjent. Ingen labels er gjettet; ingen IP-regler, tokenrettigheter, abonnement eller workflows er endret. Årsaken er funnet, men faktisk driftsretting og grønn GitHub-CI gjenstår.
+- Tidligere beståtte lokale appkontroller på 8a14484 beholdes som datert grunnlag (278 Node-/tre Python-tester og begge bygg på macOS Node 24.22.1). Ingen ny full testpakke, Node 22/Linux-, modell-/priskilde- eller blindkjøring i denne loggvurderingen. pnpm test:links bestod med 226 filmål i 12 dokumenter; pnpm format:check og git diff --check bestod. Funksjonsmodenhet og produksjonsstatus er uendret. Ingen commit eller push.
+
+### 16. november 2026 – tidligere undersøkelse: CI-feil avgrenset til checkout
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Brukerens GitHub-skjermbilder bekrefter første push av 8a14484 til main i privat organisasjonsrepo. Lokal origin/tracking er kontrollert. Begge CI-jobbene feiler; innsendt loggutdrag viser git exit 128 under actions/checkout → Fetching the repository, før Node-oppsett, installasjon og tester. Sluttkoden alene bekrefter ikke årsaken. Mottatt sladdet debug-utdrag viser repository/ref og et maskert token, men mangler fortsatt git fetch-kommando/stderr/fatal-linjer; loggarkiv er nødvendig for årsaksdiagnose. Private CI-logger er utilgjengelige direkte her grunnet manglende CLI-innlogging og blokkert nettlesertilgang. Kontroll av offisiell kildekode ved låst checkout-SHA viser at fetch normalt logger kommandoen, og at Removing auth er finally-opprydding etter suksess eller feil. Ingen dokumentert feil i persist-credentials:false er påvist; innstilling og contents:read beholdes.
+- Lokal kontroll er gjentatt etter mottatt debug-utdrag: pnpm check og pnpm build:pages på macOS arm64, Node 24.22.1, pnpm 11.25.0 og Python 3.9.6 bestod med exit 0: 278 Node-/tre Python-tester, innholdssynk, 224 filmål i 12 dokumenter, format, typer og begge bygg med 28 genererte sider. url.parse()-deprekasjonsadvarsel uten testfeil. Dette er ikke reproduksjon av GitHub-checkout eller ny Node 22/Linux-kontroll. Generert next-env.d.ts-endring er tilbakeført til kildebasen.
+- Oppdatert første-push-sjekkliste og utviklingsplan med faktisk opplasting, feilsted og åpne logg-/gren-/tilgangsavklaringer. Ingen årsaksretting eller workflow-/rettighetsendring er gjort uten bekreftet feilmelding. Funksjonsstatus og produksjonsgodkjenning er uendret. Etter dokumentoppdatering bestod pnpm test:links (224 filmål i 12 dokumenter), pnpm format:check og git diff --check. Ingen nye ekte modell-/priskildekall, blindmåling, Docker-/modellvolumendring, commit eller push.
+
 ### 16. november 2026 – samlet lokal kontroll før første push
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

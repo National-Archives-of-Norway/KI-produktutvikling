@@ -1,5 +1,17 @@
 # Lokal CI-kontroll – 11. november 2026
 
+## Bekreftet checkout-blokkering – 16. november 2026
+
+**Rotårsak bekreftet, retting av driftsoppsett gjenstår.** Brukerens vedlagte tekstfil er lest lokalt. Tre git fetch-forsøk blir avvist med HTTP 403 og en eksplisitt melding om at repo-eierens IP allow list ikke tillater runnerens IP. De undersøkte linjene er 161–173; siste exit 128 står på linje 244. Loggens tidsrom er 13:43:28–13:44:00 UTC. Kildens SHA-256 er 71121703021b7cad06ff33885427ddf030dc650c7e0c72847e900802645011b9. Rålogg, IP-adresser, nøkler og autorisasjonshoder er ikke kopiert hit. Utdraget dekker én checkout; brukerens tidligere skjermbilde dokumenterer at begge matrisejobbene feiler. Et separat komplett utdrag fra den andre jobben er ikke undersøkt.
+
+Begge workflows velger ubuntu-latest. Den aktuelle feilen oppstår før setup-node; den skyldes derfor ikke Node 22/24 eller pnpm/testene. contents:read er allerede satt. Mer tokentilgang, PAT, endret persist-credentials eller checkout-versjon er ikke underbygde rettinger på denne feilen.
+
+Ifølge [GitHubs organisasjonsveiledning](https://docs.github.com/en/enterprise-cloud@latest/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-allowed-ip-addresses-for-your-organization) skal Actions med IP-liste bruke self-hosted runners eller større hosted runners med statiske IP-områder. [Statiske IP-er for større runners](https://docs.github.com/en/actions/how-tos/manage-runners/larger-runners/manage-larger-runners) har egne abonnements-/oppsettskrav; støtte hos virksomheten er ikke verifisert. Vi har ikke endret abonnement eller organisasjonens nettverksregler.
+
+**Tiltak som må avklares:** administrator oppgir godkjent Linux-runner, eksakt gruppe/labels og bekrefter repoets tilgang samt tillatt utgående IP. Først da oppdateres runs-on i begge workflows og checkout/hele CI verifiseres på GitHub. Ingen runnernavn er gjettet, ingen IP-liste er deaktivert eller utvidet, og ingen ny push er utført. Prisjobben deler runner-valget, men er ikke kjørt i undersøkelsen. Se [oppfølgingssjekklisten](FORSTE-PUSH.md).
+
+Lokal pnpm check og pnpm build:pages på samme kildebase 8a14484 bestod i den foregående undersøkelsen: 278 Node-/tre Python-tester, innholdssynk, 224 filmål, format, typer og begge bygg på macOS Node 24.22.1. Ingen funksjons- eller workflowkode er endret siden. Denne loggvurderingen er ikke en ny Node 22/Linux-/Actions-kjøring eller en reproduksjon av IP-reglene. Kun dokumentkontroller kjøres etter denne oppdateringen. De daterte kontrollene fra 11. november nedenfor er historikk og beholder sine opprinnelige begrensninger.
+
 Utført av Codex (OpenAI), uten underagenter. Repoet har fortsatt ingen remote; ingen workflow er kjørt på GitHub og ingen innstilling er endret. Den opprinnelige lokale kontrollen ble utført før commit c22f1dc; Docker-oppfølgingen nedenfor tester denne commiten.
 
 Gjeldende dokumentasjon finnes i [dokumentasjonsoversikten](DOKUMENTASJON.md); historiske kontrollresultater nedenfor beholder sine opprinnelige revisjoner.

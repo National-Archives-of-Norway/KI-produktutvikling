@@ -41,14 +41,14 @@ Denne filen er den gjeldende utviklingsplanen. [Dokumentasjonsoversikten](docs/D
 - Oppgi faktisk kontrollgrunnlag, kjente begrensninger og commit/issue når de finnes. Navngitt eier eller frist skal ikke oppfinnes; bruk «ikke avklart» og oppgi hvilken rolle som må avklares.
 - Før en utrulling gjennomgås alle aktuelle krav i tabellen nedenfor, også når bygg og tester består. Et grønt bygg betyr ikke at alle lanseringskrav er oppfylt.
 
-Reglene er også lagt i `AGENTS.md`, og gjelder fremtidig agentarbeid i prosjektet. Planen er ikke en automatisk tolkning av kode eller en periodisk jobb: meningen med endringer og godkjenninger må fortsatt vurderes av personen eller agenten som utfører arbeidet. Generell CI er klargjort i `.github/workflows/ci.yml`, men ikke kjørt på GitHub. Fast review og obligatoriske statuskontroller må fortsatt etableres. En egen daglig prisjobb er klargjort lokalt, men ikke aktivert på GitHub.
+Reglene er også lagt i `AGENTS.md`, og gjelder fremtidig agentarbeid i prosjektet. Planen er ikke en automatisk tolkning av kode eller en periodisk jobb: meningen med endringer og godkjenninger må fortsatt vurderes av personen eller agenten som utfører arbeidet. Generell CI er klargjort i `.github/workflows/ci.yml` og er kjørt på GitHub ifølge brukerens skjermbilder: begge matrisejobber feiler i checkout, før Node-oppsett/tester. Vedlagt logg bekrefter HTTP 403 fra organisasjonens IP-liste; godkjent runner/IP-oppsett må avklares før retting og GitHub-retest. Fast review og obligatoriske statuskontroller må fortsatt etableres. En egen daglig prisjobb er klargjort lokalt, men ikke aktivert på GitHub.
 
 ## Mål og rammer
 
 - **Målgruppe:** De som jobber med produktutvikling eller utvikling av løsninger i Nasjonalarkivet. Portalen skal gjøre det enklere å lære, prøve og dele nyttige arbeidsmåter med KI.
 - **Omfang nå:** Oppstartsveiledning, retningslinjeutkast, ressurskatalog, Spør KI, Oversikt med assistenter/MCP-status/priser, informasjon om teamet og KI-prat, tilgjengelighets-, personvern- og cookie-utkast, versjonslogg og funksjonalitetsoversikt. Nyheter og egne agenter er mulige senere tillegg, ikke et krav til første pilot.
 - **Teknologi:** Next.js, TypeScript, MUI og `@digitalarkivet/mui-theme`, med portalens eget futuristiske komponent-/designlag. Publisert npm-pakke brukes uten tilgang til designbibliotekets private GitHub-repo.
-- **Utvikling og versjonering:** Lokal utvikling og Git er etablert. Portalrepoet har ingen GitHub-remote. Brukeren har opprettet organisasjonsrepo (opplyst 16. november); URL, synlighet/tilgang, tilknytning og utrulling er ikke verifisert; CI-definisjonen er klargjort lokalt.
+- **Utvikling og versjonering:** Lokal utvikling og Git er etablert. Portalrepoets origin peker til nasjonalarkivet/KI-produktutvikling, og main følger origin/main. Brukerens skjermbilder bekrefter privat repo og første push av 8a14484 (16. november). Begge CI-jobbene stopper i checkout/fetch; vedlagt logg bekrefter HTTP 403 fordi runnerens IP ikke er tillatt. Godkjent runner/IP-oppsett avventer administratoravklaring. Tilgangsregler, standardgren og utrulling er ikke godkjent.
 - **Drift:** Driftsplattform, domene og ansvar er ikke valgt. Dagens løsning starter Next.js og RAG på lokal loopback. Pages finnes som statisk byggvariant, ikke som besluttet miljø for lukket pilot eller modellgenerering.
 - **Tilgang:** Brukerne skal i første delte miljø avgrenses til godkjente GitHub-brukere hos virksomheten. Organisasjon/team, nødvendige abonnementsegenskaper og konkret tilgangsløsning er ikke endelig avklart. Innlogging og autorisering er ikke implementert.
 - **GitHub-rettigheter:** Portalen skal ikke ha skrivetilgang til andre koderepoer. En eventuell medlemskontroll skal få et avgrenset formål og minimale nødvendige rettigheter.
@@ -91,16 +91,16 @@ Tilgjengelighetsgrunnlag og konkrete uavklarte punkter finnes i [WCAG-kontrollen
 
 ## Faseoversikt
 
-| Fase | Leveranse                                            | Status 11. november 2026                                                                         |
-| ---- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| 1    | Omfang, ansvar og tilgangsvalg                       | Målgruppe og første funksjoner avklart; eierskap, drift og tilgangsmodell åpne                   |
-| 2    | Teknisk grunnmur og arbeidsflyt                      | Lokal implementering og CI-definisjon klar; GitHub-kjøring, repo og review-regler gjenstår       |
-| 3    | Design og tilgjengelighet                            | Design og avgrensede kontroller utført; samlet tilgjengelighetsgodkjenning gjenstår              |
-| 4    | MVP 1: lokal portal og forberedelse til lukket pilot | Lokal leveranse klar; ikke delt eller brukertestet som pilot                                     |
-| 5    | Servermiljø, modellkobling og utrulling              | Adaptere/frister/kapasitet simulert testet; lokal Qwen prøvd; delt drift og godkjenning gjenstår |
-| 6    | MVP 2: innlogging og beskyttet tilgang               | Ikke implementert; nødvendig før første delte pilot                                              |
-| 7    | MVP 3: versjonerte skills og distribusjon            | Lokalt bibliotek og katalogintegrasjon på plass; review og distribusjon gjenstår                 |
-| 8    | MVP 4: forvaltning og produksjonsgodkjenning         | Ikke godkjent; produksjonskrav P1–P10 følges opp                                                 |
+| Fase | Leveranse                                            | Status 11. november 2026                                                                             |
+| ---- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| 1    | Omfang, ansvar og tilgangsvalg                       | Målgruppe og første funksjoner avklart; eierskap, drift og tilgangsmodell åpne                       |
+| 2    | Teknisk grunnmur og arbeidsflyt                      | Repoet er lastet opp; CI blokkeres av IP-listen. Godkjent runner, grønn CI og review-regler gjenstår |
+| 3    | Design og tilgjengelighet                            | Design og avgrensede kontroller utført; samlet tilgjengelighetsgodkjenning gjenstår                  |
+| 4    | MVP 1: lokal portal og forberedelse til lukket pilot | Lokal leveranse klar; ikke delt eller brukertestet som pilot                                         |
+| 5    | Servermiljø, modellkobling og utrulling              | Adaptere/frister/kapasitet simulert testet; lokal Qwen prøvd; delt drift og godkjenning gjenstår     |
+| 6    | MVP 2: innlogging og beskyttet tilgang               | Ikke implementert; nødvendig før første delte pilot                                                  |
+| 7    | MVP 3: versjonerte skills og distribusjon            | Lokalt bibliotek og katalogintegrasjon på plass; review og distribusjon gjenstår                     |
+| 8    | MVP 4: forvaltning og produksjonsgodkjenning         | Ikke godkjent; produksjonskrav P1–P10 følges opp                                                     |
 
 Fase 5 og 6 må samordnes før MVP 1 deles. Fase 7 kan utvikles parallelt, men full automatisk skill-installasjon er ikke et krav til første pilot med lesbart innhold. Pages beholdes foreløpig som bygg-/demovariant; det er ikke en beslutning om offentlig hosting.
 
@@ -126,7 +126,8 @@ Fase 5 og 6 må samordnes før MVP 1 deles. Fase 7 kan utvikles parallelt, men f
 - [x] Etablere funksjonsregister med automatisk avledet oversikt og nettstedskart, og kontroll av sideregistrering ved oppstart/bygg.
 - [x] Etablere versjonslogg og agentinstruksjoner for vedlikehold av logg og funksjonsregister; og vedlikehold av utviklingsplanen.
 - [x] Opprette organisasjonsrepo (opplyst av brukeren 16. november; ikke inspisert på GitHub).
-- [ ] Bekrefte URL, privat synlighet/tilgang, tilknytte lokal Git og avtale branch-/PR-/review-regler. Se [oppdatert første-push-sjekkliste](docs/FORSTE-PUSH.md).
+- [x] Tilknytte origin og laste opp main: lokal tracking og brukerens GitHub-skjermbilder bekrefter 8a14484 (16. november).
+- [ ] Kontrollere effektiv privat tilgang, avklare standardgren og avtale branch-/PR-/review-regler. Avklare godkjent runner med tillatt utgående IP, repo-/gruppetilgang og eksakte labels. Checkout-loggen bekrefter IP-listens HTTP 403. Oppdatere begge workflows og reteste på GitHub etter administratoravklaringen. Se [oppdatert første-push-sjekkliste](docs/FORSTE-PUSH.md).
 - [x] Samle Node-/Python-/innholdssynk-/Markdown-lenketester i `pnpm test` og utvide `pnpm check` med test før bygg. Klargjøre CI for push/PR/manuell kjøring med format, typer, test og begge bygg, uten priskildekall eller prosjektsecrets.
 - [x] Klargjøre CI-matrise for Node 22.18.0 og 24, samkjøre prisjobb på 24, låse actions til offisielt verifiserte commit-SHA-er og konfigurere ukentlig Dependabot for actions uten automatisk fletting (11. november). [Første push](docs/FORSTE-PUSH.md) og [lokal kontroll](docs/CI-KONTROLL.md) beskriver manuell etablering og hva som bare kan verifiseres på GitHub. `pnpm test` bestod lokalt på Node 24.22.1 med **206/206 Node-tester**, **3/3 Python-tester**, faktisk innholdssynk og **144 relative filmål** i ti dokumenter. Dette inkluderer fixture-simulering av prisjobbens run-steg. `pnpm format:check` og `git diff --check` bestod. Ingen remote, push, GitHub-innstilling eller produksjonsgodkjenning.
 - [x] Teste hele CI-kommandorekken for commit c22f1dc i lokal Docker/Linux arm64 med Node 22.18.0 og 24.22.2 (11. november): nye frosne installasjoner bestod etter separat støttefilnedlasting; deretter bestod install-gjenbruk, format, typer, 206 Node-/tre Python-tester, innholdssynk/lenker og begge bygg uten nettverk på begge. Første nettverksløse installasjonsfeil er dokumentert i [kontrollrapporten](docs/CI-KONTROLL.md). Dette lukker ikke GitHub-verifisering, ubuntu-latest x64, P4 eller andre produksjonskrav; ingen produkt-/funksjonsendring, commit eller push.

@@ -1,8 +1,23 @@
 # Sjekkliste for første push
 
-For repoansvarlig. **Oppdatert 16. november 2026 av Codex (OpenAI), uten underagenter.** Brukeren har opprettet et repo på organisasjonskontoen. Repoets URL, synlighet, tilgang og innstillinger er ikke kontrollert her. Lokal Git har fortsatt ingen remote, og ingen GitHub-kjøring er verifisert. Første delte miljø skal være en lukket pilot.
+For repoansvarlig. **Oppdatert 16. november 2026 av Codex (OpenAI), uten underagenter.** Første push er gjennomført av brukeren via GitHub Desktop. Lokal origin peker til nasjonalarkivet/KI-produktutvikling; brukerens GitHub-skjermbilde viser privat repo og commit 8a14484 på main. Innstillinger og effektiv tilgang er ikke inspisert. Første delte miljø skal være en lukket pilot.
 
 Historisk lokal Docker/Linux arm64-kontroll av c22f1dc har bestått hele kommandorekken på Node 22.18.0 og 24.22.2, inkludert begge bygg. [Kontrollrapporten](CI-KONTROLL.md) dokumenterer dette; den erstatter ikke avkrysning av GitHub-punktene nedenfor. [Dokumentasjonsoversikten](DOKUMENTASJON.md) samler gjeldende status og utkast.
+
+## Etter første push – bekreftet blokkering i IP-listen
+
+- [x] Lokal remote og tracking er kontrollert: main følger origin/main på 8a14484. Brukerens skjermbilder bekrefter opplasting. Ingen ny push, fetch, grenbytte eller historikkendring er utført i denne undersøkelsen.
+- [ ] **CI er ikke grønn:** begge matrisejobbene feiler før Node-oppsett/tester. Loggfilen lest lokalt 16. november bekrefter tre fetch-forsøk med HTTP 403: repo-eierens IP allow list tillater ikke runnerens IP. Workflowene bruker ubuntu-latest; Node-versjonen er ikke årsaken til denne checkout-feilen.
+- [x] Lest det vedlagte checkout-utdraget lokalt uten å kopiere råloggen til repoet eller gjengi nøkler, autorisasjonshoder eller IP-adresser. Den tidligere manglende feilmeldingen er nå funnet; se [kontrollrapporten](CI-KONTROLL.md#bekreftet-checkout-blokkering--16-november-2026).
+- [ ] **Organisasjons-/runneradministrator:** avklar en godkjent Linux-runner med tillatt utgående IP og tilgang til dette repoet. Alternativer er organisasjonens self-hosted runner eller større GitHub-hosted runner med statiske IP-er der abonnement/oppsett støtter det. En runner-gruppes tilgang styres for repoer/workflows; personlig medlemskap i gruppen er ikke løsningen på den påviste IP-avvisningen. Be om eksakt gruppe og labels/navn.
+- [ ] Oppdater runs-on i både ci.yml og pricing-sync.yml til den avklarte runneren, og få administrator til å kontrollere nødvendige IP-regler. Ikke gjett labels, slå av IP-listen eller tillat alle GitHub-hosted adresser. Prisjobben har samme runner-valg og samme risiko, men ingen faktisk prisjobbfeil er dokumentert av dette loggutdraget. [GitHubs veiledning om IP-listen og Actions](https://docs.github.com/en/enterprise-cloud@latest/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/managing-allowed-ip-addresses-for-your-organization).
+
+- [x] Gjennomgått kildekoden til actions/checkout ved workflowens låste d23441a48e516b6c34aea4fa41551a30e30af803. [Fetch bruker vanlig kommandoutskrift](https://github.com/actions/checkout/blob/d23441a48e516b6c34aea4fa41551a30e30af803/src/git-command-manager.ts); [Removing auth ligger i finally](https://github.com/actions/checkout/blob/d23441a48e516b6c34aea4fa41551a30e30af803/src/git-source-provider.ts), og kjøres ved feil når persist-credentials er false. Oppryddingslinjen beviser derfor ikke at tokenet ble fjernet før fetch. contents:read og persist-credentials:false beholdes; ingen PAT, økte rettigheter eller bytte av action-versjon uten årsaksgrunnlag.
+- [x] Ny lokal kontroll av 8a14484 på macOS arm64, Node 24.22.1, pnpm 11.25.0 og Python 3.9.6: pnpm check bestod med 278/278 Node-tester, 3/3 Python-tester, faktisk innholdssynk, 224 filmål i 12 dokumenter, format, typer og produksjonsbygg. pnpm build:pages bestod også, begge med 28 genererte sider. Dette reproduserer ikke GitHub-checkout og er ikke en ny kontroll på Node 22/Linux. Ingen ekte pris-/modellkall eller blindmåling.
+- [ ] Etter godkjent runner-/IP-konfigurasjon: verifiser checkout og hele begge CI-jobbene på riktig commit ved en separat godkjent push/kjøring. Lokale appkontroller verifiserer ikke organisasjonens IP-regler. Ingen runner-/GitHub-innstilling er endret her.
+- [ ] Kontroller den separate initialcommiten på master og avklar standardgren. Skjermbildet viste main 50 commits foran og én bak master; ingen fletting, sletting eller endring av standardgren er utført.
+
+Den lokale kontrollen ovenfor er utført før denne dokumentoppdateringen. Den tidligere før-push-kontrollen nedenfor beholdes med sin opprinnelige revisjon og sitt testomfang.
 
 ## Klart lokalt – kontrollert 16. november 2026
 
@@ -27,7 +42,8 @@ Dokumentoppdateringene i denne økten er skrevet etter byggene. Etterkontroll: 2
 
 - [ ] Beslutt [bevislagring](BEVISLAGRING.md): hva beholdes i Git, eventuelt Git LFS eller ekstern lagring med sjekksummer. Vurder også bevis som allerede ligger i lokal Git-historikk før første push; en senere sletting fjerner ikke gamle Git-objekter. Skjermbildeoppryddingen er dokumentert i bevislagringsnotatet; ingen nye bevis er flyttet eller slettet i denne kontrolløkten.
 - [ ] Gjennomgå innhold/historikk og bekreft at ingen hemmeligheter eller uavklart internt innhold følger med. Velg eier, privat repo, standardgren og tilgang. Privat repo erstatter ikke innlogging til nettstedet.
-- [ ] Koble lokal Git til det opprettede repoet etter avklaringene over, og utfør første push som egen, bevisst handling. Workflow-filene og dependabot.yml må ligge på standardgrenen. Avklar prisjobben før dette: den har allerede daglig schedule kl. 06:00 UTC og kan kjøre etter at filen er pushet.
+- [x] Koble lokal Git og utføre første push til main (brukerens GitHub Desktop/skjermbilder, 16. november). Dette krysser ikke av innholds-/tilgangsgodkjenningene over.
+- [ ] Kontroller at workflow-filene og dependabot.yml ligger på den besluttede standardgrenen. Prisjobben har daglig schedule kl. 06:00 UTC; faktisk aktivering/kjøring er ikke verifisert.
 
 ## Actions og branch protection
 
