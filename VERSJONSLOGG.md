@@ -6,6 +6,14 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 16. november 2026 – Docker-portal oppdatert fra a4b12d3
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Bygget ki-produktutvikling:compose fra ren git archive av a4b12d33e3220f0233a91f07c0ff567683f708d7, med commitetikett og gjenbruk av byggcache. Bygg og portaloppstart bestod på ca. 11 s. Bare portalcontaineren ble gjenskapt med --no-deps --no-build; ingen modellinit eller modellserver ble startet på nytt.
+- Verifisert healthy portal og RAG status=ok/generationEnabled=true. Forside, /spor, /versjonslogg og /utviklingsplan ga HTTP 200. De to dokumentasjonssidene inneholder de nye mobil-/dialogtestoppføringene. SHA-256 for versjonslogg, plan, funksjonsregister, fokusfunksjon og transkript i containeren samsvarer med kildecommiten. Bildets commitetikett er kontrollert; bilde-ID er sha256:3501c83828da06b3f4899db600499ba91226b2c8a3842f650e8793da3e1af60f.
+- Eksisterende modellvolums metadata og modellmanifestets SHA-256 er uendret; Ollama-/init-containerne har samme ID/starttid. Ingen ny modellnedlasting eller volumfjerning. Ingen funksjons-/produksjonsstatusendring, ny full testpakke, faktisk genererings-/nettleserprøve eller push. Helsekontrollen bekrefter modelloppsett, ikke ny svarkvalitetsevaluering. Dette driftsnotatet og planoppføringen er skrevet etter bildet og inngår ikke i a4b12d3-bildet. pnpm test:links bestod med 231 filmål i 12 dokumenter; pnpm format:check og git diff --check bestod. Ingen commit.
+
 ### 16. november 2026 – rullerettingen prøvd ved 320 px og i forsidens chatbot
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.
