@@ -39,7 +39,12 @@ const selections: SourceSelection[] = [
   {
     pageId: "godkjente-mcper",
     summary: "lead",
-    steps: ["atlassian-status", "slack-status"],
+    steps: [
+      "logorama-status",
+      "prometheus-status",
+      "atlassian-status",
+      "slack-status",
+    ],
     note: "rammer",
   },
   {

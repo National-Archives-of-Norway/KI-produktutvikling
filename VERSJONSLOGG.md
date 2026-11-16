@@ -6,6 +6,13 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 16. november 2026 – Logorama og Prometheus i MCP-oversikten
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Lagt til Logorama MCP og Prometheus MCP som godkjent etter brukerens opplysning. Begge vises først på Godkjente MCP-er. Oppdatert innledning, statusforklaring og dato; Atlassian beholder ROS-analyse pågår og Slack beholder Planlagt.
+- Oppdatert felles kunnskapsutvalg med de to nye statusblokkene. Oversikt og funksjonsregister avleder beskrivelsen fra MCP-siden, så navn/status kopieres ikke inn i separate definisjoner. Utviklingsplanen er avstemt. Ingen nye integrasjonstilkoblinger eller rettigheter er opprettet, og teknisk Beta-/produksjonsstatus er uendret. pnpm typecheck og pnpm test bestod: 279 Node-/tre Python-tester, innholdssynk og 231 filmål i 12 dokumenter. Direkte retrieve-kontroll gir MCP-oversikten først og ny godkjenningsstatus for begge navn, også i Docker-kildegrunnlaget. Docker-bygg og oppstart av bare portalcontaineren bestod; MCP-siden, Oversikt og funksjonalitetsoversikten ga HTTP 200 med begge navn. Modellvolummetadata og Ollama-ID/starttid er uendret. Ingen ny modellgenererings-/nettleserprøve. Etterkontroll med pnpm format:check, pnpm test:links (231 filmål) og git diff --check bestod. Nye driftsresultater er skrevet etter bildet. Ingen commit eller push.
+
 ### 16. november 2026 – Docker-portal oppdatert fra a4b12d3
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

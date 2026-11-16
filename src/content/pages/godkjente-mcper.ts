@@ -5,8 +5,20 @@ export const mcpOverview = {
   navTitle: "Godkjente MCP-er",
   title: "Godkjente MCP-er",
   eyebrow: "OVERSIKT · MCP-STATUS",
-  lead: "Følg arbeidet med vurdering og godkjenning av MCP-integrasjoner i Nasjonalarkivet. Atlassian MCP er under ROS-analyse, og Slack MCP er planlagt vurdert. Ingen av disse er oppført som godkjent ennå.",
+  lead: "Se status for MCP-integrasjoner i Nasjonalarkivet. Logorama MCP og Prometheus MCP er godkjent. Atlassian MCP er under ROS-analyse, og Slack MCP er planlagt vurdert.",
   blocks: [
+    { id: "logorama", type: "heading", text: "Logorama MCP" },
+    {
+      id: "logorama-status",
+      type: "paragraph",
+      text: "Status: Godkjent. Logorama MCP er godkjent for bruk i Nasjonalarkivet.",
+    },
+    { id: "prometheus", type: "heading", text: "Prometheus MCP" },
+    {
+      id: "prometheus-status",
+      type: "paragraph",
+      text: "Status: Godkjent. Prometheus MCP er godkjent for bruk i Nasjonalarkivet.",
+    },
     { id: "atlassian", type: "heading", text: "Atlassian MCP" },
     {
       id: "atlassian-status",
@@ -26,7 +38,7 @@ export const mcpOverview = {
       items: [
         "Planlagt: Vurderingen er planlagt, men er ikke oppgitt som startet.",
         "ROS-analyse pågår: Risiko- og sårbarhetsanalysen er under arbeid. Dette innebærer ikke godkjenning.",
-        "Godkjent: Bruk er bekreftet godkjent innenfor angitte rammer. Ingen integrasjoner har denne statusen i oversikten nå.",
+        "Godkjent: Bruk er bekreftet godkjent innenfor virksomhetens gjeldende rammer.",
       ],
     },
     {
@@ -42,7 +54,7 @@ export const mcpOverview = {
     {
       id: "oppdatert",
       type: "paragraph",
-      text: "Statusene er oppgitt for portalen 9. november 2026. Oppdater oversikten når vurderinger eller godkjenninger endres.",
+      text: "Oversikten er sist oppdatert 16. november 2026. Oppdater oversikten når vurderinger eller godkjenninger endres.",
     },
   ],
 } satisfies ContentPage;
