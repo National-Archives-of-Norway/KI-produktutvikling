@@ -1,0 +1,221 @@
+{
+  "date": "2026-11-16",
+  "base_commit": "7441c7026c6fa1a158d0b7887976f82b929ef67d",
+  "fix_in_working_tree": true,
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "controlled_benchmark": [
+    {
+      "threads": "auto",
+      "ms": 30003,
+      "firstChunkMs": 9274,
+      "nonemptyChunks": 16,
+      "error": "AbortError",
+      "done": false,
+      "doneReason": null,
+      "loadMs": null,
+      "promptCount": null,
+      "promptMs": null,
+      "evalCount": null,
+      "evalMs": null,
+      "tokensPerSecond": null
+    },
+    {
+      "threads": 4,
+      "ms": 11199,
+      "firstChunkMs": 10176,
+      "nonemptyChunks": 32,
+      "error": null,
+      "done": true,
+      "doneReason": "length",
+      "loadMs": 2748,
+      "promptCount": 575,
+      "promptMs": 7414,
+      "evalCount": 32,
+      "evalMs": 1026,
+      "tokensPerSecond": 31.19
+    },
+    {
+      "threads": "auto",
+      "ms": 30096,
+      "firstChunkMs": 9848,
+      "nonemptyChunks": 13,
+      "error": "AbortError",
+      "done": false,
+      "doneReason": null,
+      "loadMs": null,
+      "promptCount": null,
+      "promptMs": null,
+      "evalCount": null,
+      "evalMs": null,
+      "tokensPerSecond": null
+    }
+  ],
+  "benchmark_only_options": {
+    "stream": true,
+    "num_predict": 32,
+    "seed": 42,
+    "num_ctx": 8192,
+    "temperature": 0.1
+  },
+  "production_options": {
+    "num_thread": 4,
+    "num_predict": 700,
+    "num_ctx": 8192,
+    "temperature": 0.1,
+    "think": false,
+    "structured_answer": true
+  },
+  "production_deadlines_ms": {
+    "model": 60000,
+    "proxy": 65000,
+    "client": 70000
+  },
+  "cold_script": {
+    "exit": 0,
+    "results": [
+      {
+        "question": "Hvordan skriver jeg en god prompt?",
+        "elapsedMs": 13765,
+        "mode": "generated",
+        "sources": ["tydelig-kontekst"]
+      },
+      {
+        "question": "Hvordan utforsker jeg brukerbehov?",
+        "elapsedMs": 31353,
+        "mode": "generated",
+        "sources": ["brukerbehov", "kom-i-gang", "informasjonskapsler"]
+      },
+      {
+        "question": "Hvem er statsministeren?",
+        "elapsedMs": 5,
+        "mode": "sources",
+        "sources": []
+      }
+    ]
+  },
+  "warm_script": {
+    "exit": 0,
+    "results": [
+      {
+        "question": "Hvordan skriver jeg en god prompt?",
+        "elapsedMs": 7235,
+        "mode": "generated",
+        "sources": ["tydelig-kontekst"]
+      },
+      {
+        "question": "Hvordan utforsker jeg brukerbehov?",
+        "elapsedMs": 31531,
+        "mode": "generated",
+        "sources": ["brukerbehov", "kom-i-gang", "informasjonskapsler"]
+      },
+      {
+        "question": "Hvem er statsministeren?",
+        "elapsedMs": 5,
+        "mode": "sources",
+        "sources": []
+      }
+    ]
+  },
+  "skills": {
+    "http": 200,
+    "elapsedMs": 10309,
+    "mode": "generated",
+    "sourceIds": ["skills"],
+    "answerLength": 271,
+    "citation": true,
+    "mentionsExpectedTopics": [true, true, true, true]
+  },
+  "image_source_proof": {
+    "runtime_thread_setting": "4",
+    "source_files": [
+      {
+        "path": "src/server/rag/ollama.ts",
+        "sha256": "13fc259483e02cadc8e5f9db9e589944042de94122208657a45a3663234b49f8"
+      },
+      {
+        "path": "src/server/rag/config.ts",
+        "sha256": "0316e45a2b0fc5d1fc7aa396369c73b14b791b4fa15b168d7193fe63f530e68d"
+      }
+    ],
+    "runner_thread_count_observed": 4
+  },
+  "runtime_build": {
+    "exit": 0,
+    "seconds": 28.45
+  },
+  "regression_tests": {
+    "before": {
+      "tests": 15,
+      "passed": 13,
+      "failed": 2
+    },
+    "after": {
+      "tests": 15,
+      "passed": 15,
+      "failed": 0
+    }
+  },
+  "linux_tests_initial": {
+    "passed": 277,
+    "failed": 1,
+    "cause": "runtime image intentionally lacks git; pricing workflow fixture needs git"
+  },
+  "linux_tests_with_git": {
+    "exit": 0,
+    "seconds_including_test_image_setup": 9.48,
+    "node": "24.22.2",
+    "test_network": "none",
+    "git_installed_only_in_disposable_test_image": true
+  },
+  "native_tests": {
+    "node_passed": 278,
+    "python_passed": 3,
+    "content_sync": "passed"
+  },
+  "browser_tested": false,
+  "existing_environment_preservation": {
+    "verified_before_and_after_cleanup": true,
+    "container_baseline": [
+      {
+        "Id": "ac3ed3e2b0f339633f62516971b4ee5c9322a106bdccfe335a3f79bfff38761b",
+        "Name": "/ki-produktutvikling-model-init-1",
+        "Image": "sha256:910d0d8107b538fb0894e63163eb195de0cc7aefcbc666dc62d3b18f71124592",
+        "Created": "2026-11-12T17:07:32.636453339Z",
+        "RestartCount": 0,
+        "StartedAt": "2026-11-13T15:24:01.362117049Z",
+        "Status": "exited"
+      },
+      {
+        "Id": "e41c25af71f6ddac2a866f4deae71c2861fa3cad2d3e991d28bf953b81cb7164",
+        "Name": "/ki-produktutvikling-ollama-1",
+        "Image": "sha256:910d0d8107b538fb0894e63163eb195de0cc7aefcbc666dc62d3b18f71124592",
+        "Created": "2026-11-12T17:05:50.330200375Z",
+        "RestartCount": 0,
+        "StartedAt": "2026-11-13T14:52:50.411532669Z",
+        "Status": "running"
+      },
+      {
+        "Id": "8a5fcf423fff0e87647485ad30efd72d50af8d4baf68c25185f5cfb37bc9b86f",
+        "Name": "/ki-produktutvikling-portal-1",
+        "Image": "sha256:90b73e19ad65a463812b963bd81f99d8056cf5d54fc84cd3dfc64ff295963109",
+        "Created": "2026-11-13T15:24:01.079921591Z",
+        "RestartCount": 0,
+        "StartedAt": "2026-11-13T15:24:03.449163217Z",
+        "Status": "running"
+      }
+    ],
+    "model_volume_name": "ki-produktutvikling_ollama-models",
+    "model_volume_created_at": "2026-11-12T17:03:27Z",
+    "model_manifest_sha256": "31d9857b5705086d352d4d6db04e86c5d0f6a2b5d59a4dc7ce5cdb271ccf9141",
+    "original_container_ids_images_start_times_restart_counts_and_states_unchanged": true,
+    "volume_metadata_and_manifest_hash_unchanged": true
+  },
+  "history_changed": false,
+  "pushed": false,
+  "test_resources_removed": {
+    "compose_project": true,
+    "model_copy_volume": true,
+    "owned_image_tags": true,
+    "global_prune": false
+  }
+}

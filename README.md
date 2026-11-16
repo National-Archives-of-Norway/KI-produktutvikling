@@ -37,7 +37,7 @@ docker compose config --quiet
 
 Docker version skal vise både klient og server. Config-kommandoen skal avsluttes uten feil; den starter ingen tjenester. Du trenger ikke installere Node, pnpm, Python eller Ollama på vertsmaskinen for Docker-oppsettet. Den valgfrie skripttesten i steg 5 krever Node lokalt.
 
-Du trenger heller ikke opprette .env.local for denne oppskriften: compose.yaml setter MODEL_PROVIDER=ollama, OLLAMA_MODEL=qwen3:4b og OLLAMA_URL=http://ollama:11434. Miljøvariablene i .env.local brukes ved lokal utvikling utenfor Docker, og overstyrer ikke de faste Compose-verdiene.
+Du trenger heller ikke opprette .env.local for denne oppskriften: compose.yaml setter MODEL_PROVIDER=ollama, OLLAMA_MODEL=qwen3:4b og OLLAMA_URL=http://ollama:11434 og OLLAMA_NUM_THREAD=4. Miljøvariablene i .env.local brukes ved lokal utvikling utenfor Docker, og overstyrer ikke de faste Compose-verdiene.
 
 ### 2. Bygg og start
 
@@ -88,6 +88,8 @@ Bruk port 3005 for Docker-utgaven. En separat pnpm dev-instans på port 3000 er 
 ### 5. Prøv Spør KI med modellen
 
 Skriv **«Hvordan skriver jeg en god prompt?»** i Spør KI. Kontroller at du får et modellgenerert svar med kildehenvisning, og at kilden «Gi KI tydelig kontekst» vises. **«Hvilke skills har vi?»** er et annet eksempel for å prøve ressurskatalogen.
+
+**Verifiseringsstatus 16. november 2026:** Første isolerte prøve fant tidsavbrudd ved automatisk CPU-trådvalg. Compose bruker nå fire inferenstråder: kald og varm modell er retestet med samme Qwen-digest, tokenbudsjett og uendret 60-sekundersgrense. Se [retting og retest](docs/rag/2026-11-16/qwen-threads/rapport.md) og [opprinnelig feilgrunnlag](docs/rag/2026-11-16/readme-clean/rapport.md). Grønn helse alene skal fortsatt ikke regnes som bestått modelltest.
 
 Første generering kan ta lengre tid mens modellen lastes inn i minnet. Modellen har 60 sekunders frist; proxy og klient har henholdsvis 65 og 70 sekunder. Hvert spørsmål behandles separat. Bruk portalens eksempelinnhold i testen, uten personopplysninger eller hemmeligheter.
 
@@ -146,7 +148,7 @@ docker compose logs --tail=80 model-init ollama portal
 | HTTP 403                                         | Bruk http://127.0.0.1:3005 eller http://localhost:3005. Andre porter/vertsnavn krever oppdatert RAG_ALLOWED_ORIGINS og ny opprettelse av portalcontaineren.                                                                                                                                           |
 | Kodeendringer vises ikke                         | Kjør docker compose up -d --build og last siden på nytt. Kontroller at du ikke ser en separat dev-instans på port 3000.                                                                                                                                                                               |
 
-Ved minne-/ytelsesproblemer kan docker compose exec ollama ollama ps vise innlastet modell og kontekst. Ikke bruk sletting av modellvolumet som første feilsøkingstiltak.
+Ved minne-/ytelsesproblemer kan docker compose exec ollama ollama ps vise innlastet modell og kontekst. Flere CPU-tråder er ikke automatisk raskere: autovalg av 18 tråder ga timeout i den målte Docker-profilen, mens fire tråder rettet problemet. OLLAMA_NUM_THREAD er en portalvariabel som sendes som options.num_thread. Endre portalens Compose-verdi/overstyring og gjenskap testportalen hvis trådprofilen skal justeres; .env.local overstyrer ikke den faste Compose-verdien. Ikke øk tidsgrensen som første løsning. Ikke bruk sletting av modellvolumet som første feilsøkingstiltak.
 
 Portalen publiseres bare på 127.0.0.1:3005. Den kjørende Ollama-containeren har ikke vertsporter eller utgående internett; bare init-tjenesten laster ned modellen. API-nøkkel, repo eller Docker-socket monteres ikke inn i portalcontaineren. Node-/Ollama-bilder er låst til digester og installasjonen bruker låsefilen. Oppsettet bruker think=false, 8192 token kontekst og strukturert JSON-svar for Qwen3; portalen viser bare det validerte svarfeltet.
 
@@ -162,6 +164,7 @@ Kopier [.env.example](.env.example) til `.env.local` for lokal utvikling. I drif
 | `MODEL_API_URL`                | Fullt HTTPS Chat Completions-endepunkt, inkludert eventuell gateway-sti. Ingen query, fragment eller påloggingsinformasjon i URL-en.                                                           |
 | `MODEL_NAME` / `MODEL_API_KEY` | Modellnavn og serverlagret Bearer-nøkkel. Begge kreves med eksternt API.                                                                                                                       |
 | `OLLAMA_MODEL` / `OLLAMA_URL`  | Installert lokal modell og HTTP-loopback-adresse, normalt `http://127.0.0.1:11434`. Bare rotsti tillates; Compose tillater også nøyaktig `http://ollama:11434`.                                |
+| `OLLAMA_NUM_THREAD`            | Valgfritt heltall 1–64 for portalens Ollama-kall (options.num_thread). Usatt lar Ollama velge; tom/ugyldig verdi avvises. Compose setter 4 for CPU-kjøring.                                    |
 | `RAG_PORT`                     | Tjenesteport 1–65535, normalt 3001. Next og RAG bruker samme validering og trimmer mellomrom. Port 0 avvises som miljøverdi. Next-rewrite låses ved bygg: bygg og kjøring må bruke samme port. |
 | `RAG_ALLOWED_ORIGINS`          | Kommaseparerte HTTP(S)-origins. Standard er `http://127.0.0.1:3000,http://localhost:3000`. En satt liste erstatter standardene. Tomme/ugyldige verdier stopper oppstart.                       |
 | `RAG_MAX_CONCURRENT`           | Modellkall per prosess, heltall 1–8, standard 1. Ingen kø; full kapasitet gir 429 med kilder.                                                                                                  |

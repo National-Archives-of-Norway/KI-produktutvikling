@@ -6,6 +6,25 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 16. november 2026 – rettet Qwen-timeout ved for høyt automatisk trådtall
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Kontrollert A/B/A med samme modell/prompt viste treg generering ved automatisk 18 tråder (13–16 svarbiter på 30 s), fullført 32-tokenmåling på ca. 11,2 s med fire tråder (31,19 tokens/s i genereringsdelen), og treg generering igjen ved automatisk valg. Faktiske runner-logger bekrefter 18 → 4 → 18. Ingen frister er økt.
+- Lagt til valgfri servervariabel OLLAMA_NUM_THREAD med heltallsvalidering 1–64; tom/ugyldig verdi gir oppstartsfeil. Adapteren sender options.num_thread når konfigurert. Compose setter fire tråder i portalens miljø; ellers beholdes autovalg ved usatt verdi. Dette er en portalvariabel, ikke en innebygd Ollama-miljøvariabel. Modell, 8192 kontekst, 700-tokenbudsjett, strukturert svar og 60/65/70 s-frister er uendret.
+- Reell retest i eget Docker-miljø bestod to uendrede README-skriptkjøringer: prompt 13,8/7,2 s kald/varm og brukerbehov 31,4/31,5 s. Skill-spørsmålet ga generert svar med riktig kilde og [1] på 10,3 s; irrelevant spørsmål ga ingen treff/generering. Fem genererte svar bestod. [Rapport og resultatfil](docs/rag/2026-11-16/qwen-threads/rapport.md) bevarer årsakskontroll og avgrensninger, med henvisning fra den opprinnelige feilrapporten.
+- Oppdatert README, miljøeksempel, arkitektur, funksjonsregister og utviklingsplan. Beta-status og alle produksjonsavklaringer består. To regresjoner feilet før retting; 15/15 fokuserte tester består etterpå. Ordinær testpakke bestod 278 Node-/tre Python-tester og innholdssynk. Linux Node 24.22.2 bestod 278/278 uten eksternt testnettverk etter at Git ble installert i eget testbilde; første forsøk manglet Git for prisjobbfixturen. Appbildet er ikke utvidet med testverktøy. Typekontroll og produksjonsbygg lokalt/Docker bestod.
+- Sluttkontroll: pnpm test bestod på nytt med 278 Node-/tre Python-tester, innholdssynk og 216 relative filmål i 12 dokumenter; pnpm typecheck, pnpm format:check og git diff --check bestod. Eksisterende container-ID/bilde/starttid/omstarter/tilstand og originalvolummetadata/manifesthash er verifisert uendret også etter opprydding. Bare egne testressurser er fjernet. Originalportalen på 3005 er ikke ombygd; rettingen er prøvd separat på 3015. Ingen ny modellnedlasting var nødvendig: samme modellvekter ble kopiert fra skrivebeskyttet originalvolum til eget volum. Ingen priskildekall, eksternt modell-API, blindmåling, Git-historikkendring, commit eller push.
+
+### 16. november 2026 – ren Docker-prøve: infrastruktur bestod, modellgenerering feilet
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Prøvd README-oppskriften fra ren kildekopi av 7441c70, uten verts-node_modules, .env.local eller .next. Eget Compose-prosjekt/appbilde og loopback-port 3015, med verifisert tomt eget modellvolum. Produksjonsbygg uten app-/avhengighetslagcache bestod på ca. 42,83 s; Qwen3:4b ble faktisk lastet ned/verifisert på ca. 76,93 s. Node 24.22.2, Docker/Linux arm64 og Compose 5.5.1. Delte basebilder/daemon er ikke en ny maskin eller helt kald Docker-cache.
+- Helse, modellinformasjon, forside-/Spør KI-responser med ressurser, intern modellisolasjon og omstart med modellgjenbruk bestod. Fire faktiske genereringsforsøk ga 502 ved 60 s, også varm modell, med riktige kilder bevart. Irrelevant spørsmål ga 200 uten treff/generering. De to README-skriptkjøringene avsluttet med exit 1 på første spørsmål og omtales ikke som bestått. Årsak er ikke fastslått, og innstillinger er ikke endret for å skjule feilen.
+- [Kompakt rapport, resultatfil og feillogg](docs/rag/2026-11-16/readme-clean/rapport.md) dokumenterer både vellykkede trinn og timeoutene. README viser den delvise verifiseringen; utviklingsplanen får et åpent oppfølgingspunkt uten endret produksjonsgodkjenning. Ingen ny funksjonalitet eller endring av Beta-status. Nettleserforbindelsen feilet før avlesning; ingen visuell test/skjermleserprøve påstås.
+- Eksisterende tre containeres ID/bilde/starttid/omstarter og modellvolummetadata/manifesthash er verifisert uendret, også etter opprydding. Bare nye testressurser ble fjernet; originalt miljø beholdes. Ingen priskildekall, eksternt modell-API, blindsett, Git-historikkendring, commit eller push. pnpm test:links bestod med 212 filmål i 12 dokumenter; pnpm format:check og git diff --check bestod. Resultatfil og datert rapport er avstemt mot den delvise statusen i README/plan.
+
 ### 16. november 2026 – stegvis Docker-oppskrift i README
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

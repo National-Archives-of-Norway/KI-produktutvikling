@@ -1,0 +1,11 @@
+FØR / KONTROLLERT A-B-A
+cmn  common_param: system_info: n_threads = 18 (n_threads_batch = 18) / 18 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | DOTPROD = 1 | LLAMAFILE = 1 | REPACK = 1 | 
+cmn          init: llama threadpool init, n_threads = 18
+cmn  common_param: system_info: n_threads = 4 (n_threads_batch = 4) / 18 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | DOTPROD = 1 | LLAMAFILE = 1 | REPACK = 1 | 
+cmn          init: llama threadpool init, n_threads = 4
+cmn  common_param: system_info: n_threads = 18 (n_threads_batch = 18) / 18 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | DOTPROD = 1 | LLAMAFILE = 1 | REPACK = 1 | 
+cmn          init: llama threadpool init, n_threads = 18
+
+ETTER / PRODUKSJONSFLYT
+ollama-1  | cmn  common_param: system_info: n_threads = 4 (n_threads_batch = 4) / 18 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | DOTPROD = 1 | LLAMAFILE = 1 | REPACK = 1 | 
+ollama-1  | cmn          init: llama threadpool init, n_threads = 4

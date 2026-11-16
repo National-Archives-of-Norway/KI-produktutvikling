@@ -43,3 +43,22 @@ test("Ollama tillater bare eksakt Compose-tjeneste i tillegg til loopback", () =
   ])
     assert.throws(() => loadRagConfig({ ...base, OLLAMA_URL }), /OLLAMA_URL/);
 });
+
+test("Ollama CPU-tråder er valgfrie, trimmes og avviser ugyldige verdier", () => {
+  const base = { MODEL_PROVIDER: "ollama", OLLAMA_MODEL: "qwen3:4b" };
+  const automatic = loadRagConfig(base);
+  assert.equal(automatic.provider, "ollama");
+  if (automatic.provider === "ollama")
+    assert.equal(automatic.numThread, undefined);
+  for (const value of ["1", " 4 ", "64"]) {
+    const config = loadRagConfig({ ...base, OLLAMA_NUM_THREAD: value });
+    assert.equal(config.provider, "ollama");
+    if (config.provider === "ollama")
+      assert.equal(config.numThread, Number(value));
+  }
+  for (const value of ["", " \t", "0", "-1", "1.5", "abc", "65", "Infinity"])
+    assert.throws(
+      () => loadRagConfig({ ...base, OLLAMA_NUM_THREAD: value }),
+      /OLLAMA_NUM_THREAD/,
+    );
+});

@@ -1,0 +1,59 @@
+=== model-probe-cold-failed.log ===
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: HTTP 502: {"error":"Modelltjenesten kunne ikke svare akkurat nå. Du kan fortsatt lese veiledningen og kildene nedenfor.","sources":[{"id":"tydelig-kontekst","title":"Gi KI tydelig kontekst","href":"/ressurser/tydelig-kontekst/","text":"Beskriv mål, rammer og forventet resultat før du starter en oppgave.\nBruk denne sjekklisten når du formulerer en oppgave til et KI-verktøy.\nBeskriv målet og hvem resultatet er til for.\nOppgi relevante rammer, begrensninger og hvilke kilder som skal brukes.\nBeskriv hvordan resultatet skal vurderes, og be om at usikkerhet synliggjøres.\nMål: …\nMålgruppe: …\nRelevant kontekst: …\nRammer: …\nØnsket resultat: …\nSpør hvis nødvendig informasjon mangler, og gjør antakelser tydelige.","guide":{"summary":"Bruk denne sjekklisten når du formulerer en oppgave til et KI-verktøy.","steps":["Beskriv målet og hvem resultatet er til for.","Oppgi relevante rammer, begrensninger og hvilke kilder som skal brukes.","Beskriv hvordan resultatet skal vurderes, og be om at usikkerhet synliggjøres."],"note":"Dette er eksempelinnhold til utprøving."}}]}
+
+502 !== 200
+
+    at file://[PROJECT]/scripts/check-rag-model.mjs:20:10
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 502,
+  expected: 200,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.22.1
+
+=== model-probe-warm.log ===
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: HTTP 502: {"error":"Modelltjenesten kunne ikke svare akkurat nå. Du kan fortsatt lese veiledningen og kildene nedenfor.","sources":[{"id":"tydelig-kontekst","title":"Gi KI tydelig kontekst","href":"/ressurser/tydelig-kontekst/","text":"Beskriv mål, rammer og forventet resultat før du starter en oppgave.\nBruk denne sjekklisten når du formulerer en oppgave til et KI-verktøy.\nBeskriv målet og hvem resultatet er til for.\nOppgi relevante rammer, begrensninger og hvilke kilder som skal brukes.\nBeskriv hvordan resultatet skal vurderes, og be om at usikkerhet synliggjøres.\nMål: …\nMålgruppe: …\nRelevant kontekst: …\nRammer: …\nØnsket resultat: …\nSpør hvis nødvendig informasjon mangler, og gjør antakelser tydelige.","guide":{"summary":"Bruk denne sjekklisten når du formulerer en oppgave til et KI-verktøy.","steps":["Beskriv målet og hvem resultatet er til for.","Oppgi relevante rammer, begrensninger og hvilke kilder som skal brukes.","Beskriv hvordan resultatet skal vurderes, og be om at usikkerhet synliggjøres."],"note":"Dette er eksempelinnhold til utprøving."}}]}
+
+502 !== 200
+
+    at file://[PROJECT]/scripts/check-rag-model.mjs:20:10
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 502,
+  expected: 200,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.22.1
+
+=== ollama-failures.txt ===
+cmn  common_param: system_info: n_threads = 18 (n_threads_batch = 18) / 18 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | DOTPROD = 1 | LLAMAFILE = 1 | REPACK = 1 | 
+llama_context: n_batch               = 1024
+cmn          init: llama threadpool init, n_threads = 18
+[GIN] 2026/11/16 - 08:59:47 | 500 |   59.99s |      172.22.0.3 | POST     "/api/chat"
+srv          stop: cancel task, id_task = 0
+slot      release: id  0 | task 0 | stop processing: n_tokens = 593, truncated = 0
+[GIN] 2026/11/16 - 09:01:19 | 500 |     1m0s |      172.22.0.3 | POST     "/api/chat"
+srv          stop: cancel task, id_task = 21
+slot      release: id  0 | task 21 | stop processing: n_tokens = 599, truncated = 0
+[GIN] 2026/11/16 - 09:03:25 | 500 |   59.99s |      172.22.0.3 | POST     "/api/chat"
+srv          stop: cancel task, id_task = 48
+slot      release: id  0 | task 48 | stop processing: n_tokens = 1958, truncated = 0
+[GIN] 2026/11/16 - 09:04:25 | 500 |   59.99s |      172.22.0.3 | POST     "/api/chat"
+srv          stop: cancel task, id_task = 76
+slot      release: id  0 | task 76 | stop processing: n_tokens = 777, truncated = 0
+

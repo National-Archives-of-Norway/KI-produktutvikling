@@ -56,6 +56,7 @@ test("Ollama-adapteren sender nummererte kilder og blokkerer videresending", asy
       assert.equal(payload.think, false);
       assert.equal(payload.stream, false);
       assert.equal(payload.options.num_ctx, 8192);
+      assert.equal("num_thread" in payload.options, false);
       assert.equal(
         JSON.parse(payload.messages[1].content).sources[0].number,
         1,
@@ -192,4 +193,28 @@ test("Qwen3 avviser ugyldige strukturerte svar", async () => {
         async () => Response.json({ message: { content } }),
       ).generate("tester", corpus),
     );
+});
+
+test("serverens Ollama-trådvalg sendes til modelltransporten", async () => {
+  const { createConfiguredModel } =
+    await import("../src/server/rag/provider.ts");
+  const model = createConfiguredModel(
+    loadRagConfig({
+      MODEL_PROVIDER: "ollama",
+      OLLAMA_MODEL: "qwen3:4b",
+      OLLAMA_URL: "http://ollama:11434",
+      OLLAMA_NUM_THREAD: "4",
+    }),
+    async (_url, init) => {
+      const payload = JSON.parse(String(init?.body));
+      assert.equal(payload.options.num_thread, 4);
+      assert.equal(payload.options.num_ctx, 8192);
+      assert.equal(payload.options.num_predict, 700);
+      return Response.json({
+        message: { content: JSON.stringify({ answer: "Svar [1]" }) },
+        done_reason: "stop",
+      });
+    },
+  );
+  assert.equal(await model!.generate("tester", corpus), "Svar [1]");
 });

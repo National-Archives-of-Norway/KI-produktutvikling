@@ -1,0 +1,186 @@
+{
+  "date": "2026-11-16",
+  "source_commit": "7441c7026c6fa1a158d0b7887976f82b929ef67d",
+  "overall": "partial: infrastructure passed, actual model generation failed",
+  "platform": {
+    "os": "Docker/Linux",
+    "architecture": "arm64",
+    "docker_compose": "5.5.1",
+    "node_in_container": "v24.22.2",
+    "memory_bytes": 8317267968,
+    "cpus": 18
+  },
+  "isolation": {
+    "project": "ki-readme-clean-20261116",
+    "host_port": 3015,
+    "app_image_tag": "ki-produktutvikling:readme-clean-7441c70",
+    "model_volume": "ki-readme-clean-20261116_ollama-models",
+    "clean_source_without_host_env_node_modules_build": true,
+    "initial_model_volume": {
+      "entries": 0
+    },
+    "network_checks": {
+      "model_network_internal": true,
+      "ollama_host_ports": false,
+      "portal_loopback_port": 3015,
+      "portal_model_volume_mounted": false
+    }
+  },
+  "build": {
+    "exit": 0,
+    "seconds": 42.83
+  },
+  "startup": {
+    "exit": 0,
+    "seconds": 20.6
+  },
+  "model_download": {
+    "health": {
+      "status": "ok",
+      "generationEnabled": true
+    },
+    "model": [
+      {
+        "name": "qwen3:4b",
+        "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+        "size": 2497293931
+      }
+    ],
+    "init_exit": 0,
+    "init_started": "2026-11-16T08:56:42.36069059Z",
+    "init_finished": "2026-11-16T08:57:59.287536376Z",
+    "pull_reported": true,
+    "reused_existing_model": false,
+    "runtime_node": "v24.22.2",
+    "seconds": 76.93
+  },
+  "pages": [
+    {
+      "path": "/",
+      "http": 200,
+      "hasHeading": true,
+      "assetHttp": 200
+    },
+    {
+      "path": "/spor",
+      "http": 200,
+      "hasHeading": true,
+      "assetHttp": 200
+    }
+  ],
+  "readme_script_runs": [
+    {
+      "state": "cold",
+      "exit": 1,
+      "first_question": "Hvordan skriver jeg en god prompt?",
+      "http": 502,
+      "sourceIds": ["tydelig-kontekst"],
+      "approx_seconds": 60
+    },
+    {
+      "state": "warm",
+      "exit": 1,
+      "first_question": "Hvordan skriver jeg en god prompt?",
+      "http": 502,
+      "sourceIds": ["tydelig-kontekst"],
+      "approx_seconds": 60
+    }
+  ],
+  "additional_probes": [
+    {
+      "question": "Hvem er statsministeren?",
+      "http": 200,
+      "ms": 34,
+      "mode": "sources",
+      "sourceIds": [],
+      "answerLength": 0,
+      "citation": false,
+      "error": null
+    },
+    {
+      "question": "Hvordan utforsker jeg brukerbehov?",
+      "http": 502,
+      "ms": 60019,
+      "mode": null,
+      "sourceIds": ["brukerbehov", "kom-i-gang", "informasjonskapsler"],
+      "answerLength": 0,
+      "citation": false,
+      "error": "Modelltjenesten kunne ikke svare akkurat nå. Du kan fortsatt lese veiledningen og kildene nedenfor."
+    },
+    {
+      "question": "Hvilke skills har vi?",
+      "http": 502,
+      "ms": 60025,
+      "mode": null,
+      "sourceIds": ["skills"],
+      "answerLength": 0,
+      "citation": false,
+      "error": "Modelltjenesten kunne ikke svare akkurat nå. Du kan fortsatt lese veiledningen og kildene nedenfor."
+    }
+  ],
+  "restart": {
+    "test_volume_preserved_by_down": true,
+    "model_reused_without_pull": true,
+    "same_model_digest_and_size": true,
+    "health": {
+      "status": "ok",
+      "generationEnabled": true
+    },
+    "seconds_until_rag_health": 9.7
+  },
+  "preservation": {
+    "existing_containers_same_ids_start_times_images_restarts_and_states": true,
+    "existing_volume_metadata_unchanged": true,
+    "existing_model_manifest_checksum_unchanged": true,
+    "test_health_after_restart": {
+      "ki-readme-clean-20261116-portal-1": "healthy",
+      "ki-readme-clean-20261116-ollama-1": "healthy"
+    },
+    "existing_container_baseline": [
+      {
+        "Id": "ac3ed3e2b0f339633f62516971b4ee5c9322a106bdccfe335a3f79bfff38761b",
+        "Name": "/ki-produktutvikling-model-init-1",
+        "Image": "sha256:910d0d8107b538fb0894e63163eb195de0cc7aefcbc666dc62d3b18f71124592",
+        "Created": "2026-11-12T17:07:32.636453339Z",
+        "RestartCount": 0,
+        "StartedAt": "2026-11-13T15:24:01.362117049Z",
+        "Status": "exited"
+      },
+      {
+        "Id": "e41c25af71f6ddac2a866f4deae71c2861fa3cad2d3e991d28bf953b81cb7164",
+        "Name": "/ki-produktutvikling-ollama-1",
+        "Image": "sha256:910d0d8107b538fb0894e63163eb195de0cc7aefcbc666dc62d3b18f71124592",
+        "Created": "2026-11-12T17:05:50.330200375Z",
+        "RestartCount": 0,
+        "StartedAt": "2026-11-13T14:52:50.411532669Z",
+        "Status": "running"
+      },
+      {
+        "Id": "8a5fcf423fff0e87647485ad30efd72d50af8d4baf68c25185f5cfb37bc9b86f",
+        "Name": "/ki-produktutvikling-portal-1",
+        "Image": "sha256:90b73e19ad65a463812b963bd81f99d8056cf5d54fc84cd3dfc64ff295963109",
+        "Created": "2026-11-13T15:24:01.079921591Z",
+        "RestartCount": 0,
+        "StartedAt": "2026-11-13T15:24:03.449163217Z",
+        "Status": "running"
+      }
+    ],
+    "existing_model_volume_baseline": {
+      "name": "ki-produktutvikling_ollama-models",
+      "created_at": "2026-11-12T17:03:27Z",
+      "model_manifest_sha256": "31d9857b5705086d352d4d6db04e86c5d0f6a2b5d59a4dc7ce5cdb271ccf9141"
+    }
+  },
+  "cleanup": {
+    "only_test_project_resources_removed": true,
+    "test_model_volume_removed": true,
+    "test_image_tag_removed": true,
+    "existing_environment_preserved_after_cleanup": true
+  },
+  "browser_check": "not performed: browser tool connection closed before initial response",
+  "real_model_generated_answers_passed": 0,
+  "real_model_generated_answer_attempts": 4,
+  "new_model_api_or_pricing_calls": false,
+  "history_changed": false,
+  "pushed": false
+}

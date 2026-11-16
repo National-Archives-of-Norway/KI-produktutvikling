@@ -53,6 +53,9 @@ services:
     environment:
       MODEL_PROVIDER: ollama
       OLLAMA_MODEL: "qwen3:4b"
+      # Målt CPU-profil; automatisk 18-trådsvalg ga kraftig ytelsestap.
+      # Portalvariabelen videresendes som options.num_thread, ikke Ollama-env.
+      OLLAMA_NUM_THREAD: "4"
       OLLAMA_URL: "http://ollama:11434"
       RAG_PORT: "3001"
       RAG_MAX_CONCURRENT: "1"

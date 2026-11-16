@@ -3,7 +3,12 @@ import type { ModelAdapter } from "./model.ts";
 import { createModelMessages } from "./messages.ts";
 
 export function createOllamaAdapter(
-  config: { model: string; endpoint: URL; timeoutMs?: number },
+  config: {
+    model: string;
+    endpoint: URL;
+    timeoutMs?: number;
+    numThread?: number;
+  },
   fetcher: typeof fetch = fetch,
 ): ModelAdapter {
   return {
@@ -44,7 +49,15 @@ export function createOllamaAdapter(
                   },
                 }
               : {}),
-            options: { temperature: 0.1, num_predict: 700, num_ctx: 8192 },
+            options: {
+              temperature: 0.1,
+              num_predict: 700,
+              num_ctx: 8192,
+              // CPU-autovalg kan oversubscribere Docker-vCPU-er på Mac.
+              ...(config.numThread === undefined
+                ? {}
+                : { num_thread: config.numThread }),
+            },
             messages,
           }),
         });

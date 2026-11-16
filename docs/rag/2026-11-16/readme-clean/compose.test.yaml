@@ -1,0 +1,7 @@
+services:
+  portal:
+    image: ki-produktutvikling:readme-clean-7441c70
+    ports: !override
+      - "127.0.0.1:3015:3000"
+    environment:
+      RAG_ALLOWED_ORIGINS: "http://127.0.0.1:3015,http://localhost:3015"

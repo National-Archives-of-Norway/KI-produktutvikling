@@ -49,7 +49,7 @@ export type RagConfig = {
   maxConcurrent: number;
 } & (
   | { provider: "none" }
-  | { provider: "ollama"; model: string; endpoint: URL }
+  | { provider: "ollama"; model: string; endpoint: URL; numThread?: number }
   | {
       provider: "openai-compatible";
       model: string;
@@ -122,6 +122,15 @@ export function loadRagConfig(
     );
   const model = env.OLLAMA_MODEL?.trim();
   if (!model) throw new Error("Ollama krever OLLAMA_MODEL.");
+  const rawThreads = configuredValue(env, "OLLAMA_NUM_THREAD");
+  const numThread = rawThreads === undefined ? undefined : Number(rawThreads);
+  if (
+    numThread !== undefined &&
+    (!Number.isInteger(numThread) || numThread < 1 || numThread > 64)
+  )
+    throw new Error(
+      "Ugyldig OLLAMA_NUM_THREAD: forventer et heltall fra 1 til 64.",
+    );
   let endpoint: URL;
   try {
     endpoint = new URL(env.OLLAMA_URL || "http://127.0.0.1:11434");
@@ -146,5 +155,13 @@ export function loadRagConfig(
     throw new Error(
       "OLLAMA_URL må være en HTTP-loopback-adresse eller http://ollama:11434 uten sti, query, fragment eller påloggingsinformasjon.",
     );
-  return { port, allowedOrigins, maxConcurrent, provider, endpoint, model };
+  return {
+    port,
+    allowedOrigins,
+    maxConcurrent,
+    provider,
+    endpoint,
+    model,
+    ...(numThread === undefined ? {} : { numThread }),
+  };
 }
