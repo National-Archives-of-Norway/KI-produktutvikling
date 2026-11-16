@@ -6,6 +6,15 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 16. november 2026 – aktiv Docker-portal oppdatert til ee26bb2
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Bygget ki-produktutvikling:compose fra ren git archive av ee26bb25d409c287bbb1beb67b7139f4d897461f, med commitetikett og kontrollert kildehash for RAG-config/adapter. Produksjonsbygg bestod på ca. 19,53 s med gjenbruk av avhengighets-/basecache. Bare portalcontaineren ble gjenskapt; ingen modellserver-/init-omstart eller volumfjerning.
+- Aktiv portal på 127.0.0.1:3005 bruker OLLAMA_NUM_THREAD=4. Helse og uendret README-modelltest bestod: prompt 15,8 s, brukerbehov 35,4 s og irrelevant spørsmål uten treff/generering på 5 ms. Skill-spørsmålet bestod separat med riktig kilde og [1] på 10,8 s. Runner-logger etter ny portalstart bekrefter fire inferens-/batchtråder, med uendret 60 s-grense.
+- Eksisterende modellvolums metadata/opprettelsestid og modellmanifestets SHA-256 er verifisert uendret. Modellserver/init beholdt samme container-ID og starttid. Ingen ny modellnedlasting. [Rapport og kontrollmetadata](docs/rag/2026-11-16/docker-ee26bb2/rapport.md) er lagret, og utviklingsplanen viser aktiv lokal oppdatering uten produksjonsgodkjenning.
+- pnpm test:links bestod med 218 filmål i 12 dokumenter; pnpm format:check og git diff --check bestod. Ingen appkode, funksjonsstatus eller Git-historikk endret. Nye dokumentoppføringer er skrevet etter bildet og er ikke del av kildecommiten. Ingen full testpakke, Pages-, visuell nettleser-/skjermleserprøve, priskilde-/eksternt modellkall, blindmåling, commit eller push i denne økten.
+
 ### 16. november 2026 – rettet Qwen-timeout ved for høyt automatisk trådtall
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-16",
+  "verification": {
+    "source_commit": "ee26bb25d409c287bbb1beb67b7139f4d897461f",
+    "portal_container_id": "748dee285be1610e0762eb80a539b726c7444131ae98591f8bb9df94de8d51fa",
+    "image_id": "sha256:9e3703f6fc4aa5b836673f3d66ba419e4b5ca2252fe45c033c6b8f28949bf48c",
+    "thread_setting": 4,
+    "health": {
+      "status": "ok",
+      "generationEnabled": true
+    },
+    "source_proof": [
+      {
+        "path": "src/server/rag/config.ts",
+        "sha256": "0316e45a2b0fc5d1fc7aa396369c73b14b791b4fa15b168d7193fe63f530e68d"
+      },
+      {
+        "path": "src/server/rag/ollama.ts",
+        "sha256": "13fc259483e02cadc8e5f9db9e589944042de94122208657a45a3663234b49f8"
+      }
+    ],
+    "runner_thread_count_observed": 4,
+    "volume_name": "ki-produktutvikling_ollama-models",
+    "volume_created_at": "2026-11-12T17:03:27Z",
+    "volume_metadata_unchanged": true,
+    "model_manifest_sha256": "31d9857b5705086d352d4d6db04e86c5d0f6a2b5d59a4dc7ce5cdb271ccf9141",
+    "model_manifest_unchanged": true,
+    "ollama_and_init_containers_unchanged": true,
+    "portal_healthy": true,
+    "portal_started_at": "2026-11-16T10:48:45.903712875Z"
+  },
+  "build": {
+    "exit": 0,
+    "seconds": 19.53
+  },
+  "readme_probe_exit": 0,
+  "readme_probe_results": [
+    {
+      "question": "Hvordan skriver jeg en god prompt?",
+      "elapsedMs": 15830,
+      "mode": "generated",
+      "sources": ["tydelig-kontekst"]
+    },
+    {
+      "question": "Hvordan utforsker jeg brukerbehov?",
+      "elapsedMs": 35420,
+      "mode": "generated",
+      "sources": ["brukerbehov", "kom-i-gang", "informasjonskapsler"]
+    },
+    {
+      "question": "Hvem er statsministeren?",
+      "elapsedMs": 5,
+      "mode": "sources",
+      "sources": []
+    }
+  ],
+  "skills_probe": {
+    "http": 200,
+    "elapsedMs": 10837,
+    "mode": "generated",
+    "sourceIds": ["skills"],
+    "citation": true,
+    "answerLength": 271
+  },
+  "history_changed": false,
+  "pushed": false
+}

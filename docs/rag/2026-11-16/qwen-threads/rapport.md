@@ -1,5 +1,7 @@
 # Qwen-timeout: årsak, retting og retest
 
+**Etterfølgende lokal oppdatering 16. november:** [Portalen på 3005 er nå bygget fra ee26bb2 og kontrollert med fire faktiske runner-tråder](../docker-ee26bb2/rapport.md). Beskrivelsen av at originalportalen var urørt nedenfor gjelder den tidligere isolerte rettingsprøven.
+
 16. november 2026 · Codex (OpenAI), uten underagenter. Grunnlag: arbeidskopi basert på **7441c70**, med rettingen dokumentert ved kildehash i [resultatfilen](resultater.json). Modell: samme Qwen3:4b-digest som [første Docker-prøve](../readme-clean/rapport.md). Ingen ekstern modell, priskilde eller blindmåling er brukt.
 
 **Den bekreftede årsaken i den målte CPU-profilen var for høyt automatisk inferenstrådtall.** Ollama valgte 18 tråder. Et kontrollert A/B/A-forsøk med identisk forespørsel og modell viste svært treg generering med automatisk valg, rask generering med fire tråder og treg generering igjen da automatisk valg ble gjeninnført. Compose angir nå fire inferenstråder via portalens validerte modellkonfigurasjon. Fem faktiske genererte svar bestod retesten på ca. 7–32 sekunder, med **uendret modellfrist på 60 sekunder**.

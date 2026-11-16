@@ -1,0 +1,2 @@
+cmn  common_param: system_info: n_threads = 4 (n_threads_batch = 4) / 18 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | DOTPROD = 1 | LLAMAFILE = 1 | REPACK = 1 | 
+cmn          init: llama threadpool init, n_threads = 4
