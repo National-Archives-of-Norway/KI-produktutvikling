@@ -1,0 +1,142 @@
+{
+  "date": "2026-11-16",
+  "source_commit": "1258176a0ad3db327b348d43fea635b77a5097f6",
+  "scope": "current tracked files only; not a new Git-history scan",
+  "tracked_files_scanned": 1551,
+  "tracked_file_bytes": 594261394,
+  "excluded_files": ["tests/fixtures/rag-blind.json"],
+  "gitleaks_version": "8.30.1",
+  "file_candidates": [
+    {
+      "rule": "generic-api-key",
+      "path": "docs/priser/2026-11-11/parser-config/manifest.json",
+      "line": 33,
+      "classification": "verified file SHA-256; false positive"
+    },
+    {
+      "rule": "generic-api-key",
+      "path": "docs/priser/2026-11-11/parser-config/manifest.json",
+      "line": 34,
+      "classification": "verified file SHA-256; false positive"
+    },
+    {
+      "rule": "generic-api-key",
+      "path": "docs/priser/2026-11-11/parser-config/manifest.json",
+      "line": 38,
+      "classification": "verified file SHA-256; false positive"
+    },
+    {
+      "rule": "generic-api-key",
+      "path": "docs/tilgjengelighet/2026-11-09/221027-5ce9daf9d5dc/raw/source-inventory.json",
+      "line": 106,
+      "classification": "verified file SHA-256; false positive"
+    }
+  ],
+  "confirmed_key_values": 0,
+  "preview_key_fields_redacted": true,
+  "extraction": {
+    "image_files": 114,
+    "pdf_files": 4,
+    "pdf_pages": 28,
+    "errors": 0,
+    "new_media_gitleaks_candidates": 0,
+    "archive_members": 20,
+    "archive_gitleaks_candidates": 0
+  },
+  "metadata_summary": {
+    "files_with_indicator": {
+      "email": 141,
+      "local_user_path": 141,
+      "sensitive_language": 5,
+      "credential_url": 4
+    },
+    "unique_email_count": 4,
+    "plausible_id_candidates": 0
+  },
+  "media_locations_with_identifying_information": [
+    {
+      "paths": [
+        "docs/arkiv/skjermbilder/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/original-2.png"
+      ],
+      "categories": ["participant_names"]
+    },
+    {
+      "paths": [
+        "docs/arkiv/skjermbilder/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6/screenshots/declaration-320.png"
+      ],
+      "categories": ["email"]
+    },
+    {
+      "paths": [
+        "docs/tilgjengelighet/2026-11-09/210420-07c855b7770e/raw/mandatforslag-before.pdf"
+      ],
+      "categories": ["participant_names"]
+    },
+    {
+      "paths": [
+        "docs/arkiv/skjermbilder/tilgjengelighet/2026-11-10/080757-ffaeb036427a/screenshots/declaration-after.png"
+      ],
+      "categories": ["email"]
+    },
+    {
+      "paths": [
+        "docs/arkiv/skjermbilder/tilgjengelighet/2026-11-10/090740-ca8d9c80ecb6/screenshots/declaration-desktop.png"
+      ],
+      "categories": ["email"]
+    },
+    {
+      "paths": [
+        "docs/arkiv/skjermbilder/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/pdf-all-pages.png"
+      ],
+      "categories": ["participant_names"]
+    },
+    {
+      "paths": ["public/vedlegg/mandatforslag-ai-enablement-team.pdf"],
+      "categories": ["participant_names"]
+    },
+    {
+      "paths": [
+        "docs/arkiv/skjermbilder/tilgjengelighet/2026-11-10/053920-3f1e603bfbcd/screenshots/erklaering-desktop.png"
+      ],
+      "categories": ["email"]
+    },
+    {
+      "paths": [
+        "docs/arkiv/skjermbilder/tilgjengelighet/2026-11-10/202101-029e79106a3d/screenshots/before-2.png"
+      ],
+      "categories": ["participant_names"]
+    },
+    {
+      "paths": [
+        "docs/arkiv/skjermbilder/tilgjengelighet/2026-11-10/133024-18e0f9e56386/screenshots/spacing-0-1280.png"
+      ],
+      "categories": ["email"]
+    },
+    {
+      "paths": [
+        "docs/tilgjengelighet/2026-11-10/080757-ffaeb036427a/raw/original.pdf"
+      ],
+      "categories": ["participant_names"]
+    },
+    {
+      "paths": [
+        "docs/informasjonskapsler/2026-11-10/121354-92b5bf52/screenshots/cookie-decision-desktop.png"
+      ],
+      "categories": ["email"]
+    },
+    {
+      "paths": [
+        "docs/tilgjengelighet/2026-11-10/202101-029e79106a3d/raw/before.pdf"
+      ],
+      "categories": ["participant_names"]
+    },
+    {
+      "paths": [
+        "docs/arkiv/skjermbilder/tilgjengelighet/2026-11-09/210420-07c855b7770e/screenshots/pdf-retested-all-pages.png"
+      ],
+      "categories": ["participant_names"]
+    }
+  ],
+  "history_changed": false,
+  "pushed": false
+}

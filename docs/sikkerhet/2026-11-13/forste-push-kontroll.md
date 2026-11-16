@@ -1,5 +1,7 @@
 # Kontroll før første push – 13. november 2026
 
+**Oppfølging 16. november 2026:** [Ny kontroll av dagens filer og gjenværende GitHub-avklaringer](../2026-11-16/status-for-github.md). Preview-verdiene er nå sladdet i dagens fil, og skjermbildeutvalget er ryddet. Resten av denne rapporten beskriver kontrollen og funnene slik de var 13. november. Kontoavgrensningen nedenfor er historisk, ikke en ny forutsetning.
+
 Utført av Codex (OpenAI), uten underagenter. Kilde: `ce43210cc63fca7353293459103bcdab6171d591` og alle lokale refs som var tilgjengelige ved undersøkelsen. Arbeidskopien var ren ved start; ingen remote er konfigurert. Dette er en lokal sikkerhets-/innholdskontroll, ikke godkjenning fra Nasjonalarkivet.
 
 **Anbefaling: vent med første push til historisk nøkkelmateriale og retten til å lagre mandat/personopplysninger på en personlig konto er avklart.** Ingen filer, refs eller commits er slettet eller omskrevet. Ingen push, publisering, nøkkeltesting mot eksterne tjenester eller tilbakekalling er utført.

@@ -15,28 +15,142 @@ En ny installasjon trenger nettverk også når pnpm-pakkene er cachet: ChromeDri
 
 Åpne http://127.0.0.1:3000. Next.js og RAG starter på loopback, normalt port 3000 og 3001. `sh scripts/dev.sh` kan bruke Codex-runtime når Node/pnpm mangler på PATH og avhengighetene er installert. Ny devport: `pnpm dev -- -p 3005`; tilpass også tillatte origins.
 
-## Lokal portal med Qwen3:4b i Docker Compose
+## Lokalt testmiljø med Docker, Spør KI og Qwen3:4b
+
+Denne oppskriften starter hele portalen med Next.js, RAG-tjenesten for Spør KI og lokal Qwen3:4b via Ollama. Ingen ekstern modellnøkkel kreves. Miljøet er bare tilgjengelig på maskinen din, uten innlogging; dette er ikke oppsett for et delt testmiljø eller en lukket pilot.
+
+### 1. Klargjør maskinen og prosjektmappen
+
+- Ha Docker Engine eller Docker Desktop med Docker Compose installert og startet. På Mac starter du Docker Desktop før kommandoene nedenfor.
+- Ha en kopi av prosjektet med compose.yaml og Dockerfile. Kjør alle kommandoene fra prosjektets rotmappe.
+- Første oppstart trenger internett til containerbilder, avhengigheter og omtrent 2,5 GB modellfiler. Sett også av plass til bilder, avhengigheter og byggcache.
+- Oppsettet bruker CPU, også på Mac. Tilgjengelig minne og CPU påvirker svartiden. Tidligere prøve brukte ca. 7,75 GiB tilgjengelig Docker-minne; dette er et kontrollgrunnlag, ikke en garanti eller dokumentert minstegrense.
+
+```sh
+# Erstatt stien med prosjektmappen på din maskin:
+cd /sti/til/KI-utvikling
+
+docker version
+docker compose version
+docker compose config --quiet
+```
+
+Docker version skal vise både klient og server. Config-kommandoen skal avsluttes uten feil; den starter ingen tjenester. Du trenger ikke installere Node, pnpm, Python eller Ollama på vertsmaskinen for Docker-oppsettet. Den valgfrie skripttesten i steg 5 krever Node lokalt.
+
+Du trenger heller ikke opprette .env.local for denne oppskriften: compose.yaml setter MODEL_PROVIDER=ollama, OLLAMA_MODEL=qwen3:4b og OLLAMA_URL=http://ollama:11434. Miljøvariablene i .env.local brukes ved lokal utvikling utenfor Docker, og overstyrer ikke de faste Compose-verdiene.
+
+### 2. Bygg og start
 
 ```sh
 docker compose up -d --build
 ```
 
-Åpne http://127.0.0.1:3005/spor. En eksisterende manuelt startet container på port 3005 må stoppes først. Første oppstart laster ned omtrent 2,5 GB modellfiler og trenger nettverk. `model-init` avsluttes når nedlastingen er ferdig; Compose starter deretter Ollama og portalen når avhengighetene er klare. Se `docker compose logs -f model-init` og `docker compose ps -a` for status. Nedlasting/bildestart kan ta flere minutter.
+Første kjøring kan ta flere minutter. Oppstarten skjer i denne rekkefølgen:
 
-Qwen3:4b lagres i Docker-volumet `ki-produktutvikling_ollama-models`, utenfor Git og byggkonteksten. `docker compose down` beholder modellen; `down -v` sletter den og krever ny nedlasting. Ikke bruk `-v` ved vanlig omstart. Oppdater kode med `docker compose up -d --build`; modellen gjenbrukes. For eksplisitt modelloppdatering: stopp først portal og ollama med `docker compose stop portal ollama`, kjør `docker compose run --rm -e OLLAMA_FORCE_PULL=1 model-init`, og start igjen med `docker compose up -d`. Vanlig oppstart gjenbruker en modell som finnes i volumet, uten å hente ny modelltagg. Registrer ny digest og test svarene på nytt etter modelloppdatering.
+1. **model-init** laster ned Qwen3:4b, eller gjenbruker den hvis den finnes i modellvolumet, og avsluttes.
+2. **ollama** starter med modellen tilgjengelig og blir healthy.
+3. **portal** starter Next.js og RAG i samme container når modellserveren er klar.
 
-Portalen eksponeres bare på lokal loopback. RAG kjører på loopback inne i portalcontaineren; Ollama bruker fast intern adresse `http://ollama:11434`, uten vertsporter og med internnettverk uten utgående internett. Bare nedlastingstjenesten får utgående nettverk. Ingen Docker-socket, repoer eller modellfiler monteres inn i portalen. Ingen API-nøkkel kreves. Ollamas skyfunksjoner er deaktivert. Dette er lokal utprøving uten innlogging, ikke et delt produksjonsmiljø.
-
-Oppsettet bruker CPU, også i Docker Desktop på Mac. Modellfilstørrelse er ikke samlet minnebehov; tilgjengelig minne og CPU påvirker om 60-sekunders modellfristen holder. Ollama bruker ett modellkall om gangen, 8192 token kontekst, think=false og strukturert JSON-svar for Qwen3. Portalen viser bare det validerte svarfeltet; avkuttede modellutdata gir kildebevarende feil i stedet for halvferdig tekst. Start med offentlige eksempelspørsmål. [Kontrollrapporten](docs/rag/2026-11-12/compose-qwen.md) skiller reelle modellprøver fra automatiske simuleringer.
+Følg nedlastingen i en annen terminal ved behov:
 
 ```sh
-# Leser helsestatus uten å generere svar:
+docker compose logs -f model-init
+```
+
+Ctrl+C avslutter bare loggvisningen; tjenestene som ble startet med -d fortsetter. En eksisterende tjeneste på verts-port 3005 må stoppes før portalen kan ta porten. Se feilsøking nedenfor.
+
+### 3. Kontroller helsen
+
+```sh
+docker compose ps -a
+docker compose exec ollama ollama show qwen3:4b
 docker compose exec portal node -e "fetch('http://127.0.0.1:3001/health').then(r=>r.json()).then(console.log)"
-# Kaller den faktiske modellen; inngår aldri i test/CI:
+```
+
+Forvent følgende:
+
+| Kontroll         | Forventet resultat                                                                          |
+| ---------------- | ------------------------------------------------------------------------------------------- |
+| model-init       | Exited (0) er normalt: dette er en engangsjobb, ikke en tjeneste som skal kjøre hele tiden. |
+| ollama og portal | Begge kjører og viser healthy når oppstarten er ferdig.                                     |
+| ollama show      | Modellinformasjon for qwen3:4b, uten «model not found».                                     |
+| RAG /health      | status: 'ok' og generationEnabled: true.                                                    |
+
+RAG-port 3001 finnes inne i portalcontaineren, ikke som en publisert port på vertsmaskinen. Containerens helsesjekk undersøker både RAG og Next-siden /spor. generationEnabled=true betyr at en modelladapter er konfigurert; det beviser ikke alene at modellen kan generere et ferdig svar. Det prøves i steg 5.
+
+### 4. Åpne portalen
+
+- Forsiden: http://127.0.0.1:3005/
+- Spør KI: http://127.0.0.1:3005/spor
+
+Bruk port 3005 for Docker-utgaven. En separat pnpm dev-instans på port 3000 er et annet miljø. Nettleseren kaller portalens /api/rag; modellserveren skal ikke åpnes direkte fra nettleseren.
+
+### 5. Prøv Spør KI med modellen
+
+Skriv **«Hvordan skriver jeg en god prompt?»** i Spør KI. Kontroller at du får et modellgenerert svar med kildehenvisning, og at kilden «Gi KI tydelig kontekst» vises. **«Hvilke skills har vi?»** er et annet eksempel for å prøve ressurskatalogen.
+
+Første generering kan ta lengre tid mens modellen lastes inn i minnet. Modellen har 60 sekunders frist; proxy og klient har henholdsvis 65 og 70 sekunder. Hvert spørsmål behandles separat. Bruk portalens eksempelinnhold i testen, uten personopplysninger eller hemmeligheter.
+
+Valgfri automatisert modellprøve, fra prosjektmappen på vertsmaskinen, med Node som tilfredsstiller engines.node i package.json:
+
+```sh
 node scripts/check-rag-model.mjs
 ```
 
-Dockerfile installerer med låsefil og bygger Next. Node- og Ollama-bildene er låst til verifiserte digester. `.dockerignore` tillater bare applikasjonsfilene som trengs; Git, miljøfiler, testbevis og lokale modeller utelates. Kjør utvikling/tester lokalt som beskrevet over; runtimebildet inneholder ikke testpakken.
+Skriptet spør om prompt og brukerbehov, krever genererte svar med forventet kilde og [1], og kontrollerer at et irrelevant spørsmål gir ingen treff uten generering. Vellykket kjøring avsluttes med «Bestått». Den bruker faktisk lokal modelltransport og inngår aldri i pnpm test/CI. Skriptet er ikke kopiert til portalens runtimebilde og skal derfor ikke kjøres med docker compose exec. Uten lokal Node kan du teste gjennom nettleseren som beskrevet over.
+
+Søket finner bare innhold som finnes i portalen. Ingen treff på et spørsmål utenfor kunnskapsgrunnlaget er forventet, også når modellen er frisk. Modellens svar må fortsatt kontrolleres mot kildene; kildehenvisninger er ikke faglig godkjenning. [Tidligere kontrollrapport](docs/rag/2026-11-12/compose-qwen.md) skiller reelle modellprøver fra automatiske simuleringer.
+
+### 6. Stopp, start og oppdater
+
+```sh
+# Stopp og fjern tjenestecontainerne; behold modellvolumet:
+docker compose down
+
+# Start igjen, eller bygg oppdatert kode:
+docker compose up -d --build
+```
+
+Qwen lagres i volumet ki-produktutvikling_ollama-models, utenfor Git og appbildet. Vanlig omstart gjenbruker modellen. **Ikke legg til -v ved vanlig down:** det sletter modellvolumet og krever ny nedlasting. En restart alene bygger ikke endret kildekode; bruk up -d --build etter kodeendringer og last siden på nytt.
+
+Modelloppdatering er en separat, bevisst handling. Vanlig oppstart henter ikke en ny modelltagg når modellen allerede finnes. Hvis du faktisk vil hente modellen på nytt:
+
+```sh
+docker compose stop portal ollama
+docker compose run --rm -e OLLAMA_FORCE_PULL=1 model-init
+docker compose up -d
+```
+
+Kontroller at nedlastingen lykkes, registrer ny modelldigest og gjenta steg 3–5 etter modelloppdateringen.
+
+### Feilsøking
+
+Start med status og tjenestelogger:
+
+```sh
+docker compose ps -a
+docker compose logs --tail=80 model-init ollama portal
+```
+
+| Symptom                                          | Hva du bør kontrollere                                                                                                                                                                                                                                                                                |
+| ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| «Cannot connect to the Docker daemon»            | Start Docker Desktop/Engine og prøv docker version igjen.                                                                                                                                                                                                                                             |
+| «no configuration file provided»                 | Stå i prosjektroten der compose.yaml ligger.                                                                                                                                                                                                                                                          |
+| Port 3005 er opptatt                             | Se docker ps for andre containere, eller kontroller andre lokale utviklingsservere. Stopp den aktuelle tjenesten før ny oppstart. Ikke endre bare porten: RAG_ALLOWED_ORIGINS i Compose må samsvare med nettleseradressen.                                                                            |
+| model-init kjører lenge eller avsluttes med feil | Les model-init-loggen. Første nedlasting trenger nettverk, tilstrekkelig diskplass og eventuell godkjent nettverkstilgang gjennom virksomhetens proxy. Exited (0) er normalt; Exited med annen kode må undersøkes. Prøv vanlig up -d --build igjen etter at årsaken er rettet, uten å slette volumet. |
+| «model not found» eller ollama er unhealthy      | Kontroller nedlastingsloggen og ollama show i steg 3. Modellnavnet er qwen3:4b i init, helsesjekk og RAG-konfigurasjon. Ikke endre bare én av dem.                                                                                                                                                    |
+| Nettsiden virker, men du får ingen treff         | Prøv prompt-spørsmålet fra steg 5. Kontroller at du bruker Docker-port 3005. Ingen treff er et søkeresultat, ikke i seg selv en modellfeil.                                                                                                                                                           |
+| Du får bare kildeutdrag, ingen generering        | Kontroller generationEnabled i steg 3. Statisk Pages-demo og en lokal server uten modelloppsett kan gi bare utdrag. Compose-oppsettet skal gi true. Ved gammelt bilde: bygg på nytt og last nettleseren på nytt.                                                                                      |
+| HTTP 502, avkuttet svar eller tidsavbrudd        | Se portal-/ollama-loggene og docker stats. Kontroller tilgjengelig minne/CPU; prøv én kort forespørsel når modellen er varm. Modellen kan feile selv om health er grønn. Ugyldig/avkuttet modelltekst avvises, og tilgjengelige kilder beholdes.                                                      |
+| HTTP 429                                         | Standardgrensen er ett samtidig modellkall. Vent på det aktive kallet eller avbryt det før du prøver igjen.                                                                                                                                                                                           |
+| HTTP 403                                         | Bruk http://127.0.0.1:3005 eller http://localhost:3005. Andre porter/vertsnavn krever oppdatert RAG_ALLOWED_ORIGINS og ny opprettelse av portalcontaineren.                                                                                                                                           |
+| Kodeendringer vises ikke                         | Kjør docker compose up -d --build og last siden på nytt. Kontroller at du ikke ser en separat dev-instans på port 3000.                                                                                                                                                                               |
+
+Ved minne-/ytelsesproblemer kan docker compose exec ollama ollama ps vise innlastet modell og kontekst. Ikke bruk sletting av modellvolumet som første feilsøkingstiltak.
+
+Portalen publiseres bare på 127.0.0.1:3005. Den kjørende Ollama-containeren har ikke vertsporter eller utgående internett; bare init-tjenesten laster ned modellen. API-nøkkel, repo eller Docker-socket monteres ikke inn i portalcontaineren. Node-/Ollama-bilder er låst til digester og installasjonen bruker låsefilen. Oppsettet bruker think=false, 8192 token kontekst og strukturert JSON-svar for Qwen3; portalen viser bare det validerte svarfeltet.
+
+Docker-runtimebildet inneholder ikke testpakken. For kodearbeid, typekontroll og automatiske tester følger du «Oppstart» og «Kontroller» i denne README-en; disse krever lokale utviklingsverktøy. Docker-oppskriften over gjelder funksjonell lokal utprøving av den bygde portalen.
 
 ## Konfigurasjon
 

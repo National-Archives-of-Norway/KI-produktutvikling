@@ -1,10 +1,10 @@
 # Utviklingsplan for KI-Produktutvikling
 
-Sist oppdatert: **13. november 2026**. Utførende agent ved denne gjennomgangen: **Codex (OpenAI)**.
+Sist oppdatert: **16. november 2026**. Utførende agent ved denne gjennomgangen: **Codex (OpenAI)**.
 
 **Status: Fungerende lokal prototype; ikke klar for produksjon eller deling av internt innhold.** Lokal funksjonalitet og modelladaptere er implementert. Drift, innlogging, faglig godkjenning og samlet lanseringskontroll gjenstår. Første delte miljø skal være en **lukket pilot**. Offentlig publisering vurderes senere, etter en egen beslutning.
 
-**Før første push – kontroll 13. november:** [Sikkerhets-/innholdsrapport](docs/sikkerhet/2026-11-13/forste-push-kontroll.md) dokumenterer to genererte preview-nøkler i historiske byggbevis, samt navn, organisatorisk mandatinnhold og identifiserende metadata. Verdiene er ulike dagens lokale/Docker-bygg, men historikken er bevart. Håndtering av nøkkelmaterialet og tillatelse til å lagre innholdet på personlig konto må avklares før push. Dette følger opp første-push-sjekklisten og P7/P9; ingen produksjonskrav eller innholdsgodkjenninger er lukket. Blinde testdata er unntatt og må eventuelt vurderes av et menneske.
+**Før GitHub – oppfølging 16. november:** [Ny kontroll av dagens filer](docs/sikkerhet/2026-11-16/status-for-github.md) fant ingen bekreftede nøkkelverdier; fire skannerkandidater ble verifisert som filkontrollsummer. Preview-nøklene er sladdet i dagens manifest, mens gammel historikk er bevart og ikke skannet på nytt. Skjermbildeutvalget er ryddet, men PDF-er og arkiverte bilder inneholder fortsatt navn/mandatopplysninger. Godkjent repo-eier/tilgang, innholdstillatelse, identifiserende metadata, øvrig bevislagring og valg av prisjobb må avklares før opplasting til valgt GitHub-miljø. Ingen personlig konto forutsettes. Blinddata er unntatt. Dette følger første-push-sjekklisten og P7/P9 uten å lukke produksjonskrav eller innholdsgodkjenninger.
 
 Den opprinnelige gjennomgangen bygde på kode, dokumentasjon og lokal Git-base `89b2bd5`, med senere arbeid med personvern, priser og Oversikt. Det tidligere samlede grunnlaget hadde 53 Node-tester, tre Python-tester og produksjonsbygg samt avgrensede nettleserkontroller; dette er historikk.
 

@@ -6,6 +6,22 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 16. november 2026 – stegvis Docker-oppskrift i README
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Utvidet README med lokal Docker-oppskrift: forutsetninger, prosjektmappe, Compose-validering, oppstartsrekkefølge, modellnedlasting/volum, helsesjekk, nettleseradresse, eksempelspørsmål, valgfri reell modellprøve, stopp/ombygging og eksplisitt modelloppdatering. Feilsøking skiller søk uten treff, modellfeil, kapasitet, origin, porter og gammel kode.
+- Presisert at Docker setter modellkonfigurasjonen uten .env.local/vertsinstallert Ollama, og at valgfri modellskripttest krever Node på verten fordi skriptet ikke finnes i runtimebildet. Helse viser adapteroppsett, ikke bevis for faktisk generering. Lokal utprøving er ikke et delt pilotmiljø. Ingen funksjon, fase eller produksjonsstatus endret; eksisterende ukommiterte sikkerhetsdokumenter er bevart.
+- Kontroller: Compose-konfigurasjon, eksisterende tjenestestatus, RAG-helse og installert qwen3:4b er kontrollert lokalt. Den dokumenterte node scripts/check-rag-model.mjs bestod mot eksisterende Docker/Linux arm64-miljø: to faktiske Qwen-svar med forventet kilde og [1] på ca. 5,8/9,5 s, samt irrelevant spørsmål uten treff/generering. Compose 5.5.1, portal/ollama healthy og model-init Exited (0) er observert. pnpm test:links bestod med 209 filmål i 12 dokumenter; pnpm format:check og git diff --check bestod. Dette er ikke en ren førstegangsinstallasjon, ny skjermleser-/nettleserkontroll eller full testpakke. Ingen ny installasjon, modellnedlasting, ombygging eller oppdatering er utført i denne dokumentasjonsøkten. Ingen commit eller push.
+
+### 16. november 2026 – ny sikkerhetsskanning av dagens filer
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Skannet 1551 sporede filer ved 1258176 med lokal Gitleaks 8.30.1, ny OCR/PDF-ekstraksjon og skann av 20 arkivlogger. Fire kandidater ble verifisert som filkontrollsummer; ingen bekreftede nøkkelverdier er funnet i utvalget. Preview-feltene er fortsatt [REDACTED]. Medieuttrekk og arkivlogger ga null kandidater; 118/118 bilde-/PDF-ekstraksjoner fullførte uten feil.
+- [Oppdatert sikkerhetsrapport](docs/sikkerhet/2026-11-16/status-for-github.md) med gjenværende avklaringer: repo-eier/tilgang, mandat-/deltakeropplysninger i PDF-er og arkivbilder, kontakt-/stitekniske metadata, øvrig bevislagring, prisjobb og unntatte blinddata. Ikke avgrenset til personlig konto. Originalrapporten fra 13. november bevares med ny oppfølgingslenke; utviklingsplanen viser dagens status uten å lukke P7/P9.
+- Denne kjøringen gjelder dagens filer, ikke en ny historikkskann eller generell sikkerhetsgodkjenning. Ingen nøkkelverdier er vist, eksterne skannetjenester brukt, funksjonalitet endret eller Git-historikk omskrevet. Eksterne blindsett og test:blind er ikke brukt; den sporede blindfixturen er utelatt. pnpm test:links bestod med 209 filmål i 12 dokumenter; pnpm format:check og git diff --check bestod. Nye rapportfiler ga null Gitleaks-kandidater. 1548 øvrige skannede filer og HEAD er uendret. Egne midlertidige prosjekt-/mediekopier er ryddet; redigerte logger/omfang er bevart utenfor Git. Ingen commit eller push.
+
 ### 16. november 2026 – sladdet preview-nøkler i historisk byggbevis
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.
