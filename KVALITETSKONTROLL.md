@@ -1,6 +1,10 @@
 # Kvalitetskontroll av KI-Produktutvikling
 
-## Gjeldende teknisk kontrollgrunnlag – 11. november 2026
+## Gjeldende CI-policy – 16. november 2026
+
+CI bruker én Node 24-jobb; engines.node er >=24.0.0 <25.0.0. Docker og prisjobb bruker samme hovedversjon. Node 22 er ikke lenger løpende støttet/testet. Historiske kontroller under er bevart; de er ikke bevis for nye revisjoner. [CI-kontrollen](docs/CI-KONTROLL.md) fører dagens lokale kontroll og begrensninger. GitHub-verifisering er fortsatt blokkert av organisasjonens IP-liste, før Node-oppsett.
+
+## Historisk teknisk kontrollgrunnlag – 11. november 2026
 
 Siste komplette kontroll gjelder **commit c22f1dc**, kjørt i lokal Docker/Linux arm64 på **Node 22.18.0 og 24.22.2**. Begge bestod frossen installasjon, formatering, typekontroll, **206/206 Node-tester**, **3/3 Python-tester**, faktisk innholdssynk, Markdown-lenker, serverbygg og Pages-bygg. Se [kontrollrapporten](docs/CI-KONTROLL.md) for kommandoer, avvik, runtime, kilde-/bildeidentitet og bevis. Testene brukte fixtures og simulert modelltransport; ingen priskilder eller modeller ble kalt.
 

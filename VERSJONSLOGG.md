@@ -6,6 +6,14 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 16. november 2026 – CI og versjonskrav samlet på Node 24
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Erstattet CI-matrisen med én jobb, Node 24, og satt engines.node til >=24.0.0 <25.0.0. Node 22 utgår fra løpende støtte. Prisjobben bruker allerede 24; Docker beholder sitt bevisst låste Node 24-bilde. Jobbinnhold, action-SHA-er, minst mulige rettigheter og persist-credentials:false er beholdt.
+- Avstemt README, arkitektur, kvalitets-/CI-kontroll, første-push-sjekkliste, dokumentasjonsoversikt og utviklingsplan. Historiske tester/bevis for Node 22 er bevart. Sjekklisten krever nå Node 24 og forklarer at et eventuelt gammelt Node 22-statuskrav må fjernes etter GitHub-verifisering. Funksjonsregister og produksjonsstatus er uendret.
+- Lokalt på macOS arm64, Node 24.22.1/pnpm 11.25.0/Python 3.9.6: pnpm check bestod med 278 Node-/tre Python-tester, innholdssynk, 227 filmål i 12 dokumenter, format, typer og serverbygg. pnpm build:pages bestod også; begge bygg genererte 28 sider. Frossen offline-installasjonskontroll med ignore-scripts og eksisterende avhengigheter bestod uten endret låsefil. Ruby YAML/JSON-kontroll bekreftet én CI-jobb uten matrise og konsistente versjonsvalg. Ingen ny Docker-/GitHub-/actionlint-kjøring; url.parse()-deprekasjonsadvarsel uten testfeil. Generert next-env.d.ts-endring er tilbakeført. Etter dokumentoppdatering bestod pnpm test:links (228 filmål i 12 dokumenter), pnpm format:check og git diff --check. IP-blokkeringen er fortsatt en separat administratoravklaring; ingen godkjent runner er gjettet eller GitHub-innstilling endret. Ingen priskilde-/modell-/blindkjøring, commit eller push.
+
 ### 16. november 2026 – rotårsak til CI-feilen bekreftet: IP-liste
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

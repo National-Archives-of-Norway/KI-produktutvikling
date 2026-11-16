@@ -1,4 +1,19 @@
-# Lokal CI-kontroll – 11. november 2026
+# CI-kontroll
+
+## Én Node 24-jobb – 16. november 2026
+
+CI er forenklet fra matrisen 22.18.0/24 til én jobb med navnet Node 24. setup-node bruker 24 og check-latest; engines.node er >=24.0.0 <25.0.0. Prisjobben bruker allerede 24, og Docker beholder sitt låste Node 24-bilde. Dette samkjører hovedversjonen, ikke nødvendigvis patchversjonene. Node 22 er ikke lenger støttet eller løpende testet. Historiske Node 22-resultater og bevis nedenfor er bevart.
+
+Jobbens innhold, action-SHA-er, persist-credentials:false, contents:read og manuell dispatch er uendret. Ingen priskilde-/modellkall er lagt til. Branch protection må kreve Node 24 etter en reell vellykket kjøring; et eventuelt gammelt Node 22-krav må fjernes. IP-blokkeringen under checkout består og gjør at ny GitHub-verifisering fortsatt avventer godkjent runner. Lokal kontroll av arbeidskopi basert på 7355ca8 bestod på macOS arm64 med Node 24.22.1, pnpm 11.25.0 og Python 3.9.6:
+
+| Kontroll                                                  | Resultat                                                                                                              |
+| --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| pnpm install --frozen-lockfile --offline --ignore-scripts | Exit 0, gjenbruk av eksisterende avhengigheter; låsefil uendret                                                       |
+| pnpm check                                                | Exit 0: format, typer, 278/278 Node-tester, 3/3 Python-tester, innholdssynk, 227 filmål i 12 dokumenter og serverbygg |
+| pnpm build:pages                                          | Exit 0, statisk eksport og out/.nojekyll; begge bygg genererte 28 sider                                               |
+| YAML-/versjonskontroll med Ruby YAML/JSON                 | Én jobb uten strategy/matrise, jobbnavn Node 24, CI/prisjobb velger 24, engines avgrenser til 24                      |
+
+Installasjonskontrollen var ikke en ny nettverksinstallasjon eller kjøring av installasjonsskript. url.parse()-deprekasjonsadvarsel uten testfeil. Byggets genererte next-env.d.ts-endring er tilbakeført. Ingen Docker-/modellvolumendring, faktiske pris-/modellkall, blindmåling eller GitHub-/produksjonsverifisering. Dokumentoppdateringen etter bygg er kontrollert separat: pnpm test:links bestod med 228 filmål i 12 dokumenter, pnpm format:check og git diff --check bestod. Full workflowkjøring på GitHub og actionlint er ikke kjørt i denne økten.
 
 ## Bekreftet checkout-blokkering – 16. november 2026
 
@@ -12,7 +27,9 @@ Ifølge [GitHubs organisasjonsveiledning](https://docs.github.com/en/enterprise-
 
 Lokal pnpm check og pnpm build:pages på samme kildebase 8a14484 bestod i den foregående undersøkelsen: 278 Node-/tre Python-tester, innholdssynk, 224 filmål, format, typer og begge bygg på macOS Node 24.22.1. Ingen funksjons- eller workflowkode er endret siden. Denne loggvurderingen er ikke en ny Node 22/Linux-/Actions-kjøring eller en reproduksjon av IP-reglene. Kun dokumentkontroller kjøres etter denne oppdateringen. De daterte kontrollene fra 11. november nedenfor er historikk og beholder sine opprinnelige begrensninger.
 
-Utført av Codex (OpenAI), uten underagenter. Repoet har fortsatt ingen remote; ingen workflow er kjørt på GitHub og ingen innstilling er endret. Den opprinnelige lokale kontrollen ble utført før commit c22f1dc; Docker-oppfølgingen nedenfor tester denne commiten.
+## Historisk lokal kontroll – 11. november 2026
+
+Utført av Codex (OpenAI), uten underagenter. Repoet hadde da ingen remote; ingen workflow er kjørt på GitHub og ingen innstilling er endret. Den opprinnelige lokale kontrollen ble utført før commit c22f1dc; Docker-oppfølgingen nedenfor tester denne commiten.
 
 Gjeldende dokumentasjon finnes i [dokumentasjonsoversikten](DOKUMENTASJON.md); historiske kontrollresultater nedenfor beholder sine opprinnelige revisjoner.
 
