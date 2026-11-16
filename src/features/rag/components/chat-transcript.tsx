@@ -28,16 +28,15 @@ export function ChatTranscript({
       aria-relevant="additions text"
     >
       {turns.map((turn) => (
-        <div
-          className="chat-turn"
-          key={turn.id}
-          ref={turn.id === turns.at(-1)?.id ? latest : undefined}
-        >
+        <div className="chat-turn" key={turn.id}>
           <div className="chat-question">
             <span>Du</span>
             <p>{turn.question}</p>
           </div>
-          <div className="chat-response">
+          <div
+            className="chat-response"
+            ref={turn.id === turns.at(-1)?.id ? latest : undefined}
+          >
             <span>Kunnskapsassistenten</span>
             {!turn.result && !turn.error && <p>Finner relevant veiledning …</p>}
             {turn.error && (

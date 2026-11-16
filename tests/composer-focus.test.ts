@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import {
   shouldIgnoreSend,
   focusTargetAfterRequest,
+  restoreFocusAfterRequest,
 } from "../src/features/rag/composer-focus.ts";
 import {
   beginRequest,
@@ -59,3 +60,27 @@ for (const interaction of ["dobbel Enter", "dobbeltklikk"]) {
     assert.ok(beginRequest(slot, 4));
   });
 }
+
+test("avslutning fra Send/body gir fokus uten rulling til tekstfeltet", () => {
+  const calls: unknown[] = [];
+  const input = {
+    focus(options?: { preventScroll?: boolean }) {
+      calls.push(options);
+    },
+  };
+  const controls = { send: {}, body: {}, input };
+  restoreFocusAfterRequest(controls.send, controls);
+  restoreFocusAfterRequest(controls.body, controls);
+  assert.deepEqual(calls, [{ preventScroll: true }, { preventScroll: true }]);
+  restoreFocusAfterRequest(input, controls);
+  restoreFocusAfterRequest({}, controls);
+  restoreFocusAfterRequest(null, controls);
+  assert.equal(
+    calls.length,
+    2,
+    "annen valgt kontroll og eksisterende feltfokus beholdes",
+  );
+  assert.doesNotThrow(() =>
+    restoreFocusAfterRequest(controls.body, { ...controls, input: null }),
+  );
+});

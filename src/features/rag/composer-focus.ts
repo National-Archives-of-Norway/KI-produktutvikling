@@ -12,3 +12,16 @@ export function focusTargetAfterRequest<T>(
     return elements.input;
   return null;
 }
+
+// Gjenopprett tastaturfokus uten å flytte leseposisjonen til skjemaet.
+export function restoreFocusAfterRequest(
+  active: object | null,
+  elements: {
+    send: object | null;
+    body: object;
+    input: { focus(options?: { preventScroll?: boolean }): void } | null;
+  },
+): void {
+  if (focusTargetAfterRequest<object>(active, elements) === elements.input)
+    elements.input?.focus({ preventScroll: true });
+}

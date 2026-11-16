@@ -6,6 +6,13 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 16. november 2026 – Spør KI beholder starten på svaret synlig
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Rettet samspillet mellom svarrulling og fokus: retur fra Send/body til spørsmålsfeltet bruker preventScroll:true. Tastaturfokus bevares uten å dra visningen ned til skjemaet. Rulleankeret er flyttet fra siste spørsmål til starten av siste svar. Fokus på en annen valgt kontroll stjeles fortsatt ikke.
+- Oppdatert funksjonsregister, arkitektur og utviklingsplan. Regresjonen prøver fokusretur uten rulling og bevaring av valgt kontroll. 9/9 fokuserte tester, hele pnpm test med 279 Node-/tre Python-tester og innholdssynk, pnpm typecheck og Docker-produksjonsbygg bestod. Bare portalcontaineren på 3005 er gjenskapt; Ollama-ID/starttid og modellvolummetadata er uendret. Faktisk Qwen-/nettleserprøve bekrefter synlig svarstart på 23,92 px (før −499,08 px), med feltfokus beholdt. [Kort rapport og ett skjermbilde](docs/rag/2026-11-16/chat-scroll.md) viser omfanget; skjermleser, 320 px og dialog er ikke manuelt retestet. Etter dokumentoppdatering bestod pnpm format:check, pnpm test:links (230 filmål i 12 dokumenter) og git diff --check. Dette er ikke en ny full WCAG-/skjermleser- eller produksjonsgodkjenning. Ingen commit eller push.
+
 ### 16. november 2026 – CI og versjonskrav samlet på Node 24
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

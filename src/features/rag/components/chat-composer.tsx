@@ -5,7 +5,7 @@ import TextField from "@mui/material/TextField";
 import SendRounded from "@mui/icons-material/SendRounded";
 import type { FormEventHandler } from "react";
 import { useEffect, useRef, useState } from "react";
-import { shouldIgnoreSend, focusTargetAfterRequest } from "../composer-focus";
+import { shouldIgnoreSend, restoreFocusAfterRequest } from "../composer-focus";
 import { QUESTION_LIMIT } from "../contracts";
 import { prepareQuestionInput, questionInputFeedback } from "../question-input";
 export function ChatComposer({
@@ -37,12 +37,11 @@ export function ChatComposer({
     wasBusy.current = busy;
     const doc = input.current?.ownerDocument;
     if (!finished || !doc) return;
-    const target = focusTargetAfterRequest<Element>(doc.activeElement, {
+    restoreFocusAfterRequest(doc.activeElement, {
       send: send.current,
       body: doc.body,
       input: input.current,
     });
-    if (target === input.current) input.current?.focus();
   }, [busy]);
   const composing = useRef(false);
   const [wasTruncated, setWasTruncated] = useState(false);
