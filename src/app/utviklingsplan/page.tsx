@@ -7,13 +7,13 @@ export const dynamic = "force-static";
 
 export default async function DevelopmentPlanPage() {
   const markdown = await readFile(
-    join(process.cwd(), "UTVIKLINGSPLAN.md"),
+    join(process.cwd(), "UTVIKLINGSPLAN-OFFENTLIG.md"),
     "utf8",
   );
   return (
     <RepositoryDocument
       title="Utviklingsplan"
-      eyebrow="FREMDRIFT OG PRODUKSJONSKRAV"
+      eyebrow="STATUS OG VEIEN VIDERE"
       markdown={markdown}
     />
   );

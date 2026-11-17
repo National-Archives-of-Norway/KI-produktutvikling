@@ -2,6 +2,10 @@
 
 Avstemt **16. november 2026** av **Codex (OpenAI)**, uten underagenter. Denne oversikten viser hvilke dokumenter som brukes til hva. Den er ikke en ny test, lovvurdering eller produksjonsgodkjenning.
 
+## Offentlige utviklingsdokumenter – 17. november 2026
+
+[Offentlig versjonslogg](../VERSJONSLOGG-OFFENTLIG.md) og [offentlig utviklingsplan](../UTVIKLINGSPLAN-OFFENTLIG.md) er redaksjonelle sammendrag som vises på nettstedets dokumentruter. De detaljerte arbeidsdokumentene i tabellen nedenfor beholdes for intern oppfølging og historikk. Offentlig nettsted uten innlogging er nå besluttet; eldre beskrivelser av lukket pilot nedenfor er historiske. Detaljer om driftsmiljø og faktiske publiseringer må fortsatt dokumenteres fra gjennomførte kontroller.
+
 ## Gjeldende innganger
 
 | Dokument                                                                   | Bruk og avgrensning                                                                                                                                                                          |

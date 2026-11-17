@@ -6,6 +6,14 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 17. november 2026 – offentlige utgaver av versjonslogg og utviklingsplan
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Opprettet VERSJONSLOGG-OFFENTLIG.md og UTVIKLINGSPLAN-OFFENTLIG.md med brukerrettet endringsoversikt, lokal utviklingsstatus, prioriteringer og begrensninger. Ingen oppdiktede versjonsnummer, datoer for offentlig lansering eller godkjenninger. Interne arbeidsdokumenter og historikk er bevart.
+- Nettstedets eksisterende dokumentruter viser de offentlige filene, med fungerende lenker mellom dem. Docker inkluderer de offentlige filene i stedet for intern versjonslogg/plan. Register, README, arkitektur og AGENTS er oppdatert slik at offentlige sammendrag vedlikeholdes sammen med relevant arbeid. Offentlig repo-/historikktilgang og øvrig innholdsreview er ikke endret.
+- Funksjonstesten forventet fortsatt planlagt innlogging etter forrige omfangsendring. Forventningen er rettet til at funksjonen er tatt ut, i samsvar med brukerbeslutningen; lagt til kontroll av offentlige dokumentbeskrivelser i samme test. Ingen commit, push eller publisering. Kjørende Docker er ikke erstattet i denne oppgaven. Kontroller: pnpm check bestod (292 Node-/tre Python-tester, innholdssynk, lenker, format, typer og serverbygg); pnpm test:search bestod 126/126 og Pages-bygg bestod. Ferdigbygd HTML i begge varianter har offentlig tekst og riktige dokumentlenker, uten undersøkte interne kontrollmarkører. Første HTML-prøve forventet avsluttende skråstrek også i serverbygget; kontrollen er rettet til å godta Nexts faktiske lenkenormalisering og gjentatt med nytt serverbygg. Ingen nettleser-/skjermleserprøve, Docker-bygg eller ny modelltest.
+
 ### 17. november 2026 – Docker oppdatert fra bb20299
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

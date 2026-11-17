@@ -224,4 +224,6 @@ Prisene vedlikeholdes i `src/content/pricing/snapshot.json`. `pnpm pricing:sync`
 
 Vesentlige kunnskapshull og motstridende kilder registreres i [FRICTION.md](FRICTION.md) etter kriteriene i AGENTS.md. Triage foreslår tiltak; gjennomføring og sletting av vurderte oppføringer krever bestilling eller bekreftelse.
 
+Nettstedets /versjonslogg/ og /utviklingsplan/ viser [offentlig versjonslogg](VERSJONSLOGG-OFFENTLIG.md) og [offentlig utviklingsplan](UTVIKLINGSPLAN-OFFENTLIG.md). De er redaksjonelle sammendrag for brukere og bygges inn ved utrulling. Detaljert VERSJONSLOGG.md og UTVIKLINGSPLAN.md beholdes som arbeidsgrunnlag; de er ikke kilden til disse offentlige sidene. Skillet gjelder nettsidene og Docker-bildet, ikke tilgang til Git-repoet eller historikken.
+
 Oppdater versjonslogg, relevante planpunkter og funksjonsregister ved vesentlige endringer etter [AGENTS.md](AGENTS.md). Rediger felles innhold og register fremfor kopier i sider/RAG. Historikk er bevart. Det godkjente skjermbildeutvalget er ryddet og arkivert med [flyttelogg](docs/bevis/2026-11-13/skjermbildeopprydding.md); øvrige bevislagringsforslag er ikke innført.

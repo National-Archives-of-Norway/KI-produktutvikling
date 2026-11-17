@@ -7,7 +7,7 @@ export const dynamic = "force-static";
 
 export default async function ChangelogPage() {
   const markdown = await readFile(
-    join(process.cwd(), "VERSJONSLOGG.md"),
+    join(process.cwd(), "VERSJONSLOGG-OFFENTLIG.md"),
     "utf8",
   );
   return (

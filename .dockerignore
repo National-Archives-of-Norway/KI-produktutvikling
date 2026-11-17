@@ -6,8 +6,8 @@
 !next.config.ts
 !tsconfig.json
 !next-env.d.ts
-!VERSJONSLOGG.md
-!UTVIKLINGSPLAN.md
+!VERSJONSLOGG-OFFENTLIG.md
+!UTVIKLINGSPLAN-OFFENTLIG.md
 !src/
 !src/**
 !public/

@@ -20,7 +20,7 @@ COPY --from=builder --chown=node:node /work/src ./src
 COPY --from=builder --chown=node:node /work/public ./public
 COPY --from=builder --chown=node:node /work/scripts/rag-server.mjs ./scripts/rag-server.mjs
 COPY --from=builder --chown=node:node /work/scripts/start-portal.mjs ./scripts/start-portal.mjs
-COPY --from=builder --chown=node:node /work/package.json /work/next.config.ts /work/tsconfig.json /work/VERSJONSLOGG.md /work/UTVIKLINGSPLAN.md ./
+COPY --from=builder --chown=node:node /work/package.json /work/next.config.ts /work/tsconfig.json /work/VERSJONSLOGG-OFFENTLIG.md /work/UTVIKLINGSPLAN-OFFENTLIG.md ./
 # Eierskap lar Next håndtere sin lokale runtime-cache uten root.
 RUN chown node:node /work
 USER node

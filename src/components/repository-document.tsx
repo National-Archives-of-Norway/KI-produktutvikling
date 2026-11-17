@@ -2,8 +2,8 @@ import { Fragment } from "react";
 import Link from "next/link";
 
 const documentRoutes: Record<string, string> = {
-  "VERSJONSLOGG.md": "/versjonslogg/",
-  "UTVIKLINGSPLAN.md": "/utviklingsplan/",
+  "VERSJONSLOGG-OFFENTLIG.md": "/versjonslogg/",
+  "UTVIKLINGSPLAN-OFFENTLIG.md": "/utviklingsplan/",
 };
 
 function inline(text: string) {

@@ -31,6 +31,12 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - Avstem planen med versjonsloggen og funksjonsregisteret, og bevar tidligere datostemplet historikk. Ved endringer uten betydning for plan eller produksjonsstatus trenger planen ingen kunstig ny oppføring.
 - Dette er en vedlikeholdsregel for den som utfører arbeidet, ikke en automatisk vurdering av kode eller en periodisk jobb. Ikke presenter et bestått bygg som fullført produksjonsgodkjenning.
 
+## Vedlikehold offentlige utviklingsdokumenter
+
+- Nettstedets versjonslogg og utviklingsplan bruker VERSJONSLOGG-OFFENTLIG.md og UTVIKLINGSPLAN-OFFENTLIG.md. Oppdater den offentlige loggen ved vesentlige brukerrettede endringer og den offentlige planen ved endret prioritering, omfang eller status, i samme arbeidsøkt som de detaljerte arbeidsdokumentene.
+- Skriv for lesere som vil følge utviklingen. Utelat interne driftslogger, lokale stier, containernavn, kontrollsummer, agentnotater og interne tilgangsavklaringer. Ikke kopier intern historikk automatisk. Bevar faglige begrensninger og skill utviklet, testet og faktisk publisert; ikke oppfinn versjonsnummer, lanseringsdato eller godkjenning.
+- Rene lokale omstarter og driftsnotater hører normalt bare hjemme i den detaljerte loggen. De offentlige filene er ikke en kopi av funksjonsregisteret. Bevar eksisterende intern historikk, og kontroller begge offentlige sider i byggvariantene ved endret dokumentkobling.
+
 ## Test RAG-søket ved innholdsendringer
 
 - Ved endringer i sider, ressurser, søkenøkkelord, kunnskapsutvalg eller innholdsavledet funksjons-/pris-/oversiktstekst: kjør `pnpm test:search` før ferdigmelding eller commit. Kjør også `pnpm test:content-sync` når felles innhold eller RAG-utvalget endres. Registrer resultat og eventuelle begrensninger i versjonsloggen.

@@ -147,7 +147,7 @@ export function getFeatures(): Feature[] {
       id: "versjonslogg",
       title: "Versjonslogg",
       description:
-        "Les endringer, utførende agent og dokumenterte kontroller. Siden bygges fra prosjektets versjonslogg.",
+        "Følg nye funksjoner, forbedringer og rettinger i en offentlig, brukerrettet versjonslogg. Utviklet og publisert status skilles tydelig.",
       status: "available",
       href: "/versjonslogg/",
       routes: ["/versjonslogg/"],
@@ -157,7 +157,7 @@ export function getFeatures(): Feature[] {
       id: "utviklingsplan",
       title: "Utviklingsplan",
       description:
-        "Se leverte funksjoner, faseoversikt og krav som gjenstår før produksjonssetting. Siden bygges direkte fra prosjektets utviklingsplan.",
+        "Se hva som er utviklet, hva som prioriteres før offentlig åpning, og mulige senere utvidelser. Den offentlige planen viser status uten interne arbeids- og driftsnotater.",
       status: "available",
       href: "/utviklingsplan/",
       routes: ["/utviklingsplan/"],

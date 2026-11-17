@@ -106,10 +106,19 @@ test("Spør KI og oversikten bruker samme funksjoner og forbehold", () => {
     assert.ok(source.text.includes(feature.description));
   }
   assert.equal(retrieve("funksjonalitetsoversikt")[0]?.id, "funksjonalitet");
+  // Offentlig nettsted uten innlogging er valgt; tidligere planlagt auth er trukket.
   assert.equal(
-    getFeatures().find((feature) => feature.id === "tilgang")!.status,
-    "planned",
+    getFeatures().some((feature) => feature.id === "tilgang"),
+    false,
   );
+  const changelog = getFeatures().find(
+    (feature) => feature.id === "versjonslogg",
+  )!;
+  const plan = getFeatures().find(
+    (feature) => feature.id === "utviklingsplan",
+  )!;
+  assert.match(changelog.description, /offentlig, brukerrettet versjonslogg/);
+  assert.match(plan.description, /offentlige planen/);
   // Nå faktisk prøvd lokalt med Qwen; dette godkjenner ikke ekstern/delt drift.
   const model = getFeatures().find((feature) => feature.id === "modell")!;
   assert.equal(model.status, "beta");
