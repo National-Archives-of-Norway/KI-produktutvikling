@@ -113,11 +113,6 @@
   }
 }
 @media (max-width: 650px) {
-  .hero h1 {
-    margin: 14px 0;
-  }
-}
-@media (max-width: 650px) {
   .hero .actions {
     gap: 10px;
   }
@@ -144,7 +139,12 @@
   position: relative;
   z-index: 1;
 }
+.hero-heading {
+  display: contents;
+}
 .hero h1 {
+  position: relative;
+  z-index: 1;
   letter-spacing: -2.5px;
 }
 .hero h1 span {
@@ -170,12 +170,6 @@
 @media (max-width: 1050px) {
   .hero p {
     max-width: 490px;
-  }
-}
-@media (max-width: 650px) {
-  .hero h1 {
-    font-size: clamp(42px, 10vw, 60px);
-    letter-spacing: -1.5px;
   }
 }
 @media (max-width: 650px) {
@@ -280,53 +274,6 @@
     height: 96px;
   }
 }
-@media (max-width: 950px) {
-  .hero-art {
-    position: relative;
-    top: auto;
-    right: auto;
-    margin: 40px auto 0;
-    width: 230px;
-    height: 230px;
-  }
-}
-@media (max-width: 950px) {
-  .hero-art .brand-mark {
-    width: 80px;
-    height: 80px;
-  }
-}
-@media (max-width: 650px) {
-  .hero-art {
-    width: 170px;
-    height: 170px;
-    margin-top: 30px;
-  }
-}
-@media (max-width: 650px) {
-  .hero-art .brand-mark {
-    width: 62px;
-    height: 62px;
-    margin-left: 6px;
-  }
-}
-@media (max-width: 650px) {
-  .hero-art-ring {
-    inset: 14px;
-  }
-}
-@media (max-width: 650px) {
-  .hero-art-node-one {
-    top: 18px;
-    right: 28px;
-  }
-}
-@media (max-width: 650px) {
-  .hero-art-node-two {
-    bottom: 18px;
-    left: 28px;
-  }
-}
 
 /* Decorative motion stays separate from the stationary logo and page content. */
 .hero-art {
@@ -393,19 +340,62 @@
     --orbit-radius: 139px;
   }
 }
-@media (max-width: 950px) {
-  .hero-art {
-    --orbit-radius: 114px;
-  }
-}
 @media (prefers-reduced-motion: reduce) {
   .hero-art-node,
   .hero-art-halo {
     animation: none;
   }
 }
+
+/* På smale skjermer følger illustrasjonen overskriftens to linjer. */
+@media (max-width: 950px) {
+  .hero-heading {
+    --hero-title-size: clamp(26px, 7.6vw, 64px);
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    justify-content: start;
+    gap: clamp(12px, 2.5vw, 28px);
+    margin: 24px 0;
+  }
+  .hero-heading h1 {
+    margin: 0;
+    font-size: var(--hero-title-size);
+    line-height: 1.09;
+    letter-spacing: -0.035em;
+    white-space: nowrap;
+  }
+  .hero-heading .hero-art {
+    --orbit-radius: calc(var(--hero-title-size) * 0.872 - 1px);
+    position: relative;
+    inset: auto;
+    margin: 0;
+    width: calc(var(--hero-title-size) * 2.18);
+    height: calc(var(--hero-title-size) * 2.18);
+    border: 0;
+  }
+  .hero-heading .hero-art::before {
+    inset: 0;
+  }
+  .hero-heading .hero-art-visual {
+    inset: 10%;
+    border: 1px solid color-mix(in srgb, var(--accent) 70%, transparent);
+    border-radius: 50%;
+  }
+  .hero-heading .hero-art-halo {
+    inset: -12.5%;
+  }
+  .hero-heading .hero-art-ring {
+    inset: 8%;
+  }
+  .hero-heading .hero-art .brand-mark {
+    width: 38%;
+    height: 38%;
+    margin-left: 3%;
+  }
+}
 @media (max-width: 650px) {
-  .hero-art {
-    --orbit-radius: 84px;
+  .hero-heading {
+    margin: 14px 0;
   }
 }

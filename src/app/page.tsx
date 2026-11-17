@@ -15,11 +15,14 @@ export default function Home() {
         <div className="eyebrow">
           <span className="dot" /> KUNNSKAP SOM BLIR TIL PRAKSIS
         </div>
-        <h1>
-          Utvikle ideer.
-          <br />
-          <span>Bygg med KI.</span>
-        </h1>
+        <div className="hero-heading">
+          <h1>
+            Utvikle ideer.
+            <br />
+            <span>Bygg med KI.</span>
+          </h1>
+          <HeroIllustration />
+        </div>
         <p>
           Et felles sted for kunnskap, metoder og verktøy. Utforsk hvordan
           kunstig intelligens kan støtte god produktutvikling.
@@ -32,7 +35,6 @@ export default function Home() {
             Utforsk ressursene <span aria-hidden="true">↓</span>
           </PortalButton>
         </div>
-        <HeroIllustration />
       </section>
       <section id="ressurser" className="resources">
         <div className="eyebrow">

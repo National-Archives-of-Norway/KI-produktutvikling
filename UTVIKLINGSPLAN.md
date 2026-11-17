@@ -152,6 +152,7 @@ Arbeidsgrunnlaget for P8 er konkretisert i [avklaringsplanen for de 8 uavklarte 
 
 - [x] Integrere `@digitalarkivet/mui-theme` og eget tema uten privat GitHub-tilgang.
 - [x] Implementere valgt arklogo/favicon, futuristisk forside, navigasjon, bunntekst, katalog, artikkeloppsett og chat.
+- [x] Plassere forsideanimasjonen ved siden av den tolinjede overskriften ved opptil 950 px (17. november), med samme høyde og skalert logo/ringer. Nettlesermål ved 320/375/560/768/950/1024/1440 px bekrefter plassering og fravær av vannrett rulling; tastaturpause/-start bestod. [Lokal kontroll](docs/design/2026-11-17/hero-responsive.md). Docker er ikke bygget på nytt; ingen ny samlet tilgjengelighetsgodkjenning.
 - [x] Legge til rolige bevegelser i illustrasjonens punkter og ytre ring, med klikk på selve illustrasjonen for pause/start, tastaturbetjening og statisk visning ved redusert bevegelse.
 - [x] Tilpasse grunnleggende responsivitet, fokus, kontrast og redusert bevegelse, og utføre avgrensede kontroller med dokumenterte rettinger.
 - [x] Opprette WCAG-matrise, testhistorikk og lokalt erklæringsgrunnlag med bekreftet kontaktadresse.

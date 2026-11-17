@@ -41,7 +41,7 @@ export function getFeatures(): Feature[] {
     {
       id: "forside",
       title: "Forside",
-      description: `En felles inngang til veiledninger, verktøy og kunnskapsassistenten, med snarveier til å lære, prøve og dele. Forsideillustrasjonen har rolig bevegelse som kan pauses/startes ved klikk på illustrasjonen eller med tastatur, og slås av ved redusert bevegelse. Anbefalt prøveoppgave: ${recommended.title}.`,
+      description: `En felles inngang til veiledninger, verktøy og kunnskapsassistenten, med snarveier til å lære, prøve og dele. Forsideillustrasjonen har rolig bevegelse som kan pauses/startes ved klikk på illustrasjonen eller med tastatur, og slås av ved redusert bevegelse. På smale skjermer står illustrasjonen til høyre for overskriften og har samme høyde som de to tekstlinjene. Anbefalt prøveoppgave: ${recommended.title}.`,
       status: "available",
       href: "/",
       routes: ["/"],

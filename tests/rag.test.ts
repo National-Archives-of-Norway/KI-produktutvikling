@@ -538,3 +538,12 @@ test("reservekilder avdupliseres og begrenses til tre", () => {
     1,
   );
 });
+
+test("responsiv forsideillustrasjon kan forklares fra funksjonsregisteret", () => {
+  const source = retrieve(
+    "Hvor plasseres forsideillustrasjonen på smale skjermer?",
+  )[0];
+  assert.equal(source?.id, "funksjonalitet");
+  assert.match(source.text, /illustrasjonen til høyre for overskriften/);
+  assert.match(source.text, /samme høyde som de to tekstlinjene/);
+});

@@ -6,6 +6,14 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 17. november 2026 – forsideanimasjonen følger overskriften på smale skjermer
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Flyttet illustrasjonen til samme overskriftsrad i responsiv visning opptil 950 px. Høyden følger de to tekstlinjene; logo, ringer og bevegelsesradius skaleres sammen. To tekstlinjer, avsnitt og knapper holdes adskilt; tidligere skrivebordsstørrelse/-plassering er beholdt. Fjernet tidligere mobilregler som la illustrasjonen under knappene.
+- [Faktisk nettleserkontroll](docs/design/2026-11-17/hero-responsive.md) ved 320/375/560/768/950/1024/1440 px bekrefter rett plassering og ingen vannrett rulling. Enter pauser og mellomrom starter igjen ved 320 px, med riktig etikett og beholdt fokus. Ett 320 px-skjermbilde er lagret. Ingen ny skjermleser-/samlet WCAG-godkjenning.
+- Funksjonsregister og fase 3 er avstemt. Ny søkeregresjon bekrefter at den brukerrettede layoutbeskrivelsen kan finnes i felles kildegrunnlag. 126/126 søketester bestod uten modell- eller blindkall. pnpm test:content-sync, pnpm typecheck, pnpm format:check, pnpm test:links (239 filmål) og git diff --check bestod. Eksisterende utviklingsserver på 3000 er beholdt. Ingen Docker-ombygging, commit eller push.
+
 ### 17. november 2026 – Docker-portal oppdatert fra 2b7908cc
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.
