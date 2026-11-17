@@ -2,7 +2,7 @@
 
 Sist oppdatert: **17. november 2026**. Utførende agent ved denne gjennomgangen: **Codex (OpenAI)**.
 
-**Status: Fungerende lokal prototype; ikke klar for produksjon eller deling av internt innhold.** Lokal funksjonalitet og modelladaptere er implementert. Drift, innlogging, faglig godkjenning og samlet lanseringskontroll gjenstår. Første delte miljø skal være en **lukket pilot**. Offentlig publisering vurderes senere, etter en egen beslutning.
+**Status: Fungerende lokal prototype; ikke klar for produksjon eller deling av internt innhold.** Lokal funksjonalitet og modelladaptere er implementert. Drift, faglig godkjenning og samlet lanseringskontroll gjenstår. **Beslutning fra brukeren 17. november 2026: nettstedet skal være offentlig uten innlogging eller annen autentiseringsmekanisme.** Dette erstatter tidligere krav om lukket pilot. Bare offentlig godkjent innhold skal publiseres; misbruksvern for Spør KI og beskyttelse av modell-/driftsgrensesnitt gjenstår. Beslutningen om retning er ikke en utført publisering.
 
 **Før GitHub – oppfølging 16. november:** [Ny kontroll av dagens filer](docs/sikkerhet/2026-11-16/status-for-github.md) fant ingen bekreftede nøkkelverdier; fire skannerkandidater ble verifisert som filkontrollsummer. Preview-nøklene er sladdet i dagens manifest, mens gammel historikk er bevart og ikke skannet på nytt. Skjermbildeutvalget er ryddet, men PDF-er og arkiverte bilder inneholder fortsatt navn/mandatopplysninger. Godkjent repo-eier/tilgang, innholdstillatelse, identifiserende metadata, øvrig bevislagring og valg av prisjobb må avklares før opplasting til valgt GitHub-miljø. Ingen personlig konto forutsettes. Blinddata er unntatt. Dette følger første-push-sjekklisten og P7/P9 uten å lukke produksjonskrav eller innholdsgodkjenninger.
 
@@ -63,9 +63,9 @@ Reglene er også lagt i `AGENTS.md`, og gjelder fremtidig agentarbeid i prosjekt
 - **Omfang nå:** Oppstartsveiledning, retningslinjeutkast, ressurskatalog, Spør KI, Oversikt med assistenter/MCP-status/priser, informasjon om teamet og KI-prat, tilgjengelighets-, personvern- og cookie-utkast, versjonslogg og funksjonalitetsoversikt. Nyheter og egne agenter er mulige senere tillegg, ikke et krav til første pilot.
 - **Teknologi:** Next.js, TypeScript, MUI og `@digitalarkivet/mui-theme`, med portalens eget futuristiske komponent-/designlag. Publisert npm-pakke brukes uten tilgang til designbibliotekets private GitHub-repo.
 - **Utvikling og versjonering:** Lokal utvikling og Git er etablert. Portalrepoets origin peker til nasjonalarkivet/KI-produktutvikling, og main følger origin/main. Brukerens skjermbilder bekrefter privat repo og første push av 8a14484 (16. november). Begge CI-jobbene stopper i checkout/fetch; vedlagt logg bekrefter HTTP 403 fordi runnerens IP ikke er tillatt. Godkjent runner/IP-oppsett avventer administratoravklaring. Tilgangsregler, standardgren og utrulling er ikke godkjent.
-- **Drift:** Driftsplattform, domene og ansvar er ikke valgt. Dagens løsning starter Next.js og RAG på lokal loopback. Pages finnes som statisk byggvariant, ikke som besluttet miljø for lukket pilot eller modellgenerering.
-- **Tilgang:** Brukerne skal i første delte miljø avgrenses til godkjente GitHub-brukere hos virksomheten. Organisasjon/team, nødvendige abonnementsegenskaper og konkret tilgangsløsning er ikke endelig avklart. Innlogging og autorisering er ikke implementert.
-- **GitHub-rettigheter:** Portalen skal ikke ha skrivetilgang til andre koderepoer. En eventuell medlemskontroll skal få et avgrenset formål og minimale nødvendige rettigheter.
+- **Drift:** Driftsplattform, domene og ansvar er ikke valgt. Dagens løsning starter Next.js og RAG på lokal loopback. Pages finnes som statisk byggvariant, ikke som besluttet offentlig driftsplattform; modellgenerering krever server.
+- **Tilgang:** Offentlig nettsted uten autentisering er besluttet av brukeren 17. november. Ingen medlemskontroll eller innlogging skal innføres; bare offentlig godkjente kilder og vedlegg skal deles.
+- **GitHub-rettigheter:** Portalen skal ikke ha skrivetilgang til andre koderepoer. Nettstedet trenger ingen GitHub-medlemskontroll.
 - **Innhold:** Felles innholdsdata brukes av sider, katalog, anbefalinger og RAG. Dette sikrer teknisk samsvar, men innebærer ikke faglig godkjenning. Internt materiale skal ikke legges i klientdata, `public/`, offentlige bygg eller dagens RAG-korpus.
 - **Modell:** Lokal Ollama og eksternt OpenAI-kompatibelt Chat Completions-API er støttet i kode. Qwen3:4b er konfigurert i lokal Docker Compose og prøvd med faktiske kildebaserte svar. Virksomhetsgodkjenning og eksternt modell-API er fortsatt ikke avklart/verifisert. API-nøkkelen skal bare være en serverhemmelighet.
 
@@ -86,43 +86,98 @@ Referanser: [versjonsloggen](VERSJONSLOGG.md) og kontrollgrunnlaget ovenfor. Cha
 
 ## Hva gjenstår før produksjonssetting?
 
-Ingen av kravene nedenfor er ferdig godkjent. Alle eiere er foreløpig **ikke avklart**; rolleangivelsene viser hvem som må utpekes. «Lukket pilot» betyr også et delt miljø og krever beskyttelse før tilgang gis.
+Ingen av kravene nedenfor er ferdig godkjent. Alle eiere er foreløpig **ikke avklart**; rolleangivelsene viser hvem som må utpekes. Nettstedet skal være offentlig uten autentisering. P2 er omdefinert til offentlig innholdsgrense; det tidligere innloggingskravet er trukket tilbake, ikke implementert.
 
-| ID  | Prioritet / tidspunkt        | Gjenstående leveranse og ferdigkriterium                                                                                                                                                                                                                                                                                                  | Rolle som må avklares                                |
-| --- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
-| P1  | Før delt pilot               | Beslutte driftsplattform, domene, tilgangsløsning, målgruppe og ansvar. Første miljø skal være lukket; offentlig utrulling skal ikke skje som standard.                                                                                                                                                                                   | Prosjekteier og plattform/drift                      |
-| P2  | Før delt pilot               | Implementere og verifisere innlogging og autorisering. Avvis brukere uten tilgang også på direkte sideadresser, vedlegg og `/api/rag`. Test utlogging, utløpt/fjernet medlemskap og feil i identitetskontrollen.                                                                                                                          | Teknisk ansvarlig og identitetsforvaltning           |
-| P3  | Før delt pilot               | Etablere drift for Next.js og RAG med HTTPS, intern ruting og prosessovervåking. RAGs tillatte origins er nå konfigurerbare og lokalt testet; Next.js sin interne RAG-adresse peker fortsatt på loopback. Test fra faktisk nettadresse med korrekte tillatte origins og interne tjenesteadresser.                                         | Plattform/drift                                      |
-| P4  | Før delt pilot               | Etablere eget organisasjonsrepo, PR-/review-regler og CI som kjører relevante tester, format, typer og bygg. `pnpm check` inkluderer nå hele testløpet, og CI-definisjonen er klargjort; faktisk Actions-kjøring, bot-PR-kontroll og obligatoriske statuskrav må verifiseres. Gi utrullingen minimale rettigheter og bruk server-secrets. | Teknisk ansvarlig og repoansvarlig                   |
-| P5  | Før pilot med genererte svar | Velge godkjent leverandør/modell, avklare databehandling og konfigurere URL/modell/nøkkel. Test faktiske svar, kildestøtte, manglende treff, timeout og leverandørfeil. Hvis dette utsettes, må piloten uttrykkelig lanseres som kildebasert veiledning uten modellgenerering.                                                            | Produkteier, modellansvarlig og personvern/sikkerhet |
-| P6  | Før delt pilot               | Innføre tilgangs- og misbruksvern for API-et, rate-/kostnadsgrenser og avklart kapasitet. Konfigurerbar modellkapasitet per prosess (1–8, standard 1) er lokalt testet, men er ikke brukerbasert ratebegrensning. Bekreft at nøkkel og rå leverandørfeil ikke eksponeres i det utrullede miljøet.                                         | Teknisk ansvarlig og drift                           |
-| P7  | Før pilotinnhold tas i bruk  | Godkjenne første innhold, vedlegg og profilressurser, og utpeke innholdsansvarlige. Behold utkast-/Beta-merking til faktisk gjennomgang er gjort. Suisse-filer skal bare brukes hvis rettighetene er avklart; reserveskrift kan beholdes.                                                                                                 | Fag-/innholdseier og profilansvarlig                 |
-| P8  | Før produksjonsgodkjenning   | Fullføre skjermleser, faktisk tekstforstørring/zoom, kontrast-/fokustilstander og relevante nettlesere på dagens sider og chat. Oppdatere testgrunnlag/erklæring, avklare godkjenner og endelig URL og ferdigstille formell erklæring etter virksomhetens prosess.                                                                        | Tilgjengelighetsansvarlig og godkjenner              |
-| P9  | Før produksjonsgodkjenning   | Verifisere overvåking, feilhåndtering, logg-/lagringsrutiner, hendelsesansvar og tilbakeføring i faktisk miljø. Gjennomføre sikkerhets-/avhengighetskontroll og kontrollere personverninformasjon mot reell databehandling.                                                                                                               | Drift, sikkerhet og personvern                       |
-| P10 | Før bredere lansering        | Gjennomføre lukket brukertest, rette prioriterte funn og godkjenne leveransen. Offentlig publisering krever en separat vurdering av innhold, tilgangsskille, drift og lanseringskrav.                                                                                                                                                     | Prosjekteier med fag- og driftsansvarlige            |
+| ID  | Prioritet / tidspunkt          | Gjenstående leveranse og ferdigkriterium                                                                                                                                                                                                                                                                                                                                                                          | Rolle som må avklares                                |
+| --- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| P1  | Før offentlig lansering        | Beslutte driftsplattform, domene, målgruppe, offentlig omfang og ansvar. Ingen innlogging skal innføres.                                                                                                                                                                                                                                                                                                          | Prosjekteier og plattform/drift                      |
+| P2  | Før offentlig lansering        | Verifisere at alle publiserte sider, vedlegg, søkekilder og byggutdata tåler offentlig tilgang. Internt innhold skal ikke publiseres eller skjules bare i brukergrensesnittet. Ingen autentisering planlegges.                                                                                                                                                                                                    | Teknisk ansvarlig og innholdseier                    |
+| P3  | Før offentlig lansering        | Etablere drift for Next.js og RAG med HTTPS, intern ruting og prosessovervåking. RAGs tillatte origins er nå konfigurerbare og lokalt testet; Next.js sin interne RAG-adresse peker fortsatt på loopback. Test fra faktisk nettadresse med korrekte tillatte origins og interne tjenesteadresser.                                                                                                                 | Plattform/drift                                      |
+| P4  | Før offentlig lansering        | Organisasjonsrepo er opprettet og første push er bekreftet av brukeren; verifiser tilgang, standardgren, PR-/review-regler og CI som kjører relevante tester, format, typer og bygg. `pnpm check` inkluderer nå hele testløpet, og CI-definisjonen er klargjort; faktisk Actions-kjøring, bot-PR-kontroll og obligatoriske statuskrav må verifiseres. Gi utrullingen minimale rettigheter og bruk server-secrets. | Teknisk ansvarlig og repoansvarlig                   |
+| P5  | Før offentlig modellgenerering | Velge godkjent leverandør/modell, avklare databehandling og konfigurere URL/modell/nøkkel. Test faktiske svar, kildestøtte, manglende treff, timeout og leverandørfeil. Hvis dette utsettes, må lanseringen uttrykkelig lanseres som kildebasert veiledning uten modellgenerering.                                                                                                                                | Produkteier, modellansvarlig og personvern/sikkerhet |
+| P6  | Før offentlig Spør KI          | Innføre anonymt misbruksvern, rate-/kostnadsgrenser og avklart kapasitet ved app eller gateway. Origins og prosessgrense erstatter ikke ratebegrensning. Modell-/administrasjonsgrensesnitt skal ikke eksponeres; servernøkler og rå leverandørfeil skal ikke lekke.                                                                                                                                              | Teknisk ansvarlig og drift                           |
+| P7  | Før innhold publiseres         | Godkjenne første innhold, vedlegg og profilressurser, og utpeke innholdsansvarlige. Behold utkast-/Beta-merking til faktisk gjennomgang er gjort. Suisse-filer skal bare brukes hvis rettighetene er avklart; reserveskrift kan beholdes.                                                                                                                                                                         | Fag-/innholdseier og profilansvarlig                 |
+| P8  | Før produksjonsgodkjenning     | Fullføre skjermleser, faktisk tekstforstørring/zoom, kontrast-/fokustilstander og relevante nettlesere på dagens sider og chat. Oppdatere testgrunnlag/erklæring, avklare godkjenner og endelig URL og ferdigstille formell erklæring etter virksomhetens prosess.                                                                                                                                                | Tilgjengelighetsansvarlig og godkjenner              |
+| P9  | Før produksjonsgodkjenning     | Verifisere overvåking, feilhåndtering, logg-/lagringsrutiner, hendelsesansvar og tilbakeføring i faktisk miljø. Gjennomføre sikkerhets-/avhengighetskontroll og kontrollere personverninformasjon mot reell databehandling.                                                                                                                                                                                       | Drift, sikkerhet og personvern                       |
+| P10 | Før offentlig lansering        | Gjennomføre representativ brukertest, rette prioriterte funn og dokumentere lanseringsbeslutning. Åpen tilgang er valgt; dato, omfang og faktisk publisering må fortsatt godkjennes.                                                                                                                                                                                                                              | Prosjekteier med fag- og driftsansvarlige            |
 
 Tilgjengelighetsgrunnlag og konkrete uavklarte punkter finnes i [WCAG-kontrollen](docs/tilgjengelighet/WCAG-KONTROLL.md) og [erklæringsutkastet](docs/tilgjengelighet/TILGJENGELIGHETSERKLAERING.md). Disse dokumentene skal oppdateres fra nye resultater; denne planoppdateringen er ikke en ny tilgjengelighetsrevisjon.
 
+## Sjekkliste for offentlig lansering – 17. november 2026
+
+Arbeidsgrunnlag: commit 34623a1 og de daterte kontrollene ovenfor. Sjekklisten konkretiserer P1–P10; den er ikke en lanseringsgodkjenning. Ingen ansvarlig person, dato for oppstart eller beslutning om driftsplattform er fastsatt her. Rolleforslagene under må bekreftes og erstattes med faktiske navn. Avkrysning krever lenke til resultat eller beslutning, testet revisjon/miljø og hvem som godkjente.
+
+### 1. Lokalt arbeid mens vi venter
+
+- [ ] **P1 – Lag lanseringsbeskrivelsen:** beskriv målgruppe, konkrete arbeidsoppgaver, foreslått deltakergruppe, tillatt testinnhold og hva lanseringen skal lære oss. Legg frem alternativene med og uten modellgenerering for beslutning.
+- [ ] **P2 – Kontroller offentlig innholdsgrense:** gjennomgå sider, vedlegg, RAG-kilder og byggutdata for innhold som ikke skal være offentlig. Test anonym tilgang og bekreft at serverhemmeligheter og interne data ikke følger med. Innlogging og medlemskap er ute av omfanget.
+- [ ] **P3 – Lag utrullingsoppskriften:** dokumenter konfigurasjon, porter, helsesjekker og stopp/start for valgt plattform når den er avklart. Next.js og RAG skal komme fra samme revisjon; byggport og tjenesteport må samsvare. Modellfiler og hemmeligheter skal holdes utenfor Git og appbildet.
+- [ ] **P4 – Kontroller lanseringskandidaten:** kjør pnpm check og pnpm build:pages på revisjonen som skal deles. Bruk prisfixturer og simulert modell i automatiske tester. Registrer resultat, faktisk Node-/pnpm-versjon og commit; tidligere grønne kontroller gjelder sine egne revisjoner. Ikke kjør ekte prisjobb eller blindsett som del av dette.
+- [ ] **P5 – Lag modellprøven:** velg representative spørsmål om skills, Copilot-retningslinjer, godkjente MCP-er og personvern, samt spørsmål uten støtte. Definer forventet kilde og nødvendige forbehold før modelltesten. Skill søketreff fra faktisk generert svar. Lokal Qwen-prøve er teknisk bevis, ikke modellgodkjenning.
+- [ ] **P6 – Forbered API-vernet:** lag tester og foreslå rategrense egnet for anonyme brukere, maksimal kapasitet og håndtering av overbelastning. Dagens prosessgrense erstatter ikke ratebegrensning. Kontroller avbrudd, timeout, 429 og at feilsvar ikke inneholder nøkler eller rå leverandørfeil; endelige grenser må besluttes.
+- [ ] **P7 – Lag innholdsutvalget:** list lanseringens sider, skills, vedlegg og profilressurser, med foreslått eier, godkjenningsstatus og siste gjennomgang. Marker uavklart innhold for faglig beslutning; ikke fjern Beta-/utkaststatus som om review er utført. Ved innholdsendringer: kjør test:search og relevant test:content-sync.
+- [ ] **P8 – Gjennomfør aktuelle lokale restkontroller:** bruk de åtte uavklarte kravene i gjeldende WCAG-kontroll, test faktisk skjermleser og zoom der verktøy finnes, og retest senere chat-/animasjonsendringer. Dokumenter det som fortsatt ikke kan testes; oppdater rapport og erklæring fra resultatene. Dette punktet er ikke krysset av av tidligere deltester.
+- [ ] **P9 – Forbered drifts- og personverngrunnlaget:** beskriv hvilke logger, spørsmål, kildeutdrag og modellforespørsler som kan oppstå, hvem som får tilgang og foreslått sletting. Lag prosedyre for hendelser, sikkerhetsoppdatering og tilbakeføring til forrige bilde. Reell plattform-/identitetslogging må bekreftes i delt miljø.
+- [ ] **P10 – Lag brukertestplanen:** velg oppgaver for å finne en ressurs, forstå retningslinjer og bruke Spør KI. Avtal hvordan funn meldes og prioriteres, og foreslå kriterier for å fortsette, stoppe eller utvide lanseringen. Ikke samle inn chatinnhold eller andre personopplysninger uten avklart behov og behandling.
+
+### 2. Administrator og fagansvarlige må avklare
+
+Alle avklaringer nedenfor er åpne. Rollen er et forslag til mottaker, ikke en tildelt oppgave eller en bekreftet godkjenning.
+
+| Krav | Avklaring som må tas                                                                                                                                                | Rolle som må utpekes                               | Dokumentasjon som trengs                                                                                                                                     |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| P1   | Velg plattform, offentlig adresse, omfang, eier og driftsansvar.                                                                                                    | Prosjekteier og plattform/drift                    | Datert beslutning med ansvarlige og lanseringsomfang.                                                                                                        |
+| P2   | Godkjenn hva som kan være offentlig i sider, vedlegg, RAG-kilder og bygg. Ingen identitetsleverandør eller medlemskontroll skal etableres.                          | Innholdseier og teknisk ansvarlig                  | Innholdsreview og kontroll av publiseringsartefakter, uten internt innhold.                                                                                  |
+| P3   | Avklar HTTPS/domene, sertifikater, tjenestenett, ressursrammer og hvor portal, RAG og eventuell modell kjører.                                                      | Plattform/drift                                    | Driftsbeskrivelse og nettverks-/utrullingsoppsett. Pages leverer statiske sider; modellgenerering krever egen serverdrift.                                   |
+| P4   | Avklar godkjent runner-gruppe og eksakte labels, tillatt utgående IP, tilgang til repoet, standardgren og review-/statuskrav. Avgjør om prisjobben skal være aktiv. | GitHub-/runneradministrator og repoansvarlig       | Bekreftede runner-/IP-regler, grønn CI / Node 24 på lanseringskandidaten og dokumentert PR-/rettighetskontroll. Se første-push-sjekklisten.                  |
+| P5   | Godkjenn modell, driftssted og databruk, eller beslutt uttrykkelig kildebasert lansering uten generering. Gratis/lokal modell er ikke automatisk godkjent.          | Produkteier, modellansvarlig, sikkerhet/personvern | Omfangsbeslutning og eventuell modell-/leverandørvurdering; nøkkel bare på server hvis API brukes.                                                           |
+| P6   | Beslutt rate-/kostnadsgrenser og kapasitet for anonyme besøkende; velg app-/gatewayvern.                                                                            | Teknisk ansvarlig og drift                         | Testet misbruksvern, overbelastning og beskyttelse av interne modellgrensesnitt.                                                                             |
+| P7   | Godkjenn innhold, vedlegg, opplysninger om personer, skill-status og rettigheter til profil/font. Utpek innholdsansvarlige.                                         | Fag-/innholdseier og profilansvarlig               | Review av det konkrete lanseringsutvalget; uavklart innhold holdes utenfor til det er godkjent.                                                              |
+| P8   | Utpek tilgjengelighetsansvarlig/godkjenner, avklar gjenstående hjelpemiddeltester og behandling av dokumenterte barrierer før lansering.                            | Tilgjengelighetsansvarlig og prosjekteier          | Oppdatert testgrunnlag, kjent restliste og beslutning om lanseringsomfang. Formell erklæring og samlet produksjonsgodkjenning gjenstår etter opprinnelig P8. |
+| P9   | Avklar faktisk logging, lagring/sletting, behandlingsansvar og eventuelle avtaler; utpek hendelsesansvarlig og godkjenn driftsberedskap.                            | Drift, sikkerhet og personvern                     | Verifisert dataflyt, oppdatert personvern-/cookieinformasjon og drifts-/tilbakeføringsprøve. Lokal audit uten funn erstatter ikke dette.                     |
+| P10  | Velg brukertestgruppe, støttekanal, lanseringskriterier og ansvar for stopp/tilbakeføring.                                                                          | Prosjekteier med fag- og driftsansvarlige          | Brukertestrapport og dokumentert beslutning om offentlig lansering.                                                                                          |
+
+### 3. Felles kontroll i faktisk driftsmiljø – før offentlig åpning
+
+Disse punktene kan forberedes lokalt, men må bekreftes på riktig adresse og revisjon i det valgte miljøet.
+
+- [ ] **P1/P2:** navngitt prosjekteier har besluttet lanseringsomfanget. Sider, vedlegg og det tiltenkte offentlige API-et virker uten innlogging og inneholder bare godkjente offentlige data. Modellserver, administrasjon og interne driftsgrensesnitt kan ikke nås direkte fra internett.
+- [ ] **P3/P4:** HTTPS, intern ruting, portal-/RAG-helse, samme revisjon og korrekte origins er kontrollert. GitHub-checkout og hele Node 24-CI er grønne på riktig kandidat. Repo-/workflowrettigheter og valgt prisflyt er verifisert. IP-/runnerblokkeringen er ikke lukket før faktisk kjøring lykkes.
+- [ ] **P5/P6:** bekreft ved API- og nettleserprøve at valgt modus faktisk gjelder. Ved generering: godkjent modell gir kildebaserte svar og tåler ingen treff, feil, timeout, avbrudd og forventet samtidighet. Uten generering: adapteren er deaktivert og brukergrensesnittet beskriver kildebasert veiledning. Misbruks-/ratevern og nøkkelbeskyttelse er prøvd i begge tilfeller der relevant.
+- [ ] **P7/P8:** lanseringsinnholdet er faglig gjennomgått; navigering, tastatur, fokus, chat, animasjon og vedlegg er kontrollert på kandidatversjonen. Tilgjengelighetsfunn og begrensninger er dokumentert og behandlet av ansvarlig; lanseringsbeslutningen erstatter ikke lovkrav eller formell tilgjengelighetsvurdering.
+- [ ] **P9:** faktisk nettleser-/serverlogging, lagring og databehandling stemmer med informasjonen til brukeren. Overvåking, hendelseskontakt og tilbakeføring er prøvd. Ta ny sikkerhets-/avhengighetskontroll av lanseringskandidaten; den daterte 17. november-kontrollen er et tidligere grunnlag.
+- [ ] **P10:** prosjekteier og utpekte fag-/driftsansvarlige har registrert en uttrykkelig beslutning om å åpne nettstedet offentlig. Registrer adresse, revisjon/bildereferanse, ansvarlige, testlenker, åpne forhold, tiltak og godkjent omfang. Ukjente forhold skal ikke fremstilles som akseptert risiko.
+
+**Stopp før offentlig åpning** hvis internt innhold eller serverhemmeligheter eksponeres, databehandlingen mangler nødvendig avklaring, modellen brukes uten godkjenning, eller driften mangler ansvar og håndtering av feil. Tilgjengelighet, sikkerhet og personvern må vurderes for det faktiske offentlige miljøet.
+
+### 4. Etter offentlig lansering
+
+- [ ] **P10:** gjennomfør brukertestene, registrer faktisk nytte og barrierer, og rett prioriterte funn med retest.
+- [ ] **P7–P9:** oppdater innhold, testgrunnlag, erklæringer og driftsrutiner når faktiske funn krever det.
+- [ ] **P1–P10:** avstem alle krav på nytt før produksjonsgodkjenning eller utvidelse. Utvidet innhold eller modellbruk krever ny vurdering av berørte krav.
+
+**Løpende vedlikehold:** oppdater denne sjekklisten sammen med faseoppgaver og versjonslogg når en beslutning eller kontroll faktisk foreligger. Bevar daterte bevis og før hvem/hva/hvor/revisjon.
+
 ## Faseoversikt
 
-| Fase | Leveranse                                            | Status 17. november 2026                                                                                                                   |
-| ---- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1    | Omfang, ansvar og tilgangsvalg                       | Målgruppe og første funksjoner avklart; eierskap, drift og tilgangsmodell åpne                                                             |
-| 2    | Teknisk grunnmur og arbeidsflyt                      | Lokal Next.js-sikkerhetspatch og søkeregresjon kontrollert; CI blokkeres av IP-listen. Godkjent runner, grønn CI og review-regler gjenstår |
-| 3    | Design og tilgjengelighet                            | Design og avgrensede kontroller utført; samlet tilgjengelighetsgodkjenning gjenstår                                                        |
-| 4    | MVP 1: lokal portal og forberedelse til lukket pilot | Lokal leveranse klar; ikke delt eller brukertestet som pilot                                                                               |
-| 5    | Servermiljø, modellkobling og utrulling              | Adaptere/frister/kapasitet simulert testet; lokal Qwen prøvd; delt drift og godkjenning gjenstår                                           |
-| 6    | MVP 2: innlogging og beskyttet tilgang               | Ikke implementert; nødvendig før første delte pilot                                                                                        |
-| 7    | MVP 3: versjonerte skills og distribusjon            | Lokalt bibliotek og katalogintegrasjon på plass; review og distribusjon gjenstår                                                           |
-| 8    | MVP 4: forvaltning og produksjonsgodkjenning         | Ikke godkjent; produksjonskrav P1–P10 følges opp                                                                                           |
+| Fase | Leveranse                                    | Status 17. november 2026                                                                                                                   |
+| ---- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1    | Omfang, ansvar og tilgangsvalg               | Offentlig tilgang uten innlogging besluttet; eierskap, driftsplattform og lanseringsomfang gjenstår                                        |
+| 2    | Teknisk grunnmur og arbeidsflyt              | Lokal Next.js-sikkerhetspatch og søkeregresjon kontrollert; CI blokkeres av IP-listen. Godkjent runner, grønn CI og review-regler gjenstår |
+| 3    | Design og tilgjengelighet                    | Design og avgrensede kontroller utført; samlet tilgjengelighetsgodkjenning gjenstår                                                        |
+| 4    | MVP 1: lokal portal og offentlig lansering   | Lokal leveranse klar; P1–P10 gjelder offentlig lansering uten innlogging. Drift, innholdsreview og brukertest gjenstår                     |
+| 5    | Servermiljø, modellkobling og utrulling      | Adaptere/frister/kapasitet simulert testet; lokal Qwen prøvd; delt drift og godkjenning gjenstår                                           |
+| 6    | Offentlig innholdsgrense (tidligere MVP 2)   | Innloggingskravet trukket tilbake 17. november; offentlig innholdsgrense må verifiseres                                                    |
+| 7    | MVP 3: versjonerte skills og distribusjon    | Lokalt bibliotek og katalogintegrasjon på plass; review og distribusjon gjenstår                                                           |
+| 8    | MVP 4: forvaltning og produksjonsgodkjenning | Ikke godkjent; produksjonskrav P1–P10 følges opp                                                                                           |
 
-Fase 5 og 6 må samordnes før MVP 1 deles. Fase 7 kan utvikles parallelt, men full automatisk skill-installasjon er ikke et krav til første pilot med lesbart innhold. Pages beholdes foreløpig som bygg-/demovariant; det er ikke en beslutning om offentlig hosting.
+Fase 5 og kontrollen av offentlig innholdsgrense må fullføres før deling. Fase 7 kan utvikles parallelt, men full automatisk skill-installasjon er ikke et krav til første pilot med lesbart innhold. Pages beholdes foreløpig som bygg-/demovariant; det er ikke en beslutning om offentlig hosting.
 
 ## Fase 1 – Avklaringer og prosjektgrunnlag
 
 - [x] Definere målgruppe og portalens praktiske formål.
 - [x] Velge første innholdsområder og eget futuristisk design basert på publisert MUI-tema.
-- [x] Beslutte at første delte miljø skal være lukket, og at offentlig publisering utsettes.
+- [x] Avklare retningen: brukeren besluttet 17. november offentlig nettsted uten autentisering. Tidligere lukket pilot er erstattet; publisering er ikke utført.
 - [ ] Utpeke prosjekteier, teknisk ansvarlig, innholdsansvarlige og driftsansvarlig.
 - [ ] Bekrefte GitHub-organisasjon/team, tilgangsmodell og egnet abonnement/oppsett uten å anta at et privat repo beskytter nettstedet.
 - [ ] Velge driftsplattform og domene, og avklare hvilke data og verktøy første pilot kan bruke.
@@ -165,12 +220,12 @@ Arbeidsgrunnlaget for P8 er konkretisert i [avklaringsplanen for de 8 uavklarte 
 - [x] Tilpasse grunnleggende responsivitet, fokus, kontrast og redusert bevegelse, og utføre avgrensede kontroller med dokumenterte rettinger.
 - [x] Opprette WCAG-matrise, testhistorikk og lokalt erklæringsgrunnlag med bekreftet kontaktadresse.
 - [ ] Gjennomføre resterende manuelle kontroller, inkludert dagens nye sider, innhold og chatvisning.
-- [ ] Prøve innlogging og tilgangsfeil med tastatur, hjelpemidler og mobil når funksjonene finnes.
+- [ ] Prøve anonym navigering, API-feil og kapasitetsvarsler med tastatur, hjelpemidler og mobil; innlogging er tatt ut av omfanget.
 - [ ] Ferdigstille tilgjengelighetsvurdering og erklæring med navngitt godkjenner og faktisk nettadresse.
 
 **Ferdig når:** P8 er dokumentert for den aktuelle leveransen. Tidligere delkontroller er ikke full samsvarsgodkjenning.
 
-## Fase 4 – MVP 1: lokal portal og lukket pilot
+## Fase 4 – MVP 1: lokal portal og offentlig lansering
 
 - [x] Implementere forside med katalog, Lær/Prøv/Del og anbefalt ressurs fra felles innhold.
 - [x] Implementere oppstartsveiledning med retningslinjelenke, retningslinjeutkast og Om med KI-prat og mandatvedlegg.
@@ -191,7 +246,7 @@ Arbeidsgrunnlaget for P8 er konkretisert i [avklaringsplanen for de 8 uavklarte 
 - [x] Rette og regresjonsteste relevansen i det lokale kildesøket (10. november 2026): 26 spørsmål med positive og negative forventninger, retningsbestemt prefiks, relevansterskel og deterministisk rangering. Se [før-/etter-evalueringen](docs/rag/2026-11-10/relevans.md). Dette erstatter ikke oppgavebasert brukertesting eller verifisering av faktisk modellgenerering.
 - [x] Implementere nettstedskart, tilgjengelighetsside, versjonslogg og funksjonalitetsoversikt.
 - [ ] Faglig gjennomgå og godkjenne representativt pilotinnhold, inkludert skill-beskrivelse og PDF.
-- [ ] Dele via lukket testmiljø først når tilgang, drift og aktuelle krav P1–P9 er håndtert for pilotens omfang.
+- [ ] Publisere offentlig uten innlogging først når drift, offentlig innholdsgrense og aktuelle krav P1–P10 er dokumentert håndtert.
 - [ ] Gjennomføre oppgavebasert brukertest og prioritere forbedringer.
 
 **Ferdig når:** En avgrenset, autorisert brukergruppe kan finne en veiledning og en ressurs, få forståelig hjelp og melde problemer. Lokal funksjonalitet er klar, men pilotleveransen er ikke fullført.
@@ -218,7 +273,20 @@ Arbeidsgrunnlaget for P8 er konkretisert i [avklaringsplanen for de 8 uavklarte 
 
 **Ferdig når:** P3, P5 (eller eksplisitt avgrensning til veiledning uten modell), P6 og relevante deler av P9 er testet i det delte miljøet. Pages alene leverer ikke disse serverfunksjonene.
 
-## Fase 6 – MVP 2: innlogging og beskyttet tilgang
+## Fase 6 – Offentlig innholdsgrense (tidligere innlogging)
+
+Brukerbeslutning 17. november 2026: innlogging, sesjoner og medlemskontroll er tatt ut av omfanget. Dette er et trukket krav, ikke en ferdig implementert funksjon. Bare innhold som kan deles offentlig skal inngå i nettstedet og RAG.
+
+- [ ] Gjennomgå sider, vedlegg, kildegrunnlag og byggutdata for offentlig publisering (P2/P7).
+- [ ] Kontrollere at nøkler, interne filer og modell-/administrasjonsgrensesnitt ikke eksponeres (P2/P6/P9).
+- [ ] Teste anonym bruk på endelig adresse og faktisk vern mot misbruk av Spør KI.
+
+**Ferdig når:** offentlig innholdsgrense og anonym bruk er kontrollert på lanseringskandidaten. Faglig godkjenning og driftsvern gjenstår til dette er dokumentert.
+
+<details>
+<summary>Tidligere plan for innlogging – trukket tilbake 17. november 2026</summary>
+
+## Fase 6 – Offentlig innholdsgrense (tidligere MVP 2)
 
 - [ ] Velge identitets-/tilgangsløsning og avgrenset GitHub-medlemskontroll uten skriverettigheter til andre repoer.
 - [ ] Implementere innlogging, sikre sesjoner og utlogging, og kontrollere tilgang på serveren.
@@ -228,6 +296,8 @@ Arbeidsgrunnlaget for P8 er konkretisert i [avklaringsplanen for de 8 uavklarte 
 - [ ] Før private kilder innføres: etablere tilgangsfiltrert henting, søk og mellomlagring, og kontrollere at private data ikke følger med offentlig bygg.
 
 **Ferdig når:** P2 er verifisert og uautoriserte brukere ikke kan hente beskyttet innhold eller bruke beskyttede API-er. Dette er en forutsetning for første deling, ikke en oppgave som utsettes til etter piloten.
+
+</details>
 
 ## Fase 7 – MVP 3: skills og distribusjon
 
@@ -335,23 +405,25 @@ Avsnittene frem til fase 8 bevarer tidligere kjøringer og deres daværende rest
 
 ## Neste arbeidsbolk
 
-1. **Avklar P1:** Velg ansvarlige, driftsmiljø og metode for lukket tilgang. Dette styrer videre implementering.
-2. **Gjennomfør P2–P4 og P6:** Implementer tilgang, produksjonsruting, CI og API-vern i det valgte miljøet.
-3. **Velg om modellgenerering skal være med i piloten:** Gjennomfør P5 eller avtal at piloten bare gir kildebasert veiledning.
+Bruk sjekklisten for offentlig lansering ovenfor som arbeidsliste. Lokale forberedelser kan gjøres parallelt med administrator- og fagavklaringer; ingen offentlig åpning før kontrollene i faktisk miljø og oppstartsbeslutningen er dokumentert.
+
+1. **Avklar P1:** Velg ansvarlige, driftsmiljø og offentlig lanseringsomfang. Dette styrer videre implementering.
+2. **Gjennomfør P2–P4 og P6:** Kontroller offentlig innholdsgrense og implementer produksjonsruting, CI og anonymt API-vern i det valgte miljøet.
+3. **Velg om modellgenerering skal være med ved lansering:** Gjennomfør P5 eller avtal kildebasert veiledning uten generering.
 4. **Arbeid parallelt med P7–P8:** Gjennomgå innhold/skill og fullfør tilgjengelighetskontrollen; ikke vent til lanseringsdagen.
 5. **Verifiser P9–P10:** Prøv drift/tilbakeføring og gjennomfør lukket brukertest før produksjonsgodkjenning.
 
 ## Beslutninger og avklaringer
 
-| Tema                   | Gjeldende retning                                                     | Gjenstående beslutning                                                     |
-| ---------------------- | --------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| Publiseringsrekkefølge | Lokal utvikling → lukket pilot → eventuell offentlig portal           | Hvem kan få pilottilgang og hvordan den beskyttes                          |
-| GitHub                 | Lokale repoer for portal og Skills; ingen remote i portalrepoet       | Organisasjonsrepo, abonnement/oppsett, PR-regler og utrullingsrettigheter  |
-| Innhold                | Praktisk nytte, felles kilder og tydelig Beta-/utkaststatus           | Navngitte eiere og faglig godkjenning                                      |
-| Modeller               | Lokal eller ekstern adapter; nøkkel kun på server                     | Godkjent leverandør/modell, databehandling og om generering inngår i pilot |
-| Drift                  | Next.js og RAG må driftes og utrulles samlet fra samme revisjon       | Plattform, domene, intern ruting, overvåking og driftsansvar               |
-| Pages                  | Statisk demo-/byggvariant beholdes lokalt                             | Om den får en senere rolle; offentlig demo er ikke prioritert nå           |
-| Forvaltning            | Plan, versjonslogg og funksjonsregister oppdateres i samme arbeidsøkt | Roller, PR-prosess og faste gjennomganger når samarbeid etableres          |
+| Tema                   | Gjeldende retning                                                                                 | Gjenstående beslutning                                                                   |
+| ---------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Publiseringsrekkefølge | Lokal utvikling → kontrollert offentlig lansering uten innlogging                                 | Offentlig innholdsutvalg, lanseringsdato og misbruksvern                                 |
+| GitHub                 | Portalens organisasjonsrepo og første push er bekreftet av brukeren; Skills har separat historikk | Verifisert tilgang/standardgren, runner/IP, grønn CI, PR-regler og utrullingsrettigheter |
+| Innhold                | Praktisk nytte, felles kilder og tydelig Beta-/utkaststatus                                       | Navngitte eiere og faglig godkjenning                                                    |
+| Modeller               | Lokal eller ekstern adapter; nøkkel kun på server                                                 | Godkjent leverandør/modell, databehandling og om generering inngår i pilot               |
+| Drift                  | Next.js og RAG må driftes og utrulles samlet fra samme revisjon                                   | Plattform, domene, intern ruting, overvåking og driftsansvar                             |
+| Pages                  | Statisk demo-/byggvariant beholdes lokalt                                                         | Om den får en senere rolle; offentlig demo er ikke prioritert nå                         |
+| Forvaltning            | Plan, versjonslogg og funksjonsregister oppdateres i samme arbeidsøkt                             | Roller, PR-prosess og faste gjennomganger når samarbeid etableres                        |
 
 ## Endring 9. november 2026
 

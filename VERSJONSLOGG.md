@@ -6,6 +6,22 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 17. november 2026 – offentlig nettsted uten autentisering
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Brukeren har besluttet offentlig tilgang uten innlogging. Oppdatert P1–P10, lanseringssjekklisten, faseoversikten og fase 6; tidligere innloggingsoppgaver er bevart som trukket historikk. Offentlig innholdsgrense erstatter medlemskontroll, mens API-misbruksvern, kapasitet, serverhemmeligheter og intern modellruting fortsatt må håndteres.
+- Første-push-sjekklisten har en datert merknad som erstatter tidligere tilgangsføringer med den nye retningen.
+- Fjernet planlagt innloggingsfunksjon fra funksjonsregisteret. Dette endrer planlagt omfang, ikke faktisk tilgangsvern i drift. Ingen publisering, autentiseringsendring, commit eller push er utført. Tidligere loggoppføring om lukket pilot beskriver retningen før denne beslutningen. Kontroller: 126/126 søketester, innholdssynk i isolert prosjektkopi, typekontroll, formatering og dokumentlenker bestod. Første synkforsøk stoppet ved lokal testport i sandkassen; ny kjøring med nødvendig tilgang bestod.
+
+### 17. november 2026 – konkret sjekkliste for lukket pilot
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Konkretisert P1–P10 i utviklingsplanen med lokale forberedelser, ti rollebaserte administrator-/fagavklaringer, felles kontroller i faktisk pilotmiljø og oppfølging etter oppstart. Hvert punkt krever beslutnings-/testgrunnlag med revisjon og ansvarlig før avkrysning. Ingen pilotkrav er erklært godkjent.
+- Tydeliggjort omfangsvalg med eller uten modellgenerering, krav før invitasjon og skillet mellom lokal kontroll, lukket pilot og produksjonsgodkjenning. P8/P9 beholder opprinnelig tidspunkt; nødvendige vern og vurderinger før delt bruk kan ikke utsettes. Faseoversikt/neste arbeidsbolk er avstemt, og foreldet tekst om manglende organisasjonsrepo/remote er korrigert mot eksisterende første-push-grunnlag.
+- Ingen funksjonskode, funksjonsregister, innholdsutvalg eller modellkonfigurasjon er endret. Ingen ny drifts-, tilgjengelighets- eller modelltest, commit eller push. Kontroller: pnpm test:search bestod 126/126, pnpm format:check bestod, pnpm test:links bekreftet 243 filmål i 12 dokumenter, og git diff --check bestod.
+
 ### 17. november 2026 – rettet gammel utviklingsprosess etter Next-oppgradering
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

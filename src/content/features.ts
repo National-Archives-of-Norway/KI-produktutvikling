@@ -173,13 +173,6 @@ export function getFeatures(): Feature[] {
       routes: ["/funksjonalitet/"],
       sitemapLabel: "Funksjonalitetsoversikt",
     },
-    {
-      id: "tilgang",
-      title: "Innlogging og internt innhold",
-      description:
-        "Tilgangsstyring for interne brukere og beskyttede ressurser er ikke implementert. At kildekoderepoet er privat, beskytter ikke i seg selv nettstedets innhold.",
-      status: "planned",
-    },
   ];
 }
 

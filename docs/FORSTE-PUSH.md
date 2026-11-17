@@ -1,5 +1,7 @@
 # Sjekkliste for første push
 
+**Ny retning 17. november 2026:** Brukeren har besluttet offentlig nettsted uten autentisering. Tidligere krav om lukket pilot/innlogging nedenfor er historisk og erstattes av gjeldende P1–P10 og sjekkliste for offentlig lansering i [utviklingsplanen](../UTVIKLINGSPLAN.md). Krav til runner/IP, CI, offentlig innholdsreview og API-misbruksvern gjelder fortsatt. Ingen publisering er utført ved denne dokumentoppdateringen.
+
 For repoansvarlig. **Oppdatert 16. november 2026 av Codex (OpenAI), uten underagenter.** Første push er gjennomført av brukeren via GitHub Desktop. Lokal origin peker til nasjonalarkivet/KI-produktutvikling; brukerens GitHub-skjermbilde viser privat repo og commit 8a14484 på main. Innstillinger og effektiv tilgang er ikke inspisert. Første delte miljø skal være en lukket pilot.
 
 Historisk lokal Docker/Linux arm64-kontroll av c22f1dc har bestått hele kommandorekken på Node 22.18.0 og 24.22.2, inkludert begge bygg. [Kontrollrapporten](CI-KONTROLL.md) dokumenterer dette; den erstatter ikke avkrysning av GitHub-punktene nedenfor. [Dokumentasjonsoversikten](DOKUMENTASJON.md) samler gjeldende status og utkast.
