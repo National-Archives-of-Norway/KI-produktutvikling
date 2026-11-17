@@ -34,3 +34,15 @@ SHA-256 for bildet: `9b65d92b51a2c3876f2e804fd772fd745a828175a7c1b8c9bc1c34f940f
 - pnpm typecheck, pnpm test:content-sync, pnpm format:check, pnpm test:links (239 filmål i 12 dokumenter) og git diff --check bestod.
 - Et separat forsøkt lokalmiljø på 3040 startet ikke fordi Next allerede kjørte på 3000; denne eksisterende serveren ble brukt og beholdt. Ingen eksisterende prosess ble stoppet.
 - Ingen Docker-ombygging, modellkall, blindmåling, priskildekall, commit eller push. Endringen vises i lokal utvikling; Docker-bildet må bygges på nytt for å vise den der. Midlertidig nettleserbredde er tilbakestilt.
+
+## Oppfølging: faktisk Docker-bygg fra d7b69ced
+
+Senere 17. november ble Docker-portalen bygget fra ren commit d7b69ced8c576e5f7c774bf35f39a712f1b8c45e og startet på 3005. Commitetikett og fem kilde-/dokumenthashverdier samsvarte; fire HTTP-sider og portal-/RAG-helse bestod. Modellcontainer og modellvolum/manifest ble bevart. Avsnittets tidligere «ingen Docker-ombygging» gjelder den opprinnelige utviklingsprøven.
+
+| Bredde | Overskriftshøyde | Illustrasjonshøyde | Ved siden / samme topp / før knapper | Vannrett rulling |
+| -----: | ---------------: | -----------------: | ------------------------------------ | ---------------- |
+|    320 |            56,67 |              56,68 | Ja                                   | Nei              |
+|    560 |            92,78 |              92,77 | Ja                                   | Nei              |
+|    950 |           139,52 |             139,52 | Ja                                   | Nei              |
+
+Målene er fra nettleseren på Docker-portalen, ikke fra CSS alene. Midlertidig visningsbredde er tilbakestilt; ingen ekstra skjermbildekopi er lagret. Ingen ny modellgenerering, skjermleserkontroll eller full testpakke. Dette oppfølgingsnotatet er skrevet etter bildet og inngår ikke i selve d7b69ced-bygget. Ingen commit eller push.

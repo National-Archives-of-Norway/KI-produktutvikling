@@ -6,6 +6,14 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 17. november 2026 – responsiv forside startet i Docker fra d7b69ced
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Bygget ki-produktutvikling:compose fra ren git archive av d7b69ced8c576e5f7c774bf35f39a712f1b8c45e, med commitetikett og gjenbruk av byggcache. Produksjonsbygg bestod; bare portalen ble gjenskapt med --no-deps --no-build. Kjørende bildereferanse er sha256:9102ef9df157572845c1c7b65b75d0c7a71fe22d26bc065a1e77e71653295c70. Fem SHA-256-kontroller av side, CSS, funksjonsregister, versjonslogg og utviklingsplan samsvarer med kildecommiten.
+- Forside, /spor/, /versjonslogg/ og /utviklingsplan/ ga HTTP 200 med nytt innhold. Faktisk nettleserkontroll på 3005 ved 320/560/950 px bekrefter animasjon til høyre for overskriften, samme topp og høyde, plassering før knappene og ingen vannrett rulling. [Kontrollgrunnlaget](docs/design/2026-11-17/hero-responsive.md) er supplert; tidligere skjermbilde er bevart uten ny kopi.
+- Portal healthy og RAG status=ok/generationEnabled=true. Ollama har samme container-ID/starttid og null omstarter; modellvolummetadata og modellmanifestets SHA-256 er uendret. Ingen ny nedlasting eller volumfjerning. Ingen ny full testpakke, Pages-bygg, modellgenerering, skjermleser-/produksjonsgodkjenning, commit eller push. Dette driftsnotatet og nye kontroll-/plannotater er skrevet etter bildet og inngår ikke i d7b69ced-bildet. pnpm test:links bestod med 240 filmål i 12 dokumenter; pnpm format:check og git diff --check bestod.
+
 ### 17. november 2026 – forsideanimasjonen følger overskriften på smale skjermer
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.
