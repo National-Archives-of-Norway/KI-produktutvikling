@@ -1,3 +1,4 @@
+import { copilotGuidelines } from "./pages/github-copilot.ts";
 import { mcpOverview } from "./pages/godkjente-mcper.ts";
 import { approvedAssistants } from "./pages/godkjente-ki-assistenter.ts";
 import { cookieInformation } from "./pages/informasjonskapsler.ts";
@@ -10,6 +11,7 @@ import type { SearchSource } from "../features/rag/search-source.ts";
 import { validateSearchKeywords } from "../features/rag/search-language.ts";
 
 export const contentPages: ContentPage[] = [
+  copilotGuidelines,
   mcpOverview,
   approvedAssistants,
   gettingStarted,
@@ -30,6 +32,20 @@ export type SourceSelection = {
 
 // Prose lives in page files. Selections contain references and optional search aliases only.
 const selections: SourceSelection[] = [
+  {
+    pageId: "github-copilot",
+    summary: "lead",
+    steps: [
+      "sikkerhet-tekst",
+      "personvern-tekst",
+      "kvalitet-liste",
+      "innstillinger-liste",
+      "autocomplete-liste",
+      "feilsoking-tekst",
+      "tester-tekst",
+      "dokumentasjon-tekst",
+    ],
+  },
   {
     pageId: "informasjonskapsler",
     summary: "beslutning",

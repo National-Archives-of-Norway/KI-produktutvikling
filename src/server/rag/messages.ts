@@ -1,4 +1,5 @@
 import type { RagSource } from "../../features/rag/contracts.ts";
+import { modelSources } from "./context.ts";
 import { SYSTEM_PROMPT } from "./prompt.ts";
 
 export function createModelMessages(question: string, sources: RagSource[]) {
@@ -8,11 +9,7 @@ export function createModelMessages(question: string, sources: RagSource[]) {
       role: "user",
       content: JSON.stringify({
         question,
-        sources: sources.map((source, index) => ({
-          number: index + 1,
-          title: source.title,
-          excerpt: source.text,
-        })),
+        sources: modelSources(question, sources),
       }),
     },
   ];

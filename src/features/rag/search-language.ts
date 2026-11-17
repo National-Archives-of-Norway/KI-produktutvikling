@@ -91,7 +91,7 @@ export function terms(text: string): Term[] {
 // Handlinger beholder en svak stemme: «lagres» kan beskrive lagringstemaet.
 export const actionTerms = new Set(
   terms(
-    "test teste tester testing del dele deler skriv skrive finn finne finner vis vise viser lag lage kartlegg utforsk gjennomfør installer avklar sammenlign endre oppdatere slette lagre lagrer lagres lagret inneholde inneholder bruke bruker",
+    "test teste tester testing del dele deler skriv skrive finn finne finner vis vise viser lag lage kartlegg utforsk gjennomfør kontroller kontrollere installer avklar sammenlign endre oppdatere slette lagre lagrer lagres lagret inneholde inneholder bruke bruker",
   ).map((term) => term.stem),
 );
 export const actionWeight = 0.25;

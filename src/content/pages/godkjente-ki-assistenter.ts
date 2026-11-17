@@ -17,6 +17,11 @@ export const approvedAssistants = {
         "Codex – Godkjent.",
       ],
     },
+    {
+      id: "copilot-retningslinjer",
+      type: "paragraph",
+      text: "For GitHub Copilot: Les [retningslinjene for bruk i Nasjonalarkivet](/retningslinjer/github-copilot/) før du tar verktøyet i bruk.",
+    },
     { id: "rammer", type: "heading", text: "Rammer for bruk" },
     {
       id: "rammer-1",
@@ -37,7 +42,7 @@ export const approvedAssistants = {
     {
       id: "oppdatert",
       type: "paragraph",
-      text: "Godkjenningsstatus er oppgitt for portalen 9. november 2026. Siden er sist oppdatert samme dato.",
+      text: "Godkjenningsstatus er oppgitt for portalen 9. november 2026. Siden er sist oppdatert 16. november 2026.",
     },
   ],
 } satisfies ContentPage;

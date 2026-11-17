@@ -6,6 +6,30 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 17. november 2026 – Copilot-søk og avgrenset modellkontekst
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Bekreftet feil kildevalg for spørsmål om Copilot-genererte tester med regresjonstest før retting. Kontrollere/kontroller er nå generelle lavvektede handlinger på linje med teste og skrive; ingen kilde-ID eller spørsmålsunntak er lagt i søket. Fem Copilot-spørsmål og et samlet kontekstbudsjett er regresjonstestet.
+- Modelloggen fra første prøve viser tre avbrudd under lesing av 3649–5872 inputtokens og en intern completion-EOF etter 10 s. Kort EOF-feil ble ikke reprodusert i dagens uendrede adapterprøve (riktig svar etter 18,8 s). OOMKilled var allerede true før dagens prøver; dette beviser ikke årsaken. Ingen automatisk retry eller økt tidsgrense er innført.
+- Felles modellmeldinger bruker nå maksimalt 6000 tegn kildeutdrag med relevante hele linjer/setninger, bevarte forbehold, nummerering og merking av utelatelser. Fulle API-kilder beholdes. Arkitektur og funksjonsregister er oppdatert. Retest mot nybygd Docker-portal: alle fem spørsmål ga HTTP 200/generated, riktige første kilder og innholdsmessig riktige svar med [1] på 2,9–29,8 s. Svaret om tester har en språklig feil som er bevart i [rapporten](docs/rag/2026-11-16/copilot-retningslinjer.md). 289/289 Node-/tre Python-tester, innholdssynk, 236 filmål ved sluttkontroll, typekontroll, formatering og Docker-produksjonsbygg bestod. Utviklingssett 36/36 og kjent held-out 20/20 uten endrede forventninger. Modellcontainer/starttid, modellmanifest og volum er bevart; oom_kill var 2 før/etter. Utviklingsplanen skiller rettet søk/stor kontekst fra fortsatt uavklart intern EOF. Rapport-/sluttnotater er skrevet etter bildet. Ingen blindmåling, commit eller push.
+
+### 16. november 2026 – Copilot-prøver avdekker modellfeil og ett søkeavvik
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Kjørte fem faktiske Qwen3:4b-prøver gjennom /api/rag på 3005 mot de nye, fortsatt ukommiterte Copilot-retningslinjene. Bare sensitive-testdata-spørsmålet ga generert svar (HTTP 200, riktig svar med [1], 13,39 s). Sikkerhetskritisk kode, genererte tester og Next.js-versjon ga HTTP 502 etter ca. 60 s; hurtigtastspørsmålet ga 502 etter ca. 10 s. Kilder er bevart. Samlet prøve er ikke bestått; fire manglende besvarelser er ikke regnet som riktige modellsvar.
+- Copilot-siden var første kilde for fire av fem spørsmål. «Må jeg kontrollere tester som Copilot lager?» hentet Oversikt/priser/funksjonalitet og manglet Copilot-kilden. Ingen innhold-/modell-/søkejustering eller retest er gjort for å skjule funnene. [Rapport med alle prøver og kildehashverdier](docs/rag/2026-11-16/copilot-retningslinjer.md) skiller kildevalg, HTTP-resultat og innholdsvurdering.
+- Portal og Ollama var running/healthy med null omstarter etter prøvene. Ollama rapporterte OOMKilled=true uten førmåling; sammenheng med disse feilene er ikke bevist. Utviklingsplanen har åpne oppfølgingspunkter for kildesøk og modellfeil. Kontroller: `pnpm test:links` bestått (235 filmål i 12 dokumenter), `pnpm format:check` og `git diff --check` bestått. Ingen ny full testpakke, konfigurasjons-/volumendring, ombygging, commit eller push.
+
+### 16. november 2026 – retningslinjer for GitHub Copilot
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Lagt brukerens oppgitte Copilot-retningslinjer på egen underside /retningslinjer/github-copilot/, lenket fra Retningslinjer og Godkjente KI-assistenter. Innholdet dekker sikkerhet, sensitive produksjons-/testdata, kvalitet og formatering, versjonsbevissthet, innstillinger/oppdateringer og fire praktiske bruksområder. Generell KI-veiledning beholder utkaststatus; ingen nye godkjenninger for andre verktøy eller datakategorier er innført.
+- Språkvasket teksten og presisert VS Code-hurtigtasten for neste ord til Cmd/Ctrl + høyrepil. Bibliotek-/rammeverksvalg beskrives gjennom prosjektinstruksjoner og kontekst; tilpasning av forslag avgrenses til editorens faktiske støtte. Tekniske veiledninger er lenket som støtte, uten å erstatte virksomhetens føringer.
+- Registrert siden i felles innholdskilde med RAG-utvalg og eksplisitt tillatt den nye interne kildelenken i klientvalideringen; funksjonsregister og nettstedskart avledes automatisk uten kopier av prosa. Utviklingsplanen er avstemt. pnpm typecheck, 279 Node-/tre Python-tester, innholdssynk og Docker-produksjonsbygg bestod. Første testrunde fant fire følgefeil av at den nye kildelenken manglet i isSources; etter eksplisitt ruteregistrering bestod alle. Tre eksempelspørsmål finner Copilot-siden først. Fire lokale HTTP-sider bekrefter nytt innhold, inngangslenker og nettstedskart. Docker-portalen er oppdatert; modellvolummetadata og Ollama-ID/starttid er bevart. Pages-byggets første kjøring kompilerte 29 sider, men avsluttet med SecurityFatalError/oppgraderingsvarsel for Next.js 16.4.3 (exit 1). Uendret ny kjøring bestod (exit 0); ingen kontroll er slått av og ingen avhengigheter oppdatert. Varselet må undersøkes separat før delt drift, og er registrert i planen. Generert next-env.d.ts-endring er tilbakeført. Etterkontroll med pnpm format:check, pnpm test:links (233 filmål i 12 dokumenter) og git diff --check bestod. Sluttførte kontroll-/driftsnotater er skrevet etter Docker-bygget. Ingen faktisk modellgenerering eller ny full tilgjengelighetsprøve. Ingen commit eller push.
+
 ### 16. november 2026 – faktiske Spør KI-svar om MCP-godkjenning kontrollert
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

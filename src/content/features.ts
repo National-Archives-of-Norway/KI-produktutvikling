@@ -86,7 +86,7 @@ export function getFeatures(): Feature[] {
       id: "modell",
       title: "Modellgenererte svar",
       description:
-        "Modellkoblingen støtter lokal Ollama og eksternt OpenAI-kompatibelt Chat Completions-API. Generering krever valgt modell og serverkonfigurasjon. API-nøkkelen håndteres på serveren. Uten modell brukes veiledning fra innholdet, også i statisk demo. Compose-oppsettet kan kjøre Qwen3:4b lokalt i en separat Ollama-tjeneste, med modellfiler i et eget Docker-volum. Lokale Qwen-svar med kildehenvisninger er prøvd gjennom portalens API. CPU-kjøringen i Docker har en avgrenset, justerbar profil for å unngå treg generering ved automatisk trådvalg. Eksternt modell-API er fortsatt bare testet med simulert transport; lokal utprøving er ikke en godkjenning for delt drift.",
+        "Modellkoblingen støtter lokal Ollama og eksternt OpenAI-kompatibelt Chat Completions-API. Generering krever valgt modell og serverkonfigurasjon. API-nøkkelen håndteres på serveren. Uten modell brukes veiledning fra innholdet, også i statisk demo. Compose-oppsettet kan kjøre Qwen3:4b lokalt i en separat Ollama-tjeneste, med modellfiler i et eget Docker-volum. Lokale Qwen-svar med kildehenvisninger er prøvd gjennom portalens API. Modellen får avgrensede, spørsmålsrelevante kildeutdrag med bevarte forbehold og kildenumre; fulle kilder er fortsatt tilgjengelige i svaret. CPU-kjøringen i Docker har en avgrenset, justerbar profil for å unngå treg generering ved automatisk trådvalg. Eksternt modell-API er fortsatt bare testet med simulert transport; lokal utprøving er ikke en godkjenning for delt drift.",
       status: "beta",
       href: "/spor/",
     },

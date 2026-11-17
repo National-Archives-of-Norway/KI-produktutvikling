@@ -60,6 +60,7 @@ export function isSources(value: unknown): value is RagSource[] {
             "/om/",
             "/om/#ki-prat",
             "/retningslinjer/",
+            "/retningslinjer/github-copilot/",
             "/personvern/",
             "/informasjonskapsler/",
             "/kom-i-gang/",

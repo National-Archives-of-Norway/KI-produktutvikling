@@ -12,7 +12,7 @@ export const guidelines = {
     {
       id: "intro-1",
       type: "note",
-      text: "Dette er et arbeidsutkast til veiledning, ikke vedtatte retningslinjer for Nasjonalarkivet. Virksomhetens gjeldende regler og godkjenninger gjelder. Verktøy, databruk og ansvar må avklares før denne siden kan brukes som en autoritativ føring.",
+      text: "Den generelle KI-veiledningen på denne siden er et arbeidsutkast, ikke vedtatte retningslinjer for Nasjonalarkivet. Retningslinjene for GitHub Copilot er samlet på en egen underside. Virksomhetens gjeldende regler og godkjenninger gjelder. Verktøy, databruk og ansvar må avklares før denne siden kan brukes som en autoritativ føring.",
     },
     {
       id: "verktoy-og-tilgang",
@@ -23,6 +23,12 @@ export const guidelines = {
       id: "verktoy-og-tilgang-1",
       type: "paragraph",
       text: "Avklar hvilket verktøy og hvilken konto som er godkjent for oppgaven. At et verktøy finnes i portalen, betyr ikke at det er godkjent for intern informasjon. Se [Godkjente KI-assistenter](/oversikt/godkjente-ki-assistenter/) for assistentene som er godkjent. Tillatte datatyper, modeller, kontoer og lisenser er ikke spesifisert i oversikten.",
+    },
+    { id: "github-copilot", type: "heading", text: "Bruk av GitHub Copilot" },
+    {
+      id: "github-copilot-lenke",
+      type: "paragraph",
+      text: "Les [retningslinjene for GitHub Copilot i Nasjonalarkivet](/retningslinjer/github-copilot/). De omfatter sikkerhet, personvern, kvalitet, innstillinger og praktiske bruksområder.",
     },
     {
       id: "analogt-og-digitalt-arkivmateriale",
@@ -87,7 +93,7 @@ export const guidelines = {
     {
       id: "inspirasjon-og-status-1",
       type: "paragraph",
-      text: "Oppbygningen er inspirert av [NAVs retningslinjeside](https://ki-utvikling.nav.no/retningslinjer). NAVs verktøygodkjenninger og abonnementsregler gjelder ikke automatisk hos oss. Utkastet er sist oppdatert 9. november 2026.",
+      text: "Oppbygningen er inspirert av [NAVs retningslinjeside](https://ki-utvikling.nav.no/retningslinjer). NAVs verktøygodkjenninger og abonnementsregler gjelder ikke automatisk hos oss. Den generelle veiledningen er fortsatt et utkast. Siden er sist oppdatert 16. november 2026.",
     },
   ],
 } satisfies ContentPage;
