@@ -6,6 +6,30 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 17. november 2026 – rettet gammel utviklingsprosess etter Next-oppgradering
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Bekreftet at prosessen på 3000 fortsatt kjørte Next 16.4.3 og serverte gamle chunk-referanser etter installasjon av 16.4.6. Stoppet prosjektets utviklingssupervisor kontrollert, fjernet bare generert .next/dev og startet pnpm dev på nytt med 16.4.6. Ingen endring i applikasjonskode, cache-headere eller Docker/modellvolum.
+- Kom i gang og Om gir HTTP 200 med nye versjonsreferanser og Cache-Control: no-store. Nettlesernavigering og omlasting virker uten Runtime Error eller module-factory-feil i konsollen. Automatisk søkekontroll bestod med 126/126; lokal RAG-health gir 200, generationEnabled=false uten modellkonfigurasjon. Ingen ny modell-, skjermleser- eller full testpakke i denne oppfølgingen.
+- README har feilsøking for utvikling etter oppgradering. [Kontrollrapporten](docs/sikkerhet/2026-11-17/nextjs.md) og utviklingsplanen er supplert med oppfølgingen. Ingen commit eller push.
+
+### 17. november 2026 – Next.js-sikkerhetsoppgradering og rettet testverktøykjede
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Oppgradert eksakt Next.js 16.4.3 → 16.4.6 med samsvarende env/SWC-pakker og låsefil. Sju offisielle novembermeldinger omfatter 16.4.3 og er rettet fra 16.4.5. Dokumentert forutsetninger i dagens kode og CLI-ens kortvarige retry; et tidligere uendret bestått bygg var ikke en sikkerhetsretting. Ingen kontroll er slått av og next.config.ts er uendret.
+- Etter uttrykkelig godkjent audit: fire rapporterte funn før (én high/tre moderate), tre etter Next-patch, null etter målrettet get-uri 8.0.2/basic-ftp 6.2.6-retting i ChromeDriver/axe-kjeden. Bare forbindelsen fra pac-proxy-agent 9.1.0 overstyres; én eksplisitt release-age-unntaksversjon beholdes for sikkerhetspatchen. Docker inkluderer workspace-konfigurasjonen for samme frosne installasjon. [Kilder og kontrollrapport](docs/sikkerhet/2026-11-17/nextjs.md).
+- pnpm check bestod med endelig avhengighetssett: 292 Node-/tre Python-tester, innholdssynk, typekontroll, formatering og serverbygg. Pages-bygg, frossen installasjon og nettverksfri importprøve av get-uri-kjeden bestod; axe-versjonskommandoen fungerer. Arkitektur og fase 2 er avstemt; ingen brukerfunksjon eller modenhetsstatus endres. Endelig Docker-bygg med samme workspace-konfigurasjon og frossen låsefil bestod. Portalen på 3005 kjører verifisert Next 16.4.6/get-uri 8.0.2/basic-ftp 6.2.6; fire HTTP-sider og portal-/RAG-helse bestod. Modellcontainer, volum og manifest er bevart. Lokal utviklingsserver på 3000 er ikke omstartet. Bildet bygger på arbeidskopien, ikke en ny commit; sluttnotater er skrevet etter bildet. Sluttkontroll: pnpm format:check, pnpm test:links (242 filmål i 12 dokumenter), pnpm typecheck etter tilbakeført next-env.d.ts og git diff --check bestod. Tidligere ukommiterte driftsnotater er bevart. Ingen commit eller push.
+
+### 17. november 2026 – Docker-portal oppdatert fra 3899c18d
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Bygget ki-produktutvikling:compose fra ren git archive av 3899c18dca821a54c8172237f7a955c22ee1c435, med commitetikett og gjenbruk av byggcache. Produksjonsbygg bestod; bare portalen ble gjenskapt med --no-deps --no-build. Kjørende bildereferanse er sha256:800bf756a9c7aa2b1e4305c6833a93982ef77ba833781aba4d198ba6ecda873f. Etikett og fem SHA-256-kontroller av side, CSS, funksjonsregister, versjonslogg og utviklingsplan samsvarer med kildecommiten.
+- Forside, /spor/, /versjonslogg/ og /utviklingsplan/ ga HTTP 200. Versjonsloggen og planen viser siste committede driftsnotat om 70f4c42d; den responsive leveransen er med. Portal healthy og RAG status=ok/generationEnabled=true. Ollama har samme container-ID/starttid og null omstarter; modellvolummetadata og modellmanifestets SHA-256 er uendret. Ingen ny modellnedlasting eller volumfjerning.
+- Ingen ny full testpakke, Pages-bygg, modellgenerering, nettleserprøve eller funksjons-/produksjonsgodkjenning. Dette driftsnotatet og ny planrad er skrevet etter bildet og inngår ikke i 3899c18d-bildet. Ingen commit eller push. pnpm test:links bestod med 240 filmål i 12 dokumenter; pnpm format:check og git diff --check bestod.
+
 ### 17. november 2026 – Docker-portal oppdatert fra 70f4c42d
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

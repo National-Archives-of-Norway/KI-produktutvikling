@@ -4,3 +4,12 @@ allowBuilds:
 
 # Keep the existing project-local dependency store.
 storeDir: .pnpm-store
+
+# Sikkerhetsretting i ChromeDriver-kjeden: get-uri 8.0.2 bruker basic-ftp >=6.2.4.
+# Fjern når foreldrekjeden bruker rettet get-uri uten overstyringen.
+overrides:
+  "pac-proxy-agent@9.1.0>get-uri": "8.0.2"
+
+# Kun den eksplisitte sikkerhetspatchen unntas fra aldersgrensen.
+minimumReleaseAgeExclude:
+  - get-uri@8.0.2
