@@ -31,6 +31,14 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - Avstem planen med versjonsloggen og funksjonsregisteret, og bevar tidligere datostemplet historikk. Ved endringer uten betydning for plan eller produksjonsstatus trenger planen ingen kunstig ny oppføring.
 - Dette er en vedlikeholdsregel for den som utfører arbeidet, ikke en automatisk vurdering av kode eller en periodisk jobb. Ikke presenter et bestått bygg som fullført produksjonsgodkjenning.
 
+## Test RAG-søket ved innholdsendringer
+
+- Ved endringer i sider, ressurser, søkenøkkelord, kunnskapsutvalg eller innholdsavledet funksjons-/pris-/oversiktstekst: kjør `pnpm test:search` før ferdigmelding eller commit. Kjør også `pnpm test:content-sync` når felles innhold eller RAG-utvalget endres. Registrer resultat og eventuelle begrensninger i versjonsloggen.
+- Legg til eller oppdater naturlige spørsmål for det berørte innholdet med forventet første kilde og kontroll av relevant faktainnhold/forbehold i kildegrunnlaget. Bevar eksisterende negative spørsmål. En grønn eksisterende testpakke beviser ikke at et nytt emne er dekket.
+- Bruk kjente regresjoner i søketestene. Hvis nye testfiler opprettes, registrer dem i `scripts/rag-search-tests.mjs` så de også følger utviklingsvakten. Ikke les eller bruk eksterne blindsett, og ikke endre forventninger bare for å få grønt; begrunn faglige endringer.
+- `pnpm dev` starter automatisk søketester ved oppstart og endringer i importerte innholds-/søkemoduler. Uten utviklingsserver kan `pnpm test:search:watch` brukes. Kontroller siste resultat; filvakt kjører bare mens prosessen er aktiv, og feil stanser ikke redigeringen. Docker-produksjonsbildet har ingen slik filvakt.
+- Automatiske søketester bruker ikke en ekte modell. Ved endringer som påvirker modellens kildegrunnlag eller forbehold: gjennomfør relevante faktiske modellprøver når en testmodell er tilgjengelig, ellers dokumenter at dette ikke er prøvd. Skill kildevalg, innhold i kilder og generert svar i resultatene.
+
 ## Friction logging and triage
 
 Prefer discovering conventions and architecture from the repository and available documentation. If a competent agent could find the answer by reading the code, tests, or existing docs, it does not belong in AGENTS.md or FRICTION.md. The existing maintenance and Next.js rules above remain in effect.

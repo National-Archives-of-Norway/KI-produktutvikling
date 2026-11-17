@@ -183,9 +183,13 @@ pnpm build:pages
 
 `check` kjører formatering, typer, hele testløpet og serverbygg, i denne rekkefølgen. `test` kjører alle Node-tester, Python-tester, faktisk innholdsomlasting og Markdown-lenker. Pris- og modelltester bruker fixtures/simulert transport, uten kall til leverandørene. Lokale loopback-porter må være tillatt.
 
+`pnpm dev` kjører også søkeregresjoner ved oppstart og på nytt når importerte innholds-/søkemoduler endres. Resultatene vises i terminalen; feil lar utviklingsserveren fortsette så du kan rette og få ny vurdering. Uten server kan du bruke `pnpm test:search:watch`. For én kontroll bruker du `pnpm test:search`. Dette tester kildevalg og kjente innholdsforventninger, uten modellkall. Nye emner trenger egne testspørsmål etter [AGENTS.md](AGENTS.md). CI kjører de samme testfilene gjennom `pnpm test`; runner-/IP-blokkeringen nedenfor gjelder fortsatt. Docker-produksjonsbildet tester ikke automatisk ved filendring og må bygges på nytt for innholdsoppdateringer.
+
 | Kommando                 | Omfang                                                                                                                                                       |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `pnpm test:node`         | Ordinære Node-tester, inkludert syntetiske blindrapportkontroller; selve blindmålingen er unntatt. `test:rag` er et kompatibilitetsalias.                    |
+| `pnpm test:search`       | Avgrensede søke-, språk-, nøkkelord- og Copilot-regresjoner uten modell eller blindmåling.                                                                   |
+| `pnpm test:search:watch` | Samme søketester automatisk på nytt ved filendringer, også inkludert i `pnpm dev`.                                                                           |
 | `pnpm test:python`       | Unittest-discover for `tests/test_html_accessibility.py`.                                                                                                    |
 | `pnpm test:content-sync` | Isolert RAG-kopi og watch-omlasting etter endring i felles innhold.                                                                                          |
 | `pnpm test:links`        | Relative filreferanser i rot-Markdown og direkte `docs/*.md`; ingen nettverkskall eller rekursiv beviskontroll. Fragmenter og portalruter kontrolleres ikke. |

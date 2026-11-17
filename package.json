@@ -23,7 +23,9 @@
     "test:python": "python3 -m unittest discover -s tests -p 'test_html_accessibility.py'",
     "test:links": "node scripts/check-markdown-links.mjs",
     "test": "pnpm test:node && pnpm test:python && pnpm test:content-sync && pnpm test:links",
-    "test:blind": "node --test tests/rag-blind.test.ts"
+    "test:blind": "node --test tests/rag-blind.test.ts",
+    "test:search": "node scripts/rag-search-tests.mjs",
+    "test:search:watch": "node scripts/rag-search-tests.mjs --watch"
   },
   "engines": {
     "node": ">=24.0.0 <25.0.0"

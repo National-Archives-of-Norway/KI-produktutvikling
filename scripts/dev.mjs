@@ -16,14 +16,21 @@ const next = spawn(
   ],
   { stdio: "inherit", env: process.env },
 );
+// Rene søketester følger importerte innholdsmoduler uten modellgenerering.
+const searchTests = spawn(
+  process.execPath,
+  ["scripts/rag-search-tests.mjs", "--watch"],
+  { stdio: "inherit", env: process.env },
+);
 let stopping = false;
 function shutdown() {
   if (stopping) return;
   stopping = true;
   next.kill("SIGTERM");
   rag.kill("SIGTERM");
+  searchTests.kill("SIGTERM");
 }
-for (const child of [rag, next]) {
+for (const child of [rag, next, searchTests]) {
   child.on("error", (error) => {
     console.error("Kunne ikke starte lokalmiljøet:", error.message);
     process.exitCode = 1;

@@ -93,16 +93,16 @@ Tilgjengelighetsgrunnlag og konkrete uavklarte punkter finnes i [WCAG-kontrollen
 
 ## Faseoversikt
 
-| Fase | Leveranse                                            | Status 11. november 2026                                                                             |
-| ---- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| 1    | Omfang, ansvar og tilgangsvalg                       | Målgruppe og første funksjoner avklart; eierskap, drift og tilgangsmodell åpne                       |
-| 2    | Teknisk grunnmur og arbeidsflyt                      | Repoet er lastet opp; CI blokkeres av IP-listen. Godkjent runner, grønn CI og review-regler gjenstår |
-| 3    | Design og tilgjengelighet                            | Design og avgrensede kontroller utført; samlet tilgjengelighetsgodkjenning gjenstår                  |
-| 4    | MVP 1: lokal portal og forberedelse til lukket pilot | Lokal leveranse klar; ikke delt eller brukertestet som pilot                                         |
-| 5    | Servermiljø, modellkobling og utrulling              | Adaptere/frister/kapasitet simulert testet; lokal Qwen prøvd; delt drift og godkjenning gjenstår     |
-| 6    | MVP 2: innlogging og beskyttet tilgang               | Ikke implementert; nødvendig før første delte pilot                                                  |
-| 7    | MVP 3: versjonerte skills og distribusjon            | Lokalt bibliotek og katalogintegrasjon på plass; review og distribusjon gjenstår                     |
-| 8    | MVP 4: forvaltning og produksjonsgodkjenning         | Ikke godkjent; produksjonskrav P1–P10 følges opp                                                     |
+| Fase | Leveranse                                            | Status 17. november 2026                                                                                                |
+| ---- | ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| 1    | Omfang, ansvar og tilgangsvalg                       | Målgruppe og første funksjoner avklart; eierskap, drift og tilgangsmodell åpne                                          |
+| 2    | Teknisk grunnmur og arbeidsflyt                      | Automatisk lokal søkeregresjon på plass; CI blokkeres av IP-listen. Godkjent runner, grønn CI og review-regler gjenstår |
+| 3    | Design og tilgjengelighet                            | Design og avgrensede kontroller utført; samlet tilgjengelighetsgodkjenning gjenstår                                     |
+| 4    | MVP 1: lokal portal og forberedelse til lukket pilot | Lokal leveranse klar; ikke delt eller brukertestet som pilot                                                            |
+| 5    | Servermiljø, modellkobling og utrulling              | Adaptere/frister/kapasitet simulert testet; lokal Qwen prøvd; delt drift og godkjenning gjenstår                        |
+| 6    | MVP 2: innlogging og beskyttet tilgang               | Ikke implementert; nødvendig før første delte pilot                                                                     |
+| 7    | MVP 3: versjonerte skills og distribusjon            | Lokalt bibliotek og katalogintegrasjon på plass; review og distribusjon gjenstår                                        |
+| 8    | MVP 4: forvaltning og produksjonsgodkjenning         | Ikke godkjent; produksjonskrav P1–P10 følges opp                                                                        |
 
 Fase 5 og 6 må samordnes før MVP 1 deles. Fase 7 kan utvikles parallelt, men full automatisk skill-installasjon er ikke et krav til første pilot med lesbart innhold. Pages beholdes foreløpig som bygg-/demovariant; det er ikke en beslutning om offentlig hosting.
 
@@ -124,6 +124,7 @@ Fase 5 og 6 må samordnes før MVP 1 deles. Fase 7 kan utvikles parallelt, men f
 - [x] Ha lokal formatering, tester, typekontroll og byggvarianter for server og statisk eksport.
 - [x] Implementere felles innholdskilde for sider, anbefalinger og RAG, med kontroll av innholdsreferanser.
 - [x] Implementere automatisk lokal omlasting av RAG og isolert test av innholdssynkronisering.
+- [x] Starte modellfrie søketester ved pnpm dev og kjøre på nytt ved importerte innholds-/søkeendringer (17. november). Egne test:search/test:search:watch-kommandoer og instruks om nye emnespørsmål. Isolert grønn → rød → grønn-prøve, faktisk modellfri utviklingsoppstart/-avslutning, 125 søketester og samlet testpakke med 291 Node-/tre Python-tester bestod; samme testfiler inngår i CI. Dette gjelder lokal utvikling, ikke Docker-runtime eller godkjent Actions-kjøring.
 - [x] Rette isolert content-sync-kopi etter innføring av delt `src/config/` (11. november): kopier hele `src/` unntatt `src/app/`, og bruk samme kopieringsfunksjon i rask oppstarts-/health-regresjon uten watch. Førtesten feilet med manglende modul; retest av synk og 133/133 Node-tester bestod på Node 24.22.1. Se [rapport](docs/rag/2026-11-11/content-sync.md). Ingen ny Linux-, bygg- eller produksjonsverifisering.
 - [x] Etablere funksjonsregister med automatisk avledet oversikt og nettstedskart, og kontroll av sideregistrering ved oppstart/bygg.
 - [x] Etablere versjonslogg og agentinstruksjoner for vedlikehold av logg og funksjonsregister; og vedlikehold av utviklingsplanen.

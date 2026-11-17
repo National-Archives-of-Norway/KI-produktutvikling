@@ -6,6 +6,14 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 17. november 2026 – automatisk søkekontroll ved innholdsredigering
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- pnpm dev starter nå en modellfri søketestvakt ved siden av Next og RAG. Berørte tester kjøres på nytt når importerte innholds-/søkemoduler endres; testfeil vises uten å stoppe redigering, og vakten stoppes med lokalmiljøet. test:search gir enkeltkjøring, test:search:watch fungerer uten utviklingsserver. Samme filer inngår allerede i pnpm test/CI, uten ekstra duplisert CI-steg.
+- AGENTS.md krever søketest før ferdigmelding/commit ved endret kunnskapsgrunnlag, relevante nye/endrede spørsmål med forventet kilde og faktainnhold, innholdssynk og registrering av resultater. Skiller søkekontroll fra faktiske modellsvar og beskytter eksterne blindsett. README, arkitektur og fase 2 er avstemt. Ingen endring av brukerfunksjoner/modenhet; funksjonsregisteret trenger ingen ny offentlig funksjon for lokal utviklingsvakt.
+- Isolert prøve bekrefter at en syntetisk feil i Copilot-kildeteksten gir grønn → rød → grønn ved filendring uten manuell omstart. Første kjøring i restriktiv sandbox hadde EMFILE fra OS-watch; prøven bestod med nødvendig lokal filvakttilgang. Kontroller bestod: test:search 125/125; pnpm test 291/291 Node-/tre Python-tester, innholdssynk og 237 filmål; pnpm typecheck. Modellfri prøve av faktisk scripts/dev.mjs på tilfeldige porter bekreftet Next, RAG og 125 søketester ved oppstart, og avslutning av utviklingsserverne. `pnpm format:check` og `git diff --check` bestod. Ingen nytt produksjonsbygg eller GitHub-verifisering. Ingen ekte modell-/pris-/blindkall, Docker-ombygging, commit eller push.
+
 ### 17. november 2026 – Copilot-søk og avgrenset modellkontekst
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.
