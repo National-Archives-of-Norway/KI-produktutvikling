@@ -84,6 +84,8 @@ Reglene er også lagt i `AGENTS.md`, og gjelder fremtidig agentarbeid i prosjekt
 
 Referanser: [versjonsloggen](VERSJONSLOGG.md) og kontrollgrunnlaget ovenfor. Chatendringene og avstemmingen er samlet i `46f449e`. Content-sync-rettingen nedenfor er kontrollert som arbeidskopi basert på denne commiten. Skill-versjonene er kontrollert mot metadata i det lokale Skills-repoet; repoene har separate logger og historikk.
 
+**Driftsoppfølging 17. november 2026 – bb20299:** lokal Docker er bygget fra ren commitkopi og bare portalen er gjenskapt. Commitetikett og tre dokument-/kildekontrollsummer samsvarer. Fem HTTP-sider og portal-/RAG-helse bestod; servert utviklingsplan viser offentlig retning uten innlogging og funksjonsoversikten har ikke lenger planlagt innloggingsfunksjon. Ollama, modellvolum og modellmanifest er uendret. Ingen ny modell-/nettleserprøve eller offentlig publisering. Dette notatet er skrevet etter bildet; kontrollen godkjenner ikke P1–P10.
+
 ## Hva gjenstår før produksjonssetting?
 
 Ingen av kravene nedenfor er ferdig godkjent. Alle eiere er foreløpig **ikke avklart**; rolleangivelsene viser hvem som må utpekes. Nettstedet skal være offentlig uten autentisering. P2 er omdefinert til offentlig innholdsgrense; det tidligere innloggingskravet er trukket tilbake, ikke implementert.

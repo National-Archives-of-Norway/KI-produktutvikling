@@ -6,6 +6,14 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 17. november 2026 – Docker oppdatert fra bb20299
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Bygget portalbildet fra ren git archive av bb20299ace793d3bc0e86c3c74ab37963a6c10eb, med commitetikett og eksisterende byggcache. Produksjonsbygg bestod. Bare portalen ble gjenskapt med --no-deps --no-build; kjørende bilde er sha256:766160ebf323807aa7e53ed120b3c4c894145c0a2b160aedaa82912971475c96. SHA-256 for utviklingsplan, versjonslogg og funksjonsregister samsvarte mellom kildecommit og container.
+- Forside, /spor/, /utviklingsplan/, /funksjonalitet/ og /versjonslogg/ ga HTTP 200. Servert HTML bekrefter offentlig lanseringssjekkliste og beslutning uten innlogging; den planlagte innloggingsfunksjonen er borte fra funksjonsoversikten. Portal healthy; RAG status=ok/generationEnabled=true. Dette er ikke en ny modellgenerering eller nettleserprøve.
+- Ollama beholdt container-ID/starttid og null omstarter. Modellvolumets navn/opprettelsestid og modellmanifestets SHA-256 er uendret. Ingen ny modellnedlasting, volumfjerning, full testpakke, Pages-bygg, commit, push eller offentlig publisering. Dette driftsnotatet og planoppfølgingen er skrevet etter bildet og inngår ikke i bb20299-bildet.
+
 ### 17. november 2026 – offentlig nettsted uten autentisering
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.
