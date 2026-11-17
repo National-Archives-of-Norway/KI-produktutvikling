@@ -6,6 +6,14 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 17. november 2026 – Docker-portal oppdatert fra b4bda7c4
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Bygget ki-produktutvikling:compose fra ren git archive av b4bda7c4cb4d7206435fa27ed5fa710677a071d3, med commitetikett og gjenbruk av byggcache. Produksjonsbygg bestod; bare portalen ble gjenskapt med --no-deps --no-build. Kjørende bildereferanse er sha256:767a8faec09026839191d79972257581d251d0ac87a722b3eebdd54b7e83658d. Etikett og fem SHA-256-kontroller av side, CSS, funksjonsregister, versjonslogg og utviklingsplan samsvarer med kildecommiten.
+- Forside, /spor/, /versjonslogg/ og /utviklingsplan/ ga HTTP 200. Versjonsloggen og planen viser siste committede driftsnotat om 966765fb; den responsive leveransen er med. Portal healthy og RAG status=ok/generationEnabled=true. Ollama har samme container-ID/starttid og null omstarter; modellvolummetadata og modellmanifestets SHA-256 er uendret. Ingen ny modellnedlasting eller volumfjerning.
+- Ingen ny full testpakke, Pages-bygg, modellgenerering, nettleserprøve eller funksjons-/produksjonsgodkjenning. Dette driftsnotatet og ny planrad er skrevet etter bildet og inngår ikke i b4bda7c4-bildet. Ingen commit eller push. pnpm test:links bestod med 240 filmål i 12 dokumenter; pnpm format:check og git diff --check bestod.
+
 ### 17. november 2026 – Docker-portal oppdatert fra 966765fb
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.
