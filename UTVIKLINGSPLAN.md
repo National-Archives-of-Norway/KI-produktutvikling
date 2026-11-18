@@ -1,6 +1,6 @@
 # Utviklingsplan for KI-Produktutvikling
 
-Sist oppdatert: **17. november 2026**. Utførende agent ved denne gjennomgangen: **Codex (OpenAI)**.
+Sist oppdatert: **18. november 2026**. Utførende agent ved denne gjennomgangen: **Codex (OpenAI)**.
 
 **Status: Fungerende lokal prototype; ikke klar for produksjon eller deling av internt innhold.** Lokal funksjonalitet og modelladaptere er implementert. Drift, faglig godkjenning og samlet lanseringskontroll gjenstår. **Beslutning fra brukeren 17. november 2026: nettstedet skal være offentlig uten innlogging eller annen autentiseringsmekanisme.** Dette erstatter tidligere krav om lukket pilot. Bare offentlig godkjent innhold skal publiseres; misbruksvern for Spør KI og beskyttelse av modell-/driftsgrensesnitt gjenstår. Beslutningen om retning er ikke en utført publisering.
 
@@ -87,6 +87,15 @@ Referanser: [versjonsloggen](VERSJONSLOGG.md) og kontrollgrunnlaget ovenfor. Cha
 **Driftsoppfølging 17. november 2026 – bb20299:** lokal Docker er bygget fra ren commitkopi og bare portalen er gjenskapt. Commitetikett og tre dokument-/kildekontrollsummer samsvarer. Fem HTTP-sider og portal-/RAG-helse bestod; servert utviklingsplan viser offentlig retning uten innlogging og funksjonsoversikten har ikke lenger planlagt innloggingsfunksjon. Ollama, modellvolum og modellmanifest er uendret. Ingen ny modell-/nettleserprøve eller offentlig publisering. Dette notatet er skrevet etter bildet; kontrollen godkjenner ikke P1–P10.
 
 **Offentlige utviklingsdokumenter – 17. november 2026:** egne brukerrettede utgaver er opprettet i [offentlig versjonslogg](VERSJONSLOGG-OFFENTLIG.md) og [offentlig utviklingsplan](UTVIKLINGSPLAN-OFFENTLIG.md). Nettstedets dokumentruter bruker disse filene; interne arbeidsdokumenter og historikk beholdes. README, arkitektur, funksjonsregister og AGENTS beskriver redaksjonelt vedlikehold og skille mellom utvikling og faktisk publisering. Leveransen gjør fremdrift forståelig for publikum, men lukker ikke P1–P10 eller innholdsgodkjenningen av øvrige sider/vedlegg.
+
+## Avstemming av historikk og dokumentformål – 18. november 2026
+
+- [x] Kartlegge de 138 eksisterende daterte loggpostene, alle 48 planseksjoner og metadata/kildekoblinger for 75 lokale commits ved 5f936870. [Rapport og inventar](docs/HISTORIKK-KARTLEGGING.md) dokumenterer hovedplassering og bevaring.
+- [x] Erstatte offentlig tematisk loggsammendrag med daterte vesentlige endringer fra 30. oktober til dagens arbeid. Gjentatte driftsbevis beholdes i detaljloggen, med datert gruppeomtale offentlig.
+- [x] Samle fremtidige oppgaver, P1–P10 og datert beslutningshistorikk i offentlig plan. Ta de to planlagte oversiktene ut av registeret for dagens funksjoner; bevar fremtidsomtalen i Oversikt og plan.
+- [ ] Gjennomføre faktisk offentlig lansering, faglig review og øvrige åpne P1–P10-krav. Denne dokumentfordelingen er ingen ny drifts-/samsvars-/modellgodkjenning.
+
+Denne detaljerte planen beholder tidligere leveranse- og kontrollnotater som datert arbeidsgrunnlag. Historiske «gjenstår»-punkter i eldre avsnitt er ikke en ny restliste; bruk gjeldende P1–P10 og offentlig plan for prioritering.
 
 ## Hva gjenstår før produksjonssetting?
 

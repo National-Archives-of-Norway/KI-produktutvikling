@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import Link from "next/link";
 
 const documentRoutes: Record<string, string> = {
+  "/funksjonalitet/": "/funksjonalitet/",
   "VERSJONSLOGG-OFFENTLIG.md": "/versjonslogg/",
   "UTVIKLINGSPLAN-OFFENTLIG.md": "/utviklingsplan/",
 };

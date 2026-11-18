@@ -8,8 +8,8 @@ import type { RagSource } from "../features/rag/contracts.ts";
 
 export const featureOverview = {
   title: "Funksjonalitetsoversikt",
-  lead: "En oversikt over funksjonene som finnes, hva du kan prøve og hva som gjenstår.",
-  note: "Statusene beskriver funksjonenes modenhet og behov for oppsett, ikke om en ekstern tjeneste er tilgjengelig akkurat nå.",
+  lead: "Dagens funksjoner i portalen, hva du kan bruke dem til, modenhet og kjente begrensninger.",
+  note: "Oversikten beskriver denne utviklingsutgaven, ikke bekreftet offentlig publisering. Statusene gjelder funksjonenes modenhet og behov for oppsett, ikke om en ekstern tjeneste er tilgjengelig akkurat nå. Fremtidige leveranser står i utviklingsplanen.",
 };
 
 export type FeatureStatus =
@@ -99,12 +99,6 @@ export function getFeatures(): Feature[] {
       routes: ["/oversikt/"],
       sitemapLabel: overview.title,
     },
-    ...overview.planned.map((item): Feature => ({
-      id: item.id,
-      title: item.title,
-      description: item.description,
-      status: "planned",
-    })),
     {
       id: "priser",
       title: pricingOverview.title,
@@ -157,7 +151,7 @@ export function getFeatures(): Feature[] {
       id: "utviklingsplan",
       title: "Utviklingsplan",
       description:
-        "Se hva som er utviklet, hva som prioriteres før offentlig åpning, og mulige senere utvidelser. Den offentlige planen viser status uten interne arbeids- og driftsnotater.",
+        "Se prioriteringer, åpne lanseringskrav og datert beslutningshistorikk. Den offentlige planen viser fremtidig arbeid uten interne driftsnotater; dagens funksjoner vises i funksjonalitetsoversikten.",
       status: "available",
       href: "/utviklingsplan/",
       routes: ["/utviklingsplan/"],

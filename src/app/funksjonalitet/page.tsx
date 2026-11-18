@@ -32,40 +32,39 @@ export default function FeaturesPage() {
       {[
         {
           title: "Dette finnes i portalen",
-          items: features.filter(
-            (feature) => !["planned", "setup"].includes(feature.status),
-          ),
+          items: features.filter((feature) => feature.status !== "setup"),
         },
         {
-          title: "Krever mer oppsett eller utvikling",
-          items: features.filter((feature) =>
-            ["planned", "setup"].includes(feature.status),
-          ),
+          title: "Krever oppsett",
+          items: features.filter((feature) => feature.status === "setup"),
         },
-      ].map((group) => (
-        <section key={group.title}>
-          <h2>{group.title}</h2>
-          {group.items.map((feature) => (
-            <section
-              key={feature.id}
-              aria-labelledby={`feature-${feature.id}`}
-              className="feature-summary"
-            >
-              <p className="feature-status">
-                {featureStatuses[feature.status]}
-              </p>
-              <h3 id={`feature-${feature.id}`}>{feature.title}</h3>
-              <p>{feature.description}</p>
-              {feature.href && (
-                <Link href={feature.href}>Gå til {feature.title} →</Link>
-              )}
-            </section>
-          ))}
-        </section>
-      ))}
+      ]
+        .filter((group) => group.items.length > 0)
+        .map((group) => (
+          <section key={group.title}>
+            <h2>{group.title}</h2>
+            {group.items.map((feature) => (
+              <section
+                key={feature.id}
+                aria-labelledby={`feature-${feature.id}`}
+                className="feature-summary"
+              >
+                <p className="feature-status">
+                  {featureStatuses[feature.status]}
+                </p>
+                <h3 id={`feature-${feature.id}`}>{feature.title}</h3>
+                <p>{feature.description}</p>
+                {feature.href && (
+                  <Link href={feature.href}>Gå til {feature.title} →</Link>
+                )}
+              </section>
+            ))}
+          </section>
+        ))}
       <p>
-        Se <Link href="/versjonslogg/">versjonsloggen</Link> for endringer og
-        dokumenterte kontroller.
+        Se <Link href="/versjonslogg/">versjonsloggen</Link> for daterte
+        endringer og kontroller. Fremtidige leveranser og prioriteringer står i{" "}
+        <Link href="/utviklingsplan/">utviklingsplanen</Link>.
       </p>
     </article>
   );

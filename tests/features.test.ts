@@ -1,3 +1,5 @@
+import { createHash } from "node:crypto";
+import { readFileSync } from "node:fs";
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { mkdirSync, mkdtempSync, writeFileSync, rmSync } from "node:fs";
@@ -167,4 +169,105 @@ test("prissiden og Spør KI bruker samme kontrollerte prisgrunnlag", async () =>
       (s) => s.id === "priser",
     ),
   );
+});
+
+type Entry = {
+  id: string;
+  sourceTitle: string;
+  sourceSha256: string;
+  date: string;
+  destination: string;
+  summary: string;
+};
+const inventory = JSON.parse(
+  readFileSync("docs/historikk/kartlegging-2026-11-18.json", "utf8"),
+) as {
+  logEntries: Entry[];
+  planSections: { id: string; sourceTitle: string; destination: string }[];
+  commits: { commit: string; sourceEntries: string[] }[];
+};
+
+test("alle kartlagte loggposter er bevart i opprinnelig rekkefølge og med uendret innhold", () => {
+  const log = readFileSync("VERSJONSLOGG.md", "utf8");
+  const headings = [...log.matchAll(/^#{2,3} (.+(?:2026|2026[^\n]*))$/gm)];
+  const hashes = headings.map((heading, i) =>
+    createHash("sha256")
+      .update(log.slice(heading.index, headings[i + 1]?.index).trim())
+      .digest("hex"),
+  );
+  let previous = -1;
+  for (const entry of inventory.logEntries) {
+    const next = hashes.indexOf(entry.sourceSha256, previous + 1);
+    assert.ok(next > previous, `Mistet eller endret kildepost: ${entry.id}`);
+    previous = next;
+  }
+  assert.equal(inventory.logEntries.length, 138);
+  assert.equal(
+    new Set(inventory.logEntries.map((entry) => entry.id)).size,
+    138,
+  );
+});
+
+test("offentlig logg dekker hvert redaksjonelt sammendrag og skiller driftsbevis fra produktendringer", () => {
+  const publicLog = readFileSync("VERSJONSLOGG-OFFENTLIG.md", "utf8");
+  for (const entry of inventory.logEntries) {
+    assert.ok(["changelog", "technical"].includes(entry.destination));
+    if (entry.destination === "changelog")
+      assert.ok(publicLog.includes(entry.summary), `Mangler ${entry.id}`);
+  }
+  assert.equal(
+    inventory.logEntries.filter((entry) => entry.destination === "changelog")
+      .length,
+    122,
+  );
+  assert.match(publicLog, /30\. oktober 2026/);
+  assert.match(publicLog, /ikke bekreftede publiseringsdatoer/);
+  assert.match(publicLog, /Teknisk drift:/);
+});
+
+test("alle 75 commits har kildekobling og alle planseksjoner har hovedplassering", () => {
+  const sourceIds = new Set(inventory.logEntries.map((entry) => entry.id));
+  assert.equal(inventory.commits.length, 75);
+  assert.equal(
+    new Set(inventory.commits.map((entry) => entry.commit)).size,
+    75,
+  );
+  for (const commit of inventory.commits) {
+    assert.match(commit.commit, /^[a-f\d]{40}$/);
+    assert.ok(commit.sourceEntries.length);
+    for (const id of commit.sourceEntries) assert.ok(sourceIds.has(id));
+  }
+  assert.equal(inventory.planSections.length, 48);
+  const currentPlanSections = [
+    ...readFileSync("UTVIKLINGSPLAN.md", "utf8").matchAll(/^#{2,3} (.+)$/gm),
+  ].map((match) => match[1]);
+  let previousSection = -1;
+  for (const section of inventory.planSections) {
+    const next = currentPlanSections.indexOf(
+      section.sourceTitle,
+      previousSection + 1,
+    );
+    assert.ok(next > previousSection, `Mistet planseksjon: ${section.id}`);
+    previousSection = next;
+  }
+
+  for (const section of inventory.planSections)
+    assert.ok(["plan", "historical-plan"].includes(section.destination));
+});
+
+test("dagens funksjonsregister overlater fremtidige oversikter til planen", () => {
+  const ids = new Set(getFeatures().map((feature) => feature.id));
+  assert.equal(ids.has("modelloversikt"), false);
+  assert.equal(ids.has("forbruk"), false);
+  assert.equal(
+    getFeatures().some((feature) => feature.status === "planned"),
+    false,
+  );
+  assert.ok(ids.has("oversikt"));
+  assert.ok(ids.has("spor"));
+  const plan = readFileSync("UTVIKLINGSPLAN-OFFENTLIG.md", "utf8");
+  for (let i = 1; i <= 10; i++) assert.ok(plan.includes(`P${i} –`));
+  assert.match(plan, /Datert beslutningshistorikk/);
+  assert.match(plan, /Modelloversikt er et planlagt tema/);
+  assert.doesNotMatch(plan, /## Dette er utviklet og prøvd lokalt/);
 });

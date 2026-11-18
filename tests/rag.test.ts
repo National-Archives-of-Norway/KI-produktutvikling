@@ -135,6 +135,14 @@ export const developmentEvaluation: {
     question: "Hvordan tester jeg tilgjengeligheten?",
     expectedId: "tilgjengelighetserklaering",
   },
+  {
+    question: "Hvor finner jeg funksjonalitetsoversikten?",
+    expectedId: "funksjonalitet",
+  },
+  {
+    question: "Hvor finner jeg utviklingsplanen?",
+    expectedId: "funksjonalitet",
+  },
   { question: "Hva er KI-prat?", expectedId: "ki-prat" },
   { question: "Hvordan kommer jeg i gang med KI?", expectedId: "kom-i-gang" },
   {

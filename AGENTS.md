@@ -37,6 +37,9 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - Skriv for lesere som vil følge utviklingen. Utelat interne driftslogger, lokale stier, containernavn, kontrollsummer, agentnotater og interne tilgangsavklaringer. Ikke kopier intern historikk automatisk. Bevar faglige begrensninger og skill utviklet, testet og faktisk publisert; ikke oppfinn versjonsnummer, lanseringsdato eller godkjenning.
 - Rene lokale omstarter og driftsnotater hører normalt bare hjemme i den detaljerte loggen. De offentlige filene er ikke en kopi av funksjonsregisteret. Bevar eksisterende intern historikk, og kontroller begge offentlige sider i byggvariantene ved endret dokumentkobling.
 
+- Fordel informasjon etter formål: dato og endring i offentlig versjonslogg; fremtidige leveranser/avklaringer og datert beslutningshistorikk i offentlig plan; bare dagens funksjoner og begrensninger i funksjonsregisteret. Ikke erstatt den offentlige kronologien med et tematisk sammendrag. Tidligere feil, rettinger og endrede beslutninger beholdes datert, uten å fremstille gamle statuser som gjeldende.
+- Ved større historikkopprydding: lag en kildevis kartlegging som viser hvor alle vesentlige poster er ivaretatt. Bevar detaljert logg og daterte bevis; gjentatte driftskjøringer kan omtales samlet offentlig når originalene og deres individuelle referanser beholdes.
+
 ## Test RAG-søket ved innholdsendringer
 
 - Ved endringer i sider, ressurser, søkenøkkelord, kunnskapsutvalg eller innholdsavledet funksjons-/pris-/oversiktstekst: kjør `pnpm test:search` før ferdigmelding eller commit. Kjør også `pnpm test:content-sync` når felles innhold eller RAG-utvalget endres. Registrer resultat og eventuelle begrensninger i versjonsloggen.

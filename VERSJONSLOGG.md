@@ -6,6 +6,14 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 18. november 2026 – full historikkartlegging og tydelig dokumentfordeling
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Kartlagt 138 opprinnelige loggposter, 48 planseksjoner og alle 75 lokale commits frem til 5f936870. [Kildevis inventar og rapport](docs/HISTORIKK-KARTLEGGING.md) viser fordeling; 122 redaksjonelle endrings-/kontrollposter vises offentlig, 16 rene driftsbevis beholdes i detaljloggen med datert gruppeomtale. Planhistorikken fra 30. oktober og forskjellen mellom arbeids- og commitdato er eksplisitt bevart. Ingen tidligere loggposter, bevis eller Git-objekter er slettet eller endret.
+- Offentlig logg er nå kronologisk med vesentlige endringer og historiske feil/rettinger. Offentlig plan viser fremtid, åpne P1–P10-krav og beslutningshistorikk uten funksjonskopi. Dagens funksjonsoversikt og RAG-register inneholder ikke lenger planlagt modell-/forbruksoversikt; disse finnes fortsatt som fremtidstema på Oversikt og i planen. Dokumentvisningen støtter lenke til funksjonalitetsoversikten.
+- Nye dekningstester kontrollerer bevarte loggblokker, offentlige sammendrag og commitkoblinger. To naturlige søkespørsmål om funksjonsoversikt og utviklingsplan er lagt til; ingen held-out-/blindsett eller søkeregler er endret. AGENTS, arkitektur, README og dokumentasjonsoversikt beskriver løpende vedlikehold. Ingen commit, push, Docker-ombygging eller publisering. Kontroller: pnpm check bestod (298 Node-/tre Python-tester, innholdssynk, lenker, format, typer og serverbygg); pnpm test:search bestod 128/128. Etter samling av bevaringstestene i eksisterende funksjonstestfil bestod alle 11 funksjons-/historikktester. Endelig serverbygg og Pages-bygg bestod; bygget HTML i begge varianter er kontrollert for alle 122 offentlige sammendrag, datoseksjoner, P1–P10, funksjonsavgrensning og lenker mellom de tre sidene, uten undersøkte interne markører. Tre ytterligere Git-metadataoppføringer utenfor hovedgrenen er registrert som teknisk historikk uten lesing av gamle filinnhold. Ingen nettleser-/skjermleserprøve eller ny modelltest.
+
 ### 17. november 2026 – offentlige utgaver av versjonslogg og utviklingsplan
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

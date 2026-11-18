@@ -6,6 +6,10 @@ Avstemt **16. november 2026** av **Codex (OpenAI)**, uten underagenter. Denne ov
 
 [Offentlig versjonslogg](../VERSJONSLOGG-OFFENTLIG.md) og [offentlig utviklingsplan](../UTVIKLINGSPLAN-OFFENTLIG.md) er redaksjonelle sammendrag som vises på nettstedets dokumentruter. De detaljerte arbeidsdokumentene i tabellen nedenfor beholdes for intern oppfølging og historikk. Offentlig nettsted uten innlogging er nå besluttet; eldre beskrivelser av lukket pilot nedenfor er historiske. Detaljer om driftsmiljø og faktiske publiseringer må fortsatt dokumenteres fra gjennomførte kontroller.
 
+## Historikkartlegging – 18. november 2026
+
+[Fordelingen av hele den bevarte historikken](HISTORIKK-KARTLEGGING.md) skiller daterte endringer, fremtidige oppgaver og dagens funksjoner. Et kildevis inventar og regresjonstester kontrollerer bevaring av 138 opprinnelige loggposter og krysskobling av 75 commits. Tidligere testresultater og interne tekniske detaljer beholdes i arbeidsdokumentasjonen.
+
 ## Gjeldende innganger
 
 | Dokument                                                                   | Bruk og avgrensning                                                                                                                                                                          |

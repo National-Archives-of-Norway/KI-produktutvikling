@@ -1,0 +1,2352 @@
+{
+  "reviewedRevision": "5f93687041c580409621a76573edf27587bc3e66",
+  "date": "2026-11-18",
+  "scope": "Portalens bevarte detaljerte logg, hele utviklingsplanen, metadata for alle 75 commits nåbare fra HEAD og tre ekstra commits nåbare fra øvrige lokale refs. Separate Skills-repo og eksterne blindsett er ikke lest.",
+  "logEntries": [
+    {
+      "id": "H001",
+      "sourceTitle": "17. november 2026 – offentlige utgaver av versjonslogg og utviklingsplan",
+      "sourceSha256": "652187a8b85084e94c7b5aaf9398e5efdccf55b15b7679a684a651893a7fda17",
+      "date": "2026-11-17",
+      "destination": "changelog",
+      "summary": "Offentlige utgaver av versjonsloggen og utviklingsplanen er opprettet. Interne arbeids- og driftsnotater beholdes separat.",
+      "publicSection": "17. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H002",
+      "sourceTitle": "17. november 2026 – Docker oppdatert fra bb20299",
+      "sourceSha256": "009ec4d3c633a4ce5ca4b6798cc05daffc1f946b6ebd068662bf954f45f3e96a",
+      "date": "2026-11-17",
+      "destination": "technical",
+      "summary": "Gjentatt lokal Docker-ombygging/helsekontroll uten egen brukerfunksjon; opprinnelig datert bevis beholdes i detaljert versjonslogg.",
+      "publicSection": null,
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H003",
+      "sourceTitle": "17. november 2026 – offentlig nettsted uten autentisering",
+      "sourceSha256": "09b41d38fb21f75334b675f93639b8e0a4b8f2a96174f8e6d91e2437d8d60c94",
+      "date": "2026-11-17",
+      "destination": "changelog",
+      "summary": "Retningen er endret fra lukket pilot til offentlig nettsted uten innlogging. Innholdsreview og vern mot misbruk må fortsatt være på plass før åpning.",
+      "publicSection": "17. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H004",
+      "sourceTitle": "17. november 2026 – konkret sjekkliste for lukket pilot",
+      "sourceSha256": "ca379fe7525d9287db6c82fff20320032568b1abccf13b260076bf657fed604c",
+      "date": "2026-11-17",
+      "destination": "changelog",
+      "summary": "Lanseringskravene er konkretisert i en sjekkliste som skiller lokale oppgaver fra faglige og administrative avklaringer. Den opprinnelige pilotsjekklisten er senere tilpasset offentlig tilgang.",
+      "publicSection": "17. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H005",
+      "sourceTitle": "17. november 2026 – rettet gammel utviklingsprosess etter Next-oppgradering",
+      "sourceSha256": "11f5611335e90bc398096e3bcb7b9960f80e5d69f543d84d118456cd01902f13",
+      "date": "2026-11-17",
+      "destination": "changelog",
+      "summary": "Feilen som rammet Kom i gang og Om etter oppgradering er rettet ved omstart og fornyet utviklingscache. Feilsøking etter oppgradering er dokumentert.",
+      "publicSection": "17. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H006",
+      "sourceTitle": "17. november 2026 – Next.js-sikkerhetsoppgradering og rettet testverktøykjede",
+      "sourceSha256": "65ac3d910f493151151caa4a81e19ca354d3b59cc7cd4e5a17fe4f73664670d1",
+      "date": "2026-11-17",
+      "destination": "changelog",
+      "summary": "Next.js er oppgradert fra 16.4.3 til 16.4.6, og avhengigheter i testverktøykjeden er sikkerhetsoppdatert. Lokal avhengighetskontroll fant ingen kjente funn etter rettingen; dette er ikke en samlet sikkerhetsgodkjenning.",
+      "publicSection": "17. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H007",
+      "sourceTitle": "17. november 2026 – Docker-portal oppdatert fra 3899c18d",
+      "sourceSha256": "8edffa9a264e60205dff69177b1fc6584fd6df35289d79dd16e0ed846a7f79aa",
+      "date": "2026-11-17",
+      "destination": "technical",
+      "summary": "Gjentatt lokal Docker-ombygging/helsekontroll uten egen brukerfunksjon; opprinnelig datert bevis beholdes i detaljert versjonslogg.",
+      "publicSection": null,
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H008",
+      "sourceTitle": "17. november 2026 – Docker-portal oppdatert fra 70f4c42d",
+      "sourceSha256": "45bfb530e8daeddc2c2b405b30569398178d6e9d17b9bc0355927ba2d8108264",
+      "date": "2026-11-17",
+      "destination": "technical",
+      "summary": "Gjentatt lokal Docker-ombygging/helsekontroll uten egen brukerfunksjon; opprinnelig datert bevis beholdes i detaljert versjonslogg.",
+      "publicSection": null,
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H009",
+      "sourceTitle": "17. november 2026 – Docker-portal oppdatert fra b4bda7c4",
+      "sourceSha256": "fe239bcca15c8929f170a2e07d1db3b65748bd97ec5dbd28fd26a50c8dc9f7f1",
+      "date": "2026-11-17",
+      "destination": "technical",
+      "summary": "Gjentatt lokal Docker-ombygging/helsekontroll uten egen brukerfunksjon; opprinnelig datert bevis beholdes i detaljert versjonslogg.",
+      "publicSection": null,
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H010",
+      "sourceTitle": "17. november 2026 – Docker-portal oppdatert fra 966765fb",
+      "sourceSha256": "31c891cafcc5861b633d4d7db67a334344af87589c262eea4a9b8be62bd4d60e",
+      "date": "2026-11-17",
+      "destination": "technical",
+      "summary": "Gjentatt lokal Docker-ombygging/helsekontroll uten egen brukerfunksjon; opprinnelig datert bevis beholdes i detaljert versjonslogg.",
+      "publicSection": null,
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H011",
+      "sourceTitle": "17. november 2026 – Docker-portal oppdatert fra 842739da",
+      "sourceSha256": "4ca0f412ecf0f64735deb526cbfa15bfccc6e71520ee66c258dc0014d60602c8",
+      "date": "2026-11-17",
+      "destination": "technical",
+      "summary": "Gjentatt lokal Docker-ombygging/helsekontroll uten egen brukerfunksjon; opprinnelig datert bevis beholdes i detaljert versjonslogg.",
+      "publicSection": null,
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H012",
+      "sourceTitle": "17. november 2026 – responsiv forside startet i Docker fra d7b69ced",
+      "sourceSha256": "b1f062175e48b6c086f36b34f3b870bb819e05336f84207da9f81f36b0540f92",
+      "date": "2026-11-17",
+      "destination": "technical",
+      "summary": "Gjentatt lokal Docker-ombygging/helsekontroll uten egen brukerfunksjon; opprinnelig datert bevis beholdes i detaljert versjonslogg.",
+      "publicSection": null,
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H013",
+      "sourceTitle": "17. november 2026 – forsideanimasjonen følger overskriften på smale skjermer",
+      "sourceSha256": "144c117e6b52affb226891d189461afd7d0741c2c6002b771c3483006686f4d9",
+      "date": "2026-11-17",
+      "destination": "changelog",
+      "summary": "Forsideanimasjonen står ved siden av de to overskriftslinjene på smale skjermer og følger tekstens høyde. Plassering, tastaturbetjening og fravær av vannrett rulling er prøvd ved flere skjermbredder.",
+      "publicSection": "17. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H014",
+      "sourceTitle": "17. november 2026 – Docker-portal oppdatert fra 2b7908cc",
+      "sourceSha256": "cb6039a45b4027248d800409f5e0151a16ea12ab4fbbbef53a7c002959caba26",
+      "date": "2026-11-17",
+      "destination": "technical",
+      "summary": "Gjentatt lokal Docker-ombygging/helsekontroll uten egen brukerfunksjon; opprinnelig datert bevis beholdes i detaljert versjonslogg.",
+      "publicSection": null,
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H015",
+      "sourceTitle": "17. november 2026 – Docker-portal oppdatert fra 5ffe263c",
+      "sourceSha256": "677320cd328377a92141fd837c4e0f679b2dfd92f7705a72dc527e008ad2b578",
+      "date": "2026-11-17",
+      "destination": "technical",
+      "summary": "Gjentatt lokal Docker-ombygging/helsekontroll uten egen brukerfunksjon; opprinnelig datert bevis beholdes i detaljert versjonslogg.",
+      "publicSection": null,
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H016",
+      "sourceTitle": "17. november 2026 – Docker-portal oppdatert fra bf311ed5",
+      "sourceSha256": "f9cf4b1047b536ef5efb7300120e89cefe5d1ccb12ce67577053f8778fc0b88e",
+      "date": "2026-11-17",
+      "destination": "technical",
+      "summary": "Gjentatt lokal Docker-ombygging/helsekontroll uten egen brukerfunksjon; opprinnelig datert bevis beholdes i detaljert versjonslogg.",
+      "publicSection": null,
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H017",
+      "sourceTitle": "17. november 2026 – Docker-portal oppdatert fra 9446009e",
+      "sourceSha256": "e563235ac3a4ee9e6838ebe2d0708c4a8fcd60b76452726f290a252f8850f958",
+      "date": "2026-11-17",
+      "destination": "technical",
+      "summary": "Gjentatt lokal Docker-ombygging/helsekontroll uten egen brukerfunksjon; opprinnelig datert bevis beholdes i detaljert versjonslogg.",
+      "publicSection": null,
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H018",
+      "sourceTitle": "17. november 2026 – Docker-portal oppdatert fra 632dc664",
+      "sourceSha256": "50496d88ad06fecd0958bc1601edba8e2316ace0da4749981ac1290957d84c57",
+      "date": "2026-11-17",
+      "destination": "technical",
+      "summary": "Gjentatt lokal Docker-ombygging/helsekontroll uten egen brukerfunksjon; opprinnelig datert bevis beholdes i detaljert versjonslogg.",
+      "publicSection": null,
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H019",
+      "sourceTitle": "17. november 2026 – automatisk søkekontroll ved innholdsredigering",
+      "sourceSha256": "74b4c9cd4e0632711e712253dfc49f21a7f8a19fbbc1b29dbe3b7e0b9fe260a6",
+      "date": "2026-11-17",
+      "destination": "changelog",
+      "summary": "Søketester kjøres automatisk ved relevante innholdsendringer i lokal utvikling. Testene inngår også i den ordinære kontrollrekken; faktisk modellgenerering vurderes separat.",
+      "publicSection": "17. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H020",
+      "sourceTitle": "17. november 2026 – Copilot-søk og avgrenset modellkontekst",
+      "sourceSha256": "3358f2bf4163115b4b865b7bcadc494c423ff8002fa57f846be925bdb727bb05",
+      "date": "2026-11-17",
+      "destination": "changelog",
+      "summary": "Kildevalget for spørsmål om Copilot-genererte tester er rettet. Modellen får et avgrenset kildegrunnlag med bevarte forbehold, slik at unødvendig lang kontekst reduseres. De fem berørte modellspørsmålene er prøvd på nytt.",
+      "publicSection": "17. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H021",
+      "sourceTitle": "16. november 2026 – Copilot-prøver avdekker modellfeil og ett søkeavvik",
+      "sourceSha256": "da89ac438281d688fd91e84eea45b0509c92bbfbe188a06e9c838a1fa098b3d8",
+      "date": "2026-11-16",
+      "destination": "changelog",
+      "summary": "Fem faktiske modellprøver avdekket tidsavbrudd, modellfeil og ett feil kildevalg. Resultatene er bevart som feilgrunnlag; oppfølgingen er beskrevet 17. november.",
+      "publicSection": "16. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H022",
+      "sourceTitle": "16. november 2026 – retningslinjer for GitHub Copilot",
+      "sourceSha256": "dc8011e660b7bb04812787585d2d6e9fef8203b052c018435cdf00fea359b82b",
+      "date": "2026-11-16",
+      "destination": "changelog",
+      "summary": "Retningslinjer for GitHub Copilot har fått egen side med sikkerhet, personvern, kvalitet, oppdateringer og praktiske bruksområder, lenket fra de øvrige retningslinjene og assistentoversikten.",
+      "publicSection": "16. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H023",
+      "sourceTitle": "16. november 2026 – faktiske Spør KI-svar om MCP-godkjenning kontrollert",
+      "sourceSha256": "c96db46b5754c1543f96c8a42057122bf7a4949cead387cfc50130e6fa973539",
+      "date": "2026-11-16",
+      "destination": "changelog",
+      "summary": "Faktiske modellprøver av MCP-spørsmål bekreftet kildehenvisninger og skillet mellom godkjente, planlagte og ennå ikke godkjente integrasjoner.",
+      "publicSection": "16. november 2026",
+      "currentFeatureIds": ["godkjente-mcper"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H024",
+      "sourceTitle": "16. november 2026 – Docker-portal oppdatert fra 452b0c5",
+      "sourceSha256": "007da24a4af43faa598cb2b3461fb37b2717097a84b55332535bd649864e62ba",
+      "date": "2026-11-16",
+      "destination": "technical",
+      "summary": "Gjentatt lokal Docker-ombygging/helsekontroll uten egen brukerfunksjon; opprinnelig datert bevis beholdes i detaljert versjonslogg.",
+      "publicSection": null,
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H025",
+      "sourceTitle": "16. november 2026 – Logorama og Prometheus i MCP-oversikten",
+      "sourceSha256": "b4ee9061e183bb3e445d3a37867348914686be9be40a52277a33b6f81f0c2ef4",
+      "date": "2026-11-16",
+      "destination": "changelog",
+      "summary": "Logorama MCP og Prometheus MCP er lagt til som godkjente etter opplysninger fra innholdseier. Atlassian beholder ROS-analyse pågår og Slack beholder Planlagt. Statusinformasjon gir ikke i seg selv en aktiv tilkobling.",
+      "publicSection": "16. november 2026",
+      "currentFeatureIds": ["godkjente-mcper"],
+      "planRequirements": ["P4", "P7"]
+    },
+    {
+      "id": "H026",
+      "sourceTitle": "16. november 2026 – Docker-portal oppdatert fra a4b12d3",
+      "sourceSha256": "d000bf48575cf3016fa015b0b985d5381de1fad386e7f3bebd6c79b8e8220869",
+      "date": "2026-11-16",
+      "destination": "technical",
+      "summary": "Gjentatt lokal Docker-ombygging/helsekontroll uten egen brukerfunksjon; opprinnelig datert bevis beholdes i detaljert versjonslogg.",
+      "publicSection": null,
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H027",
+      "sourceTitle": "16. november 2026 – rullerettingen prøvd ved 320 px og i forsidens chatbot",
+      "sourceSha256": "955a09546cd218a5c2404a20dfa8ceddfe617545eac0c4c7741804418055a966",
+      "date": "2026-11-16",
+      "destination": "changelog",
+      "summary": "Rulling til svarstart er prøvd ved 320 pikslers bredde og i forsidens chatbot, med faktiske modellsvar og nye innsendinger. Dette er avgrensede prøver, ikke en full tilgjengelighetsgodkjenning.",
+      "publicSection": "16. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H028",
+      "sourceTitle": "16. november 2026 – Spør KI beholder starten på svaret synlig",
+      "sourceSha256": "62dfe7126bf4018861357c5eecfc776adfdc444fcdb36a898d7cd57356a871d0",
+      "date": "2026-11-16",
+      "destination": "changelog",
+      "summary": "Spør KI ruller til starten av det nyeste svaret. Retur av tastaturfokus til tekstfeltet trekker ikke lenger visningen ned forbi svaret.",
+      "publicSection": "16. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H029",
+      "sourceTitle": "16. november 2026 – CI og versjonskrav samlet på Node 24",
+      "sourceSha256": "a937dfeb0e818cfa7f94e06ce0459e98085eb6867a927355526a51aee578edba",
+      "date": "2026-11-16",
+      "destination": "changelog",
+      "summary": "Løpende CI og støttekrav er samlet på Node 24. Historiske kontroller med Node 22 beholdes som bevis for sine daværende revisjoner.",
+      "publicSection": "16. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H030",
+      "sourceTitle": "16. november 2026 – rotårsak til CI-feilen bekreftet: IP-liste",
+      "sourceSha256": "3a2cb4b7907fdc6969391a8380d79fd4e53671a09ebff2edb5b0c51bf54f4bcf",
+      "date": "2026-11-16",
+      "destination": "changelog",
+      "summary": "En blokkering i det delte CI-miljøet er avklart som et oppsettsforhold før testene starter. Godkjent drifts- og kjøreoppsett må fortsatt avklares; lokale tester gjør ikke den delte kontrollen grønn.",
+      "publicSection": "16. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H031",
+      "sourceTitle": "16. november 2026 – tidligere undersøkelse: CI-feil avgrenset til checkout",
+      "sourceSha256": "4f58da12fcf8bc73296f982e708f8f0d0c7e8fbcead20925ba2353ec04d2e5d4",
+      "date": "2026-11-16",
+      "destination": "changelog",
+      "summary": "Første opplasting av kildekoden er bekreftet. Feil i automatisk kontroll ble avgrenset til uthenting av kildekoden, mens kontrollene bestod lokalt. Dette var ingen publisering av nettstedet.",
+      "publicSection": "16. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H032",
+      "sourceTitle": "16. november 2026 – samlet lokal kontroll før første push",
+      "sourceSha256": "0c8411a8bdec941b14af680fb6d669d8dcd05d41f2cc8d7f72eeae630bfab28a",
+      "date": "2026-11-16",
+      "destination": "changelog",
+      "summary": "Hele den lokale kvalitetskontrollen og begge byggvariantene er prøvd før første opplasting. Sjekklisten skiller teknisk kontroll fra innholds- og lanseringsgodkjenning.",
+      "publicSection": "16. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H033",
+      "sourceTitle": "16. november 2026 – aktiv Docker-portal oppdatert til ee26bb2",
+      "sourceSha256": "c41334b412fe1f4aa3d9293c71c25e76784fc5e31a9c018f276d984a078c5b06",
+      "date": "2026-11-16",
+      "destination": "technical",
+      "summary": "Gjentatt lokal Docker-ombygging/helsekontroll uten egen brukerfunksjon; opprinnelig datert bevis beholdes i detaljert versjonslogg.",
+      "publicSection": null,
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H034",
+      "sourceTitle": "16. november 2026 – rettet Qwen-timeout ved for høyt automatisk trådtall",
+      "sourceSha256": "f5468744a568f26bb264e70d2d7b01013eda0a9325bcc13a7553233aaba5ba96",
+      "date": "2026-11-16",
+      "destination": "changelog",
+      "summary": "Årsaken til treg lokal Qwen-generering er undersøkt med sammenlignbare prøver. Fire CPU-tråder erstatter automatisk trådvalg i Docker-oppsettet; kald og varm modell er retestet uten å øke tidsgrensen.",
+      "publicSection": "16. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H035",
+      "sourceTitle": "16. november 2026 – ren Docker-prøve: infrastruktur bestod, modellgenerering feilet",
+      "sourceSha256": "1a4b47f4d80d1f947ba00acadede5d0b86d26d29987ec86ac5c344182fcbdb63",
+      "date": "2026-11-16",
+      "destination": "changelog",
+      "summary": "En ren installasjonsprøve bekreftet modellnedlasting, helse og gjenbruk av modellvolum, men modellgenerering traff tidsgrensen. Feilen er bevart og fulgt opp med rettingen av trådvalg.",
+      "publicSection": "16. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H036",
+      "sourceTitle": "16. november 2026 – stegvis Docker-oppskrift i README",
+      "sourceSha256": "f4d325f6400cb7e897ea68bcaca5496ca0c2e35fb3c99e42495e14b4c7b0a4d0",
+      "date": "2026-11-16",
+      "destination": "changelog",
+      "summary": "README har fått en trinnvis oppskrift for Docker, modellnedlasting, helsesjekk, Spør KI, omstart og feilsøking. Modellvolumet kan gjenbrukes ved ombygging.",
+      "publicSection": "16. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H037",
+      "sourceTitle": "16. november 2026 – ny sikkerhetsskanning av dagens filer",
+      "sourceSha256": "0ba25bac5d32adfdb3b0cfe55dd8489d204bfad084d8c30a977789b699a3240d",
+      "date": "2026-11-16",
+      "destination": "changelog",
+      "summary": "En ny kontroll av dagens filer og lagrede bevis er dokumentert. Ingen bekreftede nøkkelverdier ble funnet i det undersøkte utvalget; gjenværende innholds- og historikkavklaringer er ikke lukket.",
+      "publicSection": "16. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H038",
+      "sourceTitle": "16. november 2026 – sladdet preview-nøkler i historisk byggbevis",
+      "sourceSha256": "cd707b00e408e538b24d60cbbf90099240b5a1b1901d9a77ba4559935e654bbd",
+      "date": "2026-11-16",
+      "destination": "changelog",
+      "summary": "Unødvendig generert nøkkelmateriale er sladdet i et lagret byggbevis. Endringen gjelder dagens fil og fjerner ikke tidligere Git-objekter eller roterer aktive nøkler.",
+      "publicSection": "16. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H039",
+      "sourceTitle": "16. november 2026 – rettet fem historiske bildelenker",
+      "sourceSha256": "9514fe4dbc60d3b35bc6fc000111be448304e4a64840b9679b9545ea6025bb7b",
+      "date": "2026-11-16",
+      "destination": "changelog",
+      "summary": "Fem brutte bildereferanser i historiske erklæringskopier er rettet. Opprinnelige vurderinger, testdatoer og bilder er bevart.",
+      "publicSection": "16. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H040",
+      "sourceTitle": "13. november 2026 – gjennomført skjermbildeopprydding og vedlikeholdsregel",
+      "sourceSha256": "da91b39f8efa29fe81be50ffad9f15a5d15a4642b703a056c71319c1a0d5e9de",
+      "date": "2026-11-13",
+      "destination": "changelog",
+      "summary": "Skjermbildebevis er ryddet etter et godkjent utvalg: representative bevis er beholdt, historikk arkivert og byte-identiske ekstra kopier fjernet. Referanser og flyttelogg er oppdatert uten omskriving av Git-historikken.",
+      "publicSection": "13. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H041",
+      "sourceTitle": "13. november 2026 – foreslått mindre skjermbildeutvalg",
+      "sourceSha256": "b5d393e151dc4b6abd8521694f2eea1f4af26ee60d6daa199e035acbd13c983f",
+      "date": "2026-11-13",
+      "destination": "changelog",
+      "summary": "Et filvis forslag til hvilke skjermbilder som skal beholdes, arkiveres og regnes som identiske kopier er laget før opprydding. Forslaget er senere gjennomført etter godkjenning.",
+      "publicSection": "13. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H042",
+      "sourceTitle": "13. november 2026 – sikkerhets- og innholdskontroll før første push",
+      "sourceSha256": "fc9ec71da02f5e16f97d791abe19bee3fa935a33d91ea66718f83e48074b56c5",
+      "date": "2026-11-13",
+      "destination": "changelog",
+      "summary": "Git-historikk og lagrede rapporter/bilder er gjennomgått før deling. Funn og begrensninger er dokumentert uten å vise nøkkelverdier. Gjennomgangen er ikke en generell godkjenning av alt innhold.",
+      "publicSection": "13. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H043",
+      "sourceTitle": "13. november 2026 – friksjonsprosess innført i prosjektet",
+      "sourceSha256": "81752e1d3af214b5ab0a532707e9e2665fab81636c6b781e6ebecc14b8a7174f",
+      "date": "2026-11-13",
+      "destination": "changelog",
+      "summary": "Prosjektet har fått en prosess for å registrere vesentlige kunnskapshull og vurdere oppfølging. Vanlig undersøkelse og oppgavens egne funn skal ikke registreres som friksjon.",
+      "publicSection": "13. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H044",
+      "sourceTitle": "13. november 2026 – instruksjonskort for friksjonslogg og triage",
+      "sourceSha256": "a2e68ed06fe08356650780098d3dad4c288badbeb51316d4a5fedc8baccc6aa2",
+      "date": "2026-11-13",
+      "destination": "changelog",
+      "summary": "Instruksen «Add friction triage process to Agents.md» er lagt i ressurskatalogen med full instruksjon, brukssteg og søkeord.",
+      "publicSection": "13. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H045",
+      "sourceTitle": "13. november 2026 – beholdt flytende etikett, fjernet linjen bak teksten",
+      "sourceSha256": "fa4afa2f6096889d83c6bcf2d5d7ee742a679d554dd7722583ab577cb257ea02",
+      "date": "2026-11-13",
+      "destination": "changelog",
+      "summary": "Den flytende etiketten i spørsmålsfeltet er gjeninnført etter presisering av ønsket oppførsel. Den løftes ved fokus eller innhold, og rammen er fjernet bak etikettteksten.",
+      "publicSection": "13. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H046",
+      "sourceTitle": "13. november 2026 – rettet overlappende etikett i Spør KI",
+      "sourceSha256": "926d1077b293e345113ecc563f48c49b79b0d00c59b252423317e8c8bd81d279",
+      "date": "2026-11-13",
+      "destination": "changelog",
+      "summary": "En overlappende etikett i spørsmålsfeltet ble først rettet med fast etikett og testet på smal og bred skjerm. Denne løsningen ble samme dag erstattet av den flytende etiketten; begge endringene beholdes i historikken.",
+      "publicSection": "13. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H047",
+      "sourceTitle": "12. november 2026 – Spør KI finner den samlede skill-oversikten",
+      "sourceSha256": "45a4038715175871602977ecef0f00e6b174fed0e2f6f7fcbaf97e205971458b",
+      "date": "2026-11-12",
+      "destination": "changelog",
+      "summary": "Spør KI kan finne en samlet skill-oversikt. Navn, antall, beskrivelser og skille mellom pakker og eksempler avledes av den samme ressurskatalogen.",
+      "publicSection": "12. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H048",
+      "sourceTitle": "12. november 2026 – lokal Qwen3:4b med Docker Compose",
+      "sourceSha256": "97df716ce586bd0dd1f860427eeab8dc8794aef57df04edff509c60ed116e921",
+      "date": "2026-11-12",
+      "destination": "changelog",
+      "summary": "Docker Compose med portal, separat Ollama-tjeneste og Qwen3:4b er etablert. Modellen lagres i et eget volum utenfor Git; faktiske lokale svar med kilder er prøvd. Lokal utprøving er ikke godkjenning for offentlig modellbruk.",
+      "publicSection": "12. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H049",
+      "sourceTitle": "12. november 2026 – oppdatert lokal Docker-utgave til d2f6ba3",
+      "sourceSha256": "54dcb2cc99cf1ae034a8094f8259961d4f448908463c608fd197d1e5c1e8e2c1",
+      "date": "2026-11-12",
+      "destination": "technical",
+      "summary": "Gjentatt lokal Docker-ombygging/helsekontroll uten egen brukerfunksjon; opprinnelig datert bevis beholdes i detaljert versjonslogg.",
+      "publicSection": null,
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H050",
+      "sourceTitle": "11. november 2026 – tastaturfokus ved sending og avbrudd i chat",
+      "sourceSha256": "650e1608b1ce68bdad20cccdaefd02dfdec8d5a1e6394f76e1d14f69167d9d3d",
+      "date": "2026-11-11",
+      "destination": "changelog",
+      "summary": "Send-knappen beholder tastaturfokus under venting. Etter svar eller avbrudd går fokus tilbake til spørsmålsfeltet bare når det ikke stjeler fokus fra en annen valgt kontroll.",
+      "publicSection": "11. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H051",
+      "sourceTitle": "11. november 2026 – søkenøkkelord for innhold i Spør KI",
+      "sourceSha256": "f8811e5d49bfa5a9031209b9e757cdeb885400c8156350b8a19f4724ba2a4b00",
+      "date": "2026-11-11",
+      "destination": "changelog",
+      "summary": "Søkenøkkelord er lagt til for tydelig kontekst og personvern, slik at blant annet prompt, instrukser, lagring og tømming av chat kan gjenfinnes. Søkeordene er metadata og vises ikke som modellens kildeinnhold.",
+      "publicSection": "11. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H052",
+      "sourceTitle": "11. november 2026 – norske verbstammer og kilder til to temaer",
+      "sourceSha256": "8dae468fb4db09d0c7a56a29ace47d44512efc791ef8e6e2d3ebfb542fc0815c",
+      "date": "2026-11-11",
+      "destination": "changelog",
+      "summary": "Norsk stamming håndterer flere verbformer. Spørsmål med to ulike, tydelig støttede temaer kan få en kilde per tema når vanlig søk ikke gir treff.",
+      "publicSection": "11. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H053",
+      "sourceTitle": "11. november 2026 – ekstern blindmåling uten spørsmål i standardlogger",
+      "sourceSha256": "a68de9302a65581d46cb7e5f2192495e46e5bb86caf3eb4d9223f1ef16dc0cc1",
+      "date": "2026-11-11",
+      "destination": "changelog",
+      "summary": "Blindmåling er skilt fra den ordinære testpakken og bruker et menneskeforvaltet eksternt sett. Standardrapporten viser bare samlet resultat; testspørsmål og fasit skal ikke brukes til søketilpasning.",
+      "publicSection": "11. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H054",
+      "sourceTitle": "11. november 2026 – fjernet Oversikt fra bunnmenyen",
+      "sourceSha256": "fb9153ba5443a94eeb9bbee43f899d33c213bb3cfd685e06073036f791948fbf",
+      "date": "2026-11-11",
+      "destination": "changelog",
+      "summary": "Oversikt-lenken er fjernet fra bunnmenyen. Siden er fortsatt tilgjengelig fra hovedmenyen.",
+      "publicSection": "11. november 2026",
+      "currentFeatureIds": ["oversikt", "priser"],
+      "planRequirements": ["P4", "P7"]
+    },
+    {
+      "id": "H055",
+      "sourceTitle": "11. november 2026 – oppdatert lokal Docker-forhåndsvisning",
+      "sourceSha256": "dbf726f326ed12cbf00a132f79170e2b1b12d25e84416d31e39abc3048107c94",
+      "date": "2026-11-11",
+      "destination": "changelog",
+      "summary": "Første lokale Docker-forhåndsvisning er bygget og startet som eget miljø, med portal og RAG uten modellgenerering. Den eksisterende lokale utviklingsserveren er beholdt separat.",
+      "publicSection": "11. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H056",
+      "sourceTitle": "11. november 2026 – enklere skill-kort",
+      "sourceSha256": "ba8d4123bef40c07c42401dc77752bfa89f6eb82fd1b84ae72e0ea7ec353b59d",
+      "date": "2026-11-11",
+      "destination": "changelog",
+      "summary": "Skill-kortene er forenklet ved å fjerne den lange teksten om manglende menneskelig gjennomgang. Beta-etiketten og statusinformasjonen på detaljsidene beholdes.",
+      "publicSection": "11. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H057",
+      "sourceTitle": "11. november 2026 – samlet avstemming av Markdown-dokumentasjonen",
+      "sourceSha256": "ca20e1ce042783e4873e2a2ec443c5304b29174f6ccec441160552324496d882",
+      "date": "2026-11-11",
+      "destination": "changelog",
+      "summary": "Dokumentasjonen er avstemt mot den aktuelle implementasjonen. En dokumentasjonsoversikt skiller gjeldende beskrivelser, historiske kontrollbevis, utkast og lagringsforslag.",
+      "publicSection": "11. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H058",
+      "sourceTitle": "11. november 2026 – hele CI-rekken testet i Docker/Linux på Node 22 og 24",
+      "sourceSha256": "cd2b3135d0f89ba7cc76ff42d80bb721513204d5395b200e1b73a0db2da7df5c",
+      "date": "2026-11-11",
+      "destination": "changelog",
+      "summary": "Hele kontrollrekken, inkludert begge bygg, er verifisert i Docker/Linux med de daværende Node 22- og Node 24-versjonene. Dette bekrefter de testede revisjonene, ikke senere endringer eller GitHub-kjøring.",
+      "publicSection": "11. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H059",
+      "sourceTitle": "11. november 2026 – eksplisitt CI-matrise og SHA-låste actions før første push",
+      "sourceSha256": "34a76e008d8e8e59dfdb2d56582b5bdb3e64435b31cfcd30643ba57a94afc7b6",
+      "date": "2026-11-11",
+      "destination": "changelog",
+      "summary": "CI fikk eksplisitt versjonsmatrise, SHA-låste actions, ukentlige oppdateringsforslag og en sjekkliste for første push. Matrisen er senere forenklet til Node 24; sikkerhets- og reviewprinsippene beholdes.",
+      "publicSection": "11. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H060",
+      "sourceTitle": "11. november 2026 – datoer i svar, separate chatknapper og felles porttolking",
+      "sourceSha256": "2b96f0432b3eed6f9fde10f6e54a472f32d727d3deb7b9221e2a9809dcc55789",
+      "date": "2026-11-11",
+      "destination": "changelog",
+      "summary": "Datoer og årstall vises som avsnitt fremfor nummererte listepunkter. Send og Avbryt er separate knapper, og portverdier tolkes likt av portal og RAG-server.",
+      "publicSection": "11. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H061",
+      "sourceTitle": "11. november 2026 – felles chatforslag og forenklet indeksert kildesøk",
+      "sourceSha256": "77c6084f53b67510c46599aaec983461ea5583750cb9f07dc3b5151bf6c98118",
+      "date": "2026-11-11",
+      "destination": "changelog",
+      "summary": "Forslagsspørsmål er samlet i én kilde og regresjonstestet. Kildesøket har fått samlet stoppliste, lavere vekt for handlingsord, færre spesialregler og en indeks som bygges én gang ved innlasting.",
+      "publicSection": "11. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H062",
+      "sourceTitle": "11. november 2026 – ignorer genererte Python-cachefiler",
+      "sourceSha256": "b536bf22ac8ec576f31b25cf10ccef118a66c4b9efce310990b8e44085694b1c",
+      "date": "2026-11-11",
+      "destination": "changelog",
+      "summary": "Genererte Python-cachefiler ignoreres av Git for å holde arbeidskopien ryddig.",
+      "publicSection": "11. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H063",
+      "sourceTitle": "11. november 2026 – chatrettinger testet i Docker/Linux med Node 22",
+      "sourceSha256": "a3ea6b170edc40316b9f7652a3dc4f77a6cc15469f2f62b52bcb938dcd353463",
+      "date": "2026-11-11",
+      "destination": "changelog",
+      "summary": "Avbrudd, ny innsending og listenummerering er prøvd i Docker/Linux med simulert modelltransport. Resultatene er lagret som datert teknisk kontrollgrunnlag.",
+      "publicSection": "11. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H064",
+      "sourceTitle": "11. november 2026 – avbryt chat, tydelig feltgrense og fortløpende lister",
+      "sourceSha256": "a7c369434e37943ccd9d942eb0fcc893852736ac8a9dd8c1095cd1b2cc6fe176",
+      "date": "2026-11-11",
+      "destination": "changelog",
+      "summary": "Spør KI har fått en Avbryt-knapp, varsel når innlimt tekst kuttes og tegnvisning nær grensen. Lister med gjentatte «1.» nummereres fortløpende; bevisste nummerhopp beholdes.",
+      "publicSection": "11. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H065",
+      "sourceTitle": "11. november 2026 – avgrenset prisparsing og entydig RAG-konfigurasjon",
+      "sourceSha256": "8fcbe2d6cd8480ab61e3cce995a6fa2e162b87f3f31df8a620f0f8862d50caee",
+      "date": "2026-11-11",
+      "destination": "changelog",
+      "summary": "Prisparseren tåler irrelevante ugyldige tabeller og avgrensede fotnoter uten å godta tvetydige priser. Tomme RAG-verdier behandles likt, og port 0 avvises ved vanlig oppstart.",
+      "publicSection": "11. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H066",
+      "sourceTitle": "11. november 2026 – norsk stamming og emneorddekning i kildesøket",
+      "sourceSha256": "512faff6a56db1e8e322724e7d2197f46a1017de03357e24bf0c4fbec04924bc",
+      "date": "2026-11-11",
+      "destination": "changelog",
+      "summary": "Kildesøket har fått enkel norsk stamming og krav til dekning av meningsbærende ord. Rangeringen er forbedret og negative spørsmål uten støtte regresjonstestes.",
+      "publicSection": "11. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H067",
+      "sourceTitle": "11. november 2026 – samlet kontrollflyt, CI og kortere README",
+      "sourceSha256": "65dbe801768c0e6a764c34bf0a8f686d67d7e6a117b3981561a745f302879123",
+      "date": "2026-11-11",
+      "destination": "changelog",
+      "summary": "Format, typer, Node-/Python-tester, innholdssynk, lenkekontroll og bygg er samlet i en kontrollflyt. CI for endringer og manuell kjøring er klargjort, og README er forkortet uten å slette historikken.",
+      "publicSection": "11. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H068",
+      "sourceTitle": "11. november 2026 – komplett kildekopi for innholdssynkronisering",
+      "sourceSha256": "e8a7c90309c239706ea7df66d8ab10f99b8eff81ed3710654eb4245ddb23c62c",
+      "date": "2026-11-11",
+      "destination": "changelog",
+      "summary": "En manglende delt modul i kopien til innholdssynktesten er rettet. Oppstart av RAG fra den isolerte kildekopien testes også, slik at nye delte moduler følger med.",
+      "publicSection": "11. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H069",
+      "sourceTitle": "11. november 2026 – samlet avstemming av plan, funksjonsregister og versjonslogg",
+      "sourceSha256": "eea33319b2546751712b6029b99be48ebd86c5f58f43749df1763fd57d3232b2",
+      "date": "2026-11-11",
+      "destination": "changelog",
+      "summary": "Utviklingsplan, funksjonsregister og versjonslogg er avstemt. Nyere lokale tester og eldre kontrollresultater skilles, og åpne produksjonskrav er videreført.",
+      "publicSection": "11. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H070",
+      "sourceTitle": "11. november 2026 – rettet chatsvar, grafemlengde og demo-import",
+      "sourceSha256": "ad74e8050b0440ad749efdea2a5d3731fe45e90ec8bc774d6a60bde348b373d9",
+      "date": "2026-11-11",
+      "destination": "changelog",
+      "summary": "Svarparseren håndterer nummererte lister over tomme linjer, fortsettelseslinjer og kildehenvisninger i fet tekst. Spørsmålslengden teller brukeropplevde tegn, inkludert sammensatte emoji. Statisk demohenting lastes bare i demovarianten.",
+      "publicSection": "11. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H071",
+      "sourceTitle": "11. november 2026 – RAG-frister og avbrudd testet i Docker/Linux med Node 22",
+      "sourceSha256": "2cd4325839e644eef4f41a84db7b16f87c7c72a2a82a5fbee5a5493d2060316a",
+      "date": "2026-11-11",
+      "destination": "changelog",
+      "summary": "Tidsgrenser og avbrudd er prøvd gjennom klient, proxy og RAG-server i Docker/Linux med simulert transport. Lange forespørsler og avbrudd er kontrollert uten bruk av en faktisk ekstern modell.",
+      "publicSection": "11. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H072",
+      "sourceTitle": "10. november 2026 – samordnede RAG-frister, avbrudd og modellkapasitet",
+      "sourceSha256": "6c4b06f890e5490fb1e80390e14529e0c5ee6ef7a3f360c8e39460eecddab4cd",
+      "date": "2026-11-10",
+      "destination": "changelog",
+      "summary": "Modell, proxy og klient har fått samordnede tidsgrenser. Avbrudd sendes videre, kapasitet er konfigurerbar, og modellfeil bevarer kildene. Ollama-stier og svar som ikke er JSON håndteres tydeligere.",
+      "publicSection": "10. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H073",
+      "sourceTitle": "10. november 2026 – full testpakke og produksjonsbygg i Linux med Node 22",
+      "sourceSha256": "9583931e8049e28320f47cec8308c73009b76a87d3d514ddc3557ed6dc619f6f",
+      "date": "2026-11-10",
+      "destination": "changelog",
+      "summary": "Hele den daværende testpakken, typekontrollen, innholdssynk og produksjonsbygget er prøvd i Docker/Linux med prisfixturer og uten leverandørkall.",
+      "publicSection": "10. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H074",
+      "sourceTitle": "10. november 2026 – prisretting testet med Node 22 i Docker/Linux",
+      "sourceSha256": "bf09e7c1d3b0740b0aa1d72e7be299bdedc8ca75737e77554249009e87b3f56f",
+      "date": "2026-11-10",
+      "destination": "changelog",
+      "summary": "Prisrettingene er testet i Docker/Linux med eksisterende fixturer og lokal simulering av prisarbeidsflyten, uten kall til priskilder.",
+      "publicSection": "10. november 2026",
+      "currentFeatureIds": ["oversikt", "priser"],
+      "planRequirements": ["P4", "P7"]
+    },
+    {
+      "id": "H075",
+      "sourceTitle": "10. november 2026 – robust prisinnhenting og én fast pris-PR",
+      "sourceSha256": "ae7c79c742c43774422afd1aa7f5ffe687b59dd90f4cc0de0fac513361010598",
+      "date": "2026-11-10",
+      "destination": "changelog",
+      "summary": "Prisoppdateringen skiller reelle pris-/statusendringer fra tidsstempler og gjenbruker én oppdateringsgren og PR. Tabell- og tallparsing er strammet inn, og loggoppføringer legges under eksisterende «Ikke utgitt».",
+      "publicSection": "10. november 2026",
+      "currentFeatureIds": ["oversikt", "priser"],
+      "planRequirements": ["P4", "P7"]
+    },
+    {
+      "id": "H076",
+      "sourceTitle": "Ikke utgitt – HTTP-retting verifisert i Docker/Linux med Node 22 – 10. november 2026",
+      "sourceSha256": "4a874a8e328f795d97ecce6a271d2c611e5ad250bb06699cfc0712559d656ab3",
+      "date": "2026-11-10",
+      "destination": "changelog",
+      "summary": "HTTP-rettingene er stressprøvd i Docker/Linux med store avviste forespørsler etterfulgt av nye kall. De undersøkte kallene bestod uten etterfølgende tilkoblingsfeil.",
+      "publicSection": "10. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H077",
+      "sourceTitle": "Ikke utgitt – HTTP-retting verifisert med Node 22 – 10. november 2026",
+      "sourceSha256": "60fadcd19ce5a7e5db3d7d0f0b7f8876ede1eb5c8284bae27a418ed546c11b2e",
+      "date": "2026-11-10",
+      "destination": "changelog",
+      "summary": "HTTP-rettingene er prøvd med Node 22 på macOS, inkludert store avviste forespørsler og etterfølgende kall. Det gjelder dette historiske testmiljøet; gjeldende støtte er senere endret til Node 24.",
+      "publicSection": "10. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H078",
+      "sourceTitle": "Ikke utgitt – rettet HTTP-grense for RAG – 10. november 2026",
+      "sourceSha256": "f7d7b17d0abd7e0546239f230e2fcd1e656d7f13d384e930dd0ff9764ab2ce4e",
+      "date": "2026-11-10",
+      "destination": "changelog",
+      "summary": "RAG-API-et har fått validerte tillatte origins, robust Content-Type-tolking og kontrollert avvisning av for store forespørsler. Klientfeil og interne feil har ulike statuskoder, med nøytrale feilmeldinger.",
+      "publicSection": "10. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H079",
+      "sourceTitle": "Ikke utgitt – rettet relevans i RAG-kildesøket – 10. november 2026",
+      "sourceSha256": "df8ea0bda9d962f44f9bb2e6027c0f0e4a077356240ea9cf298e18eea1fbf6b9",
+      "date": "2026-11-10",
+      "destination": "changelog",
+      "summary": "Falske treff og feil rangering i kildesøket er rettet med evalueringssett, mer avgrenset prefikssøk og deterministisk sortering. Rangeringen er senere videreutviklet 11. november.",
+      "publicSection": "10. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H080",
+      "sourceTitle": "Ikke utgitt – rettet PDF-språk og varsel om gamle prisdata – 10. november 2026",
+      "sourceSha256": "d14f52c8adff8a9941ba2cd05c2d75839d4160a9b6754a57b738c32aac6c2110",
+      "date": "2026-11-10",
+      "destination": "changelog",
+      "summary": "Norsk språkmerking i PDF-vedlegget er rettet uten å endre innholdets utseende. Varsel om gamle prisdata oppdateres ikke lenger automatisk mens siden står åpen.",
+      "publicSection": "10. november 2026",
+      "currentFeatureIds": ["tilgjengelighet", "katalog"],
+      "planRequirements": ["P7", "P8"]
+    },
+    {
+      "id": "H081",
+      "sourceTitle": "Ikke utgitt – lokal oppfølging med tilgjengelighetsskill 0.6.0 – 10. november 2026",
+      "sourceSha256": "e8cabef06f1b9717298280988972b9fe9b28f4d549272501432c30539dd2ad66",
+      "date": "2026-11-10",
+      "destination": "changelog",
+      "summary": "En ny tilgjengelighetsgjennomgang med oppdatert skill avklarte lokale fokusforhold og avdekket PDF-språk og prisvarselets tidsoppførsel. Funnene er bevart og retestet etter retting.",
+      "publicSection": "10. november 2026",
+      "currentFeatureIds": ["tilgjengelighet", "katalog"],
+      "planRequirements": ["P7", "P8"]
+    },
+    {
+      "id": "H082",
+      "sourceTitle": "Ikke utgitt – fullført lokal 1.4.11-vurdering – 10. november 2026",
+      "sourceSha256": "0cb44af6b08511969853ae7010d18e9017c3a8aef3b122d1dc1667f77872932b",
+      "date": "2026-11-10",
+      "destination": "changelog",
+      "summary": "Kontrast for nødvendig grafikk og kontrollmarkeringer, inkludert PDF-diagrammet, er vurdert. En overgang som svekket markering av valgt ressursfilter er rettet og retestet.",
+      "publicSection": "10. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H083",
+      "sourceTitle": "Ikke utgitt – interaktive kontrasttilstander og PDF – 10. november 2026",
+      "sourceSha256": "a02062f1eeb332f8f92a32301015e7660a8f37761fac96d44f359817e6a4b2a8",
+      "date": "2026-11-10",
+      "destination": "changelog",
+      "summary": "Kontrast er undersøkt i faktiske interaktive tilstander og i PDF-en. Resultatene viderefører avgrensede vurderinger og er ingen full samsvarsgodkjenning.",
+      "publicSection": "10. november 2026",
+      "currentFeatureIds": ["tilgjengelighet", "katalog"],
+      "planRequirements": ["P7", "P8"]
+    },
+    {
+      "id": "H084",
+      "sourceTitle": "Ikke utgitt – vurdering av 86 kontrastforekomster – 10. november 2026",
+      "sourceSha256": "e6632dc2e016a02801d3ed28fa073a209b8e643e9d1f094b47fcca3a28b0fe16",
+      "date": "2026-11-10",
+      "destination": "changelog",
+      "summary": "De 86 uavklarte kontrastforekomstene fra axe er undersøkt nærmere. Beregninger og vurderinger er dokumentert uten å likestille automatisk skann med full manuell vurdering.",
+      "publicSection": "10. november 2026",
+      "currentFeatureIds": ["tilgjengelighet", "katalog"],
+      "planRequirements": ["P7", "P8"]
+    },
+    {
+      "id": "H085",
+      "sourceTitle": "Ikke utgitt – tilgjengelighetskontroll av cookie-sider – 10. november 2026",
+      "sourceSha256": "675d129ab465524767514ef3ddc1c023643c49a7290656f54e623489695a0d2e",
+      "date": "2026-11-10",
+      "destination": "changelog",
+      "summary": "Cookie-siden og cookie-skillens detaljside er tatt med i tilgjengelighetskontrollen med tastatur-, responsivitets-, axe- og HTML-prøver.",
+      "publicSection": "10. november 2026",
+      "currentFeatureIds": ["tilgjengelighet", "katalog"],
+      "planRequirements": ["P7", "P8"]
+    },
+    {
+      "id": "H086",
+      "sourceTitle": "Ikke utgitt – selvstendig cookie-skill og cookie-side – 10. november 2026",
+      "sourceSha256": "a8cf8f06b48ab53ae81d6f306131bfef74b5f41eeed8243483a8682ac8fb8f45",
+      "date": "2026-11-10",
+      "destination": "changelog",
+      "summary": "En selvstendig skill for informasjonskapsler og samtykke er lagt til, og portalen har fått cookie-side basert på kartlegging. Samtykkebanner ble ikke innført for det undersøkte oppsettet; behovet må vurderes på nytt ved endret lagring eller sporing.",
+      "publicSection": "10. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H087",
+      "sourceTitle": "Ikke utgitt – avklaringsplan for 15 tilgjengelighetskrav – 10. november 2026",
+      "sourceSha256": "d0e2e8cf7739cac94034f4983d274391b3ecd3946a103d44ca01bf02e4c3d2e8",
+      "date": "2026-11-10",
+      "destination": "changelog",
+      "summary": "En kravvis plan beskriver hva som trengs av verktøy, hjelpemidler og dokumentasjon for å avklare de daværende 15 uavklarte tilgjengelighetskravene. Antallet er historisk.",
+      "publicSection": "10. november 2026",
+      "currentFeatureIds": ["tilgjengelighet", "katalog"],
+      "planRequirements": ["P7", "P8"]
+    },
+    {
+      "id": "H088",
+      "sourceTitle": "Ikke utgitt – kjente brudd og uavklarte krav i erklæringen – 10. november 2026",
+      "sourceSha256": "bd853228e74a3896e7ccbbe8c1fa1336c4d7a838534fbe600f4f5aa147976f3a",
+      "date": "2026-11-10",
+      "destination": "changelog",
+      "summary": "Tilgjengelighetserklæringen skiller tydelig mellom kjente brudd og forhold som ikke er ferdig vurdert. Uavklarte krav har fått brukerrettede forklaringer.",
+      "publicSection": "10. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H089",
+      "sourceTitle": "Ikke utgitt – gjenstående lokale tilgjengelighetskontroller – 10. november 2026",
+      "sourceSha256": "4e7c8fec1756390f718518f4b55adb414155810d823475b4c6d02faff29bc76d",
+      "date": "2026-11-10",
+      "destination": "changelog",
+      "summary": "Flere lokale tilgjengelighetskontroller er gjennomført for tastatur, chat, katalog, tekstavstand og kontrast. Gjenstående manuelle prøver er dokumentert.",
+      "publicSection": "10. november 2026",
+      "currentFeatureIds": ["tilgjengelighet", "katalog"],
+      "planRequirements": ["P7", "P8"]
+    },
+    {
+      "id": "H090",
+      "sourceTitle": "Ikke utgitt – lokal axe og Nu HTML-validering – 10. november 2026",
+      "sourceSha256": "00e05de48b10baa6593f6f1e70679e6f17a44a370320807d8e44a4d16ad44f6f",
+      "date": "2026-11-10",
+      "destination": "changelog",
+      "summary": "Lokale testverktøy for axe og HTML-validering er installert og kjørt. Automatiske resultater og manuelle vurderinger holdes adskilt.",
+      "publicSection": "10. november 2026",
+      "currentFeatureIds": ["tilgjengelighet", "katalog"],
+      "planRequirements": ["P7", "P8"]
+    },
+    {
+      "id": "H091",
+      "sourceTitle": "Ikke utgitt – rettet PDF-lister, PDF-kontrast og 404-språk – 10. november 2026",
+      "sourceSha256": "6ad617ff09f2a07d6b091353d04de0fcffa685d513ffe41980c1b716d13e3b0f",
+      "date": "2026-11-10",
+      "destination": "changelog",
+      "summary": "PDF-lister og tekstkontrast er rettet, og feilsiden har fått norsk språk og beskrivende tittel. Vedleggets øvrige struktur og innhold er bevart og retestet.",
+      "publicSection": "10. november 2026",
+      "currentFeatureIds": ["tilgjengelighet", "katalog"],
+      "planRequirements": ["P7", "P8"]
+    },
+    {
+      "id": "H092",
+      "sourceTitle": "Ikke utgitt – tilgjengelighetskjøring med skill 0.5.0 – 10. november 2026",
+      "sourceSha256": "88afd075cb4701fc03fc7d209fa8a18e95f368cc1cb0632d575e76856f8727e8",
+      "date": "2026-11-10",
+      "destination": "changelog",
+      "summary": "Tilgjengelighetsskill 0.5.0 er kjørt på portalens sider og chatforløp. Nye PDF-/språkfunn og manglende testverktøy er dokumentert før senere retting og installasjon.",
+      "publicSection": "10. november 2026",
+      "currentFeatureIds": ["tilgjengelighet", "katalog"],
+      "planRequirements": ["P7", "P8"]
+    },
+    {
+      "id": "H093",
+      "sourceTitle": "Ikke utgitt – automatisk deltesting og manuell 48-kravsrestliste – 9. november 2026",
+      "sourceSha256": "60e54621138c5deb5a33854a1fbed17b3fbcbe9a6507a7f1d2824e4bda257ab6",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Katalogen er oppdatert til tilgjengelighetsskill 0.5.0 med automatisert deltesting og en tydelig manuell restliste for alle 48 krav.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H094",
+      "sourceTitle": "Ikke utgitt – kravvis tilgjengelighetsgjennomgang med skill 0.4.0 – 9. november 2026",
+      "sourceSha256": "793ecd228a68b6b1247a53fe8f560fac61c909d5cab2de4beab92f4740d1b075",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Alle 48 testprosedyrer er gjennomgått mot portalen. To nye PDF-avvik ble bekreftet; de står som historiske funn frem til rettingene 10. november.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": ["tilgjengelighet", "katalog"],
+      "planRequirements": ["P7", "P8"]
+    },
+    {
+      "id": "H095",
+      "sourceTitle": "Ikke utgitt – testprosedyrer for alle 48 krav i tilgjengelighetsskillen – 9. november 2026",
+      "sourceSha256": "fc17facbbf074c2144f93d298610de47dde844e103a9507e4c7c42bcf0b9fee0",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Tilgjengelighetsskill 0.4.0 har fått konkrete testprosedyrer for alle 48 krav, med fremgangsmåte, verktøy, forventet resultat og dokumentasjon.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": ["tilgjengelighet", "katalog"],
+      "planRequirements": ["P7", "P8"]
+    },
+    {
+      "id": "H096",
+      "sourceTitle": "Ikke utgitt – ryddigere tilgjengelighetserklæring – 9. november 2026",
+      "sourceSha256": "1a5a387ca639315aed3dd1eec1c12e4f5272404d074ce51fdd41814242789ba8",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Tilgjengelighetserklæringen er ryddet slik at omfang, samsvar, begrensninger og kontakt vises uten interne test- og arbeidsdetaljer. Utkaststatus er beholdt.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": ["tilgjengelighet", "katalog"],
+      "planRequirements": ["P7", "P8"]
+    },
+    {
+      "id": "H097",
+      "sourceTitle": "Ikke utgitt – rettet PDF-overskrifter og dokumenttittel – 9. november 2026",
+      "sourceSha256": "006e264094aa905fcbac37284df9e6c830b1183e337096b698bead3ce5202687",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "PDF-vedlegget har fått semantiske overskrifter og en beskrivende norsk dokumenttittel. Tekst og visuell fremstilling er bevart.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": ["tilgjengelighet", "katalog"],
+      "planRequirements": ["P7", "P8"]
+    },
+    {
+      "id": "H098",
+      "sourceTitle": "Ikke utgitt – videre lokal tilgjengelighetskontroll – 9. november 2026",
+      "sourceSha256": "8414dfd662c247575edadbca98c272644d98c3f8d2440faaad23f3a409da4f30",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Lokale PDF- og tastaturprøver avdekket manglende overskriftsroller og generisk dokumenttittel i vedlegget. Funnene ble fulgt opp med retting samme dag.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": ["tilgjengelighet", "katalog"],
+      "planRequirements": ["P7", "P8"]
+    },
+    {
+      "id": "H099",
+      "sourceTitle": "Ikke utgitt – rettet språkavvik i prisoppdateringen – 9. november 2026",
+      "sourceSha256": "5f72e1693a90bb52176b8c75ea75141e128b81851bebe0c41300d5acc4a7ab59",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Prisvilkår genereres på norsk fra kjente kildefelt. Ukjent format avvises fremfor å kopiere inn ny engelsk tekst; oppdateringsflyten er regresjonstestet.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": ["oversikt", "priser"],
+      "planRequirements": ["P4", "P7"]
+    },
+    {
+      "id": "H100",
+      "sourceTitle": "Ikke utgitt – oppdaterte prisdata – 9.11.2026",
+      "sourceSha256": "e4637ca30251e137c931285f4cc33b4f4ca80bbcf2e7fdc2a5e29405e3e4a498",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Lagrede prisdata er oppdatert fra offisielle kilder, med kilde og kontrolltidspunkt. Automatisk innhenting er ikke kontroll av virksomhetens avtaler.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": ["oversikt", "priser"],
+      "planRequirements": ["P4", "P7"]
+    },
+    {
+      "id": "H101",
+      "sourceTitle": "Ikke utgitt – ny tilgjengelighetskontroll og erklæringsoppdatering – 9. november 2026",
+      "sourceSha256": "d27b5917804b2e4fe4e606c873b324fdb1443d2c421e8ffe066405093d56bb67",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "En ny tilgjengelighetskontroll omfatter sider og forsideanimasjon. Resultater og manuelle begrensninger er dokumentert, og språkavviket i prisvilkårene ble fulgt opp.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": ["tilgjengelighet", "katalog"],
+      "planRequirements": ["P7", "P8"]
+    },
+    {
+      "id": "H102",
+      "sourceTitle": "Ikke utgitt – styr animasjonen ved klikk på illustrasjonen – 9. november 2026",
+      "sourceSha256": "0a9c1b85eab7516f616d0dccd71107be96f03bfa386651259ffdcfe1233c5784",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Forsideillustrasjonen er gjort klikkbar for pause og start, med tastaturstøtte og navn som beskriver neste handling. Den separate pauseknappen er fjernet.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H103",
+      "sourceTitle": "Ikke utgitt – rolig animasjon i forsideillustrasjonen – 9. november 2026",
+      "sourceSha256": "079ac8f75709af1e6cf3a1f08e54e984979ea26fef6d2c9607fc884f7694b3b6",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Forsideillustrasjonen har fått rolig bevegelse i datapunkter og ring. Redusert bevegelse gir statisk visning.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H104",
+      "sourceTitle": "Ikke utgitt – MCP-oversikt under Oversikt – 9. november 2026",
+      "sourceSha256": "bd028e32c2fd501ae697b79863075933e0ba4c5617549fa9688de3bafe6d594e",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "MCP-oversikten er opprettet med Atlassian MCP som ROS-analyse pågår og Slack MCP som Planlagt. Ingen av oppføringene var godkjent eller aktivert ved opprettelsen.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": ["godkjente-mcper"],
+      "planRequirements": ["P4", "P7"]
+    },
+    {
+      "id": "H105",
+      "sourceTitle": "Ikke utgitt – fjernet Priser fra bunnteksten – 9. november 2026",
+      "sourceSha256": "6b66417e5e33af3f8fba6b6ae5d31881e91ac0d87ed584baaa54fe09aeed187a",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Direktelenken til Priser er fjernet fra bunnteksten. Siden finnes fortsatt via Oversikt og nettstedskartet.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": ["oversikt", "priser"],
+      "planRequirements": ["P4", "P7"]
+    },
+    {
+      "id": "H106",
+      "sourceTitle": "Ikke utgitt – Godkjente KI-assistenter under Oversikt – 9. november 2026",
+      "sourceSha256": "d67ed1b61dcbdcf718b1c4618ffcf1b38cd4c0b1c2b75bc6bd52fde5e83a3b75",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Oversikten over godkjente KI-utviklingsassistenter er opprettet med Copilot, Claude AI og Codex etter opplysninger fra innholdseier. Dette gir ikke generell godkjenning av alle modeller, kontoer eller datatyper.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": ["godkjente-ki-assistenter"],
+      "planRequirements": ["P4", "P7"]
+    },
+    {
+      "id": "H107",
+      "sourceTitle": "Ikke utgitt – pålitelig ankerlenke til ressurskatalogen – 9. november 2026",
+      "sourceSha256": "6ca39a0971c5a58facc10ae875a442f96a4ddf7157f3b62f750b06268dc7b5d3",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "«Utforsk ressursene» hopper til katalogankeret også ved gjentatte klikk når ankeret allerede finnes i adressen.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H108",
+      "sourceTitle": "Ikke utgitt – Ressurskatalog og tydeligere introduksjon – 9. november 2026",
+      "sourceSha256": "0ba7255c7f5483694c196da0311afc353087f5204c6065dac73774bc21e0493f",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Verktøykatalog er omdøpt til Ressurskatalog. «Finn en ressurs» er beholdt som overskrift, med tydelig beskrivelse av skills, instrukser og prompter.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H109",
+      "sourceTitle": "Ikke utgitt – Oversikt som inngang til priser – 9. november 2026",
+      "sourceSha256": "b3759f3877ab956ef9b21987aa6b14a53e08c7d3b2ede01d6aa191c86404f03d",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Oversikt er opprettet som inngang til priser og abonnement. Modelloversikt og forbruk er vist som fremtidige utvidelser, uten simulerte bruksdata.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": ["oversikt", "priser"],
+      "planRequirements": ["P4", "P7"]
+    },
+    {
+      "id": "H110",
+      "sourceTitle": "Ikke utgitt – prisside og automatisk prisinnhenting – 9. november 2026",
+      "sourceSha256": "830659a70e563fe69e0c6862f788c3fcd50e1204fc28dc5d8525a395e8161c87",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "En prisside for Copilot, Claude og Codex skiller abonnement fra direkte API-priser og tokenpriser. Kilde, kontrolltidspunkt og vilkår vises, med bevaring av tidligere priser ved kildefeil og varsel om gamle data.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": ["oversikt", "priser"],
+      "planRequirements": ["P4", "P7"]
+    },
+    {
+      "id": "H111",
+      "sourceTitle": "Ikke utgitt – oppdaterte prisdata – 9.11.2026",
+      "sourceSha256": "e4637ca30251e137c931285f4cc33b4f4ca80bbcf2e7fdc2a5e29405e3e4a498",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "En tidligere oppdatering av prisgrunnlaget samme dag er bevart separat i kildeloggen. Begge prisoppdateringene er historiske og bekrefter ikke dagens prisnivå.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": ["oversikt", "priser"],
+      "planRequirements": ["P4", "P7"]
+    },
+    {
+      "id": "H112",
+      "sourceTitle": "Ikke utgitt – personvernerklæring for portalen – 9. november 2026",
+      "sourceSha256": "e1dd804c9f8ebeee1710d92838025585c83c24e7399cf14d97d6a7246b970aa3",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Personvernerklæring er opprettet som utkast etter kartlegging av faktisk lokal behandling, og lenket fra bunnteksten. Nettsiden og Spør KI bruker samme kilde.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H113",
+      "sourceTitle": "Ikke utgitt – personvernskill i bibliotek og katalog – 9. november 2026",
+      "sourceSha256": "1da43f950d17ce85e6fa08c481843bb2c9624310d979b010d4ea844993e8c987",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Personvernskillen er lagt til biblioteket og ressurskatalogen med egen beskrivelse og begrensninger. Ressursdetaljene er tilpasset ulike skill-typer.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H114",
+      "sourceTitle": "Ikke utgitt – fjernet prototypetekst i bunnteksten – 9. november 2026",
+      "sourceSha256": "80415c774e6fe27aaa6fc7f6e96ea126bc5183a50387323354cd4524cf641d76",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Prototypeteksten er fjernet fra bunnteksten. Dette endrer ikke faktisk modenhet eller produksjonskrav.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H115",
+      "sourceTitle": "Ikke utgitt – utviklingsplan i bunnteksten – 9. november 2026",
+      "sourceSha256": "55dcd59003da5b442a68980ad45cc711efb54e5db46279802e31c6588370be59",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Utviklingsplanen har fått egen side og lenke fra bunnteksten. Plan og logg bruker en felles dokumentvisning med overskrifter, lister og tabeller.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H116",
+      "sourceTitle": "Ikke utgitt – avstemt utviklingsplan og produksjonskrav – 9. november 2026",
+      "sourceSha256": "f6d46530e4df0ceb25d5e0743ca2e09ef359c996a5c7acc238d2a86a8baed920",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Åtte utviklingsfaser og krav P1–P10 er avstemt mot leveransene. Første delte miljø ble da endret til lukket pilot; dette historiske valget er erstattet av beslutningen om offentlig tilgang 17. november.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H117",
+      "sourceTitle": "Ikke utgitt – menyrekkefølge og lenke til retningslinjer – 9. november 2026",
+      "sourceSha256": "7e74d65f0e3d6b8d54244150aa356c9bf321cb03d547bccf829b7e76d697feb6",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Menyrekkefølgen er endret slik at oppstart og retningslinjer kommer før ressurser og Spør KI. Kom i gang har fått en tydelig henvisning til retningslinjene.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H118",
+      "sourceTitle": "Ikke utgitt – invitasjon til KI-prat – 9. november 2026",
+      "sourceSha256": "8eab6efa6d98764d0abaadd55bb1a3e660774d36507f5a56315b2d665903b547",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "KI-prat har fått invitasjon for dem som arbeider med produktutvikling eller utvikling av løsninger i Nasjonalarkivet, med kontakt via AI enablement-teamet.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H119",
+      "sourceTitle": "Ikke utgitt – tydeligere innganger og anbefalt prøveoppgave – 9. november 2026",
+      "sourceSha256": "a1e70e1587b68fb1672bb6cf920dccc636e19fc21f48a78ab5e0b3687bd14b6c",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Forsidens snarveier er tydeliggjort, og «Utforsk et brukerbehov» er valgt som prøveoppgave. Anbefalingen bruker samme ressursinnhold som katalogen.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H120",
+      "sourceTitle": "Ikke utgitt – automatisk funksjonalitetsoversikt – 9. november 2026",
+      "sourceSha256": "9cb85589a28a6bc05f780a123e395340fc48838bd81ee3b6da2c1fa470a74b54",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Funksjonalitetsoversikt og nettstedskart avledes av ett register, med status og begrensninger. Spør KI bruker det samme grunnlaget.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": ["oversikt", "priser"],
+      "planRequirements": ["P4", "P7"]
+    },
+    {
+      "id": "H121",
+      "sourceTitle": "Ikke utgitt – versjonslogg i bunnteksten – 9. november 2026",
+      "sourceSha256": "3de78cf63b254425333112fffbd3da3ba9e3f4269cb3c401936e4db848f283d4",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Versjonsloggen har fått egen side og lenke fra bunnteksten og nettstedskartet.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H122",
+      "sourceTitle": "Ikke utgitt – klargjort eksternt modell-API – 9. november 2026",
+      "sourceSha256": "d56a1e2dc135fedf7cd8d6c2870b261e9b4351f7b9e47cbc3c7ddadcd103dce4",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Tjenesten er klargjort for eksternt OpenAI-kompatibelt modell-API. URL, modell og nøkkel konfigureres på serveren; ekstern modelltransport er prøvd med simulering.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H123",
+      "sourceTitle": "Ikke utgitt – felles innholdskilde for sider og Spør KI – 9. november 2026",
+      "sourceSha256": "7f1635863c9953a048bf155c4de7147b07ba9c4bc9a0136558bbcf6947ff10c8",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Kom i gang, Om, KI-prat og Retningslinjer er samlet i felles innholdskilder for nettsidene og Spør KI, slik at tekst og forbehold ikke vedlikeholdes i separate kopier.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H124",
+      "sourceTitle": "Ikke utgitt – mer nyttige svar i Spør KI – 9. november 2026",
+      "sourceSha256": "b158a7bc9cea9c47e5b6390ea9b227a0349393efd1088baac2ba923072957212",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Spør KI viser lesbar veiledning med introduksjon, steg, forbehold og kildelenker. Uten modell merkes veiledningen som hentet innhold, ikke et individuelt generert svar.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": ["spor", "modell"],
+      "planRequirements": ["P3", "P5", "P6"]
+    },
+    {
+      "id": "H125",
+      "sourceTitle": "Ikke utgitt – retningslinjeside – 9. november 2026",
+      "sourceSha256": "384098549f9596a63b4e3400506243ee87ddc59b2a62b570f7d6f8f6063c7096",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Retningslinjesiden er opprettet med veiledning om verktøy, arkivmateriale, kvalitet og agenttilgang, tydelig merket som arbeidsutkast.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H126",
+      "sourceTitle": "Ikke utgitt – mandatforslag som vedlegg – 9. november 2026",
+      "sourceSha256": "82c356222fac955ca47feba8b714d8b7d1de1c1dcb5fc56edf6308fc73a4b3c7",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Et mandatforslag for AI enablement-teamet er lagt ved på Om-siden med filtype og størrelse. Vedlegg krever egen innholds- og tilgjengelighetsvurdering.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H127",
+      "sourceTitle": "Ikke utgitt – KI-prat på Om-siden – 9. november 2026",
+      "sourceSha256": "95f34922514e65d6ad539f8cb74374536b9c14ed9d71bba787500717ab5cd1cf",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "KI-prat er omtalt på Om-siden med møterytme og erfaringsdeling, tilpasset som varig informasjon fremfor invitasjon til ett enkelt møte.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H128",
+      "sourceTitle": "Ikke utgitt – Beta-merking av skills – 9. november 2026",
+      "sourceSha256": "0a105b5737be71d75bd3f086c657c7b2f6e0c31025bbad0e646850b79f6437e8",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Skills har fått Beta-etikett og statusinformasjon på kort og detaljsider. Den lange forklaringen på kortene er senere fjernet, mens Beta-merkingen beholdes.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H129",
+      "sourceTitle": "Ikke utgitt – samlet tilgjengelighetsdokumentasjon – 9. november 2026",
+      "sourceSha256": "e22b092f84638e483ee38bc3cda0ca14c0e51f9ae8d629d877704c3a323da445",
+      "date": "2026-11-09",
+      "destination": "changelog",
+      "summary": "Erklæringsgrunnlag og WCAG-kontroll er samlet med testhistorikken, og berørte dokumentlenker er oppdatert.",
+      "publicSection": "9. november 2026",
+      "currentFeatureIds": ["tilgjengelighet", "katalog"],
+      "planRequirements": ["P7", "P8"]
+    },
+    {
+      "id": "H130",
+      "sourceTitle": "Ikke utgitt – regler for versjonslogg – 7. november 2026",
+      "sourceSha256": "2d331c97a41fa8c2f5018c25c90bca13959f0accdb32f8316c8e705cec5e40ac",
+      "date": "2026-11-07",
+      "destination": "changelog",
+      "summary": "Vedlikeholdsregler krever at vesentlige endringer føres i riktig versjonslogg for portal og Skills-bibliotek.",
+      "publicSection": "7. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H131",
+      "sourceTitle": "Ikke utgitt – tilgjengelighetsskill 0.3.0 – 7. november 2026",
+      "sourceSha256": "3b261b7a82c74161e750ba4282fbb49ebaf32e2533026d8052aa85ff0a1c6dc3",
+      "date": "2026-11-07",
+      "destination": "changelog",
+      "summary": "Tilgjengelighetsskill 0.3.0 lagrer kjøringer og bevis i daterte mapper i prosjektet som testes, med bevaring av tidligere resultater.",
+      "publicSection": "7. november 2026",
+      "currentFeatureIds": ["tilgjengelighet", "katalog"],
+      "planRequirements": ["P7", "P8"]
+    },
+    {
+      "id": "H132",
+      "sourceTitle": "Ikke utgitt – tilgjengelighetsskill 0.2.0 – 7. november 2026",
+      "sourceSha256": "bca4d7f9cf8664f09207e0c96a98c69e0f5cd2991603aa404a48892886e5abcb",
+      "date": "2026-11-07",
+      "destination": "changelog",
+      "summary": "Tilgjengelighetsskill 0.2.0 er utvidet fra erklæringsutforming til testing, prioriterte rettingsforslag og retest, med skille mellom kandidater, bekreftede funn og uavklarte forhold.",
+      "publicSection": "7. november 2026",
+      "currentFeatureIds": ["tilgjengelighet", "katalog"],
+      "planRequirements": ["P7", "P8"]
+    },
+    {
+      "id": "H133",
+      "sourceTitle": "Ikke utgitt – generell brukerveiledning – 7. november 2026",
+      "sourceSha256": "05c502ec1611a1d3653cb340e1a4f2e91aa71fcd92088e8b5d6470c138309142",
+      "date": "2026-11-07",
+      "destination": "changelog",
+      "summary": "Skillens installasjons- og brukerveiledning er gjort generell for ulike maskiner og kodeassistenter.",
+      "publicSection": "7. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H134",
+      "sourceTitle": "Ikke utgitt – lokalt Skills-bibliotek og katalog – 7. november 2026",
+      "sourceSha256": "c88a3376e13cc751635b68b63e9596da47f04b63d562e20da82190ffe730620b",
+      "date": "2026-11-07",
+      "destination": "changelog",
+      "summary": "Et separat lokalt Skills-bibliotek er opprettet, og tilgjengelighetsskillen er gjort gjenfinnbar i ressurskatalogen.",
+      "publicSection": "7. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H135",
+      "sourceTitle": "Ikke utgitt – oppdatert erklæringsutkast – 7. november 2026",
+      "sourceSha256": "57769f2c2767cd445d91efeec81e161a757afd5d4e76e133e4ced5f7cd301fe8",
+      "date": "2026-11-07",
+      "destination": "changelog",
+      "summary": "Tilgjengelighetserklæringens utkast er tilpasset skillens mal og vurderingsgrunnlag, med presisert omfang og alternative veier til innholdet.",
+      "publicSection": "7. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    },
+    {
+      "id": "H136",
+      "sourceTitle": "Ikke utgitt – utvidet tilgjengelighetskontroll – 6. november 2026",
+      "sourceSha256": "516822c86e3e9e96c9b359765f2379a875b6139c05ba7236d4c615df3073108d",
+      "date": "2026-11-06",
+      "destination": "changelog",
+      "summary": "En vurderingsmatrise for 48 tilgjengelighetskrav, tilgjengelighetsside og nettstedskart er opprettet. Lokale tastatur-, mobil- og tekstavstandsprøver er dokumentert; samlet samsvar er ikke bekreftet.",
+      "publicSection": "6. november 2026",
+      "currentFeatureIds": ["tilgjengelighet", "katalog"],
+      "planRequirements": ["P7", "P8"]
+    },
+    {
+      "id": "H137",
+      "sourceTitle": "Dokumentasjon og tilgjengelighetsrettinger – 6. november 2026",
+      "sourceSha256": "441183342a11cfec92dfb6fb69070eccde003d8b9ad63ffd06cedeca6f792953",
+      "date": "2026-11-06",
+      "destination": "changelog",
+      "summary": "Hopp til innhold flytter tastaturfokus riktig, fokusmarkeringer og treffområder er forbedret, og chatdialogen har entydig tittel. Kvalitetsrapport, utviklingsplan og første versjonslogg er etablert.",
+      "publicSection": "6. november 2026",
+      "currentFeatureIds": ["tilgjengelighet", "katalog"],
+      "planRequirements": ["P7", "P8"]
+    },
+    {
+      "id": "H138",
+      "sourceTitle": "0.1.0 – første lokale versjon – 6. november 2026",
+      "sourceSha256": "686b78cb513312234d907bdb1aad6aa9db020958725d19037dc23e50e4e1f86f",
+      "date": "2026-11-06",
+      "destination": "changelog",
+      "summary": "Første lokale versjon 0.1.0 er lagret i Git. Den samler portal, MUI-tema, arklogo/favicon, ressurskatalog, veiledningssider, Spør KI, Ollama-adapter og statisk kildesøk. Arbeidet var i hovedsak dokumentert 30. oktober; dette er datoen for første commit, ikke en offentlig release.",
+      "publicSection": "6. november 2026",
+      "currentFeatureIds": [],
+      "planRequirements": []
+    }
+  ],
+  "planSections": [
+    {
+      "id": "P001",
+      "sourceTitle": "Slik brukes og vedlikeholdes planen",
+      "destination": "plan"
+    },
+    {
+      "id": "P002",
+      "sourceTitle": "Mål og rammer",
+      "destination": "plan"
+    },
+    {
+      "id": "P003",
+      "sourceTitle": "Samlet leveransestatus – 11. november 2026",
+      "destination": "plan"
+    },
+    {
+      "id": "P004",
+      "sourceTitle": "Hva gjenstår før produksjonssetting?",
+      "destination": "plan"
+    },
+    {
+      "id": "P005",
+      "sourceTitle": "Sjekkliste for offentlig lansering – 17. november 2026",
+      "destination": "plan"
+    },
+    {
+      "id": "P006",
+      "sourceTitle": "1. Lokalt arbeid mens vi venter",
+      "destination": "plan"
+    },
+    {
+      "id": "P007",
+      "sourceTitle": "2. Administrator og fagansvarlige må avklare",
+      "destination": "plan"
+    },
+    {
+      "id": "P008",
+      "sourceTitle": "3. Felles kontroll i faktisk driftsmiljø – før offentlig åpning",
+      "destination": "historical-plan"
+    },
+    {
+      "id": "P009",
+      "sourceTitle": "4. Etter offentlig lansering",
+      "destination": "plan"
+    },
+    {
+      "id": "P010",
+      "sourceTitle": "Faseoversikt",
+      "destination": "plan"
+    },
+    {
+      "id": "P011",
+      "sourceTitle": "Fase 1 – Avklaringer og prosjektgrunnlag",
+      "destination": "plan"
+    },
+    {
+      "id": "P012",
+      "sourceTitle": "Fase 2 – Teknisk grunnmur og sikker arbeidsflyt",
+      "destination": "plan"
+    },
+    {
+      "id": "P013",
+      "sourceTitle": "Fase 3 – Design, komponenter og tilgjengelighet",
+      "destination": "plan"
+    },
+    {
+      "id": "P014",
+      "sourceTitle": "Fase 4 – MVP 1: lokal portal og offentlig lansering",
+      "destination": "plan"
+    },
+    {
+      "id": "P015",
+      "sourceTitle": "Fase 5 – Servermiljø, modellkobling og utrulling",
+      "destination": "plan"
+    },
+    {
+      "id": "P016",
+      "sourceTitle": "Fase 6 – Offentlig innholdsgrense (tidligere innlogging)",
+      "destination": "plan"
+    },
+    {
+      "id": "P017",
+      "sourceTitle": "Fase 6 – Offentlig innholdsgrense (tidligere MVP 2)",
+      "destination": "historical-plan"
+    },
+    {
+      "id": "P018",
+      "sourceTitle": "Fase 7 – MVP 3: skills og distribusjon",
+      "destination": "plan"
+    },
+    {
+      "id": "P019",
+      "sourceTitle": "Ressurskatalog – navngiving oppdatert 9. november 2026",
+      "destination": "historical-plan"
+    },
+    {
+      "id": "P020",
+      "sourceTitle": "Oversikt – levert lokalt 9. november 2026",
+      "destination": "historical-plan"
+    },
+    {
+      "id": "P021",
+      "sourceTitle": "Prisoversikt – levert lokalt 9. november 2026",
+      "destination": "historical-plan"
+    },
+    {
+      "id": "P022",
+      "sourceTitle": "Datert kontrollhistorikk – 9.–10. november 2026",
+      "destination": "historical-plan"
+    },
+    {
+      "id": "P023",
+      "sourceTitle": "Lokale testmotorer – 10. november 2026",
+      "destination": "plan"
+    },
+    {
+      "id": "P024",
+      "sourceTitle": "Retting av tre tilgjengelighetsavvik – 10. november 2026",
+      "destination": "plan"
+    },
+    {
+      "id": "P025",
+      "sourceTitle": "Tilgjengelighetskjøring – 10. november 2026",
+      "destination": "plan"
+    },
+    {
+      "id": "P026",
+      "sourceTitle": "Tilgjengelighetsretest – 9. november 2026",
+      "destination": "plan"
+    },
+    {
+      "id": "P027",
+      "sourceTitle": "Fase 8 – MVP 4: forvaltning og produksjonsgodkjenning",
+      "destination": "plan"
+    },
+    {
+      "id": "P028",
+      "sourceTitle": "Neste arbeidsbolk",
+      "destination": "plan"
+    },
+    {
+      "id": "P029",
+      "sourceTitle": "Beslutninger og avklaringer",
+      "destination": "plan"
+    },
+    {
+      "id": "P030",
+      "sourceTitle": "Endring 9. november 2026",
+      "destination": "historical-plan"
+    },
+    {
+      "id": "P031",
+      "sourceTitle": "Historikk fra tidligere arbeidsøkter",
+      "destination": "historical-plan"
+    },
+    {
+      "id": "P032",
+      "sourceTitle": "Lokal status – 30. oktober 2026",
+      "destination": "historical-plan"
+    },
+    {
+      "id": "P033",
+      "sourceTitle": "Neste oppgaver slik de var formulert 30. oktober",
+      "destination": "historical-plan"
+    },
+    {
+      "id": "P034",
+      "sourceTitle": "Endringslogg",
+      "destination": "historical-plan"
+    },
+    {
+      "id": "P035",
+      "sourceTitle": "Tillegg – RAG-tjeneste",
+      "destination": "historical-plan"
+    },
+    {
+      "id": "P036",
+      "sourceTitle": "Chatbot på forsiden – 30. oktober 2026",
+      "destination": "historical-plan"
+    },
+    {
+      "id": "P037",
+      "sourceTitle": "Visuell tilpasning av chatbot – 30. oktober 2026",
+      "destination": "historical-plan"
+    },
+    {
+      "id": "P038",
+      "sourceTitle": "Teknisk opprydding – 30. oktober 2026",
+      "destination": "historical-plan"
+    },
+    {
+      "id": "P039",
+      "sourceTitle": "Statusgjennomgang – 6. november 2026",
+      "destination": "historical-plan"
+    },
+    {
+      "id": "P040",
+      "sourceTitle": "Tilgjengelighet og erklæring – 6. november 2026",
+      "destination": "historical-plan"
+    },
+    {
+      "id": "P041",
+      "sourceTitle": "Første skill i lokalt bibliotek – 7. november 2026",
+      "destination": "historical-plan"
+    },
+    {
+      "id": "P042",
+      "sourceTitle": "Lokal tilgjengelighetsoppfølging – 10. november 2026",
+      "destination": "plan"
+    },
+    {
+      "id": "P043",
+      "sourceTitle": "Informasjonskapsler og selvstendig skill – 10. november 2026",
+      "destination": "plan"
+    },
+    {
+      "id": "P044",
+      "sourceTitle": "Målrettet kontrastoppfølging – 10. november 2026",
+      "destination": "plan"
+    },
+    {
+      "id": "P045",
+      "sourceTitle": "Interaktive kontrasttilstander og PDF – 10. november 2026",
+      "destination": "plan"
+    },
+    {
+      "id": "P046",
+      "sourceTitle": "Fullført lokal 1.4.11-vurdering – 10. november 2026",
+      "destination": "plan"
+    },
+    {
+      "id": "P047",
+      "sourceTitle": "Lokal oppfølging med skill 0.6.0 – 10. november 2026",
+      "destination": "plan"
+    },
+    {
+      "id": "P048",
+      "sourceTitle": "Retest av PDF-språk og varsel om gamle prisdata – 10. november 2026",
+      "destination": "historical-plan"
+    }
+  ],
+  "commits": [
+    {
+      "commit": "ed873b73b1d387129713f590684f841365aece30",
+      "date": "2026-11-06",
+      "title": "Første versjon av KI-Produktutvikling",
+      "destination": "changelog",
+      "sourceEntries": ["H138"]
+    },
+    {
+      "commit": "f0557574f847929e680bd074d5d50b0502fece0f",
+      "date": "2026-11-06",
+      "title": "Oppdater utviklingsplan og versjonslogg og forbedre tilgjengelighet",
+      "destination": "changelog",
+      "sourceEntries": ["H136", "H137"]
+    },
+    {
+      "commit": "797cd7bf21ab81288b355fa7a3f08cce60ade845",
+      "date": "2026-11-09",
+      "title": "Forbedre tilgjengelighet, dokumentasjon og ressurskatalog",
+      "destination": "changelog",
+      "sourceEntries": [
+        "H129",
+        "H130",
+        "H131",
+        "H132",
+        "H133",
+        "H134",
+        "H135",
+        "H136"
+      ]
+    },
+    {
+      "commit": "9f275643d86011fa4393dea472d7c115044ce810",
+      "date": "2026-11-09",
+      "title": "Legg til retningslinjer, KI-prat, mandatvedlegg og Beta-merking av skills",
+      "destination": "changelog",
+      "sourceEntries": ["H125", "H126", "H127", "H128"]
+    },
+    {
+      "commit": "e93e5f987c0de74fa929d395fa5158300177f6db",
+      "date": "2026-11-09",
+      "title": "Forbedre Spør KI og samle innhold, oversikter og navigasjon",
+      "destination": "changelog",
+      "sourceEntries": [
+        "H117",
+        "H118",
+        "H119",
+        "H120",
+        "H121",
+        "H122",
+        "H123",
+        "H124"
+      ]
+    },
+    {
+      "commit": "56d6886002c9eba828803c8f7f863fb3a3c976c3",
+      "date": "2026-11-09",
+      "title": "Oppdater utviklingsplan og vis den i portalen",
+      "destination": "changelog",
+      "sourceEntries": ["H115", "H116"]
+    },
+    {
+      "commit": "f6216ba26606010de0cc2af3ff9192425309bba3",
+      "date": "2026-11-09",
+      "title": "feat: legg til oversikter, prisoppdatering og personvernerklæring",
+      "destination": "changelog",
+      "sourceEntries": [
+        "H104",
+        "H105",
+        "H106",
+        "H107",
+        "H108",
+        "H109",
+        "H110",
+        "H111",
+        "H112",
+        "H113",
+        "H114"
+      ]
+    },
+    {
+      "commit": "c622090c0c63b34f3b7e4ace29c3a635a2fd14bc",
+      "date": "2026-11-09",
+      "title": "feat: animer forsideillustrasjonen med klikk for pause og start",
+      "destination": "changelog",
+      "sourceEntries": ["H102", "H103"]
+    },
+    {
+      "commit": "67108ac950b3dc209829b6909d5b7f88e6665547",
+      "date": "2026-11-09",
+      "title": "fix: rett språk i prisvilkår og oppdater tilgjengelighetskontrollen",
+      "destination": "changelog",
+      "sourceEntries": ["H099", "H100", "H101"]
+    },
+    {
+      "commit": "83b87f3925db1198c9df43896bb020c57fd3b201",
+      "date": "2026-11-09",
+      "title": "fix: rett PDF-tilgjengelighet og oppdater testgrunnlaget",
+      "destination": "changelog",
+      "sourceEntries": ["H097", "H098"]
+    },
+    {
+      "commit": "b152e73a97106d455f2b21927b93d57aadad61e7",
+      "date": "2026-11-10",
+      "title": "fix: rett tilgjengelighetsavvik og oppdater erklæring og testgrunnlag",
+      "destination": "changelog",
+      "sourceEntries": ["H091", "H092", "H093", "H094", "H095", "H096"]
+    },
+    {
+      "commit": "c4f0d7ee032038dc74da36a50ac338534fb28c60",
+      "date": "2026-11-10",
+      "title": "test: utvid lokale tilgjengelighetskontroller og oppdater erklæring",
+      "destination": "changelog",
+      "sourceEntries": ["H089", "H090"]
+    },
+    {
+      "commit": "f63e9f3254db99daaaffa535e3a71b0cad80db75",
+      "date": "2026-11-10",
+      "title": "docs: skill kjente brudd fra uavklarte tilgjengelighetskrav",
+      "destination": "changelog",
+      "sourceEntries": ["H088"]
+    },
+    {
+      "commit": "89b2bd568a89751e4261fb9f2e649ad69b117964",
+      "date": "2026-11-10",
+      "title": "docs: planlegg avklaring av 15 tilgjengelighetskrav",
+      "destination": "changelog",
+      "sourceEntries": ["H087"]
+    },
+    {
+      "commit": "0104ae3f43c0b8ece105d07bc10cc4e1c3d30806",
+      "date": "2026-11-10",
+      "title": "feat: legg til cookie-side og dokumentert samtykkevurdering",
+      "destination": "changelog",
+      "sourceEntries": ["H086"]
+    },
+    {
+      "commit": "7d8123a6af301ada0c36b770fa983108bb1dffe6",
+      "date": "2026-11-10",
+      "title": "docs: oppdater tilgjengelighetskontroll av cookie-sider",
+      "destination": "changelog",
+      "sourceEntries": ["H085"]
+    },
+    {
+      "commit": "0ac6bab1174c4e980c513521942fe8addbe844bd",
+      "date": "2026-11-10",
+      "title": "docs: dokumenter vurdering av 86 kontrastforekomster",
+      "destination": "changelog",
+      "sourceEntries": ["H084"]
+    },
+    {
+      "commit": "bd8b2901997be909c7ada1d88382d9ec375fc664",
+      "date": "2026-11-10",
+      "title": "docs: oppdater kontrastkontroll av interaktive tilstander og PDF",
+      "destination": "changelog",
+      "sourceEntries": ["H083"]
+    },
+    {
+      "commit": "05d1b8056050c0a9c23e90fa1be62b0ae899b23a",
+      "date": "2026-11-10",
+      "title": "fix: rett filterkontrast og fullfør lokal WCAG 1.4.11-vurdering",
+      "destination": "changelog",
+      "sourceEntries": ["H082"]
+    },
+    {
+      "commit": "6a57d77abe4d31356615c5e4fee7aecd0c07e3de",
+      "date": "2026-11-10",
+      "title": "fix: rett PDF-språk og varsel om gamle prisdata",
+      "destination": "changelog",
+      "sourceEntries": ["H080", "H081"]
+    },
+    {
+      "commit": "e6d8457eda762fe48d1d9d6041de635873c5216e",
+      "date": "2026-11-10",
+      "title": "fix: forbedre relevans i RAG-kildesøket",
+      "destination": "changelog",
+      "sourceEntries": ["H079"]
+    },
+    {
+      "commit": "2e5411aa2bf4ece1e92c62f12fc3edf0cafb595d",
+      "date": "2026-11-10",
+      "title": "fix: rett HTTP-grensen for RAG",
+      "destination": "changelog",
+      "sourceEntries": ["H078"]
+    },
+    {
+      "commit": "8aa422f6718dfa664fb35a280ce4da1203d549ce",
+      "date": "2026-11-10",
+      "title": "test: verifiser RAG HTTP-grensen med Node 22",
+      "destination": "changelog",
+      "sourceEntries": ["H077"]
+    },
+    {
+      "commit": "1b413c80f49a46fa47971d14d2cc207967af3a42",
+      "date": "2026-11-10",
+      "title": "test: verifiser RAG HTTP-grensen i Docker med Node 22",
+      "destination": "changelog",
+      "sourceEntries": ["H076"]
+    },
+    {
+      "commit": "e4e580ab1e2af2a672284aa3cb36403cf0240396",
+      "date": "2026-11-10",
+      "title": "fix: rett prisinnhenting og gjenbruk én pris-PR",
+      "destination": "changelog",
+      "sourceEntries": ["H075"]
+    },
+    {
+      "commit": "e6b5b426d59dac66e3fc6138519db04c55e7c984",
+      "date": "2026-11-10",
+      "title": "test: verifiser prisinnhenting i Docker med Node 22",
+      "destination": "changelog",
+      "sourceEntries": ["H074"]
+    },
+    {
+      "commit": "3bff3409ed7a06b67fe61d49a315ed24fae52ff4",
+      "date": "2026-11-10",
+      "title": "test: verifiser hele testpakken og bygg i Linux med Node 22",
+      "destination": "changelog",
+      "sourceEntries": ["H073"]
+    },
+    {
+      "commit": "7ebbab353442004fb2f70f6d948b5c711db0fddd",
+      "date": "2026-11-11",
+      "title": "fix: samordne RAG-frister, avbrudd og samtidighet",
+      "destination": "changelog",
+      "sourceEntries": ["H072"]
+    },
+    {
+      "commit": "f15c89bb7dfc8349cde1c5c9ef1668dde1756482",
+      "date": "2026-11-11",
+      "title": "test: verifiser RAG-frister og avbrudd i Linux med Node 22",
+      "destination": "changelog",
+      "sourceEntries": ["H071"]
+    },
+    {
+      "commit": "46f449e1f82c10215632a33c0a9234858205509e",
+      "date": "2026-11-11",
+      "title": "fix: rett chatvisning og avstem prosjektstatus",
+      "destination": "changelog",
+      "sourceEntries": ["H069", "H070"]
+    },
+    {
+      "commit": "38fc88679b4c7d40efa2c59bb837789f6fc5240c",
+      "date": "2026-11-11",
+      "title": "fix: kopier delte kildemoduler i content-sync",
+      "destination": "changelog",
+      "sourceEntries": ["H068"]
+    },
+    {
+      "commit": "f2ec93fc5b0e6b1c6d531180711451efff055104",
+      "date": "2026-11-11",
+      "title": "feat: samle kvalitetskontroller og forbedre kildesøket",
+      "destination": "changelog",
+      "sourceEntries": ["H066", "H067"]
+    },
+    {
+      "commit": "2ecb86c5f0046d17c90635c94fcc9cfb43cbc774",
+      "date": "2026-11-11",
+      "title": "fix: avgrens prisparsing og valider RAG-konfigurasjon",
+      "destination": "changelog",
+      "sourceEntries": ["H065"]
+    },
+    {
+      "commit": "065b6545e059d9304aa6f07421f41b57d6dace59",
+      "date": "2026-11-11",
+      "title": "fix: avbryt chat og forbedre feltgrense og lister",
+      "destination": "changelog",
+      "sourceEntries": ["H064"]
+    },
+    {
+      "commit": "87212c0fd26f44072fe30c495bd21c805fa989dc",
+      "date": "2026-11-11",
+      "title": "test: verifiser chatrettinger i Linux med Node 22",
+      "destination": "changelog",
+      "sourceEntries": ["H063"]
+    },
+    {
+      "commit": "c22f1dcce0fb803eaaad06307a25a8178cb37f73",
+      "date": "2026-11-11",
+      "title": "fix: forbedre RAG-chat og sikre CI-oppsett",
+      "destination": "changelog",
+      "sourceEntries": ["H059", "H060", "H061", "H062"]
+    },
+    {
+      "commit": "2cc5bcafd664d498f6e0595952c80e417167cba7",
+      "date": "2026-11-11",
+      "title": "docs: avstem dokumentasjon og verifiser CI i Docker",
+      "destination": "changelog",
+      "sourceEntries": ["H057", "H058"]
+    },
+    {
+      "commit": "ffca8a18fbed4ebbe12d02b84a7a7e9311d712fc",
+      "date": "2026-11-11",
+      "title": "ui: forenkle tekst på skill-kort",
+      "destination": "changelog",
+      "sourceEntries": ["H056"]
+    },
+    {
+      "commit": "6b60622f92a63589b721c01d8526f73842a0a9c3",
+      "date": "2026-11-11",
+      "title": "ui: fjern Oversikt fra bunnmenyen",
+      "destination": "changelog",
+      "sourceEntries": ["H054", "H055"]
+    },
+    {
+      "commit": "d2f6ba3e6655b2e35722537a74a443b5523387b8",
+      "date": "2026-11-11",
+      "title": "fix: forbedre RAG-søk og bevare chatfokus",
+      "destination": "changelog",
+      "sourceEntries": ["H050", "H051", "H052", "H053"]
+    },
+    {
+      "commit": "6c304b3fc5531297083ac6bf0ebfb73d44dcb8db",
+      "date": "2026-11-12",
+      "title": "docs: dokumenter oppdatert Docker-utgave og RAG-kontroller",
+      "destination": "technical",
+      "sourceEntries": ["H049"]
+    },
+    {
+      "commit": "e3db605000b826f5e90e07779d9afe87f16313e4",
+      "date": "2026-11-13",
+      "title": "Legg til lokal Qwen-modell, forbedre Spør KI og utvid ressurskatalogen",
+      "destination": "changelog",
+      "sourceEntries": ["H044", "H045", "H046", "H047", "H048"]
+    },
+    {
+      "commit": "ce43210cc63fca7353293459103bcdab6171d591",
+      "date": "2026-11-13",
+      "title": "Innfør friksjonslogg og triageprosess i prosjektet",
+      "destination": "changelog",
+      "sourceEntries": ["H043"]
+    },
+    {
+      "commit": "ad932a62b5d0114c8b3736cf04775a9920865fc0",
+      "date": "2026-11-13",
+      "title": "Rydd skjermbildebevis og dokumenter sikkerhetsgjennomgangen",
+      "destination": "changelog",
+      "sourceEntries": ["H040", "H041", "H042"]
+    },
+    {
+      "commit": "724a23cec527b05d166903aa21d7f5c1cbfd78b4",
+      "date": "2026-11-16",
+      "title": "Rett bildelenker i historiske erklæringskopier",
+      "destination": "changelog",
+      "sourceEntries": ["H039"]
+    },
+    {
+      "commit": "1258176a0ad3db327b348d43fea635b77a5097f6",
+      "date": "2026-11-16",
+      "title": "Sladd preview-nøkler i lagret byggmanifest",
+      "destination": "changelog",
+      "sourceEntries": ["H038"]
+    },
+    {
+      "commit": "7441c7026c6fa1a158d0b7887976f82b929ef67d",
+      "date": "2026-11-16",
+      "title": "Dokumenter lokalt Docker-testmiljø og oppdatert sikkerhetskontroll",
+      "destination": "changelog",
+      "sourceEntries": ["H036", "H037"]
+    },
+    {
+      "commit": "ee26bb25d409c287bbb1beb67b7139f4d897461f",
+      "date": "2026-11-16",
+      "title": "Rett Qwen-timeout med konfigurert CPU-trådtall",
+      "destination": "changelog",
+      "sourceEntries": ["H034", "H035"]
+    },
+    {
+      "commit": "a762ac14dae8d6337b3ee9641ff34f96f3e81e7f",
+      "date": "2026-11-16",
+      "title": "Dokumenter Docker-oppdatering med fire Qwen-tråder",
+      "destination": "technical",
+      "sourceEntries": ["H033"]
+    },
+    {
+      "commit": "8a14484cd6d7a46da35079235d1123808d213436",
+      "date": "2026-11-16",
+      "title": "Oppdater første-push-sjekkliste med lokale kontrollresultater",
+      "destination": "changelog",
+      "sourceEntries": ["H032"]
+    },
+    {
+      "commit": "7355ca80864036e2005d693570e726acc2f756d1",
+      "date": "2026-11-16",
+      "title": "Dokumenter IP-blokkering i CI og nødvendige runneravklaringer",
+      "destination": "changelog",
+      "sourceEntries": ["H030", "H031"]
+    },
+    {
+      "commit": "2771c90a824f53176834a7137d9d10663011f279",
+      "date": "2026-11-16",
+      "title": "Forenkle CI og versjonskrav til Node 24",
+      "destination": "changelog",
+      "sourceEntries": ["H029"]
+    },
+    {
+      "commit": "ba5aee060973101dadff9bee532cb886df7262f3",
+      "date": "2026-11-16",
+      "title": "Rett rulling til svarstart i Spør KI",
+      "destination": "changelog",
+      "sourceEntries": ["H028"]
+    },
+    {
+      "commit": "a4b12d33e3220f0233a91f07c0ff567683f708d7",
+      "date": "2026-11-16",
+      "title": "Dokumenter rulletest ved 320 px og i chatbot-dialogen",
+      "destination": "changelog",
+      "sourceEntries": ["H027"]
+    },
+    {
+      "commit": "6327662b02fe11950f35ffe79295fb72fe654d67",
+      "date": "2026-11-16",
+      "title": "Dokumenter Docker-oppdatering fra a4b12d3",
+      "destination": "technical",
+      "sourceEntries": ["H026"]
+    },
+    {
+      "commit": "452b0c599cfab3b89be7c2d3a4d01fdabaf5f782",
+      "date": "2026-11-16",
+      "title": "Legg til Logorama og Prometheus som godkjente MCP-er",
+      "destination": "changelog",
+      "sourceEntries": ["H025"]
+    },
+    {
+      "commit": "88cc33a9815456bd6ca76e59a5dd84a10429e555",
+      "date": "2026-11-16",
+      "title": "Dokumenter Docker-oppdatering fra 452b0c5",
+      "destination": "technical",
+      "sourceEntries": ["H024"]
+    },
+    {
+      "commit": "9034ab2d43a05b543999fc22930b27fa830f17fd",
+      "date": "2026-11-16",
+      "title": "Dokumenter Spør KI-tester for godkjente MCP-er",
+      "destination": "changelog",
+      "sourceEntries": ["H023"]
+    },
+    {
+      "commit": "b6ec801a49808a03707e999535c36a6eaa12b9a2",
+      "date": "2026-11-17",
+      "title": "Legg til Copilot-retningslinjer og rett RAG-søk og modellkontekst",
+      "destination": "changelog",
+      "sourceEntries": ["H020", "H021", "H022"]
+    },
+    {
+      "commit": "632dc664940d493bb03676ac444a74372503533b",
+      "date": "2026-11-17",
+      "title": "Test RAG-søket automatisk ved innholdsredigering",
+      "destination": "changelog",
+      "sourceEntries": ["H019"]
+    },
+    {
+      "commit": "9446009e5cd001868768e5fcadc2dff2e6e2df4c",
+      "date": "2026-11-17",
+      "title": "Dokumenter Docker-oppdatering fra 632dc664",
+      "destination": "technical",
+      "sourceEntries": ["H018"]
+    },
+    {
+      "commit": "bf311ed52c2e49ce01771bc9a59cafc556ee2d5b",
+      "date": "2026-11-17",
+      "title": "Dokumenter Docker-oppdatering fra 9446009e",
+      "destination": "technical",
+      "sourceEntries": ["H017"]
+    },
+    {
+      "commit": "5ffe263c1ebd76f96f08e1ef4f06d5a4e4ad8d4d",
+      "date": "2026-11-17",
+      "title": "Dokumenter Docker-oppdatering fra bf311ed5",
+      "destination": "technical",
+      "sourceEntries": ["H016"]
+    },
+    {
+      "commit": "2b7908cc17a8b0e00436be0eeb84f1b86f2c2192",
+      "date": "2026-11-17",
+      "title": "Dokumenter Docker-oppdatering fra 5ffe263c",
+      "destination": "technical",
+      "sourceEntries": ["H015"]
+    },
+    {
+      "commit": "8c8436a9abac2657129fd2f6ac091013fdf6afcb",
+      "date": "2026-11-17",
+      "title": "Dokumenter Docker-oppdatering fra 2b7908cc",
+      "destination": "technical",
+      "sourceEntries": ["H014"]
+    },
+    {
+      "commit": "d7b69ced8c576e5f7c774bf35f39a712f1b8c45e",
+      "date": "2026-11-17",
+      "title": "Plasser responsiv forsideanimasjon ved overskriften",
+      "destination": "changelog",
+      "sourceEntries": ["H013"]
+    },
+    {
+      "commit": "842739da90a6e4315a9c5e76aa7d5cfdc1a6d030",
+      "date": "2026-11-17",
+      "title": "Dokumenter Docker-kontroll av responsiv forside",
+      "destination": "technical",
+      "sourceEntries": ["H012"]
+    },
+    {
+      "commit": "966765fba6fdc4abac48af35f0141f97acf6b8b3",
+      "date": "2026-11-17",
+      "title": "Dokumenter Docker-oppdatering fra 842739da",
+      "destination": "technical",
+      "sourceEntries": ["H011"]
+    },
+    {
+      "commit": "b4bda7c4cb4d7206435fa27ed5fa710677a071d3",
+      "date": "2026-11-17",
+      "title": "Dokumenter Docker-oppdatering fra 966765fb",
+      "destination": "technical",
+      "sourceEntries": ["H010"]
+    },
+    {
+      "commit": "70f4c42dcec39d5a8a2584aec1f4cac970291634",
+      "date": "2026-11-17",
+      "title": "Dokumenter Docker-oppdatering fra b4bda7c4",
+      "destination": "technical",
+      "sourceEntries": ["H009"]
+    },
+    {
+      "commit": "3899c18dca821a54c8172237f7a955c22ee1c435",
+      "date": "2026-11-17",
+      "title": "Dokumenter Docker-oppdatering fra 70f4c42d",
+      "destination": "technical",
+      "sourceEntries": ["H008"]
+    },
+    {
+      "commit": "34623a13bfac5ec2134ca929d4e806bf74a0f4ca",
+      "date": "2026-11-17",
+      "title": "Oppgrader Next.js og sikre utviklings- og byggmiljø",
+      "destination": "changelog",
+      "sourceEntries": ["H005", "H006", "H007"]
+    },
+    {
+      "commit": "bb20299ace793d3bc0e86c3c74ab37963a6c10eb",
+      "date": "2026-11-17",
+      "title": "Tilpass planen til offentlig nettsted uten innlogging",
+      "destination": "changelog",
+      "sourceEntries": ["H003", "H004"]
+    },
+    {
+      "commit": "ae583f58d8caf22a34a8c06c9b01de25f6c27956",
+      "date": "2026-11-17",
+      "title": "Dokumenter Docker-oppdatering fra bb20299",
+      "destination": "technical",
+      "sourceEntries": ["H002"]
+    },
+    {
+      "commit": "5f93687041c580409621a76573edf27587bc3e66",
+      "date": "2026-11-17",
+      "title": "Lag offentlige utgaver av versjonslogg og utviklingsplan",
+      "destination": "changelog",
+      "sourceEntries": ["H001"]
+    }
+  ],
+  "notes": [
+    "Arbeidsdatoene fra logg/plan er bevart. Eksempel: modellarbeid datert 12. november er committet 13. november; RAG-frister datert 10. november er committet 11. november. Dette er ikke publiseringsdatoer.",
+    "Loggpostene H100 og H111 har samme prisoverskrift og lik oppdateringstekst; begge beholdes og er fordelt som to dokumenterte oppdateringer. Ingen sammenhengende Git-differ eller eksterne kilderepoer er skannet for å gjenfinne flere hendelser.",
+    "CurrentFeatureIds og planRequirements er oppfølgingskoblinger, ikke en instruks om å kopiere historiske endringer eller planlagte funksjoner til registeret. Teknisk primærplassering betyr at detaljbevis beholdes; vesentlig produktendring er allerede beskrevet i egen kildepost."
+  ],
+  "otherRefs": [
+    {
+      "commit": "3186d93adda411c34e7d79c45fc5ebddf06add2c",
+      "date": "2026-11-16",
+      "title": "On master: !!GitHub_Desktop<master>",
+      "destination": "technical",
+      "reason": "Metadata utenfor hovedgrenens 75 commits: separat initialcommit eller GitHub Desktop-lagringstilstand. Ikke dokumentert som produktleveranse; ingen gamle filinnhold er lest."
+    },
+    {
+      "commit": "865ed72554d309162fa2d03b0af4752b985d8031",
+      "date": "2026-11-16",
+      "title": "index on master: 2e52ca26 Initial commit",
+      "destination": "technical",
+      "reason": "Metadata utenfor hovedgrenens 75 commits: separat initialcommit eller GitHub Desktop-lagringstilstand. Ikke dokumentert som produktleveranse; ingen gamle filinnhold er lest."
+    },
+    {
+      "commit": "2e52ca26d2e85c4eb8aaad23fff87165bdbe6dcd",
+      "date": "2026-11-16",
+      "title": "Initial commit",
+      "destination": "technical",
+      "reason": "Metadata utenfor hovedgrenens 75 commits: separat initialcommit eller GitHub Desktop-lagringstilstand. Ikke dokumentert som produktleveranse; ingen gamle filinnhold er lest."
+    }
+  ]
+}
