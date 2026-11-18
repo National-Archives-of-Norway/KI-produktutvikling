@@ -105,6 +105,8 @@ Denne detaljerte planen beholder tidligere leveranse- og kontrollnotater som dat
 
 **Driftsoppfølging 18. november 2026 – 2aacccc:** ny lokal Docker-utgave er bygget fra ren commitkopi, med oppdatert revisjonsetikett og fire samsvarende kilde-/dokumentkontrollsummer. Bare portalcontaineren er gjenskapt. Fem HTTP-sider og portal-/RAG-helse bestod; Qwen3:4b/fire tråder er konfigurert. Offentlige dokumenter er uendret siden c6daf22, fordi siste commit bare oppdaterer intern plan, detaljlogg og Qwen-rapport. Ollama og modellvolum/manifest er bevart. Ingen ny modellgenerering eller offentlig publisering; tidligere faktisk modellprøve beholdes som datert bevis. Dette notatet er skrevet etter bildet og endrer ikke P1–P10-godkjenning.
 
+**Driftsoppfølging 18. november 2026 – 9f063a4:** lokal Docker er bygget fra ren commitkopi med eksisterende cache og startet ved å gjenskape bare portalen. Commitetikett/fire kildekontrollsummer, fem HTTP-sider og portal-/RAG-helse bestod. Qwen3:4b/fire tråder er konfigurert; Ollama og modellvolum/manifest er uendret. Offentlige dokumenter er uendret fordi commiten bare gjelder intern plan/logg. Ingen ny modell-/nettleserprøve eller offentlig publisering. Notatet er skrevet etter bildet og endrer ikke P1–P10-godkjenning.
+
 ## Hva gjenstår før produksjonssetting?
 
 Ingen av kravene nedenfor er ferdig godkjent. Alle eiere er foreløpig **ikke avklart**; rolleangivelsene viser hvem som må utpekes. Nettstedet skal være offentlig uten autentisering. P2 er omdefinert til offentlig innholdsgrense; det tidligere innloggingskravet er trukket tilbake, ikke implementert.
