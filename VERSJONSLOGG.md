@@ -6,6 +6,14 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 18. november 2026 – Docker oppdatert fra c6daf22 og Qwen retestet
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Bygget fra ren git archive av c6daf2237ebab5e7b396ab8abae21d692a7b0763 med commitetikett og gjenbruk av byggcache. Produksjonsbygg bestod; bare portalen ble gjenskapt med --no-deps --no-build. Kjørende bilde er sha256:e07773bcdc17c3fbe6a605071725b48d690eb43ec01a32f4c0d7dfd4f8c87ad5. Fem kilde-/dokumentkontrollsummer samsvarer med commiten. Ollama/qwen3:4b og firetrådsinnstillingen er bekreftet i faktisk konfigurasjon.
+- Spørsmålet «hva inneholder denne siden?» er sendt gjennom verts-port 3005, Next-proxy og RAG til faktisk Qwen. HTTP 200/mode=generated, funksjonalitet som eneste kilde, relevant portalsvar og gyldig [1] etter 14,17 s. Konkret cookie-/personvernkildesøk har riktig første kilde. Fem sider svarte HTTP 200; offentlig logg viser søke-/visningsrettingen. Portal healthy og RAG status=ok/generationEnabled=true. [Oppfølging av rapporten](docs/rag/2026-11-18/generelle-portalsporsmal.md).
+- Ollama beholdt container-ID/starttid og null omstarter; modellvolumets navn/opprettelsestid og modellmanifestets SHA-256 er uendret. Ingen ny nedlasting, volumfjerning eller omstart av modellen. Brukerens utviklingsmiljø på 3000 er ikke endret; modelltesten gjelder Docker på 3005. Ingen ny full testpakke, Pages-bygg, nettleser-/skjermleserprøve, commit, push eller offentlig publisering. Interne drifts-/plannotater og rapportoppfølging er skrevet etter bildet og endrer ikke de offentlige dokumentene.
+
 ### 18. november 2026 – rettet generelle spørsmål om portalens innhold
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

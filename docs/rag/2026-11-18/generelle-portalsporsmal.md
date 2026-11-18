@@ -43,3 +43,15 @@ Denne siden inneholder en funksjonalitetsoversikt over KI-Produktutvikling i Nas
 ## Begrensninger og videreføring
 
 Ingen autentisering, API-kontrakt, modellvalg eller tidsgrense er endret. Modellen er fortsatt deaktivert i brukerens utviklingsmiljø. Kjørende Docker-portal på 3005 er ikke bygd om med denne rettingen; den separate modellen ble brukt til transportprøven. Ingen commit, push eller offentlig publisering. Sluttkontroll: pnpm check bestod med 307 Node-tester, tre Python-tester, faktisk innholdssynk, lenkekontroll, formatering, typekontroll og serverbygg. Pages-bygg bestod også. Avhengigheter og låsefil er uendret.
+
+## Oppfølging 18. november – kjørende Docker fra c6daf22
+
+Den tidligere begrensningen om at Docker-portalen ikke er bygd om gjelder før denne oppfølgingen. Portalen på 3005 er nå bygd fra ren commit c6daf2237ebab5e7b396ab8abae21d692a7b0763 og har fem samsvarende kilde-/dokumentkontrollsummer. Kjørende bilde: sha256:e07773bcdc17c3fbe6a605071725b48d690eb43ec01a32f4c0d7dfd4f8c87ad5. Bare portalcontaineren ble gjenskapt; eksisterende Ollama-container, modellvolum og modellmanifest er bevart.
+
+Faktisk POST til http://127.0.0.1:3005/api/rag med korrekt Origin gikk gjennom Next-proxy og RAG til Qwen3:4b med fire tråder. Resultat: HTTP 200, mode=generated, bare funksjonalitet som kilde, gyldig [1] og 14,17 s. Svaret beskriver portalens funksjonalitet og ressurser fremfor å svare som om spørsmålet gjaldt cookies. Dette er én faktisk API-prøve, ikke en ny nettleser-/skjermleserprøve, kapasitetsmåling eller offentlig modellgodkjenning.
+
+Kildesøk i kjørende container beholder informasjonskapsler først for cookie-siden og personvern først for «denne siden om personvern». Forside, Spør KI og de tre dokument-/oversiktssidene svarte HTTP 200; portal healthy og RAG status=ok/generationEnabled=true. Utviklingsmiljøet på 3000 er ikke rekonfigurert. Ingen ny modellnedlasting, volumfjerning, full testpakke, Pages-bygg, commit, push eller offentlig publisering.
+
+Modellens faktiske svar fra portal-API-et:
+
+Denne siden inneholder en funksjonalitetsoversikt over KI-Produktutvikling i Nasjonalarkivet, inkludert tilgjengelige funksjoner som Forside, Ressurskatalog (Beta), Spør KI (Beta), KI-prat, Bruk av GitHub Copilot, Godkjente MCP-er, Godkjente KI-assistenter, Kom i gang, Om portalen, Retningslinjer (utkast), Personvernerklæring (utkast), Informasjonskapsler (utkast), Oversikt (Beta), Priser for KI-verktøy (Beta), Feilside for ukjent adresse, Tilgjengelighetserklæring (utkast), Nettstedskart og Versjonslogg. [1]
