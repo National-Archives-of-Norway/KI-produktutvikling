@@ -6,6 +6,14 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 18. november 2026 – Docker oppdatert fra 2aacccc
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Bygget portalbildet fra ren git archive av 2aaccccb84cd0cf0df0e274da2980d8727c7fdd0 med commitetikett og gjenbruk av byggcache. Bare portalen ble gjenskapt med --no-deps --no-build. Kjørende bilde er sha256:11e7e6bebe775635df21166b846f1c634ffc04317c715ebed3a82c83b1e413bf. Etikett og fire kilde-/dokumentkontrollsummer samsvarer med commiten.
+- Forside, /spor, offentlig versjonslogg, utviklingsplan og funksjonsoversikt ga HTTP 200. Portalen er healthy; RAG gir status=ok/generationEnabled=true med Ollama/qwen3:4b og fire tråder. Siste commit endrer bare intern plan, detaljlogg og Qwen-rapport. De offentlige dokumentene er uendret fra c6daf22; interne dokumenter er fortsatt utelatt fra appbildet etter etablert oppsett. Dette bygget publiserer ikke interne driftsnotater.
+- Ollama har samme container-ID/starttid og null omstarter. Modellvolumets navn/opprettelsestid og modellmanifestets SHA-256 er uendret. Ingen ny modellnedlasting, volumfjerning, modell-/nettleserprøve, full testpakke, Pages-bygg, commit, push eller offentlig publisering. Denne kontrollen er lokal bygg-/HTTP-helse; den tidligere faktiske Qwen-prøven på 14,17 s er ikke kjørt på nytt. Interne drifts-/plannotater er skrevet etter bildet.
+
 ### 18. november 2026 – Docker oppdatert fra c6daf22 og Qwen retestet
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.
