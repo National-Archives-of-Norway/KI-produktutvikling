@@ -6,6 +6,23 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 18. november 2026 – rettet generelle spørsmål om portalens innhold
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Bekreftet feil kildevalg før endring både med retrieve og brukerens API på 3000: «hva inneholder denne siden?» ga informasjonskapsler, mode=sources/reason=no_model. RAG-health bekreftet at utviklingsmodellen er deaktivert. Tre nye søkeforventninger feilet før retting; konkrete temasøk og negativ kontroll bestod allerede.
+- Side/nettside/nettsted er samlet som svake kontekstord, med eksplisitte metadataaliaser på funksjonsoversikten. Generell brødtekst gir ikke lenger emnetreff alene; vanlig scoring/terskler og API-kontrakt er uendret. Oversikten presiserer portalomfanget uten å late som API-et kjenner aktuell underside. Visningen uten modell sier «Hovedpunkter fra kilden» og «Åpne kilden». Register, offentlig logg, plan, arkitektur og README er avstemt.
+- Søketestene bestod 136/136 etter retting. 12 tjenestetester bestod, inkludert samme spørsmål uten modell og med simulert generering. API og nettleser på /spor og i forsidens dialog på 3000 bekrefter riktig oversikt. Separat faktisk Qwen3:4b-prøve med fire tråder og skrivebeskyttet kildegrunnlag ga generated/200, riktig kilde og [1] på 50,21 s. Dette er ikke modellgenerering gjennom brukerens utviklingsserver; modelloppsettet er uendret.
+- [Rapport med før-/ettertabell](docs/rag/2026-11-18/generelle-portalsporsmal.md) skiller søk, kildevisning, simulering og faktisk modelltransport. Tidligere driftsnotater er bevart. Ingen blindmåling, nye avhengigheter, modellnedlasting, endring av kjørende Docker-portal, commit, push eller publisering. Sluttkontroller: pnpm check bestod med 307 Node-/tre Python-tester, faktisk innholdssynk, 264 filmål, formatering, typekontroll og serverbygg. Pages-bygg bestod også. Ingen eksterne priskilder eller blindsett er brukt.
+
+### 18. november 2026 – Docker oppdatert fra 94882e9
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Bygget portalbildet fra ren git archive av 94882e92b2ec36b3ee83d42c37b0bf9e3ae21975 med commitetikett og gjenbruk av byggcache. Produksjonsbygg bestod; bare portalen ble gjenskapt med --no-deps --no-build. Kjørende bildereferanse er sha256:c1d7893d812a96e64896f95d69e863e0b53dc69cfc713cbd7d1f39ee821c3c1a. Fire SHA-256-kontroller av offentlige dokumenter, funksjonsregister og oversiktsside samsvarer mellom commit og container.
+- Fem HTTP-sider på verts-port 3005 ga 200. Samtlige 122 historiske sammendrag, alle datoseksjoner, P1–P10, datert beslutningshistorikk, lenker mellom de tre sidene og fravær av planlagte funksjonsseksjoner er kontrollert i servert HTML. Ingen undersøkte interne markører ble funnet på de tre sidene; detaljerte arbeidsdokumenter finnes heller ikke som rotfiler i runtime. Første Python 3.9-prøve fulgte ikke normal 308-videresending fra adresser med skråstrek; ny prøve mot kanoniske adresser bestod. Ingen produktretting var nødvendig.
+- Portal healthy; RAG status=ok/generationEnabled=true. Ollama beholdt container-ID/starttid og null omstarter; modellvolumets navn/opprettelsestid og modellmanifestets SHA-256 er uendret. Ingen ny modellnedlasting, volumfjerning, full testpakke, Pages-bygg, nettleser-/modellprøve, commit, push eller offentlig publisering. Dette interne driftsnotatet og planoppfølgingen er skrevet etter bildet; de offentlige sidene viser kildecommiten uten lokale driftsnotater.
+
 ### 18. november 2026 – full historikkartlegging og tydelig dokumentfordeling
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

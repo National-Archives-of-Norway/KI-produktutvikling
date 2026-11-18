@@ -218,3 +218,30 @@ test("serverens Ollama-trådvalg sendes til modelltransporten", async () => {
   );
   assert.equal(await model!.generate("tester", corpus), "Svar [1]");
 });
+
+test("generelt spørsmål om siden gir portaloversikt med korrekt modellstatus", async () => {
+  const question = "hva inneholder denne siden?";
+  const withoutModel = await createRagService().ask(question);
+  assert.equal(withoutModel.status, 200);
+  assert.ok(isResult(withoutModel.body));
+  assert.equal(withoutModel.body.mode, "sources");
+  assert.ok(
+    "reason" in withoutModel.body && withoutModel.body.reason === "no_model",
+  );
+  assert.equal(withoutModel.body.sources[0]?.id, "funksjonalitet");
+  assert.ok(
+    withoutModel.body.sources[0].guide?.note?.includes("portalen som helhet"),
+  );
+  const withModel = await createRagService({
+    model: {
+      generate: async (_question, sources) => {
+        assert.equal(sources[0]?.id, "funksjonalitet");
+        assert.equal("keywords" in sources[0], false);
+        return "Portalen samler ressurser og veiledning om KI. [1]";
+      },
+    },
+  }).ask(question);
+  assert.equal(withModel.status, 200);
+  assert.ok(isResult(withModel.body));
+  assert.equal(withModel.body.mode, "generated");
+});

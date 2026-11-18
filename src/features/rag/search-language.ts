@@ -94,6 +94,15 @@ export const actionTerms = new Set(
     "test teste tester testing del dele deler skriv skrive finn finne finner vis vise viser lag lage kartlegg utforsk gjennomfør kontroller kontrollere installer avklar sammenlign endre oppdatere slette lagre lagrer lagres lagret inneholde inneholder bruke bruker",
   ).map((term) => term.stem),
 );
+// Generelle dokumentord er kontekst, ikke et spesifikt emne. De beholder
+// lav vekt sammen med temaord, og får bare selvstendig emnestatus når en
+// kilde eksplisitt beskriver dem med søkealiaser (portalens innholdsoversikt).
+export const contextTerms = new Set(
+  terms("side nettside nettsted").map((term) => term.stem),
+);
+export const isLowSignalTerm = (term: Term) =>
+  actionTerms.has(term.stem) || contextTerms.has(term.stem);
+
 export const actionWeight = 0.25;
 
 // Valider nye side-/seksjonsaliaser som forfatterdata. Duplikater sammenlignes

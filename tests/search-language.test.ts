@@ -2,6 +2,8 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 import {
   actionTerms,
+  contextTerms,
+  isLowSignalTerm,
   stemNorwegian,
   terms,
 } from "../src/features/rag/search-language.ts";
@@ -63,4 +65,22 @@ test("handlingsord bruker samme nye stammer som alle bøyningene", () => {
   for (const forms of groups.slice(0, 6))
     for (const word of forms)
       assert.ok(actionTerms.has(stemNorwegian(word)), word);
+});
+
+test("sideord er svak kontekst i alle vanlige bøyninger, mens temaord beholdes", () => {
+  for (const word of [
+    "side",
+    "siden",
+    "sidene",
+    "nettside",
+    "nettsiden",
+    "nettsted",
+    "nettstedet",
+  ]) {
+    const [term] = terms(word);
+    assert.ok(contextTerms.has(term.stem), word);
+    assert.ok(isLowSignalTerm(term), word);
+  }
+  for (const word of ["personvern", "cookies", "priser"])
+    assert.equal(isLowSignalTerm(terms(word)[0]), false, word);
 });

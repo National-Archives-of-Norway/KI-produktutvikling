@@ -97,6 +97,10 @@ Referanser: [versjonsloggen](VERSJONSLOGG.md) og kontrollgrunnlaget ovenfor. Cha
 
 Denne detaljerte planen beholder tidligere leveranse- og kontrollnotater som datert arbeidsgrunnlag. Historiske «gjenstår»-punkter i eldre avsnitt er ikke en ny restliste; bruk gjeldende P1–P10 og offentlig plan for prioritering.
 
+**Driftsoppfølging 18. november 2026 – 94882e9:** lokal Docker er bygget fra ren commitkopi og bare portalen er gjenskapt. Etikett og fire kildekontrollsummer samsvarer. Fem HTTP-sider på 3005 og portal-/RAG-helse bestod. Alle 122 historiske sammendrag, datoseksjoner, P1–P10 og lenker mellom logg, plan og funksjonsoversikt er kontrollert i servert HTML. Ingen planlagte oversiktsfunksjoner vises som eksisterende funksjonsseksjoner. Ollama og modellvolum/manifest er bevart. Ingen ny modell-/nettleserprøve eller offentlig publisering. Dette er lokal driftskontroll, ikke P1–P10-godkjenning; interne notater skrives etter bildet og inngår ikke i de offentlige dokumentene.
+
+**Spør KI – 18. november 2026:** generelle spørsmål om siden er rettet fra tilfeldig cookie-treff til portalens funksjonsoversikt. Temaer som cookies/personvern beholder egen kildeprioritering. Brukerens API og begge chatvisninger på 3000 er kontrollert med modell deaktivert; separat faktisk Qwen-prøve mot samme kildegrunnlag ga generert svar med kildehenvisning. [Kontrollgrunnlag](docs/rag/2026-11-18/generelle-portalsporsmal.md). Dette endrer ikke modellgodkjenning, valgt driftsmiljø eller øvrige P1–P10-krav. Kjørende Docker-portal er ikke bygd om.
+
 ## Hva gjenstår før produksjonssetting?
 
 Ingen av kravene nedenfor er ferdig godkjent. Alle eiere er foreløpig **ikke avklart**; rolleangivelsene viser hvem som må utpekes. Nettstedet skal være offentlig uten autentisering. P2 er omdefinert til offentlig innholdsgrense; det tidligere innloggingskravet er trukket tilbake, ikke implementert.

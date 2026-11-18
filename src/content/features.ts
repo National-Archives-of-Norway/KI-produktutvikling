@@ -4,12 +4,12 @@ import { overview } from "./overview.ts";
 import { pricingOverview } from "./pricing/index.ts";
 import { resources } from "./resources.ts";
 import { getRecommendedResource } from "./home.ts";
-import type { RagSource } from "../features/rag/contracts.ts";
+import type { SearchSource } from "../features/rag/search-source.ts";
 
 export const featureOverview = {
   title: "Funksjonalitetsoversikt",
   lead: "Dagens funksjoner i portalen, hva du kan bruke dem til, modenhet og kjente begrensninger.",
-  note: "Oversikten beskriver denne utviklingsutgaven, ikke bekreftet offentlig publisering. Statusene gjelder funksjonenes modenhet og behov for oppsett, ikke om en ekstern tjeneste er tilgjengelig akkurat nå. Fremtidige leveranser står i utviklingsplanen.",
+  note: "Oversikten gjelder portalen som helhet. Spør om et konkret tema hvis du mener en bestemt underside. Oversikten beskriver denne utviklingsutgaven, ikke bekreftet offentlig publisering. Statusene gjelder funksjonenes modenhet og behov for oppsett, ikke om en ekstern tjeneste er tilgjengelig akkurat nå. Fremtidige leveranser står i utviklingsplanen.",
 };
 
 export type FeatureStatus =
@@ -60,7 +60,7 @@ export function getFeatures(): Feature[] {
       id: "spor",
       title: "Spør KI",
       description:
-        "Still spørsmål om portalens innhold. Få veiledning med konkrete steg, kilder og forslag til nye spørsmål. En samlet skill-oversikt hentes fra ressurskatalogen, med skille mellom registrerte pakker og eksempler. Kildesøket prioriterer relevante emnetreff og gjenkjenner flere norske bøyninger og bruker vedlikeholdte søkeord for å finne relevant veiledning. Ved spørsmål om to ulike temaer kan det finne en kilde til hvert tema når begge har tydelig støtte i innholdet. Det kan returnere uten treff når grunnlaget er for svakt. Chatten finnes på en egen side og fra forsiden. Modellfeil og kapasitetsavvisning beholder tilgjengelige kilder. Uventet svarformat gir en forståelig feilmelding. Modellsvar viser fortløpende nummerering ved gjentatte listemarkører og beholder tydelige nummerhopp og kildehenvisninger også i fet tekst. Spørsmål kan inneholde 3–1000 brukeropplevde tegn, inkludert sammensatte emoji. Feltet varsler når teksten kuttes og viser en teller nær grensen. Send-knappen beholder fokus under venting og sperrer gjentatt innsending; en egen Avbryt-knapp lar deg avbryte og sende et nytt spørsmål med en gang. Etter svar eller avbrudd går fokus tilbake til spørsmålsfeltet hvis det står på Send eller har falt bort, uten å flytte fokus fra en annen valgt kontroll eller rulle ned til feltet. Visningen ruller til starten av det nyeste svaret. Datoer og årstall i svar vises som avsnitt fremfor nummererte lister. Spørsmål behandles separat, og historikken lagres ikke etter sideoppdatering.",
+        "Still spørsmål om portalens innhold. Få veiledning med konkrete steg, kilder og forslag til nye spørsmål. Generelle spørsmål om siden gir portalens innholdsoversikt, uten å gjette hvilken underside du mener. Uten modell vises hovedpunkter fra kilden, tydelig merket som hentet veiledning. En samlet skill-oversikt hentes fra ressurskatalogen, med skille mellom registrerte pakker og eksempler. Kildesøket prioriterer relevante emnetreff og gjenkjenner flere norske bøyninger og bruker vedlikeholdte søkeord for å finne relevant veiledning. Ved spørsmål om to ulike temaer kan det finne en kilde til hvert tema når begge har tydelig støtte i innholdet. Det kan returnere uten treff når grunnlaget er for svakt. Chatten finnes på en egen side og fra forsiden. Modellfeil og kapasitetsavvisning beholder tilgjengelige kilder. Uventet svarformat gir en forståelig feilmelding. Modellsvar viser fortløpende nummerering ved gjentatte listemarkører og beholder tydelige nummerhopp og kildehenvisninger også i fet tekst. Spørsmål kan inneholde 3–1000 brukeropplevde tegn, inkludert sammensatte emoji. Feltet varsler når teksten kuttes og viser en teller nær grensen. Send-knappen beholder fokus under venting og sperrer gjentatt innsending; en egen Avbryt-knapp lar deg avbryte og sende et nytt spørsmål med en gang. Etter svar eller avbrudd går fokus tilbake til spørsmålsfeltet hvis det står på Send eller har falt bort, uten å flytte fokus fra en annen valgt kontroll eller rulle ned til feltet. Visningen ruller til starten av det nyeste svaret. Datoer og årstall i svar vises som avsnitt fremfor nummererte lister. Spørsmål behandles separat, og historikken lagres ikke etter sideoppdatering.",
       status: "beta",
       href: "/spor/",
       routes: ["/spor/"],
@@ -178,11 +178,12 @@ export function getSiteLinks() {
   );
 }
 
-export function getFeatureSource(): RagSource {
+export function getFeatureSource(): SearchSource {
   const features = getFeatures();
   return {
     id: "funksjonalitet",
     title: featureOverview.title,
+    keywords: ["side", "nettside", "nettsted"],
     href: "/funksjonalitet/",
     text: [
       featureOverview.lead,

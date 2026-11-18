@@ -47,7 +47,8 @@ export const corpus: RagSource[] = indexedCorpus.map(
 
 import {
   terms,
-  actionTerms,
+  contextTerms,
+  isLowSignalTerm,
   actionWeight,
   type Term,
 } from "./search-language.ts";
@@ -111,14 +112,14 @@ export function createRetriever(sources: readonly SearchSource[]) {
   const meanLength =
     documents.reduce((sum, doc) => sum + doc.body.length, 0) /
     Math.max(documents.length, 1);
-  const weight = (q: Term) => (actionTerms.has(q.stem) ? actionWeight : 1);
+  const weight = (q: Term) => (isLowSignalTerm(q) ? actionWeight : 1);
   function score(
     query: Term[],
     frequency: Map<string, number>,
     normalizeBody = true,
     keywordIntent = false,
   ) {
-    const contentTerms = query.filter((term) => !actionTerms.has(term.stem));
+    const contentTerms = query.filter((term) => !isLowSignalTerm(term));
     const totalWeight = query.reduce((sum, q) => sum + weight(q), 0);
     return documents.map((doc) => {
       let score = 0,
@@ -131,7 +132,7 @@ export function createRetriever(sources: readonly SearchSource[]) {
           inBody = match(q, doc.bodyTerms),
           inKeywords = match(q, doc.keywords);
         if (!inTitle && !inBody && !inKeywords) continue;
-        const weak = actionTerms.has(q.stem) && !(keywordIntent && inKeywords);
+        const weak = isLowSignalTerm(q) && !(keywordIntent && inKeywords);
         const atStart = match(q, doc.lineStarts);
         const inLead = match(q, doc.lead);
         const points =
@@ -175,11 +176,13 @@ export function createRetriever(sources: readonly SearchSource[]) {
     const query = [
       ...new Map(terms(question).map((term) => [term.stem, term])).values(),
     ];
-    const contentTerms = query.filter((term) => !actionTerms.has(term.stem));
-    // Spørsmål uten andre temaord kan bruke et eksplisitt handlingsalias.
-    // Ett isolert handlingsord er fortsatt for uklart; bare aliasfeltet får
-    // emnestatus, aldri tilfeldige forekomster av handlingen i brødtekst.
-    const keywordIntent = !contentTerms.length && query.length > 1;
+    const contentTerms = query.filter((term) => !isLowSignalTerm(term));
+    // Spørsmål uten spesifikke temaord kan bruke eksplisitte aliaser.
+    // Generelle dokumentord peker til en oversikt, ikke til tilfeldig
+    // brødtekst. Ett isolert handlingsord er fortsatt for uklart.
+    const keywordIntent =
+      !contentTerms.length &&
+      (query.length > 1 || query.some((term) => contextTerms.has(term.stem)));
     if (!contentTerms.length && !keywordIntent) return [];
     const frequency = new Map(
       query.map((q) => [

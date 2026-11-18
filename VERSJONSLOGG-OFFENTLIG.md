@@ -6,6 +6,12 @@ Her finner du daterte endringer i KI-Produktutvikling: nye funksjoner, innhold, 
 
 Se [utviklingsplanen](UTVIKLINGSPLAN-OFFENTLIG.md) for prioriteringer og [funksjonalitetsoversikten](/funksjonalitet/) for dagens funksjoner og begrensninger.
 
+## 18. november 2026 – riktigere svar om portalens innhold
+
+- Generelle spørsmål som «hva inneholder denne siden?» gir portalens innholdsoversikt fremfor tilfeldige treff fra en temaside. Spørsmål som nevner cookies eller personvern beholder relevant tema som første kilde.
+- Oversikten gjelder portalen som helhet. Spør KI får ikke automatisk informasjon om hvilken underside du ser på; oppgi et tema hvis du mener en bestemt side.
+- Uten språkmodell viser chatten «Hovedpunkter fra kilden» og lenke til originalen. Rettingen er prøvd i utviklingsmiljøet og i en separat lokal modellprøve; offentlig publisering er ikke bekreftet.
+
 ## 18. november 2026 – historikk og dokumentstruktur
 
 - Endringshistorikken er kartlagt mot alle 138 daterte loggoppføringer, planhistorikken fra 30. oktober og 75 lokale commits frem til gjennomgangen. Det tidligere tematiske sammendraget er erstattet av denne daterte historikken.

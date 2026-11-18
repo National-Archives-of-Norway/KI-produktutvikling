@@ -75,7 +75,7 @@ export function ChatTranscript({
                         {!!turn.result.sources[0].guide?.steps.length && (
                           <>
                             <p>
-                              <strong>Slik går du frem</strong>
+                              <strong>Hovedpunkter fra kilden</strong>
                             </p>
                             <ol className="chat-steps">
                               {turn.result.sources[0].guide.steps.map(
@@ -95,7 +95,7 @@ export function ChatTranscript({
                           className="chat-primary-source"
                           href={turn.result.sources[0].href}
                         >
-                          Les hele veiledningen →
+                          Åpne kilden →
                         </Link>
                         <small className="chat-answer-note">
                           Dette er hentet fra den mest relevante siden, ikke et

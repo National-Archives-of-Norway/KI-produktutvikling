@@ -143,6 +143,18 @@ export const developmentEvaluation: {
     question: "Hvor finner jeg utviklingsplanen?",
     expectedId: "funksjonalitet",
   },
+  { question: "hva inneholder denne siden?", expectedId: "funksjonalitet" },
+  { question: "Hva finnes på nettsiden?", expectedId: "funksjonalitet" },
+  { question: "Hva er dette nettstedet?", expectedId: "funksjonalitet" },
+  {
+    question: "Hva inneholder cookie-siden?",
+    expectedId: "informasjonskapsler",
+  },
+  {
+    question: "Hva inneholder denne siden om personvern?",
+    expectedId: "personvern",
+  },
+  { question: "Hva inneholder denne pizzamenyen?", expectedId: null },
   { question: "Hva er KI-prat?", expectedId: "ki-prat" },
   { question: "Hvordan kommer jeg i gang med KI?", expectedId: "kom-i-gang" },
   {
@@ -554,4 +566,32 @@ test("responsiv forsideillustrasjon kan forklares fra funksjonsregisteret", () =
   assert.equal(source?.id, "funksjonalitet");
   assert.match(source.text, /illustrasjonen til høyre for overskriften/);
   assert.match(source.text, /samme høyde som de to tekstlinjene/);
+});
+
+test("generelle dokumentord krever eksplisitt oversiktsalias og gir ikke tilfeldige temasider", () => {
+  const topic = {
+    id: "testtema",
+    title: "Tema",
+    href: "/tema/",
+    text: "Denne siden inneholder informasjon. ".repeat(30),
+  };
+  assert.deepEqual(createRetriever([topic])("Hva inneholder denne siden?"), []);
+  const search = createRetriever([
+    topic,
+    {
+      id: "testoversikt",
+      title: "Innholdsoversikt",
+      href: "/oversikt/",
+      keywords: ["side", "nettside", "nettsted"],
+      text: "Her er en oversikt over ressursene.",
+    },
+  ]);
+  for (const question of [
+    "Hva inneholder denne siden?",
+    "nettsiden",
+    "nettstedet",
+  ])
+    assert.equal(search(question)[0]?.id, "testoversikt");
+  assert.deepEqual(search("Hva inneholder denne siden om lønnsdata?"), []);
+  assert.equal("keywords" in search("Hva inneholder denne siden?")[0], false);
 });

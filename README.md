@@ -19,6 +19,8 @@ En ny installasjon trenger nettverk også når pnpm-pakkene er cachet: ChromeDri
 
 Etter oppgradering av Next.js eller andre avhengigheter: stopp eksisterende pnpm dev med Ctrl+C og start den på nytt. En gammel prosess kan fortsette å servere chunks fra forrige versjon selv om pakken på disk er oppdatert. Ved «module factory is not available»: stopp utviklingsserveren, fjern bare den genererte utviklingscachen med `rm -rf .next/dev`, og kjør pnpm dev igjen. Last den åpne nettleserfanen helt på nytt (Cmd+Shift+R på Mac). Dette gjelder lokal utvikling på 3000; Docker på 3005 oppdateres med eget bygg som beskrevet nedenfor.
 
+Uten modellkonfigurasjon gir pnpm dev på 3000 kildebasert veiledning og viser «uten språkmodell». Dette er separat fra Docker-portalen på 3005, som konfigurerer Qwen. En fungerende nettside på 3000 betyr ikke at en modell er aktivert der.
+
 ## Lokalt testmiljø med Docker, Spør KI og Qwen3:4b
 
 Denne oppskriften starter hele portalen med Next.js, RAG-tjenesten for Spør KI og lokal Qwen3:4b via Ollama. Ingen ekstern modellnøkkel kreves. Miljøet er bare tilgjengelig på maskinen din, uten innlogging; dette er ikke oppsett for et delt testmiljø eller en lukket pilot.
