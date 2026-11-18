@@ -6,6 +6,13 @@ Endringer i KI-Produktutvikling føres her, med dato, utførende agent, kontroll
 
 ## Ikke utgitt
 
+### 18. november 2026 – MIT-lisensen lagt til på main
+
+**Utførende agent:** Codex (OpenAI). Ingen underagenter.
+
+- Lagt [LICENSE](LICENSE) i prosjektroten på main etter brukerens uttrykkelige instruks. Innholdet er kopiert uendret fra master ved 2e52ca26d2e85c4eb8aaad23fff87165bdbe6dcd: MIT License med Copyright (c) 2026 Nasjonalarkivet. Ingen fletting av de separate historikkene eller endring av master.
+- Offentlig versjonslogg er oppdatert. Ingen funksjonalitet, avhengigheter, driftsoppsett eller status for øvrige innholds-/profilrettigheter er endret. Ingen commit, push eller publisering. Kontroller: byte-sammenligning og identisk Git-blob bekrefter uendret lisensinnhold; master peker fortsatt til samme commit. pnpm format:check, pnpm test:links (266 filmål i 15 dokumenter) og git diff --check bestod. Ingen ny funksjonstest eller bygg er nødvendig for denne fil-/loggendringen.
+
 ### 18. november 2026 – Docker oppdatert fra 9f063a4
 
 **Utførende agent:** Codex (OpenAI). Ingen underagenter.

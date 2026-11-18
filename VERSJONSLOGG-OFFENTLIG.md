@@ -6,6 +6,10 @@ Her finner du daterte endringer i KI-Produktutvikling: nye funksjoner, innhold, 
 
 Se [utviklingsplanen](UTVIKLINGSPLAN-OFFENTLIG.md) for prioriteringer og [funksjonalitetsoversikten](/funksjonalitet/) for dagens funksjoner og begrensninger.
 
+## 18. november 2026 – MIT-lisens
+
+- Prosjektet har fått en LICENSE-fil med MIT-lisensen og Nasjonalarkivet som oppgitt rettighetshaver. Den eksisterende lisensfilen er tatt inn på hovedgrenen uten endring av teksten.
+
 ## 18. november 2026 – riktigere svar om portalens innhold
 
 - Generelle spørsmål som «hva inneholder denne siden?» gir portalens innholdsoversikt fremfor tilfeldige treff fra en temaside. Spørsmål som nevner cookies eller personvern beholder relevant tema som første kilde.
